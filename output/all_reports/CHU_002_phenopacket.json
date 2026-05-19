@@ -1,0 +1,336 @@
+{
+  "id": "phenopacket-CHU_002",
+  "subject": {
+    "id": "CHU_002",
+    "sex": "FEMALE",
+    "timeAtLastEncounter": {
+      "age": {
+        "iso8601duration": "P04Y"
+      }
+    }
+  },
+  "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0006538",
+        "label": "Recurrent bronchopulmonary infections",
+        "umls_cui": "C2169795"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "CHU_002",
+            "description": "NER: mucoviscidose (0.819) | Match: french_exact (0.950)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0004395",
+        "label": "Malnutrition",
+        "umls_cui": "C0162429"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "CHU_002",
+            "description": "NER: diminution de l'appétit (0.632) | Match: french_exact (0.950)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0001508",
+        "label": "Failure to thrive",
+        "umls_cui": "C0231246"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "CHU_002",
+            "description": "NER: malnutrition légère (0.614) | Match: french_exact (0.950)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0000952",
+        "label": "Jaundice",
+        "umls_cui": "C0022346"
+      },
+      "excluded": true,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "CHU_002",
+            "description": "NER: ictère (0.801) | Match: french_exact (0.950) | Negated by: \"pas d'\""
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0001892",
+        "label": "Abnormal bleeding",
+        "umls_cui": "C1458140"
+      },
+      "excluded": true,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "CHU_002",
+            "description": "NER: syndrome hémorragique (0.650) | Match: french_exact (0.950) | Negated by: \"pas d'\""
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0002093",
+        "label": "Respiratory insufficiency",
+        "umls_cui": "C0035229"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "CHU_002",
+            "description": "NER: insuffisance respiratoire chronique (0.827) | Match: french_exact (0.950)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0001217",
+        "label": "Clubbing",
+        "umls_cui": "C0149651"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "CHU_002",
+            "description": "NER: hippocratisme digital (0.782) | Match: french_exact (0.950)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0002019",
+        "label": "Constipation",
+        "umls_cui": "C0009806"
+      },
+      "excluded": true,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "CHU_002",
+            "description": "NER: constipation (0.931) | Match: exact_label (1.000) | Negated by: \"absence de\""
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0002020",
+        "label": "Gastroesophageal reflux",
+        "umls_cui": "C0017168"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "CHU_002",
+            "description": "NER: RGO (0.810) | Match: sapbert_similarity (0.856)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0002719",
+        "label": "Recurrent infections",
+        "umls_cui": "C0239998"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "CHU_002",
+            "description": "NER: ECBC des crachats :\n  Culture bactérienne :\n  Pseudomonas Aeruginosa  \n Antibiogramme 01 (0.682) | Match: french_partial (0.850)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0004430",
+        "label": "Immunodeficiency",
+        "umls_cui": "C0085110"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "CHU_002",
+            "description": "NER: Bilan du déficit immunitaire (0.711) | Match: french_partial (0.850)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0001943",
+        "label": "Hypoglycemia"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "CHU_002",
+            "description": "Numeric: Glycémie: 0,8 → Glucose < 70 mg/dL"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0001974",
+        "label": "Leukocytosis"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "CHU_002",
+            "description": "Numeric: GB : 15,3 → WBC/GB > 11,000 elements/uL"
+          }
+        }
+      ]
+    }
+  ],
+  "metaData": {
+    "created": "2026-05-18T06:09:14Z",
+    "createdBy": "clinical-preanalysis-pipeline-v2",
+    "phenopacketSchemaVersion": "2.0",
+    "resources": [
+      {
+        "id": "hp",
+        "name": "Human Phenotype Ontology",
+        "url": "https://hpo.jax.org",
+        "version": "2024-04-26",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      }
+    ]
+  },
+  "interpretations": [
+    {
+      "id": "interpretation-CHU_002",
+      "progressStatus": "IN_PROGRESS",
+      "diagnosis": {
+        "disease": {
+          "id": "ORPHA:572",
+          "label": "MHC class II deficiency"
+        },
+        "score": 0.2982,
+        "allCandidates": [
+          {
+            "id": "ORPHA:572",
+            "label": "MHC class II deficiency",
+            "score": 0.2982
+          },
+          {
+            "id": "ORPHA:47",
+            "label": "X-linked agammaglobulinemia",
+            "score": 0.2208
+          },
+          {
+            "id": "ORPHA:1572",
+            "label": "Common variable immunodeficiency",
+            "score": 0.2159
+          },
+          {
+            "id": "ORPHA:586",
+            "label": "Cystic fibrosis",
+            "score": 0.2045
+          },
+          {
+            "id": "ORPHA:2314",
+            "label": "Hyper-IgE syndrome",
+            "score": 0.1921
+          }
+        ]
+      }
+    }
+  ],
+  "_pipelineStats": {
+    "totalEntities": 82,
+    "matchedHPO": 13,
+    "unmatchedEntities": 69,
+    "phenopacketFeatures": 13,
+    "negatedFeatures": 3,
+    "numericPhenotypes": 2,
+    "ordoCandidates": 5
+  }
+}

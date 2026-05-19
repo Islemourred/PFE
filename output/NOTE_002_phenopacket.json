@@ -1,0 +1,316 @@
+{
+  "id": "phenopacket-NOTE_002",
+  "subject": {
+    "id": "NOTE_002",
+    "sex": "MALE",
+    "timeAtLastEncounter": {
+      "age": {
+        "iso8601duration": "P8Y"
+      }
+    }
+  },
+  "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0004325",
+        "label": "Decreased body weight",
+        "umls_cui": "C0041667"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "NOTE_002",
+            "description": "NER: failure to gain weight (0.998) | Match: sapbert_similarity (0.839)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0012735",
+        "label": "Cough",
+        "umls_cui": "C0010200"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "NOTE_002",
+            "description": "NER: increased cough (0.995) | Match: sapbert_similarity (0.822)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0004396",
+        "label": "Poor appetite",
+        "umls_cui": "C0232462"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "NOTE_002",
+            "description": "NER: poor appetite (0.994) | Match: exact_label (1.000)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0002105",
+        "label": "Hemoptysis",
+        "umls_cui": "C0019079"
+      },
+      "excluded": true,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "NOTE_002",
+            "description": "NER: hemoptysis (0.999) | Match: exact_label (1.000) | Negated by: \"no\""
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0001945",
+        "label": "Fever",
+        "umls_cui": "C0015967"
+      },
+      "excluded": true,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "NOTE_002",
+            "description": "NER: fever (0.998) | Match: exact_label (1.000) | Negated by: \"no\""
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0004401",
+        "label": "Meconium ileus",
+        "umls_cui": "C0398349"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "NOTE_002",
+            "description": "NER: meconium ileus (0.955) | Match: exact_label (1.000)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0001738",
+        "label": "Exocrine pancreatic insufficiency",
+        "umls_cui": "C0030293"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "NOTE_002",
+            "description": "NER: pancreatic insufficiency (0.998) | Match: related_synonym (1.000)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0006532",
+        "label": "Recurrent pneumonia",
+        "umls_cui": "C0694550"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "NOTE_002",
+            "description": "NER: recurrent pneumonia (0.998) | Match: exact_label (1.000)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0000988",
+        "label": "Skin rash",
+        "umls_cui": "C0015230"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "NOTE_002",
+            "description": "NER: rash (0.617) | Match: sapbert_similarity (0.911)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0001824",
+        "label": "Weight loss",
+        "umls_cui": "C1262477"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "NOTE_002",
+            "description": "NER: weight loss (0.997) | Match: exact_label (1.000)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0001903",
+        "label": "Anemia"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "NOTE_002",
+            "description": "Numeric: Hgb 11.8 → Hemoglobin < 12.0 g/dL"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0001974",
+        "label": "Leukocytosis"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "NOTE_002",
+            "description": "Numeric: WBC 14.2 → WBC/GB > 11,000 elements/uL"
+          }
+        }
+      ]
+    }
+  ],
+  "metaData": {
+    "created": "2026-05-18T06:04:48Z",
+    "createdBy": "clinical-preanalysis-pipeline-v2",
+    "phenopacketSchemaVersion": "2.0",
+    "resources": [
+      {
+        "id": "hp",
+        "name": "Human Phenotype Ontology",
+        "url": "https://hpo.jax.org",
+        "version": "2024-04-26",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      }
+    ]
+  },
+  "interpretations": [
+    {
+      "id": "interpretation-NOTE_002",
+      "progressStatus": "IN_PROGRESS",
+      "diagnosis": {
+        "disease": {
+          "id": "ORPHA:232",
+          "label": "Sickle cell disease"
+        },
+        "score": 0.2956,
+        "allCandidates": [
+          {
+            "id": "ORPHA:232",
+            "label": "Sickle cell disease",
+            "score": 0.2956
+          },
+          {
+            "id": "ORPHA:586",
+            "label": "Cystic fibrosis",
+            "score": 0.2071
+          },
+          {
+            "id": "ORPHA:2314",
+            "label": "Hyper-IgE syndrome",
+            "score": 0.1944
+          },
+          {
+            "id": "ORPHA:94065",
+            "label": "Gaucher disease type 1",
+            "score": 0.1235
+          },
+          {
+            "id": "ORPHA:906",
+            "label": "Wiskott-Aldrich syndrome",
+            "score": 0.119
+          }
+        ]
+      }
+    }
+  ],
+  "_pipelineStats": {
+    "totalEntities": 52,
+    "matchedHPO": 10,
+    "unmatchedEntities": 42,
+    "phenopacketFeatures": 12,
+    "negatedFeatures": 2,
+    "numericPhenotypes": 2,
+    "ordoCandidates": 5
+  }
+}

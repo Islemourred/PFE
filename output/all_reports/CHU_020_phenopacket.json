@@ -1,0 +1,335 @@
+{
+  "id": "phenopacket-CHU_020",
+  "subject": {
+    "id": "CHU_020",
+    "timeAtLastEncounter": {
+      "age": {
+        "iso8601duration": "P07Y"
+      }
+    }
+  },
+  "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0000964",
+        "label": "Eczema",
+        "umls_cui": "C0013595"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "CHU_020",
+            "description": "NER: eczéma (0.562) | Match: french_exact (0.950)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0000952",
+        "label": "Jaundice",
+        "umls_cui": "C0022346"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "CHU_020",
+            "description": "NER: Ictère néonatale (0.711) | Match: french_partial (0.850)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0002090",
+        "label": "Pneumonia",
+        "umls_cui": "C0032285"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "CHU_020",
+            "description": "NER: pneumonie (0.749) | Match: french_exact (0.950)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0006538",
+        "label": "Recurrent bronchopulmonary infections",
+        "umls_cui": "C2169795"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "CHU_020",
+            "description": "NER: Encombrement bronchique (0.626) | Match: french_exact (0.950)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0004313",
+        "label": "Decreased circulating antibody level",
+        "umls_cui": "C0086438"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "CHU_020",
+            "description": "NER: Agammaglobulinémie congénitale (0.713) | Match: french_exact (0.950)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0001875",
+        "label": "Neutropenia",
+        "umls_cui": "C0853697"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "CHU_020",
+            "description": "NER: neutropénie sévère (0.623) | Match: french_partial (0.850)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0001508",
+        "label": "Failure to thrive",
+        "umls_cui": "C0231246"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "CHU_020",
+            "description": "NER: Retard staturo-pondéral (0.457) | Match: french_exact (0.950)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0002093",
+        "label": "Respiratory insufficiency",
+        "umls_cui": "C0035229"
+      },
+      "excluded": true,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "CHU_020",
+            "description": "NER: insuffisance respiratoire chronique (0.686) | Match: french_exact (0.950) | Negated by: \"pas de\""
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0002094",
+        "label": "Dyspnea",
+        "umls_cui": "C0013404"
+      },
+      "excluded": true,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "CHU_020",
+            "description": "NER: dyspnée d’effort (0.740) | Match: french_partial (0.850) | Negated by: \"sans anomalie\""
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0001438",
+        "label": "Organomegaly",
+        "umls_cui": "C4020869"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "CHU_020",
+            "description": "NER: organomégalie (0.617) | Match: french_exact (0.950)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0004430",
+        "label": "Immunodeficiency",
+        "umls_cui": "C0085110"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "CHU_020",
+            "description": "NER: déficit immunitaire (0.742) | Match: french_exact (0.950)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0001903",
+        "label": "Anemia"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "CHU_020",
+            "description": "Numeric: Hb : 11,5g/dl → Hemoglobin < 12.0 g/dL"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0001888",
+        "label": "Lymphopenia"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "CHU_020",
+            "description": "Numeric: Lymph760 → ALC/Lymphocytes < 1500/uL"
+          }
+        }
+      ]
+    }
+  ],
+  "metaData": {
+    "created": "2026-05-18T06:10:29Z",
+    "createdBy": "clinical-preanalysis-pipeline-v2",
+    "phenopacketSchemaVersion": "2.0",
+    "resources": [
+      {
+        "id": "hp",
+        "name": "Human Phenotype Ontology",
+        "url": "https://hpo.jax.org",
+        "version": "2024-04-26",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      }
+    ]
+  },
+  "interpretations": [
+    {
+      "id": "interpretation-CHU_020",
+      "progressStatus": "IN_PROGRESS",
+      "diagnosis": {
+        "disease": {
+          "id": "ORPHA:1572",
+          "label": "Common variable immunodeficiency"
+        },
+        "score": 0.4429,
+        "allCandidates": [
+          {
+            "id": "ORPHA:1572",
+            "label": "Common variable immunodeficiency",
+            "score": 0.4429
+          },
+          {
+            "id": "ORPHA:572",
+            "label": "MHC class II deficiency",
+            "score": 0.378
+          },
+          {
+            "id": "ORPHA:47",
+            "label": "X-linked agammaglobulinemia",
+            "score": 0.2982
+          },
+          {
+            "id": "ORPHA:183660",
+            "label": "Severe combined immunodeficiency",
+            "score": 0.2708
+          },
+          {
+            "id": "ORPHA:906",
+            "label": "Wiskott-Aldrich syndrome",
+            "score": 0.241
+          }
+        ]
+      }
+    }
+  ],
+  "_pipelineStats": {
+    "totalEntities": 69,
+    "matchedHPO": 12,
+    "unmatchedEntities": 57,
+    "phenopacketFeatures": 13,
+    "negatedFeatures": 2,
+    "numericPhenotypes": 2,
+    "ordoCandidates": 5
+  }
+}

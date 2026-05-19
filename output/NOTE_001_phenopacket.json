@@ -1,0 +1,307 @@
+{
+  "id": "phenopacket-NOTE_001",
+  "subject": {
+    "id": "NOTE_001",
+    "sex": "FEMALE",
+    "timeAtLastEncounter": {
+      "age": {
+        "iso8601duration": "P25Y"
+      }
+    }
+  },
+  "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0002829",
+        "label": "Arthralgia",
+        "umls_cui": "C0003862"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "NOTE_001",
+            "description": "NER: joint pain (0.998) | Match: exact_synonym (1.000)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0010499",
+        "label": "Patellar subluxation",
+        "umls_cui": "C0857276"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "NOTE_001",
+            "description": "NER: knee subluxation (0.812) | Match: sapbert_similarity (0.855)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0003419",
+        "label": "Low back pain",
+        "umls_cui": "C0024031"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "NOTE_001",
+            "description": "NER: chronic low back pain (0.998) | Match: substring_match (0.950)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0000978",
+        "label": "Bruising susceptibility",
+        "umls_cui": "C0013491"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "NOTE_001",
+            "description": "NER: bruises (0.977) | Match: sapbert_similarity (0.804)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0012532",
+        "label": "Chronic pain",
+        "umls_cui": "C0150055"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "NOTE_001",
+            "description": "NER: chronic pain syndrome (0.998) | Match: substring_match (0.950)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0001382",
+        "label": "Joint hypermobility",
+        "umls_cui": "C1844820"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "NOTE_001",
+            "description": "NER: joint hypermobility (0.997) | Match: exact_label (1.000)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0001388",
+        "label": "Joint laxity"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "NOTE_001",
+            "description": "NER: loose joints (0.922) | Match: clinical_synonym (1.000)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0000993",
+        "label": "Molluscoid pseudotumors",
+        "umls_cui": "C1844597"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "NOTE_001",
+            "description": "NER: molluscoid pseudotumors at elbows (0.813) | Match: substring_match (0.950)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0010500",
+        "label": "Hyperextensibility of the knee",
+        "umls_cui": "C4023802"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "NOTE_001",
+            "description": "NER: knees hyperextend (0.794) | Match: sapbert_similarity (0.885)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0010485",
+        "label": "Hyperextensibility at elbow",
+        "umls_cui": "C4023808"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "NOTE_001",
+            "description": "NER: elbows hyperextend (0.771) | Match: sapbert_similarity (0.897)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0002761",
+        "label": "Generalized joint hypermobility",
+        "umls_cui": "C1836308"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "NOTE_001",
+            "description": "NER: hypermobility type (0.953) | Match: sapbert_similarity (0.808)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0001132",
+        "label": "Lens subluxation",
+        "umls_cui": "C0023316"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "NOTE_001",
+            "description": "NER: lens subluxation screening (0.925) | Match: substring_match (0.950)"
+          }
+        }
+      ]
+    }
+  ],
+  "metaData": {
+    "created": "2026-05-18T06:04:43Z",
+    "createdBy": "clinical-preanalysis-pipeline-v2",
+    "phenopacketSchemaVersion": "2.0",
+    "resources": [
+      {
+        "id": "hp",
+        "name": "Human Phenotype Ontology",
+        "url": "https://hpo.jax.org",
+        "version": "2024-04-26",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      }
+    ]
+  },
+  "interpretations": [
+    {
+      "id": "interpretation-NOTE_001",
+      "progressStatus": "IN_PROGRESS",
+      "diagnosis": {
+        "disease": {
+          "id": "ORPHA:98249",
+          "label": "Ehlers-Danlos syndrome, hypermobility type"
+        },
+        "score": 0.5568,
+        "allCandidates": [
+          {
+            "id": "ORPHA:98249",
+            "label": "Ehlers-Danlos syndrome, hypermobility type",
+            "score": 0.5568
+          },
+          {
+            "id": "ORPHA:232",
+            "label": "Sickle cell disease",
+            "score": 0.0961
+          },
+          {
+            "id": "ORPHA:906",
+            "label": "Wiskott-Aldrich syndrome",
+            "score": 0.0589
+          }
+        ]
+      }
+    }
+  ],
+  "_pipelineStats": {
+    "totalEntities": 37,
+    "matchedHPO": 14,
+    "unmatchedEntities": 23,
+    "phenopacketFeatures": 12,
+    "negatedFeatures": 0,
+    "numericPhenotypes": 0,
+    "ordoCandidates": 3
+  }
+}

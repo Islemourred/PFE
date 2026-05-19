@@ -1,0 +1,1131 @@
+{
+  "note_id": "NOTE_002",
+  "language": "en",
+  "module1": {
+    "clean_text": "Pt: [PATIENT] [DATE] MRN: [ID] Sex: M\nVisit Date: [DATE] Dr. Lisa Chang, Pediatric Pulmonology\n\nCC: persistent cough, failure to gain weight\n\nHPI: [AGE] M w/ known CF (dx age [AGE] presents for quarterly f/u. Mom reports\n     increased cough x3 wks, productive of thick yellow-green sputum. Poor\n     appetite, lost 1.2kg since last visit. No hemoptysis. No fever. Currently\n     on pancreatic enzyme replacement (Creon 12k units w/ meals).\n     Last PFT 3 mo ago: FEV1 72% predicted.\n\n     Previous cultures: Pseudomonas aeruginosa (mucoid strain), MRSA neg.\n\nPMH: CF (homozygous F508del), meconium ileus s/p surgical repair (neonatal),\n     pancreatic insufficiency, recurrent pneumonia x5 episodes\nMeds: Creon 12k TID w/ meals, inhaled tobramycin (alternating months),\n      dornase alfa daily, azithromycin 250mg [DATE] multivitamin w/ ADEK\nAllergies: PCN - rash\n\nLabs today:\n  CBC: WBC 14.2, Hgb 11.8, Plt 342\n  CMP: Na 136, K 4.1, Cl 98, BUN 12, Cr 0.4, Gluc 92\n  Sweat Cl: 82 mmol/L (prior)\n  Sputum cx: pending\n\nPFT: FEV1 65% predicted (down from 72%), FVC 78%\n\nA/P:\n  1. FEV1 decline - start CFTR modulator elexacaftor/tezacaftor/ivacaftor\n     (Trikafta) given F508del genotype. Check LFTs in 1 month.\n  2. Increased sputum - add hypertonic saline nebs BID\n  3. Weight loss - increase Creon to 18k w/ meals, nutrition consult\n  4. Continue tobramycin cycle. Await sputum cx.\n  5. Flu + COVID vax update\n  6. f/u 4 wks",
+    "phi_map": {
+      "PATIENT": "Ahmed R.Benali\nDOB:",
+      "DATE": [
+        "03/10/2018",
+        "04/10/2026\nProvider:",
+        "MWF,"
+      ],
+      "ID": "5521908",
+      "AGE": [
+        "8yo",
+        "2)"
+      ]
+    },
+    "patient_info": {
+      "sex": "male",
+      "age": "8"
+    }
+  },
+  "module3_warnings": {
+    "temporal": [],
+    "inconsistencies": []
+  },
+  "module4": {
+    "problem": [
+      {
+        "text": "persistent cough",
+        "ner_score": 0.997,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "persistent cough",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "failure to gain weight",
+        "ner_score": 0.998,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0004325",
+        "hpo_name": "Decreased body weight",
+        "expanded_text": "failure to gain weight",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.8388,
+        "matched": true,
+        "umls_cui": "C0041667"
+      },
+      {
+        "text": "known cf",
+        "ner_score": 0.732,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "known cf",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "increased cough",
+        "ner_score": 0.995,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0012735",
+        "hpo_name": "Cough",
+        "expanded_text": "increased cough",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.8219,
+        "matched": true,
+        "umls_cui": "C0010200"
+      },
+      {
+        "text": "thick yellow - green sputum",
+        "ner_score": 0.994,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "thick yellow - green sputum",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "poor appetite",
+        "ner_score": 0.994,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0004396",
+        "hpo_name": "Poor appetite",
+        "expanded_text": "poor appetite",
+        "match_type": "exact_label",
+        "confidence": 1.0,
+        "matched": true,
+        "umls_cui": "C0232462"
+      },
+      {
+        "text": "hemoptysis",
+        "ner_score": 0.999,
+        "negated": true,
+        "negation_cue": "no",
+        "hpo_id": "HP:0002105",
+        "hpo_name": "Hemoptysis",
+        "expanded_text": "hemoptysis",
+        "match_type": "exact_label",
+        "confidence": 1.0,
+        "matched": true,
+        "umls_cui": "C0019079"
+      },
+      {
+        "text": "fever",
+        "ner_score": 0.998,
+        "negated": true,
+        "negation_cue": "no",
+        "hpo_id": "HP:0001945",
+        "hpo_name": "Fever",
+        "expanded_text": "fever",
+        "match_type": "exact_label",
+        "confidence": 1.0,
+        "matched": true,
+        "umls_cui": "C0015967"
+      },
+      {
+        "text": "pseudomonas aeruginosa ( mucoid strain",
+        "ner_score": 0.953,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "pseudomonas aeruginosa ( mucoid strain",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "mrsa neg",
+        "ner_score": 0.967,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "mrsa neg",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "cf",
+        "ner_score": 0.97,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "cf",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "meconium ileus",
+        "ner_score": 0.955,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0004401",
+        "hpo_name": "Meconium ileus",
+        "expanded_text": "meconium ileus",
+        "match_type": "exact_label",
+        "confidence": 1.0,
+        "matched": true,
+        "umls_cui": "C0398349"
+      },
+      {
+        "text": "pancreatic insufficiency",
+        "ner_score": 0.998,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0001738",
+        "hpo_name": "Exocrine pancreatic insufficiency",
+        "expanded_text": "pancreatic insufficiency",
+        "match_type": "related_synonym",
+        "confidence": 1.0,
+        "matched": true,
+        "umls_cui": "C0030293"
+      },
+      {
+        "text": "recurrent pneumonia",
+        "ner_score": 0.998,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0006532",
+        "hpo_name": "Recurrent pneumonia",
+        "expanded_text": "recurrent pneumonia",
+        "match_type": "exact_label",
+        "confidence": 1.0,
+        "matched": true,
+        "umls_cui": "C0694550"
+      },
+      {
+        "text": "adek",
+        "ner_score": 0.574,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "adek",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "rash",
+        "ner_score": 0.617,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0000988",
+        "hpo_name": "Skin rash",
+        "expanded_text": "rash",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.9114,
+        "matched": true,
+        "umls_cui": "C0015230"
+      },
+      {
+        "text": "fev1 decline",
+        "ner_score": 0.872,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "fev1 decline",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "increased sputum",
+        "ner_score": 0.994,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "increased sputum",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "weight loss",
+        "ner_score": 0.997,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0001824",
+        "hpo_name": "Weight loss",
+        "expanded_text": "weight loss",
+        "match_type": "exact_label",
+        "confidence": 1.0,
+        "matched": true,
+        "umls_cui": "C1262477"
+      }
+    ],
+    "treatment": [
+      {
+        "text": "pancreatic enzyme replacement",
+        "ner_score": 0.997,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "pancreatic enzyme replacement",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "fev1",
+        "ner_score": 0.442,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "forced expiratory volume in 1 second",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "surgical repair",
+        "ner_score": 0.981,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "surgical repair",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "creon",
+        "ner_score": 0.983,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "creon",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "inhaled tobramycin",
+        "ner_score": 0.989,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "inhaled tobramycin",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "dornase alfa",
+        "ner_score": 0.997,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "dornase alfa",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "azithromycin",
+        "ner_score": 0.999,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "azithromycin",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "cftr modulator",
+        "ner_score": 0.971,
+        "negated": true,
+        "negation_cue": "decline",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "cftr modulator",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "elexacaftor",
+        "ner_score": 0.876,
+        "negated": true,
+        "negation_cue": "decline",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "elexacaftor",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "tezacaftor",
+        "ner_score": 0.996,
+        "negated": true,
+        "negation_cue": "decline",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "tezacaftor",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "ivacaftor ( trikafta",
+        "ner_score": 0.977,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "ivacaftor ( trikafta",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "hypertonic saline nebs",
+        "ner_score": 0.993,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "hypertonic saline nebs",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "tobramycin cycle",
+        "ner_score": 0.969,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "tobramycin cycle",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "sputum cx",
+        "ner_score": 0.693,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "sputum cx",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "flu + covid vax update",
+        "ner_score": 0.866,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "flu + covid vax update",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      }
+    ],
+    "test": [
+      {
+        "text": "multivitamin",
+        "ner_score": 0.837,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "multivitamin",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "cbc",
+        "ner_score": 0.932,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "complete blood count",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "wbc",
+        "ner_score": 0.992,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "white blood cell count",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "hgb",
+        "ner_score": 0.997,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "hemoglobin",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "plt",
+        "ner_score": 0.989,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "platelets",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "cmp",
+        "ner_score": 0.988,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "comprehensive metabolic panel",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "na",
+        "ner_score": 0.725,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "na",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "cl",
+        "ner_score": 0.989,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "cl",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "bun",
+        "ner_score": 0.995,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "blood urea nitrogen",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "cr",
+        "ner_score": 0.997,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "creatinine",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "gluc",
+        "ner_score": 0.993,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "gluc",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "sweat cl",
+        "ner_score": 0.905,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "sweat cl",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "mmol",
+        "ner_score": 0.919,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "mmol",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "sputum cx",
+        "ner_score": 0.884,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "sputum cx",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "pft",
+        "ner_score": 0.962,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "pulmonary function test",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "fev1",
+        "ner_score": 0.749,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "forced expiratory volume in 1 second",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "fvc",
+        "ner_score": 0.875,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "forced vital capacity",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "lfts",
+        "ner_score": 0.987,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "lfts",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      }
+    ],
+    "numeric_phenotypes": [
+      {
+        "hpo_id": "HP:0001903",
+        "hpo_name": "Anemia",
+        "value": 11.8,
+        "unit": "g/dL",
+        "description": "Hemoglobin < 12.0 g/dL",
+        "source": "Hgb 11.8",
+        "match_type": "numeric_inference",
+        "confidence": 1.0
+      },
+      {
+        "hpo_id": "HP:0001974",
+        "hpo_name": "Leukocytosis",
+        "value": 14.2,
+        "unit": "elements/uL",
+        "description": "WBC/GB > 11,000 elements/uL",
+        "source": "WBC 14.2",
+        "match_type": "numeric_inference",
+        "confidence": 1.0
+      }
+    ],
+    "ordo_candidates": [
+      {
+        "ordo_id": "ORPHA:232",
+        "name": "Sickle cell disease",
+        "name_fr": "",
+        "score": 0.2956,
+        "jaccard": 0.1765,
+        "coverage": 0.375,
+        "matched_hpo": [
+          "HP:0001903",
+          "HP:0001945",
+          "HP:0001974"
+        ],
+        "matched_count": 3,
+        "total_disease_hpo": 8
+      },
+      {
+        "ordo_id": "ORPHA:586",
+        "name": "Cystic fibrosis",
+        "name_fr": "Mucoviscidose",
+        "score": 0.2071,
+        "jaccard": 0.1429,
+        "coverage": 0.25,
+        "matched_hpo": [
+          "HP:0001738",
+          "HP:0001903",
+          "HP:0001945"
+        ],
+        "matched_count": 3,
+        "total_disease_hpo": 12
+      },
+      {
+        "ordo_id": "ORPHA:2314",
+        "name": "Hyper-IgE syndrome",
+        "name_fr": "Syndrome d'Hyper-IgE (syndrome de Job)",
+        "score": 0.1944,
+        "jaccard": 0.1111,
+        "coverage": 0.25,
+        "matched_hpo": [
+          "HP:0000988",
+          "HP:0001945"
+        ],
+        "matched_count": 2,
+        "total_disease_hpo": 8
+      },
+      {
+        "ordo_id": "ORPHA:94065",
+        "name": "Gaucher disease type 1",
+        "name_fr": "",
+        "score": 0.1235,
+        "jaccard": 0.0588,
+        "coverage": 0.1667,
+        "matched_hpo": [
+          "HP:0001903"
+        ],
+        "matched_count": 1,
+        "total_disease_hpo": 6
+      },
+      {
+        "ordo_id": "ORPHA:906",
+        "name": "Wiskott-Aldrich syndrome",
+        "name_fr": "Syndrome de Wiskott-Aldrich",
+        "score": 0.119,
+        "jaccard": 0.0833,
+        "coverage": 0.1429,
+        "matched_hpo": [
+          "HP:0000988",
+          "HP:0001903"
+        ],
+        "matched_count": 2,
+        "total_disease_hpo": 14
+      }
+    ],
+    "stats": {
+      "total": 52,
+      "matched": 10,
+      "unmatched": 42,
+      "match_rate": 19.2,
+      "unique_hpo": 12,
+      "ordo_matches": 5
+    }
+  },
+  "phenopacket": {
+    "id": "phenopacket-NOTE_002",
+    "subject": {
+      "id": "NOTE_002",
+      "sex": "MALE",
+      "timeAtLastEncounter": {
+        "age": {
+          "iso8601duration": "P8Y"
+        }
+      }
+    },
+    "phenotypicFeatures": [
+      {
+        "type": {
+          "id": "HP:0004325",
+          "label": "Decreased body weight",
+          "umls_cui": "C0041667"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "NOTE_002",
+              "description": "NER: failure to gain weight (0.998) | Match: sapbert_similarity (0.839)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0012735",
+          "label": "Cough",
+          "umls_cui": "C0010200"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "NOTE_002",
+              "description": "NER: increased cough (0.995) | Match: sapbert_similarity (0.822)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0004396",
+          "label": "Poor appetite",
+          "umls_cui": "C0232462"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "NOTE_002",
+              "description": "NER: poor appetite (0.994) | Match: exact_label (1.000)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0002105",
+          "label": "Hemoptysis",
+          "umls_cui": "C0019079"
+        },
+        "excluded": true,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "NOTE_002",
+              "description": "NER: hemoptysis (0.999) | Match: exact_label (1.000) | Negated by: \"no\""
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0001945",
+          "label": "Fever",
+          "umls_cui": "C0015967"
+        },
+        "excluded": true,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "NOTE_002",
+              "description": "NER: fever (0.998) | Match: exact_label (1.000) | Negated by: \"no\""
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0004401",
+          "label": "Meconium ileus",
+          "umls_cui": "C0398349"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "NOTE_002",
+              "description": "NER: meconium ileus (0.955) | Match: exact_label (1.000)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0001738",
+          "label": "Exocrine pancreatic insufficiency",
+          "umls_cui": "C0030293"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "NOTE_002",
+              "description": "NER: pancreatic insufficiency (0.998) | Match: related_synonym (1.000)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0006532",
+          "label": "Recurrent pneumonia",
+          "umls_cui": "C0694550"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "NOTE_002",
+              "description": "NER: recurrent pneumonia (0.998) | Match: exact_label (1.000)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0000988",
+          "label": "Skin rash",
+          "umls_cui": "C0015230"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "NOTE_002",
+              "description": "NER: rash (0.617) | Match: sapbert_similarity (0.911)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0001824",
+          "label": "Weight loss",
+          "umls_cui": "C1262477"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "NOTE_002",
+              "description": "NER: weight loss (0.997) | Match: exact_label (1.000)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0001903",
+          "label": "Anemia"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "NOTE_002",
+              "description": "Numeric: Hgb 11.8 → Hemoglobin < 12.0 g/dL"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0001974",
+          "label": "Leukocytosis"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "NOTE_002",
+              "description": "Numeric: WBC 14.2 → WBC/GB > 11,000 elements/uL"
+            }
+          }
+        ]
+      }
+    ],
+    "metaData": {
+      "created": "2026-05-18T06:04:48Z",
+      "createdBy": "clinical-preanalysis-pipeline-v2",
+      "phenopacketSchemaVersion": "2.0",
+      "resources": [
+        {
+          "id": "hp",
+          "name": "Human Phenotype Ontology",
+          "url": "https://hpo.jax.org",
+          "version": "2024-04-26",
+          "namespacePrefix": "HP",
+          "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        }
+      ]
+    },
+    "interpretations": [
+      {
+        "id": "interpretation-NOTE_002",
+        "progressStatus": "IN_PROGRESS",
+        "diagnosis": {
+          "disease": {
+            "id": "ORPHA:232",
+            "label": "Sickle cell disease"
+          },
+          "score": 0.2956,
+          "allCandidates": [
+            {
+              "id": "ORPHA:232",
+              "label": "Sickle cell disease",
+              "score": 0.2956
+            },
+            {
+              "id": "ORPHA:586",
+              "label": "Cystic fibrosis",
+              "score": 0.2071
+            },
+            {
+              "id": "ORPHA:2314",
+              "label": "Hyper-IgE syndrome",
+              "score": 0.1944
+            },
+            {
+              "id": "ORPHA:94065",
+              "label": "Gaucher disease type 1",
+              "score": 0.1235
+            },
+            {
+              "id": "ORPHA:906",
+              "label": "Wiskott-Aldrich syndrome",
+              "score": 0.119
+            }
+          ]
+        }
+      }
+    ],
+    "_pipelineStats": {
+      "totalEntities": 52,
+      "matchedHPO": 10,
+      "unmatchedEntities": 42,
+      "phenopacketFeatures": 12,
+      "negatedFeatures": 2,
+      "numericPhenotypes": 2,
+      "ordoCandidates": 5
+    }
+  }
+}

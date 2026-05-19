@@ -1,0 +1,297 @@
+{
+  "id": "phenopacket-CHU_016",
+  "subject": {
+    "id": "CHU_016",
+    "sex": "FEMALE",
+    "timeAtLastEncounter": {
+      "age": {
+        "iso8601duration": "P12Y"
+      }
+    }
+  },
+  "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0001251",
+        "label": "Ataxia",
+        "umls_cui": "C0007758"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "CHU_016",
+            "description": "NER: DIP combinée syndromique type Ataxie télangiectasie (0.622) | Match: french_partial (0.850)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0003193",
+        "label": "Allergic rhinitis",
+        "umls_cui": "C0847614"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "CHU_016",
+            "description": "NER: Rhinite allergique à répétition (0.458) | Match: french_partial (0.850)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0000388",
+        "label": "Otitis media",
+        "umls_cui": "C0029882"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "CHU_016",
+            "description": "NER: otorrhée (0.429) | Match: french_exact (0.950)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0001009",
+        "label": "Telangiectasia",
+        "umls_cui": "C0039446"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "CHU_016",
+            "description": "NER: Télangiectasie (0.506) | Match: french_exact (0.950)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0006538",
+        "label": "Recurrent bronchopulmonary infections",
+        "umls_cui": "C2169795"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "CHU_016",
+            "description": "NER: Toux grasse (0.650) | Match: french_exact (0.950)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0002093",
+        "label": "Respiratory insufficiency",
+        "umls_cui": "C0035229"
+      },
+      "excluded": true,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "CHU_016",
+            "description": "NER: insuffisance respiratoire (0.461) | Match: french_exact (0.950) | Negated by: \"pas de\""
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0001438",
+        "label": "Organomegaly",
+        "umls_cui": "C4020869"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "CHU_016",
+            "description": "NER: organomégalie (0.499) | Match: french_exact (0.950)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0001583",
+        "label": "Rotary nystagmus",
+        "umls_cui": "C0240595"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "CHU_016",
+            "description": "NER: nystagmus rotatoire (0.621) | Match: sapbert_similarity (0.923)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0001888",
+        "label": "Lymphopenia",
+        "umls_cui": "C0024312"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "CHU_016",
+            "description": "NER: Lymphopénie discrète (0.541) | Match: french_partial (0.850)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0004430",
+        "label": "Immunodeficiency",
+        "umls_cui": "C0085110"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "CHU_016",
+            "description": "NER: Bilan du déficit immunitaire (0.792) | Match: french_partial (0.850)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0001903",
+        "label": "Anemia"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "CHU_016",
+            "description": "Numeric: HB : 11,2 g/dl → Hemoglobin < 12.0 g/dL"
+          }
+        }
+      ]
+    }
+  ],
+  "metaData": {
+    "created": "2026-05-18T06:10:14Z",
+    "createdBy": "clinical-preanalysis-pipeline-v2",
+    "phenopacketSchemaVersion": "2.0",
+    "resources": [
+      {
+        "id": "hp",
+        "name": "Human Phenotype Ontology",
+        "url": "https://hpo.jax.org",
+        "version": "2024-04-26",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      }
+    ]
+  },
+  "interpretations": [
+    {
+      "id": "interpretation-CHU_016",
+      "progressStatus": "IN_PROGRESS",
+      "diagnosis": {
+        "disease": {
+          "id": "ORPHA:100",
+          "label": "Ataxia-telangiectasia"
+        },
+        "score": 0.3667,
+        "allCandidates": [
+          {
+            "id": "ORPHA:100",
+            "label": "Ataxia-telangiectasia",
+            "score": 0.3667
+          },
+          {
+            "id": "ORPHA:47",
+            "label": "X-linked agammaglobulinemia",
+            "score": 0.3071
+          },
+          {
+            "id": "ORPHA:906",
+            "label": "Wiskott-Aldrich syndrome",
+            "score": 0.2476
+          },
+          {
+            "id": "ORPHA:572",
+            "label": "MHC class II deficiency",
+            "score": 0.2268
+          },
+          {
+            "id": "ORPHA:1572",
+            "label": "Common variable immunodeficiency",
+            "score": 0.2214
+          }
+        ]
+      }
+    }
+  ],
+  "_pipelineStats": {
+    "totalEntities": 48,
+    "matchedHPO": 13,
+    "unmatchedEntities": 35,
+    "phenopacketFeatures": 11,
+    "negatedFeatures": 1,
+    "numericPhenotypes": 2,
+    "ordoCandidates": 5
+  }
+}

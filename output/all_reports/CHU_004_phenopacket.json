@@ -1,0 +1,366 @@
+{
+  "id": "phenopacket-CHU_004",
+  "subject": {
+    "id": "CHU_004",
+    "sex": "MALE",
+    "timeAtLastEncounter": {
+      "age": {
+        "iso8601duration": "P09Y"
+      }
+    }
+  },
+  "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0004430",
+        "label": "Immunodeficiency",
+        "umls_cui": "C0085110"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "CHU_004",
+            "description": "NER: déficit immunitaire primitif (0.748) | Match: french_exact (0.950)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0002665",
+        "label": "Lymphoma",
+        "umls_cui": "C0024299"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "CHU_004",
+            "description": "NER: syndrome de Wiskott Aldrich (0.429) | Match: french_exact (0.950)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0002093",
+        "label": "Respiratory insufficiency",
+        "umls_cui": "C0035229"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "CHU_004",
+            "description": "NER: insuffisance respiratoire chronique stade 1 (0.546) | Match: french_partial (0.850)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0000964",
+        "label": "Eczema",
+        "umls_cui": "C0013595"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "CHU_004",
+            "description": "NER: eczéma (0.488) | Match: french_exact (0.950)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0000980",
+        "label": "Pallor",
+        "umls_cui": "C0030232"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "CHU_004",
+            "description": "NER: pâleur cutanéomuqueuse (0.952) | Match: french_partial (0.850)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0001892",
+        "label": "Abnormal bleeding",
+        "umls_cui": "C1458140"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "CHU_004",
+            "description": "NER: Syndrome hémorragique cutané (0.518) | Match: french_partial (0.850)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0000967",
+        "label": "Petechiae",
+        "umls_cui": "C0031256"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "CHU_004",
+            "description": "NER: pétéchies disséminées (0.471) | Match: french_partial (0.850)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0001903",
+        "label": "Anemia",
+        "umls_cui": "C0002871"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "CHU_004",
+            "description": "NER: anémie (0.542) | Match: french_exact (0.950)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0001873",
+        "label": "Thrombocytopenia",
+        "umls_cui": "C0040034"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "CHU_004",
+            "description": "NER: thrombopénie (0.473) | Match: french_exact (0.950)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0006538",
+        "label": "Recurrent bronchopulmonary infections",
+        "umls_cui": "C2169795"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "CHU_004",
+            "description": "NER: toux grasse (0.946) | Match: french_exact (0.950)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0001217",
+        "label": "Clubbing",
+        "umls_cui": "C0149651"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "CHU_004",
+            "description": "NER: Hippocratisme digital (0.826) | Match: french_exact (0.950)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0002094",
+        "label": "Dyspnea",
+        "umls_cui": "C0013404"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "CHU_004",
+            "description": "NER: dyspnée (0.857) | Match: french_exact (0.950)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0002835",
+        "label": "Aspiration",
+        "umls_cui": "C0700198"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "CHU_004",
+            "description": "NER: râles polymorphes (0.724) | Match: french_exact (0.950)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0001438",
+        "label": "Organomegaly",
+        "umls_cui": "C4020869"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "CHU_004",
+            "description": "NER: organomégalie (0.637) | Match: french_exact (0.950)"
+          }
+        }
+      ]
+    }
+  ],
+  "metaData": {
+    "created": "2026-05-18T06:09:21Z",
+    "createdBy": "clinical-preanalysis-pipeline-v2",
+    "phenopacketSchemaVersion": "2.0",
+    "resources": [
+      {
+        "id": "hp",
+        "name": "Human Phenotype Ontology",
+        "url": "https://hpo.jax.org",
+        "version": "2024-04-26",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      }
+    ]
+  },
+  "interpretations": [
+    {
+      "id": "interpretation-CHU_004",
+      "progressStatus": "IN_PROGRESS",
+      "diagnosis": {
+        "disease": {
+          "id": "ORPHA:906",
+          "label": "Wiskott-Aldrich syndrome"
+        },
+        "score": 0.3012,
+        "allCandidates": [
+          {
+            "id": "ORPHA:906",
+            "label": "Wiskott-Aldrich syndrome",
+            "score": 0.3012
+          },
+          {
+            "id": "ORPHA:94065",
+            "label": "Gaucher disease type 1",
+            "score": 0.2444
+          },
+          {
+            "id": "ORPHA:572",
+            "label": "MHC class II deficiency",
+            "score": 0.2182
+          },
+          {
+            "id": "ORPHA:183660",
+            "label": "Severe combined immunodeficiency",
+            "score": 0.1569
+          },
+          {
+            "id": "ORPHA:47",
+            "label": "X-linked agammaglobulinemia",
+            "score": 0.1439
+          }
+        ]
+      }
+    }
+  ],
+  "_validationWarnings": [
+    {
+      "type": "sex_anatomy_conflict",
+      "severity": "critical",
+      "message": "Female-specific term 'para' found in male patient record",
+      "term": "para"
+    }
+  ],
+  "_pipelineStats": {
+    "totalEntities": 49,
+    "matchedHPO": 18,
+    "unmatchedEntities": 31,
+    "phenopacketFeatures": 14,
+    "negatedFeatures": 0,
+    "numericPhenotypes": 2,
+    "ordoCandidates": 5
+  }
+}

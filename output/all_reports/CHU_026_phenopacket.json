@@ -1,0 +1,127 @@
+{
+  "id": "phenopacket-CHU_026",
+  "subject": {
+    "id": "CHU_026",
+    "timeAtLastEncounter": {
+      "age": {
+        "iso8601duration": "P44Y"
+      }
+    }
+  },
+  "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0002098",
+        "label": "Respiratory distress",
+        "umls_cui": "C0013404"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "CHU_026",
+            "description": "NER: détresse respiratoire (0.687) | Match: french_exact (0.950)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0001252",
+        "label": "Muscular hypotonia",
+        "umls_cui": "C0026827"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "CHU_026",
+            "description": "NER: hypotonie axiale et segmentaire (0.530) | Match: french_partial (0.850)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0007269",
+        "label": "Spinal muscular atrophy",
+        "umls_cui": "C0026847"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "CHU_026",
+            "description": "NER: maladie neuromusculaire amyotrophie spinale (0.638) | Match: french_partial (0.850)"
+          }
+        }
+      ]
+    }
+  ],
+  "metaData": {
+    "created": "2026-05-18T06:10:59Z",
+    "createdBy": "clinical-preanalysis-pipeline-v2",
+    "phenopacketSchemaVersion": "2.0",
+    "resources": [
+      {
+        "id": "hp",
+        "name": "Human Phenotype Ontology",
+        "url": "https://hpo.jax.org",
+        "version": "2024-04-26",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      }
+    ]
+  },
+  "interpretations": [
+    {
+      "id": "interpretation-CHU_026",
+      "progressStatus": "IN_PROGRESS",
+      "diagnosis": {
+        "disease": {
+          "id": "ORPHA:70",
+          "label": "Spinal muscular atrophy"
+        },
+        "score": 0.1302,
+        "allCandidates": [
+          {
+            "id": "ORPHA:70",
+            "label": "Spinal muscular atrophy",
+            "score": 0.1302
+          },
+          {
+            "id": "ORPHA:98249",
+            "label": "Ehlers-Danlos syndrome, hypermobility type",
+            "score": 0.0853
+          },
+          {
+            "id": "ORPHA:183660",
+            "label": "Severe combined immunodeficiency",
+            "score": 0.0597
+          }
+        ]
+      }
+    }
+  ],
+  "_pipelineStats": {
+    "totalEntities": 31,
+    "matchedHPO": 6,
+    "unmatchedEntities": 25,
+    "phenopacketFeatures": 3,
+    "negatedFeatures": 0,
+    "numericPhenotypes": 0,
+    "ordoCandidates": 3
+  }
+}

@@ -1,0 +1,982 @@
+{
+  "note_id": "NOTE_003",
+  "language": "en",
+  "module1": {
+    "clean_text": "Patient Name: [PATIENT] [DATE] MRN: [ID] Sex: F\nDate of Service: [DATE] Dr. James O'Brien, Neurology\n\nCC: involuntary movements, personality changes\n\nHPI: [AGE] F brought by husband who reports 6mo progressive involuntary\n     movements of hands and face. Pt has become increasingly irritable, has\n     had 2 episodes of explosive anger (uncharacteristic per husband).\n     Difficulty w/ fine motor tasks - dropping things, can't button shirts.\n     Depression worsening despite sertraline 100mg. Father dx'ed w/ HD at\n     age [AGE] died at [AGE] Paternal uncle also affected.\n\n     Pt is aware of family hx but has avoided testing until now due to fear.\n\nPMH: depression (3 yrs), migraine w/ aura, anxiety\nMeds: sertraline 100mg daily, sumatriptan 50mg PRN\nAllergies: Codeine - nausea\n\nNeuro Exam:\n  - Mental status: alert, oriented x3. Flat affect. MMSE 24/30\n    (lost points: delayed recall 1/3, serial 7s, copy pentagon)\n  - Cranial nerves: intact. Impaired saccadic eye movements.\n  - Motor: involuntary choreiform movements bilateral UE > LE.\n    Difficulty maintaining grip. Tone mildly increased.\n  - Gait: wide-based, mildly ataxic. Impaired tandem walk.\n  - Reflexes: 3+ throughout, no clonus\n\nMRI brain: mild caudate atrophy bilaterally\n\nA/P: clinical presentation + FHx highly c/w Huntington Disease\n  1. Order HTT gene - CAG repeat analysis (Athena Diagnostics)\n  2. Genetic counseling referral - discuss implications for children\n  3. Start tetrabenazine 12.5mg BID for chorea, titrate as tolerated\n  4. Increase sertraline to 150mg\n  5. OT referral for adaptive strategies\n  6. Driving safety evaluation\n  7. Discuss advance directives at next visit\n  8. f/u 3 wks w/ genetic results",
+    "phi_map": {
+      "PATIENT": "MariaVasquez\nDOB:",
+      "DATE": [
+        "07/22/1984",
+        "03/28/2026\nPhysician:"
+      ],
+      "ID": "3349015",
+      "AGE": [
+        "42yo",
+        "45,",
+        "58."
+      ]
+    },
+    "patient_info": {
+      "sex": "female",
+      "age": "42"
+    }
+  },
+  "module3_warnings": {
+    "temporal": [],
+    "inconsistencies": []
+  },
+  "module4": {
+    "problem": [
+      {
+        "text": "involuntary movements",
+        "ner_score": 0.975,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0004305",
+        "hpo_name": "Involuntary movements",
+        "expanded_text": "involuntary movements",
+        "match_type": "exact_label",
+        "confidence": 1.0,
+        "matched": true,
+        "umls_cui": "C0235086"
+      },
+      {
+        "text": "personality changes",
+        "ner_score": 0.967,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0000751",
+        "hpo_name": "Personality changes",
+        "expanded_text": "personality changes",
+        "match_type": "exact_label",
+        "confidence": 1.0,
+        "matched": true,
+        "umls_cui": "C0240735"
+      },
+      {
+        "text": "progressive involuntary movements of hands and face",
+        "ner_score": 0.814,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0004305",
+        "hpo_name": "Involuntary movements",
+        "expanded_text": "progressive involuntary movements of hands and face",
+        "match_type": "substring_match",
+        "confidence": 0.95,
+        "matched": true,
+        "umls_cui": "C0235086"
+      },
+      {
+        "text": "increasingly irritable",
+        "ner_score": 0.925,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "increasingly irritable",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "explosive anger",
+        "ner_score": 0.992,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "explosive anger",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "difficulty",
+        "ner_score": 0.603,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "difficulty",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "dropping things",
+        "ner_score": 0.812,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "dropping things",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "depression worsening",
+        "ner_score": 0.976,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "depression worsening",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "hd",
+        "ner_score": 0.759,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "hd",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "fear",
+        "ner_score": 0.956,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0000756",
+        "hpo_name": "Agoraphobia",
+        "expanded_text": "fear",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.8111,
+        "matched": true,
+        "umls_cui": "C0001818"
+      },
+      {
+        "text": "depression",
+        "ner_score": 0.997,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0000716",
+        "hpo_name": "Depression",
+        "expanded_text": "depression",
+        "match_type": "exact_label",
+        "confidence": 1.0,
+        "matched": true,
+        "umls_cui": "C0011581"
+      },
+      {
+        "text": "migraine",
+        "ner_score": 0.995,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0002076",
+        "hpo_name": "Migraine",
+        "expanded_text": "migraine",
+        "match_type": "exact_label",
+        "confidence": 1.0,
+        "matched": true,
+        "umls_cui": "C0149931"
+      },
+      {
+        "text": "aura",
+        "ner_score": 0.971,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "aura",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "allergies",
+        "ner_score": 0.776,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0012393",
+        "hpo_name": "Allergy",
+        "expanded_text": "allergies",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.9598,
+        "matched": true,
+        "umls_cui": "C1527304"
+      },
+      {
+        "text": "nausea",
+        "ner_score": 0.946,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0002018",
+        "hpo_name": "Nausea",
+        "expanded_text": "nausea",
+        "match_type": "exact_label",
+        "confidence": 1.0,
+        "matched": true,
+        "umls_cui": "C0027497"
+      },
+      {
+        "text": "flat affect",
+        "ner_score": 0.677,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "flat affect",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "recall",
+        "ner_score": 0.424,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "recall",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "impaired saccadic eye movements",
+        "ner_score": 0.994,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0000570",
+        "hpo_name": "Abnormal saccadic eye movements",
+        "expanded_text": "impaired saccadic eye movements",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.9452,
+        "matched": true,
+        "umls_cui": "C1842584"
+      },
+      {
+        "text": "involuntary choreiform movements",
+        "ner_score": 0.89,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0002072",
+        "hpo_name": "Chorea",
+        "expanded_text": "involuntary choreiform movements",
+        "match_type": "substring_match",
+        "confidence": 0.95,
+        "matched": true,
+        "umls_cui": "C0008489"
+      },
+      {
+        "text": "le",
+        "ner_score": 0.68,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "lower extremity",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "difficulty maintaining grip",
+        "ner_score": 0.993,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "difficulty maintaining grip",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "tone mildly increased",
+        "ner_score": 0.96,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "tone mildly increased",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "wide - based",
+        "ner_score": 0.924,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "wide - based",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "mildly ataxic",
+        "ner_score": 0.985,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "mildly ataxic",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "impaired tandem walk",
+        "ner_score": 0.979,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "impaired tandem walk",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "clonus",
+        "ner_score": 0.996,
+        "negated": true,
+        "negation_cue": "no",
+        "hpo_id": "HP:0002169",
+        "hpo_name": "Clonus",
+        "expanded_text": "clonus",
+        "match_type": "exact_label",
+        "confidence": 1.0,
+        "matched": true,
+        "umls_cui": "C0009024"
+      },
+      {
+        "text": "mild caudate atrophy",
+        "ner_score": 0.999,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0002340",
+        "hpo_name": "Caudate atrophy",
+        "expanded_text": "mild caudate atrophy",
+        "match_type": "substring_match",
+        "confidence": 0.95,
+        "matched": true,
+        "umls_cui": "C1858116"
+      },
+      {
+        "text": "huntington disease",
+        "ner_score": 0.997,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "huntington disease",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "chorea",
+        "ner_score": 0.996,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0002072",
+        "hpo_name": "Chorea",
+        "expanded_text": "chorea",
+        "match_type": "exact_label",
+        "confidence": 1.0,
+        "matched": true,
+        "umls_cui": "C0008489"
+      }
+    ],
+    "test": [
+      {
+        "text": "fine motor tasks",
+        "ner_score": 0.756,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "fine motor tasks",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "testing",
+        "ner_score": 0.831,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "testing",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "codeine",
+        "ner_score": 0.967,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "codeine",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "neuro exam",
+        "ner_score": 0.799,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "neuro exam",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "mmse",
+        "ner_score": 0.987,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "mmse",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "delayed",
+        "ner_score": 0.574,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "delayed",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "serial",
+        "ner_score": 0.855,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "serial",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "copy",
+        "ner_score": 0.527,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "copy",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "reflexes",
+        "ner_score": 0.981,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0002476",
+        "hpo_name": "Primitive reflex",
+        "expanded_text": "reflexes",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.8763,
+        "matched": true,
+        "umls_cui": "C1838319"
+      },
+      {
+        "text": "mri brain",
+        "ner_score": 0.834,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "mri brain",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "htt gene",
+        "ner_score": 0.541,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "htt gene",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "cag repeat analysis",
+        "ner_score": 0.918,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "cag repeat analysis",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "athena diagnostics",
+        "ner_score": 0.877,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "athena diagnostics",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "driving safety evaluation",
+        "ner_score": 0.966,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "driving safety evaluation",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      }
+    ],
+    "treatment": [
+      {
+        "text": "sertraline",
+        "ner_score": 0.999,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "sertraline",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "sumatriptan",
+        "ner_score": 0.999,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "sumatriptan",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "genetic counseling",
+        "ner_score": 0.621,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "genetic counseling",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "tetrabenazine",
+        "ner_score": 0.999,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "tetrabenazine",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "adaptive strategies",
+        "ner_score": 0.758,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "adaptive strategies",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      }
+    ],
+    "ordo_candidates": [
+      {
+        "ordo_id": "ORPHA:399",
+        "name": "Huntington disease",
+        "name_fr": "",
+        "score": 0.1944,
+        "jaccard": 0.1111,
+        "coverage": 0.25,
+        "matched_hpo": [
+          "HP:0000716",
+          "HP:0002072"
+        ],
+        "matched_count": 2,
+        "total_disease_hpo": 8
+      }
+    ],
+    "stats": {
+      "total": 48,
+      "matched": 14,
+      "unmatched": 34,
+      "match_rate": 29.2,
+      "unique_hpo": 12,
+      "ordo_matches": 1
+    }
+  },
+  "phenopacket": {
+    "id": "phenopacket-NOTE_003",
+    "subject": {
+      "id": "NOTE_003",
+      "sex": "FEMALE",
+      "timeAtLastEncounter": {
+        "age": {
+          "iso8601duration": "P42Y"
+        }
+      }
+    },
+    "phenotypicFeatures": [
+      {
+        "type": {
+          "id": "HP:0004305",
+          "label": "Involuntary movements",
+          "umls_cui": "C0235086"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "NOTE_003",
+              "description": "NER: involuntary movements (0.975) | Match: exact_label (1.000)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0000751",
+          "label": "Personality changes",
+          "umls_cui": "C0240735"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "NOTE_003",
+              "description": "NER: personality changes (0.967) | Match: exact_label (1.000)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0000756",
+          "label": "Agoraphobia",
+          "umls_cui": "C0001818"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "NOTE_003",
+              "description": "NER: fear (0.956) | Match: sapbert_similarity (0.811)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0000716",
+          "label": "Depression",
+          "umls_cui": "C0011581"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "NOTE_003",
+              "description": "NER: depression (0.997) | Match: exact_label (1.000)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0002076",
+          "label": "Migraine",
+          "umls_cui": "C0149931"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "NOTE_003",
+              "description": "NER: migraine (0.995) | Match: exact_label (1.000)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0012393",
+          "label": "Allergy",
+          "umls_cui": "C1527304"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "NOTE_003",
+              "description": "NER: allergies (0.776) | Match: sapbert_similarity (0.960)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0002018",
+          "label": "Nausea",
+          "umls_cui": "C0027497"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "NOTE_003",
+              "description": "NER: nausea (0.946) | Match: exact_label (1.000)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0000570",
+          "label": "Abnormal saccadic eye movements",
+          "umls_cui": "C1842584"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "NOTE_003",
+              "description": "NER: impaired saccadic eye movements (0.994) | Match: sapbert_similarity (0.945)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0002072",
+          "label": "Chorea",
+          "umls_cui": "C0008489"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "NOTE_003",
+              "description": "NER: involuntary choreiform movements (0.890) | Match: substring_match (0.950)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0002169",
+          "label": "Clonus",
+          "umls_cui": "C0009024"
+        },
+        "excluded": true,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "NOTE_003",
+              "description": "NER: clonus (0.996) | Match: exact_label (1.000) | Negated by: \"no\""
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0002340",
+          "label": "Caudate atrophy",
+          "umls_cui": "C1858116"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "NOTE_003",
+              "description": "NER: mild caudate atrophy (0.999) | Match: substring_match (0.950)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0002476",
+          "label": "Primitive reflex",
+          "umls_cui": "C1838319"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "NOTE_003",
+              "description": "NER: reflexes (0.981) | Match: sapbert_similarity (0.876)"
+            }
+          }
+        ]
+      }
+    ],
+    "metaData": {
+      "created": "2026-05-18T06:04:52Z",
+      "createdBy": "clinical-preanalysis-pipeline-v2",
+      "phenopacketSchemaVersion": "2.0",
+      "resources": [
+        {
+          "id": "hp",
+          "name": "Human Phenotype Ontology",
+          "url": "https://hpo.jax.org",
+          "version": "2024-04-26",
+          "namespacePrefix": "HP",
+          "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        }
+      ]
+    },
+    "interpretations": [
+      {
+        "id": "interpretation-NOTE_003",
+        "progressStatus": "IN_PROGRESS",
+        "diagnosis": {
+          "disease": {
+            "id": "ORPHA:399",
+            "label": "Huntington disease"
+          },
+          "score": 0.1944,
+          "allCandidates": [
+            {
+              "id": "ORPHA:399",
+              "label": "Huntington disease",
+              "score": 0.1944
+            }
+          ]
+        }
+      }
+    ],
+    "_pipelineStats": {
+      "totalEntities": 48,
+      "matchedHPO": 14,
+      "unmatchedEntities": 34,
+      "phenopacketFeatures": 12,
+      "negatedFeatures": 1,
+      "numericPhenotypes": 0,
+      "ordoCandidates": 1
+    }
+  }
+}

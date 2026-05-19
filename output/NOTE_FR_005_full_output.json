@@ -1,0 +1,549 @@
+{
+  "note_id": "NOTE_FR_005",
+  "language": "fr",
+  "module1": {
+    "clean_text": "Compte Rendu d'hospitalisation (cure d'immunoglobuline)\nLe nourrisson [PATIENT], âgée de 2 ans et 2 mois, originaire et demeurant à [LOCATION], issue d'un couple jeune consanguins du 2eme degré, suivie à notre niveau pour la prise en charge d'un déficit immunitaire primitif combiné sévère type HLADR [DOCTOR] 2025, admise ce jour pour la cure d'immunoglobuline N 12.\nDiagnostic principal : déficit immunitaire primitif DIP type HLADR\n[DOCTOR] : aucun\nDate du diagnostic : juin 2025\nÉléments de diagnostic :\nClinique :\nInfections respiratoires à répétition depuis l'âge de 03 mois\nDiarrhées chroniques\nRetard staturo-pondéral\nParaclinique :\nBilan immunologique : déficit en molécules HLA de classe II\nDéficit profond en lymphocytes T CD4+\nTraitement en cours :\nBactrim prophylactique\nCures d'immunoglobulines mensuelles\nEXAMEN CLINIQUE À L'ADMISSION :\nPoids: 08,500 kg (-2,5 DS) Taille: 79 cm (-2,1 DS)\nMalnutrition modérée\nÉtat général conservé, apyrétique T : 36.8° C\nExamen de la peau : pâleur cutanéo-muqueuse modérée, pas de lésions cutanées\nExamen ORL : gorge propre, pas d'ADP\nExamen pleuro pulmonaire : FR : 28 c/min, pas de signes de détresse respiratoire\nAuscultation : quelques râles bronchiques bilatéraux\nSPO2 : 97% sous AA\nExamen cardiovasculaire : FC : 120 b/min, B1B2 audibles, pas de souffles\nExamen abdominal : souple, transit conservé, pas d'organomégalie\nNFS : GB: 6500 (PNN: 3200 Lymph: 1800) Hb: 10.5 g/dl Plaquettes: 250000\nCRP : négative",
+    "phi_map": {
+      "PATIENT": "Abdoune Lyne Hasnia",
+      "DOCTOR": [
+        "depuis juin",
+        "Diagnostics associés"
+      ],
+      "LOCATION": "Saida"
+    },
+    "patient_info": {
+      "age": "2",
+      "age_unit": "years"
+    }
+  },
+  "module3_warnings": {
+    "temporal": [],
+    "inconsistencies": []
+  },
+  "module4": {
+    "problem": [
+      {
+        "text": "déficit immunitaire primitif combiné sévère type HLADR",
+        "ner_score": 0.471,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0004430",
+        "hpo_name": "Severe combined immunodeficiency",
+        "expanded_text": "déficit immunitaire primitif combiné sévère type HLADR",
+        "match_type": "french_partial",
+        "confidence": 0.85,
+        "matched": true,
+        "umls_cui": "C0085110"
+      },
+      {
+        "text": "Infections respiratoires à répétition",
+        "ner_score": 0.48,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0002205",
+        "hpo_name": "Recurrent respiratory infections",
+        "expanded_text": "Infections respiratoires à répétition",
+        "match_type": "french_exact",
+        "confidence": 0.95,
+        "matched": true,
+        "umls_cui": "C3806482"
+      },
+      {
+        "text": "Diarrhées chroniques",
+        "ner_score": 0.434,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0002035",
+        "hpo_name": "Chronic diarrhea",
+        "expanded_text": "Diarrhées chroniques",
+        "match_type": "french_exact",
+        "confidence": 0.95,
+        "matched": true,
+        "umls_cui": "C0034888"
+      },
+      {
+        "text": "Malnutrition modérée",
+        "ner_score": 0.461,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0001508",
+        "hpo_name": "Failure to thrive",
+        "expanded_text": "Malnutrition modérée",
+        "match_type": "french_exact",
+        "confidence": 0.95,
+        "matched": true,
+        "umls_cui": "C0231246"
+      },
+      {
+        "text": "apyrétique",
+        "ner_score": 0.5,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "apyrétique",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "pâleur cutanéo-muqueuse modérée",
+        "ner_score": 0.641,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0000980",
+        "hpo_name": "Pallor",
+        "expanded_text": "pâleur cutanéo-muqueuse modérée",
+        "match_type": "french_partial",
+        "confidence": 0.85,
+        "matched": true,
+        "umls_cui": "C0030232"
+      }
+    ],
+    "treatment": [
+      {
+        "text": "immunoglobuline",
+        "ner_score": 0.731,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "immunoglobuline",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "immunoglobuline N 12",
+        "ner_score": 0.888,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "immunoglobuline N 12",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "Bactrim prophylactique",
+        "ner_score": 0.849,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "Bactrim prophylactique",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      }
+    ],
+    "test": [
+      {
+        "text": "Bilan immunologique",
+        "ner_score": 0.729,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "Bilan immunologique",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "EXAMEN CLINIQUE",
+        "ner_score": 0.433,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "EXAMEN CLINIQUE",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "Examen ORL",
+        "ner_score": 0.602,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "Examen ORL",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "Examen pleuro pulmonaire",
+        "ner_score": 0.644,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "Examen pleuro pulmonaire",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "Auscultation",
+        "ner_score": 0.428,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "Auscultation",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "Examen cardiovasculaire",
+        "ner_score": 0.596,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "Examen cardiovasculaire",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "Examen abdominal",
+        "ner_score": 0.563,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "Examen abdominal",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "NFS",
+        "ner_score": 0.572,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "numération formule sanguine",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      }
+    ],
+    "numeric_phenotypes": [
+      {
+        "hpo_id": "HP:0001903",
+        "hpo_name": "Anemia",
+        "value": 10.5,
+        "unit": "g/dL",
+        "description": "Hemoglobin < 12.0 g/dL",
+        "source": "Hb: 10.5 g/dl",
+        "match_type": "numeric_inference",
+        "confidence": 1.0
+      }
+    ],
+    "ordo_candidates": [
+      {
+        "ordo_id": "ORPHA:572",
+        "name": "MHC class II deficiency",
+        "name_fr": "Déficit en molécules HLA de classe II",
+        "score": 0.5455,
+        "jaccard": 0.5455,
+        "coverage": 0.5455,
+        "matched_hpo": [
+          "HP:0000980",
+          "HP:0001508",
+          "HP:0001903",
+          "HP:0002035",
+          "HP:0002205",
+          "HP:0004430"
+        ],
+        "matched_count": 6,
+        "total_disease_hpo": 11
+      },
+      {
+        "ordo_id": "ORPHA:183660",
+        "name": "Severe combined immunodeficiency",
+        "name_fr": "Déficit immunitaire combiné sévère (DICS)",
+        "score": 0.375,
+        "jaccard": 0.375,
+        "coverage": 0.375,
+        "matched_hpo": [
+          "HP:0000980",
+          "HP:0001508",
+          "HP:0001903",
+          "HP:0002035",
+          "HP:0002205",
+          "HP:0004430"
+        ],
+        "matched_count": 6,
+        "total_disease_hpo": 16
+      },
+      {
+        "ordo_id": "ORPHA:586",
+        "name": "Cystic fibrosis",
+        "name_fr": "Mucoviscidose",
+        "score": 0.3143,
+        "jaccard": 0.2857,
+        "coverage": 0.3333,
+        "matched_hpo": [
+          "HP:0001508",
+          "HP:0001903",
+          "HP:0002035",
+          "HP:0002205"
+        ],
+        "matched_count": 4,
+        "total_disease_hpo": 12
+      },
+      {
+        "ordo_id": "ORPHA:47",
+        "name": "X-linked agammaglobulinemia",
+        "name_fr": "Agammaglobulinémie congénitale (maladie de Bruton)",
+        "score": 0.1624,
+        "jaccard": 0.1333,
+        "coverage": 0.1818,
+        "matched_hpo": [
+          "HP:0002205",
+          "HP:0004430"
+        ],
+        "matched_count": 2,
+        "total_disease_hpo": 11
+      },
+      {
+        "ordo_id": "ORPHA:94065",
+        "name": "Gaucher disease type 1",
+        "name_fr": "",
+        "score": 0.1364,
+        "jaccard": 0.0909,
+        "coverage": 0.1667,
+        "matched_hpo": [
+          "HP:0001903"
+        ],
+        "matched_count": 1,
+        "total_disease_hpo": 6
+      }
+    ],
+    "stats": {
+      "total": 17,
+      "matched": 5,
+      "unmatched": 12,
+      "match_rate": 29.4,
+      "unique_hpo": 6,
+      "ordo_matches": 5
+    }
+  },
+  "phenopacket": {
+    "id": "phenopacket-NOTE_FR_005",
+    "subject": {
+      "id": "NOTE_FR_005",
+      "timeAtLastEncounter": {
+        "age": {
+          "iso8601duration": "P2Y"
+        }
+      }
+    },
+    "phenotypicFeatures": [
+      {
+        "type": {
+          "id": "HP:0004430",
+          "label": "Severe combined immunodeficiency",
+          "umls_cui": "C0085110"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "NOTE_FR_005",
+              "description": "NER: déficit immunitaire primitif combiné sévère type HLADR (0.471) | Match: french_partial (0.850)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0002205",
+          "label": "Recurrent respiratory infections",
+          "umls_cui": "C3806482"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "NOTE_FR_005",
+              "description": "NER: Infections respiratoires à répétition (0.480) | Match: french_exact (0.950)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0002035",
+          "label": "Chronic diarrhea",
+          "umls_cui": "C0034888"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "NOTE_FR_005",
+              "description": "NER: Diarrhées chroniques (0.434) | Match: french_exact (0.950)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0001508",
+          "label": "Failure to thrive",
+          "umls_cui": "C0231246"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "NOTE_FR_005",
+              "description": "NER: Malnutrition modérée (0.461) | Match: french_exact (0.950)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0000980",
+          "label": "Pallor",
+          "umls_cui": "C0030232"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "NOTE_FR_005",
+              "description": "NER: pâleur cutanéo-muqueuse modérée (0.641) | Match: french_partial (0.850)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0001903",
+          "label": "Anemia"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "NOTE_FR_005",
+              "description": "Numeric: Hb: 10.5 g/dl → Hemoglobin < 12.0 g/dL"
+            }
+          }
+        ]
+      }
+    ],
+    "metaData": {
+      "created": "2026-05-18T06:01:32Z",
+      "createdBy": "clinical-preanalysis-pipeline-v2",
+      "phenopacketSchemaVersion": "2.0",
+      "resources": [
+        {
+          "id": "hp",
+          "name": "Human Phenotype Ontology",
+          "url": "https://hpo.jax.org",
+          "version": "2024-04-26",
+          "namespacePrefix": "HP",
+          "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        }
+      ]
+    },
+    "interpretations": [
+      {
+        "id": "interpretation-NOTE_FR_005",
+        "progressStatus": "IN_PROGRESS",
+        "diagnosis": {
+          "disease": {
+            "id": "ORPHA:572",
+            "label": "MHC class II deficiency"
+          },
+          "score": 0.5455,
+          "allCandidates": [
+            {
+              "id": "ORPHA:572",
+              "label": "MHC class II deficiency",
+              "score": 0.5455
+            },
+            {
+              "id": "ORPHA:183660",
+              "label": "Severe combined immunodeficiency",
+              "score": 0.375
+            },
+            {
+              "id": "ORPHA:586",
+              "label": "Cystic fibrosis",
+              "score": 0.3143
+            },
+            {
+              "id": "ORPHA:47",
+              "label": "X-linked agammaglobulinemia",
+              "score": 0.1624
+            },
+            {
+              "id": "ORPHA:94065",
+              "label": "Gaucher disease type 1",
+              "score": 0.1364
+            }
+          ]
+        }
+      }
+    ],
+    "_pipelineStats": {
+      "totalEntities": 17,
+      "matchedHPO": 5,
+      "unmatchedEntities": 12,
+      "phenopacketFeatures": 6,
+      "negatedFeatures": 0,
+      "numericPhenotypes": 1,
+      "ordoCandidates": 5
+    }
+  }
+}

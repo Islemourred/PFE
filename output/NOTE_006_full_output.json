@@ -1,0 +1,670 @@
+{
+  "note_id": "NOTE_006",
+  "language": "en",
+  "module1": {
+    "clean_text": "Pt: [PATIENT] [DATE] MRN: [ID] Sex: F\nDate: [DATE] Dr. Hassan El-Amin, Endocrinology\n\nCC: dizziness, confusion\n\nHPI: [AGE] F w/ poorly controlled DM2 presents w/ episodic dizziness and\n     confusion x 2 wks. Also reports headaches and visual changes.\n\nLabs:\n  - fasting glucose: 42 mg/dL (critically low - symptomatic hypoglycemia)\n  - HbA1c: 11.2% (indicates chronic severe hyperglycemia)\n  - simultaneous C-peptide: 0.8 ng/mL (low)\n\nVitals: BP 182/108 sitting, BP 78/50 standing (orthostatic hypotension\n        with documented hypertension)\n\nMeds: metformin 1000mg BID, glipizide 10mg BID, insulin glargine 40 units QHS\n\nA/P:\n  1. Hypoglycemia - likely glipizide/insulin overlap. Hold glipizide.\n  2. Chronic hyperglycemia per HbA1c despite hypoglycemic episodes -\n     consider glycemic variability, brittle diabetes workup\n  3. Hypertension w/ orthostatic hypotension - r/o autonomic neuropathy.\n     Start midodrine 5mg TID for orthostasis. Continue lisinopril.\n  4. CGM placement for glucose patterns\n  5. Endocrine f/u 2 wks",
+    "phi_map": {
+      "PATIENT": "NadiaBouzid\nDOB:",
+      "DATE": [
+        "04/15/1988",
+        "04/05/2026\nProvider:"
+      ],
+      "ID": "6673421",
+      "AGE": "38yo"
+    },
+    "patient_info": {
+      "sex": "female",
+      "age": "38"
+    }
+  },
+  "module3_warnings": {
+    "temporal": [],
+    "inconsistencies": [
+      {
+        "type": "lab_value_conflict",
+        "severity": "warning",
+        "message": "Acute hypoglycemia with elevated HbA1c — consider glycemic variability or brittle diabetes"
+      }
+    ]
+  },
+  "module4": {
+    "problem": [
+      {
+        "text": "dizziness",
+        "ner_score": 0.997,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0002321",
+        "hpo_name": "Vertigo",
+        "expanded_text": "dizziness",
+        "match_type": "related_synonym",
+        "confidence": 1.0,
+        "matched": true,
+        "umls_cui": "C0012833"
+      },
+      {
+        "text": "confusion",
+        "ner_score": 0.992,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0001289",
+        "hpo_name": "Confusion",
+        "expanded_text": "confusion",
+        "match_type": "exact_label",
+        "confidence": 1.0,
+        "matched": true,
+        "umls_cui": "C0009676"
+      },
+      {
+        "text": "poorly controlled dm2",
+        "ner_score": 0.995,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "poorly controlled dm2",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "episodic dizziness",
+        "ner_score": 0.999,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "episodic dizziness",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "headaches",
+        "ner_score": 0.999,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0002315",
+        "hpo_name": "Headache",
+        "expanded_text": "headaches",
+        "match_type": "exact_synonym",
+        "confidence": 1.0,
+        "matched": true,
+        "umls_cui": "C0018681"
+      },
+      {
+        "text": "visual changes",
+        "ner_score": 0.997,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "visual changes",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "critically low - symptomatic hypoglycemia",
+        "ner_score": 0.887,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "critically low - symptomatic hypoglycemia",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "chronic severe hyperglycemia",
+        "ner_score": 0.998,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "chronic severe hyperglycemia",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "orthostatic hypotension",
+        "ner_score": 0.78,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0001278",
+        "hpo_name": "Orthostatic hypotension",
+        "expanded_text": "orthostatic hypotension",
+        "match_type": "exact_label",
+        "confidence": 1.0,
+        "matched": true,
+        "umls_cui": "C0020651"
+      },
+      {
+        "text": "documented hypertension",
+        "ner_score": 0.986,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "documented hypertension",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "hypoglycemia",
+        "ner_score": 0.999,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0001943",
+        "hpo_name": "Hypoglycemia",
+        "expanded_text": "hypoglycemia",
+        "match_type": "exact_label",
+        "confidence": 1.0,
+        "matched": true,
+        "umls_cui": "C0020615"
+      },
+      {
+        "text": "insulin overlap",
+        "ner_score": 0.782,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "insulin overlap",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "chronic hyperglycemia",
+        "ner_score": 0.999,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "chronic hyperglycemia",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "hypoglycemic episodes",
+        "ner_score": 0.999,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0001988",
+        "hpo_name": "Recurrent hypoglycemia",
+        "expanded_text": "hypoglycemic episodes",
+        "match_type": "exact_synonym",
+        "confidence": 1.0,
+        "matched": true,
+        "umls_cui": "C1846288"
+      },
+      {
+        "text": "glycemic variability",
+        "ner_score": 0.994,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "glycemic variability",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "brittle diabetes workup",
+        "ner_score": 0.944,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "brittle diabetes workup",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "hypertension",
+        "ner_score": 0.999,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0000822",
+        "hpo_name": "Hypertension",
+        "expanded_text": "hypertension",
+        "match_type": "exact_label",
+        "confidence": 1.0,
+        "matched": true,
+        "umls_cui": "C0020538"
+      },
+      {
+        "text": "autonomic neuropathy",
+        "ner_score": 0.999,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0012332",
+        "hpo_name": "Abnormal autonomic nervous system physiology",
+        "expanded_text": "autonomic neuropathy",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.8535,
+        "matched": true,
+        "umls_cui": "C4022952"
+      },
+      {
+        "text": "orthostasis",
+        "ner_score": 0.996,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "orthostasis",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      }
+    ],
+    "test": [
+      {
+        "text": "c - peptide",
+        "ner_score": 0.692,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "c - peptide",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "bp",
+        "ner_score": 0.969,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "blood pressure",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "glucose patterns",
+        "ner_score": 0.598,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "glucose patterns",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      }
+    ],
+    "treatment": [
+      {
+        "text": "metformin",
+        "ner_score": 0.999,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "metformin",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "glipizide",
+        "ner_score": 0.999,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "glipizide",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "insulin glargine",
+        "ner_score": 0.995,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "insulin glargine",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "midodrine",
+        "ner_score": 0.999,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "midodrine",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "lisinopril",
+        "ner_score": 0.998,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "lisinopril",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "cgm placement",
+        "ner_score": 0.98,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "cgm placement",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "endocrine",
+        "ner_score": 0.908,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "endocrine",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      }
+    ],
+    "numeric_phenotypes": [
+      {
+        "hpo_id": "HP:0001943",
+        "hpo_name": "Hypoglycemia",
+        "value": 42.0,
+        "unit": "mg/dL",
+        "description": "Glucose < 70 mg/dL",
+        "source": "fasting glucose: 42 mg/dL",
+        "match_type": "numeric_inference",
+        "confidence": 1.0
+      },
+      {
+        "hpo_id": "HP:0003074",
+        "hpo_name": "Hyperglycemia",
+        "value": 11.2,
+        "unit": "%",
+        "description": "HbA1c > 6.5% (chronic hyperglycemia)",
+        "source": "HbA1c: 11.2%",
+        "match_type": "numeric_inference",
+        "confidence": 1.0
+      }
+    ],
+    "ordo_candidates": [],
+    "stats": {
+      "total": 29,
+      "matched": 8,
+      "unmatched": 21,
+      "match_rate": 27.6,
+      "unique_hpo": 9,
+      "ordo_matches": 0
+    }
+  },
+  "phenopacket": {
+    "id": "phenopacket-NOTE_006",
+    "subject": {
+      "id": "NOTE_006",
+      "sex": "FEMALE",
+      "timeAtLastEncounter": {
+        "age": {
+          "iso8601duration": "P38Y"
+        }
+      }
+    },
+    "phenotypicFeatures": [
+      {
+        "type": {
+          "id": "HP:0002321",
+          "label": "Vertigo",
+          "umls_cui": "C0012833"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "NOTE_006",
+              "description": "NER: dizziness (0.997) | Match: related_synonym (1.000)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0001289",
+          "label": "Confusion",
+          "umls_cui": "C0009676"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "NOTE_006",
+              "description": "NER: confusion (0.992) | Match: exact_label (1.000)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0002315",
+          "label": "Headache",
+          "umls_cui": "C0018681"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "NOTE_006",
+              "description": "NER: headaches (0.999) | Match: exact_synonym (1.000)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0001278",
+          "label": "Orthostatic hypotension",
+          "umls_cui": "C0020651"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "NOTE_006",
+              "description": "NER: orthostatic hypotension (0.780) | Match: exact_label (1.000)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0001943",
+          "label": "Hypoglycemia",
+          "umls_cui": "C0020615"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "NOTE_006",
+              "description": "NER: hypoglycemia (0.999) | Match: exact_label (1.000)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0001988",
+          "label": "Recurrent hypoglycemia",
+          "umls_cui": "C1846288"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "NOTE_006",
+              "description": "NER: hypoglycemic episodes (0.999) | Match: exact_synonym (1.000)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0000822",
+          "label": "Hypertension",
+          "umls_cui": "C0020538"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "NOTE_006",
+              "description": "NER: hypertension (0.999) | Match: exact_label (1.000)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0012332",
+          "label": "Abnormal autonomic nervous system physiology",
+          "umls_cui": "C4022952"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "NOTE_006",
+              "description": "NER: autonomic neuropathy (0.999) | Match: sapbert_similarity (0.854)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0003074",
+          "label": "Hyperglycemia"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "NOTE_006",
+              "description": "Numeric: HbA1c: 11.2% → HbA1c > 6.5% (chronic hyperglycemia)"
+            }
+          }
+        ]
+      }
+    ],
+    "metaData": {
+      "created": "2026-05-18T06:05:01Z",
+      "createdBy": "clinical-preanalysis-pipeline-v2",
+      "phenopacketSchemaVersion": "2.0",
+      "resources": [
+        {
+          "id": "hp",
+          "name": "Human Phenotype Ontology",
+          "url": "https://hpo.jax.org",
+          "version": "2024-04-26",
+          "namespacePrefix": "HP",
+          "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        }
+      ]
+    },
+    "_validationWarnings": [
+      {
+        "type": "lab_value_conflict",
+        "severity": "warning",
+        "message": "Acute hypoglycemia with elevated HbA1c — consider glycemic variability or brittle diabetes"
+      }
+    ],
+    "_pipelineStats": {
+      "totalEntities": 29,
+      "matchedHPO": 8,
+      "unmatchedEntities": 21,
+      "phenopacketFeatures": 9,
+      "negatedFeatures": 0,
+      "numericPhenotypes": 2,
+      "ordoCandidates": 0
+    }
+  }
+}

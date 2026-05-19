@@ -1,0 +1,878 @@
+{
+  "note_id": "NOTE_001",
+  "language": "en",
+  "module1": {
+    "clean_text": "Patient: [PATIENT] [DATE] MRN: [ID] Sex: F\n\nDate: [DATE] Dr. Rebecca Thornton, Genetics\n\nCC: joint pain, skin tears easily\n\nHPI: [AGE] F referred by Dr. Kaplan (rheumatology) for eval of chronic joint\n     problems. Pt reports hx of bilateral shoulder dislocations x4 since age [AGE] R knee subluxation x2, chronic low back pain. Skin is \"paper thin\" per pt,\n     bruises easily with minimal trauma. Mother has similar sx - never diagnosed.\n     Beighton score 8/9 today.\n\nPMH: bilateral shoulder instability, chronic pain syndrome, GERD\nMeds: naproxen 500mg BID, omeprazole 20mg daily\nAllergies: NKDA\nFHx: mother w/ joint hypermobility, easy bruising. MGM w/ \"loose joints\"\n\nPE: skin hyperextensible at forearms (~4cm). Molluscoid pseudotumors at elbows.\n    Joint hypermobility: thumbs to forearms bilat, knees hyperextend >10deg,\n    elbows hyperextend >10deg, palms flat on floor. Multiple ecchymoses on shins.\n\nA/P: clinical picture c/w Ehlers-Danlos Syndrome, hypermobility type (hEDS).\n     1. Send COL5A1, COL5A2 genetic panel - Quest\n     2. PT referral for joint stabilization program\n     3. Continue naproxen, add duloxetine 30mg for chronic pain\n     4. Avoid contact sports, wt lifting\n     5. Refer ophtho for lens subluxation screening\n     6. f/u 6 wks w/ genetic results",
+    "phi_map": {
+      "PATIENT": "SarahMitchell\nDOB:",
+      "DATE": [
+        "05/14/2001",
+        "04/07/2026\nAttending:"
+      ],
+      "ID": "7834291",
+      "AGE": [
+        "25yo",
+        "16,"
+      ]
+    },
+    "patient_info": {
+      "sex": "female",
+      "age": "25"
+    }
+  },
+  "module3_warnings": {
+    "temporal": [],
+    "inconsistencies": []
+  },
+  "module4": {
+    "problem": [
+      {
+        "text": "joint pain",
+        "ner_score": 0.998,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0002829",
+        "hpo_name": "Arthralgia",
+        "expanded_text": "joint pain",
+        "match_type": "exact_synonym",
+        "confidence": 1.0,
+        "matched": true,
+        "umls_cui": "C0003862"
+      },
+      {
+        "text": "skin tears",
+        "ner_score": 0.996,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "skin tears",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "chronic joint problems",
+        "ner_score": 0.998,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "chronic joint problems",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "bilateral shoulder dislocations",
+        "ner_score": 0.998,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "bilateral shoulder dislocations",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "knee subluxation",
+        "ner_score": 0.812,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0010499",
+        "hpo_name": "Patellar subluxation",
+        "expanded_text": "knee subluxation",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.8546,
+        "matched": true,
+        "umls_cui": "C0857276"
+      },
+      {
+        "text": "chronic low back pain",
+        "ner_score": 0.998,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0003419",
+        "hpo_name": "Low back pain",
+        "expanded_text": "chronic low back pain",
+        "match_type": "substring_match",
+        "confidence": 0.95,
+        "matched": true,
+        "umls_cui": "C0024031"
+      },
+      {
+        "text": "paper thin",
+        "ner_score": 0.971,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "paper thin",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "bruises",
+        "ner_score": 0.977,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0000978",
+        "hpo_name": "Bruising susceptibility",
+        "expanded_text": "bruises",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.8042,
+        "matched": true,
+        "umls_cui": "C0013491"
+      },
+      {
+        "text": "minimal trauma",
+        "ner_score": 0.983,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "minimal trauma",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "sx",
+        "ner_score": 0.584,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "symptoms",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "bilateral shoulder instability",
+        "ner_score": 0.998,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "bilateral shoulder instability",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "chronic pain syndrome",
+        "ner_score": 0.998,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0012532",
+        "hpo_name": "Chronic pain",
+        "expanded_text": "chronic pain syndrome",
+        "match_type": "substring_match",
+        "confidence": 0.95,
+        "matched": true,
+        "umls_cui": "C0150055"
+      },
+      {
+        "text": "nkda",
+        "ner_score": 0.956,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "no known drug allergies",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "joint hypermobility",
+        "ner_score": 0.997,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0001382",
+        "hpo_name": "Joint hypermobility",
+        "expanded_text": "joint hypermobility",
+        "match_type": "exact_label",
+        "confidence": 1.0,
+        "matched": true,
+        "umls_cui": "C1844820"
+      },
+      {
+        "text": "easy bruising",
+        "ner_score": 0.984,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0000978",
+        "hpo_name": "Bruising susceptibility",
+        "expanded_text": "easy bruising",
+        "match_type": "exact_synonym",
+        "confidence": 1.0,
+        "matched": true,
+        "umls_cui": "C0013491"
+      },
+      {
+        "text": "loose joints",
+        "ner_score": 0.922,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0001388",
+        "hpo_name": "Joint laxity",
+        "expanded_text": "loose joints",
+        "match_type": "clinical_synonym",
+        "confidence": 1.0,
+        "matched": true,
+        "umls_cui": null
+      },
+      {
+        "text": "skin hyperextensible at forearms",
+        "ner_score": 0.985,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "skin hyperextensible at forearms",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "molluscoid pseudotumors at elbows",
+        "ner_score": 0.813,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0000993",
+        "hpo_name": "Molluscoid pseudotumors",
+        "expanded_text": "molluscoid pseudotumors at elbows",
+        "match_type": "substring_match",
+        "confidence": 0.95,
+        "matched": true,
+        "umls_cui": "C1844597"
+      },
+      {
+        "text": "knees hyperextend",
+        "ner_score": 0.794,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0010500",
+        "hpo_name": "Hyperextensibility of the knee",
+        "expanded_text": "knees hyperextend",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.8847,
+        "matched": true,
+        "umls_cui": "C4023802"
+      },
+      {
+        "text": "elbows hyperextend",
+        "ner_score": 0.771,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0010485",
+        "hpo_name": "Hyperextensibility at elbow",
+        "expanded_text": "elbows hyperextend",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.8968,
+        "matched": true,
+        "umls_cui": "C4023808"
+      },
+      {
+        "text": "multiple ecchymoses on shins",
+        "ner_score": 0.993,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "multiple ecchymoses on shins",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "ehlers - danlos syndrome",
+        "ner_score": 0.994,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "ehlers - danlos syndrome",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "hypermobility type",
+        "ner_score": 0.953,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0002761",
+        "hpo_name": "Generalized joint hypermobility",
+        "expanded_text": "hypermobility type",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.8081,
+        "matched": true,
+        "umls_cui": "C1836308"
+      },
+      {
+        "text": "col5a2",
+        "ner_score": 0.284,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "col5a2",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "chronic pain",
+        "ner_score": 0.998,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0012532",
+        "hpo_name": "Chronic pain",
+        "expanded_text": "chronic pain",
+        "match_type": "exact_label",
+        "confidence": 1.0,
+        "matched": true,
+        "umls_cui": "C0150055"
+      }
+    ],
+    "test": [
+      {
+        "text": "eval",
+        "ner_score": 0.799,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "eval",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "beighton",
+        "ner_score": 0.81,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "beighton",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "col5a1",
+        "ner_score": 0.355,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "col5a1",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "panel",
+        "ner_score": 0.733,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "panel",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "lens subluxation screening",
+        "ner_score": 0.925,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0001132",
+        "hpo_name": "Lens subluxation",
+        "expanded_text": "lens subluxation screening",
+        "match_type": "substring_match",
+        "confidence": 0.95,
+        "matched": true,
+        "umls_cui": "C0023316"
+      }
+    ],
+    "treatment": [
+      {
+        "text": "gerd meds",
+        "ner_score": 0.787,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "gerd meds",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "naproxen",
+        "ner_score": 0.998,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "naproxen",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "omeprazole",
+        "ner_score": 0.999,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "omeprazole",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "joint stabilization program",
+        "ner_score": 0.989,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "joint stabilization program",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "duloxetine",
+        "ner_score": 0.999,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "duloxetine",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "sports",
+        "ner_score": 0.468,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "sports",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "wt lifting",
+        "ner_score": 0.543,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "wt lifting",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      }
+    ],
+    "ordo_candidates": [
+      {
+        "ordo_id": "ORPHA:98249",
+        "name": "Ehlers-Danlos syndrome, hypermobility type",
+        "name_fr": "",
+        "score": 0.5568,
+        "jaccard": 0.4375,
+        "coverage": 0.6364,
+        "matched_hpo": [
+          "HP:0000978",
+          "HP:0001382",
+          "HP:0001388",
+          "HP:0002829",
+          "HP:0010485",
+          "HP:0010499",
+          "HP:0012532"
+        ],
+        "matched_count": 7,
+        "total_disease_hpo": 11
+      },
+      {
+        "ordo_id": "ORPHA:232",
+        "name": "Sickle cell disease",
+        "name_fr": "",
+        "score": 0.0961,
+        "jaccard": 0.0526,
+        "coverage": 0.125,
+        "matched_hpo": [
+          "HP:0002829"
+        ],
+        "matched_count": 1,
+        "total_disease_hpo": 8
+      },
+      {
+        "ordo_id": "ORPHA:906",
+        "name": "Wiskott-Aldrich syndrome",
+        "name_fr": "Syndrome de Wiskott-Aldrich",
+        "score": 0.0589,
+        "jaccard": 0.04,
+        "coverage": 0.0714,
+        "matched_hpo": [
+          "HP:0000978"
+        ],
+        "matched_count": 1,
+        "total_disease_hpo": 14
+      }
+    ],
+    "stats": {
+      "total": 37,
+      "matched": 14,
+      "unmatched": 23,
+      "match_rate": 37.8,
+      "unique_hpo": 12,
+      "ordo_matches": 3
+    }
+  },
+  "phenopacket": {
+    "id": "phenopacket-NOTE_001",
+    "subject": {
+      "id": "NOTE_001",
+      "sex": "FEMALE",
+      "timeAtLastEncounter": {
+        "age": {
+          "iso8601duration": "P25Y"
+        }
+      }
+    },
+    "phenotypicFeatures": [
+      {
+        "type": {
+          "id": "HP:0002829",
+          "label": "Arthralgia",
+          "umls_cui": "C0003862"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "NOTE_001",
+              "description": "NER: joint pain (0.998) | Match: exact_synonym (1.000)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0010499",
+          "label": "Patellar subluxation",
+          "umls_cui": "C0857276"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "NOTE_001",
+              "description": "NER: knee subluxation (0.812) | Match: sapbert_similarity (0.855)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0003419",
+          "label": "Low back pain",
+          "umls_cui": "C0024031"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "NOTE_001",
+              "description": "NER: chronic low back pain (0.998) | Match: substring_match (0.950)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0000978",
+          "label": "Bruising susceptibility",
+          "umls_cui": "C0013491"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "NOTE_001",
+              "description": "NER: bruises (0.977) | Match: sapbert_similarity (0.804)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0012532",
+          "label": "Chronic pain",
+          "umls_cui": "C0150055"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "NOTE_001",
+              "description": "NER: chronic pain syndrome (0.998) | Match: substring_match (0.950)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0001382",
+          "label": "Joint hypermobility",
+          "umls_cui": "C1844820"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "NOTE_001",
+              "description": "NER: joint hypermobility (0.997) | Match: exact_label (1.000)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0001388",
+          "label": "Joint laxity"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "NOTE_001",
+              "description": "NER: loose joints (0.922) | Match: clinical_synonym (1.000)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0000993",
+          "label": "Molluscoid pseudotumors",
+          "umls_cui": "C1844597"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "NOTE_001",
+              "description": "NER: molluscoid pseudotumors at elbows (0.813) | Match: substring_match (0.950)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0010500",
+          "label": "Hyperextensibility of the knee",
+          "umls_cui": "C4023802"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "NOTE_001",
+              "description": "NER: knees hyperextend (0.794) | Match: sapbert_similarity (0.885)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0010485",
+          "label": "Hyperextensibility at elbow",
+          "umls_cui": "C4023808"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "NOTE_001",
+              "description": "NER: elbows hyperextend (0.771) | Match: sapbert_similarity (0.897)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0002761",
+          "label": "Generalized joint hypermobility",
+          "umls_cui": "C1836308"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "NOTE_001",
+              "description": "NER: hypermobility type (0.953) | Match: sapbert_similarity (0.808)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0001132",
+          "label": "Lens subluxation",
+          "umls_cui": "C0023316"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "NOTE_001",
+              "description": "NER: lens subluxation screening (0.925) | Match: substring_match (0.950)"
+            }
+          }
+        ]
+      }
+    ],
+    "metaData": {
+      "created": "2026-05-18T06:04:43Z",
+      "createdBy": "clinical-preanalysis-pipeline-v2",
+      "phenopacketSchemaVersion": "2.0",
+      "resources": [
+        {
+          "id": "hp",
+          "name": "Human Phenotype Ontology",
+          "url": "https://hpo.jax.org",
+          "version": "2024-04-26",
+          "namespacePrefix": "HP",
+          "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        }
+      ]
+    },
+    "interpretations": [
+      {
+        "id": "interpretation-NOTE_001",
+        "progressStatus": "IN_PROGRESS",
+        "diagnosis": {
+          "disease": {
+            "id": "ORPHA:98249",
+            "label": "Ehlers-Danlos syndrome, hypermobility type"
+          },
+          "score": 0.5568,
+          "allCandidates": [
+            {
+              "id": "ORPHA:98249",
+              "label": "Ehlers-Danlos syndrome, hypermobility type",
+              "score": 0.5568
+            },
+            {
+              "id": "ORPHA:232",
+              "label": "Sickle cell disease",
+              "score": 0.0961
+            },
+            {
+              "id": "ORPHA:906",
+              "label": "Wiskott-Aldrich syndrome",
+              "score": 0.0589
+            }
+          ]
+        }
+      }
+    ],
+    "_pipelineStats": {
+      "totalEntities": 37,
+      "matchedHPO": 14,
+      "unmatchedEntities": 23,
+      "phenopacketFeatures": 12,
+      "negatedFeatures": 0,
+      "numericPhenotypes": 0,
+      "ordoCandidates": 3
+    }
+  }
+}

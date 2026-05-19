@@ -1,0 +1,317 @@
+{
+  "id": "phenopacket-CHU_009",
+  "subject": {
+    "id": "CHU_009",
+    "timeAtLastEncounter": {
+      "age": {
+        "iso8601duration": "P9Y"
+      }
+    }
+  },
+  "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0004313",
+        "label": "Decreased circulating antibody level",
+        "umls_cui": "C0086438"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "CHU_009",
+            "description": "NER: déficit immunitaire primitif type agammaglobulinémie congénitale (0.695) | Match: french_partial (0.850)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0004430",
+        "label": "Immunodeficiency",
+        "umls_cui": "C0085110"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "CHU_009",
+            "description": "NER: Déficit immunitaire primitif type Agammaglobulinémie congénital (0.412) | Match: french_partial (0.850)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0002098",
+        "label": "Respiratory distress",
+        "umls_cui": "C0013404"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "CHU_009",
+            "description": "NER: détresse respiratoire (0.850) | Match: french_exact (0.950)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0002840",
+        "label": "Non-recurrent bacterial meningitis",
+        "umls_cui": "C0024205"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "CHU_009",
+            "description": "NER: méningite (0.480) | Match: french_exact (0.950)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0000388",
+        "label": "Otitis media",
+        "umls_cui": "C0029882"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "CHU_009",
+            "description": "NER: Otites purulentes (0.905) | Match: french_exact (0.950)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0001369",
+        "label": "Arthritis",
+        "umls_cui": "C0003864"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "CHU_009",
+            "description": "NER: arthrite du genou gauche (0.822) | Match: french_partial (0.850)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0006538",
+        "label": "Recurrent bronchopulmonary infections",
+        "umls_cui": "C2169795"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "CHU_009",
+            "description": "NER: Toux grasse chronique (0.874) | Match: french_exact (0.950)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0004395",
+        "label": "Malnutrition",
+        "umls_cui": "C0162429"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "CHU_009",
+            "description": "NER: malnutrition (0.457) | Match: french_exact (0.950)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0002205",
+        "label": "Recurrent respiratory infections",
+        "umls_cui": "C3806482"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "CHU_009",
+            "description": "NER: bronchopneumopathie multifocale (0.843) | Match: french_partial (0.850)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0000953",
+        "label": "Hyperpigmentation of the skin",
+        "umls_cui": "C0162834"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "CHU_009",
+            "description": "NER: lésions d’hyperpigmentation brunâtres (0.433) | Match: sapbert_similarity (0.894)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0001999",
+        "label": "Abnormal facial shape",
+        "umls_cui": "C0266617"
+      },
+      "excluded": true,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "CHU_009",
+            "description": "NER: dysmorphie crânio-faciale (0.751) | Match: sapbert_similarity (0.866) | Negated by: \"pas de\""
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0002093",
+        "label": "Respiratory insufficiency",
+        "umls_cui": "C0035229"
+      },
+      "excluded": true,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "CHU_009",
+            "description": "NER: insuffisance respiratoire chronique (0.639) | Match: french_exact (0.950) | Negated by: \"pas de\""
+          }
+        }
+      ]
+    }
+  ],
+  "metaData": {
+    "created": "2026-05-18T06:09:43Z",
+    "createdBy": "clinical-preanalysis-pipeline-v2",
+    "phenopacketSchemaVersion": "2.0",
+    "resources": [
+      {
+        "id": "hp",
+        "name": "Human Phenotype Ontology",
+        "url": "https://hpo.jax.org",
+        "version": "2024-04-26",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      }
+    ]
+  },
+  "interpretations": [
+    {
+      "id": "interpretation-CHU_009",
+      "progressStatus": "IN_PROGRESS",
+      "diagnosis": {
+        "disease": {
+          "id": "ORPHA:47",
+          "label": "X-linked agammaglobulinemia"
+        },
+        "score": 0.5568,
+        "allCandidates": [
+          {
+            "id": "ORPHA:47",
+            "label": "X-linked agammaglobulinemia",
+            "score": 0.5568
+          },
+          {
+            "id": "ORPHA:572",
+            "label": "MHC class II deficiency",
+            "score": 0.2236
+          },
+          {
+            "id": "ORPHA:1572",
+            "label": "Common variable immunodeficiency",
+            "score": 0.2185
+          },
+          {
+            "id": "ORPHA:2314",
+            "label": "Hyper-IgE syndrome",
+            "score": 0.1944
+          },
+          {
+            "id": "ORPHA:906",
+            "label": "Wiskott-Aldrich syndrome",
+            "score": 0.1807
+          }
+        ]
+      }
+    }
+  ],
+  "_pipelineStats": {
+    "totalEntities": 47,
+    "matchedHPO": 19,
+    "unmatchedEntities": 28,
+    "phenopacketFeatures": 12,
+    "negatedFeatures": 2,
+    "numericPhenotypes": 0,
+    "ordoCandidates": 5
+  }
+}

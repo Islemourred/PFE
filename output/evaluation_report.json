@@ -1,0 +1,455 @@
+{
+  "timestamp": "2026-05-18 06:05:17",
+  "pipeline_version": "v3 (bilingual FR+EN)",
+  "mode": "en",
+  "init_time_seconds": 7.3,
+  "per_note_metrics": [
+    {
+      "tp": 9,
+      "fp": 2,
+      "fn": 4,
+      "precision": 0.8182,
+      "recall": 0.6923,
+      "f1": 0.75,
+      "predicted_ids": [
+        "HP:0000978",
+        "HP:0000993",
+        "HP:0001382",
+        "HP:0001388",
+        "HP:0002761",
+        "HP:0002829",
+        "HP:0003419",
+        "HP:0010485",
+        "HP:0010499",
+        "HP:0010500",
+        "HP:0012532"
+      ],
+      "gold_ids": [
+        "HP:0000974",
+        "HP:0000978",
+        "HP:0001058",
+        "HP:0001075",
+        "HP:0001382",
+        "HP:0001388",
+        "HP:0002758",
+        "HP:0002761",
+        "HP:0002829",
+        "HP:0003419",
+        "HP:0010485",
+        "HP:0010499",
+        "HP:0012532"
+      ],
+      "correct": [
+        "HP:0000978",
+        "HP:0001382",
+        "HP:0001388",
+        "HP:0002761",
+        "HP:0002829",
+        "HP:0003419",
+        "HP:0010485",
+        "HP:0010499",
+        "HP:0012532"
+      ],
+      "missed": [
+        "HP:0000974",
+        "HP:0001058",
+        "HP:0001075",
+        "HP:0002758"
+      ],
+      "extra": [
+        "HP:0000993",
+        "HP:0010500"
+      ],
+      "note_id": "NOTE_001",
+      "pathology": "Ehlers-Danlos Syndrome (hEDS)",
+      "processing_time": 20.76,
+      "language": "en"
+    },
+    {
+      "tp": 7,
+      "fp": 3,
+      "fn": 5,
+      "precision": 0.7,
+      "recall": 0.5833,
+      "f1": 0.6364,
+      "predicted_ids": [
+        "HP:0000988",
+        "HP:0001738",
+        "HP:0001824",
+        "HP:0001903",
+        "HP:0001974",
+        "HP:0004325",
+        "HP:0004396",
+        "HP:0004401",
+        "HP:0006532",
+        "HP:0012735"
+      ],
+      "gold_ids": [
+        "HP:0001508",
+        "HP:0001738",
+        "HP:0001824",
+        "HP:0002035",
+        "HP:0002110",
+        "HP:0002240",
+        "HP:0004325",
+        "HP:0004396",
+        "HP:0004401",
+        "HP:0006532",
+        "HP:0006538",
+        "HP:0012735"
+      ],
+      "correct": [
+        "HP:0001738",
+        "HP:0001824",
+        "HP:0004325",
+        "HP:0004396",
+        "HP:0004401",
+        "HP:0006532",
+        "HP:0012735"
+      ],
+      "missed": [
+        "HP:0001508",
+        "HP:0002035",
+        "HP:0002110",
+        "HP:0002240",
+        "HP:0006538"
+      ],
+      "extra": [
+        "HP:0000988",
+        "HP:0001903",
+        "HP:0001974"
+      ],
+      "note_id": "NOTE_002",
+      "pathology": "Cystic Fibrosis (CF)",
+      "processing_time": 4.63,
+      "language": "en"
+    },
+    {
+      "tp": 5,
+      "fp": 5,
+      "fn": 4,
+      "precision": 0.5,
+      "recall": 0.5556,
+      "f1": 0.5263,
+      "predicted_ids": [
+        "HP:0000570",
+        "HP:0000716",
+        "HP:0000751",
+        "HP:0000756",
+        "HP:0002018",
+        "HP:0002072",
+        "HP:0002076",
+        "HP:0002340",
+        "HP:0004305",
+        "HP:0012393"
+      ],
+      "gold_ids": [
+        "HP:0000716",
+        "HP:0000726",
+        "HP:0000751",
+        "HP:0001300",
+        "HP:0002072",
+        "HP:0002340",
+        "HP:0002354",
+        "HP:0004305",
+        "HP:0100022"
+      ],
+      "correct": [
+        "HP:0000716",
+        "HP:0000751",
+        "HP:0002072",
+        "HP:0002340",
+        "HP:0004305"
+      ],
+      "missed": [
+        "HP:0000726",
+        "HP:0001300",
+        "HP:0002354",
+        "HP:0100022"
+      ],
+      "extra": [
+        "HP:0000570",
+        "HP:0000756",
+        "HP:0002018",
+        "HP:0002076",
+        "HP:0012393"
+      ],
+      "note_id": "NOTE_003",
+      "pathology": "Huntington Disease",
+      "processing_time": 4.16,
+      "language": "en"
+    },
+    {
+      "tp": 5,
+      "fp": 1,
+      "fn": 3,
+      "precision": 0.8333,
+      "recall": 0.625,
+      "f1": 0.7143,
+      "predicted_ids": [
+        "HP:0001903",
+        "HP:0001945",
+        "HP:0001974",
+        "HP:0011009",
+        "HP:0012531",
+        "HP:0100806"
+      ],
+      "gold_ids": [
+        "HP:0001744",
+        "HP:0001903",
+        "HP:0001945",
+        "HP:0001974",
+        "HP:0002829",
+        "HP:0012531",
+        "HP:0100749",
+        "HP:0100806"
+      ],
+      "correct": [
+        "HP:0001903",
+        "HP:0001945",
+        "HP:0001974",
+        "HP:0012531",
+        "HP:0100806"
+      ],
+      "missed": [
+        "HP:0001744",
+        "HP:0002829",
+        "HP:0100749"
+      ],
+      "extra": [
+        "HP:0011009"
+      ],
+      "note_id": "NOTE_004",
+      "pathology": "Sickle Cell Disease (HbSS)",
+      "processing_time": 4.71,
+      "language": "en"
+    },
+    {
+      "tp": 2,
+      "fp": 3,
+      "fn": 1,
+      "precision": 0.4,
+      "recall": 0.6667,
+      "f1": 0.5,
+      "predicted_ids": [
+        "HP:0000138",
+        "HP:0001974",
+        "HP:0002018",
+        "HP:0012834",
+        "HP:0012889"
+      ],
+      "gold_ids": [
+        "HP:0000137",
+        "HP:0000138",
+        "HP:0012889"
+      ],
+      "correct": [
+        "HP:0000138",
+        "HP:0012889"
+      ],
+      "missed": [
+        "HP:0000137"
+      ],
+      "extra": [
+        "HP:0001974",
+        "HP:0002018",
+        "HP:0012834"
+      ],
+      "note_id": "NOTE_005",
+      "pathology": "Inconsistency Test: Sex/Diagnosis Conflict",
+      "processing_time": 2.07,
+      "language": "en"
+    },
+    {
+      "tp": 6,
+      "fp": 3,
+      "fn": 0,
+      "precision": 0.6667,
+      "recall": 1.0,
+      "f1": 0.8,
+      "predicted_ids": [
+        "HP:0000822",
+        "HP:0001278",
+        "HP:0001289",
+        "HP:0001943",
+        "HP:0001988",
+        "HP:0002315",
+        "HP:0002321",
+        "HP:0003074",
+        "HP:0012332"
+      ],
+      "gold_ids": [
+        "HP:0000822",
+        "HP:0001289",
+        "HP:0001943",
+        "HP:0002315",
+        "HP:0002321",
+        "HP:0003074"
+      ],
+      "correct": [
+        "HP:0000822",
+        "HP:0001289",
+        "HP:0001943",
+        "HP:0002315",
+        "HP:0002321",
+        "HP:0003074"
+      ],
+      "missed": [],
+      "extra": [
+        "HP:0001278",
+        "HP:0001988",
+        "HP:0012332"
+      ],
+      "note_id": "NOTE_006",
+      "pathology": "Inconsistency Test: Lab Value Conflict",
+      "processing_time": 2.86,
+      "language": "en"
+    },
+    {
+      "note_id": "NOTE_007",
+      "pathology": "Unknown",
+      "processing_time": 2.49,
+      "language": "en",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "precision": 0,
+      "recall": 0,
+      "f1": 0
+    },
+    {
+      "tp": 7,
+      "fp": 3,
+      "fn": 1,
+      "precision": 0.7,
+      "recall": 0.875,
+      "f1": 0.7778,
+      "predicted_ids": [
+        "HP:0000421",
+        "HP:0000822",
+        "HP:0000978",
+        "HP:0001873",
+        "HP:0001903",
+        "HP:0002239",
+        "HP:0002758",
+        "HP:0004406",
+        "HP:0005110",
+        "HP:0011874"
+      ],
+      "gold_ids": [
+        "HP:0000421",
+        "HP:0000978",
+        "HP:0001873",
+        "HP:0001892",
+        "HP:0001903",
+        "HP:0002239",
+        "HP:0002758",
+        "HP:0005110"
+      ],
+      "correct": [
+        "HP:0000421",
+        "HP:0000978",
+        "HP:0001873",
+        "HP:0001903",
+        "HP:0002239",
+        "HP:0002758",
+        "HP:0005110"
+      ],
+      "missed": [
+        "HP:0001892"
+      ],
+      "extra": [
+        "HP:0000822",
+        "HP:0004406",
+        "HP:0011874"
+      ],
+      "note_id": "NOTE_008",
+      "pathology": "Inconsistency Test: Drug Conflict",
+      "processing_time": 4.08,
+      "language": "en"
+    },
+    {
+      "tp": 2,
+      "fp": 4,
+      "fn": 1,
+      "precision": 0.3333,
+      "recall": 0.6667,
+      "f1": 0.4444,
+      "predicted_ids": [
+        "HP:0000505",
+        "HP:0000767",
+        "HP:0001166",
+        "HP:0001962",
+        "HP:0002094",
+        "HP:0100749"
+      ],
+      "gold_ids": [
+        "HP:0000767",
+        "HP:0001166",
+        "HP:0001519"
+      ],
+      "correct": [
+        "HP:0000767",
+        "HP:0001166"
+      ],
+      "missed": [
+        "HP:0001519"
+      ],
+      "extra": [
+        "HP:0000505",
+        "HP:0001962",
+        "HP:0002094",
+        "HP:0100749"
+      ],
+      "note_id": "NOTE_009",
+      "pathology": "Marfan Syndrome (Negation-heavy)",
+      "processing_time": 3.57,
+      "language": "en"
+    },
+    {
+      "tp": 3,
+      "fp": 0,
+      "fn": 2,
+      "precision": 1.0,
+      "recall": 0.6,
+      "f1": 0.75,
+      "predicted_ids": [
+        "HP:0001888",
+        "HP:0004430",
+        "HP:0005403"
+      ],
+      "gold_ids": [
+        "HP:0001508",
+        "HP:0001888",
+        "HP:0001945",
+        "HP:0004430",
+        "HP:0005403"
+      ],
+      "correct": [
+        "HP:0001888",
+        "HP:0004430",
+        "HP:0005403"
+      ],
+      "missed": [
+        "HP:0001508",
+        "HP:0001945"
+      ],
+      "extra": [],
+      "note_id": "NOTE_010",
+      "pathology": "SCID (T-B+NK+)",
+      "processing_time": 5.1,
+      "language": "en"
+    }
+  ],
+  "aggregate": {
+    "total_tp": 46,
+    "total_fp": 24,
+    "total_fn": 21,
+    "micro_precision": 0.6571,
+    "micro_recall": 0.6866,
+    "micro_f1": 0.6715,
+    "macro_precision": 0.6613,
+    "macro_recall": 0.6961,
+    "macro_f1": 0.6555
+  }
+}

@@ -1,0 +1,237 @@
+{
+  "id": "phenopacket-NOTE_005",
+  "subject": {
+    "id": "NOTE_005",
+    "sex": "MALE",
+    "timeAtLastEncounter": {
+      "age": {
+        "iso8601duration": "P55Y"
+      }
+    }
+  },
+  "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0012834",
+        "label": "Right",
+        "umls_cui": "C0444532"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "NOTE_005",
+            "description": "NER: r sided (0.773) | Match: sapbert_similarity (0.870)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0002018",
+        "label": "Nausea",
+        "umls_cui": "C0027497"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "NOTE_005",
+            "description": "NER: nausea (0.997) | Match: exact_label (1.000)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0002013",
+        "label": "Vomiting",
+        "umls_cui": "C0042963"
+      },
+      "excluded": true,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "NOTE_005",
+            "description": "NER: vomiting (0.959) | Match: exact_label (1.000) | Negated by: \"without\""
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0100518",
+        "label": "Dysuria",
+        "umls_cui": "C0013428"
+      },
+      "excluded": true,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "NOTE_005",
+            "description": "NER: dysuria (0.998) | Match: exact_label (1.000) | Negated by: \"denies\""
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0000790",
+        "label": "Hematuria",
+        "umls_cui": "C0018965"
+      },
+      "excluded": true,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "NOTE_005",
+            "description": "NER: hematuria (0.998) | Match: exact_label (1.000) | Negated by: \"denies\""
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0000138",
+        "label": "Ovarian cyst",
+        "umls_cui": "C0029927"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "NOTE_005",
+            "description": "NER: ruptured ovarian cyst (0.996) | Match: substring_match (0.950)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0012889",
+        "label": "Cervical endometriosis",
+        "umls_cui": "C0269107"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "NOTE_005",
+            "description": "NER: chronic endometriosis (0.999) | Match: sapbert_similarity (0.865)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0001974",
+        "label": "Leukocytosis"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "NOTE_005",
+            "description": "Numeric: WBC 11.1 → WBC/GB > 11,000 elements/uL"
+          }
+        }
+      ]
+    }
+  ],
+  "metaData": {
+    "created": "2026-05-18T06:04:58Z",
+    "createdBy": "clinical-preanalysis-pipeline-v2",
+    "phenopacketSchemaVersion": "2.0",
+    "resources": [
+      {
+        "id": "hp",
+        "name": "Human Phenotype Ontology",
+        "url": "https://hpo.jax.org",
+        "version": "2024-04-26",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      }
+    ]
+  },
+  "interpretations": [
+    {
+      "id": "interpretation-NOTE_005",
+      "progressStatus": "IN_PROGRESS",
+      "diagnosis": {
+        "disease": {
+          "id": "ORPHA:232",
+          "label": "Sickle cell disease"
+        },
+        "score": 0.1017,
+        "allCandidates": [
+          {
+            "id": "ORPHA:232",
+            "label": "Sickle cell disease",
+            "score": 0.1017
+          }
+        ]
+      }
+    }
+  ],
+  "_validationWarnings": [
+    {
+      "type": "sex_anatomy_conflict",
+      "severity": "critical",
+      "message": "Female-specific term 'endometrial' found in male patient record",
+      "term": "endometrial"
+    },
+    {
+      "type": "sex_anatomy_conflict",
+      "severity": "critical",
+      "message": "Female-specific term 'endometriosis' found in male patient record",
+      "term": "endometriosis"
+    },
+    {
+      "type": "sex_anatomy_conflict",
+      "severity": "critical",
+      "message": "Female-specific term 'ovarian' found in male patient record",
+      "term": "ovarian"
+    }
+  ],
+  "_pipelineStats": {
+    "totalEntities": 24,
+    "matchedHPO": 7,
+    "unmatchedEntities": 17,
+    "phenopacketFeatures": 8,
+    "negatedFeatures": 3,
+    "numericPhenotypes": 1,
+    "ordoCandidates": 1
+  }
+}

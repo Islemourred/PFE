@@ -1,0 +1,225 @@
+"""
+SapBERT Normalizer — Semantic similarity matching using SapBERT.
+When the Rule Engine fails to find an exact match, SapBERT encodes the
+entity text and finds the closest HPO concept via cosine similarity.
+This is the "AI" half of the hybrid approach (State of the Art §2.6).
+
+Includes disk caching: the HPO vector index is computed once and saved
+to a .npz file. Subsequent loads take < 1 second.
+"""
+
+import os
+import time
+import numpy as np
+import torch
+from transformers import AutoTokenizer, AutoModel
+
+
+class SapBERTLinker:
+    """
+    Uses SapBERT (cambridgeltl/SapBERT-from-PubMedBERT-fulltext) to encode
+    medical phrases into vectors, then finds the closest HPO concept via
+    cosine similarity.
+    """
+
+    def __init__(
+        self,
+        hpo_terms: list[dict],
+        model_name: str = "cambridgeltl/SapBERT-from-PubMedBERT-fulltext",
+        similarity_threshold: float = 0.70,
+        batch_size: int = 128,
+        cache_path: str = None,
+    ):
+        """
+        Args:
+            hpo_terms:            list of HPO term dicts from hpo_parser
+            model_name:           HuggingFace model ID for SapBERT
+            similarity_threshold: minimum cosine similarity to accept a match
+            batch_size:           batch size for encoding HPO terms
+            cache_path:           path to save/load the precomputed index (.npz)
+        """
+        self.threshold = similarity_threshold
+        self.batch_size = batch_size
+
+        print(f"Loading SapBERT model: {model_name}")
+        self.tokenizer = AutoTokenizer.from_pretrained(model_name)
+        self.model = AutoModel.from_pretrained(model_name)
+        self.model.eval()
+
+        # Try to load cached index, otherwise build and save it
+        if cache_path is None:
+            cache_path = os.path.join(
+                os.path.dirname(os.path.dirname(os.path.abspath(__file__))),
+                "sapbert_hpo_index.npz"
+            )
+        self.cache_path = cache_path
+
+        if os.path.exists(cache_path):
+            self._load_index(cache_path)
+        else:
+            self._build_index(hpo_terms)
+            self._save_index(cache_path)
+
+    def _encode(self, texts: list[str]) -> np.ndarray:
+        """
+        Encode a list of texts into normalized vectors using SapBERT.
+
+        Args:
+            texts: list of medical phrases
+
+        Returns:
+            numpy array of shape (N, 768) with L2-normalized vectors
+        """
+        all_vecs = []
+        for i in range(0, len(texts), self.batch_size):
+            batch = texts[i : i + self.batch_size]
+            tokens = self.tokenizer(
+                batch,
+                padding=True,
+                truncation=True,
+                max_length=64,
+                return_tensors="pt",
+            )
+            with torch.no_grad():
+                output = self.model(**tokens)
+            # Use [CLS] token embedding
+            vecs = output.last_hidden_state[:, 0, :].numpy()
+            all_vecs.append(vecs)
+
+            # Progress indicator
+            done = min(i + self.batch_size, len(texts))
+            print(f"\r  Encoding: {done}/{len(texts)} texts...", end="", flush=True)
+
+        print()  # newline after progress
+        all_vecs = np.vstack(all_vecs)
+        # L2 normalize for cosine similarity via dot product
+        norms = np.linalg.norm(all_vecs, axis=1, keepdims=True)
+        norms[norms == 0] = 1  # avoid division by zero
+        return all_vecs / norms
+
+    def _build_index(self, hpo_terms: list[dict]):
+        """
+        Pre-compute SapBERT vectors for all HPO terms.
+        For each HPO term, we encode the label + all synonyms and keep
+        the average representation.
+        """
+        print("Building SapBERT HPO index (first time only, will be cached)...")
+        start = time.time()
+
+        # Collect all texts to encode: each HPO term's label + synonyms
+        self.hpo_ids = []
+        self.hpo_names = []
+        texts_to_encode = []
+        text_to_hpo_idx = []
+
+        for i, term in enumerate(hpo_terms):
+            name = term["name"]
+            if not name:
+                continue
+
+            self.hpo_ids.append(term["id"])
+            self.hpo_names.append(name)
+            idx = len(self.hpo_ids) - 1
+
+            # Encode the official label
+            texts_to_encode.append(name)
+            text_to_hpo_idx.append(idx)
+
+            # Also encode synonyms (they share the same HPO ID)
+            for syn in term.get("exact_synonyms", []):
+                texts_to_encode.append(syn)
+                text_to_hpo_idx.append(idx)
+
+        print(f"  Total texts to encode: {len(texts_to_encode)} "
+              f"({len(self.hpo_ids)} unique HPO terms)")
+
+        all_vectors = self._encode(texts_to_encode)
+
+        # For each HPO term, compute the average of all its vectors
+        n_terms = len(self.hpo_ids)
+        self.index = np.zeros((n_terms, all_vectors.shape[1]), dtype=np.float32)
+        counts = np.zeros(n_terms, dtype=np.int32)
+
+        for vec_idx, hpo_idx in enumerate(text_to_hpo_idx):
+            self.index[hpo_idx] += all_vectors[vec_idx]
+            counts[hpo_idx] += 1
+
+        # Average and re-normalize
+        for i in range(n_terms):
+            if counts[i] > 0:
+                self.index[i] /= counts[i]
+        norms = np.linalg.norm(self.index, axis=1, keepdims=True)
+        norms[norms == 0] = 1
+        self.index = self.index / norms
+
+        elapsed = round(time.time() - start, 1)
+        print(f"  SapBERT index built: {n_terms} terms in {elapsed}s")
+
+    def _save_index(self, path: str):
+        """Save precomputed index to disk for instant future loading."""
+        np.savez_compressed(
+            path,
+            index=self.index,
+            hpo_ids=np.array(self.hpo_ids),
+            hpo_names=np.array(self.hpo_names),
+        )
+        size_mb = os.path.getsize(path) / (1024 * 1024)
+        print(f"  Index cached to {path} ({size_mb:.1f} MB)")
+
+    def _load_index(self, path: str):
+        """Load precomputed index from disk (< 1 second)."""
+        print(f"  Loading cached SapBERT index from {path}...")
+        start = time.time()
+        data = np.load(path, allow_pickle=True)
+        self.index = data["index"]
+        self.hpo_ids = data["hpo_ids"].tolist()
+        self.hpo_names = data["hpo_names"].tolist()
+        elapsed = round(time.time() - start, 2)
+        print(f"  Loaded {len(self.hpo_ids)} term vectors in {elapsed}s")
+
+    def link(self, text: str, top_k: int = 3) -> dict | None:
+        """
+        Find the closest HPO concept for the given text using
+        cosine similarity.
+
+        Args:
+            text:  entity text (already abbreviation-expanded)
+            top_k: number of top candidates to consider
+
+        Returns:
+            Best match dict or None if below threshold
+            {"id": "HP:0001382", "name": "Joint hypermobility",
+             "match_type": "sapbert_similarity", "confidence": 0.94,
+             "alternatives": [...]}
+        """
+        # Encode the query
+        query_vec = self._encode([text])  # shape (1, 768)
+
+        # Cosine similarity = dot product (both are L2-normalized)
+        similarities = np.dot(self.index, query_vec.T).flatten()
+
+        # Get top-k indices
+        top_indices = similarities.argsort()[-top_k:][::-1]
+
+        # Build alternatives list
+        alternatives = []
+        for idx in top_indices:
+            alternatives.append({
+                "id": self.hpo_ids[idx],
+                "name": self.hpo_names[idx],
+                "score": round(float(similarities[idx]), 4),
+            })
+
+        best_idx = top_indices[0]
+        best_score = float(similarities[best_idx])
+
+        if best_score < self.threshold:
+            return None
+
+        return {
+            "id": self.hpo_ids[best_idx],
+            "name": self.hpo_names[best_idx],
+            "match_type": "sapbert_similarity",
+            "confidence": round(best_score, 4),
+            "alternatives": alternatives,
+        }

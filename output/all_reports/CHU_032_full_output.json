@@ -1,0 +1,924 @@
+{
+  "note_id": "CHU_032",
+  "language": "fr",
+  "module1": {
+    "clean_text": "COMPTE-RENDU DE RE-HOSPITALISATION\nIl s’agit de l’enfantt Bouteldja Mohamed El Amir âgéde 04 ans originaire de [LOCATION],issu d’un couple non consanguin d’âge moyen, suivi à notre niveau depuis le [DATE] pour déficit immunitaire syndromique type syndrome d’hyper IgE admis ce jour pour sa 09ème cure de veinoglobulines\n                      L’historique de la maladie :\n          Diagnostic principal : déficit immunitaire type hyper IgE.\n             Diagnostic associée :épilepsie avec trouble du neurodéveloppement sous traitement.\nAge du diagnostic :03 ans et 7 mois\nDate du diagnostic :02 /06/2025.\n     Le diagnostic du déficit immunitaire primitif type hyper IgE est suspecté devant les critères suivants :\nAnamnestiques :\n             Un décès en bas âge dans la famille.\nAntécédents familiaux du déficit immunitaire primitif.\nCLINIQUE : \nInfections cutanées fongiques chroniques dès l’âge de 9 mois à   type d’onychomycoses.\nUne atopie personnelle et familiale.\nParaclinique :\nBilan du déficit immunitaire fait le [DATE] (pièce ci jointe) initial revenant en faveur d’une suspicion d’un déficit immunitaire type diminution des Th17 avec gain de fonction du gène STAT 1. (À compléter par un test de phosphorylation du gène STAT 1)\nIgG : 6,99 g/l     IgA :0,34 g/l      IgM :0,57 g/l  \nIgE :390 UI/ml (élevés) \nTH 17 : 0,23 % (diminuée).\nLe test de phosphorylation du STAT 1 : faite le : [DATE] (pièce ci jointe) revenant : phosphorylation correcte du gène STAT 1.\n              Le test de phosphorylation du STAT 3 faite le :[DATE] (pièce ci jointe) : revenant en faveur d’une phosphorylation correcte du STAT 3 (n’élimine pas le diagnostic d’un syndrome d’hyper IgE).\nL’historique des hospitalisations :  \nTraitement en cours :\nBactrim :10 mg/kg /jour.\nItraconazole :10 mg/kg/jour.\nÉvénements depuis le dernier passage : le [DATE]\nConsultations : Non\nSur le plan respiratoire : toux rauque décrit par la maman durant ces dernier 03 jours cédée spontanément \nSur le plan digestif : transit conservé, appétit conservé.\nSur le plan cutané : sequelle de lésion de panaris \nSur le plan neurologique : (langage et comportement) : amélioration du langage de l’enfant (il dit des mots et des phrases d’une façon cohérente , avec une diminution de l’hyperactivité.\nMotif d’hospitalisation : admis ce jour pour 9 ème cure de veinoglobulines.\nEXAMEN CLINIQUE À L'ADMISSION :\nMesures anthropométriques : \n             Poids:  16 kg (-0,41 DS)\n             Taille :   98 cm (-0,86 DS)   \n            PC :49 cm (-1,33 DS)\n             IMC: 16,1 (+0,61 DS)\n             Gomez : 97 % (état nutritionnel normal).\nÉtat général conservé, apyrétique : T° 37 C, téguments et conjonctives normocolorés.\nExamen de la tête et du cou : base nasale large \nExamen ORL : gorge : propre, pas de rhinorrhées, ni d’otorrhées.\nExamen de la cavité buccale : absence de muguet, ni d’abcès dentaire.\nExamen pleuropulmonaire :\nAbsence de déformation thoracique.\nEupnéique FR :25 cycles /min. auscultation claire au 2 champs pulmonaires. SpO2 : 99 % sous air ambiant.\nExamen cardiovasculaire : B1 B2 bien audibles pas de souffle ni de bruits surajoutés .FC : 100 batt/min.\nExamen abdominopelvien : absence de cicatrice ou de circulation collatérales.\nAbdomen souple, absence d’organomégalies, transit conservé.\nExamen génital : morphotype masculin, pas d’anomalies de différenciation sexuelle.\nExamen neurologique : enfant conscient coopérant, absence de convulsions, amélioration du langage ( il dit des mots avec des phrases d’une façon cohérente ), avec régression de l’hyperactivité motrice, arrêt du traitement anti épileptique. \nExamen ostéoarticulaire :hyperlaxité ligamentaire, pas d’anomalies squelettiques\nExamen de la peau et des phanères : séquelles de lésions fongiques onychomycosiques, lésion de panaris en voie de cicatrisation.\n  Le reste de l’examen clinique est sans anomalies.\nBIOLOGIE :\nNFS : \nFerritinémie : 8.75 ng/ml ( bas ) , Vitamine D : 15.8 ( bas ), Vitamine B12 : 509 pg/ml (normale )\nTaux d’IgG résiduel [DATE] : 10,76 UI/ml \nCAT :\nHospitalisation en hôpital [HOSPITAL] \nMise en condition \nPerfusion d’immunoglobulines polyvalentes N°8: 0,6g/kg soit 10 g\nMesures hygièno-diététiques (éducation thérapeutique, tenue du cahier) \nSurveillance étroite \nL’enfant a fait un pic fébrile 39 avec frisson , l’examen clinique étais sans anomalie\nCAT : suspension de la cure, antipyrétique physico-chimique \nPuis la cure a été reprise une fois l’apyrexie \nLe patient a reçue le reste de la cure âpres sans problèmes\n Mis sortant ce jour après fin de cure avec son traitement prophylactique (Bactrim et Itraconazole) , supplémentation vitaminique + en fer avec rendez-vous pour la 10ème cure \nLes examens demandés : \nDemande un compte-rendu actualisé du suivi en Neuropédiatrie non encore récupéré\nDemande d’avis dermatologie\nPrévoir demande bilan FNS , VS , CRP au prochaine cure",
+    "phi_map": {
+      "DATE": [
+        "30/06/2025",
+        "02/06/2025",
+        "21/07/2025",
+        "27/07/2025",
+        "15/02/2026"
+      ],
+      "LOCATION": "Mascara                        et demeurant à ORAN",
+      "HOSPITAL": "du jour"
+    },
+    "patient_info": {}
+  },
+  "module3_warnings": {
+    "temporal": [],
+    "inconsistencies": []
+  },
+  "module4": {
+    "problem": [
+      {
+        "text": "déficit immunitaire syndromique",
+        "ner_score": 0.544,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0004430",
+        "hpo_name": "Immunodeficiency",
+        "expanded_text": "déficit immunitaire syndromique",
+        "match_type": "french_partial",
+        "confidence": 0.85,
+        "matched": true,
+        "umls_cui": "C0085110"
+      },
+      {
+        "text": "syndrome d’hyper IgE",
+        "ner_score": 0.465,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "syndrome d’hyper IgE",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "déficit immunitaire type hyper IgE",
+        "ner_score": 0.544,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0004430",
+        "hpo_name": "Immunodeficiency",
+        "expanded_text": "déficit immunitaire type hyper IgE",
+        "match_type": "french_partial",
+        "confidence": 0.85,
+        "matched": true,
+        "umls_cui": "C0085110"
+      },
+      {
+        "text": "épilepsie",
+        "ner_score": 0.627,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "épilepsie",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "trouble du neurodéveloppement",
+        "ner_score": 0.691,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "trouble du neurodéveloppement",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "déficit immunitaire primitif type hyper IgE",
+        "ner_score": 0.533,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0004430",
+        "hpo_name": "Immunodeficiency",
+        "expanded_text": "déficit immunitaire primitif type hyper IgE",
+        "match_type": "french_partial",
+        "confidence": 0.85,
+        "matched": true,
+        "umls_cui": "C0085110"
+      },
+      {
+        "text": "Infections cutanées fongiques chroniques",
+        "ner_score": 0.78,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "Infections cutanées fongiques chroniques",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "onychomycoses",
+        "ner_score": 0.764,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0012203",
+        "hpo_name": "Onychomycosis",
+        "expanded_text": "onychomycoses",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.9944,
+        "matched": true,
+        "umls_cui": "C0040261"
+      },
+      {
+        "text": "atopie",
+        "ner_score": 0.657,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "atopie",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "hyperactivité",
+        "ner_score": 0.523,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "hyperactivité",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "rhinorrhées",
+        "ner_score": 0.891,
+        "negated": true,
+        "negation_cue": "pas de",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "rhinorrhées",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "otorrhées",
+        "ner_score": 0.882,
+        "negated": true,
+        "negation_cue": "pas de",
+        "hpo_id": "HP:0000388",
+        "hpo_name": "Otitis media",
+        "expanded_text": "otorrhées",
+        "match_type": "french_partial",
+        "confidence": 0.85,
+        "matched": true,
+        "umls_cui": "C0029882"
+      },
+      {
+        "text": "muguet",
+        "ner_score": 0.821,
+        "negated": true,
+        "negation_cue": "absence de",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "muguet",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "abcès dentaire",
+        "ner_score": 0.552,
+        "negated": true,
+        "negation_cue": "absence de",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "abcès dentaire",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "déformation thoracique",
+        "ner_score": 0.623,
+        "negated": true,
+        "negation_cue": "absence de",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "déformation thoracique",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "organomégalies",
+        "ner_score": 0.729,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0001438",
+        "hpo_name": "Organomegaly",
+        "expanded_text": "organomégalies",
+        "match_type": "french_partial",
+        "confidence": 0.85,
+        "matched": true,
+        "umls_cui": "C4020869"
+      },
+      {
+        "text": "convulsions",
+        "ner_score": 0.899,
+        "negated": true,
+        "negation_cue": "absence de",
+        "hpo_id": "HP:0001250",
+        "hpo_name": "Seizure",
+        "expanded_text": "convulsions",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.878,
+        "matched": true,
+        "umls_cui": "C0014544"
+      },
+      {
+        "text": "hyperactivité motrice",
+        "ner_score": 0.581,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "hyperactivité motrice",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "hyperlaxité ligamentaire",
+        "ner_score": 0.698,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "hyperlaxité ligamentaire",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "pic fébrile",
+        "ner_score": 0.876,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0001945",
+        "hpo_name": "Fever",
+        "expanded_text": "pic fébrile",
+        "match_type": "french_partial",
+        "confidence": 0.85,
+        "matched": true,
+        "umls_cui": "C0015967"
+      },
+      {
+        "text": "frisson",
+        "ner_score": 0.956,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "frisson",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "apyrexie",
+        "ner_score": 0.865,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "apyrexie",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      }
+    ],
+    "treatment": [
+      {
+        "text": "veinoglobulines",
+        "ner_score": 0.956,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "veinoglobulines",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "traitement",
+        "ner_score": 0.583,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "traitement",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "Bactrim",
+        "ner_score": 0.981,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "Bactrim",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "traitement anti épileptique",
+        "ner_score": 0.719,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "traitement anti épileptique",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "immunoglobulines polyvalentes N°8",
+        "ner_score": 0.792,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "immunoglobulines polyvalentes N°8",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "cure",
+        "ner_score": 0.494,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "cure",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "antipyrétique physico-chimique",
+        "ner_score": 0.739,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "antipyrétique physico-chimique",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "traitement prophylactique",
+        "ner_score": 0.789,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "traitement prophylactique",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "Itraconazole",
+        "ner_score": 0.965,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "Itraconazole",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "supplémentation vitaminique + en fer",
+        "ner_score": 0.608,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "supplémentation vitaminique + en fer",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      }
+    ],
+    "test": [
+      {
+        "text": "Bilan du déficit immunitaire",
+        "ner_score": 0.743,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0004430",
+        "hpo_name": "Immunodeficiency",
+        "expanded_text": "Bilan du déficit immunitaire",
+        "match_type": "french_partial",
+        "confidence": 0.85,
+        "matched": true,
+        "umls_cui": "C0085110"
+      },
+      {
+        "text": "test de phosphorylation du gène STAT 1",
+        "ner_score": 0.769,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "test de phosphorylation du gène STAT 1",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "test de phosphorylation du STAT 1",
+        "ner_score": 0.771,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "test de phosphorylation du STAT 1",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "test de phosphorylation du STAT 3",
+        "ner_score": 0.729,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "test de phosphorylation du STAT 3",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "EXAMEN CLINIQUE",
+        "ner_score": 0.434,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "EXAMEN CLINIQUE",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "Examen de la tête et du cou",
+        "ner_score": 0.499,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "Examen de la tête et du cou",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "Examen ORL",
+        "ner_score": 0.478,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "Examen ORL",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "Examen de la cavité buccale",
+        "ner_score": 0.452,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "Examen de la cavité buccale",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "Examen pleuropulmonaire",
+        "ner_score": 0.634,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "Examen pleuropulmonaire",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "Examen cardiovasculaire",
+        "ner_score": 0.525,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "Examen cardiovasculaire",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "Examen abdominopelvien",
+        "ner_score": 0.649,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "Examen abdominopelvien",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "Examen génital",
+        "ner_score": 0.499,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "Examen génital",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "Examen neurologique",
+        "ner_score": 0.507,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "Examen neurologique",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "Examen ostéoarticulaire",
+        "ner_score": 0.613,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "Examen ostéoarticulaire",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "bilan FNS",
+        "ner_score": 0.602,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "bilan FNS",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      }
+    ],
+    "numeric_phenotypes": [
+      {
+        "hpo_id": "HP:0001945",
+        "hpo_name": "Fever",
+        "value": 39.0,
+        "unit": "°C",
+        "description": "Température >= 38.0°C (fébrile)",
+        "source": "fébrile 39",
+        "match_type": "numeric_inference",
+        "confidence": 1.0
+      }
+    ],
+    "ordo_candidates": [
+      {
+        "ordo_id": "ORPHA:100",
+        "name": "Ataxia-telangiectasia",
+        "name_fr": "Ataxie-Télangiectasie (syndrome de Louis-Bar)",
+        "score": 0.1949,
+        "jaccard": 0.1538,
+        "coverage": 0.2222,
+        "matched_hpo": [
+          "HP:0001250",
+          "HP:0004430"
+        ],
+        "matched_count": 2,
+        "total_disease_hpo": 9
+      },
+      {
+        "ordo_id": "ORPHA:803",
+        "name": "Tuberous sclerosis",
+        "name_fr": "",
+        "score": 0.1944,
+        "jaccard": 0.1111,
+        "coverage": 0.25,
+        "matched_hpo": [
+          "HP:0001250"
+        ],
+        "matched_count": 1,
+        "total_disease_hpo": 4
+      },
+      {
+        "ordo_id": "ORPHA:47",
+        "name": "X-linked agammaglobulinemia",
+        "name_fr": "Agammaglobulinémie congénitale (maladie de Bruton)",
+        "score": 0.1624,
+        "jaccard": 0.1333,
+        "coverage": 0.1818,
+        "matched_hpo": [
+          "HP:0000388",
+          "HP:0004430"
+        ],
+        "matched_count": 2,
+        "total_disease_hpo": 11
+      },
+      {
+        "ordo_id": "ORPHA:183660",
+        "name": "Severe combined immunodeficiency",
+        "name_fr": "Déficit immunitaire combiné sévère (DICS)",
+        "score": 0.115,
+        "jaccard": 0.1,
+        "coverage": 0.125,
+        "matched_hpo": [
+          "HP:0001945",
+          "HP:0004430"
+        ],
+        "matched_count": 2,
+        "total_disease_hpo": 16
+      },
+      {
+        "ordo_id": "ORPHA:232",
+        "name": "Sickle cell disease",
+        "name_fr": "",
+        "score": 0.1058,
+        "jaccard": 0.0769,
+        "coverage": 0.125,
+        "matched_hpo": [
+          "HP:0001945"
+        ],
+        "matched_count": 1,
+        "total_disease_hpo": 8
+      }
+    ],
+    "stats": {
+      "total": 47,
+      "matched": 9,
+      "unmatched": 38,
+      "match_rate": 19.1,
+      "unique_hpo": 6,
+      "ordo_matches": 5
+    }
+  },
+  "phenopacket": {
+    "id": "phenopacket-CHU_032",
+    "subject": {
+      "id": "CHU_032"
+    },
+    "phenotypicFeatures": [
+      {
+        "type": {
+          "id": "HP:0004430",
+          "label": "Immunodeficiency",
+          "umls_cui": "C0085110"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "CHU_032",
+              "description": "NER: déficit immunitaire syndromique (0.544) | Match: french_partial (0.850)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0012203",
+          "label": "Onychomycosis",
+          "umls_cui": "C0040261"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "CHU_032",
+              "description": "NER: onychomycoses (0.764) | Match: sapbert_similarity (0.994)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0000388",
+          "label": "Otitis media",
+          "umls_cui": "C0029882"
+        },
+        "excluded": true,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "CHU_032",
+              "description": "NER: otorrhées (0.882) | Match: french_partial (0.850) | Negated by: \"pas de\""
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0001438",
+          "label": "Organomegaly",
+          "umls_cui": "C4020869"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "CHU_032",
+              "description": "NER: organomégalies (0.729) | Match: french_partial (0.850)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0001250",
+          "label": "Seizure",
+          "umls_cui": "C0014544"
+        },
+        "excluded": true,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "CHU_032",
+              "description": "NER: convulsions (0.899) | Match: sapbert_similarity (0.878) | Negated by: \"absence de\""
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0001945",
+          "label": "Fever",
+          "umls_cui": "C0015967"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "CHU_032",
+              "description": "NER: pic fébrile (0.876) | Match: french_partial (0.850)"
+            }
+          }
+        ]
+      }
+    ],
+    "metaData": {
+      "created": "2026-05-18T06:11:24Z",
+      "createdBy": "clinical-preanalysis-pipeline-v2",
+      "phenopacketSchemaVersion": "2.0",
+      "resources": [
+        {
+          "id": "hp",
+          "name": "Human Phenotype Ontology",
+          "url": "https://hpo.jax.org",
+          "version": "2024-04-26",
+          "namespacePrefix": "HP",
+          "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        }
+      ]
+    },
+    "interpretations": [
+      {
+        "id": "interpretation-CHU_032",
+        "progressStatus": "IN_PROGRESS",
+        "diagnosis": {
+          "disease": {
+            "id": "ORPHA:100",
+            "label": "Ataxia-telangiectasia"
+          },
+          "score": 0.1949,
+          "allCandidates": [
+            {
+              "id": "ORPHA:100",
+              "label": "Ataxia-telangiectasia",
+              "score": 0.1949
+            },
+            {
+              "id": "ORPHA:803",
+              "label": "Tuberous sclerosis",
+              "score": 0.1944
+            },
+            {
+              "id": "ORPHA:47",
+              "label": "X-linked agammaglobulinemia",
+              "score": 0.1624
+            },
+            {
+              "id": "ORPHA:183660",
+              "label": "Severe combined immunodeficiency",
+              "score": 0.115
+            },
+            {
+              "id": "ORPHA:232",
+              "label": "Sickle cell disease",
+              "score": 0.1058
+            }
+          ]
+        }
+      }
+    ],
+    "_pipelineStats": {
+      "totalEntities": 47,
+      "matchedHPO": 9,
+      "unmatchedEntities": 38,
+      "phenopacketFeatures": 6,
+      "negatedFeatures": 2,
+      "numericPhenotypes": 1,
+      "ordoCandidates": 5
+    }
+  }
+}

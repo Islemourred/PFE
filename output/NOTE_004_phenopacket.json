@@ -1,0 +1,216 @@
+{
+  "id": "phenopacket-NOTE_004",
+  "subject": {
+    "id": "NOTE_004",
+    "sex": "MALE",
+    "timeAtLastEncounter": {
+      "age": {
+        "iso8601duration": "P3Y"
+      }
+    }
+  },
+  "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0012531",
+        "label": "Pain",
+        "umls_cui": "C0030193"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "NOTE_004",
+            "description": "NER: pain (0.931) | Match: exact_label (1.000)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0011009",
+        "label": "Acute",
+        "umls_cui": "C0205178"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "NOTE_004",
+            "description": "NER: acute onset bilateral hand swelling (0.998) | Match: substring_match (0.950)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0012735",
+        "label": "Cough",
+        "umls_cui": "C0010200"
+      },
+      "excluded": true,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "NOTE_004",
+            "description": "NER: cough (0.997) | Match: exact_label (1.000) | Negated by: \"no\""
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0001945",
+        "label": "Fever",
+        "umls_cui": "C0015967"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "NOTE_004",
+            "description": "NER: fever (0.996) | Match: exact_label (1.000)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0100806",
+        "label": "Sepsis",
+        "umls_cui": "C0036690"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "NOTE_004",
+            "description": "NER: sepsis (0.996) | Match: exact_label (1.000)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0001903",
+        "label": "Anemia"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "NOTE_004",
+            "description": "Numeric: Hgb 6.8 → Hemoglobin < 12.0 g/dL"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0001974",
+        "label": "Leukocytosis"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "NOTE_004",
+            "description": "Numeric: WBC 18.4 → WBC/GB > 11,000 elements/uL"
+          }
+        }
+      ]
+    }
+  ],
+  "metaData": {
+    "created": "2026-05-18T06:04:56Z",
+    "createdBy": "clinical-preanalysis-pipeline-v2",
+    "phenopacketSchemaVersion": "2.0",
+    "resources": [
+      {
+        "id": "hp",
+        "name": "Human Phenotype Ontology",
+        "url": "https://hpo.jax.org",
+        "version": "2024-04-26",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      }
+    ]
+  },
+  "interpretations": [
+    {
+      "id": "interpretation-NOTE_004",
+      "progressStatus": "IN_PROGRESS",
+      "diagnosis": {
+        "disease": {
+          "id": "ORPHA:232",
+          "label": "Sickle cell disease"
+        },
+        "score": 0.325,
+        "allCandidates": [
+          {
+            "id": "ORPHA:232",
+            "label": "Sickle cell disease",
+            "score": 0.325
+          },
+          {
+            "id": "ORPHA:2314",
+            "label": "Hyper-IgE syndrome",
+            "score": 0.2115
+          },
+          {
+            "id": "ORPHA:586",
+            "label": "Cystic fibrosis",
+            "score": 0.1471
+          },
+          {
+            "id": "ORPHA:94065",
+            "label": "Gaucher disease type 1",
+            "score": 0.1333
+          },
+          {
+            "id": "ORPHA:183660",
+            "label": "Severe combined immunodeficiency",
+            "score": 0.1131
+          }
+        ]
+      }
+    }
+  ],
+  "_pipelineStats": {
+    "totalEntities": 56,
+    "matchedHPO": 6,
+    "unmatchedEntities": 50,
+    "phenopacketFeatures": 7,
+    "negatedFeatures": 1,
+    "numericPhenotypes": 3,
+    "ordoCandidates": 5
+  }
+}

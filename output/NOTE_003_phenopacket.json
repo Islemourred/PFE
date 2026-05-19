@@ -1,0 +1,298 @@
+{
+  "id": "phenopacket-NOTE_003",
+  "subject": {
+    "id": "NOTE_003",
+    "sex": "FEMALE",
+    "timeAtLastEncounter": {
+      "age": {
+        "iso8601duration": "P42Y"
+      }
+    }
+  },
+  "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0004305",
+        "label": "Involuntary movements",
+        "umls_cui": "C0235086"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "NOTE_003",
+            "description": "NER: involuntary movements (0.975) | Match: exact_label (1.000)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0000751",
+        "label": "Personality changes",
+        "umls_cui": "C0240735"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "NOTE_003",
+            "description": "NER: personality changes (0.967) | Match: exact_label (1.000)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0000756",
+        "label": "Agoraphobia",
+        "umls_cui": "C0001818"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "NOTE_003",
+            "description": "NER: fear (0.956) | Match: sapbert_similarity (0.811)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0000716",
+        "label": "Depression",
+        "umls_cui": "C0011581"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "NOTE_003",
+            "description": "NER: depression (0.997) | Match: exact_label (1.000)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0002076",
+        "label": "Migraine",
+        "umls_cui": "C0149931"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "NOTE_003",
+            "description": "NER: migraine (0.995) | Match: exact_label (1.000)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0012393",
+        "label": "Allergy",
+        "umls_cui": "C1527304"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "NOTE_003",
+            "description": "NER: allergies (0.776) | Match: sapbert_similarity (0.960)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0002018",
+        "label": "Nausea",
+        "umls_cui": "C0027497"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "NOTE_003",
+            "description": "NER: nausea (0.946) | Match: exact_label (1.000)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0000570",
+        "label": "Abnormal saccadic eye movements",
+        "umls_cui": "C1842584"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "NOTE_003",
+            "description": "NER: impaired saccadic eye movements (0.994) | Match: sapbert_similarity (0.945)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0002072",
+        "label": "Chorea",
+        "umls_cui": "C0008489"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "NOTE_003",
+            "description": "NER: involuntary choreiform movements (0.890) | Match: substring_match (0.950)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0002169",
+        "label": "Clonus",
+        "umls_cui": "C0009024"
+      },
+      "excluded": true,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "NOTE_003",
+            "description": "NER: clonus (0.996) | Match: exact_label (1.000) | Negated by: \"no\""
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0002340",
+        "label": "Caudate atrophy",
+        "umls_cui": "C1858116"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "NOTE_003",
+            "description": "NER: mild caudate atrophy (0.999) | Match: substring_match (0.950)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0002476",
+        "label": "Primitive reflex",
+        "umls_cui": "C1838319"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "NOTE_003",
+            "description": "NER: reflexes (0.981) | Match: sapbert_similarity (0.876)"
+          }
+        }
+      ]
+    }
+  ],
+  "metaData": {
+    "created": "2026-05-18T06:04:52Z",
+    "createdBy": "clinical-preanalysis-pipeline-v2",
+    "phenopacketSchemaVersion": "2.0",
+    "resources": [
+      {
+        "id": "hp",
+        "name": "Human Phenotype Ontology",
+        "url": "https://hpo.jax.org",
+        "version": "2024-04-26",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      }
+    ]
+  },
+  "interpretations": [
+    {
+      "id": "interpretation-NOTE_003",
+      "progressStatus": "IN_PROGRESS",
+      "diagnosis": {
+        "disease": {
+          "id": "ORPHA:399",
+          "label": "Huntington disease"
+        },
+        "score": 0.1944,
+        "allCandidates": [
+          {
+            "id": "ORPHA:399",
+            "label": "Huntington disease",
+            "score": 0.1944
+          }
+        ]
+      }
+    }
+  ],
+  "_pipelineStats": {
+    "totalEntities": 48,
+    "matchedHPO": 14,
+    "unmatchedEntities": 34,
+    "phenopacketFeatures": 12,
+    "negatedFeatures": 1,
+    "numericPhenotypes": 0,
+    "ordoCandidates": 1
+  }
+}

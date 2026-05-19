@@ -1,0 +1,177 @@
+{
+  "id": "phenopacket-CHU_034",
+  "subject": {
+    "id": "CHU_034",
+    "timeAtLastEncounter": {
+      "age": {
+        "iso8601duration": "P04Y"
+      }
+    }
+  },
+  "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0004430",
+        "label": "Immunodeficiency",
+        "umls_cui": "C0085110"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "CHU_034",
+            "description": "NER: déficit immunitaire syndromique type hyper IgE (0.707) | Match: french_partial (0.850)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0012203",
+        "label": "Onychomycosis",
+        "umls_cui": "C0040261"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "CHU_034",
+            "description": "NER: onychomycoses (0.782) | Match: sapbert_similarity (0.994)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0000388",
+        "label": "Otitis media",
+        "umls_cui": "C0029882"
+      },
+      "excluded": true,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "CHU_034",
+            "description": "NER: otorrhées (0.892) | Match: french_partial (0.850) | Negated by: \"pas de\""
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0001438",
+        "label": "Organomegaly",
+        "umls_cui": "C4020869"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "CHU_034",
+            "description": "NER: organomégalies (0.729) | Match: french_partial (0.850)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0001250",
+        "label": "Seizure",
+        "umls_cui": "C0014544"
+      },
+      "excluded": true,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "CHU_034",
+            "description": "NER: convulsions (0.910) | Match: sapbert_similarity (0.878) | Negated by: \"absence de\""
+          }
+        }
+      ]
+    }
+  ],
+  "metaData": {
+    "created": "2026-05-18T06:11:32Z",
+    "createdBy": "clinical-preanalysis-pipeline-v2",
+    "phenopacketSchemaVersion": "2.0",
+    "resources": [
+      {
+        "id": "hp",
+        "name": "Human Phenotype Ontology",
+        "url": "https://hpo.jax.org",
+        "version": "2024-04-26",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      }
+    ]
+  },
+  "interpretations": [
+    {
+      "id": "interpretation-CHU_034",
+      "progressStatus": "IN_PROGRESS",
+      "diagnosis": {
+        "disease": {
+          "id": "ORPHA:803",
+          "label": "Tuberous sclerosis"
+        },
+        "score": 0.2,
+        "allCandidates": [
+          {
+            "id": "ORPHA:803",
+            "label": "Tuberous sclerosis",
+            "score": 0.2
+          },
+          {
+            "id": "ORPHA:100",
+            "label": "Ataxia-telangiectasia",
+            "score": 0.2
+          },
+          {
+            "id": "ORPHA:47",
+            "label": "X-linked agammaglobulinemia",
+            "score": 0.1662
+          },
+          {
+            "id": "ORPHA:572",
+            "label": "MHC class II deficiency",
+            "score": 0.0812
+          },
+          {
+            "id": "ORPHA:906",
+            "label": "Wiskott-Aldrich syndrome",
+            "score": 0.0651
+          }
+        ]
+      }
+    }
+  ],
+  "_pipelineStats": {
+    "totalEntities": 46,
+    "matchedHPO": 8,
+    "unmatchedEntities": 38,
+    "phenopacketFeatures": 5,
+    "negatedFeatures": 2,
+    "numericPhenotypes": 0,
+    "ordoCandidates": 5
+  }
+}

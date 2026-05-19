@@ -1,0 +1,218 @@
+{
+  "id": "phenopacket-CHU_029",
+  "subject": {
+    "id": "CHU_029",
+    "sex": "FEMALE",
+    "timeAtLastEncounter": {
+      "age": {
+        "iso8601duration": "P08Y"
+      }
+    }
+  },
+  "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0004430",
+        "label": "Immunodeficiency",
+        "umls_cui": "C0085110"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "CHU_029",
+            "description": "NER: DIP (0.464) | Match: french_exact (0.950)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0001945",
+        "label": "Fever",
+        "umls_cui": "C0015967"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "CHU_029",
+            "description": "NER: fièvre prolongée (0.889) | Match: french_partial (0.850)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0004313",
+        "label": "Decreased circulating antibody level",
+        "umls_cui": "C0086438"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "CHU_029",
+            "description": "NER: Pan-hypogammaglobulinémie (0.539) | Match: french_partial (0.850)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0002098",
+        "label": "Respiratory distress",
+        "umls_cui": "C0013404"
+      },
+      "excluded": true,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "CHU_029",
+            "description": "NER: signes de détresse respiratoire (0.499) | Match: french_partial (0.850) | Negated by: \"pas de\""
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0002093",
+        "label": "Respiratory insufficiency",
+        "umls_cui": "C0035229"
+      },
+      "excluded": true,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "CHU_029",
+            "description": "NER: insuffisance respiratoire chronique (0.758) | Match: french_exact (0.950) | Negated by: \"pas de\""
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0001217",
+        "label": "Clubbing",
+        "umls_cui": "C0149651"
+      },
+      "excluded": true,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "CHU_029",
+            "description": "NER: hippocratisme digital (0.599) | Match: french_exact (0.950) | Negated by: \"pas de\""
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0001438",
+        "label": "Organomegaly",
+        "umls_cui": "C4020869"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "CHU_029",
+            "description": "NER: organomégalies (0.731) | Match: french_partial (0.850)"
+          }
+        }
+      ]
+    }
+  ],
+  "metaData": {
+    "created": "2026-05-18T06:11:10Z",
+    "createdBy": "clinical-preanalysis-pipeline-v2",
+    "phenopacketSchemaVersion": "2.0",
+    "resources": [
+      {
+        "id": "hp",
+        "name": "Human Phenotype Ontology",
+        "url": "https://hpo.jax.org",
+        "version": "2024-04-26",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      }
+    ]
+  },
+  "interpretations": [
+    {
+      "id": "interpretation-CHU_029",
+      "progressStatus": "IN_PROGRESS",
+      "diagnosis": {
+        "disease": {
+          "id": "ORPHA:183660",
+          "label": "Severe combined immunodeficiency"
+        },
+        "score": 0.1725,
+        "allCandidates": [
+          {
+            "id": "ORPHA:183660",
+            "label": "Severe combined immunodeficiency",
+            "score": 0.1725
+          },
+          {
+            "id": "ORPHA:47",
+            "label": "X-linked agammaglobulinemia",
+            "score": 0.1591
+          },
+          {
+            "id": "ORPHA:70",
+            "label": "Spinal muscular atrophy",
+            "score": 0.1165
+          },
+          {
+            "id": "ORPHA:1572",
+            "label": "Common variable immunodeficiency",
+            "score": 0.1165
+          },
+          {
+            "id": "ORPHA:232",
+            "label": "Sickle cell disease",
+            "score": 0.1036
+          }
+        ]
+      }
+    }
+  ],
+  "_pipelineStats": {
+    "totalEntities": 34,
+    "matchedHPO": 11,
+    "unmatchedEntities": 23,
+    "phenopacketFeatures": 7,
+    "negatedFeatures": 3,
+    "numericPhenotypes": 0,
+    "ordoCandidates": 5
+  }
+}
