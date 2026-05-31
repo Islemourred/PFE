@@ -139,6 +139,7 @@ class FullPipeline:
             validated=validated,
             normalized=normalized,
             patient_info=patient_info,
+            raw_text=raw_text,
         )
 
         return {

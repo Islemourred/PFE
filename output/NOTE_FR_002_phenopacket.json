@@ -8,6 +8,8 @@
       }
     }
   },
+  "input": "Compte Rendu de REhospitalisation HDJ\n      L'enfant Amroun Abdel Aziz, âgé de 09 ans originaire de Chlef et demeurant à Oran, suivi dans notre service depuis 11/01/2021 pour un déficit immunitaire primitif type syndrome de Wiskott Aldrich, compliqué d'une dilatation des bronches DDB cylindrique et insuffisance respiratoire chronique stade 1. Admis le 12/03/2026 pour sa cure 53 d'immunoglobulines.\nDiagnostic principal : DIP type Wiskott Aldrich\nDate de diagnostic : 05/2020\nÉléments de diagnostic :\nClinique : Eczéma depuis l'âge de 10 jours, thrombopénie avec micro plaquettes, infections respiratoires à répétition.\nParaclinique :\nBilan immunologique : IgG 6,49 g/l, IgA 0,67 g/l, IgM 0,17 g/l, IgE 1290 UI/ml (élevée)\nÉtude génétique : mutation du gène WASP confirmée.\nTraitement en cours :\n- Itraconazole 5mg/kg/jour\n- Bactrim prophylactique 25mg/kg/jour\n- Kinésithérapie respiratoire quotidienne\n- Cures d'immunoglobulines mensuelles (0,8g/kg)\nRetentissement de la maladie :\nSur le plan nutritionnel : Poids: 24,500 kg (-1 DS), Taille :127 cm (-0,7 DS), IMC: 15,3 (-0,9DS). Malnutrition légère.\nSur le plan respiratoire : DDB cylindrique bilatérale, insuffisance respiratoire chronique stade 1.\nSur le plan cutané : Eczéma modéré contrôlé sous émollients.\nEXAMEN CLINIQUE À L'ADMISSION : Date : 12/03/2026\nÉtat général conservé, apyrétique : T : 36,5°C.\nExamen de la peau : eczéma résiduel aux plis, ecchymoses multiples, pas de pétéchies.\nExamen ORL : pas d'ADP cervicales.\nExamen pleuro pulmonaire : FR : 20 c/min. Auscultation : râles polymorphes.\nExamen cardiovasculaire : FC : 98 bpm, pas de souffle ni BSA.\nExamen de l'abdomen : souple, pas d'organomégalie.\nNFS : GB : 7400 (PNN : 5700 Lymph : 1200) Hb : 10.6 g/dl Plaquette : 90 000 éléments/ul\nCRP : négative\n",
+  "target": "Wiskott-Aldrich syndrome",
   "phenotypicFeatures": [
     {
       "type": {
@@ -249,7 +251,7 @@
     }
   ],
   "metaData": {
-    "created": "2026-05-18T06:01:27Z",
+    "created": "2026-05-22T11:57:54Z",
     "createdBy": "clinical-preanalysis-pipeline-v2",
     "phenopacketSchemaVersion": "2.0",
     "resources": [

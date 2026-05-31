@@ -1,6 +1,8 @@
 """
 Phenopacket Builder — Generates ISO 4454:2022 (GA4GH) compliant output.
-Now correctly populates the 'excluded' field from NegEx negation results.
+Populates the 'excluded' field from NegEx negation results.
+Includes 'input' (raw clinical text) and 'target' (ground truth disease)
+for downstream neuro-symbolic LLM grounding.
 """
 
 import time
@@ -12,6 +14,8 @@ def build_phenopacket(
     validated: dict,
     normalized: dict,
     patient_info: dict = None,
+    raw_text: str = None,
+    target_disease: str = None,
 ) -> dict:
     """
     Build a Phenopacket from the complete pipeline output.
@@ -22,6 +26,8 @@ def build_phenopacket(
         validated: Module 3 output (entities with negation, warnings)
         normalized: Module 4 output (HPO/UMLS/ORDO enriched entities)
         patient_info: optional override for patient metadata
+        raw_text: original clinical note (for downstream LLM input)
+        target_disease: ground truth disease name (for evaluation/training)
     """
     if patient_info is None:
         patient_info = preprocessed.get("patient_info", {})
@@ -97,10 +103,18 @@ def build_phenopacket(
                 }],
             })
 
+    # Resolve target disease: explicit param > top ORDO candidate > None
+    ordo = normalized.get("ordo_candidates", [])
+    resolved_target = target_disease
+    if resolved_target is None and ordo:
+        resolved_target = ordo[0].get("name", None)
+
     # Build phenopacket
     phenopacket = {
         "id": f"phenopacket-{note_id}",
         "subject": subject,
+        "input": raw_text or preprocessed.get("clean_text", ""),
+        "target": resolved_target,
         "phenotypicFeatures": features,
         "metaData": {
             "created": time.strftime("%Y-%m-%dT%H:%M:%SZ"),
@@ -120,7 +134,6 @@ def build_phenopacket(
     }
 
     # Add ORDO candidates as interpretations
-    ordo = normalized.get("ordo_candidates", [])
     if ordo:
         phenopacket["interpretations"] = [{
             "id": f"interpretation-{note_id}",

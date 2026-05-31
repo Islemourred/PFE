@@ -9,6 +9,8 @@
       }
     }
   },
+  "input": "\nPt: Ahmed R. Benali\nDOB: 03/10/2018   MRN: 5521908   Sex: M\nVisit Date: 04/10/2026\nProvider: Dr. Lisa Chang, Pediatric Pulmonology\n\nCC: persistent cough, failure to gain weight\n\nHPI: 8yo M w/ known CF (dx age 2) presents for quarterly f/u. Mom reports\n     increased cough x3 wks, productive of thick yellow-green sputum. Poor\n     appetite, lost 1.2kg since last visit. No hemoptysis. No fever. Currently\n     on pancreatic enzyme replacement (Creon 12k units w/ meals).\n     Last PFT 3 mo ago: FEV1 72% predicted.\n\n     Previous cultures: Pseudomonas aeruginosa (mucoid strain), MRSA neg.\n\nPMH: CF (homozygous F508del), meconium ileus s/p surgical repair (neonatal),\n     pancreatic insufficiency, recurrent pneumonia x5 episodes\nMeds: Creon 12k TID w/ meals, inhaled tobramycin (alternating months),\n      dornase alfa daily, azithromycin 250mg MWF, multivitamin w/ ADEK\nAllergies: PCN - rash\n\nLabs today:\n  CBC: WBC 14.2, Hgb 11.8, Plt 342\n  CMP: Na 136, K 4.1, Cl 98, BUN 12, Cr 0.4, Gluc 92\n  Sweat Cl: 82 mmol/L (prior)\n  Sputum cx: pending\n\nPFT: FEV1 65% predicted (down from 72%), FVC 78%\n\nA/P:\n  1. FEV1 decline - start CFTR modulator elexacaftor/tezacaftor/ivacaftor\n     (Trikafta) given F508del genotype. Check LFTs in 1 month.\n  2. Increased sputum - add hypertonic saline nebs BID\n  3. Weight loss - increase Creon to 18k w/ meals, nutrition consult\n  4. Continue tobramycin cycle. Await sputum cx.\n  5. Flu + COVID vax update\n  6. f/u 4 wks\n",
+  "target": "Sickle cell disease",
   "phenotypicFeatures": [
     {
       "type": {
@@ -250,7 +252,7 @@
     }
   ],
   "metaData": {
-    "created": "2026-05-18T06:04:48Z",
+    "created": "2026-05-22T11:57:22Z",
     "createdBy": "clinical-preanalysis-pipeline-v2",
     "phenopacketSchemaVersion": "2.0",
     "resources": [

@@ -8,6 +8,8 @@
       }
     }
   },
+  "input": "Compte Rendu d'hospitalisation (cure d'immunoglobuline)\nLe nourrisson Abdoune Lyne Hasnia, âgée de 2 ans et 2 mois, originaire et demeurant à Saida, issue d'un couple jeune consanguins du 2eme degré, suivie à notre niveau pour la prise en charge d'un déficit immunitaire primitif combiné sévère type HLADR depuis juin 2025, admise ce jour pour la cure d'immunoglobuline N 12.\nDiagnostic principal : déficit immunitaire primitif DIP type HLADR\nDiagnostics associés : aucun\nDate du diagnostic : juin 2025\nÉléments de diagnostic :\nClinique :\nInfections respiratoires à répétition depuis l'âge de 03 mois\nDiarrhées chroniques\nRetard staturo-pondéral\nParaclinique :\nBilan immunologique : déficit en molécules HLA de classe II\nDéficit profond en lymphocytes T CD4+\nTraitement en cours :\nBactrim prophylactique\nCures d'immunoglobulines mensuelles\nEXAMEN CLINIQUE À L'ADMISSION :\nPoids: 08,500 kg (-2,5 DS) Taille: 79 cm (-2,1 DS)\nMalnutrition modérée\nÉtat général conservé, apyrétique T : 36.8° C\nExamen de la peau : pâleur cutanéo-muqueuse modérée, pas de lésions cutanées\nExamen ORL : gorge propre, pas d'ADP\nExamen pleuro pulmonaire : FR : 28 c/min, pas de signes de détresse respiratoire\nAuscultation : quelques râles bronchiques bilatéraux\nSPO2 : 97% sous AA\nExamen cardiovasculaire : FC : 120 b/min, B1B2 audibles, pas de souffles\nExamen abdominal : souple, transit conservé, pas d'organomégalie\nNFS : GB: 6500 (PNN: 3200 Lymph: 1800) Hb: 10.5 g/dl Plaquettes: 250000\nCRP : négative\n",
+  "target": "MHC class II deficiency",
   "phenotypicFeatures": [
     {
       "type": {
@@ -130,7 +132,7 @@
     }
   ],
   "metaData": {
-    "created": "2026-05-18T06:01:32Z",
+    "created": "2026-05-22T11:57:59Z",
     "createdBy": "clinical-preanalysis-pipeline-v2",
     "phenopacketSchemaVersion": "2.0",
     "resources": [

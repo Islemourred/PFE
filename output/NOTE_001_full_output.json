@@ -579,6 +579,8 @@
         }
       }
     },
+    "input": "\nPatient: Sarah Mitchell\nDOB: 05/14/2001   MRN: 7834291   Sex: F\n\nDate: 04/07/2026\nAttending: Dr. Rebecca Thornton, Genetics\n\nCC: joint pain, skin tears easily\n\nHPI: 25yo F referred by Dr. Kaplan (rheumatology) for eval of chronic joint\n     problems. Pt reports hx of bilateral shoulder dislocations x4 since age 16,\n     R knee subluxation x2, chronic low back pain. Skin is \"paper thin\" per pt,\n     bruises easily with minimal trauma. Mother has similar sx - never diagnosed.\n     Beighton score 8/9 today.\n\nPMH: bilateral shoulder instability, chronic pain syndrome, GERD\nMeds: naproxen 500mg BID, omeprazole 20mg daily\nAllergies: NKDA\nFHx: mother w/ joint hypermobility, easy bruising. MGM w/ \"loose joints\"\n\nPE: skin hyperextensible at forearms (~4cm). Molluscoid pseudotumors at elbows.\n    Joint hypermobility: thumbs to forearms bilat, knees hyperextend >10deg,\n    elbows hyperextend >10deg, palms flat on floor. Multiple ecchymoses on shins.\n\nA/P: clinical picture c/w Ehlers-Danlos Syndrome, hypermobility type (hEDS).\n     1. Send COL5A1, COL5A2 genetic panel - Quest\n     2. PT referral for joint stabilization program\n     3. Continue naproxen, add duloxetine 30mg for chronic pain\n     4. Avoid contact sports, wt lifting\n     5. Refer ophtho for lens subluxation screening\n     6. f/u 6 wks w/ genetic results\n",
+    "target": "Ehlers-Danlos syndrome, hypermobility type",
     "phenotypicFeatures": [
       {
         "type": {
@@ -821,7 +823,7 @@
       }
     ],
     "metaData": {
-      "created": "2026-05-18T06:04:43Z",
+      "created": "2026-05-22T11:57:17Z",
       "createdBy": "clinical-preanalysis-pipeline-v2",
       "phenopacketSchemaVersion": "2.0",
       "resources": [

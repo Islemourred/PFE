@@ -420,6 +420,8 @@
         }
       }
     },
+    "input": "Fiche de Ré hospitalisation :\nC'est l'enfant AZZEMMOU MAHDI né le 23/04/2016, âgé actuellement de 9 ans et 7 mois, originaire et demeurant à MOSTAGANEM, issu d'un couple non consanguin, suivi à l'EPH BOUGUIRAT MOSTAGANEM depuis 2022 pour un déficit immunitaire primitif type agammaglobulinémie congénitale, hospitalisé à notre niveau ce jour pour la cure d'immunoglobulines N : 43.\nDiagnostic principal : Déficit immunitaire primitif type Agammaglobulinémie congénitale\nDiagnostics associés : Aucun\nDate de diagnostic : 23/08/2022\nÉléments de diagnostic :\nAnamnestiques :\n- Un frère décédé en 2022 dans un tableau de détresse respiratoire au niveau de la réanimation pédiatrique (IMC sur méningite à l'âge de 6 ans)\n- Un oncle maternel décédé à l'âge de 18 mois d'étiologies inconnues.\nClinique :\n- Otites purulentes avec arthrite du genou gauche à répétition depuis l'âge de 5 ans.\n- Toux grasse chronique depuis l'âge de 5 ans.\nParaclinique :\nBilan du déficit immunitaire : fait le 23/08/2022 :\nIgG : 0,33 g/l IgA : 0,26 g/l IgM : 0,181 g/l.\nAbsence de lymphocytes B.\nLe tableau est en faveur d'une Agammaglobulinémie congénitale.\nTraitement en cours :\n- Itraconazole 1cp/j\n- Bactrim 1cp jour par jour\n- Kinésithérapie\nRetentissement de la maladie :\nSur le plan nutritionnel :\nPoids: 28,500 kg (- 0,5 DS). Taille :134 cm (-0,3 DS) IMC: 15,9 (-0,7DS)\nLégère malnutrition\nEXAMEN CLINIQUE À L'ADMISSION : 25/03/2026\nÉtat général conservé, apyrétique : T° 36.7 C, bonne coloration cutanéomuqueuse.\nExamen de la peau : Pas de lésion de cuir chevelu. Présence de cicatrices au niveau du genou gauche.\nExamen ORL : absence d'otorrhée, absence d'otalgie. Gorge propre, caries dentaires.\nExamen pleuro pulmonaire : Toux grasse crachats blanchâtres, pas de déformation thoracique, pas de signe d'insuffisance respiratoire chronique.\nFR : 22 cycles/min, SPO2 :99 % sous air ambiant.\nAuscultation pulmonaire : râles polymorphes aux 2 champs pulmonaires.\nExamen cardiovasculaire : FC : 80 b/min. B1B2 bien audibles, pas de souffle ni BSA.\nExamen abdominal : souple, pas d'organomégalie.\n",
+    "target": "X-linked agammaglobulinemia",
     "phenotypicFeatures": [
       {
         "type": {
@@ -603,7 +605,7 @@
       }
     ],
     "metaData": {
-      "created": "2026-05-18T06:01:29Z",
+      "created": "2026-05-22T11:57:55Z",
       "createdBy": "clinical-preanalysis-pipeline-v2",
       "phenopacketSchemaVersion": "2.0",
       "resources": [

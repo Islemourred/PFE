@@ -737,6 +737,8 @@
         }
       }
     },
+    "input": "\nPt: Dorothy Chen-Williams\nDOB: 09/12/1961   MRN: 3318760   Sex: F\nDate: 04/08/2026\nProvider: Dr. Michael Santos, Internal Medicine / Hematology\n\nCC: easy bruising, nosebleeds x 3 wks\n\nHPI: 65yo F w/ hemophilia A (mild, factor VIII 12%) presents w/ worsening\n     bruising and 2 episodes of spontaneous epistaxis (lasting 20-30 min each).\n     Pt was started on warfarin 5mg daily 2 months ago by cardiology for new\n     AFib (CHA2DS2-VASc = 4). Also taking aspirin 81mg daily for CV prophylaxis\n     per PCP. Pt did not inform cardiologist of hemophilia diagnosis.\n\nPMH: hemophilia A (mild), AFib (new dx 2mo ago), HTN, osteoarthritis,\n     h/o GI bleed 2019\nMeds: warfarin 5mg daily, aspirin 81mg daily, metoprolol 50mg BID,\n      lisinopril 20mg daily, acetaminophen 650mg PRN\nAllergies: sulfa drugs - hives\n\nLabs:\n  CBC: WBC 7.2, Hgb 10.8 (baseline 12.4), Plt 42,000 (L)\n  Coags: PT 28.4, INR 3.8 (supratherapeutic), aPTT 52\n  Factor VIII: 11%\n  Fibrinogen: 220\n\nA/P: Hemophilia A + supratherapeutic anticoagulation = HIGH BLEED RISK\n  1. HOLD warfarin immediately. Vitamin K 2.5mg PO x1.\n  2. STOP aspirin - CONTRAINDICATED with hemophilia\n  3. Thrombocytopenia workup: peripheral smear, retic, haptoglobin.\n     R/o HIT (heparin-induced) vs drug-induced (warfarin) vs ITP.\n  4. Once INR normalized: discuss DOAC vs warfarin w/ closer monitoring\n     for AFib. Consult hematology for factor replacement protocol.\n  5. GI consult given Hgb drop + h/o GI bleed\n  6. Admit for observation. Bleeding precautions.\n",
+    "target": "Gaucher disease type 1",
     "phenotypicFeatures": [
       {
         "type": {
@@ -939,7 +941,7 @@
       }
     ],
     "metaData": {
-      "created": "2026-05-18T06:05:08Z",
+      "created": "2026-05-22T11:57:41Z",
       "createdBy": "clinical-preanalysis-pipeline-v2",
       "phenopacketSchemaVersion": "2.0",
       "resources": [

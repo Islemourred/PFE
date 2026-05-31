@@ -516,6 +516,8 @@
         }
       }
     },
+    "input": "\nPt: [**Known lastname 4821**], [**Known firstname 1923**]\nMRN: [**Clip Number (Identifier) 4822**]\nDOB: [**2014-4-20**]   Age: 12   Sex: M\nAdmission Date: [**2026-4-14**]\nAttending: [**First Name8 (NamePattern2) 201**]\n\nTransfer from [**Hospital1 112**] for genetics evaluation.\n\n=================================================================\nHISTORY OF PRESENT ILLNESS:\n=================================================================\n12yo male transferred for eval of suspected connective tissue dz.\n\nThe patient has NO joint pain and NO skin rash. He DENIES any\nbreathing difficulty, chest pain, or palpitations. No visual\nproblems reported. ROS otherwise negative x14 systems.\n\nHowever, genetic workup at OSH revealed a pathogenic variant in\nFBN1 gene (c.4082G>A, p.Cys1361Tyr) - classified pathogenic.\n\nPE remarkable for: tall stature (>97th %ile for age), arm span\nexceeds height by 8cm, positive wrist sign, positive thumb sign,\narachnodactyly, mild pectus excavatum. NO lens subluxation on\nslit lamp exam. NO murmur.\n\nEcho: aortic root 2.1cm (z-score +1.8) - upper normal range.\n\n=================================================================\nASSESSMENT AND PLAN:\n=================================================================\n1. Marfan Syndrome confirmed genetically (FBN1 pathogenic variant)\n   - Will be followed with serial echo q6mo\n   - Aortic root monitoring protocol initiated\n2. NO aortic root dilation currently - reassuring\n3. Ophthalmology: NO lens subluxation - continue annual exams\n4. Lifestyle: avoid contact sports, isometric exercises, competitive athletics\n5. Beta-blocker NOT started at this time given normal aortic dimensions\n6. Genetic counseling for family - parents to be tested\n7. D/C to home, f/u genetics clinic 6 months\n",
+    "target": "Sickle cell disease",
     "phenotypicFeatures": [
       {
         "type": {
@@ -739,7 +741,7 @@
       }
     ],
     "metaData": {
-      "created": "2026-05-18T06:05:11Z",
+      "created": "2026-05-22T11:57:45Z",
       "createdBy": "clinical-preanalysis-pipeline-v2",
       "phenopacketSchemaVersion": "2.0",
       "resources": [

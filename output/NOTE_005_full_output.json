@@ -23,8 +23,8 @@
       {
         "type": "sex_anatomy_conflict",
         "severity": "critical",
-        "message": "Female-specific term 'endometrial' found in male patient record",
-        "term": "endometrial"
+        "message": "Female-specific term 'ovarian' found in male patient record",
+        "term": "ovarian"
       },
       {
         "type": "sex_anatomy_conflict",
@@ -35,8 +35,8 @@
       {
         "type": "sex_anatomy_conflict",
         "severity": "critical",
-        "message": "Female-specific term 'ovarian' found in male patient record",
-        "term": "ovarian"
+        "message": "Female-specific term 'endometrial' found in male patient record",
+        "term": "endometrial"
       }
     ]
   },
@@ -406,6 +406,8 @@
         }
       }
     },
+    "input": "\nPatient: Robert J. Kowalski\nDOB: 02/20/1971   MRN: 2240198   Sex: M\nDate: 04/01/2026\nProvider: Dr. Angela Martinez, General Medicine\n\nCC: pelvic pain x 5 days\n\nHPI: 55yo M presents w/ 5 days of progressive lower abd/pelvic pain,\n     R sided, sharp, 7/10, worse w/ movement. Nausea without vomiting.\n     Denies dysuria, hematuria, or testicular pain. No prior abd surgery.\n\nImaging: pelvic US reveals 4.2cm ruptured ovarian cyst w/ free fluid\n         in cul-de-sac. Endometrial stripe 8mm.\n\nLabs: WBC 11.1, Hgb 14.2, beta-HCG negative\n\nA/P:\n  1. Ruptured ovarian cyst - GYN consult for management\n  2. Chronic endometriosis - continue expectant management\n  3. Pain control: ketorolac 30mg IV, then ibuprofen 600mg q6h\n  4. f/u GYN 1 wk\n",
+    "target": "Sickle cell disease",
     "phenotypicFeatures": [
       {
         "type": {
@@ -568,7 +570,7 @@
       }
     ],
     "metaData": {
-      "created": "2026-05-18T06:04:58Z",
+      "created": "2026-05-22T11:57:32Z",
       "createdBy": "clinical-preanalysis-pipeline-v2",
       "phenopacketSchemaVersion": "2.0",
       "resources": [
@@ -606,8 +608,8 @@
       {
         "type": "sex_anatomy_conflict",
         "severity": "critical",
-        "message": "Female-specific term 'endometrial' found in male patient record",
-        "term": "endometrial"
+        "message": "Female-specific term 'ovarian' found in male patient record",
+        "term": "ovarian"
       },
       {
         "type": "sex_anatomy_conflict",
@@ -618,8 +620,8 @@
       {
         "type": "sex_anatomy_conflict",
         "severity": "critical",
-        "message": "Female-specific term 'ovarian' found in male patient record",
-        "term": "ovarian"
+        "message": "Female-specific term 'endometrial' found in male patient record",
+        "term": "endometrial"
       }
     ],
     "_pipelineStats": {

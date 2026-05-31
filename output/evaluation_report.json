@@ -1,8 +1,8 @@
 {
-  "timestamp": "2026-05-18 06:05:17",
+  "timestamp": "2026-05-22 11:57:59",
   "pipeline_version": "v3 (bilingual FR+EN)",
-  "mode": "en",
-  "init_time_seconds": 7.3,
+  "mode": "both",
+  "init_time_seconds": 19.4,
   "per_note_metrics": [
     {
       "tp": 9,
@@ -62,7 +62,7 @@
       ],
       "note_id": "NOTE_001",
       "pathology": "Ehlers-Danlos Syndrome (hEDS)",
-      "processing_time": 20.76,
+      "processing_time": 15.53,
       "language": "en"
     },
     {
@@ -121,7 +121,7 @@
       ],
       "note_id": "NOTE_002",
       "pathology": "Cystic Fibrosis (CF)",
-      "processing_time": 4.63,
+      "processing_time": 4.28,
       "language": "en"
     },
     {
@@ -176,7 +176,7 @@
       ],
       "note_id": "NOTE_003",
       "pathology": "Huntington Disease",
-      "processing_time": 4.16,
+      "processing_time": 3.88,
       "language": "en"
     },
     {
@@ -221,7 +221,7 @@
       ],
       "note_id": "NOTE_004",
       "pathology": "Sickle Cell Disease (HbSS)",
-      "processing_time": 4.71,
+      "processing_time": 4.68,
       "language": "en"
     },
     {
@@ -257,7 +257,7 @@
       ],
       "note_id": "NOTE_005",
       "pathology": "Inconsistency Test: Sex/Diagnosis Conflict",
-      "processing_time": 2.07,
+      "processing_time": 2.02,
       "language": "en"
     },
     {
@@ -302,13 +302,13 @@
       ],
       "note_id": "NOTE_006",
       "pathology": "Inconsistency Test: Lab Value Conflict",
-      "processing_time": 2.86,
+      "processing_time": 2.71,
       "language": "en"
     },
     {
       "note_id": "NOTE_007",
       "pathology": "Unknown",
-      "processing_time": 2.49,
+      "processing_time": 2.4,
       "language": "en",
       "tp": 0,
       "fp": 0,
@@ -365,7 +365,7 @@
       ],
       "note_id": "NOTE_008",
       "pathology": "Inconsistency Test: Drug Conflict",
-      "processing_time": 4.08,
+      "processing_time": 3.96,
       "language": "en"
     },
     {
@@ -403,7 +403,7 @@
       ],
       "note_id": "NOTE_009",
       "pathology": "Marfan Syndrome (Negation-heavy)",
-      "processing_time": 3.57,
+      "processing_time": 3.49,
       "language": "en"
     },
     {
@@ -437,19 +437,292 @@
       "extra": [],
       "note_id": "NOTE_010",
       "pathology": "SCID (T-B+NK+)",
-      "processing_time": 5.1,
+      "processing_time": 4.83,
       "language": "en"
+    },
+    {
+      "tp": 8,
+      "fp": 4,
+      "fn": 3,
+      "precision": 0.6667,
+      "recall": 0.7273,
+      "f1": 0.6957,
+      "predicted_ids": [
+        "HP:0001508",
+        "HP:0001903",
+        "HP:0001945",
+        "HP:0001974",
+        "HP:0002035",
+        "HP:0002205",
+        "HP:0002835",
+        "HP:0003193",
+        "HP:0003270",
+        "HP:0004395",
+        "HP:0006538",
+        "HP:0011227"
+      ],
+      "gold_ids": [
+        "HP:0001508",
+        "HP:0001738",
+        "HP:0001903",
+        "HP:0001945",
+        "HP:0001974",
+        "HP:0002110",
+        "HP:0002205",
+        "HP:0002719",
+        "HP:0003193",
+        "HP:0006538",
+        "HP:0011227"
+      ],
+      "correct": [
+        "HP:0001508",
+        "HP:0001903",
+        "HP:0001945",
+        "HP:0001974",
+        "HP:0002205",
+        "HP:0003193",
+        "HP:0006538",
+        "HP:0011227"
+      ],
+      "missed": [
+        "HP:0001738",
+        "HP:0002110",
+        "HP:0002719"
+      ],
+      "extra": [
+        "HP:0002035",
+        "HP:0002835",
+        "HP:0003270",
+        "HP:0004395"
+      ],
+      "note_id": "NOTE_FR_001",
+      "pathology": "Mucoviscidose (Cystic Fibrosis)",
+      "processing_time": 2.35,
+      "language": "fr"
+    },
+    {
+      "tp": 8,
+      "fp": 3,
+      "fn": 3,
+      "precision": 0.7273,
+      "recall": 0.7273,
+      "f1": 0.7273,
+      "predicted_ids": [
+        "HP:0000964",
+        "HP:0000978",
+        "HP:0001873",
+        "HP:0001888",
+        "HP:0001903",
+        "HP:0002093",
+        "HP:0002110",
+        "HP:0002205",
+        "HP:0002665",
+        "HP:0002835",
+        "HP:0004430"
+      ],
+      "gold_ids": [
+        "HP:0000964",
+        "HP:0000978",
+        "HP:0001508",
+        "HP:0001873",
+        "HP:0001888",
+        "HP:0001903",
+        "HP:0002093",
+        "HP:0002110",
+        "HP:0002205",
+        "HP:0002721",
+        "HP:0003212"
+      ],
+      "correct": [
+        "HP:0000964",
+        "HP:0000978",
+        "HP:0001873",
+        "HP:0001888",
+        "HP:0001903",
+        "HP:0002093",
+        "HP:0002110",
+        "HP:0002205"
+      ],
+      "missed": [
+        "HP:0001508",
+        "HP:0002721",
+        "HP:0003212"
+      ],
+      "extra": [
+        "HP:0002665",
+        "HP:0002835",
+        "HP:0004430"
+      ],
+      "note_id": "NOTE_FR_002",
+      "pathology": "Syndrome de Wiskott-Aldrich",
+      "processing_time": 1.56,
+      "language": "fr"
+    },
+    {
+      "tp": 6,
+      "fp": 1,
+      "fn": 4,
+      "precision": 0.8571,
+      "recall": 0.6,
+      "f1": 0.7059,
+      "predicted_ids": [
+        "HP:0000388",
+        "HP:0001369",
+        "HP:0002098",
+        "HP:0002835",
+        "HP:0002840",
+        "HP:0004313",
+        "HP:0006538"
+      ],
+      "gold_ids": [
+        "HP:0000388",
+        "HP:0001369",
+        "HP:0001888",
+        "HP:0002098",
+        "HP:0002719",
+        "HP:0002721",
+        "HP:0002840",
+        "HP:0004313",
+        "HP:0004315",
+        "HP:0006538"
+      ],
+      "correct": [
+        "HP:0000388",
+        "HP:0001369",
+        "HP:0002098",
+        "HP:0002840",
+        "HP:0004313",
+        "HP:0006538"
+      ],
+      "missed": [
+        "HP:0001888",
+        "HP:0002719",
+        "HP:0002721",
+        "HP:0004315"
+      ],
+      "extra": [
+        "HP:0002835"
+      ],
+      "note_id": "NOTE_FR_003",
+      "pathology": "Agammaglobulinémie congénitale (Bruton)",
+      "processing_time": 1.77,
+      "language": "fr"
+    },
+    {
+      "tp": 10,
+      "fp": 2,
+      "fn": 2,
+      "precision": 0.8333,
+      "recall": 0.8333,
+      "f1": 0.8333,
+      "predicted_ids": [
+        "HP:0000964",
+        "HP:0000980",
+        "HP:0001903",
+        "HP:0001943",
+        "HP:0002014",
+        "HP:0002035",
+        "HP:0002098",
+        "HP:0002205",
+        "HP:0002719",
+        "HP:0003270",
+        "HP:0004430",
+        "HP:0011227"
+      ],
+      "gold_ids": [
+        "HP:0000964",
+        "HP:0000980",
+        "HP:0001508",
+        "HP:0001903",
+        "HP:0002014",
+        "HP:0002035",
+        "HP:0002098",
+        "HP:0002205",
+        "HP:0002240",
+        "HP:0002719",
+        "HP:0004430",
+        "HP:0011227"
+      ],
+      "correct": [
+        "HP:0000964",
+        "HP:0000980",
+        "HP:0001903",
+        "HP:0002014",
+        "HP:0002035",
+        "HP:0002098",
+        "HP:0002205",
+        "HP:0002719",
+        "HP:0004430",
+        "HP:0011227"
+      ],
+      "missed": [
+        "HP:0001508",
+        "HP:0002240"
+      ],
+      "extra": [
+        "HP:0001943",
+        "HP:0003270"
+      ],
+      "note_id": "NOTE_FR_004",
+      "pathology": "SCID atypique",
+      "processing_time": 1.78,
+      "language": "fr"
+    },
+    {
+      "tp": 5,
+      "fp": 1,
+      "fn": 3,
+      "precision": 0.8333,
+      "recall": 0.625,
+      "f1": 0.7143,
+      "predicted_ids": [
+        "HP:0000980",
+        "HP:0001508",
+        "HP:0001903",
+        "HP:0002035",
+        "HP:0002205",
+        "HP:0004430"
+      ],
+      "gold_ids": [
+        "HP:0000980",
+        "HP:0001508",
+        "HP:0001903",
+        "HP:0002028",
+        "HP:0002205",
+        "HP:0002721",
+        "HP:0004395",
+        "HP:0004430"
+      ],
+      "correct": [
+        "HP:0000980",
+        "HP:0001508",
+        "HP:0001903",
+        "HP:0002205",
+        "HP:0004430"
+      ],
+      "missed": [
+        "HP:0002028",
+        "HP:0002721",
+        "HP:0004395"
+      ],
+      "extra": [
+        "HP:0002035"
+      ],
+      "note_id": "NOTE_FR_005",
+      "pathology": "Déficit en HLA-DR (MHC class II deficiency)",
+      "processing_time": 1.44,
+      "language": "fr"
     }
   ],
   "aggregate": {
-    "total_tp": 46,
-    "total_fp": 24,
-    "total_fn": 21,
-    "micro_precision": 0.6571,
-    "micro_recall": 0.6866,
-    "micro_f1": 0.6715,
-    "macro_precision": 0.6613,
-    "macro_recall": 0.6961,
-    "macro_f1": 0.6555
+    "total_tp": 83,
+    "total_fp": 35,
+    "total_fn": 36,
+    "micro_precision": 0.7034,
+    "micro_recall": 0.6975,
+    "micro_f1": 0.7004,
+    "macro_precision": 0.7049,
+    "macro_recall": 0.6984,
+    "macro_f1": 0.684
   }
 }

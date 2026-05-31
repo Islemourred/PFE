@@ -9,6 +9,8 @@
       }
     }
   },
+  "input": "\nPatient: Lucas Dubois\nDOB: 08/30/2021   MRN: 9917845   Sex: M\nDate: 04/06/2026\nProvider: Dr. Catherine Park, Pediatric Cardiology\n\nCC: follow-up VSD repair\n\nHPI: 5yo M s/p VSD repair in March 2018 at Children's National.\n     Procedure performed by Dr. Richardson via median sternotomy,\n     primary patch closure. Post-op course uncomplicated per records.\n\n     Mom reports intermittent palpitations x 2 months, especially during\n     activity. No syncope, no chest pain, no exercise intolerance. Active,\n     playing soccer.\n\n     ***NOTE: patient born 08/30/2021 - surgery date 2018 predates birth***\n\nVitals: HR 92, BP 95/62, SpO2 99% RA\nEcho today: normal biventricular function, LVEF 62%, no residual VSD,\n            no valvular regurgitation\n\nEKG: NSR, rate 90, no arrhythmia, normal QTc\n\nA/P:\n  1. S/p VSD repair - echo satisfactory, no residual defect\n  2. Palpitations - likely benign given normal EKG/echo.\n     Order 48hr Holter monitor for reassurance\n  3. Clear for sports participation\n  4. f/u 1 yr or sooner if palpitations worsen\n",
+  "target": "Sickle cell disease",
   "phenotypicFeatures": [
     {
       "type": {
@@ -132,7 +134,7 @@
     }
   ],
   "metaData": {
-    "created": "2026-05-18T06:05:04Z",
+    "created": "2026-05-22T11:57:37Z",
     "createdBy": "clinical-preanalysis-pipeline-v2",
     "phenopacketSchemaVersion": "2.0",
     "resources": [

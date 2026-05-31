@@ -9,6 +9,8 @@
       }
     }
   },
+  "input": "\nPt: Nadia Bouzid\nDOB: 04/15/1988   MRN: 6673421   Sex: F\nDate: 04/05/2026\nProvider: Dr. Hassan El-Amin, Endocrinology\n\nCC: dizziness, confusion\n\nHPI: 38yo F w/ poorly controlled DM2 presents w/ episodic dizziness and\n     confusion x 2 wks. Also reports headaches and visual changes.\n\nLabs:\n  - fasting glucose: 42 mg/dL (critically low - symptomatic hypoglycemia)\n  - HbA1c: 11.2% (indicates chronic severe hyperglycemia)\n  - simultaneous C-peptide: 0.8 ng/mL (low)\n\nVitals: BP 182/108 sitting, BP 78/50 standing (orthostatic hypotension\n        with documented hypertension)\n\nMeds: metformin 1000mg BID, glipizide 10mg BID, insulin glargine 40 units QHS\n\nA/P:\n  1. Hypoglycemia - likely glipizide/insulin overlap. Hold glipizide.\n  2. Chronic hyperglycemia per HbA1c despite hypoglycemic episodes -\n     consider glycemic variability, brittle diabetes workup\n  3. Hypertension w/ orthostatic hypotension - r/o autonomic neuropathy.\n     Start midodrine 5mg TID for orthostasis. Continue lisinopril.\n  4. CGM placement for glucose patterns\n  5. Endocrine f/u 2 wks\n",
+  "target": null,
   "phenotypicFeatures": [
     {
       "type": {
@@ -191,7 +193,7 @@
     }
   ],
   "metaData": {
-    "created": "2026-05-18T06:05:01Z",
+    "created": "2026-05-22T11:57:35Z",
     "createdBy": "clinical-preanalysis-pipeline-v2",
     "phenopacketSchemaVersion": "2.0",
     "resources": [

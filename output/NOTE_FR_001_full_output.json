@@ -618,6 +618,8 @@
         }
       }
     },
+    "input": "Compte rendu d'hospitalisation\n      L'enfant ABDELLAOUI MOHAMED YANIS âgé de 04 ans et demi originaire et demeurant à Oran, suivi depuis l'âge de 03 mois pour une mucoviscidose à double expression phénotypique respiratoire et digestive, réadmis pour exacerbation modérée à Pseudomonas Aeruginosa.\nANTECEDENTS :\nFamiliaux :\n- Père : 41ans ; BES.\n- Mère : 27 ans, BES.\n- Consanguinité de 2eme degré.\nPersonnels :\nGrossesse : bien suivie\nAccouchement : par VB à terme.\nAllaitement maternel jusqu'à 06 mois puis artificiel\nDiversification alimentaire : 06 mois.\nVaccination : faite correctement\nPathologique :\nDepuis l'âge de 03 mois : encombrement bronchique chronique, toux grasse persistante, infections respiratoires à répétition.\nDiarrhée chronique graisseuse avec ballonnement abdominal et retard pondéral.\nDiagnostic principal : Mucoviscidose\nDate de diagnostic : 2022\nÉléments de diagnostic :\nTest de la sueur positif :\n01er Test 26/09/2011 (Avant-bras Gauche) 82 mg 81 meq/l\n02ème Test 29/11/2011 (Avant-bras Droit) 216 mg 93 meq/l\nÉtude génétique : 31/01/2012 : mutation homozygote p.F508del\nElastase fécale 26/03/2025 : 1,8ug/ insuffisance pancréatique exocrine\nTraitement en cours :\n- Kinésithérapie respiratoire à domicile biquotidienne\n- Nébulisation hypertonique\n- Nébulisation par Colistine 2 fois par jour un mois sur 2\n- Créon 12000 UI (520UI/Kg)\n- Vit K 10 mg/15j, Vit D amp/3 mois, Vit E 1cp/j\nHISTOIRE DE LA MALADIE :\nLe début des signes remonte 15 jours auparavant par accentuation de la toux devenant gênante, modification des crachats qui sont devenus verdâtres et épais, avec asthénie et diminution de l'appétit d'où son admission.\nEXAMEN CLINIQUE À L'ADMISSION : Date : 24/03/2026\nMesures anthropométriques :\nPoids : 13,600 kg (-1,79 DS). Taille : 100 cm (-1,43 DS). IMC: 13,6 kg/m2 (-1,4 DS).\nÉtat général moyen, fébrile : T : 38,7° C, malnutrition légère.\nExamen de la peau : Pâleur cutanée, pas d'ictère, ni syndrome hémorragique.\nExamen ORL : rhinite allergique\nExamen pleuro pulmonaire : FR : 30 c/min, quintes de Toux grasses, Auscultation, râles ronflants bilatéraux, murmures vésiculaires bien transmis dans les 2 champs pulmonaires. Pas de signes d'insuffisance respiratoire chronique (pas d'hippocratisme digital). SPO2 : 96% sous AA.\nExamen cardiovasculaire : FC : 100 bpm, Auscultation : B1B2 audibles, pas de souffle ni BSA.\nExamen de l'abdomen: souple, transit conservé, pas d'organomégalie.\nBILAN PARACLINIQUE :\nNFS : GB : 12500 éléments/ul (PNN : 9200 Lymph : 2800) Hb : 11.2 g/dl Plaquette : 280 000\nCRP : 45 mg/L\nECBC : Pseudomonas Aeruginosa sensible à la Colistine et Ciprofloxacine.\n",
+    "target": "Cystic fibrosis",
     "phenotypicFeatures": [
       {
         "type": {
@@ -917,7 +919,7 @@
       }
     ],
     "metaData": {
-      "created": "2026-05-18T06:01:26Z",
+      "created": "2026-05-22T11:57:52Z",
       "createdBy": "clinical-preanalysis-pipeline-v2",
       "phenopacketSchemaVersion": "2.0",
       "resources": [

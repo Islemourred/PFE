@@ -967,6 +967,8 @@
         }
       }
     },
+    "input": "\nPatient: Baby Boy Al-Rashid\nDOB: 04/10/2026   MRN: 1100483   Sex: M   Age: 5 days\nDate: 04/15/2026\nNICU Attending: Dr. Yuki Tanaka, Neonatology / Immunology\n\nCC: abnormal newborn screen\n\nHPI: 5 day old male born at 39+2 wks via NSVD to 28yo G2P2 mother.\n     Birth weight 3.2kg, APGARs 8/9. Newborn screen flagged for TREC\n     absent (T-cell receptor excision circles = 0). Parents are first\n     cousins (consanguineous). Older sibling (sister, 3yo) is healthy.\n\n     Infant currently feeding well, no respiratory distress, no rash,\n     no diarrhea. Afebrile.\n\nPE: well-appearing neonate, no dysmorphic features.\n    HEENT: no thrush. Heart: RRR, no murmur. Lungs: CTA bilat.\n    Skin: no rash, no lesions. Umbilicus clean.\n\nCXR: ABSENT thymic shadow - highly suspicious for T-cell deficiency\n\nLabs:\n  CBC w/ diff: WBC 4.2, ALC 180/mcL (CRITICALLY LOW - normal >2500)\n    Lymphocyte subsets:\n      CD3+ T cells: 12/mcL (normal >2500)\n      CD4+: 8/mcL\n      CD8+: 4/mcL\n      CD19+ B cells: 890/mcL (normal)\n      CD16/56+ NK cells: 340/mcL (normal)\n  IgG: 680 (maternal), IgA: <5, IgM: <5\n\n  Flow cytometry: T-B+NK+ phenotype\n\nA/P: Severe Combined Immunodeficiency (SCID) - T-B+NK+ phenotype\n     Most likely X-linked (IL2RG) vs JAK3 deficiency given phenotype\n\n  1. STRICT protective isolation - positive pressure room\n  2. IVIG 400mg/kg loading dose, then q3-4wks\n  3. PCP prophylaxis: TMP-SMX 5mg/kg/day divided BID\n  4. CMV-negative, irradiated, leukocyte-reduced blood products ONLY\n  5. NO live vaccines (BCG, rotavirus) - notify family\n  6. Genetic testing: IL2RG gene sequencing STAT, JAK3 if negative\n  7. HLA typing: patient + parents + sibling for potential HSCT donor\n  8. Urgent referral to transplant center - Dr. Buckley at Duke\n  9. Social work: family support, discuss prognosis and HSCT timeline\n  10. Mother to pump/provide breast milk (beneficial IgA)\n",
+    "target": "Severe combined immunodeficiency",
     "phenotypicFeatures": [
       {
         "type": {
@@ -1109,7 +1111,7 @@
       }
     ],
     "metaData": {
-      "created": "2026-05-18T06:05:17Z",
+      "created": "2026-05-22T11:57:50Z",
       "createdBy": "clinical-preanalysis-pipeline-v2",
       "phenopacketSchemaVersion": "2.0",
       "resources": [

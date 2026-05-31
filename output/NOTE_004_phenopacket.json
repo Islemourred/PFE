@@ -9,6 +9,8 @@
       }
     }
   },
+  "input": "\nPt: Elijah Thompson\nDOB: 06/01/2023   MRN: 8891204   Sex: M\nVisit: 04/12/2026 - ED presentation\nProvider: Dr. Priya Sharma, Pediatric Hematology (on-call)\n\nCC: bilateral hand swelling and pain x 12 hrs\n\nHPI: 3yo AA male brought to ED by mother for acute onset bilateral hand\n     swelling and severe pain (dactylitis). Pt inconsolable, refusing to\n     use hands. 4th pain crisis in past 12 months. Temp 100.4F at home.\n     Last crisis 6 wks ago - managed as outpatient w/ oral morphine.\n     No URI sx, no cough, no abd pain. On folic acid only - parents\n     declined hydroxyurea previously.\n\n     Both parents confirmed sickle cell trait (HbAS).\n\nPMH: SCD (HbSS) - dx newborn screen, dactylitis x3, 1 splenic sequestration\n     (age 18mo), received Prevnar + Menactra, on penicillin prophylaxis until\n     stopped by parents 4mo ago\nMeds: folic acid 1mg daily (poor compliance per mom)\nAllergies: NKDA\n\nVitals: T 101.2F, HR 142, RR 28, BP 88/52, SpO2 95% RA\n\nLabs:\n  CBC: WBC 18.4, Hgb 6.8 (baseline 7.5), Hct 20.1, Plt 425, Retic 12.4%\n  CMP: BUN 8, Cr 0.3, LDH 892 (H), total bili 4.2 (H), AST 48\n  Blood cx: x2 sent\n  Type & screen: done\n\nPeripheral smear: sickle cells, target cells, Howell-Jolly bodies\n\nA/P: SCD (HbSS) w/ VOC + dactylitis + fever - concern for sepsis\n  1. IV NS bolus 20ml/kg then D5 1/2NS at 1.5x maintenance\n  2. IV morphine 0.1mg/kg q3h PRN, start ketorolac 0.5mg/kg q6h\n  3. Ceftriaxone 75mg/kg IV (max 2g) empiric - pending cultures\n  4. Transfuse pRBC 10ml/kg - Hgb below baseline w/ acute symptoms\n  5. Restart penicillin V prophylaxis - counsel parents re: infection risk\n  6. Strongly recommend hydroxyurea initiation - meeting w/ parents tomorrow\n  7. Admit to pediatric floor, heme attending to assume care AM\n",
+  "target": "Sickle cell disease",
   "phenotypicFeatures": [
     {
       "type": {
@@ -150,7 +152,7 @@
     }
   ],
   "metaData": {
-    "created": "2026-05-18T06:04:56Z",
+    "created": "2026-05-22T11:57:30Z",
     "createdBy": "clinical-preanalysis-pipeline-v2",
     "phenopacketSchemaVersion": "2.0",
     "resources": [
