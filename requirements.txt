@@ -1,0 +1,40 @@
+# ══════════════════════════════════════════════════════════════════════
+#  Clinical Pre-Analysis Pipeline — Dependencies
+#  Bilingual (EN/FR) Neuro-Symbolic Engine for Rare Disease Diagnosis
+# ══════════════════════════════════════════════════════════════════════
+
+# ── Core ML Framework ──────────────────────────────────────────────
+torch>=2.0.0                    # PyTorch (transformer backend)
+transformers>=4.30.0            # HuggingFace Transformers
+numpy>=1.24.0                   # Numerical computing
+
+# ── NER Models ─────────────────────────────────────────────────────
+# EN: Helios9/BioMed_NER (DeBERTa-v3, SOTA 2024)
+#     + d4data/biomedical-ner-all (ensemble)
+# FR: almanach/camembert-bio-gliner-v0.1 (zero-shot)
+gliner>=0.2.0                   # GLiNER zero-shot NER framework
+pysbd>=0.3.4                    # Sentence boundary detection
+
+# ── Language Detection ─────────────────────────────────────────────
+langdetect>=1.0.9               # Auto-detect EN/FR clinical notes
+
+# ── Temporal Parsing ───────────────────────────────────────────────
+dateparser>=1.4.0               # 200+ date formats, 50+ languages
+
+# ── Streamlit UI ───────────────────────────────────────────────────
+streamlit>=1.28.0               # Interactive web interface
+
+# ── Document Processing ───────────────────────────────────────────
+python-docx>=1.0.0              # Read .docx clinical reports
+
+# ── Evaluation & Visualization ─────────────────────────────────────
+matplotlib>=3.7.0               # Confusion matrix plots
+seaborn>=0.12.0                 # Heatmaps & statistical graphics
+
+# ── Data Ingestion (auto-downloaded on first run) ──────────────────
+# requests is a dependency of transformers, no extra install needed
+# Datasets auto-cached in data/:
+#   - medical_abbreviations.json    (3,911 entries — OpenMedData)
+#   - hpo_french_labels.json        (25,054 entries — Orphanet/INSERM)
+#   - hpo_fr_en_translations.json   (25,054 entries — HPO Consortium)
+#   - ordo_profiles.json            (4,335 entries — phenotype.hpoa)

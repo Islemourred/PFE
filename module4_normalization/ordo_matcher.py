@@ -3,9 +3,14 @@ Module 4.4 — ORDO Rare Disease Matcher (Extended)
 Matches a patient's phenotype profile (set of HPO terms) against
 known rare disease profiles from the Orphanet Rare Disease Ontology.
 
-Extended with 9 additional disease profiles from CHU Oran pediatric data.
+Supports two modes:
+  - Full database: 4,000+ diseases from phenotype.hpoa (downloaded once)
+  - Curated only: 18 profiles from CHU Oran pediatric data (always available)
 """
 
+from log_config import get_logger
+
+logger = get_logger(__name__)
 
 # ── Curated rare disease phenotype profiles ──────────────────────────────────
 # Source: HPO annotations database (phenotype.hpoa) + CHU Oran clinical data
@@ -16,13 +21,6 @@ RARE_DISEASE_PROFILES = {
         "hpo": {"HP:0001382", "HP:0002829", "HP:0000978", "HP:0000974",
                 "HP:0001075", "HP:0012532", "HP:0001388", "HP:0001058",
                 "HP:0010485", "HP:0010499", "HP:0001252"},
-    },
-    "ORPHA:586": {
-        "name": "Cystic fibrosis",
-        "name_fr": "Mucoviscidose",
-        "hpo": {"HP:0002110", "HP:0006538", "HP:0002035", "HP:0001508",
-                "HP:0002240", "HP:0012735", "HP:0002099", "HP:0001738",
-                "HP:0001945", "HP:0004401"},
     },
     "ORPHA:399": {
         "name": "Huntington disease",
@@ -133,10 +131,33 @@ RARE_DISEASE_PROFILES = {
 
 
 class ORDOMatcher:
-    """Matches patient HPO profiles to candidate rare diseases."""
+    """
+    Matches patient HPO profiles to candidate rare diseases.
+    
+    Loads 4,000+ ORPHA diseases from the official HPO annotations database,
+    then overlays curated CHU Oran profiles (which may have French names
+    and locally-relevant HPO refinements).
+    """
 
-    def __init__(self):
-        self.diseases = RARE_DISEASE_PROFILES
+    def __init__(self, use_full_database: bool = True):
+        # Start with curated profiles (always available, have name_fr)
+        self.diseases = dict(RARE_DISEASE_PROFILES)
+
+        # Load full ORDO database if available
+        if use_full_database:
+            try:
+                from module4_normalization.ordo_loader import load_ordo_profiles
+                full_profiles = load_ordo_profiles()
+                if full_profiles:
+                    # Merge: full database as base, curated profiles override
+                    merged = dict(full_profiles)
+                    merged.update(self.diseases)  # curated takes priority
+                    self.diseases = merged
+                    logger.info("ORDOMatcher: %d diseases loaded (%d curated + %d from HPOA)",
+                                len(self.diseases), len(RARE_DISEASE_PROFILES), len(full_profiles))
+            except Exception as e:
+                logger.warning("Could not load full ORDO database: %s", e)
+                logger.info("ORDOMatcher: using %d curated profiles only", len(self.diseases))
 
     def match_diseases(self, patient_hpo_ids: set, top_k: int = 5) -> list:
         """

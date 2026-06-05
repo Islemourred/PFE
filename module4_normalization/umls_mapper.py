@@ -8,6 +8,10 @@ Architecture role (per mémoire Ch4):
   UMLS serves as the terminological pivot between systems.
 """
 
+from log_config import get_logger
+
+logger = get_logger(__name__)
+
 
 class UMLSMapper:
     """Maps between HPO IDs and UMLS CUIs using HPO cross-references."""
@@ -33,8 +37,8 @@ class UMLSMapper:
             if umls_cuis:
                 self.hpo_to_umls[hpo_id] = umls_cuis
 
-        print(f"UMLSMapper: {len(self.hpo_to_umls)} HPO->UMLS, "
-              f"{len(self.umls_to_hpo)} UMLS->HPO mappings")
+        logger.info("UMLSMapper: %d HPO->UMLS, %d UMLS->HPO mappings",
+                    len(self.hpo_to_umls), len(self.umls_to_hpo))
 
     def get_umls_cuis(self, hpo_id: str) -> list[str]:
         """Get UMLS CUIs for a given HPO ID."""

@@ -87,9 +87,18 @@ def detect_inconsistencies(text: str, entities: dict, patient_info: dict) -> lis
                 })
 
     # 2. Lab value contradictions
-    has_hypoglycemia = bool(re.search(
-        r'(?:glucose|gluc|glycémie|dextro)\s*[:\s]*\d{1,2}\s*(?:mg/dL|g/l)?', text_lower
-    ))
+    # Check for actual hypoglycemia (glucose < 70 mg/dL), not just any glucose value
+    has_hypoglycemia = False
+    glucose_match = re.search(
+        r'(?:glucose|gluc|glycémie|dextro|fasting glucose)\s*[:\s]*(\d{1,3}(?:[.,]\d)?)\s*(?:mg/dL|g/l)?',
+        text_lower
+    )
+    if glucose_match:
+        try:
+            glucose_val = float(glucose_match.group(1).replace(",", "."))
+            has_hypoglycemia = glucose_val < 70
+        except ValueError:
+            pass
     has_high_a1c = bool(re.search(
         r'(?:hba1c|a1c)\s*[:\s]*(?:1[0-9]|[89])(?:[.,]\d)?\s*%', text_lower
     ))

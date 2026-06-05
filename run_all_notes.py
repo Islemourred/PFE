@@ -19,8 +19,8 @@ PROJECT_ROOT = os.path.dirname(os.path.abspath(__file__))
 if PROJECT_ROOT not in sys.path:
     sys.path.insert(0, PROJECT_ROOT)
 
-from mock_data import raw_notes
-from mock_data_fr import get_french_notes
+from clinical_notes.mock_data import raw_notes
+from clinical_notes.mock_data_fr import get_french_notes
 from pipeline import FullPipeline
 from evaluation.gold_standard import GOLD_STANDARD, get_all_note_ids
 from evaluation.gold_standard_fr import GOLD_STANDARD_FR
@@ -94,7 +94,7 @@ def run_notes(pipeline_obj, notes_dict, lang, output_dir, gold_standard=None):
         # Evaluate against gold standard if available
         gold = (gold_standard or {}).get(note_id, {})
         if gold and gold.get("expected_hpo"):
-            metrics = evaluate_note(result["step2"], gold)
+            metrics = evaluate_note(result["module4"], gold)
             metrics["note_id"] = note_id
             metrics["pathology"] = gold.get("pathology", note_data.get("pathology", "Unknown"))
             metrics["processing_time"] = elapsed

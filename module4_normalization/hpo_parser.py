@@ -9,6 +9,9 @@ import xml.etree.ElementTree as ET
 import json
 import os
 import time
+from log_config import get_logger
+
+logger = get_logger(__name__)
 
 # OWL/XML namespaces used in hp.owl
 NS = {
@@ -40,7 +43,7 @@ def parse_hpo_owl(owl_path: str) -> list[dict]:
             "xrefs":            ["UMLS:C1844820", "SNOMEDCT_US:298181000"]
         }
     """
-    print(f"Parsing HPO ontology from: {owl_path}")
+    logger.info("Parsing HPO ontology from: %s", owl_path)
     start = time.time()
 
     terms = []
@@ -112,7 +115,7 @@ def parse_hpo_owl(owl_path: str) -> list[dict]:
         elem.clear()
 
     elapsed = round(time.time() - start, 1)
-    print(f"Parsed {len(terms)} HPO terms in {elapsed}s")
+    logger.info("Parsed %d HPO terms in %ss", len(terms), elapsed)
     return terms
 
 
@@ -120,14 +123,14 @@ def save_hpo_json(terms: list[dict], output_path: str):
     """Save parsed HPO terms to a JSON file for fast future loading."""
     with open(output_path, "w", encoding="utf-8") as f:
         json.dump(terms, f, indent=2, ensure_ascii=False)
-    print(f"Saved {len(terms)} terms to {output_path}")
+    logger.info("Saved %d terms to %s", len(terms), output_path)
 
 
 def load_hpo_json(json_path: str) -> list[dict]:
     """Load previously parsed HPO terms from JSON."""
     with open(json_path, "r", encoding="utf-8") as f:
         terms = json.load(f)
-    print(f"Loaded {len(terms)} HPO terms from {json_path}")
+    logger.info("Loaded %d HPO terms from %s", len(terms), json_path)
     return terms
 
 
@@ -144,7 +147,7 @@ def get_hpo_terms(owl_path: str, cache_path: str = None) -> list[dict]:
         List of HPO term dicts
     """
     if cache_path is None:
-        cache_path = os.path.join(os.path.dirname(owl_path), "hpo_terms.json")
+        cache_path = os.path.join(os.path.dirname(owl_path), "data", "hpo_terms.json")
 
     if os.path.exists(cache_path):
         return load_hpo_json(cache_path)

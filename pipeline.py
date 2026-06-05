@@ -18,15 +18,18 @@ Usage:
 import os
 import json
 
-from language_detector import detect_language
+from log_config import get_logger
+from module1_preprocessing.language_detector import detect_language
 from module1_preprocessing.phi_remover import process_phi
 from module2_extraction.clinical_ner import ClinicalNER
 from module3_validation.negex import NegExDetector
 from module3_validation.temporal import check_temporal_consistency
 from module3_validation.numeric import extract_numeric_phenotypes
 from module3_validation.inconsistency import detect_inconsistencies
-from module4_normalization.pipeline import NormalizationPipeline
+from module4_normalization.normalizer import NormalizationPipeline
 from output_builder.phenopacket_builder import build_phenopacket
+
+logger = get_logger(__name__)
 
 
 class FullPipeline:
@@ -35,25 +38,25 @@ class FullPipeline:
     Bilingual: auto-detects language and routes to FR or EN components.
     """
 
-    def __init__(self, similarity_threshold: float = 0.80):
-        print("Initializing Clinical Pre-Analysis Pipeline (Bilingual)...")
+    def __init__(self, similarity_threshold: float = 0.70):
+        logger.info("Initializing Clinical Pre-Analysis Pipeline (Bilingual)...")
 
-        print("  Loading Module 2: ClinicalBERT NER (English)...")
+        logger.info("  Loading Module 2: ClinicalBERT NER (English)...")
         self.ner_en = ClinicalNER(lang="en")
 
-        print("  Loading Module 2: CamemBERT-bio GLiNER (French)...")
+        logger.info("  Loading Module 2: CamemBERT-bio GLiNER (French)...")
         self.ner_fr = ClinicalNER(lang="fr")
 
-        print("  Loading Module 3: NegEx Detectors...")
+        logger.info("  Loading Module 3: NegEx Detectors...")
         self.negex_en = NegExDetector(lang="en")
         self.negex_fr = NegExDetector(lang="fr")
 
-        print("  Loading Module 4: Normalization Pipeline...")
+        logger.info("  Loading Module 4: Normalization Pipeline...")
         self.normalizer = NormalizationPipeline(
             similarity_threshold=similarity_threshold
         )
 
-        print("Pipeline ready (FR + EN).\n")
+        logger.info("Pipeline ready (FR + EN).")
 
     def process(self, clinical_text: str, note_id: str = "UNKNOWN",
                 patient_info: dict = None, lang: str = None) -> dict:
@@ -77,7 +80,7 @@ class FullPipeline:
         # ═══════════════════════════════════════════════════════════════
         if lang is None:
             lang = detect_language(raw_text)
-        print(f"  [{note_id}] Language: {lang.upper()}")
+        logger.info("  [%s] Language: %s", note_id, lang.upper())
 
         # ═══════════════════════════════════════════════════════════════
         # MODULE 1: Preprocessing & De-identification
@@ -181,7 +184,7 @@ class FullPipeline:
         with open(full_path, "w", encoding="utf-8") as f:
             json.dump({
                 "note_id": note_id,
-                "language": lang,
+                "language": result["language"],
                 "module1": result["module1"],
                 "module3_warnings": result["module3"]["warnings"],
                 "module4": result["module4"],

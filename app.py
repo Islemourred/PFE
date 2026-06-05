@@ -226,34 +226,61 @@ def build_entity_rows(entities: list, category: str) -> str:
 col_upload, col_info = st.columns([2, 1])
 
 with col_upload:
-    uploaded = st.file_uploader(
-        "Upload", type=["docx"],
-        accept_multiple_files=False, label_visibility="collapsed",
-    )
+    input_mode = st.radio("Mode d'entrée", ["Fichier (.docx / .txt)", "Texte libre"], horizontal=True, label_visibility="collapsed")
+    uploaded = None
+    pasted_text = None
+    if input_mode == "Fichier (.docx / .txt)":
+        uploaded = st.file_uploader(
+            "Upload", type=["docx", "txt"],
+            accept_multiple_files=False, label_visibility="collapsed",
+        )
+    else:
+        pasted_text = st.text_area(
+            "Collez une note clinique (FR ou EN)",
+            height=200,
+            placeholder="Le patient présente une hypotonie axiale...\nPatient is a 55yo male with...",
+        )
 
 with col_info:
     st.markdown("""
     <div class="card" style="margin-top: 0;">
         <div class="card-header">Architecture du pipeline</div>
         <div class="pipeline-step"><div class="step-num step-pending">1</div><div class="step-text dim">De-identification (PHI)</div></div>
-        <div class="pipeline-step"><div class="step-num step-pending">2</div><div class="step-text dim">Extraction d'entites (NER)</div></div>
-        <div class="pipeline-step"><div class="step-num step-pending">3</div><div class="step-text dim">Validation (NegEx / Numerique)</div></div>
-        <div class="pipeline-step"><div class="step-num step-pending">4</div><div class="step-text dim">Normalisation HPO / ORDO</div></div>
+        <div class="pipeline-step"><div class="step-num step-pending">2</div><div class="step-text dim">Extraction NER (DeBERTa-v3 / GLiNER)</div></div>
+        <div class="pipeline-step"><div class="step-num step-pending">3</div><div class="step-text dim">Validation (NegEx / Temporel / Numerique)</div></div>
+        <div class="pipeline-step"><div class="step-num step-pending">4</div><div class="step-text dim">Normalisation HPO / UMLS / ORDO</div></div>
     </div>
     """, unsafe_allow_html=True)
 
 
+# Determine input text
+raw_text = None
+source_name = "Texte colle"
+
 if uploaded:
-    raw_text = extract_docx_text(uploaded)
+    if uploaded.name.endswith(".txt"):
+        raw_text = uploaded.getvalue().decode("utf-8", errors="replace")
+    else:
+        raw_text = extract_docx_text(uploaded)
+    source_name = uploaded.name
+elif pasted_text and len(pasted_text.strip()) > 10:
+    raw_text = pasted_text.strip()
+
+if raw_text:
     if len(raw_text) < 50:
-        st.error("Le fichier ne contient pas assez de texte exploitable.")
+        st.error("Le texte ne contient pas assez de contenu exploitable.")
         st.stop()
+
+    # Auto-detect language
+    from module1_preprocessing.language_detector import detect_language
+    detected_lang = detect_language(raw_text)
+    lang_display = "Français" if detected_lang == "fr" else "English"
 
     st.markdown(f"""
     <div class="card">
-        <div class="card-header">Rapport charge</div>
-        <div style="color: #e2e8f0; font-size: 0.9rem; font-weight: 500;">{uploaded.name}</div>
-        <div style="color: #64748b; font-size: 0.8rem; margin-top: 4px;">{len(raw_text):,} caracteres &nbsp;|&nbsp; Langue : Francais</div>
+        <div class="card-header">Rapport chargé</div>
+        <div style="color: #e2e8f0; font-size: 0.9rem; font-weight: 500;">{source_name}</div>
+        <div style="color: #64748b; font-size: 0.8rem; margin-top: 4px;">{len(raw_text):,} caractères &nbsp;|&nbsp; Langue détectée : {lang_display}</div>
     </div>
     """, unsafe_allow_html=True)
 
@@ -267,14 +294,17 @@ if uploaded:
         output_dir = os.path.join(PROJECT_ROOT, "output", "streamlit")
         os.makedirs(output_dir, exist_ok=True)
 
-        progress.progress(15, text="Module 2 : Extraction d'entites cliniques...")
+        progress.progress(15, text="[Module 2] Extraction NER (DeBERTa-v3 — Helios9/BioMed_NER + d4data ensemble)s...")
 
-        result = pipeline_obj.process_and_save(
-            clinical_text=raw_text,
-            note_id="UPLOADED",
-            output_dir=output_dir,
-            lang="fr",
-        )
+        try:
+            result = pipeline_obj.process_and_save(
+                clinical_text=raw_text,
+                note_id="UPLOADED",
+                output_dir=output_dir,
+            )
+        except Exception as e:
+            st.error(f"Erreur lors de l'analyse : {str(e)}")
+            st.stop()
 
         progress.progress(85, text="Module 4 : Normalisation HPO / ORDO...")
         elapsed = round(time.time() - start, 2)
@@ -285,7 +315,7 @@ if uploaded:
         # ── Results ──────────────────────────────────────────────
         m4 = result.get("module4", {})
         stats = m4.get("stats", {})
-        step2 = result.get("step2", {})
+        normalized = result.get("module4", {})
         ordo = m4.get("ordo_candidates", [])
         numerics = result.get("module3", {}).get("numeric_phenotypes", [])
         m2_ents = result.get("module2", {}).get("entities", {})
@@ -332,7 +362,7 @@ if uploaded:
         with tab1:
             all_rows = ""
             for cat in ["problem", "treatment", "test"]:
-                all_rows += build_entity_rows(step2.get(cat, []), cat)
+                all_rows += build_entity_rows(normalized.get(cat, []), cat)
             if all_rows:
                 st.markdown(f"""
                 <table class="entity-table">
@@ -367,7 +397,7 @@ if uploaded:
         <hr class="section-divider">
         <div style="display:flex;justify-content:space-between;color:#475569;font-size:0.7rem;padding:0 0.5rem;">
             <span>Temps : {elapsed}s</span>
-            <span>CamemBERT-bio GLiNER + SapBERT + NegEx</span>
+            <span>DeBERTa-v3 + GLiNER + SapBERT + NegEx | Bilingue FR/EN</span>
             <span>GA4GH Phenopackets (ISO 4454:2022)</span>
         </div>
         """, unsafe_allow_html=True)

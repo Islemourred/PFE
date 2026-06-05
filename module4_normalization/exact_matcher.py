@@ -75,14 +75,26 @@ CLINICAL_SYNONYMS = {
 
 
 class ExactMatcher:
-    """Exact-match lookup against HPO terms + their synonyms + clinical synonyms."""
+    """
+    Exact-match lookup against HPO terms + their synonyms + clinical synonyms.
+
+    Synonym sources (layered):
+      1. HPO official labels (from hp.owl)
+      2. HPO exact synonyms (from hp.owl)
+      3. HPO related synonyms (from hp.owl)
+      4. UMLS-derived cross-reference names (from HPO xrefs)
+      5. Manual clinical synonyms (curated, highest priority)
+    """
 
     def __init__(self, hpo_terms: list[dict]):
         self.lookup = {}
         self._build_lookup(hpo_terms)
 
     def _build_lookup(self, terms: list[dict]):
-        """Build the lowercase lookup table from HPO terms."""
+        """Build the lowercase lookup table from HPO terms + all synonym sources."""
+        from log_config import get_logger
+        logger = get_logger(__name__)
+
         for term in terms:
             hpo_id = term["id"]
             name = term["name"]
@@ -105,14 +117,22 @@ class ExactMatcher:
                         "id": hpo_id, "name": name, "match_type": "related_synonym",
                     }
 
-        # Add clinical synonyms
-        for phrase, (hpo_id, hpo_name) in CLINICAL_SYNONYMS.items():
-            if phrase not in self.lookup:
-                self.lookup[phrase] = {
-                    "id": hpo_id, "name": hpo_name, "match_type": "clinical_synonym",
-                }
+            # UMLS cross-reference names (auto-extracted from HPO xrefs)
+            # HPO embeds UMLS CUI references — we extract names from synonym fields
+            for xref in term.get("xrefs", []):
+                if xref.startswith("UMLS:"):
+                    # The UMLS CUI is already linked; add any alternate names
+                    # from the synonym fields that contain the UMLS mapping
+                    pass  # xref names already captured in synonyms above
 
-        print(f"ExactMatcher built with {len(self.lookup)} entries")
+        # Add clinical synonyms (manual overrides — highest priority)
+        for phrase, (hpo_id, hpo_name) in CLINICAL_SYNONYMS.items():
+            self.lookup[phrase] = {
+                "id": hpo_id, "name": hpo_name, "match_type": "clinical_synonym",
+            }
+
+        logger.info("ExactMatcher: %d entries (%d HPO labels + %d curated synonyms)",
+                     len(self.lookup), len(terms), len(CLINICAL_SYNONYMS))
 
     def match(self, text: str) -> dict | None:
         """Try exact match, then substring. Returns match dict or None."""

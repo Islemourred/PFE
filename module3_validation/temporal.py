@@ -3,6 +3,10 @@ Module 3.2 — Temporal Reasoning (Bilingual)
 Detects temporal impossibilities and inconsistencies in clinical notes.
 Supports both English and French date formats.
 
+Hybrid date parsing:
+  1. Primary:  dateparser library (200+ formats, 50+ languages)
+  2. Fallback: Manual strptime for clinical-specific formats
+
 Checks:
   - Events dated before patient's date of birth
   - Procedures dated in the future (relative to note date)
@@ -11,20 +15,53 @@ Checks:
 
 import re
 from datetime import datetime, date
+from log_config import get_logger
+
+logger = get_logger(__name__)
+
+# Try to load dateparser (model-based date parsing)
+try:
+    import dateparser
+    _HAS_DATEPARSER = True
+    logger.debug("dateparser loaded (200+ date formats, 50+ languages)")
+except ImportError:
+    _HAS_DATEPARSER = False
+    logger.debug("dateparser not available, using manual parsing")
 
 
 def parse_date(text: str) -> date | None:
-    """Try to parse a date string in common clinical formats."""
+    """
+    Parse a date string using hybrid approach:
+      1. dateparser (handles 200+ formats in 50+ languages automatically)
+      2. Manual strptime fallback for clinical-specific formats
+    """
+    text = text.strip().strip("[]").strip("*").strip()
+    if not text:
+        return None
+
+    # Primary: dateparser (understands "15 mars 2024", "March 15, 2024", etc.)
+    if _HAS_DATEPARSER:
+        try:
+            parsed = dateparser.parse(
+                text,
+                settings={
+                    "PREFER_DAY_OF_MONTH": "first",
+                    "PREFER_DATES_FROM": "past",
+                    "STRICT_PARSING": True,
+                },
+            )
+            if parsed:
+                return parsed.date()
+        except Exception:
+            pass
+
+    # Fallback: Manual format matching
     formats = [
-        # French DD/MM/YYYY (most common in French clinical notes)
         "%d/%m/%Y", "%d-%m-%Y", "%d.%m.%Y", "%d/%m/%y",
-        # English MM/DD/YYYY
         "%m/%d/%Y", "%Y-%m-%d", "%m-%d-%Y",
         "%m/%d/%y", "%Y/%m/%d",
-        # Named months
         "%B %d, %Y", "%b %d, %Y",
     ]
-    text = text.strip().strip("[]").strip("*").strip()
     for fmt in formats:
         try:
             return datetime.strptime(text, fmt).date()

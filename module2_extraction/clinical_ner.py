@@ -1,7 +1,14 @@
 """
 Module 2 — Clinical NER Extraction (Bilingual)
 
-English: samrawal/bert-base-uncased_clinical-ner (BERT fine-tuned on i2b2)
+English: Ensemble of two models for maximum recall:
+  1. Helios9/BioMed_NER (DeBERTa-v3-base, SOTA 2024: disease/symptom/medication/procedure)
+  2. d4data/biomedical-ner-all (8 biomedical datasets: disease/chemical/gene/protein)
+  Results are merged and deduplicated for comprehensive entity coverage.
+
+  Why DeBERTa-v3? Disentangled attention mechanism separately encodes word content
+  and position, providing superior contextual understanding for clinical NER vs BERT.
+
 French:  almanach/camembert-bio-gliner-v0.1 (CamemBERT-bio + GLiNER zero-shot)
 
 GLiNER enables zero-shot NER — we define custom French clinical labels
@@ -12,18 +19,42 @@ This is the state of the art for French biomedical NER (ALMAnaCH/Inria, 2024).
 import re
 import pysbd
 from transformers import AutoTokenizer, AutoModelForTokenClassification, pipeline
+from log_config import get_logger
+
+logger = get_logger(__name__)
 
 
 class ClinicalNER:
-    """Bilingual clinical NER: English (BERT i2b2) + French (CamemBERT-bio GLiNER)."""
+    """Bilingual clinical NER: English (DeBERTa-v3 ensemble) + French (CamemBERT-bio GLiNER)."""
+
+    # Label mapping: Helios9/BioMed_NER entities → pipeline categories
+    _BIOMED_LABEL_MAP = {
+        "Disease_disorder": "problem",
+        "Sign_symptom": "problem",
+        "Medication": "treatment",
+        "Therapeutic_procedure": "treatment",
+        "Diagnostic_procedure": "test",
+        "Biological_structure": "test",
+        "Lab_value": "test",
+        # Ignore other labels
+    }
+
+    # Label mapping: d4data biomedical entities → pipeline categories
+    _BIO_LABEL_MAP = {
+        "Disease": "problem",
+        "Chemical": "treatment",
+        "Gene": "test",
+        "Protein": "test",
+        # Ignore: Species, Cell_line, Cell_type, DNA, RNA
+    }
 
     def __init__(self, lang: str = "en",
-                 en_model: str = "samrawal/bert-base-uncased_clinical-ner",
+                 en_model: str = "Helios9/BioMed_NER",
                  fr_model: str = "almanach/camembert-bio-gliner-v0.1"):
         self.lang = lang
 
         if lang == "fr":
-            print(f"  Loading French NER: {fr_model}")
+            logger.info("  Loading French NER: %s", fr_model)
             from gliner import GLiNER
             self.model = GLiNER.from_pretrained(fr_model)
             self.seg = pysbd.Segmenter(language="fr", clean=False)
@@ -46,16 +77,29 @@ class ClinicalNER:
                 "examen médical": "test",
             }
         else:
-            print(f"  Loading English NER: {en_model}")
+            # ── Primary model: DeBERTa-v3 BioMed NER (SOTA 2024) ──
+            logger.info("  Loading English NER (primary): %s", en_model)
             self.tokenizer = AutoTokenizer.from_pretrained(en_model)
             self.model = AutoModelForTokenClassification.from_pretrained(en_model)
             self.ner = pipeline(
                 "ner",
                 model=self.model,
                 tokenizer=self.tokenizer,
-                aggregation_strategy="first"
+                aggregation_strategy="simple"
             )
             self.seg = pysbd.Segmenter(language="en", clean=False)
+
+            # ── Secondary model: biomedical NER (disease/chemical/gene) ──
+            bio_model = "d4data/biomedical-ner-all"
+            logger.info("  Loading English NER (ensemble): %s", bio_model)
+            self.bio_tokenizer = AutoTokenizer.from_pretrained(bio_model)
+            self.bio_model = AutoModelForTokenClassification.from_pretrained(bio_model)
+            self.bio_ner = pipeline(
+                "ner",
+                model=self.bio_model,
+                tokenizer=self.bio_tokenizer,
+                aggregation_strategy="first"
+            )
 
     def __call__(self, text: str) -> dict:
         """Extract entities from clinical text."""
@@ -70,6 +114,9 @@ class ClinicalNER:
         Zero-shot approach: labels are defined at inference time.
         """
         merged = {"problem": [], "treatment": [], "test": []}
+
+        # Track search offsets per entity text to handle duplicates
+        position_tracker = {}
 
         # Process by chunks to handle long texts
         chunks = self._chunk_text_fr(text)
@@ -94,9 +141,16 @@ class ClinicalNER:
                 label_en = self._label_map.get(label_fr, "problem")
                 score = round(float(ent["score"]), 3)
 
-                # Find position in original text
-                start = text.lower().find(word.lower())
+                # Find position in original text, tracking offset for duplicates
+                search_key = word.lower()
+                search_from = position_tracker.get(search_key, 0)
+                start = text.lower().find(search_key, search_from)
+                if start == -1:
+                    # Fallback: search from beginning
+                    start = text.lower().find(search_key)
                 end = start + len(word) if start >= 0 else len(word)
+                if start >= 0:
+                    position_tracker[search_key] = start + len(word)
 
                 merged[label_en].append({
                     "text": word,
@@ -120,40 +174,77 @@ class ClinicalNER:
 
     def _extract_english(self, text: str) -> dict:
         """
-        Extract English clinical entities using BERT i2b2 model.
-        Original implementation.
+        Extract English clinical entities using ensemble of two models:
+        1. Primary (DeBERTa-v3): catches clinical-style entities with richer labels
+        2. Secondary (biomedical): catches biomedical-style entities
+        Results are merged and deduplicated.
         """
         chunks = self._chunk_text_en(text)
 
         merged = {}
         offset = 0
+
+        # ── Pass 1: Primary model (DeBERTa-v3 BioMed NER, SOTA 2024) ──
         for chunk in chunks:
             for ent in self.ner(chunk):
                 word = self._fix_word(ent["word"])
                 if not word:
                     continue
-                label = ent["entity_group"]
-                if label not in merged:
-                    merged[label] = []
+
+                # Map DeBERTa-v3 labels to pipeline categories
+                raw_label = ent["entity_group"]
+                mapped_label = self._BIOMED_LABEL_MAP.get(raw_label)
+                if not mapped_label:
+                    continue  # skip unmapped labels
+
+                if mapped_label not in merged:
+                    merged[mapped_label] = []
 
                 start_in_text = text.lower().find(word.lower(), offset)
                 if start_in_text == -1:
                     start_in_text = text.lower().find(word.lower())
 
-                merged[label].append({
+                merged[mapped_label].append({
                     "text": word,
                     "score": round(float(ent["score"]), 3),
                     "start": start_in_text if start_in_text >= 0 else 0,
                     "end": (start_in_text + len(word)) if start_in_text >= 0 else len(word),
+                    "source": "deberta-v3",
                 })
 
-        # Deduplicate
+        # ── Pass 2: Secondary model (biomedical NER) ──
+        for chunk in chunks:
+            for ent in self.bio_ner(chunk):
+                word = self._fix_word(ent["word"])
+                if not word or len(word) < 2:
+                    continue
+
+                bio_label = ent["entity_group"]
+                mapped_label = self._BIO_LABEL_MAP.get(bio_label)
+                if not mapped_label:
+                    continue  # skip Species, Cell_line, etc.
+
+                if mapped_label not in merged:
+                    merged[mapped_label] = []
+
+                start_in_text = text.lower().find(word.lower())
+
+                merged[mapped_label].append({
+                    "text": word,
+                    "score": round(float(ent["score"]), 3),
+                    "start": start_in_text if start_in_text >= 0 else 0,
+                    "end": (start_in_text + len(word)) if start_in_text >= 0 else len(word),
+                    "source": "biomedical",
+                })
+
+        # ── Deduplicate across both models ──
         for label in merged:
             seen = set()
             deduped = []
             for ent in merged[label]:
-                if ent["text"] not in seen:
-                    seen.add(ent["text"])
+                key = ent["text"].lower().strip()
+                if key not in seen:
+                    seen.add(key)
                     deduped.append(ent)
             merged[label] = deduped
 

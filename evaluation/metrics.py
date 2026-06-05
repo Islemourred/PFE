@@ -77,13 +77,13 @@ def compute_aggregate_metrics(all_results: list[dict]) -> dict:
     }
 
 
-def evaluate_note(step2_result: dict, gold: dict) -> dict:
+def evaluate_note(normalized_result: dict, gold: dict) -> dict:
     """
     Evaluate a single note's pipeline output against gold standard.
 
     Args:
-        step2_result: normalized output from Module 4 pipeline
-        gold:         gold standard dict with "expected_hpo" key
+        normalized_result: normalized output from Module 4 pipeline
+        gold:              gold standard dict with "expected_hpo" key
 
     Returns:
         metrics dict with per-note P, R, F1
@@ -97,9 +97,9 @@ def evaluate_note(step2_result: dict, gold: dict) -> dict:
     # and ONLY non-negated entities (NegEx-filtered)
     predicted = set()
     for category in ["problem"]:
-        if category not in step2_result:
+        if category not in normalized_result:
             continue
-        for entity in step2_result[category]:
+        for entity in normalized_result[category]:
             if entity.get("matched") and entity.get("hpo_id"):
                 # Exclude negated entities (NegEx says this is absent)
                 if entity.get("negated", False):
@@ -107,7 +107,7 @@ def evaluate_note(step2_result: dict, gold: dict) -> dict:
                 predicted.add(entity["hpo_id"])
 
     # Include numeric phenotypes (lab values → HPO, always affirmed)
-    for np_item in step2_result.get("numeric_phenotypes", []):
+    for np_item in normalized_result.get("numeric_phenotypes", []):
         if np_item.get("hpo_id"):
             predicted.add(np_item["hpo_id"])
 

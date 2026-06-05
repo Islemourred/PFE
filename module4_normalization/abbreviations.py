@@ -170,17 +170,43 @@ FR_ABBREVIATIONS = {
 
 
 def expand_abbreviations(text: str, lang: str = "en") -> str:
-    """Expand known clinical abbreviations. Returns expanded or original text."""
+    """
+    Expand known clinical abbreviations using hybrid approach:
+      1. Curated CHU Oran dictionaries (138 entries, bilingual) — highest priority
+      2. Downloaded medical abbreviation dataset (~3000 entries) — fallback
+
+    Returns expanded or original text.
+    """
     lower = text.strip().lower()
+
+    # Priority 1: Curated dictionaries (language-specific)
     if lang == "fr":
         if lower in FR_ABBREVIATIONS:
             return FR_ABBREVIATIONS[lower]
     else:
         if lower in EN_ABBREVIATIONS:
             return EN_ABBREVIATIONS[lower]
-    # Try both dictionaries as fallback (medical abbreviations overlap)
+
+    # Priority 2: Cross-language curated fallback
     if lower in FR_ABBREVIATIONS:
         return FR_ABBREVIATIONS[lower]
     if lower in EN_ABBREVIATIONS:
         return EN_ABBREVIATIONS[lower]
+
+    # Priority 3: Downloaded medical abbreviation dataset
+    global _extended_abbreviations
+    if _extended_abbreviations is None:
+        try:
+            from module4_normalization.abbreviation_loader import load_medical_abbreviations
+            _extended_abbreviations = load_medical_abbreviations()
+        except Exception:
+            _extended_abbreviations = {}
+
+    if lower in _extended_abbreviations:
+        return _extended_abbreviations[lower]
+
     return text
+
+
+# Lazy-loaded extended abbreviation dataset
+_extended_abbreviations = None

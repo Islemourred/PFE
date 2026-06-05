@@ -41,7 +41,7 @@ def print_match_method_breakdown(output_dir: str):
             path = os.path.join(output_dir, fname)
             with open(path, "r", encoding="utf-8") as f:
                 data = json.load(f)
-            step2 = data.get("step2", {})
+            step2 = data.get("module4", data.get("step2", {}))
             for cat in ["problem", "treatment", "test"]:
                 for ent in step2.get(cat, []):
                     mt = ent.get("match_type", "no_match")

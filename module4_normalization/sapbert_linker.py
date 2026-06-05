@@ -13,6 +13,9 @@ import time
 import numpy as np
 import torch
 from transformers import AutoTokenizer, AutoModel
+from log_config import get_logger
+
+logger = get_logger(__name__)
 
 
 class SapBERTLinker:
@@ -41,7 +44,7 @@ class SapBERTLinker:
         self.threshold = similarity_threshold
         self.batch_size = batch_size
 
-        print(f"Loading SapBERT model: {model_name}")
+        logger.info("Loading SapBERT model: %s", model_name)
         self.tokenizer = AutoTokenizer.from_pretrained(model_name)
         self.model = AutoModel.from_pretrained(model_name)
         self.model.eval()
@@ -50,7 +53,7 @@ class SapBERTLinker:
         if cache_path is None:
             cache_path = os.path.join(
                 os.path.dirname(os.path.dirname(os.path.abspath(__file__))),
-                "sapbert_hpo_index.npz"
+                "data", "sapbert_hpo_index.npz"
             )
         self.cache_path = cache_path
 
@@ -88,9 +91,9 @@ class SapBERTLinker:
 
             # Progress indicator
             done = min(i + self.batch_size, len(texts))
-            print(f"\r  Encoding: {done}/{len(texts)} texts...", end="", flush=True)
+            logger.debug("  Encoding: %d/%d texts...", done, len(texts))
 
-        print()  # newline after progress
+        # Progress complete
         all_vecs = np.vstack(all_vecs)
         # L2 normalize for cosine similarity via dot product
         norms = np.linalg.norm(all_vecs, axis=1, keepdims=True)
@@ -103,7 +106,7 @@ class SapBERTLinker:
         For each HPO term, we encode the label + all synonyms and keep
         the average representation.
         """
-        print("Building SapBERT HPO index (first time only, will be cached)...")
+        logger.info("Building SapBERT HPO index (first time only, will be cached)...")
         start = time.time()
 
         # Collect all texts to encode: each HPO term's label + synonyms
@@ -130,8 +133,8 @@ class SapBERTLinker:
                 texts_to_encode.append(syn)
                 text_to_hpo_idx.append(idx)
 
-        print(f"  Total texts to encode: {len(texts_to_encode)} "
-              f"({len(self.hpo_ids)} unique HPO terms)")
+        logger.info("  Total texts to encode: %d (%d unique HPO terms)",
+                    len(texts_to_encode), len(self.hpo_ids))
 
         all_vectors = self._encode(texts_to_encode)
 
@@ -153,7 +156,7 @@ class SapBERTLinker:
         self.index = self.index / norms
 
         elapsed = round(time.time() - start, 1)
-        print(f"  SapBERT index built: {n_terms} terms in {elapsed}s")
+        logger.info("  SapBERT index built: %d terms in %ss", n_terms, elapsed)
 
     def _save_index(self, path: str):
         """Save precomputed index to disk for instant future loading."""
@@ -164,18 +167,18 @@ class SapBERTLinker:
             hpo_names=np.array(self.hpo_names),
         )
         size_mb = os.path.getsize(path) / (1024 * 1024)
-        print(f"  Index cached to {path} ({size_mb:.1f} MB)")
+        logger.info("  Index cached to %s (%.1f MB)", path, size_mb)
 
     def _load_index(self, path: str):
         """Load precomputed index from disk (< 1 second)."""
-        print(f"  Loading cached SapBERT index from {path}...")
+        logger.info("  Loading cached SapBERT index from %s...", path)
         start = time.time()
         data = np.load(path, allow_pickle=True)
         self.index = data["index"]
         self.hpo_ids = data["hpo_ids"].tolist()
         self.hpo_names = data["hpo_names"].tolist()
         elapsed = round(time.time() - start, 2)
-        print(f"  Loaded {len(self.hpo_ids)} term vectors in {elapsed}s")
+        logger.info("  Loaded %d term vectors in %ss", len(self.hpo_ids), elapsed)
 
     def link(self, text: str, top_k: int = 3) -> dict | None:
         """
