@@ -1,0 +1,693 @@
+{
+  "note_id": "GSC_EN_014",
+  "language": "en",
+  "module1": {
+    "clean_text": "Case Report: Neurocutaneous syndromes.\n\nNeurocutaneous syndromes (or phakomatoses) are a diverse group of congenital disorders that encompass abnormalities of neuroectodermal and, sometimes, mesodermal development, hence commonly involving the skin, eye, and central nervous system. These are often inherited conditions and typically present in early childhood or adolescence. Some of the abnormalities and clinical symptoms may, however, be progressive, and there is an increased risk of neoplastic formation in many of the syndromes. As a group, neurocutaneous syndromes are characterized by distinctive cutaneous stigmata and neurologic symptomology, the latter often representing the most devastating and debilitating features of these diseases. Many of these syndromes are markedly heterogeneous in nature as they affect many organ systems. Given the incurable nature of these conditions and the broad spectrum of pathologies they comprise, treatments vary on a case-by-case basis and tend to be palliative rather than curative. With the advances in molecular genetics, however, greater understanding of biologic functions of the gene products and the correlative phenotypic expression is being attained, and this knowledge may guide future therapeutic developments. This chapter focuses on the cutaneous and neurologic pathology with emphasis on neuroimaging of selective neurocutaneous syndromes, including tuberous sclerosis, Sturge-Weber syndrome, Klippel-Trenaunay syndrome, ataxia-telangiectasia, and incontinentia pigmenti.",
+    "phi_map": {},
+    "patient_info": {}
+  },
+  "module3_warnings": {
+    "temporal": [],
+    "inconsistencies": []
+  },
+  "module4": {
+    "problem": [
+      {
+        "text": "Neuro",
+        "ner_score": 0.646,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "Neuro",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "cutaneous syndrome",
+        "ner_score": 0.853,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0000951",
+        "hpo_name": "Abnormality of the skin",
+        "expanded_text": "cutaneous syndrome",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.8016,
+        "matched": true,
+        "umls_cui": "C0037268"
+      },
+      {
+        "text": "atos",
+        "ner_score": 0.626,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "atos",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "congenital",
+        "ner_score": 0.367,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0003577",
+        "hpo_name": "Congenital onset",
+        "expanded_text": "congenital",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.7349,
+        "matched": true,
+        "umls_cui": "C1836142"
+      },
+      {
+        "text": "neuroectodermal",
+        "ner_score": 0.399,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "neuroectodermal",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "symptom",
+        "ner_score": 0.456,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "symptom",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "stigmata",
+        "ner_score": 0.744,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "stigmata",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "tuberous",
+        "ner_score": 0.796,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0009717",
+        "hpo_name": "Cortical tubers",
+        "expanded_text": "tuberous",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.7791,
+        "matched": true,
+        "umls_cui": "C1968959"
+      },
+      {
+        "text": "sclerosis",
+        "ner_score": 0.796,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0100324",
+        "hpo_name": "Scleroderma",
+        "expanded_text": "sclerosis",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.7353,
+        "matched": true,
+        "umls_cui": "C0011644"
+      },
+      {
+        "text": "urge",
+        "ner_score": 0.826,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "urge",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "Weber",
+        "ner_score": 0.839,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "Weber",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "enau",
+        "ner_score": 0.78,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "enau",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "ataxia",
+        "ner_score": 0.451,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0001251",
+        "hpo_name": "Ataxia",
+        "expanded_text": "ataxia",
+        "match_type": "exact_label",
+        "confidence": 1.0,
+        "matched": true,
+        "umls_cui": "C0007758"
+      },
+      {
+        "text": "angiectasia",
+        "ner_score": 0.742,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0001009",
+        "hpo_name": "Telangiectasia",
+        "expanded_text": "angiectasia",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.7662,
+        "matched": true,
+        "umls_cui": "C0039446"
+      },
+      {
+        "text": "continent",
+        "ner_score": 0.801,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "continent",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "pigment",
+        "ner_score": 0.807,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0001000",
+        "hpo_name": "Abnormality of skin pigmentation",
+        "expanded_text": "pigment",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.7686,
+        "matched": true,
+        "umls_cui": "C1260926"
+      },
+      {
+        "text": "progressive",
+        "ner_score": 0.9,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0003676",
+        "hpo_name": "Progressive",
+        "expanded_text": "progressive",
+        "match_type": "text_scan_exact_label",
+        "confidence": 0.95,
+        "matched": true,
+        "umls_cui": "C0205329",
+        "umls_all": [
+          "C0205329",
+          "C1864985"
+        ]
+      }
+    ],
+    "test": [
+      {
+        "text": "neuro",
+        "ner_score": 0.281,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "neuro",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "cutaneous",
+        "ner_score": 0.601,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "cutaneous",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "central",
+        "ner_score": 0.621,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0003687",
+        "hpo_name": "Centrally nucleated skeletal muscle fibers",
+        "expanded_text": "central",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.712,
+        "matched": true,
+        "umls_cui": "C1842170"
+      },
+      {
+        "text": "nervous system",
+        "ner_score": 0.85,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0004375",
+        "hpo_name": "Neoplasm of the nervous system",
+        "expanded_text": "nervous system",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.7304,
+        "matched": true,
+        "umls_cui": "C0027766"
+      },
+      {
+        "text": "neurologic",
+        "ner_score": 0.462,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0000707",
+        "hpo_name": "Abnormality of the nervous system",
+        "expanded_text": "neurologic",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.7358,
+        "matched": true,
+        "umls_cui": "C0497552"
+      },
+      {
+        "text": "genetics",
+        "ner_score": 0.37,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "genetics",
+        "match_type": "skipped_non_phenotype",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      }
+    ],
+    "ordo_candidates": [
+      {
+        "ordo_id": "ORPHA:100",
+        "name": "Ataxia-telangiectasia",
+        "name_fr": "Ataxie-Télangiectasie (syndrome de Louis-Bar)",
+        "score": 0.85,
+        "jaccard": 0.1111,
+        "coverage": 0.2222,
+        "matched_hpo": [
+          "HP:0001009",
+          "HP:0001251"
+        ],
+        "matched_count": 2,
+        "total_disease_hpo": 9
+      },
+      {
+        "ordo_id": "ORPHA:1168",
+        "name": "Ataxia-oculomotor apraxia type 1",
+        "name_fr": "",
+        "score": 0.2971,
+        "jaccard": 0.1429,
+        "coverage": 0.4,
+        "matched_hpo": [
+          "HP:0000707",
+          "HP:0001251"
+        ],
+        "matched_count": 2,
+        "total_disease_hpo": 5
+      },
+      {
+        "ordo_id": "ORPHA:1180",
+        "name": "Ataxia-hypogonadism-choroidal dystrophy syndrome",
+        "name_fr": "",
+        "score": 0.2308,
+        "jaccard": 0.0769,
+        "coverage": 0.3333,
+        "matched_hpo": [
+          "HP:0001251"
+        ],
+        "matched_count": 1,
+        "total_disease_hpo": 3
+      },
+      {
+        "ordo_id": "ORPHA:3350",
+        "name": "Tremor-nystagmus-duodenal ulcer syndrome",
+        "name_fr": "",
+        "score": 0.1786,
+        "jaccard": 0.0714,
+        "coverage": 0.25,
+        "matched_hpo": [
+          "HP:0001251"
+        ],
+        "matched_count": 1,
+        "total_disease_hpo": 4
+      },
+      {
+        "ordo_id": "ORPHA:2579",
+        "name": "Muscular atrophy-ataxia-retinitis pigmentosa-diabetes mellitus syndrome",
+        "name_fr": "",
+        "score": 0.1786,
+        "jaccard": 0.0714,
+        "coverage": 0.25,
+        "matched_hpo": [
+          "HP:0001251"
+        ],
+        "matched_count": 1,
+        "total_disease_hpo": 4
+      }
+    ],
+    "stats": {
+      "total": 23,
+      "matched": 11,
+      "unmatched": 12,
+      "match_rate": 47.8,
+      "unique_hpo": 11,
+      "ordo_matches": 5
+    }
+  },
+  "phenopacket": {
+    "id": "phenopacket-GSC_EN_014",
+    "subject": {
+      "id": "GSC_EN_014"
+    },
+    "input": "Case Report: Neurocutaneous syndromes.\n\nNeurocutaneous syndromes (or phakomatoses) are a diverse group of congenital disorders that encompass abnormalities of neuroectodermal and, sometimes, mesodermal development, hence commonly involving the skin, eye, and central nervous system. These are often inherited conditions and typically present in early childhood or adolescence. Some of the abnormalities and clinical symptoms may, however, be progressive, and there is an increased risk of neoplastic formation in many of the syndromes. As a group, neurocutaneous syndromes are characterized by distinctive cutaneous stigmata and neurologic symptomology, the latter often representing the most devastating and debilitating features of these diseases. Many of these syndromes are markedly heterogeneous in nature as they affect many organ systems. Given the incurable nature of these conditions and the broad spectrum of pathologies they comprise, treatments vary on a case-by-case basis and tend to be palliative rather than curative. With the advances in molecular genetics, however, greater understanding of biologic functions of the gene products and the correlative phenotypic expression is being attained, and this knowledge may guide future therapeutic developments. This chapter focuses on the cutaneous and neurologic pathology with emphasis on neuroimaging of selective neurocutaneous syndromes, including tuberous sclerosis, Sturge-Weber syndrome, Klippel-Trenaunay syndrome, ataxia-telangiectasia, and incontinentia pigmenti.",
+    "target": "Ataxia-telangiectasia",
+    "phenotypicFeatures": [
+      {
+        "type": {
+          "id": "HP:0000951",
+          "label": "Abnormality of the skin",
+          "umls_cui": "C0037268"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "GSC_EN_014",
+              "description": "NER: cutaneous syndrome (0.853) | Match: sapbert_similarity (0.802)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0003577",
+          "label": "Congenital onset",
+          "umls_cui": "C1836142"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "GSC_EN_014",
+              "description": "NER: congenital (0.367) | Match: sapbert_similarity (0.735)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0009717",
+          "label": "Cortical tubers",
+          "umls_cui": "C1968959"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "GSC_EN_014",
+              "description": "NER: tuberous (0.796) | Match: sapbert_similarity (0.779)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0100324",
+          "label": "Scleroderma",
+          "umls_cui": "C0011644"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "GSC_EN_014",
+              "description": "NER: sclerosis (0.796) | Match: sapbert_similarity (0.735)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0001251",
+          "label": "Ataxia",
+          "umls_cui": "C0007758"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "GSC_EN_014",
+              "description": "NER: ataxia (0.451) | Match: exact_label (1.000)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0001009",
+          "label": "Telangiectasia",
+          "umls_cui": "C0039446"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "GSC_EN_014",
+              "description": "NER: angiectasia (0.742) | Match: sapbert_similarity (0.766)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0001000",
+          "label": "Abnormality of skin pigmentation",
+          "umls_cui": "C1260926"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "GSC_EN_014",
+              "description": "NER: pigment (0.807) | Match: sapbert_similarity (0.769)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0003676",
+          "label": "Progressive",
+          "umls_cui": "C0205329"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "GSC_EN_014",
+              "description": "NER: progressive (0.900) | Match: text_scan_exact_label (0.950)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0003687",
+          "label": "Centrally nucleated skeletal muscle fibers",
+          "umls_cui": "C1842170"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "GSC_EN_014",
+              "description": "NER: central (0.621) | Match: sapbert_similarity (0.712)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0004375",
+          "label": "Neoplasm of the nervous system",
+          "umls_cui": "C0027766"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "GSC_EN_014",
+              "description": "NER: nervous system (0.850) | Match: sapbert_similarity (0.730)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0000707",
+          "label": "Abnormality of the nervous system",
+          "umls_cui": "C0497552"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "GSC_EN_014",
+              "description": "NER: neurologic (0.462) | Match: sapbert_similarity (0.736)"
+            }
+          }
+        ]
+      }
+    ],
+    "metaData": {
+      "created": "2026-06-11T03:08:36Z",
+      "createdBy": "clinical-preanalysis-pipeline-v2",
+      "phenopacketSchemaVersion": "2.0",
+      "resources": [
+        {
+          "id": "hp",
+          "name": "Human Phenotype Ontology",
+          "url": "https://hpo.jax.org",
+          "version": "2024-04-26",
+          "namespacePrefix": "HP",
+          "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        }
+      ]
+    },
+    "interpretations": [
+      {
+        "id": "interpretation-GSC_EN_014",
+        "progressStatus": "IN_PROGRESS",
+        "diagnosis": {
+          "disease": {
+            "id": "ORPHA:100",
+            "label": "Ataxia-telangiectasia"
+          },
+          "score": 0.85,
+          "allCandidates": [
+            {
+              "id": "ORPHA:100",
+              "label": "Ataxia-telangiectasia",
+              "score": 0.85
+            },
+            {
+              "id": "ORPHA:1168",
+              "label": "Ataxia-oculomotor apraxia type 1",
+              "score": 0.2971
+            },
+            {
+              "id": "ORPHA:1180",
+              "label": "Ataxia-hypogonadism-choroidal dystrophy syndrome",
+              "score": 0.2308
+            },
+            {
+              "id": "ORPHA:3350",
+              "label": "Tremor-nystagmus-duodenal ulcer syndrome",
+              "score": 0.1786
+            },
+            {
+              "id": "ORPHA:2579",
+              "label": "Muscular atrophy-ataxia-retinitis pigmentosa-diabetes mellitus syndrome",
+              "score": 0.1786
+            }
+          ]
+        }
+      }
+    ],
+    "_pipelineStats": {
+      "totalEntities": 23,
+      "matchedHPO": 11,
+      "unmatchedEntities": 12,
+      "phenopacketFeatures": 11,
+      "negatedFeatures": 0,
+      "numericPhenotypes": 0,
+      "ordoCandidates": 5
+    }
+  }
+}

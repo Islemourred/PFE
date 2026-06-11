@@ -1,0 +1,589 @@
+{
+  "id": "phenopacket-CHU_FR_017",
+  "subject": {
+    "id": "CHU_FR_017",
+    "sex": "MALE"
+  },
+  "input": "READMISSION SHEET\nThis is the child BENAMEUR SID AHMED aged 08, originally from and residing in Oran, from a non-consanguineous middle-aged couple, with a personal history of a DIP type common variable immunodeficiency admitted to our service for the 9th treatment of venoglobulin. Reason for hospitalization: 9th course of venoglobulin. HISTORY:\nFamily:\nFather: 46 years old, BES. Mother: 34 years old, BES. Siblings: daughter aged 09 with asthma, screening in progress\nInbreeding: no\nAtopy: yes\nChronic respiratory disease in the family: no\nPersonal:\nPhysiological:\nPregnancy: well monitored\nDelivery: at term by upper route\nApgar 10/10Neonatal resuscitation: no\nBirth weight: 3.7kg\nMeconium: emitted<24h\nNo delay in umbilical cord fall\nBreastfeeding: mixed from birth. Vaccination: correctly vaccinated\nNo delay in psychomotor development\nNursery: no\nSocio-economic level: good\nPersonal atopy: no\nDiversification at the age of 5 months\nVitamin D received at the age of 01 months/06 months. Pathological:\nHospitalization in the EHS CANASTEL infectious disease department on 06/02/2025 for the case of a prolonged fever attributed to an EBV infection\n2nd hospitalization on 04/2025 in the same department for a return of fever with a rash\nEnvironment:\nHabitat: not humid\nNo animals\nNo passive smoking\nHistory of the disease:\nDate of diagnosis: 04/22/2025\nAge of diagnosis: 8 years\nDiagnostic elements:\nClinic:\nProlonged fever\nAtypical febrile rash\nParaclinic:\nActive replication of EBV: EBV viral load positive 3.3 log, aevc IgG EBNA and VCA + IgM neg\nSpecific dosage of serum proteins on 04/22/2025 at LILLE hospital:\nIgM 0.32 g/L\nIgA 0.55\nIgG 3.5 g/L\nImmunodeficiency assessment done on 13/05/2025 in BENI MESOUS ALGIERS:\nPan-hypogammaglobulinemia associated with a virtual absence of B lymphocytes. cellular immunity is preserved. 2nd assessment of immunodeficiency carried out on 22/06/2025 in BENI MESOUS ALGIERS: confirms the diagnosis: common variable immunodeficiency. Hospitalization histories:\nPROCESSING IN PROGRESS:\nBactrim (40/200) at preventive dose + Itraconazole 05mg/kg/day\nEVENTS SINCE LAST PASSAGE:\nConcept of fever treated by symptomatic treatment\nNo rash\nNo respiratory or ENT damage\nNo hospitalizations or consultations\nCLINICAL EXAMINATION UPON ADMISSION:\nAnthropometric measurements:\nWeight: 24kg500 (+0.24 DS): Weight gain of 300g\nSize: 127cm(-0.23DS)\nBMI: 15.1(-0.34DS) between P25-50\nGomez score: 88%\nWaterloo Score: 89%\nGeneral condition: preserved, T° 37.2 c, TCNC\nSkin examination: CV (BCG) present, TCNC, no skin lesion\nENT examination: no cervical ADP, clean throat. Pleuropulmonary examination:\nFR 25 c/min\n\tNo signs of respiratory distress. SPO2: 98% AA\nPulmonary auscultation: clear at 2CP\nno signs of chronic respiratory insufficiency (finger clubbing), no thoracic deformity. Cardiovascular examination: HR: 110 b/min. Auscultation: B1B2 audible no murmurs or BSA\nDigestive examination: soft abdomen no organomegaly, transit preserved: 1 stool/day with normal appearance. Urogenital examination: Male morphotype, no abnormalities of sexual differentiation, Tanner stage 1\nReview of other devices: is unremarkable\nResidual IgG level dosage (11/18/2025): 5.98g/l\nCAT:\nHospitalization. Conditioning. VVP. A course of immunoglobulin: dose of 0.8 mg/kg/4h with oral hyperhydration\nMonitoring: CHMD, blood sugar, temperature. Evolution:\nThe treatment passed without incident\nThe patient discharged after the end of the treatment with an appointment for his next venoglobulin treatment on 01/13/2026\nCONCLUSION\nThis is the child BENAMEUR SID AHMED aged 08, originally from and residing in Oran, from a non-consanguineous middle-aged couple, with a personal history of a PID type common variable immunodeficiency admitted to our service for a 9th course of venoglobulins passed without incident. Exams requested:\n- Request an immune deficiency assessment for the sister as part of the screening",
+  "target": "Common variable immunodeficiency",
+  "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0005387",
+        "label": "Combined immunodeficiency",
+        "umls_cui": "C0494261"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "CHU_FR_017",
+            "description": "NER: common variable immunodeficiency (0.956) | Match: sapbert_similarity (0.788)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0001263",
+        "label": "Global developmental delay",
+        "umls_cui": "C0557874"
+      },
+      "excluded": true,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "CHU_FR_017",
+            "description": "NER: delay (0.490) | Match: sapbert_similarity (0.745) | Negated by: \"no\""
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0007281",
+        "label": "Developmental stagnation",
+        "umls_cui": "C1848980"
+      },
+      "excluded": true,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "CHU_FR_017",
+            "description": "NER: development (0.550) | Match: sapbert_similarity (0.706) | Negated by: \"no\""
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0001945",
+        "label": "Fever",
+        "umls_cui": "C0015967"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "CHU_FR_017",
+            "description": "NER: fever (0.970) | Match: clinical_synonym (1.000)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0002719",
+        "label": "Recurrent infections",
+        "umls_cui": "C0239998"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "CHU_FR_017",
+            "description": "NER: infection (0.750) | Match: sapbert_similarity (0.741)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0000988",
+        "label": "Skin rash",
+        "umls_cui": "C0015230"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "CHU_FR_017",
+            "description": "NER: rash (0.952) | Match: clinical_synonym (1.000)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0011355",
+        "label": "Localized skin lesion",
+        "umls_cui": "C0850826"
+      },
+      "excluded": true,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "CHU_FR_017",
+            "description": "NER: lesion (0.552) | Match: sapbert_similarity (0.744) | Negated by: \"no\""
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0002098",
+        "label": "Respiratory distress",
+        "umls_cui": "C0013404"
+      },
+      "excluded": true,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "CHU_FR_017",
+            "description": "NER: respiratory distress (0.906) | Match: clinical_synonym (1.000) | Negated by: \"no signs of\""
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0002093",
+        "label": "Respiratory insufficiency",
+        "umls_cui": "C0035229"
+      },
+      "excluded": true,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "CHU_FR_017",
+            "description": "NER: respiratory insufficiency (0.607) | Match: exact_label (1.000) | Negated by: \"no signs of\""
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0100759",
+        "label": "Clubbing of fingers",
+        "umls_cui": "C0009080"
+      },
+      "excluded": true,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "CHU_FR_017",
+            "description": "NER: finger clubbing (0.729) | Match: exact_synonym (1.000) | Negated by: \"no signs of\""
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0003271",
+        "label": "Visceromegaly",
+        "umls_cui": "C0042782"
+      },
+      "excluded": true,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "CHU_FR_017",
+            "description": "NER: organomegaly (0.970) | Match: sapbert_similarity (0.882) | Negated by: \"no\""
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0012244",
+        "label": "Abnormal sex determination",
+        "umls_cui": "C4022996"
+      },
+      "excluded": true,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "CHU_FR_017",
+            "description": "NER: abnormalities of sexual differentiation (0.761) | Match: sapbert_similarity (0.807) | Negated by: \"no\""
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0004313",
+        "label": "Decreased circulating antibody level",
+        "umls_cui": "C0086438"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "CHU_FR_017",
+            "description": "NER: hypogammaglobulinemia (0.900) | Match: text_scan_clinical_synonym (0.950)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0001217",
+        "label": "Clubbing",
+        "umls_cui": "C0149651"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "CHU_FR_017",
+            "description": "NER: clubbing (0.900) | Match: text_scan_exact_label (0.950)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0002099",
+        "label": "Asthma",
+        "umls_cui": "C0004096"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "CHU_FR_017",
+            "description": "NER: asthma (0.900) | Match: text_scan_exact_label (0.950)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0001986",
+        "label": "Hypertonic dehydration",
+        "umls_cui": "C1112601"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "CHU_FR_017",
+            "description": "NER: hyperhydration (0.533) | Match: sapbert_similarity (0.757)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0002721",
+        "label": "Immunodeficiency",
+        "umls_cui": "C0021051"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "CHU_FR_017",
+            "description": "NER: immunodeficiency (0.908) | Match: clinical_synonym (1.000)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0011947",
+        "label": "Respiratory tract infection",
+        "umls_cui": "C0035243"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "CHU_FR_017",
+            "description": "NER: respiratory (0.625) | Match: sapbert_similarity (0.712)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0004324",
+        "label": "Increased body weight",
+        "umls_cui": "C0043094"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "CHU_FR_017",
+            "description": "NER: weight (0.942) | Match: sapbert_similarity (0.720)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0010881",
+        "label": "Abnormality of the umbilical cord",
+        "umls_cui": "C0266785"
+      },
+      "excluded": true,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "CHU_FR_017",
+            "description": "NER: umbilical (0.605) | Match: sapbert_similarity (0.723) | Negated by: \"no\""
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0002361",
+        "label": "Psychomotor deterioration",
+        "umls_cui": "C1836842"
+      },
+      "excluded": true,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "CHU_FR_017",
+            "description": "NER: psychomotor (0.342) | Match: sapbert_similarity (0.752) | Negated by: \"no\""
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0100326",
+        "label": "Immunologic hypersensitivity",
+        "umls_cui": "C0237653"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "CHU_FR_017",
+            "description": "NER: immunity (0.939) | Match: sapbert_similarity (0.762)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0008765",
+        "label": "Auditory hallucination",
+        "umls_cui": "C0233762"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "CHU_FR_017",
+            "description": "NER: audible (0.451) | Match: sapbert_similarity (0.758)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0012344",
+        "label": "Morphea",
+        "umls_cui": "C1527383"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "CHU_FR_017",
+            "description": "NER: Male morpho (0.826) | Match: sapbert_similarity (0.761)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0003074",
+        "label": "Hyperglycemia",
+        "umls_cui": "C0020456"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "CHU_FR_017",
+            "description": "NER: blood sugar (0.990) | Match: sapbert_similarity (0.732)"
+          }
+        }
+      ]
+    }
+  ],
+  "metaData": {
+    "created": "2026-06-11T03:52:30Z",
+    "createdBy": "clinical-preanalysis-pipeline-v2",
+    "phenopacketSchemaVersion": "2.0",
+    "resources": [
+      {
+        "id": "hp",
+        "name": "Human Phenotype Ontology",
+        "url": "https://hpo.jax.org",
+        "version": "2024-04-26",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      }
+    ]
+  },
+  "interpretations": [
+    {
+      "id": "interpretation-CHU_FR_017",
+      "progressStatus": "IN_PROGRESS",
+      "diagnosis": {
+        "disease": {
+          "id": "ORPHA:1572",
+          "label": "Common variable immunodeficiency"
+        },
+        "score": 0.85,
+        "allCandidates": [
+          {
+            "id": "ORPHA:1572",
+            "label": "Common variable immunodeficiency",
+            "score": 0.85
+          },
+          {
+            "id": "ORPHA:2808",
+            "label": "Laryngeal abductor paralysis",
+            "score": 0.3154
+          },
+          {
+            "id": "ORPHA:2314",
+            "label": "Hyper-IgE syndrome",
+            "score": 0.265
+          },
+          {
+            "id": "ORPHA:2085",
+            "label": "Glaucoma-sleep apnea syndrome",
+            "score": 0.2148
+          },
+          {
+            "id": "ORPHA:319600",
+            "label": "Mendelian susceptibility to mycobacterial diseases due to partial IRF8 deficiency",
+            "score": 0.2148
+          }
+        ]
+      }
+    }
+  ],
+  "_validationWarnings": [
+    {
+      "type": "sex_anatomy_conflict",
+      "severity": "critical",
+      "message": "Female-specific term 'pregnancy' found in male patient record",
+      "term": "pregnancy"
+    },
+    {
+      "type": "sex_anatomy_conflict",
+      "severity": "critical",
+      "message": "Female-specific term 'cervical' found in male patient record",
+      "term": "cervical"
+    }
+  ],
+  "_pipelineStats": {
+    "totalEntities": 96,
+    "matchedHPO": 28,
+    "unmatchedEntities": 68,
+    "phenopacketFeatures": 25,
+    "negatedFeatures": 10,
+    "numericPhenotypes": 0,
+    "ordoCandidates": 5
+  }
+}

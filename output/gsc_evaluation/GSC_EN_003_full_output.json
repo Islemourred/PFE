@@ -1,0 +1,442 @@
+{
+  "note_id": "GSC_EN_003",
+  "language": "en",
+  "module1": {
+    "clean_text": "Case Report: The Effect of Synonymous Single-Nucleotide Polymorphisms on an Atypical Cystic Fibrosis Clinical Presentation.\n\nSynonymous single nucleotide polymorphisms (sSNPs), which change a nucleotide, but not the encoded amino acid, are perceived as neutral to protein function and thus, classified as benign. We report a patient who was diagnosed with cystic fibrosis (CF) at an advanced age and presented very mild CF symptoms. The sequencing of the whole cystic fibrosis transmembrane conductance regulator (CFTR) gene locus revealed that the patient lacks known CF-causing mutations. We found a homozygous sSNP (c.1584G>A) at the end of exon 11 in the CFTR gene. Using sensitive molecular methods, we report that the c.1584G>A sSNP causes cognate exon skipping and retention of a sequence from the downstream intron, both of which, however, occur at a relatively low frequency. In addition, we found two other sSNPs (c.2562T>G (p.Thr854=) and c.4389G>A (p.Gln1463=)), for which the patient is also homozygous. These two sSNPs stabilize the CFTR protein expression, compensating, at least in part, for the c.1584G>A-triggered inefficient splicing. Our data highlight the importance of considering sSNPs when assessing the effect(s) of complex CFTR alleles. sSNPs may epistatically modulate mRNA and protein expression levels and consequently influence disease phenotype and progression.",
+    "phi_map": {},
+    "patient_info": {}
+  },
+  "module3_warnings": {
+    "temporal": [],
+    "inconsistencies": []
+  },
+  "module4": {
+    "problem": [
+      {
+        "text": "cystic",
+        "ner_score": 0.539,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "cystic",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "Fibrosis",
+        "ner_score": 0.432,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "Fibrosis",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "symptoms",
+        "ner_score": 0.585,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "symptoms",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "mutations",
+        "ner_score": 0.422,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "mutations",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "exon skipping",
+        "ner_score": 0.616,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "exon skipping",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "2T>G",
+        "ner_score": 0.535,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "2T>G",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "stabilize",
+        "ner_score": 0.346,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "stabilize",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      }
+    ],
+    "test": [
+      {
+        "text": "fibrosis",
+        "ner_score": 0.482,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0002206",
+        "hpo_name": "Pulmonary fibrosis",
+        "expanded_text": "fibrosis",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.7336,
+        "matched": true,
+        "umls_cui": "C0034069"
+      },
+      {
+        "text": "sequencing",
+        "ner_score": 0.941,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "sequencing",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "whole cystic",
+        "ner_score": 0.338,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "whole cystic",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "transmembrane",
+        "ner_score": 0.475,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "transmembrane",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "conductance",
+        "ner_score": 0.452,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "conductance",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "regulator",
+        "ner_score": 0.516,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "regulator",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "gene",
+        "ner_score": 0.402,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "gene",
+        "match_type": "skipped_non_phenotype",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "locus",
+        "ner_score": 0.596,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "Level of Care Utilization System",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "exon",
+        "ner_score": 0.954,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "exon",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "molecular",
+        "ner_score": 0.599,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "molecular",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "downstream",
+        "ner_score": 0.418,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0012839",
+        "hpo_name": "Distal",
+        "expanded_text": "downstream",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.743,
+        "matched": true,
+        "umls_cui": "C0205108"
+      }
+    ],
+    "ordo_candidates": [
+      {
+        "ordo_id": "ORPHA:2111",
+        "name": "Cystic hamartoma of lung and kidney",
+        "name_fr": "",
+        "score": 0.1867,
+        "jaccard": 0.1667,
+        "coverage": 0.2,
+        "matched_hpo": [
+          "HP:0002206"
+        ],
+        "matched_count": 1,
+        "total_disease_hpo": 5
+      },
+      {
+        "ordo_id": "ORPHA:220402",
+        "name": "Limited cutaneous systemic sclerosis",
+        "name_fr": "",
+        "score": 0.065,
+        "jaccard": 0.0625,
+        "coverage": 0.0667,
+        "matched_hpo": [
+          "HP:0002206"
+        ],
+        "matched_count": 1,
+        "total_disease_hpo": 15
+      },
+      {
+        "ordo_id": "ORPHA:210136",
+        "name": "Pulmonary fibrosis-hepatic hyperplasia-bone marrow hypoplasia syndrome",
+        "name_fr": "",
+        "score": 0.061,
+        "jaccard": 0.0588,
+        "coverage": 0.0625,
+        "matched_hpo": [
+          "HP:0002206"
+        ],
+        "matched_count": 1,
+        "total_disease_hpo": 16
+      },
+      {
+        "ordo_id": "ORPHA:1839",
+        "name": "Hereditary mucoepithelial dysplasia",
+        "name_fr": "",
+        "score": 0.0544,
+        "jaccard": 0.0526,
+        "coverage": 0.0556,
+        "matched_hpo": [
+          "HP:0002206"
+        ],
+        "matched_count": 1,
+        "total_disease_hpo": 18
+      },
+      {
+        "ordo_id": "ORPHA:133",
+        "name": "Chronic beryllium disease",
+        "name_fr": "",
+        "score": 0.0516,
+        "jaccard": 0.05,
+        "coverage": 0.0526,
+        "matched_hpo": [
+          "HP:0002206"
+        ],
+        "matched_count": 1,
+        "total_disease_hpo": 19
+      }
+    ],
+    "stats": {
+      "total": 18,
+      "matched": 2,
+      "unmatched": 16,
+      "match_rate": 11.1,
+      "unique_hpo": 2,
+      "ordo_matches": 5
+    }
+  },
+  "phenopacket": {
+    "id": "phenopacket-GSC_EN_003",
+    "subject": {
+      "id": "GSC_EN_003"
+    },
+    "input": "Case Report: The Effect of Synonymous Single-Nucleotide Polymorphisms on an Atypical Cystic Fibrosis Clinical Presentation.\n\nSynonymous single nucleotide polymorphisms (sSNPs), which change a nucleotide, but not the encoded amino acid, are perceived as neutral to protein function and thus, classified as benign. We report a patient who was diagnosed with cystic fibrosis (CF) at an advanced age and presented very mild CF symptoms. The sequencing of the whole cystic fibrosis transmembrane conductance regulator (CFTR) gene locus revealed that the patient lacks known CF-causing mutations. We found a homozygous sSNP (c.1584G>A) at the end of exon 11 in the CFTR gene. Using sensitive molecular methods, we report that the c.1584G>A sSNP causes cognate exon skipping and retention of a sequence from the downstream intron, both of which, however, occur at a relatively low frequency. In addition, we found two other sSNPs (c.2562T>G (p.Thr854=) and c.4389G>A (p.Gln1463=)), for which the patient is also homozygous. These two sSNPs stabilize the CFTR protein expression, compensating, at least in part, for the c.1584G>A-triggered inefficient splicing. Our data highlight the importance of considering sSNPs when assessing the effect(s) of complex CFTR alleles. sSNPs may epistatically modulate mRNA and protein expression levels and consequently influence disease phenotype and progression.",
+    "target": "Cystic hamartoma of lung and kidney",
+    "phenotypicFeatures": [
+      {
+        "type": {
+          "id": "HP:0002206",
+          "label": "Pulmonary fibrosis",
+          "umls_cui": "C0034069"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "GSC_EN_003",
+              "description": "NER: fibrosis (0.482) | Match: sapbert_similarity (0.734)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0012839",
+          "label": "Distal",
+          "umls_cui": "C0205108"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "GSC_EN_003",
+              "description": "NER: downstream (0.418) | Match: sapbert_similarity (0.743)"
+            }
+          }
+        ]
+      }
+    ],
+    "metaData": {
+      "created": "2026-06-11T03:07:31Z",
+      "createdBy": "clinical-preanalysis-pipeline-v2",
+      "phenopacketSchemaVersion": "2.0",
+      "resources": [
+        {
+          "id": "hp",
+          "name": "Human Phenotype Ontology",
+          "url": "https://hpo.jax.org",
+          "version": "2024-04-26",
+          "namespacePrefix": "HP",
+          "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        }
+      ]
+    },
+    "interpretations": [
+      {
+        "id": "interpretation-GSC_EN_003",
+        "progressStatus": "IN_PROGRESS",
+        "diagnosis": {
+          "disease": {
+            "id": "ORPHA:2111",
+            "label": "Cystic hamartoma of lung and kidney"
+          },
+          "score": 0.1867,
+          "allCandidates": [
+            {
+              "id": "ORPHA:2111",
+              "label": "Cystic hamartoma of lung and kidney",
+              "score": 0.1867
+            },
+            {
+              "id": "ORPHA:220402",
+              "label": "Limited cutaneous systemic sclerosis",
+              "score": 0.065
+            },
+            {
+              "id": "ORPHA:210136",
+              "label": "Pulmonary fibrosis-hepatic hyperplasia-bone marrow hypoplasia syndrome",
+              "score": 0.061
+            },
+            {
+              "id": "ORPHA:1839",
+              "label": "Hereditary mucoepithelial dysplasia",
+              "score": 0.0544
+            },
+            {
+              "id": "ORPHA:133",
+              "label": "Chronic beryllium disease",
+              "score": 0.0516
+            }
+          ]
+        }
+      }
+    ],
+    "_pipelineStats": {
+      "totalEntities": 18,
+      "matchedHPO": 2,
+      "unmatchedEntities": 16,
+      "phenopacketFeatures": 2,
+      "negatedFeatures": 0,
+      "numericPhenotypes": 0,
+      "ordoCandidates": 5
+    }
+  }
+}

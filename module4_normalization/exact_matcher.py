@@ -24,12 +24,21 @@ HPO_BLACKLIST = {
 # Manual clinical synonym → HPO ID mapping for phrases the NER commonly
 # extracts but that don't match HPO labels/synonyms exactly
 CLINICAL_SYNONYMS = {
+    # ── General clinical terms ──────────────────────────────────────────
     "failure to thrive": ("HP:0001508", "Failure to thrive"),
     "ftt": ("HP:0001508", "Failure to thrive"),
     "poor weight gain": ("HP:0001508", "Failure to thrive"),
+    "poor growth": ("HP:0001508", "Failure to thrive"),
+    "growth retardation": ("HP:0001508", "Failure to thrive"),
     "weight loss": ("HP:0001824", "Weight loss"),
     "chest pain": ("HP:0100749", "Chest pain"),
     "shortness of breath": ("HP:0002094", "Dyspnea"),
+    "difficulty breathing": ("HP:0002094", "Dyspnea"),
+    "respiratory failure": ("HP:0002093", "Respiratory insufficiency"),
+    "respiratory distress": ("HP:0002098", "Respiratory distress"),
+    "breathing difficulty": ("HP:0002094", "Dyspnea"),
+
+    # ── Cognitive / neurological ────────────────────────────────────────
     "cognitive decline": ("HP:0001268", "Mental deterioration"),
     "memory loss": ("HP:0002354", "Memory impairment"),
     "memory problems": ("HP:0002354", "Memory impairment"),
@@ -38,19 +47,122 @@ CLINICAL_SYNONYMS = {
     "abnormal movements": ("HP:0100022", "Abnormality of movement"),
     "movement disorder": ("HP:0100022", "Abnormality of movement"),
     "involuntary movements": ("HP:0004305", "Involuntary movements"),
+    "difficulty walking": ("HP:0002317", "Unsteady gait"),
+    "gait abnormality": ("HP:0002317", "Unsteady gait"),
+    "unsteady gait": ("HP:0002317", "Unsteady gait"),
+    "ataxic gait": ("HP:0002066", "Gait ataxia"),
+    "speech difficulty": ("HP:0002167", "Neurological speech impairment"),
+    "slurred speech": ("HP:0001260", "Dysarthria"),
+    "developmental delay": ("HP:0001263", "Global developmental delay"),
+    "delayed development": ("HP:0001263", "Global developmental delay"),
+    "mental retardation": ("HP:0001249", "Intellectual disability"),
+    "intellectual disability": ("HP:0001249", "Intellectual disability"),
+    "learning difficulties": ("HP:0001249", "Intellectual disability"),
+    "seizures": ("HP:0001250", "Seizure"),
+    "convulsions": ("HP:0001250", "Seizure"),
+    "tremor": ("HP:0001337", "Tremor"),
+    "muscle weakness": ("HP:0003701", "Proximal muscle weakness"),
+    "muscle wasting": ("HP:0003202", "Skeletal muscle atrophy"),
+    "muscle atrophy": ("HP:0003202", "Skeletal muscle atrophy"),
+    "hypotonia": ("HP:0001252", "Muscular hypotonia"),
+    "low muscle tone": ("HP:0001252", "Muscular hypotonia"),
+    "floppy infant": ("HP:0001319", "Neonatal hypotonia"),
+    "decreased reflexes": ("HP:0001265", "Hyporeflexia"),
+    "absent reflexes": ("HP:0001265", "Hyporeflexia"),
+
+    # ── Hepatosplenomegaly / organomegaly ───────────────────────────────
     "enlarged spleen": ("HP:0001744", "Splenomegaly"),
     "enlarged liver": ("HP:0002240", "Hepatomegaly"),
+    "hepatosplenomegaly": ("HP:0001433", "Hepatosplenomegaly"),
+
+    # ── Hematology ──────────────────────────────────────────────────────
     "bleeding tendency": ("HP:0001892", "Abnormal bleeding"),
     "easy bleeding": ("HP:0001892", "Abnormal bleeding"),
     "abnormal bleeding": ("HP:0001892", "Abnormal bleeding"),
+    "easy bruising": ("HP:0000978", "Bruising susceptibility"),
+    "low platelets": ("HP:0001873", "Thrombocytopenia"),
+    "low platelet count": ("HP:0001873", "Thrombocytopenia"),
+    "platelet deficiency": ("HP:0001873", "Thrombocytopenia"),
+    "low hemoglobin": ("HP:0001903", "Anemia"),
+    "iron deficiency": ("HP:0001891", "Iron deficiency anemia"),
+    "iron deficiency anemia": ("HP:0001891", "Iron deficiency anemia"),
+    "elevated crp": ("HP:0012828", "Severe infection"),
+    "high crp": ("HP:0012828", "Severe infection"),
+    "elevated esr": ("HP:0012828", "Severe infection"),
+
+    # ── Immunology / infections ─────────────────────────────────────────
     "recurrent infections": ("HP:0002719", "Recurrent infections"),
     "frequent infections": ("HP:0002719", "Recurrent infections"),
-    "lung infection": ("HP:0006538", "Recurrent bronchopulmonary infections"),
+    "repeated infections": ("HP:0002719", "Recurrent infections"),
+    "chronic infections": ("HP:0002719", "Recurrent infections"),
+    "recurrent bacterial infections": ("HP:0002718", "Recurrent bacterial infections"),
+    "recurrent respiratory infections": ("HP:0002205", "Recurrent respiratory infections"),
     "recurrent pneumonia": ("HP:0006538", "Recurrent bronchopulmonary infections"),
+    "lung infection": ("HP:0006538", "Recurrent bronchopulmonary infections"),
+    "lung infections": ("HP:0006538", "Recurrent bronchopulmonary infections"),
+    "bronchopulmonary infections": ("HP:0006538", "Recurrent bronchopulmonary infections"),
+    "immunodeficiency": ("HP:0002721", "Immunodeficiency"),
+    "immune deficiency": ("HP:0002721", "Immunodeficiency"),
+    "immunodeficient": ("HP:0002721", "Immunodeficiency"),
+    "low immunoglobulins": ("HP:0004313", "Decreased circulating antibody level"),
+    "low antibodies": ("HP:0004313", "Decreased circulating antibody level"),
+    "decreased immunoglobulins": ("HP:0004313", "Decreased circulating antibody level"),
+    "decreased antibodies": ("HP:0004313", "Decreased circulating antibody level"),
+    "hypogammaglobulinemia": ("HP:0004313", "Decreased circulating antibody level"),
+    "agammaglobulinemia": ("HP:0004432", "Agammaglobulinemia"),
+    "absent b cells": ("HP:0004432", "Agammaglobulinemia"),
+    "b cell deficiency": ("HP:0004432", "Agammaglobulinemia"),
+    "low lymphocytes": ("HP:0001888", "Lymphopenia"),
+    "lymphocyte deficiency": ("HP:0001888", "Lymphopenia"),
+    "t cell deficiency": ("HP:0005403", "Decreased number of CD4+ T cells"),
+    "low t cells": ("HP:0005403", "Decreased number of CD4+ T cells"),
+    "recurrent viral infections": ("HP:0004429", "Recurrent viral infections"),
+    "viral infections": ("HP:0004429", "Recurrent viral infections"),
+    "autoimmunity": ("HP:0002960", "Autoimmunity"),
+    "autoimmune": ("HP:0002960", "Autoimmunity"),
+    "elevated ige": ("HP:0003212", "Increased circulating IgE level"),
+    "high ige": ("HP:0003212", "Increased circulating IgE level"),
+    "ige elevation": ("HP:0003212", "Increased circulating IgE level"),
+
+    # ── Pulmonary ───────────────────────────────────────────────────────
     "chronic cough": ("HP:0012735", "Cough"),
     "productive cough": ("HP:0012735", "Cough"),
+    "coughing": ("HP:0012735", "Cough"),
+    "bronchiectasis": ("HP:0002110", "Bronchiectasis"),
+    "pulmonary fibrosis": ("HP:0002206", "Pulmonary fibrosis"),
+
+    # ── Dermatology ─────────────────────────────────────────────────────
+    "skin rash": ("HP:0000988", "Skin rash"),
+    "skin rashes": ("HP:0000988", "Skin rash"),
+    "rash": ("HP:0000988", "Skin rash"),
+    "eczema": ("HP:0000964", "Eczema"),
+    "eczematous": ("HP:0000964", "Eczema"),
+    "dermatitis": ("HP:0000964", "Eczema"),
+    "cellulitis": ("HP:0100658", "Cellulitis"),
+    "skin abscess": ("HP:0100658", "Cellulitis"),
+    "skin abscesses": ("HP:0100658", "Cellulitis"),
+    "edema": ("HP:0000969", "Edema"),
+    "swelling": ("HP:0000969", "Edema"),
+
+    # ── Gastrointestinal ────────────────────────────────────────────────
     "loose stools": ("HP:0002035", "Chronic diarrhea"),
     "chronic diarrhea": ("HP:0002035", "Chronic diarrhea"),
+    "diarrhea": ("HP:0002014", "Diarrhea"),
+
+    # ── Ear / ENT ───────────────────────────────────────────────────────
+    "ear infections": ("HP:0000388", "Otitis media"),
+    "otitis media": ("HP:0000388", "Otitis media"),
+    "middle ear infection": ("HP:0000388", "Otitis media"),
+    "hearing loss": ("HP:0000365", "Hearing impairment"),
+
+    # ── Fever / systemic ────────────────────────────────────────────────
+    "fever": ("HP:0001945", "Fever"),
+    "febrile": ("HP:0001945", "Fever"),
+    "high fever": ("HP:0001945", "Fever"),
+    "sepsis": ("HP:0100806", "Sepsis"),
+    "septicemia": ("HP:0100806", "Sepsis"),
+
+    # ── Connective tissue / musculoskeletal ─────────────────────────────
     "stiff gait": ("HP:0001300", "Parkinsonism"),
     "slow movements": ("HP:0001300", "Parkinsonism"),
     "bradykinesia": ("HP:0001300", "Parkinsonism"),
@@ -71,7 +183,20 @@ CLINICAL_SYNONYMS = {
     "poor healing": ("HP:0001058", "Poor wound healing"),
     "loose joints": ("HP:0001388", "Joint laxity"),
     "joint laxity": ("HP:0001388", "Joint laxity"),
+    "joint hypermobility": ("HP:0001382", "Joint hypermobility"),
+
+    # ── Ophthalmology ───────────────────────────────────────────────────
+    "nystagmus": ("HP:0000639", "Nystagmus"),
+    "telangiectasia": ("HP:0001009", "Telangiectasia"),
+    "telangiectasias": ("HP:0001009", "Telangiectasia"),
+
+    # ── Lymphatic ───────────────────────────────────────────────────────
+    "swollen lymph nodes": ("HP:0002840", "Lymphadenopathy"),
+    "lymphadenopathy": ("HP:0002840", "Lymphadenopathy"),
+    "lymph node enlargement": ("HP:0002840", "Lymphadenopathy"),
+    "lymphoma": ("HP:0002665", "Lymphoma"),
 }
+
 
 
 class ExactMatcher:

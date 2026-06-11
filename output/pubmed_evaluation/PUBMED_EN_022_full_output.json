@@ -1,0 +1,796 @@
+{
+  "note_id": "PUBMED_EN_022",
+  "language": "en",
+  "module1": {
+    "clean_text": "Case Report: Hyper-IgE syndrome: a case report.\n\nINTRODUCTION AND IMPORTANCE: Hyper-IgE syndrome (HIES), also known as Job syndrome, is a rare primary immunodeficiency disorder characterized by elevated serum IgE levels, recurrent infections, and various clinical features. Early diagnosis, prompt management of infections, and supportive care are essential in improving outcomes for individuals with HIES. Genetic testing, including STAT3 gene sequencing, plays a crucial role in confirming the diagnosis. Further research is needed to enhance our understanding of HIES and develop targeted therapies to improve the quality of life for affected individuals.\nCASE PRESENTATION: This case report presents the clinical features and management of a [AGE] male with HIES, diagnosed at the age of [AGE] due to recurrent cold abscesses caused by Staphylococcal infections.\nCLINICAL DISCUSSION: The patient exhibited typical symptoms of HIES, including recurrent eczema, frequent bacterial infections, mucocutaneous candidiasis, and various physical abnormalities. Diagnostic markers such as elevated IgE levels and eosinophilia supported the HIES diagnosis, which was further confirmed by the identification of a STAT3 gene mutation. Treatment primarily involved supportive measures and antibiotics for infections. The patient's blood test results and imaging findings revealed abnormalities such as low red blood cell count, elevated erythrocyte sedimentation rate, and pulmonary nodules.\nCONCLUSION: This case report highlights the importance of early diagnosis, prompt management of infections, and the need for ongoing research to improve our understanding and treatment of HIES.",
+    "phi_map": {
+      "AGE": [
+        "37-year-old",
+        "2"
+      ]
+    },
+    "patient_info": {
+      "sex": "male"
+    }
+  },
+  "module3_warnings": {
+    "temporal": [],
+    "inconsistencies": []
+  },
+  "module4": {
+    "problem": [
+      {
+        "text": "syndrome",
+        "ner_score": 0.922,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "syndrome",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "primary immunodeficiency disorder",
+        "ner_score": 0.818,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0005363",
+        "hpo_name": "Humoral immunodeficiency",
+        "expanded_text": "primary immunodeficiency disorder",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.8164,
+        "matched": true,
+        "umls_cui": "C4025206"
+      },
+      {
+        "text": "infections",
+        "ner_score": 0.443,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0002719",
+        "hpo_name": "Recurrent infections",
+        "expanded_text": "infections",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.7773,
+        "matched": true,
+        "umls_cui": "C0239998"
+      },
+      {
+        "text": "abscesses",
+        "ner_score": 0.49,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "abscesses",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "ococcal",
+        "ner_score": 0.889,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "ococcal",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "eczema",
+        "ner_score": 0.843,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0000964",
+        "hpo_name": "Eczema",
+        "expanded_text": "eczema",
+        "match_type": "clinical_synonym",
+        "confidence": 1.0,
+        "matched": true,
+        "umls_cui": "C0013595"
+      },
+      {
+        "text": "bacterial",
+        "ner_score": 0.675,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "bacterial",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "mucocutaneous candidiasis",
+        "ner_score": 0.721,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0002728",
+        "hpo_name": "Chronic mucocutaneous candidiasis",
+        "expanded_text": "mucocutaneous candidiasis",
+        "match_type": "exact_synonym",
+        "confidence": 1.0,
+        "matched": true,
+        "umls_cui": "C0006845"
+      },
+      {
+        "text": "physical abnormalities",
+        "ner_score": 0.685,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "physical abnormalities",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "abnormalities",
+        "ner_score": 0.33,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "abnormalities",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "eosinophilia",
+        "ner_score": 0.948,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0001880",
+        "hpo_name": "Increased total eosinophil count",
+        "expanded_text": "eosinophilia",
+        "match_type": "exact_synonym",
+        "confidence": 1.0,
+        "matched": true,
+        "umls_cui": "C0014457"
+      },
+      {
+        "text": "mutation",
+        "ner_score": 0.668,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "mutation",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "nodules",
+        "ner_score": 0.879,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0005994",
+        "hpo_name": "Nodular goiter",
+        "expanded_text": "nodules",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.7063,
+        "matched": true,
+        "umls_cui": "C0018023"
+      },
+      {
+        "text": "elevated erythrocyte sedimentation rate",
+        "ner_score": 0.9,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0003565",
+        "hpo_name": "Elevated erythrocyte sedimentation rate",
+        "expanded_text": "elevated erythrocyte sedimentation rate",
+        "match_type": "text_scan_exact_label",
+        "confidence": 0.95,
+        "matched": true,
+        "umls_cui": "C0151632",
+        "umls_all": [
+          "C0151632"
+        ]
+      },
+      {
+        "text": "frequent bacterial infections",
+        "ner_score": 0.9,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0002718",
+        "hpo_name": "Recurrent bacterial infections",
+        "expanded_text": "frequent bacterial infections",
+        "match_type": "text_scan_exact_synonym",
+        "confidence": 0.95,
+        "matched": true,
+        "umls_cui": "C1844383",
+        "umls_all": [
+          "C1844383",
+          "C2748958",
+          "C4020846"
+        ]
+      },
+      {
+        "text": "immunodeficiency",
+        "ner_score": 0.9,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0002721",
+        "hpo_name": "Immunodeficiency",
+        "expanded_text": "immunodeficiency",
+        "match_type": "text_scan_clinical_synonym",
+        "confidence": 0.95,
+        "matched": true,
+        "umls_cui": "C0021051",
+        "umls_all": [
+          "C0021051"
+        ]
+      }
+    ],
+    "test": [
+      {
+        "text": "elevated serum IgE",
+        "ner_score": 0.615,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0003212",
+        "hpo_name": "Increased circulating IgE concentration",
+        "expanded_text": "elevated serum IgE",
+        "match_type": "exact_synonym",
+        "confidence": 1.0,
+        "matched": true,
+        "umls_cui": "C0236175"
+      },
+      {
+        "text": "Genetic",
+        "ner_score": 0.929,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "Genetic",
+        "match_type": "skipped_non_phenotype",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "gene",
+        "ner_score": 0.925,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "gene",
+        "match_type": "skipped_non_phenotype",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "testing",
+        "ner_score": 0.866,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "testing",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "sequencing",
+        "ner_score": 0.856,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "sequencing",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "blood",
+        "ner_score": 0.979,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "blood",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "imaging",
+        "ner_score": 0.967,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "imaging",
+        "match_type": "skipped_non_phenotype",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "count",
+        "ner_score": 0.911,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "count",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "erythrocyte",
+        "ner_score": 0.913,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "erythrocyte",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "sedimentation",
+        "ner_score": 0.908,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "sedimentation",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "rate",
+        "ner_score": 0.929,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "rate",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "pulmonary",
+        "ner_score": 0.656,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "pulmonary",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      }
+    ],
+    "treatment": [
+      {
+        "text": "supportive care",
+        "ner_score": 0.569,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "supportive care",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "supportive measures",
+        "ner_score": 0.52,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "supportive measures",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "antibiotics",
+        "ner_score": 0.701,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "antibiotics",
+        "match_type": "skipped_non_phenotype",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      }
+    ],
+    "ordo_candidates": [
+      {
+        "ordo_id": "ORPHA:2314",
+        "name": "Hyper-IgE syndrome",
+        "name_fr": "Syndrome d'Hyper-IgE (syndrome de Job)",
+        "score": 0.85,
+        "jaccard": 0.0588,
+        "coverage": 0.125,
+        "matched_hpo": [
+          "HP:0002719"
+        ],
+        "matched_count": 1,
+        "total_disease_hpo": 8
+      },
+      {
+        "ordo_id": "ORPHA:482",
+        "name": "Kimura disease",
+        "name_fr": "",
+        "score": 0.3015,
+        "jaccard": 0.1538,
+        "coverage": 0.4,
+        "matched_hpo": [
+          "HP:0001880",
+          "HP:0003212"
+        ],
+        "matched_count": 2,
+        "total_disease_hpo": 5
+      },
+      {
+        "ordo_id": "ORPHA:86788",
+        "name": "X-linked severe congenital neutropenia",
+        "name_fr": "",
+        "score": 0.2333,
+        "jaccard": 0.0833,
+        "coverage": 0.3333,
+        "matched_hpo": [
+          "HP:0002718"
+        ],
+        "matched_count": 1,
+        "total_disease_hpo": 3
+      },
+      {
+        "ordo_id": "ORPHA:70592",
+        "name": "Transient predisposition to invasive pyogenic bacterial infection",
+        "name_fr": "",
+        "score": 0.2248,
+        "jaccard": 0.1333,
+        "coverage": 0.2857,
+        "matched_hpo": [
+          "HP:0002718",
+          "HP:0002721"
+        ],
+        "matched_count": 2,
+        "total_disease_hpo": 7
+      },
+      {
+        "ordo_id": "ORPHA:906",
+        "name": "Wiskott-Aldrich syndrome",
+        "name_fr": "Syndrome de Wiskott-Aldrich",
+        "score": 0.1857,
+        "jaccard": 0.1429,
+        "coverage": 0.2143,
+        "matched_hpo": [
+          "HP:0000964",
+          "HP:0002719",
+          "HP:0003212"
+        ],
+        "matched_count": 3,
+        "total_disease_hpo": 14
+      }
+    ],
+    "stats": {
+      "total": 31,
+      "matched": 10,
+      "unmatched": 21,
+      "match_rate": 32.3,
+      "unique_hpo": 10,
+      "ordo_matches": 5
+    }
+  },
+  "phenopacket": {
+    "id": "phenopacket-PUBMED_EN_022",
+    "subject": {
+      "id": "PUBMED_EN_022",
+      "sex": "MALE"
+    },
+    "input": "Case Report: Hyper-IgE syndrome: a case report.\n\nINTRODUCTION AND IMPORTANCE: Hyper-IgE syndrome (HIES), also known as Job syndrome, is a rare primary immunodeficiency disorder characterized by elevated serum IgE levels, recurrent infections, and various clinical features. Early diagnosis, prompt management of infections, and supportive care are essential in improving outcomes for individuals with HIES. Genetic testing, including STAT3 gene sequencing, plays a crucial role in confirming the diagnosis. Further research is needed to enhance our understanding of HIES and develop targeted therapies to improve the quality of life for affected individuals.\nCASE PRESENTATION: This case report presents the clinical features and management of a 37-year-old male with HIES, diagnosed at the age of 2 due to recurrent cold abscesses caused by Staphylococcal infections.\nCLINICAL DISCUSSION: The patient exhibited typical symptoms of HIES, including recurrent eczema, frequent bacterial infections, mucocutaneous candidiasis, and various physical abnormalities. Diagnostic markers such as elevated IgE levels and eosinophilia supported the HIES diagnosis, which was further confirmed by the identification of a STAT3 gene mutation. Treatment primarily involved supportive measures and antibiotics for infections. The patient's blood test results and imaging findings revealed abnormalities such as low red blood cell count, elevated erythrocyte sedimentation rate, and pulmonary nodules.\nCONCLUSION: This case report highlights the importance of early diagnosis, prompt management of infections, and the need for ongoing research to improve our understanding and treatment of HIES.",
+    "target": "Hyper-IgE syndrome",
+    "phenotypicFeatures": [
+      {
+        "type": {
+          "id": "HP:0005363",
+          "label": "Humoral immunodeficiency",
+          "umls_cui": "C4025206"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "PUBMED_EN_022",
+              "description": "NER: primary immunodeficiency disorder (0.818) | Match: sapbert_similarity (0.816)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0002719",
+          "label": "Recurrent infections",
+          "umls_cui": "C0239998"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "PUBMED_EN_022",
+              "description": "NER: infections (0.443) | Match: sapbert_similarity (0.777)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0000964",
+          "label": "Eczema",
+          "umls_cui": "C0013595"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "PUBMED_EN_022",
+              "description": "NER: eczema (0.843) | Match: clinical_synonym (1.000)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0002728",
+          "label": "Chronic mucocutaneous candidiasis",
+          "umls_cui": "C0006845"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "PUBMED_EN_022",
+              "description": "NER: mucocutaneous candidiasis (0.721) | Match: exact_synonym (1.000)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0001880",
+          "label": "Increased total eosinophil count",
+          "umls_cui": "C0014457"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "PUBMED_EN_022",
+              "description": "NER: eosinophilia (0.948) | Match: exact_synonym (1.000)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0005994",
+          "label": "Nodular goiter",
+          "umls_cui": "C0018023"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "PUBMED_EN_022",
+              "description": "NER: nodules (0.879) | Match: sapbert_similarity (0.706)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0003565",
+          "label": "Elevated erythrocyte sedimentation rate",
+          "umls_cui": "C0151632"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "PUBMED_EN_022",
+              "description": "NER: elevated erythrocyte sedimentation rate (0.900) | Match: text_scan_exact_label (0.950)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0002718",
+          "label": "Recurrent bacterial infections",
+          "umls_cui": "C1844383"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "PUBMED_EN_022",
+              "description": "NER: frequent bacterial infections (0.900) | Match: text_scan_exact_synonym (0.950)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0002721",
+          "label": "Immunodeficiency",
+          "umls_cui": "C0021051"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "PUBMED_EN_022",
+              "description": "NER: immunodeficiency (0.900) | Match: text_scan_clinical_synonym (0.950)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0003212",
+          "label": "Increased circulating IgE concentration",
+          "umls_cui": "C0236175"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "PUBMED_EN_022",
+              "description": "NER: elevated serum IgE (0.615) | Match: exact_synonym (1.000)"
+            }
+          }
+        ]
+      }
+    ],
+    "metaData": {
+      "created": "2026-06-11T03:06:52Z",
+      "createdBy": "clinical-preanalysis-pipeline-v2",
+      "phenopacketSchemaVersion": "2.0",
+      "resources": [
+        {
+          "id": "hp",
+          "name": "Human Phenotype Ontology",
+          "url": "https://hpo.jax.org",
+          "version": "2024-04-26",
+          "namespacePrefix": "HP",
+          "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        }
+      ]
+    },
+    "interpretations": [
+      {
+        "id": "interpretation-PUBMED_EN_022",
+        "progressStatus": "IN_PROGRESS",
+        "diagnosis": {
+          "disease": {
+            "id": "ORPHA:2314",
+            "label": "Hyper-IgE syndrome"
+          },
+          "score": 0.85,
+          "allCandidates": [
+            {
+              "id": "ORPHA:2314",
+              "label": "Hyper-IgE syndrome",
+              "score": 0.85
+            },
+            {
+              "id": "ORPHA:482",
+              "label": "Kimura disease",
+              "score": 0.3015
+            },
+            {
+              "id": "ORPHA:86788",
+              "label": "X-linked severe congenital neutropenia",
+              "score": 0.2333
+            },
+            {
+              "id": "ORPHA:70592",
+              "label": "Transient predisposition to invasive pyogenic bacterial infection",
+              "score": 0.2248
+            },
+            {
+              "id": "ORPHA:906",
+              "label": "Wiskott-Aldrich syndrome",
+              "score": 0.1857
+            }
+          ]
+        }
+      }
+    ],
+    "_pipelineStats": {
+      "totalEntities": 31,
+      "matchedHPO": 10,
+      "unmatchedEntities": 21,
+      "phenopacketFeatures": 10,
+      "negatedFeatures": 0,
+      "numericPhenotypes": 0,
+      "ordoCandidates": 5
+    }
+  }
+}

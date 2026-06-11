@@ -1,0 +1,603 @@
+{
+  "id": "phenopacket-CHU_FR_004",
+  "subject": {
+    "id": "CHU_FR_004",
+    "sex": "MALE"
+  },
+  "input": "HDJ RE-hospitalization report\nThe child Amroun Abdel Aziz, aged 09 from Chlef and residing in Oran, followed in our department since 01/11/2021 for a primary immunodeficiency type \"Wiskott Aldrich syndrome\", complicated by dilation of the cylindrical DDB bronchi and chronic respiratory failure stage 1. Admitted on 12/16/2025 for his treatment 51 immunoglobulins\nHistory of illness:\nMain diagnosis: Wiskott Aldrich type DIP\nDate of diagnosis: 12/11/2020\nAge of diagnosis: 04 years and 9 months\nAssociated diagnoses: Dilation of the cylindrical bronchi\nChronic respiratory failure stage 1\nDiagnostic elements:\nAnamnestics\n-Male gender\n-Repeated respiratory infections\n-Several outbreaks of eczema. Clinic\n-Anemic syndrome consisting of: mucocutaneous pallor. -Skin hemorrhagic syndrome such as petechiae spread to the face and trunk. -Eczema lesions on the face and lower limbs. Para-clinical:\n-Bi cytopenia; anemia, thrombocytopenia\n- Assessment of primary immunodeficiency: 12/29/2020, Profound reduction in the expression of the WASp protein results in favor of DIP Wiskott Aldrich syndrome\nImmunoglobulin treatment at a rate of 0.8mg1/kg/4h at the SAP each month. Last dose received: 02/09/2026 (0.8g/kg)\nLast update made in May 2025\nHISTORY OF HOSPITALIZATIONS\nANAMNESIS 12/16/2025\nEvents since the last visit:\nConsultation: no\nOn the respiratory level: wet cough, clear sputum,\nSigns of respiratory failure: Clubbing\nNutritionally: good food intake\nOn the digestive level: Preserved transit\nOn the ENT level: Nothing to report\nActivity: dyspnea\nSchooling: 3rd year of primary school\nProcessing in progress:\nAzithromycin 1 day out of 02\nBactrim 25mg/kg/d\nItraconazole 05mg/kg/day: 02 times/day\nPulmicort 1mg: 02 times/day\nNebulization with hypertonic salt serum\nRespiratory physiotherapy done by the mother\nWell-kept notebooks\nAssessments made:\nIgG level: 11/18/2025: 10.86g/l\nCLINICAL EXAMINATION UPON ADMISSION: Date: 16/12/2025\n-Anthropometric measurements:\nWeight: 31kg [-0.018] Height: 130 cm [-0.97DS] BMI: 17.7 kg/m2 Eutrophic Child\n-General condition preserved, conscious, T: 37.2\n-Skin examination: no cutaneous and mucosal hemorrhagic syndrome, dry skin, multiple scars on the lower limbs\n-Pleuropulmonary examination: FR: 38c/min SPo2: 96% Under 2 liters of O2, slight signs of struggle. Thoracic keel deformity, clubbing\n. Auscultation of polymorphic rales\n-Cardiovascular examination: HR: 98 bpm, Auscultation: no murmur/no added noises\n-Examination of the abdomen: flexible transit preserved, no organomegaly\n-ENT examination: Presence of dental caries, absence of hemorrhagic bubbles\n-Examination of other devices without anomalies\nParaclinical assessment at admission: 03/11/2025:\nWBC: 7800 elements/ul Hb: 10.6g/dl VGM: 73.5 Fl Platelet: 100,000 elements/ul (Thrombopenia)\nTP: 89.8% TQ: 13.7 sec TCK: 29 sec Fibrinogene: 3.07 g/l\nCRP: negative VS: 33mm/h (the 1st hour) 79 mm/h (the 2nd hour)\nResidual IgG: 10.86 g/l (11/18/2025)\nSupport:\n-Hospitalization\n- Conditioning, peripheral venous route\n-Replacement immunotherapy: IV infusion at 0.8g/kg or 25g, to be administered over 4 hours (Intratect)\n-Monitoring\n-Stomato opinion made: Presence of dental caries, poor oral condition\nCAT: Oral hygiene, for extraction the platelet count must be greater than 80,000 elements\nThe immunoglobulin treatment passed without incident\nSame day release\nContinue the same treatment: bactrim antibiotic prophylaxis and itraconazole antifungal\nZithromax, Pulmicort\nPhysiotherapy and saline nebulizations\nHygiene-dietary advice and notebook keeping\nControl appointment: 01/06/2026 for immunoglobulin treatment\nTo collect / To do:\nNext immunoglobulin treatment appointment is scheduled for 01/06/2026\nPlan an ECBC to recover before the next treatment\nPlan a chest CT,\nSchedule an abdominopelvic ultrasound\nSchedule an echocardiogram\nRetrieve the health record\nSibling screening\nDepartment resident: Dr Djoudi Department assistant: Dr Khelil",
+  "target": "Wiskott-Aldrich syndrome",
+  "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0005363",
+        "label": "Humoral immunodeficiency",
+        "umls_cui": "C4025206"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "CHU_FR_004",
+            "description": "NER: primary immunodeficiency (0.834) | Match: sapbert_similarity (0.847)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0002617",
+        "label": "Vascular dilatation",
+        "umls_cui": "C0002940"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "CHU_FR_004",
+            "description": "NER: dilation (0.789) | Match: sapbert_similarity (0.828)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0011010",
+        "label": "Chronic",
+        "umls_cui": "C0205191"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "CHU_FR_004",
+            "description": "NER: chronic (0.776) | Match: exact_label (1.000)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0011947",
+        "label": "Respiratory tract infection",
+        "umls_cui": "C0035243"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "CHU_FR_004",
+            "description": "NER: Chronic respiratory (0.605) | Match: sapbert_similarity (0.713)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0002719",
+        "label": "Recurrent infections",
+        "umls_cui": "C0239998"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "CHU_FR_004",
+            "description": "NER: infections (0.514) | Match: sapbert_similarity (0.777)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0000964",
+        "label": "Eczema",
+        "umls_cui": "C0013595"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "CHU_FR_004",
+            "description": "NER: eczema (0.670) | Match: clinical_synonym (1.000)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0000980",
+        "label": "Pallor",
+        "umls_cui": "C0030232"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "CHU_FR_004",
+            "description": "NER: pallor (0.915) | Match: exact_label (1.000)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0001892",
+        "label": "Abnormal bleeding",
+        "umls_cui": "C1458140"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "CHU_FR_004",
+            "description": "NER: hemorrhagic syndrome (0.448) | Match: sapbert_similarity (0.785)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0000967",
+        "label": "Petechiae",
+        "umls_cui": "C0031256"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "CHU_FR_004",
+            "description": "NER: petechiae (0.840) | Match: exact_label (1.000)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0011355",
+        "label": "Localized skin lesion",
+        "umls_cui": "C0850826"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "CHU_FR_004",
+            "description": "NER: lesions (0.636) | Match: sapbert_similarity (0.736)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0001876",
+        "label": "Pancytopenia",
+        "umls_cui": "C0030312"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "CHU_FR_004",
+            "description": "NER: Bi cytopenia (0.859) | Match: sapbert_similarity (0.822)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0001903",
+        "label": "Anemia",
+        "umls_cui": "C0002871"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "CHU_FR_004",
+            "description": "NER: anemia (0.915) | Match: exact_label (1.000)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0001873",
+        "label": "Thrombocytopenia",
+        "umls_cui": "C0040034"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "CHU_FR_004",
+            "description": "NER: thrombocytopenia (0.889) | Match: exact_label (1.000)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0012735",
+        "label": "Cough",
+        "umls_cui": "C0010200"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "CHU_FR_004",
+            "description": "NER: cough (0.858) | Match: exact_label (1.000)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0001217",
+        "label": "Clubbing",
+        "umls_cui": "C0149651"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "CHU_FR_004",
+            "description": "NER: clubbing (0.905) | Match: exact_label (1.000)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0002094",
+        "label": "Dyspnea",
+        "umls_cui": "C0013404"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "CHU_FR_004",
+            "description": "NER: dyspnea (0.924) | Match: exact_label (1.000)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0001259",
+        "label": "Coma",
+        "umls_cui": "C0009421"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "CHU_FR_004",
+            "description": "NER: conscious (0.724) | Match: sapbert_similarity (0.724)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0000958",
+        "label": "Dry skin",
+        "umls_cui": "C0151908"
+      },
+      "excluded": true,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "CHU_FR_004",
+            "description": "NER: dry skin (0.859) | Match: exact_label (1.000) | Negated by: \"no\""
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0003271",
+        "label": "Visceromegaly",
+        "umls_cui": "C0042782"
+      },
+      "excluded": true,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "CHU_FR_004",
+            "description": "NER: organomegaly (0.963) | Match: sapbert_similarity (0.882) | Negated by: \"no\""
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0000670",
+        "label": "Carious teeth",
+        "umls_cui": "C0011334"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "CHU_FR_004",
+            "description": "NER: dental caries (0.734) | Match: exact_synonym (1.000)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0002093",
+        "label": "Respiratory insufficiency",
+        "umls_cui": "C0035229"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "CHU_FR_004",
+            "description": "NER: respiratory failure (0.900) | Match: text_scan_clinical_synonym (0.950)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0002721",
+        "label": "Immunodeficiency",
+        "umls_cui": "C0021051"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "CHU_FR_004",
+            "description": "NER: immunodeficiency (0.900) | Match: text_scan_clinical_synonym (0.950)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0012829",
+        "label": "Profound",
+        "umls_cui": "C0439808"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "CHU_FR_004",
+            "description": "NER: Profound (0.900) | Match: text_scan_exact_label (0.950)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0001397",
+        "label": "Hepatic steatosis",
+        "umls_cui": "C2711227"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "CHU_FR_004",
+            "description": "NER: tonic (0.786) | Match: substring_match (0.950)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0001254",
+        "label": "Lethargy",
+        "umls_cui": "C0023380"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "CHU_FR_004",
+            "description": "NER: ination (0.983) | Match: sapbert_similarity (0.742)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0011968",
+        "label": "Feeding difficulties",
+        "umls_cui": "C0232466"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "CHU_FR_004",
+            "description": "NER: poor oral (0.880) | Match: sapbert_similarity (0.774)"
+          }
+        }
+      ]
+    }
+  ],
+  "metaData": {
+    "created": "2026-06-11T03:50:05Z",
+    "createdBy": "clinical-preanalysis-pipeline-v2",
+    "phenopacketSchemaVersion": "2.0",
+    "resources": [
+      {
+        "id": "hp",
+        "name": "Human Phenotype Ontology",
+        "url": "https://hpo.jax.org",
+        "version": "2024-04-26",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      }
+    ]
+  },
+  "interpretations": [
+    {
+      "id": "interpretation-CHU_FR_004",
+      "progressStatus": "IN_PROGRESS",
+      "diagnosis": {
+        "disease": {
+          "id": "ORPHA:906",
+          "label": "Wiskott-Aldrich syndrome"
+        },
+        "score": 0.85,
+        "allCandidates": [
+          {
+            "id": "ORPHA:906",
+            "label": "Wiskott-Aldrich syndrome",
+            "score": 0.85
+          },
+          {
+            "id": "ORPHA:517",
+            "label": "Acute myelomonocytic leukemia",
+            "score": 0.4
+          },
+          {
+            "id": "ORPHA:231393",
+            "label": "Beta-thalassemia-X-linked thrombocytopenia syndrome",
+            "score": 0.3414
+          },
+          {
+            "id": "ORPHA:231249",
+            "label": "Hemoglobin E-beta-thalassemia syndrome",
+            "score": 0.3286
+          },
+          {
+            "id": "ORPHA:2808",
+            "label": "Laryngeal abductor paralysis",
+            "score": 0.3148
+          }
+        ]
+      }
+    }
+  ],
+  "_validationWarnings": [
+    {
+      "type": "sex_anatomy_conflict",
+      "severity": "critical",
+      "message": "Female-specific term 'para' found in male patient record",
+      "term": "para"
+    }
+  ],
+  "_pipelineStats": {
+    "totalEntities": 120,
+    "matchedHPO": 28,
+    "unmatchedEntities": 92,
+    "phenopacketFeatures": 26,
+    "negatedFeatures": 2,
+    "numericPhenotypes": 1,
+    "ordoCandidates": 5
+  }
+}

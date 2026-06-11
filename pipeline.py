@@ -4,7 +4,7 @@ BILINGUAL: detects language (French/English) and routes accordingly.
 
 Architecture (per mémoire Ch4):
   Module 1: Preprocessing & De-identification (PHI removal)
-  Module 2: Semantic Extraction (ClinicalBERT / CamemBERT-bio GLiNER)
+  Module 2: Semantic Extraction (DeBERTa-v3 BioMed NER / CamemBERT-bio GLiNER)
   Module 3: Rule-based Validation (NegEx, temporal, numeric, inconsistencies)
   Module 4: Ontological Normalization (Abbreviations → Exact → SapBERT → UMLS → ORDO)
   Output:   Phenopacket ISO 4454:2022
@@ -22,6 +22,7 @@ from log_config import get_logger
 from module1_preprocessing.language_detector import detect_language
 from module1_preprocessing.phi_remover import process_phi
 from module2_extraction.clinical_ner import ClinicalNER
+from module2_extraction.entity_merger import EntityMerger
 from module3_validation.negex import NegExDetector
 from module3_validation.temporal import check_temporal_consistency
 from module3_validation.numeric import extract_numeric_phenotypes
@@ -54,6 +55,13 @@ class FullPipeline:
         logger.info("  Loading Module 4: Normalization Pipeline...")
         self.normalizer = NormalizationPipeline(
             similarity_threshold=similarity_threshold
+        )
+
+        # Entity merger for English (fixes DeBERTa-v3 fragmentation)
+        logger.info("  Loading Module 2.5: EntityMerger (EN fragment reassembly)...")
+        self.entity_merger = EntityMerger(
+            exact_matcher=self.normalizer.exact_matcher,
+            sapbert_linker=self.normalizer.sapbert,
         )
 
         logger.info("Pipeline ready (FR + EN).")
@@ -97,6 +105,12 @@ class FullPipeline:
         ner = self.ner_fr if lang == "fr" else self.ner_en
         entities = ner(clean_text)
 
+        # 2.5: Merge fragmented English NER entities
+        # DeBERTa-v3 BIO tagging splits "cystic fibrosis" → ["Cystic", "fibrosis"]
+        # The merger reassembles fragments by validating against HPO ontology
+        if lang == "en":
+            entities = self.entity_merger.merge_entities(entities, clean_text)
+
         # ═══════════════════════════════════════════════════════════════
         # MODULE 3: Rule-based Validation
         # ═══════════════════════════════════════════════════════════════
@@ -131,6 +145,7 @@ class FullPipeline:
             entities=entities,
             numeric_phenotypes=numeric_phenotypes,
             lang=lang,
+            source_text=clean_text,
         )
 
         # ═══════════════════════════════════════════════════════════════

@@ -1,0 +1,514 @@
+{
+  "id": "phenopacket-GSC_EN_007",
+  "subject": {
+    "id": "GSC_EN_007"
+  },
+  "input": "Case Report: A novel frameshift variant in the ADA2 gene of a patient with a neurological phenotype: a case report.\n\nBACKGROUND: Adenosine deaminase 2 (ADA2) deficiency is an inherited autoinflammatory syndrome caused by a defect in the ADA2 gene. Most common manifestations include peripheral vasculopathy, early-onset stroke, immunodeficiency, and haematological manifestations. Patients with pathogenic variants that are more detrimental to ADA2's enzymatic function (e.g. frameshift) have been reported to be prone to developing hematological phenotype. We report here the case of a 13-year-old Caucasian girl with a novel frameshift variant in the ADA2 gene and a clinical phenotype of early-onset stroke.\nCASE PRESENTATION: The patient was admitted to hospital with complaints of weakness in her right arm, unilateral facial weakness and speech problems. Her initial laboratory workup was normal; however, magnetic resonance imaging of her brain confirmed acute/subacute ischaemic changes in the posterior limb of the left-sided internal capsule and in the apical part of the thalamus. She also had manifestations of immunodeficiency - recurrent skin infections and otitis, chronic Molluscum contagiosum infection in anamnesis and B cell deficiency with a low level of serum IgA. The patient's DNA was analysed and two pathogenic variants were identified in the ADA2 gene, confirming a diagnosis of adenosine deaminase 2 (ADA2) deficiency. While one of the variants (c.506G > A (p.Arg169Gln)) has been reported previously, the other one is a novel frameshift variant, namely, c.464del (p.Pro155Hisfs*29). The patient received stroke rehabilitation, which significantly improved her functional state. Tumour necrosis factor inhibitor and methotrexate treatment was commenced, and the patient has remained stable with no further ischaemic events.\nCONCLUSIONS: Although rare, ADA2 deficiency should be considered in patients with early-onset stroke, especially with concomitant manifestations of inflammatory features or immunodeficiency. This case report extends the genotypic spectrum of ADA2 deficiency.",
+  "target": "Infantile LAD-like disease due to RAC2 deficiency",
+  "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0000707",
+        "label": "Abnormality of the nervous system",
+        "umls_cui": "C0497552"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "GSC_EN_007",
+            "description": "NER: neurological (0.449) | Match: sapbert_similarity (0.744)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0012649",
+        "label": "Increased inflammatory response",
+        "umls_cui": "C4022803"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "GSC_EN_007",
+            "description": "NER: inflammatory (0.894) | Match: sapbert_similarity (0.862)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0001297",
+        "label": "Stroke",
+        "umls_cui": "C0038454"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "GSC_EN_007",
+            "description": "NER: stroke (0.508) | Match: exact_label (1.000)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0002721",
+        "label": "Immunodeficiency",
+        "umls_cui": "C0021051"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "GSC_EN_007",
+            "description": "NER: immunodeficiency (0.633) | Match: clinical_synonym (1.000)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0004377",
+        "label": "Hematological neoplasm",
+        "umls_cui": "C0376545"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "GSC_EN_007",
+            "description": "NER: haematological (0.618) | Match: sapbert_similarity (0.702)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0001324",
+        "label": "Muscle weakness",
+        "umls_cui": "C0151786"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "GSC_EN_007",
+            "description": "NER: weakness (0.965) | Match: sapbert_similarity (0.891)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0002465",
+        "label": "Poor speech",
+        "umls_cui": "C1848207"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "GSC_EN_007",
+            "description": "NER: speech problems (0.897) | Match: sapbert_similarity (0.900)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0002637",
+        "label": "Cerebral ischemia",
+        "umls_cui": "C0007786"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "GSC_EN_007",
+            "description": "NER: ischaemic changes (0.507) | Match: sapbert_similarity (0.744)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0002719",
+        "label": "Recurrent infections",
+        "umls_cui": "C0239998"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "GSC_EN_007",
+            "description": "NER: infections (0.537) | Match: sapbert_similarity (0.777)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0000388",
+        "label": "Otitis media",
+        "umls_cui": "C0029882"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "GSC_EN_007",
+            "description": "NER: otitis (0.597) | Match: sapbert_similarity (0.849)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0003680",
+        "label": "Nonprogressive",
+        "umls_cui": "C3839460"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "GSC_EN_007",
+            "description": "NER: stable (0.785) | Match: sapbert_similarity (0.736)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0002140",
+        "label": "Ischemic stroke",
+        "umls_cui": "C0948008"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "GSC_EN_007",
+            "description": "NER: ischaemic events (0.861) | Match: sapbert_similarity (0.833)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0012799",
+        "label": "Unilateral facial palsy",
+        "umls_cui": "C0239516"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "GSC_EN_007",
+            "description": "NER: unilateral facial weakness (0.900) | Match: text_scan_exact_synonym (0.950)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0001581",
+        "label": "Recurrent skin infections",
+        "umls_cui": "C1853193"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "GSC_EN_007",
+            "description": "NER: recurrent skin infections (0.900) | Match: text_scan_exact_label (0.950)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0004432",
+        "label": "Agammaglobulinemia",
+        "umls_cui": "C0001768"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "GSC_EN_007",
+            "description": "NER: B cell deficiency (0.900) | Match: text_scan_clinical_synonym (0.950)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0011011",
+        "label": "Subacute",
+        "umls_cui": "C0205365"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "GSC_EN_007",
+            "description": "NER: subacute (0.900) | Match: text_scan_exact_label (0.950)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0003674",
+        "label": "Onset",
+        "umls_cui": "C0206132"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "GSC_EN_007",
+            "description": "NER: onset (0.900) | Match: text_scan_exact_label (0.950)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0002664",
+        "label": "Neoplasm",
+        "umls_cui": "C0006826"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "GSC_EN_007",
+            "description": "NER: Tumour (0.930) | Match: exact_synonym (1.000)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0100758",
+        "label": "Gangrene",
+        "umls_cui": "C0017086"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "GSC_EN_007",
+            "description": "NER: necrosis (0.956) | Match: sapbert_similarity (0.750)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0012839",
+        "label": "Distal",
+        "umls_cui": "C0205108"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "GSC_EN_007",
+            "description": "NER: posterior (0.962) | Match: sapbert_similarity (0.745)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0012835",
+        "label": "Left",
+        "umls_cui": "C0443246"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "GSC_EN_007",
+            "description": "NER: the left (0.839) | Match: sapbert_similarity (0.953)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0012831",
+        "label": "Laterality",
+        "umls_cui": "C0332304"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "GSC_EN_007",
+            "description": "NER: sided (0.983) | Match: sapbert_similarity (0.778)"
+          }
+        }
+      ]
+    }
+  ],
+  "metaData": {
+    "created": "2026-06-11T03:07:57Z",
+    "createdBy": "clinical-preanalysis-pipeline-v2",
+    "phenopacketSchemaVersion": "2.0",
+    "resources": [
+      {
+        "id": "hp",
+        "name": "Human Phenotype Ontology",
+        "url": "https://hpo.jax.org",
+        "version": "2024-04-26",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      }
+    ]
+  },
+  "interpretations": [
+    {
+      "id": "interpretation-GSC_EN_007",
+      "progressStatus": "IN_PROGRESS",
+      "diagnosis": {
+        "disease": {
+          "id": "ORPHA:183707",
+          "label": "Infantile LAD-like disease due to RAC2 deficiency"
+        },
+        "score": 0.166,
+        "allCandidates": [
+          {
+            "id": "ORPHA:183707",
+            "label": "Infantile LAD-like disease due to RAC2 deficiency",
+            "score": 0.166
+          },
+          {
+            "id": "ORPHA:1062",
+            "label": "Hereditary neurocutaneous malformation",
+            "score": 0.166
+          },
+          {
+            "id": "ORPHA:431344",
+            "label": "Urachal sinus",
+            "score": 0.166
+          },
+          {
+            "id": "ORPHA:231249",
+            "label": "Hemoglobin E-beta-thalassemia syndrome",
+            "score": 0.166
+          },
+          {
+            "id": "ORPHA:526",
+            "label": "Liddle syndrome",
+            "score": 0.1609
+          }
+        ]
+      }
+    }
+  ],
+  "_pipelineStats": {
+    "totalEntities": 59,
+    "matchedHPO": 23,
+    "unmatchedEntities": 36,
+    "phenopacketFeatures": 22,
+    "negatedFeatures": 0,
+    "numericPhenotypes": 0,
+    "ordoCandidates": 5
+  }
+}

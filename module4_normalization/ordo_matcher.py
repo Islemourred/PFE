@@ -159,19 +159,29 @@ class ORDOMatcher:
                 logger.warning("Could not load full ORDO database: %s", e)
                 logger.info("ORDOMatcher: using %d curated profiles only", len(self.diseases))
 
-    def match_diseases(self, patient_hpo_ids: set, top_k: int = 5) -> list:
+    def match_diseases(self, patient_hpo_ids: set, top_k: int = 5,
+                        source_text: str = "") -> list:
         """
         Score rare diseases by phenotype overlap with patient profile.
+        If source_text is provided, also tries direct disease name matching
+        and boosts diseases mentioned by name.
 
         Args:
             patient_hpo_ids: set of HPO IDs from the patient
             top_k: number of top candidates to return
+            source_text: optional clinical text to scan for disease names
 
         Returns:
             Ranked list of candidate diseases with scores
         """
         if not patient_hpo_ids:
             return []
+
+        # ── Phase 1: Text-based disease name detection ──
+        # Scan source text for explicit disease mentions → strong signal
+        text_matched_orpha = None
+        if source_text:
+            text_matched_orpha = self._detect_disease_in_text(source_text)
 
         scores = []
         for ordo_id, disease in self.diseases.items():
@@ -184,6 +194,10 @@ class ORDOMatcher:
             score = len(overlap) / len(union) if union else 0
             coverage = len(overlap) / len(disease_hpo) if disease_hpo else 0
             combined = 0.6 * coverage + 0.4 * score
+
+            # Boost score if disease name was found in text
+            if text_matched_orpha and ordo_id == text_matched_orpha:
+                combined = max(combined, 0.85)  # Ensure it ranks high
 
             scores.append({
                 "ordo_id": ordo_id,
@@ -199,3 +213,51 @@ class ORDOMatcher:
 
         scores.sort(key=lambda x: x["score"], reverse=True)
         return scores[:top_k]
+
+    # Disease name patterns → ORPHA ID (for text-based detection)
+    _DISEASE_NAME_MAP = {
+        "cystic fibrosis": "ORPHA:586",
+        "mucoviscidose": "ORPHA:586",
+        "wiskott-aldrich": "ORPHA:906",
+        "wiskott aldrich": "ORPHA:906",
+        "agammaglobulinemia": "ORPHA:47",
+        "agammaglobulinémie": "ORPHA:47",
+        "bruton": "ORPHA:47",
+        "severe combined immunodeficiency": "ORPHA:183660",
+        "déficit immunitaire combiné sévère": "ORPHA:183660",
+        "scid": "ORPHA:183660",
+        "dics": "ORPHA:183660",
+        "ataxia-telangiectasia": "ORPHA:100",
+        "ataxia telangiectasia": "ORPHA:100",
+        "ataxie télangiectasie": "ORPHA:100",
+        "louis-bar": "ORPHA:100",
+        "mhc class ii deficiency": "ORPHA:572",
+        "bare lymphocyte syndrome": "ORPHA:572",
+        "déficit en hla": "ORPHA:572",
+        "spinal muscular atrophy": "ORPHA:70",
+        "amyotrophie spinale": "ORPHA:70",
+        "hyper-ige syndrome": "ORPHA:2314",
+        "hyper ige syndrome": "ORPHA:2314",
+        "job syndrome": "ORPHA:2314",
+        "syndrome d'hyper-ige": "ORPHA:2314",
+        "common variable immunodeficiency": "ORPHA:1572",
+        "ehlers-danlos": "ORPHA:98249",
+        "marfan syndrome": "ORPHA:558",
+        "huntington disease": "ORPHA:399",
+        "sickle cell": "ORPHA:232",
+        "gaucher disease": "ORPHA:94065",
+        "retinitis pigmentosa": "ORPHA:791",
+        "tuberous sclerosis": "ORPHA:803",
+        "neurofibromatosis": "ORPHA:636",
+        "charcot-marie-tooth": "ORPHA:166",
+    }
+
+    def _detect_disease_in_text(self, text: str) -> str | None:
+        """Scan clinical text for explicit disease name mentions."""
+        text_lower = text.lower()
+        for pattern, orpha_id in self._DISEASE_NAME_MAP.items():
+            if pattern in text_lower:
+                logger.info("  ORDO: Disease name '%s' detected in text → %s",
+                           pattern, orpha_id)
+                return orpha_id
+        return None

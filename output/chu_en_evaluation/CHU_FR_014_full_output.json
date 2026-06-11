@@ -1,0 +1,2791 @@
+{
+  "note_id": "CHU_FR_014",
+  "language": "en",
+  "module1": {
+    "clean_text": "Oran [DATE] Number: [ID] and first name: [PATIENT] [DATE] ORAN\nTel No: [ID] Report\nThis is the infant [PATIENT] aged [AGE] originally from and residing in ORAN, from a non-consanguineous middle-aged couple, the only child, hospitalized at our level for the investigation and PEC of respiratory distress with axial and segmental hypotonia. HISTORY:\nFamily:\nFather: aged [AGE] in BES. Mother: aged [AGE] in BES, G1P1. Inbreeding: NO. No cases of death at young age in the family\nNo notion of neuromuscular diseases or disabilities in the family\nPersonal:\nPhysiological\nPregnancy: well monitored. MAF present in the last quarter\nNo concept of fetal distress\nFull-term delivery, by vaginal route. Good Apgar at birth\nBirth weight: 03Kg400. Breastfeeding: Mixed from birth. Vaccination: up to date. Pathological:\nAxial and segmental hypotonia since birth\nHISTORY OF THE DISEASE:\nGoing back a few days before his admission and as part of the investigation of his hypotonia, a consultation was made with a private pediatrician who noted moderate respiratory distress, hence his referral to our level and his admission for investigation and treatment. ADMISSION STATUS:\nAnthropometric measurements:\nWeight: 04kg800 [-0.59 DS]\nSize:58cm [+0.45 DS]\nPC: 40[ -0.3 DS]\nGeneral condition kept afebrile at 36.5\nHemodynamically stable with warm extremities, CRT<3 seconds. Normally colored connective integuments. Neurological examination:\nFA: open at 02 cm, deep axial and segmental hypotonia,\ngood sucking reflex\nGrasping reflex weak at 04 limbs, Moro reflex weak\nENT examination:\nNasal obstruction\nNo superficial lymphadenopathy\nRespiratory examination:\nFR: 40/min, SaO2: 98% under 03l/min of oxygen\nRespiratory distress caused by: subcostal drawing with xiphoid funnel\npulmonary auscultation: fine crackles on auscultation. Cardiac exam:\nHR: 135bpm, B1B2 clearly audible\nNo hiss, no added noise. Digestive examination:\nSoft abdomen, preserved transit. No organomegaly\nUrogenital examination:\nmale morphotype\nno abnormalities of sexual differentiation\nPARACLINICAL EXAMINATIONS:\nBIOLOGY:\nNFS: correct\nCRP: Negative\nCorrect thyroid assessment\nNormal muscle enzymes\nNo hepatic cytolysis\nGAZOMETRY (11/24/2025): Slightly compensated grade II respiratory acidosis with hypercapnea at 55mmHg\nRADIOLOGY:\nChest radiography: Multiple heterogeneous opacities in both lung fields\nEcho-coeur: (05-11-2025) Small CIV without impact\nBrain CT: (10-11-2025) Fine, harmonious atrophic appearance of the corpus callosum, no significant associated abnormalities\nENMG: (11/19/2025) Pure motor polyneuropathy predominantly proximal, due to axonal loss, of severe intensity which may be related to diffuse damage (staged and bilateral) of spinal motor neurons facing the anterior horns of the lumbosacrals from L3 to S1 and cervical from C5 to D1. A degenerative and progressive pathology of spinal motor neurons is strongly suspected (SMA suspected). In total:\nThis is the infant BELHOUARI ZAKARIA aged 02 months from a non-consanguineous couple, admitted to our service for the management of respiratory distress, who poses the following problems:\nRespiratory distress\nProfound peripheral hypotony\nMildly compensated respiratory acidosis with hypercapnea\nFaced with this picture, a neuromuscular disease spinal muscular atrophy (SMA TYPE 1: Vernic Hoffman) is strongly suspected for which the genetic study in search of an SMN1, 2 mutation was launched confirming the diagnosis (homozygous state of a deletion of the SMN1 gene)\nTherapeutic conduct:\nHospitalization with isolation measures.\nHygiene and dietetic measures\nPlaced on antibiotic therapy with good improvement\nPlaced on non-invasive ventilation\nEVOLUTION DURING HOSPITALIZATION:\nThe evolution of the infant under NIV (PEEP: 05cmHg, AI: 05mmHg with an O2 flow rate of 0.5l/min) was marked by a clear improvement:\nRegression of signs of struggle with good saturation 96-98% under 0.5l/min of O2\nRespiratory rate increased from 73c/min to 38-40c/min\nHeart rate increased from 200bpm to 120bpm\nControl blood gas: PaCO2: 38mmHg\nOn D 06 of placing under NIV:\nThe child presented a worsening of his respiratory distress (reappearance of signs of struggle, FR: 62c/min with an increase in O2 requirements) of probably central origin; Currently, the infant is on permanent NIV (PEEP: 05cmHg, AI: 05cmHg with an O2 flow rate of 02l/min) with good saturation with cyanosis at times.\nCONCLUSION:\nThis is the infant BELHOUARI ZAKARIA, aged 02 months, originally from and residing in ORAN, hospitalized at our level for the treatment of spinal muscular atrophy type 01 (homozygous state SMN 1 deletion)",
+    "phi_map": {
+      "DATE": [
+        "11/23/2025\nFile",
+        "09/24/2025\nAddress:"
+      ],
+      "ID": [
+        "16985\nName",
+        "07.90.49.89.36\nMedical"
+      ],
+      "PATIENT": [
+        "BELHOUARIZAKARIA\nBorn:",
+        "BELHOUARI",
+        "ZAKARIA,"
+      ],
+      "AGE": [
+        "02months,",
+        "44,",
+        "35,"
+      ]
+    },
+    "patient_info": {
+      "sex": "male"
+    }
+  },
+  "module3_warnings": {
+    "temporal": [],
+    "inconsistencies": [
+      {
+        "type": "sex_anatomy_conflict",
+        "severity": "critical",
+        "message": "Female-specific term 'pregnancy' found in male patient record",
+        "term": "pregnancy"
+      },
+      {
+        "type": "sex_anatomy_conflict",
+        "severity": "critical",
+        "message": "Female-specific term 'cervical' found in male patient record",
+        "term": "cervical"
+      }
+    ]
+  },
+  "module4": {
+    "problem": [
+      {
+        "text": "respiratory distress",
+        "ner_score": 0.678,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0002098",
+        "hpo_name": "Respiratory distress",
+        "expanded_text": "respiratory distress",
+        "match_type": "clinical_synonym",
+        "confidence": 1.0,
+        "matched": true,
+        "umls_cui": "C0013404"
+      },
+      {
+        "text": "respiratory",
+        "ner_score": 0.564,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0011947",
+        "hpo_name": "Respiratory tract infection",
+        "expanded_text": "respiratory",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.7121,
+        "matched": true,
+        "umls_cui": "C0035243"
+      },
+      {
+        "text": "distress",
+        "ner_score": 0.461,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "distress",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "hypotonia",
+        "ner_score": 0.83,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0001252",
+        "hpo_name": "Muscular hypotonia",
+        "expanded_text": "hypotonia",
+        "match_type": "clinical_synonym",
+        "confidence": 1.0,
+        "matched": true,
+        "umls_cui": "C0026827"
+      },
+      {
+        "text": "tonia",
+        "ner_score": 0.523,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0001276",
+        "hpo_name": "Hypertonia",
+        "expanded_text": "tonia",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.7184,
+        "matched": true,
+        "umls_cui": "C0026826"
+      },
+      {
+        "text": "neur",
+        "ner_score": 0.969,
+        "negated": true,
+        "negation_cue": "no",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "neur",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "neuromuscular",
+        "ner_score": 0.86,
+        "negated": true,
+        "negation_cue": "no",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "neuromuscular",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "muscular",
+        "ner_score": 0.972,
+        "negated": true,
+        "negation_cue": "no",
+        "hpo_id": "HP:0003725",
+        "hpo_name": "Firm muscles",
+        "expanded_text": "muscular",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.7401,
+        "matched": true,
+        "umls_cui": "C1850656"
+      },
+      {
+        "text": "fetal",
+        "ner_score": 0.436,
+        "negated": true,
+        "negation_cue": "no",
+        "hpo_id": "HP:0011461",
+        "hpo_name": "Fetal onset",
+        "expanded_text": "fetal",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.7301,
+        "matched": true,
+        "umls_cui": "C4023347"
+      },
+      {
+        "text": "afebrile",
+        "ner_score": 0.906,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "afebrile",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "obstruction",
+        "ner_score": 0.638,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0006536",
+        "hpo_name": "Airway obstruction",
+        "expanded_text": "obstruction",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.759,
+        "matched": true,
+        "umls_cui": "C0600260"
+      },
+      {
+        "text": "adenopathy",
+        "ner_score": 0.548,
+        "negated": true,
+        "negation_cue": "no",
+        "hpo_id": "HP:0002716",
+        "hpo_name": "Lymphadenopathy",
+        "expanded_text": "adenopathy",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.8107,
+        "matched": true,
+        "umls_cui": "C0497156"
+      },
+      {
+        "text": "drawing",
+        "ner_score": 0.568,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "drawing",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "crackles",
+        "ner_score": 0.969,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "crackles",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "noise",
+        "ner_score": 0.717,
+        "negated": true,
+        "negation_cue": "no",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "noise",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "organomegaly",
+        "ner_score": 0.973,
+        "negated": true,
+        "negation_cue": "no",
+        "hpo_id": "HP:0003271",
+        "hpo_name": "Visceromegaly",
+        "expanded_text": "organomegaly",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.8822,
+        "matched": true,
+        "umls_cui": "C0042782"
+      },
+      {
+        "text": "morphotype",
+        "ner_score": 0.397,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "morphotype",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "abnormalities of sexual differentiation",
+        "ner_score": 0.814,
+        "negated": true,
+        "negation_cue": "no",
+        "hpo_id": "HP:0012244",
+        "hpo_name": "Abnormal sex determination",
+        "expanded_text": "abnormalities of sexual differentiation",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.8068,
+        "matched": true,
+        "umls_cui": "C4022996"
+      },
+      {
+        "text": "abnormalities",
+        "ner_score": 0.842,
+        "negated": true,
+        "negation_cue": "no",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "abnormalities",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "cytolysis",
+        "ner_score": 0.778,
+        "negated": true,
+        "negation_cue": "no",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "cytolysis",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "respiratory acidosis",
+        "ner_score": 0.836,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0005972",
+        "hpo_name": "Respiratory acidosis",
+        "expanded_text": "respiratory acidosis",
+        "match_type": "exact_label",
+        "confidence": 1.0,
+        "matched": true,
+        "umls_cui": "C0001127"
+      },
+      {
+        "text": "hypercapnea",
+        "ner_score": 0.978,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0012416",
+        "hpo_name": "Hypercapnia",
+        "expanded_text": "hypercapnea",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.9316,
+        "matched": true,
+        "umls_cui": "C0020440"
+      },
+      {
+        "text": "opacities",
+        "ner_score": 0.963,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0010648",
+        "hpo_name": "Dermal translucency",
+        "expanded_text": "opacities",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.7575,
+        "matched": true,
+        "umls_cui": "C1836646"
+      },
+      {
+        "text": "atrophic appearance",
+        "ner_score": 0.959,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0004334",
+        "hpo_name": "Dermal atrophy",
+        "expanded_text": "atrophic appearance",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.7797,
+        "matched": true,
+        "umls_cui": "C0151514"
+      },
+      {
+        "text": "motor",
+        "ner_score": 0.868,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0100034",
+        "hpo_name": "Motor tics",
+        "expanded_text": "motor",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.7125,
+        "matched": true,
+        "umls_cui": "C0751900"
+      },
+      {
+        "text": "damage",
+        "ner_score": 0.527,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "damage",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "spinal",
+        "ner_score": 0.755,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "spinal",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "pathology",
+        "ner_score": 0.523,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "pathology",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "hypotony",
+        "ner_score": 0.932,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0001252",
+        "hpo_name": "Hypotonia",
+        "expanded_text": "hypotony",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.7582,
+        "matched": true,
+        "umls_cui": "C0026827"
+      },
+      {
+        "text": "disease spinal",
+        "ner_score": 0.798,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0002196",
+        "hpo_name": "Myelopathy",
+        "expanded_text": "disease spinal",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.7444,
+        "matched": true,
+        "umls_cui": "C0037928"
+      },
+      {
+        "text": "atrophy",
+        "ner_score": 0.966,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0003202",
+        "hpo_name": "Skeletal muscle atrophy",
+        "expanded_text": "atrophy",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.7555,
+        "matched": true,
+        "umls_cui": "C0234958"
+      },
+      {
+        "text": "mutation",
+        "ner_score": 0.302,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "mutation",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "signs of struggle",
+        "ner_score": 0.782,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "signs of struggle",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "saturation",
+        "ner_score": 0.321,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "saturation",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "cyanosis",
+        "ner_score": 0.877,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0000961",
+        "hpo_name": "Cyanosis",
+        "expanded_text": "cyanosis",
+        "match_type": "exact_label",
+        "confidence": 1.0,
+        "matched": true,
+        "umls_cui": "C0010520"
+      },
+      {
+        "text": "spinal muscular atrophy",
+        "ner_score": 0.9,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0007269",
+        "hpo_name": "Spinal muscular atrophy",
+        "expanded_text": "spinal muscular atrophy",
+        "match_type": "text_scan_exact_label",
+        "confidence": 0.95,
+        "matched": true,
+        "umls_cui": "C0026847",
+        "umls_all": [
+          "C0026847"
+        ]
+      },
+      {
+        "text": "motor polyneuropathy",
+        "ner_score": 0.9,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0007178",
+        "hpo_name": "Motor polyneuropathy",
+        "expanded_text": "motor polyneuropathy",
+        "match_type": "text_scan_exact_label",
+        "confidence": 0.95,
+        "matched": true,
+        "umls_cui": "C0235025",
+        "umls_all": [
+          "C0235025",
+          "C0271683"
+        ]
+      },
+      {
+        "text": "Nasal obstruction",
+        "ner_score": 0.9,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0001742",
+        "hpo_name": "Nasal congestion",
+        "expanded_text": "Nasal obstruction",
+        "match_type": "text_scan_exact_synonym",
+        "confidence": 0.95,
+        "matched": true,
+        "umls_cui": "C0027424",
+        "umls_all": [
+          "C0027424",
+          "C0027429"
+        ]
+      },
+      {
+        "text": "lymphadenopathy",
+        "ner_score": 0.9,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0002840",
+        "hpo_name": "Lymphadenopathy",
+        "expanded_text": "lymphadenopathy",
+        "match_type": "text_scan_clinical_synonym",
+        "confidence": 0.95,
+        "matched": true,
+        "umls_cui": "C0024205",
+        "umls_all": [
+          "C0024205"
+        ]
+      },
+      {
+        "text": "axonal loss",
+        "ner_score": 0.9,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0003447",
+        "hpo_name": "Axonal loss",
+        "expanded_text": "axonal loss",
+        "match_type": "text_scan_exact_label",
+        "confidence": 0.95,
+        "matched": true,
+        "umls_cui": "C1832338",
+        "umls_all": [
+          "C1832338"
+        ]
+      },
+      {
+        "text": "intensity",
+        "ner_score": 0.9,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0012824",
+        "hpo_name": "Severity",
+        "expanded_text": "intensity",
+        "match_type": "text_scan_exact_synonym",
+        "confidence": 0.95,
+        "matched": true,
+        "umls_cui": "C0522510",
+        "umls_all": [
+          "C0522510"
+        ]
+      },
+      {
+        "text": "bilateral",
+        "ner_score": 0.9,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0012832",
+        "hpo_name": "Bilateral",
+        "expanded_text": "bilateral",
+        "match_type": "text_scan_exact_label",
+        "confidence": 0.95,
+        "matched": true,
+        "umls_cui": "C0238767",
+        "umls_all": [
+          "C0238767"
+        ]
+      },
+      {
+        "text": "acidosis",
+        "ner_score": 0.9,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0001941",
+        "hpo_name": "Acidosis",
+        "expanded_text": "acidosis",
+        "match_type": "text_scan_exact_label",
+        "confidence": 0.95,
+        "matched": true,
+        "umls_cui": "C0001122",
+        "umls_all": [
+          "C0001122"
+        ]
+      },
+      {
+        "text": "Profound",
+        "ner_score": 0.9,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0012829",
+        "hpo_name": "Profound",
+        "expanded_text": "Profound",
+        "match_type": "text_scan_exact_label",
+        "confidence": 0.95,
+        "matched": true,
+        "umls_cui": "C0439808",
+        "umls_all": [
+          "C0439808"
+        ]
+      },
+      {
+        "text": "proximal",
+        "ner_score": 0.9,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0012840",
+        "hpo_name": "Proximal",
+        "expanded_text": "proximal",
+        "match_type": "text_scan_exact_label",
+        "confidence": 0.95,
+        "matched": true,
+        "umls_cui": "C0205107",
+        "umls_all": [
+          "C0205107"
+        ]
+      }
+    ],
+    "test": [
+      {
+        "text": "reflex Grasp",
+        "ner_score": 0.925,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0002476",
+        "hpo_name": "Primitive reflex",
+        "expanded_text": "reflex Grasp",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.883,
+        "matched": true,
+        "umls_cui": "C1838319"
+      },
+      {
+        "text": "Negative Correct",
+        "ner_score": 0.815,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "Negative Correct",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "date",
+        "ner_score": 0.328,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "date",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "ation",
+        "ner_score": 0.979,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "ation",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "Respiratory",
+        "ner_score": 0.988,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "Respiratory",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "axial",
+        "ner_score": 0.601,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "axial",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "segmental",
+        "ner_score": 0.5,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "segmental",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "ICAL",
+        "ner_score": 0.986,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "ICAL",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "Pregnancy",
+        "ner_score": 0.467,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "Pregnancy",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "Good",
+        "ner_score": 0.895,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "Good",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "weight",
+        "ner_score": 0.565,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0004324",
+        "hpo_name": "Increased body weight",
+        "expanded_text": "weight",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.7198,
+        "matched": true,
+        "umls_cui": "C0043094"
+      },
+      {
+        "text": "Breastfeeding",
+        "ner_score": 0.345,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "Breastfeeding",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "Mixed",
+        "ner_score": 0.459,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "Mixed",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "Vaccination",
+        "ner_score": 0.595,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "Vaccination",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "rate",
+        "ner_score": 0.974,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "rate",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "Anthropo",
+        "ner_score": 0.985,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "Anthropo",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "metric",
+        "ner_score": 0.993,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "metric",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "measurements",
+        "ner_score": 0.944,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "measurements",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "Size",
+        "ner_score": 0.748,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "Size",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "General",
+        "ner_score": 0.886,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "General",
+        "match_type": "skipped_non_phenotype",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "condition",
+        "ner_score": 0.894,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "condition",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "dynamic",
+        "ner_score": 0.994,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "dynamic",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "stable",
+        "ner_score": 0.452,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0003680",
+        "hpo_name": "Nonprogressive",
+        "expanded_text": "stable",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.7356,
+        "matched": true,
+        "umls_cui": "C3839460"
+      },
+      {
+        "text": "extremities",
+        "ner_score": 0.292,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "extremities",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "seconds",
+        "ner_score": 0.984,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "seconds",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "Normally",
+        "ner_score": 0.803,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "Normally",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "Normal",
+        "ner_score": 0.933,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "Normal",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "colored connective",
+        "ner_score": 0.848,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0009025",
+        "hpo_name": "Increased connective tissue",
+        "expanded_text": "colored connective",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.7316,
+        "matched": true,
+        "umls_cui": "C1866021"
+      },
+      {
+        "text": "Neurological",
+        "ner_score": 0.992,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "Neurological",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "examination",
+        "ner_score": 0.989,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "examination",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "exam",
+        "ner_score": 0.956,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "exam",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "open",
+        "ner_score": 0.925,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "open",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "sucking",
+        "ner_score": 0.983,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "sucking",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "reflex",
+        "ner_score": 0.993,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0002476",
+        "hpo_name": "Primitive reflex",
+        "expanded_text": "reflex",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.8625,
+        "matched": true,
+        "umls_cui": "C1838319"
+      },
+      {
+        "text": "weak",
+        "ner_score": 0.965,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0012825",
+        "hpo_name": "Mild",
+        "expanded_text": "weak",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.7248,
+        "matched": true,
+        "umls_cui": "C1513302"
+      },
+      {
+        "text": "Moro",
+        "ner_score": 0.98,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "Moro",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "Nasal",
+        "ner_score": 0.745,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "Nasal",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "oxygen",
+        "ner_score": 0.313,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "oxygen",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "funnel pulmonary",
+        "ner_score": 0.742,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0000767",
+        "hpo_name": "Pectus excavatum",
+        "expanded_text": "funnel pulmonary",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.7329,
+        "matched": true,
+        "umls_cui": "C2051831"
+      },
+      {
+        "text": "Cardiac",
+        "ner_score": 0.884,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "Cardiac",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "clearly",
+        "ner_score": 0.471,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "clearly",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "audible",
+        "ner_score": 0.496,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0008765",
+        "hpo_name": "Auditory hallucination",
+        "expanded_text": "audible",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.7577,
+        "matched": true,
+        "umls_cui": "C0233762"
+      },
+      {
+        "text": "Digestive",
+        "ner_score": 0.987,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "Digestive",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "abdomen",
+        "ner_score": 0.557,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "abdomen",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "preserved",
+        "ner_score": 0.85,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "preserved",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "transit",
+        "ner_score": 0.855,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "transit",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "genital",
+        "ner_score": 0.98,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "genital",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "male",
+        "ner_score": 0.752,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "male",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "PARA",
+        "ner_score": 0.969,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "PARA",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "ATIONS",
+        "ner_score": 0.652,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "ATIONS",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "OLOGY",
+        "ner_score": 0.991,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "OLOGY",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "correct",
+        "ner_score": 0.897,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "correct",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "thyroid",
+        "ner_score": 0.987,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0100031",
+        "hpo_name": "Neoplasm of the thyroid gland",
+        "expanded_text": "thyroid",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.7122,
+        "matched": true,
+        "umls_cui": "C0040136"
+      },
+      {
+        "text": "assessment",
+        "ner_score": 0.853,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "assessment",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "muscle",
+        "ner_score": 0.969,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0003725",
+        "hpo_name": "Firm muscles",
+        "expanded_text": "muscle",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.7594,
+        "matched": true,
+        "umls_cui": "C1850656"
+      },
+      {
+        "text": "enzymes",
+        "ner_score": 0.989,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "enzymes",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "hepatic",
+        "ner_score": 0.54,
+        "negated": true,
+        "negation_cue": "no",
+        "hpo_id": "HP:0012115",
+        "hpo_name": "Hepatitis",
+        "expanded_text": "hepatic",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.7355,
+        "matched": true,
+        "umls_cui": "C0019158"
+      },
+      {
+        "text": "compensated grade",
+        "ner_score": 0.389,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "compensated grade",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "radiography",
+        "ner_score": 0.924,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "radiography",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "fields",
+        "ner_score": 0.982,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "fields",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "Echo",
+        "ner_score": 0.983,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "echocardiogram",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "Brain",
+        "ner_score": 0.919,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "Brain",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "corpus",
+        "ner_score": 0.941,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "corpus",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "osum",
+        "ner_score": 0.98,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0005667",
+        "hpo_name": "Os odontoideum",
+        "expanded_text": "osum",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.7121,
+        "matched": true,
+        "umls_cui": "C2919848"
+      },
+      {
+        "text": "motor",
+        "ner_score": 0.863,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0100034",
+        "hpo_name": "Motor tics",
+        "expanded_text": "motor",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.7125,
+        "matched": true,
+        "umls_cui": "C0751900"
+      },
+      {
+        "text": "spinal",
+        "ner_score": 0.91,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "spinal",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "neurons",
+        "ner_score": 0.887,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "neurons",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "anterior",
+        "ner_score": 0.803,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "anterior",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "umbo",
+        "ner_score": 0.965,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "umbo",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "cervical",
+        "ner_score": 0.873,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "cervical",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "genetic",
+        "ner_score": 0.909,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "genetic",
+        "match_type": "skipped_non_phenotype",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "improvement",
+        "ner_score": 0.626,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "improvement",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "saturation",
+        "ner_score": 0.361,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "saturation",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "increased",
+        "ner_score": 0.781,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "increased",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "increase",
+        "ner_score": 0.467,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "increase",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "Heart",
+        "ner_score": 0.966,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "History, EKG, Age, Risk factors, initial Troponin",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "blood",
+        "ner_score": 0.887,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "blood",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": ": 38",
+        "ner_score": 0.737,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": ": 38",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "worsening",
+        "ner_score": 0.4,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0003676",
+        "hpo_name": "Progressive",
+        "expanded_text": "worsening",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.8579,
+        "matched": true,
+        "umls_cui": "C0205329"
+      },
+      {
+        "text": ": 62",
+        "ner_score": 0.668,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": ": 62",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "requirements",
+        "ner_score": 0.638,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "requirements",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      }
+    ],
+    "treatment": [
+      {
+        "text": "delivery",
+        "ner_score": 0.258,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "delivery",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "treatment",
+        "ner_score": 0.414,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "treatment",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "Hospitalization",
+        "ner_score": 0.546,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "Hospitalization",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "isolation measures",
+        "ner_score": 0.796,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "isolation measures",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "Hygiene",
+        "ner_score": 0.768,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "Hygiene",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "dietetic measures",
+        "ner_score": 0.611,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "dietetic measures",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "antibiotic",
+        "ner_score": 0.875,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "antibiotic",
+        "match_type": "skipped_non_phenotype",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "therapy",
+        "ner_score": 0.441,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "therapy",
+        "match_type": "skipped_non_phenotype",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "invasive ventilation",
+        "ner_score": 0.731,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "invasive ventilation",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      }
+    ],
+    "ordo_candidates": [
+      {
+        "ordo_id": "ORPHA:70",
+        "name": "Spinal muscular atrophy",
+        "name_fr": "Amyotrophie spinale (SMA)",
+        "score": 0.85,
+        "jaccard": 0.0455,
+        "coverage": 0.2857,
+        "matched_hpo": [
+          "HP:0001252",
+          "HP:0003202"
+        ],
+        "matched_count": 2,
+        "total_disease_hpo": 7
+      },
+      {
+        "ordo_id": "ORPHA:2680",
+        "name": "Hypomyelination neuropathy-arthrogryposis syndrome",
+        "name_fr": "",
+        "score": 0.259,
+        "jaccard": 0.0476,
+        "coverage": 0.4,
+        "matched_hpo": [
+          "HP:0001252",
+          "HP:0002098"
+        ],
+        "matched_count": 2,
+        "total_disease_hpo": 5
+      },
+      {
+        "ordo_id": "ORPHA:319600",
+        "name": "Mendelian susceptibility to mycobacterial diseases due to partial IRF8 deficiency",
+        "name_fr": "",
+        "score": 0.2098,
+        "jaccard": 0.0244,
+        "coverage": 0.3333,
+        "matched_hpo": [
+          "HP:0002716"
+        ],
+        "matched_count": 1,
+        "total_disease_hpo": 3
+      },
+      {
+        "ordo_id": "ORPHA:868",
+        "name": "Triose phosphate-isomerase deficiency",
+        "name_fr": "",
+        "score": 0.1896,
+        "jaccard": 0.0455,
+        "coverage": 0.2857,
+        "matched_hpo": [
+          "HP:0001252",
+          "HP:0003202"
+        ],
+        "matched_count": 2,
+        "total_disease_hpo": 7
+      },
+      {
+        "ordo_id": "ORPHA:91130",
+        "name": "Cardiomyopathy-hypotonia-lactic acidosis syndrome",
+        "name_fr": "",
+        "score": 0.1892,
+        "jaccard": 0.0638,
+        "coverage": 0.2727,
+        "matched_hpo": [
+          "HP:0000961",
+          "HP:0001252",
+          "HP:0002098"
+        ],
+        "matched_count": 3,
+        "total_disease_hpo": 11
+      }
+    ],
+    "stats": {
+      "total": 135,
+      "matched": 43,
+      "unmatched": 92,
+      "match_rate": 31.9,
+      "unique_hpo": 39,
+      "ordo_matches": 5
+    }
+  },
+  "phenopacket": {
+    "id": "phenopacket-CHU_FR_014",
+    "subject": {
+      "id": "CHU_FR_014",
+      "sex": "MALE"
+    },
+    "input": "Oran 11/23/2025\nFile Number: 16985\nName and first name: BELHOUARI ZAKARIA\nBorn: 09/24/2025\nAddress: ORAN\nTel No: 07.90.49.89.36\nMedical Report\nThis is the infant BELHOUARI ZAKARIA, aged 02 months, originally from and residing in ORAN, from a non-consanguineous middle-aged couple, the only child, hospitalized at our level for the investigation and PEC of respiratory distress with axial and segmental hypotonia. HISTORY:\nFamily:\nFather: aged 44, in BES. Mother: aged 35, in BES, G1P1. Inbreeding: NO. No cases of death at young age in the family\nNo notion of neuromuscular diseases or disabilities in the family\nPersonal:\nPhysiological\nPregnancy: well monitored. MAF present in the last quarter\nNo concept of fetal distress\nFull-term delivery, by vaginal route. Good Apgar at birth\nBirth weight: 03Kg400. Breastfeeding: Mixed from birth. Vaccination: up to date. Pathological:\nAxial and segmental hypotonia since birth\nHISTORY OF THE DISEASE:\nGoing back a few days before his admission and as part of the investigation of his hypotonia, a consultation was made with a private pediatrician who noted moderate respiratory distress, hence his referral to our level and his admission for investigation and treatment. ADMISSION STATUS:\nAnthropometric measurements:\nWeight: 04kg800 [-0.59 DS]\nSize:58cm [+0.45 DS]\nPC: 40[ -0.3 DS]\nGeneral condition kept afebrile at 36.5\nHemodynamically stable with warm extremities, CRT<3 seconds. Normally colored connective integuments. Neurological examination:\nFA: open at 02 cm, deep axial and segmental hypotonia,\ngood sucking reflex\nGrasping reflex weak at 04 limbs, Moro reflex weak\nENT examination:\nNasal obstruction\nNo superficial lymphadenopathy\nRespiratory examination:\nFR: 40/min, SaO2: 98% under 03l/min of oxygen\nRespiratory distress caused by: subcostal drawing with xiphoid funnel\npulmonary auscultation: fine crackles on auscultation. Cardiac exam:\nHR: 135bpm, B1B2 clearly audible\nNo hiss, no added noise. Digestive examination:\nSoft abdomen, preserved transit. No organomegaly\nUrogenital examination:\nmale morphotype\nno abnormalities of sexual differentiation\nPARACLINICAL EXAMINATIONS:\nBIOLOGY:\nNFS: correct\nCRP: Negative\nCorrect thyroid assessment\nNormal muscle enzymes\nNo hepatic cytolysis\nGAZOMETRY (11/24/2025): Slightly compensated grade II respiratory acidosis with hypercapnea at 55mmHg\nRADIOLOGY:\nChest radiography: Multiple heterogeneous opacities in both lung fields\nEcho-coeur: (05-11-2025) Small CIV without impact\nBrain CT: (10-11-2025) Fine, harmonious atrophic appearance of the corpus callosum, no significant associated abnormalities\nENMG: (11/19/2025) Pure motor polyneuropathy predominantly proximal, due to axonal loss, of severe intensity which may be related to diffuse damage (staged and bilateral) of spinal motor neurons facing the anterior horns of the lumbosacrals from L3 to S1 and cervical from C5 to D1. A degenerative and progressive pathology of spinal motor neurons is strongly suspected (SMA suspected). In total:\nThis is the infant BELHOUARI ZAKARIA aged 02 months from a non-consanguineous couple, admitted to our service for the management of respiratory distress, who poses the following problems:\nRespiratory distress\nProfound peripheral hypotony\nMildly compensated respiratory acidosis with hypercapnea\nFaced with this picture, a neuromuscular disease spinal muscular atrophy (SMA TYPE 1: Vernic Hoffman) is strongly suspected for which the genetic study in search of an SMN1, 2 mutation was launched confirming the diagnosis (homozygous state of a deletion of the SMN1 gene)\nTherapeutic conduct:\nHospitalization with isolation measures.\nHygiene and dietetic measures\nPlaced on antibiotic therapy with good improvement\nPlaced on non-invasive ventilation\nEVOLUTION DURING HOSPITALIZATION:\nThe evolution of the infant under NIV (PEEP: 05cmHg, AI: 05mmHg with an O2 flow rate of 0.5l/min) was marked by a clear improvement:\nRegression of signs of struggle with good saturation 96-98% under 0.5l/min of O2\nRespiratory rate increased from 73c/min to 38-40c/min\nHeart rate increased from 200bpm to 120bpm\nControl blood gas: PaCO2: 38mmHg\nOn D 06 of placing under NIV:\nThe child presented a worsening of his respiratory distress (reappearance of signs of struggle, FR: 62c/min with an increase in O2 requirements) of probably central origin; Currently, the infant is on permanent NIV (PEEP: 05cmHg, AI: 05cmHg with an O2 flow rate of 02l/min) with good saturation with cyanosis at times.\nCONCLUSION:\nThis is the infant BELHOUARI ZAKARIA, aged 02 months, originally from and residing in ORAN, hospitalized at our level for the treatment of spinal muscular atrophy type 01 (homozygous state SMN 1 deletion)",
+    "target": "Spinal muscular atrophy",
+    "phenotypicFeatures": [
+      {
+        "type": {
+          "id": "HP:0002098",
+          "label": "Respiratory distress",
+          "umls_cui": "C0013404"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "CHU_FR_014",
+              "description": "NER: respiratory distress (0.678) | Match: clinical_synonym (1.000)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0011947",
+          "label": "Respiratory tract infection",
+          "umls_cui": "C0035243"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "CHU_FR_014",
+              "description": "NER: respiratory (0.564) | Match: sapbert_similarity (0.712)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0001252",
+          "label": "Muscular hypotonia",
+          "umls_cui": "C0026827"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "CHU_FR_014",
+              "description": "NER: hypotonia (0.830) | Match: clinical_synonym (1.000)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0001276",
+          "label": "Hypertonia",
+          "umls_cui": "C0026826"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "CHU_FR_014",
+              "description": "NER: tonia (0.523) | Match: sapbert_similarity (0.718)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0003725",
+          "label": "Firm muscles",
+          "umls_cui": "C1850656"
+        },
+        "excluded": true,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "CHU_FR_014",
+              "description": "NER: muscular (0.972) | Match: sapbert_similarity (0.740) | Negated by: \"no\""
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0011461",
+          "label": "Fetal onset",
+          "umls_cui": "C4023347"
+        },
+        "excluded": true,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "CHU_FR_014",
+              "description": "NER: fetal (0.436) | Match: sapbert_similarity (0.730) | Negated by: \"no\""
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0006536",
+          "label": "Airway obstruction",
+          "umls_cui": "C0600260"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "CHU_FR_014",
+              "description": "NER: obstruction (0.638) | Match: sapbert_similarity (0.759)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0002716",
+          "label": "Lymphadenopathy",
+          "umls_cui": "C0497156"
+        },
+        "excluded": true,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "CHU_FR_014",
+              "description": "NER: adenopathy (0.548) | Match: sapbert_similarity (0.811) | Negated by: \"no\""
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0003271",
+          "label": "Visceromegaly",
+          "umls_cui": "C0042782"
+        },
+        "excluded": true,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "CHU_FR_014",
+              "description": "NER: organomegaly (0.973) | Match: sapbert_similarity (0.882) | Negated by: \"no\""
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0012244",
+          "label": "Abnormal sex determination",
+          "umls_cui": "C4022996"
+        },
+        "excluded": true,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "CHU_FR_014",
+              "description": "NER: abnormalities of sexual differentiation (0.814) | Match: sapbert_similarity (0.807) | Negated by: \"no\""
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0005972",
+          "label": "Respiratory acidosis",
+          "umls_cui": "C0001127"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "CHU_FR_014",
+              "description": "NER: respiratory acidosis (0.836) | Match: exact_label (1.000)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0012416",
+          "label": "Hypercapnia",
+          "umls_cui": "C0020440"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "CHU_FR_014",
+              "description": "NER: hypercapnea (0.978) | Match: sapbert_similarity (0.932)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0010648",
+          "label": "Dermal translucency",
+          "umls_cui": "C1836646"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "CHU_FR_014",
+              "description": "NER: opacities (0.963) | Match: sapbert_similarity (0.757)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0004334",
+          "label": "Dermal atrophy",
+          "umls_cui": "C0151514"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "CHU_FR_014",
+              "description": "NER: atrophic appearance (0.959) | Match: sapbert_similarity (0.780)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0100034",
+          "label": "Motor tics",
+          "umls_cui": "C0751900"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "CHU_FR_014",
+              "description": "NER: motor (0.868) | Match: sapbert_similarity (0.713)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0002196",
+          "label": "Myelopathy",
+          "umls_cui": "C0037928"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "CHU_FR_014",
+              "description": "NER: disease spinal (0.798) | Match: sapbert_similarity (0.744)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0003202",
+          "label": "Skeletal muscle atrophy",
+          "umls_cui": "C0234958"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "CHU_FR_014",
+              "description": "NER: atrophy (0.966) | Match: sapbert_similarity (0.755)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0000961",
+          "label": "Cyanosis",
+          "umls_cui": "C0010520"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "CHU_FR_014",
+              "description": "NER: cyanosis (0.877) | Match: exact_label (1.000)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0007269",
+          "label": "Spinal muscular atrophy",
+          "umls_cui": "C0026847"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "CHU_FR_014",
+              "description": "NER: spinal muscular atrophy (0.900) | Match: text_scan_exact_label (0.950)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0007178",
+          "label": "Motor polyneuropathy",
+          "umls_cui": "C0235025"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "CHU_FR_014",
+              "description": "NER: motor polyneuropathy (0.900) | Match: text_scan_exact_label (0.950)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0001742",
+          "label": "Nasal congestion",
+          "umls_cui": "C0027424"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "CHU_FR_014",
+              "description": "NER: Nasal obstruction (0.900) | Match: text_scan_exact_synonym (0.950)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0002840",
+          "label": "Lymphadenopathy",
+          "umls_cui": "C0024205"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "CHU_FR_014",
+              "description": "NER: lymphadenopathy (0.900) | Match: text_scan_clinical_synonym (0.950)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0003447",
+          "label": "Axonal loss",
+          "umls_cui": "C1832338"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "CHU_FR_014",
+              "description": "NER: axonal loss (0.900) | Match: text_scan_exact_label (0.950)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0012824",
+          "label": "Severity",
+          "umls_cui": "C0522510"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "CHU_FR_014",
+              "description": "NER: intensity (0.900) | Match: text_scan_exact_synonym (0.950)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0012832",
+          "label": "Bilateral",
+          "umls_cui": "C0238767"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "CHU_FR_014",
+              "description": "NER: bilateral (0.900) | Match: text_scan_exact_label (0.950)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0001941",
+          "label": "Acidosis",
+          "umls_cui": "C0001122"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "CHU_FR_014",
+              "description": "NER: acidosis (0.900) | Match: text_scan_exact_label (0.950)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0012829",
+          "label": "Profound",
+          "umls_cui": "C0439808"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "CHU_FR_014",
+              "description": "NER: Profound (0.900) | Match: text_scan_exact_label (0.950)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0012840",
+          "label": "Proximal",
+          "umls_cui": "C0205107"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "CHU_FR_014",
+              "description": "NER: proximal (0.900) | Match: text_scan_exact_label (0.950)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0002476",
+          "label": "Primitive reflex",
+          "umls_cui": "C1838319"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "CHU_FR_014",
+              "description": "NER: reflex Grasp (0.925) | Match: sapbert_similarity (0.883)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0004324",
+          "label": "Increased body weight",
+          "umls_cui": "C0043094"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "CHU_FR_014",
+              "description": "NER: weight (0.565) | Match: sapbert_similarity (0.720)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0003680",
+          "label": "Nonprogressive",
+          "umls_cui": "C3839460"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "CHU_FR_014",
+              "description": "NER: stable (0.452) | Match: sapbert_similarity (0.736)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0009025",
+          "label": "Increased connective tissue",
+          "umls_cui": "C1866021"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "CHU_FR_014",
+              "description": "NER: colored connective (0.848) | Match: sapbert_similarity (0.732)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0012825",
+          "label": "Mild",
+          "umls_cui": "C1513302"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "CHU_FR_014",
+              "description": "NER: weak (0.965) | Match: sapbert_similarity (0.725)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0000767",
+          "label": "Pectus excavatum",
+          "umls_cui": "C2051831"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "CHU_FR_014",
+              "description": "NER: funnel pulmonary (0.742) | Match: sapbert_similarity (0.733)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0008765",
+          "label": "Auditory hallucination",
+          "umls_cui": "C0233762"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "CHU_FR_014",
+              "description": "NER: audible (0.496) | Match: sapbert_similarity (0.758)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0100031",
+          "label": "Neoplasm of the thyroid gland",
+          "umls_cui": "C0040136"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "CHU_FR_014",
+              "description": "NER: thyroid (0.987) | Match: sapbert_similarity (0.712)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0012115",
+          "label": "Hepatitis",
+          "umls_cui": "C0019158"
+        },
+        "excluded": true,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "CHU_FR_014",
+              "description": "NER: hepatic (0.540) | Match: sapbert_similarity (0.736) | Negated by: \"no\""
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0005667",
+          "label": "Os odontoideum",
+          "umls_cui": "C2919848"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "CHU_FR_014",
+              "description": "NER: osum (0.980) | Match: sapbert_similarity (0.712)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0003676",
+          "label": "Progressive",
+          "umls_cui": "C0205329"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "CHU_FR_014",
+              "description": "NER: worsening (0.400) | Match: sapbert_similarity (0.858)"
+            }
+          }
+        ]
+      }
+    ],
+    "metaData": {
+      "created": "2026-06-11T03:51:54Z",
+      "createdBy": "clinical-preanalysis-pipeline-v2",
+      "phenopacketSchemaVersion": "2.0",
+      "resources": [
+        {
+          "id": "hp",
+          "name": "Human Phenotype Ontology",
+          "url": "https://hpo.jax.org",
+          "version": "2024-04-26",
+          "namespacePrefix": "HP",
+          "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        }
+      ]
+    },
+    "interpretations": [
+      {
+        "id": "interpretation-CHU_FR_014",
+        "progressStatus": "IN_PROGRESS",
+        "diagnosis": {
+          "disease": {
+            "id": "ORPHA:70",
+            "label": "Spinal muscular atrophy"
+          },
+          "score": 0.85,
+          "allCandidates": [
+            {
+              "id": "ORPHA:70",
+              "label": "Spinal muscular atrophy",
+              "score": 0.85
+            },
+            {
+              "id": "ORPHA:2680",
+              "label": "Hypomyelination neuropathy-arthrogryposis syndrome",
+              "score": 0.259
+            },
+            {
+              "id": "ORPHA:319600",
+              "label": "Mendelian susceptibility to mycobacterial diseases due to partial IRF8 deficiency",
+              "score": 0.2098
+            },
+            {
+              "id": "ORPHA:868",
+              "label": "Triose phosphate-isomerase deficiency",
+              "score": 0.1896
+            },
+            {
+              "id": "ORPHA:91130",
+              "label": "Cardiomyopathy-hypotonia-lactic acidosis syndrome",
+              "score": 0.1892
+            }
+          ]
+        }
+      }
+    ],
+    "_validationWarnings": [
+      {
+        "type": "sex_anatomy_conflict",
+        "severity": "critical",
+        "message": "Female-specific term 'pregnancy' found in male patient record",
+        "term": "pregnancy"
+      },
+      {
+        "type": "sex_anatomy_conflict",
+        "severity": "critical",
+        "message": "Female-specific term 'cervical' found in male patient record",
+        "term": "cervical"
+      }
+    ],
+    "_pipelineStats": {
+      "totalEntities": 135,
+      "matchedHPO": 43,
+      "unmatchedEntities": 92,
+      "phenopacketFeatures": 39,
+      "negatedFeatures": 6,
+      "numericPhenotypes": 0,
+      "ordoCandidates": 5
+    }
+  }
+}

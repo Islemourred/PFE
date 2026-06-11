@@ -1,0 +1,635 @@
+{
+  "id": "phenopacket-CHU_FR_021",
+  "subject": {
+    "id": "CHU_FR_021",
+    "sex": "MALE"
+  },
+  "input": "RE-HOSPITALIZATION REPORT\nThis is the child Bouteldja Mohamed El Amir aged 04 years old from Mascara and residing in ORAN, from a non-consanguineous middle-aged couple, followed at our level since 06/30/2025 for syndromic immunodeficiency type hyper IgE syndrome admitted today for his 09th venoglobulin treatment\nHistory of illness:\nMain diagnosis: hyper IgE type immunodeficiency. Associated diagnosis: epilepsy with neurodevelopmental disorder under treatment. Age of diagnosis: 03 years and 7 months\nDate of diagnosis: 02/06/2025. The diagnosis of primary immunodeficiency type hyper IgE is suspected based on the following criteria:\nAnamnestics:\nA young death in the family. Family history of primary immunodeficiency. CLINIC:\nChronic fungal skin infections from the age of 9 months such as onychomycosis. A personal and family atopy. Paraclinic:\nAssessment of the immunodeficiency carried out on 02/06/2025 (attached) initial finding in favor of a suspicion of an immunodeficiency type reduction of Th17 with gain of function of the STAT 1 gene. (To be completed by a phosphorylation test of the STAT 1 gene)\nIgG: 6.99 g/l IgA: 0.34 g/l IgM: 0.57 g/l\nIgE: 390 IU/ml (high)\nTH 17: 0.23% (decreased). The STAT 1 phosphorylation test: done on: 07/21/2025 (attached) returning: correct phosphorylation of the STAT 1 gene. The STAT 3 phosphorylation test done on: 07/27/2025 (attached): returning in favor of correct STAT 3 phosphorylation (does not eliminate the diagnosis of hyper IgE syndrome). Hospitalization history:\nProcessing in progress:\nBactrim: 10 mg/kg/day. Itraconazole: 10 mg/kg/day. Events since last visit: 02/15/2026\nConsultations: No\nOn the respiratory level: hoarse cough described by the mother during the last 03 days which gave way spontaneously\nOn the digestive level: preserved transit, preserved appetite. On the skin: aftereffect of whitlow lesion\nNeurologically: (language and behavior): improvement in the child's language (he says words and sentences coherently, with a reduction in hyperactivity. Reason for hospitalization: admitted today for 9th course of venoglobulins. CLINICAL EXAMINATION UPON ADMISSION:\nAnthropometric measurements:\nWeight: 16 kg (-0.41 DS)\nSize: 98 cm (-0.86 DS)\nPC: 49 cm (-1.33 DS)\nBMI: 16.1 (+0.61 SD)\nGomez: 97% (normal nutritional status). General condition preserved, afebrile: T° 37 C, integuments and conjunctiva normal. Head and neck examination: broad nasal base\nENT examination: throat: clean, no rhinorrhea or otorrhea. Examination of the oral cavity: absence of thrush or dental abscess. Pleuropulmonary examination:\nAbsence of thoracic deformation. Eupneic FR: 25 cycles/min. clear auscultation in both pulmonary fields. SpO2: 99% under ambient air. Cardiovascular examination: B1 B2 clearly audible, no breathing or added noises. HR: 100 beats/min. Abdominopelvic examination: absence of scar or collateral circulation. Soft abdomen, absence of organomegaly, preserved transit. Genital examination: male morphotype, no anomalies of sexual differentiation. Neurological examination: conscious, cooperating child, absence of convulsions, improvement in language (he says words with sentences in a coherent manner), with regression of motor hyperactivity, cessation of antiepileptic treatment. Osteoarticular examination: ligamentous hyperlaxity, no skeletal abnormalities\nExamination of the skin and appendages: after-effects of onychomycotic fungal lesions, whitlow lesion in the process of healing. The rest of the clinical examination was without abnormalities.\nBIOLOGY:\nNFS:\nFerritinemia: 8.75 ng/ml (low), Vitamin D: 15.8 (low), Vitamin B12: 509 pg/ml (normal)\nResidual IgG level 02/15/2026: 10.76 IU/ml\nCAT:\nHospitalization in day hospital\nConditioning\nInfusion of multivalent immunoglobulins No. 8: 0.6g/kg or 10g\nHygiene-dietary measures (therapeutic education, notebook keeping)\nClose monitoring\nThe child had a feverish peak 39 with chills, the clinical examination was without abnormality\nCAT: suspension of treatment, physicochemical antipyretic\nThen the treatment was resumed once the apyrexia\nThe patient received the remainder of the course of treatment without problems.\nDismissed today after end of treatment with prophylactic treatment (Bactrim and Itraconazole), vitamin + iron supplementation with appointment for the 10th treatment\nThe exams requested:\nRequest an updated report of follow-up in Neuropediatrics not yet retrieved\nRequest for dermatology opinion\nPlan to request FNS, VS, CRP assessment at the next treatment",
+  "target": "Hyper-IgE syndrome",
+  "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0002721",
+        "label": "Immunodeficiency",
+        "umls_cui": "C0021051"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "CHU_FR_021",
+            "description": "NER: immunodeficiency (0.311) | Match: clinical_synonym (1.000)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0001250",
+        "label": "Seizure",
+        "umls_cui": "C0014544"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "CHU_FR_021",
+            "description": "NER: epilepsy (0.814) | Match: related_synonym (1.000)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0012759",
+        "label": "Neurodevelopmental abnormality",
+        "umls_cui": "C4022737"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "CHU_FR_021",
+            "description": "NER: neurodevelopmental (0.356) | Match: sapbert_similarity (0.845)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0002719",
+        "label": "Recurrent infections",
+        "umls_cui": "C0239998"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "CHU_FR_021",
+            "description": "NER: infections (0.466) | Match: sapbert_similarity (0.777)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0012735",
+        "label": "Cough",
+        "umls_cui": "C0010200"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "CHU_FR_021",
+            "description": "NER: cough (0.894) | Match: exact_label (1.000)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0011355",
+        "label": "Localized skin lesion",
+        "umls_cui": "C0850826"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "CHU_FR_021",
+            "description": "NER: lesion (0.451) | Match: sapbert_similarity (0.744)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0000752",
+        "label": "Hyperactivity",
+        "umls_cui": "C0424295"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "CHU_FR_021",
+            "description": "NER: hyperactivity (0.910) | Match: exact_label (1.000)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0011469",
+        "label": "Nasal regurgitation",
+        "umls_cui": "C0232608"
+      },
+      "excluded": true,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "CHU_FR_021",
+            "description": "NER: rhinorrhea (0.978) | Match: sapbert_similarity (0.818) | Negated by: \"no\""
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0000388",
+        "label": "Otitis media",
+        "umls_cui": "C0029882"
+      },
+      "excluded": true,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "CHU_FR_021",
+            "description": "NER: otorrhea (0.967) | Match: sapbert_similarity (0.705) | Negated by: \"no\""
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0001693",
+        "label": "Cardiac shunt",
+        "umls_cui": "C0232180"
+      },
+      "excluded": true,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "CHU_FR_021",
+            "description": "NER: collateral circulation (0.923) | Match: sapbert_similarity (0.721) | Negated by: \"absence of\""
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0003271",
+        "label": "Visceromegaly",
+        "umls_cui": "C0042782"
+      },
+      "excluded": true,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "CHU_FR_021",
+            "description": "NER: organomegaly (0.972) | Match: sapbert_similarity (0.882) | Negated by: \"absence of\""
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0012244",
+        "label": "Abnormal sex determination",
+        "umls_cui": "C4022996"
+      },
+      "excluded": true,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "CHU_FR_021",
+            "description": "NER: anomalies of sexual differentiation (0.829) | Match: sapbert_similarity (0.805) | Negated by: \"no\""
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0001259",
+        "label": "Coma",
+        "umls_cui": "C0009421"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "CHU_FR_021",
+            "description": "NER: conscious (0.827) | Match: sapbert_similarity (0.724)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0001382",
+        "label": "Joint hypermobility",
+        "umls_cui": "C1844820"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "CHU_FR_021",
+            "description": "NER: hyperlaxity (0.964) | Match: sapbert_similarity (0.738)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0000924",
+        "label": "Abnormality of the skeletal system",
+        "umls_cui": "C4021790"
+      },
+      "excluded": true,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "CHU_FR_021",
+            "description": "NER: skeletal abnormalities (0.721) | Match: exact_synonym (1.000) | Negated by: \"no\""
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0001945",
+        "label": "Fever",
+        "umls_cui": "C0015967"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "CHU_FR_021",
+            "description": "NER: chills (0.941) | Match: sapbert_similarity (0.781)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0012810",
+        "label": "Wide nasal base",
+        "umls_cui": "C1849667"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "CHU_FR_021",
+            "description": "NER: broad nasal base (0.900) | Match: text_scan_exact_synonym (0.950)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0100658",
+        "label": "Cellulitis",
+        "umls_cui": "C0007642"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "CHU_FR_021",
+            "description": "NER: skin infections (0.900) | Match: text_scan_related_synonym (0.950)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0012203",
+        "label": "Onychomycosis",
+        "umls_cui": "C0040261"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "CHU_FR_021",
+            "description": "NER: onychomycosis (0.900) | Match: text_scan_exact_label (0.950)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0011947",
+        "label": "Respiratory tract infection",
+        "umls_cui": "C0035243"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "CHU_FR_021",
+            "description": "NER: respiratory (0.420) | Match: sapbert_similarity (0.712)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0002039",
+        "label": "Anorexia",
+        "umls_cui": "C0003123"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "CHU_FR_021",
+            "description": "NER: appetite (0.471) | Match: sapbert_similarity (0.720)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0002463",
+        "label": "Language impairment",
+        "umls_cui": "C0023015"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "CHU_FR_021",
+            "description": "NER: language (0.910) | Match: sapbert_similarity (0.704)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0000708",
+        "label": "Atypical behavior",
+        "umls_cui": "C0004941"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "CHU_FR_021",
+            "description": "NER: behavior (0.540) | Match: sapbert_similarity (0.752)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0012384",
+        "label": "Rhinitis",
+        "umls_cui": "C0035455"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "CHU_FR_021",
+            "description": "NER: nasal (0.782) | Match: sapbert_similarity (0.730)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0008765",
+        "label": "Auditory hallucination",
+        "umls_cui": "C0233762"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "CHU_FR_021",
+            "description": "NER: audible (0.863) | Match: sapbert_similarity (0.758)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0001962",
+        "label": "Palpitations",
+        "umls_cui": "C0030252"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "CHU_FR_021",
+            "description": "NER: beats (0.989) | Match: sapbert_similarity (0.782)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0001369",
+        "label": "Arthritis",
+        "umls_cui": "C0003864"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "CHU_FR_021",
+            "description": "NER: articular (0.790) | Match: sapbert_similarity (0.734)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0000951",
+        "label": "Abnormality of the skin",
+        "umls_cui": "C0037268"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "CHU_FR_021",
+            "description": "NER: dermatology (0.552) | Match: sapbert_similarity (0.731)"
+          }
+        }
+      ]
+    }
+  ],
+  "metaData": {
+    "created": "2026-06-11T03:53:11Z",
+    "createdBy": "clinical-preanalysis-pipeline-v2",
+    "phenopacketSchemaVersion": "2.0",
+    "resources": [
+      {
+        "id": "hp",
+        "name": "Human Phenotype Ontology",
+        "url": "https://hpo.jax.org",
+        "version": "2024-04-26",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      }
+    ]
+  },
+  "interpretations": [
+    {
+      "id": "interpretation-CHU_FR_021",
+      "progressStatus": "IN_PROGRESS",
+      "diagnosis": {
+        "disease": {
+          "id": "ORPHA:2314",
+          "label": "Hyper-IgE syndrome"
+        },
+        "score": 0.85,
+        "allCandidates": [
+          {
+            "id": "ORPHA:2314",
+            "label": "Hyper-IgE syndrome",
+            "score": 0.85
+          },
+          {
+            "id": "ORPHA:3057",
+            "label": "Monoamine oxidase A deficiency",
+            "score": 0.3138
+          },
+          {
+            "id": "ORPHA:324723",
+            "label": "ABeta amyloidosis, Arctic type",
+            "score": 0.3138
+          },
+          {
+            "id": "ORPHA:46348",
+            "label": "Paroxysmal extreme pain disorder",
+            "score": 0.3138
+          },
+          {
+            "id": "ORPHA:99748",
+            "label": "Pontiac fever",
+            "score": 0.2658
+          }
+        ]
+      }
+    }
+  ],
+  "_pipelineStats": {
+    "totalEntities": 133,
+    "matchedHPO": 34,
+    "unmatchedEntities": 99,
+    "phenopacketFeatures": 28,
+    "negatedFeatures": 6,
+    "numericPhenotypes": 0,
+    "ordoCandidates": 5
+  }
+}

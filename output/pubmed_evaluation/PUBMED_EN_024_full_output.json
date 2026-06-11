@@ -1,0 +1,666 @@
+{
+  "note_id": "PUBMED_EN_024",
+  "language": "en",
+  "module1": {
+    "clean_text": "Case Report: Hyper IgE syndrome.\n\nHyper IgE syndrome (HIES) is a rare disorder characterized by eczema, recurrent infections of the skin and lungs, typically with Staphylococcus aureus, Candida albicans and certain viruses, and elevated levels of serum IgE. Other clinical manifestations include characteristic facies (prominent forehead, broad nasal bridge and facial asymmetry), chronic eczematous dermatitis, retained primary dentition, recurrent pathological fractures, hyper-extensibility and scoliosis. The central nervous system (CNS) involvement in HIES has been rarely reported. Here we presented a case of HIES with rare associations of epilepsy in a young patient to raise awareness for this disorder.",
+    "phi_map": {},
+    "patient_info": {}
+  },
+  "module3_warnings": {
+    "temporal": [],
+    "inconsistencies": []
+  },
+  "module4": {
+    "problem": [
+      {
+        "text": "syndrome",
+        "ner_score": 0.867,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "syndrome",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "eczema",
+        "ner_score": 0.578,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0000964",
+        "hpo_name": "Eczema",
+        "expanded_text": "eczema",
+        "match_type": "clinical_synonym",
+        "confidence": 1.0,
+        "matched": true,
+        "umls_cui": "C0013595"
+      },
+      {
+        "text": "infections",
+        "ner_score": 0.369,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0002719",
+        "hpo_name": "Recurrent infections",
+        "expanded_text": "infections",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.7773,
+        "matched": true,
+        "umls_cui": "C0239998"
+      },
+      {
+        "text": "Staphylococcus",
+        "ner_score": 0.315,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "Staphylococcus",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "inent forehead",
+        "ner_score": 0.483,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0000348",
+        "hpo_name": "High forehead",
+        "expanded_text": "inent forehead",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.8425,
+        "matched": true,
+        "umls_cui": "C0239676"
+      },
+      {
+        "text": "broad nasal bridge",
+        "ner_score": 0.455,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0000431",
+        "hpo_name": "Wide nasal bridge",
+        "expanded_text": "broad nasal bridge",
+        "match_type": "exact_synonym",
+        "confidence": 1.0,
+        "matched": true,
+        "umls_cui": "C1839764"
+      },
+      {
+        "text": "asymmetry",
+        "ner_score": 0.656,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0000267",
+        "hpo_name": "Cranial asymmetry",
+        "expanded_text": "asymmetry",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.7798,
+        "matched": true,
+        "umls_cui": "C1860245"
+      },
+      {
+        "text": "dermatitis",
+        "ner_score": 0.327,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0000964",
+        "hpo_name": "Eczema",
+        "expanded_text": "dermatitis",
+        "match_type": "clinical_synonym",
+        "confidence": 1.0,
+        "matched": true,
+        "umls_cui": "C0013595"
+      },
+      {
+        "text": "primary dentition",
+        "ner_score": 0.737,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "primary dentition",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "fractures",
+        "ner_score": 0.41,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0002756",
+        "hpo_name": "Pathologic fracture",
+        "expanded_text": "fractures",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.8659,
+        "matched": true,
+        "umls_cui": "C0016663"
+      },
+      {
+        "text": "hyper-extensibility",
+        "ner_score": 0.923,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0000974",
+        "hpo_name": "Hyperextensible skin",
+        "expanded_text": "hyper-extensibility",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.8499,
+        "matched": true,
+        "umls_cui": "C0241074"
+      },
+      {
+        "text": "scoliosis",
+        "ner_score": 0.726,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0002650",
+        "hpo_name": "Scoliosis",
+        "expanded_text": "scoliosis",
+        "match_type": "exact_label",
+        "confidence": 1.0,
+        "matched": true,
+        "umls_cui": "C0037932"
+      },
+      {
+        "text": "prominent forehead",
+        "ner_score": 0.9,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0011220",
+        "hpo_name": "Prominent forehead",
+        "expanded_text": "prominent forehead",
+        "match_type": "text_scan_exact_label",
+        "confidence": 0.95,
+        "matched": true,
+        "umls_cui": "C1837260",
+        "umls_all": [
+          "C1837260",
+          "C1867446"
+        ]
+      },
+      {
+        "text": "facial asymmetry",
+        "ner_score": 0.9,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0000324",
+        "hpo_name": "Facial asymmetry",
+        "expanded_text": "facial asymmetry",
+        "match_type": "text_scan_exact_label",
+        "confidence": 0.95,
+        "matched": true,
+        "umls_cui": "C1306710",
+        "umls_all": [
+          "C1306710"
+        ]
+      },
+      {
+        "text": "epilepsy",
+        "ner_score": 0.9,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0001250",
+        "hpo_name": "Seizure",
+        "expanded_text": "epilepsy",
+        "match_type": "text_scan_related_synonym",
+        "confidence": 0.95,
+        "matched": true,
+        "umls_cui": "C0014544",
+        "umls_all": [
+          "C0014544",
+          "C0036572"
+        ]
+      }
+    ],
+    "test": [
+      {
+        "text": "elevated",
+        "ner_score": 0.55,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "elevated",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "serum IgE",
+        "ner_score": 0.285,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "serum IgE",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "facial",
+        "ner_score": 0.594,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "facial",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "central",
+        "ner_score": 0.604,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0003687",
+        "hpo_name": "Centrally nucleated skeletal muscle fibers",
+        "expanded_text": "central",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.712,
+        "matched": true,
+        "umls_cui": "C1842170"
+      }
+    ],
+    "ordo_candidates": [
+      {
+        "ordo_id": "ORPHA:2314",
+        "name": "Hyper-IgE syndrome",
+        "name_fr": "Syndrome d'Hyper-IgE (syndrome de Job)",
+        "score": 0.85,
+        "jaccard": 0.0526,
+        "coverage": 0.125,
+        "matched_hpo": [
+          "HP:0002719"
+        ],
+        "matched_count": 1,
+        "total_disease_hpo": 8
+      },
+      {
+        "ordo_id": "ORPHA:46348",
+        "name": "Paroxysmal extreme pain disorder",
+        "name_fr": "",
+        "score": 0.3308,
+        "jaccard": 0.0769,
+        "coverage": 0.5,
+        "matched_hpo": [
+          "HP:0001250"
+        ],
+        "matched_count": 1,
+        "total_disease_hpo": 2
+      },
+      {
+        "ordo_id": "ORPHA:3180",
+        "name": "Spondylocamptodactyly syndrome",
+        "name_fr": "",
+        "score": 0.2286,
+        "jaccard": 0.0714,
+        "coverage": 0.3333,
+        "matched_hpo": [
+          "HP:0002650"
+        ],
+        "matched_count": 1,
+        "total_disease_hpo": 3
+      },
+      {
+        "ordo_id": "ORPHA:3052",
+        "name": "X-linked intellectual disability-seizures-psoriasis syndrome",
+        "name_fr": "",
+        "score": 0.2286,
+        "jaccard": 0.0714,
+        "coverage": 0.3333,
+        "matched_hpo": [
+          "HP:0001250"
+        ],
+        "matched_count": 1,
+        "total_disease_hpo": 3
+      },
+      {
+        "ordo_id": "ORPHA:55881",
+        "name": "Adamantinoma",
+        "name_fr": "",
+        "score": 0.2286,
+        "jaccard": 0.0714,
+        "coverage": 0.3333,
+        "matched_hpo": [
+          "HP:0002756"
+        ],
+        "matched_count": 1,
+        "total_disease_hpo": 3
+      }
+    ],
+    "stats": {
+      "total": 19,
+      "matched": 13,
+      "unmatched": 6,
+      "match_rate": 68.4,
+      "unique_hpo": 12,
+      "ordo_matches": 5
+    }
+  },
+  "phenopacket": {
+    "id": "phenopacket-PUBMED_EN_024",
+    "subject": {
+      "id": "PUBMED_EN_024"
+    },
+    "input": "Case Report: Hyper IgE syndrome.\n\nHyper IgE syndrome (HIES) is a rare disorder characterized by eczema, recurrent infections of the skin and lungs, typically with Staphylococcus aureus, Candida albicans and certain viruses, and elevated levels of serum IgE. Other clinical manifestations include characteristic facies (prominent forehead, broad nasal bridge and facial asymmetry), chronic eczematous dermatitis, retained primary dentition, recurrent pathological fractures, hyper-extensibility and scoliosis. The central nervous system (CNS) involvement in HIES has been rarely reported. Here we presented a case of HIES with rare associations of epilepsy in a young patient to raise awareness for this disorder.",
+    "target": "Hyper-IgE syndrome",
+    "phenotypicFeatures": [
+      {
+        "type": {
+          "id": "HP:0000964",
+          "label": "Eczema",
+          "umls_cui": "C0013595"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "PUBMED_EN_024",
+              "description": "NER: eczema (0.578) | Match: clinical_synonym (1.000)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0002719",
+          "label": "Recurrent infections",
+          "umls_cui": "C0239998"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "PUBMED_EN_024",
+              "description": "NER: infections (0.369) | Match: sapbert_similarity (0.777)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0000348",
+          "label": "High forehead",
+          "umls_cui": "C0239676"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "PUBMED_EN_024",
+              "description": "NER: inent forehead (0.483) | Match: sapbert_similarity (0.843)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0000431",
+          "label": "Wide nasal bridge",
+          "umls_cui": "C1839764"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "PUBMED_EN_024",
+              "description": "NER: broad nasal bridge (0.455) | Match: exact_synonym (1.000)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0000267",
+          "label": "Cranial asymmetry",
+          "umls_cui": "C1860245"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "PUBMED_EN_024",
+              "description": "NER: asymmetry (0.656) | Match: sapbert_similarity (0.780)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0002756",
+          "label": "Pathologic fracture",
+          "umls_cui": "C0016663"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "PUBMED_EN_024",
+              "description": "NER: fractures (0.410) | Match: sapbert_similarity (0.866)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0000974",
+          "label": "Hyperextensible skin",
+          "umls_cui": "C0241074"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "PUBMED_EN_024",
+              "description": "NER: hyper-extensibility (0.923) | Match: sapbert_similarity (0.850)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0002650",
+          "label": "Scoliosis",
+          "umls_cui": "C0037932"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "PUBMED_EN_024",
+              "description": "NER: scoliosis (0.726) | Match: exact_label (1.000)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0011220",
+          "label": "Prominent forehead",
+          "umls_cui": "C1837260"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "PUBMED_EN_024",
+              "description": "NER: prominent forehead (0.900) | Match: text_scan_exact_label (0.950)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0000324",
+          "label": "Facial asymmetry",
+          "umls_cui": "C1306710"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "PUBMED_EN_024",
+              "description": "NER: facial asymmetry (0.900) | Match: text_scan_exact_label (0.950)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0001250",
+          "label": "Seizure",
+          "umls_cui": "C0014544"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "PUBMED_EN_024",
+              "description": "NER: epilepsy (0.900) | Match: text_scan_related_synonym (0.950)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0003687",
+          "label": "Centrally nucleated skeletal muscle fibers",
+          "umls_cui": "C1842170"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "PUBMED_EN_024",
+              "description": "NER: central (0.604) | Match: sapbert_similarity (0.712)"
+            }
+          }
+        ]
+      }
+    ],
+    "metaData": {
+      "created": "2026-06-11T03:07:03Z",
+      "createdBy": "clinical-preanalysis-pipeline-v2",
+      "phenopacketSchemaVersion": "2.0",
+      "resources": [
+        {
+          "id": "hp",
+          "name": "Human Phenotype Ontology",
+          "url": "https://hpo.jax.org",
+          "version": "2024-04-26",
+          "namespacePrefix": "HP",
+          "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        }
+      ]
+    },
+    "interpretations": [
+      {
+        "id": "interpretation-PUBMED_EN_024",
+        "progressStatus": "IN_PROGRESS",
+        "diagnosis": {
+          "disease": {
+            "id": "ORPHA:2314",
+            "label": "Hyper-IgE syndrome"
+          },
+          "score": 0.85,
+          "allCandidates": [
+            {
+              "id": "ORPHA:2314",
+              "label": "Hyper-IgE syndrome",
+              "score": 0.85
+            },
+            {
+              "id": "ORPHA:46348",
+              "label": "Paroxysmal extreme pain disorder",
+              "score": 0.3308
+            },
+            {
+              "id": "ORPHA:3180",
+              "label": "Spondylocamptodactyly syndrome",
+              "score": 0.2286
+            },
+            {
+              "id": "ORPHA:3052",
+              "label": "X-linked intellectual disability-seizures-psoriasis syndrome",
+              "score": 0.2286
+            },
+            {
+              "id": "ORPHA:55881",
+              "label": "Adamantinoma",
+              "score": 0.2286
+            }
+          ]
+        }
+      }
+    ],
+    "_pipelineStats": {
+      "totalEntities": 19,
+      "matchedHPO": 13,
+      "unmatchedEntities": 6,
+      "phenopacketFeatures": 12,
+      "negatedFeatures": 0,
+      "numericPhenotypes": 0,
+      "ordoCandidates": 5
+    }
+  }
+}

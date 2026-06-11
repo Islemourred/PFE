@@ -1,0 +1,1122 @@
+{
+  "note_id": "CHU_FR_005",
+  "language": "fr",
+  "module1": {
+    "clean_text": "Compte Rendu dE REhospitalisation HDJ\nL’enfant Amroun Abdel Aziz, âgé de 09 ans   originaire de [LOCATION], suivi dans notre service depuis 11/ 01/2021 pour un déficit immunitaire primitif type « syndrome de Wiskott Aldrich », compliqué d’une dilatation des bronches DDB cylindrique et insuffisance respiratoire chronique stade 1.Admis le [DATE] pour sa cure 53 d’immunoglobulines\nHistorique de la maladie :\nDiagnostic principal : DIP type Wiskott Aldrich\nDate de diagnostic : [DATE]\nAge de diagnostic : 04 ans et 9mois\nDiagnostics associés : Dilatation des bronches cylindriques\nInsuffisance respiratoire chronique stade 1\nEléments de diagnostic :\nAnamnestiques\n-Sexe masculin\n-Infections respiratoires à répétition\n-Plusieurs poussées  d’eczéma.\nClinique\n-Syndrome anémique fait de : pâleur cutanéomuqueuse.\n-Syndrome hémorragique cutané type pétéchies disséminées au visage et au tronc.\n-Lésions d’eczéma au visage et aux membres inférieurs.\nPara clinique :\n-Bi cytopénie ; anémie, thrombopénie\n- Bilan de déficit immunitaire primitif : [DATE], Profonde diminution de l’expression de la protéine WASp résultats en faveur du DIP syndrome de Wiskott Aldrich\nCure d'immunoglobulines à raison de 0.8mg1/kg /4h  à la SAP chaque mois.\nDernière dose reçue le : [DATE](0,8g/kg)\nDernière mise au point faite en mai 2025\nHISTORIQUE DES HOSPITALISATIONS\nANAMNESE [DATE]\nEvènements depuis le dernier passage: [DATE]\nConsultation : non\nSur le plan respiratoire : toux grasse, crachats clairs,\nSur le plan oculaire : Hyperhémie conjonctivale, suite à un traumatisme oculaire le [DATE]\nSur le plan hématologique : Pas d’hémorragie\nAppétit conservé\nSous oxygénothérapie ambulatoire\nScolarisé\nTraitement en cours :\nAzithromycine 1 jour sur 02\nBactrim 25mg/kg/j\nItraconazole 05mg/kg/j : 02 fois/jour\nPulmicort 1mg : 02 fois/jour\nNébulisation par érum salé hypertonique\nKinésithérapie respiratoire faite par la mère\nCahiers bien tenus\nBilans faits :\nECBC : Candida Albicans fait le [DATE]\nTaux des IgG: [DATE] : 8,24g/l\nEXAMEN CLINIQUE  À L'ADMISSION : Date : [DATE]\nMesures anthropométriques :\nPoids   : 27,1kg  [-1,1 DS]   Taille : 132 cm     [-1,2DS]    IMC : 15,6 kg/m2 (-0,9) Normal\nEtat général conserve, conscient, T: 37.2\nExamen de la peau : pas de syndrome hémorragique cutanéo muqueux, peau sèche, multiples cicatrices sur les membres inférieurs\nExamen pleuro pulmonaire : FR :38c/min SPo2 : 96% Sous 1 litre d’O2, signes de lutte légers.Déformation thoracique en carène, hippocratisme digital\n.            Auscultation râles polymorphes\nExamen cardiovasculaire : FC : 98 bpm, Auscultation : pas de souffle/pas de bruits surajoutés\nExamen ophtalmique : Hyper-hémie conjonctivale de l’œil gauche, œil droit normal\nExamen de l’abdomen: souple transit conservé, pas d’organomégalie\nExamen ORL: Présence de carries dentaires\nExamen des autres appareils sans anomalies\nBilan paracliniqueà l’admission : [DATE]\nFNS : GB : 7400 éléments/ul   (PNN : 5700     Lymph : 1200)       Hb : 10.6 g/dl    Plaquette : 90 000 éléments/ul\nCRP : négative                   TQ : 15,6 Sec          TP : 69,6%              TCK : 30 Sec\nPrise en charge :\n-Hospitalisation\n- Mise en condition, voie veineuse périphérique\n-Immunothérapie substitutive : perfusion en IV en raison de 0,8g/kg soit 20g, à faire passer en 4h (Intratect)\n-Surveillance\n- Avis ophtalmo fait : AV : Œil Droit et gauche : 10/10Hyper-hémie conjonctivale de l’œil gauche avec cornée transparente, larmoiement en faveur d’une conjonctivite virale, enfant mis sous collyre Tobrex et lavage oculaire par SSI.\nLa cure des immunoglobulines est passée sans incidents\nSortie le jour même\nContinuer le même traitement l’antibioprophylaxie bactrim et antifungique itraconazole\nZithromax ,Pulmicort\nKinésithérapie et nébulisations au sérum salé\nConseils hygiéno-diététiques et tenue des cahiers\nRDV de contrôle : [DATE] pour cure d’immunoglobulines\nA récupérer / A faire :\nProchain RDV de cure d’immunoglobuline est prévue pour le [DATE]\nPrévoir un ECBC àrécupérer avant la prochaine cure\nPrévoir une TDM thoracique,\nPrévoir une échographie abdominopelvienne\nPrévoir une échocardiographie\nAvis stomato (caries dentaires)\nRécupérer le carnet de santé\nDépistage de la fratrie\nRésidente du service : Dr [DOCTOR] du service : Dr [DOCTOR]",
+    "phi_map": {
+      "DOCTOR": [
+        "Djoudi                                               Assistante",
+        "Khelil",
+        "Djoudi"
+      ],
+      "DATE": [
+        "12/03/2026",
+        "12/11/2020",
+        "29/12/2020",
+        "09/02/2026",
+        "10/03/2026",
+        "15/02/2026",
+        "08/02/2026",
+        "12/04/2026",
+        "14/04/2026"
+      ],
+      "LOCATION": [
+        "Chlef et demeurant à Oran",
+        "Chlef",
+        "Oran"
+      ]
+    },
+    "patient_info": {
+      "sex": "male",
+      "age": "09",
+      "age_unit": "years"
+    }
+  },
+  "module3_warnings": {
+    "temporal": [],
+    "inconsistencies": [
+      {
+        "type": "sex_anatomy_conflict",
+        "severity": "critical",
+        "message": "Female-specific term 'para' found in male patient record",
+        "term": "para"
+      }
+    ]
+  },
+  "module4": {
+    "problem": [
+      {
+        "text": "déficit immunitaire primitif",
+        "ner_score": 0.741,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0004430",
+        "hpo_name": "Immunodeficiency",
+        "expanded_text": "déficit immunitaire primitif",
+        "match_type": "french_curated",
+        "confidence": 0.95,
+        "matched": true,
+        "umls_cui": "C0085110"
+      },
+      {
+        "text": "syndrome de Wiskott Aldrich",
+        "ner_score": 0.438,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "syndrome de Wiskott Aldrich",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "insuffisance respiratoire chronique stade 1",
+        "ner_score": 0.538,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0002093",
+        "hpo_name": "Respiratory insufficiency",
+        "expanded_text": "insuffisance respiratoire chronique stade 1",
+        "match_type": "french_partial",
+        "confidence": 0.85,
+        "matched": true,
+        "umls_cui": "C0035229"
+      },
+      {
+        "text": "eczéma",
+        "ner_score": 0.478,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0000964",
+        "hpo_name": "Eczema",
+        "expanded_text": "eczéma",
+        "match_type": "french_curated",
+        "confidence": 0.95,
+        "matched": true,
+        "umls_cui": "C0013595"
+      },
+      {
+        "text": "Syndrome anémique",
+        "ner_score": 0.636,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "Syndrome anémique",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "pâleur cutanéomuqueuse",
+        "ner_score": 0.955,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0000980",
+        "hpo_name": "Pallor",
+        "expanded_text": "pâleur cutanéomuqueuse",
+        "match_type": "french_partial",
+        "confidence": 0.85,
+        "matched": true,
+        "umls_cui": "C0030232"
+      },
+      {
+        "text": "Syndrome hémorragique cutané",
+        "ner_score": 0.473,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "Syndrome hémorragique cutané",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "pétéchies disséminées",
+        "ner_score": 0.446,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0000967",
+        "hpo_name": "Petechiae",
+        "expanded_text": "pétéchies disséminées",
+        "match_type": "french_partial",
+        "confidence": 0.85,
+        "matched": true,
+        "umls_cui": "C0031256"
+      },
+      {
+        "text": "Lésions d’eczéma",
+        "ner_score": 0.491,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0000964",
+        "hpo_name": "Eczema",
+        "expanded_text": "Lésions d’eczéma",
+        "match_type": "french_partial",
+        "confidence": 0.85,
+        "matched": true,
+        "umls_cui": "C0013595"
+      },
+      {
+        "text": "Bi cytopénie",
+        "ner_score": 0.507,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "Bi cytopénie",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "anémie",
+        "ner_score": 0.511,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0001903",
+        "hpo_name": "Anemia",
+        "expanded_text": "anémie",
+        "match_type": "french_curated",
+        "confidence": 0.95,
+        "matched": true,
+        "umls_cui": "C0002871"
+      },
+      {
+        "text": "thrombopénie",
+        "ner_score": 0.577,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0001873",
+        "hpo_name": "Thrombocytopenia",
+        "expanded_text": "thrombopénie",
+        "match_type": "french_curated",
+        "confidence": 0.95,
+        "matched": true,
+        "umls_cui": "C0040034"
+      },
+      {
+        "text": "DIP syndrome de Wiskott Aldrich",
+        "ner_score": 0.405,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "DIP syndrome de Wiskott Aldrich",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "toux grasse",
+        "ner_score": 0.94,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0006538",
+        "hpo_name": "Recurrent bronchopulmonary infections",
+        "expanded_text": "toux grasse",
+        "match_type": "french_curated",
+        "confidence": 0.95,
+        "matched": true,
+        "umls_cui": "C2169795"
+      },
+      {
+        "text": "crachats clairs",
+        "ner_score": 0.935,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "crachats clairs",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "Hyperhémie conjonctivale",
+        "ner_score": 0.788,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "Hyperhémie conjonctivale",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "syndrome hémorragique cutanéo muqueux",
+        "ner_score": 0.812,
+        "negated": true,
+        "negation_cue": "pas de",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "syndrome hémorragique cutanéo muqueux",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "peau sèche",
+        "ner_score": 0.618,
+        "negated": true,
+        "negation_cue": "pas de",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "peau sèche",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "signes de lutte légers",
+        "ner_score": 0.64,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "signes de lutte légers",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "Déformation thoracique en carène",
+        "ner_score": 0.677,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "Déformation thoracique en carène",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "hippocratisme digital",
+        "ner_score": 0.818,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0100759",
+        "hpo_name": "Clubbing of fingers",
+        "expanded_text": "hippocratisme digital",
+        "match_type": "french_orphanet",
+        "confidence": 0.92,
+        "matched": true,
+        "umls_cui": "C0009080"
+      },
+      {
+        "text": "râles polymorphes",
+        "ner_score": 0.445,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "râles polymorphes",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "carries dentaires",
+        "ner_score": 0.564,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "carries dentaires",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "cornée transparente",
+        "ner_score": 0.527,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "cornée transparente",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "larmoiement",
+        "ner_score": 0.889,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "larmoiement",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "conjonctivite virale",
+        "ner_score": 0.913,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0000509",
+        "hpo_name": "Conjunctivitis",
+        "expanded_text": "conjonctivite virale",
+        "match_type": "french_partial",
+        "confidence": 0.85,
+        "matched": true,
+        "umls_cui": "C0009763"
+      },
+      {
+        "text": "caries dentaires",
+        "ner_score": 0.86,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0000670",
+        "hpo_name": "Carious teeth",
+        "expanded_text": "caries dentaires",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.8821,
+        "matched": true,
+        "umls_cui": "C0011334"
+      }
+    ],
+    "treatment": [
+      {
+        "text": "immunoglobulines",
+        "ner_score": 0.763,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "immunoglobulines",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "oxygénothérapie ambulatoire",
+        "ner_score": 0.682,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "oxygénothérapie ambulatoire",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "Azithromycine",
+        "ner_score": 0.963,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "Azithromycine",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "Bactrim",
+        "ner_score": 0.841,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "Bactrim",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "Itraconazole",
+        "ner_score": 0.905,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "Itraconazole",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "Immunothérapie substitutive",
+        "ner_score": 0.897,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "Immunothérapie substitutive",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "perfusion en IV",
+        "ner_score": 0.449,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "perfusion en IV",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "collyre Tobrex",
+        "ner_score": 0.93,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "collyre Tobrex",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "SSI",
+        "ner_score": 0.635,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "surgical site infection",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      }
+    ],
+    "test": [
+      {
+        "text": "Bilan de déficit immunitaire primitif",
+        "ner_score": 0.683,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0004430",
+        "hpo_name": "Immunodeficiency",
+        "expanded_text": "Bilan de déficit immunitaire primitif",
+        "match_type": "french_partial",
+        "confidence": 0.85,
+        "matched": true,
+        "umls_cui": "C0085110"
+      },
+      {
+        "text": "Examen pleuro pulmonaire",
+        "ner_score": 0.4,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0001648",
+        "hpo_name": "Cor pulmonale",
+        "expanded_text": "Examen pleuro pulmonaire",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.7207,
+        "matched": true,
+        "umls_cui": "C0034072"
+      },
+      {
+        "text": "Examen cardiovasculaire",
+        "ner_score": 0.521,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "Examen cardiovasculaire",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "Auscultation",
+        "ner_score": 0.631,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "Auscultation",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "Examen ophtalmique",
+        "ner_score": 0.533,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "Examen ophtalmique",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "Examen ORL",
+        "ner_score": 0.458,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "Examen ORL",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "TDM thoracique",
+        "ner_score": 0.822,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "TDM thoracique",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "échographie abdominopelvienne",
+        "ner_score": 0.788,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "échographie abdominopelvienne",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "échocardiographie",
+        "ner_score": 0.714,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0031273",
+        "hpo_name": "Shock",
+        "expanded_text": "échocardiographie",
+        "match_type": "french_partial",
+        "confidence": 0.85,
+        "matched": true,
+        "umls_cui": null
+      }
+    ],
+    "numeric_phenotypes": [
+      {
+        "hpo_id": "HP:0001903",
+        "hpo_name": "Anemia",
+        "value": 10.6,
+        "unit": "g/dL",
+        "description": "Hemoglobin < 12.0 g/dL",
+        "source": "Hb : 10.6 g/dl",
+        "match_type": "numeric_inference",
+        "confidence": 1.0
+      },
+      {
+        "hpo_id": "HP:0001873",
+        "hpo_name": "Thrombocytopenia",
+        "value": 90.0,
+        "unit": "K/uL",
+        "description": "Platelets < 150K",
+        "source": "Plaquette : 90 000",
+        "match_type": "numeric_inference",
+        "confidence": 1.0
+      },
+      {
+        "hpo_id": "HP:0001888",
+        "hpo_name": "Lymphopenia",
+        "value": 1200.0,
+        "unit": "/uL",
+        "description": "ALC/Lymphocytes < 1500/uL",
+        "source": "Lymph : 1200",
+        "match_type": "numeric_inference",
+        "confidence": 1.0
+      }
+    ],
+    "ordo_candidates": [
+      {
+        "ordo_id": "ORPHA:906",
+        "name": "Wiskott-Aldrich syndrome",
+        "name_fr": "Syndrome de Wiskott-Aldrich",
+        "score": 0.85,
+        "jaccard": 0.2174,
+        "coverage": 0.3571,
+        "matched_hpo": [
+          "HP:0000964",
+          "HP:0001873",
+          "HP:0001888",
+          "HP:0001903",
+          "HP:0002093"
+        ],
+        "matched_count": 5,
+        "total_disease_hpo": 14
+      },
+      {
+        "ordo_id": "ORPHA:2808",
+        "name": "Laryngeal abductor paralysis",
+        "name_fr": "",
+        "score": 0.3267,
+        "jaccard": 0.0667,
+        "coverage": 0.5,
+        "matched_hpo": [
+          "HP:0002093"
+        ],
+        "matched_count": 1,
+        "total_disease_hpo": 2
+      },
+      {
+        "ordo_id": "ORPHA:572",
+        "name": "MHC class II deficiency",
+        "name_fr": "Déficit en molécules HLA de classe II",
+        "score": 0.2944,
+        "jaccard": 0.1905,
+        "coverage": 0.3636,
+        "matched_hpo": [
+          "HP:0000980",
+          "HP:0001888",
+          "HP:0001903",
+          "HP:0004430"
+        ],
+        "matched_count": 4,
+        "total_disease_hpo": 11
+      },
+      {
+        "ordo_id": "ORPHA:517",
+        "name": "Acute myelomonocytic leukemia",
+        "name_fr": "",
+        "score": 0.26,
+        "jaccard": 0.15,
+        "coverage": 0.3333,
+        "matched_hpo": [
+          "HP:0000980",
+          "HP:0001873",
+          "HP:0001903"
+        ],
+        "matched_count": 3,
+        "total_disease_hpo": 9
+      },
+      {
+        "ordo_id": "ORPHA:46532",
+        "name": "Hereditary persistence of fetal hemoglobin-beta-thalassemia syndrome",
+        "name_fr": "",
+        "score": 0.2444,
+        "jaccard": 0.1111,
+        "coverage": 0.3333,
+        "matched_hpo": [
+          "HP:0000980",
+          "HP:0001903"
+        ],
+        "matched_count": 2,
+        "total_disease_hpo": 6
+      }
+    ],
+    "stats": {
+      "total": 45,
+      "matched": 15,
+      "unmatched": 30,
+      "match_rate": 33.3,
+      "unique_hpo": 14,
+      "ordo_matches": 5
+    }
+  },
+  "phenopacket": {
+    "id": "phenopacket-CHU_FR_005",
+    "subject": {
+      "id": "CHU_FR_005",
+      "sex": "MALE",
+      "timeAtLastEncounter": {
+        "age": {
+          "iso8601duration": "P09Y"
+        }
+      }
+    },
+    "input": "Compte Rendu dE REhospitalisation HDJ\nL’enfant Amroun Abdel Aziz, âgé de 09 ans   originaire de Chlef et demeurant à Oran, suivi dans notre service depuis 11/ 01/2021 pour un déficit immunitaire primitif type « syndrome de Wiskott Aldrich », compliqué d’une dilatation des bronches DDB cylindrique et insuffisance respiratoire chronique stade 1.Admis le 12/03/2026 pour sa cure 53 d’immunoglobulines\nHistorique de la maladie :\nDiagnostic principal : DIP type Wiskott Aldrich\nDate de diagnostic : 12/11/2020\nAge de diagnostic : 04 ans et 9mois\nDiagnostics associés : Dilatation des bronches cylindriques\nInsuffisance respiratoire chronique stade 1\nEléments de diagnostic :\nAnamnestiques\n-Sexe masculin\n-Infections respiratoires à répétition\n-Plusieurs poussées  d’eczéma.\nClinique\n-Syndrome anémique fait de : pâleur cutanéomuqueuse.\n-Syndrome hémorragique cutané type pétéchies disséminées au visage et au tronc.\n-Lésions d’eczéma au visage et aux membres inférieurs.\nPara clinique :\n-Bi cytopénie ; anémie, thrombopénie\n- Bilan de déficit immunitaire primitif : 29/12/2020, Profonde diminution de l’expression de la protéine WASp résultats en faveur du DIP syndrome de Wiskott Aldrich\nCure d'immunoglobulines à raison de 0.8mg1/kg /4h  à la SAP chaque mois.\nDernière dose reçue le : 09/02/2026(0,8g/kg)\nDernière mise au point faite en mai 2025\nHISTORIQUE DES HOSPITALISATIONS\nANAMNESE 12/03/2026\nEvènements depuis le dernier passage: 09/02/2026\nConsultation : non\nSur le plan respiratoire : toux grasse, crachats clairs,\nSur le plan oculaire : Hyperhémie conjonctivale, suite à un traumatisme oculaire le 10/03/2026\nSur le plan hématologique : Pas d’hémorragie\nAppétit conservé\nSous oxygénothérapie ambulatoire\nScolarisé\nTraitement en cours :\nAzithromycine 1 jour sur 02\nBactrim 25mg/kg/j\nItraconazole 05mg/kg/j : 02 fois/jour\nPulmicort 1mg : 02 fois/jour\nNébulisation par érum salé hypertonique\nKinésithérapie respiratoire faite par la mère\nCahiers bien tenus\nBilans faits :\nECBC : Candida Albicans fait le 15/02/2026\nTaux des IgG: 08/02/2026 : 8,24g/l\nEXAMEN CLINIQUE  À L'ADMISSION : Date : 12/03/2026\nMesures anthropométriques :\nPoids   : 27,1kg  [-1,1 DS]   Taille : 132 cm     [-1,2DS]    IMC : 15,6 kg/m2 (-0,9) Normal\nEtat général conserve, conscient, T: 37.2\nExamen de la peau : pas de syndrome hémorragique cutanéo muqueux, peau sèche, multiples cicatrices sur les membres inférieurs\nExamen pleuro pulmonaire : FR :38c/min SPo2 : 96% Sous 1 litre d’O2, signes de lutte légers.Déformation thoracique en carène, hippocratisme digital\n.            Auscultation râles polymorphes\nExamen cardiovasculaire : FC : 98 bpm, Auscultation : pas de souffle/pas de bruits surajoutés\nExamen ophtalmique : Hyper-hémie conjonctivale de l’œil gauche, œil droit normal\nExamen de l’abdomen: souple transit conservé, pas d’organomégalie\nExamen ORL: Présence de carries dentaires\nExamen des autres appareils sans anomalies\nBilan paracliniqueà l’admission : 12/03/2026\nFNS : GB : 7400 éléments/ul   (PNN : 5700     Lymph : 1200)       Hb : 10.6 g/dl    Plaquette : 90 000 éléments/ul\nCRP : négative                   TQ : 15,6 Sec          TP : 69,6%              TCK : 30 Sec\nPrise en charge :\n-Hospitalisation\n- Mise en condition, voie veineuse périphérique\n-Immunothérapie substitutive : perfusion en IV en raison de 0,8g/kg soit 20g, à faire passer en 4h (Intratect)\n-Surveillance\n- Avis ophtalmo fait : AV : Œil Droit et gauche : 10/10Hyper-hémie conjonctivale de l’œil gauche avec cornée transparente, larmoiement en faveur d’une conjonctivite virale, enfant mis sous collyre Tobrex et lavage oculaire par SSI.\nLa cure des immunoglobulines est passée sans incidents\nSortie le jour même\nContinuer le même traitement l’antibioprophylaxie bactrim et antifungique itraconazole\nZithromax ,Pulmicort\nKinésithérapie et nébulisations au sérum salé\nConseils hygiéno-diététiques et tenue des cahiers\nRDV de contrôle : 12/04/2026 pour cure d’immunoglobulines\nA récupérer / A faire :\nProchain RDV de cure d’immunoglobuline est prévue pour le 14/04/2026\nPrévoir un ECBC àrécupérer avant la prochaine cure\nPrévoir une TDM thoracique,\nPrévoir une échographie abdominopelvienne\nPrévoir une échocardiographie\nAvis stomato (caries dentaires)\nRécupérer le carnet de santé\nDépistage de la fratrie\nRésidente du service : Dr Djoudi                                               Assistante du service : Dr Khelil",
+    "target": "Wiskott-Aldrich syndrome",
+    "phenotypicFeatures": [
+      {
+        "type": {
+          "id": "HP:0004430",
+          "label": "Immunodeficiency",
+          "umls_cui": "C0085110"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "CHU_FR_005",
+              "description": "NER: déficit immunitaire primitif (0.741) | Match: french_curated (0.950)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0002093",
+          "label": "Respiratory insufficiency",
+          "umls_cui": "C0035229"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "CHU_FR_005",
+              "description": "NER: insuffisance respiratoire chronique stade 1 (0.538) | Match: french_partial (0.850)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0000964",
+          "label": "Eczema",
+          "umls_cui": "C0013595"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "CHU_FR_005",
+              "description": "NER: eczéma (0.478) | Match: french_curated (0.950)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0000980",
+          "label": "Pallor",
+          "umls_cui": "C0030232"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "CHU_FR_005",
+              "description": "NER: pâleur cutanéomuqueuse (0.955) | Match: french_partial (0.850)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0000967",
+          "label": "Petechiae",
+          "umls_cui": "C0031256"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "CHU_FR_005",
+              "description": "NER: pétéchies disséminées (0.446) | Match: french_partial (0.850)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0001903",
+          "label": "Anemia",
+          "umls_cui": "C0002871"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "CHU_FR_005",
+              "description": "NER: anémie (0.511) | Match: french_curated (0.950)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0001873",
+          "label": "Thrombocytopenia",
+          "umls_cui": "C0040034"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "CHU_FR_005",
+              "description": "NER: thrombopénie (0.577) | Match: french_curated (0.950)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0006538",
+          "label": "Recurrent bronchopulmonary infections",
+          "umls_cui": "C2169795"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "CHU_FR_005",
+              "description": "NER: toux grasse (0.940) | Match: french_curated (0.950)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0100759",
+          "label": "Clubbing of fingers",
+          "umls_cui": "C0009080"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "CHU_FR_005",
+              "description": "NER: hippocratisme digital (0.818) | Match: french_orphanet (0.920)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0000509",
+          "label": "Conjunctivitis",
+          "umls_cui": "C0009763"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "CHU_FR_005",
+              "description": "NER: conjonctivite virale (0.913) | Match: french_partial (0.850)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0000670",
+          "label": "Carious teeth",
+          "umls_cui": "C0011334"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "CHU_FR_005",
+              "description": "NER: caries dentaires (0.860) | Match: sapbert_similarity (0.882)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0001648",
+          "label": "Cor pulmonale",
+          "umls_cui": "C0034072"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "CHU_FR_005",
+              "description": "NER: Examen pleuro pulmonaire (0.400) | Match: sapbert_similarity (0.721)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0031273",
+          "label": "Shock"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "CHU_FR_005",
+              "description": "NER: échocardiographie (0.714) | Match: french_partial (0.850)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0001888",
+          "label": "Lymphopenia"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "CHU_FR_005",
+              "description": "Numeric: Lymph : 1200 → ALC/Lymphocytes < 1500/uL"
+            }
+          }
+        ]
+      }
+    ],
+    "metaData": {
+      "created": "2026-06-11T03:37:50Z",
+      "createdBy": "clinical-preanalysis-pipeline-v2",
+      "phenopacketSchemaVersion": "2.0",
+      "resources": [
+        {
+          "id": "hp",
+          "name": "Human Phenotype Ontology",
+          "url": "https://hpo.jax.org",
+          "version": "2024-04-26",
+          "namespacePrefix": "HP",
+          "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        }
+      ]
+    },
+    "interpretations": [
+      {
+        "id": "interpretation-CHU_FR_005",
+        "progressStatus": "IN_PROGRESS",
+        "diagnosis": {
+          "disease": {
+            "id": "ORPHA:906",
+            "label": "Wiskott-Aldrich syndrome"
+          },
+          "score": 0.85,
+          "allCandidates": [
+            {
+              "id": "ORPHA:906",
+              "label": "Wiskott-Aldrich syndrome",
+              "score": 0.85
+            },
+            {
+              "id": "ORPHA:2808",
+              "label": "Laryngeal abductor paralysis",
+              "score": 0.3267
+            },
+            {
+              "id": "ORPHA:572",
+              "label": "MHC class II deficiency",
+              "score": 0.2944
+            },
+            {
+              "id": "ORPHA:517",
+              "label": "Acute myelomonocytic leukemia",
+              "score": 0.26
+            },
+            {
+              "id": "ORPHA:46532",
+              "label": "Hereditary persistence of fetal hemoglobin-beta-thalassemia syndrome",
+              "score": 0.2444
+            }
+          ]
+        }
+      }
+    ],
+    "_validationWarnings": [
+      {
+        "type": "sex_anatomy_conflict",
+        "severity": "critical",
+        "message": "Female-specific term 'para' found in male patient record",
+        "term": "para"
+      }
+    ],
+    "_pipelineStats": {
+      "totalEntities": 45,
+      "matchedHPO": 15,
+      "unmatchedEntities": 30,
+      "phenopacketFeatures": 14,
+      "negatedFeatures": 0,
+      "numericPhenotypes": 3,
+      "ordoCandidates": 5
+    }
+  }
+}

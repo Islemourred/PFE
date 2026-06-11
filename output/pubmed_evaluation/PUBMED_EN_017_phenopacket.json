@@ -1,0 +1,154 @@
+{
+  "id": "phenopacket-PUBMED_EN_017",
+  "subject": {
+    "id": "PUBMED_EN_017"
+  },
+  "input": "Case Report: Case Report: Novel splicing mutations in \n\nMutations of the Regulatory Factor X5 (RFX5) have been associated with the autosomal recessive major histocompatibility class II (MHC-II) deficiency, which is a severe immunodeficiency characterized by constitutive and interferon-gamma induced MHC II expression disorder and leads to the absence of cellular and humoral T-cell response to antigen challenge. The compound heterozygous splicing mutations of RFX5: c.353 + 6T>G (maternally inherited) and c.757 + 1G>A (paternally inherited) were identified in an infant diagnosed severe immunodeficiency. The mutation c.757 + 1G>A was classified as likely pathogenic while c.353 + 6T>G was classified as the variant of uncertain significance according to American College of Medical Genetics and Genomics (ACMG). To investigate the pathogenicity of RFX5: c.353 + 6T>G, reverse transcription PCR (RT-PCR) was conducted with the mother's peripheral blood. An insertion of 191-bp intronic sequence (intron 6) was found in the transcripts, and this resulted in a frameshift and premature truncation of the protein, especially reduced the DNA-binding domain (DBD) of the RFX5 protein. Our data expanded the spectrum of pathogenic mutations in MHC-II deficiency and put new insights into the genetic counseling, prenatal diagnosis and preimplantation genetic testing (PGT) for the disease.",
+  "target": "Infantile LAD-like disease due to RAC2 deficiency",
+  "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0000007",
+        "label": "Autosomal recessive inheritance",
+        "umls_cui": "C0441748"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "PUBMED_EN_017",
+            "description": "NER: recessive (0.525) | Match: sapbert_similarity (0.880)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0012828",
+        "label": "Severe",
+        "umls_cui": "C0205082"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "PUBMED_EN_017",
+            "description": "NER: major (0.267) | Match: sapbert_similarity (0.713)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0002721",
+        "label": "Immunodeficiency",
+        "umls_cui": "C0021051"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "PUBMED_EN_017",
+            "description": "NER: immunodeficiency (0.333) | Match: clinical_synonym (1.000)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0012824",
+        "label": "Severity",
+        "umls_cui": "C0522510"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "PUBMED_EN_017",
+            "description": "NER: significance (0.385) | Match: sapbert_similarity (0.730)"
+          }
+        }
+      ]
+    }
+  ],
+  "metaData": {
+    "created": "2026-06-11T03:06:31Z",
+    "createdBy": "clinical-preanalysis-pipeline-v2",
+    "phenopacketSchemaVersion": "2.0",
+    "resources": [
+      {
+        "id": "hp",
+        "name": "Human Phenotype Ontology",
+        "url": "https://hpo.jax.org",
+        "version": "2024-04-26",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      }
+    ]
+  },
+  "interpretations": [
+    {
+      "id": "interpretation-PUBMED_EN_017",
+      "progressStatus": "IN_PROGRESS",
+      "diagnosis": {
+        "disease": {
+          "id": "ORPHA:183707",
+          "label": "Infantile LAD-like disease due to RAC2 deficiency"
+        },
+        "score": 0.2071,
+        "allCandidates": [
+          {
+            "id": "ORPHA:183707",
+            "label": "Infantile LAD-like disease due to RAC2 deficiency",
+            "score": 0.2071
+          },
+          {
+            "id": "ORPHA:231249",
+            "label": "Hemoglobin E-beta-thalassemia syndrome",
+            "score": 0.2071
+          },
+          {
+            "id": "ORPHA:169095",
+            "label": "Severe combined immunodeficiency due to FOXN1 deficiency",
+            "score": 0.17
+          },
+          {
+            "id": "ORPHA:366",
+            "label": "Glycogen storage disease due to glycogen debranching enzyme deficiency",
+            "score": 0.1257
+          },
+          {
+            "id": "ORPHA:90023",
+            "label": "Primary immunodeficiency syndrome due to P14/LAMTOR2 deficiency",
+            "score": 0.1257
+          }
+        ]
+      }
+    }
+  ],
+  "_pipelineStats": {
+    "totalEntities": 29,
+    "matchedHPO": 4,
+    "unmatchedEntities": 25,
+    "phenopacketFeatures": 4,
+    "negatedFeatures": 0,
+    "numericPhenotypes": 0,
+    "ordoCandidates": 5
+  }
+}

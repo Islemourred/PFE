@@ -165,27 +165,31 @@ def process_phi_french(text: str) -> dict:
                     if phi_map[category] != value:
                         phi_map[category] = [phi_map[category], value]
 
-    # ── Pass 2: CamemBERT-NER (unstructured entity detection) ──
+    # ── Pass 2: GLiNER zero-shot NER (unstructured entity detection) ──
+    # Uses the same model as Module 2 French NER — no extra download needed.
     try:
         global _fr_ner_model
         if _fr_ner_model is None:
-            _fr_ner_model = pipeline(
-                "ner",
-                model="Jean-Baptiste/camembert-ner",
-                aggregation_strategy="first",
+            from gliner import GLiNER
+            _fr_ner_model = GLiNER.from_pretrained(
+                "almanach/camembert-bio-gliner-v0.1", local_files_only=True
             )
 
-        ner_entities = _fr_ner_model(text[:1024])  # limit for performance
-        ner_label_map = {
-            "PER": "PATIENT",
-            "LOC": "LOCATION",
-            "ORG": "HOSPITAL",
+        phi_labels = ["nom de personne", "lieu", "hopital", "adresse"]
+        ner_entities = _fr_ner_model.predict_entities(
+            text[:1024], phi_labels, threshold=0.5
+        )
+        gliner_label_map = {
+            "nom de personne": "PATIENT",
+            "lieu": "LOCATION",
+            "hopital": "HOSPITAL",
+            "adresse": "LOCATION",
         }
         for ent in ner_entities:
-            ner_cat = ner_label_map.get(ent["entity_group"])
-            if not ner_cat or ent["score"] < 0.75:
+            ner_cat = gliner_label_map.get(ent["label"])
+            if not ner_cat:
                 continue
-            value = ent["word"].strip()
+            value = ent["text"].strip()
             if not value or len(value) < 2:
                 continue
             # Only add if not already captured by regex
@@ -198,7 +202,7 @@ def process_phi_french(text: str) -> dict:
             elif not existing:
                 phi_map[ner_cat] = value
     except Exception:
-        pass  # NER model not available, regex results are sufficient
+        pass  # GLiNER not available, regex results are sufficient
 
     # Replace PHI values in text with tags (longest first to avoid partial matches)
     all_values = []

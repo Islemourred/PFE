@@ -1,0 +1,94 @@
+{
+  "id": "phenopacket-CHU_FR_027",
+  "subject": {
+    "id": "CHU_FR_027"
+  },
+  "input": "Medical Certificate\nI, under the signature of Professor DRALI, certify that the child Mansouri Chaima, aged 7 years old, has been followed at our level for 3 years for the management of his pathology, namely a Syndromic Primary Immunodeficiency type Hyper IgE Syndrome\nRare pathology, of genetic origin, requiring lifelong treatment based on a monthly IV immunoglobulin injection as well as oral antibiotic and antifungal therapy (The medical CR is attached)\nThe patient also requires regular clinical and para-clinical monitoring.\nThe certificate is given to parents to assert their right\nProfessor DRALI\nHead of Department Physician",
+  "target": "Infantile LAD-like disease due to RAC2 deficiency",
+  "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0002721",
+        "label": "Immunodeficiency",
+        "umls_cui": "C0021051"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "CHU_FR_027",
+            "description": "NER: Immunodeficiency (0.860) | Match: clinical_synonym (1.000)"
+          }
+        }
+      ]
+    }
+  ],
+  "metaData": {
+    "created": "2026-06-11T03:54:17Z",
+    "createdBy": "clinical-preanalysis-pipeline-v2",
+    "phenopacketSchemaVersion": "2.0",
+    "resources": [
+      {
+        "id": "hp",
+        "name": "Human Phenotype Ontology",
+        "url": "https://hpo.jax.org",
+        "version": "2024-04-26",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      }
+    ]
+  },
+  "interpretations": [
+    {
+      "id": "interpretation-CHU_FR_027",
+      "progressStatus": "IN_PROGRESS",
+      "diagnosis": {
+        "disease": {
+          "id": "ORPHA:183707",
+          "label": "Infantile LAD-like disease due to RAC2 deficiency"
+        },
+        "score": 0.25,
+        "allCandidates": [
+          {
+            "id": "ORPHA:183707",
+            "label": "Infantile LAD-like disease due to RAC2 deficiency",
+            "score": 0.25
+          },
+          {
+            "id": "ORPHA:231249",
+            "label": "Hemoglobin E-beta-thalassemia syndrome",
+            "score": 0.25
+          },
+          {
+            "id": "ORPHA:169095",
+            "label": "Severe combined immunodeficiency due to FOXN1 deficiency",
+            "score": 0.2
+          },
+          {
+            "id": "ORPHA:366",
+            "label": "Glycogen storage disease due to glycogen debranching enzyme deficiency",
+            "score": 0.1429
+          },
+          {
+            "id": "ORPHA:90023",
+            "label": "Primary immunodeficiency syndrome due to P14/LAMTOR2 deficiency",
+            "score": 0.1429
+          }
+        ]
+      }
+    }
+  ],
+  "_pipelineStats": {
+    "totalEntities": 8,
+    "matchedHPO": 1,
+    "unmatchedEntities": 7,
+    "phenopacketFeatures": 1,
+    "negatedFeatures": 0,
+    "numericPhenotypes": 0,
+    "ordoCandidates": 5
+  }
+}

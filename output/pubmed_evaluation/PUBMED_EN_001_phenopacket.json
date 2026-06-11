@@ -1,0 +1,234 @@
+{
+  "id": "phenopacket-PUBMED_EN_001",
+  "subject": {
+    "id": "PUBMED_EN_001"
+  },
+  "input": "Case Report: Clinical Disorders in Cystic Fibrosis That Affect Emergency Procedures-A Case Report and Review.\n\nCystic fibrosis (CF) is a multisystemic disease caused by a genetic defect, namely a mutation in the CFTR gene, that results in the production of an abnormal protein that regulates the flow of chloride ions through epithelial cells, leading to the dehydration of secreted mucus and changes in its biological properties. Chronic inflammation and recurrent respiratory infections progressively damage lung tissue, leading to respiratory and cardiorespiratory failure. This study aims to present a clinical case and explore the clinical changes in CF that may influence the provision of pre-hospital first aid. The study presents a case report of a 23-year-old CF patient undergoing evaluation for lung transplantation, infected with Pseudomonas aeruginosa and Staphylococcus aureus with the MSSA phenotype, and in a severe condition due to infectious exacerbation. Despite antibiotic treatment, the patient's condition deteriorated, leading to respiratory failure and cardiac arrest. Emergency measures were taken to maintain airway patency-the patient was sedated, intubated, and connected to a ventilator. CF involves systemic complications that, during exacerbations, may require urgent interventions. Cystic fibrosis is associated with multiple systemic complications, some of which may, during exacerbations, require emergency medical interventions. Providing care to this patient group involves specific procedures addressing the consequences of the underlying disease. Due to increasing survival rates and the emergence of new phenotypes, there is a need for the continuous education of medical personnel, including emergency responders, regarding the management of genetically determined diseases. This study underscores the importance of recognizing CF's complex nature and adapting emergency care accordingly to ensure timely and effective intervention in life-threatening situations.",
+  "target": "Cystic fibrosis",
+  "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0001944",
+        "label": "Dehydration",
+        "umls_cui": "C0011175"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "PUBMED_EN_001",
+            "description": "NER: dehydration (0.621) | Match: exact_label (1.000)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0012649",
+        "label": "Increased inflammatory response",
+        "umls_cui": "C4022803"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "PUBMED_EN_001",
+            "description": "NER: inflammation (0.403) | Match: sapbert_similarity (0.831)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0011947",
+        "label": "Respiratory tract infection",
+        "umls_cui": "C0035243"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "PUBMED_EN_001",
+            "description": "NER: respiratory (0.431) | Match: sapbert_similarity (0.712)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0002719",
+        "label": "Recurrent infections",
+        "umls_cui": "C0239998"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "PUBMED_EN_001",
+            "description": "NER: infections (0.185) | Match: sapbert_similarity (0.777)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0001695",
+        "label": "Cardiac arrest",
+        "umls_cui": "C0018790"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "PUBMED_EN_001",
+            "description": "NER: cardiac arrest (0.708) | Match: exact_label (1.000)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0002205",
+        "label": "Recurrent respiratory infections",
+        "umls_cui": "C3806482"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "PUBMED_EN_001",
+            "description": "NER: recurrent respiratory infections (0.900) | Match: text_scan_clinical_synonym (0.950)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0002093",
+        "label": "Respiratory insufficiency",
+        "umls_cui": "C0035229"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "PUBMED_EN_001",
+            "description": "NER: respiratory failure (0.900) | Match: text_scan_clinical_synonym (0.950)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0003676",
+        "label": "Progressive",
+        "umls_cui": "C0205329"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "PUBMED_EN_001",
+            "description": "NER: deteriorated (0.364) | Match: sapbert_similarity (0.814)"
+          }
+        }
+      ]
+    }
+  ],
+  "metaData": {
+    "created": "2026-06-11T03:46:46Z",
+    "createdBy": "clinical-preanalysis-pipeline-v2",
+    "phenopacketSchemaVersion": "2.0",
+    "resources": [
+      {
+        "id": "hp",
+        "name": "Human Phenotype Ontology",
+        "url": "https://hpo.jax.org",
+        "version": "2024-04-26",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      }
+    ]
+  },
+  "interpretations": [
+    {
+      "id": "interpretation-PUBMED_EN_001",
+      "progressStatus": "IN_PROGRESS",
+      "diagnosis": {
+        "disease": {
+          "id": "ORPHA:586",
+          "label": "Cystic fibrosis"
+        },
+        "score": 0.85,
+        "allCandidates": [
+          {
+            "id": "ORPHA:586",
+            "label": "Cystic fibrosis",
+            "score": 0.85
+          },
+          {
+            "id": "ORPHA:2808",
+            "label": "Laryngeal abductor paralysis",
+            "score": 0.3444
+          },
+          {
+            "id": "ORPHA:2111",
+            "label": "Cystic hamartoma of lung and kidney",
+            "score": 0.3127
+          },
+          {
+            "id": "ORPHA:1202",
+            "label": "Larynx atresia",
+            "score": 0.2667
+          },
+          {
+            "id": "ORPHA:2085",
+            "label": "Glaucoma-sleep apnea syndrome",
+            "score": 0.24
+          }
+        ]
+      }
+    }
+  ],
+  "_pipelineStats": {
+    "totalEntities": 26,
+    "matchedHPO": 9,
+    "unmatchedEntities": 17,
+    "phenopacketFeatures": 8,
+    "negatedFeatures": 0,
+    "numericPhenotypes": 0,
+    "ordoCandidates": 5
+  }
+}

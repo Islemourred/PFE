@@ -1,0 +1,297 @@
+{
+  "id": "phenopacket-CHU_FR_012",
+  "subject": {
+    "id": "CHU_FR_012",
+    "timeAtLastEncounter": {
+      "age": {
+        "iso8601duration": "P06Y"
+      }
+    }
+  },
+  "input": "RAPPORT MEDICAL:\nIl s’agit du nourrissson Belghit Abdelwahab âgé de 06 mois originaire et demeurant à Oran, issu d’un couple non consanguin, ancien prématuré de 28SA, admis à notre niveau pour l’investigation d’une détresse respiratoire chronique depuis l’age néonatal.\nANTÉCÉDENTS :\nFamiliaux :\nPère : 37 ans, bon état de santé, tabagique.\nMère :34ans, bon état de santé.\nFratrie : fils unique\nAtopie : non\nMaladie respiratoire chronique dans la famille : non\nPersonnels :\nPhysiologique :\nGrossesse: bien suivie\nAccouchement: a 28 SA par voie basse\nRéanimation néonatale : oui\nPoids de naissance : 1kg400\nMéconium:  émis<24h\nPas de retard de chute du cordon ombilical\nAllaitement:  maternelle puis  artificiel dès l’age de 01mois.\nVaccination: correcte\nVitamine D reçue a l’âge de 01 mois.\nDéveloppement psychomoteur: jugé bon selon l’age\nNiveau socio-économique : bon\nAtopie personnelle :non\nPathologique :\nGrande prématurité de 28SA non expliquée avec hospitalisation dès sa naissance au niveau du service Néonat- CHU Oran pour détresse respiratoire sévère ayant bénéficié d’une instillation du surfactant ainsi que la CPAP (Rapport médical demandé, non ramené) mis sous Flixotide à sa sortie.\nHistoire de la maladie :\nLe nourrisson présente depuis sa sortie du service néonatalogie un léger tirage basithoracique selon la maman sans aggravation.\n20 jours avant son admission à notre niveau, une aggravation de la détresse respiratoire avec apparition d’une toux, ce qui a motivé les parents à consulter au niveau des urgences pédiatrique EHS Canastel pour la prise en charge d’une bronchiolite.\nLe nourrisson a séjourné pendant 08jours à leur niveau où il a reçu: une antibiothérapie à base d’Amoxicilline 150mg/kg/j + Nébulisation programmée par asthalin, puis transféré à notre service pour complément de prise en charge le 04/12/2025\nEXAMEN CLINIQUE  À L'ADMISSION :\nMesures anthropométriques :\nPoids:  06kg800 (-1,12 DS)   Taille :   68cm(+0,62DS)\nEtat général : conservé , T° : 37.8 c\nExamen de la peau :  bonne coloration cutanéo-muqueuse\nExamen ORL: Obstruction nasale, pas de ADP cervicale, gorge propre .\nExamen pleuro pulmonaire :\nFR 54 c/mn\n\tSignes de détresse respiratoire faite de : tirage sus sternal et basi-thoracique\nSPO2 : 98 % sous 0,5l/min d’O2\nAuscultation pulmonaire: fins sibilants aux 2champs pulmonaires\n-       Examen cardiovasculaire : FC : 110 b/min.  Auscultation : B1B2 audibles  pas de souffles ni de bruits surajoutés\nExamen digestif :  abdomen souple pas d’organomégalies,  transit accéléré : 04 selle/jr d’aspect liquidien sans retentissement sur l’état d’hydratation.\nExamen uro-génital : Sexe de morphotype masculin\nBIOLOGIE:\nNFS: hyperleucocytose à PNN GB: 22800; HB: 11,6  PLQT: 700000\nCRP: Positive à 27     VS accelerée: 28/62\nProcalcitonine negative : <0,16\nCREATININE: 4,28\nParasitologie des selles / coproculture : négative\nRADIOLOGIE:\nRadiographie thoracique (07/12/2025): Distension thoracique avec des infiltrats bilatéraux\nCAT :\nHospitalisation.\nMise en condition.\nBilan infectieux demandé\nSurveillance : CHMD, glycémie, température .\nMise sous antibiothétapie à base d’amoxicilline + acide clavulanique avec nébulisation par asthalin.\nSupplémentation préventive en vit D.\nECBC lancé avec inclusion dans l’études Djazira.\nEvolution :\nDurant son hospitalisation qui a durée 05 jours\nClinique:\nil a présenté à J1 de son hospitalisation plusieurs pics fébriles, puis apyrexie obtenue à J3\nDisparition de la détresse respiratoire à J4 d’hospitalisation avec un sevrage d’oxygène réussi\nBiologie:\nNFS de controle faite avant la sortie : correcte\nCRP  : 10 mg/l ; procalcitonine: négative\nRadiologie: Vu le terrain (Prématurité de 28SA avec oxygénothérapie plus de 28jours), une dysplasie bronchopulmonaire a été suspectée d’où l’investigation d’une détresse respiratoire chronique chez le nourrisson\nEchographie cardiaque (10/12/2025): Sans particularités.\nTDM Thoracique : Demandée RDV le: 29/12/2025\nBilan de déficit immunitaire: demandé\nVu la stabilité clinico-biologique, le nourrisson a été mis sortant le 10/12/2025 après avoir reçu une dose du Palivizumab (synagis) avec un RDV de controle au niveau de l’hopital du jour et un RDB au niveau de la consultation spécialisée.\nCONCLUSION\nll s’agit de le nourrisson BELGHIT ABDELWAHAB âgé de 06mois, originaire et demeurant   à Oran , issu d’un couple non consanguin , aux antécédents personnels  d’une prématurité de 28SA avec détresse respiratoire néonatale, admis à notre niveau pour la prise en charge d’une bronchiolite surinfectée sur une dysplasie bronchopulmonaire probable.\nRECOMMANDATIONS:\n- Récupérer le rapport médical du service néonat CHU-Oran\n- Recupérer la TDM thoracique\n- Récupérer le bilan de déficit immunitaire du patient\nRESIDENTE: Dr TAMAZIRT                                                                   ASSISTANTE: Dr DOUKAR",
+  "target": "Nephronophthisis",
+  "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0002098",
+        "label": "Respiratory distress",
+        "umls_cui": "C0013404"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "CHU_FR_012",
+            "description": "NER: détresse respiratoire chronique (0.818) | Match: french_partial (0.850)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0011010",
+        "label": "Chronic",
+        "umls_cui": "C0205191"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "CHU_FR_012",
+            "description": "NER: Maladie respiratoire chronique (0.798) | Match: french_partial (0.850)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0012735",
+        "label": "Cough",
+        "umls_cui": "C0010200"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "CHU_FR_012",
+            "description": "NER: toux (0.936) | Match: french_orphanet (0.920)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0011950",
+        "label": "Bronchiolitis",
+        "umls_cui": "C0006271"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "CHU_FR_012",
+            "description": "NER: bronchiolite (0.888) | Match: french_orphanet (0.920)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0001742",
+        "label": "Nasal obstruction",
+        "umls_cui": "C0027424"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "CHU_FR_012",
+            "description": "NER: Obstruction nasale (0.659) | Match: french_orphanet (0.920)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0011856",
+        "label": "Pica",
+        "umls_cui": "C0031873"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "CHU_FR_012",
+            "description": "NER: pics fébriles (0.763) | Match: sapbert_similarity (0.786)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0006533",
+        "label": "Bronchodysplasia",
+        "umls_cui": "C4025025"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "CHU_FR_012",
+            "description": "NER: dysplasie bronchopulmonaire (0.572) | Match: sapbert_similarity (0.712)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0001648",
+        "label": "Cor pulmonale",
+        "umls_cui": "C0034072"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "CHU_FR_012",
+            "description": "NER: Examen pleuro pulmonaire (0.598) | Match: sapbert_similarity (0.721)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0004430",
+        "label": "Immunodeficiency",
+        "umls_cui": "C0085110"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "CHU_FR_012",
+            "description": "NER: bilan de déficit immunitaire (0.611) | Match: french_partial (0.850)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0001903",
+        "label": "Anemia"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "CHU_FR_012",
+            "description": "Numeric: HB: 11,6 → Hemoglobin < 12.0 g/dL"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0001974",
+        "label": "Leukocytosis"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "CHU_FR_012",
+            "description": "Numeric: GB: 22800 → WBC/GB > 11,000 elements/uL"
+          }
+        }
+      ]
+    }
+  ],
+  "metaData": {
+    "created": "2026-06-11T03:39:09Z",
+    "createdBy": "clinical-preanalysis-pipeline-v2",
+    "phenopacketSchemaVersion": "2.0",
+    "resources": [
+      {
+        "id": "hp",
+        "name": "Human Phenotype Ontology",
+        "url": "https://hpo.jax.org",
+        "version": "2024-04-26",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      }
+    ]
+  },
+  "interpretations": [
+    {
+      "id": "interpretation-CHU_FR_012",
+      "progressStatus": "IN_PROGRESS",
+      "diagnosis": {
+        "disease": {
+          "id": "ORPHA:655",
+          "label": "Nephronophthisis"
+        },
+        "score": 0.2308,
+        "allCandidates": [
+          {
+            "id": "ORPHA:655",
+            "label": "Nephronophthisis",
+            "score": 0.2308
+          },
+          {
+            "id": "ORPHA:231237",
+            "label": "Delta-beta-thalassemia",
+            "score": 0.2308
+          },
+          {
+            "id": "ORPHA:232",
+            "label": "Sickle cell disease",
+            "score": 0.1971
+          },
+          {
+            "id": "ORPHA:183707",
+            "label": "Infantile LAD-like disease due to RAC2 deficiency",
+            "score": 0.1786
+          },
+          {
+            "id": "ORPHA:231242",
+            "label": "Hemoglobin C-beta-thalassemia syndrome",
+            "score": 0.1786
+          }
+        ]
+      }
+    }
+  ],
+  "_pipelineStats": {
+    "totalEntities": 42,
+    "matchedHPO": 14,
+    "unmatchedEntities": 28,
+    "phenopacketFeatures": 11,
+    "negatedFeatures": 0,
+    "numericPhenotypes": 2,
+    "ordoCandidates": 5
+  }
+}

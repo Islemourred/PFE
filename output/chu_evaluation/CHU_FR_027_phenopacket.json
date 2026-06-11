@@ -1,0 +1,99 @@
+{
+  "id": "phenopacket-CHU_FR_027",
+  "subject": {
+    "id": "CHU_FR_027",
+    "timeAtLastEncounter": {
+      "age": {
+        "iso8601duration": "P7Y"
+      }
+    }
+  },
+  "input": "Certificat Médical\nJe sous signée Pr DRALI , certifie que l’enfant Mansouri chaima  âgée de 7 ans  de est suivi a notre niveau depuis 3 ans  pour Prise en charge de sa pathologie a savoir un Déficit immunitaire Primitif syndromique type Syndrome d’hyper IgE\nPathologie rare, d’origine génétique , nécessitant un traitement a vie a base  d’une injection mensuelle en Immunoglobulines en IV ainsi q’une antibiothérapie et antifongique par voie orale( Ci joint le CR médical )\nLa patiente nécessite par ailleurs un suivi régulier clinique et para clinique\nLe certificat est remis aux parents pour faire valoir leur droit\nProfesseure DRALI\nMédecin Cheffe de Service",
+  "target": "Ataxia-telangiectasia",
+  "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0004430",
+        "label": "Immunodeficiency",
+        "umls_cui": "C0085110"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "CHU_FR_027",
+            "description": "NER: Déficit immunitaire Primitif syndromique (0.547) | Match: french_partial (0.850)"
+          }
+        }
+      ]
+    }
+  ],
+  "metaData": {
+    "created": "2026-06-11T03:43:44Z",
+    "createdBy": "clinical-preanalysis-pipeline-v2",
+    "phenopacketSchemaVersion": "2.0",
+    "resources": [
+      {
+        "id": "hp",
+        "name": "Human Phenotype Ontology",
+        "url": "https://hpo.jax.org",
+        "version": "2024-04-26",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      }
+    ]
+  },
+  "interpretations": [
+    {
+      "id": "interpretation-CHU_FR_027",
+      "progressStatus": "IN_PROGRESS",
+      "diagnosis": {
+        "disease": {
+          "id": "ORPHA:100",
+          "label": "Ataxia-telangiectasia"
+        },
+        "score": 0.1111,
+        "allCandidates": [
+          {
+            "id": "ORPHA:100",
+            "label": "Ataxia-telangiectasia",
+            "score": 0.1111
+          },
+          {
+            "id": "ORPHA:231154",
+            "label": "Combined immunodeficiency due to partial RAG1 deficiency",
+            "score": 0.1
+          },
+          {
+            "id": "ORPHA:47",
+            "label": "X-linked agammaglobulinemia",
+            "score": 0.0909
+          },
+          {
+            "id": "ORPHA:572",
+            "label": "MHC class II deficiency",
+            "score": 0.0909
+          },
+          {
+            "id": "ORPHA:183660",
+            "label": "Severe combined immunodeficiency",
+            "score": 0.0625
+          }
+        ]
+      }
+    }
+  ],
+  "_pipelineStats": {
+    "totalEntities": 7,
+    "matchedHPO": 1,
+    "unmatchedEntities": 6,
+    "phenopacketFeatures": 1,
+    "negatedFeatures": 0,
+    "numericPhenotypes": 0,
+    "ordoCandidates": 5
+  }
+}

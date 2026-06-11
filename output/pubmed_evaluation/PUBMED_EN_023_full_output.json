@@ -1,0 +1,741 @@
+{
+  "note_id": "PUBMED_EN_023",
+  "language": "en",
+  "module1": {
+    "clean_text": "Case Report: [Hyper-IgE syndrome in adulthood: a case report and literature review].\n\nObjective: To describe the clinical features of hyper-IgE syndrome (HIES), with emphasis on refractory pulmonary cystic lesions as the initial presentation in adulthood. Methods: A case of HIES presenting with pulmonary cystic lesions in an adult patient was retrospectively analyzed. We used \"hyper-IgE syndrome\" as the Chinese keywords, \"hyper-IgE syndrome, China\" as the English keywords to retrieve the literature from Wanfang database/CNKI database and Pubmed database until [DATE] The clinical data were pooled and analyzed. Results: A [AGE] year old female patient was admitted to our hospital because of recurrent cough and expectoration as the chief complaint. Physical examination revealed broad nasal bridge and scoliosis, and chest CT showed gradually enlarged and increased cystic lesions. Laboratory studies demonstrated significantly increased blood eosinophils and serum level of total IgE, together with a definite chemotactic dysfunction of neutrophils. A further detection of STAT3 mutation was negative. The diagnosis of HIES was made and antibiotic treatment resulted in disease remission. Literature review found 45 reports including 37 in Chinese and 11 in English. Eight cases of adult HIES were reported, and all the patients were male, aging [AGE] to [AGE] years. Prolonged disease course, recurrent infection and formation of cystic lesions in the lungs were important features of HIES. Early diagnosis and treatment with specific antibiotics were important for improving outcome of the patients. Conclusion: Refractory pulmonary cystic lesions can be the initial presentation in adult HIES. Understanding of the clinical characteristics of HIES will be helpful to avoid misdiagnosis and improve prognosis.\n目的： 分析1例成人高IgE综合征(HIES)的临床特征，提高对成人以\"肺部难治性空腔病变\"为首发表现的HIES的认识。 方法： 回顾性分析首都医科大学附属北京同仁医院1例成人HIES的临床资料和诊治过程。以\"高IgE综合征\"为中文关键词，以\"hyper-IgE syndrome，China\"为英文关键词分别检索万方数据库、中国知网数据库和Pubmed数据库的相关文献，检索时间截至2016年4月，对病例资料进行汇总分析。 结果： 患者女性，19岁，以反复咳嗽、咳痰就诊，体格检查示鼻翼增宽，脊柱侧弯。胸部CT显示肺部逐渐扩大和增多的空腔病变，实验室检查提示血嗜酸粒细胞及总IgE水平明显增高，中性粒细胞趋化功能障碍，STAT3基因突变检测阴性。确诊HIES，给予相应抗感染治疗后，患者肺部病变好转出院。文献复习共获得文献45篇，其中中文34篇，英文11篇，共发现8例成人HIES报道，均为男性，年龄18～31岁。病程迁延，肺部反复感染并出现空腔病变是HIES的重要特征，早期识别并积极给予针对性抗感染治疗是改善疾病转归的重要手段。 结论： 成人HIES可以\"肺部难治性空腔病变\"为首发表现，充分认识HIES的临床特征有助于减少漏诊，改善预后。.",
+    "phi_map": {
+      "DATE": "April2016.",
+      "AGE": [
+        "19",
+        "18",
+        "31"
+      ]
+    },
+    "patient_info": {
+      "sex": "female",
+      "age": "19"
+    }
+  },
+  "module3_warnings": {
+    "temporal": [],
+    "inconsistencies": []
+  },
+  "module4": {
+    "problem": [
+      {
+        "text": "syndrome",
+        "ner_score": 0.929,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "syndrome",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "cystic lesions",
+        "ner_score": 0.718,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0010576",
+        "hpo_name": "Intracranial cystic lesion",
+        "expanded_text": "cystic lesions",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.7525,
+        "matched": true,
+        "umls_cui": "C4021250"
+      },
+      {
+        "text": "cough",
+        "ner_score": 0.95,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0012735",
+        "hpo_name": "Cough",
+        "expanded_text": "cough",
+        "match_type": "exact_label",
+        "confidence": 1.0,
+        "matched": true,
+        "umls_cui": "C0010200"
+      },
+      {
+        "text": "expectoration",
+        "ner_score": 0.947,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0002835",
+        "hpo_name": "Aspiration",
+        "expanded_text": "expectoration",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.7225,
+        "matched": true,
+        "umls_cui": "C0700198"
+      },
+      {
+        "text": "broad",
+        "ner_score": 0.471,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "broad",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "scoliosis",
+        "ner_score": 0.892,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0002650",
+        "hpo_name": "Scoliosis",
+        "expanded_text": "scoliosis",
+        "match_type": "exact_label",
+        "confidence": 1.0,
+        "matched": true,
+        "umls_cui": "C0037932"
+      },
+      {
+        "text": "chemotactic dysfunction",
+        "ner_score": 0.626,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0011115",
+        "hpo_name": "Abnormal circulating chemokine concentration",
+        "expanded_text": "chemotactic dysfunction",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.7592,
+        "matched": true,
+        "umls_cui": "C4023532"
+      },
+      {
+        "text": "disease",
+        "ner_score": 0.711,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "disease",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "infection",
+        "ner_score": 0.531,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0002719",
+        "hpo_name": "Recurrent infections",
+        "expanded_text": "infection",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.7406,
+        "matched": true,
+        "umls_cui": "C0239998"
+      },
+      {
+        "text": "broad nasal bridge",
+        "ner_score": 0.9,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0000431",
+        "hpo_name": "Wide nasal bridge",
+        "expanded_text": "broad nasal bridge",
+        "match_type": "text_scan_exact_synonym",
+        "confidence": 0.95,
+        "matched": true,
+        "umls_cui": "C1839764",
+        "umls_all": [
+          "C1839764",
+          "C1849367"
+        ]
+      }
+    ],
+    "test": [
+      {
+        "text": "pulmonary",
+        "ner_score": 0.815,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "pulmonary",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "Physical",
+        "ner_score": 0.993,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "Physical",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "examination",
+        "ner_score": 0.992,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "examination",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "nasal",
+        "ner_score": 0.924,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0012384",
+        "hpo_name": "Rhinitis",
+        "expanded_text": "nasal",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.7298,
+        "matched": true,
+        "umls_cui": "C0035455"
+      },
+      {
+        "text": "bridge",
+        "ner_score": 0.834,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "bridge",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "Laboratory",
+        "ner_score": 0.991,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "Laboratory",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "studies",
+        "ner_score": 0.986,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "studies",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "significantly increased",
+        "ner_score": 0.695,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "significantly increased",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "blood eosinophil",
+        "ner_score": 0.944,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0001880",
+        "hpo_name": "Increased total eosinophil count",
+        "expanded_text": "blood eosinophil",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.7991,
+        "matched": true,
+        "umls_cui": "C0014457"
+      },
+      {
+        "text": "total",
+        "ner_score": 0.976,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "total",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "neutrophils",
+        "ner_score": 0.405,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0011897",
+        "hpo_name": "Increased total neutrophil count",
+        "expanded_text": "neutrophils",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.7881,
+        "matched": true,
+        "umls_cui": "C4023140"
+      },
+      {
+        "text": "mutation",
+        "ner_score": 0.592,
+        "negated": true,
+        "negation_cue": "was negative",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "mutation",
+        "match_type": "skipped_non_phenotype",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "negative",
+        "ner_score": 0.823,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "negative",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      }
+    ],
+    "treatment": [
+      {
+        "text": "antibiotic",
+        "ner_score": 0.876,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "antibiotic",
+        "match_type": "skipped_non_phenotype",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "treatment",
+        "ner_score": 0.499,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "treatment",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "antibiotics",
+        "ner_score": 0.758,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "antibiotics",
+        "match_type": "skipped_non_phenotype",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "感染治疗",
+        "ner_score": 0.652,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "感染治疗",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      }
+    ],
+    "ordo_candidates": [
+      {
+        "ordo_id": "ORPHA:2314",
+        "name": "Hyper-IgE syndrome",
+        "name_fr": "Syndrome d'Hyper-IgE (syndrome de Job)",
+        "score": 0.85,
+        "jaccard": 0.0588,
+        "coverage": 0.125,
+        "matched_hpo": [
+          "HP:0002719"
+        ],
+        "matched_count": 1,
+        "total_disease_hpo": 8
+      },
+      {
+        "ordo_id": "ORPHA:3180",
+        "name": "Spondylocamptodactyly syndrome",
+        "name_fr": "",
+        "score": 0.2333,
+        "jaccard": 0.0833,
+        "coverage": 0.3333,
+        "matched_hpo": [
+          "HP:0002650"
+        ],
+        "matched_count": 1,
+        "total_disease_hpo": 3
+      },
+      {
+        "ordo_id": "ORPHA:1671",
+        "name": "Split cord malformation type I",
+        "name_fr": "",
+        "score": 0.2333,
+        "jaccard": 0.0833,
+        "coverage": 0.3333,
+        "matched_hpo": [
+          "HP:0002650"
+        ],
+        "matched_count": 1,
+        "total_disease_hpo": 3
+      },
+      {
+        "ordo_id": "ORPHA:2956",
+        "name": "Acrodysplasia scoliosis",
+        "name_fr": "",
+        "score": 0.1808,
+        "jaccard": 0.0769,
+        "coverage": 0.25,
+        "matched_hpo": [
+          "HP:0002650"
+        ],
+        "matched_count": 1,
+        "total_disease_hpo": 4
+      },
+      {
+        "ordo_id": "ORPHA:85164",
+        "name": "Camptodactyly-tall stature-scoliosis-hearing loss syndrome",
+        "name_fr": "",
+        "score": 0.1808,
+        "jaccard": 0.0769,
+        "coverage": 0.25,
+        "matched_hpo": [
+          "HP:0002650"
+        ],
+        "matched_count": 1,
+        "total_disease_hpo": 4
+      }
+    ],
+    "stats": {
+      "total": 27,
+      "matched": 10,
+      "unmatched": 17,
+      "match_rate": 37.0,
+      "unique_hpo": 10,
+      "ordo_matches": 5
+    }
+  },
+  "phenopacket": {
+    "id": "phenopacket-PUBMED_EN_023",
+    "subject": {
+      "id": "PUBMED_EN_023",
+      "sex": "FEMALE",
+      "timeAtLastEncounter": {
+        "age": {
+          "iso8601duration": "P19Y"
+        }
+      }
+    },
+    "input": "Case Report: [Hyper-IgE syndrome in adulthood: a case report and literature review].\n\nObjective: To describe the clinical features of hyper-IgE syndrome (HIES), with emphasis on refractory pulmonary cystic lesions as the initial presentation in adulthood. Methods: A case of HIES presenting with pulmonary cystic lesions in an adult patient was retrospectively analyzed. We used \"hyper-IgE syndrome\" as the Chinese keywords, \"hyper-IgE syndrome, China\" as the English keywords to retrieve the literature from Wanfang database/CNKI database and Pubmed database until April 2016. The clinical data were pooled and analyzed. Results: A 19 year old female patient was admitted to our hospital because of recurrent cough and expectoration as the chief complaint. Physical examination revealed broad nasal bridge and scoliosis, and chest CT showed gradually enlarged and increased cystic lesions. Laboratory studies demonstrated significantly increased blood eosinophils and serum level of total IgE, together with a definite chemotactic dysfunction of neutrophils. A further detection of STAT3 mutation was negative. The diagnosis of HIES was made and antibiotic treatment resulted in disease remission. Literature review found 45 reports including 37 in Chinese and 11 in English. Eight cases of adult HIES were reported, and all the patients were male, aging 18 to 31 years. Prolonged disease course, recurrent infection and formation of cystic lesions in the lungs were important features of HIES. Early diagnosis and treatment with specific antibiotics were important for improving outcome of the patients. Conclusion: Refractory pulmonary cystic lesions can be the initial presentation in adult HIES. Understanding of the clinical characteristics of HIES will be helpful to avoid misdiagnosis and improve prognosis.\n目的： 分析1例成人高IgE综合征(HIES)的临床特征，提高对成人以\"肺部难治性空腔病变\"为首发表现的HIES的认识。 方法： 回顾性分析首都医科大学附属北京同仁医院1例成人HIES的临床资料和诊治过程。以\"高IgE综合征\"为中文关键词，以\"hyper-IgE syndrome，China\"为英文关键词分别检索万方数据库、中国知网数据库和Pubmed数据库的相关文献，检索时间截至2016年4月，对病例资料进行汇总分析。 结果： 患者女性，19岁，以反复咳嗽、咳痰就诊，体格检查示鼻翼增宽，脊柱侧弯。胸部CT显示肺部逐渐扩大和增多的空腔病变，实验室检查提示血嗜酸粒细胞及总IgE水平明显增高，中性粒细胞趋化功能障碍，STAT3基因突变检测阴性。确诊HIES，给予相应抗感染治疗后，患者肺部病变好转出院。文献复习共获得文献45篇，其中中文34篇，英文11篇，共发现8例成人HIES报道，均为男性，年龄18～31岁。病程迁延，肺部反复感染并出现空腔病变是HIES的重要特征，早期识别并积极给予针对性抗感染治疗是改善疾病转归的重要手段。 结论： 成人HIES可以\"肺部难治性空腔病变\"为首发表现，充分认识HIES的临床特征有助于减少漏诊，改善预后。.",
+    "target": "Hyper-IgE syndrome",
+    "phenotypicFeatures": [
+      {
+        "type": {
+          "id": "HP:0010576",
+          "label": "Intracranial cystic lesion",
+          "umls_cui": "C4021250"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "PUBMED_EN_023",
+              "description": "NER: cystic lesions (0.718) | Match: sapbert_similarity (0.752)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0012735",
+          "label": "Cough",
+          "umls_cui": "C0010200"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "PUBMED_EN_023",
+              "description": "NER: cough (0.950) | Match: exact_label (1.000)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0002835",
+          "label": "Aspiration",
+          "umls_cui": "C0700198"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "PUBMED_EN_023",
+              "description": "NER: expectoration (0.947) | Match: sapbert_similarity (0.723)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0002650",
+          "label": "Scoliosis",
+          "umls_cui": "C0037932"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "PUBMED_EN_023",
+              "description": "NER: scoliosis (0.892) | Match: exact_label (1.000)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0011115",
+          "label": "Abnormal circulating chemokine concentration",
+          "umls_cui": "C4023532"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "PUBMED_EN_023",
+              "description": "NER: chemotactic dysfunction (0.626) | Match: sapbert_similarity (0.759)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0002719",
+          "label": "Recurrent infections",
+          "umls_cui": "C0239998"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "PUBMED_EN_023",
+              "description": "NER: infection (0.531) | Match: sapbert_similarity (0.741)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0000431",
+          "label": "Wide nasal bridge",
+          "umls_cui": "C1839764"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "PUBMED_EN_023",
+              "description": "NER: broad nasal bridge (0.900) | Match: text_scan_exact_synonym (0.950)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0012384",
+          "label": "Rhinitis",
+          "umls_cui": "C0035455"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "PUBMED_EN_023",
+              "description": "NER: nasal (0.924) | Match: sapbert_similarity (0.730)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0001880",
+          "label": "Increased total eosinophil count",
+          "umls_cui": "C0014457"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "PUBMED_EN_023",
+              "description": "NER: blood eosinophil (0.944) | Match: sapbert_similarity (0.799)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0011897",
+          "label": "Increased total neutrophil count",
+          "umls_cui": "C4023140"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "PUBMED_EN_023",
+              "description": "NER: neutrophils (0.405) | Match: sapbert_similarity (0.788)"
+            }
+          }
+        ]
+      }
+    ],
+    "metaData": {
+      "created": "2026-06-11T03:07:00Z",
+      "createdBy": "clinical-preanalysis-pipeline-v2",
+      "phenopacketSchemaVersion": "2.0",
+      "resources": [
+        {
+          "id": "hp",
+          "name": "Human Phenotype Ontology",
+          "url": "https://hpo.jax.org",
+          "version": "2024-04-26",
+          "namespacePrefix": "HP",
+          "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        }
+      ]
+    },
+    "interpretations": [
+      {
+        "id": "interpretation-PUBMED_EN_023",
+        "progressStatus": "IN_PROGRESS",
+        "diagnosis": {
+          "disease": {
+            "id": "ORPHA:2314",
+            "label": "Hyper-IgE syndrome"
+          },
+          "score": 0.85,
+          "allCandidates": [
+            {
+              "id": "ORPHA:2314",
+              "label": "Hyper-IgE syndrome",
+              "score": 0.85
+            },
+            {
+              "id": "ORPHA:3180",
+              "label": "Spondylocamptodactyly syndrome",
+              "score": 0.2333
+            },
+            {
+              "id": "ORPHA:1671",
+              "label": "Split cord malformation type I",
+              "score": 0.2333
+            },
+            {
+              "id": "ORPHA:2956",
+              "label": "Acrodysplasia scoliosis",
+              "score": 0.1808
+            },
+            {
+              "id": "ORPHA:85164",
+              "label": "Camptodactyly-tall stature-scoliosis-hearing loss syndrome",
+              "score": 0.1808
+            }
+          ]
+        }
+      }
+    ],
+    "_pipelineStats": {
+      "totalEntities": 27,
+      "matchedHPO": 10,
+      "unmatchedEntities": 17,
+      "phenopacketFeatures": 10,
+      "negatedFeatures": 0,
+      "numericPhenotypes": 0,
+      "ordoCandidates": 5
+    }
+  }
+}

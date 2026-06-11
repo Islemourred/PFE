@@ -1,0 +1,394 @@
+{
+  "id": "phenopacket-GSC_EN_020",
+  "subject": {
+    "id": "GSC_EN_020"
+  },
+  "input": "Case Report: A TRPV4 mutation caused Charcot-Marie-Tooth disease type 2C with scapuloperoneal muscular atrophy overlap syndrome and scapuloperoneal spinal muscular atrophy in one family: a case report and literature review.\n\nBACKGROUND: Charcot-Marie-Tooth disease 2C (CMT2C) and scapuloperoneal spinal muscular atrophy (SPSMA) are different clinical phenotypes of TRPV4 mutation. The mutation of p.R316C has been reported to cause CMT2C and SPSMA separately.\nCASE PRESENTATION: Here, we reported a Chinese family harboring the same p.R316C variant, but with an overlap syndrome and different clinical manifestations. A 58-year-old man presented with severe scapula muscle atrophy, resulting in sloping shoulders. He also exhibited distinct muscle atrophy in his four limbs, particularly in the lower limbs. The sural nerve biopsy revealed severe loss of myelinated nerve fibers with scattered regenerating clusters and pseudo-onion bulbs. Nerve conduction study showed axon damage in both motor and sensory nerves. Sensory nerve action potentials could not be evoked in bilateral sural or superficial peroneal nerves. He was diagnosed with Charcot-Marie-Tooth disease type 2C and scapuloperoneal muscular atrophy overlap syndrome, whereas his 27-year-old son was born with clubfoot and clinodactyly. Electromyogram examination indicated chronic neurogenic changes and anterior horn cells involvement. Although there was no obvious weakness or sensory symptoms, early SPSMA could be considered for him.\nCONCLUSIONS: A literature review of the clinical characteristics in CMT2C and SPSMA patients with TRPV4 mutation suggested that our case was distinct due to the overlap syndrome and phenotype variation. Altogether, this case broadened the phenotype spectrum and provided the nerve biopsy pathological details of TRPV4-related neuropathies.",
+  "target": "Spinal muscular atrophy",
+  "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0003725",
+        "label": "Firm muscles",
+        "umls_cui": "C1850656"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "GSC_EN_020",
+            "description": "NER: muscular (0.867) | Match: sapbert_similarity (0.740)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0003202",
+        "label": "Skeletal muscle atrophy",
+        "umls_cui": "C0234958"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "GSC_EN_020",
+            "description": "NER: atrophy (0.912) | Match: sapbert_similarity (0.755)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0200021",
+        "label": "Down-sloping shoulders",
+        "umls_cui": "C1856872"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "GSC_EN_020",
+            "description": "NER: sloping shoulders (0.821) | Match: exact_synonym (1.000)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0003380",
+        "label": "Decreased number of peripheral myelinated nerve fibers",
+        "umls_cui": "C1858285"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "GSC_EN_020",
+            "description": "NER: myelinated (0.665) | Match: sapbert_similarity (0.758)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0007233",
+        "label": "Clusters of axonal regeneration",
+        "umls_cui": "C1843169"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "GSC_EN_020",
+            "description": "NER: regenerating clusters (0.567) | Match: sapbert_similarity (0.722)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0000667",
+        "label": "Phthisis bulbi",
+        "umls_cui": "C0271007"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "GSC_EN_020",
+            "description": "NER: pseudo-onion bulbs (0.725) | Match: sapbert_similarity (0.744)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0003447",
+        "label": "Axonal loss",
+        "umls_cui": "C1832338"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "GSC_EN_020",
+            "description": "NER: axon damage (0.624) | Match: sapbert_similarity (0.830)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0002180",
+        "label": "Neurodegeneration",
+        "umls_cui": "C0027746"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "GSC_EN_020",
+            "description": "NER: neurogenic changes (0.770) | Match: sapbert_similarity (0.733)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0001324",
+        "label": "Muscle weakness",
+        "umls_cui": "C0151786"
+      },
+      "excluded": true,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "GSC_EN_020",
+            "description": "NER: weakness (0.956) | Match: sapbert_similarity (0.891) | Negated by: \"no obvious\""
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0003474",
+        "label": "Somatic sensory dysfunction",
+        "umls_cui": "C0020580"
+      },
+      "excluded": true,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "GSC_EN_020",
+            "description": "NER: sensory symptoms (0.928) | Match: sapbert_similarity (0.777) | Negated by: \"no obvious\""
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0007269",
+        "label": "Spinal muscular atrophy",
+        "umls_cui": "C0026847"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "GSC_EN_020",
+            "description": "NER: spinal muscular atrophy (0.900) | Match: text_scan_exact_label (0.950)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0012832",
+        "label": "Bilateral",
+        "umls_cui": "C0238767"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "GSC_EN_020",
+            "description": "NER: bilateral (0.900) | Match: text_scan_exact_label (0.950)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0001762",
+        "label": "Talipes equinovarus",
+        "umls_cui": "C0009081"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "GSC_EN_020",
+            "description": "NER: clubfoot (0.900) | Match: text_scan_exact_synonym (0.950)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0003691",
+        "label": "Scapular winging",
+        "umls_cui": "C0240953"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "GSC_EN_020",
+            "description": "NER: scapula (0.977) | Match: sapbert_similarity (0.807)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0100305",
+        "label": "Ring fibers",
+        "umls_cui": "C0333770"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "GSC_EN_020",
+            "description": "NER: fibers (0.706) | Match: sapbert_similarity (0.740)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0100034",
+        "label": "Motor tics",
+        "umls_cui": "C0751900"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "GSC_EN_020",
+            "description": "NER: motor (0.949) | Match: sapbert_similarity (0.713)"
+          }
+        }
+      ]
+    }
+  ],
+  "metaData": {
+    "created": "2026-06-11T03:09:06Z",
+    "createdBy": "clinical-preanalysis-pipeline-v2",
+    "phenopacketSchemaVersion": "2.0",
+    "resources": [
+      {
+        "id": "hp",
+        "name": "Human Phenotype Ontology",
+        "url": "https://hpo.jax.org",
+        "version": "2024-04-26",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      }
+    ]
+  },
+  "interpretations": [
+    {
+      "id": "interpretation-GSC_EN_020",
+      "progressStatus": "IN_PROGRESS",
+      "diagnosis": {
+        "disease": {
+          "id": "ORPHA:70",
+          "label": "Spinal muscular atrophy"
+        },
+        "score": 0.85,
+        "allCandidates": [
+          {
+            "id": "ORPHA:70",
+            "label": "Spinal muscular atrophy",
+            "score": 0.85
+          },
+          {
+            "id": "ORPHA:371",
+            "label": "Glycogen storage disease due to muscle phosphofructokinase deficiency",
+            "score": 0.24
+          },
+          {
+            "id": "ORPHA:85162",
+            "label": "Facial onset sensory and motor neuronopathy",
+            "score": 0.2095
+          },
+          {
+            "id": "ORPHA:357043",
+            "label": "Amyotrophic lateral sclerosis type 4",
+            "score": 0.1864
+          },
+          {
+            "id": "ORPHA:101082",
+            "label": "Charcot-Marie-Tooth disease type 1B",
+            "score": 0.173
+          }
+        ]
+      }
+    }
+  ],
+  "_pipelineStats": {
+    "totalEntities": 41,
+    "matchedHPO": 18,
+    "unmatchedEntities": 23,
+    "phenopacketFeatures": 16,
+    "negatedFeatures": 2,
+    "numericPhenotypes": 0,
+    "ordoCandidates": 5
+  }
+}

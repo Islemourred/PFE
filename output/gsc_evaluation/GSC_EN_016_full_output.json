@@ -1,0 +1,995 @@
+{
+  "note_id": "GSC_EN_016",
+  "language": "en",
+  "module1": {
+    "clean_text": "Case Report: Novel Presentation of Major Histocompatibility Complex Class II Deficiency with Hemophagocytic Lymphohistiocytosis.\n\nPURPOSE: Major histocompatibility complex (MHC) class II deficiency is one of the combined immune deficiency disorders caused by defects in the MHC class II regulatory genes leading to abnormal T cells development and function. Therefore, patients mainly present with increased susceptibility to infections, diarrhea, and failure to thrive. In this report, we present one MHC class II deficient patient with a novel presentation with Hemophagocytic Lymphohistiocytosis (HLH).\nMETHODS: Immunophenotyping of lymphocyte subpopulations and HLA-DR expression was assess by flow cytometry. Gene mutational analysis was performed by whole exome and Sanger sequencing.\nRESULTS: We reported a [AGE] girl, who was diagnosed at age of [AGE] with MHC class II deficiency by genetic testing and flow cytometry. Two years later, she developed disseminated BCGitis which was treated with proper antimicrobial agents. At the age of [AGE] years, she presented with clinical features fulfilling 6 diagnostic criteria of HLH including evidence of hemophagocytic activity in bone marrow aspiration. Accordingly, the diagnosis of HLH was established and the patient was started on IV Dexamethasone, Anakinra and IVIG. Eventually, patient started to improve and was discharged in good condition. Few months later, the patient was readmitted with severe pneumonia and sepsis leading to death.\nCONCLUSION: Patients with MHC class II deficiency might present with disseminated BCGitis especially if the patient has severe T cell lymphopenia. Additionally, this immune defect might be added to the list of inborn errors of immunity that can be complicated with HLH.",
+    "phi_map": {
+      "AGE": [
+        "7-year-old",
+        "2",
+        "years",
+        "7"
+      ]
+    },
+    "patient_info": {}
+  },
+  "module3_warnings": {
+    "temporal": [],
+    "inconsistencies": []
+  },
+  "module4": {
+    "problem": [
+      {
+        "text": "Major",
+        "ner_score": 0.461,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "Major",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "compatibility",
+        "ner_score": 0.836,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "compatibility",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "Complex",
+        "ner_score": 0.836,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "Complex",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "Deficiency",
+        "ner_score": 0.849,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "Deficiency",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "ocytic",
+        "ner_score": 0.944,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "ocytic",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "istiocytosis",
+        "ner_score": 0.947,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0001981",
+        "hpo_name": "Schistocytosis",
+        "expanded_text": "istiocytosis",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.7202,
+        "matched": true,
+        "umls_cui": "C0344386"
+      },
+      {
+        "text": "class II regulatory genes",
+        "ner_score": 0.528,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "class II regulatory genes",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "infections",
+        "ner_score": 0.414,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0002719",
+        "hpo_name": "Recurrent infections",
+        "expanded_text": "infections",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.7773,
+        "matched": true,
+        "umls_cui": "C0239998"
+      },
+      {
+        "text": "diarrhea",
+        "ner_score": 0.703,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0002014",
+        "hpo_name": "Diarrhea",
+        "expanded_text": "diarrhea",
+        "match_type": "clinical_synonym",
+        "confidence": 1.0,
+        "matched": true,
+        "umls_cui": "C0011991"
+      },
+      {
+        "text": "failure to thrive",
+        "ner_score": 0.737,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0001508",
+        "hpo_name": "Failure to thrive",
+        "expanded_text": "failure to thrive",
+        "match_type": "clinical_synonym",
+        "confidence": 1.0,
+        "matched": true,
+        "umls_cui": "C0231246"
+      },
+      {
+        "text": "deficient",
+        "ner_score": 0.465,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "deficient",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "itis",
+        "ner_score": 0.955,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "itis",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "diagnostic criteria",
+        "ner_score": 0.348,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "diagnostic criteria",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "hemophagocytic activity",
+        "ner_score": 0.899,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0012156",
+        "hpo_name": "Hemophagocytosis",
+        "expanded_text": "hemophagocytic activity",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.8649,
+        "matched": true,
+        "umls_cui": "C0876991"
+      },
+      {
+        "text": "aspiration",
+        "ner_score": 0.558,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0002835",
+        "hpo_name": "Aspiration",
+        "expanded_text": "aspiration",
+        "match_type": "exact_label",
+        "confidence": 1.0,
+        "matched": true,
+        "umls_cui": "C0700198"
+      },
+      {
+        "text": "to improve",
+        "ner_score": 0.456,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "to improve",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "pneumonia",
+        "ner_score": 0.666,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0002090",
+        "hpo_name": "Pneumonia",
+        "expanded_text": "pneumonia",
+        "match_type": "exact_label",
+        "confidence": 1.0,
+        "matched": true,
+        "umls_cui": "C0032285"
+      },
+      {
+        "text": "sepsis",
+        "ner_score": 0.736,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0100806",
+        "hpo_name": "Sepsis",
+        "expanded_text": "sepsis",
+        "match_type": "clinical_synonym",
+        "confidence": 1.0,
+        "matched": true,
+        "umls_cui": "C0036690"
+      },
+      {
+        "text": "death",
+        "ner_score": 0.235,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0001699",
+        "hpo_name": "Sudden death",
+        "expanded_text": "death",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.7455,
+        "matched": true,
+        "umls_cui": "C0011071"
+      },
+      {
+        "text": "open",
+        "ner_score": 0.428,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "open",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "T cell lymphopenia",
+        "ner_score": 0.9,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0005403",
+        "hpo_name": "Decreased total T cell count",
+        "expanded_text": "T cell lymphopenia",
+        "match_type": "text_scan_exact_synonym",
+        "confidence": 0.95,
+        "matched": true,
+        "umls_cui": "C2931322",
+        "umls_all": [
+          "C2931322"
+        ]
+      },
+      {
+        "text": "immune deficiency",
+        "ner_score": 0.9,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0002721",
+        "hpo_name": "Immunodeficiency",
+        "expanded_text": "immune deficiency",
+        "match_type": "text_scan_clinical_synonym",
+        "confidence": 0.95,
+        "matched": true,
+        "umls_cui": "C0021051",
+        "umls_all": [
+          "C0021051"
+        ]
+      },
+      {
+        "text": "abnormal T cells",
+        "ner_score": 0.9,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0002843",
+        "hpo_name": "Abnormal T cell morphology",
+        "expanded_text": "abnormal T cells",
+        "match_type": "text_scan_exact_synonym",
+        "confidence": 0.95,
+        "matched": true,
+        "umls_cui": "C1855752",
+        "umls_all": [
+          "C1855752"
+        ]
+      }
+    ],
+    "test": [
+      {
+        "text": "Gene",
+        "ner_score": 0.92,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "Gene",
+        "match_type": "skipped_non_phenotype",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "Immuno",
+        "ner_score": 0.966,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "Immuno",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "otyping",
+        "ner_score": 0.988,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "otyping",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "lymphocyte",
+        "ner_score": 0.866,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "lymphocyte",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "subpopulation",
+        "ner_score": 0.985,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "subpopulation",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "cytometry",
+        "ner_score": 0.975,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "cytometry",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "mutation",
+        "ner_score": 0.978,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "mutation",
+        "match_type": "skipped_non_phenotype",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "analysis",
+        "ner_score": 0.985,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "analysis",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "Sanger",
+        "ner_score": 0.622,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "Sanger",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "sequencing",
+        "ner_score": 0.899,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "sequencing",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "genetic",
+        "ner_score": 0.985,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "genetic",
+        "match_type": "skipped_non_phenotype",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "testing",
+        "ner_score": 0.951,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "testing",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "bone",
+        "ner_score": 0.786,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "bone",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "marrow",
+        "ner_score": 0.718,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "marrow",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "good",
+        "ner_score": 0.612,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "good",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "condition",
+        "ner_score": 0.247,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "condition",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      }
+    ],
+    "treatment": [
+      {
+        "text": "antimicrobial",
+        "ner_score": 0.949,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "antimicrobial",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "agents",
+        "ner_score": 0.908,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "agents",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "exam",
+        "ner_score": 0.98,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "exam",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "Anakin",
+        "ner_score": 0.968,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "Anakin",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      }
+    ],
+    "ordo_candidates": [
+      {
+        "ordo_id": "ORPHA:572",
+        "name": "MHC class II deficiency",
+        "name_fr": "Déficit en molécules HLA de classe II",
+        "score": 0.85,
+        "jaccard": 0.15,
+        "coverage": 0.2727,
+        "matched_hpo": [
+          "HP:0001508",
+          "HP:0002090",
+          "HP:0002719"
+        ],
+        "matched_count": 3,
+        "total_disease_hpo": 11
+      },
+      {
+        "ordo_id": "ORPHA:314",
+        "name": "Erythroderma desquamativum",
+        "name_fr": "",
+        "score": 0.3571,
+        "jaccard": 0.1429,
+        "coverage": 0.5,
+        "matched_hpo": [
+          "HP:0001508",
+          "HP:0002014"
+        ],
+        "matched_count": 2,
+        "total_disease_hpo": 4
+      },
+      {
+        "ordo_id": "ORPHA:169095",
+        "name": "Severe combined immunodeficiency due to FOXN1 deficiency",
+        "name_fr": "",
+        "score": 0.2933,
+        "jaccard": 0.1333,
+        "coverage": 0.4,
+        "matched_hpo": [
+          "HP:0002721",
+          "HP:0005403"
+        ],
+        "matched_count": 2,
+        "total_disease_hpo": 5
+      },
+      {
+        "ordo_id": "ORPHA:183660",
+        "name": "Severe combined immunodeficiency",
+        "name_fr": "Déficit immunitaire combiné sévère (DICS)",
+        "score": 0.2745,
+        "jaccard": 0.2174,
+        "coverage": 0.3125,
+        "matched_hpo": [
+          "HP:0001508",
+          "HP:0002014",
+          "HP:0002090",
+          "HP:0002719",
+          "HP:0005403"
+        ],
+        "matched_count": 5,
+        "total_disease_hpo": 16
+      },
+      {
+        "ordo_id": "ORPHA:231154",
+        "name": "Combined immunodeficiency due to partial RAG1 deficiency",
+        "name_fr": "",
+        "score": 0.2432,
+        "jaccard": 0.1579,
+        "coverage": 0.3,
+        "matched_hpo": [
+          "HP:0002721",
+          "HP:0005403",
+          "HP:0100806"
+        ],
+        "matched_count": 3,
+        "total_disease_hpo": 10
+      }
+    ],
+    "stats": {
+      "total": 43,
+      "matched": 12,
+      "unmatched": 31,
+      "match_rate": 27.9,
+      "unique_hpo": 12,
+      "ordo_matches": 5
+    }
+  },
+  "phenopacket": {
+    "id": "phenopacket-GSC_EN_016",
+    "subject": {
+      "id": "GSC_EN_016"
+    },
+    "input": "Case Report: Novel Presentation of Major Histocompatibility Complex Class II Deficiency with Hemophagocytic Lymphohistiocytosis.\n\nPURPOSE: Major histocompatibility complex (MHC) class II deficiency is one of the combined immune deficiency disorders caused by defects in the MHC class II regulatory genes leading to abnormal T cells development and function. Therefore, patients mainly present with increased susceptibility to infections, diarrhea, and failure to thrive. In this report, we present one MHC class II deficient patient with a novel presentation with Hemophagocytic Lymphohistiocytosis (HLH).\nMETHODS: Immunophenotyping of lymphocyte subpopulations and HLA-DR expression was assess by flow cytometry. Gene mutational analysis was performed by whole exome and Sanger sequencing.\nRESULTS: We reported a 7-year-old girl, who was diagnosed at age of 2 years with MHC class II deficiency by genetic testing and flow cytometry. Two years later, she developed disseminated BCGitis which was treated with proper antimicrobial agents. At the age of 7 years, she presented with clinical features fulfilling 6 diagnostic criteria of HLH including evidence of hemophagocytic activity in bone marrow aspiration. Accordingly, the diagnosis of HLH was established and the patient was started on IV Dexamethasone, Anakinra and IVIG. Eventually, patient started to improve and was discharged in good condition. Few months later, the patient was readmitted with severe pneumonia and sepsis leading to death.\nCONCLUSION: Patients with MHC class II deficiency might present with disseminated BCGitis especially if the patient has severe T cell lymphopenia. Additionally, this immune defect might be added to the list of inborn errors of immunity that can be complicated with HLH.",
+    "target": "MHC class II deficiency",
+    "phenotypicFeatures": [
+      {
+        "type": {
+          "id": "HP:0001981",
+          "label": "Schistocytosis",
+          "umls_cui": "C0344386"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "GSC_EN_016",
+              "description": "NER: istiocytosis (0.947) | Match: sapbert_similarity (0.720)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0002719",
+          "label": "Recurrent infections",
+          "umls_cui": "C0239998"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "GSC_EN_016",
+              "description": "NER: infections (0.414) | Match: sapbert_similarity (0.777)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0002014",
+          "label": "Diarrhea",
+          "umls_cui": "C0011991"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "GSC_EN_016",
+              "description": "NER: diarrhea (0.703) | Match: clinical_synonym (1.000)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0001508",
+          "label": "Failure to thrive",
+          "umls_cui": "C0231246"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "GSC_EN_016",
+              "description": "NER: failure to thrive (0.737) | Match: clinical_synonym (1.000)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0012156",
+          "label": "Hemophagocytosis",
+          "umls_cui": "C0876991"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "GSC_EN_016",
+              "description": "NER: hemophagocytic activity (0.899) | Match: sapbert_similarity (0.865)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0002835",
+          "label": "Aspiration",
+          "umls_cui": "C0700198"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "GSC_EN_016",
+              "description": "NER: aspiration (0.558) | Match: exact_label (1.000)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0002090",
+          "label": "Pneumonia",
+          "umls_cui": "C0032285"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "GSC_EN_016",
+              "description": "NER: pneumonia (0.666) | Match: exact_label (1.000)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0100806",
+          "label": "Sepsis",
+          "umls_cui": "C0036690"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "GSC_EN_016",
+              "description": "NER: sepsis (0.736) | Match: clinical_synonym (1.000)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0001699",
+          "label": "Sudden death",
+          "umls_cui": "C0011071"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "GSC_EN_016",
+              "description": "NER: death (0.235) | Match: sapbert_similarity (0.746)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0005403",
+          "label": "Decreased total T cell count",
+          "umls_cui": "C2931322"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "GSC_EN_016",
+              "description": "NER: T cell lymphopenia (0.900) | Match: text_scan_exact_synonym (0.950)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0002721",
+          "label": "Immunodeficiency",
+          "umls_cui": "C0021051"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "GSC_EN_016",
+              "description": "NER: immune deficiency (0.900) | Match: text_scan_clinical_synonym (0.950)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0002843",
+          "label": "Abnormal T cell morphology",
+          "umls_cui": "C1855752"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "GSC_EN_016",
+              "description": "NER: abnormal T cells (0.900) | Match: text_scan_exact_synonym (0.950)"
+            }
+          }
+        ]
+      }
+    ],
+    "metaData": {
+      "created": "2026-06-11T03:08:46Z",
+      "createdBy": "clinical-preanalysis-pipeline-v2",
+      "phenopacketSchemaVersion": "2.0",
+      "resources": [
+        {
+          "id": "hp",
+          "name": "Human Phenotype Ontology",
+          "url": "https://hpo.jax.org",
+          "version": "2024-04-26",
+          "namespacePrefix": "HP",
+          "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        }
+      ]
+    },
+    "interpretations": [
+      {
+        "id": "interpretation-GSC_EN_016",
+        "progressStatus": "IN_PROGRESS",
+        "diagnosis": {
+          "disease": {
+            "id": "ORPHA:572",
+            "label": "MHC class II deficiency"
+          },
+          "score": 0.85,
+          "allCandidates": [
+            {
+              "id": "ORPHA:572",
+              "label": "MHC class II deficiency",
+              "score": 0.85
+            },
+            {
+              "id": "ORPHA:314",
+              "label": "Erythroderma desquamativum",
+              "score": 0.3571
+            },
+            {
+              "id": "ORPHA:169095",
+              "label": "Severe combined immunodeficiency due to FOXN1 deficiency",
+              "score": 0.2933
+            },
+            {
+              "id": "ORPHA:183660",
+              "label": "Severe combined immunodeficiency",
+              "score": 0.2745
+            },
+            {
+              "id": "ORPHA:231154",
+              "label": "Combined immunodeficiency due to partial RAG1 deficiency",
+              "score": 0.2432
+            }
+          ]
+        }
+      }
+    ],
+    "_pipelineStats": {
+      "totalEntities": 43,
+      "matchedHPO": 12,
+      "unmatchedEntities": 31,
+      "phenopacketFeatures": 12,
+      "negatedFeatures": 0,
+      "numericPhenotypes": 0,
+      "ordoCandidates": 5
+    }
+  }
+}

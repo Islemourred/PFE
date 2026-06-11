@@ -1,0 +1,658 @@
+{
+  "note_id": "GSC_EN_008",
+  "language": "en",
+  "module1": {
+    "clean_text": "Case Report: Case Report: A Case of X-Linked Agammaglobulinemia With High Serum IgE Levels and Allergic Rhinitis.\n\nX-linked Agammaglobulinemia (XLA) is a rare genetic disorder of B-lymphocyte differentiation, characterized by the absence or paucity of circulating B cells, markedly reduced levels of all serum immunoglobulin isotypes and lack of specific antibody production. Bruton Tyrosine Kinase (BTK) gene encodes a cytoplasmic tyrosine kinase involved in the B cell maturation and its mutation, blocking B cell differentiation at the pre-B cell stage, and is responsible for XLA. All domains may be affected by the mutation, and the many genotypes are associated with a wide range of clinical presentations. Little is known about genotype-phenotype correlation in this disorder, and factors influencing the phenotype of XLA are not clearly understood. In this report we present a unique case of a young patient affected by XLA. The disease was genetically diagnosed at birth due to a family history of XLA, but during follow up, it was characterized by a CD19+ B cell percentage consistently greater than 2%. He never suffered severe infections, but at two years of age, he developed persistent rhinitis. Thus, total serum IgE levels were measured and detected over the normal range, and specific allergic investigations showed sensitization to dust mites. Further immunological tests (BTK expression, functional \"in vitro\" B cell proliferation upon CpG stimulation, B cell subset analysis) explained these findings as possible manifestations of a mild XLA phenotype. XLA patients rarely present with allergic manifestations, which could warrant further investigation. High serum IgE levels could be a sign of a mild phenotype, but their role and the mechanisms underlying their production in XLA need to be clarified.",
+    "phi_map": {},
+    "patient_info": {}
+  },
+  "module3_warnings": {
+    "temporal": [],
+    "inconsistencies": []
+  },
+  "module4": {
+    "problem": [
+      {
+        "text": "Linked",
+        "ner_score": 0.878,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "Linked",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "gammaglobulinemia",
+        "ner_score": 0.92,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0010702",
+        "hpo_name": "Increased circulating immunoglobulin concentration",
+        "expanded_text": "gammaglobulinemia",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.8642,
+        "matched": true,
+        "umls_cui": "C0020455"
+      },
+      {
+        "text": "Allergic Rhinitis",
+        "ner_score": 0.894,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0003193",
+        "hpo_name": "Allergic rhinitis",
+        "expanded_text": "Allergic Rhinitis",
+        "match_type": "exact_label",
+        "confidence": 1.0,
+        "matched": true,
+        "umls_cui": "C0847614"
+      },
+      {
+        "text": "B cells",
+        "ner_score": 0.587,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "B cells",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "immunoglobulin isotypes",
+        "ner_score": 0.372,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "immunoglobulin isotypes",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "antibody production",
+        "ner_score": 0.745,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "antibody production",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "sensitization to",
+        "ner_score": 0.583,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0100326",
+        "hpo_name": "Immunologic hypersensitivity",
+        "expanded_text": "sensitization to",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.731,
+        "matched": true,
+        "umls_cui": "C0237653"
+      },
+      {
+        "text": "Agammaglobulinemia",
+        "ner_score": 0.9,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0004432",
+        "hpo_name": "Agammaglobulinemia",
+        "expanded_text": "Agammaglobulinemia",
+        "match_type": "text_scan_clinical_synonym",
+        "confidence": 0.95,
+        "matched": true,
+        "umls_cui": "C0001768",
+        "umls_all": [
+          "C0001768"
+        ]
+      },
+      {
+        "text": "X-Linked",
+        "ner_score": 0.9,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0001417",
+        "hpo_name": "X-linked inheritance",
+        "expanded_text": "X-Linked",
+        "match_type": "text_scan_exact_synonym",
+        "confidence": 0.95,
+        "matched": true,
+        "umls_cui": "C0241764",
+        "umls_all": [
+          "C0241764"
+        ]
+      },
+      {
+        "text": "Rhinitis",
+        "ner_score": 0.9,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0012384",
+        "hpo_name": "Rhinitis",
+        "expanded_text": "Rhinitis",
+        "match_type": "text_scan_exact_label",
+        "confidence": 0.95,
+        "matched": true,
+        "umls_cui": "C0035455",
+        "umls_all": [
+          "C0035455",
+          "C2718128"
+        ]
+      }
+    ],
+    "test": [
+      {
+        "text": "serum",
+        "ner_score": 0.916,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "serum",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "allergic",
+        "ner_score": 0.973,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0012393",
+        "hpo_name": "Allergy",
+        "expanded_text": "allergic",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.8904,
+        "matched": true,
+        "umls_cui": "C1527304"
+      },
+      {
+        "text": "Bruton",
+        "ner_score": 0.446,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "Bruton",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "osine",
+        "ner_score": 0.686,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "osine",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "Kinase",
+        "ner_score": 0.671,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "Kinase",
+        "match_type": "skipped_non_phenotype",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "range",
+        "ner_score": 0.831,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "range",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "percentage",
+        "ner_score": 0.987,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "percentage",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "greater",
+        "ner_score": 0.895,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "greater",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "total",
+        "ner_score": 0.697,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "total",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "over",
+        "ner_score": 0.793,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "over",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "normal",
+        "ner_score": 0.831,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "normal",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "investigations",
+        "ner_score": 0.984,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "investigations",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "immunological",
+        "ner_score": 0.986,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0100326",
+        "hpo_name": "Immunologic hypersensitivity",
+        "expanded_text": "immunological",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.7165,
+        "matched": true,
+        "umls_cui": "C0237653"
+      },
+      {
+        "text": "expression",
+        "ner_score": 0.552,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "expression",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "subset",
+        "ner_score": 0.97,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "subset",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "analysis",
+        "ner_score": 0.95,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "analysis",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      }
+    ],
+    "ordo_candidates": [
+      {
+        "ordo_id": "ORPHA:26137",
+        "name": "Juvenile temporal arteritis",
+        "name_fr": "",
+        "score": 0.1333,
+        "jaccard": 0.0833,
+        "coverage": 0.1667,
+        "matched_hpo": [
+          "HP:0003193"
+        ],
+        "matched_count": 1,
+        "total_disease_hpo": 6
+      },
+      {
+        "ordo_id": "ORPHA:90000",
+        "name": "Erythema elevatum diutinum",
+        "name_fr": "",
+        "score": 0.1036,
+        "jaccard": 0.0714,
+        "coverage": 0.125,
+        "matched_hpo": [
+          "HP:0010702"
+        ],
+        "matched_count": 1,
+        "total_disease_hpo": 8
+      },
+      {
+        "ordo_id": "ORPHA:48377",
+        "name": "Subcorneal pustular dermatosis",
+        "name_fr": "",
+        "score": 0.0781,
+        "jaccard": 0.0588,
+        "coverage": 0.0909,
+        "matched_hpo": [
+          "HP:0010702"
+        ],
+        "matched_count": 1,
+        "total_disease_hpo": 11
+      },
+      {
+        "ordo_id": "ORPHA:449400",
+        "name": "IgG4-related aortitis",
+        "name_fr": "",
+        "score": 0.0747,
+        "jaccard": 0.0667,
+        "coverage": 0.08,
+        "matched_hpo": [
+          "HP:0010702",
+          "HP:0012393"
+        ],
+        "matched_count": 2,
+        "total_disease_hpo": 25
+      },
+      {
+        "ordo_id": "ORPHA:507",
+        "name": "Leishmaniasis",
+        "name_fr": "",
+        "score": 0.0747,
+        "jaccard": 0.0667,
+        "coverage": 0.08,
+        "matched_hpo": [
+          "HP:0010702",
+          "HP:0012384"
+        ],
+        "matched_count": 2,
+        "total_disease_hpo": 25
+      }
+    ],
+    "stats": {
+      "total": 26,
+      "matched": 8,
+      "unmatched": 18,
+      "match_rate": 30.8,
+      "unique_hpo": 7,
+      "ordo_matches": 5
+    }
+  },
+  "phenopacket": {
+    "id": "phenopacket-GSC_EN_008",
+    "subject": {
+      "id": "GSC_EN_008"
+    },
+    "input": "Case Report: Case Report: A Case of X-Linked Agammaglobulinemia With High Serum IgE Levels and Allergic Rhinitis.\n\nX-linked Agammaglobulinemia (XLA) is a rare genetic disorder of B-lymphocyte differentiation, characterized by the absence or paucity of circulating B cells, markedly reduced levels of all serum immunoglobulin isotypes and lack of specific antibody production. Bruton Tyrosine Kinase (BTK) gene encodes a cytoplasmic tyrosine kinase involved in the B cell maturation and its mutation, blocking B cell differentiation at the pre-B cell stage, and is responsible for XLA. All domains may be affected by the mutation, and the many genotypes are associated with a wide range of clinical presentations. Little is known about genotype-phenotype correlation in this disorder, and factors influencing the phenotype of XLA are not clearly understood. In this report we present a unique case of a young patient affected by XLA. The disease was genetically diagnosed at birth due to a family history of XLA, but during follow up, it was characterized by a CD19+ B cell percentage consistently greater than 2%. He never suffered severe infections, but at two years of age, he developed persistent rhinitis. Thus, total serum IgE levels were measured and detected over the normal range, and specific allergic investigations showed sensitization to dust mites. Further immunological tests (BTK expression, functional \"in vitro\" B cell proliferation upon CpG stimulation, B cell subset analysis) explained these findings as possible manifestations of a mild XLA phenotype. XLA patients rarely present with allergic manifestations, which could warrant further investigation. High serum IgE levels could be a sign of a mild phenotype, but their role and the mechanisms underlying their production in XLA need to be clarified.",
+    "target": "Juvenile temporal arteritis",
+    "phenotypicFeatures": [
+      {
+        "type": {
+          "id": "HP:0010702",
+          "label": "Increased circulating immunoglobulin concentration",
+          "umls_cui": "C0020455"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "GSC_EN_008",
+              "description": "NER: gammaglobulinemia (0.920) | Match: sapbert_similarity (0.864)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0003193",
+          "label": "Allergic rhinitis",
+          "umls_cui": "C0847614"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "GSC_EN_008",
+              "description": "NER: Allergic Rhinitis (0.894) | Match: exact_label (1.000)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0100326",
+          "label": "Immunologic hypersensitivity",
+          "umls_cui": "C0237653"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "GSC_EN_008",
+              "description": "NER: sensitization to (0.583) | Match: sapbert_similarity (0.731)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0004432",
+          "label": "Agammaglobulinemia",
+          "umls_cui": "C0001768"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "GSC_EN_008",
+              "description": "NER: Agammaglobulinemia (0.900) | Match: text_scan_clinical_synonym (0.950)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0001417",
+          "label": "X-linked inheritance",
+          "umls_cui": "C0241764"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "GSC_EN_008",
+              "description": "NER: X-Linked (0.900) | Match: text_scan_exact_synonym (0.950)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0012384",
+          "label": "Rhinitis",
+          "umls_cui": "C0035455"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "GSC_EN_008",
+              "description": "NER: Rhinitis (0.900) | Match: text_scan_exact_label (0.950)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0012393",
+          "label": "Allergy",
+          "umls_cui": "C1527304"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "GSC_EN_008",
+              "description": "NER: allergic (0.973) | Match: sapbert_similarity (0.890)"
+            }
+          }
+        ]
+      }
+    ],
+    "metaData": {
+      "created": "2026-06-11T03:08:02Z",
+      "createdBy": "clinical-preanalysis-pipeline-v2",
+      "phenopacketSchemaVersion": "2.0",
+      "resources": [
+        {
+          "id": "hp",
+          "name": "Human Phenotype Ontology",
+          "url": "https://hpo.jax.org",
+          "version": "2024-04-26",
+          "namespacePrefix": "HP",
+          "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        }
+      ]
+    },
+    "interpretations": [
+      {
+        "id": "interpretation-GSC_EN_008",
+        "progressStatus": "IN_PROGRESS",
+        "diagnosis": {
+          "disease": {
+            "id": "ORPHA:26137",
+            "label": "Juvenile temporal arteritis"
+          },
+          "score": 0.1333,
+          "allCandidates": [
+            {
+              "id": "ORPHA:26137",
+              "label": "Juvenile temporal arteritis",
+              "score": 0.1333
+            },
+            {
+              "id": "ORPHA:90000",
+              "label": "Erythema elevatum diutinum",
+              "score": 0.1036
+            },
+            {
+              "id": "ORPHA:48377",
+              "label": "Subcorneal pustular dermatosis",
+              "score": 0.0781
+            },
+            {
+              "id": "ORPHA:449400",
+              "label": "IgG4-related aortitis",
+              "score": 0.0747
+            },
+            {
+              "id": "ORPHA:507",
+              "label": "Leishmaniasis",
+              "score": 0.0747
+            }
+          ]
+        }
+      }
+    ],
+    "_pipelineStats": {
+      "totalEntities": 26,
+      "matchedHPO": 8,
+      "unmatchedEntities": 18,
+      "phenopacketFeatures": 7,
+      "negatedFeatures": 0,
+      "numericPhenotypes": 0,
+      "ordoCandidates": 5
+    }
+  }
+}

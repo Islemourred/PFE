@@ -5,6 +5,11 @@ and receive structured phenotype analysis with rare disease matching.
 """
 
 import os
+os.environ["HF_HUB_OFFLINE"] = "1"
+os.environ["TRANSFORMERS_OFFLINE"] = "1"
+os.environ["HF_HUB_DISABLE_TELEMETRY"] = "1"
+os.environ["HF_DATASETS_OFFLINE"] = "1"
+
 import sys
 import json
 import time
@@ -383,7 +388,8 @@ if raw_text:
             if pp:
                 js = json.dumps(pp, indent=2, ensure_ascii=False)
                 st.markdown(f'<pre class="json-block">{js}</pre>', unsafe_allow_html=True)
-                st.download_button("Telecharger le Phenopacket", data=js, file_name=f"phenopacket_{uploaded.name.replace('.docx','')}.json", mime="application/json")
+                fname = uploaded.name.replace('.docx', '').replace('.txt', '') if uploaded else "clinical_note"
+                st.download_button("Telecharger le Phenopacket", data=js, file_name=f"phenopacket_{fname}.json", mime="application/json")
 
         with tab4:
             st.markdown(f"""

@@ -1,0 +1,114 @@
+{
+  "id": "phenopacket-GSC_EN_003",
+  "subject": {
+    "id": "GSC_EN_003"
+  },
+  "input": "Case Report: The Effect of Synonymous Single-Nucleotide Polymorphisms on an Atypical Cystic Fibrosis Clinical Presentation.\n\nSynonymous single nucleotide polymorphisms (sSNPs), which change a nucleotide, but not the encoded amino acid, are perceived as neutral to protein function and thus, classified as benign. We report a patient who was diagnosed with cystic fibrosis (CF) at an advanced age and presented very mild CF symptoms. The sequencing of the whole cystic fibrosis transmembrane conductance regulator (CFTR) gene locus revealed that the patient lacks known CF-causing mutations. We found a homozygous sSNP (c.1584G>A) at the end of exon 11 in the CFTR gene. Using sensitive molecular methods, we report that the c.1584G>A sSNP causes cognate exon skipping and retention of a sequence from the downstream intron, both of which, however, occur at a relatively low frequency. In addition, we found two other sSNPs (c.2562T>G (p.Thr854=) and c.4389G>A (p.Gln1463=)), for which the patient is also homozygous. These two sSNPs stabilize the CFTR protein expression, compensating, at least in part, for the c.1584G>A-triggered inefficient splicing. Our data highlight the importance of considering sSNPs when assessing the effect(s) of complex CFTR alleles. sSNPs may epistatically modulate mRNA and protein expression levels and consequently influence disease phenotype and progression.",
+  "target": "Cystic hamartoma of lung and kidney",
+  "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0002206",
+        "label": "Pulmonary fibrosis",
+        "umls_cui": "C0034069"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "GSC_EN_003",
+            "description": "NER: fibrosis (0.482) | Match: sapbert_similarity (0.734)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0012839",
+        "label": "Distal",
+        "umls_cui": "C0205108"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "GSC_EN_003",
+            "description": "NER: downstream (0.418) | Match: sapbert_similarity (0.743)"
+          }
+        }
+      ]
+    }
+  ],
+  "metaData": {
+    "created": "2026-06-11T03:07:31Z",
+    "createdBy": "clinical-preanalysis-pipeline-v2",
+    "phenopacketSchemaVersion": "2.0",
+    "resources": [
+      {
+        "id": "hp",
+        "name": "Human Phenotype Ontology",
+        "url": "https://hpo.jax.org",
+        "version": "2024-04-26",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      }
+    ]
+  },
+  "interpretations": [
+    {
+      "id": "interpretation-GSC_EN_003",
+      "progressStatus": "IN_PROGRESS",
+      "diagnosis": {
+        "disease": {
+          "id": "ORPHA:2111",
+          "label": "Cystic hamartoma of lung and kidney"
+        },
+        "score": 0.1867,
+        "allCandidates": [
+          {
+            "id": "ORPHA:2111",
+            "label": "Cystic hamartoma of lung and kidney",
+            "score": 0.1867
+          },
+          {
+            "id": "ORPHA:220402",
+            "label": "Limited cutaneous systemic sclerosis",
+            "score": 0.065
+          },
+          {
+            "id": "ORPHA:210136",
+            "label": "Pulmonary fibrosis-hepatic hyperplasia-bone marrow hypoplasia syndrome",
+            "score": 0.061
+          },
+          {
+            "id": "ORPHA:1839",
+            "label": "Hereditary mucoepithelial dysplasia",
+            "score": 0.0544
+          },
+          {
+            "id": "ORPHA:133",
+            "label": "Chronic beryllium disease",
+            "score": 0.0516
+          }
+        ]
+      }
+    }
+  ],
+  "_pipelineStats": {
+    "totalEntities": 18,
+    "matchedHPO": 2,
+    "unmatchedEntities": 16,
+    "phenopacketFeatures": 2,
+    "negatedFeatures": 0,
+    "numericPhenotypes": 0,
+    "ordoCandidates": 5
+  }
+}

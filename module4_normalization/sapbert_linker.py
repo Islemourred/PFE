@@ -25,6 +25,12 @@ class SapBERTLinker:
     cosine similarity.
     """
 
+    # Adaptive threshold parameters
+    MARGIN_HIGH = 0.20       # If margin > this, model is very confident
+    MARGIN_LOW = 0.05        # If margin < this, model is unsure
+    ADAPTIVE_MIN = 0.65      # Absolute floor — never accept below this
+    CONTEXT_BOOST = False    # Disabled: SapBERT is trained on isolated terms
+
     def __init__(
         self,
         hpo_terms: list[dict],
@@ -37,7 +43,7 @@ class SapBERTLinker:
         Args:
             hpo_terms:            list of HPO term dicts from hpo_parser
             model_name:           HuggingFace model ID for SapBERT
-            similarity_threshold: minimum cosine similarity to accept a match
+            similarity_threshold: base cosine similarity threshold
             batch_size:           batch size for encoding HPO terms
             cache_path:           path to save/load the precomputed index (.npz)
         """
@@ -180,23 +186,27 @@ class SapBERTLinker:
         elapsed = round(time.time() - start, 2)
         logger.info("  Loaded %d term vectors in %ss", len(self.hpo_ids), elapsed)
 
-    def link(self, text: str, top_k: int = 3) -> dict | None:
+    def link(self, text: str, top_k: int = 3, context: str = None) -> dict | None:
         """
-        Find the closest HPO concept for the given text using
-        cosine similarity.
+        Find the closest HPO concept using cosine similarity with
+        adaptive margin-based threshold and optional contextual encoding.
 
         Args:
-            text:  entity text (already abbreviation-expanded)
-            top_k: number of top candidates to consider
+            text:    entity text (already abbreviation-expanded)
+            top_k:   number of top candidates to consider
+            context: optional surrounding sentence for disambiguation
 
         Returns:
-            Best match dict or None if below threshold
-            {"id": "HP:0001382", "name": "Joint hypermobility",
-             "match_type": "sapbert_similarity", "confidence": 0.94,
-             "alternatives": [...]}
+            Best match dict or None if below adaptive threshold
         """
+        # Contextual encoding: for short/ambiguous entities, prepend context
+        if context and self.CONTEXT_BOOST and len(text.split()) <= 2:
+            query_text = f"{text} [SEP] {context[:200]}"
+        else:
+            query_text = text
+
         # Encode the query
-        query_vec = self._encode([text])  # shape (1, 768)
+        query_vec = self._encode([query_text])  # shape (1, 768)
 
         # Cosine similarity = dot product (both are L2-normalized)
         similarities = np.dot(self.index, query_vec.T).flatten()
@@ -216,7 +226,24 @@ class SapBERTLinker:
         best_idx = top_indices[0]
         best_score = float(similarities[best_idx])
 
-        if best_score < self.threshold:
+        # ── Adaptive margin-based threshold ──
+        # Instead of a fixed cutoff, use the margin between top-1 and top-2
+        second_score = float(similarities[top_indices[1]]) if len(top_indices) > 1 else 0.0
+        margin = best_score - second_score
+
+        accepted = False
+        if best_score >= self.threshold:
+            # Standard acceptance — above base threshold
+            accepted = True
+        elif margin > self.MARGIN_HIGH and best_score >= self.ADAPTIVE_MIN:
+            # High confidence margin — model clearly distinguishes this entity
+            # Accept even though absolute score is below base threshold
+            accepted = True
+        elif margin < self.MARGIN_LOW and best_score < self.threshold + 0.05:
+            # Low margin — top-1 and top-2 are too close, reject even if near threshold
+            accepted = False
+
+        if not accepted:
             return None
 
         return {
@@ -224,5 +251,6 @@ class SapBERTLinker:
             "name": self.hpo_names[best_idx],
             "match_type": "sapbert_similarity",
             "confidence": round(best_score, 4),
+            "margin": round(margin, 4),
             "alternatives": alternatives,
         }

@@ -1,0 +1,366 @@
+{
+  "id": "phenopacket-CHU_FR_006",
+  "subject": {
+    "id": "CHU_FR_006",
+    "sex": "MALE",
+    "timeAtLastEncounter": {
+      "age": {
+        "iso8601duration": "P09Y"
+      }
+    }
+  },
+  "input": "Compte Rendu dE REhospitalisation  HDJ\nL’enfant Amroun Abdel Aziz, âgé de 09 ans   originaire de Chlef et demeurant à Oran, suivi dans notre service depuis 11/ 01/2021 pour un déficit immunitaire primitif type « syndrome de Wiskott Aldrich », compliqué d’une dilatation des bronches DDB cylindrique et insuffisance respiratoire chronique stade 1. Admis le 03/11/2025 pour sa cure 49 d’immunoglobulines\nHistorique de la maladie :\nDiagnostic principal : DIP type Wiskott Aldrich\nDate de diagnostic : 12/11/2020\nAge de diagnostic : 04 ans et 9mois\nDiagnostics associés : Dilatation des bronches cylindriques\nInsuffisance respiratoire chronique stade 1\nEléments de diagnostic :\nAnamnestiques\n-Sexe masculin\n-Infections respiratoires à répétition\n-Plusieurs poussées  d’eczéma.\nClinique\n-Syndrome anémique fait de : pâleur cutanéomuqueuse.\n-Syndrome hémorragique cutané type pétéchies disséminées au visage et au tronc.\n-Lésions d’eczéma au visage et aux membres inférieurs.\nPara clinique :\n-Bi cytopénie ; anémie, thrombopénie\n- Bilan de déficit immunitaire primitif : 29/12/2020, Profonde diminution de l’expression de la protéine WASp résultats en faveur du DIP syndrome de Wiskott Aldrich\nCure d'immunoglobulines à raison de 0.8mg1/kg /4h  à la SAP chaque mois.\nDernière dose reçue le : 09/02/2026(0,8g/kg)\nDernière mise au point faite en mai 2025\nHISTORIQUE DES HOSPITALISATIONS\nANAMNESE 03/11/2025\nEvènements depuis le dernier passage : 13/10/2026\nConsultation : non\nSur le plan respiratoire : toux grasse, crachats clairs,\nSignes d’insuffisance respiratoire : Hippocratisme digital\nSur le plan nutritionnel : bonne prise alimentaire\nSur le plan digestif : Transit conservé\nSur le plan ORL : Rien à signaler\nActivité : dyspnée\nScolarité : 3eme année primaire\nTraitement en cours :\nAzithromycine 1 jour sur 02\nBactrim 25mg/kg/j\nItraconazole 05mg/kg/j : 02 fois/jour\nPulmicort 1mg : 02 fois/jour\nNébulisation par érum salé hypertonique\nKinésithérapie respiratoire faite par la mère\nCahiers bien tenus\nBilans faits :\nTaux des IgG : 9,21 g/l (06 /07/2025)\nEXAMEN CLINIQUE  À L'ADMISSION : Date : 03/11/2025\n-Mesures anthropométriques :\nPoids   : 30kg  [-0,018\tDS]    Taille : 130 cm     [-0,97DS]     IMC : 17.7 kg/m2 Enfant eutrophique\n-Etat général conserve, conscient, T: 37.2\n-Examen de la peau : pas de syndrome hémorragique cutanéo muqueux, peau sèche, multiples cicatrices sur les membres inférieurs\n-Examen pleuro pulmonaire : FR : 38c/min SPo2 : 96% Sous 2 litre d’O2, signes de lutte légers.\nDéformation thoracique en carène, hippocratisme digital\n.                                     Auscultation râles polymorphes\n-Examen cardiovasculaire : FC : 98 bpm, Auscultation : pas de souffle/pas de bruits surajoutés\n-Examen de l’abdomen: souple transit conservé, pas d’organomégalie\n-Examen ORL: Présence de carries dentaires, absence de bulles hemorragiques\n-Examen des autres appareils sans anomalies\nBilan paraclinique à l’admission : 03/11/2025 :\nFNS : GB : 5400 éléments/ul   (PNN : 4300     Lymph : 1100)       Hb : 10,3 g/dl    Plaquette : 37 000 éléments/ul\nCRP : 16mg                  TQ : 15,6 Sec          TP : 69,6%              TCK : 30 Sec\nPrise en charge :\n-Hospitalisation\n- Mise en condition, voie veineuse périphérique\n-Immunothérapie substitutive : perfusion en IV en raison de 0,8g/kg soit 25g, à faire passer en 4h (Intratect)\n-Surveillance\nLa cure des immunoglobulines est passée sans incidents\nSortie le jour même\nContinuer le même traitement l’antibioprophylaxie bactrim et antifungique itraconazole\nZithromax , Pulmicort\nKinésithérapie et nébulisations au sérum salé\nConseils hygiéno-diététiques et tenue des cahiers\nRDV de contrôle : 23/11/2025 pour cure d’immunoglobulines\nA récupérer / A faire :\nProchain RDV de cure d’immunoglobuline est prévue pour le 14/04/2026\nPrévoir un ECBC à récupérer avant la prochaine cure\nPrévoir une TDM thoracique,\nPrévoir une échographie abdominopelvienne\nPrévoir une échocardiographie\nAvis stomato (caries dentaires)\nRécupérer le carnet de santé\nDépistage de la fratrie\nRésidente du service : Dr Djoudi                                               Assistante du service : Dr Khelil",
+  "target": "Wiskott-Aldrich syndrome",
+  "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0004430",
+        "label": "Immunodeficiency",
+        "umls_cui": "C0085110"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "CHU_FR_006",
+            "description": "NER: déficit immunitaire primitif (0.744) | Match: french_curated (0.950)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0002093",
+        "label": "Respiratory insufficiency",
+        "umls_cui": "C0035229"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "CHU_FR_006",
+            "description": "NER: insuffisance respiratoire chronique stade 1 (0.550) | Match: french_partial (0.850)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0000964",
+        "label": "Eczema",
+        "umls_cui": "C0013595"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "CHU_FR_006",
+            "description": "NER: eczéma (0.468) | Match: french_curated (0.950)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0000980",
+        "label": "Pallor",
+        "umls_cui": "C0030232"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "CHU_FR_006",
+            "description": "NER: pâleur cutanéomuqueuse (0.950) | Match: french_partial (0.850)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0000967",
+        "label": "Petechiae",
+        "umls_cui": "C0031256"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "CHU_FR_006",
+            "description": "NER: pétéchies disséminées (0.453) | Match: french_partial (0.850)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0001903",
+        "label": "Anemia",
+        "umls_cui": "C0002871"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "CHU_FR_006",
+            "description": "NER: anémie (0.550) | Match: french_curated (0.950)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0001873",
+        "label": "Thrombocytopenia",
+        "umls_cui": "C0040034"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "CHU_FR_006",
+            "description": "NER: thrombopénie (0.455) | Match: french_curated (0.950)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0006538",
+        "label": "Recurrent bronchopulmonary infections",
+        "umls_cui": "C2169795"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "CHU_FR_006",
+            "description": "NER: toux grasse (0.945) | Match: french_curated (0.950)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0100759",
+        "label": "Clubbing of fingers",
+        "umls_cui": "C0009080"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "CHU_FR_006",
+            "description": "NER: Hippocratisme digital (0.804) | Match: french_orphanet (0.920)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0002094",
+        "label": "Dyspnea",
+        "umls_cui": "C0013404"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "CHU_FR_006",
+            "description": "NER: dyspnée (0.886) | Match: french_curated (0.950)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0000670",
+        "label": "Carious teeth",
+        "umls_cui": "C0011334"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "CHU_FR_006",
+            "description": "NER: caries (0.900) | Match: text_scan_exact_synonym (0.950)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0001648",
+        "label": "Cor pulmonale",
+        "umls_cui": "C0034072"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "CHU_FR_006",
+            "description": "NER: Examen pleuro pulmonaire (0.604) | Match: sapbert_similarity (0.721)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0001888",
+        "label": "Lymphopenia"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "CHU_FR_006",
+            "description": "Numeric: Lymph : 1100 → ALC/Lymphocytes < 1500/uL"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0011227",
+        "label": "Elevated C-reactive protein"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "CHU_FR_006",
+            "description": "Numeric: CRP : 16 → CRP > 10 mg/L (inflammation)"
+          }
+        }
+      ]
+    }
+  ],
+  "metaData": {
+    "created": "2026-06-11T03:38:08Z",
+    "createdBy": "clinical-preanalysis-pipeline-v2",
+    "phenopacketSchemaVersion": "2.0",
+    "resources": [
+      {
+        "id": "hp",
+        "name": "Human Phenotype Ontology",
+        "url": "https://hpo.jax.org",
+        "version": "2024-04-26",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      }
+    ]
+  },
+  "interpretations": [
+    {
+      "id": "interpretation-CHU_FR_006",
+      "progressStatus": "IN_PROGRESS",
+      "diagnosis": {
+        "disease": {
+          "id": "ORPHA:906",
+          "label": "Wiskott-Aldrich syndrome"
+        },
+        "score": 0.85,
+        "allCandidates": [
+          {
+            "id": "ORPHA:906",
+            "label": "Wiskott-Aldrich syndrome",
+            "score": 0.85
+          },
+          {
+            "id": "ORPHA:517",
+            "label": "Acute myelomonocytic leukemia",
+            "score": 0.3509
+          },
+          {
+            "id": "ORPHA:2808",
+            "label": "Laryngeal abductor paralysis",
+            "score": 0.3267
+          },
+          {
+            "id": "ORPHA:572",
+            "label": "MHC class II deficiency",
+            "score": 0.2944
+          },
+          {
+            "id": "ORPHA:46532",
+            "label": "Hereditary persistence of fetal hemoglobin-beta-thalassemia syndrome",
+            "score": 0.2444
+          }
+        ]
+      }
+    }
+  ],
+  "_validationWarnings": [
+    {
+      "type": "sex_anatomy_conflict",
+      "severity": "critical",
+      "message": "Female-specific term 'para' found in male patient record",
+      "term": "para"
+    }
+  ],
+  "_pipelineStats": {
+    "totalEntities": 45,
+    "matchedHPO": 15,
+    "unmatchedEntities": 30,
+    "phenopacketFeatures": 14,
+    "negatedFeatures": 0,
+    "numericPhenotypes": 4,
+    "ordoCandidates": 5
+  }
+}

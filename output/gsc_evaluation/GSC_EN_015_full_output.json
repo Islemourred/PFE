@@ -1,0 +1,599 @@
+{
+  "note_id": "GSC_EN_015",
+  "language": "en",
+  "module1": {
+    "clean_text": "Case Report: Atypical Ataxia Presentation in Variant Ataxia Telangiectasia: Iranian Case-Series and Review of the Literature.\n\nAtaxia-telangiectasia (AT) is a rare autosomal recessive neurodegenerative multisystem disorder. A minority of AT patients can present late-onset atypical presentations due to unknown mechanisms. The demographic, clinical, immunological and genetic data were collected by direct interview and examining the Iranian AT patients with late-onset manifestations. We also conducted a systematic literature review for reported atypical AT patients. We identified three Iranian AT patients (3/249, 1.2% of total registry) with later age at ataxia onset and slower neurologic progression despite elevated alpha-fetoprotein levels, history of respiratory infections, and immunological features of the syndrome. Of note, all patients developed autoimmunity in which a decrease of naïve T cells and regulatory T cells were observed. The literature searches also summarized data from [AGE] variant AT patients with atypical presentation indicating biallelic mild mutations mainly lead to an atypical phenotype with an increased risk of cancer. Variant AT patients present with milder phenotype or atypical form of classical symptoms causing under- or mis- diagnosis. Although missense mutations are more frequent, an atypical presentation can be associated with deleterious mutations due to unknown modifying factors.",
+    "phi_map": {
+      "AGE": "73"
+    },
+    "patient_info": {}
+  },
+  "module3_warnings": {
+    "temporal": [],
+    "inconsistencies": []
+  },
+  "module4": {
+    "problem": [
+      {
+        "text": "ataxia",
+        "ner_score": 0.546,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0001251",
+        "hpo_name": "Ataxia",
+        "expanded_text": "ataxia",
+        "match_type": "exact_label",
+        "confidence": 1.0,
+        "matched": true,
+        "umls_cui": "C0007758"
+      },
+      {
+        "text": "angiectasia",
+        "ner_score": 0.905,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0001009",
+        "hpo_name": "Telangiectasia",
+        "expanded_text": "angiectasia",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.7662,
+        "matched": true,
+        "umls_cui": "C0039446"
+      },
+      {
+        "text": "recessive neurodegenerative",
+        "ner_score": 0.389,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "recessive neurodegenerative",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "multi",
+        "ner_score": 0.57,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "multi",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "system",
+        "ner_score": 0.833,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "system",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "disorder",
+        "ner_score": 0.67,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "disorder",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "neurologic progression",
+        "ner_score": 0.569,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0002344",
+        "hpo_name": "Progressive neurologic deterioration",
+        "expanded_text": "neurologic progression",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.9005,
+        "matched": true,
+        "umls_cui": "C1854838"
+      },
+      {
+        "text": "autoimmunity",
+        "ner_score": 0.463,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0002960",
+        "hpo_name": "Autoimmunity",
+        "expanded_text": "autoimmunity",
+        "match_type": "clinical_synonym",
+        "confidence": 1.0,
+        "matched": true,
+        "umls_cui": "C0004364"
+      },
+      {
+        "text": "naïve T cells",
+        "ner_score": 0.561,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "naïve T cells",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "regulatory T cells",
+        "ner_score": 0.552,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "regulatory T cells",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "respiratory infections",
+        "ner_score": 0.9,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0011947",
+        "hpo_name": "Respiratory tract infection",
+        "expanded_text": "respiratory infections",
+        "match_type": "text_scan_related_synonym",
+        "confidence": 0.95,
+        "matched": true,
+        "umls_cui": "C0035243",
+        "umls_all": [
+          "C0035243"
+        ]
+      },
+      {
+        "text": "autosomal recessive",
+        "ner_score": 0.9,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0000007",
+        "hpo_name": "Autosomal recessive inheritance",
+        "expanded_text": "autosomal recessive",
+        "match_type": "text_scan_exact_synonym",
+        "confidence": 0.95,
+        "matched": true,
+        "umls_cui": "C0441748",
+        "umls_all": [
+          "C0441748",
+          "C4020899"
+        ]
+      },
+      {
+        "text": "cancer",
+        "ner_score": 0.9,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0002664",
+        "hpo_name": "Neoplasm",
+        "expanded_text": "cancer",
+        "match_type": "text_scan_related_synonym",
+        "confidence": 0.95,
+        "matched": true,
+        "umls_cui": "C0006826",
+        "umls_all": [
+          "C0006826",
+          "C0027651"
+        ]
+      },
+      {
+        "text": "onset",
+        "ner_score": 0.9,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0003674",
+        "hpo_name": "Onset",
+        "expanded_text": "onset",
+        "match_type": "text_scan_exact_label",
+        "confidence": 0.95,
+        "matched": true,
+        "umls_cui": "C0206132",
+        "umls_all": [
+          "C0206132"
+        ]
+      }
+    ],
+    "test": [
+      {
+        "text": "later",
+        "ner_score": 0.49,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "later",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "slower",
+        "ner_score": 0.519,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0002067",
+        "hpo_name": "Bradykinesia",
+        "expanded_text": "slower",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.7593,
+        "matched": true,
+        "umls_cui": "C0233565"
+      },
+      {
+        "text": "elevated alpha-fetoprotein",
+        "ner_score": 0.969,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "elevated alpha-fetoprotein",
+        "match_type": "skipped_non_phenotype",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "decrease",
+        "ner_score": 0.331,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "decrease",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      }
+    ],
+    "ordo_candidates": [
+      {
+        "ordo_id": "ORPHA:100",
+        "name": "Ataxia-telangiectasia",
+        "name_fr": "Ataxie-Télangiectasie (syndrome de Louis-Bar)",
+        "score": 0.85,
+        "jaccard": 0.125,
+        "coverage": 0.2222,
+        "matched_hpo": [
+          "HP:0001009",
+          "HP:0001251"
+        ],
+        "matched_count": 2,
+        "total_disease_hpo": 9
+      },
+      {
+        "ordo_id": "ORPHA:1180",
+        "name": "Ataxia-hypogonadism-choroidal dystrophy syndrome",
+        "name_fr": "",
+        "score": 0.2364,
+        "jaccard": 0.0909,
+        "coverage": 0.3333,
+        "matched_hpo": [
+          "HP:0001251"
+        ],
+        "matched_count": 1,
+        "total_disease_hpo": 3
+      },
+      {
+        "ordo_id": "ORPHA:3350",
+        "name": "Tremor-nystagmus-duodenal ulcer syndrome",
+        "name_fr": "",
+        "score": 0.1833,
+        "jaccard": 0.0833,
+        "coverage": 0.25,
+        "matched_hpo": [
+          "HP:0001251"
+        ],
+        "matched_count": 1,
+        "total_disease_hpo": 4
+      },
+      {
+        "ordo_id": "ORPHA:2579",
+        "name": "Muscular atrophy-ataxia-retinitis pigmentosa-diabetes mellitus syndrome",
+        "name_fr": "",
+        "score": 0.1833,
+        "jaccard": 0.0833,
+        "coverage": 0.25,
+        "matched_hpo": [
+          "HP:0001251"
+        ],
+        "matched_count": 1,
+        "total_disease_hpo": 4
+      },
+      {
+        "ordo_id": "ORPHA:88637",
+        "name": "Hypomyelination-hypogonadotropic hypogonadism-hypodontia syndrome",
+        "name_fr": "",
+        "score": 0.1833,
+        "jaccard": 0.0833,
+        "coverage": 0.25,
+        "matched_hpo": [
+          "HP:0001251"
+        ],
+        "matched_count": 1,
+        "total_disease_hpo": 4
+      }
+    ],
+    "stats": {
+      "total": 18,
+      "matched": 9,
+      "unmatched": 9,
+      "match_rate": 50.0,
+      "unique_hpo": 9,
+      "ordo_matches": 5
+    }
+  },
+  "phenopacket": {
+    "id": "phenopacket-GSC_EN_015",
+    "subject": {
+      "id": "GSC_EN_015"
+    },
+    "input": "Case Report: Atypical Ataxia Presentation in Variant Ataxia Telangiectasia: Iranian Case-Series and Review of the Literature.\n\nAtaxia-telangiectasia (AT) is a rare autosomal recessive neurodegenerative multisystem disorder. A minority of AT patients can present late-onset atypical presentations due to unknown mechanisms. The demographic, clinical, immunological and genetic data were collected by direct interview and examining the Iranian AT patients with late-onset manifestations. We also conducted a systematic literature review for reported atypical AT patients. We identified three Iranian AT patients (3/249, 1.2% of total registry) with later age at ataxia onset and slower neurologic progression despite elevated alpha-fetoprotein levels, history of respiratory infections, and immunological features of the syndrome. Of note, all patients developed autoimmunity in which a decrease of naïve T cells and regulatory T cells were observed. The literature searches also summarized data from 73 variant AT patients with atypical presentation indicating biallelic mild mutations mainly lead to an atypical phenotype with an increased risk of cancer. Variant AT patients present with milder phenotype or atypical form of classical symptoms causing under- or mis- diagnosis. Although missense mutations are more frequent, an atypical presentation can be associated with deleterious mutations due to unknown modifying factors.",
+    "target": "Ataxia-telangiectasia",
+    "phenotypicFeatures": [
+      {
+        "type": {
+          "id": "HP:0001251",
+          "label": "Ataxia",
+          "umls_cui": "C0007758"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "GSC_EN_015",
+              "description": "NER: ataxia (0.546) | Match: exact_label (1.000)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0001009",
+          "label": "Telangiectasia",
+          "umls_cui": "C0039446"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "GSC_EN_015",
+              "description": "NER: angiectasia (0.905) | Match: sapbert_similarity (0.766)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0002344",
+          "label": "Progressive neurologic deterioration",
+          "umls_cui": "C1854838"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "GSC_EN_015",
+              "description": "NER: neurologic progression (0.569) | Match: sapbert_similarity (0.900)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0002960",
+          "label": "Autoimmunity",
+          "umls_cui": "C0004364"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "GSC_EN_015",
+              "description": "NER: autoimmunity (0.463) | Match: clinical_synonym (1.000)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0011947",
+          "label": "Respiratory tract infection",
+          "umls_cui": "C0035243"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "GSC_EN_015",
+              "description": "NER: respiratory infections (0.900) | Match: text_scan_related_synonym (0.950)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0000007",
+          "label": "Autosomal recessive inheritance",
+          "umls_cui": "C0441748"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "GSC_EN_015",
+              "description": "NER: autosomal recessive (0.900) | Match: text_scan_exact_synonym (0.950)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0002664",
+          "label": "Neoplasm",
+          "umls_cui": "C0006826"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "GSC_EN_015",
+              "description": "NER: cancer (0.900) | Match: text_scan_related_synonym (0.950)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0003674",
+          "label": "Onset",
+          "umls_cui": "C0206132"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "GSC_EN_015",
+              "description": "NER: onset (0.900) | Match: text_scan_exact_label (0.950)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0002067",
+          "label": "Bradykinesia",
+          "umls_cui": "C0233565"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "GSC_EN_015",
+              "description": "NER: slower (0.519) | Match: sapbert_similarity (0.759)"
+            }
+          }
+        ]
+      }
+    ],
+    "metaData": {
+      "created": "2026-06-11T03:08:40Z",
+      "createdBy": "clinical-preanalysis-pipeline-v2",
+      "phenopacketSchemaVersion": "2.0",
+      "resources": [
+        {
+          "id": "hp",
+          "name": "Human Phenotype Ontology",
+          "url": "https://hpo.jax.org",
+          "version": "2024-04-26",
+          "namespacePrefix": "HP",
+          "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        }
+      ]
+    },
+    "interpretations": [
+      {
+        "id": "interpretation-GSC_EN_015",
+        "progressStatus": "IN_PROGRESS",
+        "diagnosis": {
+          "disease": {
+            "id": "ORPHA:100",
+            "label": "Ataxia-telangiectasia"
+          },
+          "score": 0.85,
+          "allCandidates": [
+            {
+              "id": "ORPHA:100",
+              "label": "Ataxia-telangiectasia",
+              "score": 0.85
+            },
+            {
+              "id": "ORPHA:1180",
+              "label": "Ataxia-hypogonadism-choroidal dystrophy syndrome",
+              "score": 0.2364
+            },
+            {
+              "id": "ORPHA:3350",
+              "label": "Tremor-nystagmus-duodenal ulcer syndrome",
+              "score": 0.1833
+            },
+            {
+              "id": "ORPHA:2579",
+              "label": "Muscular atrophy-ataxia-retinitis pigmentosa-diabetes mellitus syndrome",
+              "score": 0.1833
+            },
+            {
+              "id": "ORPHA:88637",
+              "label": "Hypomyelination-hypogonadotropic hypogonadism-hypodontia syndrome",
+              "score": 0.1833
+            }
+          ]
+        }
+      }
+    ],
+    "_pipelineStats": {
+      "totalEntities": 18,
+      "matchedHPO": 9,
+      "unmatchedEntities": 9,
+      "phenopacketFeatures": 9,
+      "negatedFeatures": 0,
+      "numericPhenotypes": 0,
+      "ordoCandidates": 5
+    }
+  }
+}

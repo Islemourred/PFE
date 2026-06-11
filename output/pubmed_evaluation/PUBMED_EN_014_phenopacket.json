@@ -1,0 +1,334 @@
+{
+  "id": "phenopacket-PUBMED_EN_014",
+  "subject": {
+    "id": "PUBMED_EN_014"
+  },
+  "input": "Case Report: Dystonia in Ataxia Telangiectasia: A Case Report with Novel Mutations.\n\nAtaxia telangiectasia (A-T) is a common, genetically inherited cause of early childhood-onset ataxia that is classically characterized by progressive cerebellar malfunction, oculocutaneous telangiectasia, genome instability, and immunodeficiency. There is vast phenotype variation in patients with A-T and recently, dystonia, an extrapyramidal movement disorder. Here, we report the case of a 10-year-old girl who had experienced repeated diarrhea and mild gait ataxia since the age of two years. At age seven, ataxia and ocular telangiectasia were evident and immunoglobulin level assessment showed hyper IgM immune phenotype, thus a diagnosis of A-T was made based on clinical and laboratory findings, and she was started on intravenous immunoglobulin therapy. Generalized dystonia appeared when she was 10-years-old. Molecular analysis revealed two heterozygous mutations, c.6259delG and c.6658C>T, in the ATM gene of which one (c.6259delG) is novel. Dystonia can be part of the clinical picture in the A-T disorder and may even mask ataxia. This should be considered as a major feature mainly in variant A-T, which may occur without general ataxia and may be misdiagnosed in adults with primary dystonia.",
+  "target": "Ataxia-telangiectasia",
+  "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0001332",
+        "label": "Dystonia",
+        "umls_cui": "C0013421"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "PUBMED_EN_014",
+            "description": "NER: dystonia (0.546) | Match: exact_label (1.000)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0001276",
+        "label": "Hypertonia",
+        "umls_cui": "C0026826"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "PUBMED_EN_014",
+            "description": "NER: tonia (0.900) | Match: sapbert_similarity (0.718)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0001251",
+        "label": "Ataxia",
+        "umls_cui": "C0007758"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "PUBMED_EN_014",
+            "description": "NER: ataxia (0.463) | Match: exact_label (1.000)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0001009",
+        "label": "Telangiectasia",
+        "umls_cui": "C0039446"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "PUBMED_EN_014",
+            "description": "NER: angiectasia (0.865) | Match: sapbert_similarity (0.766)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0002721",
+        "label": "Immunodeficiency",
+        "umls_cui": "C0021051"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "PUBMED_EN_014",
+            "description": "NER: immunodeficiency (0.399) | Match: clinical_synonym (1.000)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0100022",
+        "label": "Abnormality of movement",
+        "umls_cui": "C0026650"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "PUBMED_EN_014",
+            "description": "NER: extrapyramidal movement disorder (0.779) | Match: substring_match (0.950)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0002014",
+        "label": "Diarrhea",
+        "umls_cui": "C0011991"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "PUBMED_EN_014",
+            "description": "NER: diarrhea (0.910) | Match: clinical_synonym (1.000)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0002066",
+        "label": "Gait ataxia",
+        "umls_cui": "C0751837"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "PUBMED_EN_014",
+            "description": "NER: gait (0.483) | Match: sapbert_similarity (0.743)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0001442",
+        "label": "Typified by somatic mosaicism",
+        "umls_cui": "C1866227"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "PUBMED_EN_014",
+            "description": "NER: heterozygous mutations (0.524) | Match: sapbert_similarity (0.704)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0007325",
+        "label": "Generalized dystonia",
+        "umls_cui": "C1848954"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "PUBMED_EN_014",
+            "description": "NER: Generalized dystonia (0.900) | Match: text_scan_exact_label (0.950)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0003676",
+        "label": "Progressive",
+        "umls_cui": "C0205329"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "PUBMED_EN_014",
+            "description": "NER: progressive (0.900) | Match: text_scan_exact_label (0.950)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0003674",
+        "label": "Onset",
+        "umls_cui": "C0206132"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "PUBMED_EN_014",
+            "description": "NER: onset (0.900) | Match: text_scan_exact_label (0.950)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0100326",
+        "label": "Immunologic hypersensitivity",
+        "umls_cui": "C0237653"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "PUBMED_EN_014",
+            "description": "NER: immune (0.369) | Match: sapbert_similarity (0.742)"
+          }
+        }
+      ]
+    }
+  ],
+  "metaData": {
+    "created": "2026-06-11T03:05:46Z",
+    "createdBy": "clinical-preanalysis-pipeline-v2",
+    "phenopacketSchemaVersion": "2.0",
+    "resources": [
+      {
+        "id": "hp",
+        "name": "Human Phenotype Ontology",
+        "url": "https://hpo.jax.org",
+        "version": "2024-04-26",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      }
+    ]
+  },
+  "interpretations": [
+    {
+      "id": "interpretation-PUBMED_EN_014",
+      "progressStatus": "IN_PROGRESS",
+      "diagnosis": {
+        "disease": {
+          "id": "ORPHA:100",
+          "label": "Ataxia-telangiectasia"
+        },
+        "score": 0.85,
+        "allCandidates": [
+          {
+            "id": "ORPHA:100",
+            "label": "Ataxia-telangiectasia",
+            "score": 0.85
+          },
+          {
+            "id": "ORPHA:3350",
+            "label": "Tremor-nystagmus-duodenal ulcer syndrome",
+            "score": 0.3533
+          },
+          {
+            "id": "ORPHA:1429",
+            "label": "Benign hereditary chorea",
+            "score": 0.3286
+          },
+          {
+            "id": "ORPHA:256",
+            "label": "Early-onset generalized limb-onset dystonia",
+            "score": 0.29
+          },
+          {
+            "id": "ORPHA:31",
+            "label": "Oxoglutaric aciduria",
+            "score": 0.24
+          }
+        ]
+      }
+    }
+  ],
+  "_pipelineStats": {
+    "totalEntities": 28,
+    "matchedHPO": 13,
+    "unmatchedEntities": 15,
+    "phenopacketFeatures": 13,
+    "negatedFeatures": 0,
+    "numericPhenotypes": 0,
+    "ordoCandidates": 5
+  }
+}

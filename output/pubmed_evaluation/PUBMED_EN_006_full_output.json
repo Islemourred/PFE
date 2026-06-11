@@ -1,0 +1,543 @@
+{
+  "note_id": "PUBMED_EN_006",
+  "language": "en",
+  "module1": {
+    "clean_text": "Case Report: Report of clinical presentations and two novel mutations in patients with Wiskott-Aldrich syndrome/X-linked Thrombocytopenia.\n\nWiskott-Aldrich syndrome (WAS)/X-linked thrombocytopenia (XLT) is a rare X-linked disease characterized by thrombocytopenia, eczema, and recurrent infection. In addition, WAS/XLT increases incidence of autoimmune diseases and malignancies. We reported 7 male patients, 2 with WAS and 5 with XLT, from 6 different families. Two novel mutations, p.Gly387GlufsTer58 and p.Ala134Asp, were identified in patients with WAS. Both patients had severe clinical phenotypes compatible with classic WAS and developed lethal outcomes with intracranial hemorrhage. Other than that, one patient with XLT developed pineoblastoma.",
+    "phi_map": {},
+    "patient_info": {
+      "sex": "male"
+    }
+  },
+  "module3_warnings": {
+    "temporal": [],
+    "inconsistencies": []
+  },
+  "module4": {
+    "problem": [
+      {
+        "text": "Aldrich",
+        "ner_score": 0.904,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "Aldrich",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "syndrome",
+        "ner_score": 0.849,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "syndrome",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "linked",
+        "ner_score": 0.794,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "linked",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "Thrombocytopenia",
+        "ner_score": 0.69,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0001873",
+        "hpo_name": "Thrombocytopenia",
+        "expanded_text": "Thrombocytopenia",
+        "match_type": "exact_label",
+        "confidence": 1.0,
+        "matched": true,
+        "umls_cui": "C0040034"
+      },
+      {
+        "text": "eczema",
+        "ner_score": 0.643,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0000964",
+        "hpo_name": "Eczema",
+        "expanded_text": "eczema",
+        "match_type": "clinical_synonym",
+        "confidence": 1.0,
+        "matched": true,
+        "umls_cui": "C0013595"
+      },
+      {
+        "text": "infection",
+        "ner_score": 0.566,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0002719",
+        "hpo_name": "Recurrent infections",
+        "expanded_text": "infection",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.7406,
+        "matched": true,
+        "umls_cui": "C0239998"
+      },
+      {
+        "text": "autoimmune",
+        "ner_score": 0.411,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0002960",
+        "hpo_name": "Autoimmunity",
+        "expanded_text": "autoimmune",
+        "match_type": "clinical_synonym",
+        "confidence": 1.0,
+        "matched": true,
+        "umls_cui": "C0004364"
+      },
+      {
+        "text": "hemorrhage",
+        "ner_score": 0.795,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0001892",
+        "hpo_name": "Abnormal bleeding",
+        "expanded_text": "hemorrhage",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.7641,
+        "matched": true,
+        "umls_cui": "C1458140"
+      },
+      {
+        "text": "pineoblastoma",
+        "ner_score": 0.921,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0010799",
+        "hpo_name": "Pinealoma",
+        "expanded_text": "pineoblastoma",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.7713,
+        "matched": true,
+        "umls_cui": "C0031941"
+      },
+      {
+        "text": "intracranial hemorrhage",
+        "ner_score": 0.9,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0002170",
+        "hpo_name": "Intracranial hemorrhage",
+        "expanded_text": "intracranial hemorrhage",
+        "match_type": "text_scan_exact_label",
+        "confidence": 0.95,
+        "matched": true,
+        "umls_cui": "C0151699",
+        "umls_all": [
+          "C0151699"
+        ]
+      },
+      {
+        "text": "X-linked",
+        "ner_score": 0.9,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0001417",
+        "hpo_name": "X-linked inheritance",
+        "expanded_text": "X-linked",
+        "match_type": "text_scan_exact_synonym",
+        "confidence": 0.95,
+        "matched": true,
+        "umls_cui": "C0241764",
+        "umls_all": [
+          "C0241764"
+        ]
+      }
+    ],
+    "test": [
+      {
+        "text": "severe",
+        "ner_score": 0.401,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0012828",
+        "hpo_name": "Severe",
+        "expanded_text": "severe",
+        "match_type": "exact_label",
+        "confidence": 1.0,
+        "matched": true,
+        "umls_cui": "C0205082"
+      },
+      {
+        "text": "lethal",
+        "ner_score": 0.685,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "lethal",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "intracranial",
+        "ner_score": 0.623,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "intracranial",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      }
+    ],
+    "ordo_candidates": [
+      {
+        "ordo_id": "ORPHA:906",
+        "name": "Wiskott-Aldrich syndrome",
+        "name_fr": "Syndrome de Wiskott-Aldrich",
+        "score": 0.85,
+        "jaccard": 0.15,
+        "coverage": 0.2143,
+        "matched_hpo": [
+          "HP:0000964",
+          "HP:0001873",
+          "HP:0002719"
+        ],
+        "matched_count": 3,
+        "total_disease_hpo": 14
+      },
+      {
+        "ordo_id": "ORPHA:231393",
+        "name": "Beta-thalassemia-X-linked thrombocytopenia syndrome",
+        "name_fr": "",
+        "score": 0.2615,
+        "jaccard": 0.1538,
+        "coverage": 0.3333,
+        "matched_hpo": [
+          "HP:0001873",
+          "HP:0001892"
+        ],
+        "matched_count": 2,
+        "total_disease_hpo": 6
+      },
+      {
+        "ordo_id": "ORPHA:721",
+        "name": "Gray platelet syndrome",
+        "name_fr": "",
+        "score": 0.2033,
+        "jaccard": 0.1333,
+        "coverage": 0.25,
+        "matched_hpo": [
+          "HP:0001873",
+          "HP:0001892"
+        ],
+        "matched_count": 2,
+        "total_disease_hpo": 8
+      },
+      {
+        "ordo_id": "ORPHA:101041",
+        "name": "Familial hypofibrinogenemia",
+        "name_fr": "",
+        "score": 0.1833,
+        "jaccard": 0.0833,
+        "coverage": 0.25,
+        "matched_hpo": [
+          "HP:0001892"
+        ],
+        "matched_count": 1,
+        "total_disease_hpo": 4
+      },
+      {
+        "ordo_id": "ORPHA:529",
+        "name": "Roch-Leri mesosomatous lipomatosis",
+        "name_fr": "",
+        "score": 0.1833,
+        "jaccard": 0.0833,
+        "coverage": 0.25,
+        "matched_hpo": [
+          "HP:0001873"
+        ],
+        "matched_count": 1,
+        "total_disease_hpo": 4
+      }
+    ],
+    "stats": {
+      "total": 14,
+      "matched": 9,
+      "unmatched": 5,
+      "match_rate": 64.3,
+      "unique_hpo": 9,
+      "ordo_matches": 5
+    }
+  },
+  "phenopacket": {
+    "id": "phenopacket-PUBMED_EN_006",
+    "subject": {
+      "id": "PUBMED_EN_006",
+      "sex": "MALE"
+    },
+    "input": "Case Report: Report of clinical presentations and two novel mutations in patients with Wiskott-Aldrich syndrome/X-linked Thrombocytopenia.\n\nWiskott-Aldrich syndrome (WAS)/X-linked thrombocytopenia (XLT) is a rare X-linked disease characterized by thrombocytopenia, eczema, and recurrent infection. In addition, WAS/XLT increases incidence of autoimmune diseases and malignancies. We reported 7 male patients, 2 with WAS and 5 with XLT, from 6 different families. Two novel mutations, p.Gly387GlufsTer58 and p.Ala134Asp, were identified in patients with WAS. Both patients had severe clinical phenotypes compatible with classic WAS and developed lethal outcomes with intracranial hemorrhage. Other than that, one patient with XLT developed pineoblastoma.",
+    "target": "Wiskott-Aldrich syndrome",
+    "phenotypicFeatures": [
+      {
+        "type": {
+          "id": "HP:0001873",
+          "label": "Thrombocytopenia",
+          "umls_cui": "C0040034"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "PUBMED_EN_006",
+              "description": "NER: Thrombocytopenia (0.690) | Match: exact_label (1.000)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0000964",
+          "label": "Eczema",
+          "umls_cui": "C0013595"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "PUBMED_EN_006",
+              "description": "NER: eczema (0.643) | Match: clinical_synonym (1.000)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0002719",
+          "label": "Recurrent infections",
+          "umls_cui": "C0239998"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "PUBMED_EN_006",
+              "description": "NER: infection (0.566) | Match: sapbert_similarity (0.741)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0002960",
+          "label": "Autoimmunity",
+          "umls_cui": "C0004364"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "PUBMED_EN_006",
+              "description": "NER: autoimmune (0.411) | Match: clinical_synonym (1.000)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0001892",
+          "label": "Abnormal bleeding",
+          "umls_cui": "C1458140"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "PUBMED_EN_006",
+              "description": "NER: hemorrhage (0.795) | Match: sapbert_similarity (0.764)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0010799",
+          "label": "Pinealoma",
+          "umls_cui": "C0031941"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "PUBMED_EN_006",
+              "description": "NER: pineoblastoma (0.921) | Match: sapbert_similarity (0.771)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0002170",
+          "label": "Intracranial hemorrhage",
+          "umls_cui": "C0151699"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "PUBMED_EN_006",
+              "description": "NER: intracranial hemorrhage (0.900) | Match: text_scan_exact_label (0.950)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0001417",
+          "label": "X-linked inheritance",
+          "umls_cui": "C0241764"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "PUBMED_EN_006",
+              "description": "NER: X-linked (0.900) | Match: text_scan_exact_synonym (0.950)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0012828",
+          "label": "Severe",
+          "umls_cui": "C0205082"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "PUBMED_EN_006",
+              "description": "NER: severe (0.401) | Match: exact_label (1.000)"
+            }
+          }
+        ]
+      }
+    ],
+    "metaData": {
+      "created": "2026-06-11T03:04:47Z",
+      "createdBy": "clinical-preanalysis-pipeline-v2",
+      "phenopacketSchemaVersion": "2.0",
+      "resources": [
+        {
+          "id": "hp",
+          "name": "Human Phenotype Ontology",
+          "url": "https://hpo.jax.org",
+          "version": "2024-04-26",
+          "namespacePrefix": "HP",
+          "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        }
+      ]
+    },
+    "interpretations": [
+      {
+        "id": "interpretation-PUBMED_EN_006",
+        "progressStatus": "IN_PROGRESS",
+        "diagnosis": {
+          "disease": {
+            "id": "ORPHA:906",
+            "label": "Wiskott-Aldrich syndrome"
+          },
+          "score": 0.85,
+          "allCandidates": [
+            {
+              "id": "ORPHA:906",
+              "label": "Wiskott-Aldrich syndrome",
+              "score": 0.85
+            },
+            {
+              "id": "ORPHA:231393",
+              "label": "Beta-thalassemia-X-linked thrombocytopenia syndrome",
+              "score": 0.2615
+            },
+            {
+              "id": "ORPHA:721",
+              "label": "Gray platelet syndrome",
+              "score": 0.2033
+            },
+            {
+              "id": "ORPHA:101041",
+              "label": "Familial hypofibrinogenemia",
+              "score": 0.1833
+            },
+            {
+              "id": "ORPHA:529",
+              "label": "Roch-Leri mesosomatous lipomatosis",
+              "score": 0.1833
+            }
+          ]
+        }
+      }
+    ],
+    "_pipelineStats": {
+      "totalEntities": 14,
+      "matchedHPO": 9,
+      "unmatchedEntities": 5,
+      "phenopacketFeatures": 9,
+      "negatedFeatures": 0,
+      "numericPhenotypes": 0,
+      "ordoCandidates": 5
+    }
+  }
+}

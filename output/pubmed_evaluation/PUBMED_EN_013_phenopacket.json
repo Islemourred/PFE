@@ -1,0 +1,274 @@
+{
+  "id": "phenopacket-PUBMED_EN_013",
+  "subject": {
+    "id": "PUBMED_EN_013"
+  },
+  "input": "Case Report: Ataxia telangiectasia: a rare case report from Nepal.\n\nINTRODUCTION AND IMPORTANCE: Ataxia telangiectasia (A-T) is a rare autosomal recessive neurodegenerative disorder with early childhood onset. It is characterized by ataxia, oculocutaneous telangiectasia, immunodeficiency, and lymphoid-origin cancer predisposition due to ataxia telangiectasia mutated gene mutations.\nCASE PRESENTATION: The authors present a 19-year-old girl with spastic movements since 18 months, leading to wheelchair dependence. Ocular telangiectasia, dystonic posture, and slurred speech were evident. Diagnosis involved elevated alpha-fetoprotein levels and typical brain imaging.\nCLINICAL DISCUSSION: A-T due to ataxia telangiectasia mutated gene mutations located on chromosome 11q22-23. It has varied presentations categorized by age and features. Timely diagnosis relies on characteristic symptoms, lab findings, and imaging. Radiation sensitivity and increased cancer risk underscore cautious radiation use.\nCONCLUSION: A-T is a complex disorder with no cure. Genetic counseling for parents is vital. Its poor prognosis due to infection susceptibility and cancer risk necessitates supportive care. Comprehensive management, including genetic counseling and careful surveillance, is imperative.",
+  "target": "Ataxia-telangiectasia",
+  "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0001251",
+        "label": "Ataxia",
+        "umls_cui": "C0007758"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "PUBMED_EN_013",
+            "description": "NER: ataxia (0.675) | Match: exact_label (1.000)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0001009",
+        "label": "Telangiectasia",
+        "umls_cui": "C0039446"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "PUBMED_EN_013",
+            "description": "NER: telangiectasia (0.768) | Match: clinical_synonym (1.000)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0001257",
+        "label": "Spasticity",
+        "umls_cui": "C0026838"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "PUBMED_EN_013",
+            "description": "NER: spastic movements (0.925) | Match: sapbert_similarity (0.843)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0001332",
+        "label": "Dystonia",
+        "umls_cui": "C0013421"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "PUBMED_EN_013",
+            "description": "NER: dystonic posture (0.956) | Match: sapbert_similarity (0.844)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0001260",
+        "label": "Dysarthria",
+        "umls_cui": "C0013362"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "PUBMED_EN_013",
+            "description": "NER: slurred speech (0.951) | Match: clinical_synonym (1.000)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0000007",
+        "label": "Autosomal recessive inheritance",
+        "umls_cui": "C0441748"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "PUBMED_EN_013",
+            "description": "NER: autosomal recessive (0.900) | Match: text_scan_exact_synonym (0.950)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0002721",
+        "label": "Immunodeficiency",
+        "umls_cui": "C0021051"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "PUBMED_EN_013",
+            "description": "NER: immunodeficiency (0.900) | Match: text_scan_clinical_synonym (0.950)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0011463",
+        "label": "Childhood onset",
+        "umls_cui": "C1837352"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "PUBMED_EN_013",
+            "description": "NER: childhood onset (0.900) | Match: text_scan_exact_label (0.950)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0002664",
+        "label": "Neoplasm",
+        "umls_cui": "C0006826"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "PUBMED_EN_013",
+            "description": "NER: cancer (0.900) | Match: text_scan_related_synonym (0.950)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0012443",
+        "label": "Abnormal brain morphology",
+        "umls_cui": "C4021085"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "PUBMED_EN_013",
+            "description": "NER: typical brain (0.847) | Match: sapbert_similarity (0.740)"
+          }
+        }
+      ]
+    }
+  ],
+  "metaData": {
+    "created": "2026-06-11T03:05:31Z",
+    "createdBy": "clinical-preanalysis-pipeline-v2",
+    "phenopacketSchemaVersion": "2.0",
+    "resources": [
+      {
+        "id": "hp",
+        "name": "Human Phenotype Ontology",
+        "url": "https://hpo.jax.org",
+        "version": "2024-04-26",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      }
+    ]
+  },
+  "interpretations": [
+    {
+      "id": "interpretation-PUBMED_EN_013",
+      "progressStatus": "IN_PROGRESS",
+      "diagnosis": {
+        "disease": {
+          "id": "ORPHA:100",
+          "label": "Ataxia-telangiectasia"
+        },
+        "score": 0.85,
+        "allCandidates": [
+          {
+            "id": "ORPHA:100",
+            "label": "Ataxia-telangiectasia",
+            "score": 0.85
+          },
+          {
+            "id": "ORPHA:211067",
+            "label": "Episodic ataxia type 5",
+            "score": 0.2571
+          },
+          {
+            "id": "ORPHA:1180",
+            "label": "Ataxia-hypogonadism-choroidal dystrophy syndrome",
+            "score": 0.2333
+          },
+          {
+            "id": "ORPHA:1182",
+            "label": "Spastic ataxia with congenital miosis",
+            "score": 0.2
+          },
+          {
+            "id": "ORPHA:97",
+            "label": "Familial paroxysmal ataxia",
+            "score": 0.1857
+          }
+        ]
+      }
+    }
+  ],
+  "_pipelineStats": {
+    "totalEntities": 21,
+    "matchedHPO": 11,
+    "unmatchedEntities": 10,
+    "phenopacketFeatures": 10,
+    "negatedFeatures": 0,
+    "numericPhenotypes": 0,
+    "ordoCandidates": 5
+  }
+}

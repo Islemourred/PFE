@@ -1,0 +1,1383 @@
+{
+  "timestamp": "2026-06-11 02:28:39",
+  "pipeline": "v4.0 (DeBERTa-v3 bilingual)",
+  "dataset": "CHU Oran",
+  "total_reports": 30,
+  "gold_standard_reports": 16,
+  "metrics": {
+    "ordo_top3_accuracy": 0.875,
+    "hpo_micro_precision": 0.4935,
+    "hpo_micro_recall": 0.8976,
+    "hpo_micro_f1": 0.6369,
+    "hpo_macro_precision": 0.629,
+    "hpo_macro_recall": 0.8925,
+    "hpo_macro_f1": 0.738,
+    "normalization_coverage": 0.351,
+    "avg_time_per_report": 22.3
+  },
+  "per_report": [
+    {
+      "note_id": "CHU_FR_002",
+      "disease": "Abdellaoui Med Yanis Mucoviscidose Novembre.docx",
+      "time": 47.49,
+      "total_entities": 82,
+      "matched_hpo": 29,
+      "coverage": 0.35365853658536583,
+      "extracted_hpo": [
+        "HP:0001250",
+        "HP:0001538",
+        "HP:0001648",
+        "HP:0001738",
+        "HP:0001943",
+        "HP:0001974",
+        "HP:0002020",
+        "HP:0002093",
+        "HP:0002329",
+        "HP:0003270",
+        "HP:0004395",
+        "HP:0004430",
+        "HP:0006538",
+        "HP:0011010",
+        "HP:0012735",
+        "HP:0012835",
+        "HP:0012840",
+        "HP:0025406",
+        "HP:0030831",
+        "HP:0100759"
+      ],
+      "has_gold": true,
+      "expected_disease": "Cystic fibrosis",
+      "expected_orpha": "ORPHA:586",
+      "ordo_correct": true,
+      "ordo_top": "Cystic fibrosis",
+      "ordo_score": 0.85,
+      "expected_hpo_count": 10,
+      "hpo_tp": 7,
+      "hpo_fn": 3,
+      "hpo_fp": 15,
+      "hpo_recall": 0.7,
+      "hpo_precision": 0.35,
+      "hpo_f1": 0.4666666666666667,
+      "semantic_matches": [
+        [
+          "HP:0006538",
+          "HP:0006538"
+        ],
+        [
+          "HP:0004395",
+          "HP:0001508"
+        ],
+        [
+          "HP:0012735",
+          "HP:0012735"
+        ],
+        [
+          "HP:0002093",
+          "HP:0002093"
+        ],
+        [
+          "HP:0006538",
+          "HP:0004430"
+        ],
+        [
+          "HP:0001738",
+          "HP:0001738"
+        ],
+        [
+          "HP:0004395",
+          "HP:0004395"
+        ]
+      ]
+    },
+    {
+      "note_id": "CHU_FR_003",
+      "disease": "Abdoune lyne Déficit en HLA DR Djoudi mars 28.docx",
+      "time": 7.83,
+      "total_entities": 35,
+      "matched_hpo": 11,
+      "coverage": 0.3142857142857143,
+      "extracted_hpo": [
+        "HP:0001648",
+        "HP:0002719",
+        "HP:0004395",
+        "HP:0004430",
+        "HP:0007549",
+        "HP:0010280",
+        "HP:0010783",
+        "HP:0011073"
+      ],
+      "has_gold": true,
+      "expected_disease": "MHC class II deficiency",
+      "expected_orpha": "ORPHA:572",
+      "ordo_correct": true,
+      "ordo_top": "MHC class II deficiency",
+      "ordo_score": 0.85,
+      "expected_hpo_count": 6,
+      "hpo_tp": 2,
+      "hpo_fn": 4,
+      "hpo_fp": 7,
+      "hpo_recall": 0.3333333333333333,
+      "hpo_precision": 0.25,
+      "hpo_f1": 0.28571428571428575,
+      "semantic_matches": [
+        [
+          "HP:0002719",
+          "HP:0002719"
+        ],
+        [
+          "HP:0002719",
+          "HP:0004430"
+        ]
+      ]
+    },
+    {
+      "note_id": "CHU_FR_004",
+      "disease": "Amroune_Abdelaziz_DIP_Wiskott_Aldrich_Décembre2025_Dr_Djoudi_recu_9 - Copie.docx",
+      "time": 20.9,
+      "total_entities": 49,
+      "matched_hpo": 15,
+      "coverage": 0.30612244897959184,
+      "extracted_hpo": [
+        "HP:0000964",
+        "HP:0000967",
+        "HP:0000980",
+        "HP:0001648",
+        "HP:0001873",
+        "HP:0001903",
+        "HP:0002093",
+        "HP:0002094",
+        "HP:0004430",
+        "HP:0006538",
+        "HP:0031273",
+        "HP:0100759"
+      ],
+      "has_gold": true,
+      "expected_disease": "Wiskott-Aldrich syndrome",
+      "expected_orpha": "ORPHA:906",
+      "ordo_correct": true,
+      "ordo_top": "Wiskott-Aldrich syndrome",
+      "ordo_score": 0.85,
+      "expected_hpo_count": 11,
+      "hpo_tp": 10,
+      "hpo_fn": 1,
+      "hpo_fp": 5,
+      "hpo_recall": 0.9090909090909091,
+      "hpo_precision": 0.8333333333333334,
+      "hpo_f1": 0.8695652173913043,
+      "semantic_matches": [
+        [
+          "HP:0006538",
+          "HP:0002719"
+        ],
+        [
+          "HP:0001873",
+          "HP:0000978"
+        ],
+        [
+          "HP:0006538",
+          "HP:0006538"
+        ],
+        [
+          "HP:0001903",
+          "HP:0001903"
+        ],
+        [
+          "HP:0002093",
+          "HP:0002093"
+        ],
+        [
+          "HP:0000980",
+          "HP:0000980"
+        ],
+        [
+          "HP:0006538",
+          "HP:0004430"
+        ],
+        [
+          "HP:0000964",
+          "HP:0000964"
+        ],
+        [
+          "HP:0001873",
+          "HP:0001873"
+        ],
+        [
+          "HP:0000967",
+          "HP:0000967"
+        ]
+      ]
+    },
+    {
+      "note_id": "CHU_FR_005",
+      "disease": "Amroune_Abdelaziz_DIP_Wiskott_Aldrich_Mars2026_Dr_Djoudi_recu_9.docx",
+      "time": 15.2,
+      "total_entities": 45,
+      "matched_hpo": 15,
+      "coverage": 0.3333333333333333,
+      "extracted_hpo": [
+        "HP:0000509",
+        "HP:0000670",
+        "HP:0000964",
+        "HP:0000967",
+        "HP:0000980",
+        "HP:0001648",
+        "HP:0001873",
+        "HP:0001888",
+        "HP:0001903",
+        "HP:0002093",
+        "HP:0004430",
+        "HP:0006538",
+        "HP:0031273",
+        "HP:0100759"
+      ],
+      "has_gold": true,
+      "expected_disease": "Wiskott-Aldrich syndrome",
+      "expected_orpha": "ORPHA:906",
+      "ordo_correct": true,
+      "ordo_top": "Wiskott-Aldrich syndrome",
+      "ordo_score": 0.85,
+      "expected_hpo_count": 11,
+      "hpo_tp": 11,
+      "hpo_fn": 0,
+      "hpo_fp": 6,
+      "hpo_recall": 1.0,
+      "hpo_precision": 0.7857142857142857,
+      "hpo_f1": 0.88,
+      "semantic_matches": [
+        [
+          "HP:0006538",
+          "HP:0002719"
+        ],
+        [
+          "HP:0001873",
+          "HP:0000978"
+        ],
+        [
+          "HP:0006538",
+          "HP:0006538"
+        ],
+        [
+          "HP:0001903",
+          "HP:0001903"
+        ],
+        [
+          "HP:0002093",
+          "HP:0002093"
+        ],
+        [
+          "HP:0000980",
+          "HP:0000980"
+        ],
+        [
+          "HP:0006538",
+          "HP:0004430"
+        ],
+        [
+          "HP:0000964",
+          "HP:0000964"
+        ],
+        [
+          "HP:0001873",
+          "HP:0001873"
+        ],
+        [
+          "HP:0000967",
+          "HP:0000967"
+        ],
+        [
+          "HP:0001888",
+          "HP:0001888"
+        ]
+      ]
+    },
+    {
+      "note_id": "CHU_FR_006",
+      "disease": "Amroune_Abdelaziz_DIP_Wiskott_Aldrich_novembre2025_Dr_Djoudi_recu_9.docx",
+      "time": 21.7,
+      "total_entities": 45,
+      "matched_hpo": 15,
+      "coverage": 0.3333333333333333,
+      "extracted_hpo": [
+        "HP:0000670",
+        "HP:0000964",
+        "HP:0000967",
+        "HP:0000980",
+        "HP:0001648",
+        "HP:0001873",
+        "HP:0001888",
+        "HP:0001903",
+        "HP:0002093",
+        "HP:0002094",
+        "HP:0004430",
+        "HP:0006538",
+        "HP:0011227",
+        "HP:0100759"
+      ],
+      "has_gold": true,
+      "expected_disease": "Wiskott-Aldrich syndrome",
+      "expected_orpha": "ORPHA:906",
+      "ordo_correct": true,
+      "ordo_top": "Wiskott-Aldrich syndrome",
+      "ordo_score": 0.85,
+      "expected_hpo_count": 11,
+      "hpo_tp": 11,
+      "hpo_fn": 0,
+      "hpo_fp": 6,
+      "hpo_recall": 1.0,
+      "hpo_precision": 0.7857142857142857,
+      "hpo_f1": 0.88,
+      "semantic_matches": [
+        [
+          "HP:0006538",
+          "HP:0002719"
+        ],
+        [
+          "HP:0001873",
+          "HP:0000978"
+        ],
+        [
+          "HP:0006538",
+          "HP:0006538"
+        ],
+        [
+          "HP:0001903",
+          "HP:0001903"
+        ],
+        [
+          "HP:0002093",
+          "HP:0002093"
+        ],
+        [
+          "HP:0000980",
+          "HP:0000980"
+        ],
+        [
+          "HP:0006538",
+          "HP:0004430"
+        ],
+        [
+          "HP:0000964",
+          "HP:0000964"
+        ],
+        [
+          "HP:0001873",
+          "HP:0001873"
+        ],
+        [
+          "HP:0000967",
+          "HP:0000967"
+        ],
+        [
+          "HP:0001888",
+          "HP:0001888"
+        ]
+      ]
+    },
+    {
+      "note_id": "CHU_FR_007",
+      "disease": "Azzemmou mahdi DIP Agammaglobulinémie Décembre 25 Djoudi - Copie.docx",
+      "time": 17.6,
+      "total_entities": 55,
+      "matched_hpo": 19,
+      "coverage": 0.34545454545454546,
+      "extracted_hpo": [
+        "HP:0000388",
+        "HP:0000509",
+        "HP:0001369",
+        "HP:0002090",
+        "HP:0002098",
+        "HP:0002840",
+        "HP:0004313",
+        "HP:0004395",
+        "HP:0004430",
+        "HP:0006538",
+        "HP:0012735",
+        "HP:0012832",
+        "HP:0031273"
+      ],
+      "has_gold": true,
+      "expected_disease": "X-linked agammaglobulinemia",
+      "expected_orpha": "ORPHA:47",
+      "ordo_correct": true,
+      "ordo_top": "X-linked agammaglobulinemia",
+      "ordo_score": 0.85,
+      "expected_hpo_count": 11,
+      "hpo_tp": 11,
+      "hpo_fn": 0,
+      "hpo_fp": 6,
+      "hpo_recall": 1.0,
+      "hpo_precision": 0.8461538461538461,
+      "hpo_f1": 0.9166666666666666,
+      "semantic_matches": [
+        [
+          "HP:0004313",
+          "HP:0004432"
+        ],
+        [
+          "HP:0006538",
+          "HP:0002719"
+        ],
+        [
+          "HP:0001369",
+          "HP:0001369"
+        ],
+        [
+          "HP:0002090",
+          "HP:0002090"
+        ],
+        [
+          "HP:0006538",
+          "HP:0006538"
+        ],
+        [
+          "HP:0000388",
+          "HP:0000388"
+        ],
+        [
+          "HP:0012735",
+          "HP:0012735"
+        ],
+        [
+          "HP:0006538",
+          "HP:0004430"
+        ],
+        [
+          "HP:0002090",
+          "HP:0002098"
+        ],
+        [
+          "HP:0002840",
+          "HP:0002840"
+        ],
+        [
+          "HP:0004313",
+          "HP:0004313"
+        ]
+      ]
+    },
+    {
+      "note_id": "CHU_FR_008",
+      "disease": "Azzemmou mahdi DIP Agammaglobulinémie Mars Djoudi.docx",
+      "time": 18.12,
+      "total_entities": 48,
+      "matched_hpo": 22,
+      "coverage": 0.4583333333333333,
+      "extracted_hpo": [
+        "HP:0000388",
+        "HP:0000951",
+        "HP:0000953",
+        "HP:0001369",
+        "HP:0002090",
+        "HP:0002098",
+        "HP:0002840",
+        "HP:0004313",
+        "HP:0004395",
+        "HP:0004430",
+        "HP:0006538",
+        "HP:0007879",
+        "HP:0012735",
+        "HP:0012832",
+        "HP:0031273"
+      ],
+      "has_gold": true,
+      "expected_disease": "X-linked agammaglobulinemia",
+      "expected_orpha": "ORPHA:47",
+      "ordo_correct": true,
+      "ordo_top": "X-linked agammaglobulinemia",
+      "ordo_score": 0.85,
+      "expected_hpo_count": 11,
+      "hpo_tp": 11,
+      "hpo_fn": 0,
+      "hpo_fp": 8,
+      "hpo_recall": 1.0,
+      "hpo_precision": 0.7333333333333333,
+      "hpo_f1": 0.846153846153846,
+      "semantic_matches": [
+        [
+          "HP:0004313",
+          "HP:0004432"
+        ],
+        [
+          "HP:0006538",
+          "HP:0002719"
+        ],
+        [
+          "HP:0001369",
+          "HP:0001369"
+        ],
+        [
+          "HP:0002090",
+          "HP:0002090"
+        ],
+        [
+          "HP:0006538",
+          "HP:0006538"
+        ],
+        [
+          "HP:0000388",
+          "HP:0000388"
+        ],
+        [
+          "HP:0012735",
+          "HP:0012735"
+        ],
+        [
+          "HP:0006538",
+          "HP:0004430"
+        ],
+        [
+          "HP:0002090",
+          "HP:0002098"
+        ],
+        [
+          "HP:0002840",
+          "HP:0002840"
+        ],
+        [
+          "HP:0004313",
+          "HP:0004313"
+        ]
+      ]
+    },
+    {
+      "note_id": "CHU_FR_009",
+      "disease": "Azzemmou mahdi DIP Agammaglobulinémie Novembre 25 Djoudi - Copie.docx",
+      "time": 15.05,
+      "total_entities": 46,
+      "matched_hpo": 21,
+      "coverage": 0.45652173913043476,
+      "extracted_hpo": [
+        "HP:0000388",
+        "HP:0000953",
+        "HP:0001369",
+        "HP:0001648",
+        "HP:0002090",
+        "HP:0002098",
+        "HP:0002840",
+        "HP:0004313",
+        "HP:0004395",
+        "HP:0004430",
+        "HP:0006538",
+        "HP:0012832",
+        "HP:0031273"
+      ],
+      "has_gold": true,
+      "expected_disease": "X-linked agammaglobulinemia",
+      "expected_orpha": "ORPHA:47",
+      "ordo_correct": true,
+      "ordo_top": "X-linked agammaglobulinemia",
+      "ordo_score": 0.85,
+      "expected_hpo_count": 11,
+      "hpo_tp": 10,
+      "hpo_fn": 1,
+      "hpo_fp": 7,
+      "hpo_recall": 0.9090909090909091,
+      "hpo_precision": 0.7692307692307693,
+      "hpo_f1": 0.8333333333333333,
+      "semantic_matches": [
+        [
+          "HP:0004313",
+          "HP:0004432"
+        ],
+        [
+          "HP:0006538",
+          "HP:0002719"
+        ],
+        [
+          "HP:0001369",
+          "HP:0001369"
+        ],
+        [
+          "HP:0002090",
+          "HP:0002090"
+        ],
+        [
+          "HP:0006538",
+          "HP:0006538"
+        ],
+        [
+          "HP:0000388",
+          "HP:0000388"
+        ],
+        [
+          "HP:0006538",
+          "HP:0004430"
+        ],
+        [
+          "HP:0002090",
+          "HP:0002098"
+        ],
+        [
+          "HP:0002840",
+          "HP:0002840"
+        ],
+        [
+          "HP:0004313",
+          "HP:0004313"
+        ]
+      ]
+    },
+    {
+      "note_id": "CHU_FR_012",
+      "disease": "BELGHIT ABDELWAHAB DR TAMAZIRT 04-12-2025.docx",
+      "time": 14.82,
+      "total_entities": 42,
+      "matched_hpo": 14,
+      "coverage": 0.3333333333333333,
+      "extracted_hpo": [
+        "HP:0001648",
+        "HP:0001742",
+        "HP:0001903",
+        "HP:0001974",
+        "HP:0002098",
+        "HP:0004430",
+        "HP:0006533",
+        "HP:0011010",
+        "HP:0011856",
+        "HP:0011950",
+        "HP:0012735"
+      ],
+      "has_gold": false
+    },
+    {
+      "note_id": "CHU_FR_013",
+      "disease": "BELGHIT ABDELWAHAB DR TAMAZIRT 16-12-2025.docx",
+      "time": 11.13,
+      "total_entities": 55,
+      "matched_hpo": 15,
+      "coverage": 0.2727272727272727,
+      "extracted_hpo": [
+        "HP:0000961",
+        "HP:0001648",
+        "HP:0001742",
+        "HP:0001903",
+        "HP:0001945",
+        "HP:0001974",
+        "HP:0002090",
+        "HP:0002098",
+        "HP:0004430",
+        "HP:0011010",
+        "HP:0011950",
+        "HP:0012418"
+      ],
+      "has_gold": false
+    },
+    {
+      "note_id": "CHU_FR_014",
+      "disease": "BELHOUARI ZAKARIA SMA.docx",
+      "time": 14.21,
+      "total_entities": 30,
+      "matched_hpo": 9,
+      "coverage": 0.3,
+      "extracted_hpo": [
+        "HP:0000961",
+        "HP:0001252",
+        "HP:0002098",
+        "HP:0002104",
+        "HP:0007178",
+        "HP:0007269"
+      ],
+      "has_gold": true,
+      "expected_disease": "Spinal muscular atrophy",
+      "expected_orpha": "ORPHA:70",
+      "ordo_correct": true,
+      "ordo_top": "Spinal muscular atrophy",
+      "ordo_score": 0.85,
+      "expected_hpo_count": 5,
+      "hpo_tp": 5,
+      "hpo_fn": 0,
+      "hpo_fp": 3,
+      "hpo_recall": 1.0,
+      "hpo_precision": 0.8333333333333334,
+      "hpo_f1": 0.9090909090909091,
+      "semantic_matches": [
+        [
+          "HP:0001252",
+          "HP:0003202"
+        ],
+        [
+          "HP:0002098",
+          "HP:0002093"
+        ],
+        [
+          "HP:0002098",
+          "HP:0002098"
+        ],
+        [
+          "HP:0001252",
+          "HP:0001252"
+        ],
+        [
+          "HP:0002104",
+          "HP:0002104"
+        ]
+      ]
+    },
+    {
+      "note_id": "CHU_FR_015",
+      "disease": "BENAMEUR  DR TAMAZIRT 02-11-2025.docx",
+      "time": 23.03,
+      "total_entities": 33,
+      "matched_hpo": 13,
+      "coverage": 0.3939393939393939,
+      "extracted_hpo": [
+        "HP:0001648",
+        "HP:0001943",
+        "HP:0001945",
+        "HP:0002099",
+        "HP:0004313",
+        "HP:0004430",
+        "HP:0011010",
+        "HP:0025297"
+      ],
+      "has_gold": false
+    },
+    {
+      "note_id": "CHU_FR_016",
+      "disease": "BENAMEUR  DR TAMAZIRT 13-01-2026.docx",
+      "time": 21.11,
+      "total_entities": 38,
+      "matched_hpo": 14,
+      "coverage": 0.3684210526315789,
+      "extracted_hpo": [
+        "HP:0001648",
+        "HP:0001945",
+        "HP:0002099",
+        "HP:0004313",
+        "HP:0004430",
+        "HP:0011010",
+        "HP:0025297"
+      ],
+      "has_gold": false
+    },
+    {
+      "note_id": "CHU_FR_017",
+      "disease": "BENAMEUR  DR TAMAZIRT 15-12-2025.docx",
+      "time": 20.54,
+      "total_entities": 34,
+      "matched_hpo": 14,
+      "coverage": 0.4117647058823529,
+      "extracted_hpo": [
+        "HP:0001648",
+        "HP:0001945",
+        "HP:0002099",
+        "HP:0004313",
+        "HP:0004430",
+        "HP:0011010",
+        "HP:0025297"
+      ],
+      "has_gold": false
+    },
+    {
+      "note_id": "CHU_FR_018",
+      "disease": "BENAMEUR  DR TAMAZIRT 23-11-2025.docx",
+      "time": 23.41,
+      "total_entities": 38,
+      "matched_hpo": 13,
+      "coverage": 0.34210526315789475,
+      "extracted_hpo": [
+        "HP:0001648",
+        "HP:0001943",
+        "HP:0001945",
+        "HP:0002099",
+        "HP:0004313",
+        "HP:0004430",
+        "HP:0011010",
+        "HP:0025297"
+      ],
+      "has_gold": false
+    },
+    {
+      "note_id": "CHU_FR_020",
+      "disease": "BOUTELDJA MOHAMED DR TAMAZIRT 15-02-2026.docx",
+      "time": 30.91,
+      "total_entities": 46,
+      "matched_hpo": 14,
+      "coverage": 0.30434782608695654,
+      "extracted_hpo": [
+        "HP:0000752",
+        "HP:0004430",
+        "HP:0011010",
+        "HP:0011971",
+        "HP:0012203"
+      ],
+      "has_gold": false
+    },
+    {
+      "note_id": "CHU_FR_021",
+      "disease": "BOUTELDJA MOHAMED DR TAMAZIRT 15-03-2026.docx",
+      "time": 23.36,
+      "total_entities": 47,
+      "matched_hpo": 12,
+      "coverage": 0.2553191489361702,
+      "extracted_hpo": [
+        "HP:0000752",
+        "HP:0001945",
+        "HP:0004430",
+        "HP:0011010",
+        "HP:0011856",
+        "HP:0012203"
+      ],
+      "has_gold": false
+    },
+    {
+      "note_id": "CHU_FR_022",
+      "disease": "BOUTELDJA MOHAMED DR TAMAZIRT 15-04-2026.docx",
+      "time": 24.95,
+      "total_entities": 43,
+      "matched_hpo": 11,
+      "coverage": 0.2558139534883721,
+      "extracted_hpo": [
+        "HP:0000752",
+        "HP:0004430",
+        "HP:0011010",
+        "HP:0012203"
+      ],
+      "has_gold": false
+    },
+    {
+      "note_id": "CHU_FR_023",
+      "disease": "BOUTELDJA MOHAMED DR TAMAZIRT 15-12-2025.docx",
+      "time": 28.25,
+      "total_entities": 46,
+      "matched_hpo": 13,
+      "coverage": 0.2826086956521739,
+      "extracted_hpo": [
+        "HP:0000752",
+        "HP:0004430",
+        "HP:0011010",
+        "HP:0012203"
+      ],
+      "has_gold": false
+    },
+    {
+      "note_id": "CHU_FR_024",
+      "disease": "BOUTELDJA MOHAMED DR TAMAZIRT 17-11-2025.docx",
+      "time": 39.37,
+      "total_entities": 51,
+      "matched_hpo": 17,
+      "coverage": 0.3333333333333333,
+      "extracted_hpo": [
+        "HP:0000752",
+        "HP:0004430",
+        "HP:0011010",
+        "HP:0012203",
+        "HP:0012835"
+      ],
+      "has_gold": false
+    },
+    {
+      "note_id": "CHU_FR_025",
+      "disease": "Bendjelida Med mars 2026.docx",
+      "time": 41.32,
+      "total_entities": 78,
+      "matched_hpo": 28,
+      "coverage": 0.358974358974359,
+      "extracted_hpo": [
+        "HP:0000980",
+        "HP:0001538",
+        "HP:0001648",
+        "HP:0001742",
+        "HP:0001943",
+        "HP:0001945",
+        "HP:0002093",
+        "HP:0003270",
+        "HP:0004395",
+        "HP:0006538",
+        "HP:0011010",
+        "HP:0011109",
+        "HP:0012735",
+        "HP:0012835",
+        "HP:0025301",
+        "HP:0025406",
+        "HP:0030831",
+        "HP:0100582",
+        "HP:0100759"
+      ],
+      "has_gold": false
+    },
+    {
+      "note_id": "CHU_FR_027",
+      "disease": "CERTIFICAT MEDICAL HIES.docx",
+      "time": 2.36,
+      "total_entities": 7,
+      "matched_hpo": 1,
+      "coverage": 0.14285714285714285,
+      "extracted_hpo": [
+        "HP:0004430"
+      ],
+      "has_gold": true,
+      "expected_disease": "Hyper-IgE syndrome",
+      "expected_orpha": "ORPHA:2314",
+      "ordo_correct": false,
+      "ordo_top": "Ataxia-telangiectasia",
+      "ordo_score": 0.1111,
+      "expected_hpo_count": 2,
+      "hpo_tp": 2,
+      "hpo_fn": 0,
+      "hpo_fp": 0,
+      "hpo_recall": 1.0,
+      "hpo_precision": 2.0,
+      "hpo_f1": 1.3333333333333333,
+      "semantic_matches": [
+        [
+          "HP:0004430",
+          "HP:0002719"
+        ],
+        [
+          "HP:0004430",
+          "HP:0004430"
+        ]
+      ]
+    },
+    {
+      "note_id": "CHU_FR_028",
+      "disease": "Kherissi Maram Hospit Nov 25.docx",
+      "time": 27.74,
+      "total_entities": 67,
+      "matched_hpo": 25,
+      "coverage": 0.373134328358209,
+      "extracted_hpo": [
+        "HP:0000978",
+        "HP:0001538",
+        "HP:0001648",
+        "HP:0001873",
+        "HP:0001888",
+        "HP:0001897",
+        "HP:0001903",
+        "HP:0002090",
+        "HP:0002093",
+        "HP:0002098",
+        "HP:0002110",
+        "HP:0004395",
+        "HP:0004430",
+        "HP:0006538",
+        "HP:0011010",
+        "HP:0011227",
+        "HP:0012735",
+        "HP:0012834",
+        "HP:0030646",
+        "HP:0030757",
+        "HP:0100759"
+      ],
+      "has_gold": true,
+      "expected_disease": "Severe combined immunodeficiency",
+      "expected_orpha": "ORPHA:183660",
+      "ordo_correct": true,
+      "ordo_top": "Severe combined immunodeficiency",
+      "ordo_score": 0.85,
+      "expected_hpo_count": 10,
+      "hpo_tp": 10,
+      "hpo_fn": 0,
+      "hpo_fp": 14,
+      "hpo_recall": 1.0,
+      "hpo_precision": 0.47619047619047616,
+      "hpo_f1": 0.6451612903225806,
+      "semantic_matches": [
+        [
+          "HP:0006538",
+          "HP:0002719"
+        ],
+        [
+          "HP:0002110",
+          "HP:0002110"
+        ],
+        [
+          "HP:0001873",
+          "HP:0000978"
+        ],
+        [
+          "HP:0006538",
+          "HP:0006538"
+        ],
+        [
+          "HP:0004395",
+          "HP:0001508"
+        ],
+        [
+          "HP:0001903",
+          "HP:0001903"
+        ],
+        [
+          "HP:0002093",
+          "HP:0002093"
+        ],
+        [
+          "HP:0006538",
+          "HP:0004430"
+        ],
+        [
+          "HP:0001873",
+          "HP:0001873"
+        ],
+        [
+          "HP:0001888",
+          "HP:0001888"
+        ]
+      ]
+    },
+    {
+      "note_id": "CHU_FR_029",
+      "disease": "Khrissi Maram SKID LIKE  Mars 26.docx",
+      "time": 9.41,
+      "total_entities": 54,
+      "matched_hpo": 23,
+      "coverage": 0.42592592592592593,
+      "extracted_hpo": [
+        "HP:0001508",
+        "HP:0001538",
+        "HP:0001648",
+        "HP:0001873",
+        "HP:0001888",
+        "HP:0001897",
+        "HP:0001903",
+        "HP:0002090",
+        "HP:0002093",
+        "HP:0002110",
+        "HP:0003270",
+        "HP:0004313",
+        "HP:0004395",
+        "HP:0004430",
+        "HP:0006538",
+        "HP:0011010",
+        "HP:0012735",
+        "HP:0012828",
+        "HP:0025305",
+        "HP:0030646",
+        "HP:0100759"
+      ],
+      "has_gold": true,
+      "expected_disease": "Severe combined immunodeficiency",
+      "expected_orpha": "ORPHA:183660",
+      "ordo_correct": true,
+      "ordo_top": "Severe combined immunodeficiency",
+      "ordo_score": 0.85,
+      "expected_hpo_count": 7,
+      "hpo_tp": 6,
+      "hpo_fn": 1,
+      "hpo_fp": 16,
+      "hpo_recall": 0.8571428571428571,
+      "hpo_precision": 0.2857142857142857,
+      "hpo_f1": 0.42857142857142855,
+      "semantic_matches": [
+        [
+          "HP:0006538",
+          "HP:0002719"
+        ],
+        [
+          "HP:0002093",
+          "HP:0002090"
+        ],
+        [
+          "HP:0004395",
+          "HP:0001508"
+        ],
+        [
+          "HP:0001903",
+          "HP:0001903"
+        ],
+        [
+          "HP:0006538",
+          "HP:0004430"
+        ],
+        [
+          "HP:0001888",
+          "HP:0001888"
+        ]
+      ]
+    },
+    {
+      "note_id": "CHU_FR_030",
+      "disease": "MANSOURI CHAIMA DR TAMAZIRT - 02-11-2025.docx",
+      "time": 21.73,
+      "total_entities": 42,
+      "matched_hpo": 14,
+      "coverage": 0.3333333333333333,
+      "extracted_hpo": [
+        "HP:0000964",
+        "HP:0000989",
+        "HP:0001648",
+        "HP:0001943",
+        "HP:0004430",
+        "HP:0009789",
+        "HP:0011010",
+        "HP:0031292"
+      ],
+      "has_gold": false
+    },
+    {
+      "note_id": "CHU_FR_031",
+      "disease": "Maabed Mouad DIP Ataxie tÃ_langectasie 15_12_2026.docx",
+      "time": 11.55,
+      "total_entities": 55,
+      "matched_hpo": 19,
+      "coverage": 0.34545454545454546,
+      "extracted_hpo": [
+        "HP:0000639",
+        "HP:0001009",
+        "HP:0001250",
+        "HP:0001251",
+        "HP:0001260",
+        "HP:0001648",
+        "HP:0001888",
+        "HP:0001903",
+        "HP:0003193",
+        "HP:0004430",
+        "HP:0006538",
+        "HP:0011009",
+        "HP:0011097",
+        "HP:0012825",
+        "HP:0030757"
+      ],
+      "has_gold": true,
+      "expected_disease": "Ataxia-telangiectasia",
+      "expected_orpha": "ORPHA:100",
+      "ordo_correct": true,
+      "ordo_top": "Ataxia-telangiectasia",
+      "ordo_score": 0.85,
+      "expected_hpo_count": 7,
+      "hpo_tp": 6,
+      "hpo_fn": 1,
+      "hpo_fp": 10,
+      "hpo_recall": 0.8571428571428571,
+      "hpo_precision": 0.4,
+      "hpo_f1": 0.5454545454545455,
+      "semantic_matches": [
+        [
+          "HP:0006538",
+          "HP:0002719"
+        ],
+        [
+          "HP:0001251",
+          "HP:0001251"
+        ],
+        [
+          "HP:0006538",
+          "HP:0004430"
+        ],
+        [
+          "HP:0001009",
+          "HP:0001009"
+        ],
+        [
+          "HP:0001250",
+          "HP:0001250"
+        ],
+        [
+          "HP:0001888",
+          "HP:0001888"
+        ]
+      ]
+    },
+    {
+      "note_id": "CHU_FR_032",
+      "disease": "Maabed Mouad DIP Ataxie tÃ_langectasie 23_03_2026.docx",
+      "time": 11.04,
+      "total_entities": 50,
+      "matched_hpo": 16,
+      "coverage": 0.32,
+      "extracted_hpo": [
+        "HP:0000639",
+        "HP:0001009",
+        "HP:0001250",
+        "HP:0001583",
+        "HP:0001648",
+        "HP:0001888",
+        "HP:0001903",
+        "HP:0003193",
+        "HP:0004395",
+        "HP:0004430",
+        "HP:0006538",
+        "HP:0012735"
+      ],
+      "has_gold": true,
+      "expected_disease": "Ataxia-telangiectasia",
+      "expected_orpha": "ORPHA:100",
+      "ordo_correct": true,
+      "ordo_top": "Ataxia-telangiectasia",
+      "ordo_score": 0.85,
+      "expected_hpo_count": 7,
+      "hpo_tp": 5,
+      "hpo_fn": 2,
+      "hpo_fp": 8,
+      "hpo_recall": 0.7142857142857143,
+      "hpo_precision": 0.4166666666666667,
+      "hpo_f1": 0.5263157894736842,
+      "semantic_matches": [
+        [
+          "HP:0006538",
+          "HP:0002719"
+        ],
+        [
+          "HP:0006538",
+          "HP:0004430"
+        ],
+        [
+          "HP:0001009",
+          "HP:0001009"
+        ],
+        [
+          "HP:0001250",
+          "HP:0001250"
+        ],
+        [
+          "HP:0001888",
+          "HP:0001888"
+        ]
+      ]
+    },
+    {
+      "note_id": "CHU_FR_036",
+      "disease": "RM Bendjelida Israa Mars 2026.docx",
+      "time": 46.29,
+      "total_entities": 71,
+      "matched_hpo": 29,
+      "coverage": 0.4084507042253521,
+      "extracted_hpo": [
+        "HP:0000246",
+        "HP:0000767",
+        "HP:0000980",
+        "HP:0001648",
+        "HP:0001742",
+        "HP:0001943",
+        "HP:0001945",
+        "HP:0002093",
+        "HP:0002329",
+        "HP:0003193",
+        "HP:0003270",
+        "HP:0004395",
+        "HP:0006538",
+        "HP:0011010",
+        "HP:0012735",
+        "HP:0025406",
+        "HP:0031417",
+        "HP:0100759"
+      ],
+      "has_gold": false
+    },
+    {
+      "note_id": "CHU_FR_038",
+      "disease": "Saidani Mohamed DIP AgammaglobulinÃ_mie Djoudi 02_2026.docx",
+      "time": 32.24,
+      "total_entities": 71,
+      "matched_hpo": 28,
+      "coverage": 0.39436619718309857,
+      "extracted_hpo": [
+        "HP:0000311",
+        "HP:0000952",
+        "HP:0000964",
+        "HP:0001508",
+        "HP:0001875",
+        "HP:0001888",
+        "HP:0001903",
+        "HP:0002013",
+        "HP:0002027",
+        "HP:0002090",
+        "HP:0002583",
+        "HP:0002960",
+        "HP:0003676",
+        "HP:0004313",
+        "HP:0004395",
+        "HP:0004430",
+        "HP:0005263",
+        "HP:0006538",
+        "HP:0011950",
+        "HP:0012531",
+        "HP:0012826",
+        "HP:0012828",
+        "HP:0012835",
+        "HP:0100656"
+      ],
+      "has_gold": true,
+      "expected_disease": "X-linked agammaglobulinemia",
+      "expected_orpha": "ORPHA:47",
+      "ordo_correct": true,
+      "ordo_top": "X-linked agammaglobulinemia",
+      "ordo_score": 0.85,
+      "expected_hpo_count": 5,
+      "hpo_tp": 5,
+      "hpo_fn": 0,
+      "hpo_fp": 21,
+      "hpo_recall": 1.0,
+      "hpo_precision": 0.20833333333333334,
+      "hpo_f1": 0.3448275862068966,
+      "semantic_matches": [
+        [
+          "HP:0006538",
+          "HP:0002719"
+        ],
+        [
+          "HP:0002090",
+          "HP:0002090"
+        ],
+        [
+          "HP:0006538",
+          "HP:0006538"
+        ],
+        [
+          "HP:0006538",
+          "HP:0004430"
+        ],
+        [
+          "HP:0004313",
+          "HP:0004313"
+        ]
+      ]
+    },
+    {
+      "note_id": "CHU_FR_039",
+      "disease": "TAZI MIMOUNE ABDERAHMANE.docx",
+      "time": 26.37,
+      "total_entities": 82,
+      "matched_hpo": 32,
+      "coverage": 0.3902439024390244,
+      "extracted_hpo": [
+        "HP:0000980",
+        "HP:0001538",
+        "HP:0001648",
+        "HP:0001876",
+        "HP:0001888",
+        "HP:0001903",
+        "HP:0001943",
+        "HP:0002014",
+        "HP:0002090",
+        "HP:0002093",
+        "HP:0002098",
+        "HP:0002205",
+        "HP:0002240",
+        "HP:0003270",
+        "HP:0004395",
+        "HP:0004430",
+        "HP:0004447",
+        "HP:0011010",
+        "HP:0011273",
+        "HP:0012830",
+        "HP:0025305",
+        "HP:0032231"
+      ],
+      "has_gold": true,
+      "expected_disease": "Primary immunodeficiency",
+      "expected_orpha": null,
+      "ordo_correct": false,
+      "ordo_top": "Severe combined immunodeficiency",
+      "ordo_score": 0.85,
+      "expected_hpo_count": 2,
+      "hpo_tp": 2,
+      "hpo_fn": 0,
+      "hpo_fp": 21,
+      "hpo_recall": 1.0,
+      "hpo_precision": 0.09090909090909091,
+      "hpo_f1": 0.16666666666666669,
+      "semantic_matches": [
+        [
+          "HP:0004430",
+          "HP:0002719"
+        ],
+        [
+          "HP:0004430",
+          "HP:0004430"
+        ]
+      ]
+    }
+  ]
+}

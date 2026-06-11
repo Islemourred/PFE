@@ -1,0 +1,380 @@
+{
+  "note_id": "PUBMED_EN_019",
+  "language": "en",
+  "module1": {
+    "clean_text": "Case Report: Spinal Muscular Atrophy.\n\nPURPOSE OF REVIEW: This article provides an overview of the pathophysiology and clinical presentations of spinal muscular atrophy (SMA) and reviews therapeutic developments, including US Food and Drug Administration (FDA)-approved gene-targeted therapies and mainstays of supportive SMA care.\nRECENT FINDINGS: Over the past decades, an understanding of the role of SMN protein in the development and maintenance of the motor unit and the intricate genetics underlying SMA has led to striking developments in therapeutics with three FDA-approved treatments for SMA, one targeting SMN1 gene replacement (onasemnogene abeparvovec-xioi) and two others enhancing SMN protein production from the SMN2 gene (nusinersen and risdiplam). These therapies are most effective in infants treated at younger ages, and improvement is most striking in babies treated as neonates. Despite improvements in motor function, patients (especially those treated at older ages) continue to experience significant weakness and require continued close monitoring of respiratory and orthopedic symptoms.\nSUMMARY: Striking therapeutic advancements have changed the clinical course of SMA dramatically, although supportive care continues to play an important role in patient care.",
+    "phi_map": {},
+    "patient_info": {}
+  },
+  "module3_warnings": {
+    "temporal": [],
+    "inconsistencies": []
+  },
+  "module4": {
+    "problem": [
+      {
+        "text": "Spinal Muscular Atrophy",
+        "ner_score": 0.918,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0007269",
+        "hpo_name": "Spinal muscular atrophy",
+        "expanded_text": "Spinal Muscular Atrophy",
+        "match_type": "exact_label",
+        "confidence": 1.0,
+        "matched": true,
+        "umls_cui": "C0026847"
+      },
+      {
+        "text": "motor function",
+        "ner_score": 0.451,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0004302",
+        "hpo_name": "Functional motor deficit",
+        "expanded_text": "motor function",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.7404,
+        "matched": true,
+        "umls_cui": "C4025360"
+      },
+      {
+        "text": "weakness",
+        "ner_score": 0.939,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0001324",
+        "hpo_name": "Muscle weakness",
+        "expanded_text": "weakness",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.891,
+        "matched": true,
+        "umls_cui": "C0151786"
+      },
+      {
+        "text": "respiratory",
+        "ner_score": 0.603,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0011947",
+        "hpo_name": "Respiratory tract infection",
+        "expanded_text": "respiratory",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.7121,
+        "matched": true,
+        "umls_cui": "C0035243"
+      },
+      {
+        "text": "orthopedic symptoms",
+        "ner_score": 0.463,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "orthopedic symptoms",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "Muscular Atrophy",
+        "ner_score": 0.9,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0003202",
+        "hpo_name": "Skeletal muscle atrophy",
+        "expanded_text": "Muscular Atrophy",
+        "match_type": "text_scan_exact_synonym",
+        "confidence": 0.95,
+        "matched": true,
+        "umls_cui": "C0234958",
+        "umls_all": [
+          "C0234958",
+          "C0270948",
+          "C0541794",
+          "C1843479"
+        ]
+      }
+    ],
+    "treatment": [
+      {
+        "text": "ersen",
+        "ner_score": 0.82,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "ersen",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "monitoring",
+        "ner_score": 0.283,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "monitoring",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      }
+    ],
+    "ordo_candidates": [
+      {
+        "ordo_id": "ORPHA:70",
+        "name": "Spinal muscular atrophy",
+        "name_fr": "Amyotrophie spinale (SMA)",
+        "score": 0.85,
+        "jaccard": 0.0909,
+        "coverage": 0.1429,
+        "matched_hpo": [
+          "HP:0003202"
+        ],
+        "matched_count": 1,
+        "total_disease_hpo": 7
+      },
+      {
+        "ordo_id": "ORPHA:371",
+        "name": "Glycogen storage disease due to muscle phosphofructokinase deficiency",
+        "name_fr": "",
+        "score": 0.2889,
+        "jaccard": 0.2222,
+        "coverage": 0.3333,
+        "matched_hpo": [
+          "HP:0001324",
+          "HP:0003202"
+        ],
+        "matched_count": 2,
+        "total_disease_hpo": 6
+      },
+      {
+        "ordo_id": "ORPHA:85162",
+        "name": "Facial onset sensory and motor neuronopathy",
+        "name_fr": "",
+        "score": 0.2514,
+        "jaccard": 0.2,
+        "coverage": 0.2857,
+        "matched_hpo": [
+          "HP:0001324",
+          "HP:0003202"
+        ],
+        "matched_count": 2,
+        "total_disease_hpo": 7
+      },
+      {
+        "ordo_id": "ORPHA:166",
+        "name": "Charcot-Marie-Tooth disease",
+        "name_fr": "",
+        "score": 0.2,
+        "jaccard": 0.125,
+        "coverage": 0.25,
+        "matched_hpo": [
+          "HP:0003202"
+        ],
+        "matched_count": 1,
+        "total_disease_hpo": 4
+      },
+      {
+        "ordo_id": "ORPHA:3239",
+        "name": "Deafness-vitiligo-achalasia syndrome",
+        "name_fr": "",
+        "score": 0.14,
+        "jaccard": 0.1,
+        "coverage": 0.1667,
+        "matched_hpo": [
+          "HP:0003202"
+        ],
+        "matched_count": 1,
+        "total_disease_hpo": 6
+      }
+    ],
+    "stats": {
+      "total": 8,
+      "matched": 5,
+      "unmatched": 3,
+      "match_rate": 62.5,
+      "unique_hpo": 5,
+      "ordo_matches": 5
+    }
+  },
+  "phenopacket": {
+    "id": "phenopacket-PUBMED_EN_019",
+    "subject": {
+      "id": "PUBMED_EN_019"
+    },
+    "input": "Case Report: Spinal Muscular Atrophy.\n\nPURPOSE OF REVIEW: This article provides an overview of the pathophysiology and clinical presentations of spinal muscular atrophy (SMA) and reviews therapeutic developments, including US Food and Drug Administration (FDA)-approved gene-targeted therapies and mainstays of supportive SMA care.\nRECENT FINDINGS: Over the past decades, an understanding of the role of SMN protein in the development and maintenance of the motor unit and the intricate genetics underlying SMA has led to striking developments in therapeutics with three FDA-approved treatments for SMA, one targeting SMN1 gene replacement (onasemnogene abeparvovec-xioi) and two others enhancing SMN protein production from the SMN2 gene (nusinersen and risdiplam). These therapies are most effective in infants treated at younger ages, and improvement is most striking in babies treated as neonates. Despite improvements in motor function, patients (especially those treated at older ages) continue to experience significant weakness and require continued close monitoring of respiratory and orthopedic symptoms.\nSUMMARY: Striking therapeutic advancements have changed the clinical course of SMA dramatically, although supportive care continues to play an important role in patient care.",
+    "target": "Spinal muscular atrophy",
+    "phenotypicFeatures": [
+      {
+        "type": {
+          "id": "HP:0007269",
+          "label": "Spinal muscular atrophy",
+          "umls_cui": "C0026847"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "PUBMED_EN_019",
+              "description": "NER: Spinal Muscular Atrophy (0.918) | Match: exact_label (1.000)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0004302",
+          "label": "Functional motor deficit",
+          "umls_cui": "C4025360"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "PUBMED_EN_019",
+              "description": "NER: motor function (0.451) | Match: sapbert_similarity (0.740)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0001324",
+          "label": "Muscle weakness",
+          "umls_cui": "C0151786"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "PUBMED_EN_019",
+              "description": "NER: weakness (0.939) | Match: sapbert_similarity (0.891)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0011947",
+          "label": "Respiratory tract infection",
+          "umls_cui": "C0035243"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "PUBMED_EN_019",
+              "description": "NER: respiratory (0.603) | Match: sapbert_similarity (0.712)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0003202",
+          "label": "Skeletal muscle atrophy",
+          "umls_cui": "C0234958"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "PUBMED_EN_019",
+              "description": "NER: Muscular Atrophy (0.900) | Match: text_scan_exact_synonym (0.950)"
+            }
+          }
+        ]
+      }
+    ],
+    "metaData": {
+      "created": "2026-06-11T03:06:38Z",
+      "createdBy": "clinical-preanalysis-pipeline-v2",
+      "phenopacketSchemaVersion": "2.0",
+      "resources": [
+        {
+          "id": "hp",
+          "name": "Human Phenotype Ontology",
+          "url": "https://hpo.jax.org",
+          "version": "2024-04-26",
+          "namespacePrefix": "HP",
+          "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        }
+      ]
+    },
+    "interpretations": [
+      {
+        "id": "interpretation-PUBMED_EN_019",
+        "progressStatus": "IN_PROGRESS",
+        "diagnosis": {
+          "disease": {
+            "id": "ORPHA:70",
+            "label": "Spinal muscular atrophy"
+          },
+          "score": 0.85,
+          "allCandidates": [
+            {
+              "id": "ORPHA:70",
+              "label": "Spinal muscular atrophy",
+              "score": 0.85
+            },
+            {
+              "id": "ORPHA:371",
+              "label": "Glycogen storage disease due to muscle phosphofructokinase deficiency",
+              "score": 0.2889
+            },
+            {
+              "id": "ORPHA:85162",
+              "label": "Facial onset sensory and motor neuronopathy",
+              "score": 0.2514
+            },
+            {
+              "id": "ORPHA:166",
+              "label": "Charcot-Marie-Tooth disease",
+              "score": 0.2
+            },
+            {
+              "id": "ORPHA:3239",
+              "label": "Deafness-vitiligo-achalasia syndrome",
+              "score": 0.14
+            }
+          ]
+        }
+      }
+    ],
+    "_pipelineStats": {
+      "totalEntities": 8,
+      "matchedHPO": 5,
+      "unmatchedEntities": 3,
+      "phenopacketFeatures": 5,
+      "negatedFeatures": 0,
+      "numericPhenotypes": 0,
+      "ordoCandidates": 5
+    }
+  }
+}

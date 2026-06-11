@@ -1,0 +1,815 @@
+{
+  "note_id": "PUBMED_EN_014",
+  "language": "en",
+  "module1": {
+    "clean_text": "Case Report: Dystonia in Ataxia Telangiectasia: A Case Report with Novel Mutations.\n\nAtaxia telangiectasia (A-T) is a common, genetically inherited cause of early childhood-onset ataxia that is classically characterized by progressive cerebellar malfunction, oculocutaneous telangiectasia, genome instability, and immunodeficiency. There is vast phenotype variation in patients with A-T and recently, dystonia, an extrapyramidal movement disorder. Here, we report the case of a [AGE] girl who had experienced repeated diarrhea and mild gait ataxia since the age of two years. At age [AGE] ataxia and ocular telangiectasia were evident and immunoglobulin level assessment showed hyper IgM immune phenotype, thus a diagnosis of A-T was made based on clinical and laboratory findings, and she was started on intravenous immunoglobulin therapy. Generalized dystonia appeared when she was [AGE] Molecular analysis revealed two heterozygous mutations, c.6259delG and c.6658C>T, in the ATM gene of which one (c.6259delG) is novel. Dystonia can be part of the clinical picture in the A-T disorder and may even mask ataxia. This should be considered as a major feature mainly in variant A-T, which may occur without general ataxia and may be misdiagnosed in adults with primary dystonia.",
+    "phi_map": {
+      "AGE": [
+        "10-year-old",
+        "seven,",
+        "10-years-old."
+      ]
+    },
+    "patient_info": {}
+  },
+  "module3_warnings": {
+    "temporal": [],
+    "inconsistencies": []
+  },
+  "module4": {
+    "problem": [
+      {
+        "text": "dystonia",
+        "ner_score": 0.546,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0001332",
+        "hpo_name": "Dystonia",
+        "expanded_text": "dystonia",
+        "match_type": "exact_label",
+        "confidence": 1.0,
+        "matched": true,
+        "umls_cui": "C0013421"
+      },
+      {
+        "text": "tonia",
+        "ner_score": 0.9,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0001276",
+        "hpo_name": "Hypertonia",
+        "expanded_text": "tonia",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.7184,
+        "matched": true,
+        "umls_cui": "C0026826"
+      },
+      {
+        "text": "ataxia",
+        "ner_score": 0.463,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0001251",
+        "hpo_name": "Ataxia",
+        "expanded_text": "ataxia",
+        "match_type": "exact_label",
+        "confidence": 1.0,
+        "matched": true,
+        "umls_cui": "C0007758"
+      },
+      {
+        "text": "angiectasia",
+        "ner_score": 0.865,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0001009",
+        "hpo_name": "Telangiectasia",
+        "expanded_text": "angiectasia",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.7662,
+        "matched": true,
+        "umls_cui": "C0039446"
+      },
+      {
+        "text": "cerebellar",
+        "ner_score": 0.49,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "cerebellar",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "malfunction",
+        "ner_score": 0.647,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "malfunction",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "immunodeficiency",
+        "ner_score": 0.399,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0002721",
+        "hpo_name": "Immunodeficiency",
+        "expanded_text": "immunodeficiency",
+        "match_type": "clinical_synonym",
+        "confidence": 1.0,
+        "matched": true,
+        "umls_cui": "C0021051"
+      },
+      {
+        "text": "extrapyramidal movement disorder",
+        "ner_score": 0.779,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0100022",
+        "hpo_name": "Abnormality of movement",
+        "expanded_text": "extrapyramidal movement disorder",
+        "match_type": "substring_match",
+        "confidence": 0.95,
+        "matched": true,
+        "umls_cui": "C0026650"
+      },
+      {
+        "text": "diarrhea",
+        "ner_score": 0.91,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0002014",
+        "hpo_name": "Diarrhea",
+        "expanded_text": "diarrhea",
+        "match_type": "clinical_synonym",
+        "confidence": 1.0,
+        "matched": true,
+        "umls_cui": "C0011991"
+      },
+      {
+        "text": "gait",
+        "ner_score": 0.483,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0002066",
+        "hpo_name": "Gait ataxia",
+        "expanded_text": "gait",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.7429,
+        "matched": true,
+        "umls_cui": "C0751837"
+      },
+      {
+        "text": "heterozygous mutations",
+        "ner_score": 0.524,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0001442",
+        "hpo_name": "Typified by somatic mosaicism",
+        "expanded_text": "heterozygous mutations",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.7041,
+        "matched": true,
+        "umls_cui": "C1866227"
+      },
+      {
+        "text": "c.6259delG",
+        "ner_score": 0.808,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "c.6259delG",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": ".6259delG",
+        "ner_score": 0.574,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": ".6259delG",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "c.6658C>T",
+        "ner_score": 0.745,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "c.6658C>T",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "Generalized dystonia",
+        "ner_score": 0.9,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0007325",
+        "hpo_name": "Generalized dystonia",
+        "expanded_text": "Generalized dystonia",
+        "match_type": "text_scan_exact_label",
+        "confidence": 0.95,
+        "matched": true,
+        "umls_cui": "C1848954",
+        "umls_all": [
+          "C1848954"
+        ]
+      },
+      {
+        "text": "progressive",
+        "ner_score": 0.9,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0003676",
+        "hpo_name": "Progressive",
+        "expanded_text": "progressive",
+        "match_type": "text_scan_exact_label",
+        "confidence": 0.95,
+        "matched": true,
+        "umls_cui": "C0205329",
+        "umls_all": [
+          "C0205329",
+          "C1864985"
+        ]
+      },
+      {
+        "text": "onset",
+        "ner_score": 0.9,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0003674",
+        "hpo_name": "Onset",
+        "expanded_text": "onset",
+        "match_type": "text_scan_exact_label",
+        "confidence": 0.95,
+        "matched": true,
+        "umls_cui": "C0206132",
+        "umls_all": [
+          "C0206132"
+        ]
+      }
+    ],
+    "test": [
+      {
+        "text": "gene",
+        "ner_score": 0.282,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "gene",
+        "match_type": "skipped_non_phenotype",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "phenotype",
+        "ner_score": 0.546,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "phenotype",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "ocular",
+        "ner_score": 0.812,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "ocular",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "immunoglobulin",
+        "ner_score": 0.986,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "immunoglobulin",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "level",
+        "ner_score": 0.988,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "level",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "assessment",
+        "ner_score": 0.974,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "assessment",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "immune",
+        "ner_score": 0.369,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0100326",
+        "hpo_name": "Immunologic hypersensitivity",
+        "expanded_text": "immune",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.7417,
+        "matched": true,
+        "umls_cui": "C0237653"
+      },
+      {
+        "text": "Molecular",
+        "ner_score": 0.989,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "Molecular",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "analysis",
+        "ner_score": 0.992,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "analysis",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      }
+    ],
+    "treatment": [
+      {
+        "text": "immunoglobulin",
+        "ner_score": 0.777,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "immunoglobulin",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "therapy",
+        "ner_score": 0.474,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "therapy",
+        "match_type": "skipped_non_phenotype",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      }
+    ],
+    "ordo_candidates": [
+      {
+        "ordo_id": "ORPHA:100",
+        "name": "Ataxia-telangiectasia",
+        "name_fr": "Ataxie-Télangiectasie (syndrome de Louis-Bar)",
+        "score": 0.85,
+        "jaccard": 0.1,
+        "coverage": 0.2222,
+        "matched_hpo": [
+          "HP:0001009",
+          "HP:0001251"
+        ],
+        "matched_count": 2,
+        "total_disease_hpo": 9
+      },
+      {
+        "ordo_id": "ORPHA:3350",
+        "name": "Tremor-nystagmus-duodenal ulcer syndrome",
+        "name_fr": "",
+        "score": 0.3533,
+        "jaccard": 0.1333,
+        "coverage": 0.5,
+        "matched_hpo": [
+          "HP:0001251",
+          "HP:0100022"
+        ],
+        "matched_count": 2,
+        "total_disease_hpo": 4
+      },
+      {
+        "ordo_id": "ORPHA:1429",
+        "name": "Benign hereditary chorea",
+        "name_fr": "",
+        "score": 0.3286,
+        "jaccard": 0.0714,
+        "coverage": 0.5,
+        "matched_hpo": [
+          "HP:0100022"
+        ],
+        "matched_count": 1,
+        "total_disease_hpo": 2
+      },
+      {
+        "ordo_id": "ORPHA:256",
+        "name": "Early-onset generalized limb-onset dystonia",
+        "name_fr": "",
+        "score": 0.29,
+        "jaccard": 0.125,
+        "coverage": 0.4,
+        "matched_hpo": [
+          "HP:0001276",
+          "HP:0100022"
+        ],
+        "matched_count": 2,
+        "total_disease_hpo": 5
+      },
+      {
+        "ordo_id": "ORPHA:31",
+        "name": "Oxoglutaric aciduria",
+        "name_fr": "",
+        "score": 0.24,
+        "jaccard": 0.15,
+        "coverage": 0.3,
+        "matched_hpo": [
+          "HP:0001251",
+          "HP:0001276",
+          "HP:0100022"
+        ],
+        "matched_count": 3,
+        "total_disease_hpo": 10
+      }
+    ],
+    "stats": {
+      "total": 28,
+      "matched": 13,
+      "unmatched": 15,
+      "match_rate": 46.4,
+      "unique_hpo": 13,
+      "ordo_matches": 5
+    }
+  },
+  "phenopacket": {
+    "id": "phenopacket-PUBMED_EN_014",
+    "subject": {
+      "id": "PUBMED_EN_014"
+    },
+    "input": "Case Report: Dystonia in Ataxia Telangiectasia: A Case Report with Novel Mutations.\n\nAtaxia telangiectasia (A-T) is a common, genetically inherited cause of early childhood-onset ataxia that is classically characterized by progressive cerebellar malfunction, oculocutaneous telangiectasia, genome instability, and immunodeficiency. There is vast phenotype variation in patients with A-T and recently, dystonia, an extrapyramidal movement disorder. Here, we report the case of a 10-year-old girl who had experienced repeated diarrhea and mild gait ataxia since the age of two years. At age seven, ataxia and ocular telangiectasia were evident and immunoglobulin level assessment showed hyper IgM immune phenotype, thus a diagnosis of A-T was made based on clinical and laboratory findings, and she was started on intravenous immunoglobulin therapy. Generalized dystonia appeared when she was 10-years-old. Molecular analysis revealed two heterozygous mutations, c.6259delG and c.6658C>T, in the ATM gene of which one (c.6259delG) is novel. Dystonia can be part of the clinical picture in the A-T disorder and may even mask ataxia. This should be considered as a major feature mainly in variant A-T, which may occur without general ataxia and may be misdiagnosed in adults with primary dystonia.",
+    "target": "Ataxia-telangiectasia",
+    "phenotypicFeatures": [
+      {
+        "type": {
+          "id": "HP:0001332",
+          "label": "Dystonia",
+          "umls_cui": "C0013421"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "PUBMED_EN_014",
+              "description": "NER: dystonia (0.546) | Match: exact_label (1.000)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0001276",
+          "label": "Hypertonia",
+          "umls_cui": "C0026826"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "PUBMED_EN_014",
+              "description": "NER: tonia (0.900) | Match: sapbert_similarity (0.718)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0001251",
+          "label": "Ataxia",
+          "umls_cui": "C0007758"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "PUBMED_EN_014",
+              "description": "NER: ataxia (0.463) | Match: exact_label (1.000)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0001009",
+          "label": "Telangiectasia",
+          "umls_cui": "C0039446"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "PUBMED_EN_014",
+              "description": "NER: angiectasia (0.865) | Match: sapbert_similarity (0.766)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0002721",
+          "label": "Immunodeficiency",
+          "umls_cui": "C0021051"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "PUBMED_EN_014",
+              "description": "NER: immunodeficiency (0.399) | Match: clinical_synonym (1.000)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0100022",
+          "label": "Abnormality of movement",
+          "umls_cui": "C0026650"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "PUBMED_EN_014",
+              "description": "NER: extrapyramidal movement disorder (0.779) | Match: substring_match (0.950)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0002014",
+          "label": "Diarrhea",
+          "umls_cui": "C0011991"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "PUBMED_EN_014",
+              "description": "NER: diarrhea (0.910) | Match: clinical_synonym (1.000)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0002066",
+          "label": "Gait ataxia",
+          "umls_cui": "C0751837"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "PUBMED_EN_014",
+              "description": "NER: gait (0.483) | Match: sapbert_similarity (0.743)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0001442",
+          "label": "Typified by somatic mosaicism",
+          "umls_cui": "C1866227"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "PUBMED_EN_014",
+              "description": "NER: heterozygous mutations (0.524) | Match: sapbert_similarity (0.704)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0007325",
+          "label": "Generalized dystonia",
+          "umls_cui": "C1848954"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "PUBMED_EN_014",
+              "description": "NER: Generalized dystonia (0.900) | Match: text_scan_exact_label (0.950)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0003676",
+          "label": "Progressive",
+          "umls_cui": "C0205329"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "PUBMED_EN_014",
+              "description": "NER: progressive (0.900) | Match: text_scan_exact_label (0.950)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0003674",
+          "label": "Onset",
+          "umls_cui": "C0206132"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "PUBMED_EN_014",
+              "description": "NER: onset (0.900) | Match: text_scan_exact_label (0.950)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0100326",
+          "label": "Immunologic hypersensitivity",
+          "umls_cui": "C0237653"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "PUBMED_EN_014",
+              "description": "NER: immune (0.369) | Match: sapbert_similarity (0.742)"
+            }
+          }
+        ]
+      }
+    ],
+    "metaData": {
+      "created": "2026-06-11T03:05:46Z",
+      "createdBy": "clinical-preanalysis-pipeline-v2",
+      "phenopacketSchemaVersion": "2.0",
+      "resources": [
+        {
+          "id": "hp",
+          "name": "Human Phenotype Ontology",
+          "url": "https://hpo.jax.org",
+          "version": "2024-04-26",
+          "namespacePrefix": "HP",
+          "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        }
+      ]
+    },
+    "interpretations": [
+      {
+        "id": "interpretation-PUBMED_EN_014",
+        "progressStatus": "IN_PROGRESS",
+        "diagnosis": {
+          "disease": {
+            "id": "ORPHA:100",
+            "label": "Ataxia-telangiectasia"
+          },
+          "score": 0.85,
+          "allCandidates": [
+            {
+              "id": "ORPHA:100",
+              "label": "Ataxia-telangiectasia",
+              "score": 0.85
+            },
+            {
+              "id": "ORPHA:3350",
+              "label": "Tremor-nystagmus-duodenal ulcer syndrome",
+              "score": 0.3533
+            },
+            {
+              "id": "ORPHA:1429",
+              "label": "Benign hereditary chorea",
+              "score": 0.3286
+            },
+            {
+              "id": "ORPHA:256",
+              "label": "Early-onset generalized limb-onset dystonia",
+              "score": 0.29
+            },
+            {
+              "id": "ORPHA:31",
+              "label": "Oxoglutaric aciduria",
+              "score": 0.24
+            }
+          ]
+        }
+      }
+    ],
+    "_pipelineStats": {
+      "totalEntities": 28,
+      "matchedHPO": 13,
+      "unmatchedEntities": 15,
+      "phenopacketFeatures": 13,
+      "negatedFeatures": 0,
+      "numericPhenotypes": 0,
+      "ordoCandidates": 5
+    }
+  }
+}

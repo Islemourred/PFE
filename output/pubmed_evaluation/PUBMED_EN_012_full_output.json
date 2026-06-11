@@ -1,0 +1,451 @@
+{
+  "note_id": "PUBMED_EN_012",
+  "language": "en",
+  "module1": {
+    "clean_text": "Case Report: Hematopoietic stem cell transplantation in a newborn suffering from severe combined immunodeficiency and severe hemophilia A: a case report and review of the literature.\n\nBACKGROUND: Severe combined immunodeficiency (SCID) and severe hemophilia A are 2 rare and potentially life-threatening congenital diseases. The coincidence of these diseases has not been reported so far.\nKEY CLINICAL QUESTION: We present the first case of a newborn with both diseases. SCID can be treated with hematopoietic stem cell transplantation (HSCT). However, how to successfully manage a newborn with severe hemophilia A during intensive HSCT treatment is the key clinical question of this case report.\nCLINICAL APPROACH: Prophylactic factor (F)VIII substitution during HSCT was performed with an extended half-life FVIII product (efmoroctocog alfa). The platelet count was a major factor influencing the dosage of FVIII. No bleeding complications or FVIII inhibitors occurred during this individualized management.\nCONCLUSION: This is the first case report of a newborn suffering from both SCID and severe hemophilia A. HSCT is feasible in this situation without bleeding complications if an individual substitution regimen with FVIII is applied.",
+    "phi_map": {},
+    "patient_info": {}
+  },
+  "module3_warnings": {
+    "temporal": [],
+    "inconsistencies": []
+  },
+  "module4": {
+    "treatment": [
+      {
+        "text": "Hematopoietic stem cell transplantation",
+        "ner_score": 0.817,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "Hematopoietic stem cell transplantation",
+        "match_type": "skipped_non_phenotype",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "factor",
+        "ner_score": 0.346,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "factor",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "VIII substitution",
+        "ner_score": 0.5,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "VIII substitution",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "VIII",
+        "ner_score": 0.911,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "VIII",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "alfa",
+        "ner_score": 0.716,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "alfa",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      }
+    ],
+    "problem": [
+      {
+        "text": "combined immunodeficiency",
+        "ner_score": 0.931,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0005387",
+        "hpo_name": "Combined immunodeficiency",
+        "expanded_text": "combined immunodeficiency",
+        "match_type": "exact_label",
+        "confidence": 1.0,
+        "matched": true,
+        "umls_cui": "C0494261"
+      },
+      {
+        "text": "hemophilia",
+        "ner_score": 0.557,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0100724",
+        "hpo_name": "Hypercoagulability",
+        "expanded_text": "hemophilia",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.7341,
+        "matched": true,
+        "umls_cui": "C0398623"
+      },
+      {
+        "text": "platelet",
+        "ner_score": 0.284,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0001902",
+        "hpo_name": "Giant platelets",
+        "expanded_text": "platelet",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.7522,
+        "matched": true,
+        "umls_cui": "C0333864"
+      },
+      {
+        "text": "bleeding complications",
+        "ner_score": 0.891,
+        "negated": true,
+        "negation_cue": "no",
+        "hpo_id": "HP:0001892",
+        "hpo_name": "Abnormal bleeding",
+        "expanded_text": "bleeding complications",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.7643,
+        "matched": true,
+        "umls_cui": "C1458140"
+      },
+      {
+        "text": "FVIII inhibitors",
+        "ner_score": 0.891,
+        "negated": true,
+        "negation_cue": "no",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "FVIII inhibitors",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "severe combined immunodeficiency",
+        "ner_score": 0.9,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0004430",
+        "hpo_name": "Severe combined immunodeficiency",
+        "expanded_text": "severe combined immunodeficiency",
+        "match_type": "text_scan_exact_label",
+        "confidence": 0.95,
+        "matched": true,
+        "umls_cui": "C0085110",
+        "umls_all": [
+          "C0085110"
+        ]
+      },
+      {
+        "text": "immunodeficiency",
+        "ner_score": 0.9,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0002721",
+        "hpo_name": "Immunodeficiency",
+        "expanded_text": "immunodeficiency",
+        "match_type": "text_scan_clinical_synonym",
+        "confidence": 0.95,
+        "matched": true,
+        "umls_cui": "C0021051",
+        "umls_all": [
+          "C0021051"
+        ]
+      }
+    ],
+    "ordo_candidates": [
+      {
+        "ordo_id": "ORPHA:183660",
+        "name": "Severe combined immunodeficiency",
+        "name_fr": "Déficit immunitaire combiné sévère (DICS)",
+        "score": 0.85,
+        "jaccard": 0.0476,
+        "coverage": 0.0625,
+        "matched_hpo": [
+          "HP:0004430"
+        ],
+        "matched_count": 1,
+        "total_disease_hpo": 16
+      },
+      {
+        "ordo_id": "ORPHA:101041",
+        "name": "Familial hypofibrinogenemia",
+        "name_fr": "",
+        "score": 0.1944,
+        "jaccard": 0.1111,
+        "coverage": 0.25,
+        "matched_hpo": [
+          "HP:0001892"
+        ],
+        "matched_count": 1,
+        "total_disease_hpo": 4
+      },
+      {
+        "ordo_id": "ORPHA:183707",
+        "name": "Infantile LAD-like disease due to RAC2 deficiency",
+        "name_fr": "",
+        "score": 0.1944,
+        "jaccard": 0.1111,
+        "coverage": 0.25,
+        "matched_hpo": [
+          "HP:0002721"
+        ],
+        "matched_count": 1,
+        "total_disease_hpo": 4
+      },
+      {
+        "ordo_id": "ORPHA:231249",
+        "name": "Hemoglobin E-beta-thalassemia syndrome",
+        "name_fr": "",
+        "score": 0.1944,
+        "jaccard": 0.1111,
+        "coverage": 0.25,
+        "matched_hpo": [
+          "HP:0002721"
+        ],
+        "matched_count": 1,
+        "total_disease_hpo": 4
+      },
+      {
+        "ordo_id": "ORPHA:231154",
+        "name": "Combined immunodeficiency due to partial RAG1 deficiency",
+        "name_fr": "",
+        "score": 0.1771,
+        "jaccard": 0.1429,
+        "coverage": 0.2,
+        "matched_hpo": [
+          "HP:0002721",
+          "HP:0004430"
+        ],
+        "matched_count": 2,
+        "total_disease_hpo": 10
+      }
+    ],
+    "stats": {
+      "total": 12,
+      "matched": 6,
+      "unmatched": 6,
+      "match_rate": 50.0,
+      "unique_hpo": 6,
+      "ordo_matches": 5
+    }
+  },
+  "phenopacket": {
+    "id": "phenopacket-PUBMED_EN_012",
+    "subject": {
+      "id": "PUBMED_EN_012"
+    },
+    "input": "Case Report: Hematopoietic stem cell transplantation in a newborn suffering from severe combined immunodeficiency and severe hemophilia A: a case report and review of the literature.\n\nBACKGROUND: Severe combined immunodeficiency (SCID) and severe hemophilia A are 2 rare and potentially life-threatening congenital diseases. The coincidence of these diseases has not been reported so far.\nKEY CLINICAL QUESTION: We present the first case of a newborn with both diseases. SCID can be treated with hematopoietic stem cell transplantation (HSCT). However, how to successfully manage a newborn with severe hemophilia A during intensive HSCT treatment is the key clinical question of this case report.\nCLINICAL APPROACH: Prophylactic factor (F)VIII substitution during HSCT was performed with an extended half-life FVIII product (efmoroctocog alfa). The platelet count was a major factor influencing the dosage of FVIII. No bleeding complications or FVIII inhibitors occurred during this individualized management.\nCONCLUSION: This is the first case report of a newborn suffering from both SCID and severe hemophilia A. HSCT is feasible in this situation without bleeding complications if an individual substitution regimen with FVIII is applied.",
+    "target": "Severe combined immunodeficiency",
+    "phenotypicFeatures": [
+      {
+        "type": {
+          "id": "HP:0005387",
+          "label": "Combined immunodeficiency",
+          "umls_cui": "C0494261"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "PUBMED_EN_012",
+              "description": "NER: combined immunodeficiency (0.931) | Match: exact_label (1.000)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0100724",
+          "label": "Hypercoagulability",
+          "umls_cui": "C0398623"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "PUBMED_EN_012",
+              "description": "NER: hemophilia (0.557) | Match: sapbert_similarity (0.734)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0001902",
+          "label": "Giant platelets",
+          "umls_cui": "C0333864"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "PUBMED_EN_012",
+              "description": "NER: platelet (0.284) | Match: sapbert_similarity (0.752)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0001892",
+          "label": "Abnormal bleeding",
+          "umls_cui": "C1458140"
+        },
+        "excluded": true,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "PUBMED_EN_012",
+              "description": "NER: bleeding complications (0.891) | Match: sapbert_similarity (0.764) | Negated by: \"no\""
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0004430",
+          "label": "Severe combined immunodeficiency",
+          "umls_cui": "C0085110"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "PUBMED_EN_012",
+              "description": "NER: severe combined immunodeficiency (0.900) | Match: text_scan_exact_label (0.950)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0002721",
+          "label": "Immunodeficiency",
+          "umls_cui": "C0021051"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "PUBMED_EN_012",
+              "description": "NER: immunodeficiency (0.900) | Match: text_scan_clinical_synonym (0.950)"
+            }
+          }
+        ]
+      }
+    ],
+    "metaData": {
+      "created": "2026-06-11T03:05:24Z",
+      "createdBy": "clinical-preanalysis-pipeline-v2",
+      "phenopacketSchemaVersion": "2.0",
+      "resources": [
+        {
+          "id": "hp",
+          "name": "Human Phenotype Ontology",
+          "url": "https://hpo.jax.org",
+          "version": "2024-04-26",
+          "namespacePrefix": "HP",
+          "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        }
+      ]
+    },
+    "interpretations": [
+      {
+        "id": "interpretation-PUBMED_EN_012",
+        "progressStatus": "IN_PROGRESS",
+        "diagnosis": {
+          "disease": {
+            "id": "ORPHA:183660",
+            "label": "Severe combined immunodeficiency"
+          },
+          "score": 0.85,
+          "allCandidates": [
+            {
+              "id": "ORPHA:183660",
+              "label": "Severe combined immunodeficiency",
+              "score": 0.85
+            },
+            {
+              "id": "ORPHA:101041",
+              "label": "Familial hypofibrinogenemia",
+              "score": 0.1944
+            },
+            {
+              "id": "ORPHA:183707",
+              "label": "Infantile LAD-like disease due to RAC2 deficiency",
+              "score": 0.1944
+            },
+            {
+              "id": "ORPHA:231249",
+              "label": "Hemoglobin E-beta-thalassemia syndrome",
+              "score": 0.1944
+            },
+            {
+              "id": "ORPHA:231154",
+              "label": "Combined immunodeficiency due to partial RAG1 deficiency",
+              "score": 0.1771
+            }
+          ]
+        }
+      }
+    ],
+    "_pipelineStats": {
+      "totalEntities": 12,
+      "matchedHPO": 6,
+      "unmatchedEntities": 6,
+      "phenopacketFeatures": 6,
+      "negatedFeatures": 1,
+      "numericPhenotypes": 0,
+      "ordoCandidates": 5
+    }
+  }
+}

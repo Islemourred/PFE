@@ -1,0 +1,685 @@
+{
+  "note_id": "GSC_EN_018",
+  "language": "en",
+  "module1": {
+    "clean_text": "Case Report: MHC class II deficiency cured by unrelated mismatched umbilical cord blood transplantation: case report and review of 68 cases in the literature.\n\nMHC class II deficiency is a rare and fatal form of primary combined immunodeficiency caused by a lack of T-cell-dependent humoral and cellular immune response to foreign antigens, which can only be cured by allogenic stem cell transplantation. In the literature search, we identified 68 cases of HSCT in MHC class II deficiency in the last 14 yr. Pre- and post-transplant MHC class II deficiency is complicated by overwhelming viral infections, a high incidence of GvHD, and graft failure with a poor overall survival rate below 50%. We report an [AGE] boy presenting with severe respiratory infections and chronic diarrhea, whose sister died at the age of [AGE] from septicemia. MHC II deficiency was caused by an RFXANK-mutation and treated successfully by 4/6 mismatched unrelated CBT after a myeloablative conditioning regimen based on anti-thymocyte globulin, busulfane, fludarabine, and cyclophosphamide. At present, our patient is well with full immune reconstitution [DATE] yr after CBT. CB may represent an alternative source of stem cells for children with MHC class II deficiency without a suitable donor.",
+    "phi_map": {
+      "AGE": [
+        "eight-month-old",
+        "four",
+        "yr"
+      ],
+      "DATE": "3(4/12)"
+    },
+    "patient_info": {}
+  },
+  "module3_warnings": {
+    "temporal": [],
+    "inconsistencies": []
+  },
+  "module4": {
+    "problem": [
+      {
+        "text": "deficiency",
+        "ner_score": 0.836,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "deficiency",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "combined immunodeficiency",
+        "ner_score": 0.852,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0005387",
+        "hpo_name": "Combined immunodeficiency",
+        "expanded_text": "combined immunodeficiency",
+        "match_type": "exact_label",
+        "confidence": 1.0,
+        "matched": true,
+        "umls_cui": "C0494261"
+      },
+      {
+        "text": "viral infections",
+        "ner_score": 0.6,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0004429",
+        "hpo_name": "Recurrent viral infections",
+        "expanded_text": "viral infections",
+        "match_type": "clinical_synonym",
+        "confidence": 1.0,
+        "matched": true,
+        "umls_cui": "C1837066"
+      },
+      {
+        "text": "failure",
+        "ner_score": 0.47,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "failure",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "respiratory",
+        "ner_score": 0.324,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0011947",
+        "hpo_name": "Respiratory tract infection",
+        "expanded_text": "respiratory",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.7121,
+        "matched": true,
+        "umls_cui": "C0035243"
+      },
+      {
+        "text": "diarrhea",
+        "ner_score": 0.848,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0002014",
+        "hpo_name": "Diarrhea",
+        "expanded_text": "diarrhea",
+        "match_type": "clinical_synonym",
+        "confidence": 1.0,
+        "matched": true,
+        "umls_cui": "C0011991"
+      },
+      {
+        "text": "mutation",
+        "ner_score": 0.862,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "mutation",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "reconstitution",
+        "ner_score": 0.527,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "reconstitution",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "chronic diarrhea",
+        "ner_score": 0.9,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0002035",
+        "hpo_name": "Chronic diarrhea",
+        "expanded_text": "chronic diarrhea",
+        "match_type": "text_scan_clinical_synonym",
+        "confidence": 0.95,
+        "matched": true,
+        "umls_cui": "C0034888",
+        "umls_all": [
+          "C0034888"
+        ]
+      },
+      {
+        "text": "immunodeficiency",
+        "ner_score": 0.9,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0002721",
+        "hpo_name": "Immunodeficiency",
+        "expanded_text": "immunodeficiency",
+        "match_type": "text_scan_clinical_synonym",
+        "confidence": 0.95,
+        "matched": true,
+        "umls_cui": "C0021051",
+        "umls_all": [
+          "C0021051"
+        ]
+      },
+      {
+        "text": "septicemia",
+        "ner_score": 0.9,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0100806",
+        "hpo_name": "Sepsis",
+        "expanded_text": "septicemia",
+        "match_type": "text_scan_clinical_synonym",
+        "confidence": 0.95,
+        "matched": true,
+        "umls_cui": "C0036690",
+        "umls_all": [
+          "C0036690"
+        ]
+      }
+    ],
+    "treatment": [
+      {
+        "text": "cord blood transplantation",
+        "ner_score": 0.635,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "cord blood transplantation",
+        "match_type": "skipped_non_phenotype",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "anti",
+        "ner_score": 0.947,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "anti",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "stem cell transplantation",
+        "ner_score": 0.694,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "stem cell transplantation",
+        "match_type": "skipped_non_phenotype",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "ative",
+        "ner_score": 0.903,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "ative",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "conditioning",
+        "ner_score": 0.611,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "conditioning",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "ocyte",
+        "ner_score": 0.969,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "ocyte",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "globulin",
+        "ner_score": 0.953,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "globulin",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "abine",
+        "ner_score": 0.979,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "abine",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "cyclophosphamide",
+        "ner_score": 0.945,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "cyclophosphamide",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      }
+    ],
+    "test": [
+      {
+        "text": "immune",
+        "ner_score": 0.519,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0100326",
+        "hpo_name": "Immunologic hypersensitivity",
+        "expanded_text": "immune",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.7417,
+        "matched": true,
+        "umls_cui": "C0237653"
+      },
+      {
+        "text": "poor",
+        "ner_score": 0.579,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "poor",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "overall",
+        "ner_score": 0.675,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "overall",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "survival",
+        "ner_score": 0.751,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "survival",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "below",
+        "ner_score": 0.584,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "below",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "DATE",
+        "ner_score": 0.408,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "DATE",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      }
+    ],
+    "ordo_candidates": [
+      {
+        "ordo_id": "ORPHA:572",
+        "name": "MHC class II deficiency",
+        "name_fr": "Déficit en molécules HLA de classe II",
+        "score": 0.85,
+        "jaccard": 0.0556,
+        "coverage": 0.0909,
+        "matched_hpo": [
+          "HP:0002035"
+        ],
+        "matched_count": 1,
+        "total_disease_hpo": 11
+      },
+      {
+        "ordo_id": "ORPHA:314",
+        "name": "Erythroderma desquamativum",
+        "name_fr": "",
+        "score": 0.1864,
+        "jaccard": 0.0909,
+        "coverage": 0.25,
+        "matched_hpo": [
+          "HP:0002014"
+        ],
+        "matched_count": 1,
+        "total_disease_hpo": 4
+      },
+      {
+        "ordo_id": "ORPHA:183707",
+        "name": "Infantile LAD-like disease due to RAC2 deficiency",
+        "name_fr": "",
+        "score": 0.1864,
+        "jaccard": 0.0909,
+        "coverage": 0.25,
+        "matched_hpo": [
+          "HP:0002721"
+        ],
+        "matched_count": 1,
+        "total_disease_hpo": 4
+      },
+      {
+        "ordo_id": "ORPHA:231249",
+        "name": "Hemoglobin E-beta-thalassemia syndrome",
+        "name_fr": "",
+        "score": 0.1864,
+        "jaccard": 0.0909,
+        "coverage": 0.25,
+        "matched_hpo": [
+          "HP:0002721"
+        ],
+        "matched_count": 1,
+        "total_disease_hpo": 4
+      },
+      {
+        "ordo_id": "ORPHA:231154",
+        "name": "Combined immunodeficiency due to partial RAG1 deficiency",
+        "name_fr": "",
+        "score": 0.17,
+        "jaccard": 0.125,
+        "coverage": 0.2,
+        "matched_hpo": [
+          "HP:0002721",
+          "HP:0100806"
+        ],
+        "matched_count": 2,
+        "total_disease_hpo": 10
+      }
+    ],
+    "stats": {
+      "total": 26,
+      "matched": 8,
+      "unmatched": 18,
+      "match_rate": 30.8,
+      "unique_hpo": 8,
+      "ordo_matches": 5
+    }
+  },
+  "phenopacket": {
+    "id": "phenopacket-GSC_EN_018",
+    "subject": {
+      "id": "GSC_EN_018"
+    },
+    "input": "Case Report: MHC class II deficiency cured by unrelated mismatched umbilical cord blood transplantation: case report and review of 68 cases in the literature.\n\nMHC class II deficiency is a rare and fatal form of primary combined immunodeficiency caused by a lack of T-cell-dependent humoral and cellular immune response to foreign antigens, which can only be cured by allogenic stem cell transplantation. In the literature search, we identified 68 cases of HSCT in MHC class II deficiency in the last 14 yr. Pre- and post-transplant MHC class II deficiency is complicated by overwhelming viral infections, a high incidence of GvHD, and graft failure with a poor overall survival rate below 50%. We report an eight-month-old boy presenting with severe respiratory infections and chronic diarrhea, whose sister died at the age of four yr from septicemia. MHC II deficiency was caused by an RFXANK-mutation and treated successfully by 4/6 mismatched unrelated CBT after a myeloablative conditioning regimen based on anti-thymocyte globulin, busulfane, fludarabine, and cyclophosphamide. At present, our patient is well with full immune reconstitution 3(4/12) yr after CBT. CB may represent an alternative source of stem cells for children with MHC class II deficiency without a suitable donor.",
+    "target": "MHC class II deficiency",
+    "phenotypicFeatures": [
+      {
+        "type": {
+          "id": "HP:0005387",
+          "label": "Combined immunodeficiency",
+          "umls_cui": "C0494261"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "GSC_EN_018",
+              "description": "NER: combined immunodeficiency (0.852) | Match: exact_label (1.000)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0004429",
+          "label": "Recurrent viral infections",
+          "umls_cui": "C1837066"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "GSC_EN_018",
+              "description": "NER: viral infections (0.600) | Match: clinical_synonym (1.000)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0011947",
+          "label": "Respiratory tract infection",
+          "umls_cui": "C0035243"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "GSC_EN_018",
+              "description": "NER: respiratory (0.324) | Match: sapbert_similarity (0.712)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0002014",
+          "label": "Diarrhea",
+          "umls_cui": "C0011991"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "GSC_EN_018",
+              "description": "NER: diarrhea (0.848) | Match: clinical_synonym (1.000)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0002035",
+          "label": "Chronic diarrhea",
+          "umls_cui": "C0034888"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "GSC_EN_018",
+              "description": "NER: chronic diarrhea (0.900) | Match: text_scan_clinical_synonym (0.950)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0002721",
+          "label": "Immunodeficiency",
+          "umls_cui": "C0021051"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "GSC_EN_018",
+              "description": "NER: immunodeficiency (0.900) | Match: text_scan_clinical_synonym (0.950)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0100806",
+          "label": "Sepsis",
+          "umls_cui": "C0036690"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "GSC_EN_018",
+              "description": "NER: septicemia (0.900) | Match: text_scan_clinical_synonym (0.950)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0100326",
+          "label": "Immunologic hypersensitivity",
+          "umls_cui": "C0237653"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "GSC_EN_018",
+              "description": "NER: immune (0.519) | Match: sapbert_similarity (0.742)"
+            }
+          }
+        ]
+      }
+    ],
+    "metaData": {
+      "created": "2026-06-11T03:08:55Z",
+      "createdBy": "clinical-preanalysis-pipeline-v2",
+      "phenopacketSchemaVersion": "2.0",
+      "resources": [
+        {
+          "id": "hp",
+          "name": "Human Phenotype Ontology",
+          "url": "https://hpo.jax.org",
+          "version": "2024-04-26",
+          "namespacePrefix": "HP",
+          "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        }
+      ]
+    },
+    "interpretations": [
+      {
+        "id": "interpretation-GSC_EN_018",
+        "progressStatus": "IN_PROGRESS",
+        "diagnosis": {
+          "disease": {
+            "id": "ORPHA:572",
+            "label": "MHC class II deficiency"
+          },
+          "score": 0.85,
+          "allCandidates": [
+            {
+              "id": "ORPHA:572",
+              "label": "MHC class II deficiency",
+              "score": 0.85
+            },
+            {
+              "id": "ORPHA:314",
+              "label": "Erythroderma desquamativum",
+              "score": 0.1864
+            },
+            {
+              "id": "ORPHA:183707",
+              "label": "Infantile LAD-like disease due to RAC2 deficiency",
+              "score": 0.1864
+            },
+            {
+              "id": "ORPHA:231249",
+              "label": "Hemoglobin E-beta-thalassemia syndrome",
+              "score": 0.1864
+            },
+            {
+              "id": "ORPHA:231154",
+              "label": "Combined immunodeficiency due to partial RAG1 deficiency",
+              "score": 0.17
+            }
+          ]
+        }
+      }
+    ],
+    "_pipelineStats": {
+      "totalEntities": 26,
+      "matchedHPO": 8,
+      "unmatchedEntities": 18,
+      "phenopacketFeatures": 8,
+      "negatedFeatures": 0,
+      "numericPhenotypes": 0,
+      "ordoCandidates": 5
+    }
+  }
+}

@@ -1,0 +1,548 @@
+{
+  "note_id": "PUBMED_EN_020",
+  "language": "en",
+  "module1": {
+    "clean_text": "Case Report: Hirayama disease.\n\nPURPOSE: Hirayama disease is an initially progressive disease caused by cervical neck flexion compressing the anterior horns of the lower cervical spinal cord. It is primarily seen in young males of Indian or Asian descent. With increasing dispersion of these populations this condition is increasingly being encountered internationally. This grand round reviews this rare but increasingly recognized condition.\nMATERIALS AND METHODS: We present a classic case of a young Indian male with progressive hand and forearm weakness. We discuss the typical clinical presentation, appropriate investigations and management of this condition.\nRESULTS: Our patient presented with oblique amyotrophy and underwent a diagnostic flexion MRI scan which revealed anterior translation of the posterior dura with compression of the anterior horns of the lower cervical cord. He has been successfully treated in a cervical collar.\nCONCLUSIONS: This case illustrates the typical presentation, diagnostic investigations and treatment of Hirayama syndrome. It is hoped that this review will alert clinicians of this condition and optimize the management of affected individuals.",
+    "phi_map": {},
+    "patient_info": {
+      "sex": "male"
+    }
+  },
+  "module3_warnings": {
+    "temporal": [],
+    "inconsistencies": [
+      {
+        "type": "sex_anatomy_conflict",
+        "severity": "critical",
+        "message": "Female-specific term 'cervical' found in male patient record",
+        "term": "cervical"
+      }
+    ]
+  },
+  "module4": {
+    "problem": [
+      {
+        "text": "Hira",
+        "ner_score": 0.723,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "Hira",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "yama",
+        "ner_score": 0.941,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "yama",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "disease",
+        "ner_score": 0.942,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "disease",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "flexion",
+        "ner_score": 0.368,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0001371",
+        "hpo_name": "Flexion contracture",
+        "expanded_text": "flexion",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.7802,
+        "matched": true,
+        "umls_cui": "C0009917"
+      },
+      {
+        "text": "weakness",
+        "ner_score": 0.522,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0001324",
+        "hpo_name": "Muscle weakness",
+        "expanded_text": "weakness",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.891,
+        "matched": true,
+        "umls_cui": "C0151786"
+      },
+      {
+        "text": "trophy",
+        "ner_score": 0.874,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "trophy",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "anterior translation",
+        "ner_score": 0.769,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "anterior translation",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "compression",
+        "ner_score": 0.823,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "compression",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "syndrome",
+        "ner_score": 0.553,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "syndrome",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "progressive",
+        "ner_score": 0.9,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0003676",
+        "hpo_name": "Progressive",
+        "expanded_text": "progressive",
+        "match_type": "text_scan_exact_label",
+        "confidence": 0.95,
+        "matched": true,
+        "umls_cui": "C0205329",
+        "umls_all": [
+          "C0205329",
+          "C1864985"
+        ]
+      },
+      {
+        "text": "amyotrophy",
+        "ner_score": 0.9,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0003202",
+        "hpo_name": "Skeletal muscle atrophy",
+        "expanded_text": "amyotrophy",
+        "match_type": "text_scan_exact_synonym",
+        "confidence": 0.95,
+        "matched": true,
+        "umls_cui": "C0234958",
+        "umls_all": [
+          "C0234958",
+          "C0270948",
+          "C0541794",
+          "C1843479"
+        ]
+      }
+    ],
+    "test": [
+      {
+        "text": "cervical",
+        "ner_score": 0.955,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "cervical",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "anterior",
+        "ner_score": 0.766,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "anterior",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "lower",
+        "ner_score": 0.771,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "lower",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "spinal",
+        "ner_score": 0.959,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "spinal",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "forearm",
+        "ner_score": 0.77,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "forearm",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "posterior",
+        "ner_score": 0.912,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0012839",
+        "hpo_name": "Distal",
+        "expanded_text": "posterior",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.7448,
+        "matched": true,
+        "umls_cui": "C0205108"
+      },
+      {
+        "text": "dura",
+        "ner_score": 0.976,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "dura",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      }
+    ],
+    "treatment": [
+      {
+        "text": "cervical collar",
+        "ner_score": 0.756,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "cervical collar",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      }
+    ],
+    "ordo_candidates": [
+      {
+        "ordo_id": "ORPHA:371",
+        "name": "Glycogen storage disease due to muscle phosphofructokinase deficiency",
+        "name_fr": "",
+        "score": 0.2889,
+        "jaccard": 0.2222,
+        "coverage": 0.3333,
+        "matched_hpo": [
+          "HP:0001324",
+          "HP:0003202"
+        ],
+        "matched_count": 2,
+        "total_disease_hpo": 6
+      },
+      {
+        "ordo_id": "ORPHA:70",
+        "name": "Spinal muscular atrophy",
+        "name_fr": "Amyotrophie spinale (SMA)",
+        "score": 0.2514,
+        "jaccard": 0.2,
+        "coverage": 0.2857,
+        "matched_hpo": [
+          "HP:0001371",
+          "HP:0003202"
+        ],
+        "matched_count": 2,
+        "total_disease_hpo": 7
+      },
+      {
+        "ordo_id": "ORPHA:85162",
+        "name": "Facial onset sensory and motor neuronopathy",
+        "name_fr": "",
+        "score": 0.2514,
+        "jaccard": 0.2,
+        "coverage": 0.2857,
+        "matched_hpo": [
+          "HP:0001324",
+          "HP:0003202"
+        ],
+        "matched_count": 2,
+        "total_disease_hpo": 7
+      },
+      {
+        "ordo_id": "ORPHA:166",
+        "name": "Charcot-Marie-Tooth disease",
+        "name_fr": "",
+        "score": 0.2,
+        "jaccard": 0.125,
+        "coverage": 0.25,
+        "matched_hpo": [
+          "HP:0003202"
+        ],
+        "matched_count": 1,
+        "total_disease_hpo": 4
+      },
+      {
+        "ordo_id": "ORPHA:3239",
+        "name": "Deafness-vitiligo-achalasia syndrome",
+        "name_fr": "",
+        "score": 0.14,
+        "jaccard": 0.1,
+        "coverage": 0.1667,
+        "matched_hpo": [
+          "HP:0003202"
+        ],
+        "matched_count": 1,
+        "total_disease_hpo": 6
+      }
+    ],
+    "stats": {
+      "total": 19,
+      "matched": 5,
+      "unmatched": 14,
+      "match_rate": 26.3,
+      "unique_hpo": 5,
+      "ordo_matches": 5
+    }
+  },
+  "phenopacket": {
+    "id": "phenopacket-PUBMED_EN_020",
+    "subject": {
+      "id": "PUBMED_EN_020",
+      "sex": "MALE"
+    },
+    "input": "Case Report: Hirayama disease.\n\nPURPOSE: Hirayama disease is an initially progressive disease caused by cervical neck flexion compressing the anterior horns of the lower cervical spinal cord. It is primarily seen in young males of Indian or Asian descent. With increasing dispersion of these populations this condition is increasingly being encountered internationally. This grand round reviews this rare but increasingly recognized condition.\nMATERIALS AND METHODS: We present a classic case of a young Indian male with progressive hand and forearm weakness. We discuss the typical clinical presentation, appropriate investigations and management of this condition.\nRESULTS: Our patient presented with oblique amyotrophy and underwent a diagnostic flexion MRI scan which revealed anterior translation of the posterior dura with compression of the anterior horns of the lower cervical cord. He has been successfully treated in a cervical collar.\nCONCLUSIONS: This case illustrates the typical presentation, diagnostic investigations and treatment of Hirayama syndrome. It is hoped that this review will alert clinicians of this condition and optimize the management of affected individuals.",
+    "target": "Glycogen storage disease due to muscle phosphofructokinase deficiency",
+    "phenotypicFeatures": [
+      {
+        "type": {
+          "id": "HP:0001371",
+          "label": "Flexion contracture",
+          "umls_cui": "C0009917"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "PUBMED_EN_020",
+              "description": "NER: flexion (0.368) | Match: sapbert_similarity (0.780)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0001324",
+          "label": "Muscle weakness",
+          "umls_cui": "C0151786"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "PUBMED_EN_020",
+              "description": "NER: weakness (0.522) | Match: sapbert_similarity (0.891)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0003676",
+          "label": "Progressive",
+          "umls_cui": "C0205329"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "PUBMED_EN_020",
+              "description": "NER: progressive (0.900) | Match: text_scan_exact_label (0.950)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0003202",
+          "label": "Skeletal muscle atrophy",
+          "umls_cui": "C0234958"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "PUBMED_EN_020",
+              "description": "NER: amyotrophy (0.900) | Match: text_scan_exact_synonym (0.950)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0012839",
+          "label": "Distal",
+          "umls_cui": "C0205108"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "PUBMED_EN_020",
+              "description": "NER: posterior (0.912) | Match: sapbert_similarity (0.745)"
+            }
+          }
+        ]
+      }
+    ],
+    "metaData": {
+      "created": "2026-06-11T03:06:42Z",
+      "createdBy": "clinical-preanalysis-pipeline-v2",
+      "phenopacketSchemaVersion": "2.0",
+      "resources": [
+        {
+          "id": "hp",
+          "name": "Human Phenotype Ontology",
+          "url": "https://hpo.jax.org",
+          "version": "2024-04-26",
+          "namespacePrefix": "HP",
+          "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        }
+      ]
+    },
+    "interpretations": [
+      {
+        "id": "interpretation-PUBMED_EN_020",
+        "progressStatus": "IN_PROGRESS",
+        "diagnosis": {
+          "disease": {
+            "id": "ORPHA:371",
+            "label": "Glycogen storage disease due to muscle phosphofructokinase deficiency"
+          },
+          "score": 0.2889,
+          "allCandidates": [
+            {
+              "id": "ORPHA:371",
+              "label": "Glycogen storage disease due to muscle phosphofructokinase deficiency",
+              "score": 0.2889
+            },
+            {
+              "id": "ORPHA:70",
+              "label": "Spinal muscular atrophy",
+              "score": 0.2514
+            },
+            {
+              "id": "ORPHA:85162",
+              "label": "Facial onset sensory and motor neuronopathy",
+              "score": 0.2514
+            },
+            {
+              "id": "ORPHA:166",
+              "label": "Charcot-Marie-Tooth disease",
+              "score": 0.2
+            },
+            {
+              "id": "ORPHA:3239",
+              "label": "Deafness-vitiligo-achalasia syndrome",
+              "score": 0.14
+            }
+          ]
+        }
+      }
+    ],
+    "_validationWarnings": [
+      {
+        "type": "sex_anatomy_conflict",
+        "severity": "critical",
+        "message": "Female-specific term 'cervical' found in male patient record",
+        "term": "cervical"
+      }
+    ],
+    "_pipelineStats": {
+      "totalEntities": 19,
+      "matchedHPO": 5,
+      "unmatchedEntities": 14,
+      "phenopacketFeatures": 5,
+      "negatedFeatures": 0,
+      "numericPhenotypes": 0,
+      "ordoCandidates": 5
+    }
+  }
+}

@@ -1,0 +1,625 @@
+{
+  "note_id": "PUBMED_EN_017",
+  "language": "en",
+  "module1": {
+    "clean_text": "Case Report: Case Report: Novel splicing mutations in \n\nMutations of the Regulatory Factor X5 (RFX5) have been associated with the autosomal recessive major histocompatibility class II (MHC-II) deficiency, which is a severe immunodeficiency characterized by constitutive and interferon-gamma induced MHC II expression disorder and leads to the absence of cellular and humoral T-cell response to antigen challenge. The compound heterozygous splicing mutations of RFX5: c.353 + 6T>G (maternally inherited) and c.757 + 1G>A (paternally inherited) were identified in an infant diagnosed severe immunodeficiency. The mutation c.757 + 1G>A was classified as likely pathogenic while c.353 + 6T>G was classified as the variant of uncertain significance according to American College of Medical Genetics and Genomics (ACMG). To investigate the pathogenicity of RFX5: c.353 + 6T>G, reverse transcription PCR (RT-PCR) was conducted with the mother's peripheral blood. An insertion of 191-bp intronic sequence (intron 6) was found in the transcripts, and this resulted in a frameshift and premature truncation of the protein, especially reduced the DNA-binding domain (DBD) of the RFX5 protein. Our data expanded the spectrum of pathogenic mutations in MHC-II deficiency and put new insights into the genetic counseling, prenatal diagnosis and preimplantation genetic testing (PGT) for the disease.",
+    "phi_map": {},
+    "patient_info": {}
+  },
+  "module3_warnings": {
+    "temporal": [],
+    "inconsistencies": []
+  },
+  "module4": {
+    "problem": [
+      {
+        "text": "splicing mutations",
+        "ner_score": 0.447,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "splicing mutations",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "mutations",
+        "ner_score": 0.731,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "mutations",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "recessive",
+        "ner_score": 0.525,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0000007",
+        "hpo_name": "Autosomal recessive inheritance",
+        "expanded_text": "recessive",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.8801,
+        "matched": true,
+        "umls_cui": "C0441748"
+      },
+      {
+        "text": "major",
+        "ner_score": 0.267,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0012828",
+        "hpo_name": "Severe",
+        "expanded_text": "major",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.7125,
+        "matched": true,
+        "umls_cui": "C0205082"
+      },
+      {
+        "text": "compatibility",
+        "ner_score": 0.775,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "compatibility",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "deficiency",
+        "ner_score": 0.804,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "deficiency",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "immunodeficiency",
+        "ner_score": 0.333,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0002721",
+        "hpo_name": "Immunodeficiency",
+        "expanded_text": "immunodeficiency",
+        "match_type": "clinical_synonym",
+        "confidence": 1.0,
+        "matched": true,
+        "umls_cui": "C0021051"
+      },
+      {
+        "text": "disorder",
+        "ner_score": 0.503,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "disorder",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "insertion of",
+        "ner_score": 0.526,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "insertion of",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "intronic sequence",
+        "ner_score": 0.367,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "intronic sequence",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "frameshift",
+        "ner_score": 0.756,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "frameshift",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "truncation",
+        "ner_score": 0.591,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "truncation",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      }
+    ],
+    "test": [
+      {
+        "text": "Mutations",
+        "ner_score": 0.17,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "Mutations",
+        "match_type": "skipped_non_phenotype",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "Regulatory",
+        "ner_score": 0.362,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "Regulatory",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "Factor",
+        "ner_score": 0.325,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "Factor",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "likely",
+        "ner_score": 0.283,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "likely",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "uncertain",
+        "ner_score": 0.417,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "uncertain",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "significance",
+        "ner_score": 0.385,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0012824",
+        "hpo_name": "Severity",
+        "expanded_text": "significance",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.7298,
+        "matched": true,
+        "umls_cui": "C0522510"
+      },
+      {
+        "text": "Medical",
+        "ner_score": 0.644,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "Medical",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "Genetics",
+        "ner_score": 0.899,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "Genetics",
+        "match_type": "skipped_non_phenotype",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "genetic",
+        "ner_score": 0.602,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "genetic",
+        "match_type": "skipped_non_phenotype",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "Genomics",
+        "ner_score": 0.895,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "Genomics",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "reverse",
+        "ner_score": 0.932,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "reverse",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "transcription",
+        "ner_score": 0.982,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "transcription",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "mother",
+        "ner_score": 0.316,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "mother",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "transcripts",
+        "ner_score": 0.328,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "transcripts",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "binding",
+        "ner_score": 0.584,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "binding",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "domain",
+        "ner_score": 0.573,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "domain",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "implantation",
+        "ner_score": 0.59,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "implantation",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      }
+    ],
+    "ordo_candidates": [
+      {
+        "ordo_id": "ORPHA:183707",
+        "name": "Infantile LAD-like disease due to RAC2 deficiency",
+        "name_fr": "",
+        "score": 0.2071,
+        "jaccard": 0.1429,
+        "coverage": 0.25,
+        "matched_hpo": [
+          "HP:0002721"
+        ],
+        "matched_count": 1,
+        "total_disease_hpo": 4
+      },
+      {
+        "ordo_id": "ORPHA:231249",
+        "name": "Hemoglobin E-beta-thalassemia syndrome",
+        "name_fr": "",
+        "score": 0.2071,
+        "jaccard": 0.1429,
+        "coverage": 0.25,
+        "matched_hpo": [
+          "HP:0002721"
+        ],
+        "matched_count": 1,
+        "total_disease_hpo": 4
+      },
+      {
+        "ordo_id": "ORPHA:169095",
+        "name": "Severe combined immunodeficiency due to FOXN1 deficiency",
+        "name_fr": "",
+        "score": 0.17,
+        "jaccard": 0.125,
+        "coverage": 0.2,
+        "matched_hpo": [
+          "HP:0002721"
+        ],
+        "matched_count": 1,
+        "total_disease_hpo": 5
+      },
+      {
+        "ordo_id": "ORPHA:366",
+        "name": "Glycogen storage disease due to glycogen debranching enzyme deficiency",
+        "name_fr": "",
+        "score": 0.1257,
+        "jaccard": 0.1,
+        "coverage": 0.1429,
+        "matched_hpo": [
+          "HP:0002721"
+        ],
+        "matched_count": 1,
+        "total_disease_hpo": 7
+      },
+      {
+        "ordo_id": "ORPHA:90023",
+        "name": "Primary immunodeficiency syndrome due to P14/LAMTOR2 deficiency",
+        "name_fr": "",
+        "score": 0.1257,
+        "jaccard": 0.1,
+        "coverage": 0.1429,
+        "matched_hpo": [
+          "HP:0002721"
+        ],
+        "matched_count": 1,
+        "total_disease_hpo": 7
+      }
+    ],
+    "stats": {
+      "total": 29,
+      "matched": 4,
+      "unmatched": 25,
+      "match_rate": 13.8,
+      "unique_hpo": 4,
+      "ordo_matches": 5
+    }
+  },
+  "phenopacket": {
+    "id": "phenopacket-PUBMED_EN_017",
+    "subject": {
+      "id": "PUBMED_EN_017"
+    },
+    "input": "Case Report: Case Report: Novel splicing mutations in \n\nMutations of the Regulatory Factor X5 (RFX5) have been associated with the autosomal recessive major histocompatibility class II (MHC-II) deficiency, which is a severe immunodeficiency characterized by constitutive and interferon-gamma induced MHC II expression disorder and leads to the absence of cellular and humoral T-cell response to antigen challenge. The compound heterozygous splicing mutations of RFX5: c.353 + 6T>G (maternally inherited) and c.757 + 1G>A (paternally inherited) were identified in an infant diagnosed severe immunodeficiency. The mutation c.757 + 1G>A was classified as likely pathogenic while c.353 + 6T>G was classified as the variant of uncertain significance according to American College of Medical Genetics and Genomics (ACMG). To investigate the pathogenicity of RFX5: c.353 + 6T>G, reverse transcription PCR (RT-PCR) was conducted with the mother's peripheral blood. An insertion of 191-bp intronic sequence (intron 6) was found in the transcripts, and this resulted in a frameshift and premature truncation of the protein, especially reduced the DNA-binding domain (DBD) of the RFX5 protein. Our data expanded the spectrum of pathogenic mutations in MHC-II deficiency and put new insights into the genetic counseling, prenatal diagnosis and preimplantation genetic testing (PGT) for the disease.",
+    "target": "Infantile LAD-like disease due to RAC2 deficiency",
+    "phenotypicFeatures": [
+      {
+        "type": {
+          "id": "HP:0000007",
+          "label": "Autosomal recessive inheritance",
+          "umls_cui": "C0441748"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "PUBMED_EN_017",
+              "description": "NER: recessive (0.525) | Match: sapbert_similarity (0.880)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0012828",
+          "label": "Severe",
+          "umls_cui": "C0205082"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "PUBMED_EN_017",
+              "description": "NER: major (0.267) | Match: sapbert_similarity (0.713)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0002721",
+          "label": "Immunodeficiency",
+          "umls_cui": "C0021051"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "PUBMED_EN_017",
+              "description": "NER: immunodeficiency (0.333) | Match: clinical_synonym (1.000)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0012824",
+          "label": "Severity",
+          "umls_cui": "C0522510"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "PUBMED_EN_017",
+              "description": "NER: significance (0.385) | Match: sapbert_similarity (0.730)"
+            }
+          }
+        ]
+      }
+    ],
+    "metaData": {
+      "created": "2026-06-11T03:06:31Z",
+      "createdBy": "clinical-preanalysis-pipeline-v2",
+      "phenopacketSchemaVersion": "2.0",
+      "resources": [
+        {
+          "id": "hp",
+          "name": "Human Phenotype Ontology",
+          "url": "https://hpo.jax.org",
+          "version": "2024-04-26",
+          "namespacePrefix": "HP",
+          "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        }
+      ]
+    },
+    "interpretations": [
+      {
+        "id": "interpretation-PUBMED_EN_017",
+        "progressStatus": "IN_PROGRESS",
+        "diagnosis": {
+          "disease": {
+            "id": "ORPHA:183707",
+            "label": "Infantile LAD-like disease due to RAC2 deficiency"
+          },
+          "score": 0.2071,
+          "allCandidates": [
+            {
+              "id": "ORPHA:183707",
+              "label": "Infantile LAD-like disease due to RAC2 deficiency",
+              "score": 0.2071
+            },
+            {
+              "id": "ORPHA:231249",
+              "label": "Hemoglobin E-beta-thalassemia syndrome",
+              "score": 0.2071
+            },
+            {
+              "id": "ORPHA:169095",
+              "label": "Severe combined immunodeficiency due to FOXN1 deficiency",
+              "score": 0.17
+            },
+            {
+              "id": "ORPHA:366",
+              "label": "Glycogen storage disease due to glycogen debranching enzyme deficiency",
+              "score": 0.1257
+            },
+            {
+              "id": "ORPHA:90023",
+              "label": "Primary immunodeficiency syndrome due to P14/LAMTOR2 deficiency",
+              "score": 0.1257
+            }
+          ]
+        }
+      }
+    ],
+    "_pipelineStats": {
+      "totalEntities": 29,
+      "matchedHPO": 4,
+      "unmatchedEntities": 25,
+      "phenopacketFeatures": 4,
+      "negatedFeatures": 0,
+      "numericPhenotypes": 0,
+      "ordoCandidates": 5
+    }
+  }
+}

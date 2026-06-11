@@ -1,0 +1,881 @@
+{
+  "id": "phenopacket-CHU_FR_032",
+  "subject": {
+    "id": "CHU_FR_032",
+    "sex": "MALE"
+  },
+  "input": "Rehospitalization form\nThe child Maabed Mouad aged 12, originally from and residing in Algiers, from a 03rd degree consanguineous couple, followed since the age of 08, for a combined syndromic DIP type Ataxia telangiectasia. Admitted today 03/23/2026 for immunoglobulin N07 treatment. HISTORY:\nFamily:\n- Father: 41 years old; BES. - Mother: 33 years old, G8P04A03M01\n- 3rd degree consanguinity. - Siblings:\nOur Sick\nBoy aged 10, with a history of a single kidney not investigated, RSP followed by a private pediatrician placed on GH since the age of 3 and for 6 months. Boy aged 08 in BES\nBoy died at the age of 2 months (Cantrell Pentalogy)\nBoy aged 13 months with a history of hospitalization for 10 days for undocumented DR + adrenal insufficiency\nPersonal:\nPhysiological:\n-Pregnancy: well monitored. -Delivery: by VB at term. - Apgar good at birth. 9/10\n-Birth weight: 03 kg\n- Calm neonatal period\n-Exclusive breastfeeding for up to one month then artificial breastfeeding. -Dietary diversification: 06 months. - vitamin D received at 1 month. - Vaccination: done up to 6 years old\nPathological:\n-Delay in psychomotor acquisitions\n-Repeated ear infections since the age of 3\n-Recurrent allergic rhinitis\n-Seizures since the age of 4\nHistory of illness:\nMain diagnosis: Syndromic combined PID type Ataxia telangiectasia. Diagnostic elements:\nAnamnestic: Concept of 3rd degree consanguinity\nConcept of death among siblings at a young age\nConcept of recurrent respiratory infections\nClinical: Static and kinetic ataxia\nBilateral telangiectasia\nParaclinical: Assessment of immunodeficiency done on 05/22/2025: in favor of ataxia telangiectasia syndrome (Louis Bar syndrome)\nAssociated diagnosis: Pulmonary hamartochondroma/EPILEPSY/Right tympanic perforation\nDate of diagnosis: 2021\nAge of diagnosis: 08 years. Processing in progress\nItraconazole 5mg/kg/day\nBactrim: 25mg/kg/day\nKepam: 220 mg *2/day\nTherapeutic compliance: Good\nIntermediate history: Since the last visit (02/21/2026)\nOn the respiratory level: Notion of cough with greenish then whitish sputum 2 days previously, without consultation. Otorrhea pus ECB: Cloacal Enterobacteriaceae sensitive to Augmentin\nIgG rate (02/10/2026): 15.4g/l\nCLINICAL EXAMINATION UPON ADMISSION: Date: 03/23/2026\nAnthropometric measurements:\nWeight: 19 kg800 (-4 DS). Underweight Height: 124CM (-3.5 SD). Marked stature delay\nBMI: 13.1% (-3 SD)                 Gomez (P/A): 47% severe malnutrition\nGeneral condition preserved, afebrile: T: 36.6° C,\nSkin exam:\nPresence of skin xerosis, disappearance of scales around the mouth. Telangiectasia in the right cheek\nDry dandruff on the hair\nPleuropulmonary examination:\nFatty cough with whitish sputum,\nEupneic, Fr: 20c/min, SpO2: 98% under ambient air\nNo respiratory distress\nLung auscultation: snoring rales with bronchial congestion\nNo signs of respiratory failure\nCardiovascular examination: HR: 89 b/min, CRT < 3 sec, Auscultation: B1, B2 audible properties, absence of added noises\nAbdominopelvic examination: Soft abdomen, no organomegaly, free hernial orifices, preserved transit\nOphthalmological examination: Bilateral telangiectasia, rotatory nystagmus\nENT exam: no otorrhea\nExamination of genitals: male morphotype, no ADS, TANNER stage 1, bilateral cryptorchidism\nOsteoarticular examination:\nSpine deformity,\nEquinus foot deformity\nNeurological examination:\nInability to walk (drunken walking): Kinetic ataxia\nImpossibility of standing without support: Static ataxia\nWord: Bradylalia, cerebellar dysarthria\nReview of other devices: Is unremarkable\nWhat to do:\n-Hospitalization\n-Condition, peripheral venous route\n- ECBC with mycological and parasitological study + antibiogram launched\n-Launched a complete assessment\n- Immunoglobulin treatment at 0.8 g/kg or 15g over 4 hours 30 min\n-Education of the mother by the physiotherapist\nPARACLINICAL ASSESSMENT UPON ADMISSION: 03/23/2026\nCBC: WBC: 6140 elements, PNN: 4170 element/mm lymphocytes: 940 elements/mm (discrete lymphopenia)\nHB: 11.2 g/dl; MCV: 76.2 fl; CCMH: 33.8\nPLQ: 457,000 el/mm 3.\nCRP: Between 12 and 24 mg/l\nPT: 14.3sec TP: 82.1% TCK: 28 sec Fibrinogen: 3.16 g/l\nASAT: 30.9U/l ALT: 21.6 U/L gGt: 30.46 U/l PAL: 196.4 U/l\nUrea 0.15g/l Creat: 5.58 mg/l\nDuring the treatment: The immunoglobulin treatment passed without incident,\nThe child is discharged on 03/23/2026 with a check-up appointment. CONCLUSION:\nThe child Maabed Mouad aged 12, originally from and residing in Algiers, from a 3rd degree consanguineous couple, followed for a syndromic combined DIP type Ataxia telangiectasia, Admitted to our level for his treatment of immunoglobulin No. 07. To collect / To do:\nDischarge the patient with: Augmentin sachet 01g every 8 hours (PDT 10 days) + Bactrim curative dose 30mg/kg/day for 10 days\nPlan Dosage of Alpha fetoprotein after the next treatment. Appointment for the 08th Immunoglobulin treatment on 04/27/2026\nDepartment resident: Dr Djoudi Department assistant: Dr Doukar",
+  "target": "Ataxia-telangiectasia",
+  "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0001251",
+        "label": "Ataxia",
+        "umls_cui": "C0007758"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "CHU_FR_032",
+            "description": "NER: ataxia (0.569) | Match: exact_label (1.000)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0001009",
+        "label": "Telangiectasia",
+        "umls_cui": "C0039446"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "CHU_FR_032",
+            "description": "NER: angiectasia (0.934) | Match: sapbert_similarity (0.766)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0002717",
+        "label": "Adrenal overactivity",
+        "umls_cui": "C4025685"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "CHU_FR_032",
+            "description": "NER: adrenal (0.668) | Match: sapbert_similarity (0.709)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0002719",
+        "label": "Recurrent infections",
+        "umls_cui": "C0239998"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "CHU_FR_032",
+            "description": "NER: infections (0.369) | Match: sapbert_similarity (0.777)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0012393",
+        "label": "Allergy",
+        "umls_cui": "C1527304"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "CHU_FR_032",
+            "description": "NER: allergic (0.368) | Match: sapbert_similarity (0.890)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0012384",
+        "label": "Rhinitis",
+        "umls_cui": "C0035455"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "CHU_FR_032",
+            "description": "NER: rhinitis (0.464) | Match: exact_label (1.000)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0001250",
+        "label": "Seizure",
+        "umls_cui": "C0014544"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "CHU_FR_032",
+            "description": "NER: Seizures (0.683) | Match: clinical_synonym (1.000)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0011947",
+        "label": "Respiratory tract infection",
+        "umls_cui": "C0035243"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "CHU_FR_032",
+            "description": "NER: respiratory (0.381) | Match: sapbert_similarity (0.712)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0002721",
+        "label": "Immunodeficiency",
+        "umls_cui": "C0021051"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "CHU_FR_032",
+            "description": "NER: immunodeficiency (0.174) | Match: clinical_synonym (1.000)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0012735",
+        "label": "Cough",
+        "umls_cui": "C0010200"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "CHU_FR_032",
+            "description": "NER: cough (0.965) | Match: exact_label (1.000)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0000098",
+        "label": "Tall stature",
+        "umls_cui": "C0241240"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "CHU_FR_032",
+            "description": "NER: stature (0.299) | Match: sapbert_similarity (0.746)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0004395",
+        "label": "Malnutrition",
+        "umls_cui": "C0162429"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "CHU_FR_032",
+            "description": "NER: malnutrition (0.437) | Match: exact_label (1.000)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0000958",
+        "label": "Dry skin",
+        "umls_cui": "C0151908"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "CHU_FR_032",
+            "description": "NER: xerosis (0.904) | Match: exact_synonym (1.000)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0002098",
+        "label": "Respiratory distress",
+        "umls_cui": "C0013404"
+      },
+      "excluded": true,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "CHU_FR_032",
+            "description": "NER: respiratory distress (0.792) | Match: clinical_synonym (1.000) | Negated by: \"no\""
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0000969",
+        "label": "Edema",
+        "umls_cui": "C0013604"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "CHU_FR_032",
+            "description": "NER: congestion (0.455) | Match: sapbert_similarity (0.774)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0003271",
+        "label": "Visceromegaly",
+        "umls_cui": "C0042782"
+      },
+      "excluded": true,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "CHU_FR_032",
+            "description": "NER: organomegaly (0.962) | Match: sapbert_similarity (0.882) | Negated by: \"no\""
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0100790",
+        "label": "Hernia",
+        "umls_cui": "C0019270"
+      },
+      "excluded": true,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "CHU_FR_032",
+            "description": "NER: hernial orifices (0.838) | Match: sapbert_similarity (0.809) | Negated by: \"no\""
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0000028",
+        "label": "Cryptorchidism",
+        "umls_cui": "C0010417"
+      },
+      "excluded": true,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "CHU_FR_032",
+            "description": "NER: cryptorchidis (0.823) | Match: sapbert_similarity (0.933) | Negated by: \"no\""
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0002540",
+        "label": "Inability to walk",
+        "umls_cui": "C0560046"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "CHU_FR_032",
+            "description": "NER: Inability to walk (0.781) | Match: exact_label (1.000)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0003698",
+        "label": "Difficulty standing",
+        "umls_cui": "C0241237"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "CHU_FR_032",
+            "description": "NER: mpossibility of standing (0.491) | Match: sapbert_similarity (0.803)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0002205",
+        "label": "Recurrent respiratory infections",
+        "umls_cui": "C3806482"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "CHU_FR_032",
+            "description": "NER: recurrent respiratory infections (0.900) | Match: text_scan_clinical_synonym (0.950)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0008689",
+        "label": "Bilateral cryptorchidism",
+        "umls_cui": "C0431663"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "CHU_FR_032",
+            "description": "NER: bilateral cryptorchidism (0.900) | Match: text_scan_exact_label (0.950)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0000846",
+        "label": "Adrenal insufficiency",
+        "umls_cui": "C0001623"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "CHU_FR_032",
+            "description": "NER: adrenal insufficiency (0.900) | Match: text_scan_exact_label (0.950)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0002093",
+        "label": "Respiratory insufficiency",
+        "umls_cui": "C0035229"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "CHU_FR_032",
+            "description": "NER: respiratory failure (0.900) | Match: text_scan_clinical_synonym (0.950)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0001583",
+        "label": "Rotary nystagmus",
+        "umls_cui": "C0240595"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "CHU_FR_032",
+            "description": "NER: rotatory nystagmus (0.900) | Match: text_scan_exact_synonym (0.950)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0003193",
+        "label": "Allergic rhinitis",
+        "umls_cui": "C0847614"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "CHU_FR_032",
+            "description": "NER: allergic rhinitis (0.900) | Match: text_scan_exact_label (0.950)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0001760",
+        "label": "Abnormal foot morphology",
+        "umls_cui": "C0016506"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "CHU_FR_032",
+            "description": "NER: foot deformity (0.900) | Match: text_scan_exact_synonym (0.950)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0000388",
+        "label": "Otitis media",
+        "umls_cui": "C0029882"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "CHU_FR_032",
+            "description": "NER: ear infections (0.900) | Match: text_scan_clinical_synonym (0.950)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0000122",
+        "label": "Unilateral renal agenesis",
+        "umls_cui": "C0266294"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "CHU_FR_032",
+            "description": "NER: single kidney (0.900) | Match: text_scan_exact_synonym (0.950)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0001260",
+        "label": "Dysarthria",
+        "umls_cui": "C0013362"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "CHU_FR_032",
+            "description": "NER: dysarthria (0.900) | Match: text_scan_exact_label (0.950)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0012832",
+        "label": "Bilateral",
+        "umls_cui": "C0238767"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "CHU_FR_032",
+            "description": "NER: Bilateral (0.900) | Match: text_scan_exact_label (0.950)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0004324",
+        "label": "Increased body weight",
+        "umls_cui": "C0043094"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "CHU_FR_032",
+            "description": "NER: weight (0.777) | Match: sapbert_similarity (0.720)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0003623",
+        "label": "Neonatal onset",
+        "umls_cui": "C1855106"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "CHU_FR_032",
+            "description": "NER: neonatal (0.561) | Match: sapbert_similarity (0.749)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0002361",
+        "label": "Psychomotor deterioration",
+        "umls_cui": "C1836842"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "CHU_FR_032",
+            "description": "NER: psychomotor (0.672) | Match: sapbert_similarity (0.752)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0002212",
+        "label": "Curly hair",
+        "umls_cui": "C0558165"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "CHU_FR_032",
+            "description": "NER: hair (0.880) | Match: sapbert_similarity (0.728)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0008765",
+        "label": "Auditory hallucination",
+        "umls_cui": "C0233762"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "CHU_FR_032",
+            "description": "NER: audible (0.745) | Match: sapbert_similarity (0.758)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0001369",
+        "label": "Arthritis",
+        "umls_cui": "C0003864"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "CHU_FR_032",
+            "description": "NER: articular (0.981) | Match: sapbert_similarity (0.734)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0004936",
+        "label": "Venous thrombosis",
+        "umls_cui": "C0042487"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "CHU_FR_032",
+            "description": "NER: venous (0.367) | Match: sapbert_similarity (0.769)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0001903",
+        "label": "Anemia"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "CHU_FR_032",
+            "description": "Numeric: HB: 11.2 g/dl → Hemoglobin < 12.0 g/dL"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0001888",
+        "label": "Lymphopenia"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "CHU_FR_032",
+            "description": "Numeric: lymphocytes: 940 → ALC/Lymphocytes < 1500/uL"
+          }
+        }
+      ]
+    }
+  ],
+  "metaData": {
+    "created": "2026-06-11T03:55:39Z",
+    "createdBy": "clinical-preanalysis-pipeline-v2",
+    "phenopacketSchemaVersion": "2.0",
+    "resources": [
+      {
+        "id": "hp",
+        "name": "Human Phenotype Ontology",
+        "url": "https://hpo.jax.org",
+        "version": "2024-04-26",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      }
+    ]
+  },
+  "interpretations": [
+    {
+      "id": "interpretation-CHU_FR_032",
+      "progressStatus": "IN_PROGRESS",
+      "diagnosis": {
+        "disease": {
+          "id": "ORPHA:100",
+          "label": "Ataxia-telangiectasia"
+        },
+        "score": 0.85,
+        "allCandidates": [
+          {
+            "id": "ORPHA:100",
+            "label": "Ataxia-telangiectasia",
+            "score": 0.85
+          },
+          {
+            "id": "ORPHA:1195",
+            "label": "Congenital atransferrinemia",
+            "score": 0.3279
+          },
+          {
+            "id": "ORPHA:231249",
+            "label": "Hemoglobin E-beta-thalassemia syndrome",
+            "score": 0.319
+          },
+          {
+            "id": "ORPHA:47",
+            "label": "X-linked agammaglobulinemia",
+            "score": 0.3162
+          },
+          {
+            "id": "ORPHA:572",
+            "label": "MHC class II deficiency",
+            "score": 0.3162
+          }
+        ]
+      }
+    }
+  ],
+  "_validationWarnings": [
+    {
+      "type": "sex_anatomy_conflict",
+      "severity": "critical",
+      "message": "Female-specific term 'pregnancy' found in male patient record",
+      "term": "pregnancy"
+    }
+  ],
+  "_pipelineStats": {
+    "totalEntities": 133,
+    "matchedHPO": 40,
+    "unmatchedEntities": 93,
+    "phenopacketFeatures": 40,
+    "negatedFeatures": 4,
+    "numericPhenotypes": 2,
+    "ordoCandidates": 5
+  }
+}

@@ -1,0 +1,2163 @@
+{
+  "note_id": "CHU_FR_013",
+  "language": "en",
+  "module1": {
+    "clean_text": "RAPPORT MEDICAL:\nIl s’agit du nourrissson Belghit [PATIENT] âgé de 06 mois originaire et demeurant à Oran, issu d’un couple non consanguin, ancien prématuré de 28SA, suivi à notre service pour détresse respiratoire chonique en investigation, admis pour la prise en charge d’une exacerbation fébrile de sa détresse respiratoire\nANTÉCÉDENTS :\nFamiliaux :\nPère : [AGE] ans, bon état de santé, tabagique. Mère :34ans, bon état de santé. Fratrie : fils unique\nAtopie : non\nMaladie respiratoire chronique dans la famille : non\nPersonnels :\nPhysiologique :\nGrossesse: bien suivie\nAccouchement: a 28 SA par voie basse\nRéanimation néonatale : oui\nPoids de naissance : 1kg400\nMéconium:  émis<24h\nPas de retard de chute du cordon ombilical\nAllaitement:  maternelle puis  artificiel dès l’age de [AGE] Vaccination: correcte\nVitamine D reçue a l’âge de 01 mois. Développement psychomoteur: jugé bon selon l’age\nNiveau socio-économique : bon\nAtopie personnelle :non\nPathologique :\nGrande prématurité de 28SA non expliquée avec hospitalisation dès sa naissance au niveau du service Néonat- CHU Oran pour détresse respiratoire sévère ayant bénéficié d’une instillation du surfactant ainsi que la CPAP (Rapport médical demandé, non ramené) mis sous Flixotide à sa sortie. Hospitalisation au niveau des urgences pédiatriques canastel pendant 07jours puis à notre niveau pendant 05jours pour la prise en charge d’une bronchiolite surinfectée. Histoire de la maladie actuelle:\nLe nourrisson a été mis sortant le 10/12/2025 de notre service avec relais per os d’Augmentin, sans détresse respiratoire avec persistance d’une légère toux. Le 15/12/2025, le nourrisson a aggravé son tableau clinique avec apparition d’une détresse respiratoire modérée, toux, fièvre à 38,7, cyanose (non assistée) avec refus de tétées, d’où la consultation à notre service et son admission\nEXAMEN CLINIQUE  À L'ADMISSION :\nMesures anthropométriques :\nPoids:  06kg800 (-1,12 DS)   Taille :   68cm(+0,62DS)\nEtat général : moyen , T° : Fébrile à 39.1°C\nExamen de la peau :   légère paleur cutanéo-muqueuse\nExamen ORL: Obstruction nasale, gorge propre . Examen pleuro pulmonaire :\nFR: polypnée à 79 c/mn\nSignes de détresse respiratoire modérée à sévère faite de : tirage sus sternal et basi-thoracique et intercostale\nSPO2 : 85% à l’air ambiant; 95 % sous 03l/min d’O2\nAuscultation pulmonaire: Rales crépitants et ronflants  aux 2champs pulmonaires\nExamen cardiovasculaire : FC : 110 b/min. Auscultation : B1B2 audibles  pas de souffles ni de bruits surajoutés\nExamen digestif :  abdomen souple pas d’organomégalies,  transit accéléré : 04 selle/jr d’aspect liquidien sans retentissement sur l’état d’hydratation. Examen uro-génital : Sexe de morphotype masculin  avec présence d’un erythème fessier\nBIOLOGIE:\nNFS: hyperleucocytose à PNN GB: 19500 (PNN: 13530); HB: 9,1  PLQT: 895000\nCRP: négative\nProcalcitonine negative : <0,16\nRADIOLOGIE:\nRadiographie thoracique (16/12/2025): Opacité parahilaire droite malsystématisée\nCAT :\nHospitalisation. Mise en condition\nOxygénothérapie selon les besoins. Surveillance : CHMD, glycémie, température . Mise sous ration lactée fractionnée par gavage\nMise sous antibiothétapie à base d’amoxicilline + acide clavulanique avec nébulisation par asthalin et pulmicort\nECBC lancé avec kinésithérapie quotidienne. Evolution :\nil a présenté à J2 de son hospitalisation une cyanose et désaturation lors de la séance de kinésithérapie\nOn a reçu le résultat de son ECBC lancé le 08/12/2025 en faveur de Pseudomonas aeroginosa sensible au tienam\nCAT: changement de l’antibiothérapie de l’Augmentin vers Tienam + amikacine\nLe nourrisson a reçu 05 jours de Tienam et Amikacine, à J5, il a perdu sa voie périphérique avec difficulté de le piquer\nCAT: introduction de ciprolon par voie orale pendant 14jours + Colistine en nébulisation pendant 21jours\nRésultats ECBC lancé le 17/12/2025 : non concluant\nA J19:\nClinique: Nette amélioration de la détresse respiratoire ( très léger tirage sous sternal)\nBiologie: NFS: correcte, Procalcitonine : négative\nCAT: Sevrage d’oxygène avec surveillance pendant 24heures avec succès. Dans le cadre de l’investigation de sa détresse respiratoire\nEchographie cardiaque (10/12/2025): Sans particularités. TDM Thoracique : Foyer de pneumopathie lobaire supérieure droite associée à des epaississements des lignes non septales (Scanner de controle sur un enfant calme reste souhaitable pour meilleure exploration).\nImmunodeficiency assessment: negative\nGiven the clinical-biological stability, the infant was discharged on 01/05/2026 with a follow-up appointment at the specialized consultation. Output processing:\n- Nebulized colistin. - nebulization with asthalin and pulmicort. - Antibiotic prophylaxis with Azithromycin. CONCLUSION\nThis is the infant BELGHIT ABDELWAHAB aged 06 months, originally from and residing in Oran, from a non-consanguineous couple, with a personal history of prematurity of 28 weeks with chronic respiratory distress, admitted to our level for the management of pseudomonas aeruginosa pneumonia.\nRECOMMENDATIONS:\n- Retrieve the medical report from the CHU-Oran neonatal department. - Retrieve ECBC done on 01/05/2026. RESIDENT: Dr TAMAZIRT ASSISTANT: Dr DOUKAR",
+    "phi_map": {
+      "PATIENT": "Abdelwahab",
+      "AGE": [
+        "37",
+        "01mois."
+      ]
+    },
+    "patient_info": {}
+  },
+  "module3_warnings": {
+    "temporal": [],
+    "inconsistencies": []
+  },
+  "module4": {
+    "problem": [
+      {
+        "text": "uple",
+        "ner_score": 0.333,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "uple",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "28SA",
+        "ner_score": 0.522,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "28SA",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "détresse respiratoire",
+        "ner_score": 0.62,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "détresse respiratoire",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "resse re",
+        "ner_score": 0.508,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "resse re",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "spiratoire",
+        "ner_score": 0.589,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "spiratoire",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "nique",
+        "ner_score": 0.603,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "nique",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "exacerbation",
+        "ner_score": 0.566,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "exacerbation",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "agique",
+        "ner_score": 0.307,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "agique",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "Maladie respiratoire",
+        "ner_score": 0.619,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "Maladie respiratoire",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "Méconium",
+        "ner_score": 0.446,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "Méconium",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "chute",
+        "ner_score": 0.568,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "chute",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "cordon ombilical",
+        "ner_score": 0.778,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0001539",
+        "hpo_name": "Omphalocele",
+        "expanded_text": "cordon ombilical",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.7256,
+        "matched": true,
+        "umls_cui": "C0795690"
+      },
+      {
+        "text": "topie personnel",
+        "ner_score": 0.37,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "topie personnel",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "prématurité",
+        "ner_score": 0.717,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "prématurité",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "bronchiolite",
+        "ner_score": 0.73,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0011950",
+        "hpo_name": "Bronchiolitis",
+        "expanded_text": "bronchiolite",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.7521,
+        "matched": true,
+        "umls_cui": "C0006271"
+      },
+      {
+        "text": "toux",
+        "ner_score": 0.928,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "toux",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "fièvre",
+        "ner_score": 0.953,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "fièvre",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "cyanose",
+        "ner_score": 0.852,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0000961",
+        "hpo_name": "Cyanosis",
+        "expanded_text": "cyanose",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.7135,
+        "matched": true,
+        "umls_cui": "C0010520"
+      },
+      {
+        "text": "paleur",
+        "ner_score": 0.266,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "paleur",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "Obstruction",
+        "ner_score": 0.755,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "Obstruction",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "mona",
+        "ner_score": 0.926,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "mona",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "polypnée",
+        "ner_score": 0.8,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "polypnée",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "Rales crépitants",
+        "ner_score": 0.817,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "Rales crépitants",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "ronflants",
+        "ner_score": 0.803,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "ronflants",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "souffles",
+        "ner_score": 0.802,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "souffles",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "bruits",
+        "ner_score": 0.773,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0000978",
+        "hpo_name": "Bruising susceptibility",
+        "expanded_text": "bruits",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.804,
+        "matched": true,
+        "umls_cui": "C0013491"
+      },
+      {
+        "text": "ajoutés",
+        "ner_score": 0.451,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "ajoutés",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "retentissement",
+        "ner_score": 0.715,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "retentissement",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "hydratation",
+        "ner_score": 0.813,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0001561",
+        "hpo_name": "Polyhydramnios",
+        "expanded_text": "hydratation",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.7082,
+        "matched": true,
+        "umls_cui": "C0020224"
+      },
+      {
+        "text": "leucocytose",
+        "ner_score": 0.701,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "leucocytose",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "ité para",
+        "ner_score": 0.516,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "ité para",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "hilaire",
+        "ner_score": 0.39,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "hilaire",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "nébulisation",
+        "ner_score": 0.321,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "nébulisation",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "désaturation",
+        "ner_score": 0.845,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "désaturation",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "Pseudomonas",
+        "ner_score": 0.81,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "Pseudomonas",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "pseudo",
+        "ner_score": 0.774,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "pseudo",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "aero",
+        "ner_score": 0.681,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "aerosol",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "pneumo",
+        "ner_score": 0.762,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "pneumo",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "epaississements",
+        "ner_score": 0.791,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "epaississements",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "aeruginosa",
+        "ner_score": 0.913,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "aeruginosa",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "pneumonia",
+        "ner_score": 0.609,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0002090",
+        "hpo_name": "Pneumonia",
+        "expanded_text": "pneumonia",
+        "match_type": "exact_label",
+        "confidence": 1.0,
+        "matched": true,
+        "umls_cui": "C0032285"
+      },
+      {
+        "text": "respiratory distress",
+        "ner_score": 0.9,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0002098",
+        "hpo_name": "Respiratory distress",
+        "expanded_text": "respiratory distress",
+        "match_type": "text_scan_clinical_synonym",
+        "confidence": 0.95,
+        "matched": true,
+        "umls_cui": "C0013404",
+        "umls_all": [
+          "C0013404",
+          "C0476273"
+        ]
+      }
+    ],
+    "treatment": [
+      {
+        "text": "cort ECB",
+        "ner_score": 0.852,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "cort ECB",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "Tien",
+        "ner_score": 0.381,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "Tien",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "nique",
+        "ner_score": 0.971,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "nique",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "Accouchement",
+        "ner_score": 0.585,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "Accouchement",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "Réanimation néonatale",
+        "ner_score": 0.638,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "Réanimation néonatale",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "maternelle",
+        "ner_score": 0.561,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "maternelle",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "artificiel",
+        "ner_score": 0.525,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "artificiel",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "Vitamin",
+        "ner_score": 0.422,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "Vitamin",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "Hospitalisation",
+        "ner_score": 0.408,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "Hospitalisation",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "surfactant",
+        "ner_score": 0.875,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "surfactant",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "tide",
+        "ner_score": 0.962,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "tide",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "Augmentin",
+        "ner_score": 0.622,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "Augmentin",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "anomégal",
+        "ner_score": 0.46,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "anomégal",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "génothérapie",
+        "ner_score": 0.693,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "génothérapie",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "avage",
+        "ner_score": 0.926,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "avage",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "anti",
+        "ner_score": 0.932,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "anti",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "amoxicillin",
+        "ner_score": 0.603,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "amoxicillin",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "cide",
+        "ner_score": 0.971,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "cide",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "bulisation",
+        "ner_score": 0.519,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "bulisation",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "kinésithérapie",
+        "ner_score": 0.823,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "kinésithérapie",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "antibiothérapie",
+        "ner_score": 0.625,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "antibiothérapie",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "cine",
+        "ner_score": 0.469,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "cine",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "voie périphérique",
+        "ner_score": 0.411,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "voie périphérique",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "piquer",
+        "ner_score": 0.404,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "piquer",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "cipro",
+        "ner_score": 0.964,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "cipro",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "Coli",
+        "ner_score": 0.439,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "Coli",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "stine",
+        "ner_score": 0.416,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "stine",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "Sevrage d",
+        "ner_score": 0.625,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "Sevrage d",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "ized",
+        "ner_score": 0.852,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "ized",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "nebulization",
+        "ner_score": 0.525,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "nebulization",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "Antibiotic",
+        "ner_score": 0.804,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "Antibiotic",
+        "match_type": "skipped_non_phenotype",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "prophylaxis",
+        "ner_score": 0.431,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "prophylaxis",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "ithromycin",
+        "ner_score": 0.962,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "ithromycin",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      }
+    ],
+    "test": [
+      {
+        "text": "medical",
+        "ner_score": 0.839,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "medical",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "aire",
+        "ner_score": 0.943,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "aire",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "ique",
+        "ner_score": 0.891,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "ique",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "ation",
+        "ner_score": 0.992,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "ation",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "OLOGI",
+        "ner_score": 0.977,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "OLOGI",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "ement",
+        "ner_score": 0.818,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "ement",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "oids",
+        "ner_score": 0.92,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "oids",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "Vaccination",
+        "ner_score": 0.573,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "Vaccination",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "correct",
+        "ner_score": 0.677,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "correct",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "psycho",
+        "ner_score": 0.468,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "psycho",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "teur",
+        "ner_score": 0.859,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "teur",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "socio",
+        "ner_score": 0.739,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "socio",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "cono",
+        "ner_score": 0.922,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "cono",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "ital",
+        "ner_score": 0.991,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "ital",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "rique",
+        "ner_score": 0.977,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "rique",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "tableau",
+        "ner_score": 0.926,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "tableau",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "Exam",
+        "ner_score": 0.916,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "Exam",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "sure",
+        "ner_score": 0.979,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "sure",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "anthropo",
+        "ner_score": 0.667,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "anthropo",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "aille",
+        "ner_score": 0.945,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "aille",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "général",
+        "ner_score": 0.98,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "général",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "moyen",
+        "ner_score": 0.96,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "moyen",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "en OR",
+        "ner_score": 0.81,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "en OR",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "nasal",
+        "ner_score": 0.906,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0012384",
+        "hpo_name": "Rhinitis",
+        "expanded_text": "nasal",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.7298,
+        "matched": true,
+        "umls_cui": "C0035455"
+      },
+      {
+        "text": "gorge",
+        "ner_score": 0.891,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "gorge",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "en pleur",
+        "ner_score": 0.675,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "en pleur",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "en cardio",
+        "ner_score": 0.815,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "en cardio",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "ulaire",
+        "ner_score": 0.992,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "ulaire",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "en digest",
+        "ner_score": 0.86,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "en digest",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "abdomen",
+        "ner_score": 0.889,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "abdomen",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "liquid",
+        "ner_score": 0.391,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "liquid",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "en uro",
+        "ner_score": 0.897,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "en uro",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "morpho",
+        "ner_score": 0.872,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0012344",
+        "hpo_name": "Morphea",
+        "expanded_text": "morpho",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.8255,
+        "matched": true,
+        "umls_cui": "C1527383"
+      },
+      {
+        "text": "masculin",
+        "ner_score": 0.194,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "masculin",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "ologie",
+        "ner_score": 0.983,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "ologie",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": ": 19",
+        "ner_score": 0.704,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": ": 19",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "5000",
+        "ner_score": 0.897,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "5000",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "ative",
+        "ner_score": 0.868,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "ative",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "iton",
+        "ner_score": 0.994,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "iton",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "negative",
+        "ner_score": 0.615,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "negative",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "RADIO",
+        "ner_score": 0.986,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "RADIO",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "graphie",
+        "ner_score": 0.989,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "graphie",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "Surveillance",
+        "ner_score": 0.927,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "Surveillance",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "ature",
+        "ner_score": 0.988,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "ature",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "conclu",
+        "ner_score": 0.822,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "conclu",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "Echo",
+        "ner_score": 0.958,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "echocardiogram",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "TDM Thorac",
+        "ner_score": 0.813,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "TDM Thorac",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "ligne",
+        "ner_score": 0.657,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "ligne",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "septal",
+        "ner_score": 0.967,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0001671",
+        "hpo_name": "Abnormal cardiac septum morphology",
+        "expanded_text": "septal",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.725,
+        "matched": true,
+        "umls_cui": "C0018816"
+      },
+      {
+        "text": "Immunodeficiency",
+        "ner_score": 0.472,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0002721",
+        "hpo_name": "Immunodeficiency",
+        "expanded_text": "Immunodeficiency",
+        "match_type": "clinical_synonym",
+        "confidence": 1.0,
+        "matched": true,
+        "umls_cui": "C0021051"
+      },
+      {
+        "text": "report",
+        "ner_score": 0.627,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "report",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      }
+    ],
+    "numeric_phenotypes": [
+      {
+        "hpo_id": "HP:0001945",
+        "hpo_name": "Fever",
+        "value": 39.1,
+        "unit": "°C",
+        "description": "Température >= 38.0°C (fébrile)",
+        "source": "Fébrile à 39.1°C",
+        "match_type": "numeric_inference",
+        "confidence": 1.0
+      },
+      {
+        "hpo_id": "HP:0001903",
+        "hpo_name": "Anemia",
+        "value": 9.1,
+        "unit": "g/dL",
+        "description": "Hemoglobin < 12.0 g/dL",
+        "source": "HB: 9,1",
+        "match_type": "numeric_inference",
+        "confidence": 1.0
+      },
+      {
+        "hpo_id": "HP:0001974",
+        "hpo_name": "Leukocytosis",
+        "value": 19500.0,
+        "unit": "elements/uL",
+        "description": "WBC/GB > 11,000 elements/uL",
+        "source": "GB: 19500",
+        "match_type": "numeric_inference",
+        "confidence": 1.0
+      },
+      {
+        "hpo_id": "HP:0012418",
+        "hpo_name": "Hypoxemia",
+        "value": 85.0,
+        "unit": "%",
+        "description": "SpO2 < 92%",
+        "source": "SPO2 : 85%",
+        "match_type": "numeric_inference",
+        "confidence": 1.0
+      }
+    ],
+    "ordo_candidates": [
+      {
+        "ordo_id": "ORPHA:232",
+        "name": "Sickle cell disease",
+        "name_fr": "",
+        "score": 0.3842,
+        "jaccard": 0.2105,
+        "coverage": 0.5,
+        "matched_hpo": [
+          "HP:0001903",
+          "HP:0001945",
+          "HP:0001974",
+          "HP:0002090"
+        ],
+        "matched_count": 4,
+        "total_disease_hpo": 8
+      },
+      {
+        "ordo_id": "ORPHA:183707",
+        "name": "Infantile LAD-like disease due to RAC2 deficiency",
+        "name_fr": "",
+        "score": 0.3471,
+        "jaccard": 0.1176,
+        "coverage": 0.5,
+        "matched_hpo": [
+          "HP:0001974",
+          "HP:0002721"
+        ],
+        "matched_count": 2,
+        "total_disease_hpo": 4
+      },
+      {
+        "ordo_id": "ORPHA:231249",
+        "name": "Hemoglobin E-beta-thalassemia syndrome",
+        "name_fr": "",
+        "score": 0.3471,
+        "jaccard": 0.1176,
+        "coverage": 0.5,
+        "matched_hpo": [
+          "HP:0001903",
+          "HP:0002721"
+        ],
+        "matched_count": 2,
+        "total_disease_hpo": 4
+      },
+      {
+        "ordo_id": "ORPHA:99981",
+        "name": "Apnea of prematurity",
+        "name_fr": "",
+        "score": 0.2844,
+        "jaccard": 0.1111,
+        "coverage": 0.4,
+        "matched_hpo": [
+          "HP:0000961",
+          "HP:0012418"
+        ],
+        "matched_count": 2,
+        "total_disease_hpo": 5
+      },
+      {
+        "ordo_id": "ORPHA:3346",
+        "name": "Tracheal agenesis",
+        "name_fr": "",
+        "score": 0.2844,
+        "jaccard": 0.1111,
+        "coverage": 0.4,
+        "matched_hpo": [
+          "HP:0001561",
+          "HP:0001671"
+        ],
+        "matched_count": 2,
+        "total_disease_hpo": 5
+      }
+    ],
+    "stats": {
+      "total": 126,
+      "matched": 11,
+      "unmatched": 115,
+      "match_rate": 8.7,
+      "unique_hpo": 15,
+      "ordo_matches": 5
+    }
+  },
+  "phenopacket": {
+    "id": "phenopacket-CHU_FR_013",
+    "subject": {
+      "id": "CHU_FR_013"
+    },
+    "input": "RAPPORT MEDICAL:\nIl s’agit du nourrissson Belghit Abdelwahab âgé de 06 mois originaire et demeurant à Oran, issu d’un couple non consanguin, ancien prématuré de 28SA, suivi à notre service pour détresse respiratoire chonique en investigation, admis pour la prise en charge d’une exacerbation fébrile de sa détresse respiratoire\nANTÉCÉDENTS :\nFamiliaux :\nPère : 37 ans, bon état de santé, tabagique. Mère :34ans, bon état de santé. Fratrie : fils unique\nAtopie : non\nMaladie respiratoire chronique dans la famille : non\nPersonnels :\nPhysiologique :\nGrossesse: bien suivie\nAccouchement: a 28 SA par voie basse\nRéanimation néonatale : oui\nPoids de naissance : 1kg400\nMéconium:  émis<24h\nPas de retard de chute du cordon ombilical\nAllaitement:  maternelle puis  artificiel dès l’age de 01mois. Vaccination: correcte\nVitamine D reçue a l’âge de 01 mois. Développement psychomoteur: jugé bon selon l’age\nNiveau socio-économique : bon\nAtopie personnelle :non\nPathologique :\nGrande prématurité de 28SA non expliquée avec hospitalisation dès sa naissance au niveau du service Néonat- CHU Oran pour détresse respiratoire sévère ayant bénéficié d’une instillation du surfactant ainsi que la CPAP (Rapport médical demandé, non ramené) mis sous Flixotide à sa sortie. Hospitalisation au niveau des urgences pédiatriques canastel pendant 07jours puis à notre niveau pendant 05jours pour la prise en charge d’une bronchiolite surinfectée. Histoire de la maladie actuelle:\nLe nourrisson a été mis sortant le 10/12/2025 de notre service avec relais per os d’Augmentin, sans détresse respiratoire avec persistance d’une légère toux. Le 15/12/2025, le nourrisson a aggravé son tableau clinique avec apparition d’une détresse respiratoire modérée, toux, fièvre à 38,7, cyanose (non assistée) avec refus de tétées, d’où la consultation à notre service et son admission\nEXAMEN CLINIQUE  À L'ADMISSION :\nMesures anthropométriques :\nPoids:  06kg800 (-1,12 DS)   Taille :   68cm(+0,62DS)\nEtat général : moyen , T° : Fébrile à 39.1°C\nExamen de la peau :   légère paleur cutanéo-muqueuse\nExamen ORL: Obstruction nasale, gorge propre . Examen pleuro pulmonaire :\nFR: polypnée à 79 c/mn\nSignes de détresse respiratoire modérée à sévère faite de : tirage sus sternal et basi-thoracique et intercostale\nSPO2 : 85% à l’air ambiant; 95 % sous 03l/min d’O2\nAuscultation pulmonaire: Rales crépitants et ronflants  aux 2champs pulmonaires\nExamen cardiovasculaire : FC : 110 b/min. Auscultation : B1B2 audibles  pas de souffles ni de bruits surajoutés\nExamen digestif :  abdomen souple pas d’organomégalies,  transit accéléré : 04 selle/jr d’aspect liquidien sans retentissement sur l’état d’hydratation. Examen uro-génital : Sexe de morphotype masculin  avec présence d’un erythème fessier\nBIOLOGIE:\nNFS: hyperleucocytose à PNN GB: 19500 (PNN: 13530); HB: 9,1  PLQT: 895000\nCRP: négative\nProcalcitonine negative : <0,16\nRADIOLOGIE:\nRadiographie thoracique (16/12/2025): Opacité parahilaire droite malsystématisée\nCAT :\nHospitalisation. Mise en condition\nOxygénothérapie selon les besoins. Surveillance : CHMD, glycémie, température . Mise sous ration lactée fractionnée par gavage\nMise sous antibiothétapie à base d’amoxicilline + acide clavulanique avec nébulisation par asthalin et pulmicort\nECBC lancé avec kinésithérapie quotidienne. Evolution :\nil a présenté à J2 de son hospitalisation une cyanose et désaturation lors de la séance de kinésithérapie\nOn a reçu le résultat de son ECBC lancé le 08/12/2025 en faveur de Pseudomonas aeroginosa sensible au tienam\nCAT: changement de l’antibiothérapie de l’Augmentin vers Tienam + amikacine\nLe nourrisson a reçu 05 jours de Tienam et Amikacine, à J5, il a perdu sa voie périphérique avec difficulté de le piquer\nCAT: introduction de ciprolon par voie orale pendant 14jours + Colistine en nébulisation pendant 21jours\nRésultats ECBC lancé le 17/12/2025 : non concluant\nA J19:\nClinique: Nette amélioration de la détresse respiratoire ( très léger tirage sous sternal)\nBiologie: NFS: correcte, Procalcitonine : négative\nCAT: Sevrage d’oxygène avec surveillance pendant 24heures avec succès. Dans le cadre de l’investigation de sa détresse respiratoire\nEchographie cardiaque (10/12/2025): Sans particularités. TDM Thoracique : Foyer de pneumopathie lobaire supérieure droite associée à des epaississements des lignes non septales (Scanner de controle sur un enfant calme reste souhaitable pour meilleure exploration).\nImmunodeficiency assessment: negative\nGiven the clinical-biological stability, the infant was discharged on 01/05/2026 with a follow-up appointment at the specialized consultation. Output processing:\n- Nebulized colistin. - nebulization with asthalin and pulmicort. - Antibiotic prophylaxis with Azithromycin. CONCLUSION\nThis is the infant BELGHIT ABDELWAHAB aged 06 months, originally from and residing in Oran, from a non-consanguineous couple, with a personal history of prematurity of 28 weeks with chronic respiratory distress, admitted to our level for the management of pseudomonas aeruginosa pneumonia.\nRECOMMENDATIONS:\n- Retrieve the medical report from the CHU-Oran neonatal department. - Retrieve ECBC done on 01/05/2026. RESIDENT: Dr TAMAZIRT ASSISTANT: Dr DOUKAR",
+    "target": "Sickle cell disease",
+    "phenotypicFeatures": [
+      {
+        "type": {
+          "id": "HP:0001539",
+          "label": "Omphalocele",
+          "umls_cui": "C0795690"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "CHU_FR_013",
+              "description": "NER: cordon ombilical (0.778) | Match: sapbert_similarity (0.726)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0011950",
+          "label": "Bronchiolitis",
+          "umls_cui": "C0006271"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "CHU_FR_013",
+              "description": "NER: bronchiolite (0.730) | Match: sapbert_similarity (0.752)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0000961",
+          "label": "Cyanosis",
+          "umls_cui": "C0010520"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "CHU_FR_013",
+              "description": "NER: cyanose (0.852) | Match: sapbert_similarity (0.714)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0000978",
+          "label": "Bruising susceptibility",
+          "umls_cui": "C0013491"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "CHU_FR_013",
+              "description": "NER: bruits (0.773) | Match: sapbert_similarity (0.804)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0001561",
+          "label": "Polyhydramnios",
+          "umls_cui": "C0020224"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "CHU_FR_013",
+              "description": "NER: hydratation (0.813) | Match: sapbert_similarity (0.708)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0002090",
+          "label": "Pneumonia",
+          "umls_cui": "C0032285"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "CHU_FR_013",
+              "description": "NER: pneumonia (0.609) | Match: exact_label (1.000)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0002098",
+          "label": "Respiratory distress",
+          "umls_cui": "C0013404"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "CHU_FR_013",
+              "description": "NER: respiratory distress (0.900) | Match: text_scan_clinical_synonym (0.950)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0012384",
+          "label": "Rhinitis",
+          "umls_cui": "C0035455"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "CHU_FR_013",
+              "description": "NER: nasal (0.906) | Match: sapbert_similarity (0.730)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0012344",
+          "label": "Morphea",
+          "umls_cui": "C1527383"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "CHU_FR_013",
+              "description": "NER: morpho (0.872) | Match: sapbert_similarity (0.826)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0001671",
+          "label": "Abnormal cardiac septum morphology",
+          "umls_cui": "C0018816"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "CHU_FR_013",
+              "description": "NER: septal (0.967) | Match: sapbert_similarity (0.725)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0002721",
+          "label": "Immunodeficiency",
+          "umls_cui": "C0021051"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "CHU_FR_013",
+              "description": "NER: Immunodeficiency (0.472) | Match: clinical_synonym (1.000)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0001945",
+          "label": "Fever"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "CHU_FR_013",
+              "description": "Numeric: Fébrile à 39.1°C → Température >= 38.0°C (fébrile)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0001903",
+          "label": "Anemia"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "CHU_FR_013",
+              "description": "Numeric: HB: 9,1 → Hemoglobin < 12.0 g/dL"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0001974",
+          "label": "Leukocytosis"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "CHU_FR_013",
+              "description": "Numeric: GB: 19500 → WBC/GB > 11,000 elements/uL"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0012418",
+          "label": "Hypoxemia"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "CHU_FR_013",
+              "description": "Numeric: SPO2 : 85% → SpO2 < 92%"
+            }
+          }
+        ]
+      }
+    ],
+    "metaData": {
+      "created": "2026-06-11T03:51:40Z",
+      "createdBy": "clinical-preanalysis-pipeline-v2",
+      "phenopacketSchemaVersion": "2.0",
+      "resources": [
+        {
+          "id": "hp",
+          "name": "Human Phenotype Ontology",
+          "url": "https://hpo.jax.org",
+          "version": "2024-04-26",
+          "namespacePrefix": "HP",
+          "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        }
+      ]
+    },
+    "interpretations": [
+      {
+        "id": "interpretation-CHU_FR_013",
+        "progressStatus": "IN_PROGRESS",
+        "diagnosis": {
+          "disease": {
+            "id": "ORPHA:232",
+            "label": "Sickle cell disease"
+          },
+          "score": 0.3842,
+          "allCandidates": [
+            {
+              "id": "ORPHA:232",
+              "label": "Sickle cell disease",
+              "score": 0.3842
+            },
+            {
+              "id": "ORPHA:183707",
+              "label": "Infantile LAD-like disease due to RAC2 deficiency",
+              "score": 0.3471
+            },
+            {
+              "id": "ORPHA:231249",
+              "label": "Hemoglobin E-beta-thalassemia syndrome",
+              "score": 0.3471
+            },
+            {
+              "id": "ORPHA:99981",
+              "label": "Apnea of prematurity",
+              "score": 0.2844
+            },
+            {
+              "id": "ORPHA:3346",
+              "label": "Tracheal agenesis",
+              "score": 0.2844
+            }
+          ]
+        }
+      }
+    ],
+    "_pipelineStats": {
+      "totalEntities": 126,
+      "matchedHPO": 11,
+      "unmatchedEntities": 115,
+      "phenopacketFeatures": 15,
+      "negatedFeatures": 0,
+      "numericPhenotypes": 4,
+      "ordoCandidates": 5
+    }
+  }
+}

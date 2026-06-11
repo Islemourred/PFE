@@ -1,0 +1,806 @@
+{
+  "note_id": "GSC_EN_023",
+  "language": "en",
+  "module1": {
+    "clean_text": "Case Report: Pathogenesis of hyper IgE syndrome.\n\nHyper IgE syndrome (HIES) is a rare primary immunodeficiency characterized by the triad of elevated IgE and eosinophilia, eczema, and recurrent skin and pulmonary infections. The autosomal dominant (AD) form of HIES results from mutations in STAT3 and is characterized by disordered inflammation, connective tissue, and skeletal abnormalities. Tissue-specific STAT3 deficiency in animals, cytokine and transcriptional array data, and careful clinical phenotyping have explained some of the pathophysiology of the immunologic and non-immunologic abnormalities of AD-HIES. In depth study of the role of STAT3 mutations in specific aspects of HIES may lead to better understanding and new approaches to treatment of conditions intrinsic to HIES that are common in the general population, such as staphylococcal infections, scoliosis, osteoporosis, bronchiectasis, and arterial aneurysms. As the genotypes of STAT3 deficiency are further characterized, genotype-phenotype correlations may emerge that will be informative regarding specific molecular interactions. Autosomal recessive forms of hyper IgE (AR-HIES) have also been reported. A single case of homozygous deficiency of the signal protein Tyk2 has been reported as well as a recessive syndrome with some features overlapping AD-HIES, but for which the genetic etiology is unknown. Better understanding of the pathophysiology and mechanisms of dominant and recessive hyper IgE syndromes will shed light on somatic and immune biology and may improve quality of life and survival for HIES patients.",
+    "phi_map": {},
+    "patient_info": {}
+  },
+  "module3_warnings": {
+    "temporal": [],
+    "inconsistencies": []
+  },
+  "module4": {
+    "problem": [
+      {
+        "text": "syndrome",
+        "ner_score": 0.544,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "syndrome",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "immunodeficiency",
+        "ner_score": 0.478,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0002721",
+        "hpo_name": "Immunodeficiency",
+        "expanded_text": "immunodeficiency",
+        "match_type": "clinical_synonym",
+        "confidence": 1.0,
+        "matched": true,
+        "umls_cui": "C0021051"
+      },
+      {
+        "text": "elevated IgE",
+        "ner_score": 0.435,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0003212",
+        "hpo_name": "Increased circulating IgE level",
+        "expanded_text": "elevated IgE",
+        "match_type": "clinical_synonym",
+        "confidence": 1.0,
+        "matched": true,
+        "umls_cui": "C0236175"
+      },
+      {
+        "text": "eosinophilia",
+        "ner_score": 0.681,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0001880",
+        "hpo_name": "Increased total eosinophil count",
+        "expanded_text": "eosinophilia",
+        "match_type": "exact_synonym",
+        "confidence": 1.0,
+        "matched": true,
+        "umls_cui": "C0014457"
+      },
+      {
+        "text": "eczema",
+        "ner_score": 0.347,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0000964",
+        "hpo_name": "Eczema",
+        "expanded_text": "eczema",
+        "match_type": "clinical_synonym",
+        "confidence": 1.0,
+        "matched": true,
+        "umls_cui": "C0013595"
+      },
+      {
+        "text": "infections",
+        "ner_score": 0.558,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0002719",
+        "hpo_name": "Recurrent infections",
+        "expanded_text": "infections",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.7773,
+        "matched": true,
+        "umls_cui": "C0239998"
+      },
+      {
+        "text": "inflammation",
+        "ner_score": 0.761,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0012649",
+        "hpo_name": "Increased inflammatory response",
+        "expanded_text": "inflammation",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.8309,
+        "matched": true,
+        "umls_cui": "C4022803"
+      },
+      {
+        "text": "abnormalities",
+        "ner_score": 0.471,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "abnormalities",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "scoliosis",
+        "ner_score": 0.365,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0002650",
+        "hpo_name": "Scoliosis",
+        "expanded_text": "scoliosis",
+        "match_type": "exact_label",
+        "confidence": 1.0,
+        "matched": true,
+        "umls_cui": "C0037932"
+      },
+      {
+        "text": "osteoporosis",
+        "ner_score": 0.456,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0000939",
+        "hpo_name": "Osteoporosis",
+        "expanded_text": "osteoporosis",
+        "match_type": "exact_label",
+        "confidence": 1.0,
+        "matched": true,
+        "umls_cui": "C0029456"
+      },
+      {
+        "text": "bronchi",
+        "ner_score": 0.475,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "bronchi",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "pulmonary infections",
+        "ner_score": 0.9,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0006532",
+        "hpo_name": "Recurrent pneumonia",
+        "expanded_text": "pulmonary infections",
+        "match_type": "text_scan_exact_synonym",
+        "confidence": 0.95,
+        "matched": true,
+        "umls_cui": "C0694550",
+        "umls_all": [
+          "C0694550",
+          "C0748140",
+          "C0876973",
+          "C1859117"
+        ]
+      },
+      {
+        "text": "Autosomal recessive",
+        "ner_score": 0.9,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0000007",
+        "hpo_name": "Autosomal recessive inheritance",
+        "expanded_text": "Autosomal recessive",
+        "match_type": "text_scan_exact_synonym",
+        "confidence": 0.95,
+        "matched": true,
+        "umls_cui": "C0441748",
+        "umls_all": [
+          "C0441748",
+          "C4020899"
+        ]
+      },
+      {
+        "text": "autosomal dominant",
+        "ner_score": 0.9,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0000006",
+        "hpo_name": "Autosomal dominant inheritance",
+        "expanded_text": "autosomal dominant",
+        "match_type": "text_scan_exact_synonym",
+        "confidence": 0.95,
+        "matched": true,
+        "umls_cui": "C0443147",
+        "umls_all": [
+          "C0443147"
+        ]
+      },
+      {
+        "text": "bronchiectasis",
+        "ner_score": 0.9,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0002110",
+        "hpo_name": "Bronchiectasis",
+        "expanded_text": "bronchiectasis",
+        "match_type": "text_scan_clinical_synonym",
+        "confidence": 0.95,
+        "matched": true,
+        "umls_cui": "C0006267",
+        "umls_all": [
+          "C0006267"
+        ]
+      }
+    ],
+    "test": [
+      {
+        "text": "pulmonary",
+        "ner_score": 0.716,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "pulmonary",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "connective",
+        "ner_score": 0.857,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0009025",
+        "hpo_name": "Increased connective tissue",
+        "expanded_text": "connective",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.712,
+        "matched": true,
+        "umls_cui": "C1866021"
+      },
+      {
+        "text": "tissue",
+        "ner_score": 0.691,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "tissue",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "skeletal",
+        "ner_score": 0.795,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0000924",
+        "hpo_name": "Abnormality of the skeletal system",
+        "expanded_text": "skeletal",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.7155,
+        "matched": true,
+        "umls_cui": "C4021790"
+      },
+      {
+        "text": "cytokine",
+        "ner_score": 0.829,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "cytokine",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "transcriptional",
+        "ner_score": 0.559,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "transcriptional",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "array",
+        "ner_score": 0.827,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "array",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "otyping",
+        "ner_score": 0.58,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "otyping",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "arterial",
+        "ner_score": 0.578,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "arterial",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "signal",
+        "ner_score": 0.203,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "signal",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "protein",
+        "ner_score": 0.376,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "protein",
+        "match_type": "skipped_non_phenotype",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      }
+    ],
+    "ordo_candidates": [
+      {
+        "ordo_id": "ORPHA:2314",
+        "name": "Hyper-IgE syndrome",
+        "name_fr": "Syndrome d'Hyper-IgE (syndrome de Job)",
+        "score": 0.85,
+        "jaccard": 0.0476,
+        "coverage": 0.125,
+        "matched_hpo": [
+          "HP:0002719"
+        ],
+        "matched_count": 1,
+        "total_disease_hpo": 8
+      },
+      {
+        "ordo_id": "ORPHA:482",
+        "name": "Kimura disease",
+        "name_fr": "",
+        "score": 0.2871,
+        "jaccard": 0.1176,
+        "coverage": 0.4,
+        "matched_hpo": [
+          "HP:0001880",
+          "HP:0003212"
+        ],
+        "matched_count": 2,
+        "total_disease_hpo": 5
+      },
+      {
+        "ordo_id": "ORPHA:906",
+        "name": "Wiskott-Aldrich syndrome",
+        "name_fr": "Syndrome de Wiskott-Aldrich",
+        "score": 0.2381,
+        "jaccard": 0.1667,
+        "coverage": 0.2857,
+        "matched_hpo": [
+          "HP:0000964",
+          "HP:0002110",
+          "HP:0002719",
+          "HP:0003212"
+        ],
+        "matched_count": 4,
+        "total_disease_hpo": 14
+      },
+      {
+        "ordo_id": "ORPHA:3180",
+        "name": "Spondylocamptodactyly syndrome",
+        "name_fr": "",
+        "score": 0.225,
+        "jaccard": 0.0625,
+        "coverage": 0.3333,
+        "matched_hpo": [
+          "HP:0002650"
+        ],
+        "matched_count": 1,
+        "total_disease_hpo": 3
+      },
+      {
+        "ordo_id": "ORPHA:1671",
+        "name": "Split cord malformation type I",
+        "name_fr": "",
+        "score": 0.225,
+        "jaccard": 0.0625,
+        "coverage": 0.3333,
+        "matched_hpo": [
+          "HP:0002650"
+        ],
+        "matched_count": 1,
+        "total_disease_hpo": 3
+      }
+    ],
+    "stats": {
+      "total": 26,
+      "matched": 14,
+      "unmatched": 12,
+      "match_rate": 53.8,
+      "unique_hpo": 14,
+      "ordo_matches": 5
+    }
+  },
+  "phenopacket": {
+    "id": "phenopacket-GSC_EN_023",
+    "subject": {
+      "id": "GSC_EN_023"
+    },
+    "input": "Case Report: Pathogenesis of hyper IgE syndrome.\n\nHyper IgE syndrome (HIES) is a rare primary immunodeficiency characterized by the triad of elevated IgE and eosinophilia, eczema, and recurrent skin and pulmonary infections. The autosomal dominant (AD) form of HIES results from mutations in STAT3 and is characterized by disordered inflammation, connective tissue, and skeletal abnormalities. Tissue-specific STAT3 deficiency in animals, cytokine and transcriptional array data, and careful clinical phenotyping have explained some of the pathophysiology of the immunologic and non-immunologic abnormalities of AD-HIES. In depth study of the role of STAT3 mutations in specific aspects of HIES may lead to better understanding and new approaches to treatment of conditions intrinsic to HIES that are common in the general population, such as staphylococcal infections, scoliosis, osteoporosis, bronchiectasis, and arterial aneurysms. As the genotypes of STAT3 deficiency are further characterized, genotype-phenotype correlations may emerge that will be informative regarding specific molecular interactions. Autosomal recessive forms of hyper IgE (AR-HIES) have also been reported. A single case of homozygous deficiency of the signal protein Tyk2 has been reported as well as a recessive syndrome with some features overlapping AD-HIES, but for which the genetic etiology is unknown. Better understanding of the pathophysiology and mechanisms of dominant and recessive hyper IgE syndromes will shed light on somatic and immune biology and may improve quality of life and survival for HIES patients.",
+    "target": "Hyper-IgE syndrome",
+    "phenotypicFeatures": [
+      {
+        "type": {
+          "id": "HP:0002721",
+          "label": "Immunodeficiency",
+          "umls_cui": "C0021051"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "GSC_EN_023",
+              "description": "NER: immunodeficiency (0.478) | Match: clinical_synonym (1.000)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0003212",
+          "label": "Increased circulating IgE level",
+          "umls_cui": "C0236175"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "GSC_EN_023",
+              "description": "NER: elevated IgE (0.435) | Match: clinical_synonym (1.000)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0001880",
+          "label": "Increased total eosinophil count",
+          "umls_cui": "C0014457"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "GSC_EN_023",
+              "description": "NER: eosinophilia (0.681) | Match: exact_synonym (1.000)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0000964",
+          "label": "Eczema",
+          "umls_cui": "C0013595"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "GSC_EN_023",
+              "description": "NER: eczema (0.347) | Match: clinical_synonym (1.000)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0002719",
+          "label": "Recurrent infections",
+          "umls_cui": "C0239998"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "GSC_EN_023",
+              "description": "NER: infections (0.558) | Match: sapbert_similarity (0.777)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0012649",
+          "label": "Increased inflammatory response",
+          "umls_cui": "C4022803"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "GSC_EN_023",
+              "description": "NER: inflammation (0.761) | Match: sapbert_similarity (0.831)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0002650",
+          "label": "Scoliosis",
+          "umls_cui": "C0037932"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "GSC_EN_023",
+              "description": "NER: scoliosis (0.365) | Match: exact_label (1.000)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0000939",
+          "label": "Osteoporosis",
+          "umls_cui": "C0029456"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "GSC_EN_023",
+              "description": "NER: osteoporosis (0.456) | Match: exact_label (1.000)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0006532",
+          "label": "Recurrent pneumonia",
+          "umls_cui": "C0694550"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "GSC_EN_023",
+              "description": "NER: pulmonary infections (0.900) | Match: text_scan_exact_synonym (0.950)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0000007",
+          "label": "Autosomal recessive inheritance",
+          "umls_cui": "C0441748"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "GSC_EN_023",
+              "description": "NER: Autosomal recessive (0.900) | Match: text_scan_exact_synonym (0.950)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0000006",
+          "label": "Autosomal dominant inheritance",
+          "umls_cui": "C0443147"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "GSC_EN_023",
+              "description": "NER: autosomal dominant (0.900) | Match: text_scan_exact_synonym (0.950)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0002110",
+          "label": "Bronchiectasis",
+          "umls_cui": "C0006267"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "GSC_EN_023",
+              "description": "NER: bronchiectasis (0.900) | Match: text_scan_clinical_synonym (0.950)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0009025",
+          "label": "Increased connective tissue",
+          "umls_cui": "C1866021"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "GSC_EN_023",
+              "description": "NER: connective (0.857) | Match: sapbert_similarity (0.712)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0000924",
+          "label": "Abnormality of the skeletal system",
+          "umls_cui": "C4021790"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "GSC_EN_023",
+              "description": "NER: skeletal (0.795) | Match: sapbert_similarity (0.716)"
+            }
+          }
+        ]
+      }
+    ],
+    "metaData": {
+      "created": "2026-06-11T03:09:20Z",
+      "createdBy": "clinical-preanalysis-pipeline-v2",
+      "phenopacketSchemaVersion": "2.0",
+      "resources": [
+        {
+          "id": "hp",
+          "name": "Human Phenotype Ontology",
+          "url": "https://hpo.jax.org",
+          "version": "2024-04-26",
+          "namespacePrefix": "HP",
+          "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        }
+      ]
+    },
+    "interpretations": [
+      {
+        "id": "interpretation-GSC_EN_023",
+        "progressStatus": "IN_PROGRESS",
+        "diagnosis": {
+          "disease": {
+            "id": "ORPHA:2314",
+            "label": "Hyper-IgE syndrome"
+          },
+          "score": 0.85,
+          "allCandidates": [
+            {
+              "id": "ORPHA:2314",
+              "label": "Hyper-IgE syndrome",
+              "score": 0.85
+            },
+            {
+              "id": "ORPHA:482",
+              "label": "Kimura disease",
+              "score": 0.2871
+            },
+            {
+              "id": "ORPHA:906",
+              "label": "Wiskott-Aldrich syndrome",
+              "score": 0.2381
+            },
+            {
+              "id": "ORPHA:3180",
+              "label": "Spondylocamptodactyly syndrome",
+              "score": 0.225
+            },
+            {
+              "id": "ORPHA:1671",
+              "label": "Split cord malformation type I",
+              "score": 0.225
+            }
+          ]
+        }
+      }
+    ],
+    "_pipelineStats": {
+      "totalEntities": 26,
+      "matchedHPO": 14,
+      "unmatchedEntities": 12,
+      "phenopacketFeatures": 14,
+      "negatedFeatures": 0,
+      "numericPhenotypes": 0,
+      "ordoCandidates": 5
+    }
+  }
+}

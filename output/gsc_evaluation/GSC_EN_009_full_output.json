@@ -1,0 +1,982 @@
+{
+  "note_id": "GSC_EN_009",
+  "language": "en",
+  "module1": {
+    "clean_text": "Case Report: An unusual case of RIPK1-related immunodeficiency: The importance of a timely diagnosis for a novel clinical and therapeutic pattern.\n\nINTRODUCTION: RIPK1-associated autoinflammatory diseases are monogenic autoinflammatory diseases with two distinct phenotypes: a severe immune deficiency form due to homozygous loss-of-function mutations, and a milder form, known as CRIA (Cleavage-Resistant RIPK1-Induced Autoinflammatory syndrome), due to heterozygous gain-of-function mutations within the caspase-8 cleavage site. Diagnosis can be challenging, particularly in cases with atypical presentations, leading to significant delays in providing appropriate care.\nMETHODS: We describe a patient with a novel heterozygous mutation within the RIPK1 kinase domain. She presented, since infancy, recurrent infections of the sinuses, bronchi, and lungs, along with hypogammaglobulinaemia and lymphopenia with relative effectiveness of subcutaneous immunoglobulin supplementation. As an adult, she developed severe autoimmune cytopenia and lymphoid hyperplasia.\nRESULTS: Next-generation sequencing by panel and whole-exome analysis revealed a novel heterozygous D24V RIPK1 pathogenic variant. Functional assays demonstrated low expression of Interleukin (IL)-2 and overexpression of IL-8 in patient peripheral blood mononuclear cells with LPS stimulation. A higher level of IL-6 in B-lymphoblastoid cell lines (B-LCL) suggested a role for B cells in the pathogenesis of this RIPK1-associated disease. Functionally, Rituximab induced a shift in pro-inflammatory cytokine secretion, specifically promoting a TH1 to TH2 switch. Unlike the immune deficiency forms and CRIA syndromes, the patient showed no impairment in the NF-ĸB pathway and a failure in cell death.\nCONCLUSION: This case highlights a new pattern of RIPKI-related disease characterized by combined immunodeficiency, autoimmunity, and inflammation. It underscores the critical importance of early genetic diagnosis in pediatric patients with atypical presentations to avoid decades of morbidity and enable access to targeted, life-changing therapies.",
+    "phi_map": {},
+    "patient_info": {}
+  },
+  "module3_warnings": {
+    "temporal": [],
+    "inconsistencies": []
+  },
+  "module4": {
+    "problem": [
+      {
+        "text": "immunodeficiency",
+        "ner_score": 0.584,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0002721",
+        "hpo_name": "Immunodeficiency",
+        "expanded_text": "immunodeficiency",
+        "match_type": "clinical_synonym",
+        "confidence": 1.0,
+        "matched": true,
+        "umls_cui": "C0021051"
+      },
+      {
+        "text": "deficiency",
+        "ner_score": 0.645,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "deficiency",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "auto",
+        "ner_score": 0.354,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "auto",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "inflammatory",
+        "ner_score": 0.752,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0012649",
+        "hpo_name": "Increased inflammatory response",
+        "expanded_text": "inflammatory",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.8617,
+        "matched": true,
+        "umls_cui": "C4022803"
+      },
+      {
+        "text": "diseases",
+        "ner_score": 0.538,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "diseases",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "immune",
+        "ner_score": 0.608,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0100326",
+        "hpo_name": "Immunologic hypersensitivity",
+        "expanded_text": "immune",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.7417,
+        "matched": true,
+        "umls_cui": "C0237653"
+      },
+      {
+        "text": "syndrome",
+        "ner_score": 0.545,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "syndrome",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "infections",
+        "ner_score": 0.715,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0002719",
+        "hpo_name": "Recurrent infections",
+        "expanded_text": "infections",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.7773,
+        "matched": true,
+        "umls_cui": "C0239998"
+      },
+      {
+        "text": "hypogammaglobulinaemia",
+        "ner_score": 0.939,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0004432",
+        "hpo_name": "Agammaglobulinemia",
+        "expanded_text": "hypogammaglobulinaemia",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.8502,
+        "matched": true,
+        "umls_cui": "C0001768"
+      },
+      {
+        "text": "lymphopenia",
+        "ner_score": 0.924,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0001888",
+        "hpo_name": "Decreased total lymphocyte count",
+        "expanded_text": "lymphopenia",
+        "match_type": "exact_synonym",
+        "confidence": 1.0,
+        "matched": true,
+        "umls_cui": "C0024312"
+      },
+      {
+        "text": "autoimmune",
+        "ner_score": 0.613,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0002960",
+        "hpo_name": "Autoimmunity",
+        "expanded_text": "autoimmune",
+        "match_type": "clinical_synonym",
+        "confidence": 1.0,
+        "matched": true,
+        "umls_cui": "C0004364"
+      },
+      {
+        "text": "cytopenia",
+        "ner_score": 0.727,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0001876",
+        "hpo_name": "Pancytopenia",
+        "expanded_text": "cytopenia",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.8222,
+        "matched": true,
+        "umls_cui": "C0030312"
+      },
+      {
+        "text": "lymphoid hyperplasia",
+        "ner_score": 0.718,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0002716",
+        "hpo_name": "Lymphadenopathy",
+        "expanded_text": "lymphoid hyperplasia",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.7815,
+        "matched": true,
+        "umls_cui": "C0497156"
+      },
+      {
+        "text": "pro-inflammatory cytokine secretion",
+        "ner_score": 0.513,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0012649",
+        "hpo_name": "Increased inflammatory response",
+        "expanded_text": "pro-inflammatory cytokine secretion",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.7265,
+        "matched": true,
+        "umls_cui": "C4022803"
+      },
+      {
+        "text": "TH1 to TH2",
+        "ner_score": 0.63,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "TH1 to TH2",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "impairment",
+        "ner_score": 0.671,
+        "negated": true,
+        "negation_cue": "no",
+        "hpo_id": "HP:0100543",
+        "hpo_name": "Cognitive impairment",
+        "expanded_text": "impairment",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.7115,
+        "matched": true,
+        "umls_cui": "C0338656"
+      },
+      {
+        "text": "failure",
+        "ner_score": 0.517,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "failure",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "cell death",
+        "ner_score": 0.568,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "cell death",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "combined immunodeficiency",
+        "ner_score": 0.9,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0005387",
+        "hpo_name": "Combined immunodeficiency",
+        "expanded_text": "combined immunodeficiency",
+        "match_type": "text_scan_exact_label",
+        "confidence": 0.95,
+        "matched": true,
+        "umls_cui": "C0494261",
+        "umls_all": [
+          "C0494261"
+        ]
+      }
+    ],
+    "test": [
+      {
+        "text": "cleavage",
+        "ner_score": 0.752,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "cleavage",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "caspase",
+        "ner_score": 0.357,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "caspase",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "site",
+        "ner_score": 0.703,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "site",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "kinase",
+        "ner_score": 0.699,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "kinase",
+        "match_type": "skipped_non_phenotype",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "domain",
+        "ner_score": 0.549,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "domain",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "sinuses",
+        "ner_score": 0.941,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0000246",
+        "hpo_name": "Sinusitis",
+        "expanded_text": "sinuses",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.7272,
+        "matched": true,
+        "umls_cui": "C0030469"
+      },
+      {
+        "text": "bronchi",
+        "ner_score": 0.893,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "bronchi",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "generation",
+        "ner_score": 0.971,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "generation",
+        "match_type": "skipped_non_phenotype",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "sequencing",
+        "ner_score": 0.977,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "sequencing",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "analysis",
+        "ner_score": 0.732,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "analysis",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "Functional",
+        "ner_score": 0.945,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "Functional",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "assays",
+        "ner_score": 0.921,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "assays",
+        "match_type": "skipped_non_phenotype",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "expression",
+        "ner_score": 0.774,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "expression",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "Interleukin",
+        "ner_score": 0.974,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "Interleukin",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "overexpression",
+        "ner_score": 0.91,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0001548",
+        "hpo_name": "Overgrowth",
+        "expanded_text": "overexpression",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.7206,
+        "matched": true,
+        "umls_cui": "C1849265"
+      },
+      {
+        "text": "peripheral",
+        "ner_score": 0.373,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "peripheral",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "blood",
+        "ner_score": 0.446,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "blood",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "mononuclear",
+        "ner_score": 0.343,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "mononuclear",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "higher",
+        "ner_score": 0.876,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "higher",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "pathway",
+        "ner_score": 0.776,
+        "negated": true,
+        "negation_cue": "no",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "pathway",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      }
+    ],
+    "treatment": [
+      {
+        "text": "immunoglobulin",
+        "ner_score": 0.835,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "immunoglobulin",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "supplementation",
+        "ner_score": 0.442,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "supplementation",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "tuximab",
+        "ner_score": 0.624,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "tuximab",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      }
+    ],
+    "ordo_candidates": [
+      {
+        "ordo_id": "ORPHA:3057",
+        "name": "Monoamine oxidase A deficiency",
+        "name_fr": "",
+        "score": 0.3286,
+        "jaccard": 0.0714,
+        "coverage": 0.5,
+        "matched_hpo": [
+          "HP:0100543"
+        ],
+        "matched_count": 1,
+        "total_disease_hpo": 2
+      },
+      {
+        "ordo_id": "ORPHA:319600",
+        "name": "Mendelian susceptibility to mycobacterial diseases due to partial IRF8 deficiency",
+        "name_fr": "",
+        "score": 0.2267,
+        "jaccard": 0.0667,
+        "coverage": 0.3333,
+        "matched_hpo": [
+          "HP:0002716"
+        ],
+        "matched_count": 1,
+        "total_disease_hpo": 3
+      },
+      {
+        "ordo_id": "ORPHA:1572",
+        "name": "Common variable immunodeficiency",
+        "name_fr": "Déficit immunitaire commun variable (DICV)",
+        "score": 0.2159,
+        "jaccard": 0.1111,
+        "coverage": 0.2857,
+        "matched_hpo": [
+          "HP:0001888",
+          "HP:0002719"
+        ],
+        "matched_count": 2,
+        "total_disease_hpo": 7
+      },
+      {
+        "ordo_id": "ORPHA:444463",
+        "name": "Autoimmune hemolytic anemia-autoimmune thrombocytopenia-primary immunodeficiency syndrome due to TPP2 deficiency",
+        "name_fr": "",
+        "score": 0.1786,
+        "jaccard": 0.125,
+        "coverage": 0.2143,
+        "matched_hpo": [
+          "HP:0001888",
+          "HP:0002716",
+          "HP:0002960"
+        ],
+        "matched_count": 3,
+        "total_disease_hpo": 14
+      },
+      {
+        "ordo_id": "ORPHA:183707",
+        "name": "Infantile LAD-like disease due to RAC2 deficiency",
+        "name_fr": "",
+        "score": 0.175,
+        "jaccard": 0.0625,
+        "coverage": 0.25,
+        "matched_hpo": [
+          "HP:0002721"
+        ],
+        "matched_count": 1,
+        "total_disease_hpo": 4
+      }
+    ],
+    "stats": {
+      "total": 42,
+      "matched": 14,
+      "unmatched": 28,
+      "match_rate": 33.3,
+      "unique_hpo": 13,
+      "ordo_matches": 5
+    }
+  },
+  "phenopacket": {
+    "id": "phenopacket-GSC_EN_009",
+    "subject": {
+      "id": "GSC_EN_009"
+    },
+    "input": "Case Report: An unusual case of RIPK1-related immunodeficiency: The importance of a timely diagnosis for a novel clinical and therapeutic pattern.\n\nINTRODUCTION: RIPK1-associated autoinflammatory diseases are monogenic autoinflammatory diseases with two distinct phenotypes: a severe immune deficiency form due to homozygous loss-of-function mutations, and a milder form, known as CRIA (Cleavage-Resistant RIPK1-Induced Autoinflammatory syndrome), due to heterozygous gain-of-function mutations within the caspase-8 cleavage site. Diagnosis can be challenging, particularly in cases with atypical presentations, leading to significant delays in providing appropriate care.\nMETHODS: We describe a patient with a novel heterozygous mutation within the RIPK1 kinase domain. She presented, since infancy, recurrent infections of the sinuses, bronchi, and lungs, along with hypogammaglobulinaemia and lymphopenia with relative effectiveness of subcutaneous immunoglobulin supplementation. As an adult, she developed severe autoimmune cytopenia and lymphoid hyperplasia.\nRESULTS: Next-generation sequencing by panel and whole-exome analysis revealed a novel heterozygous D24V RIPK1 pathogenic variant. Functional assays demonstrated low expression of Interleukin (IL)-2 and overexpression of IL-8 in patient peripheral blood mononuclear cells with LPS stimulation. A higher level of IL-6 in B-lymphoblastoid cell lines (B-LCL) suggested a role for B cells in the pathogenesis of this RIPK1-associated disease. Functionally, Rituximab induced a shift in pro-inflammatory cytokine secretion, specifically promoting a TH1 to TH2 switch. Unlike the immune deficiency forms and CRIA syndromes, the patient showed no impairment in the NF-ĸB pathway and a failure in cell death.\nCONCLUSION: This case highlights a new pattern of RIPKI-related disease characterized by combined immunodeficiency, autoimmunity, and inflammation. It underscores the critical importance of early genetic diagnosis in pediatric patients with atypical presentations to avoid decades of morbidity and enable access to targeted, life-changing therapies.",
+    "target": "Monoamine oxidase A deficiency",
+    "phenotypicFeatures": [
+      {
+        "type": {
+          "id": "HP:0002721",
+          "label": "Immunodeficiency",
+          "umls_cui": "C0021051"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "GSC_EN_009",
+              "description": "NER: immunodeficiency (0.584) | Match: clinical_synonym (1.000)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0012649",
+          "label": "Increased inflammatory response",
+          "umls_cui": "C4022803"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "GSC_EN_009",
+              "description": "NER: inflammatory (0.752) | Match: sapbert_similarity (0.862)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0100326",
+          "label": "Immunologic hypersensitivity",
+          "umls_cui": "C0237653"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "GSC_EN_009",
+              "description": "NER: immune (0.608) | Match: sapbert_similarity (0.742)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0002719",
+          "label": "Recurrent infections",
+          "umls_cui": "C0239998"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "GSC_EN_009",
+              "description": "NER: infections (0.715) | Match: sapbert_similarity (0.777)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0004432",
+          "label": "Agammaglobulinemia",
+          "umls_cui": "C0001768"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "GSC_EN_009",
+              "description": "NER: hypogammaglobulinaemia (0.939) | Match: sapbert_similarity (0.850)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0001888",
+          "label": "Decreased total lymphocyte count",
+          "umls_cui": "C0024312"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "GSC_EN_009",
+              "description": "NER: lymphopenia (0.924) | Match: exact_synonym (1.000)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0002960",
+          "label": "Autoimmunity",
+          "umls_cui": "C0004364"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "GSC_EN_009",
+              "description": "NER: autoimmune (0.613) | Match: clinical_synonym (1.000)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0001876",
+          "label": "Pancytopenia",
+          "umls_cui": "C0030312"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "GSC_EN_009",
+              "description": "NER: cytopenia (0.727) | Match: sapbert_similarity (0.822)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0002716",
+          "label": "Lymphadenopathy",
+          "umls_cui": "C0497156"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "GSC_EN_009",
+              "description": "NER: lymphoid hyperplasia (0.718) | Match: sapbert_similarity (0.781)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0100543",
+          "label": "Cognitive impairment",
+          "umls_cui": "C0338656"
+        },
+        "excluded": true,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "GSC_EN_009",
+              "description": "NER: impairment (0.671) | Match: sapbert_similarity (0.712) | Negated by: \"no\""
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0005387",
+          "label": "Combined immunodeficiency",
+          "umls_cui": "C0494261"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "GSC_EN_009",
+              "description": "NER: combined immunodeficiency (0.900) | Match: text_scan_exact_label (0.950)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0000246",
+          "label": "Sinusitis",
+          "umls_cui": "C0030469"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "GSC_EN_009",
+              "description": "NER: sinuses (0.941) | Match: sapbert_similarity (0.727)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0001548",
+          "label": "Overgrowth",
+          "umls_cui": "C1849265"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "GSC_EN_009",
+              "description": "NER: overexpression (0.910) | Match: sapbert_similarity (0.721)"
+            }
+          }
+        ]
+      }
+    ],
+    "metaData": {
+      "created": "2026-06-11T03:08:09Z",
+      "createdBy": "clinical-preanalysis-pipeline-v2",
+      "phenopacketSchemaVersion": "2.0",
+      "resources": [
+        {
+          "id": "hp",
+          "name": "Human Phenotype Ontology",
+          "url": "https://hpo.jax.org",
+          "version": "2024-04-26",
+          "namespacePrefix": "HP",
+          "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        }
+      ]
+    },
+    "interpretations": [
+      {
+        "id": "interpretation-GSC_EN_009",
+        "progressStatus": "IN_PROGRESS",
+        "diagnosis": {
+          "disease": {
+            "id": "ORPHA:3057",
+            "label": "Monoamine oxidase A deficiency"
+          },
+          "score": 0.3286,
+          "allCandidates": [
+            {
+              "id": "ORPHA:3057",
+              "label": "Monoamine oxidase A deficiency",
+              "score": 0.3286
+            },
+            {
+              "id": "ORPHA:319600",
+              "label": "Mendelian susceptibility to mycobacterial diseases due to partial IRF8 deficiency",
+              "score": 0.2267
+            },
+            {
+              "id": "ORPHA:1572",
+              "label": "Common variable immunodeficiency",
+              "score": 0.2159
+            },
+            {
+              "id": "ORPHA:444463",
+              "label": "Autoimmune hemolytic anemia-autoimmune thrombocytopenia-primary immunodeficiency syndrome due to TPP2 deficiency",
+              "score": 0.1786
+            },
+            {
+              "id": "ORPHA:183707",
+              "label": "Infantile LAD-like disease due to RAC2 deficiency",
+              "score": 0.175
+            }
+          ]
+        }
+      }
+    ],
+    "_pipelineStats": {
+      "totalEntities": 42,
+      "matchedHPO": 14,
+      "unmatchedEntities": 28,
+      "phenopacketFeatures": 13,
+      "negatedFeatures": 1,
+      "numericPhenotypes": 0,
+      "ordoCandidates": 5
+    }
+  }
+}

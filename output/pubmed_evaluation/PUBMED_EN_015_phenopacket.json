@@ -1,0 +1,434 @@
+{
+  "id": "phenopacket-PUBMED_EN_015",
+  "subject": {
+    "id": "PUBMED_EN_015"
+  },
+  "input": "Case Report: Case Report: Ataxia telangiectasia with severe hemorrhagic cystitis.\n\nBACKGROUND: Ataxia telangiectasia (AT) is a rare autosomal recessive genetic disorder caused by variants in the ataxia-telangiectasia mutated (ATM) gene. AT is characterized by progressive cerebellar degeneration, telangiectasia, immunodeficiency, cancer susceptibility, and radiosensitivity. This report presents a case of classic AT complicated by severe hemorrhagic cystitis, a rare clinical manifestation. Genetic analysis revealed novel variants in the ATM gene.\nCASE PRESENTATION: A 12-year-old Han Chinese boy presented with recurrent gross hematuria that progressed in frequency and severity after completion of chemotherapy for T-cell acute lymphoblastic leukemia (ALL). He had developed gait instability at age 2, and brain MRI showed cerebellar atrophy. Genetic testing revealed compound heterozygous ATM variants: c.8357G>T (p.Gly2786Val) (maternal) and IVS54+3A>C (paternal) (NM_000051). Cystoscopy revealed multiple telangiectatic lesions of the bladder mucosa with associated yellow-brown sedimentation. Emergency cystoscopic electrocoagulation controlled the bleeding.\nCONCLUSION: We report two novel ATM variants (c.8357G>T, IVS54+3A>C) in a patient with classic AT who developed severe hemorrhagic cystitis associated with bladder wall telangiectasia. AT patients may be at risk for delayed, potentially life-threatening hemorrhagic cystitis, particularly following cyclophosphamide exposure. Cystoscopy is essential for diagnosis and enables timely endoscopic management.",
+  "target": "Ataxia-telangiectasia",
+  "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0001251",
+        "label": "Ataxia",
+        "umls_cui": "C0007758"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "PUBMED_EN_015",
+            "description": "NER: ataxia (0.348) | Match: exact_label (1.000)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0001009",
+        "label": "Telangiectasia",
+        "umls_cui": "C0039446"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "PUBMED_EN_015",
+            "description": "NER: angiectasia (0.923) | Match: sapbert_similarity (0.766)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0100577",
+        "label": "Urinary bladder inflammation",
+        "umls_cui": "C0010692"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "PUBMED_EN_015",
+            "description": "NER: cystitis (0.369) | Match: sapbert_similarity (0.917)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0007009",
+        "label": "Central nervous system degeneration",
+        "umls_cui": "C3277687"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "PUBMED_EN_015",
+            "description": "NER: degeneration (0.426) | Match: sapbert_similarity (0.758)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0000790",
+        "label": "Hematuria",
+        "umls_cui": "C0018965"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "PUBMED_EN_015",
+            "description": "NER: hematuria (0.953) | Match: exact_label (1.000)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0002317",
+        "label": "Unsteady gait",
+        "umls_cui": "C0231686"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "PUBMED_EN_015",
+            "description": "NER: gait instability (0.879) | Match: exact_synonym (1.000)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0003202",
+        "label": "Skeletal muscle atrophy",
+        "umls_cui": "C0234958"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "PUBMED_EN_015",
+            "description": "NER: atrophy (0.544) | Match: sapbert_similarity (0.755)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0011355",
+        "label": "Localized skin lesion",
+        "umls_cui": "C0850826"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "PUBMED_EN_015",
+            "description": "NER: lesions (0.875) | Match: sapbert_similarity (0.736)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0001892",
+        "label": "Abnormal bleeding",
+        "umls_cui": "C1458140"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "PUBMED_EN_015",
+            "description": "NER: bleeding (0.932) | Match: sapbert_similarity (0.836)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0006721",
+        "label": "Acute lymphoblastic leukemia",
+        "umls_cui": "C0023449"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "PUBMED_EN_015",
+            "description": "NER: acute lymphoblastic leukemia (0.900) | Match: text_scan_exact_label (0.950)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0000007",
+        "label": "Autosomal recessive inheritance",
+        "umls_cui": "C0441748"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "PUBMED_EN_015",
+            "description": "NER: autosomal recessive (0.900) | Match: text_scan_exact_synonym (0.950)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0001272",
+        "label": "Cerebellar atrophy",
+        "umls_cui": "C0262404"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "PUBMED_EN_015",
+            "description": "NER: cerebellar atrophy (0.900) | Match: text_scan_exact_label (0.950)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0002721",
+        "label": "Immunodeficiency",
+        "umls_cui": "C0021051"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "PUBMED_EN_015",
+            "description": "NER: immunodeficiency (0.900) | Match: text_scan_clinical_synonym (0.950)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0012587",
+        "label": "Macroscopic hematuria",
+        "umls_cui": "C0473237"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "PUBMED_EN_015",
+            "description": "NER: gross hematuria (0.900) | Match: text_scan_exact_synonym (0.950)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0003676",
+        "label": "Progressive",
+        "umls_cui": "C0205329"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "PUBMED_EN_015",
+            "description": "NER: progressive (0.900) | Match: text_scan_exact_label (0.950)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0012824",
+        "label": "Severity",
+        "umls_cui": "C0522510"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "PUBMED_EN_015",
+            "description": "NER: severity (0.900) | Match: text_scan_exact_label (0.950)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0002664",
+        "label": "Neoplasm",
+        "umls_cui": "C0006826"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "PUBMED_EN_015",
+            "description": "NER: cancer (0.900) | Match: text_scan_related_synonym (0.950)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0009725",
+        "label": "Bladder neoplasm",
+        "umls_cui": "C0005695"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "PUBMED_EN_015",
+            "description": "NER: bladder (0.957) | Match: sapbert_similarity (0.771)"
+          }
+        }
+      ]
+    }
+  ],
+  "metaData": {
+    "created": "2026-06-11T03:05:56Z",
+    "createdBy": "clinical-preanalysis-pipeline-v2",
+    "phenopacketSchemaVersion": "2.0",
+    "resources": [
+      {
+        "id": "hp",
+        "name": "Human Phenotype Ontology",
+        "url": "https://hpo.jax.org",
+        "version": "2024-04-26",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      }
+    ]
+  },
+  "interpretations": [
+    {
+      "id": "interpretation-PUBMED_EN_015",
+      "progressStatus": "IN_PROGRESS",
+      "diagnosis": {
+        "disease": {
+          "id": "ORPHA:100",
+          "label": "Ataxia-telangiectasia"
+        },
+        "score": 0.85,
+        "allCandidates": [
+          {
+            "id": "ORPHA:100",
+            "label": "Ataxia-telangiectasia",
+            "score": 0.85
+          },
+          {
+            "id": "ORPHA:284400",
+            "label": "Small cell carcinoma of the bladder",
+            "score": 0.2364
+          },
+          {
+            "id": "ORPHA:1180",
+            "label": "Ataxia-hypogonadism-choroidal dystrophy syndrome",
+            "score": 0.22
+          },
+          {
+            "id": "ORPHA:868",
+            "label": "Triose phosphate-isomerase deficiency",
+            "score": 0.2062
+          },
+          {
+            "id": "ORPHA:98769",
+            "label": "Spinocerebellar ataxia type 15/16",
+            "score": 0.1833
+          }
+        ]
+      }
+    }
+  ],
+  "_pipelineStats": {
+    "totalEntities": 34,
+    "matchedHPO": 19,
+    "unmatchedEntities": 15,
+    "phenopacketFeatures": 18,
+    "negatedFeatures": 0,
+    "numericPhenotypes": 0,
+    "ordoCandidates": 5
+  }
+}

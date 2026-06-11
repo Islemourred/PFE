@@ -1,0 +1,183 @@
+{
+  "id": "phenopacket-PUBMED_EN_020",
+  "subject": {
+    "id": "PUBMED_EN_020",
+    "sex": "MALE"
+  },
+  "input": "Case Report: Hirayama disease.\n\nPURPOSE: Hirayama disease is an initially progressive disease caused by cervical neck flexion compressing the anterior horns of the lower cervical spinal cord. It is primarily seen in young males of Indian or Asian descent. With increasing dispersion of these populations this condition is increasingly being encountered internationally. This grand round reviews this rare but increasingly recognized condition.\nMATERIALS AND METHODS: We present a classic case of a young Indian male with progressive hand and forearm weakness. We discuss the typical clinical presentation, appropriate investigations and management of this condition.\nRESULTS: Our patient presented with oblique amyotrophy and underwent a diagnostic flexion MRI scan which revealed anterior translation of the posterior dura with compression of the anterior horns of the lower cervical cord. He has been successfully treated in a cervical collar.\nCONCLUSIONS: This case illustrates the typical presentation, diagnostic investigations and treatment of Hirayama syndrome. It is hoped that this review will alert clinicians of this condition and optimize the management of affected individuals.",
+  "target": "Glycogen storage disease due to muscle phosphofructokinase deficiency",
+  "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0001371",
+        "label": "Flexion contracture",
+        "umls_cui": "C0009917"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "PUBMED_EN_020",
+            "description": "NER: flexion (0.368) | Match: sapbert_similarity (0.780)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0001324",
+        "label": "Muscle weakness",
+        "umls_cui": "C0151786"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "PUBMED_EN_020",
+            "description": "NER: weakness (0.522) | Match: sapbert_similarity (0.891)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0003676",
+        "label": "Progressive",
+        "umls_cui": "C0205329"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "PUBMED_EN_020",
+            "description": "NER: progressive (0.900) | Match: text_scan_exact_label (0.950)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0003202",
+        "label": "Skeletal muscle atrophy",
+        "umls_cui": "C0234958"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "PUBMED_EN_020",
+            "description": "NER: amyotrophy (0.900) | Match: text_scan_exact_synonym (0.950)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0012839",
+        "label": "Distal",
+        "umls_cui": "C0205108"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "PUBMED_EN_020",
+            "description": "NER: posterior (0.912) | Match: sapbert_similarity (0.745)"
+          }
+        }
+      ]
+    }
+  ],
+  "metaData": {
+    "created": "2026-06-11T03:06:42Z",
+    "createdBy": "clinical-preanalysis-pipeline-v2",
+    "phenopacketSchemaVersion": "2.0",
+    "resources": [
+      {
+        "id": "hp",
+        "name": "Human Phenotype Ontology",
+        "url": "https://hpo.jax.org",
+        "version": "2024-04-26",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      }
+    ]
+  },
+  "interpretations": [
+    {
+      "id": "interpretation-PUBMED_EN_020",
+      "progressStatus": "IN_PROGRESS",
+      "diagnosis": {
+        "disease": {
+          "id": "ORPHA:371",
+          "label": "Glycogen storage disease due to muscle phosphofructokinase deficiency"
+        },
+        "score": 0.2889,
+        "allCandidates": [
+          {
+            "id": "ORPHA:371",
+            "label": "Glycogen storage disease due to muscle phosphofructokinase deficiency",
+            "score": 0.2889
+          },
+          {
+            "id": "ORPHA:70",
+            "label": "Spinal muscular atrophy",
+            "score": 0.2514
+          },
+          {
+            "id": "ORPHA:85162",
+            "label": "Facial onset sensory and motor neuronopathy",
+            "score": 0.2514
+          },
+          {
+            "id": "ORPHA:166",
+            "label": "Charcot-Marie-Tooth disease",
+            "score": 0.2
+          },
+          {
+            "id": "ORPHA:3239",
+            "label": "Deafness-vitiligo-achalasia syndrome",
+            "score": 0.14
+          }
+        ]
+      }
+    }
+  ],
+  "_validationWarnings": [
+    {
+      "type": "sex_anatomy_conflict",
+      "severity": "critical",
+      "message": "Female-specific term 'cervical' found in male patient record",
+      "term": "cervical"
+    }
+  ],
+  "_pipelineStats": {
+    "totalEntities": 19,
+    "matchedHPO": 5,
+    "unmatchedEntities": 14,
+    "phenopacketFeatures": 5,
+    "negatedFeatures": 0,
+    "numericPhenotypes": 0,
+    "ordoCandidates": 5
+  }
+}

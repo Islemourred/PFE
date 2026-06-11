@@ -1,13 +1,16 @@
 """
 Module 2 — Clinical NER Extraction (Bilingual)
 
-English: Ensemble of two models for maximum recall:
+English: Ensemble of THREE models for maximum recall:
   1. Helios9/BioMed_NER (DeBERTa-v3-base, SOTA 2024: disease/symptom/medication/procedure)
   2. d4data/biomedical-ner-all (8 biomedical datasets: disease/chemical/gene/protein)
+  3. ClinicalBERT NER (fine-tuned on i2b2 clinical notes: problem/treatment/test)
   Results are merged and deduplicated for comprehensive entity coverage.
 
-  Why DeBERTa-v3? Disentangled attention mechanism separately encodes word content
-  and position, providing superior contextual understanding for clinical NER vs BERT.
+  Why this ensemble?
+  - DeBERTa-v3: best NER architecture (disentangled attention)
+  - d4data: broad biomedical entity coverage
+  - ClinicalBERT: understands clinical note style (trained on MIMIC-III/i2b2)
 
 French:  almanach/camembert-bio-gliner-v0.1 (CamemBERT-bio + GLiNER zero-shot)
 
@@ -25,7 +28,7 @@ logger = get_logger(__name__)
 
 
 class ClinicalNER:
-    """Bilingual clinical NER: English (DeBERTa-v3 ensemble) + French (CamemBERT-bio GLiNER)."""
+    """Bilingual clinical NER: English (DeBERTa-v3 + d4data + ClinicalBERT ensemble) + French (CamemBERT-bio GLiNER)."""
 
     # Label mapping: Helios9/BioMed_NER entities → pipeline categories
     _BIOMED_LABEL_MAP = {
@@ -48,6 +51,14 @@ class ClinicalNER:
         # Ignore: Species, Cell_line, Cell_type, DNA, RNA
     }
 
+    # Label mapping: ClinicalBERT i2b2 entities → pipeline categories
+    # i2b2 2010 NER uses: problem, treatment, test — direct mapping!
+    _CLINICAL_LABEL_MAP = {
+        "problem": "problem",
+        "treatment": "treatment",
+        "test": "test",
+    }
+
     def __init__(self, lang: str = "en",
                  en_model: str = "Helios9/BioMed_NER",
                  fr_model: str = "almanach/camembert-bio-gliner-v0.1"):
@@ -56,7 +67,7 @@ class ClinicalNER:
         if lang == "fr":
             logger.info("  Loading French NER: %s", fr_model)
             from gliner import GLiNER
-            self.model = GLiNER.from_pretrained(fr_model)
+            self.model = GLiNER.from_pretrained(fr_model, local_files_only=True)
             self.seg = pysbd.Segmenter(language="fr", clean=False)
 
             # French clinical entity labels for zero-shot NER
@@ -91,7 +102,7 @@ class ClinicalNER:
 
             # ── Secondary model: biomedical NER (disease/chemical/gene) ──
             bio_model = "d4data/biomedical-ner-all"
-            logger.info("  Loading English NER (ensemble): %s", bio_model)
+            logger.info("  Loading English NER (ensemble 2/3): %s", bio_model)
             self.bio_tokenizer = AutoTokenizer.from_pretrained(bio_model)
             self.bio_model = AutoModelForTokenClassification.from_pretrained(bio_model)
             self.bio_ner = pipeline(
@@ -99,6 +110,18 @@ class ClinicalNER:
                 model=self.bio_model,
                 tokenizer=self.bio_tokenizer,
                 aggregation_strategy="first"
+            )
+
+            # ── Tertiary model: ClinicalBERT NER (clinical notes, i2b2) ──
+            clinical_model = "samrawal/bert-base-uncased_clinical-ner"
+            logger.info("  Loading English NER (ensemble 3/3 — ClinicalBERT): %s", clinical_model)
+            self.clinical_tokenizer = AutoTokenizer.from_pretrained(clinical_model)
+            self.clinical_model = AutoModelForTokenClassification.from_pretrained(clinical_model)
+            self.clinical_ner = pipeline(
+                "ner",
+                model=self.clinical_model,
+                tokenizer=self.clinical_tokenizer,
+                aggregation_strategy="simple"
             )
 
     def __call__(self, text: str) -> dict:
@@ -172,12 +195,37 @@ class ClinicalNER:
 
         return merged
 
+    # Known short clinical terms that should NOT be filtered as fragments
+    _KNOWN_SHORT_TERMS = {
+        "rash", "pain", "gait", "coma", "edema", "mass", "tics",
+        "ache", "clot", "sore", "wart", "acne", "cold", "limp",
+        "deaf", "mute", "pale", "weak", "numb", "itch", "burn",
+    }
+
+    def _is_fragment(self, word: str) -> bool:
+        """Detect NER subword artifacts that shouldn't be entities."""
+        w = word.strip().lower()
+        # Too short to be a real entity
+        if len(w) <= 3:
+            return True
+        # Known short clinical terms are OK
+        if w in self._KNOWN_SHORT_TERMS:
+            return False
+        # Short words (4-5 chars) starting with lowercase are likely fragments
+        # e.g., "ille", "cystis", "ette", "onia"
+        if len(w) <= 5 and w[0].islower() and w not in self._KNOWN_SHORT_TERMS:
+            # Check if it looks like a real English word (has vowels)
+            vowels = sum(1 for c in w if c in 'aeiou')
+            if vowels <= 1:
+                return True
+        return False
+
     def _extract_english(self, text: str) -> dict:
         """
         Extract English clinical entities using ensemble of two models:
         1. Primary (DeBERTa-v3): catches clinical-style entities with richer labels
         2. Secondary (biomedical): catches biomedical-style entities
-        Results are merged and deduplicated.
+        Results are merged, fragment-filtered, and deduplicated.
         """
         chunks = self._chunk_text_en(text)
 
@@ -188,7 +236,7 @@ class ClinicalNER:
         for chunk in chunks:
             for ent in self.ner(chunk):
                 word = self._fix_word(ent["word"])
-                if not word:
+                if not word or self._is_fragment(word):
                     continue
 
                 # Map DeBERTa-v3 labels to pipeline categories
@@ -216,7 +264,7 @@ class ClinicalNER:
         for chunk in chunks:
             for ent in self.bio_ner(chunk):
                 word = self._fix_word(ent["word"])
-                if not word or len(word) < 2:
+                if not word or self._is_fragment(word):
                     continue
 
                 bio_label = ent["entity_group"]
@@ -237,16 +285,42 @@ class ClinicalNER:
                     "source": "biomedical",
                 })
 
-        # ── Deduplicate across both models ──
+        # ── Pass 3: ClinicalBERT (clinical notes, i2b2 trained) ──
+        for chunk in chunks:
+            for ent in self.clinical_ner(chunk):
+                word = self._fix_word(ent["word"])
+                if not word or self._is_fragment(word):
+                    continue
+
+                raw_label = ent["entity_group"]
+                mapped_label = self._CLINICAL_LABEL_MAP.get(raw_label)
+                if not mapped_label:
+                    continue
+
+                if mapped_label not in merged:
+                    merged[mapped_label] = []
+
+                start_in_text = text.lower().find(word.lower())
+
+                merged[mapped_label].append({
+                    "text": word,
+                    "score": round(float(ent["score"]), 3),
+                    "start": start_in_text if start_in_text >= 0 else 0,
+                    "end": (start_in_text + len(word)) if start_in_text >= 0 else len(word),
+                    "source": "clinicalbert",
+                })
+
+        # ── Deduplicate across all three models ──
+        # Prefer longest entity text and highest score
         for label in merged:
-            seen = set()
-            deduped = []
+            seen = {}  # key → best entity
             for ent in merged[label]:
                 key = ent["text"].lower().strip()
-                if key not in seen:
-                    seen.add(key)
-                    deduped.append(ent)
-            merged[label] = deduped
+                if len(key) < 3:
+                    continue  # Skip very short generic entities
+                if key not in seen or len(ent["text"]) > len(seen[key]["text"]):
+                    seen[key] = ent
+            merged[label] = list(seen.values())
 
         return merged
 

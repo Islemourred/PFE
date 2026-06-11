@@ -1,0 +1,676 @@
+{
+  "note_id": "GSC_EN_001",
+  "language": "en",
+  "module1": {
+    "clean_text": "Case Report: Uncommon clinical presentation of cystic fibrosis in a patient homozygous for a rare CFTR mutation: a case report.\n\nBACKGROUND: Cystic fibrosis (CF) is the most common, life-threatening, autosomal-recessive disorder among Caucasians. To date, approximately 2000 mutations in the CFTR gene have been reported. Some of these mutations are very rare, and some represent individual sequence changes in the gene. The introduction of newborn screening (NBS) in high prevalence countries for CF has considerably changed the diagnosing of this metabolic disease. Currently, in most cases, a diagnosis is made based on NBS, including or expanded with DNA analysis and confirmed with sweat chloride tests, rather than waiting until the child has already developed signs and symptoms. However, in rare cases, NBS does not provide enough information to confirm or reject a CF diagnosis. Not only are there small groups of patients who have false-negative or false-positive NBS results, but there is also a growing number of patients with positive NBS results in whom results of sweat tests and genetic examinations do not provide definite conclusions. Despite all knowledge and modern diagnostic tools at our disposal, sometimes the clinical presentation is so inconclusive, that making a final diagnosis remains a challenge.\nCASE PRESENTATION: In this case report, we present a male infant of Polish origin, whose symptoms and laboratory findings (including metabolic acidosis) were strongly suggestive of metabolic disease other than cystic fibrosis. Newborn screening for CF was positive, but the first sweat test results were equivocal, and initial and extended molecular tests were negative. Finally, after considering broad differential diagnosis, introducing treatment specific for CF and excluding other metabolic diseases, a third expanded genetic test revealed the presence of a rare pathogenic mutation in both alleles of the CFTR gene: [ID] (p.Ser1347ProfsX13).\nCONCLUSION: Although CF is considered a monogenic disorder, the relationship between genotype and phenotype is very complex. The reported case shows the unusual presentation of the disease. The patient's clinical symptoms and laboratory findings, in combination with molecular test results, provide useful information for further observing the genotype-phenotype correlations in cystic fibrosis.",
+    "phi_map": {
+      "ID": "c.4035_4038dupCCTA"
+    },
+    "patient_info": {
+      "sex": "male"
+    }
+  },
+  "module3_warnings": {
+    "temporal": [],
+    "inconsistencies": []
+  },
+  "module4": {
+    "problem": [
+      {
+        "text": "cystic",
+        "ner_score": 0.844,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "cystic",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "fibrosis",
+        "ner_score": 0.89,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0002206",
+        "hpo_name": "Pulmonary fibrosis",
+        "expanded_text": "fibrosis",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.7336,
+        "matched": true,
+        "umls_cui": "C0034069"
+      },
+      {
+        "text": "mutation",
+        "ner_score": 0.327,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "mutation",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "autosomal",
+        "ner_score": 0.387,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0000006",
+        "hpo_name": "Autosomal dominant inheritance",
+        "expanded_text": "autosomal",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.8368,
+        "matched": true,
+        "umls_cui": "C0443147"
+      },
+      {
+        "text": "disorder",
+        "ner_score": 0.462,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "disorder",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "mutations",
+        "ner_score": 0.574,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "mutations",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "metabolic disease",
+        "ner_score": 0.694,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0001939",
+        "hpo_name": "Abnormality of metabolism/homeostasis",
+        "expanded_text": "metabolic disease",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.7305,
+        "matched": true,
+        "umls_cui": "C4021768"
+      },
+      {
+        "text": "symptoms",
+        "ner_score": 0.461,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "symptoms",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "metabolic acidosis",
+        "ner_score": 0.602,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0001942",
+        "hpo_name": "Metabolic acidosis",
+        "expanded_text": "metabolic acidosis",
+        "match_type": "exact_label",
+        "confidence": 1.0,
+        "matched": true,
+        "umls_cui": "C0220981"
+      },
+      {
+        "text": "diseases",
+        "ner_score": 0.626,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "diseases",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "acidosis",
+        "ner_score": 0.9,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0001941",
+        "hpo_name": "Acidosis",
+        "expanded_text": "acidosis",
+        "match_type": "text_scan_exact_label",
+        "confidence": 0.95,
+        "matched": true,
+        "umls_cui": "C0001122",
+        "umls_all": [
+          "C0001122"
+        ]
+      }
+    ],
+    "test": [
+      {
+        "text": "gene",
+        "ner_score": 0.909,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "gene",
+        "match_type": "skipped_non_phenotype",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "newborn",
+        "ner_score": 0.519,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0003623",
+        "hpo_name": "Neonatal onset",
+        "expanded_text": "newborn",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.7625,
+        "matched": true,
+        "umls_cui": "C1855106"
+      },
+      {
+        "text": "screening",
+        "ner_score": 0.739,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "screening",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "analysis",
+        "ner_score": 0.8,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "analysis",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "sweat",
+        "ner_score": 0.902,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0000975",
+        "hpo_name": "Hyperhidrosis",
+        "expanded_text": "sweat",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.8572,
+        "matched": true,
+        "umls_cui": "C0020458"
+      },
+      {
+        "text": "chloride",
+        "ner_score": 0.974,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "chloride",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "negative",
+        "ner_score": 0.941,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "negative",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "positive",
+        "ner_score": 0.711,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "positive",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "results",
+        "ner_score": 0.487,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "results",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "genetic",
+        "ner_score": 0.87,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "genetic",
+        "match_type": "skipped_non_phenotype",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "laboratory",
+        "ner_score": 0.915,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "laboratory",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "findings",
+        "ner_score": 0.581,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "findings",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "equivocal",
+        "ner_score": 0.889,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0012827",
+        "hpo_name": "Borderline",
+        "expanded_text": "equivocal",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.7318,
+        "matched": true,
+        "umls_cui": "C0205189"
+      },
+      {
+        "text": "molecular",
+        "ner_score": 0.9,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "molecular",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      }
+    ],
+    "treatment": [
+      {
+        "text": "treatment",
+        "ner_score": 0.456,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "treatment",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      }
+    ],
+    "ordo_candidates": [
+      {
+        "ordo_id": "ORPHA:163",
+        "name": "Hereditary hyperferritinemia-cataract syndrome",
+        "name_fr": "",
+        "score": 0.3444,
+        "jaccard": 0.1111,
+        "coverage": 0.5,
+        "matched_hpo": [
+          "HP:0001939"
+        ],
+        "matched_count": 1,
+        "total_disease_hpo": 2
+      },
+      {
+        "ordo_id": "ORPHA:112",
+        "name": "Bartter syndrome",
+        "name_fr": "",
+        "score": 0.3444,
+        "jaccard": 0.1111,
+        "coverage": 0.5,
+        "matched_hpo": [
+          "HP:0001939"
+        ],
+        "matched_count": 1,
+        "total_disease_hpo": 2
+      },
+      {
+        "ordo_id": "ORPHA:140966",
+        "name": "Palmoplantar keratoderma, Nagashima type",
+        "name_fr": "",
+        "score": 0.3444,
+        "jaccard": 0.1111,
+        "coverage": 0.5,
+        "matched_hpo": [
+          "HP:0000975"
+        ],
+        "matched_count": 1,
+        "total_disease_hpo": 2
+      },
+      {
+        "ordo_id": "ORPHA:50943",
+        "name": "Keratolytic winter erythema",
+        "name_fr": "",
+        "score": 0.24,
+        "jaccard": 0.1,
+        "coverage": 0.3333,
+        "matched_hpo": [
+          "HP:0000975"
+        ],
+        "matched_count": 1,
+        "total_disease_hpo": 3
+      },
+      {
+        "ordo_id": "ORPHA:86919",
+        "name": "Keratosis palmaris et plantaris-clinodactyly syndrome",
+        "name_fr": "",
+        "score": 0.24,
+        "jaccard": 0.1,
+        "coverage": 0.3333,
+        "matched_hpo": [
+          "HP:0000975"
+        ],
+        "matched_count": 1,
+        "total_disease_hpo": 3
+      }
+    ],
+    "stats": {
+      "total": 26,
+      "matched": 8,
+      "unmatched": 18,
+      "match_rate": 30.8,
+      "unique_hpo": 8,
+      "ordo_matches": 5
+    }
+  },
+  "phenopacket": {
+    "id": "phenopacket-GSC_EN_001",
+    "subject": {
+      "id": "GSC_EN_001",
+      "sex": "MALE"
+    },
+    "input": "Case Report: Uncommon clinical presentation of cystic fibrosis in a patient homozygous for a rare CFTR mutation: a case report.\n\nBACKGROUND: Cystic fibrosis (CF) is the most common, life-threatening, autosomal-recessive disorder among Caucasians. To date, approximately 2000 mutations in the CFTR gene have been reported. Some of these mutations are very rare, and some represent individual sequence changes in the gene. The introduction of newborn screening (NBS) in high prevalence countries for CF has considerably changed the diagnosing of this metabolic disease. Currently, in most cases, a diagnosis is made based on NBS, including or expanded with DNA analysis and confirmed with sweat chloride tests, rather than waiting until the child has already developed signs and symptoms. However, in rare cases, NBS does not provide enough information to confirm or reject a CF diagnosis. Not only are there small groups of patients who have false-negative or false-positive NBS results, but there is also a growing number of patients with positive NBS results in whom results of sweat tests and genetic examinations do not provide definite conclusions. Despite all knowledge and modern diagnostic tools at our disposal, sometimes the clinical presentation is so inconclusive, that making a final diagnosis remains a challenge.\nCASE PRESENTATION: In this case report, we present a male infant of Polish origin, whose symptoms and laboratory findings (including metabolic acidosis) were strongly suggestive of metabolic disease other than cystic fibrosis. Newborn screening for CF was positive, but the first sweat test results were equivocal, and initial and extended molecular tests were negative. Finally, after considering broad differential diagnosis, introducing treatment specific for CF and excluding other metabolic diseases, a third expanded genetic test revealed the presence of a rare pathogenic mutation in both alleles of the CFTR gene: c.4035_4038dupCCTA (p.Ser1347ProfsX13).\nCONCLUSION: Although CF is considered a monogenic disorder, the relationship between genotype and phenotype is very complex. The reported case shows the unusual presentation of the disease. The patient's clinical symptoms and laboratory findings, in combination with molecular test results, provide useful information for further observing the genotype-phenotype correlations in cystic fibrosis.",
+    "target": "Hereditary hyperferritinemia-cataract syndrome",
+    "phenotypicFeatures": [
+      {
+        "type": {
+          "id": "HP:0002206",
+          "label": "Pulmonary fibrosis",
+          "umls_cui": "C0034069"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "GSC_EN_001",
+              "description": "NER: fibrosis (0.890) | Match: sapbert_similarity (0.734)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0000006",
+          "label": "Autosomal dominant inheritance",
+          "umls_cui": "C0443147"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "GSC_EN_001",
+              "description": "NER: autosomal (0.387) | Match: sapbert_similarity (0.837)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0001939",
+          "label": "Abnormality of metabolism/homeostasis",
+          "umls_cui": "C4021768"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "GSC_EN_001",
+              "description": "NER: metabolic disease (0.694) | Match: sapbert_similarity (0.731)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0001942",
+          "label": "Metabolic acidosis",
+          "umls_cui": "C0220981"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "GSC_EN_001",
+              "description": "NER: metabolic acidosis (0.602) | Match: exact_label (1.000)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0001941",
+          "label": "Acidosis",
+          "umls_cui": "C0001122"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "GSC_EN_001",
+              "description": "NER: acidosis (0.900) | Match: text_scan_exact_label (0.950)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0003623",
+          "label": "Neonatal onset",
+          "umls_cui": "C1855106"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "GSC_EN_001",
+              "description": "NER: newborn (0.519) | Match: sapbert_similarity (0.762)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0000975",
+          "label": "Hyperhidrosis",
+          "umls_cui": "C0020458"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "GSC_EN_001",
+              "description": "NER: sweat (0.902) | Match: sapbert_similarity (0.857)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0012827",
+          "label": "Borderline",
+          "umls_cui": "C0205189"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "GSC_EN_001",
+              "description": "NER: equivocal (0.889) | Match: sapbert_similarity (0.732)"
+            }
+          }
+        ]
+      }
+    ],
+    "metaData": {
+      "created": "2026-06-11T03:07:19Z",
+      "createdBy": "clinical-preanalysis-pipeline-v2",
+      "phenopacketSchemaVersion": "2.0",
+      "resources": [
+        {
+          "id": "hp",
+          "name": "Human Phenotype Ontology",
+          "url": "https://hpo.jax.org",
+          "version": "2024-04-26",
+          "namespacePrefix": "HP",
+          "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        }
+      ]
+    },
+    "interpretations": [
+      {
+        "id": "interpretation-GSC_EN_001",
+        "progressStatus": "IN_PROGRESS",
+        "diagnosis": {
+          "disease": {
+            "id": "ORPHA:163",
+            "label": "Hereditary hyperferritinemia-cataract syndrome"
+          },
+          "score": 0.3444,
+          "allCandidates": [
+            {
+              "id": "ORPHA:163",
+              "label": "Hereditary hyperferritinemia-cataract syndrome",
+              "score": 0.3444
+            },
+            {
+              "id": "ORPHA:112",
+              "label": "Bartter syndrome",
+              "score": 0.3444
+            },
+            {
+              "id": "ORPHA:140966",
+              "label": "Palmoplantar keratoderma, Nagashima type",
+              "score": 0.3444
+            },
+            {
+              "id": "ORPHA:50943",
+              "label": "Keratolytic winter erythema",
+              "score": 0.24
+            },
+            {
+              "id": "ORPHA:86919",
+              "label": "Keratosis palmaris et plantaris-clinodactyly syndrome",
+              "score": 0.24
+            }
+          ]
+        }
+      }
+    ],
+    "_pipelineStats": {
+      "totalEntities": 26,
+      "matchedHPO": 8,
+      "unmatchedEntities": 18,
+      "phenopacketFeatures": 8,
+      "negatedFeatures": 0,
+      "numericPhenotypes": 0,
+      "ordoCandidates": 5
+    }
+  }
+}

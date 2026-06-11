@@ -1,0 +1,255 @@
+{
+  "id": "phenopacket-GSC_EN_017",
+  "subject": {
+    "id": "GSC_EN_017",
+    "sex": "FEMALE"
+  },
+  "input": "Case Report: Class II Transactivator Gene (\n\nINTRODUCTION: Inborn errors of immunity (IEI) are disorders that present a health issue, especially in developing countries where there is a high rate of consanguineous marriages and an increasing rate of diagnosis. One of these disorders is Bare Lymphocyte Syndrome II (BLS II) which is a rare and genetically complex disease that has high morbidity and mortality. The exact genotypic and phenotypic characteristics are still poorly characterized especially in developing countries.\nCASE PRESENTATION: Here, we report the first case of BLS II in a seven-month-old Sudanese female with recurrent chest infections, dermatitis, persistent diarrhea, and failure to thrive. The patient's all four sisters and three paternal uncles died in early infancy. Laboratory investigations revealed low CD3+, CD4+, and CD8+ lymphocytes, along with normal CD19+ and CD16+ lymphocytes, and low serum IgM and IgA levels. Genetic analysis revealed two CIITA variants; c.2296C >G p. (Pro766Ala) and c.439+1G >A.\nCONCLUSION: Further bioinformatics, immunological and clinical workups supported a pathogenic effect of both mutations affecting the function of CIITA protein, and suggesting a compound heterozygote mutation. The patient was started on prophylactic antibiotics and regular intravenous immunoglobulin replacement therapy. The prognosis of this disease is poor in most of the cases, with only a few reported cases surviving until adulthood.",
+  "target": "MHC class II deficiency",
+  "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0002958",
+        "label": "Immune dysregulation",
+        "umls_cui": "C1844666"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "GSC_EN_017",
+            "description": "NER: errors of immunity (0.791) | Match: sapbert_similarity (0.801)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0002719",
+        "label": "Recurrent infections",
+        "umls_cui": "C0239998"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "GSC_EN_017",
+            "description": "NER: infections (0.735) | Match: sapbert_similarity (0.777)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0000964",
+        "label": "Eczema",
+        "umls_cui": "C0013595"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "GSC_EN_017",
+            "description": "NER: dermatitis (0.857) | Match: clinical_synonym (1.000)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0002014",
+        "label": "Diarrhea",
+        "umls_cui": "C0011991"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "GSC_EN_017",
+            "description": "NER: diarrhea (0.887) | Match: clinical_synonym (1.000)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0001508",
+        "label": "Failure to thrive",
+        "umls_cui": "C0231246"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "GSC_EN_017",
+            "description": "NER: failure to thrive (0.859) | Match: clinical_synonym (1.000)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0003812",
+        "label": "Phenotypic variability",
+        "umls_cui": "C1837514"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "GSC_EN_017",
+            "description": "NER: ITA variants (0.666) | Match: sapbert_similarity (0.715)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0002783",
+        "label": "Recurrent lower respiratory tract infections",
+        "umls_cui": "C0149725"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "GSC_EN_017",
+            "description": "NER: recurrent chest infections (0.900) | Match: text_scan_exact_synonym (0.950)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0010982",
+        "label": "Polygenic inheritance",
+        "umls_cui": "C1148552"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "GSC_EN_017",
+            "description": "NER: complex disease (0.900) | Match: text_scan_related_synonym (0.950)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0100326",
+        "label": "Immunologic hypersensitivity",
+        "umls_cui": "C0237653"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "GSC_EN_017",
+            "description": "NER: immunological (0.902) | Match: sapbert_similarity (0.717)"
+          }
+        }
+      ]
+    }
+  ],
+  "metaData": {
+    "created": "2026-06-11T03:08:50Z",
+    "createdBy": "clinical-preanalysis-pipeline-v2",
+    "phenopacketSchemaVersion": "2.0",
+    "resources": [
+      {
+        "id": "hp",
+        "name": "Human Phenotype Ontology",
+        "url": "https://hpo.jax.org",
+        "version": "2024-04-26",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      }
+    ]
+  },
+  "interpretations": [
+    {
+      "id": "interpretation-GSC_EN_017",
+      "progressStatus": "IN_PROGRESS",
+      "diagnosis": {
+        "disease": {
+          "id": "ORPHA:572",
+          "label": "MHC class II deficiency"
+        },
+        "score": 0.85,
+        "allCandidates": [
+          {
+            "id": "ORPHA:572",
+            "label": "MHC class II deficiency",
+            "score": 0.85
+          },
+          {
+            "id": "ORPHA:314",
+            "label": "Erythroderma desquamativum",
+            "score": 0.3727
+          },
+          {
+            "id": "ORPHA:183660",
+            "label": "Severe combined immunodeficiency",
+            "score": 0.167
+          },
+          {
+            "id": "ORPHA:586",
+            "label": "Cystic fibrosis",
+            "score": 0.1421
+          },
+          {
+            "id": "ORPHA:63275",
+            "label": "Pemphigoid gestationis",
+            "score": 0.1286
+          }
+        ]
+      }
+    }
+  ],
+  "_pipelineStats": {
+    "totalEntities": 25,
+    "matchedHPO": 9,
+    "unmatchedEntities": 16,
+    "phenopacketFeatures": 9,
+    "negatedFeatures": 0,
+    "numericPhenotypes": 0,
+    "ordoCandidates": 5
+  }
+}

@@ -1,0 +1,532 @@
+{
+  "note_id": "PUBMED_EN_016",
+  "language": "en",
+  "module1": {
+    "clean_text": "Case Report: MHC class II deficiency: Report of a novel mutation and special review.\n\nThe MHC II deficiency is a rare autosomal recessive primary immunodeficiency syndrome with increased susceptibility to respiratory and gastrointestinal infections, failure to thrive and early mortality. This syndrome is caused by mutations in transcription regulators of the MHC II gene and results in development of blind lymphocytes due to the lack of indicatory MHC II molecules. Despite homogeneity of clinical manifestations of patients with MHC II deficiency, the genetic defects underlying this disease are heterogeneous. Herein, we report an Iranian patient with MHC II deficiency harbouring a novel mutation in RFXANK and novel misleading clinical features. He had ataxic gait and dysarthria from [AGE] of age. Epidemiology, clinical and immunological features, therapeutic options and prognosis of patients with MHC II are reviewed in this paper.",
+    "phi_map": {
+      "AGE": "30months"
+    },
+    "patient_info": {}
+  },
+  "module3_warnings": {
+    "temporal": [],
+    "inconsistencies": []
+  },
+  "module4": {
+    "problem": [
+      {
+        "text": "deficiency",
+        "ner_score": 0.768,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "deficiency",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "immunodeficiency",
+        "ner_score": 0.625,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0002721",
+        "hpo_name": "Immunodeficiency",
+        "expanded_text": "immunodeficiency",
+        "match_type": "clinical_synonym",
+        "confidence": 1.0,
+        "matched": true,
+        "umls_cui": "C0021051"
+      },
+      {
+        "text": "infections",
+        "ner_score": 0.306,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0002719",
+        "hpo_name": "Recurrent infections",
+        "expanded_text": "infections",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.7773,
+        "matched": true,
+        "umls_cui": "C0239998"
+      },
+      {
+        "text": "failure to thrive",
+        "ner_score": 0.585,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0001508",
+        "hpo_name": "Failure to thrive",
+        "expanded_text": "failure to thrive",
+        "match_type": "clinical_synonym",
+        "confidence": 1.0,
+        "matched": true,
+        "umls_cui": "C0231246"
+      },
+      {
+        "text": "mortality",
+        "ner_score": 0.359,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "mortality",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "regulators",
+        "ner_score": 0.255,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "regulators",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "ataxic gait",
+        "ner_score": 0.852,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0002066",
+        "hpo_name": "Gait ataxia",
+        "expanded_text": "ataxic gait",
+        "match_type": "clinical_synonym",
+        "confidence": 1.0,
+        "matched": true,
+        "umls_cui": "C0751837"
+      },
+      {
+        "text": "dysarthria",
+        "ner_score": 0.945,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0001260",
+        "hpo_name": "Dysarthria",
+        "expanded_text": "dysarthria",
+        "match_type": "exact_label",
+        "confidence": 1.0,
+        "matched": true,
+        "umls_cui": "C0013362"
+      },
+      {
+        "text": "gastrointestinal infections",
+        "ner_score": 0.9,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0004798",
+        "hpo_name": "Recurrent infection of the gastrointestinal tract",
+        "expanded_text": "gastrointestinal infections",
+        "match_type": "text_scan_related_synonym",
+        "confidence": 0.95,
+        "matched": true,
+        "umls_cui": "C1854495",
+        "umls_all": [
+          "C1854495",
+          "C4082764"
+        ]
+      },
+      {
+        "text": "autosomal recessive",
+        "ner_score": 0.9,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0000007",
+        "hpo_name": "Autosomal recessive inheritance",
+        "expanded_text": "autosomal recessive",
+        "match_type": "text_scan_exact_synonym",
+        "confidence": 0.95,
+        "matched": true,
+        "umls_cui": "C0441748",
+        "umls_all": [
+          "C0441748",
+          "C4020899"
+        ]
+      }
+    ],
+    "test": [
+      {
+        "text": "respiratory",
+        "ner_score": 0.84,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0011947",
+        "hpo_name": "Respiratory tract infection",
+        "expanded_text": "respiratory",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.7121,
+        "matched": true,
+        "umls_cui": "C0035243"
+      },
+      {
+        "text": "gastrointestinal",
+        "ner_score": 0.553,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0006749",
+        "hpo_name": "Malignant gastrointestinal tract tumors",
+        "expanded_text": "gastrointestinal",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.7162,
+        "matched": true,
+        "umls_cui": "C0685938"
+      },
+      {
+        "text": "gene",
+        "ner_score": 0.492,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "gene",
+        "match_type": "skipped_non_phenotype",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      }
+    ],
+    "ordo_candidates": [
+      {
+        "ordo_id": "ORPHA:572",
+        "name": "MHC class II deficiency",
+        "name_fr": "Déficit en molécules HLA de classe II",
+        "score": 0.85,
+        "jaccard": 0.1111,
+        "coverage": 0.1818,
+        "matched_hpo": [
+          "HP:0001508",
+          "HP:0002719"
+        ],
+        "matched_count": 2,
+        "total_disease_hpo": 11
+      },
+      {
+        "ordo_id": "ORPHA:211017",
+        "name": "Spinocerebellar ataxia type 30",
+        "name_fr": "",
+        "score": 0.2615,
+        "jaccard": 0.1538,
+        "coverage": 0.3333,
+        "matched_hpo": [
+          "HP:0001260",
+          "HP:0002066"
+        ],
+        "matched_count": 2,
+        "total_disease_hpo": 6
+      },
+      {
+        "ordo_id": "ORPHA:458798",
+        "name": "Spinocerebellar ataxia type 41",
+        "name_fr": "",
+        "score": 0.2364,
+        "jaccard": 0.0909,
+        "coverage": 0.3333,
+        "matched_hpo": [
+          "HP:0002066"
+        ],
+        "matched_count": 1,
+        "total_disease_hpo": 3
+      },
+      {
+        "ordo_id": "ORPHA:210128",
+        "name": "Urocanic aciduria",
+        "name_fr": "",
+        "score": 0.2342,
+        "jaccard": 0.1765,
+        "coverage": 0.2727,
+        "matched_hpo": [
+          "HP:0001260",
+          "HP:0002066",
+          "HP:0002719"
+        ],
+        "matched_count": 3,
+        "total_disease_hpo": 11
+      },
+      {
+        "ordo_id": "ORPHA:284282",
+        "name": "Autosomal recessive cerebellar ataxia-epilepsy-intellectual disability syndrome due to WWOX deficiency",
+        "name_fr": "",
+        "score": 0.2033,
+        "jaccard": 0.1333,
+        "coverage": 0.25,
+        "matched_hpo": [
+          "HP:0001260",
+          "HP:0002066"
+        ],
+        "matched_count": 2,
+        "total_disease_hpo": 8
+      }
+    ],
+    "stats": {
+      "total": 13,
+      "matched": 9,
+      "unmatched": 4,
+      "match_rate": 69.2,
+      "unique_hpo": 9,
+      "ordo_matches": 5
+    }
+  },
+  "phenopacket": {
+    "id": "phenopacket-PUBMED_EN_016",
+    "subject": {
+      "id": "PUBMED_EN_016"
+    },
+    "input": "Case Report: MHC class II deficiency: Report of a novel mutation and special review.\n\nThe MHC II deficiency is a rare autosomal recessive primary immunodeficiency syndrome with increased susceptibility to respiratory and gastrointestinal infections, failure to thrive and early mortality. This syndrome is caused by mutations in transcription regulators of the MHC II gene and results in development of blind lymphocytes due to the lack of indicatory MHC II molecules. Despite homogeneity of clinical manifestations of patients with MHC II deficiency, the genetic defects underlying this disease are heterogeneous. Herein, we report an Iranian patient with MHC II deficiency harbouring a novel mutation in RFXANK and novel misleading clinical features. He had ataxic gait and dysarthria from 30 months of age. Epidemiology, clinical and immunological features, therapeutic options and prognosis of patients with MHC II are reviewed in this paper.",
+    "target": "MHC class II deficiency",
+    "phenotypicFeatures": [
+      {
+        "type": {
+          "id": "HP:0002721",
+          "label": "Immunodeficiency",
+          "umls_cui": "C0021051"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "PUBMED_EN_016",
+              "description": "NER: immunodeficiency (0.625) | Match: clinical_synonym (1.000)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0002719",
+          "label": "Recurrent infections",
+          "umls_cui": "C0239998"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "PUBMED_EN_016",
+              "description": "NER: infections (0.306) | Match: sapbert_similarity (0.777)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0001508",
+          "label": "Failure to thrive",
+          "umls_cui": "C0231246"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "PUBMED_EN_016",
+              "description": "NER: failure to thrive (0.585) | Match: clinical_synonym (1.000)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0002066",
+          "label": "Gait ataxia",
+          "umls_cui": "C0751837"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "PUBMED_EN_016",
+              "description": "NER: ataxic gait (0.852) | Match: clinical_synonym (1.000)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0001260",
+          "label": "Dysarthria",
+          "umls_cui": "C0013362"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "PUBMED_EN_016",
+              "description": "NER: dysarthria (0.945) | Match: exact_label (1.000)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0004798",
+          "label": "Recurrent infection of the gastrointestinal tract",
+          "umls_cui": "C1854495"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "PUBMED_EN_016",
+              "description": "NER: gastrointestinal infections (0.900) | Match: text_scan_related_synonym (0.950)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0000007",
+          "label": "Autosomal recessive inheritance",
+          "umls_cui": "C0441748"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "PUBMED_EN_016",
+              "description": "NER: autosomal recessive (0.900) | Match: text_scan_exact_synonym (0.950)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0011947",
+          "label": "Respiratory tract infection",
+          "umls_cui": "C0035243"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "PUBMED_EN_016",
+              "description": "NER: respiratory (0.840) | Match: sapbert_similarity (0.712)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0006749",
+          "label": "Malignant gastrointestinal tract tumors",
+          "umls_cui": "C0685938"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "PUBMED_EN_016",
+              "description": "NER: gastrointestinal (0.553) | Match: sapbert_similarity (0.716)"
+            }
+          }
+        ]
+      }
+    ],
+    "metaData": {
+      "created": "2026-06-11T03:06:25Z",
+      "createdBy": "clinical-preanalysis-pipeline-v2",
+      "phenopacketSchemaVersion": "2.0",
+      "resources": [
+        {
+          "id": "hp",
+          "name": "Human Phenotype Ontology",
+          "url": "https://hpo.jax.org",
+          "version": "2024-04-26",
+          "namespacePrefix": "HP",
+          "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        }
+      ]
+    },
+    "interpretations": [
+      {
+        "id": "interpretation-PUBMED_EN_016",
+        "progressStatus": "IN_PROGRESS",
+        "diagnosis": {
+          "disease": {
+            "id": "ORPHA:572",
+            "label": "MHC class II deficiency"
+          },
+          "score": 0.85,
+          "allCandidates": [
+            {
+              "id": "ORPHA:572",
+              "label": "MHC class II deficiency",
+              "score": 0.85
+            },
+            {
+              "id": "ORPHA:211017",
+              "label": "Spinocerebellar ataxia type 30",
+              "score": 0.2615
+            },
+            {
+              "id": "ORPHA:458798",
+              "label": "Spinocerebellar ataxia type 41",
+              "score": 0.2364
+            },
+            {
+              "id": "ORPHA:210128",
+              "label": "Urocanic aciduria",
+              "score": 0.2342
+            },
+            {
+              "id": "ORPHA:284282",
+              "label": "Autosomal recessive cerebellar ataxia-epilepsy-intellectual disability syndrome due to WWOX deficiency",
+              "score": 0.2033
+            }
+          ]
+        }
+      }
+    ],
+    "_pipelineStats": {
+      "totalEntities": 13,
+      "matchedHPO": 9,
+      "unmatchedEntities": 4,
+      "phenopacketFeatures": 9,
+      "negatedFeatures": 0,
+      "numericPhenotypes": 0,
+      "ordoCandidates": 5
+    }
+  }
+}

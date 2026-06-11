@@ -1,0 +1,114 @@
+{
+  "id": "phenopacket-GSC_EN_022",
+  "subject": {
+    "id": "GSC_EN_022"
+  },
+  "input": "Case Report: Rapid identification of primary atopic disorders (PAD) by a clinical landmark-guided, upfront use of genomic sequencing.\n\nPrimary atopic disorders (PAD) are monogenic disorders caused by pathogenic gene variants encoding proteins that are key for the maintenance of a healthy skin barrier and a well-functioning immune system. Physicians face the challenge to find single, extremely rare PAD patients/families among the millions of individuals with common allergic diseases. We describe case scenarios with signature PAD. We review the literature and deduct specific clinical red flags for PAD detection. They include a positive family history and/or signs of pathological susceptibility to infections, immunodysregulation, or syndromic disease. Results of conventional laboratory and most immunological lab studies are not sufficient to make a definitive diagnosis of PAD. In the past, multistep narrowing of differential diagnoses by various immunological and other laboratory tests led to testing of single genes or gene panel analyses, which was a time-consuming and often unsuccessful approach. The implementation of whole-genomic analyses in the routine diagnostics has led to a paradigm shift. Upfront genome-wide analysis by whole genome sequencing (WGS) will shorten the time to diagnosis, save patients from unnecessary investigations, and reduce morbidity and mortality. We propose a rational, clinical landmark-based approach for deciding which cases pass the filter for carrying out early WGS. WGS result interpretation requires a great deal of caution regarding the causal relationship of variants in PAD phenotypes and absence of proof by adequate functional tests. In case of negative WGS results, a re-iteration attitude with re-analyses of the data (using the latest data base annotation)) may eventually lead to PAD diagnosis. PAD, like many other rare genetic diseases, will only be successfully managed, if physicians from different clinical specialties and geneticists interact regularly in multidisciplinary conferences.",
+  "target": "Hypotrichosis simplex of the scalp",
+  "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0001047",
+        "label": "Atopic dermatitis",
+        "umls_cui": "C0011615"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "GSC_EN_022",
+            "description": "NER: primary atopic disorders (0.954) | Match: sapbert_similarity (0.788)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0001426",
+        "label": "Non-Mendelian inheritance",
+        "umls_cui": "C0600599"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "GSC_EN_022",
+            "description": "NER: monogenic (0.584) | Match: sapbert_similarity (0.728)"
+          }
+        }
+      ]
+    }
+  ],
+  "metaData": {
+    "created": "2026-06-11T03:09:15Z",
+    "createdBy": "clinical-preanalysis-pipeline-v2",
+    "phenopacketSchemaVersion": "2.0",
+    "resources": [
+      {
+        "id": "hp",
+        "name": "Human Phenotype Ontology",
+        "url": "https://hpo.jax.org",
+        "version": "2024-04-26",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      }
+    ]
+  },
+  "interpretations": [
+    {
+      "id": "interpretation-GSC_EN_022",
+      "progressStatus": "IN_PROGRESS",
+      "diagnosis": {
+        "disease": {
+          "id": "ORPHA:90368",
+          "label": "Hypotrichosis simplex of the scalp"
+        },
+        "score": 0.0808,
+        "allCandidates": [
+          {
+            "id": "ORPHA:90368",
+            "label": "Hypotrichosis simplex of the scalp",
+            "score": 0.0808
+          },
+          {
+            "id": "ORPHA:498359",
+            "label": "Aquagenic palmoplantar keratoderma",
+            "score": 0.0808
+          },
+          {
+            "id": "ORPHA:701",
+            "label": "Alopecia universalis",
+            "score": 0.0747
+          },
+          {
+            "id": "ORPHA:530838",
+            "label": "KRT1-related diffuse nonepidermolytic keratoderma",
+            "score": 0.065
+          },
+          {
+            "id": "ORPHA:70593",
+            "label": "Immunodeficiency due to selective anti-polysaccharide antibody deficiency",
+            "score": 0.065
+          }
+        ]
+      }
+    }
+  ],
+  "_pipelineStats": {
+    "totalEntities": 4,
+    "matchedHPO": 2,
+    "unmatchedEntities": 2,
+    "phenopacketFeatures": 2,
+    "negatedFeatures": 0,
+    "numericPhenotypes": 0,
+    "ordoCandidates": 5
+  }
+}
