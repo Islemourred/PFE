@@ -1,0 +1,162 @@
+/* ═══ App Shell ═══════════════════════════════════════ */
+.appShell {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  z-index: 1;
+}
+
+/* ═══ Top Bar ═════════════════════════════════════════ */
+.topBar {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: rgba(11, 17, 32, 0.75);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.topBarInner {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.brandGroup {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.brandLogo {
+  width: 36px;
+  height: 36px;
+  border-radius: 10px;
+  background: var(--gradient-brand);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 12px rgba(14, 165, 233, 0.2);
+}
+
+.logoIcon { font-size: 1.1rem; }
+.brandName { font-size: 0.95rem; font-weight: 700; color: var(--text-primary); letter-spacing: -0.02em; line-height: 1.2; }
+.brandSub { font-size: 0.62rem; color: var(--text-dim); font-weight: 400; letter-spacing: 0.02em; }
+
+/* ── Nav Tabs ──────────────────────────────────────── */
+.navTabs {
+  display: flex;
+  gap: 2px;
+  background: rgba(15, 23, 42, 0.6);
+  padding: 3px;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border-subtle);
+}
+
+.navTab {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 7px 18px;
+  font-size: 0.78rem;
+  font-weight: 500;
+  font-family: inherit;
+  color: var(--text-dim);
+  background: transparent;
+  border: none;
+  border-radius: 7px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.navTab:hover { color: var(--text-secondary); }
+
+.navTab svg { opacity: 0.6; transition: opacity 0.2s ease; }
+.navTab:hover svg { opacity: 0.8; }
+
+.navTabActive {
+  color: var(--text-primary) !important;
+  background: rgba(56, 189, 248, 0.1) !important;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navTabActive svg { opacity: 1 !important; color: var(--accent-cyan); }
+
+/* ── User / Status ────────────────────────────────────── */
+.navRight {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.userInfo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.userAvatar {
+  width: 30px; height: 30px; border-radius: 8px;
+  background: linear-gradient(135deg, rgba(14, 165, 233, 0.2), rgba(139, 92, 246, 0.2));
+  display: flex; align-items: center; justify-content: center;
+  font-size: 0.72rem; font-weight: 700; color: var(--accent-cyan);
+  border: 1px solid rgba(56, 189, 248, 0.15);
+}
+
+.userEmail {
+  font-size: 0.7rem; color: var(--text-dim); font-weight: 500;
+  max-width: 160px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
+}
+
+.logoutBtn {
+  padding: 6px; border-radius: 8px;
+  background: rgba(248, 113, 113, 0.06); border: 1px solid rgba(248, 113, 113, 0.1);
+  color: var(--text-dim); cursor: pointer;
+  display: flex; align-items: center; justify-content: center;
+  transition: all 0.15s ease;
+}
+.logoutBtn:hover { background: rgba(248, 113, 113, 0.15); color: var(--accent-red); border-color: rgba(248, 113, 113, 0.2); }
+
+/* ═══ Main Content ════════════════════════════════════ */
+.mainContent {
+  flex: 1;
+  max-width: 1400px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 1.5rem 2rem 3rem;
+}
+
+/* ═══ Loading Screen ═════════════════════════════════ */
+.loadingScreen {
+  min-height: 100vh;
+  display: flex; flex-direction: column;
+  align-items: center; justify-content: center;
+  gap: 1.2rem;
+  background: var(--bg-root);
+}
+
+.loadingLogo {
+  font-size: 2.5rem;
+  animation: pulse 1.5s ease infinite;
+}
+
+.loadingSpinner {
+  width: 24px; height: 24px;
+  border: 2.5px solid rgba(56, 189, 248, 0.15);
+  border-top-color: var(--accent-cyan);
+  border-radius: 50%;
+  animation: spin 0.6s linear infinite;
+}
+
+@media (max-width: 768px) {
+  .topBarInner { padding: 0 1rem; }
+  .mainContent { padding: 1rem; }
+  .brandSub { display: none; }
+  .userEmail { display: none; }
+}
