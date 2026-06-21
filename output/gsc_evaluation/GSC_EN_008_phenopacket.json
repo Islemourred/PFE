@@ -4,8 +4,28 @@
     "id": "GSC_EN_008"
   },
   "input": "Case Report: Case Report: A Case of X-Linked Agammaglobulinemia With High Serum IgE Levels and Allergic Rhinitis.\n\nX-linked Agammaglobulinemia (XLA) is a rare genetic disorder of B-lymphocyte differentiation, characterized by the absence or paucity of circulating B cells, markedly reduced levels of all serum immunoglobulin isotypes and lack of specific antibody production. Bruton Tyrosine Kinase (BTK) gene encodes a cytoplasmic tyrosine kinase involved in the B cell maturation and its mutation, blocking B cell differentiation at the pre-B cell stage, and is responsible for XLA. All domains may be affected by the mutation, and the many genotypes are associated with a wide range of clinical presentations. Little is known about genotype-phenotype correlation in this disorder, and factors influencing the phenotype of XLA are not clearly understood. In this report we present a unique case of a young patient affected by XLA. The disease was genetically diagnosed at birth due to a family history of XLA, but during follow up, it was characterized by a CD19+ B cell percentage consistently greater than 2%. He never suffered severe infections, but at two years of age, he developed persistent rhinitis. Thus, total serum IgE levels were measured and detected over the normal range, and specific allergic investigations showed sensitization to dust mites. Further immunological tests (BTK expression, functional \"in vitro\" B cell proliferation upon CpG stimulation, B cell subset analysis) explained these findings as possible manifestations of a mild XLA phenotype. XLA patients rarely present with allergic manifestations, which could warrant further investigation. High serum IgE levels could be a sign of a mild phenotype, but their role and the mechanisms underlying their production in XLA need to be clarified.",
-  "target": "Juvenile temporal arteritis",
+  "target": "Selective IgM deficiency",
   "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0004432",
+        "label": "Agammaglobulinemia",
+        "umls_cui": "C0001768"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "GSC_EN_008",
+            "description": "NER: x - linked agammaglobulinemia (0.992) | Match: sapbert_similarity (0.889)"
+          }
+        }
+      ]
+    },
     {
       "type": {
         "id": "HP:0010702",
@@ -28,6 +48,46 @@
     },
     {
       "type": {
+        "id": "HP:0003212",
+        "label": "Increased circulating IgE concentration",
+        "umls_cui": "C0236175"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "GSC_EN_008",
+            "description": "NER: high serum ige levels (0.995) | Match: sapbert_similarity (0.965)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0000842",
+        "label": "Hyperinsulinemia",
+        "umls_cui": "C0020459"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "GSC_EN_008",
+            "description": "NER: high serum i (0.963) | Match: sapbert_similarity (0.714)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
         "id": "HP:0003193",
         "label": "Allergic rhinitis",
         "umls_cui": "C0847614"
@@ -41,7 +101,87 @@
           },
           "reference": {
             "id": "GSC_EN_008",
-            "description": "NER: Allergic Rhinitis (0.894) | Match: exact_label (1.000)"
+            "description": "NER: Levels and Allergic Rhinitis (0.999) | Match: substring_match (0.950)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0010976",
+        "label": "Decreased total B cell count",
+        "umls_cui": "C1855067"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "GSC_EN_008",
+            "description": "NER: paucity of circulating b cells (0.816) | Match: sapbert_similarity (0.923)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0004313",
+        "label": "Decreased circulating immunoglobulin concentration",
+        "umls_cui": "C0086438"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "GSC_EN_008",
+            "description": "NER: markedly reduced levels of all serum immunoglobulin isotypes (0.882) | Match: sapbert_similarity (0.772)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0002719",
+        "label": "Recurrent infections",
+        "umls_cui": "C0239998"
+      },
+      "excluded": true,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "GSC_EN_008",
+            "description": "NER: severe infections (0.998) | Match: sapbert_similarity (0.787) | Negated by: \"never\""
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0002257",
+        "label": "Chronic rhinitis",
+        "umls_cui": "C0008711"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "GSC_EN_008",
+            "description": "NER: persistent rhinitis (0.999) | Match: sapbert_similarity (0.909)"
           }
         }
       ]
@@ -68,9 +208,9 @@
     },
     {
       "type": {
-        "id": "HP:0004432",
-        "label": "Agammaglobulinemia",
-        "umls_cui": "C0001768"
+        "id": "HP:0012393",
+        "label": "Allergy",
+        "umls_cui": "C1527304"
       },
       "excluded": false,
       "evidence": [
@@ -81,7 +221,7 @@
           },
           "reference": {
             "id": "GSC_EN_008",
-            "description": "NER: Agammaglobulinemia (0.900) | Match: text_scan_clinical_synonym (0.950)"
+            "description": "NER: allergic manifestations (0.946) | Match: sapbert_similarity (0.836)"
           }
         }
       ]
@@ -125,30 +265,10 @@
           }
         }
       ]
-    },
-    {
-      "type": {
-        "id": "HP:0012393",
-        "label": "Allergy",
-        "umls_cui": "C1527304"
-      },
-      "excluded": false,
-      "evidence": [
-        {
-          "evidenceCode": {
-            "id": "ECO:0000033",
-            "label": "author statement supported by traceable reference"
-          },
-          "reference": {
-            "id": "GSC_EN_008",
-            "description": "NER: allergic (0.973) | Match: sapbert_similarity (0.890)"
-          }
-        }
-      ]
     }
   ],
   "metaData": {
-    "created": "2026-06-11T03:08:02Z",
+    "created": "2026-06-19T15:05:29Z",
     "createdBy": "clinical-preanalysis-pipeline-v2",
     "phenopacketSchemaVersion": "2.0",
     "resources": [
@@ -168,47 +288,72 @@
       "progressStatus": "IN_PROGRESS",
       "diagnosis": {
         "disease": {
-          "id": "ORPHA:26137",
-          "label": "Juvenile temporal arteritis"
+          "id": "ORPHA:331235",
+          "label": "Selective IgM deficiency"
         },
-        "score": 0.1333,
+        "score": 0.5153,
         "allCandidates": [
           {
-            "id": "ORPHA:26137",
-            "label": "Juvenile temporal arteritis",
-            "score": 0.1333
+            "id": "ORPHA:331235",
+            "label": "Selective IgM deficiency",
+            "score": 0.5153
           },
           {
-            "id": "ORPHA:90000",
-            "label": "Erythema elevatum diutinum",
-            "score": 0.1036
+            "id": "ORPHA:443811",
+            "label": "PGM3-CDG",
+            "score": 0.5053
           },
           {
-            "id": "ORPHA:48377",
-            "label": "Subcorneal pustular dermatosis",
-            "score": 0.0781
+            "id": "ORPHA:183675",
+            "label": "Recurrent infections associated with rare immunoglobulin isotypes deficiency",
+            "score": 0.4584
           },
           {
-            "id": "ORPHA:449400",
-            "label": "IgG4-related aortitis",
-            "score": 0.0747
+            "id": "ORPHA:70593",
+            "label": "Immunodeficiency due to selective anti-polysaccharide antibody deficiency",
+            "score": 0.4532
           },
           {
-            "id": "ORPHA:507",
-            "label": "Leishmaniasis",
-            "score": 0.0747
+            "id": "ORPHA:79324",
+            "label": "ALG12-CDG",
+            "score": 0.4343
+          },
+          {
+            "id": "ORPHA:39041",
+            "label": "Omenn syndrome",
+            "score": 0.4338
+          },
+          {
+            "id": "ORPHA:125",
+            "label": "Bloom syndrome",
+            "score": 0.4306
+          },
+          {
+            "id": "ORPHA:277",
+            "label": "Severe combined immunodeficiency due to adenosine deaminase deficiency",
+            "score": 0.4298
+          },
+          {
+            "id": "ORPHA:572",
+            "label": "Immunodeficiency by defective expression of MHC class II",
+            "score": 0.4063
+          },
+          {
+            "id": "ORPHA:37042",
+            "label": "Immune dysregulation-polyendocrinopathy-enteropathy-X-linked syndrome",
+            "score": 0.3947
           }
         ]
       }
     }
   ],
   "_pipelineStats": {
-    "totalEntities": 26,
-    "matchedHPO": 8,
-    "unmatchedEntities": 18,
-    "phenopacketFeatures": 7,
-    "negatedFeatures": 0,
+    "totalEntities": 57,
+    "matchedHPO": 13,
+    "unmatchedEntities": 44,
+    "phenopacketFeatures": 13,
+    "negatedFeatures": 1,
     "numericPhenotypes": 0,
-    "ordoCandidates": 5
+    "ordoCandidates": 10
   }
 }

@@ -1,0 +1,160 @@
+{
+  "id": "phenopacket-RA_EN_007",
+  "subject": {
+    "id": "RA_EN_007",
+    "sex": "FEMALE"
+  },
+  "input": "A 7-day-old female newborn was brought to our hospital following an abnormal screening result. She was born at full-term with a birth weight of 4380 grams. The parents reported no issues with feeding, activity levels, or crying strength. Newborn screening was conducted on her third day of life. On Day 4, the laboratory received her sample. By Day 6, results indicated a high-risk condition with GAA activity measured at 0.18 uM/h (critical cutoff < 0.5) and a ratio of 42.87 (critical cutoff acid β-glucosidase (ABG)/GAA ≥ 20). An urgent visit was arranged for Day 7. Upon examination, the newborn exhibited normal muscle power, normal reflexes, no macroglossia, but a slight decrease in facial folds.",
+  "target": "Prader-Willi syndrome due to translocation",
+  "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0001612",
+        "label": "Weak cry",
+        "umls_cui": "C0234860"
+      },
+      "excluded": true,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_007",
+            "description": "NER: crying strength (0.943) | Match: sapbert_similarity (0.714) | Negated by: \"no\""
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0000158",
+        "label": "Macroglossia",
+        "umls_cui": "C0024421"
+      },
+      "excluded": true,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_007",
+            "description": "NER: macroglossia (0.935) | Match: exact_label (1.000) | Negated by: \"no\""
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0010801",
+        "label": "Underdeveloped nasolabial fold",
+        "umls_cui": "C4021227"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_007",
+            "description": "NER: decrease in facial folds (0.595) | Match: sapbert_similarity (0.804)"
+          }
+        }
+      ]
+    }
+  ],
+  "metaData": {
+    "created": "2026-06-19T15:08:59Z",
+    "createdBy": "clinical-preanalysis-pipeline-v2",
+    "phenopacketSchemaVersion": "2.0",
+    "resources": [
+      {
+        "id": "hp",
+        "name": "Human Phenotype Ontology",
+        "url": "https://hpo.jax.org",
+        "version": "2024-04-26",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      }
+    ]
+  },
+  "interpretations": [
+    {
+      "id": "interpretation-RA_EN_007",
+      "progressStatus": "IN_PROGRESS",
+      "diagnosis": {
+        "disease": {
+          "id": "ORPHA:177907",
+          "label": "Prader-Willi syndrome due to translocation"
+        },
+        "score": 0.6195,
+        "allCandidates": [
+          {
+            "id": "ORPHA:177907",
+            "label": "Prader-Willi syndrome due to translocation",
+            "score": 0.6195
+          },
+          {
+            "id": "ORPHA:258",
+            "label": "Laminin subunit alpha 2-related congenital muscular dystrophy",
+            "score": 0.4578
+          },
+          {
+            "id": "ORPHA:193",
+            "label": "Cohen syndrome",
+            "score": 0.4494
+          },
+          {
+            "id": "ORPHA:90673",
+            "label": "Hypothyroidism due to TSH receptor mutations",
+            "score": 0.4001
+          },
+          {
+            "id": "ORPHA:2834",
+            "label": "Wrinkly skin syndrome",
+            "score": 0.3929
+          },
+          {
+            "id": "ORPHA:391372",
+            "label": "FOXP1 Syndrome",
+            "score": 0.3929
+          },
+          {
+            "id": "ORPHA:2962",
+            "label": "De Barsy syndrome",
+            "score": 0.3918
+          },
+          {
+            "id": "ORPHA:397941",
+            "label": "MAN1B1-CDG",
+            "score": 0.3839
+          },
+          {
+            "id": "ORPHA:333",
+            "label": "Farber disease",
+            "score": 0.3697
+          },
+          {
+            "id": "ORPHA:98914",
+            "label": "Presynaptic congenital myasthenic syndromes",
+            "score": 0.35
+          }
+        ]
+      }
+    }
+  ],
+  "_pipelineStats": {
+    "totalEntities": 35,
+    "matchedHPO": 3,
+    "unmatchedEntities": 32,
+    "phenopacketFeatures": 3,
+    "negatedFeatures": 2,
+    "numericPhenotypes": 0,
+    "ordoCandidates": 10
+  }
+}

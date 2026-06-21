@@ -1,0 +1,1178 @@
+{
+  "note_id": "RA_EN_005",
+  "language": "en",
+  "module1": {
+    "clean_text": "A [AGE] female child, third in birth order, born to parents who are first cousins, delivered vaginally at term without complications, presented with sparse scalp hair, absent body hair, eyebrows, and eyelashes, and delayed tooth eruption. The mother reported that the child does not sweat and has had recurrent fevers since the neonatal period. Psychomotor development was normal. There was no family history of similar symptoms, except for a previous female sibling with similar complaints and a distinctive appearance, who experienced recurrent fever and chest infections during the neonatal period and died at [AGE] of age. The parents' first pregnancy ended in a miscarriage at 2 months for unknown reasons. Skin examination showed smooth, normal-looking skin with normal palmoplantar skin and dermatoglyphics. The child had an aged appearance with finely wrinkled skin around the eyes, an everted lower lip, and low-set ears. Scalp hair was sparse, light-colored, and thin, with complete absence of eyelashes, eyebrows, and body hair. Oral examination revealed only two conical, widely spaced maxillary teeth and a low-arched, flat palate. Nails were normal. Systemic examination showed no abnormalities, and there was no evidence of mental retardation. Imaging of the jaw showed a lack of teeth with only two maxillary teeth and a left mandibular tooth bud. Biochemical tests were normal.",
+    "phi_map": {
+      "AGE": [
+        "2-year-old",
+        "6",
+        "months"
+      ]
+    },
+    "patient_info": {
+      "sex": "female"
+    }
+  },
+  "module3_warnings": {
+    "temporal": [],
+    "inconsistencies": []
+  },
+  "module4": {
+    "problem": [
+      {
+        "text": "sparse scalp hair, absent body hair, eyebrows",
+        "ner_score": 0.985,
+        "negated": true,
+        "negation_cue": "without",
+        "hpo_id": "HP:0002209",
+        "hpo_name": "Sparse scalp hair",
+        "expanded_text": "sparse scalp hair, absent body hair, eyebrows",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.7585,
+        "matched": true,
+        "umls_cui": "C1857042"
+      },
+      {
+        "text": "eyelashes",
+        "ner_score": 0.728,
+        "negated": true,
+        "negation_cue": "absent",
+        "hpo_id": "HP:0001128",
+        "hpo_name": "Trichiasis",
+        "expanded_text": "eyelashes",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.8431,
+        "matched": true,
+        "umls_cui": "C0221259"
+      },
+      {
+        "text": "delayed tooth eruption",
+        "ner_score": 0.998,
+        "negated": true,
+        "negation_cue": "absent",
+        "hpo_id": "HP:0000684",
+        "hpo_name": "Delayed eruption of teeth",
+        "expanded_text": "delayed tooth eruption",
+        "match_type": "exact_synonym",
+        "confidence": 1.0,
+        "matched": true,
+        "umls_cui": "C0239174"
+      },
+      {
+        "text": "tooth eruption",
+        "ner_score": 0.67,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0006288",
+        "hpo_name": "Advanced eruption of teeth",
+        "expanded_text": "tooth eruption",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.7279,
+        "matched": true,
+        "umls_cui": "C0266054"
+      },
+      {
+        "text": "sweat",
+        "ner_score": 0.412,
+        "negated": true,
+        "negation_cue": "does not",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "sweat",
+        "match_type": "skipped_low_ner_score",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "recurrent fevers",
+        "ner_score": 0.99,
+        "negated": true,
+        "negation_cue": "does not",
+        "hpo_id": "HP:0001954",
+        "hpo_name": "Recurrent fever",
+        "expanded_text": "recurrent fevers",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.9283,
+        "matched": true,
+        "umls_cui": "C0277799"
+      },
+      {
+        "text": "urrent fever",
+        "ner_score": 0.994,
+        "negated": true,
+        "negation_cue": "does not",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "urrent fever",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "fevers",
+        "ner_score": 0.793,
+        "negated": true,
+        "negation_cue": "does not",
+        "hpo_id": "HP:0001945",
+        "hpo_name": "Fever",
+        "expanded_text": "fevers",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.9653,
+        "matched": true,
+        "umls_cui": "C0015967"
+      },
+      {
+        "text": "ever",
+        "ner_score": 0.858,
+        "negated": true,
+        "negation_cue": "does not",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "ever",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "similar symptoms",
+        "ner_score": 0.993,
+        "negated": true,
+        "negation_cue": "no",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "similar symptoms",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "similar complaints",
+        "ner_score": 0.983,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "similar complaints",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "chest infections",
+        "ner_score": 0.998,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0002783",
+        "hpo_name": "Recurrent lower respiratory tract infections",
+        "expanded_text": "chest infections",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.7967,
+        "matched": true,
+        "umls_cui": "C0149725"
+      },
+      {
+        "text": "a miscarriage",
+        "ner_score": 0.99,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0005268",
+        "hpo_name": "Miscarriage",
+        "expanded_text": "a miscarriage",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.8533,
+        "matched": true,
+        "umls_cui": "C0000786"
+      },
+      {
+        "text": "aged appearance",
+        "ner_score": 0.41,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "aged appearance",
+        "match_type": "skipped_low_ner_score",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "aged",
+        "ner_score": 0.561,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "aged",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "finely wrinkled skin around the eyes",
+        "ner_score": 0.951,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0100678",
+        "hpo_name": "Premature skin wrinkling",
+        "expanded_text": "finely wrinkled skin around the eyes",
+        "match_type": "substring_match",
+        "confidence": 0.95,
+        "matched": true,
+        "umls_cui": "C0037301"
+      },
+      {
+        "text": "wrinkled skin",
+        "ner_score": 0.304,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "wrinkled skin",
+        "match_type": "skipped_low_ner_score",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "everted",
+        "ner_score": 0.442,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "everted",
+        "match_type": "skipped_low_ner_score",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "teeth",
+        "ner_score": 0.505,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "teeth",
+        "match_type": "skipped_low_ner_score",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "abnormalities",
+        "ner_score": 0.989,
+        "negated": true,
+        "negation_cue": "no",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "abnormalities",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "mental retardation",
+        "ner_score": 0.998,
+        "negated": true,
+        "negation_cue": "no evidence of",
+        "hpo_id": "HP:0001249",
+        "hpo_name": "Intellectual disability",
+        "expanded_text": "mental retardation",
+        "match_type": "clinical_synonym",
+        "confidence": 1.0,
+        "matched": true,
+        "umls_cui": "C0025362"
+      },
+      {
+        "text": "a lack of teeth",
+        "ner_score": 0.991,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0009804",
+        "hpo_name": "Tooth agenesis",
+        "expanded_text": "a lack of teeth",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.9255,
+        "matched": true,
+        "umls_cui": "C4024202"
+      },
+      {
+        "text": "lack of teeth",
+        "ner_score": 0.565,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "lack of teeth",
+        "match_type": "deduplicated",
+        "confidence": 0.9184,
+        "matched": false,
+        "umls_cui": "C4024202"
+      },
+      {
+        "text": "left mandibular tooth bud",
+        "ner_score": 0.88,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "left mandibular tooth bud",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "tooth bud",
+        "ner_score": 0.443,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "tooth bud",
+        "match_type": "skipped_low_ner_score",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "everted lower lip",
+        "ner_score": 0.9,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0000232",
+        "hpo_name": "Everted lower lip vermilion",
+        "expanded_text": "everted lower lip",
+        "match_type": "text_scan_exact_synonym",
+        "confidence": 0.95,
+        "matched": true,
+        "umls_cui": "C1853246",
+        "umls_all": [
+          "C1853246",
+          "C1866234"
+        ]
+      },
+      {
+        "text": "low-set ears",
+        "ner_score": 0.9,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0000369",
+        "hpo_name": "Low-set ears",
+        "expanded_text": "low-set ears",
+        "match_type": "text_scan_exact_label",
+        "confidence": 0.95,
+        "matched": true,
+        "umls_cui": "C0239234",
+        "umls_all": [
+          "C0239234"
+        ]
+      }
+    ],
+    "test": [
+      {
+        "text": "sparse",
+        "ner_score": 0.584,
+        "negated": true,
+        "negation_cue": "without",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "sparse",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "Psycho",
+        "ner_score": 0.959,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "Psycho",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "motor",
+        "ner_score": 0.98,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "motor",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "development",
+        "ner_score": 0.983,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "development",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "normal",
+        "ner_score": 0.908,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "normal",
+        "match_type": "skipped_en_noise",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "skin examination",
+        "ner_score": 0.997,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "skin examination",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "examination",
+        "ner_score": 0.992,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "examination",
+        "match_type": "skipped_en_noise",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "smooth",
+        "ner_score": 0.597,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "smooth",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "looking",
+        "ner_score": 0.498,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "looking",
+        "match_type": "skipped_low_ner_score",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "dermato",
+        "ner_score": 0.99,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "dermato",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "colored",
+        "ner_score": 0.431,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "colored",
+        "match_type": "skipped_low_ner_score",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "Oral",
+        "ner_score": 0.988,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "Oral",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "oral examination",
+        "ner_score": 0.997,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "oral examination",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "Nails",
+        "ner_score": 0.952,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "Nails",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "Systemic",
+        "ner_score": 0.989,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "Systemic",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "systemic examination",
+        "ner_score": 0.997,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "systemic examination",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "abnormalities",
+        "ner_score": 0.343,
+        "negated": true,
+        "negation_cue": "no",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "abnormalities",
+        "match_type": "skipped_low_ner_score",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "Imaging",
+        "ner_score": 0.982,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "Imaging",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "imaging of the jaw",
+        "ner_score": 0.997,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "imaging of the jaw",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "Biochemical",
+        "ner_score": 0.991,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "Biochemical",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "biochemical tests",
+        "ner_score": 0.997,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "biochemical tests",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      }
+    ],
+    "ordo_candidates": [
+      {
+        "ordo_id": "ORPHA:2067",
+        "name": "GAPO syndrome",
+        "name_fr": "",
+        "score": 0.3752,
+        "coverage": 0.0506,
+        "matched_hpo": [
+          "HP:0000232",
+          "HP:0000369",
+          "HP:0000684",
+          "HP:0002209"
+        ],
+        "matched_count": 4,
+        "total_disease_hpo": 79,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:2136",
+        "name": "Hennekam syndrome",
+        "name_fr": "",
+        "score": 0.3332,
+        "coverage": 0.0784,
+        "matched_hpo": [
+          "HP:0000369",
+          "HP:0000684",
+          "HP:0001249",
+          "HP:0009804"
+        ],
+        "matched_count": 4,
+        "total_disease_hpo": 51,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:404448",
+        "name": "Helsmoortel-Van der Aa syndrome",
+        "name_fr": "",
+        "score": 0.3201,
+        "coverage": 0.0375,
+        "matched_hpo": [
+          "HP:0000369",
+          "HP:0002209",
+          "HP:0006288"
+        ],
+        "matched_count": 3,
+        "total_disease_hpo": 80,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:915",
+        "name": "Aarskog-Scott syndrome",
+        "name_fr": "",
+        "score": 0.3147,
+        "coverage": 0.0412,
+        "matched_hpo": [
+          "HP:0000232",
+          "HP:0000369",
+          "HP:0000684",
+          "HP:0001249"
+        ],
+        "matched_count": 4,
+        "total_disease_hpo": 97,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:192",
+        "name": "Coffin-Lowry syndrome",
+        "name_fr": "",
+        "score": 0.3138,
+        "coverage": 0.0494,
+        "matched_hpo": [
+          "HP:0000232",
+          "HP:0000684",
+          "HP:0001249",
+          "HP:0006288"
+        ],
+        "matched_count": 4,
+        "total_disease_hpo": 81,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:2834",
+        "name": "Wrinkly skin syndrome",
+        "name_fr": "",
+        "score": 0.3106,
+        "coverage": 0.0333,
+        "matched_hpo": [
+          "HP:0000369",
+          "HP:0000684"
+        ],
+        "matched_count": 2,
+        "total_disease_hpo": 60,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:221016",
+        "name": "Rothmund-Thomson syndrome type 2",
+        "name_fr": "",
+        "score": 0.3094,
+        "coverage": 0.0319,
+        "matched_hpo": [
+          "HP:0000684",
+          "HP:0002209",
+          "HP:0009804"
+        ],
+        "matched_count": 3,
+        "total_disease_hpo": 94,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:99843",
+        "name": "Leukocyte adhesion deficiency type II",
+        "name_fr": "",
+        "score": 0.2967,
+        "coverage": 0.0154,
+        "matched_hpo": [
+          "HP:0001954"
+        ],
+        "matched_count": 1,
+        "total_disease_hpo": 65,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:221008",
+        "name": "Rothmund-Thomson syndrome type 1",
+        "name_fr": "",
+        "score": 0.296,
+        "coverage": 0.0469,
+        "matched_hpo": [
+          "HP:0000684",
+          "HP:0001249",
+          "HP:0009804"
+        ],
+        "matched_count": 3,
+        "total_disease_hpo": 64,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:769",
+        "name": "Rabson-Mendenhall syndrome",
+        "name_fr": "",
+        "score": 0.2953,
+        "coverage": 0.0357,
+        "matched_hpo": [
+          "HP:0001249",
+          "HP:0006288"
+        ],
+        "matched_count": 2,
+        "total_disease_hpo": 56,
+        "text_match": false
+      }
+    ],
+    "stats": {
+      "total": 48,
+      "matched": 13,
+      "unmatched": 35,
+      "match_rate": 27.1,
+      "unique_hpo": 13,
+      "ordo_matches": 10
+    }
+  },
+  "phenopacket": {
+    "id": "phenopacket-RA_EN_005",
+    "subject": {
+      "id": "RA_EN_005",
+      "sex": "FEMALE"
+    },
+    "input": "A 2-year-old female child, third in birth order, born to parents who are first cousins, delivered vaginally at term without complications, presented with sparse scalp hair, absent body hair, eyebrows, and eyelashes, and delayed tooth eruption. The mother reported that the child does not sweat and has had recurrent fevers since the neonatal period. Psychomotor development was normal. There was no family history of similar symptoms, except for a previous female sibling with similar complaints and a distinctive appearance, who experienced recurrent fever and chest infections during the neonatal period and died at 6 months of age. The parents' first pregnancy ended in a miscarriage at 2 months for unknown reasons. Skin examination showed smooth, normal-looking skin with normal palmoplantar skin and dermatoglyphics. The child had an aged appearance with finely wrinkled skin around the eyes, an everted lower lip, and low-set ears. Scalp hair was sparse, light-colored, and thin, with complete absence of eyelashes, eyebrows, and body hair. Oral examination revealed only two conical, widely spaced maxillary teeth and a low-arched, flat palate. Nails were normal. Systemic examination showed no abnormalities, and there was no evidence of mental retardation. Imaging of the jaw showed a lack of teeth with only two maxillary teeth and a left mandibular tooth bud. Biochemical tests were normal.",
+    "target": "GAPO syndrome",
+    "phenotypicFeatures": [
+      {
+        "type": {
+          "id": "HP:0002209",
+          "label": "Sparse scalp hair",
+          "umls_cui": "C1857042"
+        },
+        "excluded": true,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_005",
+              "description": "NER: sparse scalp hair, absent body hair, eyebrows (0.985) | Match: sapbert_similarity (0.758) | Negated by: \"without\""
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0001128",
+          "label": "Trichiasis",
+          "umls_cui": "C0221259"
+        },
+        "excluded": true,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_005",
+              "description": "NER: eyelashes (0.728) | Match: sapbert_similarity (0.843) | Negated by: \"absent\""
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0000684",
+          "label": "Delayed eruption of teeth",
+          "umls_cui": "C0239174"
+        },
+        "excluded": true,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_005",
+              "description": "NER: delayed tooth eruption (0.998) | Match: exact_synonym (1.000) | Negated by: \"absent\""
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0006288",
+          "label": "Advanced eruption of teeth",
+          "umls_cui": "C0266054"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_005",
+              "description": "NER: tooth eruption (0.670) | Match: sapbert_similarity (0.728)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0001954",
+          "label": "Recurrent fever",
+          "umls_cui": "C0277799"
+        },
+        "excluded": true,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_005",
+              "description": "NER: recurrent fevers (0.990) | Match: sapbert_similarity (0.928) | Negated by: \"does not\""
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0001945",
+          "label": "Fever",
+          "umls_cui": "C0015967"
+        },
+        "excluded": true,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_005",
+              "description": "NER: fevers (0.793) | Match: sapbert_similarity (0.965) | Negated by: \"does not\""
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0002783",
+          "label": "Recurrent lower respiratory tract infections",
+          "umls_cui": "C0149725"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_005",
+              "description": "NER: chest infections (0.998) | Match: sapbert_similarity (0.797)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0005268",
+          "label": "Miscarriage",
+          "umls_cui": "C0000786"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_005",
+              "description": "NER: a miscarriage (0.990) | Match: sapbert_similarity (0.853)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0100678",
+          "label": "Premature skin wrinkling",
+          "umls_cui": "C0037301"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_005",
+              "description": "NER: finely wrinkled skin around the eyes (0.951) | Match: substring_match (0.950)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0001249",
+          "label": "Intellectual disability",
+          "umls_cui": "C0025362"
+        },
+        "excluded": true,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_005",
+              "description": "NER: mental retardation (0.998) | Match: clinical_synonym (1.000) | Negated by: \"no evidence of\""
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0009804",
+          "label": "Tooth agenesis",
+          "umls_cui": "C4024202"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_005",
+              "description": "NER: a lack of teeth (0.991) | Match: sapbert_similarity (0.925)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0000232",
+          "label": "Everted lower lip vermilion",
+          "umls_cui": "C1853246"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_005",
+              "description": "NER: everted lower lip (0.900) | Match: text_scan_exact_synonym (0.950)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0000369",
+          "label": "Low-set ears",
+          "umls_cui": "C0239234"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_005",
+              "description": "NER: low-set ears (0.900) | Match: text_scan_exact_label (0.950)"
+            }
+          }
+        ]
+      }
+    ],
+    "metaData": {
+      "created": "2026-06-19T15:08:47Z",
+      "createdBy": "clinical-preanalysis-pipeline-v2",
+      "phenopacketSchemaVersion": "2.0",
+      "resources": [
+        {
+          "id": "hp",
+          "name": "Human Phenotype Ontology",
+          "url": "https://hpo.jax.org",
+          "version": "2024-04-26",
+          "namespacePrefix": "HP",
+          "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        }
+      ]
+    },
+    "interpretations": [
+      {
+        "id": "interpretation-RA_EN_005",
+        "progressStatus": "IN_PROGRESS",
+        "diagnosis": {
+          "disease": {
+            "id": "ORPHA:2067",
+            "label": "GAPO syndrome"
+          },
+          "score": 0.3752,
+          "allCandidates": [
+            {
+              "id": "ORPHA:2067",
+              "label": "GAPO syndrome",
+              "score": 0.3752
+            },
+            {
+              "id": "ORPHA:2136",
+              "label": "Hennekam syndrome",
+              "score": 0.3332
+            },
+            {
+              "id": "ORPHA:404448",
+              "label": "Helsmoortel-Van der Aa syndrome",
+              "score": 0.3201
+            },
+            {
+              "id": "ORPHA:915",
+              "label": "Aarskog-Scott syndrome",
+              "score": 0.3147
+            },
+            {
+              "id": "ORPHA:192",
+              "label": "Coffin-Lowry syndrome",
+              "score": 0.3138
+            },
+            {
+              "id": "ORPHA:2834",
+              "label": "Wrinkly skin syndrome",
+              "score": 0.3106
+            },
+            {
+              "id": "ORPHA:221016",
+              "label": "Rothmund-Thomson syndrome type 2",
+              "score": 0.3094
+            },
+            {
+              "id": "ORPHA:99843",
+              "label": "Leukocyte adhesion deficiency type II",
+              "score": 0.2967
+            },
+            {
+              "id": "ORPHA:221008",
+              "label": "Rothmund-Thomson syndrome type 1",
+              "score": 0.296
+            },
+            {
+              "id": "ORPHA:769",
+              "label": "Rabson-Mendenhall syndrome",
+              "score": 0.2953
+            }
+          ]
+        }
+      }
+    ],
+    "_pipelineStats": {
+      "totalEntities": 48,
+      "matchedHPO": 13,
+      "unmatchedEntities": 35,
+      "phenopacketFeatures": 13,
+      "negatedFeatures": 6,
+      "numericPhenotypes": 0,
+      "ordoCandidates": 10
+    }
+  }
+}

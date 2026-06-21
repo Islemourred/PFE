@@ -1,0 +1,460 @@
+{
+  "id": "phenopacket-RA_EN_028",
+  "subject": {
+    "id": "RA_EN_028",
+    "sex": "FEMALE"
+  },
+  "input": "A 44-year-old African female with no past medical history presented with Raynaud’s phenomenon, fingertip pain and ulcerations, nail fold capillary changes, facial and back rash, skin tightness and depigmentation, joint pain, morning stiffness, and fatigue. Physical examination showed hypopigmented scarring skin lesions on the face and neck and tenderness and swelling of small joints in the hands and wrists. The laboratory results were as follows: antinuclear antibody (ANA) + (1:80, speckled), anti-topoisomerase I (anti-Scl-70) antibody + (4.8 U/mL), cardiolipin IgM + (16 MPL U/mL), and smooth muscle antibody (SMA) + (1:20), and anti-Sjögren’s syndrome-related antigen A (anti-Ro/SSA) antibody −, anti-Sjögren’s syndrome type B (anti-La/SSB) antibody −, antinuclear ribonucleoprotein (anti-RNP) antibody −, anti-double-stranded DNA (anti-ds DNA) antibody −, and anti-Smith antibody −. Flow cytometry and bone marrow biopsy were negative. Steroids, mycophenolate mofetil, and hydroxychloroquine were started. After four days of steroids and immunosuppressants, the patient’s fatigue, joint pain, and fingertip pain improved during the treatment, but she developed a severe thunderclap headache with left lower extremity weakness.",
+  "target": "Classical Ehlers-Danlos syndrome",
+  "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0000872",
+        "label": "Hashimoto thyroiditis",
+        "umls_cui": "C0677607"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_028",
+            "description": "NER: sjogren ’ s syndrome (0.931) | Match: sapbert_similarity (0.711)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0012276",
+        "label": "Digital flexor tenosynovitis",
+        "umls_cui": "C4022974"
+      },
+      "excluded": true,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_028",
+            "description": "NER: Raynaud’s phenomenon, fingertip pain and ulcera (0.998) | Match: sapbert_similarity (0.722) | Negated by: \"no\""
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0001232",
+        "label": "Nail bed telangiectasia",
+        "umls_cui": "C1838167"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_028",
+            "description": "NER: tions, nail fold capillary changes (0.996) | Match: sapbert_similarity (0.766)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0000988",
+        "label": "Skin rash",
+        "umls_cui": "C0015230"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_028",
+            "description": "NER: rash (0.969) | Match: clinical_synonym (1.000)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0000974",
+        "label": "Hyperextensible skin",
+        "umls_cui": "C0241074"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_028",
+            "description": "NER: skin tightness (0.998) | Match: sapbert_similarity (0.810)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0001010",
+        "label": "Hypopigmentation of the skin",
+        "umls_cui": "C0162835"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_028",
+            "description": "NER: depigmentation (0.967) | Match: sapbert_similarity (0.888)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0002829",
+        "label": "Arthralgia",
+        "umls_cui": "C0003862"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_028",
+            "description": "NER: joint pain (0.998) | Match: exact_synonym (1.000)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0005197",
+        "label": "Generalized morning stiffness",
+        "umls_cui": "C4025238"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_028",
+            "description": "NER: morning stiffness (0.997) | Match: sapbert_similarity (0.917)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0003552",
+        "label": "Muscle stiffness",
+        "umls_cui": "C0221170"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_028",
+            "description": "NER: stiffness (0.751) | Match: sapbert_similarity (0.867)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0012378",
+        "label": "Fatigue",
+        "umls_cui": "C0015672"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_028",
+            "description": "NER: fatigue (0.977) | Match: exact_label (1.000)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0000969",
+        "label": "Edema",
+        "umls_cui": "C0013604"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_028",
+            "description": "NER: swelling (0.969) | Match: clinical_synonym (1.000)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0006162",
+        "label": "Soft tissue swelling of interphalangeal joints",
+        "umls_cui": "C1854913"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_028",
+            "description": "NER: swelling of small joints in the hands and wrists (0.998) | Match: sapbert_similarity (0.709)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0012432",
+        "label": "Chronic fatigue",
+        "umls_cui": "C0518656"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_028",
+            "description": "NER: s fatigue (0.939) | Match: sapbert_similarity (0.836)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0012459",
+        "label": "Hypnic headache",
+        "umls_cui": "C0752150"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_028",
+            "description": "NER: a severe thunderclap headache (0.998) | Match: sapbert_similarity (0.710)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0002315",
+        "label": "Headache",
+        "umls_cui": "C0018681"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_028",
+            "description": "NER: headache (0.966) | Match: exact_label (1.000)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0007340",
+        "label": "Lower limb muscle weakness",
+        "umls_cui": "C0427068"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_028",
+            "description": "NER: left lower extremity weakness (0.999) | Match: substring_match (0.950)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0001324",
+        "label": "Muscle weakness",
+        "umls_cui": "C0151786"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_028",
+            "description": "NER: weakness (0.972) | Match: sapbert_similarity (0.891)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0001075",
+        "label": "Atrophic scars",
+        "umls_cui": "C0162154"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_028",
+            "description": "NER: scarring (0.900) | Match: text_scan_clinical_synonym (0.950)"
+          }
+        }
+      ]
+    }
+  ],
+  "metaData": {
+    "created": "2026-06-19T15:13:06Z",
+    "createdBy": "clinical-preanalysis-pipeline-v2",
+    "phenopacketSchemaVersion": "2.0",
+    "resources": [
+      {
+        "id": "hp",
+        "name": "Human Phenotype Ontology",
+        "url": "https://hpo.jax.org",
+        "version": "2024-04-26",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      }
+    ]
+  },
+  "interpretations": [
+    {
+      "id": "interpretation-RA_EN_028",
+      "progressStatus": "IN_PROGRESS",
+      "diagnosis": {
+        "disease": {
+          "id": "ORPHA:287",
+          "label": "Classical Ehlers-Danlos syndrome"
+        },
+        "score": 0.397,
+        "allCandidates": [
+          {
+            "id": "ORPHA:287",
+            "label": "Classical Ehlers-Danlos syndrome",
+            "score": 0.397
+          },
+          {
+            "id": "ORPHA:90291",
+            "label": "Systemic sclerosis",
+            "score": 0.3681
+          },
+          {
+            "id": "ORPHA:536",
+            "label": "Systemic lupus erythematosus",
+            "score": 0.3523
+          },
+          {
+            "id": "ORPHA:809",
+            "label": "Mixed connective tissue disease",
+            "score": 0.3494
+          },
+          {
+            "id": "ORPHA:781",
+            "label": "Q fever",
+            "score": 0.3461
+          },
+          {
+            "id": "ORPHA:221",
+            "label": "Dermatomyositis",
+            "score": 0.3451
+          },
+          {
+            "id": "ORPHA:707",
+            "label": "Plague",
+            "score": 0.3423
+          },
+          {
+            "id": "ORPHA:91355",
+            "label": "Sheehan syndrome",
+            "score": 0.3403
+          },
+          {
+            "id": "ORPHA:81",
+            "label": "Antisynthetase syndrome",
+            "score": 0.3291
+          },
+          {
+            "id": "ORPHA:324625",
+            "label": "Chikungunya",
+            "score": 0.3286
+          }
+        ]
+      }
+    }
+  ],
+  "_pipelineStats": {
+    "totalEntities": 71,
+    "matchedHPO": 18,
+    "unmatchedEntities": 53,
+    "phenopacketFeatures": 18,
+    "negatedFeatures": 1,
+    "numericPhenotypes": 0,
+    "ordoCandidates": 10
+  }
+}

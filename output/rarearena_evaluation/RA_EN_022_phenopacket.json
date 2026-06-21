@@ -1,0 +1,199 @@
+{
+  "id": "phenopacket-RA_EN_022",
+  "subject": {
+    "id": "RA_EN_022"
+  },
+  "input": "A 23-month-old boy was admitted to the hospital following a 5-day period of stridor, cough, and hoarseness. Upon admission, he was alert and in good spirits, with an oxygen saturation of 96% on room air, a body temperature of 36.8°C, a respiratory rate of 34 breaths per minute, and a heart rate of 116 beats per minute. Physical examination revealed retractions in the suprasternal fossa, supraclavicular fossa, and intercostal spaces during inhalation. Inspiratory stridor and moist rales were audible in the lungs, while the cardiac examination was normal. The boy was born full-term via vaginal delivery with no complications during birth, no adverse events, and no history of tracheal intubation or ventilator use. His mother had a normal pregnancy, and his growth and development were typical. However, he exhibited stridor, weak crying, and hoarseness from birth. The family doctor initially recommended vitamin D and calcium supplements, which led to some improvement in symptoms, though they never fully resolved. A chest X-ray taken after admission showed bronchopneumonia. Following treatment with glucocorticoids and antibiotics, the boy's breathing improved, his cough subsided, hoarseness decreased, and the moist rales gradually disappeared. However, inspiratory stridor persisted, particularly after physical activity or crying.",
+  "target": "Congenital tracheomalacia",
+  "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0010307",
+        "label": "Stridor",
+        "umls_cui": "C0038450"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_022",
+            "description": "NER: stridor (0.973) | Match: exact_label (1.000)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0012735",
+        "label": "Cough",
+        "umls_cui": "C0010200"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_022",
+            "description": "NER: cough (0.970) | Match: exact_label (1.000)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0001609",
+        "label": "Hoarse voice",
+        "umls_cui": "C0019825"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_022",
+            "description": "NER: hoarseness (0.968) | Match: exact_synonym (1.000)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0005348",
+        "label": "Inspiratory stridor",
+        "umls_cui": "C0677600"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_022",
+            "description": "NER: Inspiratory stridor (0.955) | Match: exact_label (1.000)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0001612",
+        "label": "Weak cry",
+        "umls_cui": "C0234860"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_022",
+            "description": "NER: weak crying (0.676) | Match: sapbert_similarity (0.911)"
+          }
+        }
+      ]
+    }
+  ],
+  "metaData": {
+    "created": "2026-06-19T15:11:46Z",
+    "createdBy": "clinical-preanalysis-pipeline-v2",
+    "phenopacketSchemaVersion": "2.0",
+    "resources": [
+      {
+        "id": "hp",
+        "name": "Human Phenotype Ontology",
+        "url": "https://hpo.jax.org",
+        "version": "2024-04-26",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      }
+    ]
+  },
+  "interpretations": [
+    {
+      "id": "interpretation-RA_EN_022",
+      "progressStatus": "IN_PROGRESS",
+      "diagnosis": {
+        "disease": {
+          "id": "ORPHA:95430",
+          "label": "Congenital tracheomalacia"
+        },
+        "score": 0.5396,
+        "allCandidates": [
+          {
+            "id": "ORPHA:95430",
+            "label": "Congenital tracheomalacia",
+            "score": 0.5396
+          },
+          {
+            "id": "ORPHA:142",
+            "label": "Anaplastic thyroid carcinoma",
+            "score": 0.5252
+          },
+          {
+            "id": "ORPHA:137935",
+            "label": "Airway infantile hemangioma",
+            "score": 0.523
+          },
+          {
+            "id": "ORPHA:60032",
+            "label": "Recurrent respiratory papillomatosis",
+            "score": 0.5146
+          },
+          {
+            "id": "ORPHA:3348",
+            "label": "Tracheobronchopathia osteochondroplastica",
+            "score": 0.503
+          },
+          {
+            "id": "ORPHA:2004",
+            "label": "Laryngotracheoesophageal cleft",
+            "score": 0.4935
+          },
+          {
+            "id": "ORPHA:98914",
+            "label": "Presynaptic congenital myasthenic syndromes",
+            "score": 0.4768
+          },
+          {
+            "id": "ORPHA:590",
+            "label": "Congenital myasthenic syndrome",
+            "score": 0.4768
+          },
+          {
+            "id": "ORPHA:100050",
+            "label": "Hereditary angioedema type 1",
+            "score": 0.4642
+          },
+          {
+            "id": "ORPHA:728",
+            "label": "Relapsing polychondritis",
+            "score": 0.4614
+          }
+        ]
+      }
+    }
+  ],
+  "_pipelineStats": {
+    "totalEntities": 56,
+    "matchedHPO": 5,
+    "unmatchedEntities": 51,
+    "phenopacketFeatures": 5,
+    "negatedFeatures": 0,
+    "numericPhenotypes": 0,
+    "ordoCandidates": 10
+  }
+}

@@ -1,0 +1,319 @@
+{
+  "id": "phenopacket-RA_EN_017",
+  "subject": {
+    "id": "RA_EN_017"
+  },
+  "input": "A 21-month-old girl was admitted to the hospital due to excessive thirst and poor growth. For the past five months, she had been drinking large amounts of fluids both day and night and showed a decreased interest in eating solid foods. Attempts to limit her fluid intake resulted in her refusal to eat. Blood tests ruled out diabetes mellitus, and urine concentration tests ruled out diabetes insipidus. Her medical history included a healthy pregnancy and birth, but she experienced severe vomiting during the first seven months of life. She was breastfed with supplemental formula feedings due to persistent hunger. After starting solid foods, her hunger and vomiting decreased. There was no family history of similar issues, and her parents were of Iranian and Danish descent with no consanguinity. She was not on any medication except for the recommended 400 IU/day of vitamin D. Physical examination was normal, with no signs of syndromic features or physical disease. Her growth chart showed normal height for her age, but her weight had dropped by one standard deviation over the past three months. Blood tests upon hospitalization revealed elevated levels of total calcium (3.42 mmol/L; Ref. range 2.17-2.66 mmol/L) and free calcium (1.68 mmol/L; Ref. range 1.18-1.32 mmol/L). Parathyroid hormone (PTH) was undetectable (<4 ng/L; Ref. range 14.0-72.0 ng/L). Levels of 25 vitamin-D and 1.25 vitamin-D were in the high-to-normal range, with 25 vitamin-D at 107 nmol/L (Ref. range >50 nmol/L) and 1.25 vitamin-D at 146 pmol/L (Ref. range 51-177 pmol/L). Serum phosphate, liver, kidney, and thyroid tests were normal. Kidney ultrasound showed medullary nephrocalcinosis. Urine tests indicated hypercalciuria with a Ca/creatinine ratio of 1.9 mmol/mmol (Ref. range: <0.7 mmol/mmol). There were no indications of other diseases or malignancies. Blood calcium levels were tested in both parents, with the mother showing a calcium level of 2.53 mmol/L (Ref. range: 2.15-2.51 mmol/L), which was considered normal. No further examinations, including renal ultrasound or renal testing, were conducted.",
+  "target": "Cystinosis",
+  "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0001959",
+        "label": "Polydipsia",
+        "umls_cui": "C0085602"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_017",
+            "description": "NER: excessive thirst (0.997) | Match: sapbert_similarity (0.930)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0001508",
+        "label": "Failure to thrive",
+        "umls_cui": "C0231246"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_017",
+            "description": "NER: poor growth (0.993) | Match: clinical_synonym (1.000)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0000819",
+        "label": "Diabetes mellitus",
+        "umls_cui": "C0011849"
+      },
+      "excluded": true,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_017",
+            "description": "NER: diabetes mellitus (0.998) | Match: exact_label (1.000) | Negated by: \"ruled out\""
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0000873",
+        "label": "Diabetes insipidus",
+        "umls_cui": "C0011848"
+      },
+      "excluded": true,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_017",
+            "description": "NER: diabetes insipidus (0.998) | Match: exact_label (1.000) | Negated by: \"ruled out\""
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0002013",
+        "label": "Vomiting",
+        "umls_cui": "C0042963"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_017",
+            "description": "NER: vomiting (0.582) | Match: exact_label (1.000)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0002591",
+        "label": "Polyphagia",
+        "umls_cui": "C0020505"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_017",
+            "description": "NER: persistent hunger (0.994) | Match: sapbert_similarity (0.760)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0003072",
+        "label": "Hypercalcemia",
+        "umls_cui": "C0020437"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_017",
+            "description": "NER: elevated levels of total calcium (0.932) | Match: sapbert_similarity (0.876)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0012408",
+        "label": "Medullary nephrocalcinosis",
+        "umls_cui": "C0403477"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_017",
+            "description": "NER: medullary nephrocalcinosis (0.995) | Match: exact_label (1.000)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0002150",
+        "label": "Hypercalciuria",
+        "umls_cui": "C0020438"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_017",
+            "description": "NER: hypercalciuria (0.922) | Match: exact_label (1.000)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0002664",
+        "label": "Neoplasm",
+        "umls_cui": "C0006826"
+      },
+      "excluded": true,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_017",
+            "description": "NER: diseases or malignancies (0.980) | Match: sapbert_similarity (0.846) | Negated by: \"no\""
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0000121",
+        "label": "Nephrocalcinosis",
+        "umls_cui": "C0027709"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_017",
+            "description": "NER: nephrocalcinosis (0.900) | Match: text_scan_exact_label (0.950)"
+          }
+        }
+      ]
+    }
+  ],
+  "metaData": {
+    "created": "2026-06-19T15:11:06Z",
+    "createdBy": "clinical-preanalysis-pipeline-v2",
+    "phenopacketSchemaVersion": "2.0",
+    "resources": [
+      {
+        "id": "hp",
+        "name": "Human Phenotype Ontology",
+        "url": "https://hpo.jax.org",
+        "version": "2024-04-26",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      }
+    ]
+  },
+  "interpretations": [
+    {
+      "id": "interpretation-RA_EN_017",
+      "progressStatus": "IN_PROGRESS",
+      "diagnosis": {
+        "disease": {
+          "id": "ORPHA:213",
+          "label": "Cystinosis"
+        },
+        "score": 0.4865,
+        "allCandidates": [
+          {
+            "id": "ORPHA:213",
+            "label": "Cystinosis",
+            "score": 0.4865
+          },
+          {
+            "id": "ORPHA:300547",
+            "label": "Autosomal recessive infantile hypercalcemia",
+            "score": 0.4723
+          },
+          {
+            "id": "ORPHA:18",
+            "label": "Distal renal tubular acidosis",
+            "score": 0.4601
+          },
+          {
+            "id": "ORPHA:47159",
+            "label": "Proximal renal tubular acidosis",
+            "score": 0.454
+          },
+          {
+            "id": "ORPHA:143",
+            "label": "Parathyroid carcinoma",
+            "score": 0.4514
+          },
+          {
+            "id": "ORPHA:99880",
+            "label": "Hyperparathyroidism-jaw tumor syndrome",
+            "score": 0.439
+          },
+          {
+            "id": "ORPHA:89938",
+            "label": "Bartter syndrome type 4",
+            "score": 0.4172
+          },
+          {
+            "id": "ORPHA:508",
+            "label": "Donohue syndrome",
+            "score": 0.4074
+          },
+          {
+            "id": "ORPHA:358",
+            "label": "Gitelman syndrome",
+            "score": 0.406
+          },
+          {
+            "id": "ORPHA:652",
+            "label": "Multiple endocrine neoplasia type 1",
+            "score": 0.4055
+          }
+        ]
+      }
+    }
+  ],
+  "_pipelineStats": {
+    "totalEntities": 84,
+    "matchedHPO": 11,
+    "unmatchedEntities": 73,
+    "phenopacketFeatures": 11,
+    "negatedFeatures": 3,
+    "numericPhenotypes": 0,
+    "ordoCandidates": 10
+  }
+}

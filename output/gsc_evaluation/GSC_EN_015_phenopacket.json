@@ -8,6 +8,66 @@
   "phenotypicFeatures": [
     {
       "type": {
+        "id": "HP:0003584",
+        "label": "Late onset",
+        "umls_cui": "C4025592"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "GSC_EN_015",
+            "description": "NER: late - onset manifestations (0.975) | Match: sapbert_similarity (0.884)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0006254",
+        "label": "Elevated circulating alpha-fetoprotein concentration",
+        "umls_cui": "C0235971"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "GSC_EN_015",
+            "description": "NER: elevated alpha - fetoprotein levels (0.996) | Match: sapbert_similarity (0.981)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0005403",
+        "label": "Decreased total T cell count",
+        "umls_cui": "C2931322"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "GSC_EN_015",
+            "description": "NER: a decrease of naive t cells and regulatory t cells (0.938) | Match: sapbert_similarity (0.724)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
         "id": "HP:0001251",
         "label": "Ataxia",
         "umls_cui": "C0007758"
@@ -21,16 +81,16 @@
           },
           "reference": {
             "id": "GSC_EN_015",
-            "description": "NER: ataxia (0.546) | Match: exact_label (1.000)"
+            "description": "NER: atypical ataxia (0.986) | Match: sapbert_similarity (0.820)"
           }
         }
       ]
     },
     {
       "type": {
-        "id": "HP:0001009",
-        "label": "Telangiectasia",
-        "umls_cui": "C0039446"
+        "id": "HP:0000007",
+        "label": "Autosomal recessive inheritance",
+        "umls_cui": "C0441748"
       },
       "excluded": false,
       "evidence": [
@@ -41,7 +101,27 @@
           },
           "reference": {
             "id": "GSC_EN_015",
-            "description": "NER: angiectasia (0.905) | Match: sapbert_similarity (0.766)"
+            "description": "NER: a rare autosomal recessive neurodegenerative multisystem disorder (0.990) | Match: substring_match (0.950)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0003677",
+        "label": "Slowly progressive",
+        "umls_cui": "C1854494"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "GSC_EN_015",
+            "description": "NER: slower neurologic progression (0.992) | Match: sapbert_similarity (0.847)"
           }
         }
       ]
@@ -68,26 +148,6 @@
     },
     {
       "type": {
-        "id": "HP:0002960",
-        "label": "Autoimmunity",
-        "umls_cui": "C0004364"
-      },
-      "excluded": false,
-      "evidence": [
-        {
-          "evidenceCode": {
-            "id": "ECO:0000033",
-            "label": "author statement supported by traceable reference"
-          },
-          "reference": {
-            "id": "GSC_EN_015",
-            "description": "NER: autoimmunity (0.463) | Match: clinical_synonym (1.000)"
-          }
-        }
-      ]
-    },
-    {
-      "type": {
         "id": "HP:0011947",
         "label": "Respiratory tract infection",
         "umls_cui": "C0035243"
@@ -101,16 +161,16 @@
           },
           "reference": {
             "id": "GSC_EN_015",
-            "description": "NER: respiratory infections (0.900) | Match: text_scan_related_synonym (0.950)"
+            "description": "NER: respiratory infections (0.998) | Match: related_synonym (1.000)"
           }
         }
       ]
     },
     {
       "type": {
-        "id": "HP:0000007",
-        "label": "Autosomal recessive inheritance",
-        "umls_cui": "C0441748"
+        "id": "HP:0003812",
+        "label": "Phenotypic variability",
+        "umls_cui": "C1837514"
       },
       "excluded": false,
       "evidence": [
@@ -121,7 +181,7 @@
           },
           "reference": {
             "id": "GSC_EN_015",
-            "description": "NER: autosomal recessive (0.900) | Match: text_scan_exact_synonym (0.950)"
+            "description": "NER: an atypical phenotype (0.998) | Match: sapbert_similarity (0.714)"
           }
         }
       ]
@@ -141,16 +201,16 @@
           },
           "reference": {
             "id": "GSC_EN_015",
-            "description": "NER: cancer (0.900) | Match: text_scan_related_synonym (0.950)"
+            "description": "NER: cancer (0.985) | Match: related_synonym (1.000)"
           }
         }
       ]
     },
     {
       "type": {
-        "id": "HP:0003674",
-        "label": "Onset",
-        "umls_cui": "C0206132"
+        "id": "HP:0001009",
+        "label": "Telangiectasia",
+        "umls_cui": "C0039446"
       },
       "excluded": false,
       "evidence": [
@@ -161,16 +221,16 @@
           },
           "reference": {
             "id": "GSC_EN_015",
-            "description": "NER: onset (0.900) | Match: text_scan_exact_label (0.950)"
+            "description": "NER: Telangiectasia (0.900) | Match: text_scan_clinical_synonym (0.950)"
           }
         }
       ]
     },
     {
       "type": {
-        "id": "HP:0002067",
-        "label": "Bradykinesia",
-        "umls_cui": "C0233565"
+        "id": "HP:0002960",
+        "label": "Autoimmunity",
+        "umls_cui": "C0004364"
       },
       "excluded": false,
       "evidence": [
@@ -181,14 +241,14 @@
           },
           "reference": {
             "id": "GSC_EN_015",
-            "description": "NER: slower (0.519) | Match: sapbert_similarity (0.759)"
+            "description": "NER: autoimmunity (0.900) | Match: text_scan_clinical_synonym (0.950)"
           }
         }
       ]
     }
   ],
   "metaData": {
-    "created": "2026-06-11T03:08:40Z",
+    "created": "2026-06-19T15:06:31Z",
     "createdBy": "clinical-preanalysis-pipeline-v2",
     "phenopacketSchemaVersion": "2.0",
     "resources": [
@@ -211,44 +271,69 @@
           "id": "ORPHA:100",
           "label": "Ataxia-telangiectasia"
         },
-        "score": 0.85,
+        "score": 0.3666,
         "allCandidates": [
           {
             "id": "ORPHA:100",
             "label": "Ataxia-telangiectasia",
-            "score": 0.85
+            "score": 0.3666
           },
           {
-            "id": "ORPHA:1180",
-            "label": "Ataxia-hypogonadism-choroidal dystrophy syndrome",
-            "score": 0.2364
+            "id": "ORPHA:443811",
+            "label": "PGM3-CDG",
+            "score": 0.3167
           },
           {
-            "id": "ORPHA:3350",
-            "label": "Tremor-nystagmus-duodenal ulcer syndrome",
-            "score": 0.1833
+            "id": "ORPHA:760",
+            "label": "Purine nucleoside phosphorylase deficiency",
+            "score": 0.306
           },
           {
-            "id": "ORPHA:2579",
-            "label": "Muscular atrophy-ataxia-retinitis pigmentosa-diabetes mellitus syndrome",
-            "score": 0.1833
+            "id": "ORPHA:355",
+            "label": "Gaucher disease",
+            "score": 0.2951
           },
           {
-            "id": "ORPHA:88637",
-            "label": "Hypomyelination-hypogonadotropic hypogonadism-hypodontia syndrome",
-            "score": 0.1833
+            "id": "ORPHA:39041",
+            "label": "Omenn syndrome",
+            "score": 0.2892
+          },
+          {
+            "id": "ORPHA:420741",
+            "label": "RIDDLE syndrome",
+            "score": 0.278
+          },
+          {
+            "id": "ORPHA:906",
+            "label": "Wiskott-Aldrich syndrome",
+            "score": 0.277
+          },
+          {
+            "id": "ORPHA:275",
+            "label": "Severe combined immunodeficiency due to DCLRE1C deficiency",
+            "score": 0.2746
+          },
+          {
+            "id": "ORPHA:1304",
+            "label": "Brucellosis",
+            "score": 0.2737
+          },
+          {
+            "id": "ORPHA:464343",
+            "label": "Catastrophic antiphospholipid syndrome",
+            "score": 0.2733
           }
         ]
       }
     }
   ],
   "_pipelineStats": {
-    "totalEntities": 18,
-    "matchedHPO": 9,
-    "unmatchedEntities": 9,
-    "phenopacketFeatures": 9,
+    "totalEntities": 44,
+    "matchedHPO": 12,
+    "unmatchedEntities": 32,
+    "phenopacketFeatures": 12,
     "negatedFeatures": 0,
     "numericPhenotypes": 0,
-    "ordoCandidates": 5
+    "ordoCandidates": 10
   }
 }

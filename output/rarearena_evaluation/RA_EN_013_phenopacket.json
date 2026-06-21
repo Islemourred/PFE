@@ -1,0 +1,653 @@
+{
+  "id": "phenopacket-RA_EN_013",
+  "subject": {
+    "id": "RA_EN_013",
+    "sex": "MALE",
+    "timeAtLastEncounter": {
+      "age": {
+        "iso8601duration": "P2Y"
+      }
+    }
+  },
+  "input": "A 7-month-old male infant from Agra, Uttar Pradesh, presented with delayed developmental milestones since birth and an increase in head size over the past 2 months following a febrile illness. The child was born vaginally at term with a birth weight of 1.25 kg, and the birth and perinatal period were uneventful. He had not achieved neck holding, social smile, or cooing. At 2 months old, he experienced a febrile illness requiring a 25-day hospital stay, during which he had multiple seizures characterized by whole-body tightening and a vacant stare. He was treated with multiple antibiotics and antiepileptic drugs and was discharged on antiepileptic medications, with no further seizures reported since discharge. Persistent flaky scalp lesions were noted despite treatment. The mother observed a gradual increase in the child's head size since the febrile episode, along with excessive irritability. There were apparent visual and auditory impairments. The child was the fourth in birth order from a non-consanguineous marriage. The first child had died at 1.5 years of age from a similar illness, the second child is a healthy 5-year-old, and the third pregnancy ended in a spontaneous abortion at 3 months of amenorrhea. On examination, the child appeared small for age with a large head, weighing 4.6 kg and measuring 62 cm in length, with a weight-for-length less than –3 standard deviation (SD). Head circumference was 48 cm, greater than +3 SD. He had short, sparse, coarse, lightly pigmented hair with seborrheic dermatitis on the scalp and a depressed nasal bridge. Neurological examination revealed irritability, lack of interaction with surroundings or parents, absence of visual fixation, and no response to auditory stimuli. Muscle tone was low in all four limbs, with symmetrical movement. Deep tendon reflexes were brisk, and plantar reflexes were upgoing. Fundus examination was normal, with no nystagmus. There was no hepatosplenomegaly, and the rest of the systemic examination was unremarkable. Hematological parameters were normal except for mild anemia with a hemoglobin level of 10.5 g/dL. Serum lactate levels were elevated. MRI of the brain performed during the febrile illness showed hyperintense signals in the subcortical and deep white matter of the bilateral temporal regions, with changes suggestive of megalencephalic leukodystrophy. Reexamination of the MRI films revealed tortuous blood vessels.",
+  "target": "Niemann-Pick disease type C",
+  "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0004481",
+        "label": "Progressive macrocephaly",
+        "umls_cui": "C1859896"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_013",
+            "description": "NER: a gradual increase in the child ' s head size (0.864) | Match: sapbert_similarity (0.834)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0001263",
+        "label": "Global developmental delay",
+        "umls_cui": "C0557874"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_013",
+            "description": "NER: delayed developmental milestones (0.996) | Match: exact_synonym (1.000)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0000256",
+        "label": "Macrocephaly",
+        "umls_cui": "C4083076"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_013",
+            "description": "NER: an increase in head size (0.841) | Match: sapbert_similarity (0.890)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0001945",
+        "label": "Fever",
+        "umls_cui": "C0015967"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_013",
+            "description": "NER: a febrile illness (0.996) | Match: sapbert_similarity (0.829)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0000467",
+        "label": "Neck muscle weakness",
+        "umls_cui": "C0240479"
+      },
+      "excluded": true,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_013",
+            "description": "NER: neck holding (0.677) | Match: sapbert_similarity (0.731) | Negated by: \"had not\""
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0001250",
+        "label": "Seizure",
+        "umls_cui": "C0014544"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_013",
+            "description": "NER: seizures (0.941) | Match: clinical_synonym (1.000)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0002133",
+        "label": "Status epilepticus",
+        "umls_cui": "C0038220"
+      },
+      "excluded": true,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_013",
+            "description": "NER: further seizures (0.997) | Match: sapbert_similarity (0.854) | Negated by: \"no\""
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0002373",
+        "label": "Febrile seizure (within the age range of 3 months to 6 years)",
+        "umls_cui": "C0009952"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_013",
+            "description": "NER: the febrile episode (0.992) | Match: sapbert_similarity (0.802)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0000737",
+        "label": "Irritability",
+        "umls_cui": "C2700617"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_013",
+            "description": "NER: irritability (0.961) | Match: exact_label (1.000)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0100704",
+        "label": "Cerebral visual impairment",
+        "umls_cui": "C0155320"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_013",
+            "description": "NER: apparent visual and auditory impairments (0.979) | Match: sapbert_similarity (0.718)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0000365",
+        "label": "Hearing impairment",
+        "umls_cui": "C0011053"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_013",
+            "description": "NER: auditory impairments (0.713) | Match: sapbert_similarity (0.842)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0005268",
+        "label": "Miscarriage",
+        "umls_cui": "C0000786"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_013",
+            "description": "NER: a spontaneous abortion (0.802) | Match: substring_match (0.950)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0000141",
+        "label": "Amenorrhea",
+        "umls_cui": "C2219717"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_013",
+            "description": "NER: amenorrhea (0.964) | Match: exact_label (1.000)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0002286",
+        "label": "Fair hair",
+        "umls_cui": "C0239801"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_013",
+            "description": "NER: short, sparse, coarse, lightly pigmented hair (0.958) | Match: sapbert_similarity (0.819)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0001051",
+        "label": "Seborrheic dermatitis",
+        "umls_cui": "C0036508"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_013",
+            "description": "NER: seborrheic dermatitis on the scalp (0.995) | Match: substring_match (0.950)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0000964",
+        "label": "Eczema",
+        "umls_cui": "C0013595"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_013",
+            "description": "NER: dermatitis (0.870) | Match: clinical_synonym (1.000)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0005280",
+        "label": "Depressed nasal bridge",
+        "umls_cui": "C1836542"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_013",
+            "description": "NER: a depressed nasal bridge (0.997) | Match: substring_match (0.950)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0008763",
+        "label": "No social interaction",
+        "umls_cui": "C1849683"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_013",
+            "description": "NER: lack of interaction with (0.881) | Match: sapbert_similarity (0.809)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0001483",
+        "label": "Eye poking",
+        "umls_cui": "C0233593"
+      },
+      "excluded": true,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_013",
+            "description": "NER: visual fixation (0.825) | Match: sapbert_similarity (0.711) | Negated by: \"absence of\""
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0000639",
+        "label": "Nystagmus",
+        "umls_cui": "C0028738"
+      },
+      "excluded": true,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_013",
+            "description": "NER: nystagmus (0.973) | Match: clinical_synonym (1.000) | Negated by: \"no\""
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0001433",
+        "label": "Hepatosplenomegaly",
+        "umls_cui": "C0019214"
+      },
+      "excluded": true,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_013",
+            "description": "NER: hepatosplenomegaly (0.967) | Match: clinical_synonym (1.000) | Negated by: \"no\""
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0001897",
+        "label": "Normocytic anemia",
+        "umls_cui": "C0085577"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_013",
+            "description": "NER: mild anemia (0.999) | Match: sapbert_similarity (0.775)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0001903",
+        "label": "Anemia",
+        "umls_cui": "C0002871"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_013",
+            "description": "NER: anemia (0.951) | Match: exact_label (1.000)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0007321",
+        "label": "Deep white matter hypodensities",
+        "umls_cui": "C1856979"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_013",
+            "description": "NER: hyperintense signals in the subcortical and deep white matter of the (0.970) | Match: sapbert_similarity (0.720)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0006978",
+        "label": "Dysmyelinating leukodystrophy",
+        "umls_cui": "C3278204"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_013",
+            "description": "NER: megalencephalic leukodystrophy (0.998) | Match: sapbert_similarity (0.786)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0004948",
+        "label": "Vascular tortuosity",
+        "umls_cui": "C2673776"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_013",
+            "description": "NER: ous blood vessels (0.837) | Match: sapbert_similarity (0.731)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0002415",
+        "label": "Leukodystrophy",
+        "umls_cui": "C0023520"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_013",
+            "description": "NER: leukodystrophy (0.900) | Match: text_scan_exact_label (0.950)"
+          }
+        }
+      ]
+    }
+  ],
+  "metaData": {
+    "created": "2026-06-19T15:10:03Z",
+    "createdBy": "clinical-preanalysis-pipeline-v2",
+    "phenopacketSchemaVersion": "2.0",
+    "resources": [
+      {
+        "id": "hp",
+        "name": "Human Phenotype Ontology",
+        "url": "https://hpo.jax.org",
+        "version": "2024-04-26",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      }
+    ]
+  },
+  "interpretations": [
+    {
+      "id": "interpretation-RA_EN_013",
+      "progressStatus": "IN_PROGRESS",
+      "diagnosis": {
+        "disease": {
+          "id": "ORPHA:646",
+          "label": "Niemann-Pick disease type C"
+        },
+        "score": 0.3745,
+        "allCandidates": [
+          {
+            "id": "ORPHA:646",
+            "label": "Niemann-Pick disease type C",
+            "score": 0.3745
+          },
+          {
+            "id": "ORPHA:506",
+            "label": "Leigh syndrome",
+            "score": 0.3612
+          },
+          {
+            "id": "ORPHA:51",
+            "label": "Aicardi-Goutières syndrome",
+            "score": 0.3483
+          },
+          {
+            "id": "ORPHA:135",
+            "label": "CACH syndrome",
+            "score": 0.3412
+          },
+          {
+            "id": "ORPHA:167",
+            "label": "Chédiak-Higashi syndrome",
+            "score": 0.3298
+          },
+          {
+            "id": "ORPHA:369950",
+            "label": "Intellectual disability-seizures-macrocephaly-obesity syndrome",
+            "score": 0.3291
+          },
+          {
+            "id": "ORPHA:1675",
+            "label": "Dihydropyrimidine dehydrogenase deficiency",
+            "score": 0.3173
+          },
+          {
+            "id": "ORPHA:206436",
+            "label": "Infantile Krabbe disease",
+            "score": 0.3134
+          },
+          {
+            "id": "ORPHA:72",
+            "label": "Angelman syndrome",
+            "score": 0.3092
+          },
+          {
+            "id": "ORPHA:565624",
+            "label": "Combined oxidative phosphorylation defect type 39",
+            "score": 0.3021
+          }
+        ]
+      }
+    }
+  ],
+  "_validationWarnings": [
+    {
+      "type": "sex_anatomy_conflict",
+      "severity": "critical",
+      "message": "Female-specific term 'pregnancy' found in male patient record",
+      "term": "pregnancy"
+    }
+  ],
+  "_pipelineStats": {
+    "totalEntities": 103,
+    "matchedHPO": 27,
+    "unmatchedEntities": 76,
+    "phenopacketFeatures": 27,
+    "negatedFeatures": 5,
+    "numericPhenotypes": 0,
+    "ordoCandidates": 10
+  }
+}

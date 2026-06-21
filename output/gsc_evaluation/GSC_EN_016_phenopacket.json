@@ -4,13 +4,13 @@
     "id": "GSC_EN_016"
   },
   "input": "Case Report: Novel Presentation of Major Histocompatibility Complex Class II Deficiency with Hemophagocytic Lymphohistiocytosis.\n\nPURPOSE: Major histocompatibility complex (MHC) class II deficiency is one of the combined immune deficiency disorders caused by defects in the MHC class II regulatory genes leading to abnormal T cells development and function. Therefore, patients mainly present with increased susceptibility to infections, diarrhea, and failure to thrive. In this report, we present one MHC class II deficient patient with a novel presentation with Hemophagocytic Lymphohistiocytosis (HLH).\nMETHODS: Immunophenotyping of lymphocyte subpopulations and HLA-DR expression was assess by flow cytometry. Gene mutational analysis was performed by whole exome and Sanger sequencing.\nRESULTS: We reported a 7-year-old girl, who was diagnosed at age of 2 years with MHC class II deficiency by genetic testing and flow cytometry. Two years later, she developed disseminated BCGitis which was treated with proper antimicrobial agents. At the age of 7 years, she presented with clinical features fulfilling 6 diagnostic criteria of HLH including evidence of hemophagocytic activity in bone marrow aspiration. Accordingly, the diagnosis of HLH was established and the patient was started on IV Dexamethasone, Anakinra and IVIG. Eventually, patient started to improve and was discharged in good condition. Few months later, the patient was readmitted with severe pneumonia and sepsis leading to death.\nCONCLUSION: Patients with MHC class II deficiency might present with disseminated BCGitis especially if the patient has severe T cell lymphopenia. Additionally, this immune defect might be added to the list of inborn errors of immunity that can be complicated with HLH.",
-  "target": "MHC class II deficiency",
+  "target": "Wiskott-Aldrich syndrome",
   "phenotypicFeatures": [
     {
       "type": {
-        "id": "HP:0001981",
-        "label": "Schistocytosis",
-        "umls_cui": "C0344386"
+        "id": "HP:0002721",
+        "label": "Immunodeficiency",
+        "umls_cui": "C0021051"
       },
       "excluded": false,
       "evidence": [
@@ -21,16 +21,16 @@
           },
           "reference": {
             "id": "GSC_EN_016",
-            "description": "NER: istiocytosis (0.947) | Match: sapbert_similarity (0.720)"
+            "description": "NER: combined immune deficiency disorders (0.947) | Match: substring_match (0.950)"
           }
         }
       ]
     },
     {
       "type": {
-        "id": "HP:0002719",
-        "label": "Recurrent infections",
-        "umls_cui": "C0239998"
+        "id": "HP:0002843",
+        "label": "Abnormal T cell morphology",
+        "umls_cui": "C1855752"
       },
       "excluded": false,
       "evidence": [
@@ -41,7 +41,7 @@
           },
           "reference": {
             "id": "GSC_EN_016",
-            "description": "NER: infections (0.414) | Match: sapbert_similarity (0.777)"
+            "description": "NER: abnormal t cells development and function (0.997) | Match: substring_match (0.950)"
           }
         }
       ]
@@ -168,26 +168,6 @@
     },
     {
       "type": {
-        "id": "HP:0001699",
-        "label": "Sudden death",
-        "umls_cui": "C0011071"
-      },
-      "excluded": false,
-      "evidence": [
-        {
-          "evidenceCode": {
-            "id": "ECO:0000033",
-            "label": "author statement supported by traceable reference"
-          },
-          "reference": {
-            "id": "GSC_EN_016",
-            "description": "NER: death (0.235) | Match: sapbert_similarity (0.746)"
-          }
-        }
-      ]
-    },
-    {
-      "type": {
         "id": "HP:0005403",
         "label": "Decreased total T cell count",
         "umls_cui": "C2931322"
@@ -201,16 +181,16 @@
           },
           "reference": {
             "id": "GSC_EN_016",
-            "description": "NER: T cell lymphopenia (0.900) | Match: text_scan_exact_synonym (0.950)"
+            "description": "NER: severe t cell lymphopenia (0.999) | Match: substring_match (0.950)"
           }
         }
       ]
     },
     {
       "type": {
-        "id": "HP:0002721",
-        "label": "Immunodeficiency",
-        "umls_cui": "C0021051"
+        "id": "HP:0005354",
+        "label": "Absent cellular immunity",
+        "umls_cui": "C1849426"
       },
       "excluded": false,
       "evidence": [
@@ -221,16 +201,16 @@
           },
           "reference": {
             "id": "GSC_EN_016",
-            "description": "NER: immune deficiency (0.900) | Match: text_scan_clinical_synonym (0.950)"
+            "description": "NER: this immune defect (0.997) | Match: sapbert_similarity (0.826)"
           }
         }
       ]
     },
     {
       "type": {
-        "id": "HP:0002843",
-        "label": "Abnormal T cell morphology",
-        "umls_cui": "C1855752"
+        "id": "HP:0005368",
+        "label": "Abnormality of humoral immunity",
+        "umls_cui": "C3150510"
       },
       "excluded": false,
       "evidence": [
@@ -241,14 +221,34 @@
           },
           "reference": {
             "id": "GSC_EN_016",
-            "description": "NER: abnormal T cells (0.900) | Match: text_scan_exact_synonym (0.950)"
+            "description": "NER: born errors of immunity (0.987) | Match: sapbert_similarity (0.739)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0001888",
+        "label": "Decreased total lymphocyte count",
+        "umls_cui": "C0024312"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "GSC_EN_016",
+            "description": "NER: lymphopenia (0.900) | Match: text_scan_exact_synonym (0.950)"
           }
         }
       ]
     }
   ],
   "metaData": {
-    "created": "2026-06-11T03:08:46Z",
+    "created": "2026-06-19T15:06:40Z",
     "createdBy": "clinical-preanalysis-pipeline-v2",
     "phenopacketSchemaVersion": "2.0",
     "resources": [
@@ -268,47 +268,72 @@
       "progressStatus": "IN_PROGRESS",
       "diagnosis": {
         "disease": {
-          "id": "ORPHA:572",
-          "label": "MHC class II deficiency"
+          "id": "ORPHA:906",
+          "label": "Wiskott-Aldrich syndrome"
         },
-        "score": 0.85,
+        "score": 0.5445,
         "allCandidates": [
           {
+            "id": "ORPHA:906",
+            "label": "Wiskott-Aldrich syndrome",
+            "score": 0.5445
+          },
+          {
+            "id": "ORPHA:39041",
+            "label": "Omenn syndrome",
+            "score": 0.5297
+          },
+          {
+            "id": "ORPHA:276",
+            "label": "T-B+ severe combined immunodeficiency due to gamma chain deficiency",
+            "score": 0.5131
+          },
+          {
+            "id": "ORPHA:443811",
+            "label": "PGM3-CDG",
+            "score": 0.511
+          },
+          {
+            "id": "ORPHA:83471",
+            "label": "T-cell immunodeficiency with thymic aplasia",
+            "score": 0.5085
+          },
+          {
+            "id": "ORPHA:277",
+            "label": "Severe combined immunodeficiency due to adenosine deaminase deficiency",
+            "score": 0.5064
+          },
+          {
             "id": "ORPHA:572",
-            "label": "MHC class II deficiency",
-            "score": 0.85
+            "label": "Immunodeficiency by defective expression of MHC class II",
+            "score": 0.4999
           },
           {
-            "id": "ORPHA:314",
-            "label": "Erythroderma desquamativum",
-            "score": 0.3571
+            "id": "ORPHA:35078",
+            "label": "T-B+ severe combined immunodeficiency due to JAK3 deficiency",
+            "score": 0.4643
           },
           {
-            "id": "ORPHA:169095",
-            "label": "Severe combined immunodeficiency due to FOXN1 deficiency",
-            "score": 0.2933
+            "id": "ORPHA:275",
+            "label": "Severe combined immunodeficiency due to DCLRE1C deficiency",
+            "score": 0.4561
           },
           {
-            "id": "ORPHA:183660",
-            "label": "Severe combined immunodeficiency",
-            "score": 0.2745
-          },
-          {
-            "id": "ORPHA:231154",
-            "label": "Combined immunodeficiency due to partial RAG1 deficiency",
-            "score": 0.2432
+            "id": "ORPHA:331206",
+            "label": "Severe combined immunodeficiency due to complete RAG1/2 deficiency",
+            "score": 0.4508
           }
         ]
       }
     }
   ],
   "_pipelineStats": {
-    "totalEntities": 43,
+    "totalEntities": 68,
     "matchedHPO": 12,
-    "unmatchedEntities": 31,
+    "unmatchedEntities": 56,
     "phenopacketFeatures": 12,
     "negatedFeatures": 0,
     "numericPhenotypes": 0,
-    "ordoCandidates": 5
+    "ordoCandidates": 10
   }
 }

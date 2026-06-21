@@ -11,177 +11,45 @@
     "inconsistencies": []
   },
   "module4": {
-    "test": [
-      {
-        "text": "gene",
-        "ner_score": 0.446,
-        "negated": false,
-        "negation_cue": "",
-        "hpo_id": null,
-        "hpo_name": null,
-        "expanded_text": "gene",
-        "match_type": "skipped_non_phenotype",
-        "confidence": 0.0,
-        "matched": false,
-        "umls_cui": null
-      },
-      {
-        "text": "protein",
-        "ner_score": 0.851,
-        "negated": false,
-        "negation_cue": "",
-        "hpo_id": null,
-        "hpo_name": null,
-        "expanded_text": "protein",
-        "match_type": "skipped_non_phenotype",
-        "confidence": 0.0,
-        "matched": false,
-        "umls_cui": null
-      },
-      {
-        "text": "variable",
-        "ner_score": 0.271,
-        "negated": false,
-        "negation_cue": "",
-        "hpo_id": "HP:0003828",
-        "hpo_name": "Variable expressivity",
-        "expanded_text": "variable",
-        "match_type": "sapbert_similarity",
-        "confidence": 0.8679,
-        "matched": true,
-        "umls_cui": "C1861403"
-      },
-      {
-        "text": "decreased immunoglobulin",
-        "ner_score": 0.432,
-        "negated": false,
-        "negation_cue": "",
-        "hpo_id": "HP:0004313",
-        "hpo_name": "Decreased circulating immunoglobulin concentration",
-        "expanded_text": "decreased immunoglobulin",
-        "match_type": "sapbert_similarity",
-        "confidence": 0.9628,
-        "matched": true,
-        "umls_cui": "C0086438"
-      },
-      {
-        "text": "whole",
-        "ner_score": 0.553,
-        "negated": false,
-        "negation_cue": "",
-        "hpo_id": null,
-        "hpo_name": null,
-        "expanded_text": "whole",
-        "match_type": "no_match",
-        "confidence": 0.0,
-        "matched": false,
-        "umls_cui": null
-      },
-      {
-        "text": "sequencing",
-        "ner_score": 0.913,
-        "negated": false,
-        "negation_cue": "",
-        "hpo_id": null,
-        "hpo_name": null,
-        "expanded_text": "sequencing",
-        "match_type": "no_match",
-        "confidence": 0.0,
-        "matched": false,
-        "umls_cui": null
-      },
-      {
-        "text": "Sanger",
-        "ner_score": 0.844,
-        "negated": false,
-        "negation_cue": "",
-        "hpo_id": null,
-        "hpo_name": null,
-        "expanded_text": "Sanger",
-        "match_type": "no_match",
-        "confidence": 0.0,
-        "matched": false,
-        "umls_cui": null
-      },
-      {
-        "text": "predicted",
-        "ner_score": 0.693,
-        "negated": false,
-        "negation_cue": "",
-        "hpo_id": null,
-        "hpo_name": null,
-        "expanded_text": "predicted",
-        "match_type": "no_match",
-        "confidence": 0.0,
-        "matched": false,
-        "umls_cui": null
-      },
-      {
-        "text": "structure",
-        "ner_score": 0.986,
-        "negated": false,
-        "negation_cue": "",
-        "hpo_id": null,
-        "hpo_name": null,
-        "expanded_text": "structure",
-        "match_type": "no_match",
-        "confidence": 0.0,
-        "matched": false,
-        "umls_cui": null
-      },
-      {
-        "text": "altered",
-        "ner_score": 0.474,
-        "negated": false,
-        "negation_cue": "",
-        "hpo_id": null,
-        "hpo_name": null,
-        "expanded_text": "altered",
-        "match_type": "no_match",
-        "confidence": 0.0,
-        "matched": false,
-        "umls_cui": null
-      },
-      {
-        "text": "stability",
-        "ner_score": 0.593,
-        "negated": false,
-        "negation_cue": "",
-        "hpo_id": null,
-        "hpo_name": null,
-        "expanded_text": "stability",
-        "match_type": "no_match",
-        "confidence": 0.0,
-        "matched": false,
-        "umls_cui": null
-      },
-      {
-        "text": "expression",
-        "ner_score": 0.333,
-        "negated": false,
-        "negation_cue": "",
-        "hpo_id": null,
-        "hpo_name": null,
-        "expanded_text": "expression",
-        "match_type": "no_match",
-        "confidence": 0.0,
-        "matched": false,
-        "umls_cui": null
-      }
-    ],
     "problem": [
+      {
+        "text": "severe combined immunodeficiency ( scid",
+        "ner_score": 0.93,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "severe combined immunodeficiency ( scid",
+        "match_type": "deduplicated",
+        "confidence": 0.95,
+        "matched": false,
+        "umls_cui": "C0085110"
+      },
       {
         "text": "severe",
         "ner_score": 0.588,
         "negated": false,
         "negation_cue": "",
-        "hpo_id": "HP:0012828",
-        "hpo_name": "Severe",
+        "hpo_id": null,
+        "hpo_name": null,
         "expanded_text": "severe",
+        "match_type": "skipped_en_noise",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "severe combined immunodeficiency",
+        "ner_score": 0.997,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0004430",
+        "hpo_name": "Severe combined immunodeficiency",
+        "expanded_text": "severe combined immunodeficiency",
         "match_type": "exact_label",
         "confidence": 1.0,
         "matched": true,
-        "umls_cui": "C0205082"
+        "umls_cui": "C0085110"
       },
       {
         "text": "combined immunodeficiency",
@@ -204,6 +72,32 @@
         "hpo_id": null,
         "hpo_name": null,
         "expanded_text": "-activating",
+        "match_type": "skipped_low_ner_score",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "mutations in rag1",
+        "ner_score": 0.904,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "mutations in rag1",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "of immune disorders",
+        "ner_score": 0.875,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "of immune disorders",
         "match_type": "no_match",
         "confidence": 0.0,
         "matched": false,
@@ -223,30 +117,82 @@
         "umls_cui": null
       },
       {
+        "text": "variants",
+        "ner_score": 0.67,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "variants",
+        "match_type": "sapbert_rejected_low_conf",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "persistent infections",
+        "ner_score": 0.997,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "persistent infections",
+        "match_type": "deduplicated",
+        "confidence": 0.784,
+        "matched": false,
+        "umls_cui": "C0239998"
+      },
+      {
         "text": "infections",
         "ner_score": 0.459,
         "negated": false,
         "negation_cue": "",
-        "hpo_id": "HP:0002719",
-        "hpo_name": "Recurrent infections",
+        "hpo_id": null,
+        "hpo_name": null,
         "expanded_text": "infections",
+        "match_type": "skipped_low_ner_score",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "severe lymphopenia",
+        "ner_score": 0.999,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0001888",
+        "hpo_name": "Decreased total lymphocyte count",
+        "expanded_text": "severe lymphopenia",
         "match_type": "sapbert_similarity",
-        "confidence": 0.7773,
+        "confidence": 0.8289,
         "matched": true,
-        "umls_cui": "C0239998"
+        "umls_cui": "C0024312"
       },
       {
         "text": "lymphopenia",
         "ner_score": 0.495,
         "negated": false,
         "negation_cue": "",
-        "hpo_id": "HP:0001888",
-        "hpo_name": "Decreased total lymphocyte count",
+        "hpo_id": null,
+        "hpo_name": null,
         "expanded_text": "lymphopenia",
-        "match_type": "exact_synonym",
-        "confidence": 1.0,
+        "match_type": "skipped_low_ner_score",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "decreased immunoglobulin levels",
+        "ner_score": 0.989,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0004313",
+        "hpo_name": "Decreased circulating immunoglobulin concentration",
+        "expanded_text": "decreased immunoglobulin levels",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.9706,
         "matched": true,
-        "umls_cui": "C0024312"
+        "umls_cui": "C0086438"
       },
       {
         "text": "levels",
@@ -256,10 +202,23 @@
         "hpo_id": null,
         "hpo_name": null,
         "expanded_text": "levels",
-        "match_type": "no_match",
+        "match_type": "skipped_low_ner_score",
         "confidence": 0.0,
         "matched": false,
         "umls_cui": null
+      },
+      {
+        "text": "recurrent fever",
+        "ner_score": 0.988,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0001954",
+        "hpo_name": "Recurrent fever",
+        "expanded_text": "recurrent fever",
+        "match_type": "exact_label",
+        "confidence": 1.0,
+        "matched": true,
+        "umls_cui": "C0277799"
       },
       {
         "text": "fever",
@@ -275,6 +234,19 @@
         "umls_cui": "C0015967"
       },
       {
+        "text": "multiple infections",
+        "ner_score": 0.995,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0002719",
+        "hpo_name": "Recurrent infections",
+        "expanded_text": "multiple infections",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.8357,
+        "matched": true,
+        "umls_cui": "C0239998"
+      },
+      {
         "text": "T and B lymphocytes",
         "ner_score": 0.657,
         "negated": true,
@@ -288,20 +260,69 @@
         "umls_cui": null
       },
       {
-        "text": "severe combined immunodeficiency",
-        "ner_score": 0.9,
+        "text": "a homozygous variation",
+        "ner_score": 0.866,
         "negated": false,
         "negation_cue": "",
-        "hpo_id": "HP:0004430",
-        "hpo_name": "Severe combined immunodeficiency",
-        "expanded_text": "severe combined immunodeficiency",
-        "match_type": "text_scan_exact_label",
-        "confidence": 0.95,
-        "matched": true,
-        "umls_cui": "C0085110",
-        "umls_all": [
-          "C0085110"
-        ]
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "a homozygous variation",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "variant rag1",
+        "ner_score": 0.798,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "variant rag1",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "altered protein stability",
+        "ner_score": 0.993,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "altered protein stability",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "decreased expression of variant rag1 gene",
+        "ner_score": 0.968,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "decreased expression of variant rag1 gene",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "a novel homozygous variant in rag1 gene",
+        "ner_score": 0.91,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "a novel homozygous variant in rag1 gene",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
       },
       {
         "text": "immunodeficiency",
@@ -318,108 +339,368 @@
         "umls_all": [
           "C0021051"
         ]
-      },
+      }
+    ],
+    "test": [
       {
-        "text": "recurrent fever",
-        "ner_score": 0.9,
+        "text": "whole - exome sequencing",
+        "ner_score": 0.987,
         "negated": false,
         "negation_cue": "",
-        "hpo_id": "HP:0001954",
-        "hpo_name": "Recurrent fever",
-        "expanded_text": "recurrent fever",
-        "match_type": "text_scan_exact_label",
-        "confidence": 0.95,
-        "matched": true,
-        "umls_cui": "C0277799",
-        "umls_all": [
-          "C0277799"
-        ]
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "whole - exome sequencing",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "tion",
+        "ner_score": 0.406,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "tion",
+        "match_type": "skipped_low_ner_score",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "protein",
+        "ner_score": 0.851,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "protein",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "variable",
+        "ner_score": 0.271,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "variable",
+        "match_type": "skipped_low_ner_score",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "decreased immunoglobulin",
+        "ner_score": 0.432,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "decreased immunoglobulin",
+        "match_type": "skipped_low_ner_score",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "whole",
+        "ner_score": 0.553,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "whole",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "sequencing",
+        "ner_score": 0.913,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "sequencing",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "Sanger",
+        "ner_score": 0.844,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "Sanger",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "sanger sequencing",
+        "ner_score": 0.958,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "sanger sequencing",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "predicted",
+        "ner_score": 0.693,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "predicted",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "structure",
+        "ner_score": 0.986,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "structure",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "altered",
+        "ner_score": 0.474,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "altered",
+        "match_type": "skipped_low_ner_score",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "stability",
+        "ner_score": 0.593,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "stability",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "expression",
+        "ner_score": 0.333,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "expression",
+        "match_type": "skipped_low_ner_score",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "our study",
+        "ner_score": 0.873,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "our study",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
       }
     ],
     "ordo_candidates": [
       {
+        "ordo_id": "ORPHA:39041",
+        "name": "Omenn syndrome",
+        "name_fr": "",
+        "score": 0.5762,
+        "coverage": 0.044,
+        "matched_hpo": [
+          "HP:0001945",
+          "HP:0001954",
+          "HP:0002721",
+          "HP:0004430"
+        ],
+        "matched_count": 4,
+        "total_disease_hpo": 91,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:275",
+        "name": "Severe combined immunodeficiency due to DCLRE1C deficiency",
+        "name_fr": "",
+        "score": 0.556,
+        "coverage": 0.0811,
+        "matched_hpo": [
+          "HP:0001888",
+          "HP:0001954",
+          "HP:0004430"
+        ],
+        "matched_count": 3,
+        "total_disease_hpo": 37,
+        "text_match": false
+      },
+      {
         "ordo_id": "ORPHA:183660",
-        "name": "Severe combined immunodeficiency",
-        "name_fr": "Déficit immunitaire combiné sévère (DICS)",
-        "score": 0.85,
-        "jaccard": 0.1818,
-        "coverage": 0.25,
+        "name": "T-B+ severe combined immunodeficiency due to gamma chain deficiency",
+        "name_fr": "",
+        "score": 0.5239,
+        "coverage": 0.2778,
         "matched_hpo": [
           "HP:0001888",
           "HP:0001945",
           "HP:0002719",
+          "HP:0004313",
           "HP:0004430"
         ],
+        "matched_count": 5,
+        "total_disease_hpo": 18,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:90362",
+        "name": "Primary intestinal lymphangiectasia",
+        "name_fr": "",
+        "score": 0.4919,
+        "coverage": 0.0882,
+        "matched_hpo": [
+          "HP:0001888",
+          "HP:0004313",
+          "HP:0005387"
+        ],
+        "matched_count": 3,
+        "total_disease_hpo": 34,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:508533",
+        "name": "Skeletal dysplasia-T-cell immunodeficiency-developmental delay syndrome",
+        "name_fr": "",
+        "score": 0.4916,
+        "coverage": 0.0316,
+        "matched_hpo": [
+          "HP:0001888",
+          "HP:0004313",
+          "HP:0004430"
+        ],
+        "matched_count": 3,
+        "total_disease_hpo": 95,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:538934",
+        "name": "X-linked lymphoproliferative disease due to XIAP deficiency",
+        "name_fr": "",
+        "score": 0.4845,
+        "coverage": 0.1818,
+        "matched_hpo": [
+          "HP:0001954",
+          "HP:0002719",
+          "HP:0002721",
+          "HP:0004313"
+        ],
         "matched_count": 4,
-        "total_disease_hpo": 16
+        "total_disease_hpo": 22,
+        "text_match": false
       },
       {
         "ordo_id": "ORPHA:1572",
         "name": "Common variable immunodeficiency",
-        "name_fr": "Déficit immunitaire commun variable (DICV)",
-        "score": 0.3429,
-        "jaccard": 0.2143,
-        "coverage": 0.4286,
+        "name_fr": "",
+        "score": 0.4801,
+        "coverage": 0.25,
         "matched_hpo": [
-          "HP:0001888",
-          "HP:0002719",
-          "HP:0004313"
-        ],
-        "matched_count": 3,
-        "total_disease_hpo": 7
-      },
-      {
-        "ordo_id": "ORPHA:47",
-        "name": "X-linked agammaglobulinemia",
-        "name_fr": "Agammaglobulinémie congénitale (maladie de Bruton)",
-        "score": 0.3123,
-        "jaccard": 0.2353,
-        "coverage": 0.3636,
-        "matched_hpo": [
-          "HP:0001888",
+          "HP:0001945",
           "HP:0002719",
           "HP:0004313",
           "HP:0004430"
         ],
         "matched_count": 4,
-        "total_disease_hpo": 11
+        "total_disease_hpo": 16,
+        "text_match": false
       },
       {
-        "ordo_id": "ORPHA:100",
-        "name": "Ataxia-telangiectasia",
-        "name_fr": "Ataxie-Télangiectasie (syndrome de Louis-Bar)",
-        "score": 0.275,
-        "jaccard": 0.1875,
-        "coverage": 0.3333,
+        "ordo_id": "ORPHA:443811",
+        "name": "PGM3-CDG",
+        "name_fr": "",
+        "score": 0.4796,
+        "coverage": 0.0484,
         "matched_hpo": [
           "HP:0001888",
           "HP:0002719",
           "HP:0004430"
         ],
         "matched_count": 3,
-        "total_disease_hpo": 9
+        "total_disease_hpo": 62,
+        "text_match": false
       },
       {
-        "ordo_id": "ORPHA:319600",
-        "name": "Mendelian susceptibility to mycobacterial diseases due to partial IRF8 deficiency",
+        "ordo_id": "ORPHA:33355",
+        "name": "Reticular dysgenesis",
         "name_fr": "",
-        "score": 0.2333,
-        "jaccard": 0.0833,
-        "coverage": 0.3333,
+        "score": 0.4771,
+        "coverage": 0.15,
         "matched_hpo": [
-          "HP:0001945"
+          "HP:0001945",
+          "HP:0004313",
+          "HP:0004430"
         ],
-        "matched_count": 1,
-        "total_disease_hpo": 3
+        "matched_count": 3,
+        "total_disease_hpo": 20,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:221139",
+        "name": "Combined immunodeficiency with facio-oculo-skeletal anomalies",
+        "name_fr": "",
+        "score": 0.4726,
+        "coverage": 0.029,
+        "matched_hpo": [
+          "HP:0004313",
+          "HP:0005387"
+        ],
+        "matched_count": 2,
+        "total_disease_hpo": 69,
+        "text_match": false
       }
     ],
     "stats": {
-      "total": 24,
-      "matched": 10,
-      "unmatched": 14,
-      "match_rate": 41.7,
-      "unique_hpo": 10,
-      "ordo_matches": 5
+      "total": 40,
+      "matched": 8,
+      "unmatched": 32,
+      "match_rate": 20.0,
+      "unique_hpo": 8,
+      "ordo_matches": 10
     }
   },
   "phenopacket": {
@@ -428,13 +709,13 @@
       "id": "PUBMED_EN_011"
     },
     "input": "Case Report: A variant of RAG1 gene identified in severe combined immunodeficiency: a case report.\n\nBACKGROUND: The recombination-activating gene 1 (RAG1) protein is essential for the V (variable)-D (diversity)-J (joining) recombination process. Mutations in RAG1 have been reported to be associated with several types of immune disorders. Typical clinical features driven by RAG1 variants include persistent infections, severe lymphopenia, and decreased immunoglobulin levels .\nCASE PRESENTATION: In this study, a 2-month-24-days-old infant with recurrent fever was admitted to our hospital with multiple infections and absence of T and B lymphocytes. The infant was diagnosed with severe combined immunodeficiency (SCID). A homozygous variation c.2147G>A (NM_000448.2: exonme2: c.2147G>A (p.Arg716Gln)) was identified in the RAG1 gene using whole-exome sequencing and Sanger sequencing. The predicted 3D structure of variant RAG1 indicated altered protein stability. Additionally, decreased expression of variant RAG1 gene was detected at both the mRNA and protein levels.\nCONCLUSIONS: Our study identified a novel homozygous variant in RAG1 gene that causes SCID. This finding expands the variant spectrum of RAG1 in SCID and provides further evidence for the clinical diagnosis of SCID.",
-    "target": "Severe combined immunodeficiency",
+    "target": "Omenn syndrome",
     "phenotypicFeatures": [
       {
         "type": {
-          "id": "HP:0012828",
-          "label": "Severe",
-          "umls_cui": "C0205082"
+          "id": "HP:0004430",
+          "label": "Severe combined immunodeficiency",
+          "umls_cui": "C0085110"
         },
         "excluded": false,
         "evidence": [
@@ -445,7 +726,7 @@
             },
             "reference": {
               "id": "PUBMED_EN_011",
-              "description": "NER: severe (0.588) | Match: exact_label (1.000)"
+              "description": "NER: severe combined immunodeficiency (0.997) | Match: exact_label (1.000)"
             }
           }
         ]
@@ -472,26 +753,6 @@
       },
       {
         "type": {
-          "id": "HP:0002719",
-          "label": "Recurrent infections",
-          "umls_cui": "C0239998"
-        },
-        "excluded": false,
-        "evidence": [
-          {
-            "evidenceCode": {
-              "id": "ECO:0000033",
-              "label": "author statement supported by traceable reference"
-            },
-            "reference": {
-              "id": "PUBMED_EN_011",
-              "description": "NER: infections (0.459) | Match: sapbert_similarity (0.777)"
-            }
-          }
-        ]
-      },
-      {
-        "type": {
           "id": "HP:0001888",
           "label": "Decreased total lymphocyte count",
           "umls_cui": "C0024312"
@@ -505,7 +766,47 @@
             },
             "reference": {
               "id": "PUBMED_EN_011",
-              "description": "NER: lymphopenia (0.495) | Match: exact_synonym (1.000)"
+              "description": "NER: severe lymphopenia (0.999) | Match: sapbert_similarity (0.829)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0004313",
+          "label": "Decreased circulating immunoglobulin concentration",
+          "umls_cui": "C0086438"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "PUBMED_EN_011",
+              "description": "NER: decreased immunoglobulin levels (0.989) | Match: sapbert_similarity (0.971)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0001954",
+          "label": "Recurrent fever",
+          "umls_cui": "C0277799"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "PUBMED_EN_011",
+              "description": "NER: recurrent fever (0.988) | Match: exact_label (1.000)"
             }
           }
         ]
@@ -532,9 +833,9 @@
       },
       {
         "type": {
-          "id": "HP:0004430",
-          "label": "Severe combined immunodeficiency",
-          "umls_cui": "C0085110"
+          "id": "HP:0002719",
+          "label": "Recurrent infections",
+          "umls_cui": "C0239998"
         },
         "excluded": false,
         "evidence": [
@@ -545,7 +846,7 @@
             },
             "reference": {
               "id": "PUBMED_EN_011",
-              "description": "NER: severe combined immunodeficiency (0.900) | Match: text_scan_exact_label (0.950)"
+              "description": "NER: multiple infections (0.995) | Match: sapbert_similarity (0.836)"
             }
           }
         ]
@@ -569,70 +870,10 @@
             }
           }
         ]
-      },
-      {
-        "type": {
-          "id": "HP:0001954",
-          "label": "Recurrent fever",
-          "umls_cui": "C0277799"
-        },
-        "excluded": false,
-        "evidence": [
-          {
-            "evidenceCode": {
-              "id": "ECO:0000033",
-              "label": "author statement supported by traceable reference"
-            },
-            "reference": {
-              "id": "PUBMED_EN_011",
-              "description": "NER: recurrent fever (0.900) | Match: text_scan_exact_label (0.950)"
-            }
-          }
-        ]
-      },
-      {
-        "type": {
-          "id": "HP:0003828",
-          "label": "Variable expressivity",
-          "umls_cui": "C1861403"
-        },
-        "excluded": false,
-        "evidence": [
-          {
-            "evidenceCode": {
-              "id": "ECO:0000033",
-              "label": "author statement supported by traceable reference"
-            },
-            "reference": {
-              "id": "PUBMED_EN_011",
-              "description": "NER: variable (0.271) | Match: sapbert_similarity (0.868)"
-            }
-          }
-        ]
-      },
-      {
-        "type": {
-          "id": "HP:0004313",
-          "label": "Decreased circulating immunoglobulin concentration",
-          "umls_cui": "C0086438"
-        },
-        "excluded": false,
-        "evidence": [
-          {
-            "evidenceCode": {
-              "id": "ECO:0000033",
-              "label": "author statement supported by traceable reference"
-            },
-            "reference": {
-              "id": "PUBMED_EN_011",
-              "description": "NER: decreased immunoglobulin (0.432) | Match: sapbert_similarity (0.963)"
-            }
-          }
-        ]
       }
     ],
     "metaData": {
-      "created": "2026-06-11T03:05:20Z",
+      "created": "2026-06-19T15:02:24Z",
       "createdBy": "clinical-preanalysis-pipeline-v2",
       "phenopacketSchemaVersion": "2.0",
       "resources": [
@@ -652,48 +893,73 @@
         "progressStatus": "IN_PROGRESS",
         "diagnosis": {
           "disease": {
-            "id": "ORPHA:183660",
-            "label": "Severe combined immunodeficiency"
+            "id": "ORPHA:39041",
+            "label": "Omenn syndrome"
           },
-          "score": 0.85,
+          "score": 0.5762,
           "allCandidates": [
             {
+              "id": "ORPHA:39041",
+              "label": "Omenn syndrome",
+              "score": 0.5762
+            },
+            {
+              "id": "ORPHA:275",
+              "label": "Severe combined immunodeficiency due to DCLRE1C deficiency",
+              "score": 0.556
+            },
+            {
               "id": "ORPHA:183660",
-              "label": "Severe combined immunodeficiency",
-              "score": 0.85
+              "label": "T-B+ severe combined immunodeficiency due to gamma chain deficiency",
+              "score": 0.5239
+            },
+            {
+              "id": "ORPHA:90362",
+              "label": "Primary intestinal lymphangiectasia",
+              "score": 0.4919
+            },
+            {
+              "id": "ORPHA:508533",
+              "label": "Skeletal dysplasia-T-cell immunodeficiency-developmental delay syndrome",
+              "score": 0.4916
+            },
+            {
+              "id": "ORPHA:538934",
+              "label": "X-linked lymphoproliferative disease due to XIAP deficiency",
+              "score": 0.4845
             },
             {
               "id": "ORPHA:1572",
               "label": "Common variable immunodeficiency",
-              "score": 0.3429
+              "score": 0.4801
             },
             {
-              "id": "ORPHA:47",
-              "label": "X-linked agammaglobulinemia",
-              "score": 0.3123
+              "id": "ORPHA:443811",
+              "label": "PGM3-CDG",
+              "score": 0.4796
             },
             {
-              "id": "ORPHA:100",
-              "label": "Ataxia-telangiectasia",
-              "score": 0.275
+              "id": "ORPHA:33355",
+              "label": "Reticular dysgenesis",
+              "score": 0.4771
             },
             {
-              "id": "ORPHA:319600",
-              "label": "Mendelian susceptibility to mycobacterial diseases due to partial IRF8 deficiency",
-              "score": 0.2333
+              "id": "ORPHA:221139",
+              "label": "Combined immunodeficiency with facio-oculo-skeletal anomalies",
+              "score": 0.4726
             }
           ]
         }
       }
     ],
     "_pipelineStats": {
-      "totalEntities": 24,
-      "matchedHPO": 10,
-      "unmatchedEntities": 14,
-      "phenopacketFeatures": 10,
+      "totalEntities": 40,
+      "matchedHPO": 8,
+      "unmatchedEntities": 32,
+      "phenopacketFeatures": 8,
       "negatedFeatures": 0,
       "numericPhenotypes": 0,
-      "ordoCandidates": 5
+      "ordoCandidates": 10
     }
   }
 }

@@ -1,0 +1,440 @@
+{
+  "id": "phenopacket-RA_EN_010",
+  "subject": {
+    "id": "RA_EN_010",
+    "sex": "MALE"
+  },
+  "input": "A 52-year-old male patient presented with arthritis, eye pain, itching, and redness. He had a history of allergic rhinitis and was not on any medication prior to evaluation. Laboratory results showed serum urea at 102.1 mg/dL (12.84–42.8 mg/dL), creatinine at 4.66 mg/dL (0.70–1.20 mg/dL), eGFR at 13 mL/min/1.73 m2 (60–120 mL/min/1.73 m2), serum albumin at 30.4 gr/L (35–52 gr/L), blood eosinophil count at 1.23 103/μL (0.03–0.59 103/μL), and C-reactive protein at 69.8 mg/L (0–5 mg/L). Urine analysis showed 1+ proteinuria, with no hematuria or leukocyturia, and normal urine microscopy. A 24-hour urine collection revealed 1527.5 mg/day proteinuria. Additional laboratory findings included C3c at 0.38 g/L (0.9–1.8 g/L), C4 at < 0.02 g/L (0.1–0.4 g/L), serum amyloid A at 50.70 mg/dL (5.7–8.2 mg/dL), IgG at 37.83 g/L (7–16 g/L), α1 globulin at 6% (2.9–4.9), β1 globulin at 3.2% (4.7–7.2), β2 globulin at 7.8% (3.2–6.5), and γ globulin at 39.4% (11.1–18.8). Liver and thyroid function tests, as well as pancreatic enzymes, were normal. Blood and urine cultures showed no growth. Rheumatoid factor and autoantibody tests were negative. Contrast-enhanced abdominal computed tomography revealed an inflamed appearance in the adipose tissue in the left pararectal region, loss of corticomedullary separation, and hypodense patchy areas in both kidneys. The respiratory system examination was normal, there were no rashes, and antibodies (ANA, pANCA, cANCA, antiGBM, etc.) were negative. There was no clinical picture of rapidly progressive glomerulonephritis.",
+  "target": "Systemic lupus erythematosus",
+  "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0012595",
+        "label": "Mild proteinuria",
+        "umls_cui": "C4022832"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_010",
+            "description": "NER: 1 + proteinuria (0.991) | Match: sapbert_similarity (0.792)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0200026",
+        "label": "Ocular pain",
+        "umls_cui": "C0151827"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_010",
+            "description": "NER: itis, eye pain (0.996) | Match: substring_match (0.950)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0000989",
+        "label": "Pruritus",
+        "umls_cui": "C0033774"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_010",
+            "description": "NER: itching (0.967) | Match: exact_synonym (1.000)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0010783",
+        "label": "Erythema",
+        "umls_cui": "C0016382"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_010",
+            "description": "NER: redness (0.963) | Match: sapbert_similarity (0.887)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0003193",
+        "label": "Allergic rhinitis",
+        "umls_cui": "C0847614"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_010",
+            "description": "NER: allergic rhinitis (0.998) | Match: exact_label (1.000)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0000093",
+        "label": "Proteinuria",
+        "umls_cui": "C0033687"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_010",
+            "description": "NER: proteinuria (0.918) | Match: exact_label (1.000)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0000790",
+        "label": "Hematuria",
+        "umls_cui": "C0018965"
+      },
+      "excluded": true,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_010",
+            "description": "NER: hematuria (0.977) | Match: exact_label (1.000) | Negated by: \"no\""
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0012085",
+        "label": "Pyuria",
+        "umls_cui": "C0034359"
+      },
+      "excluded": true,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_010",
+            "description": "NER: leukocyturia (0.971) | Match: related_synonym (1.000) | Negated by: \"no\""
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0012490",
+        "label": "Panniculitis",
+        "umls_cui": "C0030326"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_010",
+            "description": "NER: an inflamed appearance in the adipose tissue (0.948) | Match: sapbert_similarity (0.844)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0005565",
+        "label": "Reduced renal corticomedullary differentiation",
+        "umls_cui": "C3807131"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_010",
+            "description": "NER: loss of corticomedullary separation (0.794) | Match: sapbert_similarity (0.867)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0010658",
+        "label": "Patchy changes of bone mineral density",
+        "umls_cui": "C4023754"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_010",
+            "description": "NER: hypodense patchy areas (0.974) | Match: sapbert_similarity (0.768)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0000988",
+        "label": "Skin rash",
+        "umls_cui": "C0015230"
+      },
+      "excluded": true,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_010",
+            "description": "NER: rashes (0.574) | Match: sapbert_similarity (0.922) | Negated by: \"no\""
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0003678",
+        "label": "Rapidly progressive",
+        "umls_cui": "C1838681"
+      },
+      "excluded": true,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_010",
+            "description": "NER: rapidly progressive glomerulonephritis (0.999) | Match: substring_match (0.950) | Negated by: \"no\""
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0000099",
+        "label": "Glomerulonephritis",
+        "umls_cui": "C0017658"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_010",
+            "description": "NER: glomerulonephritis (0.900) | Match: text_scan_exact_label (0.950)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0003676",
+        "label": "Progressive",
+        "umls_cui": "C0205329"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_010",
+            "description": "NER: progressive (0.900) | Match: text_scan_exact_label (0.950)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0001369",
+        "label": "Arthritis",
+        "umls_cui": "C0003864"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_010",
+            "description": "NER: arthritis (0.900) | Match: text_scan_exact_label (0.950)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0012384",
+        "label": "Rhinitis",
+        "umls_cui": "C0035455"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_010",
+            "description": "NER: rhinitis (0.900) | Match: text_scan_exact_label (0.950)"
+          }
+        }
+      ]
+    }
+  ],
+  "metaData": {
+    "created": "2026-06-19T15:09:26Z",
+    "createdBy": "clinical-preanalysis-pipeline-v2",
+    "phenopacketSchemaVersion": "2.0",
+    "resources": [
+      {
+        "id": "hp",
+        "name": "Human Phenotype Ontology",
+        "url": "https://hpo.jax.org",
+        "version": "2024-04-26",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      }
+    ]
+  },
+  "interpretations": [
+    {
+      "id": "interpretation-RA_EN_010",
+      "progressStatus": "IN_PROGRESS",
+      "diagnosis": {
+        "disease": {
+          "id": "ORPHA:536",
+          "label": "Systemic lupus erythematosus"
+        },
+        "score": 0.4796,
+        "allCandidates": [
+          {
+            "id": "ORPHA:536",
+            "label": "Systemic lupus erythematosus",
+            "score": 0.4796
+          },
+          {
+            "id": "ORPHA:36412",
+            "label": "Hypocomplementemic urticarial vasculitis",
+            "score": 0.3981
+          },
+          {
+            "id": "ORPHA:727",
+            "label": "Microscopic polyangiitis",
+            "score": 0.3981
+          },
+          {
+            "id": "ORPHA:183",
+            "label": "Eosinophilic granulomatosis with polyangiitis",
+            "score": 0.3908
+          },
+          {
+            "id": "ORPHA:91500",
+            "label": "Tubulointerstitial nephritis and uveitis syndrome",
+            "score": 0.3898
+          },
+          {
+            "id": "ORPHA:761",
+            "label": "Immunoglobulin A vasculitis",
+            "score": 0.3894
+          },
+          {
+            "id": "ORPHA:900",
+            "label": "Granulomatosis with polyangiitis",
+            "score": 0.3879
+          },
+          {
+            "id": "ORPHA:90291",
+            "label": "Systemic sclerosis",
+            "score": 0.3624
+          },
+          {
+            "id": "ORPHA:48435",
+            "label": "Postinfectious vasculitis",
+            "score": 0.3565
+          },
+          {
+            "id": "ORPHA:829",
+            "label": "Adult-onset Still disease",
+            "score": 0.352
+          }
+        ]
+      }
+    }
+  ],
+  "_pipelineStats": {
+    "totalEntities": 84,
+    "matchedHPO": 17,
+    "unmatchedEntities": 67,
+    "phenopacketFeatures": 17,
+    "negatedFeatures": 4,
+    "numericPhenotypes": 0,
+    "ordoCandidates": 10
+  }
+}

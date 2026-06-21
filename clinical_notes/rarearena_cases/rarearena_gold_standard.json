@@ -1,0 +1,470 @@
+[
+  {
+    "note_id": "RA_EN_001",
+    "disease": "Semicircular canal dehiscence syndrome",
+    "orpha_id": "ORPHA:420402",
+    "expected_hpo": [
+      {"hpo_id": "HP:0030052", "hpo_name": "Pulsatile tinnitus", "text": "pulse-synchronous tinnitus"},
+      {"hpo_id": "HP:0000360", "hpo_name": "Tinnitus", "text": "tinnitus"},
+      {"hpo_id": "HP:0000405", "hpo_name": "Conductive hearing loss", "text": "pseudo-conductive hearing loss"},
+      {"hpo_id": "HP:0000369", "hpo_name": "Aural fullness", "text": "aural fullness"},
+      {"hpo_id": "HP:0030783", "hpo_name": "Increased sensitivity to sounds", "text": "heightened sensitivity to her own body sounds"},
+      {"hpo_id": "HP:0002756", "hpo_name": "Autophony", "text": "autophony"}
+    ]
+  },
+  {
+    "note_id": "RA_EN_002",
+    "disease": "Vogt-Koyanagi-Harada disease",
+    "orpha_id": "ORPHA:3437",
+    "expected_hpo": [
+      {"hpo_id": "HP:0000572", "hpo_name": "Visual loss", "text": "blurred vision"},
+      {"hpo_id": "HP:0002315", "hpo_name": "Headache", "text": "headache"},
+      {"hpo_id": "HP:0002018", "hpo_name": "Nausea", "text": "nausea"},
+      {"hpo_id": "HP:0002321", "hpo_name": "Vertigo", "text": "vertigo"},
+      {"hpo_id": "HP:0000360", "hpo_name": "Tinnitus", "text": "tinnitus"},
+      {"hpo_id": "HP:0000554", "hpo_name": "Uveitis", "text": "uveitis"},
+      {"hpo_id": "HP:0000964", "hpo_name": "Eczema", "text": "atopic dermatitis"},
+      {"hpo_id": "HP:0001480", "hpo_name": "Freckling", "text": "depigmentation"},
+      {"hpo_id": "HP:0000969", "hpo_name": "Edema", "text": "annular erythema"},
+      {"hpo_id": "HP:0100533", "hpo_name": "Iritis", "text": "iritis"},
+      {"hpo_id": "HP:0007400", "hpo_name": "Irregular hyperpigmentation", "text": "leukoderma"}
+    ]
+  },
+  {
+    "note_id": "RA_EN_003",
+    "disease": "Acquired central diabetes insipidus",
+    "orpha_id": "ORPHA:95626",
+    "expected_hpo": [
+      {"hpo_id": "HP:0002315", "hpo_name": "Headache", "text": "severe headaches"},
+      {"hpo_id": "HP:0000613", "hpo_name": "Photophobia", "text": "sensitivity to light"},
+      {"hpo_id": "HP:0002018", "hpo_name": "Nausea", "text": "nausea"},
+      {"hpo_id": "HP:0002013", "hpo_name": "Vomiting", "text": "vomiting"},
+      {"hpo_id": "HP:0002014", "hpo_name": "Diarrhea", "text": "diarrhea"},
+      {"hpo_id": "HP:0012378", "hpo_name": "Fatigue", "text": "general malaise"},
+      {"hpo_id": "HP:0000083", "hpo_name": "Renal insufficiency", "text": "severe acute kidney injury"},
+      {"hpo_id": "HP:0000805", "hpo_name": "Sellar mass", "text": "mass in the sellar region"},
+      {"hpo_id": "HP:0000873", "hpo_name": "Diabetes insipidus", "text": "urine excretion remained high"},
+      {"hpo_id": "HP:0000848", "hpo_name": "Adrenocorticotropic hormone deficiency", "text": "insufficiency in the corticotropic axis"},
+      {"hpo_id": "HP:0000820", "hpo_name": "Abnormality of the thyroid gland", "text": "thyrotropic axis insufficiency"},
+      {"hpo_id": "HP:0000135", "hpo_name": "Hypogonadism", "text": "gonadotropic axis insufficiency"},
+      {"hpo_id": "HP:0001263", "hpo_name": "Visual field defect", "text": "visual field defects"},
+      {"hpo_id": "HP:0003165", "hpo_name": "Elevated circulating renin level", "text": "oliguria"}
+    ]
+  },
+  {
+    "note_id": "RA_EN_004",
+    "disease": "Melorheostosis",
+    "orpha_id": "ORPHA:2485",
+    "expected_hpo": [
+      {"hpo_id": "HP:0003027", "hpo_name": "Mesomelic limb shortening", "text": "swelling on the lateral side"},
+      {"hpo_id": "HP:0002829", "hpo_name": "Arthralgia", "text": "dull aching pain"},
+      {"hpo_id": "HP:0001376", "hpo_name": "Limitation of joint mobility", "text": "restricted movement in her left knee"},
+      {"hpo_id": "HP:0003468", "hpo_name": "Abnormal cortical bone morphology", "text": "bony, hard swelling"}
+    ]
+  },
+  {
+    "note_id": "RA_EN_005",
+    "disease": "Autosomal Recessive Anhidrotic Ectodermal Dysplasia",
+    "orpha_id": "ORPHA:248",
+    "expected_hpo": [
+      {"hpo_id": "HP:0008070", "hpo_name": "Sparse hair", "text": "sparse scalp hair"},
+      {"hpo_id": "HP:0000535", "hpo_name": "Sparse eyebrow", "text": "absent eyebrows"},
+      {"hpo_id": "HP:0000561", "hpo_name": "Absent eyelashes", "text": "absent eyelashes"},
+      {"hpo_id": "HP:0000668", "hpo_name": "Hypodontia", "text": "delayed tooth eruption"},
+      {"hpo_id": "HP:0000970", "hpo_name": "Anhidrosis", "text": "does not sweat"},
+      {"hpo_id": "HP:0001945", "hpo_name": "Fever of unknown origin", "text": "recurrent fevers"},
+      {"hpo_id": "HP:0000272", "hpo_name": "Malar flattening", "text": "aged appearance"},
+      {"hpo_id": "HP:0000175", "hpo_name": "Cleft palate", "text": "flat palate"},
+      {"hpo_id": "HP:0000164", "hpo_name": "Abnormality of the dentition", "text": "conical, widely spaced maxillary teeth"},
+      {"hpo_id": "HP:0000369", "hpo_name": "Low-set ears", "text": "low-set ears"},
+      {"hpo_id": "HP:0002231", "hpo_name": "Sparse body hair", "text": "absent body hair"}
+    ]
+  },
+  {
+    "note_id": "RA_EN_006",
+    "disease": "Transcobalamin II deficiency",
+    "orpha_id": "ORPHA:859",
+    "expected_hpo": [
+      {"hpo_id": "HP:0001508", "hpo_name": "Failure to thrive", "text": "inadequate weight gain"},
+      {"hpo_id": "HP:0011968", "hpo_name": "Feeding difficulties", "text": "poor feeding"},
+      {"hpo_id": "HP:0002013", "hpo_name": "Vomiting", "text": "vomiting"},
+      {"hpo_id": "HP:0002014", "hpo_name": "Diarrhea", "text": "diarrhea"},
+      {"hpo_id": "HP:0001876", "hpo_name": "Pancytopenia", "text": "pancytopenia"},
+      {"hpo_id": "HP:0001888", "hpo_name": "Lymphopenia", "text": "lymphopenia"},
+      {"hpo_id": "HP:0004315", "hpo_name": "Decreased circulating IgG level", "text": "hypogammaglobulinemia"},
+      {"hpo_id": "HP:0003228", "hpo_name": "Hyperuricemia", "text": "low vitamin B12"},
+      {"hpo_id": "HP:0005547", "hpo_name": "Myelodysplasia", "text": "megaloblastic changes"}
+    ]
+  },
+  {
+    "note_id": "RA_EN_007",
+    "disease": "Infantile Onset Pompe Disease",
+    "orpha_id": "ORPHA:308552",
+    "expected_hpo": [
+      {"hpo_id": "HP:0003236", "hpo_name": "Elevated circulating creatine kinase concentration", "text": "GAA activity measured at 0.18"},
+      {"hpo_id": "HP:0008872", "hpo_name": "Feeding difficulties in infancy", "text": "no issues with feeding"},
+      {"hpo_id": "HP:0009073", "hpo_name": "Progressive proximal muscle weakness", "text": "normal muscle power"},
+      {"hpo_id": "HP:0000158", "hpo_name": "Macroglossia", "text": "no macroglossia"},
+      {"hpo_id": "HP:0000298", "hpo_name": "Mask-like facies", "text": "slight decrease in facial folds"}
+    ]
+  },
+  {
+    "note_id": "RA_EN_008",
+    "disease": "Rapidly Involuting Congenital Hemangioma",
+    "orpha_id": "ORPHA:141184",
+    "expected_hpo": [
+      {"hpo_id": "HP:0001539", "hpo_name": "Omphalocele", "text": "giant omphalocele"},
+      {"hpo_id": "HP:0002240", "hpo_name": "Hepatomegaly", "text": "liver herniation"},
+      {"hpo_id": "HP:0000175", "hpo_name": "Cleft palate", "text": "abdominal wall defect"},
+      {"hpo_id": "HP:0001638", "hpo_name": "Cardiomyopathy", "text": "worsening of the cardiac biventricular function"},
+      {"hpo_id": "HP:0000803", "hpo_name": "Diaphragmatic hernia", "text": "anterior diaphragmatic hernia"},
+      {"hpo_id": "HP:0001680", "hpo_name": "Coarctation of aorta", "text": "absence of the pericardium"},
+      {"hpo_id": "HP:0001085", "hpo_name": "Papilledema", "text": "vascular tumor"},
+      {"hpo_id": "HP:0001649", "hpo_name": "Tachycardia", "text": "bradycardia"}
+    ]
+  },
+  {
+    "note_id": "RA_EN_009",
+    "disease": "Cerebral visual impairment",
+    "orpha_id": "ORPHA:447788",
+    "expected_hpo": [
+      {"hpo_id": "HP:0000572", "hpo_name": "Visual loss", "text": "visual loss"},
+      {"hpo_id": "HP:0007663", "hpo_name": "Reduced visual acuity", "text": "visual acuities of hand motion"}
+    ]
+  },
+  {
+    "note_id": "RA_EN_010",
+    "disease": "IgG4-related kidney disease",
+    "orpha_id": "ORPHA:449395",
+    "expected_hpo": [
+      {"hpo_id": "HP:0001369", "hpo_name": "Arthritis", "text": "arthritis"},
+      {"hpo_id": "HP:0200026", "hpo_name": "Ocular pain", "text": "eye pain"},
+      {"hpo_id": "HP:0000083", "hpo_name": "Renal insufficiency", "text": "creatinine at 4.66 mg/dL"},
+      {"hpo_id": "HP:0000093", "hpo_name": "Proteinuria", "text": "proteinuria"},
+      {"hpo_id": "HP:0003073", "hpo_name": "Hypoalbuminemia", "text": "serum albumin at 30.4 gr/L"},
+      {"hpo_id": "HP:0001880", "hpo_name": "Eosinophilia", "text": "blood eosinophil count at 1.23"},
+      {"hpo_id": "HP:0011227", "hpo_name": "Elevated C-reactive protein level", "text": "C-reactive protein at 69.8 mg/L"},
+      {"hpo_id": "HP:0003233", "hpo_name": "Decreased circulating complement C4", "text": "C4 at < 0.02 g/L"},
+      {"hpo_id": "HP:0005416", "hpo_name": "Decreased circulating complement C3", "text": "C3c at 0.38 g/L"},
+      {"hpo_id": "HP:0003261", "hpo_name": "Increased circulating IgG level", "text": "IgG at 37.83 g/L"}
+    ]
+  },
+  {
+    "note_id": "RA_EN_011",
+    "disease": "Rabson-Mendenhall Syndrome",
+    "orpha_id": "ORPHA:769",
+    "expected_hpo": [
+      {"hpo_id": "HP:0002829", "hpo_name": "Arthralgia", "text": "joint pain"},
+      {"hpo_id": "HP:0003690", "hpo_name": "Limb muscle weakness", "text": "generalized weakness"},
+      {"hpo_id": "HP:0000572", "hpo_name": "Visual loss", "text": "blurring of vision"},
+      {"hpo_id": "HP:0000819", "hpo_name": "Diabetes mellitus", "text": "diabetes mellitus for six years"},
+      {"hpo_id": "HP:0000280", "hpo_name": "Coarse facial features", "text": "coarse facies"},
+      {"hpo_id": "HP:0000684", "hpo_name": "Delayed eruption of teeth", "text": "malocclusion of the teeth with hyperdontia"},
+      {"hpo_id": "HP:0000956", "hpo_name": "Acanthosis nigricans", "text": "acanthosis nigricans"},
+      {"hpo_id": "HP:0000158", "hpo_name": "Macroglossia", "text": "fissured tongue"},
+      {"hpo_id": "HP:0002240", "hpo_name": "Hepatomegaly", "text": "liver was enlarged"},
+      {"hpo_id": "HP:0001595", "hpo_name": "Abnormality of the hair", "text": "large prominent eyes"},
+      {"hpo_id": "HP:0008404", "hpo_name": "Nail dystrophy", "text": "onychodystrophy and pincer nail"},
+      {"hpo_id": "HP:0004322", "hpo_name": "Short stature", "text": "poorly built and undernourished"}
+    ]
+  },
+  {
+    "note_id": "RA_EN_012",
+    "disease": "Papillary Intralymphatic Angioendothelioma",
+    "orpha_id": "ORPHA:458768",
+    "expected_hpo": [
+      {"hpo_id": "HP:0200034", "hpo_name": "Papule", "text": "subcutaneous nodule"},
+      {"hpo_id": "HP:0000989", "hpo_name": "Pruritus", "text": "bluish discoloration"}
+    ]
+  },
+  {
+    "note_id": "RA_EN_013",
+    "disease": "Menkes disease",
+    "orpha_id": "ORPHA:565",
+    "expected_hpo": [
+      {"hpo_id": "HP:0001263", "hpo_name": "Global developmental delay", "text": "delayed developmental milestones"},
+      {"hpo_id": "HP:0000256", "hpo_name": "Macrocephaly", "text": "increase in head size"},
+      {"hpo_id": "HP:0001250", "hpo_name": "Seizures", "text": "multiple seizures"},
+      {"hpo_id": "HP:0002059", "hpo_name": "Cerebral atrophy", "text": "hyperintense signals in the white matter"},
+      {"hpo_id": "HP:0008070", "hpo_name": "Sparse hair", "text": "short, sparse, coarse, lightly pigmented hair"},
+      {"hpo_id": "HP:0005930", "hpo_name": "Abnormality of the nasal bridge", "text": "depressed nasal bridge"},
+      {"hpo_id": "HP:0001252", "hpo_name": "Muscular hypotonia", "text": "Muscle tone was low"},
+      {"hpo_id": "HP:0000737", "hpo_name": "Irritability", "text": "irritability"},
+      {"hpo_id": "HP:0007663", "hpo_name": "Reduced visual acuity", "text": "absence of visual fixation"},
+      {"hpo_id": "HP:0000365", "hpo_name": "Hearing impairment", "text": "no response to auditory stimuli"},
+      {"hpo_id": "HP:0001518", "hpo_name": "Small for gestational age", "text": "birth weight of 1.25 kg"},
+      {"hpo_id": "HP:0001903", "hpo_name": "Anemia", "text": "mild anemia"},
+      {"hpo_id": "HP:0003128", "hpo_name": "Lactic acidosis", "text": "Serum lactate levels were elevated"},
+      {"hpo_id": "HP:0001347", "hpo_name": "Hyperreflexia", "text": "Deep tendon reflexes were brisk"},
+      {"hpo_id": "HP:0003487", "hpo_name": "Babinski sign", "text": "plantar reflexes were upgoing"},
+      {"hpo_id": "HP:0100309", "hpo_name": "Subdural hemorrhage", "text": "seborrheic dermatitis"},
+      {"hpo_id": "HP:0004349", "hpo_name": "Reduced bone mineral density", "text": "tortuous blood vessels"}
+    ]
+  },
+  {
+    "note_id": "RA_EN_014",
+    "disease": "Paroxysmal non-kinesigenic dyskinesia",
+    "orpha_id": "ORPHA:98810",
+    "expected_hpo": [
+      {"hpo_id": "HP:0001332", "hpo_name": "Dystonia", "text": "dystonic posturing"},
+      {"hpo_id": "HP:0100022", "hpo_name": "Abnormality of movement", "text": "bending of the elbow and specific finger posturing"},
+      {"hpo_id": "HP:0002829", "hpo_name": "Arthralgia", "text": "episodes were painful"}
+    ]
+  },
+  {
+    "note_id": "RA_EN_015",
+    "disease": "Orofaciodigital syndrome type 1",
+    "orpha_id": "ORPHA:2750",
+    "expected_hpo": [
+      {"hpo_id": "HP:0003774", "hpo_name": "Stage 5 chronic kidney disease", "text": "elevated serum creatinine of 4.4 mg/dL"},
+      {"hpo_id": "HP:0000083", "hpo_name": "Renal insufficiency", "text": "serum creatinine of 4.4"},
+      {"hpo_id": "HP:0002150", "hpo_name": "Hypercalciuria", "text": "Ca/creatinine ratio elevated"},
+      {"hpo_id": "HP:0000121", "hpo_name": "Nephrocalcinosis", "text": "medullary nephrocalcinosis"},
+      {"hpo_id": "HP:0000093", "hpo_name": "Proteinuria", "text": "no proteinuria"},
+      {"hpo_id": "HP:0001903", "hpo_name": "Anemia", "text": "hemoglobin of 8.1 g/dL"},
+      {"hpo_id": "HP:0004322", "hpo_name": "Short stature", "text": "height 3rd percentile"},
+      {"hpo_id": "HP:0001513", "hpo_name": "Obesity", "text": "weight increased to 99th percentile"},
+      {"hpo_id": "HP:0000819", "hpo_name": "Diabetes mellitus", "text": "elevated blood glucose"},
+      {"hpo_id": "HP:0000407", "hpo_name": "Sensorineural hearing loss", "text": "hearing therapy"},
+      {"hpo_id": "HP:0000750", "hpo_name": "Delayed speech and language development", "text": "speech delay"},
+      {"hpo_id": "HP:0002151", "hpo_name": "Increased serum parathyroid hormone", "text": "parathyroid hormone level elevated at 340 pg/mL"},
+      {"hpo_id": "HP:0002900", "hpo_name": "Hypokalemia", "text": "low serum calcium of 7.7"},
+      {"hpo_id": "HP:0002148", "hpo_name": "Hypophosphatemia", "text": "elevated serum phosphorus"},
+      {"hpo_id": "HP:0000822", "hpo_name": "Hypertension", "text": "blood pressure was 123/71 mmHg"},
+      {"hpo_id": "HP:0000518", "hpo_name": "Cataract", "text": "bilateral retinal dystrophy"},
+      {"hpo_id": "HP:0000556", "hpo_name": "Retinal dystrophy", "text": "bilateral retinal dystrophy"},
+      {"hpo_id": "HP:0000613", "hpo_name": "Photophobia", "text": "photophobia"},
+      {"hpo_id": "HP:0001531", "hpo_name": "Failure to thrive in infancy", "text": "intrauterine growth restriction"},
+      {"hpo_id": "HP:0000855", "hpo_name": "Insulin resistance", "text": "elevated fasting blood glucose"}
+    ]
+  },
+  {
+    "note_id": "RA_EN_016",
+    "disease": "Fixed subaortic stenosis",
+    "orpha_id": "ORPHA:3092",
+    "expected_hpo": [
+      {"hpo_id": "HP:0002094", "hpo_name": "Dyspnea", "text": "shortness of breath"},
+      {"hpo_id": "HP:0030148", "hpo_name": "Heart murmur", "text": "pansystolic murmur"},
+      {"hpo_id": "HP:0001712", "hpo_name": "Left ventricular hypertrophy", "text": "left ventricular hypertrophy"},
+      {"hpo_id": "HP:0001649", "hpo_name": "Tachycardia", "text": "sinus tachycardia"},
+      {"hpo_id": "HP:0001903", "hpo_name": "Anemia", "text": "iron-deficiency anemia"},
+      {"hpo_id": "HP:0002878", "hpo_name": "Respiratory failure", "text": "shortness of breath progressively worsened"},
+      {"hpo_id": "HP:0001627", "hpo_name": "Abnormal heart morphology", "text": "aortic stenosis"},
+      {"hpo_id": "HP:0100750", "hpo_name": "Atelectasis", "text": "mild leukocytosis"}
+    ]
+  },
+  {
+    "note_id": "RA_EN_017",
+    "disease": "Autosomal recessive infantile hypercalcemia",
+    "orpha_id": "ORPHA:300547",
+    "expected_hpo": [
+      {"hpo_id": "HP:0100512", "hpo_name": "Vitamin D deficiency", "text": "vitamin D"},
+      {"hpo_id": "HP:0003072", "hpo_name": "Hypercalcemia", "text": "elevated levels of total calcium"},
+      {"hpo_id": "HP:0000121", "hpo_name": "Nephrocalcinosis", "text": "medullary nephrocalcinosis"},
+      {"hpo_id": "HP:0002150", "hpo_name": "Hypercalciuria", "text": "hypercalciuria"},
+      {"hpo_id": "HP:0001508", "hpo_name": "Failure to thrive", "text": "poor growth"},
+      {"hpo_id": "HP:0001959", "hpo_name": "Polydipsia", "text": "excessive thirst"},
+      {"hpo_id": "HP:0002013", "hpo_name": "Vomiting", "text": "severe vomiting"},
+      {"hpo_id": "HP:0004319", "hpo_name": "Decreased circulating aldosterone level", "text": "Parathyroid hormone was undetectable"},
+      {"hpo_id": "HP:0001944", "hpo_name": "Dehydration", "text": "drinking large amounts of fluids"},
+      {"hpo_id": "HP:0011968", "hpo_name": "Feeding difficulties", "text": "decreased interest in eating solid foods"}
+    ]
+  },
+  {
+    "note_id": "RA_EN_018",
+    "disease": "Familial atypical multiple mole melanoma syndrome",
+    "orpha_id": "ORPHA:404560",
+    "expected_hpo": [
+      {"hpo_id": "HP:0002861", "hpo_name": "Melanoma", "text": "melanocytic lesions"},
+      {"hpo_id": "HP:0100814", "hpo_name": "Blue nevus", "text": "approximately 30 pigmented nevi"}
+    ]
+  },
+  {
+    "note_id": "RA_EN_019",
+    "disease": "Beta-thalassemia intermedia",
+    "orpha_id": "ORPHA:231222",
+    "expected_hpo": [
+      {"hpo_id": "HP:0001903", "hpo_name": "Anemia", "text": "anemia"},
+      {"hpo_id": "HP:0000980", "hpo_name": "Pallor", "text": "pallor"},
+      {"hpo_id": "HP:0011904", "hpo_name": "Persistence of hemoglobin F", "text": "Hb F at 62.2%"}
+    ]
+  },
+  {
+    "note_id": "RA_EN_020",
+    "disease": "Stevens-Johnson syndrome/toxic epidermal necrolysis",
+    "orpha_id": "ORPHA:95455",
+    "expected_hpo": [
+      {"hpo_id": "HP:0000989", "hpo_name": "Pruritus", "text": "pruritic rashes"},
+      {"hpo_id": "HP:0001945", "hpo_name": "Fever of unknown origin", "text": "fever"},
+      {"hpo_id": "HP:0200039", "hpo_name": "Pustule", "text": "erythematous macules coalescing into papules and blisters"},
+      {"hpo_id": "HP:0000155", "hpo_name": "Oral ulcer", "text": "Ulcerations in the oral mucosa"},
+      {"hpo_id": "HP:0025131", "hpo_name": "Finger swelling", "text": "swollen red eyes"},
+      {"hpo_id": "HP:0000613", "hpo_name": "Photophobia", "text": "sensitivity to light reflexes"},
+      {"hpo_id": "HP:0007663", "hpo_name": "Reduced visual acuity", "text": "visual acuity of 0.2"},
+      {"hpo_id": "HP:0002090", "hpo_name": "Pneumonia", "text": "bilateral pneumonia"},
+      {"hpo_id": "HP:0001701", "hpo_name": "Pericarditis", "text": "corneal injury and keratitis"}
+    ]
+  },
+  {
+    "note_id": "RA_EN_021",
+    "disease": "Hereditary sclerosing poikiloderma, Weary type",
+    "orpha_id": "ORPHA:221039",
+    "expected_hpo": [
+      {"hpo_id": "HP:0007400", "hpo_name": "Irregular hyperpigmentation", "text": "reticular hyperpigmented lesions"},
+      {"hpo_id": "HP:0000764", "hpo_name": "Peripheral neuropathy", "text": "linear sclerosing bands"},
+      {"hpo_id": "HP:0000347", "hpo_name": "Micrognathia", "text": "micrognathia"},
+      {"hpo_id": "HP:0001217", "hpo_name": "Clubbing", "text": "clubbing of the fingers"},
+      {"hpo_id": "HP:0001072", "hpo_name": "Thickened skin", "text": "hyperkeratotic and sclerotic bands"},
+      {"hpo_id": "HP:0000958", "hpo_name": "Dry skin", "text": "atrophic changes"},
+      {"hpo_id": "HP:0100585", "hpo_name": "Telangiectasia of the skin", "text": "telangiectatic changes"},
+      {"hpo_id": "HP:0100540", "hpo_name": "Palpebral edema", "text": "sclerosis of palms and soles"}
+    ]
+  },
+  {
+    "note_id": "RA_EN_022",
+    "disease": "Congenital Laryngeal Web",
+    "orpha_id": "ORPHA:2374",
+    "expected_hpo": [
+      {"hpo_id": "HP:0010307", "hpo_name": "Stridor", "text": "stridor"},
+      {"hpo_id": "HP:0012735", "hpo_name": "Cough", "text": "cough"},
+      {"hpo_id": "HP:0001612", "hpo_name": "Weak cry", "text": "weak crying"},
+      {"hpo_id": "HP:0001605", "hpo_name": "Vocal cord paralysis", "text": "hoarseness"},
+      {"hpo_id": "HP:0002090", "hpo_name": "Pneumonia", "text": "bronchopneumonia"},
+      {"hpo_id": "HP:0002098", "hpo_name": "Respiratory distress", "text": "retractions in the suprasternal fossa"}
+    ]
+  },
+  {
+    "note_id": "RA_EN_023",
+    "disease": "Alström syndrome",
+    "orpha_id": "ORPHA:64",
+    "expected_hpo": [
+      {"hpo_id": "HP:0000639", "hpo_name": "Nystagmus", "text": "horizontal and rotational nystagmus"},
+      {"hpo_id": "HP:0000572", "hpo_name": "Visual loss", "text": "visual acuity was limited to light perception"},
+      {"hpo_id": "HP:0000819", "hpo_name": "Diabetes mellitus", "text": "developed T2DM"},
+      {"hpo_id": "HP:0001513", "hpo_name": "Obesity", "text": "obesity"},
+      {"hpo_id": "HP:0000556", "hpo_name": "Retinal dystrophy", "text": "significant disruption of the photoreceptor layer"},
+      {"hpo_id": "HP:0007843", "hpo_name": "Attenuation of retinal blood vessels", "text": "vessel attenuation"},
+      {"hpo_id": "HP:0100512", "hpo_name": "Vitamin D deficiency", "text": "low levels of vitamin D3"}
+    ]
+  },
+  {
+    "note_id": "RA_EN_024",
+    "disease": "Diffuse fasciitis with eosinophilia",
+    "orpha_id": "ORPHA:3165",
+    "expected_hpo": [
+      {"hpo_id": "HP:0002315", "hpo_name": "Headache", "text": "headache"},
+      {"hpo_id": "HP:0001903", "hpo_name": "Anemia", "text": "mild anemia"},
+      {"hpo_id": "HP:0001880", "hpo_name": "Eosinophilia", "text": "elevated eosinophil count"},
+      {"hpo_id": "HP:0000083", "hpo_name": "Renal insufficiency", "text": "increased urea and creatinine"},
+      {"hpo_id": "HP:0003072", "hpo_name": "Hypercalcemia", "text": "high calcium levels"},
+      {"hpo_id": "HP:0002148", "hpo_name": "Hypophosphatemia", "text": "low phosphate levels"},
+      {"hpo_id": "HP:0002240", "hpo_name": "Hepatomegaly", "text": "hepatomegaly"},
+      {"hpo_id": "HP:0000093", "hpo_name": "Proteinuria", "text": "kidney enlargement"},
+      {"hpo_id": "HP:0012378", "hpo_name": "Fatigue", "text": "general condition decline"},
+      {"hpo_id": "HP:0002019", "hpo_name": "Constipation", "text": "constipation"},
+      {"hpo_id": "HP:0000112", "hpo_name": "Nephropathy", "text": "thickening of the renal parenchymal layer"},
+      {"hpo_id": "HP:0003690", "hpo_name": "Limb muscle weakness", "text": "reduced muscle strength"},
+      {"hpo_id": "HP:0100512", "hpo_name": "Vitamin D deficiency", "text": "low vitamin D levels"},
+      {"hpo_id": "HP:0009053", "hpo_name": "Distal lower limb muscle weakness", "text": "swelling of feet and hands"},
+      {"hpo_id": "HP:0000790", "hpo_name": "Hematuria", "text": "increased urination"}
+    ]
+  },
+  {
+    "note_id": "RA_EN_025",
+    "disease": "Hereditary Sensory and Autonomic Neuropathy Type II",
+    "orpha_id": "ORPHA:970",
+    "expected_hpo": [
+      {"hpo_id": "HP:0002936", "hpo_name": "Distal sensory impairment", "text": "loss of touch, temperature, position, and vibration sense"},
+      {"hpo_id": "HP:0032199", "hpo_name": "Taste impairment", "text": "taste disorder"},
+      {"hpo_id": "HP:0007021", "hpo_name": "Pain insensitivity", "text": "insensitivity to pain"},
+      {"hpo_id": "HP:0001278", "hpo_name": "Orthostatic hypotension", "text": "orthostatic hypotension"},
+      {"hpo_id": "HP:0004349", "hpo_name": "Reduced bone mineral density", "text": "Freiberg disease"},
+      {"hpo_id": "HP:0001369", "hpo_name": "Arthritis", "text": "Charcot arthropathy"},
+      {"hpo_id": "HP:0002829", "hpo_name": "Arthralgia", "text": "joint pain"},
+      {"hpo_id": "HP:0100543", "hpo_name": "Cognitive impairment", "text": "normal mental growth"},
+      {"hpo_id": "HP:0002355", "hpo_name": "Difficulty walking", "text": "she began using a cane for walking"},
+      {"hpo_id": "HP:0000504", "hpo_name": "Abnormality of vision", "text": "fainting episodes"},
+      {"hpo_id": "HP:0002460", "hpo_name": "Distal muscle weakness", "text": "restricted to wheelchair"},
+      {"hpo_id": "HP:0000988", "hpo_name": "Skin rash", "text": "severe blisters"},
+      {"hpo_id": "HP:0002754", "hpo_name": "Osteomyelitis", "text": "metatarsal osteomyelitis"}
+    ]
+  },
+  {
+    "note_id": "RA_EN_026",
+    "disease": "Pendred syndrome",
+    "orpha_id": "ORPHA:705",
+    "expected_hpo": [
+      {"hpo_id": "HP:0000365", "hpo_name": "Hearing impairment", "text": "childhood hearing impairment"},
+      {"hpo_id": "HP:0000750", "hpo_name": "Delayed speech and language development", "text": "language learning difficulties"},
+      {"hpo_id": "HP:0000853", "hpo_name": "Goiter", "text": "grade III goiter"},
+      {"hpo_id": "HP:0002094", "hpo_name": "Dyspnea", "text": "discomfort while swallowing"},
+      {"hpo_id": "HP:0002020", "hpo_name": "Gastroesophageal reflux", "text": "agitation, irritability"},
+      {"hpo_id": "HP:0000820", "hpo_name": "Abnormality of the thyroid gland", "text": "enlarged thyroid"},
+      {"hpo_id": "HP:0100028", "hpo_name": "Diffuse hyperintensity", "text": "hypoechoic signals in thyroid"}
+    ]
+  },
+  {
+    "note_id": "RA_EN_027",
+    "disease": "Arnold-Chiari Malformation Type I",
+    "orpha_id": "ORPHA:268882",
+    "expected_hpo": [
+      {"hpo_id": "HP:0002829", "hpo_name": "Arthralgia", "text": "bilateral foot arch pain"},
+      {"hpo_id": "HP:0002315", "hpo_name": "Headache", "text": "headache"},
+      {"hpo_id": "HP:0003401", "hpo_name": "Paresthesia", "text": "numbness and tingling in her legs"},
+      {"hpo_id": "HP:0012378", "hpo_name": "Fatigue", "text": "worsening fatigue"},
+      {"hpo_id": "HP:0002321", "hpo_name": "Vertigo", "text": "intermittent dizziness"},
+      {"hpo_id": "HP:0000572", "hpo_name": "Visual loss", "text": "blurry vision"},
+      {"hpo_id": "HP:0002066", "hpo_name": "Gait ataxia", "text": "unsteady gait"},
+      {"hpo_id": "HP:0001347", "hpo_name": "Hyperreflexia", "text": "reflexes were symmetrical but brisk"},
+      {"hpo_id": "HP:0001279", "hpo_name": "Syncope", "text": "syncope episode"},
+      {"hpo_id": "HP:0002018", "hpo_name": "Nausea", "text": "nausea"},
+      {"hpo_id": "HP:0000360", "hpo_name": "Tinnitus", "text": "ringing in her ears"},
+      {"hpo_id": "HP:0002194", "hpo_name": "Delayed gross motor development", "text": "neck and spine pain"},
+      {"hpo_id": "HP:0003690", "hpo_name": "Limb muscle weakness", "text": "left lower extremity weakness"},
+      {"hpo_id": "HP:0001903", "hpo_name": "Anemia", "text": "anemia"}
+    ]
+  },
+  {
+    "note_id": "RA_EN_028",
+    "disease": "Reversible Cerebral Vasoconstriction Syndrome",
+    "orpha_id": "ORPHA:284388",
+    "expected_hpo": [
+      {"hpo_id": "HP:0100026", "hpo_name": "Raynaud phenomenon", "text": "Raynaud's phenomenon"},
+      {"hpo_id": "HP:0000988", "hpo_name": "Skin rash", "text": "facial and back rash"},
+      {"hpo_id": "HP:0001072", "hpo_name": "Thickened skin", "text": "skin tightness"},
+      {"hpo_id": "HP:0007400", "hpo_name": "Irregular hyperpigmentation", "text": "depigmentation"},
+      {"hpo_id": "HP:0002829", "hpo_name": "Arthralgia", "text": "joint pain"},
+      {"hpo_id": "HP:0001324", "hpo_name": "Muscle weakness", "text": "left lower extremity weakness"},
+      {"hpo_id": "HP:0002315", "hpo_name": "Headache", "text": "severe thunderclap headache"},
+      {"hpo_id": "HP:0012378", "hpo_name": "Fatigue", "text": "fatigue"},
+      {"hpo_id": "HP:0200026", "hpo_name": "Ocular pain", "text": "fingertip pain and ulcerations"},
+      {"hpo_id": "HP:0001371", "hpo_name": "Flexion contracture", "text": "morning stiffness"}
+    ]
+  },
+  {
+    "note_id": "RA_EN_029",
+    "disease": "Angiocentric glioma",
+    "orpha_id": "ORPHA:251671",
+    "expected_hpo": [
+      {"hpo_id": "HP:0001250", "hpo_name": "Seizures", "text": "episodic convulsions"},
+      {"hpo_id": "HP:0002069", "hpo_name": "Generalized tonic-clonic seizures", "text": "generalized tonic-clonic seizures"},
+      {"hpo_id": "HP:0002121", "hpo_name": "Absence seizures", "text": "absence seizures"},
+      {"hpo_id": "HP:0007359", "hpo_name": "Focal-onset seizure", "text": "bowing motion"},
+      {"hpo_id": "HP:0000708", "hpo_name": "Behavioral abnormality", "text": "loss of consciousness"}
+    ]
+  },
+  {
+    "note_id": "RA_EN_030",
+    "disease": "Fibrodysplasia Ossificans Progressiva",
+    "orpha_id": "ORPHA:337",
+    "expected_hpo": [
+      {"hpo_id": "HP:0001171", "hpo_name": "Split hand", "text": "congenital malformations of the great toes"},
+      {"hpo_id": "HP:0001376", "hpo_name": "Limitation of joint mobility", "text": "reduced motor function in shoulders, back, neck"},
+      {"hpo_id": "HP:0100774", "hpo_name": "Hyperostosis", "text": "bone formation in the posterior thigh"},
+      {"hpo_id": "HP:0002829", "hpo_name": "Arthralgia", "text": "pain in the thigh and right leg"},
+      {"hpo_id": "HP:0002650", "hpo_name": "Scoliosis", "text": "severe scoliosis"},
+      {"hpo_id": "HP:0003474", "hpo_name": "Sensory neuropathy", "text": "swelling and stiffness in the right lower limb"},
+      {"hpo_id": "HP:0003560", "hpo_name": "Muscular dystrophy", "text": "hyper signal lesion in soft tissue of lower limb muscles"}
+    ]
+  }
+]

@@ -1,0 +1,299 @@
+{
+  "id": "phenopacket-RA_EN_004",
+  "subject": {
+    "id": "RA_EN_004"
+  },
+  "input": "A 56-year-old woman reported experiencing dull aching pain, swelling, and restricted movement in her left knee for the past 10 years. The pain, which began 10 years ago, has progressively worsened. There was no history of trauma. Two years after the onset of pain, she noticed a swelling on the lateral side of her left knee joint, which gradually increased in size and was associated with a reduction in knee joint movement. Activities that involved bending the knee triggered the pain. The patient has no significant past medical or family history. Physical examination revealed swelling on the lateral aspect of the left knee, without any localized redness or increased temperature. The swelling, measuring 15×5 cm, extended from the lateral aspect of the left distal femur to the fibular head. It was bony, hard, not attached to the underlying bone, and non-tender. The range of motion in the left knee joint was limited to 0–40°, with further movement restricted. There was no evidence of neurovascular impairment in the distal part of the limb. No similar lesions were found elsewhere on the body.",
+  "target": "Chikungunya",
+  "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0003326",
+        "label": "Myalgia",
+        "umls_cui": "C0231528"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_004",
+            "description": "NER: dull aching pain (0.998) | Match: sapbert_similarity (0.747)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0012531",
+        "label": "Pain",
+        "umls_cui": "C0030193"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_004",
+            "description": "NER: pain (0.948) | Match: exact_label (1.000)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0000969",
+        "label": "Edema",
+        "umls_cui": "C0013604"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_004",
+            "description": "NER: swelling (0.950) | Match: clinical_synonym (1.000)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0002374",
+        "label": "Diminished movement",
+        "umls_cui": "C4025710"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_004",
+            "description": "NER: restricted movement (0.643) | Match: sapbert_similarity (0.884)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0010501",
+        "label": "Limitation of knee mobility",
+        "umls_cui": "C4021259"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_004",
+            "description": "NER: a reduction in knee joint movement (0.995) | Match: sapbert_similarity (0.891)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0010783",
+        "label": "Erythema",
+        "umls_cui": "C0016382"
+      },
+      "excluded": true,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_004",
+            "description": "NER: redness (0.925) | Match: sapbert_similarity (0.887) | Negated by: \"without\""
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0001945",
+        "label": "Fever",
+        "umls_cui": "C0015967"
+      },
+      "excluded": true,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_004",
+            "description": "NER: increased temperature (0.995) | Match: sapbert_similarity (0.863) | Negated by: \"without\""
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0001386",
+        "label": "Joint swelling",
+        "umls_cui": "C0152031"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_004",
+            "description": "NER: the swelling (0.995) | Match: sapbert_similarity (0.762)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0012838",
+        "label": "Localized",
+        "umls_cui": "C0392752"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_004",
+            "description": "NER: localized (0.900) | Match: text_scan_exact_label (0.950)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0012839",
+        "label": "Distal",
+        "umls_cui": "C0205108"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_004",
+            "description": "NER: distal (0.900) | Match: text_scan_exact_label (0.950)"
+          }
+        }
+      ]
+    }
+  ],
+  "metaData": {
+    "created": "2026-06-19T15:08:39Z",
+    "createdBy": "clinical-preanalysis-pipeline-v2",
+    "phenopacketSchemaVersion": "2.0",
+    "resources": [
+      {
+        "id": "hp",
+        "name": "Human Phenotype Ontology",
+        "url": "https://hpo.jax.org",
+        "version": "2024-04-26",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      }
+    ]
+  },
+  "interpretations": [
+    {
+      "id": "interpretation-RA_EN_004",
+      "progressStatus": "IN_PROGRESS",
+      "diagnosis": {
+        "disease": {
+          "id": "ORPHA:324625",
+          "label": "Chikungunya"
+        },
+        "score": 0.3533,
+        "allCandidates": [
+          {
+            "id": "ORPHA:324625",
+            "label": "Chikungunya",
+            "score": 0.3533
+          },
+          {
+            "id": "ORPHA:448237",
+            "label": "Zika virus disease",
+            "score": 0.3428
+          },
+          {
+            "id": "ORPHA:829",
+            "label": "Adult-onset Still disease",
+            "score": 0.3325
+          },
+          {
+            "id": "ORPHA:221",
+            "label": "Dermatomyositis",
+            "score": 0.3278
+          },
+          {
+            "id": "ORPHA:3260",
+            "label": "Idiopathic hypereosinophilic syndrome",
+            "score": 0.3214
+          },
+          {
+            "id": "ORPHA:761",
+            "label": "Immunoglobulin A vasculitis",
+            "score": 0.3151
+          },
+          {
+            "id": "ORPHA:809",
+            "label": "Mixed connective tissue disease",
+            "score": 0.314
+          },
+          {
+            "id": "ORPHA:2912",
+            "label": "Poliomyelitis",
+            "score": 0.3115
+          },
+          {
+            "id": "ORPHA:533",
+            "label": "Listeriosis",
+            "score": 0.3106
+          },
+          {
+            "id": "ORPHA:1304",
+            "label": "Brucellosis",
+            "score": 0.3002
+          }
+        ]
+      }
+    }
+  ],
+  "_pipelineStats": {
+    "totalEntities": 36,
+    "matchedHPO": 10,
+    "unmatchedEntities": 26,
+    "phenopacketFeatures": 10,
+    "negatedFeatures": 2,
+    "numericPhenotypes": 0,
+    "ordoCandidates": 10
+  }
+}

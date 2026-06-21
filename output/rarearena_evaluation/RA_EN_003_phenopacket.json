@@ -1,0 +1,520 @@
+{
+  "id": "phenopacket-RA_EN_003",
+  "subject": {
+    "id": "RA_EN_003",
+    "sex": "MALE"
+  },
+  "input": "A 49-year-old male presented to the hospital with severe headaches that began at the front and later spread to the back of the head, accompanied by sensitivity to light. For the past three days, he experienced severe nausea, vomiting, diarrhea, and general malaise. Upon examination, he had normal body temperature, stable vital signs, no altered consciousness, and a Glasgow Coma Scale score of 15. His history ruled out trauma or drug intoxication. Initial clinical and laboratory evaluations led to a computed tomography scan, which showed a mass in the sellar region. Subsequent magnetic resonance imaging (MRI) revealed a hemorrhagic sellar mass. Laboratory tests on the fifth day after admission indicated insufficiency in the corticotropic, thyrotropic, and gonadotropic axes. Despite MRI showing a shift in the optic chiasm, ophthalmological examination revealed only minor, non-specific visual field defects without papilledema or orthoptic abnormalities. Surgical intervention was planned but postponed due to severe acute kidney injury, with a creatinine level of 11.6 mg/dL and an estimated glomerular filtration rate (eGFR) of less than 20 mL/min on the fifth day after admission. The patient, a driving instructor, reported digging out a bamboo hedge before hospitalization. Further testing on the third day after admission confirmed hantavirus infection through detection of IgM and IgG antibodies against Puumala hantavirus using immunofluorescence and line immunoassays, as well as positive polymerase chain reaction results. Specific amplification and sequencing of the partial L-Segment identified a puumalavirus circulating in the Middle Rhine region in Germany. Serological tests ruled out infections by hepatitis B virus, hepatitis C virus, and HIV. The patient was transferred to the nephrology department and became oliguric. Due to increasing nausea and rising blood urea levels, haemodialysis was considered but kidney function began to recover, avoiding the need for renal replacement therapy. Symptomatic treatment and hormonal replacement led to increased urinary excretion by day 3 and decreased creatinine levels from day 6 onwards. No specific antiviral treatment was administered. Despite overall improvement, diuretic medication was withheld from day 5, achieving a negative fluid balance with continuous weight loss daily, but urine excretion remained high (6.25 mL/kg/h). Initially attributed to the polyuric phase of acute kidney injury recovery, persistent plasma hyperosmolality and urine hypoosmolality led to further evaluation.",
+  "target": "Hemorrhagic fever-renal syndrome",
+  "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0002315",
+        "label": "Headache",
+        "umls_cui": "C0018681"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_003",
+            "description": "NER: headaches (0.971) | Match: exact_synonym (1.000)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0002018",
+        "label": "Nausea",
+        "umls_cui": "C0027497"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_003",
+            "description": "NER: nausea (0.980) | Match: exact_label (1.000)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0002013",
+        "label": "Vomiting",
+        "umls_cui": "C0042963"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_003",
+            "description": "NER: vomiting (0.962) | Match: exact_label (1.000)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0002014",
+        "label": "Diarrhea",
+        "umls_cui": "C0011991"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_003",
+            "description": "NER: diarrhea (0.972) | Match: clinical_synonym (1.000)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0004372",
+        "label": "Reduced consciousness",
+        "umls_cui": "C0234428"
+      },
+      "excluded": true,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_003",
+            "description": "NER: altered consciousness (0.942) | Match: sapbert_similarity (0.937) | Negated by: \"no\""
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0002690",
+        "label": "Large sella turcica",
+        "umls_cui": "C1843677"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_003",
+            "description": "NER: a mass in the sellar region (0.994) | Match: sapbert_similarity (0.722)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0011748",
+        "label": "Adrenocorticotropic hormone deficiency",
+        "umls_cui": "C0342388"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_003",
+            "description": "NER: insufficiency in the corticotropic, thyrotropic, and gonadotropic axes (0.995) | Match: sapbert_similarity (0.818)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0002308",
+        "label": "Chiari malformation",
+        "umls_cui": "C0003803"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_003",
+            "description": "NER: a shift in the optic chiasm (0.991) | Match: sapbert_similarity (0.723)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0001123",
+        "label": "Visual field defect",
+        "umls_cui": "C3887875"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_003",
+            "description": "NER: visual field defects (0.802) | Match: exact_synonym (1.000)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0001085",
+        "label": "Papilledema",
+        "umls_cui": "C0030353"
+      },
+      "excluded": true,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_003",
+            "description": "NER: papilledema (0.913) | Match: exact_label (1.000) | Negated by: \"without\""
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0000969",
+        "label": "Edema",
+        "umls_cui": "C0013604"
+      },
+      "excluded": true,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_003",
+            "description": "NER: edema (0.877) | Match: clinical_synonym (1.000) | Negated by: \"without\""
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0012286",
+        "label": "Abnormal hypothalamus morphology",
+        "umls_cui": "C4021095"
+      },
+      "excluded": true,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_003",
+            "description": "NER: thoptic abnormalities (0.977) | Match: sapbert_similarity (0.735) | Negated by: \"without\""
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0001919",
+        "label": "Acute kidney injury",
+        "umls_cui": "C0022660"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_003",
+            "description": "NER: severe acute kidney injury (0.999) | Match: substring_match (0.950)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0012115",
+        "label": "Hepatitis",
+        "umls_cui": "C0019158"
+      },
+      "excluded": true,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_003",
+            "description": "NER: hepatitis (0.591) | Match: exact_label (1.000) | Negated by: \"ruled out\""
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0100520",
+        "label": "Oliguria",
+        "umls_cui": "C0028961"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_003",
+            "description": "NER: oliguric (0.951) | Match: sapbert_similarity (0.899)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0003138",
+        "label": "Increased blood urea nitrogen",
+        "umls_cui": "C0151539"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_003",
+            "description": "NER: rising blood urea levels (0.998) | Match: sapbert_similarity (0.894)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0000103",
+        "label": "Polyuria",
+        "umls_cui": "C0032617"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_003",
+            "description": "NER: increased urinary excretion (0.997) | Match: sapbert_similarity (0.861)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0012101",
+        "label": "Decreased serum creatinine",
+        "umls_cui": "C0428282"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_003",
+            "description": "NER: decreased creatinine levels (0.867) | Match: sapbert_similarity (0.974)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0001824",
+        "label": "Weight loss",
+        "umls_cui": "C1262477"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_003",
+            "description": "NER: weight loss (0.855) | Match: clinical_synonym (1.000)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0001986",
+        "label": "Hypertonic dehydration",
+        "umls_cui": "C1112601"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_003",
+            "description": "NER: persistent plasma hyperosmolality (0.997) | Match: sapbert_similarity (0.755)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0001259",
+        "label": "Coma",
+        "umls_cui": "C0009421"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_003",
+            "description": "NER: Coma (0.900) | Match: text_scan_exact_label (0.950)"
+          }
+        }
+      ]
+    }
+  ],
+  "metaData": {
+    "created": "2026-06-19T15:08:32Z",
+    "createdBy": "clinical-preanalysis-pipeline-v2",
+    "phenopacketSchemaVersion": "2.0",
+    "resources": [
+      {
+        "id": "hp",
+        "name": "Human Phenotype Ontology",
+        "url": "https://hpo.jax.org",
+        "version": "2024-04-26",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      }
+    ]
+  },
+  "interpretations": [
+    {
+      "id": "interpretation-RA_EN_003",
+      "progressStatus": "IN_PROGRESS",
+      "diagnosis": {
+        "disease": {
+          "id": "ORPHA:340",
+          "label": "Hemorrhagic fever-renal syndrome"
+        },
+        "score": 0.4716,
+        "allCandidates": [
+          {
+            "id": "ORPHA:340",
+            "label": "Hemorrhagic fever-renal syndrome",
+            "score": 0.4716
+          },
+          {
+            "id": "ORPHA:544482",
+            "label": "Infection-related hemolytic uremic syndrome",
+            "score": 0.4484
+          },
+          {
+            "id": "ORPHA:3385",
+            "label": "African trypanosomiasis",
+            "score": 0.4464
+          },
+          {
+            "id": "ORPHA:652",
+            "label": "Multiple endocrine neoplasia type 1",
+            "score": 0.4443
+          },
+          {
+            "id": "ORPHA:319213",
+            "label": "Lujo hemorrhagic fever",
+            "score": 0.4068
+          },
+          {
+            "id": "ORPHA:99829",
+            "label": "Yellow fever",
+            "score": 0.3963
+          },
+          {
+            "id": "ORPHA:93585",
+            "label": "Immune-mediated thrombotic thrombocytopenic purpura",
+            "score": 0.3917
+          },
+          {
+            "id": "ORPHA:90062",
+            "label": "Acute liver failure",
+            "score": 0.3813
+          },
+          {
+            "id": "ORPHA:99826",
+            "label": "Marburg hemorrhagic fever",
+            "score": 0.3747
+          },
+          {
+            "id": "ORPHA:54595",
+            "label": "Craniopharyngioma",
+            "score": 0.3714
+          }
+        ]
+      }
+    }
+  ],
+  "_pipelineStats": {
+    "totalEntities": 132,
+    "matchedHPO": 21,
+    "unmatchedEntities": 111,
+    "phenopacketFeatures": 21,
+    "negatedFeatures": 5,
+    "numericPhenotypes": 0,
+    "ordoCandidates": 10
+  }
+}

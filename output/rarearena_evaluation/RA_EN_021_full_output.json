@@ -1,0 +1,1319 @@
+{
+  "note_id": "RA_EN_021",
+  "language": "en",
+  "module1": {
+    "clean_text": "An [AGE] Korean male presented to the Department of Dermatology at Yeungnam University Hospital on [DATE] with progressively generalized pigmented lesions. He was reported to be normal at birth. Reticular hyperpigmented lesions were first noted at the age of [AGE] on the popliteal and antecubital fossae. These changes gradually spread to the axillae and trunk. Linear sclerosing bands appeared on both the antecubital and popliteal fossae over the years. The lesions increased in size and number over time, but the patient remained asymptomatic. His family history revealed that his father had similar symptoms and passed away in his forties due to cardiovascular disease. His younger brother also exhibited similar poikilodermatous lesions, which appeared at the age of [AGE] and showed progressive hyperpigmented and sclerotic changes. Physical examination showed micrognathia, clubbing of the fingers, and slim extremities compared to the trunk. Dermatologic examination revealed generalized hyperpigmented, telangiectatic, and atrophic changes, particularly pronounced in the axillae, antecubital, and popliteal fossae. Linear hyperkeratotic and sclerotic bands were observed on both the antecubital and popliteal fossae. Sclerosis of the palms and soles was also noted. Laboratory tests, including complete blood cell count, liver function test, blood coagulation test, antinuclear antibody, and urinalysis, were within normal limits or negative.",
+    "phi_map": {
+      "AGE": [
+        "18-year-old",
+        "2",
+        "3"
+      ],
+      "DATE": "November 2,2005,"
+    },
+    "patient_info": {
+      "sex": "male"
+    }
+  },
+  "module3_warnings": {
+    "temporal": [],
+    "inconsistencies": []
+  },
+  "module4": {
+    "problem": [
+      {
+        "text": "progressively generalized pigmented lesions",
+        "ner_score": 0.999,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "progressively generalized pigmented lesions",
+        "match_type": "deduplicated",
+        "confidence": 0.7948,
+        "matched": false,
+        "umls_cui": "C4024859"
+      },
+      {
+        "text": "lesions",
+        "ner_score": 0.891,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "lesions",
+        "match_type": "sapbert_rejected_low_conf",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "reticular hyperpigmented lesions",
+        "ner_score": 0.996,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0007588",
+        "hpo_name": "Reticular hyperpigmentation",
+        "expanded_text": "reticular hyperpigmented lesions",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.8937,
+        "matched": true,
+        "umls_cui": "C1851972"
+      },
+      {
+        "text": "these changes",
+        "ner_score": 0.967,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "these changes",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "changes",
+        "ner_score": 0.683,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "changes",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "linear sclerosing bands",
+        "ner_score": 0.976,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "linear sclerosing bands",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "sclerosing bands",
+        "ner_score": 0.78,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "sclerosing bands",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "the lesions",
+        "ner_score": 0.996,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0011355",
+        "hpo_name": "Localized skin lesion",
+        "expanded_text": "the lesions",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.7428,
+        "matched": true,
+        "umls_cui": "C0850826"
+      },
+      {
+        "text": "asymptomatic",
+        "ner_score": 0.81,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "asymptomatic",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "similar symptoms",
+        "ner_score": 0.987,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "similar symptoms",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "cardiovascular disease",
+        "ner_score": 0.997,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0001626",
+        "hpo_name": "Abnormality of the cardiovascular system",
+        "expanded_text": "cardiovascular disease",
+        "match_type": "related_synonym",
+        "confidence": 1.0,
+        "matched": true,
+        "umls_cui": "C0007222"
+      },
+      {
+        "text": "similar poikilodermatous lesions",
+        "ner_score": 0.998,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0001029",
+        "hpo_name": "Poikiloderma",
+        "expanded_text": "similar poikilodermatous lesions",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.7764,
+        "matched": true,
+        "umls_cui": "C0392777"
+      },
+      {
+        "text": "oderma",
+        "ner_score": 0.241,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "oderma",
+        "match_type": "skipped_low_ner_score",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "progressive hyperpigmented and sclerotic changes",
+        "ner_score": 0.998,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0007505",
+        "hpo_name": "Progressive hyperpigmentation",
+        "expanded_text": "progressive hyperpigmented and sclerotic changes",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.8168,
+        "matched": true,
+        "umls_cui": "C4024859"
+      },
+      {
+        "text": "sclerotic changes",
+        "ner_score": 0.619,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0000647",
+        "hpo_name": "Sclerocornea",
+        "expanded_text": "sclerotic changes",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.7504,
+        "matched": true,
+        "umls_cui": "C1853235"
+      },
+      {
+        "text": "micrognathia",
+        "ner_score": 0.951,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0000347",
+        "hpo_name": "Micrognathia",
+        "expanded_text": "micrognathia",
+        "match_type": "exact_label",
+        "confidence": 1.0,
+        "matched": true,
+        "umls_cui": "C0025990"
+      },
+      {
+        "text": "clubbing of",
+        "ner_score": 0.922,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0001217",
+        "hpo_name": "Clubbing",
+        "expanded_text": "clubbing of",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.9517,
+        "matched": true,
+        "umls_cui": "C0149651"
+      },
+      {
+        "text": "bing of the fingers",
+        "ner_score": 0.996,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0009700",
+        "hpo_name": "Finger symphalangism",
+        "expanded_text": "bing of the fingers",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.7717,
+        "matched": true,
+        "umls_cui": "C4021399"
+      },
+      {
+        "text": "slim extremities",
+        "ner_score": 0.933,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0009815",
+        "hpo_name": "Aplasia/hypoplasia of the extremities",
+        "expanded_text": "slim extremities",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.7716,
+        "matched": true,
+        "umls_cui": "C0239399"
+      },
+      {
+        "text": "generalized hyperpigmented,",
+        "ner_score": 0.991,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0007440",
+        "hpo_name": "Generalized hyperpigmentation",
+        "expanded_text": "generalized hyperpigmented,",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.8834,
+        "matched": true,
+        "umls_cui": "C4024878"
+      },
+      {
+        "text": "telangiectatic",
+        "ner_score": 0.51,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "telangiectatic",
+        "match_type": "skipped_low_ner_score",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "telangiectatic, and atrophic changes",
+        "ner_score": 0.994,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0007489",
+        "hpo_name": "Diffuse telangiectasia",
+        "expanded_text": "telangiectatic, and atrophic changes",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.7508,
+        "matched": true,
+        "umls_cui": "C1265776"
+      },
+      {
+        "text": "atrophic changes",
+        "ner_score": 0.787,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0004334",
+        "hpo_name": "Dermal atrophy",
+        "expanded_text": "atrophic changes",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.7706,
+        "matched": true,
+        "umls_cui": "C0151514"
+      },
+      {
+        "text": "linear hyperkeratotic and sclerotic bands",
+        "ner_score": 0.994,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "linear hyperkeratotic and sclerotic bands",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "hyperkeratotic",
+        "ner_score": 0.73,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0000962",
+        "hpo_name": "Hyperkeratosis",
+        "expanded_text": "hyperkeratotic",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.9274,
+        "matched": true,
+        "umls_cui": "C0870082"
+      },
+      {
+        "text": "sclerotic bands",
+        "ner_score": 0.856,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "sclerotic bands",
+        "match_type": "deduplicated",
+        "confidence": 0.722,
+        "matched": false,
+        "umls_cui": "C1853235"
+      },
+      {
+        "text": "Sclerosis of the palms and soles",
+        "ner_score": 0.995,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0000972",
+        "hpo_name": "Palmoplantar hyperkeratosis",
+        "expanded_text": "Sclerosis of the palms and soles",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.7384,
+        "matched": true,
+        "umls_cui": "C0022596"
+      },
+      {
+        "text": "progressive",
+        "ner_score": 0.9,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0003676",
+        "hpo_name": "Progressive",
+        "expanded_text": "progressive",
+        "match_type": "text_scan_exact_label",
+        "confidence": 0.95,
+        "matched": true,
+        "umls_cui": "C0205329",
+        "umls_all": [
+          "C0205329",
+          "C1864985"
+        ]
+      },
+      {
+        "text": "generalized",
+        "ner_score": 0.9,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0012837",
+        "hpo_name": "Generalized",
+        "expanded_text": "generalized",
+        "match_type": "text_scan_exact_label",
+        "confidence": 0.95,
+        "matched": true,
+        "umls_cui": "C0205246",
+        "umls_all": [
+          "C0205246"
+        ]
+      }
+    ],
+    "test": [
+      {
+        "text": "Dermatol",
+        "ner_score": 0.989,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "Dermatol",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "dermatolo",
+        "ner_score": 0.986,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "dermatolo",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "normal",
+        "ner_score": 0.284,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "normal",
+        "match_type": "skipped_en_noise",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "Physical",
+        "ner_score": 0.993,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "Physical",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "physical examination",
+        "ner_score": 0.991,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "physical examination",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "examination",
+        "ner_score": 0.992,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "examination",
+        "match_type": "skipped_en_noise",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "ogic",
+        "ner_score": 0.993,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "ogic",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "gic examination",
+        "ner_score": 0.784,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "gic examination",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "Laboratory",
+        "ner_score": 0.969,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "Laboratory",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "laboratory tests",
+        "ner_score": 0.984,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "laboratory tests",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "complete",
+        "ner_score": 0.969,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "complete",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "complete blood cell count",
+        "ner_score": 0.997,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "complete blood cell count",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "blood",
+        "ner_score": 0.991,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "blood",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "count",
+        "ner_score": 0.993,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "count",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "liver",
+        "ner_score": 0.985,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "liver",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "liver function test",
+        "ner_score": 0.997,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "liver function test",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "function",
+        "ner_score": 0.994,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "function",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "blood coagulation test",
+        "ner_score": 0.995,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "blood coagulation test",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "coagulation",
+        "ner_score": 0.979,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "coagulation",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "antinuclear antibody",
+        "ner_score": 0.995,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "antinuclear antibody",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "urinalysis",
+        "ner_score": 0.97,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "urinalysis",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "within",
+        "ner_score": 0.806,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "within",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "limits",
+        "ner_score": 0.747,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "limits",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "negative",
+        "ner_score": 0.591,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "negative",
+        "match_type": "skipped_en_noise",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      }
+    ],
+    "ordo_candidates": [
+      {
+        "ordo_id": "ORPHA:221016",
+        "name": "Rothmund-Thomson syndrome type 2",
+        "name_fr": "",
+        "score": 0.3839,
+        "coverage": 0.0319,
+        "matched_hpo": [
+          "HP:0001029",
+          "HP:0004334",
+          "HP:0009700"
+        ],
+        "matched_count": 3,
+        "total_disease_hpo": 94,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:221008",
+        "name": "Rothmund-Thomson syndrome type 1",
+        "name_fr": "",
+        "score": 0.3753,
+        "coverage": 0.0469,
+        "matched_hpo": [
+          "HP:0001029",
+          "HP:0004334",
+          "HP:0009700"
+        ],
+        "matched_count": 3,
+        "total_disease_hpo": 64,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:910",
+        "name": "Xeroderma pigmentosum",
+        "name_fr": "",
+        "score": 0.3622,
+        "coverage": 0.0508,
+        "matched_hpo": [
+          "HP:0000962",
+          "HP:0001029",
+          "HP:0004334"
+        ],
+        "matched_count": 3,
+        "total_disease_hpo": 59,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:2909",
+        "name": "Rothmund-Thomson syndrome",
+        "name_fr": "",
+        "score": 0.359,
+        "coverage": 0.0357,
+        "matched_hpo": [
+          "HP:0001029",
+          "HP:0007588"
+        ],
+        "matched_count": 2,
+        "total_disease_hpo": 56,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:2908",
+        "name": "Kindler epidermolysis bullosa",
+        "name_fr": "",
+        "score": 0.3121,
+        "coverage": 0.0488,
+        "matched_hpo": [
+          "HP:0000962",
+          "HP:0001029"
+        ],
+        "matched_count": 2,
+        "total_disease_hpo": 41,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:902",
+        "name": "Werner syndrome",
+        "name_fr": "",
+        "score": 0.3036,
+        "coverage": 0.0274,
+        "matched_hpo": [
+          "HP:0000962",
+          "HP:0004334"
+        ],
+        "matched_count": 2,
+        "total_disease_hpo": 73,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:221039",
+        "name": "Hereditary sclerosing poikiloderma, Weary type",
+        "name_fr": "",
+        "score": 0.2952,
+        "coverage": 0.3333,
+        "matched_hpo": [
+          "HP:0000347",
+          "HP:0001217"
+        ],
+        "matched_count": 2,
+        "total_disease_hpo": 6,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:2556",
+        "name": "Microphthalmia with linear skin defects syndrome",
+        "name_fr": "",
+        "score": 0.2946,
+        "coverage": 0.039,
+        "matched_hpo": [
+          "HP:0000347",
+          "HP:0000647",
+          "HP:0004334"
+        ],
+        "matched_count": 3,
+        "total_disease_hpo": 77,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:79474",
+        "name": "Atypical Werner syndrome",
+        "name_fr": "",
+        "score": 0.2897,
+        "coverage": 0.0222,
+        "matched_hpo": [
+          "HP:0000347",
+          "HP:0000962"
+        ],
+        "matched_count": 2,
+        "total_disease_hpo": 90,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:158673",
+        "name": "Localized dystrophic epidermolysis bullosa, acral form",
+        "name_fr": "",
+        "score": 0.2881,
+        "coverage": 0.15,
+        "matched_hpo": [
+          "HP:0000972",
+          "HP:0001029",
+          "HP:0004334"
+        ],
+        "matched_count": 3,
+        "total_disease_hpo": 20,
+        "text_match": false
+      }
+    ],
+    "stats": {
+      "total": 53,
+      "matched": 17,
+      "unmatched": 36,
+      "match_rate": 32.1,
+      "unique_hpo": 17,
+      "ordo_matches": 10
+    }
+  },
+  "phenopacket": {
+    "id": "phenopacket-RA_EN_021",
+    "subject": {
+      "id": "RA_EN_021",
+      "sex": "MALE"
+    },
+    "input": "An 18-year-old Korean male presented to the Department of Dermatology at Yeungnam University Hospital on November 2, 2005, with progressively generalized pigmented lesions. He was reported to be normal at birth. Reticular hyperpigmented lesions were first noted at the age of 2 on the popliteal and antecubital fossae. These changes gradually spread to the axillae and trunk. Linear sclerosing bands appeared on both the antecubital and popliteal fossae over the years. The lesions increased in size and number over time, but the patient remained asymptomatic. His family history revealed that his father had similar symptoms and passed away in his forties due to cardiovascular disease. His younger brother also exhibited similar poikilodermatous lesions, which appeared at the age of 3 and showed progressive hyperpigmented and sclerotic changes. Physical examination showed micrognathia, clubbing of the fingers, and slim extremities compared to the trunk. Dermatologic examination revealed generalized hyperpigmented, telangiectatic, and atrophic changes, particularly pronounced in the axillae, antecubital, and popliteal fossae. Linear hyperkeratotic and sclerotic bands were observed on both the antecubital and popliteal fossae. Sclerosis of the palms and soles was also noted. Laboratory tests, including complete blood cell count, liver function test, blood coagulation test, antinuclear antibody, and urinalysis, were within normal limits or negative.",
+    "target": "Rothmund-Thomson syndrome type 2",
+    "phenotypicFeatures": [
+      {
+        "type": {
+          "id": "HP:0007588",
+          "label": "Reticular hyperpigmentation",
+          "umls_cui": "C1851972"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_021",
+              "description": "NER: reticular hyperpigmented lesions (0.996) | Match: sapbert_similarity (0.894)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0011355",
+          "label": "Localized skin lesion",
+          "umls_cui": "C0850826"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_021",
+              "description": "NER: the lesions (0.996) | Match: sapbert_similarity (0.743)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0001626",
+          "label": "Abnormality of the cardiovascular system",
+          "umls_cui": "C0007222"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_021",
+              "description": "NER: cardiovascular disease (0.997) | Match: related_synonym (1.000)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0001029",
+          "label": "Poikiloderma",
+          "umls_cui": "C0392777"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_021",
+              "description": "NER: similar poikilodermatous lesions (0.998) | Match: sapbert_similarity (0.776)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0007505",
+          "label": "Progressive hyperpigmentation",
+          "umls_cui": "C4024859"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_021",
+              "description": "NER: progressive hyperpigmented and sclerotic changes (0.998) | Match: sapbert_similarity (0.817)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0000647",
+          "label": "Sclerocornea",
+          "umls_cui": "C1853235"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_021",
+              "description": "NER: sclerotic changes (0.619) | Match: sapbert_similarity (0.750)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0000347",
+          "label": "Micrognathia",
+          "umls_cui": "C0025990"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_021",
+              "description": "NER: micrognathia (0.951) | Match: exact_label (1.000)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0001217",
+          "label": "Clubbing",
+          "umls_cui": "C0149651"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_021",
+              "description": "NER: clubbing of (0.922) | Match: sapbert_similarity (0.952)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0009700",
+          "label": "Finger symphalangism",
+          "umls_cui": "C4021399"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_021",
+              "description": "NER: bing of the fingers (0.996) | Match: sapbert_similarity (0.772)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0009815",
+          "label": "Aplasia/hypoplasia of the extremities",
+          "umls_cui": "C0239399"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_021",
+              "description": "NER: slim extremities (0.933) | Match: sapbert_similarity (0.772)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0007440",
+          "label": "Generalized hyperpigmentation",
+          "umls_cui": "C4024878"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_021",
+              "description": "NER: generalized hyperpigmented, (0.991) | Match: sapbert_similarity (0.883)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0007489",
+          "label": "Diffuse telangiectasia",
+          "umls_cui": "C1265776"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_021",
+              "description": "NER: telangiectatic, and atrophic changes (0.994) | Match: sapbert_similarity (0.751)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0004334",
+          "label": "Dermal atrophy",
+          "umls_cui": "C0151514"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_021",
+              "description": "NER: atrophic changes (0.787) | Match: sapbert_similarity (0.771)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0000962",
+          "label": "Hyperkeratosis",
+          "umls_cui": "C0870082"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_021",
+              "description": "NER: hyperkeratotic (0.730) | Match: sapbert_similarity (0.927)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0000972",
+          "label": "Palmoplantar hyperkeratosis",
+          "umls_cui": "C0022596"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_021",
+              "description": "NER: Sclerosis of the palms and soles (0.995) | Match: sapbert_similarity (0.738)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0003676",
+          "label": "Progressive",
+          "umls_cui": "C0205329"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_021",
+              "description": "NER: progressive (0.900) | Match: text_scan_exact_label (0.950)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0012837",
+          "label": "Generalized",
+          "umls_cui": "C0205246"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_021",
+              "description": "NER: generalized (0.900) | Match: text_scan_exact_label (0.950)"
+            }
+          }
+        ]
+      }
+    ],
+    "metaData": {
+      "created": "2026-06-19T15:11:39Z",
+      "createdBy": "clinical-preanalysis-pipeline-v2",
+      "phenopacketSchemaVersion": "2.0",
+      "resources": [
+        {
+          "id": "hp",
+          "name": "Human Phenotype Ontology",
+          "url": "https://hpo.jax.org",
+          "version": "2024-04-26",
+          "namespacePrefix": "HP",
+          "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        }
+      ]
+    },
+    "interpretations": [
+      {
+        "id": "interpretation-RA_EN_021",
+        "progressStatus": "IN_PROGRESS",
+        "diagnosis": {
+          "disease": {
+            "id": "ORPHA:221016",
+            "label": "Rothmund-Thomson syndrome type 2"
+          },
+          "score": 0.3839,
+          "allCandidates": [
+            {
+              "id": "ORPHA:221016",
+              "label": "Rothmund-Thomson syndrome type 2",
+              "score": 0.3839
+            },
+            {
+              "id": "ORPHA:221008",
+              "label": "Rothmund-Thomson syndrome type 1",
+              "score": 0.3753
+            },
+            {
+              "id": "ORPHA:910",
+              "label": "Xeroderma pigmentosum",
+              "score": 0.3622
+            },
+            {
+              "id": "ORPHA:2909",
+              "label": "Rothmund-Thomson syndrome",
+              "score": 0.359
+            },
+            {
+              "id": "ORPHA:2908",
+              "label": "Kindler epidermolysis bullosa",
+              "score": 0.3121
+            },
+            {
+              "id": "ORPHA:902",
+              "label": "Werner syndrome",
+              "score": 0.3036
+            },
+            {
+              "id": "ORPHA:221039",
+              "label": "Hereditary sclerosing poikiloderma, Weary type",
+              "score": 0.2952
+            },
+            {
+              "id": "ORPHA:2556",
+              "label": "Microphthalmia with linear skin defects syndrome",
+              "score": 0.2946
+            },
+            {
+              "id": "ORPHA:79474",
+              "label": "Atypical Werner syndrome",
+              "score": 0.2897
+            },
+            {
+              "id": "ORPHA:158673",
+              "label": "Localized dystrophic epidermolysis bullosa, acral form",
+              "score": 0.2881
+            }
+          ]
+        }
+      }
+    ],
+    "_pipelineStats": {
+      "totalEntities": 53,
+      "matchedHPO": 17,
+      "unmatchedEntities": 36,
+      "phenopacketFeatures": 17,
+      "negatedFeatures": 0,
+      "numericPhenotypes": 0,
+      "ordoCandidates": 10
+    }
+  }
+}

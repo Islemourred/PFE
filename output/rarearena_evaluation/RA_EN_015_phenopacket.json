@@ -1,0 +1,1028 @@
+{
+  "id": "phenopacket-RA_EN_015",
+  "subject": {
+    "id": "RA_EN_015",
+    "sex": "MALE"
+  },
+  "input": "A male aged 9 years and 9 months presented to the Emergency Department with a one-week history of increased urinary frequency and thirst. He reported decreased appetite and had an unintentional weight loss of 7 lbs over the past week. Earlier that day, his primary care physician noted an elevated blood glucose finger stick at 138 mg/dL and urinalysis showed glucosuria with 100 mg/dL. He was referred to the Emergency Department for further care. His birth history included prematurity with induction at 36 weeks due to intrauterine growth restriction, and delivery via Cesarean section due to fetal distress. His birth weight was 2690 grams and birth length was 48.3 cm. He was monitored in the neonatal intensive care unit for 24 hours for potential hypoglycemia due to maternal gestational diabetes, but his blood glucose levels remained normal. He had jaundice but did not require phototherapy and passed his newborn hearing screen before discharge. His past medical history included an endocrine evaluation at 4 years and 3 months of age for polyuria, polydipsia, and weight gain. His weight was stable in the 50th percentile until approximately 2 years of age when it increased to the 90th percentile, reaching the 99th percentile at the time of his endocrinology visit. His height decreased from the 25th percentile at 3 years of age to approximately the 15th percentile at the time of his endocrinology visit. Evaluation revealed an elevated fasting blood glucose level of 113 mg/dL and mildly elevated thyroid stimulating hormone at 5.3 mIU/L (normal range 0.5–4.3 mIU/L). His serum creatinine was 0.41 mg/dL and electrolytes were unremarkable. Further studies for thyroid function and Cushing's syndrome were recommended but not completed. He had a history of multiple sinus and ear infections requiring adenoidectomy and four sets of myringotomy tubes. He experienced speech delay due to frequent ear infections and received speech therapy twice weekly and hearing therapy three times weekly. He had physical and occupational therapy services until kindergarten for delayed milestones, including walking at 16 months of age. He receives additional support for reading, and formal academic testing was recommended by his school but not yet completed. An immunologic evaluation at an outside hospital due to frequent infections was unremarkable. He was diagnosed with asthma at 1 year of age and was prescribed fluticasone and cetirizine. His family history included maternal renal injury secondary to diabetes during pregnancy, photophobia in his mother, nephrolithiasis in the maternal grandfather and maternal aunt, hypertension in the maternal grandfather, and hearing loss and photophobia in a first cousin on the maternal side. There was no family history of consanguinity. Review of systems revealed subjective chills and constipation. He also reported waking at night to drink and void but denied fever, abdominal pain, daytime or nighttime enuresis, urgency, dysuria, inability to empty his bladder, or hematuria. In the Emergency Department, his blood pressure was 123/71 mmHg, weight was 37 kg (82nd percentile), and height was 127.5 cm (3rd percentile). Physical examination revealed a grade 2/6 systolic ejection murmur and hypogonadism. There were concerns for photophobia during his eye exam. No other dysmorphic features were noted. Initial laboratory work-up showed elevated serum creatinine of 4.4 mg/dL, low serum calcium of 7.7 mg/dL (8.8–10.1 mg/dL), and slightly elevated serum phosphorus of 6.1 mg/dL (3.7–5.6 mg/dL). Serum intact parathyroid hormone level was elevated at 340 pg/mL (9–52 pg/mL). Complete blood count revealed normocytic anemia with serum hemoglobin of 8.1 g/dL (11.5–15.5 g/dL). Urinalysis showed moderate blood, no proteinuria, no leukocyte esterase, and a specific gravity of ≤1.005. Renal/bladder ultrasound showed small kidneys with right kidney 6.6 cm and left kidney 7.8 cm with increased echogenicity bilaterally and no evidence of cystic disease. An echocardiogram was performed due to the murmur, which was unremarkable. Ophthalmology exam showed no cystine crystals but revealed bilateral retinal dystrophy with 20/50 OD and 20/30 OS. Bone age assessment indicated it was greater than 2 standard deviations above his chronological age.",
+  "target": "Gitelman syndrome",
+  "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0100515",
+        "label": "Pollakisuria",
+        "umls_cui": "C0042023"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_015",
+            "description": "NER: increased urinary frequency (0.998) | Match: sapbert_similarity (0.808)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0000017",
+        "label": "Nocturia",
+        "umls_cui": "C0028734"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_015",
+            "description": "NER: urinary frequency (0.893) | Match: sapbert_similarity (0.734)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0004396",
+        "label": "Poor appetite",
+        "umls_cui": "C0232462"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_015",
+            "description": "NER: decreased appetite (0.720) | Match: exact_synonym (1.000)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0001824",
+        "label": "Weight loss",
+        "umls_cui": "C1262477"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_015",
+            "description": "NER: weight loss (0.858) | Match: clinical_synonym (1.000)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0003076",
+        "label": "Glycosuria",
+        "umls_cui": "C0017979"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_015",
+            "description": "NER: glucosuria (0.964) | Match: exact_synonym (1.000)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0001511",
+        "label": "Intrauterine growth retardation",
+        "umls_cui": "C0015934"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_015",
+            "description": "NER: intrauterine growth (0.953) | Match: sapbert_similarity (0.749)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0012051",
+        "label": "Reactive hypoglycemia",
+        "umls_cui": "C0271710"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_015",
+            "description": "NER: potential hypoglycemia (0.982) | Match: sapbert_similarity (0.755)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0001943",
+        "label": "Hypoglycemia",
+        "umls_cui": "C0020615"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_015",
+            "description": "NER: hypoglycemia (0.682) | Match: exact_label (1.000)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0009800",
+        "label": "Maternal diabetes",
+        "umls_cui": "C0085207"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_015",
+            "description": "NER: maternal gestational diabetes (0.958) | Match: substring_match (0.950)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0000819",
+        "label": "Diabetes mellitus",
+        "umls_cui": "C0011849"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_015",
+            "description": "NER: diabetes (0.895) | Match: sapbert_similarity (0.972)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0000952",
+        "label": "Jaundice",
+        "umls_cui": "C0022346"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_015",
+            "description": "NER: jaundice (0.783) | Match: exact_label (1.000)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0000103",
+        "label": "Polyuria",
+        "umls_cui": "C0032617"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_015",
+            "description": "NER: polyuria (0.961) | Match: exact_label (1.000)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0001959",
+        "label": "Polydipsia",
+        "umls_cui": "C0085602"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_015",
+            "description": "NER: polydipsia (0.938) | Match: exact_label (1.000)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0004324",
+        "label": "Increased body weight",
+        "umls_cui": "C0043094"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_015",
+            "description": "NER: weight gain (0.895) | Match: related_synonym (1.000)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0008283",
+        "label": "Fasting hyperinsulinemia",
+        "umls_cui": "C1864954"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_015",
+            "description": "NER: an elevated fasting blood glucose level (0.995) | Match: sapbert_similarity (0.839)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0002925",
+        "label": "Elevated circulating thyroid-stimulating hormone concentration",
+        "umls_cui": "C0586553"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_015",
+            "description": "NER: mildly elevated thyroid stimulating hormone (0.998) | Match: substring_match (0.950)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0000388",
+        "label": "Otitis media",
+        "umls_cui": "C0029882"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_015",
+            "description": "NER: multiple sinus and ear infections (0.998) | Match: substring_match (0.950)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0000750",
+        "label": "Delayed speech and language development",
+        "umls_cui": "C0023012"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_015",
+            "description": "NER: speech delay (0.885) | Match: exact_synonym (1.000)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0001263",
+        "label": "Global developmental delay",
+        "umls_cui": "C0557874"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_015",
+            "description": "NER: delayed milestone (0.752) | Match: sapbert_similarity (0.882)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0002719",
+        "label": "Recurrent infections",
+        "umls_cui": "C0239998"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_015",
+            "description": "NER: frequent infections (0.998) | Match: clinical_synonym (1.000)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0002099",
+        "label": "Asthma",
+        "umls_cui": "C0004096"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_015",
+            "description": "NER: asthma (0.846) | Match: exact_label (1.000)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0000613",
+        "label": "Photophobia",
+        "umls_cui": "C0085636"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_015",
+            "description": "NER: photophobia (0.955) | Match: exact_label (1.000)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0000787",
+        "label": "Nephrolithiasis",
+        "umls_cui": "C0392525"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_015",
+            "description": "NER: nephrolithiasis (0.990) | Match: exact_label (1.000)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0000365",
+        "label": "Hearing impairment",
+        "umls_cui": "C0011053"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_015",
+            "description": "NER: hearing loss (0.999) | Match: clinical_synonym (1.000)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0002019",
+        "label": "Constipation",
+        "umls_cui": "C0009806"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_015",
+            "description": "NER: constipation (0.971) | Match: exact_label (1.000)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0001945",
+        "label": "Fever",
+        "umls_cui": "C0015967"
+      },
+      "excluded": true,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_015",
+            "description": "NER: fever (0.976) | Match: clinical_synonym (1.000) | Negated by: \"denied\""
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0002027",
+        "label": "Abdominal pain",
+        "umls_cui": "C0000737"
+      },
+      "excluded": true,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_015",
+            "description": "NER: abdominal pain (0.997) | Match: exact_label (1.000) | Negated by: \"denied\""
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0012531",
+        "label": "Pain",
+        "umls_cui": "C0030193"
+      },
+      "excluded": true,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_015",
+            "description": "NER: pain (0.872) | Match: exact_label (1.000) | Negated by: \"denied\""
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0010677",
+        "label": "Enuresis nocturna",
+        "umls_cui": "C0270327"
+      },
+      "excluded": true,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_015",
+            "description": "NER: daytime or nighttime enuresis (0.887) | Match: sapbert_similarity (0.909) | Negated by: \"denied\""
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0000805",
+        "label": "Enuresis",
+        "umls_cui": "C0014394"
+      },
+      "excluded": true,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_015",
+            "description": "NER: enuresis (0.972) | Match: exact_label (1.000) | Negated by: \"denied\""
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0100518",
+        "label": "Dysuria",
+        "umls_cui": "C0013428"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_015",
+            "description": "NER: dysuria (0.975) | Match: exact_label (1.000)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0000019",
+        "label": "Urinary hesitancy",
+        "umls_cui": "C0152032"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_015",
+            "description": "NER: inability to empty (0.697) | Match: sapbert_similarity (0.743)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0000020",
+        "label": "Urinary incontinence",
+        "umls_cui": "C0042024"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_015",
+            "description": "NER: inability to empty his bladder (0.997) | Match: sapbert_similarity (0.728)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0000790",
+        "label": "Hematuria",
+        "umls_cui": "C0018965"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_015",
+            "description": "NER: hematuria (0.974) | Match: exact_label (1.000)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0000135",
+        "label": "Hypogonadism",
+        "umls_cui": "C0020619"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_015",
+            "description": "NER: hypogonadism (0.961) | Match: exact_label (1.000)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0001999",
+        "label": "Abnormal facial shape",
+        "umls_cui": "C0266617"
+      },
+      "excluded": true,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_015",
+            "description": "NER: dysmorphic features (0.906) | Match: sapbert_similarity (0.840) | Negated by: \"no\""
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0003259",
+        "label": "Elevated circulating creatinine concentration",
+        "umls_cui": "C0700225"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_015",
+            "description": "NER: elevated serum creatinine (0.995) | Match: exact_synonym (1.000)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0002901",
+        "label": "Hypocalcemia",
+        "umls_cui": "C0020598"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_015",
+            "description": "NER: low serum calcium (0.899) | Match: sapbert_similarity (0.888)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0003109",
+        "label": "Hyperphosphaturia",
+        "umls_cui": "C0268079"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_015",
+            "description": "NER: slightly elevated serum phosphorus (0.979) | Match: sapbert_similarity (0.775)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0001897",
+        "label": "Normocytic anemia",
+        "umls_cui": "C0085577"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_015",
+            "description": "NER: normocytic anemia (0.998) | Match: exact_label (1.000)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0001903",
+        "label": "Anemia",
+        "umls_cui": "C0002871"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_015",
+            "description": "NER: anemia (0.802) | Match: exact_label (1.000)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0000093",
+        "label": "Proteinuria",
+        "umls_cui": "C0033687"
+      },
+      "excluded": true,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_015",
+            "description": "NER: proteinuria (0.939) | Match: exact_label (1.000) | Negated by: \"no\""
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0000089",
+        "label": "Renal hypoplasia",
+        "umls_cui": "C0266295"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_015",
+            "description": "NER: small kidneys (0.877) | Match: exact_synonym (1.000)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0000556",
+        "label": "Retinal dystrophy",
+        "umls_cui": "C0854723"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_015",
+            "description": "NER: bilateral retinal dystrophy (0.998) | Match: substring_match (0.950)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0003560",
+        "label": "Muscular dystrophy",
+        "umls_cui": "C0026850"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_015",
+            "description": "NER: dystrophy (0.839) | Match: sapbert_similarity (0.824)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0000822",
+        "label": "Hypertension",
+        "umls_cui": "C0020538"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_015",
+            "description": "NER: hypertension (0.900) | Match: text_scan_exact_label (0.950)"
+          }
+        }
+      ]
+    }
+  ],
+  "metaData": {
+    "created": "2026-06-19T15:10:43Z",
+    "createdBy": "clinical-preanalysis-pipeline-v2",
+    "phenopacketSchemaVersion": "2.0",
+    "resources": [
+      {
+        "id": "hp",
+        "name": "Human Phenotype Ontology",
+        "url": "https://hpo.jax.org",
+        "version": "2024-04-26",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      }
+    ]
+  },
+  "interpretations": [
+    {
+      "id": "interpretation-RA_EN_015",
+      "progressStatus": "IN_PROGRESS",
+      "diagnosis": {
+        "disease": {
+          "id": "ORPHA:358",
+          "label": "Gitelman syndrome"
+        },
+        "score": 0.478,
+        "allCandidates": [
+          {
+            "id": "ORPHA:358",
+            "label": "Gitelman syndrome",
+            "score": 0.478
+          },
+          {
+            "id": "ORPHA:49041",
+            "label": "IgG4-related retroperitoneal fibrosis",
+            "score": 0.4502
+          },
+          {
+            "id": "ORPHA:213",
+            "label": "Cystinosis",
+            "score": 0.4493
+          },
+          {
+            "id": "ORPHA:536",
+            "label": "Systemic lupus erythematosus",
+            "score": 0.4088
+          },
+          {
+            "id": "ORPHA:85450",
+            "label": "Hereditary amyloidosis with primary renal involvement",
+            "score": 0.3876
+          },
+          {
+            "id": "ORPHA:411634",
+            "label": "Juvenile nephropathic cystinosis",
+            "score": 0.3669
+          },
+          {
+            "id": "ORPHA:340",
+            "label": "Hemorrhagic fever-renal syndrome",
+            "score": 0.3545
+          },
+          {
+            "id": "ORPHA:3463",
+            "label": "Wolfram syndrome",
+            "score": 0.3523
+          },
+          {
+            "id": "ORPHA:699",
+            "label": "Pearson syndrome",
+            "score": 0.3521
+          },
+          {
+            "id": "ORPHA:652",
+            "label": "Multiple endocrine neoplasia type 1",
+            "score": 0.3516
+          }
+        ]
+      }
+    }
+  ],
+  "_validationWarnings": [
+    {
+      "type": "sex_anatomy_conflict",
+      "severity": "critical",
+      "message": "Female-specific term 'pregnancy' found in male patient record",
+      "term": "pregnancy"
+    }
+  ],
+  "_pipelineStats": {
+    "totalEntities": 197,
+    "matchedHPO": 46,
+    "unmatchedEntities": 151,
+    "phenopacketFeatures": 46,
+    "negatedFeatures": 7,
+    "numericPhenotypes": 0,
+    "ordoCandidates": 10
+  }
+}

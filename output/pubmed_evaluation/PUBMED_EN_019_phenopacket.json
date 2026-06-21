@@ -4,7 +4,7 @@
     "id": "PUBMED_EN_019"
   },
   "input": "Case Report: Spinal Muscular Atrophy.\n\nPURPOSE OF REVIEW: This article provides an overview of the pathophysiology and clinical presentations of spinal muscular atrophy (SMA) and reviews therapeutic developments, including US Food and Drug Administration (FDA)-approved gene-targeted therapies and mainstays of supportive SMA care.\nRECENT FINDINGS: Over the past decades, an understanding of the role of SMN protein in the development and maintenance of the motor unit and the intricate genetics underlying SMA has led to striking developments in therapeutics with three FDA-approved treatments for SMA, one targeting SMN1 gene replacement (onasemnogene abeparvovec-xioi) and two others enhancing SMN protein production from the SMN2 gene (nusinersen and risdiplam). These therapies are most effective in infants treated at younger ages, and improvement is most striking in babies treated as neonates. Despite improvements in motor function, patients (especially those treated at older ages) continue to experience significant weakness and require continued close monitoring of respiratory and orthopedic symptoms.\nSUMMARY: Striking therapeutic advancements have changed the clinical course of SMA dramatically, although supportive care continues to play an important role in patient care.",
-  "target": "Spinal muscular atrophy",
+  "target": "Autosomal dominant Charcot-Marie-Tooth disease type 2Z",
   "phenotypicFeatures": [
     {
       "type": {
@@ -21,16 +21,16 @@
           },
           "reference": {
             "id": "PUBMED_EN_019",
-            "description": "NER: Spinal Muscular Atrophy (0.918) | Match: exact_label (1.000)"
+            "description": "NER: Spinal Muscular Atrophy (0.998) | Match: exact_label (1.000)"
           }
         }
       ]
     },
     {
       "type": {
-        "id": "HP:0004302",
-        "label": "Functional motor deficit",
-        "umls_cui": "C4025360"
+        "id": "HP:0003690",
+        "label": "Limb muscle weakness",
+        "umls_cui": "C0587246"
       },
       "excluded": false,
       "evidence": [
@@ -41,7 +41,7 @@
           },
           "reference": {
             "id": "PUBMED_EN_019",
-            "description": "NER: motor function (0.451) | Match: sapbert_similarity (0.740)"
+            "description": "NER: significant weakness (0.998) | Match: sapbert_similarity (0.830)"
           }
         }
       ]
@@ -68,26 +68,6 @@
     },
     {
       "type": {
-        "id": "HP:0011947",
-        "label": "Respiratory tract infection",
-        "umls_cui": "C0035243"
-      },
-      "excluded": false,
-      "evidence": [
-        {
-          "evidenceCode": {
-            "id": "ECO:0000033",
-            "label": "author statement supported by traceable reference"
-          },
-          "reference": {
-            "id": "PUBMED_EN_019",
-            "description": "NER: respiratory (0.603) | Match: sapbert_similarity (0.712)"
-          }
-        }
-      ]
-    },
-    {
-      "type": {
         "id": "HP:0003202",
         "label": "Skeletal muscle atrophy",
         "umls_cui": "C0234958"
@@ -108,7 +88,7 @@
     }
   ],
   "metaData": {
-    "created": "2026-06-11T03:06:38Z",
+    "created": "2026-06-19T15:03:19Z",
     "createdBy": "clinical-preanalysis-pipeline-v2",
     "phenopacketSchemaVersion": "2.0",
     "resources": [
@@ -128,47 +108,72 @@
       "progressStatus": "IN_PROGRESS",
       "diagnosis": {
         "disease": {
-          "id": "ORPHA:70",
-          "label": "Spinal muscular atrophy"
+          "id": "ORPHA:466768",
+          "label": "Autosomal dominant Charcot-Marie-Tooth disease type 2Z"
         },
-        "score": 0.85,
+        "score": 0.4564,
         "allCandidates": [
           {
-            "id": "ORPHA:70",
-            "label": "Spinal muscular atrophy",
-            "score": 0.85
+            "id": "ORPHA:466768",
+            "label": "Autosomal dominant Charcot-Marie-Tooth disease type 2Z",
+            "score": 0.4564
           },
           {
-            "id": "ORPHA:371",
-            "label": "Glycogen storage disease due to muscle phosphofructokinase deficiency",
-            "score": 0.2889
+            "id": "ORPHA:496756",
+            "label": "Early-onset progressive encephalopathy-spastic ataxia-distal spinal muscular atrophy syndrome",
+            "score": 0.4327
           },
           {
-            "id": "ORPHA:85162",
-            "label": "Facial onset sensory and motor neuronopathy",
-            "score": 0.2514
+            "id": "ORPHA:1145",
+            "label": "Infantile-onset X-linked spinal muscular atrophy",
+            "score": 0.4271
           },
           {
-            "id": "ORPHA:166",
-            "label": "Charcot-Marie-Tooth disease",
-            "score": 0.2
+            "id": "ORPHA:166108",
+            "label": "Birk-Barel syndrome",
+            "score": 0.3949
           },
           {
-            "id": "ORPHA:3239",
-            "label": "Deafness-vitiligo-achalasia syndrome",
-            "score": 0.14
+            "id": "ORPHA:1320",
+            "label": "Idiopathic camptocormia",
+            "score": 0.3688
+          },
+          {
+            "id": "ORPHA:97229",
+            "label": "Riboflavin transporter deficiency",
+            "score": 0.3561
+          },
+          {
+            "id": "ORPHA:589",
+            "label": "Myasthenia gravis",
+            "score": 0.3561
+          },
+          {
+            "id": "ORPHA:98913",
+            "label": "Postsynaptic congenital myasthenic syndrome",
+            "score": 0.3518
+          },
+          {
+            "id": "ORPHA:845",
+            "label": "Tay-Sachs disease",
+            "score": 0.3475
+          },
+          {
+            "id": "ORPHA:271861",
+            "label": "Hereditary ATTR amyloidosis",
+            "score": 0.3465
           }
         ]
       }
     }
   ],
   "_pipelineStats": {
-    "totalEntities": 8,
-    "matchedHPO": 5,
-    "unmatchedEntities": 3,
-    "phenopacketFeatures": 5,
+    "totalEntities": 25,
+    "matchedHPO": 4,
+    "unmatchedEntities": 21,
+    "phenopacketFeatures": 4,
     "negatedFeatures": 0,
     "numericPhenotypes": 0,
-    "ordoCandidates": 5
+    "ordoCandidates": 10
   }
 }

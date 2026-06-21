@@ -13,6 +13,45 @@
   "module4": {
     "problem": [
       {
+        "text": "x - linked agammaglobulinemia",
+        "ner_score": 0.992,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0004432",
+        "hpo_name": "Agammaglobulinemia",
+        "expanded_text": "x - linked agammaglobulinemia",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.8891,
+        "matched": true,
+        "umls_cui": "C0001768"
+      },
+      {
+        "text": "b - lymphocyte differentiation",
+        "ner_score": 0.981,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "b - lymphocyte differentiation",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "functional \" in vitro \" b cell proliferation",
+        "ner_score": 0.989,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "functional \" in vitro \" b cell proliferation",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
         "text": "Linked",
         "ner_score": 0.878,
         "negated": false,
@@ -39,17 +78,69 @@
         "umls_cui": "C0020455"
       },
       {
-        "text": "Allergic Rhinitis",
-        "ner_score": 0.894,
+        "text": "high serum ige levels",
+        "ner_score": 0.995,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0003212",
+        "hpo_name": "Increased circulating IgE concentration",
+        "expanded_text": "high serum ige levels",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.9649,
+        "matched": true,
+        "umls_cui": "C0236175"
+      },
+      {
+        "text": "high serum i",
+        "ner_score": 0.963,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0000842",
+        "hpo_name": "Hyperinsulinemia",
+        "expanded_text": "high serum i",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.7139,
+        "matched": true,
+        "umls_cui": "C0020459"
+      },
+      {
+        "text": "Levels and Allergic Rhinitis",
+        "ner_score": 0.999,
         "negated": false,
         "negation_cue": "",
         "hpo_id": "HP:0003193",
         "hpo_name": "Allergic rhinitis",
-        "expanded_text": "Allergic Rhinitis",
-        "match_type": "exact_label",
-        "confidence": 1.0,
+        "expanded_text": "Levels and Allergic Rhinitis",
+        "match_type": "substring_match",
+        "confidence": 0.95,
         "matched": true,
         "umls_cui": "C0847614"
+      },
+      {
+        "text": "a rare genetic disorder",
+        "ner_score": 0.945,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "a rare genetic disorder",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "paucity of circulating b cells",
+        "ner_score": 0.816,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0010976",
+        "hpo_name": "Decreased total B cell count",
+        "expanded_text": "paucity of circulating b cells",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.9234,
+        "matched": true,
+        "umls_cui": "C1855067"
       },
       {
         "text": "B cells",
@@ -65,6 +156,19 @@
         "umls_cui": null
       },
       {
+        "text": "markedly reduced levels of all serum immunoglobulin isotypes",
+        "ner_score": 0.882,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0004313",
+        "hpo_name": "Decreased circulating immunoglobulin concentration",
+        "expanded_text": "markedly reduced levels of all serum immunoglobulin isotypes",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.7725,
+        "matched": true,
+        "umls_cui": "C0086438"
+      },
+      {
         "text": "immunoglobulin isotypes",
         "ner_score": 0.372,
         "negated": false,
@@ -72,6 +176,19 @@
         "hpo_id": null,
         "hpo_name": null,
         "expanded_text": "immunoglobulin isotypes",
+        "match_type": "skipped_low_ner_score",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "specific antibody production",
+        "ner_score": 0.806,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "specific antibody production",
         "match_type": "no_match",
         "confidence": 0.0,
         "matched": false,
@@ -91,6 +208,136 @@
         "umls_cui": null
       },
       {
+        "text": "a cytoplasmic tyrosine kinase",
+        "ner_score": 0.735,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "a cytoplasmic tyrosine kinase",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "b cell maturation",
+        "ner_score": 0.667,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "b cell maturation",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "its mutation",
+        "ner_score": 0.95,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "its mutation",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "cell differentiation",
+        "ner_score": 0.895,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "cell differentiation",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "the mutation",
+        "ner_score": 0.992,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "the mutation",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "enotype",
+        "ner_score": 0.67,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "enotype",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "this disorder",
+        "ner_score": 0.99,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "this disorder",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "the disease",
+        "ner_score": 0.997,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "the disease",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "severe infections",
+        "ner_score": 0.998,
+        "negated": true,
+        "negation_cue": "never",
+        "hpo_id": "HP:0002719",
+        "hpo_name": "Recurrent infections",
+        "expanded_text": "severe infections",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.7869,
+        "matched": true,
+        "umls_cui": "C0239998"
+      },
+      {
+        "text": "persistent rhinitis",
+        "ner_score": 0.999,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0002257",
+        "hpo_name": "Chronic rhinitis",
+        "expanded_text": "persistent rhinitis",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.9088,
+        "matched": true,
+        "umls_cui": "C0008711"
+      },
+      {
         "text": "sensitization to",
         "ner_score": 0.583,
         "negated": false,
@@ -104,20 +351,69 @@
         "umls_cui": "C0237653"
       },
       {
-        "text": "Agammaglobulinemia",
-        "ner_score": 0.9,
+        "text": "sensitization",
+        "ner_score": 0.728,
         "negated": false,
         "negation_cue": "",
-        "hpo_id": "HP:0004432",
-        "hpo_name": "Agammaglobulinemia",
-        "expanded_text": "Agammaglobulinemia",
-        "match_type": "text_scan_clinical_synonym",
-        "confidence": 0.95,
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "sensitization",
+        "match_type": "sapbert_rejected_low_conf",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "dust mites",
+        "ner_score": 0.963,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "dust mites",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "a mild xla phenotype",
+        "ner_score": 0.998,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "a mild xla phenotype",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "allergic manifestations",
+        "ner_score": 0.946,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0012393",
+        "hpo_name": "Allergy",
+        "expanded_text": "allergic manifestations",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.8356,
         "matched": true,
-        "umls_cui": "C0001768",
-        "umls_all": [
-          "C0001768"
-        ]
+        "umls_cui": "C1527304"
+      },
+      {
+        "text": "a mild phenotype",
+        "ner_score": 0.997,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "a mild phenotype",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
       },
       {
         "text": "X-Linked",
@@ -155,6 +451,19 @@
     ],
     "test": [
       {
+        "text": "a cd19 + b cell percentage",
+        "ner_score": 0.953,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "a cd19 + b cell percentage",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
         "text": "serum",
         "ner_score": 0.916,
         "negated": false,
@@ -162,7 +471,7 @@
         "hpo_id": null,
         "hpo_name": null,
         "expanded_text": "serum",
-        "match_type": "no_match",
+        "match_type": "skipped_test",
         "confidence": 0.0,
         "matched": false,
         "umls_cui": null
@@ -172,13 +481,13 @@
         "ner_score": 0.973,
         "negated": false,
         "negation_cue": "",
-        "hpo_id": "HP:0012393",
-        "hpo_name": "Allergy",
+        "hpo_id": null,
+        "hpo_name": null,
         "expanded_text": "allergic",
-        "match_type": "sapbert_similarity",
-        "confidence": 0.8904,
-        "matched": true,
-        "umls_cui": "C1527304"
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
       },
       {
         "text": "Bruton",
@@ -188,7 +497,20 @@
         "hpo_id": null,
         "hpo_name": null,
         "expanded_text": "Bruton",
-        "match_type": "no_match",
+        "match_type": "skipped_low_ner_score",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "n tyrosine kinase",
+        "ner_score": 0.767,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "n tyrosine kinase",
+        "match_type": "skipped_test",
         "confidence": 0.0,
         "matched": false,
         "umls_cui": null
@@ -201,7 +523,7 @@
         "hpo_id": null,
         "hpo_name": null,
         "expanded_text": "osine",
-        "match_type": "no_match",
+        "match_type": "skipped_test",
         "confidence": 0.0,
         "matched": false,
         "umls_cui": null
@@ -214,7 +536,7 @@
         "hpo_id": null,
         "hpo_name": null,
         "expanded_text": "Kinase",
-        "match_type": "skipped_non_phenotype",
+        "match_type": "skipped_test",
         "confidence": 0.0,
         "matched": false,
         "umls_cui": null
@@ -227,7 +549,7 @@
         "hpo_id": null,
         "hpo_name": null,
         "expanded_text": "range",
-        "match_type": "no_match",
+        "match_type": "skipped_test",
         "confidence": 0.0,
         "matched": false,
         "umls_cui": null
@@ -240,7 +562,7 @@
         "hpo_id": null,
         "hpo_name": null,
         "expanded_text": "percentage",
-        "match_type": "no_match",
+        "match_type": "skipped_test",
         "confidence": 0.0,
         "matched": false,
         "umls_cui": null
@@ -253,7 +575,7 @@
         "hpo_id": null,
         "hpo_name": null,
         "expanded_text": "greater",
-        "match_type": "no_match",
+        "match_type": "skipped_test",
         "confidence": 0.0,
         "matched": false,
         "umls_cui": null
@@ -266,7 +588,20 @@
         "hpo_id": null,
         "hpo_name": null,
         "expanded_text": "total",
-        "match_type": "no_match",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "total serum ige levels",
+        "ner_score": 0.983,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "total serum ige levels",
+        "match_type": "skipped_test",
         "confidence": 0.0,
         "matched": false,
         "umls_cui": null
@@ -279,7 +614,7 @@
         "hpo_id": null,
         "hpo_name": null,
         "expanded_text": "over",
-        "match_type": "no_match",
+        "match_type": "skipped_test",
         "confidence": 0.0,
         "matched": false,
         "umls_cui": null
@@ -292,7 +627,20 @@
         "hpo_id": null,
         "hpo_name": null,
         "expanded_text": "normal",
-        "match_type": "no_match",
+        "match_type": "skipped_en_noise",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "specific allergic investigations",
+        "ner_score": 0.972,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "specific allergic investigations",
+        "match_type": "skipped_test",
         "confidence": 0.0,
         "matched": false,
         "umls_cui": null
@@ -305,7 +653,20 @@
         "hpo_id": null,
         "hpo_name": null,
         "expanded_text": "investigations",
-        "match_type": "no_match",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "further immunological tests",
+        "ner_score": 0.994,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "further immunological tests",
+        "match_type": "skipped_test",
         "confidence": 0.0,
         "matched": false,
         "umls_cui": null
@@ -315,13 +676,26 @@
         "ner_score": 0.986,
         "negated": false,
         "negation_cue": "",
-        "hpo_id": "HP:0100326",
-        "hpo_name": "Immunologic hypersensitivity",
+        "hpo_id": null,
+        "hpo_name": null,
         "expanded_text": "immunological",
-        "match_type": "sapbert_similarity",
-        "confidence": 0.7165,
-        "matched": true,
-        "umls_cui": "C0237653"
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "btk expression",
+        "ner_score": 0.966,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "btk expression",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
       },
       {
         "text": "expression",
@@ -331,7 +705,33 @@
         "hpo_id": null,
         "hpo_name": null,
         "expanded_text": "expression",
-        "match_type": "no_match",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "cpg stimulation",
+        "ner_score": 0.986,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "cpg stimulation",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "b cell subset analysis",
+        "ner_score": 0.996,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "b cell subset analysis",
+        "match_type": "skipped_test",
         "confidence": 0.0,
         "matched": false,
         "umls_cui": null
@@ -344,7 +744,7 @@
         "hpo_id": null,
         "hpo_name": null,
         "expanded_text": "subset",
-        "match_type": "no_match",
+        "match_type": "skipped_test",
         "confidence": 0.0,
         "matched": false,
         "umls_cui": null
@@ -357,7 +757,7 @@
         "hpo_id": null,
         "hpo_name": null,
         "expanded_text": "analysis",
-        "match_type": "no_match",
+        "match_type": "skipped_test",
         "confidence": 0.0,
         "matched": false,
         "umls_cui": null
@@ -365,80 +765,159 @@
     ],
     "ordo_candidates": [
       {
-        "ordo_id": "ORPHA:26137",
-        "name": "Juvenile temporal arteritis",
+        "ordo_id": "ORPHA:331235",
+        "name": "Selective IgM deficiency",
         "name_fr": "",
-        "score": 0.1333,
-        "jaccard": 0.0833,
-        "coverage": 0.1667,
+        "score": 0.5153,
+        "coverage": 0.0484,
         "matched_hpo": [
-          "HP:0003193"
-        ],
-        "matched_count": 1,
-        "total_disease_hpo": 6
-      },
-      {
-        "ordo_id": "ORPHA:90000",
-        "name": "Erythema elevatum diutinum",
-        "name_fr": "",
-        "score": 0.1036,
-        "jaccard": 0.0714,
-        "coverage": 0.125,
-        "matched_hpo": [
-          "HP:0010702"
-        ],
-        "matched_count": 1,
-        "total_disease_hpo": 8
-      },
-      {
-        "ordo_id": "ORPHA:48377",
-        "name": "Subcorneal pustular dermatosis",
-        "name_fr": "",
-        "score": 0.0781,
-        "jaccard": 0.0588,
-        "coverage": 0.0909,
-        "matched_hpo": [
-          "HP:0010702"
-        ],
-        "matched_count": 1,
-        "total_disease_hpo": 11
-      },
-      {
-        "ordo_id": "ORPHA:449400",
-        "name": "IgG4-related aortitis",
-        "name_fr": "",
-        "score": 0.0747,
-        "jaccard": 0.0667,
-        "coverage": 0.08,
-        "matched_hpo": [
-          "HP:0010702",
+          "HP:0002719",
+          "HP:0003193",
           "HP:0012393"
         ],
-        "matched_count": 2,
-        "total_disease_hpo": 25
+        "matched_count": 3,
+        "total_disease_hpo": 62,
+        "text_match": false
       },
       {
-        "ordo_id": "ORPHA:507",
-        "name": "Leishmaniasis",
+        "ordo_id": "ORPHA:443811",
+        "name": "PGM3-CDG",
         "name_fr": "",
-        "score": 0.0747,
-        "jaccard": 0.0667,
-        "coverage": 0.08,
+        "score": 0.5053,
+        "coverage": 0.0484,
         "matched_hpo": [
-          "HP:0010702",
+          "HP:0002719",
+          "HP:0003193",
+          "HP:0003212"
+        ],
+        "matched_count": 3,
+        "total_disease_hpo": 62,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:183675",
+        "name": "Recurrent infections associated with rare immunoglobulin isotypes deficiency",
+        "name_fr": "",
+        "score": 0.4584,
+        "coverage": 0.0426,
+        "matched_hpo": [
+          "HP:0002719",
+          "HP:0003193"
+        ],
+        "matched_count": 2,
+        "total_disease_hpo": 47,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:70593",
+        "name": "Immunodeficiency due to selective anti-polysaccharide antibody deficiency",
+        "name_fr": "",
+        "score": 0.4532,
+        "coverage": 0.1333,
+        "matched_hpo": [
+          "HP:0010976",
           "HP:0012384"
         ],
         "matched_count": 2,
-        "total_disease_hpo": 25
+        "total_disease_hpo": 15,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:79324",
+        "name": "ALG12-CDG",
+        "name_fr": "",
+        "score": 0.4343,
+        "coverage": 0.0215,
+        "matched_hpo": [
+          "HP:0002257",
+          "HP:0010976"
+        ],
+        "matched_count": 2,
+        "total_disease_hpo": 93,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:39041",
+        "name": "Omenn syndrome",
+        "name_fr": "",
+        "score": 0.4338,
+        "coverage": 0.033,
+        "matched_hpo": [
+          "HP:0003212",
+          "HP:0004432",
+          "HP:0010976"
+        ],
+        "matched_count": 3,
+        "total_disease_hpo": 91,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:125",
+        "name": "Bloom syndrome",
+        "name_fr": "",
+        "score": 0.4306,
+        "coverage": 0.0448,
+        "matched_hpo": [
+          "HP:0002719",
+          "HP:0004313",
+          "HP:0012384"
+        ],
+        "matched_count": 3,
+        "total_disease_hpo": 67,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:277",
+        "name": "Severe combined immunodeficiency due to adenosine deaminase deficiency",
+        "name_fr": "",
+        "score": 0.4298,
+        "coverage": 0.15,
+        "matched_hpo": [
+          "HP:0003212",
+          "HP:0010976",
+          "HP:0012393"
+        ],
+        "matched_count": 3,
+        "total_disease_hpo": 20,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:572",
+        "name": "Immunodeficiency by defective expression of MHC class II",
+        "name_fr": "",
+        "score": 0.4063,
+        "coverage": 0.0526,
+        "matched_hpo": [
+          "HP:0004313",
+          "HP:0012384"
+        ],
+        "matched_count": 2,
+        "total_disease_hpo": 38,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:37042",
+        "name": "Immune dysregulation-polyendocrinopathy-enteropathy-X-linked syndrome",
+        "name_fr": "",
+        "score": 0.3947,
+        "coverage": 0.0508,
+        "matched_hpo": [
+          "HP:0002719",
+          "HP:0003212",
+          "HP:0012393"
+        ],
+        "matched_count": 3,
+        "total_disease_hpo": 59,
+        "text_match": false
       }
     ],
     "stats": {
-      "total": 26,
-      "matched": 8,
-      "unmatched": 18,
-      "match_rate": 30.8,
-      "unique_hpo": 7,
-      "ordo_matches": 5
+      "total": 57,
+      "matched": 13,
+      "unmatched": 44,
+      "match_rate": 22.8,
+      "unique_hpo": 13,
+      "ordo_matches": 10
     }
   },
   "phenopacket": {
@@ -447,8 +926,28 @@
       "id": "GSC_EN_008"
     },
     "input": "Case Report: Case Report: A Case of X-Linked Agammaglobulinemia With High Serum IgE Levels and Allergic Rhinitis.\n\nX-linked Agammaglobulinemia (XLA) is a rare genetic disorder of B-lymphocyte differentiation, characterized by the absence or paucity of circulating B cells, markedly reduced levels of all serum immunoglobulin isotypes and lack of specific antibody production. Bruton Tyrosine Kinase (BTK) gene encodes a cytoplasmic tyrosine kinase involved in the B cell maturation and its mutation, blocking B cell differentiation at the pre-B cell stage, and is responsible for XLA. All domains may be affected by the mutation, and the many genotypes are associated with a wide range of clinical presentations. Little is known about genotype-phenotype correlation in this disorder, and factors influencing the phenotype of XLA are not clearly understood. In this report we present a unique case of a young patient affected by XLA. The disease was genetically diagnosed at birth due to a family history of XLA, but during follow up, it was characterized by a CD19+ B cell percentage consistently greater than 2%. He never suffered severe infections, but at two years of age, he developed persistent rhinitis. Thus, total serum IgE levels were measured and detected over the normal range, and specific allergic investigations showed sensitization to dust mites. Further immunological tests (BTK expression, functional \"in vitro\" B cell proliferation upon CpG stimulation, B cell subset analysis) explained these findings as possible manifestations of a mild XLA phenotype. XLA patients rarely present with allergic manifestations, which could warrant further investigation. High serum IgE levels could be a sign of a mild phenotype, but their role and the mechanisms underlying their production in XLA need to be clarified.",
-    "target": "Juvenile temporal arteritis",
+    "target": "Selective IgM deficiency",
     "phenotypicFeatures": [
+      {
+        "type": {
+          "id": "HP:0004432",
+          "label": "Agammaglobulinemia",
+          "umls_cui": "C0001768"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "GSC_EN_008",
+              "description": "NER: x - linked agammaglobulinemia (0.992) | Match: sapbert_similarity (0.889)"
+            }
+          }
+        ]
+      },
       {
         "type": {
           "id": "HP:0010702",
@@ -471,6 +970,46 @@
       },
       {
         "type": {
+          "id": "HP:0003212",
+          "label": "Increased circulating IgE concentration",
+          "umls_cui": "C0236175"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "GSC_EN_008",
+              "description": "NER: high serum ige levels (0.995) | Match: sapbert_similarity (0.965)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0000842",
+          "label": "Hyperinsulinemia",
+          "umls_cui": "C0020459"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "GSC_EN_008",
+              "description": "NER: high serum i (0.963) | Match: sapbert_similarity (0.714)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
           "id": "HP:0003193",
           "label": "Allergic rhinitis",
           "umls_cui": "C0847614"
@@ -484,7 +1023,87 @@
             },
             "reference": {
               "id": "GSC_EN_008",
-              "description": "NER: Allergic Rhinitis (0.894) | Match: exact_label (1.000)"
+              "description": "NER: Levels and Allergic Rhinitis (0.999) | Match: substring_match (0.950)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0010976",
+          "label": "Decreased total B cell count",
+          "umls_cui": "C1855067"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "GSC_EN_008",
+              "description": "NER: paucity of circulating b cells (0.816) | Match: sapbert_similarity (0.923)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0004313",
+          "label": "Decreased circulating immunoglobulin concentration",
+          "umls_cui": "C0086438"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "GSC_EN_008",
+              "description": "NER: markedly reduced levels of all serum immunoglobulin isotypes (0.882) | Match: sapbert_similarity (0.772)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0002719",
+          "label": "Recurrent infections",
+          "umls_cui": "C0239998"
+        },
+        "excluded": true,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "GSC_EN_008",
+              "description": "NER: severe infections (0.998) | Match: sapbert_similarity (0.787) | Negated by: \"never\""
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0002257",
+          "label": "Chronic rhinitis",
+          "umls_cui": "C0008711"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "GSC_EN_008",
+              "description": "NER: persistent rhinitis (0.999) | Match: sapbert_similarity (0.909)"
             }
           }
         ]
@@ -511,9 +1130,9 @@
       },
       {
         "type": {
-          "id": "HP:0004432",
-          "label": "Agammaglobulinemia",
-          "umls_cui": "C0001768"
+          "id": "HP:0012393",
+          "label": "Allergy",
+          "umls_cui": "C1527304"
         },
         "excluded": false,
         "evidence": [
@@ -524,7 +1143,7 @@
             },
             "reference": {
               "id": "GSC_EN_008",
-              "description": "NER: Agammaglobulinemia (0.900) | Match: text_scan_clinical_synonym (0.950)"
+              "description": "NER: allergic manifestations (0.946) | Match: sapbert_similarity (0.836)"
             }
           }
         ]
@@ -568,30 +1187,10 @@
             }
           }
         ]
-      },
-      {
-        "type": {
-          "id": "HP:0012393",
-          "label": "Allergy",
-          "umls_cui": "C1527304"
-        },
-        "excluded": false,
-        "evidence": [
-          {
-            "evidenceCode": {
-              "id": "ECO:0000033",
-              "label": "author statement supported by traceable reference"
-            },
-            "reference": {
-              "id": "GSC_EN_008",
-              "description": "NER: allergic (0.973) | Match: sapbert_similarity (0.890)"
-            }
-          }
-        ]
       }
     ],
     "metaData": {
-      "created": "2026-06-11T03:08:02Z",
+      "created": "2026-06-19T15:05:29Z",
       "createdBy": "clinical-preanalysis-pipeline-v2",
       "phenopacketSchemaVersion": "2.0",
       "resources": [
@@ -611,48 +1210,73 @@
         "progressStatus": "IN_PROGRESS",
         "diagnosis": {
           "disease": {
-            "id": "ORPHA:26137",
-            "label": "Juvenile temporal arteritis"
+            "id": "ORPHA:331235",
+            "label": "Selective IgM deficiency"
           },
-          "score": 0.1333,
+          "score": 0.5153,
           "allCandidates": [
             {
-              "id": "ORPHA:26137",
-              "label": "Juvenile temporal arteritis",
-              "score": 0.1333
+              "id": "ORPHA:331235",
+              "label": "Selective IgM deficiency",
+              "score": 0.5153
             },
             {
-              "id": "ORPHA:90000",
-              "label": "Erythema elevatum diutinum",
-              "score": 0.1036
+              "id": "ORPHA:443811",
+              "label": "PGM3-CDG",
+              "score": 0.5053
             },
             {
-              "id": "ORPHA:48377",
-              "label": "Subcorneal pustular dermatosis",
-              "score": 0.0781
+              "id": "ORPHA:183675",
+              "label": "Recurrent infections associated with rare immunoglobulin isotypes deficiency",
+              "score": 0.4584
             },
             {
-              "id": "ORPHA:449400",
-              "label": "IgG4-related aortitis",
-              "score": 0.0747
+              "id": "ORPHA:70593",
+              "label": "Immunodeficiency due to selective anti-polysaccharide antibody deficiency",
+              "score": 0.4532
             },
             {
-              "id": "ORPHA:507",
-              "label": "Leishmaniasis",
-              "score": 0.0747
+              "id": "ORPHA:79324",
+              "label": "ALG12-CDG",
+              "score": 0.4343
+            },
+            {
+              "id": "ORPHA:39041",
+              "label": "Omenn syndrome",
+              "score": 0.4338
+            },
+            {
+              "id": "ORPHA:125",
+              "label": "Bloom syndrome",
+              "score": 0.4306
+            },
+            {
+              "id": "ORPHA:277",
+              "label": "Severe combined immunodeficiency due to adenosine deaminase deficiency",
+              "score": 0.4298
+            },
+            {
+              "id": "ORPHA:572",
+              "label": "Immunodeficiency by defective expression of MHC class II",
+              "score": 0.4063
+            },
+            {
+              "id": "ORPHA:37042",
+              "label": "Immune dysregulation-polyendocrinopathy-enteropathy-X-linked syndrome",
+              "score": 0.3947
             }
           ]
         }
       }
     ],
     "_pipelineStats": {
-      "totalEntities": 26,
-      "matchedHPO": 8,
-      "unmatchedEntities": 18,
-      "phenopacketFeatures": 7,
-      "negatedFeatures": 0,
+      "totalEntities": 57,
+      "matchedHPO": 13,
+      "unmatchedEntities": 44,
+      "phenopacketFeatures": 13,
+      "negatedFeatures": 1,
       "numericPhenotypes": 0,
-      "ordoCandidates": 5
+      "ordoCandidates": 10
     }
   }
 }

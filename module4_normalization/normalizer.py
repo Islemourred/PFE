@@ -123,6 +123,30 @@ class NormalizationPipeline:
         total, matched = 0, 0
         all_hpo_ids = set()
 
+        # ── English noise filter: generic single-word entities ──
+        EN_NOISE_WORDS = {
+            # Administrative / non-clinical
+            "disease", "syndrome", "disorder", "condition", "diagnosis",
+            "pathology", "abnormality", "examination", "assessment",
+            "treatment", "therapy", "medication", "hospitalization",
+            "monitoring", "surveillance", "management", "support",
+            "evolution", "consultation", "admission", "discharge",
+            # Generic body/noise words
+            "noise", "damage", "drawing", "clinical", "medical",
+            "normal", "correct", "negative", "positive", "presence",
+            "absence", "concept", "notion", "history", "report",
+            # Single anatomical fragments
+            "respiratory", "cardiac", "hepatic", "renal", "digestive",
+            "pulmonary", "thoracic", "abdominal", "cervical",
+            # Qualifiers that are not phenotypes alone
+            "severe", "moderate", "mild", "chronic", "acute",
+            "bilateral", "left", "right", "proximal", "distal",
+            "progressive", "recurrent", "intermittent",
+        }
+
+        # Minimum NER score threshold for English
+        EN_MIN_NER_SCORE = 0.55
+
         for category, ents in entities.items():
             if not isinstance(ents, list):
                 continue
@@ -131,38 +155,115 @@ class NormalizationPipeline:
                 text = ent["text"]
                 total += 1
 
-                # ── Selective skip for English treatment/test entities ──
-                # Only skip entities that are clearly NOT phenotypes:
-                # drugs, procedures, lab names, genes, imaging modalities.
-                # Let phenotype-like entities through (they'll be no_match if wrong).
-                if lang == "en" and category in ("treatment", "test"):
-                    text_lower = text.lower()
-                    skip_patterns = {
-                        "therapy", "transplant", "transplantation", "medication",
-                        "drug", "dose", "dosage", "infusion", "injection",
-                        "biopsy", "scan", "imaging", "mri", "ct scan",
-                        "x-ray", "xray", "ultrasound", "echocardiography",
-                        "gene", "mutation", "allele", "genotype", "chromosome",
-                        "protein", "receptor", "kinase", "inhibitor",
-                        "assay", "pcr", "elisa", "electrophoresis",
-                        "surgery", "surgical", "resection", "excision",
-                        "antibiotic", "antifungal", "antiviral", "steroid",
-                        "ibuprofen", "acetaminophen", "prednisone",
-                        "chemotherapy", "radiation", "ventilator", "intubat",
-                        "sedated", "anesthesia", "catheter",
+                # ── Fix 1+2: English noise filter (single words + low NER) ──
+                if lang == "en":
+                    text_lower = text.lower().strip()
+                    words = text_lower.split()
+                    ner_score = ent.get("score", 0)
+
+                    # Skip single generic words
+                    if len(words) == 1 and text_lower in EN_NOISE_WORDS:
+                        entry = {
+                            "text": text, "ner_score": ner_score,
+                            "negated": ent.get("negated", False),
+                            "negation_cue": ent.get("negation_cue", ""),
+                            "hpo_id": None, "hpo_name": None,
+                            "expanded_text": text,
+                            "match_type": "skipped_en_noise",
+                            "confidence": 0.0, "matched": False,
+                            "umls_cui": None,
+                        }
+                        normalized[category].append(entry)
+                        continue
+
+                    # Skip very short entities (≤3 chars)
+                    if len(text_lower) <= 3:
+                        entry = {
+                            "text": text, "ner_score": ner_score,
+                            "negated": ent.get("negated", False),
+                            "negation_cue": ent.get("negation_cue", ""),
+                            "hpo_id": None, "hpo_name": None,
+                            "expanded_text": text,
+                            "match_type": "skipped_too_short",
+                            "confidence": 0.0, "matched": False,
+                            "umls_cui": None,
+                        }
+                        normalized[category].append(entry)
+                        continue
+
+                    # Skip low NER score entities (sub-word fragments)
+                    if ner_score < EN_MIN_NER_SCORE:
+                        entry = {
+                            "text": text, "ner_score": ner_score,
+                            "negated": ent.get("negated", False),
+                            "negation_cue": ent.get("negation_cue", ""),
+                            "hpo_id": None, "hpo_name": None,
+                            "expanded_text": text,
+                            "match_type": "skipped_low_ner_score",
+                            "confidence": 0.0, "matched": False,
+                            "umls_cui": None,
+                        }
+                        normalized[category].append(entry)
+                        continue
+
+                # ══════════════════════════════════════════════════════════
+                # ARCHITECTURAL RULE: Only "problem" entities are HPO-relevant
+                # ══════════════════════════════════════════════════════════
+                # HPO = Human Phenotype Ontology = symptoms, signs, abnormalities
+                # "treatment" = drugs, procedures → NOT phenotypes
+                # "test"      = lab names, imaging, genes → NOT phenotypes
+                # Only "problem" (symptoms/signs/diseases) should be normalized to HPO
+                if category in ("treatment", "test"):
+                    entry = {
+                        "text": text,
+                        "ner_score": ent.get("score", 0),
+                        "negated": ent.get("negated", False),
+                        "negation_cue": ent.get("negation_cue", ""),
+                        "hpo_id": None,
+                        "hpo_name": None,
+                        "expanded_text": text,
+                        "match_type": f"skipped_{category}",
+                        "confidence": 0.0,
+                        "matched": False,
+                        "umls_cui": None,
                     }
-                    if any(p in text_lower for p in skip_patterns) or len(text) <= 3:
+                    normalized[category].append(entry)
+                    continue
+
+                # ── French problem-category noise filter ──
+                # Some "problem" entities in French are actually qualifiers,
+                # admin terms, or non-specific words — not phenotypes.
+                if lang == "fr" and category == "problem":
+                    text_lower = text.lower().strip()
+                    fr_skip_qualifiers = {
+                        # Non-specific qualifiers that produce noise HPOs
+                        "chronique", "aigu", "aiguë", "sévère",
+                        "modéré", "modérée", "léger", "légère",
+                        "gauche", "droit", "droite", "bilatéral",
+                        "proximal", "distal", "antérieur", "postérieur",
+                        "progressif", "progressive", "récidivant",
+                        # Administrative / non-clinical
+                        "hospitalisé", "hospitalisation", "consultation",
+                        "suivi", "contrôle", "évolution",
+                        "bon état général", "beg", "état général conservé",
+                        "vaccin", "vaccination", "bcg",
+                    }
+                    fr_skip_patterns = {
+                        "bilan d", "bilan du", "bilan de",
+                        "examen d", "examen du", "examen de",
+                    }
+                    if (text_lower in fr_skip_qualifiers
+                            or any(p in text_lower for p in fr_skip_patterns)
+                            or len(text) <= 2):
                         entry = {
                             "text": text,
                             "ner_score": ent.get("score", 0),
                             "negated": ent.get("negated", False),
                             "negation_cue": ent.get("negation_cue", ""),
-                            "hpo_id": None,
-                            "hpo_name": None,
+                            "hpo_id": None, "hpo_name": None,
                             "expanded_text": text,
-                            "match_type": "skipped_non_phenotype",
-                            "confidence": 0.0,
-                            "matched": False,
+                            "match_type": "skipped_qualifier_fr",
+                            "confidence": 0.0, "matched": False,
                             "umls_cui": None,
                         }
                         normalized[category].append(entry)
@@ -194,7 +295,16 @@ class NormalizationPipeline:
                 }
                 normalized[category].append(entry)
 
-                if norm["matched"]:
+                # ── Fix 3: Skip low-confidence SapBERT for short EN terms ──
+                if (lang == "en" and norm["match_type"] == "sapbert_similarity"
+                        and len(text.split()) == 1 and norm["confidence"] < 0.80):
+                    entry["hpo_id"] = None
+                    entry["hpo_name"] = None
+                    entry["match_type"] = "sapbert_rejected_low_conf"
+                    entry["confidence"] = 0.0
+                    entry["matched"] = False
+                    entry["umls_cui"] = None
+                elif norm["matched"]:
                     matched += 1
                     if norm["hpo_id"]:
                         all_hpo_ids.add(norm["hpo_id"])
@@ -233,9 +343,57 @@ class NormalizationPipeline:
                     total += 1
                     all_hpo_ids.add(s["hpo_id"])
 
-        # ORDO disease matching (with text-based disease name detection)
+        # ── Fix 4: Deduplicate HPO IDs across all categories ──
+        # Remove duplicate entities that map to the same HPO ID,
+        # keeping only the highest-confidence match for each HPO.
+        seen_hpo = {}  # hpo_id -> best entry
+        for category in normalized:
+            if not isinstance(normalized[category], list):
+                continue
+            deduped = []
+            for entry in normalized[category]:
+                hpo_id = entry.get("hpo_id")
+                if hpo_id and entry.get("matched"):
+                    if hpo_id in seen_hpo:
+                        # Keep the one with higher confidence
+                        prev = seen_hpo[hpo_id]
+                        if entry["confidence"] > prev["confidence"]:
+                            # Mark previous as duplicate
+                            prev["match_type"] = "deduplicated"
+                            prev["matched"] = False
+                            prev["hpo_id"] = None
+                            prev["hpo_name"] = None
+                            seen_hpo[hpo_id] = entry
+                            deduped.append(entry)
+                        else:
+                            # Mark current as duplicate
+                            entry["match_type"] = "deduplicated"
+                            entry["matched"] = False
+                            entry["hpo_id"] = None
+                            entry["hpo_name"] = None
+                            deduped.append(entry)
+                    else:
+                        seen_hpo[hpo_id] = entry
+                        deduped.append(entry)
+                else:
+                    deduped.append(entry)
+            normalized[category] = deduped
+
+        # Recount matched after dedup
+        matched = sum(
+            1 for cat in normalized.values()
+            if isinstance(cat, list)
+            for e in cat if e.get("matched")
+        )
+        all_hpo_ids = {
+            e["hpo_id"] for cat in normalized.values()
+            if isinstance(cat, list)
+            for e in cat if e.get("matched") and e.get("hpo_id")
+        }
+
+        # ORDO disease matching (semantic similarity via HPO ontology)
         ordo_candidates = self.ordo_matcher.match_diseases(
-            all_hpo_ids, top_k=5, source_text=source_text
+            all_hpo_ids, top_k=10, source_text=source_text
         )
         normalized["ordo_candidates"] = ordo_candidates
 

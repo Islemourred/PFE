@@ -1,0 +1,1103 @@
+{
+  "note_id": "RA_EN_022",
+  "language": "en",
+  "module1": {
+    "clean_text": "A [AGE] boy was admitted to the hospital following a 5-day period of stridor, cough, and hoarseness. Upon admission, he was alert and in good spirits, with an oxygen saturation of 96% on room air, a body temperature of 36.8°C, a respiratory rate of 34 breaths per minute, and a heart rate of 116 beats per minute. Physical examination revealed retractions in the suprasternal fossa, supraclavicular fossa, and intercostal spaces during inhalation. Inspiratory stridor and moist rales were audible in the lungs, while the cardiac examination was normal. The boy was born full-term via vaginal delivery with no complications during birth, no adverse events, and no history of tracheal intubation or ventilator use. His mother had a normal pregnancy, and his growth and development were typical. However, he exhibited stridor, weak crying, and hoarseness from birth. The family doctor initially recommended vitamin D and calcium supplements, which led to some improvement in symptoms, though they never fully resolved. A chest X-ray taken after admission showed bronchopneumonia. Following treatment with glucocorticoids and antibiotics, the boy's breathing improved, his cough subsided, hoarseness decreased, and the moist rales gradually disappeared. However, inspiratory stridor persisted, particularly after physical activity or crying.",
+    "phi_map": {
+      "AGE": "23-month-old"
+    },
+    "patient_info": {}
+  },
+  "module3_warnings": {
+    "temporal": [],
+    "inconsistencies": []
+  },
+  "module4": {
+    "problem": [
+      {
+        "text": "stridor",
+        "ner_score": 0.973,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0010307",
+        "hpo_name": "Stridor",
+        "expanded_text": "stridor",
+        "match_type": "exact_label",
+        "confidence": 1.0,
+        "matched": true,
+        "umls_cui": "C0038450"
+      },
+      {
+        "text": "cough",
+        "ner_score": 0.97,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0012735",
+        "hpo_name": "Cough",
+        "expanded_text": "cough",
+        "match_type": "exact_label",
+        "confidence": 1.0,
+        "matched": true,
+        "umls_cui": "C0010200"
+      },
+      {
+        "text": "hoarseness",
+        "ner_score": 0.968,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0001609",
+        "hpo_name": "Hoarse voice",
+        "expanded_text": "hoarseness",
+        "match_type": "exact_synonym",
+        "confidence": 1.0,
+        "matched": true,
+        "umls_cui": "C0019825"
+      },
+      {
+        "text": "alert",
+        "ner_score": 0.832,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "alert",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "spirits",
+        "ner_score": 0.285,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "spirits",
+        "match_type": "skipped_low_ner_score",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "retractions",
+        "ner_score": 0.964,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "retractions",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "retra",
+        "ner_score": 0.994,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "retra",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "ctions in the suprasternal fossa, supraclavicular fossa",
+        "ner_score": 0.953,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "ctions in the suprasternal fossa, supraclavicular fossa",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "and intercostal spaces",
+        "ner_score": 0.927,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "and intercostal spaces",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "Inspiratory stridor",
+        "ner_score": 0.955,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0005348",
+        "hpo_name": "Inspiratory stridor",
+        "expanded_text": "Inspiratory stridor",
+        "match_type": "exact_label",
+        "confidence": 1.0,
+        "matched": true,
+        "umls_cui": "C0677600"
+      },
+      {
+        "text": "Inspiratory stridor and moist rales",
+        "ner_score": 0.983,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "Inspiratory stridor and moist rales",
+        "match_type": "deduplicated",
+        "confidence": 0.95,
+        "matched": false,
+        "umls_cui": "C0677600"
+      },
+      {
+        "text": "complications",
+        "ner_score": 0.983,
+        "negated": true,
+        "negation_cue": "no",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "complications",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "adverse events",
+        "ner_score": 0.988,
+        "negated": true,
+        "negation_cue": "no",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "adverse events",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "weak crying",
+        "ner_score": 0.676,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0001612",
+        "hpo_name": "Weak cry",
+        "expanded_text": "weak crying",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.9108,
+        "matched": true,
+        "umls_cui": "C0234860"
+      },
+      {
+        "text": "symptoms",
+        "ner_score": 0.655,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "symptoms",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "bronchopneumonia",
+        "ner_score": 0.999,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "bronchopneumonia",
+        "match_type": "sapbert_rejected_low_conf",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "breathing",
+        "ner_score": 0.519,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "breathing",
+        "match_type": "skipped_low_ner_score",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "his cough",
+        "ner_score": 0.996,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "his cough",
+        "match_type": "deduplicated",
+        "confidence": 0.8747,
+        "matched": false,
+        "umls_cui": "C0010200"
+      },
+      {
+        "text": "the moist rales",
+        "ner_score": 0.996,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "the moist rales",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      }
+    ],
+    "test": [
+      {
+        "text": "a chest x - ray",
+        "ner_score": 0.998,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "a chest x - ray",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "good",
+        "ner_score": 0.666,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "good",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "an oxygen saturation",
+        "ner_score": 0.988,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "an oxygen saturation",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "oxygen",
+        "ner_score": 0.987,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "oxygen",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "saturation",
+        "ner_score": 0.99,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "saturation",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "a body temperature",
+        "ner_score": 0.787,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "a body temperature",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "temperature",
+        "ner_score": 0.977,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "temperature",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "respiratory",
+        "ner_score": 0.985,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "respiratory",
+        "match_type": "skipped_en_noise",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "respiratory rate",
+        "ner_score": 0.744,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "respiratory rate",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "rate",
+        "ner_score": 0.989,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "rate",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "breaths",
+        "ner_score": 0.989,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "breaths",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "minute",
+        "ner_score": 0.991,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "minute",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "a heart rate",
+        "ner_score": 0.911,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "a heart rate",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "heart",
+        "ner_score": 0.988,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "heart",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "beats",
+        "ner_score": 0.99,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "beats",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "Physical",
+        "ner_score": 0.994,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "Physical",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "physical examination",
+        "ner_score": 0.994,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "physical examination",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "examination",
+        "ner_score": 0.994,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "examination",
+        "match_type": "skipped_en_noise",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "the cardiac examination",
+        "ner_score": 0.997,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "the cardiac examination",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "cardiac",
+        "ner_score": 0.991,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "cardiac",
+        "match_type": "skipped_en_noise",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "normal",
+        "ner_score": 0.959,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "normal",
+        "match_type": "skipped_en_noise",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "growth",
+        "ner_score": 0.508,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "growth",
+        "match_type": "skipped_low_ner_score",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "development",
+        "ner_score": 0.847,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "development",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "typical",
+        "ner_score": 0.379,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "typical",
+        "match_type": "skipped_low_ner_score",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "improved",
+        "ner_score": 0.668,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "improved",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      }
+    ],
+    "treatment": [
+      {
+        "text": "ginal delivery",
+        "ner_score": 0.956,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "ginal delivery",
+        "match_type": "skipped_treatment",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "delivery",
+        "ner_score": 0.291,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "delivery",
+        "match_type": "skipped_low_ner_score",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "acheal intubation",
+        "ner_score": 0.686,
+        "negated": true,
+        "negation_cue": "no history of",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "acheal intubation",
+        "match_type": "skipped_treatment",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "vitamin",
+        "ner_score": 0.968,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "vitamin",
+        "match_type": "skipped_treatment",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "vitamin d",
+        "ner_score": 0.997,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "vitamin d",
+        "match_type": "skipped_treatment",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "calcium",
+        "ner_score": 0.966,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "calcium",
+        "match_type": "skipped_treatment",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "calcium supplements",
+        "ner_score": 0.996,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "calcium supplements",
+        "match_type": "skipped_treatment",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "supplements",
+        "ner_score": 0.929,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "supplements",
+        "match_type": "skipped_treatment",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "treatment",
+        "ner_score": 0.996,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "treatment",
+        "match_type": "skipped_en_noise",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "glucocorticoid",
+        "ner_score": 0.975,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "glucocorticoid",
+        "match_type": "skipped_treatment",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "glucocorticoids",
+        "ner_score": 0.995,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "glucocorticoids",
+        "match_type": "skipped_treatment",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "antibiotics",
+        "ner_score": 0.967,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "antibiotics",
+        "match_type": "skipped_treatment",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      }
+    ],
+    "ordo_candidates": [
+      {
+        "ordo_id": "ORPHA:95430",
+        "name": "Congenital tracheomalacia",
+        "name_fr": "",
+        "score": 0.5396,
+        "coverage": 0.0667,
+        "matched_hpo": [
+          "HP:0001609",
+          "HP:0010307",
+          "HP:0012735"
+        ],
+        "matched_count": 3,
+        "total_disease_hpo": 45,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:142",
+        "name": "Anaplastic thyroid carcinoma",
+        "name_fr": "",
+        "score": 0.5252,
+        "coverage": 0.1304,
+        "matched_hpo": [
+          "HP:0001609",
+          "HP:0010307",
+          "HP:0012735"
+        ],
+        "matched_count": 3,
+        "total_disease_hpo": 23,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:137935",
+        "name": "Airway infantile hemangioma",
+        "name_fr": "",
+        "score": 0.523,
+        "coverage": 0.2308,
+        "matched_hpo": [
+          "HP:0001609",
+          "HP:0010307",
+          "HP:0012735"
+        ],
+        "matched_count": 3,
+        "total_disease_hpo": 13,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:60032",
+        "name": "Recurrent respiratory papillomatosis",
+        "name_fr": "",
+        "score": 0.5146,
+        "coverage": 0.087,
+        "matched_hpo": [
+          "HP:0001609",
+          "HP:0010307"
+        ],
+        "matched_count": 2,
+        "total_disease_hpo": 23,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:3348",
+        "name": "Tracheobronchopathia osteochondroplastica",
+        "name_fr": "",
+        "score": 0.503,
+        "coverage": 0.087,
+        "matched_hpo": [
+          "HP:0001609",
+          "HP:0010307"
+        ],
+        "matched_count": 2,
+        "total_disease_hpo": 23,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:2004",
+        "name": "Laryngotracheoesophageal cleft",
+        "name_fr": "",
+        "score": 0.4935,
+        "coverage": 0.1538,
+        "matched_hpo": [
+          "HP:0010307",
+          "HP:0012735"
+        ],
+        "matched_count": 2,
+        "total_disease_hpo": 13,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:98914",
+        "name": "Presynaptic congenital myasthenic syndromes",
+        "name_fr": "",
+        "score": 0.4768,
+        "coverage": 0.0299,
+        "matched_hpo": [
+          "HP:0001612",
+          "HP:0010307"
+        ],
+        "matched_count": 2,
+        "total_disease_hpo": 67,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:590",
+        "name": "Congenital myasthenic syndrome",
+        "name_fr": "",
+        "score": 0.4768,
+        "coverage": 0.0299,
+        "matched_hpo": [
+          "HP:0001612",
+          "HP:0010307"
+        ],
+        "matched_count": 2,
+        "total_disease_hpo": 67,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:100050",
+        "name": "Hereditary angioedema type 1",
+        "name_fr": "",
+        "score": 0.4642,
+        "coverage": 0.0769,
+        "matched_hpo": [
+          "HP:0001609",
+          "HP:0005348"
+        ],
+        "matched_count": 2,
+        "total_disease_hpo": 26,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:728",
+        "name": "Relapsing polychondritis",
+        "name_fr": "",
+        "score": 0.4614,
+        "coverage": 0.0377,
+        "matched_hpo": [
+          "HP:0001609",
+          "HP:0012735"
+        ],
+        "matched_count": 2,
+        "total_disease_hpo": 53,
+        "text_match": false
+      }
+    ],
+    "stats": {
+      "total": 56,
+      "matched": 5,
+      "unmatched": 51,
+      "match_rate": 8.9,
+      "unique_hpo": 5,
+      "ordo_matches": 10
+    }
+  },
+  "phenopacket": {
+    "id": "phenopacket-RA_EN_022",
+    "subject": {
+      "id": "RA_EN_022"
+    },
+    "input": "A 23-month-old boy was admitted to the hospital following a 5-day period of stridor, cough, and hoarseness. Upon admission, he was alert and in good spirits, with an oxygen saturation of 96% on room air, a body temperature of 36.8°C, a respiratory rate of 34 breaths per minute, and a heart rate of 116 beats per minute. Physical examination revealed retractions in the suprasternal fossa, supraclavicular fossa, and intercostal spaces during inhalation. Inspiratory stridor and moist rales were audible in the lungs, while the cardiac examination was normal. The boy was born full-term via vaginal delivery with no complications during birth, no adverse events, and no history of tracheal intubation or ventilator use. His mother had a normal pregnancy, and his growth and development were typical. However, he exhibited stridor, weak crying, and hoarseness from birth. The family doctor initially recommended vitamin D and calcium supplements, which led to some improvement in symptoms, though they never fully resolved. A chest X-ray taken after admission showed bronchopneumonia. Following treatment with glucocorticoids and antibiotics, the boy's breathing improved, his cough subsided, hoarseness decreased, and the moist rales gradually disappeared. However, inspiratory stridor persisted, particularly after physical activity or crying.",
+    "target": "Congenital tracheomalacia",
+    "phenotypicFeatures": [
+      {
+        "type": {
+          "id": "HP:0010307",
+          "label": "Stridor",
+          "umls_cui": "C0038450"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_022",
+              "description": "NER: stridor (0.973) | Match: exact_label (1.000)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0012735",
+          "label": "Cough",
+          "umls_cui": "C0010200"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_022",
+              "description": "NER: cough (0.970) | Match: exact_label (1.000)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0001609",
+          "label": "Hoarse voice",
+          "umls_cui": "C0019825"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_022",
+              "description": "NER: hoarseness (0.968) | Match: exact_synonym (1.000)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0005348",
+          "label": "Inspiratory stridor",
+          "umls_cui": "C0677600"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_022",
+              "description": "NER: Inspiratory stridor (0.955) | Match: exact_label (1.000)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0001612",
+          "label": "Weak cry",
+          "umls_cui": "C0234860"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_022",
+              "description": "NER: weak crying (0.676) | Match: sapbert_similarity (0.911)"
+            }
+          }
+        ]
+      }
+    ],
+    "metaData": {
+      "created": "2026-06-19T15:11:46Z",
+      "createdBy": "clinical-preanalysis-pipeline-v2",
+      "phenopacketSchemaVersion": "2.0",
+      "resources": [
+        {
+          "id": "hp",
+          "name": "Human Phenotype Ontology",
+          "url": "https://hpo.jax.org",
+          "version": "2024-04-26",
+          "namespacePrefix": "HP",
+          "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        }
+      ]
+    },
+    "interpretations": [
+      {
+        "id": "interpretation-RA_EN_022",
+        "progressStatus": "IN_PROGRESS",
+        "diagnosis": {
+          "disease": {
+            "id": "ORPHA:95430",
+            "label": "Congenital tracheomalacia"
+          },
+          "score": 0.5396,
+          "allCandidates": [
+            {
+              "id": "ORPHA:95430",
+              "label": "Congenital tracheomalacia",
+              "score": 0.5396
+            },
+            {
+              "id": "ORPHA:142",
+              "label": "Anaplastic thyroid carcinoma",
+              "score": 0.5252
+            },
+            {
+              "id": "ORPHA:137935",
+              "label": "Airway infantile hemangioma",
+              "score": 0.523
+            },
+            {
+              "id": "ORPHA:60032",
+              "label": "Recurrent respiratory papillomatosis",
+              "score": 0.5146
+            },
+            {
+              "id": "ORPHA:3348",
+              "label": "Tracheobronchopathia osteochondroplastica",
+              "score": 0.503
+            },
+            {
+              "id": "ORPHA:2004",
+              "label": "Laryngotracheoesophageal cleft",
+              "score": 0.4935
+            },
+            {
+              "id": "ORPHA:98914",
+              "label": "Presynaptic congenital myasthenic syndromes",
+              "score": 0.4768
+            },
+            {
+              "id": "ORPHA:590",
+              "label": "Congenital myasthenic syndrome",
+              "score": 0.4768
+            },
+            {
+              "id": "ORPHA:100050",
+              "label": "Hereditary angioedema type 1",
+              "score": 0.4642
+            },
+            {
+              "id": "ORPHA:728",
+              "label": "Relapsing polychondritis",
+              "score": 0.4614
+            }
+          ]
+        }
+      }
+    ],
+    "_pipelineStats": {
+      "totalEntities": 56,
+      "matchedHPO": 5,
+      "unmatchedEntities": 51,
+      "phenopacketFeatures": 5,
+      "negatedFeatures": 0,
+      "numericPhenotypes": 0,
+      "ordoCandidates": 10
+    }
+  }
+}

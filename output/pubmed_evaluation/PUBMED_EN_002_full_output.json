@@ -22,8 +22,34 @@
   "module4": {
     "problem": [
       {
+        "text": "alpha - 1 antitrypsin deficiency",
+        "ner_score": 0.998,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "alpha - 1 antitrypsin deficiency",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "cystic fibrosis ( cf )",
+        "ner_score": 0.897,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0006552",
+        "hpo_name": "Fibrocystic lung disease",
+        "expanded_text": "cystic fibrosis ( cf )",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.7019,
+        "matched": true,
+        "umls_cui": "C1397290"
+      },
+      {
         "text": "Cystic fibrosis",
-        "ner_score": 0.929,
+        "ner_score": 0.998,
         "negated": false,
         "negation_cue": "",
         "hpo_id": "HP:0001395",
@@ -74,17 +100,43 @@
         "umls_cui": null
       },
       {
-        "text": "recessive",
-        "ner_score": 0.298,
+        "text": "a1atd",
+        "ner_score": 0.766,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "alpha-1-antitrypsin deficiency",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "autosomal recessive inherited diseases",
+        "ner_score": 0.998,
         "negated": false,
         "negation_cue": "",
         "hpo_id": "HP:0000007",
         "hpo_name": "Autosomal recessive inheritance",
-        "expanded_text": "recessive",
-        "match_type": "sapbert_similarity",
-        "confidence": 0.8801,
+        "expanded_text": "autosomal recessive inherited diseases",
+        "match_type": "substring_match",
+        "confidence": 0.95,
         "matched": true,
         "umls_cui": "C0441748"
+      },
+      {
+        "text": "recessive",
+        "ner_score": 0.298,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "recessive",
+        "match_type": "skipped_low_ner_score",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
       },
       {
         "text": "disease",
@@ -94,6 +146,19 @@
         "hpo_id": null,
         "hpo_name": null,
         "expanded_text": "disease",
+        "match_type": "skipped_en_noise",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "diseases",
+        "ner_score": 0.984,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "diseases",
         "match_type": "no_match",
         "confidence": 0.0,
         "matched": false,
@@ -104,13 +169,39 @@
         "ner_score": 0.846,
         "negated": false,
         "negation_cue": "",
-        "hpo_id": "HP:0002896",
-        "hpo_name": "Neoplasm of the liver",
+        "hpo_id": null,
+        "hpo_name": null,
         "expanded_text": "liver",
+        "match_type": "sapbert_rejected_low_conf",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "both diseases",
+        "ner_score": 0.87,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "both diseases",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "a fulminant disease",
+        "ner_score": 0.998,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0004448",
+        "hpo_name": "Fulminant hepatic failure",
+        "expanded_text": "a fulminant disease",
         "match_type": "sapbert_similarity",
-        "confidence": 0.729,
+        "confidence": 0.8059,
         "matched": true,
-        "umls_cui": "C0023903"
+        "umls_cui": "C0162557"
       },
       {
         "text": "conium",
@@ -126,17 +217,69 @@
         "umls_cui": null
       },
       {
-        "text": "cholestasis",
-        "ner_score": 0.77,
+        "text": "persisting cholestasis",
+        "ner_score": 0.998,
         "negated": false,
         "negation_cue": "",
-        "hpo_id": "HP:0001396",
-        "hpo_name": "Cholestasis",
-        "expanded_text": "cholestasis",
-        "match_type": "exact_label",
+        "hpo_id": "HP:0001406",
+        "hpo_name": "Intrahepatic cholestasis",
+        "expanded_text": "persisting cholestasis",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.8055,
+        "matched": true,
+        "umls_cui": "C0008372"
+      },
+      {
+        "text": "an associated problem",
+        "ner_score": 0.986,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "an associated problem",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "decreased",
+        "ner_score": 0.832,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "decreased",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "rapidly progressive liver disease",
+        "ner_score": 0.998,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0003678",
+        "hpo_name": "Rapidly progressive",
+        "expanded_text": "rapidly progressive liver disease",
+        "match_type": "substring_match",
+        "confidence": 0.95,
+        "matched": true,
+        "umls_cui": "C1838681"
+      },
+      {
+        "text": "liver failure",
+        "ner_score": 0.964,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0001399",
+        "hpo_name": "Hepatic failure",
+        "expanded_text": "liver failure",
+        "match_type": "exact_synonym",
         "confidence": 1.0,
         "matched": true,
-        "umls_cui": "C0008370"
+        "umls_cui": "C0085605"
       },
       {
         "text": "failure",
@@ -152,21 +295,17 @@
         "umls_cui": null
       },
       {
-        "text": "rapidly progressive",
-        "ner_score": 0.9,
+        "text": "two severe inherited diseases",
+        "ner_score": 0.992,
         "negated": false,
         "negation_cue": "",
-        "hpo_id": "HP:0003678",
-        "hpo_name": "Rapidly progressive",
-        "expanded_text": "rapidly progressive",
-        "match_type": "text_scan_exact_label",
-        "confidence": 0.95,
-        "matched": true,
-        "umls_cui": "C1838681",
-        "umls_all": [
-          "C1838681",
-          "C1850776"
-        ]
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "two severe inherited diseases",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
       },
       {
         "text": "meconium ileus",
@@ -204,23 +343,53 @@
         ]
       },
       {
-        "text": "liver failure",
+        "text": "cholestasis",
         "ner_score": 0.9,
         "negated": false,
         "negation_cue": "",
-        "hpo_id": "HP:0001399",
-        "hpo_name": "Hepatic failure",
-        "expanded_text": "liver failure",
-        "match_type": "text_scan_exact_synonym",
+        "hpo_id": "HP:0001396",
+        "hpo_name": "Cholestasis",
+        "expanded_text": "cholestasis",
+        "match_type": "text_scan_exact_label",
         "confidence": 0.95,
         "matched": true,
-        "umls_cui": "C0085605",
+        "umls_cui": "C0008370",
         "umls_all": [
-          "C0085605"
+          "C0008370"
+        ]
+      },
+      {
+        "text": "progressive",
+        "ner_score": 0.9,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0003676",
+        "hpo_name": "Progressive",
+        "expanded_text": "progressive",
+        "match_type": "text_scan_exact_label",
+        "confidence": 0.95,
+        "matched": true,
+        "umls_cui": "C0205329",
+        "umls_all": [
+          "C0205329",
+          "C1864985"
         ]
       }
     ],
     "test": [
+      {
+        "text": "serum alpha - 1 antitrypsin",
+        "ner_score": 0.824,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "serum alpha - 1 antitrypsin",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
       {
         "text": "alpha",
         "ner_score": 0.629,
@@ -229,7 +398,7 @@
         "hpo_id": null,
         "hpo_name": null,
         "expanded_text": "alpha",
-        "match_type": "no_match",
+        "match_type": "skipped_test",
         "confidence": 0.0,
         "matched": false,
         "umls_cui": null
@@ -242,33 +411,20 @@
         "hpo_id": null,
         "hpo_name": null,
         "expanded_text": "anti",
-        "match_type": "no_match",
+        "match_type": "skipped_test",
         "confidence": 0.0,
         "matched": false,
         "umls_cui": null
       },
       {
-        "text": "liver",
-        "ner_score": 0.716,
-        "negated": false,
-        "negation_cue": "",
-        "hpo_id": "HP:0002896",
-        "hpo_name": "Neoplasm of the liver",
-        "expanded_text": "liver",
-        "match_type": "sapbert_similarity",
-        "confidence": 0.729,
-        "matched": true,
-        "umls_cui": "C0023903"
-      },
-      {
-        "text": "male",
-        "ner_score": 0.402,
+        "text": "the sweat test",
+        "ner_score": 0.995,
         "negated": false,
         "negation_cue": "",
         "hpo_id": null,
         "hpo_name": null,
-        "expanded_text": "male",
-        "match_type": "no_match",
+        "expanded_text": "the sweat test",
+        "match_type": "skipped_test",
         "confidence": 0.0,
         "matched": false,
         "umls_cui": null
@@ -278,13 +434,13 @@
         "ner_score": 0.988,
         "negated": false,
         "negation_cue": "",
-        "hpo_id": "HP:0000975",
-        "hpo_name": "Hyperhidrosis",
+        "hpo_id": null,
+        "hpo_name": null,
         "expanded_text": "sweat",
-        "match_type": "sapbert_similarity",
-        "confidence": 0.8572,
-        "matched": true,
-        "umls_cui": "C0020458"
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
       },
       {
         "text": "genetic",
@@ -294,7 +450,20 @@
         "hpo_id": null,
         "hpo_name": null,
         "expanded_text": "genetic",
-        "match_type": "skipped_non_phenotype",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "genetic analysis",
+        "ner_score": 0.997,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "genetic analysis",
+        "match_type": "skipped_test",
         "confidence": 0.0,
         "matched": false,
         "umls_cui": null
@@ -307,7 +476,7 @@
         "hpo_id": null,
         "hpo_name": null,
         "expanded_text": "analysis",
-        "match_type": "no_match",
+        "match_type": "skipped_test",
         "confidence": 0.0,
         "matched": false,
         "umls_cui": null
@@ -317,23 +486,10 @@
         "ner_score": 0.8,
         "negated": false,
         "negation_cue": "",
-        "hpo_id": "HP:0003075",
-        "hpo_name": "Hypoproteinemia",
-        "expanded_text": "decreased serum",
-        "match_type": "sapbert_similarity",
-        "confidence": 0.7756,
-        "matched": true,
-        "umls_cui": "C0020639"
-      },
-      {
-        "text": "infant",
-        "ner_score": 0.455,
-        "negated": false,
-        "negation_cue": "",
         "hpo_id": null,
         "hpo_name": null,
-        "expanded_text": "infant",
-        "match_type": "no_match",
+        "expanded_text": "decreased serum",
+        "match_type": "skipped_test",
         "confidence": 0.0,
         "matched": false,
         "umls_cui": null
@@ -348,7 +504,20 @@
         "hpo_id": null,
         "hpo_name": null,
         "expanded_text": "Supportive therapy",
-        "match_type": "skipped_non_phenotype",
+        "match_type": "skipped_treatment",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "an infant liver transplantation",
+        "ner_score": 0.997,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "an infant liver transplantation",
+        "match_type": "skipped_treatment",
         "confidence": 0.0,
         "matched": false,
         "umls_cui": null
@@ -361,7 +530,33 @@
         "hpo_id": null,
         "hpo_name": null,
         "expanded_text": "liver transplantation",
-        "match_type": "skipped_non_phenotype",
+        "match_type": "skipped_treatment",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "care",
+        "ner_score": 0.541,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "care",
+        "match_type": "skipped_low_ner_score",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "post solid organ transplant care",
+        "ner_score": 0.919,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "post solid organ transplant care",
+        "match_type": "skipped_treatment",
         "confidence": 0.0,
         "matched": false,
         "umls_cui": null
@@ -369,78 +564,154 @@
     ],
     "ordo_candidates": [
       {
-        "ordo_id": "ORPHA:2040",
-        "name": "Congenital respiratory-biliary fistula",
+        "ordo_id": "ORPHA:586",
+        "name": "Cystic fibrosis",
         "name_fr": "",
-        "score": 0.3364,
-        "jaccard": 0.0909,
-        "coverage": 0.5,
+        "score": 0.3956,
+        "coverage": 0.0571,
         "matched_hpo": [
-          "HP:0001392"
+          "HP:0001392",
+          "HP:0004401"
         ],
-        "matched_count": 1,
-        "total_disease_hpo": 2
+        "matched_count": 2,
+        "total_disease_hpo": 35,
+        "text_match": true
       },
       {
-        "ordo_id": "ORPHA:140966",
-        "name": "Palmoplantar keratoderma, Nagashima type",
+        "ordo_id": "ORPHA:355",
+        "name": "Gaucher disease",
         "name_fr": "",
-        "score": 0.3364,
-        "jaccard": 0.0909,
-        "coverage": 0.5,
+        "score": 0.3656,
+        "coverage": 0.0215,
         "matched_hpo": [
-          "HP:0000975"
-        ],
-        "matched_count": 1,
-        "total_disease_hpo": 2
-      },
-      {
-        "ordo_id": "ORPHA:50943",
-        "name": "Keratolytic winter erythema",
-        "name_fr": "",
-        "score": 0.2333,
-        "jaccard": 0.0833,
-        "coverage": 0.3333,
-        "matched_hpo": [
-          "HP:0000975"
-        ],
-        "matched_count": 1,
-        "total_disease_hpo": 3
-      },
-      {
-        "ordo_id": "ORPHA:86919",
-        "name": "Keratosis palmaris et plantaris-clinodactyly syndrome",
-        "name_fr": "",
-        "score": 0.2333,
-        "jaccard": 0.0833,
-        "coverage": 0.3333,
-        "matched_hpo": [
-          "HP:0000975"
-        ],
-        "matched_count": 1,
-        "total_disease_hpo": 3
-      },
-      {
-        "ordo_id": "ORPHA:3196",
-        "name": "Steroid dehydrogenase deficiency-dental anomalies syndrome",
-        "name_fr": "",
-        "score": 0.1808,
-        "jaccard": 0.0769,
-        "coverage": 0.25,
-        "matched_hpo": [
+          "HP:0001395",
           "HP:0001399"
         ],
-        "matched_count": 1,
-        "total_disease_hpo": 4
+        "matched_count": 2,
+        "total_disease_hpo": 93,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:171",
+        "name": "Primary sclerosing cholangitis",
+        "name_fr": "",
+        "score": 0.3547,
+        "coverage": 0.0392,
+        "matched_hpo": [
+          "HP:0001395",
+          "HP:0001396"
+        ],
+        "matched_count": 2,
+        "total_disease_hpo": 51,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:480520",
+        "name": "Caroli syndrome",
+        "name_fr": "",
+        "score": 0.344,
+        "coverage": 0.0571,
+        "matched_hpo": [
+          "HP:0001399",
+          "HP:0001406"
+        ],
+        "matched_count": 2,
+        "total_disease_hpo": 35,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:333",
+        "name": "Farber disease",
+        "name_fr": "",
+        "score": 0.3245,
+        "coverage": 0.0286,
+        "matched_hpo": [
+          "HP:0001395",
+          "HP:0001399"
+        ],
+        "matched_count": 2,
+        "total_disease_hpo": 70,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:810",
+        "name": "Shigellosis",
+        "name_fr": "",
+        "score": 0.3193,
+        "coverage": 0.0435,
+        "matched_hpo": [
+          "HP:0001396",
+          "HP:0001399"
+        ],
+        "matched_count": 2,
+        "total_disease_hpo": 46,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:53035",
+        "name": "Caroli disease",
+        "name_fr": "",
+        "score": 0.3176,
+        "coverage": 0.0968,
+        "matched_hpo": [
+          "HP:0001395",
+          "HP:0001396",
+          "HP:0001406"
+        ],
+        "matched_count": 3,
+        "total_disease_hpo": 31,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:275761",
+        "name": "Lysosomal acid lipase deficiency",
+        "name_fr": "",
+        "score": 0.3139,
+        "coverage": 0.0408,
+        "matched_hpo": [
+          "HP:0001395",
+          "HP:0001399"
+        ],
+        "matched_count": 2,
+        "total_disease_hpo": 49,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:186",
+        "name": "Primary biliary cholangitis",
+        "name_fr": "",
+        "score": 0.3107,
+        "coverage": 0.0488,
+        "matched_hpo": [
+          "HP:0001395",
+          "HP:0001399"
+        ],
+        "matched_count": 2,
+        "total_disease_hpo": 41,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:567983",
+        "name": "Parenteral nutrition-associated cholestasis",
+        "name_fr": "",
+        "score": 0.3091,
+        "coverage": 0.0909,
+        "matched_hpo": [
+          "HP:0001395",
+          "HP:0001399"
+        ],
+        "matched_count": 2,
+        "total_disease_hpo": 22,
+        "text_match": false
       }
     ],
     "stats": {
-      "total": 25,
+      "total": 40,
       "matched": 11,
-      "unmatched": 14,
-      "match_rate": 44.0,
-      "unique_hpo": 10,
-      "ordo_matches": 5
+      "unmatched": 29,
+      "match_rate": 27.5,
+      "unique_hpo": 11,
+      "ordo_matches": 10
     }
   },
   "phenopacket": {
@@ -450,8 +721,28 @@
       "sex": "MALE"
     },
     "input": "Case Report: Cystic fibrosis and alpha-1 antitrypsin deficiency: case report and review of literature.\n\nBACKGROUND: This case report describes a child born with both cystic fibrosis (CF) and alpha-1 antitrypsin deficiency (A1ATD). Both are autosomal recessive inherited diseases, mainly affecting the lungs and the liver. The combination of both diseases together is rare and may lead to a fulminant disease with limited life span. To the best of our knowledge, no case has been reported of a patient born with both diseases.\nCASE PRESENTATION: After an uneventful pregnancy, a male baby was born with meconium ileus. The suspected diagnosis of CF was confirmed based on the sweat test and genetic analysis. The child developed persisting cholestasis, too severe to be likely caused by CF alone and indicating an associated problem. The diagnosis of A1ATD was established based on clinical suspicion (persisting cholestasis), decreased serum alpha-1 antitrypsin and genetic analysis. Supportive therapy was started, however the boy evolved to rapidly progressive liver disease leading to liver failure which necessitated an infant liver transplantation.\nCONCLUSIONS: This case illustrates the complexity of care in case of two severe inherited diseases as well as post solid organ transplant care.",
-    "target": "Congenital respiratory-biliary fistula",
+    "target": "Cystic fibrosis",
     "phenotypicFeatures": [
+      {
+        "type": {
+          "id": "HP:0006552",
+          "label": "Fibrocystic lung disease",
+          "umls_cui": "C1397290"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "PUBMED_EN_002",
+              "description": "NER: cystic fibrosis ( cf ) (0.897) | Match: sapbert_similarity (0.702)"
+            }
+          }
+        ]
+      },
       {
         "type": {
           "id": "HP:0001395",
@@ -467,7 +758,7 @@
             },
             "reference": {
               "id": "PUBMED_EN_002",
-              "description": "NER: Cystic fibrosis (0.929) | Match: sapbert_similarity (0.753)"
+              "description": "NER: Cystic fibrosis (0.998) | Match: sapbert_similarity (0.753)"
             }
           }
         ]
@@ -487,16 +778,16 @@
             },
             "reference": {
               "id": "PUBMED_EN_002",
-              "description": "NER: recessive (0.298) | Match: sapbert_similarity (0.880)"
+              "description": "NER: autosomal recessive inherited diseases (0.998) | Match: substring_match (0.950)"
             }
           }
         ]
       },
       {
         "type": {
-          "id": "HP:0002896",
-          "label": "Neoplasm of the liver",
-          "umls_cui": "C0023903"
+          "id": "HP:0004448",
+          "label": "Fulminant hepatic failure",
+          "umls_cui": "C0162557"
         },
         "excluded": false,
         "evidence": [
@@ -507,16 +798,16 @@
             },
             "reference": {
               "id": "PUBMED_EN_002",
-              "description": "NER: liver (0.846) | Match: sapbert_similarity (0.729)"
+              "description": "NER: a fulminant disease (0.998) | Match: sapbert_similarity (0.806)"
             }
           }
         ]
       },
       {
         "type": {
-          "id": "HP:0001396",
-          "label": "Cholestasis",
-          "umls_cui": "C0008370"
+          "id": "HP:0001406",
+          "label": "Intrahepatic cholestasis",
+          "umls_cui": "C0008372"
         },
         "excluded": false,
         "evidence": [
@@ -527,7 +818,7 @@
             },
             "reference": {
               "id": "PUBMED_EN_002",
-              "description": "NER: cholestasis (0.770) | Match: exact_label (1.000)"
+              "description": "NER: persisting cholestasis (0.998) | Match: sapbert_similarity (0.805)"
             }
           }
         ]
@@ -547,7 +838,27 @@
             },
             "reference": {
               "id": "PUBMED_EN_002",
-              "description": "NER: rapidly progressive (0.900) | Match: text_scan_exact_label (0.950)"
+              "description": "NER: rapidly progressive liver disease (0.998) | Match: substring_match (0.950)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0001399",
+          "label": "Hepatic failure",
+          "umls_cui": "C0085605"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "PUBMED_EN_002",
+              "description": "NER: liver failure (0.964) | Match: exact_synonym (1.000)"
             }
           }
         ]
@@ -594,9 +905,9 @@
       },
       {
         "type": {
-          "id": "HP:0001399",
-          "label": "Hepatic failure",
-          "umls_cui": "C0085605"
+          "id": "HP:0001396",
+          "label": "Cholestasis",
+          "umls_cui": "C0008370"
         },
         "excluded": false,
         "evidence": [
@@ -607,16 +918,16 @@
             },
             "reference": {
               "id": "PUBMED_EN_002",
-              "description": "NER: liver failure (0.900) | Match: text_scan_exact_synonym (0.950)"
+              "description": "NER: cholestasis (0.900) | Match: text_scan_exact_label (0.950)"
             }
           }
         ]
       },
       {
         "type": {
-          "id": "HP:0000975",
-          "label": "Hyperhidrosis",
-          "umls_cui": "C0020458"
+          "id": "HP:0003676",
+          "label": "Progressive",
+          "umls_cui": "C0205329"
         },
         "excluded": false,
         "evidence": [
@@ -627,34 +938,14 @@
             },
             "reference": {
               "id": "PUBMED_EN_002",
-              "description": "NER: sweat (0.988) | Match: sapbert_similarity (0.857)"
-            }
-          }
-        ]
-      },
-      {
-        "type": {
-          "id": "HP:0003075",
-          "label": "Hypoproteinemia",
-          "umls_cui": "C0020639"
-        },
-        "excluded": false,
-        "evidence": [
-          {
-            "evidenceCode": {
-              "id": "ECO:0000033",
-              "label": "author statement supported by traceable reference"
-            },
-            "reference": {
-              "id": "PUBMED_EN_002",
-              "description": "NER: decreased serum (0.800) | Match: sapbert_similarity (0.776)"
+              "description": "NER: progressive (0.900) | Match: text_scan_exact_label (0.950)"
             }
           }
         ]
       }
     ],
     "metaData": {
-      "created": "2026-06-11T03:46:51Z",
+      "created": "2026-06-19T15:01:20Z",
       "createdBy": "clinical-preanalysis-pipeline-v2",
       "phenopacketSchemaVersion": "2.0",
       "resources": [
@@ -674,35 +965,60 @@
         "progressStatus": "IN_PROGRESS",
         "diagnosis": {
           "disease": {
-            "id": "ORPHA:2040",
-            "label": "Congenital respiratory-biliary fistula"
+            "id": "ORPHA:586",
+            "label": "Cystic fibrosis"
           },
-          "score": 0.3364,
+          "score": 0.3956,
           "allCandidates": [
             {
-              "id": "ORPHA:2040",
-              "label": "Congenital respiratory-biliary fistula",
-              "score": 0.3364
+              "id": "ORPHA:586",
+              "label": "Cystic fibrosis",
+              "score": 0.3956
             },
             {
-              "id": "ORPHA:140966",
-              "label": "Palmoplantar keratoderma, Nagashima type",
-              "score": 0.3364
+              "id": "ORPHA:355",
+              "label": "Gaucher disease",
+              "score": 0.3656
             },
             {
-              "id": "ORPHA:50943",
-              "label": "Keratolytic winter erythema",
-              "score": 0.2333
+              "id": "ORPHA:171",
+              "label": "Primary sclerosing cholangitis",
+              "score": 0.3547
             },
             {
-              "id": "ORPHA:86919",
-              "label": "Keratosis palmaris et plantaris-clinodactyly syndrome",
-              "score": 0.2333
+              "id": "ORPHA:480520",
+              "label": "Caroli syndrome",
+              "score": 0.344
             },
             {
-              "id": "ORPHA:3196",
-              "label": "Steroid dehydrogenase deficiency-dental anomalies syndrome",
-              "score": 0.1808
+              "id": "ORPHA:333",
+              "label": "Farber disease",
+              "score": 0.3245
+            },
+            {
+              "id": "ORPHA:810",
+              "label": "Shigellosis",
+              "score": 0.3193
+            },
+            {
+              "id": "ORPHA:53035",
+              "label": "Caroli disease",
+              "score": 0.3176
+            },
+            {
+              "id": "ORPHA:275761",
+              "label": "Lysosomal acid lipase deficiency",
+              "score": 0.3139
+            },
+            {
+              "id": "ORPHA:186",
+              "label": "Primary biliary cholangitis",
+              "score": 0.3107
+            },
+            {
+              "id": "ORPHA:567983",
+              "label": "Parenteral nutrition-associated cholestasis",
+              "score": 0.3091
             }
           ]
         }
@@ -717,13 +1033,13 @@
       }
     ],
     "_pipelineStats": {
-      "totalEntities": 25,
+      "totalEntities": 40,
       "matchedHPO": 11,
-      "unmatchedEntities": 14,
-      "phenopacketFeatures": 10,
+      "unmatchedEntities": 29,
+      "phenopacketFeatures": 11,
       "negatedFeatures": 0,
       "numericPhenotypes": 0,
-      "ordoCandidates": 5
+      "ordoCandidates": 10
     }
   }
 }

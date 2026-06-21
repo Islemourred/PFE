@@ -1,0 +1,360 @@
+{
+  "id": "phenopacket-RA_EN_008",
+  "subject": {
+    "id": "RA_EN_008",
+    "sex": "MALE"
+  },
+  "input": "During a routine prenatal ultrasound screening in the 11th gestational week (GW), a 39-year-old woman was found to have a fetus with a giant omphalocele containing almost the entire liver. MRI in the 30th GW confirmed a covered abdominal wall defect without associated malformations. In the 37th GW, a caesarean section was performed. At birth, the male neonate presented with a covered abdominal wall defect of 7 cm, mostly occupied by the liver. An abdominal and cardiac ultrasound ruled out major associated malformations. The boy was scheduled for a staged closure. During surgery, a mass in the left liver was noted and mistaken for a hematoma. A fascial Gore-Tex patch measuring 5 × 5 cm was applied. On the 31st postnatal day, the patient’s general condition progressively worsened. Echocardiographic examinations showed worsening of the cardiac biventricular function due to herniation of the right liver into the chest. On Day 38 of life, closure of the anterior diaphragmatic hernia through the abdominal wound was performed. After reduction of the liver and resection of the CDH sac, absence of the pericardium was noted. The diaphragmatic defect of 5 × 4 cm was closed with a Gore-Tex patch and the abdominal wall defect was covered with a Gore-Tex patch. In the following 3 weeks, staged closure was continued without much progress, mostly because of the lesion in the left liver. Work-up of this lesion by ultrasound and MRI demonstrated a 5.5 × 5.1 × 5.5 cm tumor in segment III of the liver consistent with the diagnosis of a vascular tumor. The attempted therapy with propranolol (1 mg/kg/day) was ineffective and was discontinued due to the onset of bradycardia. Finally, surgical resection of the liver tumor was decided. At surgery, the well-defined mass was completely resected. While the abdominal fascia was closed using a Gore-Tex patch of 3 × 4 cm, the skin was closed directly.",
+  "target": "Beckwith-Wiedemann syndrome",
+  "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0001539",
+        "label": "Omphalocele",
+        "umls_cui": "C0795690"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_008",
+            "description": "NER: a giant omphalocele (0.980) | Match: sapbert_similarity (0.796)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0010866",
+        "label": "Abdominal wall defect",
+        "umls_cui": "C0238577"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_008",
+            "description": "NER: a covered abdominal wall defect (0.998) | Match: substring_match (0.950)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0007420",
+        "label": "Spontaneous hematomas",
+        "umls_cui": "C1697453"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_008",
+            "description": "NER: a hematoma (0.995) | Match: sapbert_similarity (0.790)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0100790",
+        "label": "Hernia",
+        "umls_cui": "C0019270"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_008",
+            "description": "NER: herniation (0.854) | Match: sapbert_similarity (0.846)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0000776",
+        "label": "Congenital diaphragmatic hernia",
+        "umls_cui": "C0235833"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_008",
+            "description": "NER: the anterior diaphragmatic hernia (0.988) | Match: substring_match (0.950)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0011147",
+        "label": "Typical absence seizure",
+        "umls_cui": "C0014553"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_008",
+            "description": "NER: absence of (0.910) | Match: sapbert_similarity (0.710)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0011629",
+        "label": "Total absence of the pericardium",
+        "umls_cui": "C0345140"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_008",
+            "description": "NER: absence of the pericardium (0.913) | Match: sapbert_similarity (0.986)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0000775",
+        "label": "Abnormality of the diaphragm",
+        "umls_cui": "C1848873"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_008",
+            "description": "NER: the diaphragmatic defect (0.997) | Match: substring_match (0.950)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0002664",
+        "label": "Neoplasm",
+        "umls_cui": "C0006826"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_008",
+            "description": "NER: tumor (0.749) | Match: exact_synonym (1.000)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0100742",
+        "label": "Vascular neoplasm",
+        "umls_cui": "C0027668"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_008",
+            "description": "NER: a vascular tumor (0.998) | Match: sapbert_similarity (0.931)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0001662",
+        "label": "Bradycardia",
+        "umls_cui": "C0428977"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_008",
+            "description": "NER: bradycardia (0.908) | Match: exact_label (1.000)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0002896",
+        "label": "Neoplasm of the liver",
+        "umls_cui": "C0023903"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_008",
+            "description": "NER: the liver tumor (0.994) | Match: substring_match (0.950)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0011410",
+        "label": "Caesarean section",
+        "umls_cui": "C1384674"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_008",
+            "description": "NER: caesarean section (0.900) | Match: text_scan_exact_label (0.950)"
+          }
+        }
+      ]
+    }
+  ],
+  "metaData": {
+    "created": "2026-06-19T15:09:08Z",
+    "createdBy": "clinical-preanalysis-pipeline-v2",
+    "phenopacketSchemaVersion": "2.0",
+    "resources": [
+      {
+        "id": "hp",
+        "name": "Human Phenotype Ontology",
+        "url": "https://hpo.jax.org",
+        "version": "2024-04-26",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      }
+    ]
+  },
+  "interpretations": [
+    {
+      "id": "interpretation-RA_EN_008",
+      "progressStatus": "IN_PROGRESS",
+      "diagnosis": {
+        "disease": {
+          "id": "ORPHA:116",
+          "label": "Beckwith-Wiedemann syndrome"
+        },
+        "score": 0.3768,
+        "allCandidates": [
+          {
+            "id": "ORPHA:116",
+            "label": "Beckwith-Wiedemann syndrome",
+            "score": 0.3768
+          },
+          {
+            "id": "ORPHA:373",
+            "label": "Simpson-Golabi-Behmel syndrome",
+            "score": 0.3713
+          },
+          {
+            "id": "ORPHA:1686",
+            "label": "Cardiac diverticulum",
+            "score": 0.3609
+          },
+          {
+            "id": "ORPHA:2255",
+            "label": "Pancreatic hypoplasia-diabetes-congenital heart disease syndrome",
+            "score": 0.3336
+          },
+          {
+            "id": "ORPHA:2092",
+            "label": "Focal dermal hypoplasia",
+            "score": 0.3234
+          },
+          {
+            "id": "ORPHA:887",
+            "label": "VACTERL/VATER association",
+            "score": 0.3113
+          },
+          {
+            "id": "ORPHA:1308",
+            "label": "C syndrome",
+            "score": 0.304
+          },
+          {
+            "id": "ORPHA:3380",
+            "label": "Trisomy 18 syndrome",
+            "score": 0.2993
+          },
+          {
+            "id": "ORPHA:660",
+            "label": "Omphalocele",
+            "score": 0.2957
+          },
+          {
+            "id": "ORPHA:565",
+            "label": "Menkes disease",
+            "score": 0.291
+          }
+        ]
+      }
+    }
+  ],
+  "_pipelineStats": {
+    "totalEntities": 68,
+    "matchedHPO": 13,
+    "unmatchedEntities": 55,
+    "phenopacketFeatures": 13,
+    "negatedFeatures": 0,
+    "numericPhenotypes": 0,
+    "ordoCandidates": 10
+  }
+}

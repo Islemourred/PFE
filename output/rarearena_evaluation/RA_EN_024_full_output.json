@@ -1,0 +1,1689 @@
+{
+  "note_id": "RA_EN_024",
+  "language": "en",
+  "module1": {
+    "clean_text": "An [AGE] boy with no significant medical history was admitted due to a 4-month history of headache, general condition decline, apathy, increased urination, constipation, swelling of feet and hands, and reduced muscle strength. Laboratory tests indicated mild anemia, iron deficiency, elevated eosinophil count, increased ESR, low vitamin D levels, elevated gamma globulin levels, high calcium levels, low phosphate levels, and increased urea and creatinine concentrations. A high calcium creatinine index and reduced parathormone levels were noted. MRI of the head showed no abnormalities. Abdominal ultrasound revealed thickening of the renal parenchymal layer and kidney enlargement. Thyroid and parathyroid ultrasound showed no abnormalities. The patient was treated with furosemide and infusion fluids without improvement. A subfebrile state was also noted. Further examinations included an abdominal ultrasound that continued to show kidney enlargement with a hyperechogenic signal of the renal parenchyma and liver enlargement. Whole-body MRI revealed hepatomegaly and a hyperintense signal in the kidneys and lower limb fascia. Bone scintigraphy and nailfold capillaroscopy showed no abnormalities. Bone marrow biopsy ruled out proliferative diseases.",
+    "phi_map": {
+      "AGE": "11-year-old"
+    },
+    "patient_info": {}
+  },
+  "module3_warnings": {
+    "temporal": [],
+    "inconsistencies": []
+  },
+  "module4": {
+    "problem": [
+      {
+        "text": "headache",
+        "ner_score": 0.971,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0002315",
+        "hpo_name": "Headache",
+        "expanded_text": "headache",
+        "match_type": "exact_label",
+        "confidence": 1.0,
+        "matched": true,
+        "umls_cui": "C0018681"
+      },
+      {
+        "text": "general condition decline",
+        "ner_score": 0.793,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0001268",
+        "hpo_name": "Mental deterioration",
+        "expanded_text": "general condition decline",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.7222,
+        "matched": true,
+        "umls_cui": "C0234985"
+      },
+      {
+        "text": "apathy",
+        "ner_score": 0.954,
+        "negated": true,
+        "negation_cue": "decline",
+        "hpo_id": "HP:0000741",
+        "hpo_name": "Apathy",
+        "expanded_text": "apathy",
+        "match_type": "exact_label",
+        "confidence": 1.0,
+        "matched": true,
+        "umls_cui": "C0085632"
+      },
+      {
+        "text": "increased urination",
+        "ner_score": 0.84,
+        "negated": true,
+        "negation_cue": "decline",
+        "hpo_id": "HP:0000103",
+        "hpo_name": "Polyuria",
+        "expanded_text": "increased urination",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.8642,
+        "matched": true,
+        "umls_cui": "C0032617"
+      },
+      {
+        "text": "constipation",
+        "ner_score": 0.961,
+        "negated": true,
+        "negation_cue": "decline",
+        "hpo_id": "HP:0002019",
+        "hpo_name": "Constipation",
+        "expanded_text": "constipation",
+        "match_type": "exact_label",
+        "confidence": 1.0,
+        "matched": true,
+        "umls_cui": "C0009806"
+      },
+      {
+        "text": "constipation, swelling",
+        "ner_score": 0.995,
+        "negated": true,
+        "negation_cue": "decline",
+        "hpo_id": "HP:0012451",
+        "hpo_name": "Acute constipation",
+        "expanded_text": "constipation, swelling",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.7797,
+        "matched": true,
+        "umls_cui": "C0401148"
+      },
+      {
+        "text": "swelling of feet and hands",
+        "ner_score": 0.999,
+        "negated": true,
+        "negation_cue": "decline",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "swelling of feet and hands",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "reduced muscle strength",
+        "ner_score": 0.556,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0001324",
+        "hpo_name": "Muscle weakness",
+        "expanded_text": "reduced muscle strength",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.9218,
+        "matched": true,
+        "umls_cui": "C0151786"
+      },
+      {
+        "text": "mild anemia",
+        "ner_score": 0.999,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0001897",
+        "hpo_name": "Normocytic anemia",
+        "expanded_text": "mild anemia",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.7749,
+        "matched": true,
+        "umls_cui": "C0085577"
+      },
+      {
+        "text": "anemia",
+        "ner_score": 0.796,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0001903",
+        "hpo_name": "Anemia",
+        "expanded_text": "anemia",
+        "match_type": "exact_label",
+        "confidence": 1.0,
+        "matched": true,
+        "umls_cui": "C0002871"
+      },
+      {
+        "text": "iron deficiency, elevated eosinophil count, increased ESR, low vitamin D levels",
+        "ner_score": 0.999,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0001924",
+        "hpo_name": "Sideroblastic anemia",
+        "expanded_text": "iron deficiency, elevated eosinophil count, increased ESR, low vitamin D levels",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.7321,
+        "matched": true,
+        "umls_cui": "C0002896"
+      },
+      {
+        "text": "elevated gamma globulin levels",
+        "ner_score": 0.997,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0003237",
+        "hpo_name": "Increased circulating IgG concentration",
+        "expanded_text": "elevated gamma globulin levels",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.9034,
+        "matched": true,
+        "umls_cui": "C1858977"
+      },
+      {
+        "text": "high calcium levels",
+        "ner_score": 0.997,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0003072",
+        "hpo_name": "Hypercalcemia",
+        "expanded_text": "high calcium levels",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.9106,
+        "matched": true,
+        "umls_cui": "C0020437"
+      },
+      {
+        "text": "low phosphate levels",
+        "ner_score": 0.995,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0002148",
+        "hpo_name": "Hypophosphatemia",
+        "expanded_text": "low phosphate levels",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.9121,
+        "matched": true,
+        "umls_cui": "C0085682"
+      },
+      {
+        "text": "increased urea and creatinine concentrations",
+        "ner_score": 0.992,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0003138",
+        "hpo_name": "Increased blood urea nitrogen",
+        "expanded_text": "increased urea and creatinine concentrations",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.742,
+        "matched": true,
+        "umls_cui": "C0151539"
+      },
+      {
+        "text": "a high calcium creatinine index",
+        "ner_score": 0.983,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0003513",
+        "hpo_name": "Reduced ratio of renal calcium clearance to creatinine clearance",
+        "expanded_text": "a high calcium creatinine index",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.7416,
+        "matched": true,
+        "umls_cui": "C4025605"
+      },
+      {
+        "text": "reduced parathormone levels",
+        "ner_score": 0.986,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0000829",
+        "hpo_name": "Hypoparathyroidism",
+        "expanded_text": "reduced parathormone levels",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.8822,
+        "matched": true,
+        "umls_cui": "C0020626"
+      },
+      {
+        "text": "abnormalities",
+        "ner_score": 0.521,
+        "negated": true,
+        "negation_cue": "no",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "abnormalities",
+        "match_type": "skipped_low_ner_score",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "thickening",
+        "ner_score": 0.97,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0001072",
+        "hpo_name": "Thickened skin",
+        "expanded_text": "thickening",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.8007,
+        "matched": true,
+        "umls_cui": "C0334008"
+      },
+      {
+        "text": "ening of the renal parenchymal layer",
+        "ner_score": 0.999,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "ening of the renal parenchymal layer",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "the renal parenchyma",
+        "ner_score": 0.978,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "the renal parenchyma",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "kidney enlargement",
+        "ner_score": 0.997,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0000105",
+        "hpo_name": "Enlarged kidney",
+        "expanded_text": "kidney enlargement",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.9704,
+        "matched": true,
+        "umls_cui": "C0542518"
+      },
+      {
+        "text": "enlargement",
+        "ner_score": 0.955,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0001548",
+        "hpo_name": "Overgrowth",
+        "expanded_text": "enlargement",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.8249,
+        "matched": true,
+        "umls_cui": "C1849265"
+      },
+      {
+        "text": "a subfebrile state",
+        "ner_score": 0.995,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "a subfebrile state",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "subfebrile state",
+        "ner_score": 0.951,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "subfebrile state",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "a hyperech",
+        "ner_score": 0.749,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "a hyperech",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "hyperechogenic signal",
+        "ner_score": 0.524,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "hyperechogenic signal",
+        "match_type": "skipped_low_ner_score",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "signal",
+        "ner_score": 0.662,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "signal",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "liver enlargement",
+        "ner_score": 0.997,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "liver enlargement",
+        "match_type": "deduplicated",
+        "confidence": 0.9655,
+        "matched": false,
+        "umls_cui": "C0019209"
+      },
+      {
+        "text": "hepatomegaly",
+        "ner_score": 0.925,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0002240",
+        "hpo_name": "Hepatomegaly",
+        "expanded_text": "hepatomegaly",
+        "match_type": "exact_label",
+        "confidence": 1.0,
+        "matched": true,
+        "umls_cui": "C0019209"
+      },
+      {
+        "text": "hepatom",
+        "ner_score": 0.993,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "hepatom",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "a hyperintense signal in the kidneys and lower limb fascia",
+        "ner_score": 0.861,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "a hyperintense signal in the kidneys and lower limb fascia",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "hyperintense signal",
+        "ner_score": 0.571,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "hyperintense signal",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "proliferative",
+        "ner_score": 0.796,
+        "negated": true,
+        "negation_cue": "ruled out",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "proliferative",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "prolife",
+        "ner_score": 0.99,
+        "negated": true,
+        "negation_cue": "ruled out",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "prolife",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "rative diseases",
+        "ner_score": 0.869,
+        "negated": true,
+        "negation_cue": "ruled out",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "rative diseases",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "diseases",
+        "ner_score": 0.927,
+        "negated": true,
+        "negation_cue": "ruled out",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "diseases",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "iron deficiency",
+        "ner_score": 0.9,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0001891",
+        "hpo_name": "Iron deficiency anemia",
+        "expanded_text": "iron deficiency",
+        "match_type": "text_scan_clinical_synonym",
+        "confidence": 0.95,
+        "matched": true,
+        "umls_cui": "C0162316",
+        "umls_all": [
+          "C0162316"
+        ]
+      },
+      {
+        "text": "swelling",
+        "ner_score": 0.9,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0000969",
+        "hpo_name": "Edema",
+        "expanded_text": "swelling",
+        "match_type": "text_scan_clinical_synonym",
+        "confidence": 0.95,
+        "matched": true,
+        "umls_cui": "C0013604",
+        "umls_all": [
+          "C0013604"
+        ]
+      }
+    ],
+    "test": [
+      {
+        "text": "whole - body mri",
+        "ner_score": 0.996,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "whole - body mri",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "increased",
+        "ner_score": 0.946,
+        "negated": true,
+        "negation_cue": "decline",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "increased",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "reduced",
+        "ner_score": 0.937,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "reduced",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "Laboratory",
+        "ner_score": 0.992,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "Laboratory",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "laboratory tests",
+        "ner_score": 0.976,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "laboratory tests",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "elevated eosinophil count",
+        "ner_score": 0.978,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "elevated eosinophil count",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "vitamin",
+        "ner_score": 0.983,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "vitamin",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "gamma",
+        "ner_score": 0.987,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "gamma",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "globulin",
+        "ner_score": 0.986,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "globulin",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "calcium",
+        "ner_score": 0.976,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "calcium",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "phosphate",
+        "ner_score": 0.977,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "phosphate",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "urea",
+        "ner_score": 0.981,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "urea",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "creatinine",
+        "ner_score": 0.981,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "creatinine",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "index",
+        "ner_score": 0.934,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "index",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "para",
+        "ner_score": 0.973,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "para",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "hormone",
+        "ner_score": 0.979,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "hormone",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "mri of the head",
+        "ner_score": 0.996,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "mri of the head",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "abnormalities",
+        "ner_score": 0.34,
+        "negated": true,
+        "negation_cue": "no",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "abnormalities",
+        "match_type": "skipped_low_ner_score",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "abdominal ultrasound",
+        "ner_score": 0.996,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "abdominal ultrasound",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "ultrasound",
+        "ner_score": 0.986,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "ultrasound",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "thyroid and parathyroid ultrasound",
+        "ner_score": 0.996,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "thyroid and parathyroid ultrasound",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "further examinations",
+        "ner_score": 0.996,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "further examinations",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "an abdominal ultrasound",
+        "ner_score": 0.998,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "an abdominal ultrasound",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "ogenic",
+        "ner_score": 0.744,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "ogenic",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "bone scintigraphy",
+        "ner_score": 0.997,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "bone scintigraphy",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "graphy",
+        "ner_score": 0.992,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "graphy",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "nailfold capillaroscopy",
+        "ner_score": 0.989,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "nailfold capillaroscopy",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "pillar",
+        "ner_score": 0.99,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "pillar",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "oscopy",
+        "ner_score": 0.993,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "oscopy",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "bone marrow biopsy",
+        "ner_score": 0.998,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "bone marrow biopsy",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "biopsy",
+        "ner_score": 0.983,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "biopsy",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      }
+    ],
+    "treatment": [
+      {
+        "text": "furosemide",
+        "ner_score": 0.937,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "furosemide",
+        "match_type": "skipped_treatment",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "infusion fluids",
+        "ner_score": 0.455,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "infusion fluids",
+        "match_type": "skipped_low_ner_score",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "fusion fluids",
+        "ner_score": 0.992,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "fusion fluids",
+        "match_type": "skipped_treatment",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      }
+    ],
+    "ordo_candidates": [
+      {
+        "ordo_id": "ORPHA:85138",
+        "name": "Addison disease",
+        "name_fr": "",
+        "score": 0.4001,
+        "coverage": 0.0893,
+        "matched_hpo": [
+          "HP:0000829",
+          "HP:0001324",
+          "HP:0001897",
+          "HP:0002019",
+          "HP:0003072"
+        ],
+        "matched_count": 5,
+        "total_disease_hpo": 56,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:358",
+        "name": "Gitelman syndrome",
+        "name_fr": "",
+        "score": 0.3876,
+        "coverage": 0.0588,
+        "matched_hpo": [
+          "HP:0001324",
+          "HP:0001891",
+          "HP:0002019",
+          "HP:0002315"
+        ],
+        "matched_count": 4,
+        "total_disease_hpo": 68,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:199299",
+        "name": "Late-onset isolated ACTH deficiency",
+        "name_fr": "",
+        "score": 0.3821,
+        "coverage": 0.125,
+        "matched_hpo": [
+          "HP:0000829",
+          "HP:0001324",
+          "HP:0001897",
+          "HP:0002019",
+          "HP:0003072"
+        ],
+        "matched_count": 5,
+        "total_disease_hpo": 40,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:95409",
+        "name": "Acute adrenal insufficiency",
+        "name_fr": "",
+        "score": 0.3569,
+        "coverage": 0.0909,
+        "matched_hpo": [
+          "HP:0001324",
+          "HP:0001897",
+          "HP:0002019",
+          "HP:0003072"
+        ],
+        "matched_count": 4,
+        "total_disease_hpo": 44,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:652",
+        "name": "Multiple endocrine neoplasia type 1",
+        "name_fr": "",
+        "score": 0.3456,
+        "coverage": 0.0361,
+        "matched_hpo": [
+          "HP:0002019",
+          "HP:0002315",
+          "HP:0003072"
+        ],
+        "matched_count": 3,
+        "total_disease_hpo": 83,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:143",
+        "name": "Parathyroid carcinoma",
+        "name_fr": "",
+        "score": 0.3419,
+        "coverage": 0.1389,
+        "matched_hpo": [
+          "HP:0001324",
+          "HP:0002019",
+          "HP:0002148",
+          "HP:0002315",
+          "HP:0003072"
+        ],
+        "matched_count": 5,
+        "total_disease_hpo": 36,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:699",
+        "name": "Pearson syndrome",
+        "name_fr": "",
+        "score": 0.3418,
+        "coverage": 0.0571,
+        "matched_hpo": [
+          "HP:0000829",
+          "HP:0001903",
+          "HP:0002148",
+          "HP:0002240"
+        ],
+        "matched_count": 4,
+        "total_disease_hpo": 70,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:550",
+        "name": "MELAS",
+        "name_fr": "",
+        "score": 0.3409,
+        "coverage": 0.046,
+        "matched_hpo": [
+          "HP:0000829",
+          "HP:0001324",
+          "HP:0001903",
+          "HP:0002019"
+        ],
+        "matched_count": 4,
+        "total_disease_hpo": 87,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:99880",
+        "name": "Hyperparathyroidism-jaw tumor syndrome",
+        "name_fr": "",
+        "score": 0.3388,
+        "coverage": 0.1471,
+        "matched_hpo": [
+          "HP:0001324",
+          "HP:0002019",
+          "HP:0002148",
+          "HP:0002315",
+          "HP:0003072"
+        ],
+        "matched_count": 5,
+        "total_disease_hpo": 34,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:340",
+        "name": "Hemorrhagic fever-renal syndrome",
+        "name_fr": "",
+        "score": 0.3355,
+        "coverage": 0.05,
+        "matched_hpo": [
+          "HP:0001324",
+          "HP:0001903",
+          "HP:0002315"
+        ],
+        "matched_count": 3,
+        "total_disease_hpo": 60,
+        "text_match": false
+      }
+    ],
+    "stats": {
+      "total": 73,
+      "matched": 22,
+      "unmatched": 51,
+      "match_rate": 30.1,
+      "unique_hpo": 22,
+      "ordo_matches": 10
+    }
+  },
+  "phenopacket": {
+    "id": "phenopacket-RA_EN_024",
+    "subject": {
+      "id": "RA_EN_024"
+    },
+    "input": "An 11-year-old boy with no significant medical history was admitted due to a 4-month history of headache, general condition decline, apathy, increased urination, constipation, swelling of feet and hands, and reduced muscle strength. Laboratory tests indicated mild anemia, iron deficiency, elevated eosinophil count, increased ESR, low vitamin D levels, elevated gamma globulin levels, high calcium levels, low phosphate levels, and increased urea and creatinine concentrations. A high calcium creatinine index and reduced parathormone levels were noted. MRI of the head showed no abnormalities. Abdominal ultrasound revealed thickening of the renal parenchymal layer and kidney enlargement. Thyroid and parathyroid ultrasound showed no abnormalities. The patient was treated with furosemide and infusion fluids without improvement. A subfebrile state was also noted. Further examinations included an abdominal ultrasound that continued to show kidney enlargement with a hyperechogenic signal of the renal parenchyma and liver enlargement. Whole-body MRI revealed hepatomegaly and a hyperintense signal in the kidneys and lower limb fascia. Bone scintigraphy and nailfold capillaroscopy showed no abnormalities. Bone marrow biopsy ruled out proliferative diseases.",
+    "target": "Addison disease",
+    "phenotypicFeatures": [
+      {
+        "type": {
+          "id": "HP:0002315",
+          "label": "Headache",
+          "umls_cui": "C0018681"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_024",
+              "description": "NER: headache (0.971) | Match: exact_label (1.000)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0001268",
+          "label": "Mental deterioration",
+          "umls_cui": "C0234985"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_024",
+              "description": "NER: general condition decline (0.793) | Match: sapbert_similarity (0.722)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0000741",
+          "label": "Apathy",
+          "umls_cui": "C0085632"
+        },
+        "excluded": true,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_024",
+              "description": "NER: apathy (0.954) | Match: exact_label (1.000) | Negated by: \"decline\""
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0000103",
+          "label": "Polyuria",
+          "umls_cui": "C0032617"
+        },
+        "excluded": true,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_024",
+              "description": "NER: increased urination (0.840) | Match: sapbert_similarity (0.864) | Negated by: \"decline\""
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0002019",
+          "label": "Constipation",
+          "umls_cui": "C0009806"
+        },
+        "excluded": true,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_024",
+              "description": "NER: constipation (0.961) | Match: exact_label (1.000) | Negated by: \"decline\""
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0012451",
+          "label": "Acute constipation",
+          "umls_cui": "C0401148"
+        },
+        "excluded": true,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_024",
+              "description": "NER: constipation, swelling (0.995) | Match: sapbert_similarity (0.780) | Negated by: \"decline\""
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0001324",
+          "label": "Muscle weakness",
+          "umls_cui": "C0151786"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_024",
+              "description": "NER: reduced muscle strength (0.556) | Match: sapbert_similarity (0.922)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0001897",
+          "label": "Normocytic anemia",
+          "umls_cui": "C0085577"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_024",
+              "description": "NER: mild anemia (0.999) | Match: sapbert_similarity (0.775)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0001903",
+          "label": "Anemia",
+          "umls_cui": "C0002871"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_024",
+              "description": "NER: anemia (0.796) | Match: exact_label (1.000)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0001924",
+          "label": "Sideroblastic anemia",
+          "umls_cui": "C0002896"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_024",
+              "description": "NER: iron deficiency, elevated eosinophil count, increased ESR, low vitamin D levels (0.999) | Match: sapbert_similarity (0.732)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0003237",
+          "label": "Increased circulating IgG concentration",
+          "umls_cui": "C1858977"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_024",
+              "description": "NER: elevated gamma globulin levels (0.997) | Match: sapbert_similarity (0.903)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0003072",
+          "label": "Hypercalcemia",
+          "umls_cui": "C0020437"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_024",
+              "description": "NER: high calcium levels (0.997) | Match: sapbert_similarity (0.911)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0002148",
+          "label": "Hypophosphatemia",
+          "umls_cui": "C0085682"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_024",
+              "description": "NER: low phosphate levels (0.995) | Match: sapbert_similarity (0.912)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0003138",
+          "label": "Increased blood urea nitrogen",
+          "umls_cui": "C0151539"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_024",
+              "description": "NER: increased urea and creatinine concentrations (0.992) | Match: sapbert_similarity (0.742)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0003513",
+          "label": "Reduced ratio of renal calcium clearance to creatinine clearance",
+          "umls_cui": "C4025605"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_024",
+              "description": "NER: a high calcium creatinine index (0.983) | Match: sapbert_similarity (0.742)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0000829",
+          "label": "Hypoparathyroidism",
+          "umls_cui": "C0020626"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_024",
+              "description": "NER: reduced parathormone levels (0.986) | Match: sapbert_similarity (0.882)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0001072",
+          "label": "Thickened skin",
+          "umls_cui": "C0334008"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_024",
+              "description": "NER: thickening (0.970) | Match: sapbert_similarity (0.801)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0000105",
+          "label": "Enlarged kidney",
+          "umls_cui": "C0542518"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_024",
+              "description": "NER: kidney enlargement (0.997) | Match: sapbert_similarity (0.970)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0001548",
+          "label": "Overgrowth",
+          "umls_cui": "C1849265"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_024",
+              "description": "NER: enlargement (0.955) | Match: sapbert_similarity (0.825)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0002240",
+          "label": "Hepatomegaly",
+          "umls_cui": "C0019209"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_024",
+              "description": "NER: hepatomegaly (0.925) | Match: exact_label (1.000)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0001891",
+          "label": "Iron deficiency anemia",
+          "umls_cui": "C0162316"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_024",
+              "description": "NER: iron deficiency (0.900) | Match: text_scan_clinical_synonym (0.950)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0000969",
+          "label": "Edema",
+          "umls_cui": "C0013604"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_024",
+              "description": "NER: swelling (0.900) | Match: text_scan_clinical_synonym (0.950)"
+            }
+          }
+        ]
+      }
+    ],
+    "metaData": {
+      "created": "2026-06-19T15:12:07Z",
+      "createdBy": "clinical-preanalysis-pipeline-v2",
+      "phenopacketSchemaVersion": "2.0",
+      "resources": [
+        {
+          "id": "hp",
+          "name": "Human Phenotype Ontology",
+          "url": "https://hpo.jax.org",
+          "version": "2024-04-26",
+          "namespacePrefix": "HP",
+          "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        }
+      ]
+    },
+    "interpretations": [
+      {
+        "id": "interpretation-RA_EN_024",
+        "progressStatus": "IN_PROGRESS",
+        "diagnosis": {
+          "disease": {
+            "id": "ORPHA:85138",
+            "label": "Addison disease"
+          },
+          "score": 0.4001,
+          "allCandidates": [
+            {
+              "id": "ORPHA:85138",
+              "label": "Addison disease",
+              "score": 0.4001
+            },
+            {
+              "id": "ORPHA:358",
+              "label": "Gitelman syndrome",
+              "score": 0.3876
+            },
+            {
+              "id": "ORPHA:199299",
+              "label": "Late-onset isolated ACTH deficiency",
+              "score": 0.3821
+            },
+            {
+              "id": "ORPHA:95409",
+              "label": "Acute adrenal insufficiency",
+              "score": 0.3569
+            },
+            {
+              "id": "ORPHA:652",
+              "label": "Multiple endocrine neoplasia type 1",
+              "score": 0.3456
+            },
+            {
+              "id": "ORPHA:143",
+              "label": "Parathyroid carcinoma",
+              "score": 0.3419
+            },
+            {
+              "id": "ORPHA:699",
+              "label": "Pearson syndrome",
+              "score": 0.3418
+            },
+            {
+              "id": "ORPHA:550",
+              "label": "MELAS",
+              "score": 0.3409
+            },
+            {
+              "id": "ORPHA:99880",
+              "label": "Hyperparathyroidism-jaw tumor syndrome",
+              "score": 0.3388
+            },
+            {
+              "id": "ORPHA:340",
+              "label": "Hemorrhagic fever-renal syndrome",
+              "score": 0.3355
+            }
+          ]
+        }
+      }
+    ],
+    "_pipelineStats": {
+      "totalEntities": 73,
+      "matchedHPO": 22,
+      "unmatchedEntities": 51,
+      "phenopacketFeatures": 22,
+      "negatedFeatures": 4,
+      "numericPhenotypes": 0,
+      "ordoCandidates": 10
+    }
+  }
+}

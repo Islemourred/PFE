@@ -18,6 +18,71 @@
   "module4": {
     "problem": [
       {
+        "text": "autosomal recessive hyper - ige syndrome",
+        "ner_score": 0.997,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0000007",
+        "hpo_name": "Autosomal recessive inheritance",
+        "expanded_text": "autosomal recessive hyper - ige syndrome",
+        "match_type": "substring_match",
+        "confidence": 0.95,
+        "matched": true,
+        "umls_cui": "C0441748"
+      },
+      {
+        "text": "recurrent eczema - like rash",
+        "ner_score": 0.998,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0007432",
+        "hpo_name": "Intermittent generalized erythematous papular rash",
+        "expanded_text": "recurrent eczema - like rash",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.7115,
+        "matched": true,
+        "umls_cui": "C2749995"
+      },
+      {
+        "text": "eczema - like rash",
+        "ner_score": 0.918,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0000964",
+        "hpo_name": "Eczematoid dermatitis",
+        "expanded_text": "eczema - like rash",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.897,
+        "matched": true,
+        "umls_cui": "C0013595"
+      },
+      {
+        "text": "two novel splice - site mutations",
+        "ner_score": 0.977,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "two novel splice - site mutations",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "ar - hies",
+        "ner_score": 0.961,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "ar - hies",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
         "text": "somal",
         "ner_score": 0.66,
         "negated": false,
@@ -51,6 +116,32 @@
         "hpo_id": null,
         "hpo_name": null,
         "expanded_text": "syndrome",
+        "match_type": "skipped_en_noise",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "dock8 gene mutation",
+        "ner_score": 0.997,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "dock8 gene mutation",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "dock8 gene",
+        "ner_score": 0.766,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "dock8 gene",
         "match_type": "no_match",
         "confidence": 0.0,
         "matched": false,
@@ -64,7 +155,7 @@
         "hpo_id": null,
         "hpo_name": null,
         "expanded_text": "mutation",
-        "match_type": "no_match",
+        "match_type": "skipped_low_ner_score",
         "confidence": 0.0,
         "matched": false,
         "umls_cui": null
@@ -77,23 +168,36 @@
         "hpo_id": null,
         "hpo_name": null,
         "expanded_text": "features",
-        "match_type": "no_match",
+        "match_type": "skipped_low_ner_score",
         "confidence": 0.0,
         "matched": false,
         "umls_cui": null
+      },
+      {
+        "text": "a rare immunodeficiency disease",
+        "ner_score": 0.988,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0005363",
+        "hpo_name": "Humoral immunodeficiency",
+        "expanded_text": "a rare immunodeficiency disease",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.7976,
+        "matched": true,
+        "umls_cui": "C4025206"
       },
       {
         "text": "immunodeficiency",
         "ner_score": 0.375,
         "negated": false,
         "negation_cue": "",
-        "hpo_id": "HP:0002721",
-        "hpo_name": "Immunodeficiency",
+        "hpo_id": null,
+        "hpo_name": null,
         "expanded_text": "immunodeficiency",
-        "match_type": "clinical_synonym",
-        "confidence": 1.0,
-        "matched": true,
-        "umls_cui": "C0021051"
+        "match_type": "skipped_low_ner_score",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
       },
       {
         "text": "disease",
@@ -103,7 +207,7 @@
         "hpo_id": null,
         "hpo_name": null,
         "expanded_text": "disease",
-        "match_type": "no_match",
+        "match_type": "skipped_en_noise",
         "confidence": 0.0,
         "matched": false,
         "umls_cui": null
@@ -120,6 +224,19 @@
         "confidence": 1.0,
         "matched": true,
         "umls_cui": "C0015230"
+      },
+      {
+        "text": "skin and lung abscesses",
+        "ner_score": 0.999,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0100838",
+        "hpo_name": "Recurrent cutaneous abscess formation",
+        "expanded_text": "skin and lung abscesses",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.7167,
+        "matched": true,
+        "umls_cui": "C4021957"
       },
       {
         "text": "abscesses",
@@ -148,6 +265,58 @@
         "umls_cui": null
       },
       {
+        "text": "increased serum ige level",
+        "ner_score": 0.996,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0003212",
+        "hpo_name": "Increased circulating IgE concentration",
+        "expanded_text": "increased serum ige level",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.9729,
+        "matched": true,
+        "umls_cui": "C0236175"
+      },
+      {
+        "text": "a new clinic features",
+        "ner_score": 0.909,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "a new clinic features",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "new clinic features",
+        "ner_score": 0.874,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "new clinic features",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "dock8 gene mutations",
+        "ner_score": 0.995,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "dock8 gene mutations",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
         "text": "mutations",
         "ner_score": 0.267,
         "negated": false,
@@ -155,7 +324,7 @@
         "hpo_id": null,
         "hpo_name": null,
         "expanded_text": "mutations",
-        "match_type": "no_match",
+        "match_type": "skipped_low_ner_score",
         "confidence": 0.0,
         "matched": false,
         "umls_cui": null
@@ -168,10 +337,23 @@
         "hpo_id": null,
         "hpo_name": null,
         "expanded_text": "abnormal",
-        "match_type": "no_match",
+        "match_type": "skipped_low_ner_score",
         "confidence": 0.0,
         "matched": false,
         "umls_cui": null
+      },
+      {
+        "text": "abnormal walking posture",
+        "ner_score": 0.998,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "abnormal walking posture",
+        "match_type": "deduplicated",
+        "confidence": 0.7977,
+        "matched": false,
+        "umls_cui": "C0575081"
       },
       {
         "text": "walking posture",
@@ -187,17 +369,43 @@
         "umls_cui": null
       },
       {
+        "text": "abnormal gait",
+        "ner_score": 0.998,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0001288",
+        "hpo_name": "Gait disturbance",
+        "expanded_text": "abnormal gait",
+        "match_type": "exact_synonym",
+        "confidence": 1.0,
+        "matched": true,
+        "umls_cui": "C0575081"
+      },
+      {
         "text": "gait",
         "ner_score": 0.393,
         "negated": false,
         "negation_cue": "",
-        "hpo_id": "HP:0002066",
-        "hpo_name": "Gait ataxia",
+        "hpo_id": null,
+        "hpo_name": null,
         "expanded_text": "gait",
-        "match_type": "sapbert_similarity",
-        "confidence": 0.7429,
-        "matched": true,
-        "umls_cui": "C0751837"
+        "match_type": "skipped_low_ner_score",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "fingertip abscess",
+        "ner_score": 0.999,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "fingertip abscess",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
       },
       {
         "text": "high muscle tone",
@@ -226,6 +434,19 @@
         "umls_cui": "C0852413"
       },
       {
+        "text": "facial paralysis",
+        "ner_score": 0.998,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0007209",
+        "hpo_name": "Facial paralysis",
+        "expanded_text": "facial paralysis",
+        "match_type": "exact_label",
+        "confidence": 1.0,
+        "matched": true,
+        "umls_cui": "C0015469"
+      },
+      {
         "text": "paralysis",
         "ner_score": 0.849,
         "negated": false,
@@ -239,43 +460,95 @@
         "umls_cui": "C0522224"
       },
       {
+        "text": "a decrease of t lymphocytes",
+        "ner_score": 0.826,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0005403",
+        "hpo_name": "Decreased total T cell count",
+        "expanded_text": "a decrease of t lymphocytes",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.9297,
+        "matched": true,
+        "umls_cui": "C2931322"
+      },
+      {
         "text": "myelin",
         "ner_score": 0.636,
         "negated": false,
         "negation_cue": "",
-        "hpo_id": "HP:0011096",
-        "hpo_name": "Peripheral demyelination",
+        "hpo_id": null,
+        "hpo_name": null,
         "expanded_text": "myelin",
+        "match_type": "sapbert_rejected_low_conf",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "myelin dysplasia",
+        "ner_score": 0.999,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0007266",
+        "hpo_name": "Cerebral dysmyelination",
+        "expanded_text": "myelin dysplasia",
         "match_type": "sapbert_similarity",
-        "confidence": 0.725,
+        "confidence": 0.8443,
         "matched": true,
-        "umls_cui": "C0878575"
+        "umls_cui": "C1854885"
       },
       {
         "text": "dysplasia",
         "ner_score": 0.732,
         "negated": false,
         "negation_cue": "",
-        "hpo_id": "HP:0002652",
-        "hpo_name": "Skeletal dysplasia",
+        "hpo_id": null,
+        "hpo_name": null,
         "expanded_text": "dysplasia",
-        "match_type": "sapbert_similarity",
-        "confidence": 0.7667,
+        "match_type": "sapbert_rejected_low_conf",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "brain atrophy",
+        "ner_score": 0.997,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0012444",
+        "hpo_name": "Brain atrophy",
+        "expanded_text": "brain atrophy",
+        "match_type": "exact_label",
+        "confidence": 1.0,
         "matched": true,
-        "umls_cui": "C0029422"
+        "umls_cui": "C0154671"
       },
       {
         "text": "atrophy",
         "ner_score": 0.702,
         "negated": false,
         "negation_cue": "",
-        "hpo_id": "HP:0003202",
-        "hpo_name": "Skeletal muscle atrophy",
+        "hpo_id": null,
+        "hpo_name": null,
         "expanded_text": "atrophy",
-        "match_type": "sapbert_similarity",
-        "confidence": 0.7555,
-        "matched": true,
-        "umls_cui": "C0234958"
+        "match_type": "sapbert_rejected_low_conf",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "two novel compound heterozygous mutations",
+        "ner_score": 0.943,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "two novel compound heterozygous mutations",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
       },
       {
         "text": "heterozygous mutations",
@@ -291,6 +564,19 @@
         "umls_cui": "C1866227"
       },
       {
+        "text": "mutations of dock8 gene",
+        "ner_score": 0.834,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "mutations of dock8 gene",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
         "text": "-site mutations",
         "ner_score": 0.392,
         "negated": false,
@@ -298,96 +584,55 @@
         "hpo_id": null,
         "hpo_name": null,
         "expanded_text": "-site mutations",
+        "match_type": "skipped_low_ner_score",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "dock8 gene mutation spectrum",
+        "ner_score": 0.896,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "dock8 gene mutation spectrum",
         "match_type": "no_match",
         "confidence": 0.0,
         "matched": false,
         "umls_cui": null
       },
       {
-        "text": "Autosomal recessive",
+        "text": "immunodeficiency",
         "ner_score": 0.9,
         "negated": false,
         "negation_cue": "",
-        "hpo_id": "HP:0000007",
-        "hpo_name": "Autosomal recessive inheritance",
-        "expanded_text": "Autosomal recessive",
-        "match_type": "text_scan_exact_synonym",
-        "confidence": 0.95,
-        "matched": true,
-        "umls_cui": "C0441748",
-        "umls_all": [
-          "C0441748",
-          "C4020899"
-        ]
-      },
-      {
-        "text": "facial paralysis",
-        "ner_score": 0.9,
-        "negated": false,
-        "negation_cue": "",
-        "hpo_id": "HP:0007209",
-        "hpo_name": "Facial paralysis",
-        "expanded_text": "facial paralysis",
-        "match_type": "text_scan_exact_label",
-        "confidence": 0.95,
-        "matched": true,
-        "umls_cui": "C0015469",
-        "umls_all": [
-          "C0015469",
-          "C0427055"
-        ]
-      },
-      {
-        "text": "abnormal gait",
-        "ner_score": 0.9,
-        "negated": false,
-        "negation_cue": "",
-        "hpo_id": "HP:0001288",
-        "hpo_name": "Gait disturbance",
-        "expanded_text": "abnormal gait",
-        "match_type": "text_scan_exact_synonym",
-        "confidence": 0.95,
-        "matched": true,
-        "umls_cui": "C0575081",
-        "umls_all": [
-          "C0575081"
-        ]
-      },
-      {
-        "text": "brain atrophy",
-        "ner_score": 0.9,
-        "negated": false,
-        "negation_cue": "",
-        "hpo_id": "HP:0012444",
-        "hpo_name": "Brain atrophy",
-        "expanded_text": "brain atrophy",
-        "match_type": "text_scan_exact_label",
-        "confidence": 0.95,
-        "matched": true,
-        "umls_cui": "C0154671",
-        "umls_all": [
-          "C0154671",
-          "C0235946"
-        ]
-      },
-      {
-        "text": "Eczema",
-        "ner_score": 0.9,
-        "negated": false,
-        "negation_cue": "",
-        "hpo_id": "HP:0000964",
-        "hpo_name": "Eczema",
-        "expanded_text": "Eczema",
+        "hpo_id": "HP:0002721",
+        "hpo_name": "Immunodeficiency",
+        "expanded_text": "immunodeficiency",
         "match_type": "text_scan_clinical_synonym",
         "confidence": 0.95,
         "matched": true,
-        "umls_cui": "C0013595",
+        "umls_cui": "C0021051",
         "umls_all": [
-          "C0013595"
+          "C0021051"
         ]
       }
     ],
     "test": [
+      {
+        "text": "the magnetic resonance imaging ( mri ) of her brain",
+        "ner_score": 0.993,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "the magnetic resonance imaging ( mri ) of her brain",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
       {
         "text": "gene",
         "ner_score": 0.452,
@@ -396,62 +641,75 @@
         "hpo_id": null,
         "hpo_name": null,
         "expanded_text": "gene",
-        "match_type": "skipped_non_phenotype",
+        "match_type": "skipped_low_ner_score",
         "confidence": 0.0,
         "matched": false,
         "umls_cui": null
       },
       {
-        "text": "increased serum",
+        "text": "increased",
         "ner_score": 0.825,
         "negated": false,
         "negation_cue": "",
-        "hpo_id": "HP:0002152",
-        "hpo_name": "Hyperproteinemia",
-        "expanded_text": "increased serum",
-        "match_type": "sapbert_similarity",
-        "confidence": 0.7213,
-        "matched": true,
-        "umls_cui": "C0267988"
-      },
-      {
-        "text": "fingertip",
-        "ner_score": 0.914,
-        "negated": false,
-        "negation_cue": "",
         "hpo_id": null,
         "hpo_name": null,
-        "expanded_text": "fingertip",
-        "match_type": "no_match",
+        "expanded_text": "increased",
+        "match_type": "skipped_test",
         "confidence": 0.0,
         "matched": false,
         "umls_cui": null
       },
       {
-        "text": "facial",
-        "ner_score": 0.898,
+        "text": "the blood eosinophils",
+        "ner_score": 0.963,
         "negated": false,
         "negation_cue": "",
         "hpo_id": null,
         "hpo_name": null,
-        "expanded_text": "facial",
-        "match_type": "no_match",
+        "expanded_text": "the blood eosinophils",
+        "match_type": "skipped_test",
         "confidence": 0.0,
         "matched": false,
         "umls_cui": null
       },
       {
-        "text": "blood eosinophil",
+        "text": "eosinophil",
         "ner_score": 0.911,
         "negated": false,
         "negation_cue": "",
-        "hpo_id": "HP:0001880",
-        "hpo_name": "Increased total eosinophil count",
-        "expanded_text": "blood eosinophil",
-        "match_type": "sapbert_similarity",
-        "confidence": 0.7991,
-        "matched": true,
-        "umls_cui": "C0014457"
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "eosinophil",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "serum ige levels",
+        "ner_score": 0.976,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "serum ige levels",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "the lymphocyte subsets",
+        "ner_score": 0.927,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "the lymphocyte subsets",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
       },
       {
         "text": "lymphocyte",
@@ -461,7 +719,7 @@
         "hpo_id": null,
         "hpo_name": null,
         "expanded_text": "lymphocyte",
-        "match_type": "no_match",
+        "match_type": "skipped_test",
         "confidence": 0.0,
         "matched": false,
         "umls_cui": null
@@ -474,7 +732,7 @@
         "hpo_id": null,
         "hpo_name": null,
         "expanded_text": "subsets",
-        "match_type": "no_match",
+        "match_type": "skipped_test",
         "confidence": 0.0,
         "matched": false,
         "umls_cui": null
@@ -487,7 +745,7 @@
         "hpo_id": null,
         "hpo_name": null,
         "expanded_text": "decrease",
-        "match_type": "no_match",
+        "match_type": "skipped_test",
         "confidence": 0.0,
         "matched": false,
         "umls_cui": null
@@ -500,7 +758,7 @@
         "hpo_id": null,
         "hpo_name": null,
         "expanded_text": "lymphocytes",
-        "match_type": "no_match",
+        "match_type": "skipped_test",
         "confidence": 0.0,
         "matched": false,
         "umls_cui": null
@@ -513,7 +771,7 @@
         "hpo_id": null,
         "hpo_name": null,
         "expanded_text": "magnetic",
-        "match_type": "no_match",
+        "match_type": "skipped_test",
         "confidence": 0.0,
         "matched": false,
         "umls_cui": null
@@ -526,7 +784,7 @@
         "hpo_id": null,
         "hpo_name": null,
         "expanded_text": "resonance",
-        "match_type": "no_match",
+        "match_type": "skipped_test",
         "confidence": 0.0,
         "matched": false,
         "umls_cui": null
@@ -539,20 +797,20 @@
         "hpo_id": null,
         "hpo_name": null,
         "expanded_text": "imaging",
-        "match_type": "skipped_non_phenotype",
+        "match_type": "skipped_test",
         "confidence": 0.0,
         "matched": false,
         "umls_cui": null
       },
       {
-        "text": "brain",
-        "ner_score": 0.941,
+        "text": "whole exome sequencing",
+        "ner_score": 0.981,
         "negated": false,
         "negation_cue": "",
         "hpo_id": null,
         "hpo_name": null,
-        "expanded_text": "brain",
-        "match_type": "no_match",
+        "expanded_text": "whole exome sequencing",
+        "match_type": "skipped_test",
         "confidence": 0.0,
         "matched": false,
         "umls_cui": null
@@ -565,7 +823,7 @@
         "hpo_id": null,
         "hpo_name": null,
         "expanded_text": "sequencing",
-        "match_type": "no_match",
+        "match_type": "skipped_test",
         "confidence": 0.0,
         "matched": false,
         "umls_cui": null
@@ -573,81 +831,165 @@
     ],
     "ordo_candidates": [
       {
-        "ordo_id": "ORPHA:2314",
-        "name": "Hyper-IgE syndrome",
-        "name_fr": "Syndrome d'Hyper-IgE (syndrome de Job)",
-        "score": 0.85,
-        "jaccard": 0.0417,
-        "coverage": 0.125,
-        "matched_hpo": [
-          "HP:0000988"
-        ],
-        "matched_count": 1,
-        "total_disease_hpo": 8
-      },
-      {
-        "ordo_id": "ORPHA:1429",
-        "name": "Benign hereditary chorea",
+        "ordo_id": "ORPHA:167",
+        "name": "Chédiak-Higashi syndrome",
         "name_fr": "",
-        "score": 0.3222,
-        "jaccard": 0.0556,
-        "coverage": 0.5,
+        "score": 0.4473,
+        "coverage": 0.0674,
         "matched_hpo": [
-          "HP:0001288"
-        ],
-        "matched_count": 1,
-        "total_disease_hpo": 2
-      },
-      {
-        "ordo_id": "ORPHA:256",
-        "name": "Early-onset generalized limb-onset dystonia",
-        "name_fr": "",
-        "score": 0.28,
-        "jaccard": 0.1,
-        "coverage": 0.4,
-        "matched_hpo": [
-          "HP:0001276",
-          "HP:0001288"
-        ],
-        "matched_count": 2,
-        "total_disease_hpo": 5
-      },
-      {
-        "ordo_id": "ORPHA:99944",
-        "name": "Autosomal dominant Charcot-Marie-Tooth disease type 2K",
-        "name_fr": "",
-        "score": 0.23,
-        "jaccard": 0.125,
-        "coverage": 0.3,
-        "matched_hpo": [
+          "HP:0000964",
+          "HP:0000988",
           "HP:0001288",
-          "HP:0003202",
-          "HP:0011096"
+          "HP:0002721",
+          "HP:0003212",
+          "HP:0012444"
+        ],
+        "matched_count": 6,
+        "total_disease_hpo": 89,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:2314",
+        "name": "Autosomal dominant hyper-IgE syndrome due to STAT3 deficiency",
+        "name_fr": "",
+        "score": 0.4297,
+        "coverage": 0.0612,
+        "matched_hpo": [
+          "HP:0000964",
+          "HP:0000988",
+          "HP:0003212"
         ],
         "matched_count": 3,
-        "total_disease_hpo": 10
+        "total_disease_hpo": 49,
+        "text_match": true
       },
       {
-        "ordo_id": "ORPHA:458798",
-        "name": "Spinocerebellar ataxia type 41",
+        "ordo_id": "ORPHA:39041",
+        "name": "Omenn syndrome",
         "name_fr": "",
-        "score": 0.2211,
-        "jaccard": 0.0526,
-        "coverage": 0.3333,
+        "score": 0.4051,
+        "coverage": 0.044,
         "matched_hpo": [
-          "HP:0002066"
+          "HP:0000964",
+          "HP:0000988",
+          "HP:0002721",
+          "HP:0003212"
         ],
-        "matched_count": 1,
-        "total_disease_hpo": 3
+        "matched_count": 4,
+        "total_disease_hpo": 91,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:443811",
+        "name": "PGM3-CDG",
+        "name_fr": "",
+        "score": 0.3793,
+        "coverage": 0.0484,
+        "matched_hpo": [
+          "HP:0000964",
+          "HP:0003212",
+          "HP:0005403"
+        ],
+        "matched_count": 3,
+        "total_disease_hpo": 62,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:906",
+        "name": "Wiskott-Aldrich syndrome",
+        "name_fr": "",
+        "score": 0.3651,
+        "coverage": 0.0421,
+        "matched_hpo": [
+          "HP:0000964",
+          "HP:0000988",
+          "HP:0002721",
+          "HP:0003212"
+        ],
+        "matched_count": 4,
+        "total_disease_hpo": 95,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:508533",
+        "name": "Skeletal dysplasia-T-cell immunodeficiency-developmental delay syndrome",
+        "name_fr": "",
+        "score": 0.3455,
+        "coverage": 0.0316,
+        "matched_hpo": [
+          "HP:0001276",
+          "HP:0003212",
+          "HP:0005403"
+        ],
+        "matched_count": 3,
+        "total_disease_hpo": 95,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:33364",
+        "name": "Trichothiodystrophy",
+        "name_fr": "",
+        "score": 0.3146,
+        "coverage": 0.033,
+        "matched_hpo": [
+          "HP:0000964",
+          "HP:0001276",
+          "HP:0007266"
+        ],
+        "matched_count": 3,
+        "total_disease_hpo": 91,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:275",
+        "name": "Severe combined immunodeficiency due to DCLRE1C deficiency",
+        "name_fr": "",
+        "score": 0.313,
+        "coverage": 0.0541,
+        "matched_hpo": [
+          "HP:0000988",
+          "HP:0005403"
+        ],
+        "matched_count": 2,
+        "total_disease_hpo": 37,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:533",
+        "name": "Listeriosis",
+        "name_fr": "",
+        "score": 0.3128,
+        "coverage": 0.0294,
+        "matched_hpo": [
+          "HP:0002721",
+          "HP:0007432"
+        ],
+        "matched_count": 2,
+        "total_disease_hpo": 68,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:83471",
+        "name": "T-cell immunodeficiency with thymic aplasia",
+        "name_fr": "",
+        "score": 0.3114,
+        "coverage": 0.0556,
+        "matched_hpo": [
+          "HP:0000964",
+          "HP:0005403"
+        ],
+        "matched_count": 2,
+        "total_disease_hpo": 36,
+        "text_match": false
       }
     ],
     "stats": {
-      "total": 41,
+      "total": 62,
       "matched": 17,
-      "unmatched": 24,
-      "match_rate": 41.5,
+      "unmatched": 45,
+      "match_rate": 27.4,
       "unique_hpo": 17,
-      "ordo_matches": 5
+      "ordo_matches": 10
     }
   },
   "phenopacket": {
@@ -656,13 +998,13 @@
       "id": "GSC_EN_024"
     },
     "input": "Case Report: Autosomal recessive hyper-IgE syndrome caused by DOCK8 gene mutation with new clinical features: a case report.\n\nBACKGROUND: Autosomal recessive hyper-IgE syndrome (AR-HIES) caused by DOCK8 gene is a rare immunodeficiency disease, the main clinical manifestations include recurrent Eczema-like rash, skin and lung abscesses, accompanied with increased serum IgE level. Here, we report a 7-year-old Chinese girl with a new clinic features caused by DOCK8 gene mutations.\nCASE PRESENTATION: A 7-year-old girl was admitted to our hospital because of abnormal walking posture. The clinical manifestations of the patient included abnormal gait, eczema-like rash, fingertip abscess, high muscle tone, and facial paralysis. Among them, high muscle tone and facial paralysis are new clinic features which have not been reported previously. The blood eosinophils and serum IgE levels were significantly increased, and the lymphocyte subsets indicated a decrease of T lymphocytes. The magnetic resonance imaging (MRI) of her brain suggested myelin dysplasia and brain atrophy. Two novel compound heterozygous mutations (c.1868 + 2 T > C and c.5962-2A > G) of DOCK8 gene were identified by whole exome sequencing. By literature review, there are 11 mutations of DOCK8 gene in Chinese AR-HIES patients.\nCONCLUSIONS: Two novel splice-site mutations(c.1868 + 2 T > C and c.5962-2A > G) of DOCK8 gene and new clinic features were found in a Chinese girl with AR-HIES, which extends our understanding of DOCK8 gene mutation spectrum and phenotype of AR-HIES in children.",
-    "target": "Hyper-IgE syndrome",
+    "target": "Chédiak-Higashi syndrome",
     "phenotypicFeatures": [
       {
         "type": {
-          "id": "HP:0002721",
-          "label": "Immunodeficiency",
-          "umls_cui": "C0021051"
+          "id": "HP:0000007",
+          "label": "Autosomal recessive inheritance",
+          "umls_cui": "C0441748"
         },
         "excluded": false,
         "evidence": [
@@ -673,7 +1015,67 @@
             },
             "reference": {
               "id": "GSC_EN_024",
-              "description": "NER: immunodeficiency (0.375) | Match: clinical_synonym (1.000)"
+              "description": "NER: autosomal recessive hyper - ige syndrome (0.997) | Match: substring_match (0.950)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0007432",
+          "label": "Intermittent generalized erythematous papular rash",
+          "umls_cui": "C2749995"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "GSC_EN_024",
+              "description": "NER: recurrent eczema - like rash (0.998) | Match: sapbert_similarity (0.712)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0000964",
+          "label": "Eczematoid dermatitis",
+          "umls_cui": "C0013595"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "GSC_EN_024",
+              "description": "NER: eczema - like rash (0.918) | Match: sapbert_similarity (0.897)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0005363",
+          "label": "Humoral immunodeficiency",
+          "umls_cui": "C4025206"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "GSC_EN_024",
+              "description": "NER: a rare immunodeficiency disease (0.988) | Match: sapbert_similarity (0.798)"
             }
           }
         ]
@@ -700,9 +1102,9 @@
       },
       {
         "type": {
-          "id": "HP:0002066",
-          "label": "Gait ataxia",
-          "umls_cui": "C0751837"
+          "id": "HP:0100838",
+          "label": "Recurrent cutaneous abscess formation",
+          "umls_cui": "C4021957"
         },
         "excluded": false,
         "evidence": [
@@ -713,7 +1115,47 @@
             },
             "reference": {
               "id": "GSC_EN_024",
-              "description": "NER: gait (0.393) | Match: sapbert_similarity (0.743)"
+              "description": "NER: skin and lung abscesses (0.999) | Match: sapbert_similarity (0.717)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0003212",
+          "label": "Increased circulating IgE concentration",
+          "umls_cui": "C0236175"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "GSC_EN_024",
+              "description": "NER: increased serum ige level (0.996) | Match: sapbert_similarity (0.973)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0001288",
+          "label": "Gait disturbance",
+          "umls_cui": "C0575081"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "GSC_EN_024",
+              "description": "NER: abnormal gait (0.998) | Match: exact_synonym (1.000)"
             }
           }
         ]
@@ -760,6 +1202,26 @@
       },
       {
         "type": {
+          "id": "HP:0007209",
+          "label": "Facial paralysis",
+          "umls_cui": "C0015469"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "GSC_EN_024",
+              "description": "NER: facial paralysis (0.998) | Match: exact_label (1.000)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
           "id": "HP:0003470",
           "label": "Paralysis",
           "umls_cui": "C0522224"
@@ -780,9 +1242,9 @@
       },
       {
         "type": {
-          "id": "HP:0011096",
-          "label": "Peripheral demyelination",
-          "umls_cui": "C0878575"
+          "id": "HP:0005403",
+          "label": "Decreased total T cell count",
+          "umls_cui": "C2931322"
         },
         "excluded": false,
         "evidence": [
@@ -793,16 +1255,16 @@
             },
             "reference": {
               "id": "GSC_EN_024",
-              "description": "NER: myelin (0.636) | Match: sapbert_similarity (0.725)"
+              "description": "NER: a decrease of t lymphocytes (0.826) | Match: sapbert_similarity (0.930)"
             }
           }
         ]
       },
       {
         "type": {
-          "id": "HP:0002652",
-          "label": "Skeletal dysplasia",
-          "umls_cui": "C0029422"
+          "id": "HP:0007266",
+          "label": "Cerebral dysmyelination",
+          "umls_cui": "C1854885"
         },
         "excluded": false,
         "evidence": [
@@ -813,16 +1275,16 @@
             },
             "reference": {
               "id": "GSC_EN_024",
-              "description": "NER: dysplasia (0.732) | Match: sapbert_similarity (0.767)"
+              "description": "NER: myelin dysplasia (0.999) | Match: sapbert_similarity (0.844)"
             }
           }
         ]
       },
       {
         "type": {
-          "id": "HP:0003202",
-          "label": "Skeletal muscle atrophy",
-          "umls_cui": "C0234958"
+          "id": "HP:0012444",
+          "label": "Brain atrophy",
+          "umls_cui": "C0154671"
         },
         "excluded": false,
         "evidence": [
@@ -833,7 +1295,7 @@
             },
             "reference": {
               "id": "GSC_EN_024",
-              "description": "NER: atrophy (0.702) | Match: sapbert_similarity (0.755)"
+              "description": "NER: brain atrophy (0.997) | Match: exact_label (1.000)"
             }
           }
         ]
@@ -860,9 +1322,9 @@
       },
       {
         "type": {
-          "id": "HP:0000007",
-          "label": "Autosomal recessive inheritance",
-          "umls_cui": "C0441748"
+          "id": "HP:0002721",
+          "label": "Immunodeficiency",
+          "umls_cui": "C0021051"
         },
         "excluded": false,
         "evidence": [
@@ -873,134 +1335,14 @@
             },
             "reference": {
               "id": "GSC_EN_024",
-              "description": "NER: Autosomal recessive (0.900) | Match: text_scan_exact_synonym (0.950)"
-            }
-          }
-        ]
-      },
-      {
-        "type": {
-          "id": "HP:0007209",
-          "label": "Facial paralysis",
-          "umls_cui": "C0015469"
-        },
-        "excluded": false,
-        "evidence": [
-          {
-            "evidenceCode": {
-              "id": "ECO:0000033",
-              "label": "author statement supported by traceable reference"
-            },
-            "reference": {
-              "id": "GSC_EN_024",
-              "description": "NER: facial paralysis (0.900) | Match: text_scan_exact_label (0.950)"
-            }
-          }
-        ]
-      },
-      {
-        "type": {
-          "id": "HP:0001288",
-          "label": "Gait disturbance",
-          "umls_cui": "C0575081"
-        },
-        "excluded": false,
-        "evidence": [
-          {
-            "evidenceCode": {
-              "id": "ECO:0000033",
-              "label": "author statement supported by traceable reference"
-            },
-            "reference": {
-              "id": "GSC_EN_024",
-              "description": "NER: abnormal gait (0.900) | Match: text_scan_exact_synonym (0.950)"
-            }
-          }
-        ]
-      },
-      {
-        "type": {
-          "id": "HP:0012444",
-          "label": "Brain atrophy",
-          "umls_cui": "C0154671"
-        },
-        "excluded": false,
-        "evidence": [
-          {
-            "evidenceCode": {
-              "id": "ECO:0000033",
-              "label": "author statement supported by traceable reference"
-            },
-            "reference": {
-              "id": "GSC_EN_024",
-              "description": "NER: brain atrophy (0.900) | Match: text_scan_exact_label (0.950)"
-            }
-          }
-        ]
-      },
-      {
-        "type": {
-          "id": "HP:0000964",
-          "label": "Eczema",
-          "umls_cui": "C0013595"
-        },
-        "excluded": false,
-        "evidence": [
-          {
-            "evidenceCode": {
-              "id": "ECO:0000033",
-              "label": "author statement supported by traceable reference"
-            },
-            "reference": {
-              "id": "GSC_EN_024",
-              "description": "NER: Eczema (0.900) | Match: text_scan_clinical_synonym (0.950)"
-            }
-          }
-        ]
-      },
-      {
-        "type": {
-          "id": "HP:0002152",
-          "label": "Hyperproteinemia",
-          "umls_cui": "C0267988"
-        },
-        "excluded": false,
-        "evidence": [
-          {
-            "evidenceCode": {
-              "id": "ECO:0000033",
-              "label": "author statement supported by traceable reference"
-            },
-            "reference": {
-              "id": "GSC_EN_024",
-              "description": "NER: increased serum (0.825) | Match: sapbert_similarity (0.721)"
-            }
-          }
-        ]
-      },
-      {
-        "type": {
-          "id": "HP:0001880",
-          "label": "Increased total eosinophil count",
-          "umls_cui": "C0014457"
-        },
-        "excluded": false,
-        "evidence": [
-          {
-            "evidenceCode": {
-              "id": "ECO:0000033",
-              "label": "author statement supported by traceable reference"
-            },
-            "reference": {
-              "id": "GSC_EN_024",
-              "description": "NER: blood eosinophil (0.911) | Match: sapbert_similarity (0.799)"
+              "description": "NER: immunodeficiency (0.900) | Match: text_scan_clinical_synonym (0.950)"
             }
           }
         ]
       }
     ],
     "metaData": {
-      "created": "2026-06-11T03:09:26Z",
+      "created": "2026-06-19T15:07:44Z",
       "createdBy": "clinical-preanalysis-pipeline-v2",
       "phenopacketSchemaVersion": "2.0",
       "resources": [
@@ -1020,48 +1362,73 @@
         "progressStatus": "IN_PROGRESS",
         "diagnosis": {
           "disease": {
-            "id": "ORPHA:2314",
-            "label": "Hyper-IgE syndrome"
+            "id": "ORPHA:167",
+            "label": "Chédiak-Higashi syndrome"
           },
-          "score": 0.85,
+          "score": 0.4473,
           "allCandidates": [
             {
+              "id": "ORPHA:167",
+              "label": "Chédiak-Higashi syndrome",
+              "score": 0.4473
+            },
+            {
               "id": "ORPHA:2314",
-              "label": "Hyper-IgE syndrome",
-              "score": 0.85
+              "label": "Autosomal dominant hyper-IgE syndrome due to STAT3 deficiency",
+              "score": 0.4297
             },
             {
-              "id": "ORPHA:1429",
-              "label": "Benign hereditary chorea",
-              "score": 0.3222
+              "id": "ORPHA:39041",
+              "label": "Omenn syndrome",
+              "score": 0.4051
             },
             {
-              "id": "ORPHA:256",
-              "label": "Early-onset generalized limb-onset dystonia",
-              "score": 0.28
+              "id": "ORPHA:443811",
+              "label": "PGM3-CDG",
+              "score": 0.3793
             },
             {
-              "id": "ORPHA:99944",
-              "label": "Autosomal dominant Charcot-Marie-Tooth disease type 2K",
-              "score": 0.23
+              "id": "ORPHA:906",
+              "label": "Wiskott-Aldrich syndrome",
+              "score": 0.3651
             },
             {
-              "id": "ORPHA:458798",
-              "label": "Spinocerebellar ataxia type 41",
-              "score": 0.2211
+              "id": "ORPHA:508533",
+              "label": "Skeletal dysplasia-T-cell immunodeficiency-developmental delay syndrome",
+              "score": 0.3455
+            },
+            {
+              "id": "ORPHA:33364",
+              "label": "Trichothiodystrophy",
+              "score": 0.3146
+            },
+            {
+              "id": "ORPHA:275",
+              "label": "Severe combined immunodeficiency due to DCLRE1C deficiency",
+              "score": 0.313
+            },
+            {
+              "id": "ORPHA:533",
+              "label": "Listeriosis",
+              "score": 0.3128
+            },
+            {
+              "id": "ORPHA:83471",
+              "label": "T-cell immunodeficiency with thymic aplasia",
+              "score": 0.3114
             }
           ]
         }
       }
     ],
     "_pipelineStats": {
-      "totalEntities": 41,
+      "totalEntities": 62,
       "matchedHPO": 17,
-      "unmatchedEntities": 24,
+      "unmatchedEntities": 45,
       "phenopacketFeatures": 17,
       "negatedFeatures": 0,
       "numericPhenotypes": 0,
-      "ordoCandidates": 5
+      "ordoCandidates": 10
     }
   }
 }

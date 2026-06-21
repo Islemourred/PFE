@@ -1,0 +1,328 @@
+{
+  "id": "phenopacket-RA_EN_018",
+  "subject": {
+    "id": "RA_EN_018",
+    "sex": "FEMALE"
+  },
+  "input": "A 72-year-old Caucasian female from an urban area with over 200,000 residents and an average annual sunshine of 2299 hours (latitude 44°10′50.63′′ N and longitude 28°38′3.55′′ E) visited the Dermatology Clinic of an academic hospital in August 2022. She reported recent changes in multiple melanocytic lesions on various skin areas. Her family history included essential arterial hypertension and diabetes mellitus in her mother and prostate cancer in her father, with no significant skin conditions in close relatives. The patient had personal medical conditions such as arterial hypertension and dyslipidemia. She was retired, having previously worked as a call center representative with no professional ultraviolet radiation exposure. Her sun-damage risk factors included Fitzpatrick phototype II and a history of childhood sunburns. There were no issues related to healthcare access, cultural, or financial matters. Clinical and dermoscopic assessments revealed Fitzpatrick phototype II and approximately 30 pigmented nevi with irregular shapes, varying colors (light to dark brown), and different sizes. Total body mapping (TBM) was used for photographic documentation of the entire body surface, followed by sequential digital dermoscopy (FotoFinder bodystudio ATBM master system, 4th Generation, FotoFinder Systems GmbH, Bad Birnbach, Germany) of specific melanocytic lesions to monitor their changes over time and identify any new lesions. Four melanocytic lesions showed features such as irregular borders, shiny white streaks, and an irregular pigmented network, leading to the decision for surgical excision.",
+  "target": "Carney complex",
+  "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0001054",
+        "label": "Numerous nevi",
+        "umls_cui": "C1849677"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_018",
+            "description": "NER: multiple melanocytic lesions on (0.936) | Match: sapbert_similarity (0.783)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0000822",
+        "label": "Hypertension",
+        "umls_cui": "C0020538"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_018",
+            "description": "NER: arterial hypertension (0.998) | Match: exact_synonym (1.000)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0000819",
+        "label": "Diabetes mellitus",
+        "umls_cui": "C0011849"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_018",
+            "description": "NER: diabetes mellitus (0.998) | Match: exact_label (1.000)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0012125",
+        "label": "Prostate cancer",
+        "umls_cui": "C0376358"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_018",
+            "description": "NER: prostate cancer (0.998) | Match: exact_label (1.000)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0007396",
+        "label": "Early cutaneous photosensitivity",
+        "umls_cui": "C4024889"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_018",
+            "description": "NER: childhood sunburns (0.997) | Match: sapbert_similarity (0.721)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0000995",
+        "label": "Melanocytic nevus",
+        "umls_cui": "C0027962"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_018",
+            "description": "NER: pigmented nevi (0.973) | Match: exact_synonym (1.000)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0003764",
+        "label": "Nevus",
+        "umls_cui": "C0027960"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_018",
+            "description": "NER: nevi (0.856) | Match: related_synonym (1.000)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0007572",
+        "label": "Hyperpigmented streaks",
+        "umls_cui": "C1866245"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_018",
+            "description": "NER: shiny white streaks (0.998) | Match: sapbert_similarity (0.812)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0007427",
+        "label": "Reticulated skin pigmentation",
+        "umls_cui": "C3279575"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_018",
+            "description": "NER: an irregular pigmented network (0.998) | Match: sapbert_similarity (0.754)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0003119",
+        "label": "Abnormal circulating lipid concentration",
+        "umls_cui": "C0242339"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_018",
+            "description": "NER: dyslipidemia (0.900) | Match: text_scan_related_synonym (0.950)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0002664",
+        "label": "Neoplasm",
+        "umls_cui": "C0006826"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_018",
+            "description": "NER: cancer (0.900) | Match: text_scan_related_synonym (0.950)"
+          }
+        }
+      ]
+    }
+  ],
+  "metaData": {
+    "created": "2026-06-19T15:11:14Z",
+    "createdBy": "clinical-preanalysis-pipeline-v2",
+    "phenopacketSchemaVersion": "2.0",
+    "resources": [
+      {
+        "id": "hp",
+        "name": "Human Phenotype Ontology",
+        "url": "https://hpo.jax.org",
+        "version": "2024-04-26",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      }
+    ]
+  },
+  "interpretations": [
+    {
+      "id": "interpretation-RA_EN_018",
+      "progressStatus": "IN_PROGRESS",
+      "diagnosis": {
+        "disease": {
+          "id": "ORPHA:1359",
+          "label": "Carney complex"
+        },
+        "score": 0.3963,
+        "allCandidates": [
+          {
+            "id": "ORPHA:1359",
+            "label": "Carney complex",
+            "score": 0.3963
+          },
+          {
+            "id": "ORPHA:542643",
+            "label": "Livedoid vasculopathy",
+            "score": 0.3908
+          },
+          {
+            "id": "ORPHA:99889",
+            "label": "Cushing syndrome due to ectopic ACTH secretion",
+            "score": 0.3648
+          },
+          {
+            "id": "ORPHA:79474",
+            "label": "Atypical Werner syndrome",
+            "score": 0.3559
+          },
+          {
+            "id": "ORPHA:116",
+            "label": "Beckwith-Wiedemann syndrome",
+            "score": 0.3511
+          },
+          {
+            "id": "ORPHA:109",
+            "label": "Bannayan-Riley-Ruvalcaba syndrome",
+            "score": 0.351
+          },
+          {
+            "id": "ORPHA:910",
+            "label": "Xeroderma pigmentosum",
+            "score": 0.3491
+          },
+          {
+            "id": "ORPHA:201",
+            "label": "Cowden syndrome",
+            "score": 0.3473
+          },
+          {
+            "id": "ORPHA:902",
+            "label": "Werner syndrome",
+            "score": 0.3361
+          },
+          {
+            "id": "ORPHA:2874",
+            "label": "Phakomatosis pigmentokeratotica",
+            "score": 0.3327
+          }
+        ]
+      }
+    }
+  ],
+  "_validationWarnings": [
+    {
+      "type": "sex_anatomy_conflict",
+      "severity": "critical",
+      "message": "Male-specific term 'prostate' found in female patient record",
+      "term": "prostate"
+    }
+  ],
+  "_pipelineStats": {
+    "totalEntities": 51,
+    "matchedHPO": 11,
+    "unmatchedEntities": 40,
+    "phenopacketFeatures": 11,
+    "negatedFeatures": 0,
+    "numericPhenotypes": 0,
+    "ordoCandidates": 10
+  }
+}

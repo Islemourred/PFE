@@ -5,13 +5,13 @@
     "sex": "MALE"
   },
   "input": "Case Report: Uncommon clinical presentation of cystic fibrosis in a patient homozygous for a rare CFTR mutation: a case report.\n\nBACKGROUND: Cystic fibrosis (CF) is the most common, life-threatening, autosomal-recessive disorder among Caucasians. To date, approximately 2000 mutations in the CFTR gene have been reported. Some of these mutations are very rare, and some represent individual sequence changes in the gene. The introduction of newborn screening (NBS) in high prevalence countries for CF has considerably changed the diagnosing of this metabolic disease. Currently, in most cases, a diagnosis is made based on NBS, including or expanded with DNA analysis and confirmed with sweat chloride tests, rather than waiting until the child has already developed signs and symptoms. However, in rare cases, NBS does not provide enough information to confirm or reject a CF diagnosis. Not only are there small groups of patients who have false-negative or false-positive NBS results, but there is also a growing number of patients with positive NBS results in whom results of sweat tests and genetic examinations do not provide definite conclusions. Despite all knowledge and modern diagnostic tools at our disposal, sometimes the clinical presentation is so inconclusive, that making a final diagnosis remains a challenge.\nCASE PRESENTATION: In this case report, we present a male infant of Polish origin, whose symptoms and laboratory findings (including metabolic acidosis) were strongly suggestive of metabolic disease other than cystic fibrosis. Newborn screening for CF was positive, but the first sweat test results were equivocal, and initial and extended molecular tests were negative. Finally, after considering broad differential diagnosis, introducing treatment specific for CF and excluding other metabolic diseases, a third expanded genetic test revealed the presence of a rare pathogenic mutation in both alleles of the CFTR gene: c.4035_4038dupCCTA (p.Ser1347ProfsX13).\nCONCLUSION: Although CF is considered a monogenic disorder, the relationship between genotype and phenotype is very complex. The reported case shows the unusual presentation of the disease. The patient's clinical symptoms and laboratory findings, in combination with molecular test results, provide useful information for further observing the genotype-phenotype correlations in cystic fibrosis.",
-  "target": "Hereditary hyperferritinemia-cataract syndrome",
+  "target": "Beta-ketothiolase deficiency",
   "phenotypicFeatures": [
     {
       "type": {
-        "id": "HP:0002206",
-        "label": "Pulmonary fibrosis",
-        "umls_cui": "C0034069"
+        "id": "HP:0006552",
+        "label": "Fibrocystic lung disease",
+        "umls_cui": "C1397290"
       },
       "excluded": false,
       "evidence": [
@@ -22,27 +22,7 @@
           },
           "reference": {
             "id": "GSC_EN_001",
-            "description": "NER: fibrosis (0.890) | Match: sapbert_similarity (0.734)"
-          }
-        }
-      ]
-    },
-    {
-      "type": {
-        "id": "HP:0000006",
-        "label": "Autosomal dominant inheritance",
-        "umls_cui": "C0443147"
-      },
-      "excluded": false,
-      "evidence": [
-        {
-          "evidenceCode": {
-            "id": "ECO:0000033",
-            "label": "author statement supported by traceable reference"
-          },
-          "reference": {
-            "id": "GSC_EN_001",
-            "description": "NER: autosomal (0.387) | Match: sapbert_similarity (0.837)"
+            "description": "NER: cystic fibrosis (0.996) | Match: sapbert_similarity (0.711)"
           }
         }
       ]
@@ -62,7 +42,7 @@
           },
           "reference": {
             "id": "GSC_EN_001",
-            "description": "NER: metabolic disease (0.694) | Match: sapbert_similarity (0.731)"
+            "description": "NER: metabolic disease (0.998) | Match: sapbert_similarity (0.731)"
           }
         }
       ]
@@ -106,70 +86,10 @@
           }
         }
       ]
-    },
-    {
-      "type": {
-        "id": "HP:0003623",
-        "label": "Neonatal onset",
-        "umls_cui": "C1855106"
-      },
-      "excluded": false,
-      "evidence": [
-        {
-          "evidenceCode": {
-            "id": "ECO:0000033",
-            "label": "author statement supported by traceable reference"
-          },
-          "reference": {
-            "id": "GSC_EN_001",
-            "description": "NER: newborn (0.519) | Match: sapbert_similarity (0.762)"
-          }
-        }
-      ]
-    },
-    {
-      "type": {
-        "id": "HP:0000975",
-        "label": "Hyperhidrosis",
-        "umls_cui": "C0020458"
-      },
-      "excluded": false,
-      "evidence": [
-        {
-          "evidenceCode": {
-            "id": "ECO:0000033",
-            "label": "author statement supported by traceable reference"
-          },
-          "reference": {
-            "id": "GSC_EN_001",
-            "description": "NER: sweat (0.902) | Match: sapbert_similarity (0.857)"
-          }
-        }
-      ]
-    },
-    {
-      "type": {
-        "id": "HP:0012827",
-        "label": "Borderline",
-        "umls_cui": "C0205189"
-      },
-      "excluded": false,
-      "evidence": [
-        {
-          "evidenceCode": {
-            "id": "ECO:0000033",
-            "label": "author statement supported by traceable reference"
-          },
-          "reference": {
-            "id": "GSC_EN_001",
-            "description": "NER: equivocal (0.889) | Match: sapbert_similarity (0.732)"
-          }
-        }
-      ]
     }
   ],
   "metaData": {
-    "created": "2026-06-11T03:07:19Z",
+    "created": "2026-06-19T15:04:23Z",
     "createdBy": "clinical-preanalysis-pipeline-v2",
     "phenopacketSchemaVersion": "2.0",
     "resources": [
@@ -189,47 +109,72 @@
       "progressStatus": "IN_PROGRESS",
       "diagnosis": {
         "disease": {
-          "id": "ORPHA:163",
-          "label": "Hereditary hyperferritinemia-cataract syndrome"
+          "id": "ORPHA:134",
+          "label": "Beta-ketothiolase deficiency"
         },
-        "score": 0.3444,
+        "score": 0.3541,
         "allCandidates": [
           {
-            "id": "ORPHA:163",
-            "label": "Hereditary hyperferritinemia-cataract syndrome",
-            "score": 0.3444
+            "id": "ORPHA:134",
+            "label": "Beta-ketothiolase deficiency",
+            "score": 0.3541
           },
           {
-            "id": "ORPHA:112",
-            "label": "Bartter syndrome",
-            "score": 0.3444
+            "id": "ORPHA:2785",
+            "label": "Osteopetrosis with renal tubular acidosis",
+            "score": 0.3525
           },
           {
-            "id": "ORPHA:140966",
-            "label": "Palmoplantar keratoderma, Nagashima type",
-            "score": 0.3444
+            "id": "ORPHA:391673",
+            "label": "Necrotizing enterocolitis",
+            "score": 0.3367
           },
           {
-            "id": "ORPHA:50943",
-            "label": "Keratolytic winter erythema",
-            "score": 0.24
+            "id": "ORPHA:3008",
+            "label": "Pyruvate carboxylase deficiency",
+            "score": 0.3331
           },
           {
-            "id": "ORPHA:86919",
-            "label": "Keratosis palmaris et plantaris-clinodactyly syndrome",
-            "score": 0.24
+            "id": "ORPHA:31826",
+            "label": "Ethylene glycol poisoning",
+            "score": 0.3321
+          },
+          {
+            "id": "ORPHA:35706",
+            "label": "Glutaric acidemia type 3",
+            "score": 0.3321
+          },
+          {
+            "id": "ORPHA:2357",
+            "label": "Bronchogenic cyst",
+            "score": 0.3258
+          },
+          {
+            "id": "ORPHA:18",
+            "label": "Distal renal tubular acidosis",
+            "score": 0.3254
+          },
+          {
+            "id": "ORPHA:3337",
+            "label": "Primary Fanconi renotubular syndrome",
+            "score": 0.3253
+          },
+          {
+            "id": "ORPHA:400",
+            "label": "Cystic echinococcosis",
+            "score": 0.3249
           }
         ]
       }
     }
   ],
   "_pipelineStats": {
-    "totalEntities": 26,
-    "matchedHPO": 8,
-    "unmatchedEntities": 18,
-    "phenopacketFeatures": 8,
+    "totalEntities": 54,
+    "matchedHPO": 4,
+    "unmatchedEntities": 50,
+    "phenopacketFeatures": 4,
     "negatedFeatures": 0,
     "numericPhenotypes": 0,
-    "ordoCandidates": 5
+    "ordoCandidates": 10
   }
 }

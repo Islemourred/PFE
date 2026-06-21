@@ -8,6 +8,26 @@
   "phenotypicFeatures": [
     {
       "type": {
+        "id": "HP:0006254",
+        "label": "Elevated circulating alpha-fetoprotein concentration",
+        "umls_cui": "C0235971"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "PUBMED_EN_013",
+            "description": "NER: elevated alpha - fetoprotein levels (0.998) | Match: sapbert_similarity (0.981)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
         "id": "HP:0001251",
         "label": "Ataxia",
         "umls_cui": "C0007758"
@@ -48,6 +68,66 @@
     },
     {
       "type": {
+        "id": "HP:0000007",
+        "label": "Autosomal recessive inheritance",
+        "umls_cui": "C0441748"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "PUBMED_EN_013",
+            "description": "NER: a rare autosomal recessive neurodegenerative disorder (0.994) | Match: substring_match (0.950)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0100585",
+        "label": "Telangiectasia of the skin",
+        "umls_cui": "C4022018"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "PUBMED_EN_013",
+            "description": "NER: cutaneous telangiectasia (0.991) | Match: sapbert_similarity (0.929)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0002721",
+        "label": "Immunodeficiency",
+        "umls_cui": "C0021051"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "PUBMED_EN_013",
+            "description": "NER: immunodefi (0.952) | Match: sapbert_similarity (0.927)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
         "id": "HP:0001257",
         "label": "Spasticity",
         "umls_cui": "C0026838"
@@ -62,6 +142,26 @@
           "reference": {
             "id": "PUBMED_EN_013",
             "description": "NER: spastic movements (0.925) | Match: sapbert_similarity (0.843)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0000524",
+        "label": "Conjunctival telangiectasia",
+        "umls_cui": "C0239105"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "PUBMED_EN_013",
+            "description": "NER: ocular telangiectasia (0.996) | Match: sapbert_similarity (0.851)"
           }
         }
       ]
@@ -108,9 +208,9 @@
     },
     {
       "type": {
-        "id": "HP:0000007",
-        "label": "Autosomal recessive inheritance",
-        "umls_cui": "C0441748"
+        "id": "HP:0008376",
+        "label": "Nasal dysarthria",
+        "umls_cui": "C1834664"
       },
       "excluded": false,
       "evidence": [
@@ -121,16 +221,16 @@
           },
           "reference": {
             "id": "PUBMED_EN_013",
-            "description": "NER: autosomal recessive (0.900) | Match: text_scan_exact_synonym (0.950)"
+            "description": "NER: red speech (0.996) | Match: sapbert_similarity (0.779)"
           }
         }
       ]
     },
     {
       "type": {
-        "id": "HP:0002721",
-        "label": "Immunodeficiency",
-        "umls_cui": "C0021051"
+        "id": "HP:0011133",
+        "label": "Increased sensitivity to ionizing radiation",
+        "umls_cui": "C4021850"
       },
       "excluded": false,
       "evidence": [
@@ -141,16 +241,16 @@
           },
           "reference": {
             "id": "PUBMED_EN_013",
-            "description": "NER: immunodeficiency (0.900) | Match: text_scan_clinical_synonym (0.950)"
+            "description": "NER: radiation sensitivity (0.745) | Match: sapbert_similarity (0.842)"
           }
         }
       ]
     },
     {
       "type": {
-        "id": "HP:0011463",
-        "label": "Childhood onset",
-        "umls_cui": "C1837352"
+        "id": "HP:0002719",
+        "label": "Recurrent infections",
+        "umls_cui": "C0239998"
       },
       "excluded": false,
       "evidence": [
@@ -161,7 +261,7 @@
           },
           "reference": {
             "id": "PUBMED_EN_013",
-            "description": "NER: childhood onset (0.900) | Match: text_scan_exact_label (0.950)"
+            "description": "NER: infection susceptibility (0.998) | Match: sapbert_similarity (0.758)"
           }
         }
       ]
@@ -185,30 +285,10 @@
           }
         }
       ]
-    },
-    {
-      "type": {
-        "id": "HP:0012443",
-        "label": "Abnormal brain morphology",
-        "umls_cui": "C4021085"
-      },
-      "excluded": false,
-      "evidence": [
-        {
-          "evidenceCode": {
-            "id": "ECO:0000033",
-            "label": "author statement supported by traceable reference"
-          },
-          "reference": {
-            "id": "PUBMED_EN_013",
-            "description": "NER: typical brain (0.847) | Match: sapbert_similarity (0.740)"
-          }
-        }
-      ]
     }
   ],
   "metaData": {
-    "created": "2026-06-11T03:05:31Z",
+    "created": "2026-06-19T15:02:37Z",
     "createdBy": "clinical-preanalysis-pipeline-v2",
     "phenopacketSchemaVersion": "2.0",
     "resources": [
@@ -231,44 +311,69 @@
           "id": "ORPHA:100",
           "label": "Ataxia-telangiectasia"
         },
-        "score": 0.85,
+        "score": 0.4282,
         "allCandidates": [
           {
             "id": "ORPHA:100",
             "label": "Ataxia-telangiectasia",
-            "score": 0.85
+            "score": 0.4282
           },
           {
-            "id": "ORPHA:211067",
-            "label": "Episodic ataxia type 5",
-            "score": 0.2571
+            "id": "ORPHA:420741",
+            "label": "RIDDLE syndrome",
+            "score": 0.414
           },
           {
-            "id": "ORPHA:1180",
-            "label": "Ataxia-hypogonadism-choroidal dystrophy syndrome",
-            "score": 0.2333
+            "id": "ORPHA:910",
+            "label": "Xeroderma pigmentosum",
+            "score": 0.3684
           },
           {
-            "id": "ORPHA:1182",
-            "label": "Spastic ataxia with congenital miosis",
-            "score": 0.2
+            "id": "ORPHA:443811",
+            "label": "PGM3-CDG",
+            "score": 0.3144
           },
           {
-            "id": "ORPHA:97",
-            "label": "Familial paroxysmal ataxia",
-            "score": 0.1857
+            "id": "ORPHA:2585",
+            "label": "Ataxia-pancytopenia syndrome",
+            "score": 0.2995
+          },
+          {
+            "id": "ORPHA:33364",
+            "label": "Trichothiodystrophy",
+            "score": 0.299
+          },
+          {
+            "id": "ORPHA:95433",
+            "label": "Autosomal recessive spinocerebellar ataxia-blindness-deafness syndrome",
+            "score": 0.2971
+          },
+          {
+            "id": "ORPHA:774",
+            "label": "Hereditary hemorrhagic telangiectasia",
+            "score": 0.2923
+          },
+          {
+            "id": "ORPHA:167",
+            "label": "Chédiak-Higashi syndrome",
+            "score": 0.2909
+          },
+          {
+            "id": "ORPHA:909",
+            "label": "Cerebrotendinous xanthomatosis",
+            "score": 0.2869
           }
         ]
       }
     }
   ],
   "_pipelineStats": {
-    "totalEntities": 21,
-    "matchedHPO": 11,
-    "unmatchedEntities": 10,
-    "phenopacketFeatures": 10,
+    "totalEntities": 39,
+    "matchedHPO": 14,
+    "unmatchedEntities": 25,
+    "phenopacketFeatures": 14,
     "negatedFeatures": 0,
     "numericPhenotypes": 0,
-    "ordoCandidates": 5
+    "ordoCandidates": 10
   }
 }

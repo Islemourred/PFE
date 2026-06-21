@@ -1,0 +1,953 @@
+{
+  "note_id": "RA_EN_009",
+  "language": "en",
+  "module1": {
+    "clean_text": "A [AGE] man was referred from the Department of Thoracic Surgery with visual loss noticed in the recovery room after undergoing video-assisted thoracoscopic surgery (VATS). The procedure involved a posterior segmentectomy of the right upper lobe and left lower lobe for lung masses under general anesthesia. The surgery was uneventful, lasting approximately 2 hours, with no significant fluctuations in blood pressure or notable blood loss. Histologic examination revealed malignant lymphoma and reactive hyperplasia in the surrounding lymph nodes. Post-surgery, his blood pressure, hemoglobin, glucose, and cholesterol levels were all within normal ranges. Ophthalmologic evaluation immediately after surgery showed visual acuities of hand motion in both eyes (OU). Pupils were reactive without any relative afferent pupillary defect, and eye motility was full OU. Slit lamp examination of the eyelid, anterior chamber, and fundus examination were normal.",
+    "phi_map": {
+      "AGE": "40-year-old"
+    },
+    "patient_info": {}
+  },
+  "module3_warnings": {
+    "temporal": [],
+    "inconsistencies": []
+  },
+  "module4": {
+    "problem": [
+      {
+        "text": "visual loss",
+        "ner_score": 0.949,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0000572",
+        "hpo_name": "Visual loss",
+        "expanded_text": "visual loss",
+        "match_type": "exact_label",
+        "confidence": 1.0,
+        "matched": true,
+        "umls_cui": "C3665386"
+      },
+      {
+        "text": "lung masses",
+        "ner_score": 0.854,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "lung masses",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "masses",
+        "ner_score": 0.54,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "masses",
+        "match_type": "skipped_low_ner_score",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "significant fluctuations in blood pressure",
+        "ner_score": 0.988,
+        "negated": true,
+        "negation_cue": "no",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "significant fluctuations in blood pressure",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "fluctuations",
+        "ner_score": 0.684,
+        "negated": true,
+        "negation_cue": "no significant",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "fluctuations",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "notable blood loss",
+        "ner_score": 0.998,
+        "negated": true,
+        "negation_cue": "no significant",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "notable blood loss",
+        "match_type": "deduplicated",
+        "confidence": 0.7131,
+        "matched": false,
+        "umls_cui": "C0018994"
+      },
+      {
+        "text": "blood loss",
+        "ner_score": 0.925,
+        "negated": true,
+        "negation_cue": "no significant",
+        "hpo_id": "HP:0100762",
+        "hpo_name": "Hemobilia",
+        "expanded_text": "blood loss",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.7306,
+        "matched": true,
+        "umls_cui": "C0018994"
+      },
+      {
+        "text": "malignant lymphoma and reactive hyperplasia",
+        "ner_score": 0.998,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0012539",
+        "hpo_name": "Non-Hodgkin lymphoma",
+        "expanded_text": "malignant lymphoma and reactive hyperplasia",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.7267,
+        "matched": true,
+        "umls_cui": "C0024305"
+      },
+      {
+        "text": "visual acuities of",
+        "ner_score": 0.65,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "visual acuities of",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "visual acuities of hand motion in both eyes (",
+        "ner_score": 0.931,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "visual acuities of hand motion in both eyes (",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "any relative afferent pupillary defect",
+        "ner_score": 0.989,
+        "negated": true,
+        "negation_cue": "without",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "any relative afferent pupillary defect",
+        "match_type": "deduplicated",
+        "confidence": 0.95,
+        "matched": false,
+        "umls_cui": "C0549122"
+      },
+      {
+        "text": "relative afferent pupillary defect",
+        "ner_score": 0.823,
+        "negated": true,
+        "negation_cue": "without",
+        "hpo_id": "HP:0200057",
+        "hpo_name": "Marcus Gunn pupil",
+        "expanded_text": "relative afferent pupillary defect",
+        "match_type": "exact_synonym",
+        "confidence": 1.0,
+        "matched": true,
+        "umls_cui": "C0549122"
+      },
+      {
+        "text": "lymphoma",
+        "ner_score": 0.9,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0002665",
+        "hpo_name": "Lymphoma",
+        "expanded_text": "lymphoma",
+        "match_type": "text_scan_clinical_synonym",
+        "confidence": 0.95,
+        "matched": true,
+        "umls_cui": "C0024299",
+        "umls_all": [
+          "C0024299"
+        ]
+      }
+    ],
+    "treatment": [
+      {
+        "text": "video - assisted thoracoscopic surgery ( vats",
+        "ner_score": 0.834,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "video - assisted thoracoscopic surgery ( vats",
+        "match_type": "skipped_treatment",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "surgery",
+        "ner_score": 0.544,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "surgery",
+        "match_type": "skipped_low_ner_score",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "thoracoscopic surgery",
+        "ner_score": 0.894,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "thoracoscopic surgery",
+        "match_type": "skipped_treatment",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "the procedure",
+        "ner_score": 0.982,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "the procedure",
+        "match_type": "skipped_treatment",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "a posterior segmentectomy of the right upper lobe and left lower lobe",
+        "ner_score": 0.98,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "a posterior segmentectomy of the right upper lobe and left lower lobe",
+        "match_type": "skipped_treatment",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "segmentectomy",
+        "ner_score": 0.764,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "segmentectomy",
+        "match_type": "skipped_treatment",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "general",
+        "ner_score": 0.528,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "general",
+        "match_type": "skipped_low_ner_score",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "general anesthesia",
+        "ner_score": 0.984,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "general anesthesia",
+        "match_type": "skipped_treatment",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "anesthesia",
+        "ner_score": 0.425,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "anesthesia",
+        "match_type": "skipped_low_ner_score",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "the surgery",
+        "ner_score": 0.958,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "the surgery",
+        "match_type": "skipped_treatment",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      }
+    ],
+    "test": [
+      {
+        "text": "blood",
+        "ner_score": 0.579,
+        "negated": true,
+        "negation_cue": "no significant",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "blood",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "pressure",
+        "ner_score": 0.492,
+        "negated": true,
+        "negation_cue": "no significant",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "pressure",
+        "match_type": "skipped_low_ner_score",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "histologic examination",
+        "ner_score": 0.997,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "histologic examination",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "ologic",
+        "ner_score": 0.995,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "ologic",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "ogic",
+        "ner_score": 0.994,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "ogic",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "examination",
+        "ner_score": 0.993,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "examination",
+        "match_type": "skipped_en_noise",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "his blood pressure",
+        "ner_score": 0.997,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "his blood pressure",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "hemoglobin",
+        "ner_score": 0.986,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "hemoglobin",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "hemog",
+        "ner_score": 0.989,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "hemog",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "glucose",
+        "ner_score": 0.98,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "glucose",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "cholesterol",
+        "ner_score": 0.98,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "cholesterol",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "cholesterol levels",
+        "ner_score": 0.959,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "cholesterol levels",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "within",
+        "ner_score": 0.816,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "within",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "normal",
+        "ner_score": 0.884,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "normal",
+        "match_type": "skipped_en_noise",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "ranges",
+        "ner_score": 0.848,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "ranges",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "Ophthalmol",
+        "ner_score": 0.991,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "Ophthalmol",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "ophthalmologic evaluation",
+        "ner_score": 0.989,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "ophthalmologic evaluation",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "evaluation",
+        "ner_score": 0.993,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "evaluation",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "motion",
+        "ner_score": 0.82,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "motion",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "eye motility",
+        "ner_score": 0.925,
+        "negated": true,
+        "negation_cue": "without",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "eye motility",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "motility",
+        "ner_score": 0.513,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "motility",
+        "match_type": "skipped_low_ner_score",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "slit lamp examination of the eyelid, anterior chamber, and fundus examination",
+        "ner_score": 0.959,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "slit lamp examination of the eyelid, anterior chamber, and fundus examination",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      }
+    ],
+    "ordo_candidates": [
+      {
+        "ordo_id": "ORPHA:449563",
+        "name": "IgG4-related ophthalmic disease",
+        "name_fr": "",
+        "score": 0.4474,
+        "coverage": 0.0476,
+        "matched_hpo": [
+          "HP:0002665",
+          "HP:0012539"
+        ],
+        "matched_count": 2,
+        "total_disease_hpo": 42,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:3261",
+        "name": "Autoimmune lymphoproliferative syndrome",
+        "name_fr": "",
+        "score": 0.4232,
+        "coverage": 0.0139,
+        "matched_hpo": [
+          "HP:0012539"
+        ],
+        "matched_count": 1,
+        "total_disease_hpo": 72,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:512",
+        "name": "Metachromatic leukodystrophy",
+        "name_fr": "",
+        "score": 0.3971,
+        "coverage": 0.0222,
+        "matched_hpo": [
+          "HP:0100762"
+        ],
+        "matched_count": 1,
+        "total_disease_hpo": 45,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:71505",
+        "name": "Cancer-associated retinopathy",
+        "name_fr": "",
+        "score": 0.3952,
+        "coverage": 0.0278,
+        "matched_hpo": [
+          "HP:0000572"
+        ],
+        "matched_count": 1,
+        "total_disease_hpo": 36,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:289390",
+        "name": "Primary Sjögren disease",
+        "name_fr": "",
+        "score": 0.3941,
+        "coverage": 0.0122,
+        "matched_hpo": [
+          "HP:0002665"
+        ],
+        "matched_count": 1,
+        "total_disease_hpo": 82,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:2526",
+        "name": "Microcephaly-lymphedema-chorioretinopathy syndrome",
+        "name_fr": "",
+        "score": 0.388,
+        "coverage": 0.0299,
+        "matched_hpo": [
+          "HP:0000572",
+          "HP:0002665"
+        ],
+        "matched_count": 2,
+        "total_disease_hpo": 67,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:524",
+        "name": "Li-Fraumeni syndrome",
+        "name_fr": "",
+        "score": 0.3732,
+        "coverage": 0.0571,
+        "matched_hpo": [
+          "HP:0002665",
+          "HP:0012539"
+        ],
+        "matched_count": 2,
+        "total_disease_hpo": 35,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:477814",
+        "name": "Progressive microcephaly-seizures-cortical blindness-developmental delay syndrome",
+        "name_fr": "",
+        "score": 0.3668,
+        "coverage": 0.0455,
+        "matched_hpo": [
+          "HP:0002665"
+        ],
+        "matched_count": 1,
+        "total_disease_hpo": 22,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:228423",
+        "name": "GATA2 deficiency spectrum",
+        "name_fr": "",
+        "score": 0.3617,
+        "coverage": 0.0357,
+        "matched_hpo": [
+          "HP:0000572"
+        ],
+        "matched_count": 1,
+        "total_disease_hpo": 28,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:906",
+        "name": "Wiskott-Aldrich syndrome",
+        "name_fr": "",
+        "score": 0.3595,
+        "coverage": 0.0105,
+        "matched_hpo": [
+          "HP:0002665"
+        ],
+        "matched_count": 1,
+        "total_disease_hpo": 95,
+        "text_match": false
+      }
+    ],
+    "stats": {
+      "total": 45,
+      "matched": 5,
+      "unmatched": 40,
+      "match_rate": 11.1,
+      "unique_hpo": 5,
+      "ordo_matches": 10
+    }
+  },
+  "phenopacket": {
+    "id": "phenopacket-RA_EN_009",
+    "subject": {
+      "id": "RA_EN_009"
+    },
+    "input": "A 40-year-old man was referred from the Department of Thoracic Surgery with visual loss noticed in the recovery room after undergoing video-assisted thoracoscopic surgery (VATS). The procedure involved a posterior segmentectomy of the right upper lobe and left lower lobe for lung masses under general anesthesia. The surgery was uneventful, lasting approximately 2 hours, with no significant fluctuations in blood pressure or notable blood loss. Histologic examination revealed malignant lymphoma and reactive hyperplasia in the surrounding lymph nodes. Post-surgery, his blood pressure, hemoglobin, glucose, and cholesterol levels were all within normal ranges. Ophthalmologic evaluation immediately after surgery showed visual acuities of hand motion in both eyes (OU). Pupils were reactive without any relative afferent pupillary defect, and eye motility was full OU. Slit lamp examination of the eyelid, anterior chamber, and fundus examination were normal.",
+    "target": "IgG4-related ophthalmic disease",
+    "phenotypicFeatures": [
+      {
+        "type": {
+          "id": "HP:0000572",
+          "label": "Visual loss",
+          "umls_cui": "C3665386"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_009",
+              "description": "NER: visual loss (0.949) | Match: exact_label (1.000)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0100762",
+          "label": "Hemobilia",
+          "umls_cui": "C0018994"
+        },
+        "excluded": true,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_009",
+              "description": "NER: blood loss (0.925) | Match: sapbert_similarity (0.731) | Negated by: \"no significant\""
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0012539",
+          "label": "Non-Hodgkin lymphoma",
+          "umls_cui": "C0024305"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_009",
+              "description": "NER: malignant lymphoma and reactive hyperplasia (0.998) | Match: sapbert_similarity (0.727)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0200057",
+          "label": "Marcus Gunn pupil",
+          "umls_cui": "C0549122"
+        },
+        "excluded": true,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_009",
+              "description": "NER: relative afferent pupillary defect (0.823) | Match: exact_synonym (1.000) | Negated by: \"without\""
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0002665",
+          "label": "Lymphoma",
+          "umls_cui": "C0024299"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_009",
+              "description": "NER: lymphoma (0.900) | Match: text_scan_clinical_synonym (0.950)"
+            }
+          }
+        ]
+      }
+    ],
+    "metaData": {
+      "created": "2026-06-19T15:09:14Z",
+      "createdBy": "clinical-preanalysis-pipeline-v2",
+      "phenopacketSchemaVersion": "2.0",
+      "resources": [
+        {
+          "id": "hp",
+          "name": "Human Phenotype Ontology",
+          "url": "https://hpo.jax.org",
+          "version": "2024-04-26",
+          "namespacePrefix": "HP",
+          "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        }
+      ]
+    },
+    "interpretations": [
+      {
+        "id": "interpretation-RA_EN_009",
+        "progressStatus": "IN_PROGRESS",
+        "diagnosis": {
+          "disease": {
+            "id": "ORPHA:449563",
+            "label": "IgG4-related ophthalmic disease"
+          },
+          "score": 0.4474,
+          "allCandidates": [
+            {
+              "id": "ORPHA:449563",
+              "label": "IgG4-related ophthalmic disease",
+              "score": 0.4474
+            },
+            {
+              "id": "ORPHA:3261",
+              "label": "Autoimmune lymphoproliferative syndrome",
+              "score": 0.4232
+            },
+            {
+              "id": "ORPHA:512",
+              "label": "Metachromatic leukodystrophy",
+              "score": 0.3971
+            },
+            {
+              "id": "ORPHA:71505",
+              "label": "Cancer-associated retinopathy",
+              "score": 0.3952
+            },
+            {
+              "id": "ORPHA:289390",
+              "label": "Primary Sjögren disease",
+              "score": 0.3941
+            },
+            {
+              "id": "ORPHA:2526",
+              "label": "Microcephaly-lymphedema-chorioretinopathy syndrome",
+              "score": 0.388
+            },
+            {
+              "id": "ORPHA:524",
+              "label": "Li-Fraumeni syndrome",
+              "score": 0.3732
+            },
+            {
+              "id": "ORPHA:477814",
+              "label": "Progressive microcephaly-seizures-cortical blindness-developmental delay syndrome",
+              "score": 0.3668
+            },
+            {
+              "id": "ORPHA:228423",
+              "label": "GATA2 deficiency spectrum",
+              "score": 0.3617
+            },
+            {
+              "id": "ORPHA:906",
+              "label": "Wiskott-Aldrich syndrome",
+              "score": 0.3595
+            }
+          ]
+        }
+      }
+    ],
+    "_pipelineStats": {
+      "totalEntities": 45,
+      "matchedHPO": 5,
+      "unmatchedEntities": 40,
+      "phenopacketFeatures": 5,
+      "negatedFeatures": 2,
+      "numericPhenotypes": 0,
+      "ordoCandidates": 10
+    }
+  }
+}

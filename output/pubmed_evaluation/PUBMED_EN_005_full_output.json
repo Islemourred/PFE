@@ -15,6 +15,58 @@
   "module4": {
     "problem": [
       {
+        "text": "skott - aldrich syndrome",
+        "ner_score": 0.897,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "skott - aldrich syndrome",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "- aldrich syndrome",
+        "ner_score": 0.958,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "- aldrich syndrome",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "a rare x - linked immunodeficiency disorder",
+        "ner_score": 0.994,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0005352",
+        "hpo_name": "Severe T-cell immunodeficiency",
+        "expanded_text": "a rare x - linked immunodeficiency disorder",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.7842,
+        "matched": true,
+        "umls_cui": "C4025208"
+      },
+      {
+        "text": "tt - aldrich syndrome",
+        "ner_score": 0.892,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0001973",
+        "hpo_name": "Autoimmune thrombocytopenia",
+        "expanded_text": "tt - aldrich syndrome",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.7243,
+        "matched": true,
+        "umls_cui": "C0242584"
+      },
+      {
         "text": "Aldrich",
         "ner_score": 0.971,
         "negated": false,
@@ -35,23 +87,23 @@
         "hpo_id": null,
         "hpo_name": null,
         "expanded_text": "syndrome",
-        "match_type": "no_match",
+        "match_type": "skipped_en_noise",
         "confidence": 0.0,
         "matched": false,
         "umls_cui": null
       },
       {
         "text": "macrothrombocytopenia",
-        "ner_score": 0.847,
+        "ner_score": 0.998,
         "negated": false,
         "negation_cue": "",
-        "hpo_id": "HP:0001894",
-        "hpo_name": "Thrombocytosis",
+        "hpo_id": null,
+        "hpo_name": null,
         "expanded_text": "macrothrombocytopenia",
-        "match_type": "sapbert_similarity",
-        "confidence": 0.7538,
-        "matched": true,
-        "umls_cui": "C0836924"
+        "match_type": "sapbert_rejected_low_conf",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
       },
       {
         "text": "linked immunodeficiency disorder",
@@ -67,6 +119,71 @@
         "umls_cui": "C4025206"
       },
       {
+        "text": "a variable phenotype",
+        "ner_score": 0.965,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0003812",
+        "hpo_name": "Phenotypic variability",
+        "expanded_text": "a variable phenotype",
+        "match_type": "substring_match",
+        "confidence": 0.95,
+        "matched": true,
+        "umls_cui": "C1837514"
+      },
+      {
+        "text": "unusual and persistent thrombocytopenia",
+        "ner_score": 0.998,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0004854",
+        "hpo_name": "Intermittent thrombocytopenia",
+        "expanded_text": "unusual and persistent thrombocytopenia",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.8544,
+        "matched": true,
+        "umls_cui": "C1839167"
+      },
+      {
+        "text": "increased platelet volume",
+        "ner_score": 0.992,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0011877",
+        "hpo_name": "Increased mean platelet volume",
+        "expanded_text": "increased platelet volume",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.9132,
+        "matched": true,
+        "umls_cui": "C1096367"
+      },
+      {
+        "text": "the syndrome",
+        "ner_score": 0.994,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "the syndrome",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "maternally inherited causative mutation in the exon",
+        "ner_score": 0.976,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "maternally inherited causative mutation in the exon",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
         "text": "mutation",
         "ner_score": 0.211,
         "negated": false,
@@ -74,29 +191,88 @@
         "hpo_id": null,
         "hpo_name": null,
         "expanded_text": "mutation",
+        "match_type": "skipped_low_ner_score",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "of the",
+        "ner_score": 0.683,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "of the",
         "match_type": "no_match",
         "confidence": 0.0,
         "matched": false,
         "umls_cui": null
       },
       {
-        "text": "variable phenotype",
-        "ner_score": 0.9,
+        "text": "gene",
+        "ner_score": 0.562,
         "negated": false,
         "negation_cue": "",
-        "hpo_id": "HP:0003812",
-        "hpo_name": "Phenotypic variability",
-        "expanded_text": "variable phenotype",
-        "match_type": "text_scan_exact_synonym",
-        "confidence": 0.95,
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "gene",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "congenital or early infantile thrombocytopenia",
+        "ner_score": 0.991,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0001905",
+        "hpo_name": "Congenital thrombocytopenia",
+        "expanded_text": "congenital or early infantile thrombocytopenia",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.855,
         "matched": true,
-        "umls_cui": "C1837514",
-        "umls_all": [
-          "C1837514",
-          "C1839039",
-          "C1850667",
-          "C1866210"
-        ]
+        "umls_cui": "C0272278"
+      },
+      {
+        "text": "mutations of the was gene",
+        "ner_score": 0.989,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "mutations of the was gene",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "unexplained cases",
+        "ner_score": 0.837,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "unexplained cases",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "characteristic microthrombocytopenia",
+        "ner_score": 0.998,
+        "negated": true,
+        "negation_cue": "absence of",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "characteristic microthrombocytopenia",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
       },
       {
         "text": "thrombocytopenia",
@@ -154,13 +330,13 @@
         "ner_score": 0.933,
         "negated": false,
         "negation_cue": "",
-        "hpo_id": "HP:0011877",
-        "hpo_name": "Increased mean platelet volume",
+        "hpo_id": null,
+        "hpo_name": null,
         "expanded_text": "increased platelet volume",
-        "match_type": "sapbert_similarity",
-        "confidence": 0.9132,
-        "matched": true,
-        "umls_cui": "C1096367"
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
       },
       {
         "text": "clinical",
@@ -170,7 +346,7 @@
         "hpo_id": null,
         "hpo_name": null,
         "expanded_text": "clinical",
-        "match_type": "no_match",
+        "match_type": "skipped_en_noise",
         "confidence": 0.0,
         "matched": false,
         "umls_cui": null
@@ -183,7 +359,7 @@
         "hpo_id": null,
         "hpo_name": null,
         "expanded_text": "laboratory",
-        "match_type": "no_match",
+        "match_type": "skipped_low_ner_score",
         "confidence": 0.0,
         "matched": false,
         "umls_cui": null
@@ -196,20 +372,20 @@
         "hpo_id": null,
         "hpo_name": null,
         "expanded_text": "finding",
-        "match_type": "no_match",
+        "match_type": "skipped_test",
         "confidence": 0.0,
         "matched": false,
         "umls_cui": null
       },
       {
-        "text": "gene",
-        "ner_score": 0.816,
+        "text": "multidisciplinary assessment",
+        "ner_score": 0.889,
         "negated": false,
         "negation_cue": "",
         "hpo_id": null,
         "hpo_name": null,
-        "expanded_text": "gene",
-        "match_type": "skipped_non_phenotype",
+        "expanded_text": "multidisciplinary assessment",
+        "match_type": "skipped_test",
         "confidence": 0.0,
         "matched": false,
         "umls_cui": null
@@ -219,78 +395,152 @@
       {
         "ordo_id": "ORPHA:906",
         "name": "Wiskott-Aldrich syndrome",
-        "name_fr": "Syndrome de Wiskott-Aldrich",
-        "score": 0.85,
-        "jaccard": 0.05,
-        "coverage": 0.0714,
-        "matched_hpo": [
-          "HP:0001873"
-        ],
-        "matched_count": 1,
-        "total_disease_hpo": 14
-      },
-      {
-        "ordo_id": "ORPHA:494444",
-        "name": "DIAPH1-related sensorineural hearing loss-thrombocytopenia syndrome",
         "name_fr": "",
-        "score": 0.2727,
-        "jaccard": 0.1818,
-        "coverage": 0.3333,
+        "score": 0.515,
+        "coverage": 0.0211,
         "matched_hpo": [
           "HP:0001873",
-          "HP:0011877"
-        ],
-        "matched_count": 2,
-        "total_disease_hpo": 6
-      },
-      {
-        "ordo_id": "ORPHA:140957",
-        "name": "Autosomal dominant macrothrombocytopenia",
-        "name_fr": "",
-        "score": 0.1905,
-        "jaccard": 0.1429,
-        "coverage": 0.2222,
-        "matched_hpo": [
-          "HP:0001873",
-          "HP:0011877"
-        ],
-        "matched_count": 2,
-        "total_disease_hpo": 9
-      },
-      {
-        "ordo_id": "ORPHA:183707",
-        "name": "Infantile LAD-like disease due to RAC2 deficiency",
-        "name_fr": "",
-        "score": 0.19,
-        "jaccard": 0.1,
-        "coverage": 0.25,
-        "matched_hpo": [
           "HP:0002721"
         ],
-        "matched_count": 1,
-        "total_disease_hpo": 4
+        "matched_count": 2,
+        "total_disease_hpo": 95,
+        "text_match": true
       },
       {
-        "ordo_id": "ORPHA:529",
-        "name": "Roch-Leri mesosomatous lipomatosis",
+        "ordo_id": "ORPHA:760",
+        "name": "Purine nucleoside phosphorylase deficiency",
         "name_fr": "",
-        "score": 0.19,
-        "jaccard": 0.1,
-        "coverage": 0.25,
+        "score": 0.4061,
+        "coverage": 0.069,
         "matched_hpo": [
-          "HP:0001873"
+          "HP:0001973",
+          "HP:0005363"
+        ],
+        "matched_count": 2,
+        "total_disease_hpo": 29,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:391487",
+        "name": "STAT1-related autoimmune enteropathy and endocrinopathy-susceptibility to chronic infections syndrome",
+        "name_fr": "",
+        "score": 0.3877,
+        "coverage": 0.0652,
+        "matched_hpo": [
+          "HP:0001873",
+          "HP:0001973",
+          "HP:0002721"
+        ],
+        "matched_count": 3,
+        "total_disease_hpo": 46,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:1830",
+        "name": "Schimke immuno-osseous dysplasia",
+        "name_fr": "",
+        "score": 0.3726,
+        "coverage": 0.0274,
+        "matched_hpo": [
+          "HP:0001873",
+          "HP:0005352"
+        ],
+        "matched_count": 2,
+        "total_disease_hpo": 73,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:182050",
+        "name": "MYH9-related syndromic thrombocytopenia",
+        "name_fr": "",
+        "score": 0.3697,
+        "coverage": 0.125,
+        "matched_hpo": [
+          "HP:0001905",
+          "HP:0011877"
+        ],
+        "matched_count": 2,
+        "total_disease_hpo": 16,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:84064",
+        "name": "Trichohepatoenteric syndrome",
+        "name_fr": "",
+        "score": 0.3598,
+        "coverage": 0.0299,
+        "matched_hpo": [
+          "HP:0002721",
+          "HP:0011877"
+        ],
+        "matched_count": 2,
+        "total_disease_hpo": 67,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:487796",
+        "name": "Takenouchi-Kosaki syndrome",
+        "name_fr": "",
+        "score": 0.3558,
+        "coverage": 0.0423,
+        "matched_hpo": [
+          "HP:0001873",
+          "HP:0002721",
+          "HP:0011877"
+        ],
+        "matched_count": 3,
+        "total_disease_hpo": 71,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:167",
+        "name": "Chédiak-Higashi syndrome",
+        "name_fr": "",
+        "score": 0.3447,
+        "coverage": 0.0225,
+        "matched_hpo": [
+          "HP:0001873",
+          "HP:0002721"
+        ],
+        "matched_count": 2,
+        "total_disease_hpo": 89,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:275",
+        "name": "Severe combined immunodeficiency due to DCLRE1C deficiency",
+        "name_fr": "",
+        "score": 0.3437,
+        "coverage": 0.027,
+        "matched_hpo": [
+          "HP:0001973"
         ],
         "matched_count": 1,
-        "total_disease_hpo": 4
+        "total_disease_hpo": 37,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:96181",
+        "name": "Maternal uniparental disomy of chromosome 6 syndrome",
+        "name_fr": "",
+        "score": 0.328,
+        "coverage": 0.0952,
+        "matched_hpo": [
+          "HP:0001873",
+          "HP:0002721"
+        ],
+        "matched_count": 2,
+        "total_disease_hpo": 21,
+        "text_match": false
       }
     ],
     "stats": {
-      "total": 14,
-      "matched": 7,
-      "unmatched": 7,
-      "match_rate": 50.0,
-      "unique_hpo": 7,
-      "ordo_matches": 5
+      "total": 28,
+      "matched": 10,
+      "unmatched": 18,
+      "match_rate": 35.7,
+      "unique_hpo": 10,
+      "ordo_matches": 10
     }
   },
   "phenopacket": {
@@ -303,9 +553,9 @@
     "phenotypicFeatures": [
       {
         "type": {
-          "id": "HP:0001894",
-          "label": "Thrombocytosis",
-          "umls_cui": "C0836924"
+          "id": "HP:0005352",
+          "label": "Severe T-cell immunodeficiency",
+          "umls_cui": "C4025208"
         },
         "excluded": false,
         "evidence": [
@@ -316,7 +566,27 @@
             },
             "reference": {
               "id": "PUBMED_EN_005",
-              "description": "NER: macrothrombocytopenia (0.847) | Match: sapbert_similarity (0.754)"
+              "description": "NER: a rare x - linked immunodeficiency disorder (0.994) | Match: sapbert_similarity (0.784)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0001973",
+          "label": "Autoimmune thrombocytopenia",
+          "umls_cui": "C0242584"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "PUBMED_EN_005",
+              "description": "NER: tt - aldrich syndrome (0.892) | Match: sapbert_similarity (0.724)"
             }
           }
         ]
@@ -356,7 +626,67 @@
             },
             "reference": {
               "id": "PUBMED_EN_005",
-              "description": "NER: variable phenotype (0.900) | Match: text_scan_exact_synonym (0.950)"
+              "description": "NER: a variable phenotype (0.965) | Match: substring_match (0.950)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0004854",
+          "label": "Intermittent thrombocytopenia",
+          "umls_cui": "C1839167"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "PUBMED_EN_005",
+              "description": "NER: unusual and persistent thrombocytopenia (0.998) | Match: sapbert_similarity (0.854)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0011877",
+          "label": "Increased mean platelet volume",
+          "umls_cui": "C1096367"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "PUBMED_EN_005",
+              "description": "NER: increased platelet volume (0.992) | Match: sapbert_similarity (0.913)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0001905",
+          "label": "Congenital thrombocytopenia",
+          "umls_cui": "C0272278"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "PUBMED_EN_005",
+              "description": "NER: congenital or early infantile thrombocytopenia (0.991) | Match: sapbert_similarity (0.855)"
             }
           }
         ]
@@ -420,30 +750,10 @@
             }
           }
         ]
-      },
-      {
-        "type": {
-          "id": "HP:0011877",
-          "label": "Increased mean platelet volume",
-          "umls_cui": "C1096367"
-        },
-        "excluded": false,
-        "evidence": [
-          {
-            "evidenceCode": {
-              "id": "ECO:0000033",
-              "label": "author statement supported by traceable reference"
-            },
-            "reference": {
-              "id": "PUBMED_EN_005",
-              "description": "NER: increased platelet volume (0.933) | Match: sapbert_similarity (0.913)"
-            }
-          }
-        ]
       }
     ],
     "metaData": {
-      "created": "2026-06-11T03:04:43Z",
+      "created": "2026-06-19T15:01:37Z",
       "createdBy": "clinical-preanalysis-pipeline-v2",
       "phenopacketSchemaVersion": "2.0",
       "resources": [
@@ -466,45 +776,70 @@
             "id": "ORPHA:906",
             "label": "Wiskott-Aldrich syndrome"
           },
-          "score": 0.85,
+          "score": 0.515,
           "allCandidates": [
             {
               "id": "ORPHA:906",
               "label": "Wiskott-Aldrich syndrome",
-              "score": 0.85
+              "score": 0.515
             },
             {
-              "id": "ORPHA:494444",
-              "label": "DIAPH1-related sensorineural hearing loss-thrombocytopenia syndrome",
-              "score": 0.2727
+              "id": "ORPHA:760",
+              "label": "Purine nucleoside phosphorylase deficiency",
+              "score": 0.4061
             },
             {
-              "id": "ORPHA:140957",
-              "label": "Autosomal dominant macrothrombocytopenia",
-              "score": 0.1905
+              "id": "ORPHA:391487",
+              "label": "STAT1-related autoimmune enteropathy and endocrinopathy-susceptibility to chronic infections syndrome",
+              "score": 0.3877
             },
             {
-              "id": "ORPHA:183707",
-              "label": "Infantile LAD-like disease due to RAC2 deficiency",
-              "score": 0.19
+              "id": "ORPHA:1830",
+              "label": "Schimke immuno-osseous dysplasia",
+              "score": 0.3726
             },
             {
-              "id": "ORPHA:529",
-              "label": "Roch-Leri mesosomatous lipomatosis",
-              "score": 0.19
+              "id": "ORPHA:182050",
+              "label": "MYH9-related syndromic thrombocytopenia",
+              "score": 0.3697
+            },
+            {
+              "id": "ORPHA:84064",
+              "label": "Trichohepatoenteric syndrome",
+              "score": 0.3598
+            },
+            {
+              "id": "ORPHA:487796",
+              "label": "Takenouchi-Kosaki syndrome",
+              "score": 0.3558
+            },
+            {
+              "id": "ORPHA:167",
+              "label": "Chédiak-Higashi syndrome",
+              "score": 0.3447
+            },
+            {
+              "id": "ORPHA:275",
+              "label": "Severe combined immunodeficiency due to DCLRE1C deficiency",
+              "score": 0.3437
+            },
+            {
+              "id": "ORPHA:96181",
+              "label": "Maternal uniparental disomy of chromosome 6 syndrome",
+              "score": 0.328
             }
           ]
         }
       }
     ],
     "_pipelineStats": {
-      "totalEntities": 14,
-      "matchedHPO": 7,
-      "unmatchedEntities": 7,
-      "phenopacketFeatures": 7,
+      "totalEntities": 28,
+      "matchedHPO": 10,
+      "unmatchedEntities": 18,
+      "phenopacketFeatures": 10,
       "negatedFeatures": 0,
       "numericPhenotypes": 0,
-      "ordoCandidates": 5
+      "ordoCandidates": 10
     }
   }
 }

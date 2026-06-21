@@ -1,67 +1,74 @@
 {
-  "timestamp": "2026-06-11 02:28:39",
+  "timestamp": "2026-06-19 15:21:23",
   "pipeline": "v4.0 (DeBERTa-v3 bilingual)",
   "dataset": "PubMed English",
   "total_reports": 24,
   "gold_standard_reports": 24,
   "metrics": {
-    "ordo_top3_accuracy": 0.792,
-    "hpo_micro_precision": 0.4389,
-    "hpo_micro_recall": 0.4686,
-    "hpo_micro_f1": 0.4533,
-    "hpo_macro_precision": 0.4519,
-    "hpo_macro_recall": 0.4818,
-    "hpo_macro_f1": 0.4664,
-    "normalization_coverage": 0.413,
-    "avg_time_per_report": 8.26
+    "ordo_top1_accuracy": 0.458,
+    "ordo_top3_accuracy": 0.667,
+    "ordo_top5_accuracy": 0.708,
+    "ordo_top10_accuracy": 0.833,
+    "hpo_micro_precision": 0.4298,
+    "hpo_micro_recall": 0.4879,
+    "hpo_micro_f1": 0.457,
+    "hpo_macro_precision": 0.4938,
+    "hpo_macro_recall": 0.5001,
+    "hpo_macro_f1": 0.4969,
+    "normalization_coverage": 0.242,
+    "avg_time_per_report": 7.26
   },
   "per_report": [
     {
       "note_id": "PUBMED_EN_001",
       "disease": "Cystic fibrosis",
-      "time": 68.57,
-      "total_entities": 26,
+      "time": 8.16,
+      "total_entities": 59,
       "matched_hpo": 9,
-      "coverage": 0.34615384615384615,
+      "coverage": 0.15254237288135594,
       "extracted_hpo": [
         "HP:0001695",
         "HP:0001944",
         "HP:0002093",
         "HP:0002205",
         "HP:0002719",
-        "HP:0003676",
-        "HP:0011947",
-        "HP:0012649"
+        "HP:0002878",
+        "HP:0006552",
+        "HP:0010876",
+        "HP:0011947"
       ],
       "has_gold": true,
       "expected_disease": "Cystic fibrosis",
       "expected_orpha": "ORPHA:586",
-      "ordo_correct": true,
-      "ordo_top": "Cystic fibrosis",
-      "ordo_score": 0.85,
+      "ordo_correct": false,
+      "ordo_top1": false,
+      "ordo_top5": false,
+      "ordo_top10": true,
+      "ordo_top": "Glycogen storage disease due to acid maltase deficiency",
+      "ordo_score": 0.3587,
       "expected_hpo_count": 11,
-      "hpo_tp": 7,
-      "hpo_fn": 4,
-      "hpo_fp": 2,
-      "hpo_recall": 0.6363636363636364,
-      "hpo_precision": 0.875,
-      "hpo_f1": 0.7368421052631579,
+      "hpo_tp": 6,
+      "hpo_fn": 5,
+      "hpo_fp": 4,
+      "hpo_recall": 0.5454545454545454,
+      "hpo_precision": 0.6666666666666666,
+      "hpo_f1": 0.6,
       "semantic_matches": [
         [
-          "HP:0002719",
-          "HP:0002719"
+          "HP:0011947",
+          "HP:0011947"
         ],
         [
           "HP:0001944",
           "HP:0001944"
         ],
         [
-          "HP:0003676",
-          "HP:0003676"
+          "HP:0006552",
+          "HP:0006552"
         ],
         [
-          "HP:0012649",
-          "HP:0012649"
+          "HP:0011947",
+          "HP:0002719"
         ],
         [
           "HP:0002093",
@@ -70,70 +77,81 @@
         [
           "HP:0001695",
           "HP:0001695"
-        ],
-        [
-          "HP:0002719",
-          "HP:0011947"
         ]
       ]
     },
     {
       "note_id": "PUBMED_EN_002",
       "disease": "Cystic fibrosis",
-      "time": 4.72,
-      "total_entities": 25,
+      "time": 7.03,
+      "total_entities": 40,
       "matched_hpo": 11,
-      "coverage": 0.44,
+      "coverage": 0.275,
       "extracted_hpo": [
         "HP:0000007",
-        "HP:0000975",
         "HP:0001392",
         "HP:0001395",
         "HP:0001396",
         "HP:0001399",
-        "HP:0002896",
-        "HP:0003075",
+        "HP:0001406",
+        "HP:0003676",
         "HP:0003678",
-        "HP:0004401"
+        "HP:0004401",
+        "HP:0004448",
+        "HP:0006552"
       ],
       "has_gold": true,
       "expected_disease": "Cystic fibrosis",
       "expected_orpha": "ORPHA:586",
-      "ordo_correct": false,
-      "ordo_top": "Congenital respiratory-biliary fistula",
-      "ordo_score": 0.3364,
+      "ordo_correct": true,
+      "ordo_top1": true,
+      "ordo_top5": true,
+      "ordo_top10": true,
+      "ordo_top": "Cystic fibrosis",
+      "ordo_score": 0.3956,
       "expected_hpo_count": 11,
-      "hpo_tp": 1,
-      "hpo_fn": 10,
-      "hpo_fp": 9,
-      "hpo_recall": 0.09090909090909091,
-      "hpo_precision": 0.1,
-      "hpo_f1": 0.09523809523809525,
+      "hpo_tp": 3,
+      "hpo_fn": 8,
+      "hpo_fp": 8,
+      "hpo_recall": 0.2727272727272727,
+      "hpo_precision": 0.2727272727272727,
+      "hpo_f1": 0.2727272727272727,
       "semantic_matches": [
         [
           "HP:0000007",
           "HP:0000007"
+        ],
+        [
+          "HP:0003676",
+          "HP:0003676"
+        ],
+        [
+          "HP:0006552",
+          "HP:0006552"
         ]
       ]
     },
     {
       "note_id": "PUBMED_EN_003",
       "disease": "Cystic fibrosis",
-      "time": 2.3,
-      "total_entities": 6,
+      "time": 2.85,
+      "total_entities": 11,
       "matched_hpo": 3,
-      "coverage": 0.5,
+      "coverage": 0.2727272727272727,
       "extracted_hpo": [
         "HP:0001395",
-        "HP:0002595",
-        "HP:0011100"
+        "HP:0011100",
+        "HP:0100261"
       ],
       "has_gold": true,
       "expected_disease": "Cystic fibrosis",
       "expected_orpha": "ORPHA:586",
       "ordo_correct": false,
-      "ordo_top": "FADD-related immunodeficiency",
-      "ordo_score": 0.115,
+      "ordo_top1": false,
+      "ordo_top5": false,
+      "ordo_top10": true,
+      "ordo_top": "Short rib-polydactyly syndrome, Verma-Naumoff type",
+      "ordo_score": 0.3917,
       "expected_hpo_count": 11,
       "hpo_tp": 0,
       "hpo_fn": 11,
@@ -146,24 +164,28 @@
     {
       "note_id": "PUBMED_EN_004",
       "disease": "Wiskott-Aldrich syndrome",
-      "time": 9.2,
-      "total_entities": 34,
-      "matched_hpo": 2,
-      "coverage": 0.058823529411764705,
+      "time": 8.76,
+      "total_entities": 68,
+      "matched_hpo": 3,
+      "coverage": 0.04411764705882353,
       "extracted_hpo": [
         "HP:0001417",
+        "HP:0001973",
         "HP:0002958"
       ],
       "has_gold": true,
       "expected_disease": "Wiskott-Aldrich syndrome",
       "expected_orpha": "ORPHA:906",
       "ordo_correct": false,
-      "ordo_top": "Acquired purpura fulminans",
-      "ordo_score": 0.0394,
+      "ordo_top1": false,
+      "ordo_top5": true,
+      "ordo_top10": true,
+      "ordo_top": "STAT1-related autoimmune enteropathy and endocrinopathy-susceptibility to chronic infections syndrome",
+      "ordo_score": 0.5659,
       "expected_hpo_count": 9,
       "hpo_tp": 0,
       "hpo_fn": 9,
-      "hpo_fp": 2,
+      "hpo_fp": 3,
       "hpo_recall": 0.0,
       "hpo_precision": 0.0,
       "hpo_f1": 0.0,
@@ -172,16 +194,19 @@
     {
       "note_id": "PUBMED_EN_005",
       "disease": "Wiskott-Aldrich syndrome",
-      "time": 3.77,
-      "total_entities": 14,
-      "matched_hpo": 7,
-      "coverage": 0.5,
+      "time": 6.09,
+      "total_entities": 28,
+      "matched_hpo": 10,
+      "coverage": 0.35714285714285715,
       "extracted_hpo": [
         "HP:0001417",
         "HP:0001873",
-        "HP:0001894",
+        "HP:0001905",
+        "HP:0001973",
         "HP:0002721",
         "HP:0003812",
+        "HP:0004854",
+        "HP:0005352",
         "HP:0005363",
         "HP:0011877"
       ],
@@ -189,111 +214,119 @@
       "expected_disease": "Wiskott-Aldrich syndrome",
       "expected_orpha": "ORPHA:906",
       "ordo_correct": true,
+      "ordo_top1": true,
+      "ordo_top5": true,
+      "ordo_top10": true,
       "ordo_top": "Wiskott-Aldrich syndrome",
-      "ordo_score": 0.85,
+      "ordo_score": 0.515,
       "expected_hpo_count": 9,
       "hpo_tp": 3,
       "hpo_fn": 6,
-      "hpo_fp": 5,
+      "hpo_fp": 8,
       "hpo_recall": 0.3333333333333333,
-      "hpo_precision": 0.42857142857142855,
-      "hpo_f1": 0.375,
+      "hpo_precision": 0.3,
+      "hpo_f1": 0.3157894736842105,
       "semantic_matches": [
         [
-          "HP:0002721",
-          "HP:0002721"
+          "HP:0001873",
+          "HP:0001873"
         ],
         [
           "HP:0001873",
           "HP:0001892"
         ],
         [
-          "HP:0001873",
-          "HP:0001873"
+          "HP:0002721",
+          "HP:0002721"
         ]
       ]
     },
     {
       "note_id": "PUBMED_EN_006",
       "disease": "Wiskott-Aldrich syndrome",
-      "time": 4.56,
-      "total_entities": 14,
-      "matched_hpo": 9,
-      "coverage": 0.6428571428571429,
+      "time": 5.65,
+      "total_entities": 23,
+      "matched_hpo": 8,
+      "coverage": 0.34782608695652173,
       "extracted_hpo": [
         "HP:0000964",
         "HP:0001417",
+        "HP:0001419",
         "HP:0001873",
-        "HP:0001892",
+        "HP:0001905",
         "HP:0002170",
-        "HP:0002719",
-        "HP:0002960",
-        "HP:0010799",
-        "HP:0012828"
+        "HP:0002664",
+        "HP:0002960"
       ],
       "has_gold": true,
       "expected_disease": "Wiskott-Aldrich syndrome",
       "expected_orpha": "ORPHA:906",
       "ordo_correct": true,
+      "ordo_top1": true,
+      "ordo_top5": true,
+      "ordo_top10": true,
       "ordo_top": "Wiskott-Aldrich syndrome",
-      "ordo_score": 0.85,
+      "ordo_score": 0.5247,
       "expected_hpo_count": 9,
-      "hpo_tp": 4,
-      "hpo_fn": 5,
+      "hpo_tp": 3,
+      "hpo_fn": 6,
       "hpo_fp": 6,
-      "hpo_recall": 0.4444444444444444,
-      "hpo_precision": 0.4444444444444444,
-      "hpo_f1": 0.4444444444444444,
+      "hpo_recall": 0.3333333333333333,
+      "hpo_precision": 0.375,
+      "hpo_f1": 0.35294117647058826,
       "semantic_matches": [
         [
-          "HP:0002719",
-          "HP:0002719"
-        ],
-        [
-          "HP:0001892",
-          "HP:0001892"
+          "HP:0001873",
+          "HP:0001873"
         ],
         [
           "HP:0000964",
           "HP:0000964"
         ],
         [
-          "HP:0001892",
-          "HP:0001873"
+          "HP:0001873",
+          "HP:0001892"
         ]
       ]
     },
     {
       "note_id": "PUBMED_EN_007",
       "disease": "X-linked agammaglobulinemia",
-      "time": 6.93,
-      "total_entities": 31,
-      "matched_hpo": 11,
-      "coverage": 0.3548387096774194,
+      "time": 10.47,
+      "total_entities": 51,
+      "matched_hpo": 14,
+      "coverage": 0.27450980392156865,
       "extracted_hpo": [
         "HP:0001417",
         "HP:0002088",
-        "HP:0002206",
+        "HP:0002093",
+        "HP:0002783",
         "HP:0003139",
         "HP:0004313",
         "HP:0004432",
+        "HP:0005368",
         "HP:0006530",
+        "HP:0010976",
         "HP:0011946",
-        "HP:0011950"
+        "HP:0011950",
+        "HP:0012647"
       ],
       "has_gold": true,
       "expected_disease": "X-linked agammaglobulinemia",
       "expected_orpha": "ORPHA:47",
       "ordo_correct": true,
+      "ordo_top1": true,
+      "ordo_top5": true,
+      "ordo_top10": true,
       "ordo_top": "X-linked agammaglobulinemia",
-      "ordo_score": 0.85,
+      "ordo_score": 0.4638,
       "expected_hpo_count": 10,
-      "hpo_tp": 2,
-      "hpo_fn": 8,
-      "hpo_fp": 8,
-      "hpo_recall": 0.2,
-      "hpo_precision": 0.2222222222222222,
-      "hpo_f1": 0.2105263157894737,
+      "hpo_tp": 3,
+      "hpo_fn": 7,
+      "hpo_fp": 11,
+      "hpo_recall": 0.3,
+      "hpo_precision": 0.23076923076923078,
+      "hpo_f1": 0.2608695652173913,
       "semantic_matches": [
         [
           "HP:0004432",
@@ -302,50 +335,60 @@
         [
           "HP:0004432",
           "HP:0004313"
+        ],
+        [
+          "HP:0002093",
+          "HP:0002090"
         ]
       ]
     },
     {
       "note_id": "PUBMED_EN_008",
       "disease": "X-linked agammaglobulinemia",
-      "time": 5.17,
-      "total_entities": 30,
-      "matched_hpo": 13,
-      "coverage": 0.43333333333333335,
+      "time": 6.81,
+      "total_entities": 39,
+      "matched_hpo": 11,
+      "coverage": 0.28205128205128205,
       "extracted_hpo": [
-        "HP:0000112",
+        "HP:0000083",
         "HP:0000123",
-        "HP:0000951",
         "HP:0001417",
         "HP:0002719",
         "HP:0002721",
         "HP:0004313",
         "HP:0004432",
         "HP:0005363",
-        "HP:0006749",
-        "HP:0007495",
-        "HP:0011947"
+        "HP:0010976",
+        "HP:0011947",
+        "HP:0012622"
       ],
       "has_gold": true,
       "expected_disease": "X-linked agammaglobulinemia",
       "expected_orpha": "ORPHA:47",
       "ordo_correct": true,
-      "ordo_top": "X-linked agammaglobulinemia",
-      "ordo_score": 0.85,
+      "ordo_top1": false,
+      "ordo_top5": true,
+      "ordo_top10": true,
+      "ordo_top": "Omenn syndrome",
+      "ordo_score": 0.4845,
       "expected_hpo_count": 10,
       "hpo_tp": 6,
       "hpo_fn": 4,
-      "hpo_fp": 9,
+      "hpo_fp": 8,
       "hpo_recall": 0.6,
-      "hpo_precision": 0.5,
-      "hpo_f1": 0.5454545454545454,
+      "hpo_precision": 0.5454545454545454,
+      "hpo_f1": 0.5714285714285713,
       "semantic_matches": [
+        [
+          "HP:0011947",
+          "HP:0011947"
+        ],
         [
           "HP:0004432",
           "HP:0004432"
         ],
         [
-          "HP:0002719",
+          "HP:0011947",
           "HP:0002719"
         ],
         [
@@ -353,11 +396,7 @@
           "HP:0002721"
         ],
         [
-          "HP:0002719",
-          "HP:0011947"
-        ],
-        [
-          "HP:0002719",
+          "HP:0011947",
           "HP:0002205"
         ],
         [
@@ -369,10 +408,10 @@
     {
       "note_id": "PUBMED_EN_009",
       "disease": "X-linked agammaglobulinemia",
-      "time": 3.98,
-      "total_entities": 14,
-      "matched_hpo": 9,
-      "coverage": 0.6428571428571429,
+      "time": 6.79,
+      "total_entities": 32,
+      "matched_hpo": 11,
+      "coverage": 0.34375,
       "extracted_hpo": [
         "HP:0000988",
         "HP:0001287",
@@ -382,49 +421,50 @@
         "HP:0002718",
         "HP:0002721",
         "HP:0004432",
+        "HP:0005363",
+        "HP:0012461",
         "HP:0100806"
       ],
       "has_gold": true,
       "expected_disease": "X-linked agammaglobulinemia",
       "expected_orpha": "ORPHA:47",
-      "ordo_correct": false,
-      "ordo_top": "Transient predisposition to invasive pyogenic bacterial infection",
-      "ordo_score": 0.3495,
+      "ordo_correct": true,
+      "ordo_top1": true,
+      "ordo_top5": true,
+      "ordo_top10": true,
+      "ordo_top": "X-linked agammaglobulinemia",
+      "ordo_score": 0.6364,
       "expected_hpo_count": 10,
       "hpo_tp": 9,
       "hpo_fn": 1,
-      "hpo_fp": 3,
+      "hpo_fp": 5,
       "hpo_recall": 0.9,
-      "hpo_precision": 1.0,
-      "hpo_f1": 0.9473684210526316,
+      "hpo_precision": 0.8181818181818182,
+      "hpo_f1": 0.8571428571428572,
       "semantic_matches": [
+        [
+          "HP:0002718",
+          "HP:0011947"
+        ],
         [
           "HP:0004432",
           "HP:0004432"
         ],
         [
-          "HP:0002718",
-          "HP:0002719"
+          "HP:0100806",
+          "HP:0001945"
         ],
         [
           "HP:0000988",
           "HP:0000988"
         ],
         [
+          "HP:0002718",
+          "HP:0002719"
+        ],
+        [
           "HP:0002721",
           "HP:0002721"
-        ],
-        [
-          "HP:0002090",
-          "HP:0002090"
-        ],
-        [
-          "HP:0002718",
-          "HP:0011947"
-        ],
-        [
-          "HP:0001945",
-          "HP:0001945"
         ],
         [
           "HP:0002718",
@@ -433,48 +473,62 @@
         [
           "HP:0004432",
           "HP:0004313"
+        ],
+        [
+          "HP:0002090",
+          "HP:0002090"
         ]
       ]
     },
     {
       "note_id": "PUBMED_EN_010",
       "disease": "Severe combined immunodeficiency",
-      "time": 6.79,
-      "total_entities": 47,
-      "matched_hpo": 16,
-      "coverage": 0.3404255319148936,
+      "time": 10.64,
+      "total_entities": 75,
+      "matched_hpo": 15,
+      "coverage": 0.2,
       "extracted_hpo": [
         "HP:0000778",
         "HP:0001945",
+        "HP:0001954",
         "HP:0002090",
-        "HP:0002716",
         "HP:0002719",
         "HP:0002721",
-        "HP:0002835",
         "HP:0002983",
         "HP:0003271",
+        "HP:0003812",
         "HP:0004430",
+        "HP:0005352",
         "HP:0005387",
+        "HP:0010516",
         "HP:0012115",
-        "HP:0012126",
-        "HP:0012735",
-        "HP:0012828",
-        "HP:0012832"
+        "HP:0012735"
       ],
       "has_gold": true,
       "expected_disease": "Severe combined immunodeficiency",
       "expected_orpha": "ORPHA:183660",
-      "ordo_correct": true,
-      "ordo_top": "Severe combined immunodeficiency",
-      "ordo_score": 0.85,
+      "ordo_correct": false,
+      "ordo_top1": false,
+      "ordo_top5": false,
+      "ordo_top10": false,
+      "ordo_top": "Omenn syndrome",
+      "ordo_score": 0.4807,
       "expected_hpo_count": 9,
       "hpo_tp": 7,
       "hpo_fn": 2,
-      "hpo_fp": 11,
+      "hpo_fp": 10,
       "hpo_recall": 0.7777777777777778,
-      "hpo_precision": 0.4375,
-      "hpo_f1": 0.56,
+      "hpo_precision": 0.4666666666666667,
+      "hpo_f1": 0.5833333333333334,
       "semantic_matches": [
+        [
+          "HP:0002719",
+          "HP:0011947"
+        ],
+        [
+          "HP:0001945",
+          "HP:0001945"
+        ],
         [
           "HP:0002719",
           "HP:0002719"
@@ -484,60 +538,61 @@
           "HP:0002721"
         ],
         [
-          "HP:0002090",
-          "HP:0002090"
+          "HP:0002719",
+          "HP:0004430"
         ],
         [
           "HP:0012735",
           "HP:0012735"
         ],
         [
-          "HP:0002719",
-          "HP:0004430"
-        ],
-        [
-          "HP:0001945",
-          "HP:0001945"
-        ],
-        [
-          "HP:0002719",
-          "HP:0011947"
+          "HP:0002090",
+          "HP:0002090"
         ]
       ]
     },
     {
       "note_id": "PUBMED_EN_011",
       "disease": "Severe combined immunodeficiency",
-      "time": 6.18,
-      "total_entities": 24,
-      "matched_hpo": 10,
-      "coverage": 0.4166666666666667,
+      "time": 6.51,
+      "total_entities": 40,
+      "matched_hpo": 8,
+      "coverage": 0.2,
       "extracted_hpo": [
         "HP:0001888",
         "HP:0001945",
         "HP:0001954",
         "HP:0002719",
         "HP:0002721",
-        "HP:0003828",
         "HP:0004313",
         "HP:0004430",
-        "HP:0005387",
-        "HP:0012828"
+        "HP:0005387"
       ],
       "has_gold": true,
       "expected_disease": "Severe combined immunodeficiency",
       "expected_orpha": "ORPHA:183660",
       "ordo_correct": true,
-      "ordo_top": "Severe combined immunodeficiency",
-      "ordo_score": 0.85,
+      "ordo_top1": false,
+      "ordo_top5": true,
+      "ordo_top10": true,
+      "ordo_top": "Omenn syndrome",
+      "ordo_score": 0.5762,
       "expected_hpo_count": 9,
       "hpo_tp": 6,
       "hpo_fn": 3,
-      "hpo_fp": 6,
+      "hpo_fp": 4,
       "hpo_recall": 0.6666666666666666,
-      "hpo_precision": 0.6,
-      "hpo_f1": 0.631578947368421,
+      "hpo_precision": 0.75,
+      "hpo_f1": 0.7058823529411765,
       "semantic_matches": [
+        [
+          "HP:0002719",
+          "HP:0011947"
+        ],
+        [
+          "HP:0001945",
+          "HP:0001945"
+        ],
         [
           "HP:0002719",
           "HP:0002719"
@@ -545,14 +600,6 @@
         [
           "HP:0002721",
           "HP:0002721"
-        ],
-        [
-          "HP:0002719",
-          "HP:0004430"
-        ],
-        [
-          "HP:0001945",
-          "HP:0001945"
         ],
         [
           "HP:0001888",
@@ -560,40 +607,111 @@
         ],
         [
           "HP:0002719",
-          "HP:0011947"
+          "HP:0004430"
         ]
       ]
     },
     {
       "note_id": "PUBMED_EN_012",
       "disease": "Severe combined immunodeficiency",
-      "time": 4.47,
-      "total_entities": 12,
-      "matched_hpo": 6,
-      "coverage": 0.5,
+      "time": 4.79,
+      "total_entities": 24,
+      "matched_hpo": 4,
+      "coverage": 0.16666666666666666,
       "extracted_hpo": [
-        "HP:0001902",
         "HP:0002721",
         "HP:0004430",
-        "HP:0005387",
-        "HP:0100724"
+        "HP:0005387"
       ],
       "has_gold": true,
       "expected_disease": "Severe combined immunodeficiency",
       "expected_orpha": "ORPHA:183660",
-      "ordo_correct": true,
-      "ordo_top": "Severe combined immunodeficiency",
-      "ordo_score": 0.85,
+      "ordo_correct": false,
+      "ordo_top1": false,
+      "ordo_top5": false,
+      "ordo_top10": false,
+      "ordo_top": "LIG4 syndrome",
+      "ordo_score": 0.4933,
       "expected_hpo_count": 9,
       "hpo_tp": 4,
       "hpo_fn": 5,
-      "hpo_fp": 3,
+      "hpo_fp": 2,
       "hpo_recall": 0.4444444444444444,
-      "hpo_precision": 0.8,
-      "hpo_f1": 0.5714285714285714,
+      "hpo_precision": 1.3333333333333333,
+      "hpo_f1": 0.6666666666666666,
       "semantic_matches": [
         [
           "HP:0004430",
+          "HP:0011947"
+        ],
+        [
+          "HP:0004430",
+          "HP:0002719"
+        ],
+        [
+          "HP:0004430",
+          "HP:0002721"
+        ],
+        [
+          "HP:0004430",
+          "HP:0004430"
+        ]
+      ]
+    },
+    {
+      "note_id": "PUBMED_EN_013",
+      "disease": "Ataxia-telangiectasia",
+      "time": 8.23,
+      "total_entities": 39,
+      "matched_hpo": 14,
+      "coverage": 0.358974358974359,
+      "extracted_hpo": [
+        "HP:0000007",
+        "HP:0000524",
+        "HP:0001009",
+        "HP:0001251",
+        "HP:0001257",
+        "HP:0001260",
+        "HP:0001332",
+        "HP:0002664",
+        "HP:0002719",
+        "HP:0002721",
+        "HP:0006254",
+        "HP:0008376",
+        "HP:0011133",
+        "HP:0100585"
+      ],
+      "has_gold": true,
+      "expected_disease": "Ataxia-telangiectasia",
+      "expected_orpha": "ORPHA:100",
+      "ordo_correct": true,
+      "ordo_top1": true,
+      "ordo_top5": true,
+      "ordo_top10": true,
+      "ordo_top": "Ataxia-telangiectasia",
+      "ordo_score": 0.4282,
+      "expected_hpo_count": 9,
+      "hpo_tp": 6,
+      "hpo_fn": 3,
+      "hpo_fp": 9,
+      "hpo_recall": 0.6666666666666666,
+      "hpo_precision": 0.42857142857142855,
+      "hpo_f1": 0.5217391304347826,
+      "semantic_matches": [
+        [
+          "HP:0001009",
+          "HP:0001009"
+        ],
+        [
+          "HP:0002719",
+          "HP:0011947"
+        ],
+        [
+          "HP:0001257",
+          "HP:0001251"
+        ],
+        [
+          "HP:0002719",
           "HP:0002719"
         ],
         [
@@ -601,157 +719,47 @@
           "HP:0002721"
         ],
         [
-          "HP:0002721",
-          "HP:0004430"
-        ],
-        [
-          "HP:0004430",
-          "HP:0011947"
-        ]
-      ]
-    },
-    {
-      "note_id": "PUBMED_EN_013",
-      "disease": "Ataxia-telangiectasia",
-      "time": 6.57,
-      "total_entities": 21,
-      "matched_hpo": 11,
-      "coverage": 0.5238095238095238,
-      "extracted_hpo": [
-        "HP:0000007",
-        "HP:0001009",
-        "HP:0001251",
-        "HP:0001257",
-        "HP:0001260",
-        "HP:0001332",
-        "HP:0002664",
-        "HP:0002721",
-        "HP:0011463",
-        "HP:0012443"
-      ],
-      "has_gold": true,
-      "expected_disease": "Ataxia-telangiectasia",
-      "expected_orpha": "ORPHA:100",
-      "ordo_correct": true,
-      "ordo_top": "Ataxia-telangiectasia",
-      "ordo_score": 0.85,
-      "expected_hpo_count": 9,
-      "hpo_tp": 4,
-      "hpo_fn": 5,
-      "hpo_fp": 6,
-      "hpo_recall": 0.4444444444444444,
-      "hpo_precision": 0.4,
-      "hpo_f1": 0.4210526315789474,
-      "semantic_matches": [
-        [
-          "HP:0001332",
+          "HP:0001260",
           "HP:0001332"
-        ],
-        [
-          "HP:0002721",
-          "HP:0002721"
-        ],
-        [
-          "HP:0001251",
-          "HP:0001251"
-        ],
-        [
-          "HP:0001009",
-          "HP:0001009"
         ]
       ]
     },
     {
       "note_id": "PUBMED_EN_014",
       "disease": "Ataxia-telangiectasia",
-      "time": 6.93,
-      "total_entities": 28,
-      "matched_hpo": 13,
-      "coverage": 0.4642857142857143,
+      "time": 10.01,
+      "total_entities": 50,
+      "matched_hpo": 19,
+      "coverage": 0.38,
       "extracted_hpo": [
+        "HP:0000524",
         "HP:0001009",
-        "HP:0001251",
-        "HP:0001276",
+        "HP:0001304",
         "HP:0001332",
-        "HP:0001442",
         "HP:0002014",
         "HP:0002066",
+        "HP:0002073",
+        "HP:0002254",
+        "HP:0002530",
+        "HP:0002604",
         "HP:0002721",
-        "HP:0003674",
+        "HP:0003220",
+        "HP:0003496",
         "HP:0003676",
+        "HP:0003812",
         "HP:0007325",
-        "HP:0100022",
-        "HP:0100326"
+        "HP:0012837",
+        "HP:0100022"
       ],
       "has_gold": true,
       "expected_disease": "Ataxia-telangiectasia",
       "expected_orpha": "ORPHA:100",
       "ordo_correct": true,
-      "ordo_top": "Ataxia-telangiectasia",
-      "ordo_score": 0.85,
-      "expected_hpo_count": 9,
-      "hpo_tp": 5,
-      "hpo_fn": 4,
-      "hpo_fp": 8,
-      "hpo_recall": 0.5555555555555556,
-      "hpo_precision": 0.38461538461538464,
-      "hpo_f1": 0.4545454545454546,
-      "semantic_matches": [
-        [
-          "HP:0001332",
-          "HP:0001332"
-        ],
-        [
-          "HP:0002721",
-          "HP:0002721"
-        ],
-        [
-          "HP:0001251",
-          "HP:0001251"
-        ],
-        [
-          "HP:0002014",
-          "HP:0002014"
-        ],
-        [
-          "HP:0001009",
-          "HP:0001009"
-        ]
-      ]
-    },
-    {
-      "note_id": "PUBMED_EN_015",
-      "disease": "Ataxia-telangiectasia",
-      "time": 5.54,
-      "total_entities": 34,
-      "matched_hpo": 19,
-      "coverage": 0.5588235294117647,
-      "extracted_hpo": [
-        "HP:0000007",
-        "HP:0000790",
-        "HP:0001009",
-        "HP:0001251",
-        "HP:0001272",
-        "HP:0001892",
-        "HP:0002317",
-        "HP:0002664",
-        "HP:0002721",
-        "HP:0003202",
-        "HP:0003676",
-        "HP:0006721",
-        "HP:0007009",
-        "HP:0009725",
-        "HP:0011355",
-        "HP:0012587",
-        "HP:0012824",
-        "HP:0100577"
-      ],
-      "has_gold": true,
-      "expected_disease": "Ataxia-telangiectasia",
-      "expected_orpha": "ORPHA:100",
-      "ordo_correct": true,
-      "ordo_top": "Ataxia-telangiectasia",
-      "ordo_score": 0.85,
+      "ordo_top1": false,
+      "ordo_top5": true,
+      "ordo_top10": true,
+      "ordo_top": "RIDDLE syndrome",
+      "ordo_score": 0.4044,
       "expected_hpo_count": 9,
       "hpo_tp": 4,
       "hpo_fn": 5,
@@ -761,8 +769,67 @@
       "hpo_f1": 0.2962962962962963,
       "semantic_matches": [
         [
+          "HP:0001009",
+          "HP:0001009"
+        ],
+        [
           "HP:0002721",
           "HP:0002721"
+        ],
+        [
+          "HP:0002014",
+          "HP:0002014"
+        ],
+        [
+          "HP:0001332",
+          "HP:0001332"
+        ]
+      ]
+    },
+    {
+      "note_id": "PUBMED_EN_015",
+      "disease": "Ataxia-telangiectasia",
+      "time": 8.91,
+      "total_entities": 57,
+      "matched_hpo": 15,
+      "coverage": 0.2631578947368421,
+      "extracted_hpo": [
+        "HP:0000007",
+        "HP:0000790",
+        "HP:0001009",
+        "HP:0001251",
+        "HP:0001272",
+        "HP:0001892",
+        "HP:0001909",
+        "HP:0002073",
+        "HP:0002317",
+        "HP:0002664",
+        "HP:0002721",
+        "HP:0003676",
+        "HP:0006721",
+        "HP:0012587",
+        "HP:0012824"
+      ],
+      "has_gold": true,
+      "expected_disease": "Ataxia-telangiectasia",
+      "expected_orpha": "ORPHA:100",
+      "ordo_correct": true,
+      "ordo_top1": true,
+      "ordo_top5": true,
+      "ordo_top10": true,
+      "ordo_top": "Ataxia-telangiectasia",
+      "ordo_score": 0.3877,
+      "expected_hpo_count": 9,
+      "hpo_tp": 4,
+      "hpo_fn": 5,
+      "hpo_fp": 11,
+      "hpo_recall": 0.4444444444444444,
+      "hpo_precision": 0.26666666666666666,
+      "hpo_f1": 0.33333333333333337,
+      "semantic_matches": [
+        [
+          "HP:0001009",
+          "HP:0001009"
         ],
         [
           "HP:0001251",
@@ -773,191 +840,209 @@
           "HP:0001892"
         ],
         [
-          "HP:0001009",
-          "HP:0001009"
+          "HP:0002721",
+          "HP:0002721"
         ]
       ]
     },
     {
       "note_id": "PUBMED_EN_016",
       "disease": "MHC class II deficiency",
-      "time": 3.2,
-      "total_entities": 13,
-      "matched_hpo": 9,
-      "coverage": 0.6923076923076923,
+      "time": 5.01,
+      "total_entities": 28,
+      "matched_hpo": 8,
+      "coverage": 0.2857142857142857,
       "extracted_hpo": [
         "HP:0000007",
         "HP:0001260",
         "HP:0001508",
+        "HP:0001922",
         "HP:0002066",
-        "HP:0002719",
         "HP:0002721",
         "HP:0004798",
-        "HP:0006749",
-        "HP:0011947"
+        "HP:0100613"
       ],
       "has_gold": true,
       "expected_disease": "MHC class II deficiency",
       "expected_orpha": "ORPHA:572",
       "ordo_correct": true,
-      "ordo_top": "MHC class II deficiency",
-      "ordo_score": 0.85,
+      "ordo_top1": true,
+      "ordo_top5": true,
+      "ordo_top10": true,
+      "ordo_top": "Immunodeficiency by defective expression of MHC class II",
+      "ordo_score": 0.3921,
       "expected_hpo_count": 8,
-      "hpo_tp": 5,
-      "hpo_fn": 3,
+      "hpo_tp": 3,
+      "hpo_fn": 5,
       "hpo_fp": 5,
-      "hpo_recall": 0.625,
-      "hpo_precision": 0.5555555555555556,
-      "hpo_f1": 0.5882352941176471,
+      "hpo_recall": 0.375,
+      "hpo_precision": 0.375,
+      "hpo_f1": 0.375,
       "semantic_matches": [
         [
-          "HP:0002719",
-          "HP:0002719"
-        ],
-        [
-          "HP:0002721",
-          "HP:0002721"
+          "HP:0000007",
+          "HP:0000007"
         ],
         [
           "HP:0001508",
           "HP:0001508"
         ],
         [
-          "HP:0000007",
-          "HP:0000007"
-        ],
-        [
-          "HP:0002719",
-          "HP:0011947"
+          "HP:0002721",
+          "HP:0002721"
         ]
       ]
     },
     {
       "note_id": "PUBMED_EN_017",
       "disease": "MHC class II deficiency",
-      "time": 5.32,
-      "total_entities": 29,
-      "matched_hpo": 4,
-      "coverage": 0.13793103448275862,
+      "time": 6.36,
+      "total_entities": 48,
+      "matched_hpo": 3,
+      "coverage": 0.0625,
       "extracted_hpo": [
         "HP:0000007",
         "HP:0002721",
-        "HP:0012824",
-        "HP:0012828"
+        "HP:0004430"
       ],
       "has_gold": true,
       "expected_disease": "MHC class II deficiency",
       "expected_orpha": "ORPHA:572",
       "ordo_correct": false,
-      "ordo_top": "Infantile LAD-like disease due to RAC2 deficiency",
-      "ordo_score": 0.2071,
+      "ordo_top1": false,
+      "ordo_top5": false,
+      "ordo_top10": false,
+      "ordo_top": "Omenn syndrome",
+      "ordo_score": 0.4332,
       "expected_hpo_count": 8,
-      "hpo_tp": 2,
-      "hpo_fn": 6,
-      "hpo_fp": 2,
-      "hpo_recall": 0.25,
-      "hpo_precision": 0.5,
-      "hpo_f1": 0.3333333333333333,
+      "hpo_tp": 4,
+      "hpo_fn": 4,
+      "hpo_fp": 1,
+      "hpo_recall": 0.5,
+      "hpo_precision": 1.3333333333333333,
+      "hpo_f1": 0.7272727272727273,
       "semantic_matches": [
-        [
-          "HP:0002721",
-          "HP:0002721"
-        ],
         [
           "HP:0000007",
           "HP:0000007"
+        ],
+        [
+          "HP:0004430",
+          "HP:0011947"
+        ],
+        [
+          "HP:0004430",
+          "HP:0002719"
+        ],
+        [
+          "HP:0004430",
+          "HP:0002721"
         ]
       ]
     },
     {
       "note_id": "PUBMED_EN_018",
       "disease": "MHC class II deficiency",
-      "time": 4.49,
-      "total_entities": 21,
-      "matched_hpo": 9,
-      "coverage": 0.42857142857142855,
+      "time": 6.06,
+      "total_entities": 35,
+      "matched_hpo": 10,
+      "coverage": 0.2857142857142857,
       "extracted_hpo": [
         "HP:0000010",
         "HP:0000988",
         "HP:0001508",
-        "HP:0001999",
         "HP:0002014",
         "HP:0002035",
         "HP:0002090",
         "HP:0002721",
-        "HP:0002843"
+        "HP:0002843",
+        "HP:0004430",
+        "HP:0006532"
       ],
       "has_gold": true,
       "expected_disease": "MHC class II deficiency",
       "expected_orpha": "ORPHA:572",
       "ordo_correct": true,
-      "ordo_top": "MHC class II deficiency",
-      "ordo_score": 0.85,
+      "ordo_top1": false,
+      "ordo_top5": true,
+      "ordo_top10": true,
+      "ordo_top": "Severe combined immunodeficiency due to DCLRE1C deficiency",
+      "ordo_score": 0.5175,
       "expected_hpo_count": 8,
-      "hpo_tp": 5,
-      "hpo_fn": 3,
+      "hpo_tp": 7,
+      "hpo_fn": 1,
       "hpo_fp": 4,
-      "hpo_recall": 0.625,
-      "hpo_precision": 0.5555555555555556,
-      "hpo_f1": 0.5882352941176471,
+      "hpo_recall": 0.875,
+      "hpo_precision": 0.7,
+      "hpo_f1": 0.7777777777777777,
       "semantic_matches": [
+        [
+          "HP:0006532",
+          "HP:0011947"
+        ],
         [
           "HP:0000988",
           "HP:0000988"
         ],
         [
-          "HP:0002721",
-          "HP:0002721"
-        ],
-        [
-          "HP:0002090",
-          "HP:0002090"
+          "HP:0006532",
+          "HP:0002719"
         ],
         [
           "HP:0001508",
           "HP:0001508"
         ],
         [
+          "HP:0002721",
+          "HP:0002721"
+        ],
+        [
           "HP:0002014",
           "HP:0002014"
+        ],
+        [
+          "HP:0002090",
+          "HP:0002090"
         ]
       ]
     },
     {
       "note_id": "PUBMED_EN_019",
       "disease": "Spinal muscular atrophy",
-      "time": 5.82,
-      "total_entities": 8,
-      "matched_hpo": 5,
-      "coverage": 0.625,
+      "time": 5.18,
+      "total_entities": 25,
+      "matched_hpo": 4,
+      "coverage": 0.16,
       "extracted_hpo": [
         "HP:0001324",
         "HP:0003202",
-        "HP:0004302",
-        "HP:0007269",
-        "HP:0011947"
+        "HP:0003690",
+        "HP:0007269"
       ],
       "has_gold": true,
       "expected_disease": "Spinal muscular atrophy",
       "expected_orpha": "ORPHA:70",
-      "ordo_correct": true,
-      "ordo_top": "Spinal muscular atrophy",
-      "ordo_score": 0.85,
+      "ordo_correct": false,
+      "ordo_top1": false,
+      "ordo_top5": false,
+      "ordo_top10": false,
+      "ordo_top": "Autosomal dominant Charcot-Marie-Tooth disease type 2Z",
+      "ordo_score": 0.4564,
       "expected_hpo_count": 6,
       "hpo_tp": 3,
       "hpo_fn": 3,
-      "hpo_fp": 4,
+      "hpo_fp": 3,
       "hpo_recall": 0.5,
-      "hpo_precision": 0.6,
-      "hpo_f1": 0.5454545454545454,
+      "hpo_precision": 0.75,
+      "hpo_f1": 0.6,
       "semantic_matches": [
         [
           "HP:0003202",
-          "HP:0003202"
+          "HP:0003701"
         ],
         [
           "HP:0003202",
-          "HP:0003701"
+          "HP:0003202"
         ],
         [
           "HP:0003202",
@@ -968,23 +1053,26 @@
     {
       "note_id": "PUBMED_EN_020",
       "disease": "Spinal muscular atrophy",
-      "time": 4.28,
-      "total_entities": 19,
+      "time": 5.04,
+      "total_entities": 28,
       "matched_hpo": 5,
-      "coverage": 0.2631578947368421,
+      "coverage": 0.17857142857142858,
       "extracted_hpo": [
-        "HP:0001324",
-        "HP:0001371",
+        "HP:0002341",
         "HP:0003202",
         "HP:0003676",
-        "HP:0012839"
+        "HP:0006897",
+        "HP:0009073"
       ],
       "has_gold": true,
       "expected_disease": "Spinal muscular atrophy",
       "expected_orpha": "ORPHA:70",
-      "ordo_correct": true,
-      "ordo_top": "Glycogen storage disease due to muscle phosphofructokinase deficiency",
-      "ordo_score": 0.2889,
+      "ordo_correct": false,
+      "ordo_top1": false,
+      "ordo_top5": false,
+      "ordo_top10": true,
+      "ordo_top": "Amoebiasis due to free-living amoebae",
+      "ordo_score": 0.3582,
       "expected_hpo_count": 6,
       "hpo_tp": 4,
       "hpo_fn": 2,
@@ -993,10 +1081,6 @@
       "hpo_precision": 0.8,
       "hpo_f1": 0.7272727272727272,
       "semantic_matches": [
-        [
-          "HP:0003202",
-          "HP:0003202"
-        ],
         [
           "HP:0003676",
           "HP:0003676"
@@ -1007,6 +1091,10 @@
         ],
         [
           "HP:0003202",
+          "HP:0003202"
+        ],
+        [
+          "HP:0003202",
           "HP:0001252"
         ]
       ]
@@ -1014,34 +1102,37 @@
     {
       "note_id": "PUBMED_EN_021",
       "disease": "Spinal muscular atrophy",
-      "time": 6.04,
-      "total_entities": 37,
-      "matched_hpo": 19,
-      "coverage": 0.5135135135135135,
+      "time": 9.05,
+      "total_entities": 44,
+      "matched_hpo": 16,
+      "coverage": 0.36363636363636365,
       "extracted_hpo": [
         "HP:0000007",
         "HP:0001252",
         "HP:0001288",
         "HP:0001324",
-        "HP:0001348",
         "HP:0002300",
         "HP:0002540",
+        "HP:0002938",
         "HP:0003202",
         "HP:0003307",
         "HP:0003323",
+        "HP:0003677",
         "HP:0003690",
         "HP:0003701",
         "HP:0007269",
         "HP:0010674",
-        "HP:0012830",
-        "HP:0100034"
+        "HP:0012840"
       ],
       "has_gold": true,
       "expected_disease": "Spinal muscular atrophy",
       "expected_orpha": "ORPHA:70",
       "ordo_correct": true,
-      "ordo_top": "Spinal muscular atrophy",
-      "ordo_score": 0.85,
+      "ordo_top1": false,
+      "ordo_top5": true,
+      "ordo_top10": true,
+      "ordo_top": "Autosomal dominant Charcot-Marie-Tooth disease type 2Z",
+      "ordo_score": 0.3474,
       "expected_hpo_count": 6,
       "hpo_tp": 3,
       "hpo_fn": 3,
@@ -1051,15 +1142,15 @@
       "hpo_f1": 0.2727272727272727,
       "semantic_matches": [
         [
-          "HP:0003202",
-          "HP:0003202"
-        ],
-        [
-          "HP:0003202",
+          "HP:0003701",
           "HP:0003701"
         ],
         [
-          "HP:0003202",
+          "HP:0003701",
+          "HP:0003202"
+        ],
+        [
+          "HP:0003701",
           "HP:0001252"
         ]
       ]
@@ -1067,147 +1158,161 @@
     {
       "note_id": "PUBMED_EN_022",
       "disease": "Hyper-IgE syndrome",
-      "time": 6.42,
-      "total_entities": 31,
-      "matched_hpo": 10,
-      "coverage": 0.3225806451612903,
+      "time": 8.21,
+      "total_entities": 56,
+      "matched_hpo": 13,
+      "coverage": 0.23214285714285715,
       "extracted_hpo": [
+        "HP:0000010",
         "HP:0000964",
         "HP:0001880",
         "HP:0002718",
         "HP:0002719",
         "HP:0002721",
+        "HP:0002722",
         "HP:0002728",
         "HP:0003212",
         "HP:0003565",
+        "HP:0003812",
         "HP:0005363",
-        "HP:0005994"
+        "HP:0012133"
       ],
       "has_gold": true,
       "expected_disease": "Hyper-IgE syndrome",
       "expected_orpha": "ORPHA:2314",
       "ordo_correct": true,
-      "ordo_top": "Hyper-IgE syndrome",
-      "ordo_score": 0.85,
+      "ordo_top1": true,
+      "ordo_top5": true,
+      "ordo_top10": true,
+      "ordo_top": "Autosomal dominant hyper-IgE syndrome due to STAT3 deficiency",
+      "ordo_score": 0.5501,
       "expected_hpo_count": 7,
       "hpo_tp": 6,
       "hpo_fn": 1,
-      "hpo_fp": 6,
+      "hpo_fp": 9,
       "hpo_recall": 0.8571428571428571,
-      "hpo_precision": 0.6,
-      "hpo_f1": 0.7058823529411764,
+      "hpo_precision": 0.46153846153846156,
+      "hpo_f1": 0.6,
       "semantic_matches": [
         [
-          "HP:0002719",
-          "HP:0002719"
+          "HP:0003212",
+          "HP:0003212"
+        ],
+        [
+          "HP:0002718",
+          "HP:0011947"
         ],
         [
           "HP:0000964",
           "HP:0000988"
         ],
         [
-          "HP:0002721",
-          "HP:0002721"
-        ],
-        [
-          "HP:0003212",
-          "HP:0003212"
-        ],
-        [
           "HP:0000964",
           "HP:0000964"
         ],
         [
-          "HP:0002719",
-          "HP:0011947"
+          "HP:0002718",
+          "HP:0002719"
+        ],
+        [
+          "HP:0002721",
+          "HP:0002721"
         ]
       ]
     },
     {
       "note_id": "PUBMED_EN_023",
       "disease": "Hyper-IgE syndrome",
-      "time": 12.33,
-      "total_entities": 27,
-      "matched_hpo": 10,
-      "coverage": 0.37037037037037035,
+      "time": 11.79,
+      "total_entities": 48,
+      "matched_hpo": 11,
+      "coverage": 0.22916666666666666,
       "extracted_hpo": [
         "HP:0000431",
         "HP:0001880",
         "HP:0002650",
-        "HP:0002719",
-        "HP:0002835",
+        "HP:0003212",
+        "HP:0003676",
+        "HP:0003680",
+        "HP:0005948",
         "HP:0010576",
-        "HP:0011115",
-        "HP:0011897",
-        "HP:0012384",
-        "HP:0012735"
+        "HP:0011990",
+        "HP:0012735",
+        "HP:0100247"
       ],
       "has_gold": true,
       "expected_disease": "Hyper-IgE syndrome",
       "expected_orpha": "ORPHA:2314",
       "ordo_correct": true,
-      "ordo_top": "Hyper-IgE syndrome",
-      "ordo_score": 0.85,
+      "ordo_top1": true,
+      "ordo_top5": true,
+      "ordo_top10": true,
+      "ordo_top": "Autosomal dominant hyper-IgE syndrome due to STAT3 deficiency",
+      "ordo_score": 0.5322,
       "expected_hpo_count": 7,
-      "hpo_tp": 3,
-      "hpo_fn": 4,
-      "hpo_fp": 8,
-      "hpo_recall": 0.42857142857142855,
-      "hpo_precision": 0.3,
-      "hpo_f1": 0.3529411764705882,
+      "hpo_tp": 2,
+      "hpo_fn": 5,
+      "hpo_fp": 9,
+      "hpo_recall": 0.2857142857142857,
+      "hpo_precision": 0.18181818181818182,
+      "hpo_f1": 0.2222222222222222,
       "semantic_matches": [
         [
-          "HP:0002719",
-          "HP:0002719"
+          "HP:0003212",
+          "HP:0003212"
         ],
         [
           "HP:0012735",
           "HP:0012735"
-        ],
-        [
-          "HP:0002719",
-          "HP:0011947"
         ]
       ]
     },
     {
       "note_id": "PUBMED_EN_024",
       "disease": "Hyper-IgE syndrome",
-      "time": 4.54,
-      "total_entities": 19,
+      "time": 5.86,
+      "total_entities": 34,
       "matched_hpo": 13,
-      "coverage": 0.6842105263157895,
+      "coverage": 0.38235294117647056,
       "extracted_hpo": [
-        "HP:0000267",
         "HP:0000324",
-        "HP:0000348",
         "HP:0000431",
         "HP:0000964",
         "HP:0000974",
+        "HP:0001047",
         "HP:0001250",
+        "HP:0001999",
         "HP:0002650",
         "HP:0002719",
-        "HP:0002756",
-        "HP:0003687",
+        "HP:0002757",
+        "HP:0003212",
+        "HP:0006335",
         "HP:0011220"
       ],
       "has_gold": true,
       "expected_disease": "Hyper-IgE syndrome",
       "expected_orpha": "ORPHA:2314",
       "ordo_correct": true,
-      "ordo_top": "Hyper-IgE syndrome",
-      "ordo_score": 0.85,
+      "ordo_top1": true,
+      "ordo_top5": true,
+      "ordo_top10": true,
+      "ordo_top": "Autosomal dominant hyper-IgE syndrome due to STAT3 deficiency",
+      "ordo_score": 0.6287,
       "expected_hpo_count": 7,
-      "hpo_tp": 4,
-      "hpo_fn": 3,
+      "hpo_tp": 5,
+      "hpo_fn": 2,
       "hpo_fp": 10,
-      "hpo_recall": 0.5714285714285714,
-      "hpo_precision": 0.3333333333333333,
-      "hpo_f1": 0.4210526315789474,
+      "hpo_recall": 0.7142857142857143,
+      "hpo_precision": 0.38461538461538464,
+      "hpo_f1": 0.5,
       "semantic_matches": [
         [
+          "HP:0003212",
+          "HP:0003212"
+        ],
+        [
           "HP:0002719",
-          "HP:0002719"
+          "HP:0011947"
         ],
         [
           "HP:0000964",
@@ -1219,7 +1324,7 @@
         ],
         [
           "HP:0002719",
-          "HP:0011947"
+          "HP:0002719"
         ]
       ]
     }

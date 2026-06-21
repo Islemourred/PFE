@@ -10,8 +10,28 @@
     }
   },
   "input": "Case Report: [Hyper-IgE syndrome in adulthood: a case report and literature review].\n\nObjective: To describe the clinical features of hyper-IgE syndrome (HIES), with emphasis on refractory pulmonary cystic lesions as the initial presentation in adulthood. Methods: A case of HIES presenting with pulmonary cystic lesions in an adult patient was retrospectively analyzed. We used \"hyper-IgE syndrome\" as the Chinese keywords, \"hyper-IgE syndrome, China\" as the English keywords to retrieve the literature from Wanfang database/CNKI database and Pubmed database until April 2016. The clinical data were pooled and analyzed. Results: A 19 year old female patient was admitted to our hospital because of recurrent cough and expectoration as the chief complaint. Physical examination revealed broad nasal bridge and scoliosis, and chest CT showed gradually enlarged and increased cystic lesions. Laboratory studies demonstrated significantly increased blood eosinophils and serum level of total IgE, together with a definite chemotactic dysfunction of neutrophils. A further detection of STAT3 mutation was negative. The diagnosis of HIES was made and antibiotic treatment resulted in disease remission. Literature review found 45 reports including 37 in Chinese and 11 in English. Eight cases of adult HIES were reported, and all the patients were male, aging 18 to 31 years. Prolonged disease course, recurrent infection and formation of cystic lesions in the lungs were important features of HIES. Early diagnosis and treatment with specific antibiotics were important for improving outcome of the patients. Conclusion: Refractory pulmonary cystic lesions can be the initial presentation in adult HIES. Understanding of the clinical characteristics of HIES will be helpful to avoid misdiagnosis and improve prognosis.\n目的： 分析1例成人高IgE综合征(HIES)的临床特征，提高对成人以\"肺部难治性空腔病变\"为首发表现的HIES的认识。 方法： 回顾性分析首都医科大学附属北京同仁医院1例成人HIES的临床资料和诊治过程。以\"高IgE综合征\"为中文关键词，以\"hyper-IgE syndrome，China\"为英文关键词分别检索万方数据库、中国知网数据库和Pubmed数据库的相关文献，检索时间截至2016年4月，对病例资料进行汇总分析。 结果： 患者女性，19岁，以反复咳嗽、咳痰就诊，体格检查示鼻翼增宽，脊柱侧弯。胸部CT显示肺部逐渐扩大和增多的空腔病变，实验室检查提示血嗜酸粒细胞及总IgE水平明显增高，中性粒细胞趋化功能障碍，STAT3基因突变检测阴性。确诊HIES，给予相应抗感染治疗后，患者肺部病变好转出院。文献复习共获得文献45篇，其中中文34篇，英文11篇，共发现8例成人HIES报道，均为男性，年龄18～31岁。病程迁延，肺部反复感染并出现空腔病变是HIES的重要特征，早期识别并积极给予针对性抗感染治疗是改善疾病转归的重要手段。 结论： 成人HIES可以\"肺部难治性空腔病变\"为首发表现，充分认识HIES的临床特征有助于减少漏诊，改善预后。.",
-  "target": "Hyper-IgE syndrome",
+  "target": "Autosomal dominant hyper-IgE syndrome due to STAT3 deficiency",
   "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0003212",
+        "label": "Increased circulating IgE concentration",
+        "umls_cui": "C0236175"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "PUBMED_EN_023",
+            "description": "NER: hyper - ige syndrome (0.998) | Match: sapbert_similarity (0.824)"
+          }
+        }
+      ]
+    },
     {
       "type": {
         "id": "HP:0010576",
@@ -28,6 +48,26 @@
           "reference": {
             "id": "PUBMED_EN_023",
             "description": "NER: cystic lesions (0.718) | Match: sapbert_similarity (0.752)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0100247",
+        "label": "Recurrent singultus",
+        "umls_cui": "C0019521"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "PUBMED_EN_023",
+            "description": "NER: recurrent cough (0.935) | Match: sapbert_similarity (0.711)"
           }
         }
       ]
@@ -54,86 +94,6 @@
     },
     {
       "type": {
-        "id": "HP:0002835",
-        "label": "Aspiration",
-        "umls_cui": "C0700198"
-      },
-      "excluded": false,
-      "evidence": [
-        {
-          "evidenceCode": {
-            "id": "ECO:0000033",
-            "label": "author statement supported by traceable reference"
-          },
-          "reference": {
-            "id": "PUBMED_EN_023",
-            "description": "NER: expectoration (0.947) | Match: sapbert_similarity (0.723)"
-          }
-        }
-      ]
-    },
-    {
-      "type": {
-        "id": "HP:0002650",
-        "label": "Scoliosis",
-        "umls_cui": "C0037932"
-      },
-      "excluded": false,
-      "evidence": [
-        {
-          "evidenceCode": {
-            "id": "ECO:0000033",
-            "label": "author statement supported by traceable reference"
-          },
-          "reference": {
-            "id": "PUBMED_EN_023",
-            "description": "NER: scoliosis (0.892) | Match: exact_label (1.000)"
-          }
-        }
-      ]
-    },
-    {
-      "type": {
-        "id": "HP:0011115",
-        "label": "Abnormal circulating chemokine concentration",
-        "umls_cui": "C4023532"
-      },
-      "excluded": false,
-      "evidence": [
-        {
-          "evidenceCode": {
-            "id": "ECO:0000033",
-            "label": "author statement supported by traceable reference"
-          },
-          "reference": {
-            "id": "PUBMED_EN_023",
-            "description": "NER: chemotactic dysfunction (0.626) | Match: sapbert_similarity (0.759)"
-          }
-        }
-      ]
-    },
-    {
-      "type": {
-        "id": "HP:0002719",
-        "label": "Recurrent infections",
-        "umls_cui": "C0239998"
-      },
-      "excluded": false,
-      "evidence": [
-        {
-          "evidenceCode": {
-            "id": "ECO:0000033",
-            "label": "author statement supported by traceable reference"
-          },
-          "reference": {
-            "id": "PUBMED_EN_023",
-            "description": "NER: infection (0.531) | Match: sapbert_similarity (0.741)"
-          }
-        }
-      ]
-    },
-    {
-      "type": {
         "id": "HP:0000431",
         "label": "Wide nasal bridge",
         "umls_cui": "C1839764"
@@ -147,27 +107,7 @@
           },
           "reference": {
             "id": "PUBMED_EN_023",
-            "description": "NER: broad nasal bridge (0.900) | Match: text_scan_exact_synonym (0.950)"
-          }
-        }
-      ]
-    },
-    {
-      "type": {
-        "id": "HP:0012384",
-        "label": "Rhinitis",
-        "umls_cui": "C0035455"
-      },
-      "excluded": false,
-      "evidence": [
-        {
-          "evidenceCode": {
-            "id": "ECO:0000033",
-            "label": "author statement supported by traceable reference"
-          },
-          "reference": {
-            "id": "PUBMED_EN_023",
-            "description": "NER: nasal (0.924) | Match: sapbert_similarity (0.730)"
+            "description": "NER: broad nasal bridge and scoliosis (0.995) | Match: substring_match (0.950)"
           }
         }
       ]
@@ -187,16 +127,16 @@
           },
           "reference": {
             "id": "PUBMED_EN_023",
-            "description": "NER: blood eosinophil (0.944) | Match: sapbert_similarity (0.799)"
+            "description": "NER: significantly increased blood eosinophils (0.996) | Match: sapbert_similarity (0.914)"
           }
         }
       ]
     },
     {
       "type": {
-        "id": "HP:0011897",
-        "label": "Increased total neutrophil count",
-        "umls_cui": "C4023140"
+        "id": "HP:0011990",
+        "label": "Abnormal neutrophil physiology",
+        "umls_cui": "C4023093"
       },
       "excluded": false,
       "evidence": [
@@ -207,14 +147,94 @@
           },
           "reference": {
             "id": "PUBMED_EN_023",
-            "description": "NER: neutrophils (0.405) | Match: sapbert_similarity (0.788)"
+            "description": "NER: chemotactic dysfunction of neutrophils (0.917) | Match: sapbert_similarity (0.725)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0003680",
+        "label": "Nonprogressive",
+        "umls_cui": "C3839460"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "PUBMED_EN_023",
+            "description": "NER: disease remission (0.986) | Match: sapbert_similarity (0.746)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0003676",
+        "label": "Progressive",
+        "umls_cui": "C0205329"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "PUBMED_EN_023",
+            "description": "NER: prolonged disease course (0.991) | Match: sapbert_similarity (0.717)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0005948",
+        "label": "Multiple pulmonary cysts",
+        "umls_cui": "C1384901"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "PUBMED_EN_023",
+            "description": "NER: cystic lesions in the lungs (0.959) | Match: sapbert_similarity (0.835)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0002650",
+        "label": "Scoliosis",
+        "umls_cui": "C0037932"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "PUBMED_EN_023",
+            "description": "NER: scoliosis (0.900) | Match: text_scan_exact_label (0.950)"
           }
         }
       ]
     }
   ],
   "metaData": {
-    "created": "2026-06-11T03:07:00Z",
+    "created": "2026-06-19T15:03:53Z",
     "createdBy": "clinical-preanalysis-pipeline-v2",
     "phenopacketSchemaVersion": "2.0",
     "resources": [
@@ -235,46 +255,71 @@
       "diagnosis": {
         "disease": {
           "id": "ORPHA:2314",
-          "label": "Hyper-IgE syndrome"
+          "label": "Autosomal dominant hyper-IgE syndrome due to STAT3 deficiency"
         },
-        "score": 0.85,
+        "score": 0.5322,
         "allCandidates": [
           {
             "id": "ORPHA:2314",
-            "label": "Hyper-IgE syndrome",
-            "score": 0.85
+            "label": "Autosomal dominant hyper-IgE syndrome due to STAT3 deficiency",
+            "score": 0.5322
           },
           {
-            "id": "ORPHA:3180",
-            "label": "Spondylocamptodactyly syndrome",
-            "score": 0.2333
+            "id": "ORPHA:284",
+            "label": "Alveolar echinococcosis",
+            "score": 0.3686
           },
           {
-            "id": "ORPHA:1671",
-            "label": "Split cord malformation type I",
-            "score": 0.2333
+            "id": "ORPHA:400",
+            "label": "Cystic echinococcosis",
+            "score": 0.367
           },
           {
-            "id": "ORPHA:2956",
-            "label": "Acrodysplasia scoliosis",
-            "score": 0.1808
+            "id": "ORPHA:906",
+            "label": "Wiskott-Aldrich syndrome",
+            "score": 0.3647
           },
           {
-            "id": "ORPHA:85164",
-            "label": "Camptodactyly-tall stature-scoliosis-hearing loss syndrome",
-            "score": 0.1808
+            "id": "ORPHA:373",
+            "label": "Simpson-Golabi-Behmel syndrome",
+            "score": 0.3477
+          },
+          {
+            "id": "ORPHA:1163",
+            "label": "Aspergillosis",
+            "score": 0.3264
+          },
+          {
+            "id": "ORPHA:183",
+            "label": "Eosinophilic granulomatosis with polyangiitis",
+            "score": 0.316
+          },
+          {
+            "id": "ORPHA:167",
+            "label": "Chédiak-Higashi syndrome",
+            "score": 0.3137
+          },
+          {
+            "id": "ORPHA:3261",
+            "label": "Autoimmune lymphoproliferative syndrome",
+            "score": 0.3044
+          },
+          {
+            "id": "ORPHA:443811",
+            "label": "PGM3-CDG",
+            "score": 0.3028
           }
         ]
       }
     }
   ],
   "_pipelineStats": {
-    "totalEntities": 27,
-    "matchedHPO": 10,
-    "unmatchedEntities": 17,
-    "phenopacketFeatures": 10,
+    "totalEntities": 48,
+    "matchedHPO": 11,
+    "unmatchedEntities": 37,
+    "phenopacketFeatures": 11,
     "negatedFeatures": 0,
     "numericPhenotypes": 0,
-    "ordoCandidates": 5
+    "ordoCandidates": 10
   }
 }

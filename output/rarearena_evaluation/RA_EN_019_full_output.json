@@ -1,0 +1,651 @@
+{
+  "note_id": "RA_EN_019",
+  "language": "en",
+  "module1": {
+    "clean_text": "A [AGE] male was referred to our center in Damascus. His parents are not related by blood. The patient has a history of pallor and anemia. Laboratory results showed hemoglobin levels with Hb A1 at 36.2%, Hb F at 62.2%, and Hb A2 at 1.6%. His father exhibited characteristics consistent with a specific hemoglobin trait, while his mother had normal indices but with Hb A2 levels at 1.9%. The patient occasionally requires blood transfusions, whereas his parents have never needed transfusions. Hematological parameters for the patient and his parents were obtained using an automated differential cell counter. Hemoglobin analysis was conducted using a capillary electrophoresis system.",
+    "phi_map": {
+      "AGE": "12-year-old"
+    },
+    "patient_info": {
+      "sex": "male"
+    }
+  },
+  "module3_warnings": {
+    "temporal": [],
+    "inconsistencies": []
+  },
+  "module4": {
+    "problem": [
+      {
+        "text": "pallor",
+        "ner_score": 0.635,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0000980",
+        "hpo_name": "Pallor",
+        "expanded_text": "pallor",
+        "match_type": "exact_label",
+        "confidence": 1.0,
+        "matched": true,
+        "umls_cui": "C0030232"
+      },
+      {
+        "text": "anemia",
+        "ner_score": 0.495,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "anemia",
+        "match_type": "skipped_low_ner_score",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "emia",
+        "ner_score": 0.974,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "emia",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "a specific hemoglobin trait",
+        "ner_score": 0.964,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0011902",
+        "hpo_name": "Abnormal hemoglobin",
+        "expanded_text": "a specific hemoglobin trait",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.7362,
+        "matched": true,
+        "umls_cui": "C0349705"
+      },
+      {
+        "text": "anemia",
+        "ner_score": 0.9,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0001903",
+        "hpo_name": "Anemia",
+        "expanded_text": "anemia",
+        "match_type": "text_scan_exact_label",
+        "confidence": 0.95,
+        "matched": true,
+        "umls_cui": "C0002871",
+        "umls_all": [
+          "C0002871",
+          "C0162119"
+        ]
+      }
+    ],
+    "test": [
+      {
+        "text": "Laboratory",
+        "ner_score": 0.983,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "Laboratory",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "results",
+        "ner_score": 0.744,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "results",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "hemoglobin",
+        "ner_score": 0.983,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "hemoglobin",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "oglobin levels",
+        "ner_score": 0.985,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "oglobin levels",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "globin",
+        "ner_score": 0.994,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "globin",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "levels",
+        "ner_score": 0.529,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "levels",
+        "match_type": "skipped_low_ner_score",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "normal",
+        "ner_score": 0.83,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "normal",
+        "match_type": "skipped_en_noise",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "indices",
+        "ner_score": 0.67,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "indices",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "hb a2 levels",
+        "ner_score": 0.982,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "hb a2 levels",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "ological",
+        "ner_score": 0.994,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "ological",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "parameters",
+        "ner_score": 0.972,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "parameters",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "differential cell counter",
+        "ner_score": 0.671,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "differential cell counter",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "oglobin analysis",
+        "ner_score": 0.934,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "oglobin analysis",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "analysis",
+        "ner_score": 0.981,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "analysis",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "a capillary electrophoresis system",
+        "ner_score": 0.808,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "a capillary electrophoresis system",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      }
+    ],
+    "treatment": [
+      {
+        "text": "blood transfusions",
+        "ner_score": 0.528,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "blood transfusions",
+        "match_type": "skipped_low_ner_score",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "blood transfusion",
+        "ner_score": 0.988,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "blood transfusion",
+        "match_type": "skipped_treatment",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "transfusion",
+        "ner_score": 0.882,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "transfusion",
+        "match_type": "skipped_treatment",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "an automated",
+        "ner_score": 0.861,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "an automated",
+        "match_type": "skipped_treatment",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      }
+    ],
+    "ordo_candidates": [
+      {
+        "ordo_id": "ORPHA:90039",
+        "name": "Hemoglobin D disease",
+        "name_fr": "",
+        "score": 0.5572,
+        "coverage": 0.2143,
+        "matched_hpo": [
+          "HP:0000980",
+          "HP:0001903",
+          "HP:0011902"
+        ],
+        "matched_count": 3,
+        "total_disease_hpo": 14,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:848",
+        "name": "Beta-thalassemia",
+        "name_fr": "",
+        "score": 0.514,
+        "coverage": 0.1429,
+        "matched_hpo": [
+          "HP:0000980",
+          "HP:0001903",
+          "HP:0011902"
+        ],
+        "matched_count": 3,
+        "total_disease_hpo": 21,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:163596",
+        "name": "Hemoglobin Bart's fetalis syndrome",
+        "name_fr": "",
+        "score": 0.514,
+        "coverage": 0.25,
+        "matched_hpo": [
+          "HP:0000980",
+          "HP:0001903",
+          "HP:0011902"
+        ],
+        "matched_count": 3,
+        "total_disease_hpo": 12,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:231214",
+        "name": "Beta-thalassemia major",
+        "name_fr": "",
+        "score": 0.5046,
+        "coverage": 0.02,
+        "matched_hpo": [
+          "HP:0000980"
+        ],
+        "matched_count": 1,
+        "total_disease_hpo": 50,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:231222",
+        "name": "Beta-thalassemia intermedia",
+        "name_fr": "",
+        "score": 0.5046,
+        "coverage": 0.0278,
+        "matched_hpo": [
+          "HP:0000980"
+        ],
+        "matched_count": 1,
+        "total_disease_hpo": 36,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:231226",
+        "name": "Unstable beta globin chain variant disease",
+        "name_fr": "",
+        "score": 0.5046,
+        "coverage": 0.0204,
+        "matched_hpo": [
+          "HP:0000980"
+        ],
+        "matched_count": 1,
+        "total_disease_hpo": 49,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:46532",
+        "name": "Hereditary persistence of fetal hemoglobin-beta-thalassemia syndrome",
+        "name_fr": "",
+        "score": 0.494,
+        "coverage": 0.3333,
+        "matched_hpo": [
+          "HP:0000980",
+          "HP:0001903"
+        ],
+        "matched_count": 2,
+        "total_disease_hpo": 6,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:124",
+        "name": "Diamond-Blackfan anemia",
+        "name_fr": "",
+        "score": 0.494,
+        "coverage": 0.02,
+        "matched_hpo": [
+          "HP:0000980",
+          "HP:0001903"
+        ],
+        "matched_count": 2,
+        "total_disease_hpo": 100,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:846",
+        "name": "Alpha-thalassemia",
+        "name_fr": "",
+        "score": 0.4224,
+        "coverage": 0.087,
+        "matched_hpo": [
+          "HP:0001903",
+          "HP:0011902"
+        ],
+        "matched_count": 2,
+        "total_disease_hpo": 23,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:2802",
+        "name": "X-linked sideroblastic anemia and spinocerebellar ataxia",
+        "name_fr": "",
+        "score": 0.389,
+        "coverage": 0.0333,
+        "matched_hpo": [
+          "HP:0000980",
+          "HP:0001903"
+        ],
+        "matched_count": 2,
+        "total_disease_hpo": 60,
+        "text_match": false
+      }
+    ],
+    "stats": {
+      "total": 24,
+      "matched": 3,
+      "unmatched": 21,
+      "match_rate": 12.5,
+      "unique_hpo": 3,
+      "ordo_matches": 10
+    }
+  },
+  "phenopacket": {
+    "id": "phenopacket-RA_EN_019",
+    "subject": {
+      "id": "RA_EN_019",
+      "sex": "MALE"
+    },
+    "input": "A 12-year-old male was referred to our center in Damascus. His parents are not related by blood. The patient has a history of pallor and anemia. Laboratory results showed hemoglobin levels with Hb A1 at 36.2%, Hb F at 62.2%, and Hb A2 at 1.6%. His father exhibited characteristics consistent with a specific hemoglobin trait, while his mother had normal indices but with Hb A2 levels at 1.9%. The patient occasionally requires blood transfusions, whereas his parents have never needed transfusions. Hematological parameters for the patient and his parents were obtained using an automated differential cell counter. Hemoglobin analysis was conducted using a capillary electrophoresis system.",
+    "target": "Hemoglobin D disease",
+    "phenotypicFeatures": [
+      {
+        "type": {
+          "id": "HP:0000980",
+          "label": "Pallor",
+          "umls_cui": "C0030232"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_019",
+              "description": "NER: pallor (0.635) | Match: exact_label (1.000)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0011902",
+          "label": "Abnormal hemoglobin",
+          "umls_cui": "C0349705"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_019",
+              "description": "NER: a specific hemoglobin trait (0.964) | Match: sapbert_similarity (0.736)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0001903",
+          "label": "Anemia",
+          "umls_cui": "C0002871"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_019",
+              "description": "NER: anemia (0.900) | Match: text_scan_exact_label (0.950)"
+            }
+          }
+        ]
+      }
+    ],
+    "metaData": {
+      "created": "2026-06-19T15:11:17Z",
+      "createdBy": "clinical-preanalysis-pipeline-v2",
+      "phenopacketSchemaVersion": "2.0",
+      "resources": [
+        {
+          "id": "hp",
+          "name": "Human Phenotype Ontology",
+          "url": "https://hpo.jax.org",
+          "version": "2024-04-26",
+          "namespacePrefix": "HP",
+          "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        }
+      ]
+    },
+    "interpretations": [
+      {
+        "id": "interpretation-RA_EN_019",
+        "progressStatus": "IN_PROGRESS",
+        "diagnosis": {
+          "disease": {
+            "id": "ORPHA:90039",
+            "label": "Hemoglobin D disease"
+          },
+          "score": 0.5572,
+          "allCandidates": [
+            {
+              "id": "ORPHA:90039",
+              "label": "Hemoglobin D disease",
+              "score": 0.5572
+            },
+            {
+              "id": "ORPHA:848",
+              "label": "Beta-thalassemia",
+              "score": 0.514
+            },
+            {
+              "id": "ORPHA:163596",
+              "label": "Hemoglobin Bart's fetalis syndrome",
+              "score": 0.514
+            },
+            {
+              "id": "ORPHA:231214",
+              "label": "Beta-thalassemia major",
+              "score": 0.5046
+            },
+            {
+              "id": "ORPHA:231222",
+              "label": "Beta-thalassemia intermedia",
+              "score": 0.5046
+            },
+            {
+              "id": "ORPHA:231226",
+              "label": "Unstable beta globin chain variant disease",
+              "score": 0.5046
+            },
+            {
+              "id": "ORPHA:46532",
+              "label": "Hereditary persistence of fetal hemoglobin-beta-thalassemia syndrome",
+              "score": 0.494
+            },
+            {
+              "id": "ORPHA:124",
+              "label": "Diamond-Blackfan anemia",
+              "score": 0.494
+            },
+            {
+              "id": "ORPHA:846",
+              "label": "Alpha-thalassemia",
+              "score": 0.4224
+            },
+            {
+              "id": "ORPHA:2802",
+              "label": "X-linked sideroblastic anemia and spinocerebellar ataxia",
+              "score": 0.389
+            }
+          ]
+        }
+      }
+    ],
+    "_pipelineStats": {
+      "totalEntities": 24,
+      "matchedHPO": 3,
+      "unmatchedEntities": 21,
+      "phenopacketFeatures": 3,
+      "negatedFeatures": 0,
+      "numericPhenotypes": 0,
+      "ordoCandidates": 10
+    }
+  }
+}

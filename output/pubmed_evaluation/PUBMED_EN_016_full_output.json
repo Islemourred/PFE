@@ -15,6 +15,19 @@
   "module4": {
     "problem": [
       {
+        "text": "mhc class ii deficiency",
+        "ner_score": 0.992,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "mhc class ii deficiency",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
         "text": "deficiency",
         "ner_score": 0.768,
         "negated": false,
@@ -26,6 +39,71 @@
         "confidence": 0.0,
         "matched": false,
         "umls_cui": null
+      },
+      {
+        "text": "a novel mutation",
+        "ner_score": 0.997,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "a novel mutation",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "the mhc ii deficiency",
+        "ner_score": 0.995,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "the mhc ii deficiency",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "mhc ii deficiency",
+        "ner_score": 0.996,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "mhc ii deficiency",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "mhc ii",
+        "ner_score": 0.964,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "mhc ii",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "a rare autosomal recessive primary immunodeficiency syndrome",
+        "ner_score": 0.994,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0000007",
+        "hpo_name": "Autosomal recessive inheritance",
+        "expanded_text": "a rare autosomal recessive primary immunodeficiency syndrome",
+        "match_type": "substring_match",
+        "confidence": 0.95,
+        "matched": true,
+        "umls_cui": "C0441748"
       },
       {
         "text": "immunodeficiency",
@@ -41,17 +119,43 @@
         "umls_cui": "C0021051"
       },
       {
+        "text": "increased susceptibility",
+        "ner_score": 0.995,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "increased susceptibility",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "respiratory and gastrointestinal infections",
+        "ner_score": 0.998,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0004798",
+        "hpo_name": "Recurrent infection of the gastrointestinal tract",
+        "expanded_text": "respiratory and gastrointestinal infections",
+        "match_type": "substring_match",
+        "confidence": 0.95,
+        "matched": true,
+        "umls_cui": "C1854495"
+      },
+      {
         "text": "infections",
         "ner_score": 0.306,
         "negated": false,
         "negation_cue": "",
-        "hpo_id": "HP:0002719",
-        "hpo_name": "Recurrent infections",
+        "hpo_id": null,
+        "hpo_name": null,
         "expanded_text": "infections",
-        "match_type": "sapbert_similarity",
-        "confidence": 0.7773,
-        "matched": true,
-        "umls_cui": "C0239998"
+        "match_type": "skipped_low_ner_score",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
       },
       {
         "text": "failure to thrive",
@@ -67,6 +171,19 @@
         "umls_cui": "C0231246"
       },
       {
+        "text": "early mortality",
+        "ner_score": 0.992,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0100613",
+        "hpo_name": "Death in early adulthood",
+        "expanded_text": "early mortality",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.733,
+        "matched": true,
+        "umls_cui": "C4022012"
+      },
+      {
         "text": "mortality",
         "ner_score": 0.359,
         "negated": false,
@@ -74,6 +191,32 @@
         "hpo_id": null,
         "hpo_name": null,
         "expanded_text": "mortality",
+        "match_type": "skipped_low_ner_score",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "this syndrome",
+        "ner_score": 0.995,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "this syndrome",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "mutations in transcription regulators of the mhc ii gene",
+        "ner_score": 0.921,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "mutations in transcription regulators of the mhc ii gene",
         "match_type": "no_match",
         "confidence": 0.0,
         "matched": false,
@@ -87,6 +230,97 @@
         "hpo_id": null,
         "hpo_name": null,
         "expanded_text": "regulators",
+        "match_type": "skipped_low_ner_score",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "blind lymphocytes",
+        "ner_score": 0.998,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0001922",
+        "hpo_name": "Vacuolated lymphocytes",
+        "expanded_text": "blind lymphocytes",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.7399,
+        "matched": true,
+        "umls_cui": "C1836855"
+      },
+      {
+        "text": "indicatory mhc ii molecules",
+        "ner_score": 0.792,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "indicatory mhc ii molecules",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "clinical manifestations",
+        "ner_score": 0.725,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "clinical manifestations",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "the genetic defects",
+        "ner_score": 0.987,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "the genetic defects",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "this disease",
+        "ner_score": 0.993,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "this disease",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "a novel mutation in rfxank",
+        "ner_score": 0.973,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "a novel mutation in rfxank",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "novel misleading clinical features",
+        "ner_score": 0.993,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "novel misleading clinical features",
         "match_type": "no_match",
         "confidence": 0.0,
         "matched": false,
@@ -119,76 +353,27 @@
         "umls_cui": "C0013362"
       },
       {
-        "text": "gastrointestinal infections",
-        "ner_score": 0.9,
-        "negated": false,
-        "negation_cue": "",
-        "hpo_id": "HP:0004798",
-        "hpo_name": "Recurrent infection of the gastrointestinal tract",
-        "expanded_text": "gastrointestinal infections",
-        "match_type": "text_scan_related_synonym",
-        "confidence": 0.95,
-        "matched": true,
-        "umls_cui": "C1854495",
-        "umls_all": [
-          "C1854495",
-          "C4082764"
-        ]
-      },
-      {
-        "text": "autosomal recessive",
-        "ner_score": 0.9,
-        "negated": false,
-        "negation_cue": "",
-        "hpo_id": "HP:0000007",
-        "hpo_name": "Autosomal recessive inheritance",
-        "expanded_text": "autosomal recessive",
-        "match_type": "text_scan_exact_synonym",
-        "confidence": 0.95,
-        "matched": true,
-        "umls_cui": "C0441748",
-        "umls_all": [
-          "C0441748",
-          "C4020899"
-        ]
-      }
-    ],
-    "test": [
-      {
-        "text": "respiratory",
-        "ner_score": 0.84,
-        "negated": false,
-        "negation_cue": "",
-        "hpo_id": "HP:0011947",
-        "hpo_name": "Respiratory tract infection",
-        "expanded_text": "respiratory",
-        "match_type": "sapbert_similarity",
-        "confidence": 0.7121,
-        "matched": true,
-        "umls_cui": "C0035243"
-      },
-      {
-        "text": "gastrointestinal",
-        "ner_score": 0.553,
-        "negated": false,
-        "negation_cue": "",
-        "hpo_id": "HP:0006749",
-        "hpo_name": "Malignant gastrointestinal tract tumors",
-        "expanded_text": "gastrointestinal",
-        "match_type": "sapbert_similarity",
-        "confidence": 0.7162,
-        "matched": true,
-        "umls_cui": "C0685938"
-      },
-      {
-        "text": "gene",
-        "ner_score": 0.492,
+        "text": "ysarthria",
+        "ner_score": 0.973,
         "negated": false,
         "negation_cue": "",
         "hpo_id": null,
         "hpo_name": null,
-        "expanded_text": "gene",
-        "match_type": "skipped_non_phenotype",
+        "expanded_text": "ysarthria",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "immunological",
+        "ner_score": 0.943,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "immunological",
+        "match_type": "sapbert_rejected_low_conf",
         "confidence": 0.0,
         "matched": false,
         "umls_cui": null
@@ -197,82 +382,155 @@
     "ordo_candidates": [
       {
         "ordo_id": "ORPHA:572",
-        "name": "MHC class II deficiency",
-        "name_fr": "Déficit en molécules HLA de classe II",
-        "score": 0.85,
-        "jaccard": 0.1111,
-        "coverage": 0.1818,
-        "matched_hpo": [
-          "HP:0001508",
-          "HP:0002719"
-        ],
-        "matched_count": 2,
-        "total_disease_hpo": 11
-      },
-      {
-        "ordo_id": "ORPHA:211017",
-        "name": "Spinocerebellar ataxia type 30",
+        "name": "Immunodeficiency by defective expression of MHC class II",
         "name_fr": "",
-        "score": 0.2615,
-        "jaccard": 0.1538,
-        "coverage": 0.3333,
+        "score": 0.3921,
+        "coverage": 0.1053,
         "matched_hpo": [
           "HP:0001260",
-          "HP:0002066"
+          "HP:0001508",
+          "HP:0002066",
+          "HP:0004798"
+        ],
+        "matched_count": 4,
+        "total_disease_hpo": 38,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:443811",
+        "name": "PGM3-CDG",
+        "name_fr": "",
+        "score": 0.3365,
+        "coverage": 0.0323,
+        "matched_hpo": [
+          "HP:0001260",
+          "HP:0001508"
         ],
         "matched_count": 2,
-        "total_disease_hpo": 6
+        "total_disease_hpo": 62,
+        "text_match": false
       },
       {
-        "ordo_id": "ORPHA:458798",
-        "name": "Spinocerebellar ataxia type 41",
+        "ordo_id": "ORPHA:100",
+        "name": "Ataxia-telangiectasia",
         "name_fr": "",
-        "score": 0.2364,
-        "jaccard": 0.0909,
-        "coverage": 0.3333,
+        "score": 0.3262,
+        "coverage": 0.0811,
         "matched_hpo": [
-          "HP:0002066"
+          "HP:0001260",
+          "HP:0001508",
+          "HP:0002721"
         ],
-        "matched_count": 1,
-        "total_disease_hpo": 3
+        "matched_count": 3,
+        "total_disease_hpo": 37,
+        "text_match": false
       },
       {
-        "ordo_id": "ORPHA:210128",
-        "name": "Urocanic aciduria",
+        "ordo_id": "ORPHA:83471",
+        "name": "T-cell immunodeficiency with thymic aplasia",
         "name_fr": "",
-        "score": 0.2342,
-        "jaccard": 0.1765,
-        "coverage": 0.2727,
+        "score": 0.3253,
+        "coverage": 0.0556,
+        "matched_hpo": [
+          "HP:0001508",
+          "HP:0004798"
+        ],
+        "matched_count": 2,
+        "total_disease_hpo": 36,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:167",
+        "name": "Chédiak-Higashi syndrome",
+        "name_fr": "",
+        "score": 0.3243,
+        "coverage": 0.0225,
+        "matched_hpo": [
+          "HP:0001922",
+          "HP:0002721"
+        ],
+        "matched_count": 2,
+        "total_disease_hpo": 89,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:217260",
+        "name": "Progressive multifocal leukoencephalopathy",
+        "name_fr": "",
+        "score": 0.3202,
+        "coverage": 0.0857,
         "matched_hpo": [
           "HP:0001260",
           "HP:0002066",
-          "HP:0002719"
+          "HP:0002721"
         ],
         "matched_count": 3,
-        "total_disease_hpo": 11
+        "total_disease_hpo": 35,
+        "text_match": false
       },
       {
-        "ordo_id": "ORPHA:284282",
-        "name": "Autosomal recessive cerebellar ataxia-epilepsy-intellectual disability syndrome due to WWOX deficiency",
+        "ordo_id": "ORPHA:1830",
+        "name": "Schimke immuno-osseous dysplasia",
         "name_fr": "",
-        "score": 0.2033,
-        "jaccard": 0.1333,
-        "coverage": 0.25,
+        "score": 0.3087,
+        "coverage": 0.0274,
         "matched_hpo": [
           "HP:0001260",
-          "HP:0002066"
+          "HP:0001508"
         ],
         "matched_count": 2,
-        "total_disease_hpo": 8
+        "total_disease_hpo": 73,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:39041",
+        "name": "Omenn syndrome",
+        "name_fr": "",
+        "score": 0.3014,
+        "coverage": 0.022,
+        "matched_hpo": [
+          "HP:0001508",
+          "HP:0002721"
+        ],
+        "matched_count": 2,
+        "total_disease_hpo": 91,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:275",
+        "name": "Severe combined immunodeficiency due to DCLRE1C deficiency",
+        "name_fr": "",
+        "score": 0.301,
+        "coverage": 0.027,
+        "matched_hpo": [
+          "HP:0001508"
+        ],
+        "matched_count": 1,
+        "total_disease_hpo": 37,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:144",
+        "name": "Lynch syndrome",
+        "name_fr": "",
+        "score": 0.297,
+        "coverage": 0.0323,
+        "matched_hpo": [
+          "HP:0001260",
+          "HP:0100613"
+        ],
+        "matched_count": 2,
+        "total_disease_hpo": 62,
+        "text_match": false
       }
     ],
     "stats": {
-      "total": 13,
-      "matched": 9,
-      "unmatched": 4,
-      "match_rate": 69.2,
-      "unique_hpo": 9,
-      "ordo_matches": 5
+      "total": 28,
+      "matched": 8,
+      "unmatched": 20,
+      "match_rate": 28.6,
+      "unique_hpo": 8,
+      "ordo_matches": 10
     }
   },
   "phenopacket": {
@@ -281,8 +539,28 @@
       "id": "PUBMED_EN_016"
     },
     "input": "Case Report: MHC class II deficiency: Report of a novel mutation and special review.\n\nThe MHC II deficiency is a rare autosomal recessive primary immunodeficiency syndrome with increased susceptibility to respiratory and gastrointestinal infections, failure to thrive and early mortality. This syndrome is caused by mutations in transcription regulators of the MHC II gene and results in development of blind lymphocytes due to the lack of indicatory MHC II molecules. Despite homogeneity of clinical manifestations of patients with MHC II deficiency, the genetic defects underlying this disease are heterogeneous. Herein, we report an Iranian patient with MHC II deficiency harbouring a novel mutation in RFXANK and novel misleading clinical features. He had ataxic gait and dysarthria from 30 months of age. Epidemiology, clinical and immunological features, therapeutic options and prognosis of patients with MHC II are reviewed in this paper.",
-    "target": "MHC class II deficiency",
+    "target": "Immunodeficiency by defective expression of MHC class II",
     "phenotypicFeatures": [
+      {
+        "type": {
+          "id": "HP:0000007",
+          "label": "Autosomal recessive inheritance",
+          "umls_cui": "C0441748"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "PUBMED_EN_016",
+              "description": "NER: a rare autosomal recessive primary immunodeficiency syndrome (0.994) | Match: substring_match (0.950)"
+            }
+          }
+        ]
+      },
       {
         "type": {
           "id": "HP:0002721",
@@ -305,9 +583,9 @@
       },
       {
         "type": {
-          "id": "HP:0002719",
-          "label": "Recurrent infections",
-          "umls_cui": "C0239998"
+          "id": "HP:0004798",
+          "label": "Recurrent infection of the gastrointestinal tract",
+          "umls_cui": "C1854495"
         },
         "excluded": false,
         "evidence": [
@@ -318,7 +596,7 @@
             },
             "reference": {
               "id": "PUBMED_EN_016",
-              "description": "NER: infections (0.306) | Match: sapbert_similarity (0.777)"
+              "description": "NER: respiratory and gastrointestinal infections (0.998) | Match: substring_match (0.950)"
             }
           }
         ]
@@ -339,6 +617,46 @@
             "reference": {
               "id": "PUBMED_EN_016",
               "description": "NER: failure to thrive (0.585) | Match: clinical_synonym (1.000)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0100613",
+          "label": "Death in early adulthood",
+          "umls_cui": "C4022012"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "PUBMED_EN_016",
+              "description": "NER: early mortality (0.992) | Match: sapbert_similarity (0.733)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0001922",
+          "label": "Vacuolated lymphocytes",
+          "umls_cui": "C1836855"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "PUBMED_EN_016",
+              "description": "NER: blind lymphocytes (0.998) | Match: sapbert_similarity (0.740)"
             }
           }
         ]
@@ -382,90 +700,10 @@
             }
           }
         ]
-      },
-      {
-        "type": {
-          "id": "HP:0004798",
-          "label": "Recurrent infection of the gastrointestinal tract",
-          "umls_cui": "C1854495"
-        },
-        "excluded": false,
-        "evidence": [
-          {
-            "evidenceCode": {
-              "id": "ECO:0000033",
-              "label": "author statement supported by traceable reference"
-            },
-            "reference": {
-              "id": "PUBMED_EN_016",
-              "description": "NER: gastrointestinal infections (0.900) | Match: text_scan_related_synonym (0.950)"
-            }
-          }
-        ]
-      },
-      {
-        "type": {
-          "id": "HP:0000007",
-          "label": "Autosomal recessive inheritance",
-          "umls_cui": "C0441748"
-        },
-        "excluded": false,
-        "evidence": [
-          {
-            "evidenceCode": {
-              "id": "ECO:0000033",
-              "label": "author statement supported by traceable reference"
-            },
-            "reference": {
-              "id": "PUBMED_EN_016",
-              "description": "NER: autosomal recessive (0.900) | Match: text_scan_exact_synonym (0.950)"
-            }
-          }
-        ]
-      },
-      {
-        "type": {
-          "id": "HP:0011947",
-          "label": "Respiratory tract infection",
-          "umls_cui": "C0035243"
-        },
-        "excluded": false,
-        "evidence": [
-          {
-            "evidenceCode": {
-              "id": "ECO:0000033",
-              "label": "author statement supported by traceable reference"
-            },
-            "reference": {
-              "id": "PUBMED_EN_016",
-              "description": "NER: respiratory (0.840) | Match: sapbert_similarity (0.712)"
-            }
-          }
-        ]
-      },
-      {
-        "type": {
-          "id": "HP:0006749",
-          "label": "Malignant gastrointestinal tract tumors",
-          "umls_cui": "C0685938"
-        },
-        "excluded": false,
-        "evidence": [
-          {
-            "evidenceCode": {
-              "id": "ECO:0000033",
-              "label": "author statement supported by traceable reference"
-            },
-            "reference": {
-              "id": "PUBMED_EN_016",
-              "description": "NER: gastrointestinal (0.553) | Match: sapbert_similarity (0.716)"
-            }
-          }
-        ]
       }
     ],
     "metaData": {
-      "created": "2026-06-11T03:06:25Z",
+      "created": "2026-06-19T15:03:01Z",
       "createdBy": "clinical-preanalysis-pipeline-v2",
       "phenopacketSchemaVersion": "2.0",
       "resources": [
@@ -486,47 +724,72 @@
         "diagnosis": {
           "disease": {
             "id": "ORPHA:572",
-            "label": "MHC class II deficiency"
+            "label": "Immunodeficiency by defective expression of MHC class II"
           },
-          "score": 0.85,
+          "score": 0.3921,
           "allCandidates": [
             {
               "id": "ORPHA:572",
-              "label": "MHC class II deficiency",
-              "score": 0.85
+              "label": "Immunodeficiency by defective expression of MHC class II",
+              "score": 0.3921
             },
             {
-              "id": "ORPHA:211017",
-              "label": "Spinocerebellar ataxia type 30",
-              "score": 0.2615
+              "id": "ORPHA:443811",
+              "label": "PGM3-CDG",
+              "score": 0.3365
             },
             {
-              "id": "ORPHA:458798",
-              "label": "Spinocerebellar ataxia type 41",
-              "score": 0.2364
+              "id": "ORPHA:100",
+              "label": "Ataxia-telangiectasia",
+              "score": 0.3262
             },
             {
-              "id": "ORPHA:210128",
-              "label": "Urocanic aciduria",
-              "score": 0.2342
+              "id": "ORPHA:83471",
+              "label": "T-cell immunodeficiency with thymic aplasia",
+              "score": 0.3253
             },
             {
-              "id": "ORPHA:284282",
-              "label": "Autosomal recessive cerebellar ataxia-epilepsy-intellectual disability syndrome due to WWOX deficiency",
-              "score": 0.2033
+              "id": "ORPHA:167",
+              "label": "Chédiak-Higashi syndrome",
+              "score": 0.3243
+            },
+            {
+              "id": "ORPHA:217260",
+              "label": "Progressive multifocal leukoencephalopathy",
+              "score": 0.3202
+            },
+            {
+              "id": "ORPHA:1830",
+              "label": "Schimke immuno-osseous dysplasia",
+              "score": 0.3087
+            },
+            {
+              "id": "ORPHA:39041",
+              "label": "Omenn syndrome",
+              "score": 0.3014
+            },
+            {
+              "id": "ORPHA:275",
+              "label": "Severe combined immunodeficiency due to DCLRE1C deficiency",
+              "score": 0.301
+            },
+            {
+              "id": "ORPHA:144",
+              "label": "Lynch syndrome",
+              "score": 0.297
             }
           ]
         }
       }
     ],
     "_pipelineStats": {
-      "totalEntities": 13,
-      "matchedHPO": 9,
-      "unmatchedEntities": 4,
-      "phenopacketFeatures": 9,
+      "totalEntities": 28,
+      "matchedHPO": 8,
+      "unmatchedEntities": 20,
+      "phenopacketFeatures": 8,
       "negatedFeatures": 0,
       "numericPhenotypes": 0,
-      "ordoCandidates": 5
+      "ordoCandidates": 10
     }
   }
 }

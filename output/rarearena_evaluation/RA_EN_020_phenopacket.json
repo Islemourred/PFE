@@ -1,0 +1,460 @@
+{
+  "id": "phenopacket-RA_EN_020",
+  "subject": {
+    "id": "RA_EN_020",
+    "sex": "MALE"
+  },
+  "input": "An 85-year-old Chinese male was admitted to the infectious diseases department with pruritic rashes and fever on October 17, 2019. His medical history includes cerebral infarction, left-eye glaucoma, and right-eye blindness. He reported no drug or food allergies. His daughter had a history of labial ulceration after taking sulfanilamide tablets, which resolved within 2 days after stopping the medication. Twelve days prior to admission, he was prescribed methazolamide (25 mg tablets, twice daily for 10 days) for glaucoma. One day after starting the medication, he developed swollen red eyes and was diagnosed with corneal injury and keratitis at a local hospital. He was treated with levofloxacin eye drops and additional medications (carteolol eye drops, furan thiamine tablets, and pilocarpine eye drops) for glaucoma. Six days before admission, he developed a fever with a peak temperature of 39.9°C. Three days later, he noticed itching pale red macules with blister formations starting from the abdomen, genitals, hands, and soles, which quickly spread over his body. He revisited the local hospital, where a dermatologist noted severe erythema multiforme. Blood tests showed a white blood cell count of 6.3 × 10^9/L (normal range 3.5–9.5 × 10^9/L), neutrophil ratio of 84.6% (normal range 40–70%), and procalcitonin of 0.1 ng/mL (normal range <0.1 ng/mL). Chest computed tomography revealed bilateral pneumonia. He was treated with cefuroxime and received supportive and symptomatic care, but his fever and rashes did not improve. Upon admission to our hospital, he was awake and alert with a temperature of 38.7°C, pulse of 80 beats per minute, respiratory rate of 18 breaths per minute, and blood pressure of 107/68 mmHg. His eyes were red, swollen, and filled with fluid. He had glaucoma in his left eye with a pupil diameter of 3 mm, sensitivity to light reflexes, and a visual acuity of 0.2. His right eye was blind. He had scattered itching erythematous macules coalescing into papules and blisters all over his body, with no epidermal detachment. Ulcerations were present in the oral mucosa and right foot. Nikolsky's sign was positive. Pulmonary, cardiac, abdominal, and neurological examinations were otherwise unremarkable. Laboratory tests showed a white blood cell count of 6.5 × 10^9/L, neutrophil percentage of 79.4%, C-reactive protein of 30.6 mg/L (normal range 0–10 mg/L), and procalcitonin of 0.1 ng/mL.",
+  "target": "Kikuchi-Fujimoto disease",
+  "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0000988",
+        "label": "Skin rash",
+        "umls_cui": "C0015230"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_020",
+            "description": "NER: rashes (0.960) | Match: sapbert_similarity (0.922)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0001945",
+        "label": "Fever",
+        "umls_cui": "C0015967"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_020",
+            "description": "NER: fever (0.956) | Match: clinical_synonym (1.000)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0002140",
+        "label": "Ischemic stroke",
+        "umls_cui": "C0948008"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_020",
+            "description": "NER: cerebral infarction (0.998) | Match: sapbert_similarity (0.845)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0000501",
+        "label": "Glaucoma",
+        "umls_cui": "C0017601"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_020",
+            "description": "NER: glaucoma (0.606) | Match: exact_label (1.000)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0012537",
+        "label": "Food intolerance",
+        "umls_cui": "C0149696"
+      },
+      "excluded": true,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_020",
+            "description": "NER: drug or food allergies (0.891) | Match: sapbert_similarity (0.761) | Negated by: \"no\""
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0000155",
+        "label": "Oral ulcer",
+        "umls_cui": "C0149745"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_020",
+            "description": "NER: labial ulceration (0.999) | Match: sapbert_similarity (0.711)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0000629",
+        "label": "Periorbital fullness",
+        "umls_cui": "C1858036"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_020",
+            "description": "NER: swollen red eyes (0.998) | Match: sapbert_similarity (0.737)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0012733",
+        "label": "Macule",
+        "umls_cui": "C0332573"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_020",
+            "description": "NER: macules (0.926) | Match: sapbert_similarity (0.808)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0006532",
+        "label": "Recurrent pneumonia",
+        "umls_cui": "C0694550"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_020",
+            "description": "NER: bilateral pneumonia (0.998) | Match: sapbert_similarity (0.711)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0002090",
+        "label": "Pneumonia",
+        "umls_cui": "C0032285"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_020",
+            "description": "NER: pneumonia (0.849) | Match: exact_label (1.000)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0008066",
+        "label": "Abnormal blistering of the skin",
+        "umls_cui": "C0241054"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_020",
+            "description": "NER: blisters (0.726) | Match: exact_synonym (1.000)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0200041",
+        "label": "Skin erosion",
+        "umls_cui": "C3887524"
+      },
+      "excluded": true,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_020",
+            "description": "NER: epidermal detachment (0.686) | Match: sapbert_similarity (0.715) | Negated by: \"no\""
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0100792",
+        "label": "Acantholysis",
+        "umls_cui": "C0000887"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_020",
+            "description": "NER: Nikolsky's sign (0.900) | Match: text_scan_related_synonym (0.950)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0000491",
+        "label": "Keratitis",
+        "umls_cui": "C0022568"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_020",
+            "description": "NER: keratitis (0.900) | Match: text_scan_exact_label (0.950)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0000618",
+        "label": "Blindness",
+        "umls_cui": "C0271215"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_020",
+            "description": "NER: blindness (0.900) | Match: text_scan_exact_label (0.950)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0010783",
+        "label": "Erythema",
+        "umls_cui": "C0016382"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_020",
+            "description": "NER: erythema (0.900) | Match: text_scan_exact_label (0.950)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0000989",
+        "label": "Pruritus",
+        "umls_cui": "C0033774"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_020",
+            "description": "NER: itching (0.900) | Match: text_scan_exact_synonym (0.950)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0200034",
+        "label": "Papule",
+        "umls_cui": "C0332563"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_020",
+            "description": "NER: papules (0.900) | Match: text_scan_exact_synonym (0.950)"
+          }
+        }
+      ]
+    }
+  ],
+  "metaData": {
+    "created": "2026-06-19T15:11:30Z",
+    "createdBy": "clinical-preanalysis-pipeline-v2",
+    "phenopacketSchemaVersion": "2.0",
+    "resources": [
+      {
+        "id": "hp",
+        "name": "Human Phenotype Ontology",
+        "url": "https://hpo.jax.org",
+        "version": "2024-04-26",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      }
+    ]
+  },
+  "interpretations": [
+    {
+      "id": "interpretation-RA_EN_020",
+      "progressStatus": "IN_PROGRESS",
+      "diagnosis": {
+        "disease": {
+          "id": "ORPHA:50918",
+          "label": "Kikuchi-Fujimoto disease"
+        },
+        "score": 0.4897,
+        "allCandidates": [
+          {
+            "id": "ORPHA:50918",
+            "label": "Kikuchi-Fujimoto disease",
+            "score": 0.4897
+          },
+          {
+            "id": "ORPHA:95455",
+            "label": "Stevens-Johnson syndrome/toxic epidermal necrolysis spectrum",
+            "score": 0.4705
+          },
+          {
+            "id": "ORPHA:117",
+            "label": "Behçet disease",
+            "score": 0.4172
+          },
+          {
+            "id": "ORPHA:536",
+            "label": "Systemic lupus erythematosus",
+            "score": 0.4103
+          },
+          {
+            "id": "ORPHA:79481",
+            "label": "Pemphigus foliaceus",
+            "score": 0.4069
+          },
+          {
+            "id": "ORPHA:324625",
+            "label": "Chikungunya",
+            "score": 0.405
+          },
+          {
+            "id": "ORPHA:221",
+            "label": "Dermatomyositis",
+            "score": 0.3962
+          },
+          {
+            "id": "ORPHA:90340",
+            "label": "Blau syndrome",
+            "score": 0.3936
+          },
+          {
+            "id": "ORPHA:79455",
+            "label": "Cutaneous mastocytoma",
+            "score": 0.3912
+          },
+          {
+            "id": "ORPHA:83453",
+            "label": "Vulvovaginal gingival syndrome",
+            "score": 0.3825
+          }
+        ]
+      }
+    }
+  ],
+  "_pipelineStats": {
+    "totalEntities": 109,
+    "matchedHPO": 18,
+    "unmatchedEntities": 91,
+    "phenopacketFeatures": 18,
+    "negatedFeatures": 2,
+    "numericPhenotypes": 0,
+    "ordoCandidates": 10
+  }
+}

@@ -1,0 +1,838 @@
+{
+  "note_id": "RA_EN_029",
+  "language": "en",
+  "module1": {
+    "clean_text": "A [AGE] girl was seen at The Department of Neurosurgery, Yuquan Hospital, Tsinghua University (Beijing, China) with a three-year history of episodic convulsions accompanied by loss of consciousness and worsening symptoms. The seizures primarily included absence seizures and generalized tonic-clonic seizures. The main clinical presentation involved a sudden bowing motion (slightly forwards and downwards, to the left) occurring either singly or in clusters. Occasionally, the body would slowly dip to the left and then to the right while the upper and lower limbs became stiff, indicative of absence seizures. These episodes lasted for about half a minute, not exceeding one minute, before subsiding. Oral medications such as oxcarbazepine, clonazepam, topiramate, and valproate provided limited symptom control, with seizure episodes occurring 4–10 times per month. There was no prior history of difficult birth, lack of oxygen, encephalitis, or any other medical conditions. Written informed consent was obtained from the patient’s family.",
+    "phi_map": {
+      "AGE": "seven-year-old"
+    },
+    "patient_info": {}
+  },
+  "module3_warnings": {
+    "temporal": [],
+    "inconsistencies": []
+  },
+  "module4": {
+    "problem": [
+      {
+        "text": "generalized tonic - clonic seizures",
+        "ner_score": 0.999,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0002069",
+        "hpo_name": "Bilateral tonic-clonic seizure",
+        "expanded_text": "generalized tonic - clonic seizures",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.9431,
+        "matched": true,
+        "umls_cui": "C0494475"
+      },
+      {
+        "text": "episodic convulsions",
+        "ner_score": 0.998,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0011097",
+        "hpo_name": "Epileptic spasm",
+        "expanded_text": "episodic convulsions",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.7483,
+        "matched": true,
+        "umls_cui": "C0037769"
+      },
+      {
+        "text": "convulsions",
+        "ner_score": 0.8,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0001250",
+        "hpo_name": "Seizure",
+        "expanded_text": "convulsions",
+        "match_type": "clinical_synonym",
+        "confidence": 1.0,
+        "matched": true,
+        "umls_cui": "C0014544"
+      },
+      {
+        "text": "loss of consciousness",
+        "ner_score": 0.925,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0007185",
+        "hpo_name": "Loss of consciousness",
+        "expanded_text": "loss of consciousness",
+        "match_type": "exact_label",
+        "confidence": 1.0,
+        "matched": true,
+        "umls_cui": "C0041657"
+      },
+      {
+        "text": "worse",
+        "ner_score": 0.99,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "worse",
+        "match_type": "sapbert_rejected_low_conf",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "ning symptoms",
+        "ner_score": 0.99,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "ning symptoms",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "symptoms. The seizure",
+        "ner_score": 0.997,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "symptoms. The seizure",
+        "match_type": "deduplicated",
+        "confidence": 0.8598,
+        "matched": false,
+        "umls_cui": "C0014544"
+      },
+      {
+        "text": "absence",
+        "ner_score": 0.572,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "absence",
+        "match_type": "skipped_en_noise",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "absence seizures",
+        "ner_score": 0.998,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0002121",
+        "hpo_name": "Generalized non-motor (absence) seizure",
+        "expanded_text": "absence seizures",
+        "match_type": "exact_synonym",
+        "confidence": 1.0,
+        "matched": true,
+        "umls_cui": "C0014553"
+      },
+      {
+        "text": "onic",
+        "ner_score": 0.681,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "onic",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "a sudden bowing motion",
+        "ner_score": 0.992,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0006409",
+        "hpo_name": "Progressive leg bowing",
+        "expanded_text": "a sudden bowing motion",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.7742,
+        "matched": true,
+        "umls_cui": "C1855191"
+      },
+      {
+        "text": "bowing motion",
+        "ner_score": 0.837,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0002979",
+        "hpo_name": "Bowing of the legs",
+        "expanded_text": "bowing motion",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.8111,
+        "matched": true,
+        "umls_cui": "C0544755"
+      },
+      {
+        "text": "these episodes",
+        "ner_score": 0.935,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "these episodes",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "seizure episodes",
+        "ner_score": 0.996,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "seizure episodes",
+        "match_type": "deduplicated",
+        "confidence": 0.9385,
+        "matched": false,
+        "umls_cui": "C0014544"
+      },
+      {
+        "text": "difficult birth",
+        "ner_score": 0.997,
+        "negated": true,
+        "negation_cue": "no",
+        "hpo_id": "HP:0001787",
+        "hpo_name": "Abnormal delivery",
+        "expanded_text": "difficult birth",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.768,
+        "matched": true,
+        "umls_cui": "C0549629"
+      },
+      {
+        "text": "lack of oxygen",
+        "ner_score": 0.997,
+        "negated": true,
+        "negation_cue": "no",
+        "hpo_id": "HP:0012418",
+        "hpo_name": "Hypoxemia",
+        "expanded_text": "lack of oxygen",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.8221,
+        "matched": true,
+        "umls_cui": "C0700292"
+      },
+      {
+        "text": "encephalitis",
+        "ner_score": 0.948,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0002383",
+        "hpo_name": "Infectious encephalitis",
+        "expanded_text": "encephalitis",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.893,
+        "matched": true,
+        "umls_cui": "C0014038"
+      },
+      {
+        "text": "any other medical conditions",
+        "ner_score": 0.968,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "any other medical conditions",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "generalized",
+        "ner_score": 0.9,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0012837",
+        "hpo_name": "Generalized",
+        "expanded_text": "generalized",
+        "match_type": "text_scan_exact_label",
+        "confidence": 0.95,
+        "matched": true,
+        "umls_cui": "C0205246",
+        "umls_all": [
+          "C0205246"
+        ]
+      }
+    ],
+    "treatment": [
+      {
+        "text": "oral medications",
+        "ner_score": 0.994,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "oral medications",
+        "match_type": "skipped_treatment",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "oxcarbazepine",
+        "ner_score": 0.961,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "oxcarbazepine",
+        "match_type": "skipped_treatment",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "pine",
+        "ner_score": 0.977,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "pine",
+        "match_type": "skipped_treatment",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "onazepam",
+        "ner_score": 0.963,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "onazepam",
+        "match_type": "skipped_treatment",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "azepam",
+        "ner_score": 0.976,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "azepam",
+        "match_type": "skipped_treatment",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "topiramate",
+        "ner_score": 0.831,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "topiramate",
+        "match_type": "skipped_treatment",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "mate",
+        "ner_score": 0.976,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "mate",
+        "match_type": "skipped_treatment",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      }
+    ],
+    "ordo_candidates": [
+      {
+        "ordo_id": "ORPHA:533",
+        "name": "Listeriosis",
+        "name_fr": "",
+        "score": 0.3422,
+        "coverage": 0.0441,
+        "matched_hpo": [
+          "HP:0001250",
+          "HP:0002383",
+          "HP:0007185"
+        ],
+        "matched_count": 3,
+        "total_disease_hpo": 68,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:1934",
+        "name": "Early infantile developmental and epileptic encephalopathy",
+        "name_fr": "",
+        "score": 0.3289,
+        "coverage": 0.0476,
+        "matched_hpo": [
+          "HP:0001250",
+          "HP:0002069",
+          "HP:0002121"
+        ],
+        "matched_count": 3,
+        "total_disease_hpo": 63,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:354",
+        "name": "GM1 gangliosidosis",
+        "name_fr": "",
+        "score": 0.3151,
+        "coverage": 0.0225,
+        "matched_hpo": [
+          "HP:0001250",
+          "HP:0002383"
+        ],
+        "matched_count": 2,
+        "total_disease_hpo": 89,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:501",
+        "name": "Lafora disease",
+        "name_fr": "",
+        "score": 0.3098,
+        "coverage": 0.0857,
+        "matched_hpo": [
+          "HP:0001250",
+          "HP:0002069",
+          "HP:0002121"
+        ],
+        "matched_count": 3,
+        "total_disease_hpo": 35,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:36387",
+        "name": "Genetic epilepsy with febrile seizure plus",
+        "name_fr": "",
+        "score": 0.3007,
+        "coverage": 0.0909,
+        "matched_hpo": [
+          "HP:0001250",
+          "HP:0002069",
+          "HP:0002121"
+        ],
+        "matched_count": 3,
+        "total_disease_hpo": 33,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:306",
+        "name": "Self-limited infantile epilepsy",
+        "name_fr": "",
+        "score": 0.2948,
+        "coverage": 0.0938,
+        "matched_hpo": [
+          "HP:0001250",
+          "HP:0002069",
+          "HP:0002121"
+        ],
+        "matched_count": 3,
+        "total_disease_hpo": 32,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:2896",
+        "name": "Pitt-Hopkins syndrome",
+        "name_fr": "",
+        "score": 0.2788,
+        "coverage": 0.0202,
+        "matched_hpo": [
+          "HP:0001250",
+          "HP:0002069"
+        ],
+        "matched_count": 2,
+        "total_disease_hpo": 99,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:2636",
+        "name": "Microcephalic osteodysplastic primordial dwarfism types I and III",
+        "name_fr": "",
+        "score": 0.2786,
+        "coverage": 0.0405,
+        "matched_hpo": [
+          "HP:0001250",
+          "HP:0002121",
+          "HP:0011097"
+        ],
+        "matched_count": 3,
+        "total_disease_hpo": 74,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:79139",
+        "name": "Japanese encephalitis",
+        "name_fr": "",
+        "score": 0.2774,
+        "coverage": 0.0244,
+        "matched_hpo": [
+          "HP:0002069",
+          "HP:0002383"
+        ],
+        "matched_count": 2,
+        "total_disease_hpo": 82,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:79351",
+        "name": "3-phosphoglycerate dehydrogenase deficiency, infantile/juvenile form",
+        "name_fr": "",
+        "score": 0.2748,
+        "coverage": 0.0667,
+        "matched_hpo": [
+          "HP:0002069",
+          "HP:0002121",
+          "HP:0011097"
+        ],
+        "matched_count": 3,
+        "total_disease_hpo": 45,
+        "text_match": false
+      }
+    ],
+    "stats": {
+      "total": 26,
+      "matched": 11,
+      "unmatched": 15,
+      "match_rate": 42.3,
+      "unique_hpo": 11,
+      "ordo_matches": 10
+    }
+  },
+  "phenopacket": {
+    "id": "phenopacket-RA_EN_029",
+    "subject": {
+      "id": "RA_EN_029"
+    },
+    "input": "A seven-year-old girl was seen at The Department of Neurosurgery, Yuquan Hospital, Tsinghua University (Beijing, China) with a three-year history of episodic convulsions accompanied by loss of consciousness and worsening symptoms. The seizures primarily included absence seizures and generalized tonic-clonic seizures. The main clinical presentation involved a sudden bowing motion (slightly forwards and downwards, to the left) occurring either singly or in clusters. Occasionally, the body would slowly dip to the left and then to the right while the upper and lower limbs became stiff, indicative of absence seizures. These episodes lasted for about half a minute, not exceeding one minute, before subsiding. Oral medications such as oxcarbazepine, clonazepam, topiramate, and valproate provided limited symptom control, with seizure episodes occurring 4–10 times per month. There was no prior history of difficult birth, lack of oxygen, encephalitis, or any other medical conditions. Written informed consent was obtained from the patient’s family.",
+    "target": "Listeriosis",
+    "phenotypicFeatures": [
+      {
+        "type": {
+          "id": "HP:0002069",
+          "label": "Bilateral tonic-clonic seizure",
+          "umls_cui": "C0494475"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_029",
+              "description": "NER: generalized tonic - clonic seizures (0.999) | Match: sapbert_similarity (0.943)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0011097",
+          "label": "Epileptic spasm",
+          "umls_cui": "C0037769"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_029",
+              "description": "NER: episodic convulsions (0.998) | Match: sapbert_similarity (0.748)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0001250",
+          "label": "Seizure",
+          "umls_cui": "C0014544"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_029",
+              "description": "NER: convulsions (0.800) | Match: clinical_synonym (1.000)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0007185",
+          "label": "Loss of consciousness",
+          "umls_cui": "C0041657"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_029",
+              "description": "NER: loss of consciousness (0.925) | Match: exact_label (1.000)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0002121",
+          "label": "Generalized non-motor (absence) seizure",
+          "umls_cui": "C0014553"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_029",
+              "description": "NER: absence seizures (0.998) | Match: exact_synonym (1.000)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0006409",
+          "label": "Progressive leg bowing",
+          "umls_cui": "C1855191"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_029",
+              "description": "NER: a sudden bowing motion (0.992) | Match: sapbert_similarity (0.774)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0002979",
+          "label": "Bowing of the legs",
+          "umls_cui": "C0544755"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_029",
+              "description": "NER: bowing motion (0.837) | Match: sapbert_similarity (0.811)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0001787",
+          "label": "Abnormal delivery",
+          "umls_cui": "C0549629"
+        },
+        "excluded": true,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_029",
+              "description": "NER: difficult birth (0.997) | Match: sapbert_similarity (0.768) | Negated by: \"no\""
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0012418",
+          "label": "Hypoxemia",
+          "umls_cui": "C0700292"
+        },
+        "excluded": true,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_029",
+              "description": "NER: lack of oxygen (0.997) | Match: sapbert_similarity (0.822) | Negated by: \"no\""
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0002383",
+          "label": "Infectious encephalitis",
+          "umls_cui": "C0014038"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_029",
+              "description": "NER: encephalitis (0.948) | Match: sapbert_similarity (0.893)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0012837",
+          "label": "Generalized",
+          "umls_cui": "C0205246"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_029",
+              "description": "NER: generalized (0.900) | Match: text_scan_exact_label (0.950)"
+            }
+          }
+        ]
+      }
+    ],
+    "metaData": {
+      "created": "2026-06-19T15:13:12Z",
+      "createdBy": "clinical-preanalysis-pipeline-v2",
+      "phenopacketSchemaVersion": "2.0",
+      "resources": [
+        {
+          "id": "hp",
+          "name": "Human Phenotype Ontology",
+          "url": "https://hpo.jax.org",
+          "version": "2024-04-26",
+          "namespacePrefix": "HP",
+          "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        }
+      ]
+    },
+    "interpretations": [
+      {
+        "id": "interpretation-RA_EN_029",
+        "progressStatus": "IN_PROGRESS",
+        "diagnosis": {
+          "disease": {
+            "id": "ORPHA:533",
+            "label": "Listeriosis"
+          },
+          "score": 0.3422,
+          "allCandidates": [
+            {
+              "id": "ORPHA:533",
+              "label": "Listeriosis",
+              "score": 0.3422
+            },
+            {
+              "id": "ORPHA:1934",
+              "label": "Early infantile developmental and epileptic encephalopathy",
+              "score": 0.3289
+            },
+            {
+              "id": "ORPHA:354",
+              "label": "GM1 gangliosidosis",
+              "score": 0.3151
+            },
+            {
+              "id": "ORPHA:501",
+              "label": "Lafora disease",
+              "score": 0.3098
+            },
+            {
+              "id": "ORPHA:36387",
+              "label": "Genetic epilepsy with febrile seizure plus",
+              "score": 0.3007
+            },
+            {
+              "id": "ORPHA:306",
+              "label": "Self-limited infantile epilepsy",
+              "score": 0.2948
+            },
+            {
+              "id": "ORPHA:2896",
+              "label": "Pitt-Hopkins syndrome",
+              "score": 0.2788
+            },
+            {
+              "id": "ORPHA:2636",
+              "label": "Microcephalic osteodysplastic primordial dwarfism types I and III",
+              "score": 0.2786
+            },
+            {
+              "id": "ORPHA:79139",
+              "label": "Japanese encephalitis",
+              "score": 0.2774
+            },
+            {
+              "id": "ORPHA:79351",
+              "label": "3-phosphoglycerate dehydrogenase deficiency, infantile/juvenile form",
+              "score": 0.2748
+            }
+          ]
+        }
+      }
+    ],
+    "_pipelineStats": {
+      "totalEntities": 26,
+      "matchedHPO": 11,
+      "unmatchedEntities": 15,
+      "phenopacketFeatures": 11,
+      "negatedFeatures": 2,
+      "numericPhenotypes": 0,
+      "ordoCandidates": 10
+    }
+  }
+}

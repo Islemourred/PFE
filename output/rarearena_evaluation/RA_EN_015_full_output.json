@@ -1,0 +1,3842 @@
+{
+  "note_id": "RA_EN_015",
+  "language": "en",
+  "module1": {
+    "clean_text": "A male aged [AGE] years and [AGE] presented to the Emergency Department with a one-week history of increased urinary frequency and thirst. He reported decreased appetite and had an unintentional weight loss of 7 lbs over the past week. Earlier that day, his primary care physician noted an elevated blood glucose finger stick at 138 mg/dL and urinalysis showed glucosuria with 100 mg/dL. He was referred to the Emergency Department for further care. His birth history included prematurity with induction at 36 weeks due to intrauterine growth restriction, and delivery via Cesarean section due to fetal distress. His birth weight was 2690 grams and birth length was 48.3 cm. He was monitored in the neonatal intensive care unit for 24 hours for potential hypoglycemia due to maternal gestational diabetes, but his blood glucose levels remained normal. He had jaundice but did not require phototherapy and passed his newborn hearing screen before discharge. His past medical history included an endocrine evaluation at 4 years and 3 [AGE] of age for polyuria, polydipsia, and weight gain. His weight was stable in the 50th percentile until approximately 2 years of age when it increased to the 90th percentile, reaching the 99th percentile at the time of his endocrinology visit. His height decreased from the 25th percentile at 3 years of age to approximately the 15th percentile at the time of his endocrinology visit. Evaluation revealed an elevated fasting blood glucose level of 113 mg/dL and mildly elevated thyroid stimulating hormone at 5.3 mIU/L (normal range 0.5–4.3 mIU/L). His serum creatinine was 0.41 mg/dL and electrolytes were unremarkable. Further studies for thyroid function and Cushing's syndrome were recommended but not completed. He had a history of multiple sinus and ear infections requiring adenoidectomy and four sets of myringotomy tubes. He experienced speech delay due to frequent ear infections and received speech therapy twice weekly and hearing therapy three times weekly. He had physical and occupational therapy services until kindergarten for delayed milestones, including walking at [AGE] of age. He receives additional support for reading, and formal academic testing was recommended by his school but not yet completed. An immunologic evaluation at an outside hospital due to frequent infections was unremarkable. He was diagnosed with asthma at 1 year of age and was prescribed fluticasone and cetirizine. His family history included maternal renal injury secondary to diabetes during pregnancy, photophobia in his mother, nephrolithiasis in the maternal grandfather and maternal aunt, hypertension in the maternal grandfather, and hearing loss and photophobia in a first cousin on the maternal side. There was no family history of consanguinity. Review of systems revealed subjective chills and constipation. He also reported waking at night to drink and void but denied fever, abdominal pain, daytime or nighttime enuresis, urgency, dysuria, inability to empty his bladder, or hematuria. In the Emergency Department, his blood pressure was 123/71 mmHg, weight was 37 kg (82nd percentile), and height was 127.5 cm (3rd percentile). Physical examination revealed a grade 2/6 systolic ejection murmur and hypogonadism. There were concerns for photophobia during his eye exam. No other dysmorphic features were noted. Initial laboratory work-up showed elevated serum creatinine of 4.4 mg/dL, low serum calcium of 7.7 mg/dL (8.8–10.1 mg/dL), and slightly elevated serum phosphorus of 6.1 mg/dL (3.7–5.6 mg/dL). Serum intact parathyroid hormone level was elevated at 340 pg/mL (9–52 pg/mL). Complete blood count revealed normocytic anemia with serum hemoglobin of 8.1 g/dL (11.5–15.5 g/dL). Urinalysis showed moderate blood, no proteinuria, no leukocyte esterase, and a specific gravity of ≤1.005. Renal/bladder ultrasound showed small kidneys with right kidney 6.6 cm and left kidney 7.8 cm with increased echogenicity bilaterally and no evidence of cystic disease. An echocardiogram was performed due to the murmur, which was unremarkable. Ophthalmology exam showed no cystine crystals but revealed bilateral retinal dystrophy with 20/50 OD and 20/30 OS. Bone age assessment indicated it was greater than 2 standard deviations above his chronological age.",
+    "phi_map": {
+      "AGE": [
+        "9",
+        "9",
+        "months",
+        "months",
+        "16",
+        "months"
+      ]
+    },
+    "patient_info": {
+      "sex": "male"
+    }
+  },
+  "module3_warnings": {
+    "temporal": [],
+    "inconsistencies": [
+      {
+        "type": "sex_anatomy_conflict",
+        "severity": "critical",
+        "message": "Female-specific term 'pregnancy' found in male patient record",
+        "term": "pregnancy"
+      }
+    ]
+  },
+  "module4": {
+    "test": [
+      {
+        "text": "initial laboratory work - up",
+        "ner_score": 0.961,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "initial laboratory work - up",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "renal / bladder ultrasound",
+        "ner_score": 0.993,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "renal / bladder ultrasound",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "increased urina",
+        "ner_score": 0.991,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "increased urina",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "decreased",
+        "ner_score": 0.747,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "decreased",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "weight",
+        "ner_score": 0.902,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "weight",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "elevated blood glucose",
+        "ner_score": 0.983,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "elevated blood glucose",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "urinalysis",
+        "ner_score": 0.982,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "urinalysis",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "length",
+        "ner_score": 0.361,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "length",
+        "match_type": "skipped_low_ner_score",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "monitored",
+        "ner_score": 0.9,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "monitored",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "his blood glucose levels",
+        "ner_score": 0.99,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "his blood glucose levels",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "normal",
+        "ner_score": 0.932,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "normal",
+        "match_type": "skipped_en_noise",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "passed",
+        "ner_score": 0.715,
+        "negated": true,
+        "negation_cue": "did not",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "passed",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "his newborn hearing screen",
+        "ner_score": 0.992,
+        "negated": true,
+        "negation_cue": "did not",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "his newborn hearing screen",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "newborn",
+        "ner_score": 0.957,
+        "negated": true,
+        "negation_cue": "did not",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "newborn",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "hearing",
+        "ner_score": 0.942,
+        "negated": true,
+        "negation_cue": "did not",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "hearing",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "screen",
+        "ner_score": 0.99,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "screen",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "an endocrine evaluation",
+        "ner_score": 0.997,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "an endocrine evaluation",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "endocrine",
+        "ner_score": 0.991,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "endocrine",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "evaluation",
+        "ner_score": 0.978,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "evaluation",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "his weight",
+        "ner_score": 0.964,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "his weight",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "the 50",
+        "ner_score": 0.623,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "the 50",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "percentile",
+        "ner_score": 0.906,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "percentile",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "endocrinology",
+        "ner_score": 0.387,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "endocrinology",
+        "match_type": "skipped_low_ner_score",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "his height",
+        "ner_score": 0.94,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "his height",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "height",
+        "ner_score": 0.908,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "height",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "fasting",
+        "ner_score": 0.755,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "fasting",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "mildly elevated",
+        "ner_score": 0.753,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "mildly elevated",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "thyroid",
+        "ner_score": 0.988,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "thyroid",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "stimulating",
+        "ner_score": 0.992,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "stimulating",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "hormone",
+        "ner_score": 0.993,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "hormone",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "his serum creatinine",
+        "ner_score": 0.996,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "his serum creatinine",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "serum",
+        "ner_score": 0.823,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "serum",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "creatinine",
+        "ner_score": 0.883,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "creatinine",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "electrolytes",
+        "ner_score": 0.985,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "electrolytes",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "electroly",
+        "ner_score": 0.762,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "electroly",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "unremarkable",
+        "ner_score": 0.952,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "unremarkable",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "further studies",
+        "ner_score": 0.722,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "further studies",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "function",
+        "ner_score": 0.971,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "function",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "Complete",
+        "ner_score": 0.975,
+        "negated": true,
+        "negation_cue": "not",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "Complete",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "Physical",
+        "ner_score": 0.995,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "Physical",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "delayed",
+        "ner_score": 0.842,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "delayed",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "walking",
+        "ner_score": 0.428,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "walking",
+        "match_type": "skipped_low_ner_score",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "reading",
+        "ner_score": 0.297,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "reading",
+        "match_type": "skipped_low_ner_score",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "formal academic testing",
+        "ner_score": 0.992,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "formal academic testing",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "academic",
+        "ner_score": 0.98,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "academic",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "testing",
+        "ner_score": 0.957,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "testing",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "an immunologic evaluation",
+        "ner_score": 0.997,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "an immunologic evaluation",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "immunologic",
+        "ner_score": 0.992,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "immunologic",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "Review",
+        "ner_score": 0.974,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "Review",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "review of systems",
+        "ner_score": 0.978,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "review of systems",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "systems",
+        "ner_score": 0.972,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "systems",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "his blood pressure",
+        "ner_score": 0.996,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "his blood pressure",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "pressure",
+        "ner_score": 0.985,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "pressure",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "physical examination",
+        "ner_score": 0.995,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "physical examination",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "examination",
+        "ner_score": 0.994,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "examination",
+        "match_type": "skipped_en_noise",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "exam",
+        "ner_score": 0.98,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "exam",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "grade 2",
+        "ner_score": 0.656,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "grade 2",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "his eye exam",
+        "ner_score": 0.997,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "his eye exam",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "laboratory",
+        "ner_score": 0.989,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "laboratory",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "calcium",
+        "ner_score": 0.912,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "calcium",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "slightly",
+        "ner_score": 0.834,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "slightly",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "phosphorus",
+        "ner_score": 0.94,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "phosphorus",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "serum intact parathyroid hormone level",
+        "ner_score": 0.949,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "serum intact parathyroid hormone level",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "intact",
+        "ner_score": 0.603,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "intact",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "parathyroid",
+        "ner_score": 0.862,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "parathyroid",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "complete blood count",
+        "ner_score": 0.994,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "complete blood count",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "count",
+        "ner_score": 0.995,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "count",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "serum hemoglobin",
+        "ner_score": 0.974,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "serum hemoglobin",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "hemoglobin",
+        "ner_score": 0.957,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "hemoglobin",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "moderate",
+        "ner_score": 0.777,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "moderate",
+        "match_type": "skipped_en_noise",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "leukocyte",
+        "ner_score": 0.937,
+        "negated": true,
+        "negation_cue": "no",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "leukocyte",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "ester",
+        "ner_score": 0.832,
+        "negated": true,
+        "negation_cue": "no",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "ester",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "specific",
+        "ner_score": 0.989,
+        "negated": true,
+        "negation_cue": "no",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "specific",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "specific gravity",
+        "ner_score": 0.415,
+        "negated": true,
+        "negation_cue": "no",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "specific gravity",
+        "match_type": "skipped_low_ner_score",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "gravity",
+        "ner_score": 0.99,
+        "negated": true,
+        "negation_cue": "no",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "gravity",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "ultrasound",
+        "ner_score": 0.987,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "ultrasound",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "echo",
+        "ner_score": 0.335,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "echo",
+        "match_type": "skipped_low_ner_score",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "genic",
+        "ner_score": 0.495,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "genic",
+        "match_type": "skipped_low_ner_score",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "an echocardiogram",
+        "ner_score": 0.997,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "an echocardiogram",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "echocardiogram",
+        "ner_score": 0.988,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "echocardiogram",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "Ophthalmology",
+        "ner_score": 0.993,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "Ophthalmology",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "ophthalmology exam",
+        "ner_score": 0.991,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "ophthalmology exam",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "Bone",
+        "ner_score": 0.324,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "Bone",
+        "match_type": "skipped_low_ner_score",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "bone age assessment",
+        "ner_score": 0.998,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "bone age assessment",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "assessment",
+        "ner_score": 0.497,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "assessment",
+        "match_type": "skipped_en_noise",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "greater",
+        "ner_score": 0.377,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "greater",
+        "match_type": "skipped_low_ner_score",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "standard",
+        "ner_score": 0.776,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "standard",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "deviations",
+        "ner_score": 0.793,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "deviations",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "above",
+        "ner_score": 0.796,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "above",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "chronological",
+        "ner_score": 0.215,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "chronological",
+        "match_type": "skipped_low_ner_score",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      }
+    ],
+    "problem": [
+      {
+        "text": "shing ' s syndrome",
+        "ner_score": 0.923,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "shing ' s syndrome",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "a grade 2 / 6 systolic ejection murmur",
+        "ner_score": 0.998,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "a grade 2 / 6 systolic ejection murmur",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "increased urinary frequency",
+        "ner_score": 0.998,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0100515",
+        "hpo_name": "Pollakisuria",
+        "expanded_text": "increased urinary frequency",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.8077,
+        "matched": true,
+        "umls_cui": "C0042023"
+      },
+      {
+        "text": "urinary frequency",
+        "ner_score": 0.893,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0000017",
+        "hpo_name": "Nocturia",
+        "expanded_text": "urinary frequency",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.7342,
+        "matched": true,
+        "umls_cui": "C0028734"
+      },
+      {
+        "text": "thirst",
+        "ner_score": 0.898,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "thirst",
+        "match_type": "deduplicated",
+        "confidence": 0.849,
+        "matched": false,
+        "umls_cui": "C0085602"
+      },
+      {
+        "text": "decreased appetite",
+        "ner_score": 0.72,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0004396",
+        "hpo_name": "Poor appetite",
+        "expanded_text": "decreased appetite",
+        "match_type": "exact_synonym",
+        "confidence": 1.0,
+        "matched": true,
+        "umls_cui": "C0232462"
+      },
+      {
+        "text": "an unintentional weight loss",
+        "ner_score": 0.998,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "an unintentional weight loss",
+        "match_type": "deduplicated",
+        "confidence": 0.95,
+        "matched": false,
+        "umls_cui": "C1262477"
+      },
+      {
+        "text": "weight loss",
+        "ner_score": 0.858,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0001824",
+        "hpo_name": "Weight loss",
+        "expanded_text": "weight loss",
+        "match_type": "clinical_synonym",
+        "confidence": 1.0,
+        "matched": true,
+        "umls_cui": "C1262477"
+      },
+      {
+        "text": "weight",
+        "ner_score": 0.381,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "weight",
+        "match_type": "skipped_low_ner_score",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "an elevated blood glucose finger stick",
+        "ner_score": 0.998,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "an elevated blood glucose finger stick",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "blood",
+        "ner_score": 0.841,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "blood",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "glucos",
+        "ner_score": 0.926,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "glucos",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "glucosuria",
+        "ner_score": 0.964,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0003076",
+        "hpo_name": "Glycosuria",
+        "expanded_text": "glucosuria",
+        "match_type": "exact_synonym",
+        "confidence": 1.0,
+        "matched": true,
+        "umls_cui": "C0017979"
+      },
+      {
+        "text": "uria",
+        "ner_score": 0.973,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "uria",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "premat",
+        "ner_score": 0.937,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "premat",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "intrauterine",
+        "ner_score": 0.497,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "intrauterine",
+        "match_type": "skipped_low_ner_score",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "intrauterine growth",
+        "ner_score": 0.953,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0001511",
+        "hpo_name": "Intrauterine growth retardation",
+        "expanded_text": "intrauterine growth",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.7491,
+        "matched": true,
+        "umls_cui": "C0015934"
+      },
+      {
+        "text": "growth",
+        "ner_score": 0.563,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "growth",
+        "match_type": "sapbert_rejected_low_conf",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "restriction",
+        "ner_score": 0.826,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "restriction",
+        "match_type": "sapbert_rejected_low_conf",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "fetal",
+        "ner_score": 0.71,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "fetal",
+        "match_type": "sapbert_rejected_low_conf",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "fetal distress",
+        "ner_score": 0.998,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "fetal distress",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "distress",
+        "ner_score": 0.748,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "distress",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "potential hypoglycemia",
+        "ner_score": 0.982,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0012051",
+        "hpo_name": "Reactive hypoglycemia",
+        "expanded_text": "potential hypoglycemia",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.755,
+        "matched": true,
+        "umls_cui": "C0271710"
+      },
+      {
+        "text": "hypoglycemia",
+        "ner_score": 0.682,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0001943",
+        "hpo_name": "Hypoglycemia",
+        "expanded_text": "hypoglycemia",
+        "match_type": "exact_label",
+        "confidence": 1.0,
+        "matched": true,
+        "umls_cui": "C0020615"
+      },
+      {
+        "text": "maternal gestational diabetes",
+        "ner_score": 0.958,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0009800",
+        "hpo_name": "Maternal diabetes",
+        "expanded_text": "maternal gestational diabetes",
+        "match_type": "substring_match",
+        "confidence": 0.95,
+        "matched": true,
+        "umls_cui": "C0085207"
+      },
+      {
+        "text": "gestational",
+        "ner_score": 0.768,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "gestational",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "diabetes",
+        "ner_score": 0.895,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0000819",
+        "hpo_name": "Diabetes mellitus",
+        "expanded_text": "diabetes",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.9716,
+        "matched": true,
+        "umls_cui": "C0011849"
+      },
+      {
+        "text": "jaundice",
+        "ner_score": 0.783,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0000952",
+        "hpo_name": "Jaundice",
+        "expanded_text": "jaundice",
+        "match_type": "exact_label",
+        "confidence": 1.0,
+        "matched": true,
+        "umls_cui": "C0022346"
+      },
+      {
+        "text": "polyuria",
+        "ner_score": 0.961,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0000103",
+        "hpo_name": "Polyuria",
+        "expanded_text": "polyuria",
+        "match_type": "exact_label",
+        "confidence": 1.0,
+        "matched": true,
+        "umls_cui": "C0032617"
+      },
+      {
+        "text": "polydipsia",
+        "ner_score": 0.938,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0001959",
+        "hpo_name": "Polydipsia",
+        "expanded_text": "polydipsia",
+        "match_type": "exact_label",
+        "confidence": 1.0,
+        "matched": true,
+        "umls_cui": "C0085602"
+      },
+      {
+        "text": "weight gain",
+        "ner_score": 0.895,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0004324",
+        "hpo_name": "Increased body weight",
+        "expanded_text": "weight gain",
+        "match_type": "related_synonym",
+        "confidence": 1.0,
+        "matched": true,
+        "umls_cui": "C0043094"
+      },
+      {
+        "text": "an elevated fasting blood glucose level",
+        "ner_score": 0.995,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0008283",
+        "hpo_name": "Fasting hyperinsulinemia",
+        "expanded_text": "an elevated fasting blood glucose level",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.8394,
+        "matched": true,
+        "umls_cui": "C1864954"
+      },
+      {
+        "text": "mildly elevated thyroid stimulating hormone",
+        "ner_score": 0.998,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0002925",
+        "hpo_name": "Elevated circulating thyroid-stimulating hormone concentration",
+        "expanded_text": "mildly elevated thyroid stimulating hormone",
+        "match_type": "substring_match",
+        "confidence": 0.95,
+        "matched": true,
+        "umls_cui": "C0586553"
+      },
+      {
+        "text": "function",
+        "ner_score": 0.906,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "function",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "Cushing",
+        "ner_score": 0.842,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "Cushing",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "syndrome",
+        "ner_score": 0.929,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "syndrome",
+        "match_type": "skipped_en_noise",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "multiple sinus and ear infections",
+        "ner_score": 0.998,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0000388",
+        "hpo_name": "Otitis media",
+        "expanded_text": "multiple sinus and ear infections",
+        "match_type": "substring_match",
+        "confidence": 0.95,
+        "matched": true,
+        "umls_cui": "C0029882"
+      },
+      {
+        "text": "infections",
+        "ner_score": 0.189,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "infections",
+        "match_type": "skipped_low_ner_score",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "speech delay",
+        "ner_score": 0.885,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0000750",
+        "hpo_name": "Delayed speech and language development",
+        "expanded_text": "speech delay",
+        "match_type": "exact_synonym",
+        "confidence": 1.0,
+        "matched": true,
+        "umls_cui": "C0023012"
+      },
+      {
+        "text": "frequent ear infections",
+        "ner_score": 0.998,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "frequent ear infections",
+        "match_type": "deduplicated",
+        "confidence": 0.95,
+        "matched": false,
+        "umls_cui": "C0029882"
+      },
+      {
+        "text": "delayed milestone",
+        "ner_score": 0.752,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0001263",
+        "hpo_name": "Global developmental delay",
+        "expanded_text": "delayed milestone",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.8825,
+        "matched": true,
+        "umls_cui": "C0557874"
+      },
+      {
+        "text": "frequent infections",
+        "ner_score": 0.998,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0002719",
+        "hpo_name": "Recurrent infections",
+        "expanded_text": "frequent infections",
+        "match_type": "clinical_synonym",
+        "confidence": 1.0,
+        "matched": true,
+        "umls_cui": "C0239998"
+      },
+      {
+        "text": "asthma",
+        "ner_score": 0.846,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0002099",
+        "hpo_name": "Asthma",
+        "expanded_text": "asthma",
+        "match_type": "exact_label",
+        "confidence": 1.0,
+        "matched": true,
+        "umls_cui": "C0004096"
+      },
+      {
+        "text": "maternal renal injury",
+        "ner_score": 0.998,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "maternal renal injury",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "photophobia",
+        "ner_score": 0.955,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0000613",
+        "hpo_name": "Photophobia",
+        "expanded_text": "photophobia",
+        "match_type": "exact_label",
+        "confidence": 1.0,
+        "matched": true,
+        "umls_cui": "C0085636"
+      },
+      {
+        "text": "nephrolithiasis",
+        "ner_score": 0.99,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0000787",
+        "hpo_name": "Nephrolithiasis",
+        "expanded_text": "nephrolithiasis",
+        "match_type": "exact_label",
+        "confidence": 1.0,
+        "matched": true,
+        "umls_cui": "C0392525"
+      },
+      {
+        "text": "tension",
+        "ner_score": 0.997,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "tension",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "hearing loss",
+        "ner_score": 0.999,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0000365",
+        "hpo_name": "Hearing impairment",
+        "expanded_text": "hearing loss",
+        "match_type": "clinical_synonym",
+        "confidence": 1.0,
+        "matched": true,
+        "umls_cui": "C0011053"
+      },
+      {
+        "text": "consanguinity",
+        "ner_score": 0.832,
+        "negated": true,
+        "negation_cue": "no",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "consanguinity",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "subjective chills",
+        "ner_score": 0.998,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "subjective chills",
+        "match_type": "deduplicated",
+        "confidence": 0.7074,
+        "matched": false,
+        "umls_cui": "C0015967"
+      },
+      {
+        "text": "chills",
+        "ner_score": 0.973,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "chills",
+        "match_type": "sapbert_rejected_low_conf",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "constipation",
+        "ner_score": 0.971,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0002019",
+        "hpo_name": "Constipation",
+        "expanded_text": "constipation",
+        "match_type": "exact_label",
+        "confidence": 1.0,
+        "matched": true,
+        "umls_cui": "C0009806"
+      },
+      {
+        "text": "waking",
+        "ner_score": 0.278,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "waking",
+        "match_type": "skipped_low_ner_score",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "fever",
+        "ner_score": 0.976,
+        "negated": true,
+        "negation_cue": "denied",
+        "hpo_id": "HP:0001945",
+        "hpo_name": "Fever",
+        "expanded_text": "fever",
+        "match_type": "clinical_synonym",
+        "confidence": 1.0,
+        "matched": true,
+        "umls_cui": "C0015967"
+      },
+      {
+        "text": "abdominal pain",
+        "ner_score": 0.997,
+        "negated": true,
+        "negation_cue": "denied",
+        "hpo_id": "HP:0002027",
+        "hpo_name": "Abdominal pain",
+        "expanded_text": "abdominal pain",
+        "match_type": "exact_label",
+        "confidence": 1.0,
+        "matched": true,
+        "umls_cui": "C0000737"
+      },
+      {
+        "text": "pain",
+        "ner_score": 0.872,
+        "negated": true,
+        "negation_cue": "denied",
+        "hpo_id": "HP:0012531",
+        "hpo_name": "Pain",
+        "expanded_text": "pain",
+        "match_type": "exact_label",
+        "confidence": 1.0,
+        "matched": true,
+        "umls_cui": "C0030193"
+      },
+      {
+        "text": "daytime or nighttime enuresis",
+        "ner_score": 0.887,
+        "negated": true,
+        "negation_cue": "denied",
+        "hpo_id": "HP:0010677",
+        "hpo_name": "Enuresis nocturna",
+        "expanded_text": "daytime or nighttime enuresis",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.9092,
+        "matched": true,
+        "umls_cui": "C0270327"
+      },
+      {
+        "text": "enuresis",
+        "ner_score": 0.972,
+        "negated": true,
+        "negation_cue": "denied",
+        "hpo_id": "HP:0000805",
+        "hpo_name": "Enuresis",
+        "expanded_text": "enuresis",
+        "match_type": "exact_label",
+        "confidence": 1.0,
+        "matched": true,
+        "umls_cui": "C0014394"
+      },
+      {
+        "text": "urgency",
+        "ner_score": 0.965,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "urgency",
+        "match_type": "sapbert_rejected_low_conf",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "dysuria",
+        "ner_score": 0.975,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0100518",
+        "hpo_name": "Dysuria",
+        "expanded_text": "dysuria",
+        "match_type": "exact_label",
+        "confidence": 1.0,
+        "matched": true,
+        "umls_cui": "C0013428"
+      },
+      {
+        "text": "inability to empty",
+        "ner_score": 0.697,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0000019",
+        "hpo_name": "Urinary hesitancy",
+        "expanded_text": "inability to empty",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.743,
+        "matched": true,
+        "umls_cui": "C0152032"
+      },
+      {
+        "text": "inability to empty his bladder",
+        "ner_score": 0.997,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0000020",
+        "hpo_name": "Urinary incontinence",
+        "expanded_text": "inability to empty his bladder",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.7278,
+        "matched": true,
+        "umls_cui": "C0042024"
+      },
+      {
+        "text": "bladder",
+        "ner_score": 0.561,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "bladder",
+        "match_type": "sapbert_rejected_low_conf",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "hematuria",
+        "ner_score": 0.974,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0000790",
+        "hpo_name": "Hematuria",
+        "expanded_text": "hematuria",
+        "match_type": "exact_label",
+        "confidence": 1.0,
+        "matched": true,
+        "umls_cui": "C0018965"
+      },
+      {
+        "text": "ejection murmur",
+        "ner_score": 0.928,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "ejection murmur",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "murmur",
+        "ner_score": 0.958,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "murmur",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "hypogonadism",
+        "ner_score": 0.961,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0000135",
+        "hpo_name": "Hypogonadism",
+        "expanded_text": "hypogonadism",
+        "match_type": "exact_label",
+        "confidence": 1.0,
+        "matched": true,
+        "umls_cui": "C0020619"
+      },
+      {
+        "text": "ypogonad",
+        "ner_score": 0.879,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "ypogonad",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "other dysmorphic features",
+        "ner_score": 0.996,
+        "negated": true,
+        "negation_cue": "no",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "other dysmorphic features",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "dysmorphic features",
+        "ner_score": 0.906,
+        "negated": true,
+        "negation_cue": "no",
+        "hpo_id": "HP:0001999",
+        "hpo_name": "Abnormal facial shape",
+        "expanded_text": "dysmorphic features",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.8398,
+        "matched": true,
+        "umls_cui": "C0266617"
+      },
+      {
+        "text": "elevated serum creatinine",
+        "ner_score": 0.995,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0003259",
+        "hpo_name": "Elevated circulating creatinine concentration",
+        "expanded_text": "elevated serum creatinine",
+        "match_type": "exact_synonym",
+        "confidence": 1.0,
+        "matched": true,
+        "umls_cui": "C0700225"
+      },
+      {
+        "text": "low serum calcium",
+        "ner_score": 0.899,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0002901",
+        "hpo_name": "Hypocalcemia",
+        "expanded_text": "low serum calcium",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.8877,
+        "matched": true,
+        "umls_cui": "C0020598"
+      },
+      {
+        "text": "slightly elevated serum phosphorus",
+        "ner_score": 0.979,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0003109",
+        "hpo_name": "Hyperphosphaturia",
+        "expanded_text": "slightly elevated serum phosphorus",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.7753,
+        "matched": true,
+        "umls_cui": "C0268079"
+      },
+      {
+        "text": "normocytic anemia",
+        "ner_score": 0.998,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0001897",
+        "hpo_name": "Normocytic anemia",
+        "expanded_text": "normocytic anemia",
+        "match_type": "exact_label",
+        "confidence": 1.0,
+        "matched": true,
+        "umls_cui": "C0085577"
+      },
+      {
+        "text": "anemia",
+        "ner_score": 0.802,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0001903",
+        "hpo_name": "Anemia",
+        "expanded_text": "anemia",
+        "match_type": "exact_label",
+        "confidence": 1.0,
+        "matched": true,
+        "umls_cui": "C0002871"
+      },
+      {
+        "text": "moderate blood",
+        "ner_score": 0.996,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "moderate blood",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "proteinuria",
+        "ner_score": 0.939,
+        "negated": true,
+        "negation_cue": "no",
+        "hpo_id": "HP:0000093",
+        "hpo_name": "Proteinuria",
+        "expanded_text": "proteinuria",
+        "match_type": "exact_label",
+        "confidence": 1.0,
+        "matched": true,
+        "umls_cui": "C0033687"
+      },
+      {
+        "text": "ukocyte esterase",
+        "ner_score": 0.99,
+        "negated": true,
+        "negation_cue": "no",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "ukocyte esterase",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "small kidneys",
+        "ner_score": 0.877,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0000089",
+        "hpo_name": "Renal hypoplasia",
+        "expanded_text": "small kidneys",
+        "match_type": "exact_synonym",
+        "confidence": 1.0,
+        "matched": true,
+        "umls_cui": "C0266295"
+      },
+      {
+        "text": "increased echogenicity bilaterally",
+        "ner_score": 0.97,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "increased echogenicity bilaterally",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "cystic",
+        "ner_score": 0.587,
+        "negated": true,
+        "negation_cue": "no evidence of",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "cystic",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "cystic disease",
+        "ner_score": 0.998,
+        "negated": true,
+        "negation_cue": "no evidence of",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "cystic disease",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "disease",
+        "ner_score": 0.764,
+        "negated": true,
+        "negation_cue": "no evidence of",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "disease",
+        "match_type": "skipped_en_noise",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "the murmur",
+        "ner_score": 0.998,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "the murmur",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "cystine crystals",
+        "ner_score": 0.904,
+        "negated": true,
+        "negation_cue": "no",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "cystine crystals",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "ine crystals",
+        "ner_score": 0.58,
+        "negated": true,
+        "negation_cue": "no",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "ine crystals",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "bilateral retinal dystrophy",
+        "ner_score": 0.998,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0000556",
+        "hpo_name": "Retinal dystrophy",
+        "expanded_text": "bilateral retinal dystrophy",
+        "match_type": "substring_match",
+        "confidence": 0.95,
+        "matched": true,
+        "umls_cui": "C0854723"
+      },
+      {
+        "text": "retinal",
+        "ner_score": 0.783,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "retinal",
+        "match_type": "sapbert_rejected_low_conf",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "dystrophy",
+        "ner_score": 0.839,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0003560",
+        "hpo_name": "Muscular dystrophy",
+        "expanded_text": "dystrophy",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.8243,
+        "matched": true,
+        "umls_cui": "C0026850"
+      },
+      {
+        "text": "hypertension",
+        "ner_score": 0.9,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0000822",
+        "hpo_name": "Hypertension",
+        "expanded_text": "hypertension",
+        "match_type": "text_scan_exact_label",
+        "confidence": 0.95,
+        "matched": true,
+        "umls_cui": "C0020538",
+        "umls_all": [
+          "C0020538",
+          "C0497247"
+        ]
+      }
+    ],
+    "treatment": [
+      {
+        "text": "induction",
+        "ner_score": 0.27,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "induction",
+        "match_type": "skipped_low_ner_score",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "restriction",
+        "ner_score": 0.622,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "restriction",
+        "match_type": "skipped_treatment",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "delivery via Cesarean section",
+        "ner_score": 0.641,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "delivery via Cesarean section",
+        "match_type": "skipped_treatment",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "phototherapy",
+        "ner_score": 0.759,
+        "negated": true,
+        "negation_cue": "did not",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "phototherapy",
+        "match_type": "skipped_treatment",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "therapy",
+        "ner_score": 0.859,
+        "negated": true,
+        "negation_cue": "did not",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "therapy",
+        "match_type": "skipped_en_noise",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "adenoidectomy",
+        "ner_score": 0.796,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "adenoidectomy",
+        "match_type": "skipped_treatment",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "myringotomy tubes",
+        "ner_score": 0.833,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "myringotomy tubes",
+        "match_type": "skipped_treatment",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "speech therapy",
+        "ner_score": 0.734,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "speech therapy",
+        "match_type": "skipped_treatment",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "hearing therapy",
+        "ner_score": 0.526,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "hearing therapy",
+        "match_type": "skipped_low_ner_score",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "physical and occupational therapy services",
+        "ner_score": 0.562,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "physical and occupational therapy services",
+        "match_type": "skipped_treatment",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "additional support",
+        "ner_score": 0.817,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "additional support",
+        "match_type": "skipped_treatment",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "support",
+        "ner_score": 0.275,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "support",
+        "match_type": "skipped_en_noise",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "tica",
+        "ner_score": 0.977,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "tica",
+        "match_type": "skipped_treatment",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "ticasone",
+        "ner_score": 0.839,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "ticasone",
+        "match_type": "skipped_treatment",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "tirizine",
+        "ner_score": 0.789,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "tirizine",
+        "match_type": "skipped_treatment",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "zine",
+        "ner_score": 0.982,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "zine",
+        "match_type": "skipped_treatment",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "void",
+        "ner_score": 0.398,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "void",
+        "match_type": "skipped_low_ner_score",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      }
+    ],
+    "ordo_candidates": [
+      {
+        "ordo_id": "ORPHA:358",
+        "name": "Gitelman syndrome",
+        "name_fr": "",
+        "score": 0.478,
+        "coverage": 0.1324,
+        "matched_hpo": [
+          "HP:0000017",
+          "HP:0000020",
+          "HP:0000093",
+          "HP:0000805",
+          "HP:0001959",
+          "HP:0002019",
+          "HP:0002027",
+          "HP:0002901",
+          "HP:0009800"
+        ],
+        "matched_count": 9,
+        "total_disease_hpo": 68,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:49041",
+        "name": "IgG4-related retroperitoneal fibrosis",
+        "name_fr": "",
+        "score": 0.4502,
+        "coverage": 0.2326,
+        "matched_hpo": [
+          "HP:0000790",
+          "HP:0000822",
+          "HP:0001824",
+          "HP:0001897",
+          "HP:0001945",
+          "HP:0002019",
+          "HP:0002027",
+          "HP:0003259",
+          "HP:0012531",
+          "HP:0100518"
+        ],
+        "matched_count": 10,
+        "total_disease_hpo": 43,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:213",
+        "name": "Cystinosis",
+        "name_fr": "",
+        "score": 0.4493,
+        "coverage": 0.1786,
+        "matched_hpo": [
+          "HP:0000093",
+          "HP:0000135",
+          "HP:0000613",
+          "HP:0000787",
+          "HP:0001945",
+          "HP:0001959",
+          "HP:0002019",
+          "HP:0002901",
+          "HP:0003076",
+          "HP:0003109"
+        ],
+        "matched_count": 10,
+        "total_disease_hpo": 56,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:536",
+        "name": "Systemic lupus erythematosus",
+        "name_fr": "",
+        "score": 0.4088,
+        "coverage": 0.1059,
+        "matched_hpo": [
+          "HP:0000093",
+          "HP:0000388",
+          "HP:0000790",
+          "HP:0000822",
+          "HP:0001824",
+          "HP:0001903",
+          "HP:0001945",
+          "HP:0002027",
+          "HP:0003259"
+        ],
+        "matched_count": 9,
+        "total_disease_hpo": 85,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:85450",
+        "name": "Hereditary amyloidosis with primary renal involvement",
+        "name_fr": "",
+        "score": 0.3876,
+        "coverage": 0.186,
+        "matched_hpo": [
+          "HP:0000017",
+          "HP:0000093",
+          "HP:0000135",
+          "HP:0000822",
+          "HP:0001824",
+          "HP:0001903",
+          "HP:0002027",
+          "HP:0003259"
+        ],
+        "matched_count": 8,
+        "total_disease_hpo": 43,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:411634",
+        "name": "Juvenile nephropathic cystinosis",
+        "name_fr": "",
+        "score": 0.3669,
+        "coverage": 0.1795,
+        "matched_hpo": [
+          "HP:0000093",
+          "HP:0000613",
+          "HP:0001959",
+          "HP:0002901",
+          "HP:0003076",
+          "HP:0003259",
+          "HP:0004396"
+        ],
+        "matched_count": 7,
+        "total_disease_hpo": 39,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:340",
+        "name": "Hemorrhagic fever-renal syndrome",
+        "name_fr": "",
+        "score": 0.3545,
+        "coverage": 0.1167,
+        "matched_hpo": [
+          "HP:0000093",
+          "HP:0000790",
+          "HP:0000822",
+          "HP:0001903",
+          "HP:0001945",
+          "HP:0002027",
+          "HP:0003259"
+        ],
+        "matched_count": 7,
+        "total_disease_hpo": 60,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:3463",
+        "name": "Wolfram syndrome",
+        "name_fr": "",
+        "score": 0.3523,
+        "coverage": 0.1707,
+        "matched_hpo": [
+          "HP:0000135",
+          "HP:0000365",
+          "HP:0000819",
+          "HP:0001903",
+          "HP:0001959",
+          "HP:0002019",
+          "HP:0100518"
+        ],
+        "matched_count": 7,
+        "total_disease_hpo": 41,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:699",
+        "name": "Pearson syndrome",
+        "name_fr": "",
+        "score": 0.3521,
+        "coverage": 0.1,
+        "matched_hpo": [
+          "HP:0000093",
+          "HP:0000365",
+          "HP:0000819",
+          "HP:0001263",
+          "HP:0001903",
+          "HP:0002901",
+          "HP:0003076"
+        ],
+        "matched_count": 7,
+        "total_disease_hpo": 70,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:652",
+        "name": "Multiple endocrine neoplasia type 1",
+        "name_fr": "",
+        "score": 0.3516,
+        "coverage": 0.0723,
+        "matched_hpo": [
+          "HP:0000787",
+          "HP:0000819",
+          "HP:0000822",
+          "HP:0001824",
+          "HP:0002019",
+          "HP:0002027"
+        ],
+        "matched_count": 6,
+        "total_disease_hpo": 83,
+        "text_match": false
+      }
+    ],
+    "stats": {
+      "total": 197,
+      "matched": 46,
+      "unmatched": 151,
+      "match_rate": 23.4,
+      "unique_hpo": 46,
+      "ordo_matches": 10
+    }
+  },
+  "phenopacket": {
+    "id": "phenopacket-RA_EN_015",
+    "subject": {
+      "id": "RA_EN_015",
+      "sex": "MALE"
+    },
+    "input": "A male aged 9 years and 9 months presented to the Emergency Department with a one-week history of increased urinary frequency and thirst. He reported decreased appetite and had an unintentional weight loss of 7 lbs over the past week. Earlier that day, his primary care physician noted an elevated blood glucose finger stick at 138 mg/dL and urinalysis showed glucosuria with 100 mg/dL. He was referred to the Emergency Department for further care. His birth history included prematurity with induction at 36 weeks due to intrauterine growth restriction, and delivery via Cesarean section due to fetal distress. His birth weight was 2690 grams and birth length was 48.3 cm. He was monitored in the neonatal intensive care unit for 24 hours for potential hypoglycemia due to maternal gestational diabetes, but his blood glucose levels remained normal. He had jaundice but did not require phototherapy and passed his newborn hearing screen before discharge. His past medical history included an endocrine evaluation at 4 years and 3 months of age for polyuria, polydipsia, and weight gain. His weight was stable in the 50th percentile until approximately 2 years of age when it increased to the 90th percentile, reaching the 99th percentile at the time of his endocrinology visit. His height decreased from the 25th percentile at 3 years of age to approximately the 15th percentile at the time of his endocrinology visit. Evaluation revealed an elevated fasting blood glucose level of 113 mg/dL and mildly elevated thyroid stimulating hormone at 5.3 mIU/L (normal range 0.5–4.3 mIU/L). His serum creatinine was 0.41 mg/dL and electrolytes were unremarkable. Further studies for thyroid function and Cushing's syndrome were recommended but not completed. He had a history of multiple sinus and ear infections requiring adenoidectomy and four sets of myringotomy tubes. He experienced speech delay due to frequent ear infections and received speech therapy twice weekly and hearing therapy three times weekly. He had physical and occupational therapy services until kindergarten for delayed milestones, including walking at 16 months of age. He receives additional support for reading, and formal academic testing was recommended by his school but not yet completed. An immunologic evaluation at an outside hospital due to frequent infections was unremarkable. He was diagnosed with asthma at 1 year of age and was prescribed fluticasone and cetirizine. His family history included maternal renal injury secondary to diabetes during pregnancy, photophobia in his mother, nephrolithiasis in the maternal grandfather and maternal aunt, hypertension in the maternal grandfather, and hearing loss and photophobia in a first cousin on the maternal side. There was no family history of consanguinity. Review of systems revealed subjective chills and constipation. He also reported waking at night to drink and void but denied fever, abdominal pain, daytime or nighttime enuresis, urgency, dysuria, inability to empty his bladder, or hematuria. In the Emergency Department, his blood pressure was 123/71 mmHg, weight was 37 kg (82nd percentile), and height was 127.5 cm (3rd percentile). Physical examination revealed a grade 2/6 systolic ejection murmur and hypogonadism. There were concerns for photophobia during his eye exam. No other dysmorphic features were noted. Initial laboratory work-up showed elevated serum creatinine of 4.4 mg/dL, low serum calcium of 7.7 mg/dL (8.8–10.1 mg/dL), and slightly elevated serum phosphorus of 6.1 mg/dL (3.7–5.6 mg/dL). Serum intact parathyroid hormone level was elevated at 340 pg/mL (9–52 pg/mL). Complete blood count revealed normocytic anemia with serum hemoglobin of 8.1 g/dL (11.5–15.5 g/dL). Urinalysis showed moderate blood, no proteinuria, no leukocyte esterase, and a specific gravity of ≤1.005. Renal/bladder ultrasound showed small kidneys with right kidney 6.6 cm and left kidney 7.8 cm with increased echogenicity bilaterally and no evidence of cystic disease. An echocardiogram was performed due to the murmur, which was unremarkable. Ophthalmology exam showed no cystine crystals but revealed bilateral retinal dystrophy with 20/50 OD and 20/30 OS. Bone age assessment indicated it was greater than 2 standard deviations above his chronological age.",
+    "target": "Gitelman syndrome",
+    "phenotypicFeatures": [
+      {
+        "type": {
+          "id": "HP:0100515",
+          "label": "Pollakisuria",
+          "umls_cui": "C0042023"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_015",
+              "description": "NER: increased urinary frequency (0.998) | Match: sapbert_similarity (0.808)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0000017",
+          "label": "Nocturia",
+          "umls_cui": "C0028734"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_015",
+              "description": "NER: urinary frequency (0.893) | Match: sapbert_similarity (0.734)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0004396",
+          "label": "Poor appetite",
+          "umls_cui": "C0232462"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_015",
+              "description": "NER: decreased appetite (0.720) | Match: exact_synonym (1.000)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0001824",
+          "label": "Weight loss",
+          "umls_cui": "C1262477"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_015",
+              "description": "NER: weight loss (0.858) | Match: clinical_synonym (1.000)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0003076",
+          "label": "Glycosuria",
+          "umls_cui": "C0017979"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_015",
+              "description": "NER: glucosuria (0.964) | Match: exact_synonym (1.000)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0001511",
+          "label": "Intrauterine growth retardation",
+          "umls_cui": "C0015934"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_015",
+              "description": "NER: intrauterine growth (0.953) | Match: sapbert_similarity (0.749)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0012051",
+          "label": "Reactive hypoglycemia",
+          "umls_cui": "C0271710"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_015",
+              "description": "NER: potential hypoglycemia (0.982) | Match: sapbert_similarity (0.755)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0001943",
+          "label": "Hypoglycemia",
+          "umls_cui": "C0020615"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_015",
+              "description": "NER: hypoglycemia (0.682) | Match: exact_label (1.000)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0009800",
+          "label": "Maternal diabetes",
+          "umls_cui": "C0085207"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_015",
+              "description": "NER: maternal gestational diabetes (0.958) | Match: substring_match (0.950)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0000819",
+          "label": "Diabetes mellitus",
+          "umls_cui": "C0011849"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_015",
+              "description": "NER: diabetes (0.895) | Match: sapbert_similarity (0.972)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0000952",
+          "label": "Jaundice",
+          "umls_cui": "C0022346"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_015",
+              "description": "NER: jaundice (0.783) | Match: exact_label (1.000)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0000103",
+          "label": "Polyuria",
+          "umls_cui": "C0032617"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_015",
+              "description": "NER: polyuria (0.961) | Match: exact_label (1.000)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0001959",
+          "label": "Polydipsia",
+          "umls_cui": "C0085602"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_015",
+              "description": "NER: polydipsia (0.938) | Match: exact_label (1.000)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0004324",
+          "label": "Increased body weight",
+          "umls_cui": "C0043094"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_015",
+              "description": "NER: weight gain (0.895) | Match: related_synonym (1.000)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0008283",
+          "label": "Fasting hyperinsulinemia",
+          "umls_cui": "C1864954"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_015",
+              "description": "NER: an elevated fasting blood glucose level (0.995) | Match: sapbert_similarity (0.839)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0002925",
+          "label": "Elevated circulating thyroid-stimulating hormone concentration",
+          "umls_cui": "C0586553"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_015",
+              "description": "NER: mildly elevated thyroid stimulating hormone (0.998) | Match: substring_match (0.950)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0000388",
+          "label": "Otitis media",
+          "umls_cui": "C0029882"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_015",
+              "description": "NER: multiple sinus and ear infections (0.998) | Match: substring_match (0.950)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0000750",
+          "label": "Delayed speech and language development",
+          "umls_cui": "C0023012"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_015",
+              "description": "NER: speech delay (0.885) | Match: exact_synonym (1.000)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0001263",
+          "label": "Global developmental delay",
+          "umls_cui": "C0557874"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_015",
+              "description": "NER: delayed milestone (0.752) | Match: sapbert_similarity (0.882)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0002719",
+          "label": "Recurrent infections",
+          "umls_cui": "C0239998"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_015",
+              "description": "NER: frequent infections (0.998) | Match: clinical_synonym (1.000)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0002099",
+          "label": "Asthma",
+          "umls_cui": "C0004096"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_015",
+              "description": "NER: asthma (0.846) | Match: exact_label (1.000)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0000613",
+          "label": "Photophobia",
+          "umls_cui": "C0085636"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_015",
+              "description": "NER: photophobia (0.955) | Match: exact_label (1.000)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0000787",
+          "label": "Nephrolithiasis",
+          "umls_cui": "C0392525"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_015",
+              "description": "NER: nephrolithiasis (0.990) | Match: exact_label (1.000)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0000365",
+          "label": "Hearing impairment",
+          "umls_cui": "C0011053"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_015",
+              "description": "NER: hearing loss (0.999) | Match: clinical_synonym (1.000)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0002019",
+          "label": "Constipation",
+          "umls_cui": "C0009806"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_015",
+              "description": "NER: constipation (0.971) | Match: exact_label (1.000)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0001945",
+          "label": "Fever",
+          "umls_cui": "C0015967"
+        },
+        "excluded": true,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_015",
+              "description": "NER: fever (0.976) | Match: clinical_synonym (1.000) | Negated by: \"denied\""
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0002027",
+          "label": "Abdominal pain",
+          "umls_cui": "C0000737"
+        },
+        "excluded": true,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_015",
+              "description": "NER: abdominal pain (0.997) | Match: exact_label (1.000) | Negated by: \"denied\""
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0012531",
+          "label": "Pain",
+          "umls_cui": "C0030193"
+        },
+        "excluded": true,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_015",
+              "description": "NER: pain (0.872) | Match: exact_label (1.000) | Negated by: \"denied\""
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0010677",
+          "label": "Enuresis nocturna",
+          "umls_cui": "C0270327"
+        },
+        "excluded": true,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_015",
+              "description": "NER: daytime or nighttime enuresis (0.887) | Match: sapbert_similarity (0.909) | Negated by: \"denied\""
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0000805",
+          "label": "Enuresis",
+          "umls_cui": "C0014394"
+        },
+        "excluded": true,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_015",
+              "description": "NER: enuresis (0.972) | Match: exact_label (1.000) | Negated by: \"denied\""
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0100518",
+          "label": "Dysuria",
+          "umls_cui": "C0013428"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_015",
+              "description": "NER: dysuria (0.975) | Match: exact_label (1.000)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0000019",
+          "label": "Urinary hesitancy",
+          "umls_cui": "C0152032"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_015",
+              "description": "NER: inability to empty (0.697) | Match: sapbert_similarity (0.743)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0000020",
+          "label": "Urinary incontinence",
+          "umls_cui": "C0042024"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_015",
+              "description": "NER: inability to empty his bladder (0.997) | Match: sapbert_similarity (0.728)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0000790",
+          "label": "Hematuria",
+          "umls_cui": "C0018965"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_015",
+              "description": "NER: hematuria (0.974) | Match: exact_label (1.000)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0000135",
+          "label": "Hypogonadism",
+          "umls_cui": "C0020619"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_015",
+              "description": "NER: hypogonadism (0.961) | Match: exact_label (1.000)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0001999",
+          "label": "Abnormal facial shape",
+          "umls_cui": "C0266617"
+        },
+        "excluded": true,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_015",
+              "description": "NER: dysmorphic features (0.906) | Match: sapbert_similarity (0.840) | Negated by: \"no\""
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0003259",
+          "label": "Elevated circulating creatinine concentration",
+          "umls_cui": "C0700225"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_015",
+              "description": "NER: elevated serum creatinine (0.995) | Match: exact_synonym (1.000)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0002901",
+          "label": "Hypocalcemia",
+          "umls_cui": "C0020598"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_015",
+              "description": "NER: low serum calcium (0.899) | Match: sapbert_similarity (0.888)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0003109",
+          "label": "Hyperphosphaturia",
+          "umls_cui": "C0268079"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_015",
+              "description": "NER: slightly elevated serum phosphorus (0.979) | Match: sapbert_similarity (0.775)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0001897",
+          "label": "Normocytic anemia",
+          "umls_cui": "C0085577"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_015",
+              "description": "NER: normocytic anemia (0.998) | Match: exact_label (1.000)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0001903",
+          "label": "Anemia",
+          "umls_cui": "C0002871"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_015",
+              "description": "NER: anemia (0.802) | Match: exact_label (1.000)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0000093",
+          "label": "Proteinuria",
+          "umls_cui": "C0033687"
+        },
+        "excluded": true,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_015",
+              "description": "NER: proteinuria (0.939) | Match: exact_label (1.000) | Negated by: \"no\""
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0000089",
+          "label": "Renal hypoplasia",
+          "umls_cui": "C0266295"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_015",
+              "description": "NER: small kidneys (0.877) | Match: exact_synonym (1.000)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0000556",
+          "label": "Retinal dystrophy",
+          "umls_cui": "C0854723"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_015",
+              "description": "NER: bilateral retinal dystrophy (0.998) | Match: substring_match (0.950)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0003560",
+          "label": "Muscular dystrophy",
+          "umls_cui": "C0026850"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_015",
+              "description": "NER: dystrophy (0.839) | Match: sapbert_similarity (0.824)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0000822",
+          "label": "Hypertension",
+          "umls_cui": "C0020538"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_015",
+              "description": "NER: hypertension (0.900) | Match: text_scan_exact_label (0.950)"
+            }
+          }
+        ]
+      }
+    ],
+    "metaData": {
+      "created": "2026-06-19T15:10:43Z",
+      "createdBy": "clinical-preanalysis-pipeline-v2",
+      "phenopacketSchemaVersion": "2.0",
+      "resources": [
+        {
+          "id": "hp",
+          "name": "Human Phenotype Ontology",
+          "url": "https://hpo.jax.org",
+          "version": "2024-04-26",
+          "namespacePrefix": "HP",
+          "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        }
+      ]
+    },
+    "interpretations": [
+      {
+        "id": "interpretation-RA_EN_015",
+        "progressStatus": "IN_PROGRESS",
+        "diagnosis": {
+          "disease": {
+            "id": "ORPHA:358",
+            "label": "Gitelman syndrome"
+          },
+          "score": 0.478,
+          "allCandidates": [
+            {
+              "id": "ORPHA:358",
+              "label": "Gitelman syndrome",
+              "score": 0.478
+            },
+            {
+              "id": "ORPHA:49041",
+              "label": "IgG4-related retroperitoneal fibrosis",
+              "score": 0.4502
+            },
+            {
+              "id": "ORPHA:213",
+              "label": "Cystinosis",
+              "score": 0.4493
+            },
+            {
+              "id": "ORPHA:536",
+              "label": "Systemic lupus erythematosus",
+              "score": 0.4088
+            },
+            {
+              "id": "ORPHA:85450",
+              "label": "Hereditary amyloidosis with primary renal involvement",
+              "score": 0.3876
+            },
+            {
+              "id": "ORPHA:411634",
+              "label": "Juvenile nephropathic cystinosis",
+              "score": 0.3669
+            },
+            {
+              "id": "ORPHA:340",
+              "label": "Hemorrhagic fever-renal syndrome",
+              "score": 0.3545
+            },
+            {
+              "id": "ORPHA:3463",
+              "label": "Wolfram syndrome",
+              "score": 0.3523
+            },
+            {
+              "id": "ORPHA:699",
+              "label": "Pearson syndrome",
+              "score": 0.3521
+            },
+            {
+              "id": "ORPHA:652",
+              "label": "Multiple endocrine neoplasia type 1",
+              "score": 0.3516
+            }
+          ]
+        }
+      }
+    ],
+    "_validationWarnings": [
+      {
+        "type": "sex_anatomy_conflict",
+        "severity": "critical",
+        "message": "Female-specific term 'pregnancy' found in male patient record",
+        "term": "pregnancy"
+      }
+    ],
+    "_pipelineStats": {
+      "totalEntities": 197,
+      "matchedHPO": 46,
+      "unmatchedEntities": 151,
+      "phenopacketFeatures": 46,
+      "negatedFeatures": 7,
+      "numericPhenotypes": 0,
+      "ordoCandidates": 10
+    }
+  }
+}

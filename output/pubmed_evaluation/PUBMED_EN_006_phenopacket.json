@@ -9,6 +9,46 @@
   "phenotypicFeatures": [
     {
       "type": {
+        "id": "HP:0001905",
+        "label": "Congenital thrombocytopenia",
+        "umls_cui": "C0272278"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "PUBMED_EN_006",
+            "description": "NER: x - linked thrombocytopenia (0.996) | Match: sapbert_similarity (0.857)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0001419",
+        "label": "X-linked recessive inheritance",
+        "umls_cui": "C1845977"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "PUBMED_EN_006",
+            "description": "NER: a rare x - linked disease (0.933) | Match: sapbert_similarity (0.807)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
         "id": "HP:0001873",
         "label": "Thrombocytopenia",
         "umls_cui": "C0040034"
@@ -49,26 +89,6 @@
     },
     {
       "type": {
-        "id": "HP:0002719",
-        "label": "Recurrent infections",
-        "umls_cui": "C0239998"
-      },
-      "excluded": false,
-      "evidence": [
-        {
-          "evidenceCode": {
-            "id": "ECO:0000033",
-            "label": "author statement supported by traceable reference"
-          },
-          "reference": {
-            "id": "PUBMED_EN_006",
-            "description": "NER: infection (0.566) | Match: sapbert_similarity (0.741)"
-          }
-        }
-      ]
-    },
-    {
-      "type": {
         "id": "HP:0002960",
         "label": "Autoimmunity",
         "umls_cui": "C0004364"
@@ -82,16 +102,16 @@
           },
           "reference": {
             "id": "PUBMED_EN_006",
-            "description": "NER: autoimmune (0.411) | Match: clinical_synonym (1.000)"
+            "description": "NER: autoimmune diseases (0.997) | Match: sapbert_similarity (0.976)"
           }
         }
       ]
     },
     {
       "type": {
-        "id": "HP:0001892",
-        "label": "Abnormal bleeding",
-        "umls_cui": "C1458140"
+        "id": "HP:0002664",
+        "label": "Neoplasm",
+        "umls_cui": "C0006826"
       },
       "excluded": false,
       "evidence": [
@@ -102,27 +122,7 @@
           },
           "reference": {
             "id": "PUBMED_EN_006",
-            "description": "NER: hemorrhage (0.795) | Match: sapbert_similarity (0.764)"
-          }
-        }
-      ]
-    },
-    {
-      "type": {
-        "id": "HP:0010799",
-        "label": "Pinealoma",
-        "umls_cui": "C0031941"
-      },
-      "excluded": false,
-      "evidence": [
-        {
-          "evidenceCode": {
-            "id": "ECO:0000033",
-            "label": "author statement supported by traceable reference"
-          },
-          "reference": {
-            "id": "PUBMED_EN_006",
-            "description": "NER: pineoblastoma (0.921) | Match: sapbert_similarity (0.771)"
+            "description": "NER: malignancies (0.997) | Match: sapbert_similarity (0.862)"
           }
         }
       ]
@@ -142,7 +142,7 @@
           },
           "reference": {
             "id": "PUBMED_EN_006",
-            "description": "NER: intracranial hemorrhage (0.900) | Match: text_scan_exact_label (0.950)"
+            "description": "NER: intracranial hemorrhage (0.998) | Match: exact_label (1.000)"
           }
         }
       ]
@@ -166,30 +166,10 @@
           }
         }
       ]
-    },
-    {
-      "type": {
-        "id": "HP:0012828",
-        "label": "Severe",
-        "umls_cui": "C0205082"
-      },
-      "excluded": false,
-      "evidence": [
-        {
-          "evidenceCode": {
-            "id": "ECO:0000033",
-            "label": "author statement supported by traceable reference"
-          },
-          "reference": {
-            "id": "PUBMED_EN_006",
-            "description": "NER: severe (0.401) | Match: exact_label (1.000)"
-          }
-        }
-      ]
     }
   ],
   "metaData": {
-    "created": "2026-06-11T03:04:47Z",
+    "created": "2026-06-19T15:01:43Z",
     "createdBy": "clinical-preanalysis-pipeline-v2",
     "phenopacketSchemaVersion": "2.0",
     "resources": [
@@ -212,44 +192,69 @@
           "id": "ORPHA:906",
           "label": "Wiskott-Aldrich syndrome"
         },
-        "score": 0.85,
+        "score": 0.5247,
         "allCandidates": [
           {
             "id": "ORPHA:906",
             "label": "Wiskott-Aldrich syndrome",
-            "score": 0.85
+            "score": 0.5247
           },
           {
-            "id": "ORPHA:231393",
-            "label": "Beta-thalassemia-X-linked thrombocytopenia syndrome",
-            "score": 0.2615
+            "id": "ORPHA:3260",
+            "label": "Idiopathic hypereosinophilic syndrome",
+            "score": 0.3383
           },
           {
-            "id": "ORPHA:721",
-            "label": "Gray platelet syndrome",
-            "score": 0.2033
+            "id": "ORPHA:391487",
+            "label": "STAT1-related autoimmune enteropathy and endocrinopathy-susceptibility to chronic infections syndrome",
+            "score": 0.3306
           },
           {
-            "id": "ORPHA:101041",
-            "label": "Familial hypofibrinogenemia",
-            "score": 0.1833
+            "id": "ORPHA:182050",
+            "label": "MYH9-related syndromic thrombocytopenia",
+            "score": 0.3062
           },
           {
-            "id": "ORPHA:529",
-            "label": "Roch-Leri mesosomatous lipomatosis",
-            "score": 0.1833
+            "id": "ORPHA:49566",
+            "label": "Acquired purpura fulminans",
+            "score": 0.3039
+          },
+          {
+            "id": "ORPHA:37042",
+            "label": "Immune dysregulation-polyendocrinopathy-enteropathy-X-linked syndrome",
+            "score": 0.298
+          },
+          {
+            "id": "ORPHA:809",
+            "label": "Mixed connective tissue disease",
+            "score": 0.2954
+          },
+          {
+            "id": "ORPHA:1830",
+            "label": "Schimke immuno-osseous dysplasia",
+            "score": 0.2952
+          },
+          {
+            "id": "ORPHA:331235",
+            "label": "Selective IgM deficiency",
+            "score": 0.2945
+          },
+          {
+            "id": "ORPHA:47",
+            "label": "X-linked agammaglobulinemia",
+            "score": 0.2908
           }
         ]
       }
     }
   ],
   "_pipelineStats": {
-    "totalEntities": 14,
-    "matchedHPO": 9,
-    "unmatchedEntities": 5,
-    "phenopacketFeatures": 9,
+    "totalEntities": 23,
+    "matchedHPO": 8,
+    "unmatchedEntities": 15,
+    "phenopacketFeatures": 8,
     "negatedFeatures": 0,
     "numericPhenotypes": 0,
-    "ordoCandidates": 5
+    "ordoCandidates": 10
   }
 }

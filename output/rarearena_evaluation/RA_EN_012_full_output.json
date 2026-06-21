@@ -1,0 +1,614 @@
+{
+  "note_id": "RA_EN_012",
+  "language": "en",
+  "module1": {
+    "clean_text": "A [AGE] male patient presented with a subcutaneous nodule on the anterolateral surface of his right leg. The nodule, first noticed by the patient's family about a month prior, had been growing slowly. On physical examination, the nodule measured approximately 2 cm in diameter, had a well-defined border, and was located within the skin and subcutaneous tissue. It exhibited a bluish discoloration but was not associated with pain or ulceration. An excisional procedure was performed under local anesthesia within a week of the initial presentation. The lesion was removed with 1 to 2 cm margins, including skin and subcutaneous tissue above the fascial plane. Written informed consent was obtained from the patient's legal guardians.",
+    "phi_map": {
+      "AGE": "12-year-old"
+    },
+    "patient_info": {
+      "sex": "male"
+    }
+  },
+  "module3_warnings": {
+    "temporal": [],
+    "inconsistencies": []
+  },
+  "module4": {
+    "problem": [
+      {
+        "text": "a subcutaneous nodule",
+        "ner_score": 0.998,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0001482",
+        "hpo_name": "Subcutaneous nodule",
+        "expanded_text": "a subcutaneous nodule",
+        "match_type": "substring_match",
+        "confidence": 0.95,
+        "matched": true,
+        "umls_cui": "C0151811"
+      },
+      {
+        "text": "nodule",
+        "ner_score": 0.751,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "nodule",
+        "match_type": "sapbert_rejected_low_conf",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "the nodule",
+        "ner_score": 0.977,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0200036",
+        "hpo_name": "Skin nodule",
+        "expanded_text": "the nodule",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.7072,
+        "matched": true,
+        "umls_cui": "C0037287"
+      },
+      {
+        "text": "tion",
+        "ner_score": 0.996,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "tion",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "a bluish discoloration",
+        "ner_score": 0.998,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0000961",
+        "hpo_name": "Cyanosis",
+        "expanded_text": "a bluish discoloration",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.8325,
+        "matched": true,
+        "umls_cui": "C0010520"
+      },
+      {
+        "text": "discoloration",
+        "ner_score": 0.569,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "discoloration",
+        "match_type": "sapbert_rejected_low_conf",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "pain",
+        "ner_score": 0.891,
+        "negated": true,
+        "negation_cue": "was not",
+        "hpo_id": "HP:0012531",
+        "hpo_name": "Pain",
+        "expanded_text": "pain",
+        "match_type": "exact_label",
+        "confidence": 1.0,
+        "matched": true,
+        "umls_cui": "C0030193"
+      },
+      {
+        "text": "ulceration",
+        "ner_score": 0.778,
+        "negated": true,
+        "negation_cue": "was not",
+        "hpo_id": "HP:0200042",
+        "hpo_name": "Skin ulcer",
+        "expanded_text": "ulceration",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.8017,
+        "matched": true,
+        "umls_cui": "C0037299"
+      },
+      {
+        "text": "ulcera",
+        "ner_score": 0.861,
+        "negated": true,
+        "negation_cue": "was not",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "ulcera",
+        "match_type": "sapbert_rejected_low_conf",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "the lesion",
+        "ner_score": 0.997,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0011355",
+        "hpo_name": "Localized skin lesion",
+        "expanded_text": "the lesion",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.7411,
+        "matched": true,
+        "umls_cui": "C0850826"
+      },
+      {
+        "text": "lesion",
+        "ner_score": 0.413,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "lesion",
+        "match_type": "skipped_low_ner_score",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      }
+    ],
+    "test": [
+      {
+        "text": "physical",
+        "ner_score": 0.982,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "physical",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "physical examination",
+        "ner_score": 0.981,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "physical examination",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "examination",
+        "ner_score": 0.986,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "examination",
+        "match_type": "skipped_en_noise",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      }
+    ],
+    "treatment": [
+      {
+        "text": "an excisional procedure",
+        "ner_score": 0.996,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "an excisional procedure",
+        "match_type": "skipped_treatment",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "excisional",
+        "ner_score": 0.859,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "excisional",
+        "match_type": "skipped_treatment",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "local anesthesia",
+        "ner_score": 0.979,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "local anesthesia",
+        "match_type": "skipped_treatment",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      }
+    ],
+    "ordo_candidates": [
+      {
+        "ordo_id": "ORPHA:31112",
+        "name": "Dermatofibrosarcoma protuberans",
+        "name_fr": "",
+        "score": 0.3627,
+        "coverage": 0.375,
+        "matched_hpo": [
+          "HP:0001482",
+          "HP:0012531",
+          "HP:0200042"
+        ],
+        "matched_count": 3,
+        "total_disease_hpo": 8,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:727",
+        "name": "Microscopic polyangiitis",
+        "name_fr": "",
+        "score": 0.3532,
+        "coverage": 0.0364,
+        "matched_hpo": [
+          "HP:0001482",
+          "HP:0200042"
+        ],
+        "matched_count": 2,
+        "total_disease_hpo": 55,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:767",
+        "name": "Polyarteritis nodosa",
+        "name_fr": "",
+        "score": 0.3528,
+        "coverage": 0.0714,
+        "matched_hpo": [
+          "HP:0001482",
+          "HP:0200042"
+        ],
+        "matched_count": 2,
+        "total_disease_hpo": 28,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:228119",
+        "name": "Fusariosis",
+        "name_fr": "",
+        "score": 0.3404,
+        "coverage": 0.0426,
+        "matched_hpo": [
+          "HP:0001482",
+          "HP:0200042"
+        ],
+        "matched_count": 2,
+        "total_disease_hpo": 47,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:556",
+        "name": "Malakoplakia",
+        "name_fr": "",
+        "score": 0.3355,
+        "coverage": 0.0741,
+        "matched_hpo": [
+          "HP:0001482",
+          "HP:0200042"
+        ],
+        "matched_count": 2,
+        "total_disease_hpo": 27,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:48435",
+        "name": "Postinfectious vasculitis",
+        "name_fr": "",
+        "score": 0.3332,
+        "coverage": 0.0175,
+        "matched_hpo": [
+          "HP:0001482"
+        ],
+        "matched_count": 1,
+        "total_disease_hpo": 57,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:183",
+        "name": "Eosinophilic granulomatosis with polyangiitis",
+        "name_fr": "",
+        "score": 0.3332,
+        "coverage": 0.0152,
+        "matched_hpo": [
+          "HP:0001482"
+        ],
+        "matched_count": 1,
+        "total_disease_hpo": 66,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:3243",
+        "name": "Sweet syndrome",
+        "name_fr": "",
+        "score": 0.3328,
+        "coverage": 0.0513,
+        "matched_hpo": [
+          "HP:0012531",
+          "HP:0200036"
+        ],
+        "matched_count": 2,
+        "total_disease_hpo": 39,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:542592",
+        "name": "Necrobiosis lipoidica",
+        "name_fr": "",
+        "score": 0.3327,
+        "coverage": 0.0952,
+        "matched_hpo": [
+          "HP:0200036",
+          "HP:0200042"
+        ],
+        "matched_count": 2,
+        "total_disease_hpo": 21,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:285",
+        "name": "Hypermobile Ehlers-Danlos syndrome",
+        "name_fr": "",
+        "score": 0.3325,
+        "coverage": 0.0145,
+        "matched_hpo": [
+          "HP:0001482"
+        ],
+        "matched_count": 1,
+        "total_disease_hpo": 69,
+        "text_match": false
+      }
+    ],
+    "stats": {
+      "total": 17,
+      "matched": 6,
+      "unmatched": 11,
+      "match_rate": 35.3,
+      "unique_hpo": 6,
+      "ordo_matches": 10
+    }
+  },
+  "phenopacket": {
+    "id": "phenopacket-RA_EN_012",
+    "subject": {
+      "id": "RA_EN_012",
+      "sex": "MALE"
+    },
+    "input": "A 12-year-old male patient presented with a subcutaneous nodule on the anterolateral surface of his right leg. The nodule, first noticed by the patient's family about a month prior, had been growing slowly. On physical examination, the nodule measured approximately 2 cm in diameter, had a well-defined border, and was located within the skin and subcutaneous tissue. It exhibited a bluish discoloration but was not associated with pain or ulceration. An excisional procedure was performed under local anesthesia within a week of the initial presentation. The lesion was removed with 1 to 2 cm margins, including skin and subcutaneous tissue above the fascial plane. Written informed consent was obtained from the patient's legal guardians.",
+    "target": "Dermatofibrosarcoma protuberans",
+    "phenotypicFeatures": [
+      {
+        "type": {
+          "id": "HP:0001482",
+          "label": "Subcutaneous nodule",
+          "umls_cui": "C0151811"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_012",
+              "description": "NER: a subcutaneous nodule (0.998) | Match: substring_match (0.950)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0200036",
+          "label": "Skin nodule",
+          "umls_cui": "C0037287"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_012",
+              "description": "NER: the nodule (0.977) | Match: sapbert_similarity (0.707)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0000961",
+          "label": "Cyanosis",
+          "umls_cui": "C0010520"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_012",
+              "description": "NER: a bluish discoloration (0.998) | Match: sapbert_similarity (0.833)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0012531",
+          "label": "Pain",
+          "umls_cui": "C0030193"
+        },
+        "excluded": true,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_012",
+              "description": "NER: pain (0.891) | Match: exact_label (1.000) | Negated by: \"was not\""
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0200042",
+          "label": "Skin ulcer",
+          "umls_cui": "C0037299"
+        },
+        "excluded": true,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_012",
+              "description": "NER: ulceration (0.778) | Match: sapbert_similarity (0.802) | Negated by: \"was not\""
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0011355",
+          "label": "Localized skin lesion",
+          "umls_cui": "C0850826"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_012",
+              "description": "NER: the lesion (0.997) | Match: sapbert_similarity (0.741)"
+            }
+          }
+        ]
+      }
+    ],
+    "metaData": {
+      "created": "2026-06-19T15:09:47Z",
+      "createdBy": "clinical-preanalysis-pipeline-v2",
+      "phenopacketSchemaVersion": "2.0",
+      "resources": [
+        {
+          "id": "hp",
+          "name": "Human Phenotype Ontology",
+          "url": "https://hpo.jax.org",
+          "version": "2024-04-26",
+          "namespacePrefix": "HP",
+          "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        }
+      ]
+    },
+    "interpretations": [
+      {
+        "id": "interpretation-RA_EN_012",
+        "progressStatus": "IN_PROGRESS",
+        "diagnosis": {
+          "disease": {
+            "id": "ORPHA:31112",
+            "label": "Dermatofibrosarcoma protuberans"
+          },
+          "score": 0.3627,
+          "allCandidates": [
+            {
+              "id": "ORPHA:31112",
+              "label": "Dermatofibrosarcoma protuberans",
+              "score": 0.3627
+            },
+            {
+              "id": "ORPHA:727",
+              "label": "Microscopic polyangiitis",
+              "score": 0.3532
+            },
+            {
+              "id": "ORPHA:767",
+              "label": "Polyarteritis nodosa",
+              "score": 0.3528
+            },
+            {
+              "id": "ORPHA:228119",
+              "label": "Fusariosis",
+              "score": 0.3404
+            },
+            {
+              "id": "ORPHA:556",
+              "label": "Malakoplakia",
+              "score": 0.3355
+            },
+            {
+              "id": "ORPHA:48435",
+              "label": "Postinfectious vasculitis",
+              "score": 0.3332
+            },
+            {
+              "id": "ORPHA:183",
+              "label": "Eosinophilic granulomatosis with polyangiitis",
+              "score": 0.3332
+            },
+            {
+              "id": "ORPHA:3243",
+              "label": "Sweet syndrome",
+              "score": 0.3328
+            },
+            {
+              "id": "ORPHA:542592",
+              "label": "Necrobiosis lipoidica",
+              "score": 0.3327
+            },
+            {
+              "id": "ORPHA:285",
+              "label": "Hypermobile Ehlers-Danlos syndrome",
+              "score": 0.3325
+            }
+          ]
+        }
+      }
+    ],
+    "_pipelineStats": {
+      "totalEntities": 17,
+      "matchedHPO": 6,
+      "unmatchedEntities": 11,
+      "phenopacketFeatures": 6,
+      "negatedFeatures": 2,
+      "numericPhenotypes": 0,
+      "ordoCandidates": 10
+    }
+  }
+}

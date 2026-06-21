@@ -4,13 +4,13 @@
     "id": "GSC_EN_003"
   },
   "input": "Case Report: The Effect of Synonymous Single-Nucleotide Polymorphisms on an Atypical Cystic Fibrosis Clinical Presentation.\n\nSynonymous single nucleotide polymorphisms (sSNPs), which change a nucleotide, but not the encoded amino acid, are perceived as neutral to protein function and thus, classified as benign. We report a patient who was diagnosed with cystic fibrosis (CF) at an advanced age and presented very mild CF symptoms. The sequencing of the whole cystic fibrosis transmembrane conductance regulator (CFTR) gene locus revealed that the patient lacks known CF-causing mutations. We found a homozygous sSNP (c.1584G>A) at the end of exon 11 in the CFTR gene. Using sensitive molecular methods, we report that the c.1584G>A sSNP causes cognate exon skipping and retention of a sequence from the downstream intron, both of which, however, occur at a relatively low frequency. In addition, we found two other sSNPs (c.2562T>G (p.Thr854=) and c.4389G>A (p.Gln1463=)), for which the patient is also homozygous. These two sSNPs stabilize the CFTR protein expression, compensating, at least in part, for the c.1584G>A-triggered inefficient splicing. Our data highlight the importance of considering sSNPs when assessing the effect(s) of complex CFTR alleles. sSNPs may epistatically modulate mRNA and protein expression levels and consequently influence disease phenotype and progression.",
-  "target": "Cystic hamartoma of lung and kidney",
+  "target": "Idiopathic pulmonary fibrosis",
   "phenotypicFeatures": [
     {
       "type": {
-        "id": "HP:0002206",
-        "label": "Pulmonary fibrosis",
-        "umls_cui": "C0034069"
+        "id": "HP:0006552",
+        "label": "Fibrocystic lung disease",
+        "umls_cui": "C1397290"
       },
       "excluded": false,
       "evidence": [
@@ -21,34 +21,14 @@
           },
           "reference": {
             "id": "GSC_EN_003",
-            "description": "NER: fibrosis (0.482) | Match: sapbert_similarity (0.734)"
-          }
-        }
-      ]
-    },
-    {
-      "type": {
-        "id": "HP:0012839",
-        "label": "Distal",
-        "umls_cui": "C0205108"
-      },
-      "excluded": false,
-      "evidence": [
-        {
-          "evidenceCode": {
-            "id": "ECO:0000033",
-            "label": "author statement supported by traceable reference"
-          },
-          "reference": {
-            "id": "GSC_EN_003",
-            "description": "NER: downstream (0.418) | Match: sapbert_similarity (0.743)"
+            "description": "NER: cystic fibrosis (0.995) | Match: sapbert_similarity (0.711)"
           }
         }
       ]
     }
   ],
   "metaData": {
-    "created": "2026-06-11T03:07:31Z",
+    "created": "2026-06-19T15:04:40Z",
     "createdBy": "clinical-preanalysis-pipeline-v2",
     "phenopacketSchemaVersion": "2.0",
     "resources": [
@@ -68,47 +48,72 @@
       "progressStatus": "IN_PROGRESS",
       "diagnosis": {
         "disease": {
-          "id": "ORPHA:2111",
-          "label": "Cystic hamartoma of lung and kidney"
+          "id": "ORPHA:2032",
+          "label": "Idiopathic pulmonary fibrosis"
         },
-        "score": 0.1867,
+        "score": 0.7677,
         "allCandidates": [
           {
-            "id": "ORPHA:2111",
-            "label": "Cystic hamartoma of lung and kidney",
-            "score": 0.1867
+            "id": "ORPHA:2032",
+            "label": "Idiopathic pulmonary fibrosis",
+            "score": 0.7677
           },
           {
-            "id": "ORPHA:220402",
-            "label": "Limited cutaneous systemic sclerosis",
-            "score": 0.065
+            "id": "ORPHA:122",
+            "label": "Birt-Hogg-Dubé syndrome",
+            "score": 0.7677
           },
           {
-            "id": "ORPHA:210136",
-            "label": "Pulmonary fibrosis-hepatic hyperplasia-bone marrow hypoplasia syndrome",
-            "score": 0.061
+            "id": "ORPHA:723",
+            "label": "Pneumocystosis",
+            "score": 0.7677
           },
           {
-            "id": "ORPHA:1839",
-            "label": "Hereditary mucoepithelial dysplasia",
-            "score": 0.0544
+            "id": "ORPHA:436252",
+            "label": "Combined immunodeficiency-multiple intestinal atresia",
+            "score": 0.7677
           },
           {
-            "id": "ORPHA:133",
-            "label": "Chronic beryllium disease",
-            "score": 0.0516
+            "id": "ORPHA:79128",
+            "label": "Lymphoid interstitial pneumonia",
+            "score": 0.7677
+          },
+          {
+            "id": "ORPHA:79127",
+            "label": "Respiratory bronchiolitis-interstitial lung disease syndrome",
+            "score": 0.7677
+          },
+          {
+            "id": "ORPHA:400",
+            "label": "Cystic echinococcosis",
+            "score": 0.7677
+          },
+          {
+            "id": "ORPHA:36238",
+            "label": "Staphylococcal necrotizing pneumonia",
+            "score": 0.6849
+          },
+          {
+            "id": "ORPHA:284",
+            "label": "Alveolar echinococcosis",
+            "score": 0.6849
+          },
+          {
+            "id": "ORPHA:185",
+            "label": "Scimitar syndrome",
+            "score": 0.6849
           }
         ]
       }
     }
   ],
   "_pipelineStats": {
-    "totalEntities": 18,
-    "matchedHPO": 2,
-    "unmatchedEntities": 16,
-    "phenopacketFeatures": 2,
+    "totalEntities": 33,
+    "matchedHPO": 1,
+    "unmatchedEntities": 32,
+    "phenopacketFeatures": 1,
     "negatedFeatures": 0,
     "numericPhenotypes": 0,
-    "ordoCandidates": 5
+    "ordoCandidates": 10
   }
 }

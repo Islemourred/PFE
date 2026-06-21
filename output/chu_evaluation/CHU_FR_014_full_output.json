@@ -37,7 +37,7 @@
     "problem": [
       {
         "text": "détresse respiratoire",
-        "ner_score": 0.665,
+        "ner_score": 0.605,
         "negated": false,
         "negation_cue": "",
         "hpo_id": "HP:0002098",
@@ -50,7 +50,7 @@
       },
       {
         "text": "hypotonie axiale et segmentaire",
-        "ner_score": 0.624,
+        "ner_score": 0.445,
         "negated": false,
         "negation_cue": "",
         "hpo_id": "HP:0001252",
@@ -63,7 +63,7 @@
       },
       {
         "text": "maladies neuromusculaires",
-        "ner_score": 0.725,
+        "ner_score": 0.68,
         "negated": true,
         "negation_cue": "pas de notion de",
         "hpo_id": null,
@@ -75,21 +75,34 @@
         "umls_cui": null
       },
       {
-        "text": "tirage sous costal",
-        "ner_score": 0.812,
-        "negated": false,
-        "negation_cue": "",
+        "text": "MALADIE",
+        "ner_score": 0.438,
+        "negated": true,
+        "negation_cue": "pas de notion de",
         "hpo_id": null,
         "hpo_name": null,
-        "expanded_text": "tirage sous costal",
+        "expanded_text": "MALADIE",
         "match_type": "no_match",
         "confidence": 0.0,
         "matched": false,
         "umls_cui": null
       },
       {
+        "text": "tirage sous costal",
+        "ner_score": 0.722,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "tirage sous costal",
+        "match_type": "deduplicated",
+        "confidence": 0.85,
+        "matched": false,
+        "umls_cui": "C0013404"
+      },
+      {
         "text": "entonnoir xiphoïdien",
-        "ner_score": 0.435,
+        "ner_score": 0.417,
         "negated": false,
         "negation_cue": "",
         "hpo_id": null,
@@ -101,8 +114,21 @@
         "umls_cui": null
       },
       {
+        "text": "B1B2",
+        "ner_score": 0.506,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "premier et deuxième bruits du cœur",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
         "text": "souffle",
-        "ner_score": 0.86,
+        "ner_score": 0.67,
         "negated": true,
         "negation_cue": "pas de",
         "hpo_id": null,
@@ -115,7 +141,7 @@
       },
       {
         "text": "bruit surajouté",
-        "ner_score": 0.597,
+        "ner_score": 0.434,
         "negated": true,
         "negation_cue": "pas de",
         "hpo_id": "HP:0000978",
@@ -127,8 +153,21 @@
         "umls_cui": "C0013491"
       },
       {
+        "text": "anomalies de la différenciation sexuelles",
+        "ner_score": 0.531,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "anomalies de la différenciation sexuelles",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
         "text": "hypercapnée",
-        "ner_score": 0.756,
+        "ner_score": 0.6,
         "negated": false,
         "negation_cue": "",
         "hpo_id": "HP:0002104",
@@ -140,8 +179,21 @@
         "umls_cui": "C0003578"
       },
       {
+        "text": "Opacités multiples hétérogènes",
+        "ner_score": 0.426,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0001425",
+        "hpo_name": "Heterogeneous",
+        "expanded_text": "Opacités multiples hétérogènes",
+        "match_type": "french_partial",
+        "confidence": 0.85,
+        "matched": true,
+        "umls_cui": null
+      },
+      {
         "text": "Polyneuropathie motrice pure",
-        "ner_score": 0.575,
+        "ner_score": 0.568,
         "negated": false,
         "negation_cue": "",
         "hpo_id": "HP:0007178",
@@ -154,20 +206,20 @@
       },
       {
         "text": "pathologie dégénérative et évolutives des motoneurones médullaires",
-        "ner_score": 0.495,
+        "ner_score": 0.554,
         "negated": false,
         "negation_cue": "",
-        "hpo_id": "HP:0007178",
-        "hpo_name": "Motor polyneuropathy",
+        "hpo_id": null,
+        "hpo_name": null,
         "expanded_text": "pathologie dégénérative et évolutives des motoneurones médullaires",
-        "match_type": "sapbert_similarity",
+        "match_type": "deduplicated",
         "confidence": 0.7792,
-        "matched": true,
+        "matched": false,
         "umls_cui": "C0235025"
       },
       {
         "text": "maladie neuromusculaire amyotrophie spinale",
-        "ner_score": 0.638,
+        "ner_score": 0.692,
         "negated": false,
         "negation_cue": "",
         "hpo_id": "HP:0007269",
@@ -180,7 +232,7 @@
       },
       {
         "text": "signes de lutte",
-        "ner_score": 0.881,
+        "ner_score": 0.761,
         "negated": false,
         "negation_cue": "",
         "hpo_id": null,
@@ -193,7 +245,7 @@
       },
       {
         "text": "cyanose",
-        "ner_score": 0.882,
+        "ner_score": 0.702,
         "negated": false,
         "negation_cue": "",
         "hpo_id": "HP:0000961",
@@ -206,293 +258,191 @@
       },
       {
         "text": "amyotrophie spinale type 01",
-        "ner_score": 0.835,
+        "ner_score": 0.771,
         "negated": false,
         "negation_cue": "",
-        "hpo_id": "HP:0007269",
-        "hpo_name": "Spinal muscular atrophy",
+        "hpo_id": null,
+        "hpo_name": null,
         "expanded_text": "amyotrophie spinale type 01",
-        "match_type": "french_partial",
+        "match_type": "deduplicated",
         "confidence": 0.85,
-        "matched": true,
+        "matched": false,
         "umls_cui": "C0026847"
+      },
+      {
+        "text": "délétion SMN 1",
+        "ner_score": 0.555,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "délétion SMN 1",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
       }
     ],
     "treatment": [
       {
         "text": "Vaccination",
-        "ner_score": 0.665,
+        "ner_score": 0.549,
         "negated": false,
         "negation_cue": "",
         "hpo_id": null,
         "hpo_name": null,
         "expanded_text": "Vaccination",
-        "match_type": "no_match",
-        "confidence": 0.0,
-        "matched": false,
-        "umls_cui": null
-      },
-      {
-        "text": "Vernic Hoffman",
-        "ner_score": 0.499,
-        "negated": false,
-        "negation_cue": "",
-        "hpo_id": null,
-        "hpo_name": null,
-        "expanded_text": "Vernic Hoffman",
-        "match_type": "no_match",
-        "confidence": 0.0,
-        "matched": false,
-        "umls_cui": null
-      },
-      {
-        "text": "O2",
-        "ner_score": 0.473,
-        "negated": false,
-        "negation_cue": "",
-        "hpo_id": null,
-        "hpo_name": null,
-        "expanded_text": "oxygen",
-        "match_type": "no_match",
+        "match_type": "skipped_treatment",
         "confidence": 0.0,
         "matched": false,
         "umls_cui": null
       },
       {
         "text": "VNI",
-        "ner_score": 0.764,
+        "ner_score": 0.726,
         "negated": false,
         "negation_cue": "",
         "hpo_id": null,
         "hpo_name": null,
         "expanded_text": "VNI",
-        "match_type": "no_match",
+        "match_type": "skipped_treatment",
         "confidence": 0.0,
         "matched": false,
         "umls_cui": null
       },
       {
         "text": "prise en charge",
-        "ner_score": 0.419,
+        "ner_score": 0.513,
         "negated": false,
         "negation_cue": "",
         "hpo_id": null,
         "hpo_name": null,
         "expanded_text": "prise en charge",
-        "match_type": "no_match",
+        "match_type": "skipped_treatment",
         "confidence": 0.0,
         "matched": false,
         "umls_cui": null
       }
     ],
-    "test": [
-      {
-        "text": "PEC",
-        "ner_score": 0.61,
-        "negated": false,
-        "negation_cue": "",
-        "hpo_id": null,
-        "hpo_name": null,
-        "expanded_text": "PEC",
-        "match_type": "no_match",
-        "confidence": 0.0,
-        "matched": false,
-        "umls_cui": null
-      },
-      {
-        "text": "Allaitement",
-        "ner_score": 0.738,
-        "negated": false,
-        "negation_cue": "",
-        "hpo_id": null,
-        "hpo_name": null,
-        "expanded_text": "Allaitement",
-        "match_type": "no_match",
-        "confidence": 0.0,
-        "matched": false,
-        "umls_cui": null
-      },
-      {
-        "text": "Examen neurologique",
-        "ner_score": 0.815,
-        "negated": false,
-        "negation_cue": "",
-        "hpo_id": null,
-        "hpo_name": null,
-        "expanded_text": "Examen neurologique",
-        "match_type": "no_match",
-        "confidence": 0.0,
-        "matched": false,
-        "umls_cui": null
-      },
-      {
-        "text": "Examen cardiaque",
-        "ner_score": 0.754,
-        "negated": false,
-        "negation_cue": "",
-        "hpo_id": null,
-        "hpo_name": null,
-        "expanded_text": "Examen cardiaque",
-        "match_type": "no_match",
-        "confidence": 0.0,
-        "matched": false,
-        "umls_cui": null
-      },
-      {
-        "text": "Examen digestif",
-        "ner_score": 0.737,
-        "negated": false,
-        "negation_cue": "",
-        "hpo_id": null,
-        "hpo_name": null,
-        "expanded_text": "Examen digestif",
-        "match_type": "no_match",
-        "confidence": 0.0,
-        "matched": false,
-        "umls_cui": null
-      },
-      {
-        "text": "Examen urogénital",
-        "ner_score": 0.633,
-        "negated": false,
-        "negation_cue": "",
-        "hpo_id": null,
-        "hpo_name": null,
-        "expanded_text": "Examen urogénital",
-        "match_type": "no_match",
-        "confidence": 0.0,
-        "matched": false,
-        "umls_cui": null
-      },
-      {
-        "text": "RADIOLOGIE",
-        "ner_score": 0.481,
-        "negated": false,
-        "negation_cue": "",
-        "hpo_id": null,
-        "hpo_name": null,
-        "expanded_text": "RADIOLOGIE",
-        "match_type": "no_match",
-        "confidence": 0.0,
-        "matched": false,
-        "umls_cui": null
-      },
-      {
-        "text": "Radiographie thoracique",
-        "ner_score": 0.687,
-        "negated": false,
-        "negation_cue": "",
-        "hpo_id": null,
-        "hpo_name": null,
-        "expanded_text": "Radiographie thoracique",
-        "match_type": "no_match",
-        "confidence": 0.0,
-        "matched": false,
-        "umls_cui": null
-      },
-      {
-        "text": "TDM cérébrale",
-        "ner_score": 0.541,
-        "negated": false,
-        "negation_cue": "",
-        "hpo_id": null,
-        "hpo_name": null,
-        "expanded_text": "TDM cérébrale",
-        "match_type": "no_match",
-        "confidence": 0.0,
-        "matched": false,
-        "umls_cui": null
-      },
-      {
-        "text": "ENMG",
-        "ner_score": 0.526,
-        "negated": false,
-        "negation_cue": "",
-        "hpo_id": null,
-        "hpo_name": null,
-        "expanded_text": "ENMG",
-        "match_type": "no_match",
-        "confidence": 0.0,
-        "matched": false,
-        "umls_cui": null
-      },
-      {
-        "text": "étude génétique",
-        "ner_score": 0.555,
-        "negated": false,
-        "negation_cue": "",
-        "hpo_id": null,
-        "hpo_name": null,
-        "expanded_text": "étude génétique",
-        "match_type": "no_match",
-        "confidence": 0.0,
-        "matched": false,
-        "umls_cui": null
-      }
-    ],
+    "test": [],
     "ordo_candidates": [
       {
+        "ordo_id": "ORPHA:98914",
+        "name": "Presynaptic congenital myasthenic syndromes",
+        "name_fr": "",
+        "score": 0.4006,
+        "coverage": 0.0448,
+        "matched_hpo": [
+          "HP:0000961",
+          "HP:0001252",
+          "HP:0007178"
+        ],
+        "matched_count": 3,
+        "total_disease_hpo": 67,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:590",
+        "name": "Congenital myasthenic syndrome",
+        "name_fr": "",
+        "score": 0.4006,
+        "coverage": 0.0448,
+        "matched_hpo": [
+          "HP:0000961",
+          "HP:0001252",
+          "HP:0007178"
+        ],
+        "matched_count": 3,
+        "total_disease_hpo": 67,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:1145",
+        "name": "Infantile-onset X-linked spinal muscular atrophy",
+        "name_fr": "",
+        "score": 0.3572,
+        "coverage": 0.0811,
+        "matched_hpo": [
+          "HP:0002098",
+          "HP:0007178",
+          "HP:0007269"
+        ],
+        "matched_count": 3,
+        "total_disease_hpo": 37,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:167",
+        "name": "Chédiak-Higashi syndrome",
+        "name_fr": "",
+        "score": 0.3158,
+        "coverage": 0.0225,
+        "matched_hpo": [
+          "HP:0000978",
+          "HP:0007178"
+        ],
+        "matched_count": 2,
+        "total_disease_hpo": 89,
+        "text_match": false
+      },
+      {
         "ordo_id": "ORPHA:70",
-        "name": "Spinal muscular atrophy",
-        "name_fr": "Amyotrophie spinale (SMA)",
-        "score": 0.85,
-        "jaccard": 0.0769,
-        "coverage": 0.1429,
+        "name": "Proximal spinal muscular atrophy",
+        "name_fr": "",
+        "score": 0.296,
+        "coverage": 0.02,
         "matched_hpo": [
           "HP:0001252"
         ],
         "matched_count": 1,
-        "total_disease_hpo": 7
+        "total_disease_hpo": 50,
+        "text_match": true
       },
       {
-        "ordo_id": "ORPHA:99981",
-        "name": "Apnea of prematurity",
+        "ordo_id": "ORPHA:285",
+        "name": "Hypermobile Ehlers-Danlos syndrome",
         "name_fr": "",
-        "score": 0.32,
-        "jaccard": 0.2,
-        "coverage": 0.4,
+        "score": 0.2922,
+        "coverage": 0.029,
         "matched_hpo": [
-          "HP:0000961",
+          "HP:0000978",
           "HP:0002104"
         ],
         "matched_count": 2,
-        "total_disease_hpo": 5
+        "total_disease_hpo": 69,
+        "text_match": false
       },
       {
-        "ordo_id": "ORPHA:2680",
-        "name": "Hypomyelination neuropathy-arthrogryposis syndrome",
+        "ordo_id": "ORPHA:90051",
+        "name": "Sepsis in premature infants",
         "name_fr": "",
-        "score": 0.32,
-        "jaccard": 0.2,
-        "coverage": 0.4,
+        "score": 0.282,
+        "coverage": 0.0196,
         "matched_hpo": [
-          "HP:0001252",
-          "HP:0002098"
+          "HP:0000961"
         ],
-        "matched_count": 2,
-        "total_disease_hpo": 5
+        "matched_count": 1,
+        "total_disease_hpo": 51,
+        "text_match": false
       },
       {
-        "ordo_id": "ORPHA:91130",
-        "name": "Cardiomyopathy-hypotonia-lactic acidosis syndrome",
+        "ordo_id": "ORPHA:466768",
+        "name": "Autosomal dominant Charcot-Marie-Tooth disease type 2Z",
         "name_fr": "",
-        "score": 0.2436,
-        "jaccard": 0.2,
-        "coverage": 0.2727,
+        "score": 0.2816,
+        "coverage": 0.0139,
         "matched_hpo": [
-          "HP:0000961",
-          "HP:0001252",
-          "HP:0002098"
+          "HP:0007269"
         ],
-        "matched_count": 3,
-        "total_disease_hpo": 11
+        "matched_count": 1,
+        "total_disease_hpo": 72,
+        "text_match": false
       },
       {
         "ordo_id": "ORPHA:137935",
         "name": "Airway infantile hemangioma",
         "name_fr": "",
-        "score": 0.209,
-        "jaccard": 0.1765,
+        "score": 0.2789,
         "coverage": 0.2308,
         "matched_hpo": [
           "HP:0000961",
@@ -500,16 +450,32 @@
           "HP:0002104"
         ],
         "matched_count": 3,
-        "total_disease_hpo": 13
+        "total_disease_hpo": 13,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:536467",
+        "name": "B3GALT6-related spondylodysplastic Ehlers-Danlos syndrome",
+        "name_fr": "",
+        "score": 0.2759,
+        "coverage": 0.0361,
+        "matched_hpo": [
+          "HP:0000978",
+          "HP:0001252",
+          "HP:0002098"
+        ],
+        "matched_count": 3,
+        "total_disease_hpo": 83,
+        "text_match": false
       }
     ],
     "stats": {
-      "total": 30,
-      "matched": 9,
-      "unmatched": 21,
-      "match_rate": 30.0,
-      "unique_hpo": 7,
-      "ordo_matches": 5
+      "total": 22,
+      "matched": 8,
+      "unmatched": 14,
+      "match_rate": 36.4,
+      "unique_hpo": 8,
+      "ordo_matches": 10
     }
   },
   "phenopacket": {
@@ -523,7 +489,7 @@
       }
     },
     "input": "Oran Le 23/11/2025\nNuméro Dossier :16985\nNom et prénom :BELHOUARI ZAKARIA\nNé le : 24/09/2025\nAdresse : ORAN\nN° de Tél :07.90.49.89.36\nRapport Médical\nIL s’agit du nourrisson BELHOUARI ZAKARIA, âgé de 02 mois, originaire et demeurant à ORAN, issu d’un couple d’âge moyen non consanguin, l’enfant unique, hospitalisé à notre niveau pour l’investigation et la PEC d’une détresse respiratoire avec hypotonie axiale et segmentaire.\nANTECEDENTS :\nFamiliaux :\nPère : âgé de 44 ans, en BES.\nMère :  âgée de 35 ans, en BES, G1P1.\nConsanguinité : NON.\nPas de cas de décès a bas âge dans la famille\nPas de notion de maladies neuromusculaires ou handicaps dans la famille\nPersonnels :\nPhysiologique\nGrossesse : bien suivie.\nMAF présents au dernier trimestre\nPas de notion de souffrance fœtale\nAccouchement à terme, par Voie basse.\nBon Apgar à la naissance\nPoids de naissance : 03Kg400.\nAllaitement : mixte dès la naissance.\nVaccination : à jour.\nPathologiques :\nHypotonie axiale et segmentaire depuis la naissance\nHISTOIRE DE LA MALADIE :\nRemonte à quelques jours avant son admission et dans le cadre de l’investigation de son hypotonie, une consultation a été faite chez un pédiatre libéral qui a constaté une détresse respiratoire modérée, d’où son orientation à notre niveau et son admission pour investigation et prise en charge.\nSTATUT D’ADMISSION :\nMesures anthropométriques :\nPoids : 04kg800 [-0,59 DS]\nTaille :58cm    [ +0,45 DS]\nPC : 40[ -0,3 DS]\nÉtat général conservé apyrétique à 36,5\nStable sur le plan hémodynamique avec extrémités chauds, TRC<3 seconds.\nTéguments conjonctifs normo colorés.\nExamen neurologique :\nFA : ouvert à 02 cm, hypotonie axiale et segmentaire profonde,\nréflexe de succion bon\nGrasping réflexe faible au 04 membres, réflexe de Moro faible\nExamen ORL :\nObstruction nasale\nPas d’adénopathies superficielles\nExamen respiratoire :\nFR :40/min, SaO2: 98% sous 03l/min d’oxygène\nDétresse respiratoire faite de :tirage sous costal avec entonnoir xiphoïdien\nauscultation pulmonaire:  des fins crépitants à l’auscultation.\nExamen cardiaque :\nFC : 135bat/ min, B1B2 bien audible\nPas de souffle, pas de bruit surajouté.\nExamen digestif :\nAbdomen souple, transit conservé.\nPas d’organomégalies\nExamen urogénital :\nmorphotype masculin\npas d’anomalies de la différenciation sexuelles\nEXAMENS PARACLINIQUES:\nBIOLOGIE:\nNFS: correcte\nCRP: Négative\nBilan thyroidien correct\nEnzymes musculaires normaux\nPas de cytolyse hépatique\nGAZOMETRIE (24/11/2025): Acidose respiratoire grade II légèrement compensée avec hypercapnée à 55mmHg\nRADIOLOGIE:\nRadiographie thoracique: Opacités multiples hétérogènes au niveau des deux champs pulmonaires\nEcho-coeur:(05-11-2025) Petite CIV sans retentissement\nTDM cérébrale:(10-11-2025) Aspect fin atrophique harmonieux du corps calleux, pas d’anomalies significative associée\nENMG: (19-11-2025) Polyneuropathie motrice pure à prédominance proximale, par perte axonale, d’intensité sévère pouvant être en rapport avec une atteinte diffuse (étagée et bilatérale) des motoneurones médullaires en regard cornes antérieures des lombosacrées de L3 à S1 et cervicaux de C5 à D1. Une pathologie dégénérative et évolutives des motoneurones médullaires est fortement suspectée (SMA suspectée).\nAu total :\nc’est le nourrisson BELHOUARI ZAKARIA âgé de 02 mois issu d’un couple non consanguin, admis a notre service pour la prise en charge d’une détresse respiratoire, qui pose les problèmes suivants :\nDétresse respiratoire\nHypotonie périphérique profonde\nAcidose respiratoire légèrement compensée avec hypercapnée\nDevant  ce tableau, une maladie neuromusculaire amyotrophie spinale (SMA TYPE 1 : Vernic Hoffman) est fortement suspectée pour laquelle l’étude génétique à la recherche d’une mutation SMN1, 2  a été lancée confirmant le diagnostic (état homozygote d’une délétion du gène SMN1)\nConduite thérapeutique :\nHospitalisation avec des mesures d’isolement.\nMesures hygièno-diétitiques\nMis sous antibiothérapie avec une bonne amélioration\nMis sous ventilation non invasive\nEVOLUTION DURANT L’HOSPITALISATION:\nL’évolution du nourrisson sous VNI (PEP: 05cmHg, AI:05mmHg avec un débit d’O2 à 0,5l/min) fut marquée par une nette amélioration:\nRégression des signes de lutte avec une bonne saturation 96-98% sous 0,5l/min d’O2\nFréquence respiratoire est passée de 73c/min à 38-40c/min\nFréquence cardiaque est passée de 200bpm à 120bpm\nGaz du sang de contrôle : PaCO2: 38mmHg\nA J 06 de mise sous VNI :\nL’enfant a présenté une aggravation de sa détresse respiratoire (réapparition des signes de lutte, FR: 62c/min avec une augmentation des besoins en O2) d’origine probablement central; Actuellement, le nourrisson est sous VNI permanente (PEP:05cmHg, AI: 05cmHg avec un débit d’O2 à 02l/min)  avec une bonne  saturation avec une cyanose par moment\nCONCLUSION :\nIL s’agit du nourrisson BELHOUARI ZAKARIA, âgé de 02mois, originaire et demeurant à ORAN, hospitalisé à notre niveau pour la prise en charge d’une amyotrophie spinale type 01 (état homozygote délétion SMN 1)",
-    "target": "Spinal muscular atrophy",
+    "target": "Presynaptic congenital myasthenic syndromes",
     "phenotypicFeatures": [
       {
         "type": {
@@ -540,7 +506,7 @@
             },
             "reference": {
               "id": "CHU_FR_014",
-              "description": "NER: détresse respiratoire (0.665) | Match: french_curated (0.950)"
+              "description": "NER: détresse respiratoire (0.605) | Match: french_curated (0.950)"
             }
           }
         ]
@@ -560,7 +526,7 @@
             },
             "reference": {
               "id": "CHU_FR_014",
-              "description": "NER: hypotonie axiale et segmentaire (0.624) | Match: french_partial (0.850)"
+              "description": "NER: hypotonie axiale et segmentaire (0.445) | Match: french_partial (0.850)"
             }
           }
         ]
@@ -580,7 +546,7 @@
             },
             "reference": {
               "id": "CHU_FR_014",
-              "description": "NER: bruit surajouté (0.597) | Match: sapbert_similarity (0.722) | Negated by: \"pas de\""
+              "description": "NER: bruit surajouté (0.434) | Match: sapbert_similarity (0.722) | Negated by: \"pas de\""
             }
           }
         ]
@@ -600,7 +566,26 @@
             },
             "reference": {
               "id": "CHU_FR_014",
-              "description": "NER: hypercapnée (0.756) | Match: french_partial (0.850)"
+              "description": "NER: hypercapnée (0.600) | Match: french_partial (0.850)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0001425",
+          "label": "Heterogeneous"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "CHU_FR_014",
+              "description": "NER: Opacités multiples hétérogènes (0.426) | Match: french_partial (0.850)"
             }
           }
         ]
@@ -620,7 +605,7 @@
             },
             "reference": {
               "id": "CHU_FR_014",
-              "description": "NER: Polyneuropathie motrice pure (0.575) | Match: french_partial (0.850)"
+              "description": "NER: Polyneuropathie motrice pure (0.568) | Match: french_partial (0.850)"
             }
           }
         ]
@@ -640,7 +625,7 @@
             },
             "reference": {
               "id": "CHU_FR_014",
-              "description": "NER: maladie neuromusculaire amyotrophie spinale (0.638) | Match: french_partial (0.850)"
+              "description": "NER: maladie neuromusculaire amyotrophie spinale (0.692) | Match: french_partial (0.850)"
             }
           }
         ]
@@ -660,14 +645,14 @@
             },
             "reference": {
               "id": "CHU_FR_014",
-              "description": "NER: cyanose (0.882) | Match: french_orphanet (0.920)"
+              "description": "NER: cyanose (0.702) | Match: french_orphanet (0.920)"
             }
           }
         ]
       }
     ],
     "metaData": {
-      "created": "2026-06-11T03:39:34Z",
+      "created": "2026-06-19T14:59:22Z",
       "createdBy": "clinical-preanalysis-pipeline-v2",
       "phenopacketSchemaVersion": "2.0",
       "resources": [
@@ -687,48 +672,73 @@
         "progressStatus": "IN_PROGRESS",
         "diagnosis": {
           "disease": {
-            "id": "ORPHA:70",
-            "label": "Spinal muscular atrophy"
+            "id": "ORPHA:98914",
+            "label": "Presynaptic congenital myasthenic syndromes"
           },
-          "score": 0.85,
+          "score": 0.4006,
           "allCandidates": [
             {
+              "id": "ORPHA:98914",
+              "label": "Presynaptic congenital myasthenic syndromes",
+              "score": 0.4006
+            },
+            {
+              "id": "ORPHA:590",
+              "label": "Congenital myasthenic syndrome",
+              "score": 0.4006
+            },
+            {
+              "id": "ORPHA:1145",
+              "label": "Infantile-onset X-linked spinal muscular atrophy",
+              "score": 0.3572
+            },
+            {
+              "id": "ORPHA:167",
+              "label": "Chédiak-Higashi syndrome",
+              "score": 0.3158
+            },
+            {
               "id": "ORPHA:70",
-              "label": "Spinal muscular atrophy",
-              "score": 0.85
+              "label": "Proximal spinal muscular atrophy",
+              "score": 0.296
             },
             {
-              "id": "ORPHA:99981",
-              "label": "Apnea of prematurity",
-              "score": 0.32
+              "id": "ORPHA:285",
+              "label": "Hypermobile Ehlers-Danlos syndrome",
+              "score": 0.2922
             },
             {
-              "id": "ORPHA:2680",
-              "label": "Hypomyelination neuropathy-arthrogryposis syndrome",
-              "score": 0.32
+              "id": "ORPHA:90051",
+              "label": "Sepsis in premature infants",
+              "score": 0.282
             },
             {
-              "id": "ORPHA:91130",
-              "label": "Cardiomyopathy-hypotonia-lactic acidosis syndrome",
-              "score": 0.2436
+              "id": "ORPHA:466768",
+              "label": "Autosomal dominant Charcot-Marie-Tooth disease type 2Z",
+              "score": 0.2816
             },
             {
               "id": "ORPHA:137935",
               "label": "Airway infantile hemangioma",
-              "score": 0.209
+              "score": 0.2789
+            },
+            {
+              "id": "ORPHA:536467",
+              "label": "B3GALT6-related spondylodysplastic Ehlers-Danlos syndrome",
+              "score": 0.2759
             }
           ]
         }
       }
     ],
     "_pipelineStats": {
-      "totalEntities": 30,
-      "matchedHPO": 9,
-      "unmatchedEntities": 21,
-      "phenopacketFeatures": 7,
+      "totalEntities": 22,
+      "matchedHPO": 8,
+      "unmatchedEntities": 14,
+      "phenopacketFeatures": 8,
       "negatedFeatures": 1,
       "numericPhenotypes": 0,
-      "ordoCandidates": 5
+      "ordoCandidates": 10
     }
   }
 }

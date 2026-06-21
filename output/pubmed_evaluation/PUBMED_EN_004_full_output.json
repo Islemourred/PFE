@@ -15,6 +15,149 @@
   "module4": {
     "treatment": [
       {
+        "text": "graft - versus - host disease ( gvhd ) prophylaxis",
+        "ner_score": 0.944,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "graft - versus - host disease ( gvhd ) prophylaxis",
+        "match_type": "skipped_treatment",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "post - transplant cyclophosphamide",
+        "ner_score": 0.946,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "post - transplant cyclophosphamide",
+        "match_type": "skipped_treatment",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "sindrome",
+        "ner_score": 0.726,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "sindrome",
+        "match_type": "skipped_treatment",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "tt - al",
+        "ner_score": 0.529,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "tt - al",
+        "match_type": "skipped_low_ner_score",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "antigen",
+        "ner_score": 0.365,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "antigen",
+        "match_type": "skipped_low_ner_score",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "huesped inc",
+        "ner_score": 0.742,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "huesped inc",
+        "match_type": "skipped_treatment",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "yo ciclofos",
+        "ner_score": 0.788,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "yo ciclofos",
+        "match_type": "skipped_treatment",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "acion postras",
+        "ner_score": 0.598,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "acion postras",
+        "match_type": "skipped_treatment",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "expresion de la proteina",
+        "ner_score": 0.685,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "expresion de la proteina",
+        "match_type": "skipped_treatment",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "haploidentical",
+        "ner_score": 0.842,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "haploidentical",
+        "match_type": "skipped_treatment",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "ploidentical bone marrow transplantation",
+        "ner_score": 0.922,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "ploidentical bone marrow transplantation",
+        "match_type": "skipped_treatment",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
         "text": "bone marrow transplantation",
         "ner_score": 0.827,
         "negated": false,
@@ -22,7 +165,59 @@
         "hpo_id": null,
         "hpo_name": null,
         "expanded_text": "bone marrow transplantation",
-        "match_type": "skipped_non_phenotype",
+        "match_type": "skipped_treatment",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "transplant",
+        "ner_score": 0.9,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "transplant",
+        "match_type": "skipped_treatment",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "protein",
+        "ner_score": 0.617,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "protein",
+        "match_type": "skipped_treatment",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "here",
+        "ner_score": 0.46,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "here",
+        "match_type": "skipped_low_ner_score",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "a hematopoietic stem cell transplant (",
+        "ner_score": 0.933,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "a hematopoietic stem cell transplant (",
+        "match_type": "skipped_treatment",
         "confidence": 0.0,
         "matched": false,
         "umls_cui": null
@@ -35,7 +230,20 @@
         "hpo_id": null,
         "hpo_name": null,
         "expanded_text": "hematopoietic stem cell transplant",
-        "match_type": "skipped_non_phenotype",
+        "match_type": "skipped_treatment",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "hemato",
+        "ner_score": 0.715,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "hemato",
+        "match_type": "skipped_treatment",
         "confidence": 0.0,
         "matched": false,
         "umls_cui": null
@@ -48,7 +256,7 @@
         "hpo_id": null,
         "hpo_name": null,
         "expanded_text": "prophylaxis",
-        "match_type": "no_match",
+        "match_type": "skipped_low_ner_score",
         "confidence": 0.0,
         "matched": false,
         "umls_cui": null
@@ -61,7 +269,111 @@
         "hpo_id": null,
         "hpo_name": null,
         "expanded_text": "cyclophosphamide",
-        "match_type": "no_match",
+        "match_type": "skipped_treatment",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "and immune reconstitution",
+        "ner_score": 0.73,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "and immune reconstitution",
+        "match_type": "skipped_treatment",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "hla matched",
+        "ner_score": 0.762,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "hla matched",
+        "match_type": "skipped_treatment",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "error",
+        "ner_score": 0.579,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "error",
+        "match_type": "skipped_treatment",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "inmunidad",
+        "ner_score": 0.577,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "inmunidad",
+        "match_type": "skipped_treatment",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "ligada",
+        "ner_score": 0.52,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "ligada",
+        "match_type": "skipped_low_ner_score",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "cromosoma",
+        "ner_score": 0.618,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "cromosoma",
+        "match_type": "skipped_treatment",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "ante",
+        "ner_score": 0.524,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "ante",
+        "match_type": "skipped_low_ner_score",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "paciente",
+        "ner_score": 0.564,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "paciente",
+        "match_type": "skipped_treatment",
         "confidence": 0.0,
         "matched": false,
         "umls_cui": null
@@ -74,7 +386,33 @@
         "hpo_id": null,
         "hpo_name": null,
         "expanded_text": "trasplante de",
-        "match_type": "no_match",
+        "match_type": "skipped_treatment",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "las pro",
+        "ner_score": 0.599,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "las pro",
+        "match_type": "skipped_treatment",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "la profilaxis",
+        "ner_score": 0.725,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "la profilaxis",
+        "match_type": "skipped_treatment",
         "confidence": 0.0,
         "matched": false,
         "umls_cui": null
@@ -87,13 +425,78 @@
         "hpo_id": null,
         "hpo_name": null,
         "expanded_text": "profilaxis",
-        "match_type": "no_match",
+        "match_type": "skipped_low_ner_score",
         "confidence": 0.0,
         "matched": false,
         "umls_cui": null
       }
     ],
     "problem": [
+      {
+        "text": "wiskott - aldrich syndrome",
+        "ner_score": 0.905,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "wiskott - aldrich syndrome",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "skott - aldrich syndrome",
+        "ner_score": 0.797,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "skott - aldrich syndrome",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "an x - linked genetic disorder",
+        "ner_score": 0.995,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0001417",
+        "hpo_name": "X-linked inheritance",
+        "expanded_text": "an x - linked genetic disorder",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.8449,
+        "matched": true,
+        "umls_cui": "C0241764"
+      },
+      {
+        "text": "tt - aldrich syndrome protein (",
+        "ner_score": 0.797,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "tt - aldrich syndrome protein (",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "tt - aldrich syndrome",
+        "ner_score": 0.834,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0001973",
+        "hpo_name": "Autoimmune thrombocytopenia",
+        "expanded_text": "tt - aldrich syndrome",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.7243,
+        "matched": true,
+        "umls_cui": "C0242584"
+      },
       {
         "text": "Aldrich",
         "ner_score": 0.955,
@@ -115,7 +518,7 @@
         "hpo_id": null,
         "hpo_name": null,
         "expanded_text": "syndrome",
-        "match_type": "no_match",
+        "match_type": "skipped_en_noise",
         "confidence": 0.0,
         "matched": false,
         "umls_cui": null
@@ -141,7 +544,7 @@
         "hpo_id": null,
         "hpo_name": null,
         "expanded_text": "linked",
-        "match_type": "no_match",
+        "match_type": "skipped_low_ner_score",
         "confidence": 0.0,
         "matched": false,
         "umls_cui": null
@@ -154,7 +557,7 @@
         "hpo_id": null,
         "hpo_name": null,
         "expanded_text": "genetic",
-        "match_type": "no_match",
+        "match_type": "skipped_low_ner_score",
         "confidence": 0.0,
         "matched": false,
         "umls_cui": null
@@ -167,6 +570,19 @@
         "hpo_id": null,
         "hpo_name": null,
         "expanded_text": "disorder",
+        "match_type": "skipped_en_noise",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "mutations in the gene",
+        "ner_score": 0.925,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "mutations in the gene",
         "match_type": "no_match",
         "confidence": 0.0,
         "matched": false,
@@ -180,7 +596,7 @@
         "hpo_id": null,
         "hpo_name": null,
         "expanded_text": "Wiskott-Aldrich syndrome protein",
-        "match_type": "no_match",
+        "match_type": "skipped_low_ner_score",
         "confidence": 0.0,
         "matched": false,
         "umls_cui": null
@@ -193,7 +609,7 @@
         "hpo_id": null,
         "hpo_name": null,
         "expanded_text": "versus",
-        "match_type": "no_match",
+        "match_type": "skipped_low_ner_score",
         "confidence": 0.0,
         "matched": false,
         "umls_cui": null
@@ -206,7 +622,7 @@
         "hpo_id": null,
         "hpo_name": null,
         "expanded_text": "disease",
-        "match_type": "no_match",
+        "match_type": "skipped_en_noise",
         "confidence": 0.0,
         "matched": false,
         "umls_cui": null
@@ -251,6 +667,19 @@
         "umls_cui": "C1844666"
       },
       {
+        "text": "complete donor chimerism",
+        "ner_score": 0.963,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "complete donor chimerism",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
         "text": "meda",
         "ner_score": 0.59,
         "negated": false,
@@ -288,25 +717,22 @@
         "confidence": 0.0,
         "matched": false,
         "umls_cui": null
-      },
-      {
-        "text": "X-linked",
-        "ner_score": 0.9,
-        "negated": false,
-        "negation_cue": "",
-        "hpo_id": "HP:0001417",
-        "hpo_name": "X-linked inheritance",
-        "expanded_text": "X-linked",
-        "match_type": "text_scan_exact_synonym",
-        "confidence": 0.95,
-        "matched": true,
-        "umls_cui": "C0241764",
-        "umls_all": [
-          "C0241764"
-        ]
       }
     ],
     "test": [
+      {
+        "text": "the peripheral blood - nucleated cell chimerism",
+        "ner_score": 0.892,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "the peripheral blood - nucleated cell chimerism",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
       {
         "text": "protein",
         "ner_score": 0.985,
@@ -315,7 +741,7 @@
         "hpo_id": null,
         "hpo_name": null,
         "expanded_text": "protein",
-        "match_type": "skipped_non_phenotype",
+        "match_type": "skipped_test",
         "confidence": 0.0,
         "matched": false,
         "umls_cui": null
@@ -328,7 +754,7 @@
         "hpo_id": null,
         "hpo_name": null,
         "expanded_text": "prote",
-        "match_type": "no_match",
+        "match_type": "skipped_test",
         "confidence": 0.0,
         "matched": false,
         "umls_cui": null
@@ -341,7 +767,7 @@
         "hpo_id": null,
         "hpo_name": null,
         "expanded_text": "donor",
-        "match_type": "no_match",
+        "match_type": "skipped_low_ner_score",
         "confidence": 0.0,
         "matched": false,
         "umls_cui": null
@@ -354,7 +780,7 @@
         "hpo_id": null,
         "hpo_name": null,
         "expanded_text": "mato",
-        "match_type": "no_match",
+        "match_type": "skipped_test",
         "confidence": 0.0,
         "matched": false,
         "umls_cui": null
@@ -367,7 +793,20 @@
         "hpo_id": null,
         "hpo_name": null,
         "expanded_text": "chime",
-        "match_type": "no_match",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "the was protein",
+        "ner_score": 0.856,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "the was protein",
+        "match_type": "skipped_test",
         "confidence": 0.0,
         "matched": false,
         "umls_cui": null
@@ -380,7 +819,7 @@
         "hpo_id": null,
         "hpo_name": null,
         "expanded_text": "normal",
-        "match_type": "no_match",
+        "match_type": "skipped_en_noise",
         "confidence": 0.0,
         "matched": false,
         "umls_cui": null
@@ -393,7 +832,7 @@
         "hpo_id": null,
         "hpo_name": null,
         "expanded_text": "expression",
-        "match_type": "no_match",
+        "match_type": "skipped_test",
         "confidence": 0.0,
         "matched": false,
         "umls_cui": null
@@ -406,7 +845,7 @@
         "hpo_id": null,
         "hpo_name": null,
         "expanded_text": "expres",
-        "match_type": "no_match",
+        "match_type": "skipped_low_ner_score",
         "confidence": 0.0,
         "matched": false,
         "umls_cui": null
@@ -419,7 +858,7 @@
         "hpo_id": null,
         "hpo_name": null,
         "expanded_text": "complete",
-        "match_type": "no_match",
+        "match_type": "skipped_test",
         "confidence": 0.0,
         "matched": false,
         "umls_cui": null
@@ -432,7 +871,7 @@
         "hpo_id": null,
         "hpo_name": null,
         "expanded_text": "evalu",
-        "match_type": "no_match",
+        "match_type": "skipped_test",
         "confidence": 0.0,
         "matched": false,
         "umls_cui": null
@@ -445,7 +884,7 @@
         "hpo_id": null,
         "hpo_name": null,
         "expanded_text": "ación",
-        "match_type": "no_match",
+        "match_type": "skipped_test",
         "confidence": 0.0,
         "matched": false,
         "umls_cui": null
@@ -458,7 +897,7 @@
         "hpo_id": null,
         "hpo_name": null,
         "expanded_text": "lógica",
-        "match_type": "no_match",
+        "match_type": "skipped_test",
         "confidence": 0.0,
         "matched": false,
         "umls_cui": null
@@ -466,65 +905,142 @@
     ],
     "ordo_candidates": [
       {
+        "ordo_id": "ORPHA:391487",
+        "name": "STAT1-related autoimmune enteropathy and endocrinopathy-susceptibility to chronic infections syndrome",
+        "name_fr": "",
+        "score": 0.5659,
+        "coverage": 0.0435,
+        "matched_hpo": [
+          "HP:0001973",
+          "HP:0002958"
+        ],
+        "matched_count": 2,
+        "total_disease_hpo": 46,
+        "text_match": false
+      },
+      {
         "ordo_id": "ORPHA:49566",
         "name": "Acquired purpura fulminans",
         "name_fr": "",
-        "score": 0.0394,
-        "jaccard": 0.0385,
+        "score": 0.4333,
         "coverage": 0.04,
         "matched_hpo": [
           "HP:0002958"
         ],
         "matched_count": 1,
-        "total_disease_hpo": 25
-      },
-      {
-        "ordo_id": "ORPHA:158057",
-        "name": "Acquired hemophagocytic lymphohistiocytosis associated with malignant disease",
-        "name_fr": "",
-        "score": 0.0254,
-        "jaccard": 0.025,
-        "coverage": 0.0256,
-        "matched_hpo": [
-          "HP:0002958"
-        ],
-        "matched_count": 1,
-        "total_disease_hpo": 39
+        "total_disease_hpo": 25,
+        "text_match": false
       },
       {
         "ordo_id": "ORPHA:540",
         "name": "Familial hemophagocytic lymphohistiocytosis",
         "name_fr": "",
-        "score": 0.022,
-        "jaccard": 0.0217,
+        "score": 0.4333,
         "coverage": 0.0222,
         "matched_hpo": [
           "HP:0002958"
         ],
         "matched_count": 1,
-        "total_disease_hpo": 45
+        "total_disease_hpo": 45,
+        "text_match": false
       },
       {
-        "ordo_id": "ORPHA:391487",
-        "name": "STAT1-related autoimmune enteropathy and endocrinopathy-susceptibility to chronic infections syndrome",
+        "ordo_id": "ORPHA:158057",
+        "name": "Acquired hemophagocytic lymphohistiocytosis associated with malignant disease",
         "name_fr": "",
-        "score": 0.0216,
-        "jaccard": 0.0213,
-        "coverage": 0.0217,
+        "score": 0.4333,
+        "coverage": 0.0256,
         "matched_hpo": [
           "HP:0002958"
         ],
         "matched_count": 1,
-        "total_disease_hpo": 46
+        "total_disease_hpo": 39,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:906",
+        "name": "Wiskott-Aldrich syndrome",
+        "name_fr": "",
+        "score": 0.3428,
+        "coverage": 0.0,
+        "matched_hpo": [],
+        "matched_count": 0,
+        "total_disease_hpo": 95,
+        "text_match": true
+      },
+      {
+        "ordo_id": "ORPHA:3261",
+        "name": "Autoimmune lymphoproliferative syndrome",
+        "name_fr": "",
+        "score": 0.3365,
+        "coverage": 0.0139,
+        "matched_hpo": [
+          "HP:0001973"
+        ],
+        "matched_count": 1,
+        "total_disease_hpo": 72,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:275",
+        "name": "Severe combined immunodeficiency due to DCLRE1C deficiency",
+        "name_fr": "",
+        "score": 0.3365,
+        "coverage": 0.027,
+        "matched_hpo": [
+          "HP:0001973"
+        ],
+        "matched_count": 1,
+        "total_disease_hpo": 37,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:37042",
+        "name": "Immune dysregulation-polyendocrinopathy-enteropathy-X-linked syndrome",
+        "name_fr": "",
+        "score": 0.3365,
+        "coverage": 0.0169,
+        "matched_hpo": [
+          "HP:0001973"
+        ],
+        "matched_count": 1,
+        "total_disease_hpo": 59,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:1855",
+        "name": "Spondyloenchondrodysplasia",
+        "name_fr": "",
+        "score": 0.3365,
+        "coverage": 0.0192,
+        "matched_hpo": [
+          "HP:0001973"
+        ],
+        "matched_count": 1,
+        "total_disease_hpo": 52,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:760",
+        "name": "Purine nucleoside phosphorylase deficiency",
+        "name_fr": "",
+        "score": 0.3365,
+        "coverage": 0.0345,
+        "matched_hpo": [
+          "HP:0001973"
+        ],
+        "matched_count": 1,
+        "total_disease_hpo": 29,
+        "text_match": false
       }
     ],
     "stats": {
-      "total": 34,
-      "matched": 2,
-      "unmatched": 32,
-      "match_rate": 5.9,
-      "unique_hpo": 2,
-      "ordo_matches": 4
+      "total": 68,
+      "matched": 3,
+      "unmatched": 65,
+      "match_rate": 4.4,
+      "unique_hpo": 3,
+      "ordo_matches": 10
     }
   },
   "phenopacket": {
@@ -533,8 +1049,48 @@
       "id": "PUBMED_EN_004"
     },
     "input": "Case Report: Haploidentical bone marrow transplantation in a pediatric patient with Wiskott-Aldrich syndrome. A case report.\n\nWiskott-Aldrich syndrome (WAS) is an X-linked genetic disorder caused by mutations in the gene that encodes the Wiskott-Aldrich syndrome protein (WASp). Here, we report the clinical case of an 18-month-old boy diagnosed with Wiskott-Aldrich syndrome, who did not have an HLA-matched related or unrelated donor and was treated successfully with a hematopoietic stem cell transplant (HSCT) from a haploidentical family donor. Graft-versus-host disease (GvHD) prophylaxis included post-transplant cyclophosphamide (PT-Cy). At day +30, the peripheral blood-nucleated cell chimerism was 100% and the WAS protein had a normal expression. Currently, at month 32 post-transplant, the patient has hematological and immune reconstitution and complete donor chimerism without evidence of GvHD. HSCT with PT-Cy was a feasible and safe option for this patient with WAS, in which an HLA matched donor was not available.\nEl síndrome de Wiskott-Aldrich es un error innato de la inmunidad de herencia ligada al cromosoma X, producido por variantes en el gen que codifica la proteína del síndrome de Wiskott-Aldrich (WASp). Reportamos el caso clínico de un paciente de 18 meses con diagnóstico de Wiskott-Aldrich que no presentaba donante antígeno leucocitario humano (HLA) idéntico y recibió un trasplante de células progenitoras hematopoyéticas (TCPH) con donante familiar haploidéntico. La profilaxis para enfermedad de injerto contra huésped incluyó ciclofosfamida (PT-Cy). El quimerismo del día +30 fue 100 % del donante y la evaluación postrasplante de la expresión de la proteína WAS fue normal. Actualmente, a 32 meses del trasplante, presenta reconstitución hematológica e inmunológica y quimerismo completo sin evidencia de enfermedad injerto contra huésped. El TCPH haploidéntico con PT-Cy se mostró factible y seguro en este caso de síndrome de WiskottAldrich en el que no se disponía de un donante HLA idéntico.",
-    "target": "Acquired purpura fulminans",
+    "target": "STAT1-related autoimmune enteropathy and endocrinopathy-susceptibility to chronic infections syndrome",
     "phenotypicFeatures": [
+      {
+        "type": {
+          "id": "HP:0001417",
+          "label": "X-linked inheritance",
+          "umls_cui": "C0241764"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "PUBMED_EN_004",
+              "description": "NER: an x - linked genetic disorder (0.995) | Match: sapbert_similarity (0.845)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0001973",
+          "label": "Autoimmune thrombocytopenia",
+          "umls_cui": "C0242584"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "PUBMED_EN_004",
+              "description": "NER: tt - aldrich syndrome (0.834) | Match: sapbert_similarity (0.724)"
+            }
+          }
+        ]
+      },
       {
         "type": {
           "id": "HP:0002958",
@@ -554,30 +1110,10 @@
             }
           }
         ]
-      },
-      {
-        "type": {
-          "id": "HP:0001417",
-          "label": "X-linked inheritance",
-          "umls_cui": "C0241764"
-        },
-        "excluded": false,
-        "evidence": [
-          {
-            "evidenceCode": {
-              "id": "ECO:0000033",
-              "label": "author statement supported by traceable reference"
-            },
-            "reference": {
-              "id": "PUBMED_EN_004",
-              "description": "NER: X-linked (0.900) | Match: text_scan_exact_synonym (0.950)"
-            }
-          }
-        ]
       }
     ],
     "metaData": {
-      "created": "2026-06-11T03:04:34Z",
+      "created": "2026-06-19T15:01:31Z",
       "createdBy": "clinical-preanalysis-pipeline-v2",
       "phenopacketSchemaVersion": "2.0",
       "resources": [
@@ -597,43 +1133,73 @@
         "progressStatus": "IN_PROGRESS",
         "diagnosis": {
           "disease": {
-            "id": "ORPHA:49566",
-            "label": "Acquired purpura fulminans"
+            "id": "ORPHA:391487",
+            "label": "STAT1-related autoimmune enteropathy and endocrinopathy-susceptibility to chronic infections syndrome"
           },
-          "score": 0.0394,
+          "score": 0.5659,
           "allCandidates": [
+            {
+              "id": "ORPHA:391487",
+              "label": "STAT1-related autoimmune enteropathy and endocrinopathy-susceptibility to chronic infections syndrome",
+              "score": 0.5659
+            },
             {
               "id": "ORPHA:49566",
               "label": "Acquired purpura fulminans",
-              "score": 0.0394
-            },
-            {
-              "id": "ORPHA:158057",
-              "label": "Acquired hemophagocytic lymphohistiocytosis associated with malignant disease",
-              "score": 0.0254
+              "score": 0.4333
             },
             {
               "id": "ORPHA:540",
               "label": "Familial hemophagocytic lymphohistiocytosis",
-              "score": 0.022
+              "score": 0.4333
             },
             {
-              "id": "ORPHA:391487",
-              "label": "STAT1-related autoimmune enteropathy and endocrinopathy-susceptibility to chronic infections syndrome",
-              "score": 0.0216
+              "id": "ORPHA:158057",
+              "label": "Acquired hemophagocytic lymphohistiocytosis associated with malignant disease",
+              "score": 0.4333
+            },
+            {
+              "id": "ORPHA:906",
+              "label": "Wiskott-Aldrich syndrome",
+              "score": 0.3428
+            },
+            {
+              "id": "ORPHA:3261",
+              "label": "Autoimmune lymphoproliferative syndrome",
+              "score": 0.3365
+            },
+            {
+              "id": "ORPHA:275",
+              "label": "Severe combined immunodeficiency due to DCLRE1C deficiency",
+              "score": 0.3365
+            },
+            {
+              "id": "ORPHA:37042",
+              "label": "Immune dysregulation-polyendocrinopathy-enteropathy-X-linked syndrome",
+              "score": 0.3365
+            },
+            {
+              "id": "ORPHA:1855",
+              "label": "Spondyloenchondrodysplasia",
+              "score": 0.3365
+            },
+            {
+              "id": "ORPHA:760",
+              "label": "Purine nucleoside phosphorylase deficiency",
+              "score": 0.3365
             }
           ]
         }
       }
     ],
     "_pipelineStats": {
-      "totalEntities": 34,
-      "matchedHPO": 2,
-      "unmatchedEntities": 32,
-      "phenopacketFeatures": 2,
+      "totalEntities": 68,
+      "matchedHPO": 3,
+      "unmatchedEntities": 65,
+      "phenopacketFeatures": 3,
       "negatedFeatures": 0,
       "numericPhenotypes": 0,
-      "ordoCandidates": 4
+      "ordoCandidates": 10
     }
   }
 }

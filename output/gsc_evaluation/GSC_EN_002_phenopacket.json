@@ -4,8 +4,28 @@
     "id": "GSC_EN_002"
   },
   "input": "Case Report: Early acute pancreatitis in a child with compound heterozygosis ∆F508/R1438W/Y1032C cystic fibrosis: a case report.\n\nINTRODUCTION: Recent studies suggest an important role of the cystic fibrosis transmembrane conductance regulator gene in the development of pancreatitis. It occurs approximately in 20% of patients with cystic fibrosis and almost exclusively in pancreatic sufficient people. Newborn screening and improved panels of deoxyribonucleic acid mutation analysis techniques are revealing more rare and nonclassical pictures of the disease, generally associated with pancreatic sufficiency and with an increased risk of developing pancreatitis. Mutations R1438 and Y1032 are considered rare mutations, and, when singularly associated with ∆F508, lead to a mild phenotype with pancreatic sufficiency and no detectable respiratory involvement.\nCASE PRESENTATION: We present the case of a Caucasian girl, aged six years, whose genotype was characterized by three different mutations ∆F508, R1438W and Y1032C, never reported, together, in the same patient. She presented with a positive immunoreactive trypsinogen screening, a borderline sweat test, and, in the first years, a favorable pulmonary course, and pancreatic sufficiency. At the age of six years, she presented with a sudden episode of acute abdominal pain, anorexia and fever. A diagnosis of pancreatitis was made after clinical and laboratory examinations. Venous rehydration, bowel rest and therapy with ursodeoxycholic acid resulted in complete remission.The treatment was successful, with normalization of her symptoms and laboratory parameters within four weeks.\nCONCLUSION: There has been a vast expansion in the understanding of the wide range of phenotypes associated with cystic fibrosis transmembrane conductance regulator dysfunction since the discovery of the cystic fibrosis transmembrane conductance regulator gene. The genotype-phenotype correlation in pancreatitis is rare compared to other organ manifestations, since this is seen almost exclusively among pancreatic sufficient patients with cystic fibrosis. Our study supports that compound heterozygosis ∆F508-R1438W/Y1032C is a 'cystic fibrosis-causing genotype' characterized by an immunoreactive trypsinogen positive screening, abnormal sweat chloride testing, and pancreatic sufficiency, with an increased risk of acute pancreatitis at an early age.",
-  "target": "Cystic fibrosis",
+  "target": "Legionnaires disease",
   "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0001735",
+        "label": "Acute pancreatitis",
+        "umls_cui": "C0001339"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "GSC_EN_002",
+            "description": "NER: early acute pancreatitis (0.997) | Match: substring_match (0.950)"
+          }
+        }
+      ]
+    },
     {
       "type": {
         "id": "HP:0001733",
@@ -28,9 +48,9 @@
     },
     {
       "type": {
-        "id": "HP:0002206",
-        "label": "Pulmonary fibrosis",
-        "umls_cui": "C0034069"
+        "id": "HP:0006552",
+        "label": "Fibrocystic lung disease",
+        "umls_cui": "C1397290"
       },
       "excluded": false,
       "evidence": [
@@ -41,27 +61,7 @@
           },
           "reference": {
             "id": "GSC_EN_002",
-            "description": "NER: fibrosis (0.579) | Match: sapbert_similarity (0.734)"
-          }
-        }
-      ]
-    },
-    {
-      "type": {
-        "id": "HP:0001738",
-        "label": "Exocrine pancreatic insufficiency",
-        "umls_cui": "C0030293"
-      },
-      "excluded": false,
-      "evidence": [
-        {
-          "evidenceCode": {
-            "id": "ECO:0000033",
-            "label": "author statement supported by traceable reference"
-          },
-          "reference": {
-            "id": "GSC_EN_002",
-            "description": "NER: pancreatic sufficiency (0.506) | Match: sapbert_similarity (0.832)"
+            "description": "NER: cystic fibrosis (0.992) | Match: sapbert_similarity (0.711)"
           }
         }
       ]
@@ -82,6 +82,26 @@
           "reference": {
             "id": "GSC_EN_002",
             "description": "NER: respiratory involvement (0.571) | Match: sapbert_similarity (0.763) | Negated by: \"no\""
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0002027",
+        "label": "Abdominal pain",
+        "umls_cui": "C0000737"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "GSC_EN_002",
+            "description": "NER: acute abdominal pain (0.999) | Match: substring_match (0.950)"
           }
         }
       ]
@@ -148,126 +168,6 @@
     },
     {
       "type": {
-        "id": "HP:0003680",
-        "label": "Nonprogressive",
-        "umls_cui": "C3839460"
-      },
-      "excluded": false,
-      "evidence": [
-        {
-          "evidenceCode": {
-            "id": "ECO:0000033",
-            "label": "author statement supported by traceable reference"
-          },
-          "reference": {
-            "id": "GSC_EN_002",
-            "description": "NER: remission (0.829) | Match: sapbert_similarity (0.708)"
-          }
-        }
-      ]
-    },
-    {
-      "type": {
-        "id": "HP:0001735",
-        "label": "Acute pancreatitis",
-        "umls_cui": "C0001339"
-      },
-      "excluded": false,
-      "evidence": [
-        {
-          "evidenceCode": {
-            "id": "ECO:0000033",
-            "label": "author statement supported by traceable reference"
-          },
-          "reference": {
-            "id": "GSC_EN_002",
-            "description": "NER: acute pancreatitis (0.900) | Match: text_scan_exact_label (0.950)"
-          }
-        }
-      ]
-    },
-    {
-      "type": {
-        "id": "HP:0002027",
-        "label": "Abdominal pain",
-        "umls_cui": "C0000737"
-      },
-      "excluded": false,
-      "evidence": [
-        {
-          "evidenceCode": {
-            "id": "ECO:0000033",
-            "label": "author statement supported by traceable reference"
-          },
-          "reference": {
-            "id": "GSC_EN_002",
-            "description": "NER: abdominal pain (0.900) | Match: text_scan_exact_label (0.950)"
-          }
-        }
-      ]
-    },
-    {
-      "type": {
-        "id": "HP:0001944",
-        "label": "Dehydration",
-        "umls_cui": "C0011175"
-      },
-      "excluded": false,
-      "evidence": [
-        {
-          "evidenceCode": {
-            "id": "ECO:0000033",
-            "label": "author statement supported by traceable reference"
-          },
-          "reference": {
-            "id": "GSC_EN_002",
-            "description": "NER: Venous rehydration (0.413) | Match: sapbert_similarity (0.739)"
-          }
-        }
-      ]
-    },
-    {
-      "type": {
-        "id": "HP:0000711",
-        "label": "Restlessness",
-        "umls_cui": "C3887611"
-      },
-      "excluded": false,
-      "evidence": [
-        {
-          "evidenceCode": {
-            "id": "ECO:0000033",
-            "label": "author statement supported by traceable reference"
-          },
-          "reference": {
-            "id": "GSC_EN_002",
-            "description": "NER: bowel rest (0.778) | Match: sapbert_similarity (0.708)"
-          }
-        }
-      ]
-    },
-    {
-      "type": {
-        "id": "HP:0003687",
-        "label": "Centrally nucleated skeletal muscle fibers",
-        "umls_cui": "C1842170"
-      },
-      "excluded": false,
-      "evidence": [
-        {
-          "evidenceCode": {
-            "id": "ECO:0000033",
-            "label": "author statement supported by traceable reference"
-          },
-          "reference": {
-            "id": "GSC_EN_002",
-            "description": "NER: nuclei (0.983) | Match: sapbert_similarity (0.720)"
-          }
-        }
-      ]
-    },
-    {
-      "type": {
         "id": "HP:0012827",
         "label": "Borderline",
         "umls_cui": "C0205189"
@@ -281,54 +181,14 @@
           },
           "reference": {
             "id": "GSC_EN_002",
-            "description": "NER: borderline (0.975) | Match: exact_label (1.000)"
-          }
-        }
-      ]
-    },
-    {
-      "type": {
-        "id": "HP:0000975",
-        "label": "Hyperhidrosis",
-        "umls_cui": "C0020458"
-      },
-      "excluded": false,
-      "evidence": [
-        {
-          "evidenceCode": {
-            "id": "ECO:0000033",
-            "label": "author statement supported by traceable reference"
-          },
-          "reference": {
-            "id": "GSC_EN_002",
-            "description": "NER: sweat (0.989) | Match: sapbert_similarity (0.857)"
-          }
-        }
-      ]
-    },
-    {
-      "type": {
-        "id": "HP:0011458",
-        "label": "Abdominal symptom",
-        "umls_cui": "C0740651"
-      },
-      "excluded": false,
-      "evidence": [
-        {
-          "evidenceCode": {
-            "id": "ECO:0000033",
-            "label": "author statement supported by traceable reference"
-          },
-          "reference": {
-            "id": "GSC_EN_002",
-            "description": "NER: abdominal (0.858) | Match: sapbert_similarity (0.705)"
+            "description": "NER: borderline (0.900) | Match: text_scan_exact_label (0.950)"
           }
         }
       ]
     }
   ],
   "metaData": {
-    "created": "2026-06-11T03:07:27Z",
+    "created": "2026-06-19T15:04:34Z",
     "createdBy": "clinical-preanalysis-pipeline-v2",
     "phenopacketSchemaVersion": "2.0",
     "resources": [
@@ -348,47 +208,72 @@
       "progressStatus": "IN_PROGRESS",
       "diagnosis": {
         "disease": {
-          "id": "ORPHA:586",
-          "label": "Cystic fibrosis"
+          "id": "ORPHA:549",
+          "label": "Legionnaires disease"
         },
-        "score": 0.85,
+        "score": 0.4016,
         "allCandidates": [
           {
-            "id": "ORPHA:586",
-            "label": "Cystic fibrosis",
-            "score": 0.85
+            "id": "ORPHA:549",
+            "label": "Legionnaires disease",
+            "score": 0.4016
           },
           {
-            "id": "ORPHA:313906",
-            "label": "Congenital pancreatic cyst",
-            "score": 0.3632
+            "id": "ORPHA:99827",
+            "label": "Crimean-Congo hemorrhagic fever",
+            "score": 0.3913
           },
           {
-            "id": "ORPHA:2808",
-            "label": "Laryngeal abductor paralysis",
-            "score": 0.3235
+            "id": "ORPHA:117",
+            "label": "Behçet disease",
+            "score": 0.3692
           },
           {
-            "id": "ORPHA:140966",
-            "label": "Palmoplantar keratoderma, Nagashima type",
-            "score": 0.3235
+            "id": "ORPHA:829",
+            "label": "Adult-onset Still disease",
+            "score": 0.366
           },
           {
-            "id": "ORPHA:79141",
-            "label": "Hereditary painful callosities",
-            "score": 0.3235
+            "id": "ORPHA:2552",
+            "label": "Microsporidiosis",
+            "score": 0.3655
+          },
+          {
+            "id": "ORPHA:35062",
+            "label": "Severe disseminated cytomegalovirus infection in immunocompetent patients",
+            "score": 0.3654
+          },
+          {
+            "id": "ORPHA:99826",
+            "label": "Marburg hemorrhagic fever",
+            "score": 0.3637
+          },
+          {
+            "id": "ORPHA:466677",
+            "label": "Scorpion envenomation",
+            "score": 0.3549
+          },
+          {
+            "id": "ORPHA:900",
+            "label": "Granulomatosis with polyangiitis",
+            "score": 0.3511
+          },
+          {
+            "id": "ORPHA:20",
+            "label": "3-hydroxy-3-methylglutaric aciduria",
+            "score": 0.3457
           }
         ]
       }
     }
   ],
   "_pipelineStats": {
-    "totalEntities": 47,
-    "matchedHPO": 18,
-    "unmatchedEntities": 29,
-    "phenopacketFeatures": 16,
+    "totalEntities": 81,
+    "matchedHPO": 9,
+    "unmatchedEntities": 72,
+    "phenopacketFeatures": 9,
     "negatedFeatures": 1,
     "numericPhenotypes": 0,
-    "ordoCandidates": 5
+    "ordoCandidates": 10
   }
 }

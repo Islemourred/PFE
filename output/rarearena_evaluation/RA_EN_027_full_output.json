@@ -1,0 +1,3014 @@
+{
+  "note_id": "RA_EN_027",
+  "language": "en",
+  "module1": {
+    "clean_text": "A [AGE] right-handed female presented on [DATE] with chronic bilateral foot arch pain, and paroxysmal diffuse spine and neck pain for nine months. The pain began in [DATE] following a streptococcal throat infection confirmed by a positive strep test. Post-recovery, she experienced sharp pain in her right leg extending to her right shin, later involving her left leg. The pain gradually spread to her entire spine and hips, increasing with movement and ambulation. The pain was described as dull (3/10) and shooting (8/10). She also reported intermittent numbness in both feet and tailbone, worsening fatigue, intermittent dizziness triggered by standing and walking, blurry vision in both eyes, numbness and tingling in her legs, and memory difficulties related to pain. She had no muscle weakness, vertigo, headache, seizure, or other constitutional symptoms. Her medical history included anemia, anxiety, and depression, with no significant surgical history. She had allergies to cat hair, dust mites, and penicillin, and was an active smoker with a 1.25-pack year history over five years. There was no family history of epilepsy. She had a head trauma at age [AGE] from a fall off a horse, resulting in loss of consciousness. No brain infections or generalized tonic-clonic seizures were reported. On examination, she was alert, oriented, and in mild distress, appearing anxious. Deep tendon reflexes were symmetrical but brisk in both arms and legs. Her natural and tandem gait were unsteady, and heel-walking and toe-walking were difficult. There was tenderness over the paravertebral points of the cervical, thoracic, and lumbar spine, with limited range of motion in the spine. Routine blood tests were normal. X-rays of the cervical spine showed vertebral body heights, disc spaces, and facet joints with a mild reversal of the usual cervical lordosis without spondylolisthesis. X-rays of the thoracic and lumbar spine showed minimal levocurvature of the lumbar spine. On [DATE] she experienced a syncope episode after standing for about 20 minutes while smoking. She developed nausea, ringing in her ears, and dimming vision before losing consciousness for less than a minute. Her face reportedly turned gray before collapsing, but she did not hit her head. Post-episode, she had reduced sensation in her left arm for a few days and paresthesia in all extremities that night. She denied convulsions, tongue biting, and incontinence but reported headaches, nausea, drowsiness, and persistent weakness and numbness. She had difficulty understanding speech immediately after the episode and felt fully recovered after one to two hours. This was an isolated event with no recurrence and no cardiac symptoms. She was referred to a cardiologist and neurologist. An electrocardiogram (EKG), ultrasound (US) duplex carotid artery bilateral, and a routine electroencephalogram (EEG) awake and drowsy were performed. Cardiovascular examination was unremarkable. The EKG suggested possible left atrial enlargement, likely a false positive. The US duplex carotid arteries showed a mean carotid intima-media thickness (CIMT) below the 25th percentile for her age and gender. An echocardiogram (echo) was normal, ruling out structural heart diseases as a cause of syncope.",
+    "phi_map": {
+      "AGE": [
+        "23-year-old",
+        "17"
+      ],
+      "DATE": [
+        "December 8,2021,",
+        "March",
+        "2021",
+        "January 23,",
+        "2022,"
+      ]
+    },
+    "patient_info": {
+      "sex": "female"
+    }
+  },
+  "module3_warnings": {
+    "temporal": [],
+    "inconsistencies": []
+  },
+  "module4": {
+    "problem": [
+      {
+        "text": "generalized tonic - clonic seizures",
+        "ner_score": 0.999,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0002069",
+        "hpo_name": "Bilateral tonic-clonic seizure",
+        "expanded_text": "generalized tonic - clonic seizures",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.9431,
+        "matched": true,
+        "umls_cui": "C0494475"
+      },
+      {
+        "text": "chronic bilateral foot arch pain",
+        "ner_score": 0.998,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "chronic bilateral foot arch pain",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "onic",
+        "ner_score": 0.798,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "onic",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "pain",
+        "ner_score": 0.947,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0012531",
+        "hpo_name": "Pain",
+        "expanded_text": "pain",
+        "match_type": "exact_label",
+        "confidence": 1.0,
+        "matched": true,
+        "umls_cui": "C0030193"
+      },
+      {
+        "text": "mal diffuse spine and neck pain",
+        "ner_score": 0.998,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "mal diffuse spine and neck pain",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "the pain",
+        "ner_score": 0.997,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "the pain",
+        "match_type": "deduplicated",
+        "confidence": 0.982,
+        "matched": false,
+        "umls_cui": "C0030193"
+      },
+      {
+        "text": "a streptococcal throat infection",
+        "ner_score": 0.998,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "a streptococcal throat infection",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "ococcal",
+        "ner_score": 0.914,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "ococcal",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "infection",
+        "ner_score": 0.762,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "infection",
+        "match_type": "sapbert_rejected_low_conf",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "positive strep test",
+        "ner_score": 0.907,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "positive strep test",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "sharp pain in her right leg",
+        "ner_score": 0.995,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "sharp pain in her right leg",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "intermittent numbness in both feet and tailbone",
+        "ner_score": 0.998,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "intermittent numbness in both feet and tailbone",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "numbness",
+        "ner_score": 0.968,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "numbness",
+        "match_type": "sapbert_rejected_low_conf",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "numb",
+        "ner_score": 0.997,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "numb",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "worse",
+        "ner_score": 0.995,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "worse",
+        "match_type": "sapbert_rejected_low_conf",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "ning fatigue",
+        "ner_score": 0.996,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0012432",
+        "hpo_name": "Chronic fatigue",
+        "expanded_text": "ning fatigue",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.7393,
+        "matched": true,
+        "umls_cui": "C0518656"
+      },
+      {
+        "text": "fatigue",
+        "ner_score": 0.971,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0012378",
+        "hpo_name": "Fatigue",
+        "expanded_text": "fatigue",
+        "match_type": "exact_label",
+        "confidence": 1.0,
+        "matched": true,
+        "umls_cui": "C0015672"
+      },
+      {
+        "text": "intermittent dizziness",
+        "ner_score": 0.997,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "intermittent dizziness",
+        "match_type": "deduplicated",
+        "confidence": 0.7508,
+        "matched": false,
+        "umls_cui": "C0012833"
+      },
+      {
+        "text": "dizziness",
+        "ner_score": 0.965,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0002321",
+        "hpo_name": "Vertigo",
+        "expanded_text": "dizziness",
+        "match_type": "related_synonym",
+        "confidence": 1.0,
+        "matched": true,
+        "umls_cui": "C0012833"
+      },
+      {
+        "text": "iness",
+        "ner_score": 0.7,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "iness",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "blurry vision",
+        "ner_score": 0.928,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0000622",
+        "hpo_name": "Blurred vision",
+        "expanded_text": "blurry vision",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.9528,
+        "matched": true,
+        "umls_cui": "C0344232"
+      },
+      {
+        "text": "ry vision in both eyes",
+        "ner_score": 0.996,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "ry vision in both eyes",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "ness and",
+        "ner_score": 0.797,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "ness and",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "tingling",
+        "ner_score": 0.927,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0003401",
+        "hpo_name": "Paresthesia",
+        "expanded_text": "tingling",
+        "match_type": "exact_synonym",
+        "confidence": 1.0,
+        "matched": true,
+        "umls_cui": "C0030554"
+      },
+      {
+        "text": "tingling in her legs",
+        "ner_score": 0.969,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "tingling in her legs",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "memory difficulties",
+        "ner_score": 0.833,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0002354",
+        "hpo_name": "Memory impairment",
+        "expanded_text": "memory difficulties",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.9587,
+        "matched": true,
+        "umls_cui": "C0233794"
+      },
+      {
+        "text": "muscle",
+        "ner_score": 0.519,
+        "negated": true,
+        "negation_cue": "no",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "muscle",
+        "match_type": "skipped_low_ner_score",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "muscle weakness",
+        "ner_score": 0.997,
+        "negated": true,
+        "negation_cue": "no",
+        "hpo_id": "HP:0003701",
+        "hpo_name": "Proximal muscle weakness",
+        "expanded_text": "muscle weakness",
+        "match_type": "clinical_synonym",
+        "confidence": 1.0,
+        "matched": true,
+        "umls_cui": "C0221629"
+      },
+      {
+        "text": "weakness",
+        "ner_score": 0.603,
+        "negated": true,
+        "negation_cue": "no",
+        "hpo_id": "HP:0001324",
+        "hpo_name": "Muscle weakness",
+        "expanded_text": "weakness",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.891,
+        "matched": true,
+        "umls_cui": "C0151786"
+      },
+      {
+        "text": "vertigo",
+        "ner_score": 0.927,
+        "negated": true,
+        "negation_cue": "no",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "vertigo",
+        "match_type": "deduplicated",
+        "confidence": 1.0,
+        "matched": false,
+        "umls_cui": "C0012833"
+      },
+      {
+        "text": "headache",
+        "ner_score": 0.92,
+        "negated": true,
+        "negation_cue": "no",
+        "hpo_id": "HP:0002315",
+        "hpo_name": "Headache",
+        "expanded_text": "headache",
+        "match_type": "exact_label",
+        "confidence": 1.0,
+        "matched": true,
+        "umls_cui": "C0018681"
+      },
+      {
+        "text": "seizure",
+        "ner_score": 0.859,
+        "negated": true,
+        "negation_cue": "no",
+        "hpo_id": "HP:0001250",
+        "hpo_name": "Seizure",
+        "expanded_text": "seizure",
+        "match_type": "exact_label",
+        "confidence": 1.0,
+        "matched": true,
+        "umls_cui": "C0014544"
+      },
+      {
+        "text": "other constitutional symptoms",
+        "ner_score": 0.996,
+        "negated": true,
+        "negation_cue": "no",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "other constitutional symptoms",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "emia, anxiety",
+        "ner_score": 0.996,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0000740",
+        "hpo_name": "Episodic paroxysmal anxiety",
+        "expanded_text": "emia, anxiety",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.7651,
+        "matched": true,
+        "umls_cui": "C1854339"
+      },
+      {
+        "text": "depression",
+        "ner_score": 0.996,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0000716",
+        "hpo_name": "Depression",
+        "expanded_text": "depression",
+        "match_type": "exact_label",
+        "confidence": 1.0,
+        "matched": true,
+        "umls_cui": "C0011581"
+      },
+      {
+        "text": "allergies",
+        "ner_score": 0.991,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0012393",
+        "hpo_name": "Allergy",
+        "expanded_text": "allergies",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.9598,
+        "matched": true,
+        "umls_cui": "C1527304"
+      },
+      {
+        "text": "cat hair",
+        "ner_score": 0.82,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0002286",
+        "hpo_name": "Fair hair",
+        "expanded_text": "cat hair",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.7184,
+        "matched": true,
+        "umls_cui": "C0239801"
+      },
+      {
+        "text": "dust mites",
+        "ner_score": 0.99,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "dust mites",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "smoker",
+        "ner_score": 0.107,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "smoker",
+        "match_type": "skipped_low_ner_score",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "epilepsy",
+        "ner_score": 0.997,
+        "negated": true,
+        "negation_cue": "no",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "epilepsy",
+        "match_type": "deduplicated",
+        "confidence": 1.0,
+        "matched": false,
+        "umls_cui": "C0014544"
+      },
+      {
+        "text": "a head trauma",
+        "ner_score": 0.998,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "a head trauma",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "a fall",
+        "ner_score": 0.946,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0002527",
+        "hpo_name": "Falls",
+        "expanded_text": "a fall",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.9192,
+        "matched": true,
+        "umls_cui": "C0085639"
+      },
+      {
+        "text": "loss of consciousness",
+        "ner_score": 0.37,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "loss of consciousness",
+        "match_type": "skipped_low_ner_score",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "brain infections",
+        "ner_score": 0.999,
+        "negated": true,
+        "negation_cue": "no",
+        "hpo_id": "HP:0011450",
+        "hpo_name": "Unusual CNS infection",
+        "expanded_text": "brain infections",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.8575,
+        "matched": true,
+        "umls_cui": "C0007684"
+      },
+      {
+        "text": "infections",
+        "ner_score": 0.543,
+        "negated": true,
+        "negation_cue": "no",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "infections",
+        "match_type": "skipped_low_ner_score",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "tonic",
+        "ner_score": 0.338,
+        "negated": true,
+        "negation_cue": "no",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "tonic",
+        "match_type": "skipped_low_ner_score",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "seizures",
+        "ner_score": 0.523,
+        "negated": true,
+        "negation_cue": "no",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "seizures",
+        "match_type": "skipped_low_ner_score",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "alert",
+        "ner_score": 0.808,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "alert",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "oriented",
+        "ner_score": 0.768,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "oriented",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "mild distress",
+        "ner_score": 0.958,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "mild distress",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "distress",
+        "ner_score": 0.895,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "distress",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "anxious",
+        "ner_score": 0.881,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0000739",
+        "hpo_name": "Anxiety",
+        "expanded_text": "anxious",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.9263,
+        "matched": true,
+        "umls_cui": "C0003467"
+      },
+      {
+        "text": "unsteady",
+        "ner_score": 0.969,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0002317",
+        "hpo_name": "Unsteady gait",
+        "expanded_text": "unsteady",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.811,
+        "matched": true,
+        "umls_cui": "C0231686"
+      },
+      {
+        "text": "tenderness",
+        "ner_score": 0.967,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "tenderness",
+        "match_type": "sapbert_rejected_low_conf",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "tenderness over the paravertebral",
+        "ner_score": 0.936,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "tenderness over the paravertebral",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "verte",
+        "ner_score": 0.875,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "verte",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "limited",
+        "ner_score": 0.642,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "limited",
+        "match_type": "sapbert_rejected_low_conf",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "bral body heights",
+        "ner_score": 0.832,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "bral body heights",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "spaces",
+        "ner_score": 0.948,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "spaces",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "joints",
+        "ner_score": 0.89,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "joints",
+        "match_type": "sapbert_rejected_low_conf",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "mild reversal",
+        "ner_score": 0.96,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "mild reversal",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "the usual cervical lordosis",
+        "ner_score": 0.949,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "the usual cervical lordosis",
+        "match_type": "deduplicated",
+        "confidence": 0.7856,
+        "matched": false,
+        "umls_cui": "C0024003"
+      },
+      {
+        "text": "cervical lordosis",
+        "ner_score": 0.697,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0003307",
+        "hpo_name": "Hyperlordosis",
+        "expanded_text": "cervical lordosis",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.8143,
+        "matched": true,
+        "umls_cui": "C0024003"
+      },
+      {
+        "text": "spondylo",
+        "ner_score": 0.544,
+        "negated": true,
+        "negation_cue": "without",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "spondylo",
+        "match_type": "skipped_low_ner_score",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "ondylolisthesis",
+        "ner_score": 0.978,
+        "negated": true,
+        "negation_cue": "without",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "ondylolisthesis",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "listhesis",
+        "ner_score": 0.462,
+        "negated": true,
+        "negation_cue": "without",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "listhesis",
+        "match_type": "skipped_low_ner_score",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "minimal levocurvature of the lumbar spine",
+        "ner_score": 0.993,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "minimal levocurvature of the lumbar spine",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "levocurvature",
+        "ner_score": 0.947,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "levocurvature",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "a syncope episode",
+        "ner_score": 0.997,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "a syncope episode",
+        "match_type": "deduplicated",
+        "confidence": 0.9055,
+        "matched": false,
+        "umls_cui": "C0039070"
+      },
+      {
+        "text": "syncope",
+        "ner_score": 0.914,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0001279",
+        "hpo_name": "Syncope",
+        "expanded_text": "syncope",
+        "match_type": "exact_label",
+        "confidence": 1.0,
+        "matched": true,
+        "umls_cui": "C0039070"
+      },
+      {
+        "text": "nausea",
+        "ner_score": 0.976,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0002018",
+        "hpo_name": "Nausea",
+        "expanded_text": "nausea",
+        "match_type": "exact_label",
+        "confidence": 1.0,
+        "matched": true,
+        "umls_cui": "C0027497"
+      },
+      {
+        "text": "ringing",
+        "ner_score": 0.964,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "ringing",
+        "match_type": "sapbert_rejected_low_conf",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "ringing in her ears",
+        "ner_score": 0.992,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0000360",
+        "hpo_name": "Tinnitus",
+        "expanded_text": "ringing in her ears",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.9038,
+        "matched": true,
+        "umls_cui": "C0040264"
+      },
+      {
+        "text": "dimming vision",
+        "ner_score": 0.753,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0012047",
+        "hpo_name": "Hemeralopia",
+        "expanded_text": "dimming vision",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.7855,
+        "matched": true,
+        "umls_cui": "C0018975"
+      },
+      {
+        "text": "ming vision",
+        "ner_score": 0.996,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "ming vision",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "losing consciousness",
+        "ner_score": 0.536,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "losing consciousness",
+        "match_type": "skipped_low_ner_score",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "collapsing",
+        "ner_score": 0.622,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "collapsing",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "reduced sensation",
+        "ner_score": 0.818,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0007328",
+        "hpo_name": "Impaired pain sensation",
+        "expanded_text": "reduced sensation",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.8634,
+        "matched": true,
+        "umls_cui": "C1837522"
+      },
+      {
+        "text": "reduced sensation in her left arm",
+        "ner_score": 0.996,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "reduced sensation in her left arm",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "paresthesia",
+        "ner_score": 0.961,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "paresthesia",
+        "match_type": "deduplicated",
+        "confidence": 1.0,
+        "matched": false,
+        "umls_cui": "C0030554"
+      },
+      {
+        "text": "esthesia in all extremities",
+        "ner_score": 0.855,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "esthesia in all extremities",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "convulsions",
+        "ner_score": 0.922,
+        "negated": true,
+        "negation_cue": "denied",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "convulsions",
+        "match_type": "deduplicated",
+        "confidence": 1.0,
+        "matched": false,
+        "umls_cui": "C0014544"
+      },
+      {
+        "text": "tongue biting",
+        "ner_score": 0.667,
+        "negated": true,
+        "negation_cue": "denied",
+        "hpo_id": "HP:0100703",
+        "hpo_name": "Tongue thrusting",
+        "expanded_text": "tongue biting",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.8024,
+        "matched": true,
+        "umls_cui": "C1829460"
+      },
+      {
+        "text": "incontinence",
+        "ner_score": 0.933,
+        "negated": true,
+        "negation_cue": "denied",
+        "hpo_id": "HP:0000020",
+        "hpo_name": "Urinary incontinence",
+        "expanded_text": "incontinence",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.8816,
+        "matched": true,
+        "umls_cui": "C0042024"
+      },
+      {
+        "text": "incontinen",
+        "ner_score": 0.983,
+        "negated": true,
+        "negation_cue": "denied",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "incontinen",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "headaches",
+        "ner_score": 0.97,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "headaches",
+        "match_type": "deduplicated",
+        "confidence": 1.0,
+        "matched": false,
+        "umls_cui": "C0018681"
+      },
+      {
+        "text": "drowsiness",
+        "ner_score": 0.957,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0002329",
+        "hpo_name": "Drowsiness",
+        "expanded_text": "drowsiness",
+        "match_type": "exact_label",
+        "confidence": 1.0,
+        "matched": true,
+        "umls_cui": "C0013144"
+      },
+      {
+        "text": "persistent weakness and numbness",
+        "ner_score": 0.96,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "persistent weakness and numbness",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "difficulty understanding speech",
+        "ner_score": 0.614,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0002465",
+        "hpo_name": "Poor speech",
+        "expanded_text": "difficulty understanding speech",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.8291,
+        "matched": true,
+        "umls_cui": "C1848207"
+      },
+      {
+        "text": "the episode",
+        "ner_score": 0.987,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "the episode",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "fully recovered",
+        "ner_score": 0.573,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "fully recovered",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "recurrence",
+        "ner_score": 0.981,
+        "negated": true,
+        "negation_cue": "no",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "recurrence",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "cardiac symptoms",
+        "ner_score": 0.597,
+        "negated": true,
+        "negation_cue": "no",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "cardiac symptoms",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "left atrial enlargement",
+        "ner_score": 0.998,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0011995",
+        "hpo_name": "Atrial septal dilatation",
+        "expanded_text": "left atrial enlargement",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.7527,
+        "matched": true,
+        "umls_cui": "C0521533"
+      },
+      {
+        "text": "enlargement",
+        "ner_score": 0.359,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "enlargement",
+        "match_type": "skipped_low_ner_score",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "a mean carotid intima",
+        "ner_score": 0.977,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0012273",
+        "hpo_name": "Increased carotid artery intimal medial thickness",
+        "expanded_text": "a mean carotid intima",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.7375,
+        "matched": true,
+        "umls_cui": "C4022977"
+      },
+      {
+        "text": "media thickness",
+        "ner_score": 0.576,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "media thickness",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "structural",
+        "ner_score": 0.675,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "structural",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "structural heart diseases",
+        "ner_score": 0.999,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0001627",
+        "hpo_name": "Abnormal heart morphology",
+        "expanded_text": "structural heart diseases",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.7754,
+        "matched": true,
+        "umls_cui": "C0018798"
+      },
+      {
+        "text": "heart diseases",
+        "ner_score": 0.895,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0001638",
+        "hpo_name": "Cardiomyopathy",
+        "expanded_text": "heart diseases",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.7662,
+        "matched": true,
+        "umls_cui": "C0878544"
+      },
+      {
+        "text": "loss of consciousness",
+        "ner_score": 0.9,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0007185",
+        "hpo_name": "Loss of consciousness",
+        "expanded_text": "loss of consciousness",
+        "match_type": "text_scan_exact_label",
+        "confidence": 0.95,
+        "matched": true,
+        "umls_cui": "C0041657",
+        "umls_all": [
+          "C0041657"
+        ]
+      },
+      {
+        "text": "spondylolisthesis",
+        "ner_score": 0.9,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0003302",
+        "hpo_name": "Spondylolisthesis",
+        "expanded_text": "spondylolisthesis",
+        "match_type": "text_scan_exact_label",
+        "confidence": 0.95,
+        "matched": true,
+        "umls_cui": "C0038016",
+        "umls_all": [
+          "C0038016"
+        ]
+      },
+      {
+        "text": "generalized",
+        "ner_score": 0.9,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0012837",
+        "hpo_name": "Generalized",
+        "expanded_text": "generalized",
+        "match_type": "text_scan_exact_label",
+        "confidence": 0.95,
+        "matched": true,
+        "umls_cui": "C0205246",
+        "umls_all": [
+          "C0205246"
+        ]
+      },
+      {
+        "text": "anemia",
+        "ner_score": 0.9,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0001903",
+        "hpo_name": "Anemia",
+        "expanded_text": "anemia",
+        "match_type": "text_scan_exact_label",
+        "confidence": 0.95,
+        "matched": true,
+        "umls_cui": "C0002871",
+        "umls_all": [
+          "C0002871",
+          "C0162119"
+        ]
+      }
+    ],
+    "test": [
+      {
+        "text": "x - rays of the cervical spine",
+        "ner_score": 0.981,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "x - rays of the cervical spine",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "x - rays of the thoracic and lumbar spine",
+        "ner_score": 0.945,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "x - rays of the thoracic and lumbar spine",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "an electrocardiogram ( ekg )",
+        "ner_score": 0.956,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "an electrocardiogram ( ekg )",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "ultrasound ( us ) duplex carotid artery bilateral",
+        "ner_score": 0.967,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "ultrasound ( us ) duplex carotid artery bilateral",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "a routine electroencephalogram ( eeg )",
+        "ner_score": 0.944,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "a routine electroencephalogram ( eeg )",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "cimt )",
+        "ner_score": 0.805,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "cimt )",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "an echocardiogram ( echo )",
+        "ner_score": 0.898,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "an echocardiogram ( echo )",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "positive",
+        "ner_score": 0.952,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "positive",
+        "match_type": "skipped_en_noise",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "difficult",
+        "ner_score": 0.866,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "difficult",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "year",
+        "ner_score": 0.425,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "year",
+        "match_type": "skipped_low_ner_score",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "examination",
+        "ner_score": 0.947,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "examination",
+        "match_type": "skipped_en_noise",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "Deep tendon reflexes",
+        "ner_score": 0.993,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "Deep tendon reflexes",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "symmetrical",
+        "ner_score": 0.928,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "symmetrical",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "gait",
+        "ner_score": 0.556,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "gait",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "unsteady",
+        "ner_score": 0.931,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "unsteady",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "vertebral",
+        "ner_score": 0.826,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "vertebral",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "limited",
+        "ner_score": 0.915,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "limited",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "range",
+        "ner_score": 0.598,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "range",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "motion",
+        "ner_score": 0.862,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "motion",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "Routine blood",
+        "ner_score": 0.651,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "Routine blood",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "routine blood tests",
+        "ner_score": 0.99,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "routine blood tests",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "normal",
+        "ner_score": 0.964,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "normal",
+        "match_type": "skipped_en_noise",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "heights",
+        "ner_score": 0.841,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "heights",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "spaces",
+        "ner_score": 0.744,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "spaces",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "joints",
+        "ner_score": 0.39,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "joints",
+        "match_type": "skipped_low_ner_score",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "minimal",
+        "ner_score": 0.342,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "minimal",
+        "match_type": "skipped_low_ner_score",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "media",
+        "ner_score": 0.993,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "media",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "electrocardiogram",
+        "ner_score": 0.987,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "electrocardiogram",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "electro",
+        "ner_score": 0.966,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "electro",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "carotid",
+        "ner_score": 0.929,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "carotid",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "encephalo",
+        "ner_score": 0.994,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "encephalo",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "Cardiovascular",
+        "ner_score": 0.992,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "Cardiovascular",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "cardiovascular examination",
+        "ner_score": 0.997,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "cardiovascular examination",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "unremarkable",
+        "ner_score": 0.951,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "unremarkable",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "the ekg",
+        "ner_score": 0.996,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "the ekg",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "mean",
+        "ner_score": 0.975,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "mean",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "tima",
+        "ner_score": 0.993,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "tima",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "thickness",
+        "ner_score": 0.993,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "thickness",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "below",
+        "ner_score": 0.93,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "below",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "percentile",
+        "ner_score": 0.893,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "percentile",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "echocardiogram",
+        "ner_score": 0.988,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "echocardiogram",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      }
+    ],
+    "treatment": [
+      {
+        "text": "penici",
+        "ner_score": 0.809,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "penici",
+        "match_type": "skipped_treatment",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      }
+    ],
+    "ordo_candidates": [
+      {
+        "ordo_id": "ORPHA:2356",
+        "name": "Arachnoid cyst",
+        "name_fr": "",
+        "score": 0.4057,
+        "coverage": 0.1343,
+        "matched_hpo": [
+          "HP:0000020",
+          "HP:0000622",
+          "HP:0000716",
+          "HP:0001250",
+          "HP:0002018",
+          "HP:0002315",
+          "HP:0002321",
+          "HP:0002354",
+          "HP:0003401"
+        ],
+        "matched_count": 9,
+        "total_disease_hpo": 67,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:3385",
+        "name": "African trypanosomiasis",
+        "name_fr": "",
+        "score": 0.4033,
+        "coverage": 0.093,
+        "matched_hpo": [
+          "HP:0000020",
+          "HP:0000739",
+          "HP:0001250",
+          "HP:0001324",
+          "HP:0002018",
+          "HP:0002315",
+          "HP:0003401",
+          "HP:0012378"
+        ],
+        "matched_count": 8,
+        "total_disease_hpo": 86,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:297",
+        "name": "Tick-borne encephalitis",
+        "name_fr": "",
+        "score": 0.3889,
+        "coverage": 0.1111,
+        "matched_hpo": [
+          "HP:0000360",
+          "HP:0000716",
+          "HP:0002018",
+          "HP:0002315",
+          "HP:0002321",
+          "HP:0011450",
+          "HP:0012378"
+        ],
+        "matched_count": 7,
+        "total_disease_hpo": 63,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:358",
+        "name": "Gitelman syndrome",
+        "name_fr": "",
+        "score": 0.3875,
+        "coverage": 0.1176,
+        "matched_hpo": [
+          "HP:0000020",
+          "HP:0000360",
+          "HP:0000622",
+          "HP:0001279",
+          "HP:0001324",
+          "HP:0002315",
+          "HP:0002321",
+          "HP:0003401"
+        ],
+        "matched_count": 8,
+        "total_disease_hpo": 68,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:550",
+        "name": "MELAS",
+        "name_fr": "",
+        "score": 0.3859,
+        "coverage": 0.092,
+        "matched_hpo": [
+          "HP:0000716",
+          "HP:0000739",
+          "HP:0001250",
+          "HP:0001324",
+          "HP:0001638",
+          "HP:0001903",
+          "HP:0002069",
+          "HP:0002354"
+        ],
+        "matched_count": 8,
+        "total_disease_hpo": 87,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:74",
+        "name": "Angiostrongyliasis",
+        "name_fr": "",
+        "score": 0.3637,
+        "coverage": 0.2308,
+        "matched_hpo": [
+          "HP:0000622",
+          "HP:0001250",
+          "HP:0001324",
+          "HP:0002018",
+          "HP:0002315",
+          "HP:0003401",
+          "HP:0011450",
+          "HP:0012378",
+          "HP:0012531"
+        ],
+        "matched_count": 9,
+        "total_disease_hpo": 39,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:247245",
+        "name": "Superficial siderosis",
+        "name_fr": "",
+        "score": 0.3597,
+        "coverage": 0.1633,
+        "matched_hpo": [
+          "HP:0001250",
+          "HP:0002018",
+          "HP:0002315",
+          "HP:0002317",
+          "HP:0002321",
+          "HP:0002354",
+          "HP:0003401",
+          "HP:0007328"
+        ],
+        "matched_count": 8,
+        "total_disease_hpo": 49,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:397",
+        "name": "Giant cell arteritis",
+        "name_fr": "",
+        "score": 0.3526,
+        "coverage": 0.1014,
+        "matched_hpo": [
+          "HP:0000716",
+          "HP:0001324",
+          "HP:0001903",
+          "HP:0002315",
+          "HP:0002321",
+          "HP:0003401",
+          "HP:0012378"
+        ],
+        "matched_count": 7,
+        "total_disease_hpo": 69,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:927",
+        "name": "Hyperammonemia due to N-acetylglutamate synthase deficiency",
+        "name_fr": "",
+        "score": 0.3506,
+        "coverage": 0.1905,
+        "matched_hpo": [
+          "HP:0000739",
+          "HP:0001250",
+          "HP:0002018",
+          "HP:0002315",
+          "HP:0002329",
+          "HP:0002465",
+          "HP:0007185",
+          "HP:0012378"
+        ],
+        "matched_count": 8,
+        "total_disease_hpo": 42,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:533",
+        "name": "Listeriosis",
+        "name_fr": "",
+        "score": 0.3495,
+        "coverage": 0.0882,
+        "matched_hpo": [
+          "HP:0001250",
+          "HP:0002018",
+          "HP:0002315",
+          "HP:0007185",
+          "HP:0011450",
+          "HP:0012378"
+        ],
+        "matched_count": 6,
+        "total_disease_hpo": 68,
+        "text_match": false
+      }
+    ],
+    "stats": {
+      "total": 146,
+      "matched": 38,
+      "unmatched": 108,
+      "match_rate": 26.0,
+      "unique_hpo": 38,
+      "ordo_matches": 10
+    }
+  },
+  "phenopacket": {
+    "id": "phenopacket-RA_EN_027",
+    "subject": {
+      "id": "RA_EN_027",
+      "sex": "FEMALE"
+    },
+    "input": "A 23-year-old right-handed female presented on December 8, 2021, with chronic bilateral foot arch pain, and paroxysmal diffuse spine and neck pain for nine months. The pain began in March 2021 following a streptococcal throat infection confirmed by a positive strep test. Post-recovery, she experienced sharp pain in her right leg extending to her right shin, later involving her left leg. The pain gradually spread to her entire spine and hips, increasing with movement and ambulation. The pain was described as dull (3/10) and shooting (8/10). She also reported intermittent numbness in both feet and tailbone, worsening fatigue, intermittent dizziness triggered by standing and walking, blurry vision in both eyes, numbness and tingling in her legs, and memory difficulties related to pain. She had no muscle weakness, vertigo, headache, seizure, or other constitutional symptoms. Her medical history included anemia, anxiety, and depression, with no significant surgical history. She had allergies to cat hair, dust mites, and penicillin, and was an active smoker with a 1.25-pack year history over five years. There was no family history of epilepsy. She had a head trauma at age 17 from a fall off a horse, resulting in loss of consciousness. No brain infections or generalized tonic-clonic seizures were reported. On examination, she was alert, oriented, and in mild distress, appearing anxious. Deep tendon reflexes were symmetrical but brisk in both arms and legs. Her natural and tandem gait were unsteady, and heel-walking and toe-walking were difficult. There was tenderness over the paravertebral points of the cervical, thoracic, and lumbar spine, with limited range of motion in the spine. Routine blood tests were normal. X-rays of the cervical spine showed vertebral body heights, disc spaces, and facet joints with a mild reversal of the usual cervical lordosis without spondylolisthesis. X-rays of the thoracic and lumbar spine showed minimal levocurvature of the lumbar spine. On January 23, 2022, she experienced a syncope episode after standing for about 20 minutes while smoking. She developed nausea, ringing in her ears, and dimming vision before losing consciousness for less than a minute. Her face reportedly turned gray before collapsing, but she did not hit her head. Post-episode, she had reduced sensation in her left arm for a few days and paresthesia in all extremities that night. She denied convulsions, tongue biting, and incontinence but reported headaches, nausea, drowsiness, and persistent weakness and numbness. She had difficulty understanding speech immediately after the episode and felt fully recovered after one to two hours. This was an isolated event with no recurrence and no cardiac symptoms. She was referred to a cardiologist and neurologist. An electrocardiogram (EKG), ultrasound (US) duplex carotid artery bilateral, and a routine electroencephalogram (EEG) awake and drowsy were performed. Cardiovascular examination was unremarkable. The EKG suggested possible left atrial enlargement, likely a false positive. The US duplex carotid arteries showed a mean carotid intima-media thickness (CIMT) below the 25th percentile for her age and gender. An echocardiogram (echo) was normal, ruling out structural heart diseases as a cause of syncope.",
+    "target": "Arachnoid cyst",
+    "phenotypicFeatures": [
+      {
+        "type": {
+          "id": "HP:0002069",
+          "label": "Bilateral tonic-clonic seizure",
+          "umls_cui": "C0494475"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_027",
+              "description": "NER: generalized tonic - clonic seizures (0.999) | Match: sapbert_similarity (0.943)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0012531",
+          "label": "Pain",
+          "umls_cui": "C0030193"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_027",
+              "description": "NER: pain (0.947) | Match: exact_label (1.000)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0012432",
+          "label": "Chronic fatigue",
+          "umls_cui": "C0518656"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_027",
+              "description": "NER: ning fatigue (0.996) | Match: sapbert_similarity (0.739)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0012378",
+          "label": "Fatigue",
+          "umls_cui": "C0015672"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_027",
+              "description": "NER: fatigue (0.971) | Match: exact_label (1.000)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0002321",
+          "label": "Vertigo",
+          "umls_cui": "C0012833"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_027",
+              "description": "NER: dizziness (0.965) | Match: related_synonym (1.000)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0000622",
+          "label": "Blurred vision",
+          "umls_cui": "C0344232"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_027",
+              "description": "NER: blurry vision (0.928) | Match: sapbert_similarity (0.953)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0003401",
+          "label": "Paresthesia",
+          "umls_cui": "C0030554"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_027",
+              "description": "NER: tingling (0.927) | Match: exact_synonym (1.000)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0002354",
+          "label": "Memory impairment",
+          "umls_cui": "C0233794"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_027",
+              "description": "NER: memory difficulties (0.833) | Match: sapbert_similarity (0.959)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0003701",
+          "label": "Proximal muscle weakness",
+          "umls_cui": "C0221629"
+        },
+        "excluded": true,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_027",
+              "description": "NER: muscle weakness (0.997) | Match: clinical_synonym (1.000) | Negated by: \"no\""
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0001324",
+          "label": "Muscle weakness",
+          "umls_cui": "C0151786"
+        },
+        "excluded": true,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_027",
+              "description": "NER: weakness (0.603) | Match: sapbert_similarity (0.891) | Negated by: \"no\""
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0002315",
+          "label": "Headache",
+          "umls_cui": "C0018681"
+        },
+        "excluded": true,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_027",
+              "description": "NER: headache (0.920) | Match: exact_label (1.000) | Negated by: \"no\""
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0001250",
+          "label": "Seizure",
+          "umls_cui": "C0014544"
+        },
+        "excluded": true,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_027",
+              "description": "NER: seizure (0.859) | Match: exact_label (1.000) | Negated by: \"no\""
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0000740",
+          "label": "Episodic paroxysmal anxiety",
+          "umls_cui": "C1854339"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_027",
+              "description": "NER: emia, anxiety (0.996) | Match: sapbert_similarity (0.765)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0000716",
+          "label": "Depression",
+          "umls_cui": "C0011581"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_027",
+              "description": "NER: depression (0.996) | Match: exact_label (1.000)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0012393",
+          "label": "Allergy",
+          "umls_cui": "C1527304"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_027",
+              "description": "NER: allergies (0.991) | Match: sapbert_similarity (0.960)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0002286",
+          "label": "Fair hair",
+          "umls_cui": "C0239801"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_027",
+              "description": "NER: cat hair (0.820) | Match: sapbert_similarity (0.718)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0002527",
+          "label": "Falls",
+          "umls_cui": "C0085639"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_027",
+              "description": "NER: a fall (0.946) | Match: sapbert_similarity (0.919)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0011450",
+          "label": "Unusual CNS infection",
+          "umls_cui": "C0007684"
+        },
+        "excluded": true,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_027",
+              "description": "NER: brain infections (0.999) | Match: sapbert_similarity (0.858) | Negated by: \"no\""
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0000739",
+          "label": "Anxiety",
+          "umls_cui": "C0003467"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_027",
+              "description": "NER: anxious (0.881) | Match: sapbert_similarity (0.926)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0002317",
+          "label": "Unsteady gait",
+          "umls_cui": "C0231686"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_027",
+              "description": "NER: unsteady (0.969) | Match: sapbert_similarity (0.811)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0003307",
+          "label": "Hyperlordosis",
+          "umls_cui": "C0024003"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_027",
+              "description": "NER: cervical lordosis (0.697) | Match: sapbert_similarity (0.814)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0001279",
+          "label": "Syncope",
+          "umls_cui": "C0039070"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_027",
+              "description": "NER: syncope (0.914) | Match: exact_label (1.000)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0002018",
+          "label": "Nausea",
+          "umls_cui": "C0027497"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_027",
+              "description": "NER: nausea (0.976) | Match: exact_label (1.000)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0000360",
+          "label": "Tinnitus",
+          "umls_cui": "C0040264"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_027",
+              "description": "NER: ringing in her ears (0.992) | Match: sapbert_similarity (0.904)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0012047",
+          "label": "Hemeralopia",
+          "umls_cui": "C0018975"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_027",
+              "description": "NER: dimming vision (0.753) | Match: sapbert_similarity (0.785)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0007328",
+          "label": "Impaired pain sensation",
+          "umls_cui": "C1837522"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_027",
+              "description": "NER: reduced sensation (0.818) | Match: sapbert_similarity (0.863)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0100703",
+          "label": "Tongue thrusting",
+          "umls_cui": "C1829460"
+        },
+        "excluded": true,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_027",
+              "description": "NER: tongue biting (0.667) | Match: sapbert_similarity (0.802) | Negated by: \"denied\""
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0000020",
+          "label": "Urinary incontinence",
+          "umls_cui": "C0042024"
+        },
+        "excluded": true,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_027",
+              "description": "NER: incontinence (0.933) | Match: sapbert_similarity (0.882) | Negated by: \"denied\""
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0002329",
+          "label": "Drowsiness",
+          "umls_cui": "C0013144"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_027",
+              "description": "NER: drowsiness (0.957) | Match: exact_label (1.000)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0002465",
+          "label": "Poor speech",
+          "umls_cui": "C1848207"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_027",
+              "description": "NER: difficulty understanding speech (0.614) | Match: sapbert_similarity (0.829)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0011995",
+          "label": "Atrial septal dilatation",
+          "umls_cui": "C0521533"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_027",
+              "description": "NER: left atrial enlargement (0.998) | Match: sapbert_similarity (0.753)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0012273",
+          "label": "Increased carotid artery intimal medial thickness",
+          "umls_cui": "C4022977"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_027",
+              "description": "NER: a mean carotid intima (0.977) | Match: sapbert_similarity (0.738)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0001627",
+          "label": "Abnormal heart morphology",
+          "umls_cui": "C0018798"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_027",
+              "description": "NER: structural heart diseases (0.999) | Match: sapbert_similarity (0.775)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0001638",
+          "label": "Cardiomyopathy",
+          "umls_cui": "C0878544"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_027",
+              "description": "NER: heart diseases (0.895) | Match: sapbert_similarity (0.766)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0007185",
+          "label": "Loss of consciousness",
+          "umls_cui": "C0041657"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_027",
+              "description": "NER: loss of consciousness (0.900) | Match: text_scan_exact_label (0.950)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0003302",
+          "label": "Spondylolisthesis",
+          "umls_cui": "C0038016"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_027",
+              "description": "NER: spondylolisthesis (0.900) | Match: text_scan_exact_label (0.950)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0012837",
+          "label": "Generalized",
+          "umls_cui": "C0205246"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_027",
+              "description": "NER: generalized (0.900) | Match: text_scan_exact_label (0.950)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0001903",
+          "label": "Anemia",
+          "umls_cui": "C0002871"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_027",
+              "description": "NER: anemia (0.900) | Match: text_scan_exact_label (0.950)"
+            }
+          }
+        ]
+      }
+    ],
+    "metaData": {
+      "created": "2026-06-19T15:12:55Z",
+      "createdBy": "clinical-preanalysis-pipeline-v2",
+      "phenopacketSchemaVersion": "2.0",
+      "resources": [
+        {
+          "id": "hp",
+          "name": "Human Phenotype Ontology",
+          "url": "https://hpo.jax.org",
+          "version": "2024-04-26",
+          "namespacePrefix": "HP",
+          "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        }
+      ]
+    },
+    "interpretations": [
+      {
+        "id": "interpretation-RA_EN_027",
+        "progressStatus": "IN_PROGRESS",
+        "diagnosis": {
+          "disease": {
+            "id": "ORPHA:2356",
+            "label": "Arachnoid cyst"
+          },
+          "score": 0.4057,
+          "allCandidates": [
+            {
+              "id": "ORPHA:2356",
+              "label": "Arachnoid cyst",
+              "score": 0.4057
+            },
+            {
+              "id": "ORPHA:3385",
+              "label": "African trypanosomiasis",
+              "score": 0.4033
+            },
+            {
+              "id": "ORPHA:297",
+              "label": "Tick-borne encephalitis",
+              "score": 0.3889
+            },
+            {
+              "id": "ORPHA:358",
+              "label": "Gitelman syndrome",
+              "score": 0.3875
+            },
+            {
+              "id": "ORPHA:550",
+              "label": "MELAS",
+              "score": 0.3859
+            },
+            {
+              "id": "ORPHA:74",
+              "label": "Angiostrongyliasis",
+              "score": 0.3637
+            },
+            {
+              "id": "ORPHA:247245",
+              "label": "Superficial siderosis",
+              "score": 0.3597
+            },
+            {
+              "id": "ORPHA:397",
+              "label": "Giant cell arteritis",
+              "score": 0.3526
+            },
+            {
+              "id": "ORPHA:927",
+              "label": "Hyperammonemia due to N-acetylglutamate synthase deficiency",
+              "score": 0.3506
+            },
+            {
+              "id": "ORPHA:533",
+              "label": "Listeriosis",
+              "score": 0.3495
+            }
+          ]
+        }
+      }
+    ],
+    "_pipelineStats": {
+      "totalEntities": 146,
+      "matchedHPO": 38,
+      "unmatchedEntities": 108,
+      "phenopacketFeatures": 38,
+      "negatedFeatures": 7,
+      "numericPhenotypes": 0,
+      "ordoCandidates": 10
+    }
+  }
+}

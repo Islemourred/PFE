@@ -1,0 +1,2457 @@
+{
+  "note_id": "RA_EN_003",
+  "language": "en",
+  "module1": {
+    "clean_text": "A [AGE] male presented to the hospital with severe headaches that began at the front and later spread to the back of the head, accompanied by sensitivity to light. For the past three days, he experienced severe nausea, vomiting, diarrhea, and general malaise. Upon examination, he had normal body temperature, stable vital signs, no altered consciousness, and a Glasgow Coma Scale score of 15. His history ruled out trauma or drug intoxication. Initial clinical and laboratory evaluations led to a computed tomography scan, which showed a mass in the sellar region. Subsequent magnetic resonance imaging (MRI) revealed a hemorrhagic sellar mass. Laboratory tests on the fifth day after admission indicated insufficiency in the corticotropic, thyrotropic, and gonadotropic axes. Despite MRI showing a shift in the optic chiasm, ophthalmological examination revealed only minor, non-specific visual field defects without papilledema or orthoptic abnormalities. Surgical intervention was planned but postponed due to severe acute kidney injury, with a creatinine level of 11.6 mg/dL and an estimated glomerular filtration rate (eGFR) of less than 20 mL/min on the fifth day after admission. The patient, a driving instructor, reported digging out a bamboo hedge before hospitalization. Further testing on the third day after admission confirmed hantavirus infection through detection of IgM and IgG antibodies against Puumala hantavirus using immunofluorescence and line immunoassays, as well as positive polymerase chain reaction results. Specific amplification and sequencing of the partial L-Segment identified a puumalavirus circulating in the Middle Rhine region in Germany. Serological tests ruled out infections by hepatitis B virus, hepatitis C virus, and HIV. The patient was transferred to the nephrology department and became oliguric. Due to increasing nausea and rising blood urea levels, haemodialysis was considered but kidney function began to recover, avoiding the need for renal replacement therapy. Symptomatic treatment and hormonal replacement led to increased urinary excretion by day 3 and decreased creatinine levels from day 6 onwards. No specific antiviral treatment was administered. Despite overall improvement, diuretic medication was withheld from day 5, achieving a negative fluid balance with continuous weight loss daily, but urine excretion remained high (6.25 mL/kg/h). Initially attributed to the polyuric phase of acute kidney injury recovery, persistent plasma hyperosmolality and urine hypoosmolality led to further evaluation.",
+    "phi_map": {
+      "AGE": "49-year-old"
+    },
+    "patient_info": {
+      "sex": "male"
+    }
+  },
+  "module3_warnings": {
+    "temporal": [],
+    "inconsistencies": []
+  },
+  "module4": {
+    "problem": [
+      {
+        "text": "minor, non - specific visual field defects",
+        "ner_score": 0.996,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "minor, non - specific visual field defects",
+        "match_type": "deduplicated",
+        "confidence": 0.95,
+        "matched": false,
+        "umls_cui": "C3887875"
+      },
+      {
+        "text": "severe headaches",
+        "ner_score": 0.998,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "severe headaches",
+        "match_type": "deduplicated",
+        "confidence": 0.7929,
+        "matched": false,
+        "umls_cui": "C0018681"
+      },
+      {
+        "text": "headaches",
+        "ner_score": 0.971,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0002315",
+        "hpo_name": "Headache",
+        "expanded_text": "headaches",
+        "match_type": "exact_synonym",
+        "confidence": 1.0,
+        "matched": true,
+        "umls_cui": "C0018681"
+      },
+      {
+        "text": "sensitivity to",
+        "ner_score": 0.726,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "sensitivity to",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "severe nausea",
+        "ner_score": 0.997,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "severe nausea",
+        "match_type": "deduplicated",
+        "confidence": 0.8703,
+        "matched": false,
+        "umls_cui": "C0027497"
+      },
+      {
+        "text": "nausea",
+        "ner_score": 0.98,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0002018",
+        "hpo_name": "Nausea",
+        "expanded_text": "nausea",
+        "match_type": "exact_label",
+        "confidence": 1.0,
+        "matched": true,
+        "umls_cui": "C0027497"
+      },
+      {
+        "text": "vomiting",
+        "ner_score": 0.962,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0002013",
+        "hpo_name": "Vomiting",
+        "expanded_text": "vomiting",
+        "match_type": "exact_label",
+        "confidence": 1.0,
+        "matched": true,
+        "umls_cui": "C0042963"
+      },
+      {
+        "text": "diarrhea",
+        "ner_score": 0.972,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0002014",
+        "hpo_name": "Diarrhea",
+        "expanded_text": "diarrhea",
+        "match_type": "clinical_synonym",
+        "confidence": 1.0,
+        "matched": true,
+        "umls_cui": "C0011991"
+      },
+      {
+        "text": "general malaise",
+        "ner_score": 0.998,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "general malaise",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "malaise",
+        "ner_score": 0.882,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "malaise",
+        "match_type": "sapbert_rejected_low_conf",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "altered consciousness",
+        "ner_score": 0.942,
+        "negated": true,
+        "negation_cue": "no",
+        "hpo_id": "HP:0004372",
+        "hpo_name": "Reduced consciousness",
+        "expanded_text": "altered consciousness",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.9366,
+        "matched": true,
+        "umls_cui": "C0234428"
+      },
+      {
+        "text": "trauma",
+        "ner_score": 0.996,
+        "negated": true,
+        "negation_cue": "ruled out",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "trauma",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "drug intoxication",
+        "ner_score": 0.996,
+        "negated": true,
+        "negation_cue": "ruled out",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "drug intoxication",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "a mass in the sellar region",
+        "ner_score": 0.994,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0002690",
+        "hpo_name": "Large sella turcica",
+        "expanded_text": "a mass in the sellar region",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.722,
+        "matched": true,
+        "umls_cui": "C1843677"
+      },
+      {
+        "text": "mass",
+        "ner_score": 0.941,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "mass",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "a hemorrhagic sellar mass",
+        "ner_score": 0.998,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "a hemorrhagic sellar mass",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "insufficiency",
+        "ner_score": 0.869,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "insufficiency",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "insufficiency in the corticotropic, thyrotropic, and gonadotropic axes",
+        "ner_score": 0.995,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0011748",
+        "hpo_name": "Adrenocorticotropic hormone deficiency",
+        "expanded_text": "insufficiency in the corticotropic, thyrotropic, and gonadotropic axes",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.8176,
+        "matched": true,
+        "umls_cui": "C0342388"
+      },
+      {
+        "text": "a shift in the optic chiasm",
+        "ner_score": 0.991,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0002308",
+        "hpo_name": "Chiari malformation",
+        "expanded_text": "a shift in the optic chiasm",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.7234,
+        "matched": true,
+        "umls_cui": "C0003803"
+      },
+      {
+        "text": "visual field defects",
+        "ner_score": 0.802,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0001123",
+        "hpo_name": "Visual field defect",
+        "expanded_text": "visual field defects",
+        "match_type": "exact_synonym",
+        "confidence": 1.0,
+        "matched": true,
+        "umls_cui": "C3887875"
+      },
+      {
+        "text": "papilledema",
+        "ner_score": 0.913,
+        "negated": true,
+        "negation_cue": "without",
+        "hpo_id": "HP:0001085",
+        "hpo_name": "Papilledema",
+        "expanded_text": "papilledema",
+        "match_type": "exact_label",
+        "confidence": 1.0,
+        "matched": true,
+        "umls_cui": "C0030353"
+      },
+      {
+        "text": "edema",
+        "ner_score": 0.877,
+        "negated": true,
+        "negation_cue": "without",
+        "hpo_id": "HP:0000969",
+        "hpo_name": "Edema",
+        "expanded_text": "edema",
+        "match_type": "clinical_synonym",
+        "confidence": 1.0,
+        "matched": true,
+        "umls_cui": "C0013604"
+      },
+      {
+        "text": "orthoptic",
+        "ner_score": 0.698,
+        "negated": true,
+        "negation_cue": "without",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "orthoptic",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "thoptic abnormalities",
+        "ner_score": 0.977,
+        "negated": true,
+        "negation_cue": "without",
+        "hpo_id": "HP:0012286",
+        "hpo_name": "Abnormal hypothalamus morphology",
+        "expanded_text": "thoptic abnormalities",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.7352,
+        "matched": true,
+        "umls_cui": "C4021095"
+      },
+      {
+        "text": "abnormalities",
+        "ner_score": 0.462,
+        "negated": true,
+        "negation_cue": "without",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "abnormalities",
+        "match_type": "skipped_low_ner_score",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "severe acute kidney injury",
+        "ner_score": 0.999,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0001919",
+        "hpo_name": "Acute kidney injury",
+        "expanded_text": "severe acute kidney injury",
+        "match_type": "substring_match",
+        "confidence": 0.95,
+        "matched": true,
+        "umls_cui": "C0022660"
+      },
+      {
+        "text": "kidney",
+        "ner_score": 0.87,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "kidney",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "injury",
+        "ner_score": 0.931,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "injury",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "hantavirus infection",
+        "ner_score": 0.997,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "hantavirus infection",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "anta",
+        "ner_score": 0.937,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "anta",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "virus",
+        "ner_score": 0.948,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "virus",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "infection",
+        "ner_score": 0.908,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "infection",
+        "match_type": "sapbert_rejected_low_conf",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "igg antibodies",
+        "ner_score": 0.884,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "igg antibodies",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "puumala hantavirus",
+        "ner_score": 0.97,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "puumala hantavirus",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "positive polymerase chain reaction",
+        "ner_score": 0.966,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "positive polymerase chain reaction",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "a puumalavirus",
+        "ner_score": 0.998,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "a puumalavirus",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "infections",
+        "ner_score": 0.532,
+        "negated": true,
+        "negation_cue": "ruled out",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "infections",
+        "match_type": "skipped_low_ner_score",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "hepatitis",
+        "ner_score": 0.591,
+        "negated": true,
+        "negation_cue": "ruled out",
+        "hpo_id": "HP:0012115",
+        "hpo_name": "Hepatitis",
+        "expanded_text": "hepatitis",
+        "match_type": "exact_label",
+        "confidence": 1.0,
+        "matched": true,
+        "umls_cui": "C0019158"
+      },
+      {
+        "text": "hepatitis b virus",
+        "ner_score": 0.983,
+        "negated": true,
+        "negation_cue": "ruled out",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "hepatitis b virus",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "hepatitis c virus",
+        "ner_score": 0.996,
+        "negated": true,
+        "negation_cue": "ruled out",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "hepatitis c virus",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "oliguric",
+        "ner_score": 0.951,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0100520",
+        "hpo_name": "Oliguria",
+        "expanded_text": "oliguric",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.899,
+        "matched": true,
+        "umls_cui": "C0028961"
+      },
+      {
+        "text": "increasing nausea",
+        "ner_score": 0.998,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "increasing nausea",
+        "match_type": "deduplicated",
+        "confidence": 0.8636,
+        "matched": false,
+        "umls_cui": "C0027497"
+      },
+      {
+        "text": "rising blood urea levels",
+        "ner_score": 0.998,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0003138",
+        "hpo_name": "Increased blood urea nitrogen",
+        "expanded_text": "rising blood urea levels",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.8937,
+        "matched": true,
+        "umls_cui": "C0151539"
+      },
+      {
+        "text": "odialysis",
+        "ner_score": 0.553,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "odialysis",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "increased urinary excretion",
+        "ner_score": 0.997,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0000103",
+        "hpo_name": "Polyuria",
+        "expanded_text": "increased urinary excretion",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.8607,
+        "matched": true,
+        "umls_cui": "C0032617"
+      },
+      {
+        "text": "excretion",
+        "ner_score": 0.62,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "excretion",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "decreased creatinine levels",
+        "ner_score": 0.867,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0012101",
+        "hpo_name": "Decreased serum creatinine",
+        "expanded_text": "decreased creatinine levels",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.9739,
+        "matched": true,
+        "umls_cui": "C0428282"
+      },
+      {
+        "text": "continuous weight loss",
+        "ner_score": 0.99,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "continuous weight loss",
+        "match_type": "deduplicated",
+        "confidence": 0.95,
+        "matched": false,
+        "umls_cui": "C1262477"
+      },
+      {
+        "text": "weight loss",
+        "ner_score": 0.855,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0001824",
+        "hpo_name": "Weight loss",
+        "expanded_text": "weight loss",
+        "match_type": "clinical_synonym",
+        "confidence": 1.0,
+        "matched": true,
+        "umls_cui": "C1262477"
+      },
+      {
+        "text": "polyuric",
+        "ner_score": 0.824,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "polyuric",
+        "match_type": "sapbert_rejected_low_conf",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "acute kidney injury recovery",
+        "ner_score": 0.981,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "acute kidney injury recovery",
+        "match_type": "deduplicated",
+        "confidence": 0.95,
+        "matched": false,
+        "umls_cui": "C0022660"
+      },
+      {
+        "text": "persistent plasma hyperosmolality",
+        "ner_score": 0.997,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0001986",
+        "hpo_name": "Hypertonic dehydration",
+        "expanded_text": "persistent plasma hyperosmolality",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.7546,
+        "matched": true,
+        "umls_cui": "C1112601"
+      },
+      {
+        "text": "plasma hyperosmolality and urine hypoosmolality",
+        "ner_score": 0.998,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "plasma hyperosmolality and urine hypoosmolality",
+        "match_type": "deduplicated",
+        "confidence": 0.7336,
+        "matched": false,
+        "umls_cui": "C1112601"
+      },
+      {
+        "text": "Coma",
+        "ner_score": 0.9,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0001259",
+        "hpo_name": "Coma",
+        "expanded_text": "Coma",
+        "match_type": "text_scan_exact_label",
+        "confidence": 0.95,
+        "matched": true,
+        "umls_cui": "C0009421",
+        "umls_all": [
+          "C0009421"
+        ]
+      }
+    ],
+    "test": [
+      {
+        "text": "subsequent magnetic resonance imaging ( mri",
+        "ner_score": 0.872,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "subsequent magnetic resonance imaging ( mri",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "glomerular filtration rate ( egfr )",
+        "ner_score": 0.879,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "glomerular filtration rate ( egfr )",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "sequencing of the partial l - segment",
+        "ner_score": 0.982,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "sequencing of the partial l - segment",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "examination",
+        "ner_score": 0.968,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "examination",
+        "match_type": "skipped_en_noise",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "normal",
+        "ner_score": 0.977,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "normal",
+        "match_type": "skipped_en_noise",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "temperature",
+        "ner_score": 0.982,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "temperature",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "stable",
+        "ner_score": 0.976,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "stable",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "vital",
+        "ner_score": 0.988,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "vital",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "a glasgow coma scale score",
+        "ner_score": 0.831,
+        "negated": true,
+        "negation_cue": "no",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "a glasgow coma scale score",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "Glasgow",
+        "ner_score": 0.991,
+        "negated": true,
+        "negation_cue": "no",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "Glasgow",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "Coma",
+        "ner_score": 0.993,
+        "negated": true,
+        "negation_cue": "no",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "Coma",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "Scale",
+        "ner_score": 0.993,
+        "negated": true,
+        "negation_cue": "no",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "Scale",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "initial clinical and laboratory evaluations",
+        "ner_score": 0.87,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "initial clinical and laboratory evaluations",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "clinical",
+        "ner_score": 0.979,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "clinical",
+        "match_type": "skipped_en_noise",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "laboratory",
+        "ner_score": 0.96,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "laboratory",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "evaluations",
+        "ner_score": 0.95,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "evaluations",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "a computed tomography scan",
+        "ner_score": 0.997,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "a computed tomography scan",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "computed",
+        "ner_score": 0.992,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "computed",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "tomography",
+        "ner_score": 0.991,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "tomography",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "magnetic",
+        "ner_score": 0.991,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "magnetic",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "resonance",
+        "ner_score": 0.993,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "resonance",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "imaging",
+        "ner_score": 0.991,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "imaging",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "laboratory tests",
+        "ner_score": 0.977,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "laboratory tests",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "cortico",
+        "ner_score": 0.803,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "cortico",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "otropic",
+        "ner_score": 0.813,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "otropic",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "tropic",
+        "ner_score": 0.805,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "tropic",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": ", thy",
+        "ner_score": 0.465,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": ", thy",
+        "match_type": "skipped_low_ner_score",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "axes",
+        "ner_score": 0.804,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "axes",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "ophthalmo",
+        "ner_score": 0.992,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "ophthalmo",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "ophthalmological examination",
+        "ner_score": 0.923,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "ophthalmological examination",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "ological",
+        "ner_score": 0.988,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "ological",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "logical",
+        "ner_score": 0.994,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "logical",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "kidney",
+        "ner_score": 0.916,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "kidney",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "a creatinine level",
+        "ner_score": 0.987,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "a creatinine level",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "creatinine",
+        "ner_score": 0.985,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "creatinine",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "an estimated",
+        "ner_score": 0.869,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "an estimated",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "estimated",
+        "ner_score": 0.986,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "estimated",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "glomerular",
+        "ner_score": 0.99,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "glomerular",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "filtration",
+        "ner_score": 0.994,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "filtration",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "rate",
+        "ner_score": 0.994,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "rate",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "further testing",
+        "ner_score": 0.996,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "further testing",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "testing",
+        "ner_score": 0.81,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "testing",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "anti",
+        "ner_score": 0.934,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "anti",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "immunofluorescence",
+        "ner_score": 0.613,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "immunofluorescence",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "line immunoassays",
+        "ner_score": 0.947,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "line immunoassays",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "immunoassay",
+        "ner_score": 0.745,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "immunoassay",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "positive",
+        "ner_score": 0.965,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "positive",
+        "match_type": "skipped_en_noise",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "polymerase",
+        "ner_score": 0.987,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "polymerase",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "chain",
+        "ner_score": 0.986,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "chain",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "reaction",
+        "ner_score": 0.943,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "reaction",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "specific amplification",
+        "ner_score": 0.993,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "specific amplification",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "sequencing",
+        "ner_score": 0.788,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "sequencing",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "serological tests",
+        "ner_score": 0.996,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "serological tests",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "rising blood urea",
+        "ner_score": 0.932,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "rising blood urea",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "function",
+        "ner_score": 0.871,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "function",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "recover",
+        "ner_score": 0.747,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "recover",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "increased urinary excretion",
+        "ner_score": 0.817,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "increased urinary excretion",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "decreased",
+        "ner_score": 0.943,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "decreased",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "negative fluid balance",
+        "ner_score": 0.735,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "negative fluid balance",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "urine",
+        "ner_score": 0.694,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "urine",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "urine excretion",
+        "ner_score": 0.996,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "urine excretion",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "further evaluation",
+        "ner_score": 0.879,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "further evaluation",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      }
+    ],
+    "treatment": [
+      {
+        "text": "specific",
+        "ner_score": 0.957,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "specific",
+        "match_type": "skipped_treatment",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "Surgical intervention",
+        "ner_score": 0.866,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "Surgical intervention",
+        "match_type": "skipped_treatment",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "digging",
+        "ner_score": 0.23,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "digging",
+        "match_type": "skipped_low_ner_score",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "a bamboo hedge",
+        "ner_score": 0.879,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "a bamboo hedge",
+        "match_type": "skipped_treatment",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "haemodialysis",
+        "ner_score": 0.856,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "haemodialysis",
+        "match_type": "skipped_treatment",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "renal replacement therapy",
+        "ner_score": 0.723,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "renal replacement therapy",
+        "match_type": "skipped_treatment",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "replacement",
+        "ner_score": 0.61,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "replacement",
+        "match_type": "skipped_treatment",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "Symptomatic treatment",
+        "ner_score": 0.715,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "Symptomatic treatment",
+        "match_type": "skipped_treatment",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "treatment",
+        "ner_score": 0.601,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "treatment",
+        "match_type": "skipped_en_noise",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "hormonal",
+        "ner_score": 0.947,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "hormonal",
+        "match_type": "skipped_treatment",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "hormonal replacement",
+        "ner_score": 0.957,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "hormonal replacement",
+        "match_type": "skipped_treatment",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "antiviral",
+        "ner_score": 0.948,
+        "negated": true,
+        "negation_cue": "no",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "antiviral",
+        "match_type": "skipped_treatment",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "viral treatment",
+        "ner_score": 0.965,
+        "negated": true,
+        "negation_cue": "no",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "viral treatment",
+        "match_type": "skipped_treatment",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "diuretic",
+        "ner_score": 0.865,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "diuretic",
+        "match_type": "skipped_treatment",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "uretic medication",
+        "ner_score": 0.982,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "uretic medication",
+        "match_type": "skipped_treatment",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "medication",
+        "ner_score": 0.698,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "medication",
+        "match_type": "skipped_en_noise",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      }
+    ],
+    "ordo_candidates": [
+      {
+        "ordo_id": "ORPHA:340",
+        "name": "Hemorrhagic fever-renal syndrome",
+        "name_fr": "",
+        "score": 0.4716,
+        "coverage": 0.1167,
+        "matched_hpo": [
+          "HP:0001259",
+          "HP:0001919",
+          "HP:0002013",
+          "HP:0002014",
+          "HP:0002018",
+          "HP:0002315",
+          "HP:0100520"
+        ],
+        "matched_count": 7,
+        "total_disease_hpo": 60,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:544482",
+        "name": "Infection-related hemolytic uremic syndrome",
+        "name_fr": "",
+        "score": 0.4484,
+        "coverage": 0.1538,
+        "matched_hpo": [
+          "HP:0000969",
+          "HP:0001259",
+          "HP:0001919",
+          "HP:0002013",
+          "HP:0002014",
+          "HP:0002018",
+          "HP:0004372",
+          "HP:0100520"
+        ],
+        "matched_count": 8,
+        "total_disease_hpo": 52,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:3385",
+        "name": "African trypanosomiasis",
+        "name_fr": "",
+        "score": 0.4464,
+        "coverage": 0.093,
+        "matched_hpo": [
+          "HP:0001085",
+          "HP:0001259",
+          "HP:0001824",
+          "HP:0002013",
+          "HP:0002014",
+          "HP:0002018",
+          "HP:0002315",
+          "HP:0004372"
+        ],
+        "matched_count": 8,
+        "total_disease_hpo": 86,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:652",
+        "name": "Multiple endocrine neoplasia type 1",
+        "name_fr": "",
+        "score": 0.4443,
+        "coverage": 0.0843,
+        "matched_hpo": [
+          "HP:0001259",
+          "HP:0001824",
+          "HP:0002013",
+          "HP:0002014",
+          "HP:0002018",
+          "HP:0002315",
+          "HP:0011748"
+        ],
+        "matched_count": 7,
+        "total_disease_hpo": 83,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:319213",
+        "name": "Lujo hemorrhagic fever",
+        "name_fr": "",
+        "score": 0.4068,
+        "coverage": 0.1017,
+        "matched_hpo": [
+          "HP:0001259",
+          "HP:0002013",
+          "HP:0002014",
+          "HP:0002018",
+          "HP:0002315",
+          "HP:0100520"
+        ],
+        "matched_count": 6,
+        "total_disease_hpo": 59,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:99829",
+        "name": "Yellow fever",
+        "name_fr": "",
+        "score": 0.3963,
+        "coverage": 0.1277,
+        "matched_hpo": [
+          "HP:0001259",
+          "HP:0001919",
+          "HP:0002013",
+          "HP:0002014",
+          "HP:0002018",
+          "HP:0002315"
+        ],
+        "matched_count": 6,
+        "total_disease_hpo": 47,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:93585",
+        "name": "Immune-mediated thrombotic thrombocytopenic purpura",
+        "name_fr": "",
+        "score": 0.3917,
+        "coverage": 0.1463,
+        "matched_hpo": [
+          "HP:0001259",
+          "HP:0001919",
+          "HP:0002014",
+          "HP:0002018",
+          "HP:0002315",
+          "HP:0003138"
+        ],
+        "matched_count": 6,
+        "total_disease_hpo": 41,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:90062",
+        "name": "Acute liver failure",
+        "name_fr": "",
+        "score": 0.3813,
+        "coverage": 0.12,
+        "matched_hpo": [
+          "HP:0001259",
+          "HP:0001919",
+          "HP:0002013",
+          "HP:0002014",
+          "HP:0002018",
+          "HP:0012115"
+        ],
+        "matched_count": 6,
+        "total_disease_hpo": 50,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:99826",
+        "name": "Marburg hemorrhagic fever",
+        "name_fr": "",
+        "score": 0.3747,
+        "coverage": 0.0676,
+        "matched_hpo": [
+          "HP:0001259",
+          "HP:0002013",
+          "HP:0002014",
+          "HP:0002018",
+          "HP:0002315"
+        ],
+        "matched_count": 5,
+        "total_disease_hpo": 74,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:54595",
+        "name": "Craniopharyngioma",
+        "name_fr": "",
+        "score": 0.3714,
+        "coverage": 0.087,
+        "matched_hpo": [
+          "HP:0001085",
+          "HP:0001259",
+          "HP:0002315",
+          "HP:0012286"
+        ],
+        "matched_count": 4,
+        "total_disease_hpo": 46,
+        "text_match": false
+      }
+    ],
+    "stats": {
+      "total": 132,
+      "matched": 21,
+      "unmatched": 111,
+      "match_rate": 15.9,
+      "unique_hpo": 21,
+      "ordo_matches": 10
+    }
+  },
+  "phenopacket": {
+    "id": "phenopacket-RA_EN_003",
+    "subject": {
+      "id": "RA_EN_003",
+      "sex": "MALE"
+    },
+    "input": "A 49-year-old male presented to the hospital with severe headaches that began at the front and later spread to the back of the head, accompanied by sensitivity to light. For the past three days, he experienced severe nausea, vomiting, diarrhea, and general malaise. Upon examination, he had normal body temperature, stable vital signs, no altered consciousness, and a Glasgow Coma Scale score of 15. His history ruled out trauma or drug intoxication. Initial clinical and laboratory evaluations led to a computed tomography scan, which showed a mass in the sellar region. Subsequent magnetic resonance imaging (MRI) revealed a hemorrhagic sellar mass. Laboratory tests on the fifth day after admission indicated insufficiency in the corticotropic, thyrotropic, and gonadotropic axes. Despite MRI showing a shift in the optic chiasm, ophthalmological examination revealed only minor, non-specific visual field defects without papilledema or orthoptic abnormalities. Surgical intervention was planned but postponed due to severe acute kidney injury, with a creatinine level of 11.6 mg/dL and an estimated glomerular filtration rate (eGFR) of less than 20 mL/min on the fifth day after admission. The patient, a driving instructor, reported digging out a bamboo hedge before hospitalization. Further testing on the third day after admission confirmed hantavirus infection through detection of IgM and IgG antibodies against Puumala hantavirus using immunofluorescence and line immunoassays, as well as positive polymerase chain reaction results. Specific amplification and sequencing of the partial L-Segment identified a puumalavirus circulating in the Middle Rhine region in Germany. Serological tests ruled out infections by hepatitis B virus, hepatitis C virus, and HIV. The patient was transferred to the nephrology department and became oliguric. Due to increasing nausea and rising blood urea levels, haemodialysis was considered but kidney function began to recover, avoiding the need for renal replacement therapy. Symptomatic treatment and hormonal replacement led to increased urinary excretion by day 3 and decreased creatinine levels from day 6 onwards. No specific antiviral treatment was administered. Despite overall improvement, diuretic medication was withheld from day 5, achieving a negative fluid balance with continuous weight loss daily, but urine excretion remained high (6.25 mL/kg/h). Initially attributed to the polyuric phase of acute kidney injury recovery, persistent plasma hyperosmolality and urine hypoosmolality led to further evaluation.",
+    "target": "Hemorrhagic fever-renal syndrome",
+    "phenotypicFeatures": [
+      {
+        "type": {
+          "id": "HP:0002315",
+          "label": "Headache",
+          "umls_cui": "C0018681"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_003",
+              "description": "NER: headaches (0.971) | Match: exact_synonym (1.000)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0002018",
+          "label": "Nausea",
+          "umls_cui": "C0027497"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_003",
+              "description": "NER: nausea (0.980) | Match: exact_label (1.000)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0002013",
+          "label": "Vomiting",
+          "umls_cui": "C0042963"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_003",
+              "description": "NER: vomiting (0.962) | Match: exact_label (1.000)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0002014",
+          "label": "Diarrhea",
+          "umls_cui": "C0011991"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_003",
+              "description": "NER: diarrhea (0.972) | Match: clinical_synonym (1.000)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0004372",
+          "label": "Reduced consciousness",
+          "umls_cui": "C0234428"
+        },
+        "excluded": true,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_003",
+              "description": "NER: altered consciousness (0.942) | Match: sapbert_similarity (0.937) | Negated by: \"no\""
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0002690",
+          "label": "Large sella turcica",
+          "umls_cui": "C1843677"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_003",
+              "description": "NER: a mass in the sellar region (0.994) | Match: sapbert_similarity (0.722)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0011748",
+          "label": "Adrenocorticotropic hormone deficiency",
+          "umls_cui": "C0342388"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_003",
+              "description": "NER: insufficiency in the corticotropic, thyrotropic, and gonadotropic axes (0.995) | Match: sapbert_similarity (0.818)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0002308",
+          "label": "Chiari malformation",
+          "umls_cui": "C0003803"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_003",
+              "description": "NER: a shift in the optic chiasm (0.991) | Match: sapbert_similarity (0.723)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0001123",
+          "label": "Visual field defect",
+          "umls_cui": "C3887875"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_003",
+              "description": "NER: visual field defects (0.802) | Match: exact_synonym (1.000)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0001085",
+          "label": "Papilledema",
+          "umls_cui": "C0030353"
+        },
+        "excluded": true,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_003",
+              "description": "NER: papilledema (0.913) | Match: exact_label (1.000) | Negated by: \"without\""
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0000969",
+          "label": "Edema",
+          "umls_cui": "C0013604"
+        },
+        "excluded": true,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_003",
+              "description": "NER: edema (0.877) | Match: clinical_synonym (1.000) | Negated by: \"without\""
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0012286",
+          "label": "Abnormal hypothalamus morphology",
+          "umls_cui": "C4021095"
+        },
+        "excluded": true,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_003",
+              "description": "NER: thoptic abnormalities (0.977) | Match: sapbert_similarity (0.735) | Negated by: \"without\""
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0001919",
+          "label": "Acute kidney injury",
+          "umls_cui": "C0022660"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_003",
+              "description": "NER: severe acute kidney injury (0.999) | Match: substring_match (0.950)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0012115",
+          "label": "Hepatitis",
+          "umls_cui": "C0019158"
+        },
+        "excluded": true,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_003",
+              "description": "NER: hepatitis (0.591) | Match: exact_label (1.000) | Negated by: \"ruled out\""
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0100520",
+          "label": "Oliguria",
+          "umls_cui": "C0028961"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_003",
+              "description": "NER: oliguric (0.951) | Match: sapbert_similarity (0.899)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0003138",
+          "label": "Increased blood urea nitrogen",
+          "umls_cui": "C0151539"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_003",
+              "description": "NER: rising blood urea levels (0.998) | Match: sapbert_similarity (0.894)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0000103",
+          "label": "Polyuria",
+          "umls_cui": "C0032617"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_003",
+              "description": "NER: increased urinary excretion (0.997) | Match: sapbert_similarity (0.861)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0012101",
+          "label": "Decreased serum creatinine",
+          "umls_cui": "C0428282"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_003",
+              "description": "NER: decreased creatinine levels (0.867) | Match: sapbert_similarity (0.974)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0001824",
+          "label": "Weight loss",
+          "umls_cui": "C1262477"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_003",
+              "description": "NER: weight loss (0.855) | Match: clinical_synonym (1.000)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0001986",
+          "label": "Hypertonic dehydration",
+          "umls_cui": "C1112601"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_003",
+              "description": "NER: persistent plasma hyperosmolality (0.997) | Match: sapbert_similarity (0.755)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0001259",
+          "label": "Coma",
+          "umls_cui": "C0009421"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_003",
+              "description": "NER: Coma (0.900) | Match: text_scan_exact_label (0.950)"
+            }
+          }
+        ]
+      }
+    ],
+    "metaData": {
+      "created": "2026-06-19T15:08:32Z",
+      "createdBy": "clinical-preanalysis-pipeline-v2",
+      "phenopacketSchemaVersion": "2.0",
+      "resources": [
+        {
+          "id": "hp",
+          "name": "Human Phenotype Ontology",
+          "url": "https://hpo.jax.org",
+          "version": "2024-04-26",
+          "namespacePrefix": "HP",
+          "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        }
+      ]
+    },
+    "interpretations": [
+      {
+        "id": "interpretation-RA_EN_003",
+        "progressStatus": "IN_PROGRESS",
+        "diagnosis": {
+          "disease": {
+            "id": "ORPHA:340",
+            "label": "Hemorrhagic fever-renal syndrome"
+          },
+          "score": 0.4716,
+          "allCandidates": [
+            {
+              "id": "ORPHA:340",
+              "label": "Hemorrhagic fever-renal syndrome",
+              "score": 0.4716
+            },
+            {
+              "id": "ORPHA:544482",
+              "label": "Infection-related hemolytic uremic syndrome",
+              "score": 0.4484
+            },
+            {
+              "id": "ORPHA:3385",
+              "label": "African trypanosomiasis",
+              "score": 0.4464
+            },
+            {
+              "id": "ORPHA:652",
+              "label": "Multiple endocrine neoplasia type 1",
+              "score": 0.4443
+            },
+            {
+              "id": "ORPHA:319213",
+              "label": "Lujo hemorrhagic fever",
+              "score": 0.4068
+            },
+            {
+              "id": "ORPHA:99829",
+              "label": "Yellow fever",
+              "score": 0.3963
+            },
+            {
+              "id": "ORPHA:93585",
+              "label": "Immune-mediated thrombotic thrombocytopenic purpura",
+              "score": 0.3917
+            },
+            {
+              "id": "ORPHA:90062",
+              "label": "Acute liver failure",
+              "score": 0.3813
+            },
+            {
+              "id": "ORPHA:99826",
+              "label": "Marburg hemorrhagic fever",
+              "score": 0.3747
+            },
+            {
+              "id": "ORPHA:54595",
+              "label": "Craniopharyngioma",
+              "score": 0.3714
+            }
+          ]
+        }
+      }
+    ],
+    "_pipelineStats": {
+      "totalEntities": 132,
+      "matchedHPO": 21,
+      "unmatchedEntities": 111,
+      "phenopacketFeatures": 21,
+      "negatedFeatures": 5,
+      "numericPhenotypes": 0,
+      "ordoCandidates": 10
+    }
+  }
+}

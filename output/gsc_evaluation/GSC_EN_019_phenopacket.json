@@ -4,7 +4,7 @@
     "id": "GSC_EN_019"
   },
   "input": "Case Report: Spinal muscular atrophy in Ghanaian children confirmed by molecular genetic testing: a case series.\n\nSpinal muscular atrophy (SMA) is an autosomal recessive inherited motor neuron disease characterized by progressive muscle weakness due to degeneration and loss of the anterior horn cells in the spinal cord and the brain stem nuclei from foetal life through infancy and childhood. SMA is prevalent in Ghanaian children, though not widely reported. Cases are likely missed or misdiagnosed due to lack of expertise and investigations. Newborn screening is not currently available in Ghana. The management remains supportive as newly approved genetic modifications therapies are currently not available. We present a retrospective folder review of children attending a tertiary pediatric neurology clinic who were diagnosed with SMA and confirmed by molecular genetic testing. Between January 2018 and August 2021, five (5) children from three families had molecular genetic tests confirming their diagnosis of SMA. Three (3) children had SMA I phenotype while 2 had SMA III phenotype. Two (2) of the 3 children with SMA I died from respiratory complications. The last surviving child with SMA I was diagnosed through newborn screening program overseas and received gene modification therapy. Careful history and physical examination remain the best approach to diagnosis as confirmatory genetic testing and supplemental investigations are not readily available. The current management of the children with SMA in Ghana include respiratory care, physiotherapy, and genetic counselling. Genetic modification therapies are currently not available.",
-  "target": "Spinal muscular atrophy",
+  "target": "Infantile-onset X-linked spinal muscular atrophy",
   "phenotypicFeatures": [
     {
       "type": {
@@ -21,7 +21,7 @@
           },
           "reference": {
             "id": "GSC_EN_019",
-            "description": "NER: Spinal muscular atrophy (0.963) | Match: exact_label (1.000)"
+            "description": "NER: Spinal muscular atrophy (0.997) | Match: exact_label (1.000)"
           }
         }
       ]
@@ -41,27 +41,7 @@
           },
           "reference": {
             "id": "GSC_EN_019",
-            "description": "NER: recessive (0.292) | Match: sapbert_similarity (0.880)"
-          }
-        }
-      ]
-    },
-    {
-      "type": {
-        "id": "HP:0100034",
-        "label": "Motor tics",
-        "umls_cui": "C0751900"
-      },
-      "excluded": false,
-      "evidence": [
-        {
-          "evidenceCode": {
-            "id": "ECO:0000033",
-            "label": "author statement supported by traceable reference"
-          },
-          "reference": {
-            "id": "GSC_EN_019",
-            "description": "NER: motor (0.706) | Match: sapbert_similarity (0.713)"
+            "description": "NER: an autosomal recessive inherited motor neuron disease (0.997) | Match: substring_match (0.950)"
           }
         }
       ]
@@ -88,66 +68,6 @@
     },
     {
       "type": {
-        "id": "HP:0003725",
-        "label": "Firm muscles",
-        "umls_cui": "C1850656"
-      },
-      "excluded": false,
-      "evidence": [
-        {
-          "evidenceCode": {
-            "id": "ECO:0000033",
-            "label": "author statement supported by traceable reference"
-          },
-          "reference": {
-            "id": "GSC_EN_019",
-            "description": "NER: muscle (0.438) | Match: sapbert_similarity (0.759)"
-          }
-        }
-      ]
-    },
-    {
-      "type": {
-        "id": "HP:0001324",
-        "label": "Muscle weakness",
-        "umls_cui": "C0151786"
-      },
-      "excluded": false,
-      "evidence": [
-        {
-          "evidenceCode": {
-            "id": "ECO:0000033",
-            "label": "author statement supported by traceable reference"
-          },
-          "reference": {
-            "id": "GSC_EN_019",
-            "description": "NER: weakness (0.486) | Match: sapbert_similarity (0.891)"
-          }
-        }
-      ]
-    },
-    {
-      "type": {
-        "id": "HP:0011947",
-        "label": "Respiratory tract infection",
-        "umls_cui": "C0035243"
-      },
-      "excluded": false,
-      "evidence": [
-        {
-          "evidenceCode": {
-            "id": "ECO:0000033",
-            "label": "author statement supported by traceable reference"
-          },
-          "reference": {
-            "id": "GSC_EN_019",
-            "description": "NER: respiratory (0.604) | Match: sapbert_similarity (0.712)"
-          }
-        }
-      ]
-    },
-    {
-      "type": {
         "id": "HP:0003323",
         "label": "Progressive muscle weakness",
         "umls_cui": "C0240421"
@@ -161,7 +81,67 @@
           },
           "reference": {
             "id": "GSC_EN_019",
-            "description": "NER: progressive muscle weakness (0.900) | Match: text_scan_exact_label (0.950)"
+            "description": "NER: progressive muscle weakness (0.999) | Match: exact_label (1.000)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0002398",
+        "label": "Degeneration of anterior horn cells",
+        "umls_cui": "C1843505"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "GSC_EN_019",
+            "description": "NER: eration and loss of the anterior horn cells in the spinal cord and the brain stem nuclei (0.995) | Match: sapbert_similarity (0.807)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0007280",
+        "label": "Acute infantile spinal muscular atrophy",
+        "umls_cui": "C4024911"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "GSC_EN_019",
+            "description": "NER: sma i phenotype (0.947) | Match: sapbert_similarity (0.725)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0002093",
+        "label": "Respiratory insufficiency",
+        "umls_cui": "C0035229"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "GSC_EN_019",
+            "description": "NER: respiratory complications (0.998) | Match: sapbert_similarity (0.719)"
           }
         }
       ]
@@ -188,9 +168,9 @@
     },
     {
       "type": {
-        "id": "HP:0003687",
-        "label": "Centrally nucleated skeletal muscle fibers",
-        "umls_cui": "C1842170"
+        "id": "HP:0003701",
+        "label": "Proximal muscle weakness",
+        "umls_cui": "C0221629"
       },
       "excluded": false,
       "evidence": [
@@ -201,14 +181,34 @@
           },
           "reference": {
             "id": "GSC_EN_019",
-            "description": "NER: nuclei (0.938) | Match: sapbert_similarity (0.720)"
+            "description": "NER: muscle weakness (0.900) | Match: text_scan_clinical_synonym (0.950)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0003676",
+        "label": "Progressive",
+        "umls_cui": "C0205329"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "GSC_EN_019",
+            "description": "NER: progressive (0.900) | Match: text_scan_exact_label (0.950)"
           }
         }
       ]
     }
   ],
   "metaData": {
-    "created": "2026-06-11T03:09:00Z",
+    "created": "2026-06-19T15:07:01Z",
     "createdBy": "clinical-preanalysis-pipeline-v2",
     "phenopacketSchemaVersion": "2.0",
     "resources": [
@@ -228,47 +228,72 @@
       "progressStatus": "IN_PROGRESS",
       "diagnosis": {
         "disease": {
-          "id": "ORPHA:70",
-          "label": "Spinal muscular atrophy"
+          "id": "ORPHA:1145",
+          "label": "Infantile-onset X-linked spinal muscular atrophy"
         },
-        "score": 0.85,
+        "score": 0.5018,
         "allCandidates": [
           {
-            "id": "ORPHA:70",
-            "label": "Spinal muscular atrophy",
-            "score": 0.85
+            "id": "ORPHA:1145",
+            "label": "Infantile-onset X-linked spinal muscular atrophy",
+            "score": 0.5018
           },
           {
-            "id": "ORPHA:371",
-            "label": "Glycogen storage disease due to muscle phosphofructokinase deficiency",
-            "score": 0.2571
+            "id": "ORPHA:466768",
+            "label": "Autosomal dominant Charcot-Marie-Tooth disease type 2Z",
+            "score": 0.4006
           },
           {
-            "id": "ORPHA:85162",
-            "label": "Facial onset sensory and motor neuronopathy",
-            "score": 0.2248
+            "id": "ORPHA:803",
+            "label": "Amyotrophic lateral sclerosis",
+            "score": 0.3776
           },
           {
-            "id": "ORPHA:166",
-            "label": "Charcot-Marie-Tooth disease",
-            "score": 0.1808
+            "id": "ORPHA:276244",
+            "label": "Machado-Joseph disease type 3",
+            "score": 0.3542
           },
           {
-            "id": "ORPHA:3239",
-            "label": "Deafness-vitiligo-achalasia syndrome",
-            "score": 0.1267
+            "id": "ORPHA:52430",
+            "label": "Inclusion body myopathy with Paget disease of bone and frontotemporal dementia",
+            "score": 0.3338
+          },
+          {
+            "id": "ORPHA:2254",
+            "label": "Pontocerebellar hypoplasia type 1",
+            "score": 0.319
+          },
+          {
+            "id": "ORPHA:1320",
+            "label": "Idiopathic camptocormia",
+            "score": 0.3188
+          },
+          {
+            "id": "ORPHA:488632",
+            "label": "TBCK-related encephalopathy-severe hypotonia-craniofacial dysmorphism syndrome",
+            "score": 0.308
+          },
+          {
+            "id": "ORPHA:300605",
+            "label": "Juvenile amyotrophic lateral sclerosis",
+            "score": 0.3064
+          },
+          {
+            "id": "ORPHA:98915",
+            "label": "Synaptic congenital myasthenic syndrome",
+            "score": 0.3039
           }
         ]
       }
     }
   ],
   "_pipelineStats": {
-    "totalEntities": 33,
+    "totalEntities": 50,
     "matchedHPO": 10,
-    "unmatchedEntities": 23,
+    "unmatchedEntities": 40,
     "phenopacketFeatures": 10,
     "negatedFeatures": 0,
     "numericPhenotypes": 0,
-    "ordoCandidates": 5
+    "ordoCandidates": 10
   }
 }

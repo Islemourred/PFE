@@ -19,6 +19,71 @@
   "module4": {
     "problem": [
       {
+        "text": "mutations in background",
+        "ner_score": 0.988,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "mutations in background",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "janus kinase 3 ( jak3 ) deficiency",
+        "ner_score": 0.998,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "janus kinase 3 ( jak3 ) deficiency",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "minated bacille calmette - guerin ( bcg ) disease",
+        "ner_score": 0.997,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "minated bacille calmette - guerin ( bcg ) disease",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "- fast ba",
+        "ner_score": 0.853,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "- fast ba",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "t - b + nk - immunodeficiency",
+        "ner_score": 0.998,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0005352",
+        "hpo_name": "Severe T-cell immunodeficiency",
+        "expanded_text": "t - b + nk - immunodeficiency",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.8027,
+        "matched": true,
+        "umls_cui": "C4025208"
+      },
+      {
         "text": "mutations",
         "ner_score": 0.271,
         "negated": false,
@@ -26,7 +91,7 @@
         "hpo_id": null,
         "hpo_name": null,
         "expanded_text": "mutations",
-        "match_type": "no_match",
+        "match_type": "skipped_low_ner_score",
         "confidence": 0.0,
         "matched": false,
         "umls_cui": null
@@ -36,13 +101,26 @@
         "ner_score": 0.513,
         "negated": false,
         "negation_cue": "",
-        "hpo_id": "HP:0012828",
-        "hpo_name": "Severe",
+        "hpo_id": null,
+        "hpo_name": null,
         "expanded_text": "severe",
+        "match_type": "skipped_en_noise",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "severe combined immunodeficiency",
+        "ner_score": 0.998,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0004430",
+        "hpo_name": "Severe combined immunodeficiency",
+        "expanded_text": "severe combined immunodeficiency",
         "match_type": "exact_label",
         "confidence": 1.0,
         "matched": true,
-        "umls_cui": "C0205082"
+        "umls_cui": "C0085110"
       },
       {
         "text": "combined immunodeficiency",
@@ -65,23 +143,62 @@
         "hpo_id": null,
         "hpo_name": null,
         "expanded_text": "kinase",
-        "match_type": "no_match",
+        "match_type": "skipped_low_ner_score",
         "confidence": 0.0,
         "matched": false,
         "umls_cui": null
+      },
+      {
+        "text": "severe infections",
+        "ner_score": 0.989,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0002719",
+        "hpo_name": "Recurrent infections",
+        "expanded_text": "severe infections",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.7869,
+        "matched": true,
+        "umls_cui": "C0239998"
       },
       {
         "text": "infections",
         "ner_score": 0.58,
         "negated": false,
         "negation_cue": "",
-        "hpo_id": "HP:0002719",
-        "hpo_name": "Recurrent infections",
+        "hpo_id": null,
+        "hpo_name": null,
         "expanded_text": "infections",
-        "match_type": "sapbert_similarity",
-        "confidence": 0.7773,
-        "matched": true,
-        "umls_cui": "C0239998"
+        "match_type": "sapbert_rejected_low_conf",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "jak3 deficiency",
+        "ner_score": 0.998,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "jak3 deficiency",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "two compound heterozygous jak3 mutations",
+        "ner_score": 0.997,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "two compound heterozygous jak3 mutations",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
       },
       {
         "text": "ille",
@@ -111,7 +228,7 @@
       },
       {
         "text": "disease and Pneumocystis pneumonia",
-        "ner_score": 0.956,
+        "ner_score": 0.998,
         "negated": false,
         "negation_cue": "",
         "hpo_id": "HP:0002090",
@@ -121,6 +238,19 @@
         "confidence": 0.9366,
         "matched": true,
         "umls_cui": "C0032285"
+      },
+      {
+        "text": "recurring fever",
+        "ner_score": 0.993,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0001954",
+        "hpo_name": "Recurrent fever",
+        "expanded_text": "recurring fever",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.9296,
+        "matched": true,
+        "umls_cui": "C0277799"
       },
       {
         "text": "fever",
@@ -136,17 +266,43 @@
         "umls_cui": "C0015967"
       },
       {
-        "text": "cough",
-        "ner_score": 0.958,
+        "text": "productive cough",
+        "ner_score": 0.994,
         "negated": false,
         "negation_cue": "",
         "hpo_id": "HP:0012735",
         "hpo_name": "Cough",
-        "expanded_text": "cough",
-        "match_type": "exact_label",
+        "expanded_text": "productive cough",
+        "match_type": "clinical_synonym",
         "confidence": 1.0,
         "matched": true,
         "umls_cui": "C0010200"
+      },
+      {
+        "text": "cough",
+        "ner_score": 0.958,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "cough",
+        "match_type": "deduplicated",
+        "confidence": 1.0,
+        "matched": false,
+        "umls_cui": "C0010200"
+      },
+      {
+        "text": "bilateral infiltrations",
+        "ner_score": 0.998,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "bilateral infiltrations",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
       },
       {
         "text": "infiltrations",
@@ -175,6 +331,19 @@
         "umls_cui": "C0042782"
       },
       {
+        "text": "enlarged mediastinal and axillary lymph nodes",
+        "ner_score": 0.999,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "enlarged mediastinal and axillary lymph nodes",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
         "text": "hypoplasia",
         "ner_score": 0.913,
         "negated": false,
@@ -188,26 +357,26 @@
         "umls_cui": "C0025995"
       },
       {
-        "text": "Mycobacterium",
-        "ner_score": 0.754,
+        "text": "ypoplasia of the thymus. Mycobacterium tuberculosis",
+        "ner_score": 0.998,
         "negated": false,
         "negation_cue": "",
-        "hpo_id": null,
-        "hpo_name": null,
-        "expanded_text": "Mycobacterium",
-        "match_type": "no_match",
-        "confidence": 0.0,
-        "matched": false,
-        "umls_cui": null
+        "hpo_id": "HP:0010516",
+        "hpo_name": "Thymus hyperplasia",
+        "expanded_text": "ypoplasia of the thymus. Mycobacterium tuberculosis",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.7329,
+        "matched": true,
+        "umls_cui": "C0040115"
       },
       {
-        "text": "tuberculosis",
-        "ner_score": 0.855,
+        "text": "pneumocystis jirovecii",
+        "ner_score": 0.965,
         "negated": false,
         "negation_cue": "",
         "hpo_id": null,
         "hpo_name": null,
-        "expanded_text": "tuberculosis",
+        "expanded_text": "pneumocystis jirovecii",
         "match_type": "no_match",
         "confidence": 0.0,
         "matched": false,
@@ -240,6 +409,19 @@
         "umls_cui": null
       },
       {
+        "text": "two heterozygous missense mutations",
+        "ner_score": 0.991,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "two heterozygous missense mutations",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
         "text": "missense mutations",
         "ner_score": 0.541,
         "negated": false,
@@ -247,10 +429,36 @@
         "hpo_id": null,
         "hpo_name": null,
         "expanded_text": "missense mutations",
+        "match_type": "skipped_low_ner_score",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "janus homo",
+        "ner_score": 0.582,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "janus homo",
         "match_type": "no_match",
         "confidence": 0.0,
         "matched": false,
         "umls_cui": null
+      },
+      {
+        "text": "hepatic damage",
+        "ner_score": 0.943,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0012115",
+        "hpo_name": "Hepatitis",
+        "expanded_text": "hepatic damage",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.8119,
+        "matched": true,
+        "umls_cui": "C0019158"
       },
       {
         "text": "damage",
@@ -260,26 +468,23 @@
         "hpo_id": null,
         "hpo_name": null,
         "expanded_text": "damage",
-        "match_type": "no_match",
+        "match_type": "skipped_en_noise",
         "confidence": 0.0,
         "matched": false,
         "umls_cui": null
       },
       {
-        "text": "severe combined immunodeficiency",
-        "ner_score": 0.9,
+        "text": "the variants",
+        "ner_score": 0.822,
         "negated": false,
         "negation_cue": "",
-        "hpo_id": "HP:0004430",
-        "hpo_name": "Severe combined immunodeficiency",
-        "expanded_text": "severe combined immunodeficiency",
-        "match_type": "text_scan_exact_label",
-        "confidence": 0.95,
+        "hpo_id": "HP:0003812",
+        "hpo_name": "Phenotypic variability",
+        "expanded_text": "the variants",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.787,
         "matched": true,
-        "umls_cui": "C0085110",
-        "umls_all": [
-          "C0085110"
-        ]
+        "umls_cui": "C1837514"
       },
       {
         "text": "hypoplasia of the thymus",
@@ -313,25 +518,74 @@
         "umls_all": [
           "C0021051"
         ]
-      },
-      {
-        "text": "bilateral",
-        "ner_score": 0.9,
-        "negated": false,
-        "negation_cue": "",
-        "hpo_id": "HP:0012832",
-        "hpo_name": "Bilateral",
-        "expanded_text": "bilateral",
-        "match_type": "text_scan_exact_label",
-        "confidence": 0.95,
-        "matched": true,
-        "umls_cui": "C0238767",
-        "umls_all": [
-          "C0238767"
-        ]
       }
     ],
     "treatment": [
+      {
+        "text": "live - at",
+        "ner_score": 0.918,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "live - at",
+        "match_type": "skipped_treatment",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "live - attenuated vaccines",
+        "ner_score": 0.987,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "live - attenuated vaccines",
+        "match_type": "skipped_treatment",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "ulation of",
+        "ner_score": 0.482,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "ulation of",
+        "match_type": "skipped_low_ner_score",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "ulation",
+        "ner_score": 0.622,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "ulation",
+        "match_type": "skipped_treatment",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "uated vaccines",
+        "ner_score": 0.996,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "uated vaccines",
+        "match_type": "skipped_treatment",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
       {
         "text": "onia",
         "ner_score": 0.979,
@@ -340,7 +594,20 @@
         "hpo_id": null,
         "hpo_name": null,
         "expanded_text": "onia",
-        "match_type": "no_match",
+        "match_type": "skipped_treatment",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "bcg vaccination",
+        "ner_score": 0.993,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "bcg vaccination",
+        "match_type": "skipped_treatment",
         "confidence": 0.0,
         "matched": false,
         "umls_cui": null
@@ -353,7 +620,20 @@
         "hpo_id": null,
         "hpo_name": null,
         "expanded_text": "vaccination",
-        "match_type": "no_match",
+        "match_type": "skipped_low_ner_score",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "ineffective antibiotic treatment",
+        "ner_score": 0.992,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "ineffective antibiotic treatment",
+        "match_type": "skipped_treatment",
         "confidence": 0.0,
         "matched": false,
         "umls_cui": null
@@ -366,7 +646,7 @@
         "hpo_id": null,
         "hpo_name": null,
         "expanded_text": "antibiotic",
-        "match_type": "skipped_non_phenotype",
+        "match_type": "skipped_treatment",
         "confidence": 0.0,
         "matched": false,
         "umls_cui": null
@@ -379,7 +659,20 @@
         "hpo_id": null,
         "hpo_name": null,
         "expanded_text": "treatment",
-        "match_type": "no_match",
+        "match_type": "skipped_en_noise",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "rifampicin",
+        "ner_score": 0.941,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "rifampicin",
+        "match_type": "skipped_treatment",
         "confidence": 0.0,
         "matched": false,
         "umls_cui": null
@@ -392,7 +685,33 @@
         "hpo_id": null,
         "hpo_name": null,
         "expanded_text": "icin",
-        "match_type": "no_match",
+        "match_type": "skipped_treatment",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "isoniazid",
+        "ner_score": 0.99,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "isoniazid",
+        "match_type": "skipped_treatment",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "ethambutol",
+        "ner_score": 0.914,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "ethambutol",
+        "match_type": "skipped_treatment",
         "confidence": 0.0,
         "matched": false,
         "umls_cui": null
@@ -405,7 +724,33 @@
         "hpo_id": null,
         "hpo_name": null,
         "expanded_text": "ambu",
-        "match_type": "no_match",
+        "match_type": "skipped_treatment",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "trimethoprim",
+        "ner_score": 0.933,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "trimethoprim",
+        "match_type": "skipped_treatment",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "sulfamethoxazole",
+        "ner_score": 0.986,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "sulfamethoxazole",
+        "match_type": "skipped_treatment",
         "confidence": 0.0,
         "matched": false,
         "umls_cui": null
@@ -418,7 +763,7 @@
         "hpo_id": null,
         "hpo_name": null,
         "expanded_text": "fame",
-        "match_type": "no_match",
+        "match_type": "skipped_treatment",
         "confidence": 0.0,
         "matched": false,
         "umls_cui": null
@@ -431,7 +776,7 @@
         "hpo_id": null,
         "hpo_name": null,
         "expanded_text": "oxazol",
-        "match_type": "no_match",
+        "match_type": "skipped_treatment",
         "confidence": 0.0,
         "matched": false,
         "umls_cui": null
@@ -439,79 +784,40 @@
     ],
     "test": [
       {
-        "text": "Janus",
-        "ner_score": 0.481,
+        "text": "chest ct",
+        "ner_score": 0.997,
         "negated": false,
         "negation_cue": "",
         "hpo_id": null,
         "hpo_name": null,
-        "expanded_text": "Janus",
-        "match_type": "no_match",
+        "expanded_text": "chest ct",
+        "match_type": "skipped_test",
         "confidence": 0.0,
         "matched": false,
         "umls_cui": null
       },
       {
-        "text": "media",
-        "ner_score": 0.936,
+        "text": "rate",
+        "ner_score": 0.553,
         "negated": false,
         "negation_cue": "",
         "hpo_id": null,
         "hpo_name": null,
-        "expanded_text": "media",
-        "match_type": "no_match",
+        "expanded_text": "rate",
+        "match_type": "skipped_test",
         "confidence": 0.0,
         "matched": false,
         "umls_cui": null
       },
       {
-        "text": "axillary",
-        "ner_score": 0.927,
+        "text": "blood samples",
+        "ner_score": 0.989,
         "negated": false,
         "negation_cue": "",
         "hpo_id": null,
         "hpo_name": null,
-        "expanded_text": "axillary",
-        "match_type": "no_match",
-        "confidence": 0.0,
-        "matched": false,
-        "umls_cui": null
-      },
-      {
-        "text": "nodes",
-        "ner_score": 0.982,
-        "negated": false,
-        "negation_cue": "",
-        "hpo_id": "HP:0002716",
-        "hpo_name": "Lymphadenopathy",
-        "expanded_text": "nodes",
-        "match_type": "sapbert_similarity",
-        "confidence": 0.7234,
-        "matched": true,
-        "umls_cui": "C0497156"
-      },
-      {
-        "text": "thymus",
-        "ner_score": 0.945,
-        "negated": false,
-        "negation_cue": "",
-        "hpo_id": null,
-        "hpo_name": null,
-        "expanded_text": "thymus",
-        "match_type": "no_match",
-        "confidence": 0.0,
-        "matched": false,
-        "umls_cui": null
-      },
-      {
-        "text": "blood",
-        "ner_score": 0.914,
-        "negated": false,
-        "negation_cue": "",
-        "hpo_id": null,
-        "hpo_name": null,
-        "expanded_text": "blood",
-        "match_type": "no_match",
+        "expanded_text": "blood samples",
+        "match_type": "skipped_test",
         "confidence": 0.0,
         "matched": false,
         "umls_cui": null
@@ -524,36 +830,88 @@
         "hpo_id": null,
         "hpo_name": null,
         "expanded_text": "sequencing",
-        "match_type": "no_match",
+        "match_type": "skipped_test",
         "confidence": 0.0,
         "matched": false,
         "umls_cui": null
       },
       {
-        "text": "sputum aspirate",
-        "ner_score": 0.867,
+        "text": "acid",
+        "ner_score": 0.902,
         "negated": false,
         "negation_cue": "",
-        "hpo_id": "HP:0002835",
-        "hpo_name": "Aspiration",
-        "expanded_text": "sputum aspirate",
-        "match_type": "sapbert_similarity",
-        "confidence": 0.7355,
-        "matched": true,
-        "umls_cui": "C0700198"
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "acid",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
       },
       {
-        "text": "gastric",
-        "ner_score": 0.853,
+        "text": "cilli",
+        "ner_score": 0.58,
         "negated": false,
         "negation_cue": "",
-        "hpo_id": "HP:0012126",
-        "hpo_name": "Stomach cancer",
-        "expanded_text": "gastric",
-        "match_type": "sapbert_similarity",
-        "confidence": 0.7535,
-        "matched": true,
-        "umls_cui": "C0699791"
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "cilli",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "um as",
+        "ner_score": 0.605,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "um as",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "pirate",
+        "ner_score": 0.655,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "pirate",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "gastric as",
+        "ner_score": 0.733,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "gastric as",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "lymphocyte subset analyses",
+        "ner_score": 0.996,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "lymphocyte subset analyses",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
       },
       {
         "text": "ocyte",
@@ -563,7 +921,7 @@
         "hpo_id": null,
         "hpo_name": null,
         "expanded_text": "ocyte",
-        "match_type": "no_match",
+        "match_type": "skipped_test",
         "confidence": 0.0,
         "matched": false,
         "umls_cui": null
@@ -576,7 +934,7 @@
         "hpo_id": null,
         "hpo_name": null,
         "expanded_text": "subset",
-        "match_type": "no_match",
+        "match_type": "skipped_test",
         "confidence": 0.0,
         "matched": false,
         "umls_cui": null
@@ -589,7 +947,7 @@
         "hpo_id": null,
         "hpo_name": null,
         "expanded_text": "analyses",
-        "match_type": "no_match",
+        "match_type": "skipped_test",
         "confidence": 0.0,
         "matched": false,
         "umls_cui": null
@@ -602,133 +960,222 @@
         "hpo_id": null,
         "hpo_name": null,
         "expanded_text": "gene",
-        "match_type": "skipped_non_phenotype",
+        "match_type": "skipped_test",
         "confidence": 0.0,
         "matched": false,
         "umls_cui": null
       },
       {
-        "text": "homology",
-        "ner_score": 0.686,
+        "text": "gene sequencing",
+        "ner_score": 0.996,
         "negated": false,
         "negation_cue": "",
         "hpo_id": null,
         "hpo_name": null,
-        "expanded_text": "homology",
-        "match_type": "no_match",
+        "expanded_text": "gene sequencing",
+        "match_type": "skipped_test",
         "confidence": 0.0,
         "matched": false,
         "umls_cui": null
       },
       {
-        "text": "domain",
-        "ner_score": 0.842,
+        "text": "newborn screening",
+        "ner_score": 0.899,
         "negated": false,
         "negation_cue": "",
         "hpo_id": null,
         "hpo_name": null,
-        "expanded_text": "domain",
-        "match_type": "no_match",
+        "expanded_text": "newborn screening",
+        "match_type": "skipped_test",
         "confidence": 0.0,
         "matched": false,
         "umls_cui": null
       },
       {
-        "text": "hepatic",
-        "ner_score": 0.377,
+        "text": "investigations",
+        "ner_score": 0.774,
         "negated": false,
         "negation_cue": "",
-        "hpo_id": "HP:0012115",
-        "hpo_name": "Hepatitis",
-        "expanded_text": "hepatic",
-        "match_type": "sapbert_similarity",
-        "confidence": 0.7355,
-        "matched": true,
-        "umls_cui": "C0019158"
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "investigations",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
       }
     ],
     "ordo_candidates": [
       {
-        "ordo_id": "ORPHA:183660",
-        "name": "Severe combined immunodeficiency",
-        "name_fr": "Déficit immunitaire combiné sévère (DICS)",
-        "score": 0.85,
-        "jaccard": 0.1429,
-        "coverage": 0.25,
+        "ordo_id": "ORPHA:39041",
+        "name": "Omenn syndrome",
+        "name_fr": "",
+        "score": 0.4807,
+        "coverage": 0.0549,
         "matched_hpo": [
           "HP:0001945",
+          "HP:0001954",
           "HP:0002090",
-          "HP:0002719",
+          "HP:0002721",
           "HP:0004430"
         ],
-        "matched_count": 4,
-        "total_disease_hpo": 16
+        "matched_count": 5,
+        "total_disease_hpo": 91,
+        "text_match": false
       },
       {
-        "ordo_id": "ORPHA:319600",
-        "name": "Mendelian susceptibility to mycobacterial diseases due to partial IRF8 deficiency",
+        "ordo_id": "ORPHA:83471",
+        "name": "T-cell immunodeficiency with thymic aplasia",
         "name_fr": "",
-        "score": 0.4471,
-        "jaccard": 0.1176,
-        "coverage": 0.6667,
-        "matched_hpo": [
-          "HP:0001945",
-          "HP:0002716"
-        ],
-        "matched_count": 2,
-        "total_disease_hpo": 3
-      },
-      {
-        "ordo_id": "ORPHA:99748",
-        "name": "Pontiac fever",
-        "name_fr": "",
-        "score": 0.2821,
-        "jaccard": 0.1053,
-        "coverage": 0.4,
-        "matched_hpo": [
-          "HP:0001945",
-          "HP:0012735"
-        ],
-        "matched_count": 2,
-        "total_disease_hpo": 5
-      },
-      {
-        "ordo_id": "ORPHA:572",
-        "name": "MHC class II deficiency",
-        "name_fr": "Déficit en molécules HLA de classe II",
-        "score": 0.2136,
-        "jaccard": 0.125,
-        "coverage": 0.2727,
+        "score": 0.4554,
+        "coverage": 0.1111,
         "matched_hpo": [
           "HP:0002090",
           "HP:0002719",
+          "HP:0005352",
+          "HP:0005387"
+        ],
+        "matched_count": 4,
+        "total_disease_hpo": 36,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:906",
+        "name": "Wiskott-Aldrich syndrome",
+        "name_fr": "",
+        "score": 0.4228,
+        "coverage": 0.0421,
+        "matched_hpo": [
+          "HP:0000778",
+          "HP:0001945",
+          "HP:0002721",
+          "HP:0012735"
+        ],
+        "matched_count": 4,
+        "total_disease_hpo": 95,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:275",
+        "name": "Severe combined immunodeficiency due to DCLRE1C deficiency",
+        "name_fr": "",
+        "score": 0.4133,
+        "coverage": 0.0811,
+        "matched_hpo": [
+          "HP:0001954",
+          "HP:0002090",
           "HP:0004430"
         ],
         "matched_count": 3,
-        "total_disease_hpo": 11
+        "total_disease_hpo": 37,
+        "text_match": false
       },
       {
-        "ordo_id": "ORPHA:70592",
-        "name": "Transient predisposition to invasive pyogenic bacterial infection",
+        "ordo_id": "ORPHA:1572",
+        "name": "Common variable immunodeficiency",
         "name_fr": "",
-        "score": 0.2095,
-        "jaccard": 0.0952,
-        "coverage": 0.2857,
+        "score": 0.4068,
+        "coverage": 0.3125,
         "matched_hpo": [
           "HP:0001945",
+          "HP:0002090",
+          "HP:0002719",
+          "HP:0004430",
+          "HP:0012735"
+        ],
+        "matched_count": 5,
+        "total_disease_hpo": 16,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:1493",
+        "name": "Vici syndrome",
+        "name_fr": "",
+        "score": 0.405,
+        "coverage": 0.0545,
+        "matched_hpo": [
+          "HP:0000778",
+          "HP:0002719",
           "HP:0002721"
         ],
-        "matched_count": 2,
-        "total_disease_hpo": 7
+        "matched_count": 3,
+        "total_disease_hpo": 55,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:436252",
+        "name": "Combined immunodeficiency-multiple intestinal atresia",
+        "name_fr": "",
+        "score": 0.4012,
+        "coverage": 0.1333,
+        "matched_hpo": [
+          "HP:0000778",
+          "HP:0002721",
+          "HP:0004430",
+          "HP:0012115"
+        ],
+        "matched_count": 4,
+        "total_disease_hpo": 30,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:1163",
+        "name": "Aspergillosis",
+        "name_fr": "",
+        "score": 0.3812,
+        "coverage": 0.0893,
+        "matched_hpo": [
+          "HP:0001945",
+          "HP:0002090",
+          "HP:0002721",
+          "HP:0012115",
+          "HP:0012735"
+        ],
+        "matched_count": 5,
+        "total_disease_hpo": 56,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:33110",
+        "name": "Autosomal non-syndromic agammaglobulinemia",
+        "name_fr": "",
+        "score": 0.3722,
+        "coverage": 0.1724,
+        "matched_hpo": [
+          "HP:0001945",
+          "HP:0002719",
+          "HP:0002721",
+          "HP:0012115",
+          "HP:0012735"
+        ],
+        "matched_count": 5,
+        "total_disease_hpo": 29,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:538934",
+        "name": "X-linked lymphoproliferative disease due to XIAP deficiency",
+        "name_fr": "",
+        "score": 0.3644,
+        "coverage": 0.1818,
+        "matched_hpo": [
+          "HP:0001954",
+          "HP:0002719",
+          "HP:0002721",
+          "HP:0012115"
+        ],
+        "matched_count": 4,
+        "total_disease_hpo": 22,
+        "text_match": false
       }
     ],
     "stats": {
-      "total": 47,
-      "matched": 16,
-      "unmatched": 31,
-      "match_rate": 34.0,
-      "unique_hpo": 16,
-      "ordo_matches": 5
+      "total": 75,
+      "matched": 15,
+      "unmatched": 60,
+      "match_rate": 20.0,
+      "unique_hpo": 15,
+      "ordo_matches": 10
     }
   },
   "phenopacket": {
@@ -737,13 +1184,13 @@
       "id": "PUBMED_EN_010"
     },
     "input": "Case Report: Case Report: Mutations in \n\nBACKGROUND: As a form of severe combined immunodeficiency (SCID), Janus kinase 3 (JAK3) deficiency can be fatal during severe infections in children, especially after inoculation of live-attenuated vaccines. We report a unique case of JAK3 deficiency with two compound heterozygous JAK3 mutations complicated by disseminated Bacille Calmette-Guérin (BCG) disease and Pneumocystis pneumonia.\nCASE DESCRIPTION: A 5-month-old Chinese girl presented with recurring fever and productive cough after BCG vaccination and ineffective antibiotic treatment. Chest CT demonstrated bilateral infiltrations, enlarged mediastinal and axillary lymph nodes, and hypoplasia of the thymus. Mycobacterium tuberculosis and Pneumocystis jirovecii were detected from blood samples by sequencing. Acid-fast bacilli were also found from the sputum aspirate and gastric aspirate. Lymphocyte subset analyses indicated T-B+NK- immunodeficiency, and gene sequencing identified two heterozygous missense mutations (one unreported globally) in the Janus homology 7 (JH7) domain of JAK3. The patient received rifampicin, isoniazid, ethambutol, and trimethoprim/sulfamethoxazole and was discharged after improvements but against advice.\nOUTCOME: The patient died at 13 months of age due to severe infections and hepatic damage.\nDISCUSSION: SCID should be recognized before inoculation of live-attenuated vaccines in children. Newborn screening for SCID is advocated. Further investigations are needed to better understand the pathogenicity of the variants and molecular mechanism of the JH7 domain of JAK3.",
-    "target": "Severe combined immunodeficiency",
+    "target": "Omenn syndrome",
     "phenotypicFeatures": [
       {
         "type": {
-          "id": "HP:0012828",
-          "label": "Severe",
-          "umls_cui": "C0205082"
+          "id": "HP:0005352",
+          "label": "Severe T-cell immunodeficiency",
+          "umls_cui": "C4025208"
         },
         "excluded": false,
         "evidence": [
@@ -754,7 +1201,27 @@
             },
             "reference": {
               "id": "PUBMED_EN_010",
-              "description": "NER: severe (0.513) | Match: exact_label (1.000)"
+              "description": "NER: t - b + nk - immunodeficiency (0.998) | Match: sapbert_similarity (0.803)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0004430",
+          "label": "Severe combined immunodeficiency",
+          "umls_cui": "C0085110"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "PUBMED_EN_010",
+              "description": "NER: severe combined immunodeficiency (0.998) | Match: exact_label (1.000)"
             }
           }
         ]
@@ -794,7 +1261,7 @@
             },
             "reference": {
               "id": "PUBMED_EN_010",
-              "description": "NER: infections (0.580) | Match: sapbert_similarity (0.777)"
+              "description": "NER: severe infections (0.989) | Match: sapbert_similarity (0.787)"
             }
           }
         ]
@@ -814,7 +1281,27 @@
             },
             "reference": {
               "id": "PUBMED_EN_010",
-              "description": "NER: disease and Pneumocystis pneumonia (0.956) | Match: sapbert_similarity (0.937)"
+              "description": "NER: disease and Pneumocystis pneumonia (0.998) | Match: sapbert_similarity (0.937)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0001954",
+          "label": "Recurrent fever",
+          "umls_cui": "C0277799"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "PUBMED_EN_010",
+              "description": "NER: recurring fever (0.993) | Match: sapbert_similarity (0.930)"
             }
           }
         ]
@@ -854,7 +1341,7 @@
             },
             "reference": {
               "id": "PUBMED_EN_010",
-              "description": "NER: cough (0.958) | Match: exact_label (1.000)"
+              "description": "NER: productive cough (0.994) | Match: clinical_synonym (1.000)"
             }
           }
         ]
@@ -901,9 +1388,9 @@
       },
       {
         "type": {
-          "id": "HP:0004430",
-          "label": "Severe combined immunodeficiency",
-          "umls_cui": "C0085110"
+          "id": "HP:0010516",
+          "label": "Thymus hyperplasia",
+          "umls_cui": "C0040115"
         },
         "excluded": false,
         "evidence": [
@@ -914,7 +1401,47 @@
             },
             "reference": {
               "id": "PUBMED_EN_010",
-              "description": "NER: severe combined immunodeficiency (0.900) | Match: text_scan_exact_label (0.950)"
+              "description": "NER: ypoplasia of the thymus. Mycobacterium tuberculosis (0.998) | Match: sapbert_similarity (0.733)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0012115",
+          "label": "Hepatitis",
+          "umls_cui": "C0019158"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "PUBMED_EN_010",
+              "description": "NER: hepatic damage (0.943) | Match: sapbert_similarity (0.812)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0003812",
+          "label": "Phenotypic variability",
+          "umls_cui": "C1837514"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "PUBMED_EN_010",
+              "description": "NER: the variants (0.822) | Match: sapbert_similarity (0.787)"
             }
           }
         ]
@@ -958,110 +1485,10 @@
             }
           }
         ]
-      },
-      {
-        "type": {
-          "id": "HP:0012832",
-          "label": "Bilateral",
-          "umls_cui": "C0238767"
-        },
-        "excluded": false,
-        "evidence": [
-          {
-            "evidenceCode": {
-              "id": "ECO:0000033",
-              "label": "author statement supported by traceable reference"
-            },
-            "reference": {
-              "id": "PUBMED_EN_010",
-              "description": "NER: bilateral (0.900) | Match: text_scan_exact_label (0.950)"
-            }
-          }
-        ]
-      },
-      {
-        "type": {
-          "id": "HP:0002716",
-          "label": "Lymphadenopathy",
-          "umls_cui": "C0497156"
-        },
-        "excluded": false,
-        "evidence": [
-          {
-            "evidenceCode": {
-              "id": "ECO:0000033",
-              "label": "author statement supported by traceable reference"
-            },
-            "reference": {
-              "id": "PUBMED_EN_010",
-              "description": "NER: nodes (0.982) | Match: sapbert_similarity (0.723)"
-            }
-          }
-        ]
-      },
-      {
-        "type": {
-          "id": "HP:0002835",
-          "label": "Aspiration",
-          "umls_cui": "C0700198"
-        },
-        "excluded": false,
-        "evidence": [
-          {
-            "evidenceCode": {
-              "id": "ECO:0000033",
-              "label": "author statement supported by traceable reference"
-            },
-            "reference": {
-              "id": "PUBMED_EN_010",
-              "description": "NER: sputum aspirate (0.867) | Match: sapbert_similarity (0.736)"
-            }
-          }
-        ]
-      },
-      {
-        "type": {
-          "id": "HP:0012126",
-          "label": "Stomach cancer",
-          "umls_cui": "C0699791"
-        },
-        "excluded": false,
-        "evidence": [
-          {
-            "evidenceCode": {
-              "id": "ECO:0000033",
-              "label": "author statement supported by traceable reference"
-            },
-            "reference": {
-              "id": "PUBMED_EN_010",
-              "description": "NER: gastric (0.853) | Match: sapbert_similarity (0.753)"
-            }
-          }
-        ]
-      },
-      {
-        "type": {
-          "id": "HP:0012115",
-          "label": "Hepatitis",
-          "umls_cui": "C0019158"
-        },
-        "excluded": false,
-        "evidence": [
-          {
-            "evidenceCode": {
-              "id": "ECO:0000033",
-              "label": "author statement supported by traceable reference"
-            },
-            "reference": {
-              "id": "PUBMED_EN_010",
-              "description": "NER: hepatic (0.377) | Match: sapbert_similarity (0.736)"
-            }
-          }
-        ]
       }
     ],
     "metaData": {
-      "created": "2026-06-11T03:05:14Z",
+      "created": "2026-06-19T15:02:18Z",
       "createdBy": "clinical-preanalysis-pipeline-v2",
       "phenopacketSchemaVersion": "2.0",
       "resources": [
@@ -1081,48 +1508,73 @@
         "progressStatus": "IN_PROGRESS",
         "diagnosis": {
           "disease": {
-            "id": "ORPHA:183660",
-            "label": "Severe combined immunodeficiency"
+            "id": "ORPHA:39041",
+            "label": "Omenn syndrome"
           },
-          "score": 0.85,
+          "score": 0.4807,
           "allCandidates": [
             {
-              "id": "ORPHA:183660",
-              "label": "Severe combined immunodeficiency",
-              "score": 0.85
+              "id": "ORPHA:39041",
+              "label": "Omenn syndrome",
+              "score": 0.4807
             },
             {
-              "id": "ORPHA:319600",
-              "label": "Mendelian susceptibility to mycobacterial diseases due to partial IRF8 deficiency",
-              "score": 0.4471
+              "id": "ORPHA:83471",
+              "label": "T-cell immunodeficiency with thymic aplasia",
+              "score": 0.4554
             },
             {
-              "id": "ORPHA:99748",
-              "label": "Pontiac fever",
-              "score": 0.2821
+              "id": "ORPHA:906",
+              "label": "Wiskott-Aldrich syndrome",
+              "score": 0.4228
             },
             {
-              "id": "ORPHA:572",
-              "label": "MHC class II deficiency",
-              "score": 0.2136
+              "id": "ORPHA:275",
+              "label": "Severe combined immunodeficiency due to DCLRE1C deficiency",
+              "score": 0.4133
             },
             {
-              "id": "ORPHA:70592",
-              "label": "Transient predisposition to invasive pyogenic bacterial infection",
-              "score": 0.2095
+              "id": "ORPHA:1572",
+              "label": "Common variable immunodeficiency",
+              "score": 0.4068
+            },
+            {
+              "id": "ORPHA:1493",
+              "label": "Vici syndrome",
+              "score": 0.405
+            },
+            {
+              "id": "ORPHA:436252",
+              "label": "Combined immunodeficiency-multiple intestinal atresia",
+              "score": 0.4012
+            },
+            {
+              "id": "ORPHA:1163",
+              "label": "Aspergillosis",
+              "score": 0.3812
+            },
+            {
+              "id": "ORPHA:33110",
+              "label": "Autosomal non-syndromic agammaglobulinemia",
+              "score": 0.3722
+            },
+            {
+              "id": "ORPHA:538934",
+              "label": "X-linked lymphoproliferative disease due to XIAP deficiency",
+              "score": 0.3644
             }
           ]
         }
       }
     ],
     "_pipelineStats": {
-      "totalEntities": 47,
-      "matchedHPO": 16,
-      "unmatchedEntities": 31,
-      "phenopacketFeatures": 16,
+      "totalEntities": 75,
+      "matchedHPO": 15,
+      "unmatchedEntities": 60,
+      "phenopacketFeatures": 15,
       "negatedFeatures": 0,
       "numericPhenotypes": 0,
-      "ordoCandidates": 5
+      "ordoCandidates": 10
     }
   }
 }

@@ -4,13 +4,13 @@
     "id": "GSC_EN_024"
   },
   "input": "Case Report: Autosomal recessive hyper-IgE syndrome caused by DOCK8 gene mutation with new clinical features: a case report.\n\nBACKGROUND: Autosomal recessive hyper-IgE syndrome (AR-HIES) caused by DOCK8 gene is a rare immunodeficiency disease, the main clinical manifestations include recurrent Eczema-like rash, skin and lung abscesses, accompanied with increased serum IgE level. Here, we report a 7-year-old Chinese girl with a new clinic features caused by DOCK8 gene mutations.\nCASE PRESENTATION: A 7-year-old girl was admitted to our hospital because of abnormal walking posture. The clinical manifestations of the patient included abnormal gait, eczema-like rash, fingertip abscess, high muscle tone, and facial paralysis. Among them, high muscle tone and facial paralysis are new clinic features which have not been reported previously. The blood eosinophils and serum IgE levels were significantly increased, and the lymphocyte subsets indicated a decrease of T lymphocytes. The magnetic resonance imaging (MRI) of her brain suggested myelin dysplasia and brain atrophy. Two novel compound heterozygous mutations (c.1868 + 2 T > C and c.5962-2A > G) of DOCK8 gene were identified by whole exome sequencing. By literature review, there are 11 mutations of DOCK8 gene in Chinese AR-HIES patients.\nCONCLUSIONS: Two novel splice-site mutations(c.1868 + 2 T > C and c.5962-2A > G) of DOCK8 gene and new clinic features were found in a Chinese girl with AR-HIES, which extends our understanding of DOCK8 gene mutation spectrum and phenotype of AR-HIES in children.",
-  "target": "Hyper-IgE syndrome",
+  "target": "Chédiak-Higashi syndrome",
   "phenotypicFeatures": [
     {
       "type": {
-        "id": "HP:0002721",
-        "label": "Immunodeficiency",
-        "umls_cui": "C0021051"
+        "id": "HP:0000007",
+        "label": "Autosomal recessive inheritance",
+        "umls_cui": "C0441748"
       },
       "excluded": false,
       "evidence": [
@@ -21,7 +21,67 @@
           },
           "reference": {
             "id": "GSC_EN_024",
-            "description": "NER: immunodeficiency (0.375) | Match: clinical_synonym (1.000)"
+            "description": "NER: autosomal recessive hyper - ige syndrome (0.997) | Match: substring_match (0.950)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0007432",
+        "label": "Intermittent generalized erythematous papular rash",
+        "umls_cui": "C2749995"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "GSC_EN_024",
+            "description": "NER: recurrent eczema - like rash (0.998) | Match: sapbert_similarity (0.712)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0000964",
+        "label": "Eczematoid dermatitis",
+        "umls_cui": "C0013595"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "GSC_EN_024",
+            "description": "NER: eczema - like rash (0.918) | Match: sapbert_similarity (0.897)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0005363",
+        "label": "Humoral immunodeficiency",
+        "umls_cui": "C4025206"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "GSC_EN_024",
+            "description": "NER: a rare immunodeficiency disease (0.988) | Match: sapbert_similarity (0.798)"
           }
         }
       ]
@@ -48,9 +108,9 @@
     },
     {
       "type": {
-        "id": "HP:0002066",
-        "label": "Gait ataxia",
-        "umls_cui": "C0751837"
+        "id": "HP:0100838",
+        "label": "Recurrent cutaneous abscess formation",
+        "umls_cui": "C4021957"
       },
       "excluded": false,
       "evidence": [
@@ -61,7 +121,47 @@
           },
           "reference": {
             "id": "GSC_EN_024",
-            "description": "NER: gait (0.393) | Match: sapbert_similarity (0.743)"
+            "description": "NER: skin and lung abscesses (0.999) | Match: sapbert_similarity (0.717)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0003212",
+        "label": "Increased circulating IgE concentration",
+        "umls_cui": "C0236175"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "GSC_EN_024",
+            "description": "NER: increased serum ige level (0.996) | Match: sapbert_similarity (0.973)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0001288",
+        "label": "Gait disturbance",
+        "umls_cui": "C0575081"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "GSC_EN_024",
+            "description": "NER: abnormal gait (0.998) | Match: exact_synonym (1.000)"
           }
         }
       ]
@@ -108,6 +208,26 @@
     },
     {
       "type": {
+        "id": "HP:0007209",
+        "label": "Facial paralysis",
+        "umls_cui": "C0015469"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "GSC_EN_024",
+            "description": "NER: facial paralysis (0.998) | Match: exact_label (1.000)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
         "id": "HP:0003470",
         "label": "Paralysis",
         "umls_cui": "C0522224"
@@ -128,9 +248,9 @@
     },
     {
       "type": {
-        "id": "HP:0011096",
-        "label": "Peripheral demyelination",
-        "umls_cui": "C0878575"
+        "id": "HP:0005403",
+        "label": "Decreased total T cell count",
+        "umls_cui": "C2931322"
       },
       "excluded": false,
       "evidence": [
@@ -141,16 +261,16 @@
           },
           "reference": {
             "id": "GSC_EN_024",
-            "description": "NER: myelin (0.636) | Match: sapbert_similarity (0.725)"
+            "description": "NER: a decrease of t lymphocytes (0.826) | Match: sapbert_similarity (0.930)"
           }
         }
       ]
     },
     {
       "type": {
-        "id": "HP:0002652",
-        "label": "Skeletal dysplasia",
-        "umls_cui": "C0029422"
+        "id": "HP:0007266",
+        "label": "Cerebral dysmyelination",
+        "umls_cui": "C1854885"
       },
       "excluded": false,
       "evidence": [
@@ -161,16 +281,16 @@
           },
           "reference": {
             "id": "GSC_EN_024",
-            "description": "NER: dysplasia (0.732) | Match: sapbert_similarity (0.767)"
+            "description": "NER: myelin dysplasia (0.999) | Match: sapbert_similarity (0.844)"
           }
         }
       ]
     },
     {
       "type": {
-        "id": "HP:0003202",
-        "label": "Skeletal muscle atrophy",
-        "umls_cui": "C0234958"
+        "id": "HP:0012444",
+        "label": "Brain atrophy",
+        "umls_cui": "C0154671"
       },
       "excluded": false,
       "evidence": [
@@ -181,7 +301,7 @@
           },
           "reference": {
             "id": "GSC_EN_024",
-            "description": "NER: atrophy (0.702) | Match: sapbert_similarity (0.755)"
+            "description": "NER: brain atrophy (0.997) | Match: exact_label (1.000)"
           }
         }
       ]
@@ -208,9 +328,9 @@
     },
     {
       "type": {
-        "id": "HP:0000007",
-        "label": "Autosomal recessive inheritance",
-        "umls_cui": "C0441748"
+        "id": "HP:0002721",
+        "label": "Immunodeficiency",
+        "umls_cui": "C0021051"
       },
       "excluded": false,
       "evidence": [
@@ -221,134 +341,14 @@
           },
           "reference": {
             "id": "GSC_EN_024",
-            "description": "NER: Autosomal recessive (0.900) | Match: text_scan_exact_synonym (0.950)"
-          }
-        }
-      ]
-    },
-    {
-      "type": {
-        "id": "HP:0007209",
-        "label": "Facial paralysis",
-        "umls_cui": "C0015469"
-      },
-      "excluded": false,
-      "evidence": [
-        {
-          "evidenceCode": {
-            "id": "ECO:0000033",
-            "label": "author statement supported by traceable reference"
-          },
-          "reference": {
-            "id": "GSC_EN_024",
-            "description": "NER: facial paralysis (0.900) | Match: text_scan_exact_label (0.950)"
-          }
-        }
-      ]
-    },
-    {
-      "type": {
-        "id": "HP:0001288",
-        "label": "Gait disturbance",
-        "umls_cui": "C0575081"
-      },
-      "excluded": false,
-      "evidence": [
-        {
-          "evidenceCode": {
-            "id": "ECO:0000033",
-            "label": "author statement supported by traceable reference"
-          },
-          "reference": {
-            "id": "GSC_EN_024",
-            "description": "NER: abnormal gait (0.900) | Match: text_scan_exact_synonym (0.950)"
-          }
-        }
-      ]
-    },
-    {
-      "type": {
-        "id": "HP:0012444",
-        "label": "Brain atrophy",
-        "umls_cui": "C0154671"
-      },
-      "excluded": false,
-      "evidence": [
-        {
-          "evidenceCode": {
-            "id": "ECO:0000033",
-            "label": "author statement supported by traceable reference"
-          },
-          "reference": {
-            "id": "GSC_EN_024",
-            "description": "NER: brain atrophy (0.900) | Match: text_scan_exact_label (0.950)"
-          }
-        }
-      ]
-    },
-    {
-      "type": {
-        "id": "HP:0000964",
-        "label": "Eczema",
-        "umls_cui": "C0013595"
-      },
-      "excluded": false,
-      "evidence": [
-        {
-          "evidenceCode": {
-            "id": "ECO:0000033",
-            "label": "author statement supported by traceable reference"
-          },
-          "reference": {
-            "id": "GSC_EN_024",
-            "description": "NER: Eczema (0.900) | Match: text_scan_clinical_synonym (0.950)"
-          }
-        }
-      ]
-    },
-    {
-      "type": {
-        "id": "HP:0002152",
-        "label": "Hyperproteinemia",
-        "umls_cui": "C0267988"
-      },
-      "excluded": false,
-      "evidence": [
-        {
-          "evidenceCode": {
-            "id": "ECO:0000033",
-            "label": "author statement supported by traceable reference"
-          },
-          "reference": {
-            "id": "GSC_EN_024",
-            "description": "NER: increased serum (0.825) | Match: sapbert_similarity (0.721)"
-          }
-        }
-      ]
-    },
-    {
-      "type": {
-        "id": "HP:0001880",
-        "label": "Increased total eosinophil count",
-        "umls_cui": "C0014457"
-      },
-      "excluded": false,
-      "evidence": [
-        {
-          "evidenceCode": {
-            "id": "ECO:0000033",
-            "label": "author statement supported by traceable reference"
-          },
-          "reference": {
-            "id": "GSC_EN_024",
-            "description": "NER: blood eosinophil (0.911) | Match: sapbert_similarity (0.799)"
+            "description": "NER: immunodeficiency (0.900) | Match: text_scan_clinical_synonym (0.950)"
           }
         }
       ]
     }
   ],
   "metaData": {
-    "created": "2026-06-11T03:09:26Z",
+    "created": "2026-06-19T15:07:44Z",
     "createdBy": "clinical-preanalysis-pipeline-v2",
     "phenopacketSchemaVersion": "2.0",
     "resources": [
@@ -368,47 +368,72 @@
       "progressStatus": "IN_PROGRESS",
       "diagnosis": {
         "disease": {
-          "id": "ORPHA:2314",
-          "label": "Hyper-IgE syndrome"
+          "id": "ORPHA:167",
+          "label": "Chédiak-Higashi syndrome"
         },
-        "score": 0.85,
+        "score": 0.4473,
         "allCandidates": [
           {
+            "id": "ORPHA:167",
+            "label": "Chédiak-Higashi syndrome",
+            "score": 0.4473
+          },
+          {
             "id": "ORPHA:2314",
-            "label": "Hyper-IgE syndrome",
-            "score": 0.85
+            "label": "Autosomal dominant hyper-IgE syndrome due to STAT3 deficiency",
+            "score": 0.4297
           },
           {
-            "id": "ORPHA:1429",
-            "label": "Benign hereditary chorea",
-            "score": 0.3222
+            "id": "ORPHA:39041",
+            "label": "Omenn syndrome",
+            "score": 0.4051
           },
           {
-            "id": "ORPHA:256",
-            "label": "Early-onset generalized limb-onset dystonia",
-            "score": 0.28
+            "id": "ORPHA:443811",
+            "label": "PGM3-CDG",
+            "score": 0.3793
           },
           {
-            "id": "ORPHA:99944",
-            "label": "Autosomal dominant Charcot-Marie-Tooth disease type 2K",
-            "score": 0.23
+            "id": "ORPHA:906",
+            "label": "Wiskott-Aldrich syndrome",
+            "score": 0.3651
           },
           {
-            "id": "ORPHA:458798",
-            "label": "Spinocerebellar ataxia type 41",
-            "score": 0.2211
+            "id": "ORPHA:508533",
+            "label": "Skeletal dysplasia-T-cell immunodeficiency-developmental delay syndrome",
+            "score": 0.3455
+          },
+          {
+            "id": "ORPHA:33364",
+            "label": "Trichothiodystrophy",
+            "score": 0.3146
+          },
+          {
+            "id": "ORPHA:275",
+            "label": "Severe combined immunodeficiency due to DCLRE1C deficiency",
+            "score": 0.313
+          },
+          {
+            "id": "ORPHA:533",
+            "label": "Listeriosis",
+            "score": 0.3128
+          },
+          {
+            "id": "ORPHA:83471",
+            "label": "T-cell immunodeficiency with thymic aplasia",
+            "score": 0.3114
           }
         ]
       }
     }
   ],
   "_pipelineStats": {
-    "totalEntities": 41,
+    "totalEntities": 62,
     "matchedHPO": 17,
-    "unmatchedEntities": 24,
+    "unmatchedEntities": 45,
     "phenopacketFeatures": 17,
     "negatedFeatures": 0,
     "numericPhenotypes": 0,
-    "ordoCandidates": 5
+    "ordoCandidates": 10
   }
 }

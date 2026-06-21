@@ -16,6 +16,32 @@
   "module4": {
     "problem": [
       {
+        "text": "lymphoid - origin cancer predisposition",
+        "ner_score": 0.995,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "lymphoid - origin cancer predisposition",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "elevated alpha - fetoprotein levels",
+        "ner_score": 0.998,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0006254",
+        "hpo_name": "Elevated circulating alpha-fetoprotein concentration",
+        "expanded_text": "elevated alpha - fetoprotein levels",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.9811,
+        "matched": true,
+        "umls_cui": "C0235971"
+      },
+      {
         "text": "ataxia",
         "ner_score": 0.675,
         "negated": false,
@@ -27,6 +53,19 @@
         "confidence": 1.0,
         "matched": true,
         "umls_cui": "C0007758"
+      },
+      {
+        "text": "ataxia telangiectasia",
+        "ner_score": 0.991,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "ataxia telangiectasia",
+        "match_type": "deduplicated",
+        "confidence": 0.7211,
+        "matched": false,
+        "umls_cui": "C0039446"
       },
       {
         "text": "telangiectasia",
@@ -46,13 +85,26 @@
         "ner_score": 0.951,
         "negated": false,
         "negation_cue": "",
-        "hpo_id": "HP:0001009",
-        "hpo_name": "Telangiectasia",
+        "hpo_id": null,
+        "hpo_name": null,
         "expanded_text": "angiectasia",
-        "match_type": "sapbert_similarity",
-        "confidence": 0.7662,
+        "match_type": "sapbert_rejected_low_conf",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "a rare autosomal recessive neurodegenerative disorder",
+        "ner_score": 0.994,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0000007",
+        "hpo_name": "Autosomal recessive inheritance",
+        "expanded_text": "a rare autosomal recessive neurodegenerative disorder",
+        "match_type": "substring_match",
+        "confidence": 0.95,
         "matched": true,
-        "umls_cui": "C0039446"
+        "umls_cui": "C0441748"
       },
       {
         "text": "recessive neurodegenerative",
@@ -62,7 +114,7 @@
         "hpo_id": null,
         "hpo_name": null,
         "expanded_text": "recessive neurodegenerative",
-        "match_type": "no_match",
+        "match_type": "skipped_low_ner_score",
         "confidence": 0.0,
         "matched": false,
         "umls_cui": null
@@ -75,6 +127,58 @@
         "hpo_id": null,
         "hpo_name": null,
         "expanded_text": "gene",
+        "match_type": "skipped_low_ner_score",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "cutaneous telangiectasia",
+        "ner_score": 0.991,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0100585",
+        "hpo_name": "Telangiectasia of the skin",
+        "expanded_text": "cutaneous telangiectasia",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.9288,
+        "matched": true,
+        "umls_cui": "C4022018"
+      },
+      {
+        "text": "immunodefi",
+        "ner_score": 0.952,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0002721",
+        "hpo_name": "Immunodeficiency",
+        "expanded_text": "immunodefi",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.9274,
+        "matched": true,
+        "umls_cui": "C0021051"
+      },
+      {
+        "text": "ciency",
+        "ner_score": 0.995,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "ciency",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "ataxia telangiectasia mutated gene mutations",
+        "ner_score": 0.999,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "ataxia telangiectasia mutated gene mutations",
         "match_type": "no_match",
         "confidence": 0.0,
         "matched": false,
@@ -101,7 +205,7 @@
         "hpo_id": null,
         "hpo_name": null,
         "expanded_text": "mutations",
-        "match_type": "no_match",
+        "match_type": "skipped_low_ner_score",
         "confidence": 0.0,
         "matched": false,
         "umls_cui": null
@@ -118,6 +222,32 @@
         "confidence": 0.843,
         "matched": true,
         "umls_cui": "C0026838"
+      },
+      {
+        "text": "wheelchair dependence",
+        "ner_score": 0.998,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "wheelchair dependence",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "ocular telangiectasia",
+        "ner_score": 0.996,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0000524",
+        "hpo_name": "Conjunctival telangiectasia",
+        "expanded_text": "ocular telangiectasia",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.8512,
+        "matched": true,
+        "umls_cui": "C0239105"
       },
       {
         "text": "dystonic posture",
@@ -146,53 +276,95 @@
         "umls_cui": "C0013362"
       },
       {
-        "text": "autosomal recessive",
-        "ner_score": 0.9,
+        "text": "red speech",
+        "ner_score": 0.996,
         "negated": false,
         "negation_cue": "",
-        "hpo_id": "HP:0000007",
-        "hpo_name": "Autosomal recessive inheritance",
-        "expanded_text": "autosomal recessive",
-        "match_type": "text_scan_exact_synonym",
-        "confidence": 0.95,
+        "hpo_id": "HP:0008376",
+        "hpo_name": "Nasal dysarthria",
+        "expanded_text": "red speech",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.7791,
         "matched": true,
-        "umls_cui": "C0441748",
-        "umls_all": [
-          "C0441748",
-          "C4020899"
-        ]
+        "umls_cui": "C1834664"
       },
       {
-        "text": "immunodeficiency",
-        "ner_score": 0.9,
+        "text": "characteristic symptoms",
+        "ner_score": 0.986,
         "negated": false,
         "negation_cue": "",
-        "hpo_id": "HP:0002721",
-        "hpo_name": "Immunodeficiency",
-        "expanded_text": "immunodeficiency",
-        "match_type": "text_scan_clinical_synonym",
-        "confidence": 0.95,
-        "matched": true,
-        "umls_cui": "C0021051",
-        "umls_all": [
-          "C0021051"
-        ]
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "characteristic symptoms",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
       },
       {
-        "text": "childhood onset",
-        "ner_score": 0.9,
+        "text": "radiation sensitivity",
+        "ner_score": 0.745,
         "negated": false,
         "negation_cue": "",
-        "hpo_id": "HP:0011463",
-        "hpo_name": "Childhood onset",
-        "expanded_text": "childhood onset",
-        "match_type": "text_scan_exact_label",
-        "confidence": 0.95,
+        "hpo_id": "HP:0011133",
+        "hpo_name": "Increased sensitivity to ionizing radiation",
+        "expanded_text": "radiation sensitivity",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.8422,
         "matched": true,
-        "umls_cui": "C1837352",
-        "umls_all": [
-          "C1837352"
-        ]
+        "umls_cui": "C4021850"
+      },
+      {
+        "text": "increased cancer risk",
+        "ner_score": 0.993,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "increased cancer risk",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "cancer risk",
+        "ner_score": 0.997,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "cancer risk",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "a complex disorder",
+        "ner_score": 0.98,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "a complex disorder",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "infection susceptibility",
+        "ner_score": 0.998,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0002719",
+        "hpo_name": "Recurrent infections",
+        "expanded_text": "infection susceptibility",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.7581,
+        "matched": true,
+        "umls_cui": "C0239998"
       },
       {
         "text": "cancer",
@@ -221,7 +393,7 @@
         "hpo_id": null,
         "hpo_name": null,
         "expanded_text": "wheelchair dependence",
-        "match_type": "no_match",
+        "match_type": "skipped_low_ner_score",
         "confidence": 0.0,
         "matched": false,
         "umls_cui": null
@@ -234,7 +406,20 @@
         "hpo_id": null,
         "hpo_name": null,
         "expanded_text": "Genetic counseling",
-        "match_type": "skipped_non_phenotype",
+        "match_type": "skipped_low_ner_score",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "supportive care",
+        "ner_score": 0.916,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "supportive care",
+        "match_type": "skipped_treatment",
         "confidence": 0.0,
         "matched": false,
         "umls_cui": null
@@ -247,26 +432,39 @@
         "hpo_id": null,
         "hpo_name": null,
         "expanded_text": "care",
-        "match_type": "no_match",
+        "match_type": "skipped_low_ner_score",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "comprehensive management",
+        "ner_score": 0.858,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "comprehensive management",
+        "match_type": "skipped_treatment",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "careful",
+        "ner_score": 0.912,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "careful",
+        "match_type": "skipped_treatment",
         "confidence": 0.0,
         "matched": false,
         "umls_cui": null
       }
     ],
     "test": [
-      {
-        "text": "Ocular",
-        "ner_score": 0.65,
-        "negated": false,
-        "negation_cue": "",
-        "hpo_id": null,
-        "hpo_name": null,
-        "expanded_text": "Ocular",
-        "match_type": "no_match",
-        "confidence": 0.0,
-        "matched": false,
-        "umls_cui": null
-      },
       {
         "text": "elevated alpha-fetoprotein",
         "ner_score": 0.991,
@@ -275,23 +473,23 @@
         "hpo_id": null,
         "hpo_name": null,
         "expanded_text": "elevated alpha-fetoprotein",
-        "match_type": "skipped_non_phenotype",
+        "match_type": "skipped_test",
         "confidence": 0.0,
         "matched": false,
         "umls_cui": null
       },
       {
         "text": "typical brain",
-        "ner_score": 0.847,
+        "ner_score": 0.987,
         "negated": false,
         "negation_cue": "",
-        "hpo_id": "HP:0012443",
-        "hpo_name": "Abnormal brain morphology",
+        "hpo_id": null,
+        "hpo_name": null,
         "expanded_text": "typical brain",
-        "match_type": "sapbert_similarity",
-        "confidence": 0.74,
-        "matched": true,
-        "umls_cui": "C4021085"
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
       },
       {
         "text": "imaging",
@@ -301,7 +499,33 @@
         "hpo_id": null,
         "hpo_name": null,
         "expanded_text": "imaging",
-        "match_type": "skipped_non_phenotype",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "findings",
+        "ner_score": 0.665,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "findings",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "surveillance",
+        "ner_score": 0.848,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "surveillance",
+        "match_type": "skipped_en_noise",
         "confidence": 0.0,
         "matched": false,
         "umls_cui": null
@@ -311,81 +535,169 @@
       {
         "ordo_id": "ORPHA:100",
         "name": "Ataxia-telangiectasia",
-        "name_fr": "Ataxie-Télangiectasie (syndrome de Louis-Bar)",
-        "score": 0.85,
-        "jaccard": 0.1176,
-        "coverage": 0.2222,
+        "name_fr": "",
+        "score": 0.4282,
+        "coverage": 0.1622,
         "matched_hpo": [
+          "HP:0001251",
+          "HP:0001257",
+          "HP:0001260",
+          "HP:0002664",
+          "HP:0002721",
+          "HP:0100585"
+        ],
+        "matched_count": 6,
+        "total_disease_hpo": 37,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:420741",
+        "name": "RIDDLE syndrome",
+        "name_fr": "",
+        "score": 0.414,
+        "coverage": 0.1163,
+        "matched_hpo": [
+          "HP:0000524",
           "HP:0001009",
-          "HP:0001251"
-        ],
-        "matched_count": 2,
-        "total_disease_hpo": 9
-      },
-      {
-        "ordo_id": "ORPHA:211067",
-        "name": "Episodic ataxia type 5",
-        "name_fr": "",
-        "score": 0.2571,
-        "jaccard": 0.1429,
-        "coverage": 0.3333,
-        "matched_hpo": [
           "HP:0001251",
-          "HP:0001260"
+          "HP:0002721",
+          "HP:0006254"
         ],
-        "matched_count": 2,
-        "total_disease_hpo": 6
+        "matched_count": 5,
+        "total_disease_hpo": 43,
+        "text_match": false
       },
       {
-        "ordo_id": "ORPHA:1180",
-        "name": "Ataxia-hypogonadism-choroidal dystrophy syndrome",
+        "ordo_id": "ORPHA:910",
+        "name": "Xeroderma pigmentosum",
         "name_fr": "",
-        "score": 0.2333,
-        "jaccard": 0.0833,
-        "coverage": 0.3333,
+        "score": 0.3684,
+        "coverage": 0.1017,
         "matched_hpo": [
-          "HP:0001251"
-        ],
-        "matched_count": 1,
-        "total_disease_hpo": 3
-      },
-      {
-        "ordo_id": "ORPHA:1182",
-        "name": "Spastic ataxia with congenital miosis",
-        "name_fr": "",
-        "score": 0.2,
-        "jaccard": 0.125,
-        "coverage": 0.25,
-        "matched_hpo": [
+          "HP:0000524",
+          "HP:0001009",
           "HP:0001251",
-          "HP:0001260"
+          "HP:0001257",
+          "HP:0002664",
+          "HP:0100585"
         ],
-        "matched_count": 2,
-        "total_disease_hpo": 8
+        "matched_count": 6,
+        "total_disease_hpo": 59,
+        "text_match": false
       },
       {
-        "ordo_id": "ORPHA:97",
-        "name": "Familial paroxysmal ataxia",
+        "ordo_id": "ORPHA:443811",
+        "name": "PGM3-CDG",
         "name_fr": "",
-        "score": 0.1857,
-        "jaccard": 0.1429,
-        "coverage": 0.2143,
+        "score": 0.3144,
+        "coverage": 0.0484,
         "matched_hpo": [
           "HP:0001251",
           "HP:0001260",
-          "HP:0001332"
+          "HP:0002719"
         ],
         "matched_count": 3,
-        "total_disease_hpo": 14
+        "total_disease_hpo": 62,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:2585",
+        "name": "Ataxia-pancytopenia syndrome",
+        "name_fr": "",
+        "score": 0.2995,
+        "coverage": 0.075,
+        "matched_hpo": [
+          "HP:0001251",
+          "HP:0001260",
+          "HP:0002719"
+        ],
+        "matched_count": 3,
+        "total_disease_hpo": 40,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:33364",
+        "name": "Trichothiodystrophy",
+        "name_fr": "",
+        "score": 0.299,
+        "coverage": 0.033,
+        "matched_hpo": [
+          "HP:0001257",
+          "HP:0001260",
+          "HP:0002719"
+        ],
+        "matched_count": 3,
+        "total_disease_hpo": 91,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:95433",
+        "name": "Autosomal recessive spinocerebellar ataxia-blindness-deafness syndrome",
+        "name_fr": "",
+        "score": 0.2971,
+        "coverage": 0.1111,
+        "matched_hpo": [
+          "HP:0000524",
+          "HP:0006254"
+        ],
+        "matched_count": 2,
+        "total_disease_hpo": 18,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:774",
+        "name": "Hereditary hemorrhagic telangiectasia",
+        "name_fr": "",
+        "score": 0.2923,
+        "coverage": 0.0833,
+        "matched_hpo": [
+          "HP:0000524",
+          "HP:0001009",
+          "HP:0100585"
+        ],
+        "matched_count": 3,
+        "total_disease_hpo": 36,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:167",
+        "name": "Chédiak-Higashi syndrome",
+        "name_fr": "",
+        "score": 0.2909,
+        "coverage": 0.0337,
+        "matched_hpo": [
+          "HP:0001251",
+          "HP:0002719",
+          "HP:0002721"
+        ],
+        "matched_count": 3,
+        "total_disease_hpo": 89,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:909",
+        "name": "Cerebrotendinous xanthomatosis",
+        "name_fr": "",
+        "score": 0.2869,
+        "coverage": 0.044,
+        "matched_hpo": [
+          "HP:0001251",
+          "HP:0001257",
+          "HP:0001260",
+          "HP:0001332"
+        ],
+        "matched_count": 4,
+        "total_disease_hpo": 91,
+        "text_match": false
       }
     ],
     "stats": {
-      "total": 21,
-      "matched": 11,
-      "unmatched": 10,
-      "match_rate": 52.4,
-      "unique_hpo": 10,
-      "ordo_matches": 5
+      "total": 39,
+      "matched": 14,
+      "unmatched": 25,
+      "match_rate": 35.9,
+      "unique_hpo": 14,
+      "ordo_matches": 10
     }
   },
   "phenopacket": {
@@ -396,6 +708,26 @@
     "input": "Case Report: Ataxia telangiectasia: a rare case report from Nepal.\n\nINTRODUCTION AND IMPORTANCE: Ataxia telangiectasia (A-T) is a rare autosomal recessive neurodegenerative disorder with early childhood onset. It is characterized by ataxia, oculocutaneous telangiectasia, immunodeficiency, and lymphoid-origin cancer predisposition due to ataxia telangiectasia mutated gene mutations.\nCASE PRESENTATION: The authors present a 19-year-old girl with spastic movements since 18 months, leading to wheelchair dependence. Ocular telangiectasia, dystonic posture, and slurred speech were evident. Diagnosis involved elevated alpha-fetoprotein levels and typical brain imaging.\nCLINICAL DISCUSSION: A-T due to ataxia telangiectasia mutated gene mutations located on chromosome 11q22-23. It has varied presentations categorized by age and features. Timely diagnosis relies on characteristic symptoms, lab findings, and imaging. Radiation sensitivity and increased cancer risk underscore cautious radiation use.\nCONCLUSION: A-T is a complex disorder with no cure. Genetic counseling for parents is vital. Its poor prognosis due to infection susceptibility and cancer risk necessitates supportive care. Comprehensive management, including genetic counseling and careful surveillance, is imperative.",
     "target": "Ataxia-telangiectasia",
     "phenotypicFeatures": [
+      {
+        "type": {
+          "id": "HP:0006254",
+          "label": "Elevated circulating alpha-fetoprotein concentration",
+          "umls_cui": "C0235971"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "PUBMED_EN_013",
+              "description": "NER: elevated alpha - fetoprotein levels (0.998) | Match: sapbert_similarity (0.981)"
+            }
+          }
+        ]
+      },
       {
         "type": {
           "id": "HP:0001251",
@@ -438,6 +770,66 @@
       },
       {
         "type": {
+          "id": "HP:0000007",
+          "label": "Autosomal recessive inheritance",
+          "umls_cui": "C0441748"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "PUBMED_EN_013",
+              "description": "NER: a rare autosomal recessive neurodegenerative disorder (0.994) | Match: substring_match (0.950)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0100585",
+          "label": "Telangiectasia of the skin",
+          "umls_cui": "C4022018"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "PUBMED_EN_013",
+              "description": "NER: cutaneous telangiectasia (0.991) | Match: sapbert_similarity (0.929)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0002721",
+          "label": "Immunodeficiency",
+          "umls_cui": "C0021051"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "PUBMED_EN_013",
+              "description": "NER: immunodefi (0.952) | Match: sapbert_similarity (0.927)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
           "id": "HP:0001257",
           "label": "Spasticity",
           "umls_cui": "C0026838"
@@ -452,6 +844,26 @@
             "reference": {
               "id": "PUBMED_EN_013",
               "description": "NER: spastic movements (0.925) | Match: sapbert_similarity (0.843)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0000524",
+          "label": "Conjunctival telangiectasia",
+          "umls_cui": "C0239105"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "PUBMED_EN_013",
+              "description": "NER: ocular telangiectasia (0.996) | Match: sapbert_similarity (0.851)"
             }
           }
         ]
@@ -498,9 +910,9 @@
       },
       {
         "type": {
-          "id": "HP:0000007",
-          "label": "Autosomal recessive inheritance",
-          "umls_cui": "C0441748"
+          "id": "HP:0008376",
+          "label": "Nasal dysarthria",
+          "umls_cui": "C1834664"
         },
         "excluded": false,
         "evidence": [
@@ -511,16 +923,16 @@
             },
             "reference": {
               "id": "PUBMED_EN_013",
-              "description": "NER: autosomal recessive (0.900) | Match: text_scan_exact_synonym (0.950)"
+              "description": "NER: red speech (0.996) | Match: sapbert_similarity (0.779)"
             }
           }
         ]
       },
       {
         "type": {
-          "id": "HP:0002721",
-          "label": "Immunodeficiency",
-          "umls_cui": "C0021051"
+          "id": "HP:0011133",
+          "label": "Increased sensitivity to ionizing radiation",
+          "umls_cui": "C4021850"
         },
         "excluded": false,
         "evidence": [
@@ -531,16 +943,16 @@
             },
             "reference": {
               "id": "PUBMED_EN_013",
-              "description": "NER: immunodeficiency (0.900) | Match: text_scan_clinical_synonym (0.950)"
+              "description": "NER: radiation sensitivity (0.745) | Match: sapbert_similarity (0.842)"
             }
           }
         ]
       },
       {
         "type": {
-          "id": "HP:0011463",
-          "label": "Childhood onset",
-          "umls_cui": "C1837352"
+          "id": "HP:0002719",
+          "label": "Recurrent infections",
+          "umls_cui": "C0239998"
         },
         "excluded": false,
         "evidence": [
@@ -551,7 +963,7 @@
             },
             "reference": {
               "id": "PUBMED_EN_013",
-              "description": "NER: childhood onset (0.900) | Match: text_scan_exact_label (0.950)"
+              "description": "NER: infection susceptibility (0.998) | Match: sapbert_similarity (0.758)"
             }
           }
         ]
@@ -575,30 +987,10 @@
             }
           }
         ]
-      },
-      {
-        "type": {
-          "id": "HP:0012443",
-          "label": "Abnormal brain morphology",
-          "umls_cui": "C4021085"
-        },
-        "excluded": false,
-        "evidence": [
-          {
-            "evidenceCode": {
-              "id": "ECO:0000033",
-              "label": "author statement supported by traceable reference"
-            },
-            "reference": {
-              "id": "PUBMED_EN_013",
-              "description": "NER: typical brain (0.847) | Match: sapbert_similarity (0.740)"
-            }
-          }
-        ]
       }
     ],
     "metaData": {
-      "created": "2026-06-11T03:05:31Z",
+      "created": "2026-06-19T15:02:37Z",
       "createdBy": "clinical-preanalysis-pipeline-v2",
       "phenopacketSchemaVersion": "2.0",
       "resources": [
@@ -621,45 +1013,70 @@
             "id": "ORPHA:100",
             "label": "Ataxia-telangiectasia"
           },
-          "score": 0.85,
+          "score": 0.4282,
           "allCandidates": [
             {
               "id": "ORPHA:100",
               "label": "Ataxia-telangiectasia",
-              "score": 0.85
+              "score": 0.4282
             },
             {
-              "id": "ORPHA:211067",
-              "label": "Episodic ataxia type 5",
-              "score": 0.2571
+              "id": "ORPHA:420741",
+              "label": "RIDDLE syndrome",
+              "score": 0.414
             },
             {
-              "id": "ORPHA:1180",
-              "label": "Ataxia-hypogonadism-choroidal dystrophy syndrome",
-              "score": 0.2333
+              "id": "ORPHA:910",
+              "label": "Xeroderma pigmentosum",
+              "score": 0.3684
             },
             {
-              "id": "ORPHA:1182",
-              "label": "Spastic ataxia with congenital miosis",
-              "score": 0.2
+              "id": "ORPHA:443811",
+              "label": "PGM3-CDG",
+              "score": 0.3144
             },
             {
-              "id": "ORPHA:97",
-              "label": "Familial paroxysmal ataxia",
-              "score": 0.1857
+              "id": "ORPHA:2585",
+              "label": "Ataxia-pancytopenia syndrome",
+              "score": 0.2995
+            },
+            {
+              "id": "ORPHA:33364",
+              "label": "Trichothiodystrophy",
+              "score": 0.299
+            },
+            {
+              "id": "ORPHA:95433",
+              "label": "Autosomal recessive spinocerebellar ataxia-blindness-deafness syndrome",
+              "score": 0.2971
+            },
+            {
+              "id": "ORPHA:774",
+              "label": "Hereditary hemorrhagic telangiectasia",
+              "score": 0.2923
+            },
+            {
+              "id": "ORPHA:167",
+              "label": "Chédiak-Higashi syndrome",
+              "score": 0.2909
+            },
+            {
+              "id": "ORPHA:909",
+              "label": "Cerebrotendinous xanthomatosis",
+              "score": 0.2869
             }
           ]
         }
       }
     ],
     "_pipelineStats": {
-      "totalEntities": 21,
-      "matchedHPO": 11,
-      "unmatchedEntities": 10,
-      "phenopacketFeatures": 10,
+      "totalEntities": 39,
+      "matchedHPO": 14,
+      "unmatchedEntities": 25,
+      "phenopacketFeatures": 14,
       "negatedFeatures": 0,
       "numericPhenotypes": 0,
-      "ordoCandidates": 5
+      "ordoCandidates": 10
     }
   }
 }

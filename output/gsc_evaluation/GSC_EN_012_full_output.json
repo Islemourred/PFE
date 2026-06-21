@@ -20,6 +20,45 @@
   "module4": {
     "problem": [
       {
+        "text": "scid )",
+        "ner_score": 0.821,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "scid )",
+        "match_type": "deduplicated",
+        "confidence": 0.8372,
+        "matched": false,
+        "umls_cui": "C0085110"
+      },
+      {
+        "text": "- threatening condition",
+        "ner_score": 0.779,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "- threatening condition",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "severe combined immunodeficiency",
+        "ner_score": 0.998,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0004430",
+        "hpo_name": "Severe combined immunodeficiency",
+        "expanded_text": "severe combined immunodeficiency",
+        "match_type": "exact_label",
+        "confidence": 1.0,
+        "matched": true,
+        "umls_cui": "C0085110"
+      },
+      {
         "text": "Combined Immunodeficiency",
         "ner_score": 0.946,
         "negated": false,
@@ -33,6 +72,19 @@
         "umls_cui": "C0494261"
       },
       {
+        "text": "severe combined immunodeficiency syndrome",
+        "ner_score": 0.998,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "severe combined immunodeficiency syndrome",
+        "match_type": "deduplicated",
+        "confidence": 0.95,
+        "matched": false,
+        "umls_cui": "C0085110"
+      },
+      {
         "text": "syndrome",
         "ner_score": 0.963,
         "negated": false,
@@ -40,36 +92,75 @@
         "hpo_id": null,
         "hpo_name": null,
         "expanded_text": "syndrome",
-        "match_type": "no_match",
+        "match_type": "skipped_en_noise",
         "confidence": 0.0,
         "matched": false,
         "umls_cui": null
+      },
+      {
+        "text": "early infant death",
+        "ner_score": 0.964,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0001522",
+        "hpo_name": "Death in infancy",
+        "expanded_text": "early infant death",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.9157,
+        "matched": true,
+        "umls_cui": "C1844947"
       },
       {
         "text": "death",
         "ner_score": 0.387,
         "negated": false,
         "negation_cue": "",
-        "hpo_id": "HP:0001699",
-        "hpo_name": "Sudden death",
+        "hpo_id": null,
+        "hpo_name": null,
         "expanded_text": "death",
-        "match_type": "sapbert_similarity",
-        "confidence": 0.7455,
-        "matched": true,
-        "umls_cui": "C0011071"
+        "match_type": "skipped_low_ner_score",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "severe infection",
+        "ner_score": 0.997,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "severe infection",
+        "match_type": "deduplicated",
+        "confidence": 0.759,
+        "matched": false,
+        "umls_cui": "C0239998"
       },
       {
         "text": "infection",
         "ner_score": 0.506,
         "negated": false,
         "negation_cue": "",
-        "hpo_id": "HP:0002719",
-        "hpo_name": "Recurrent infections",
+        "hpo_id": null,
+        "hpo_name": null,
         "expanded_text": "infection",
+        "match_type": "skipped_low_ner_score",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "impaired cellular and humoral immune systems",
+        "ner_score": 0.999,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0005368",
+        "hpo_name": "Abnormality of humoral immunity",
+        "expanded_text": "impaired cellular and humoral immune systems",
         "match_type": "sapbert_similarity",
-        "confidence": 0.7406,
+        "confidence": 0.8622,
         "matched": true,
-        "umls_cui": "C0239998"
+        "umls_cui": "C3150510"
       },
       {
         "text": "al immune systems",
@@ -79,23 +170,75 @@
         "hpo_id": null,
         "hpo_name": null,
         "expanded_text": "al immune systems",
+        "match_type": "skipped_low_ner_score",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "t cells",
+        "ner_score": 0.933,
+        "negated": true,
+        "negation_cue": "absence of",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "t cells",
         "match_type": "no_match",
         "confidence": 0.0,
         "matched": false,
         "umls_cui": null
       },
       {
-        "text": "infections",
-        "ner_score": 0.732,
+        "text": "b cells",
+        "ner_score": 0.797,
+        "negated": true,
+        "negation_cue": "absence of",
+        "hpo_id": "HP:0005404",
+        "hpo_name": "Increased total B cell count",
+        "expanded_text": "b cells",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.7193,
+        "matched": true,
+        "umls_cui": "C1858972"
+      },
+      {
+        "text": "natural killer cells",
+        "ner_score": 0.919,
+        "negated": true,
+        "negation_cue": "absence of",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "natural killer cells",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "recurrent infections",
+        "ner_score": 0.995,
         "negated": false,
         "negation_cue": "",
         "hpo_id": "HP:0002719",
         "hpo_name": "Recurrent infections",
-        "expanded_text": "infections",
-        "match_type": "sapbert_similarity",
-        "confidence": 0.7773,
+        "expanded_text": "recurrent infections",
+        "match_type": "clinical_synonym",
+        "confidence": 1.0,
         "matched": true,
         "umls_cui": "C0239998"
+      },
+      {
+        "text": "infections",
+        "ner_score": 0.732,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "infections",
+        "match_type": "sapbert_rejected_low_conf",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
       },
       {
         "text": "failure to thrive",
@@ -124,29 +267,52 @@
         "umls_cui": null
       },
       {
-        "text": "Severe Combined Immunodeficiency",
-        "ner_score": 0.9,
+        "text": "minated bcg infection",
+        "ner_score": 0.999,
         "negated": false,
         "negation_cue": "",
-        "hpo_id": "HP:0004430",
-        "hpo_name": "Severe combined immunodeficiency",
-        "expanded_text": "Severe Combined Immunodeficiency",
-        "match_type": "text_scan_exact_label",
-        "confidence": 0.95,
-        "matched": true,
-        "umls_cui": "C0085110",
-        "umls_all": [
-          "C0085110"
-        ]
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "minated bcg infection",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
       },
       {
-        "text": "immunodeficiency",
+        "text": "invasive pulmonary aspergillosis",
+        "ner_score": 0.999,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "invasive pulmonary aspergillosis",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "serious infection",
+        "ner_score": 0.998,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0100806",
+        "hpo_name": "Sepsis",
+        "expanded_text": "serious infection",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.7657,
+        "matched": true,
+        "umls_cui": "C0036690"
+      },
+      {
+        "text": "Immunodeficiency",
         "ner_score": 0.9,
         "negated": false,
         "negation_cue": "",
         "hpo_id": "HP:0002721",
         "hpo_name": "Immunodeficiency",
-        "expanded_text": "immunodeficiency",
+        "expanded_text": "Immunodeficiency",
         "match_type": "text_scan_clinical_synonym",
         "confidence": 0.95,
         "matched": true,
@@ -165,7 +331,20 @@
         "hpo_id": null,
         "hpo_name": null,
         "expanded_text": "hematopoietic stem cell transplantation",
-        "match_type": "skipped_non_phenotype",
+        "match_type": "skipped_treatment",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "bcg vaccine",
+        "ner_score": 0.997,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "bcg vaccine",
+        "match_type": "skipped_treatment",
         "confidence": 0.0,
         "matched": false,
         "umls_cui": null
@@ -178,7 +357,7 @@
         "hpo_id": null,
         "hpo_name": null,
         "expanded_text": "vaccine",
-        "match_type": "no_match",
+        "match_type": "skipped_treatment",
         "confidence": 0.0,
         "matched": false,
         "umls_cui": null
@@ -193,7 +372,7 @@
         "hpo_id": null,
         "hpo_name": null,
         "expanded_text": "laboratory",
-        "match_type": "no_match",
+        "match_type": "skipped_test",
         "confidence": 0.0,
         "matched": false,
         "umls_cui": null
@@ -206,7 +385,7 @@
         "hpo_id": null,
         "hpo_name": null,
         "expanded_text": "Seven",
-        "match_type": "no_match",
+        "match_type": "skipped_low_ner_score",
         "confidence": 0.0,
         "matched": false,
         "umls_cui": null
@@ -219,7 +398,20 @@
         "hpo_id": null,
         "hpo_name": null,
         "expanded_text": "three",
-        "match_type": "no_match",
+        "match_type": "skipped_low_ner_score",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "flow cytometric analysis",
+        "ner_score": 0.997,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "flow cytometric analysis",
+        "match_type": "skipped_test",
         "confidence": 0.0,
         "matched": false,
         "umls_cui": null
@@ -232,7 +424,7 @@
         "hpo_id": null,
         "hpo_name": null,
         "expanded_text": "metric",
-        "match_type": "no_match",
+        "match_type": "skipped_test",
         "confidence": 0.0,
         "matched": false,
         "umls_cui": null
@@ -245,7 +437,7 @@
         "hpo_id": null,
         "hpo_name": null,
         "expanded_text": "analysis",
-        "match_type": "no_match",
+        "match_type": "skipped_test",
         "confidence": 0.0,
         "matched": false,
         "umls_cui": null
@@ -258,7 +450,7 @@
         "hpo_id": null,
         "hpo_name": null,
         "expanded_text": "five",
-        "match_type": "no_match",
+        "match_type": "skipped_low_ner_score",
         "confidence": 0.0,
         "matched": false,
         "umls_cui": null
@@ -266,83 +458,163 @@
     ],
     "ordo_candidates": [
       {
-        "ordo_id": "ORPHA:183660",
-        "name": "Severe combined immunodeficiency",
-        "name_fr": "Déficit immunitaire combiné sévère (DICS)",
-        "score": 0.85,
-        "jaccard": 0.1579,
-        "coverage": 0.1875,
+        "ordo_id": "ORPHA:39041",
+        "name": "Omenn syndrome",
+        "name_fr": "",
+        "score": 0.5405,
+        "coverage": 0.044,
+        "matched_hpo": [
+          "HP:0001508",
+          "HP:0002721",
+          "HP:0004430",
+          "HP:0100806"
+        ],
+        "matched_count": 4,
+        "total_disease_hpo": 91,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:443811",
+        "name": "PGM3-CDG",
+        "name_fr": "",
+        "score": 0.5038,
+        "coverage": 0.0645,
         "matched_hpo": [
           "HP:0001508",
           "HP:0002719",
-          "HP:0004430"
+          "HP:0004430",
+          "HP:0100806"
         ],
-        "matched_count": 3,
-        "total_disease_hpo": 16
+        "matched_count": 4,
+        "total_disease_hpo": 62,
+        "text_match": false
       },
       {
-        "ordo_id": "ORPHA:572",
-        "name": "MHC class II deficiency",
-        "name_fr": "Déficit en molécules HLA de classe II",
-        "score": 0.2494,
-        "jaccard": 0.2143,
-        "coverage": 0.2727,
+        "ordo_id": "ORPHA:83471",
+        "name": "T-cell immunodeficiency with thymic aplasia",
+        "name_fr": "",
+        "score": 0.461,
+        "coverage": 0.1111,
         "matched_hpo": [
           "HP:0001508",
           "HP:0002719",
-          "HP:0004430"
+          "HP:0005387",
+          "HP:0100806"
         ],
-        "matched_count": 3,
-        "total_disease_hpo": 11
+        "matched_count": 4,
+        "total_disease_hpo": 36,
+        "text_match": false
       },
       {
-        "ordo_id": "ORPHA:100",
-        "name": "Ataxia-telangiectasia",
-        "name_fr": "Ataxie-Télangiectasie (syndrome de Louis-Bar)",
-        "score": 0.1949,
-        "jaccard": 0.1538,
-        "coverage": 0.2222,
+        "ordo_id": "ORPHA:33355",
+        "name": "Reticular dysgenesis",
+        "name_fr": "",
+        "score": 0.439,
+        "coverage": 0.15,
         "matched_hpo": [
-          "HP:0002719",
+          "HP:0001508",
+          "HP:0004430",
+          "HP:0100806"
+        ],
+        "matched_count": 3,
+        "total_disease_hpo": 20,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:275",
+        "name": "Severe combined immunodeficiency due to DCLRE1C deficiency",
+        "name_fr": "",
+        "score": 0.4375,
+        "coverage": 0.0541,
+        "matched_hpo": [
+          "HP:0001508",
           "HP:0004430"
         ],
         "matched_count": 2,
-        "total_disease_hpo": 9
+        "total_disease_hpo": 37,
+        "text_match": false
       },
       {
-        "ordo_id": "ORPHA:314",
-        "name": "Erythroderma desquamativum",
+        "ordo_id": "ORPHA:906",
+        "name": "Wiskott-Aldrich syndrome",
         "name_fr": "",
-        "score": 0.1944,
-        "jaccard": 0.1111,
-        "coverage": 0.25,
+        "score": 0.4297,
+        "coverage": 0.0316,
         "matched_hpo": [
-          "HP:0001508"
+          "HP:0001508",
+          "HP:0002721",
+          "HP:0100806"
         ],
-        "matched_count": 1,
-        "total_disease_hpo": 4
+        "matched_count": 3,
+        "total_disease_hpo": 95,
+        "text_match": false
       },
       {
-        "ordo_id": "ORPHA:183707",
-        "name": "Infantile LAD-like disease due to RAC2 deficiency",
+        "ordo_id": "ORPHA:231154",
+        "name": "Combined immunodeficiency due to partial RAG1 deficiency",
         "name_fr": "",
-        "score": 0.1944,
-        "jaccard": 0.1111,
-        "coverage": 0.25,
+        "score": 0.4202,
+        "coverage": 0.3,
+        "matched_hpo": [
+          "HP:0002721",
+          "HP:0004430",
+          "HP:0100806"
+        ],
+        "matched_count": 3,
+        "total_disease_hpo": 10,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:1163",
+        "name": "Aspergillosis",
+        "name_fr": "",
+        "score": 0.4199,
+        "coverage": 0.0179,
         "matched_hpo": [
           "HP:0002721"
         ],
         "matched_count": 1,
-        "total_disease_hpo": 4
+        "total_disease_hpo": 56,
+        "text_match": true
+      },
+      {
+        "ordo_id": "ORPHA:1493",
+        "name": "Vici syndrome",
+        "name_fr": "",
+        "score": 0.4159,
+        "coverage": 0.0727,
+        "matched_hpo": [
+          "HP:0001508",
+          "HP:0001522",
+          "HP:0002719",
+          "HP:0002721"
+        ],
+        "matched_count": 4,
+        "total_disease_hpo": 55,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:693681",
+        "name": "Activated PI3K-delta syndrome 2",
+        "name_fr": "",
+        "score": 0.4117,
+        "coverage": 0.0952,
+        "matched_hpo": [
+          "HP:0001508",
+          "HP:0005387"
+        ],
+        "matched_count": 2,
+        "total_disease_hpo": 21,
+        "text_match": false
       }
     ],
     "stats": {
-      "total": 18,
-      "matched": 7,
-      "unmatched": 11,
-      "match_rate": 38.9,
-      "unique_hpo": 6,
-      "ordo_matches": 5
+      "total": 33,
+      "matched": 9,
+      "unmatched": 24,
+      "match_rate": 27.3,
+      "unique_hpo": 9,
+      "ordo_matches": 10
     }
   },
   "phenopacket": {
@@ -352,8 +624,28 @@
       "sex": "MALE"
     },
     "input": "Case Report: Severe Combined Immunodeficiency: A Case Series and Review from a Tertiary Pediatric Hospital.\n\nSevere combined immunodeficiency syndrome (SCID) is a life-threatening condition leading to early infant death as a result of severe infection, due to impaired cellular and humoral immune systems. Various forms of SCID are classified based on the presence or absence of T cells, B cells and natural killer cells. Patients usually present with recurrent infections and failure to thrive. Definitive treatment is hematopoietic stem cell transplantation. To achieve the best outcome, it should be performed prior to the development of severe infection. In This study, we described 10 patients (6 male and 4 female) with SCID who were admitted to Mofid Children Hospital, Tehran, Iran, from 2006 to 2013. We reviewed patients' clinical manifestation, laboratory data, family history and outcome. The mean age at the time of diagnosis was 131.8 days. One patient had non-consanguineous parents. Seven patients received BCG vaccine before the diagnosis of SCID, three of them showed disseminated BCG infection. One patient presented with invasive pulmonary aspergillosis. Flow cytometric analysis showed T⁻B⁺NK⁻ in three patients, T⁻B⁻NK⁺ in five patients, T⁻B⁻NK⁻ in one patient, and T⁻B⁺NK⁺ in one patient. This study highlights the importance of early diagnosis and patient referral before the occurrence of serious infection.",
-    "target": "Severe combined immunodeficiency",
+    "target": "Omenn syndrome",
     "phenotypicFeatures": [
+      {
+        "type": {
+          "id": "HP:0004430",
+          "label": "Severe combined immunodeficiency",
+          "umls_cui": "C0085110"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "GSC_EN_012",
+              "description": "NER: severe combined immunodeficiency (0.998) | Match: exact_label (1.000)"
+            }
+          }
+        ]
+      },
       {
         "type": {
           "id": "HP:0005387",
@@ -376,9 +668,9 @@
       },
       {
         "type": {
-          "id": "HP:0001699",
-          "label": "Sudden death",
-          "umls_cui": "C0011071"
+          "id": "HP:0001522",
+          "label": "Death in infancy",
+          "umls_cui": "C1844947"
         },
         "excluded": false,
         "evidence": [
@@ -389,7 +681,47 @@
             },
             "reference": {
               "id": "GSC_EN_012",
-              "description": "NER: death (0.387) | Match: sapbert_similarity (0.746)"
+              "description": "NER: early infant death (0.964) | Match: sapbert_similarity (0.916)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0005368",
+          "label": "Abnormality of humoral immunity",
+          "umls_cui": "C3150510"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "GSC_EN_012",
+              "description": "NER: impaired cellular and humoral immune systems (0.999) | Match: sapbert_similarity (0.862)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0005404",
+          "label": "Increased total B cell count",
+          "umls_cui": "C1858972"
+        },
+        "excluded": true,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "GSC_EN_012",
+              "description": "NER: b cells (0.797) | Match: sapbert_similarity (0.719) | Negated by: \"absence of\""
             }
           }
         ]
@@ -409,7 +741,7 @@
             },
             "reference": {
               "id": "GSC_EN_012",
-              "description": "NER: infection (0.506) | Match: sapbert_similarity (0.741)"
+              "description": "NER: recurrent infections (0.995) | Match: clinical_synonym (1.000)"
             }
           }
         ]
@@ -436,9 +768,9 @@
       },
       {
         "type": {
-          "id": "HP:0004430",
-          "label": "Severe combined immunodeficiency",
-          "umls_cui": "C0085110"
+          "id": "HP:0100806",
+          "label": "Sepsis",
+          "umls_cui": "C0036690"
         },
         "excluded": false,
         "evidence": [
@@ -449,7 +781,7 @@
             },
             "reference": {
               "id": "GSC_EN_012",
-              "description": "NER: Severe Combined Immunodeficiency (0.900) | Match: text_scan_exact_label (0.950)"
+              "description": "NER: serious infection (0.998) | Match: sapbert_similarity (0.766)"
             }
           }
         ]
@@ -469,14 +801,14 @@
             },
             "reference": {
               "id": "GSC_EN_012",
-              "description": "NER: immunodeficiency (0.900) | Match: text_scan_clinical_synonym (0.950)"
+              "description": "NER: Immunodeficiency (0.900) | Match: text_scan_clinical_synonym (0.950)"
             }
           }
         ]
       }
     ],
     "metaData": {
-      "created": "2026-06-11T03:08:24Z",
+      "created": "2026-06-19T15:06:04Z",
       "createdBy": "clinical-preanalysis-pipeline-v2",
       "phenopacketSchemaVersion": "2.0",
       "resources": [
@@ -496,48 +828,73 @@
         "progressStatus": "IN_PROGRESS",
         "diagnosis": {
           "disease": {
-            "id": "ORPHA:183660",
-            "label": "Severe combined immunodeficiency"
+            "id": "ORPHA:39041",
+            "label": "Omenn syndrome"
           },
-          "score": 0.85,
+          "score": 0.5405,
           "allCandidates": [
             {
-              "id": "ORPHA:183660",
-              "label": "Severe combined immunodeficiency",
-              "score": 0.85
+              "id": "ORPHA:39041",
+              "label": "Omenn syndrome",
+              "score": 0.5405
             },
             {
-              "id": "ORPHA:572",
-              "label": "MHC class II deficiency",
-              "score": 0.2494
+              "id": "ORPHA:443811",
+              "label": "PGM3-CDG",
+              "score": 0.5038
             },
             {
-              "id": "ORPHA:100",
-              "label": "Ataxia-telangiectasia",
-              "score": 0.1949
+              "id": "ORPHA:83471",
+              "label": "T-cell immunodeficiency with thymic aplasia",
+              "score": 0.461
             },
             {
-              "id": "ORPHA:314",
-              "label": "Erythroderma desquamativum",
-              "score": 0.1944
+              "id": "ORPHA:33355",
+              "label": "Reticular dysgenesis",
+              "score": 0.439
             },
             {
-              "id": "ORPHA:183707",
-              "label": "Infantile LAD-like disease due to RAC2 deficiency",
-              "score": 0.1944
+              "id": "ORPHA:275",
+              "label": "Severe combined immunodeficiency due to DCLRE1C deficiency",
+              "score": 0.4375
+            },
+            {
+              "id": "ORPHA:906",
+              "label": "Wiskott-Aldrich syndrome",
+              "score": 0.4297
+            },
+            {
+              "id": "ORPHA:231154",
+              "label": "Combined immunodeficiency due to partial RAG1 deficiency",
+              "score": 0.4202
+            },
+            {
+              "id": "ORPHA:1163",
+              "label": "Aspergillosis",
+              "score": 0.4199
+            },
+            {
+              "id": "ORPHA:1493",
+              "label": "Vici syndrome",
+              "score": 0.4159
+            },
+            {
+              "id": "ORPHA:693681",
+              "label": "Activated PI3K-delta syndrome 2",
+              "score": 0.4117
             }
           ]
         }
       }
     ],
     "_pipelineStats": {
-      "totalEntities": 18,
-      "matchedHPO": 7,
-      "unmatchedEntities": 11,
-      "phenopacketFeatures": 6,
-      "negatedFeatures": 0,
+      "totalEntities": 33,
+      "matchedHPO": 9,
+      "unmatchedEntities": 24,
+      "phenopacketFeatures": 9,
+      "negatedFeatures": 1,
       "numericPhenotypes": 0,
-      "ordoCandidates": 5
+      "ordoCandidates": 10
     }
   }
 }

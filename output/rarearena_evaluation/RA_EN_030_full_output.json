@@ -1,0 +1,1239 @@
+{
+  "note_id": "RA_EN_030",
+  "language": "en",
+  "module1": {
+    "clean_text": "This case involves a [AGE] girl from Ardebil, Iran, who has been hospitalized four times. At birth, she appeared normal except for congenital malformations of the great toes. Her parents were not related, and there is no family history of genetic disease. She was born via normal vaginal delivery with a normal birth weight. Throughout her growth, her weight remained at the minimal normal range without high levels of physical activity. At age [AGE] she was first hospitalized due to the onset of reduced motor function in the shoulders, back, neck, and left knee following trauma. MRI of the right shoulder was normal, but a [DATE] bone scan showed inflammatory response in the left shoulder and right knee, along with some changes in the left shoulder. Muscle enzyme levels were approximately 1.5 times higher than normal, while other hematologic, hormonal, and biochemical tests were normal. She was treated with low-dose ibuprofen and etidronate (200 mg) every alternate day. At age [AGE] she was hospitalized again with more severe symptoms, including swelling and stiffness in the right lower limb, and pain in the thigh and right leg. A chest CT scan revealed severe scoliosis, MRI showed a hyper signal lesion in the soft tissue of the lower limb muscles, and an x-ray indicated bone formation in the posterior thigh. Three months later, she was hospitalized with restrictions in the glenohumeral joints on both sides, as well as in the right hip, knee, and ankle, and the left knee. Five months later, at age [AGE] she was hospitalized for the fourth time due to pain behind her right thigh and was treated with medication and physiotherapy.",
+    "phi_map": {
+      "AGE": [
+        "17-year-old",
+        "11,",
+        "16,",
+        "17,"
+      ],
+      "DATE": "Tc-99"
+    },
+    "patient_info": {}
+  },
+  "module3_warnings": {
+    "temporal": [],
+    "inconsistencies": []
+  },
+  "module4": {
+    "test": [
+      {
+        "text": "a [ date",
+        "ner_score": 0.844,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "a [ date",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "an x - ray",
+        "ner_score": 0.997,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "an x - ray",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "times",
+        "ner_score": 0.967,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "times",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "normal",
+        "ner_score": 0.642,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "normal",
+        "match_type": "skipped_en_noise",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "weight",
+        "ner_score": 0.488,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "weight",
+        "match_type": "skipped_low_ner_score",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "minimal",
+        "ner_score": 0.6,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "minimal",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "range",
+        "ner_score": 0.684,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "range",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "levels",
+        "ner_score": 0.964,
+        "negated": true,
+        "negation_cue": "without",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "levels",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "mri of the right shoulder",
+        "ner_score": 0.996,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "mri of the right shoulder",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "bone",
+        "ner_score": 0.983,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "bone",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "bone scan",
+        "ner_score": 0.993,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "bone scan",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "muscle enzyme levels",
+        "ner_score": 0.994,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "muscle enzyme levels",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "enzyme",
+        "ner_score": 0.977,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "enzyme",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "higher",
+        "ner_score": 0.731,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "higher",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "other",
+        "ner_score": 0.979,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "other",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "hematologic",
+        "ner_score": 0.953,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "hematologic",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "hematologic, hormonal",
+        "ner_score": 0.849,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "hematologic, hormonal",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "hormonal",
+        "ner_score": 0.9,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "hormonal",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "biochemical",
+        "ner_score": 0.837,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "biochemical",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "biochemical tests",
+        "ner_score": 0.887,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "biochemical tests",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "a chest ct scan",
+        "ner_score": 0.998,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "a chest ct scan",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      }
+    ],
+    "problem": [
+      {
+        "text": "congenital",
+        "ner_score": 0.319,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "congenital",
+        "match_type": "skipped_low_ner_score",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "congenital malformations of the great toes",
+        "ner_score": 0.997,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0010057",
+        "hpo_name": "Abnormal hallux phalanx morphology",
+        "expanded_text": "congenital malformations of the great toes",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.7958,
+        "matched": true,
+        "umls_cui": "C4024080"
+      },
+      {
+        "text": "malformations",
+        "ner_score": 0.382,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "malformations",
+        "match_type": "skipped_low_ner_score",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "genetic disease",
+        "ner_score": 0.988,
+        "negated": true,
+        "negation_cue": "no",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "genetic disease",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "activity",
+        "ner_score": 0.805,
+        "negated": true,
+        "negation_cue": "without",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "activity",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "reduced motor function",
+        "ner_score": 0.828,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0004302",
+        "hpo_name": "Functional motor deficit",
+        "expanded_text": "reduced motor function",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.8746,
+        "matched": true,
+        "umls_cui": "C4025360"
+      },
+      {
+        "text": "reduced motor function in the shoulders, back, neck",
+        "ner_score": 0.945,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0006467",
+        "hpo_name": "Limited shoulder movement",
+        "expanded_text": "reduced motor function in the shoulders, back, neck",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.7279,
+        "matched": true,
+        "umls_cui": "C1851313"
+      },
+      {
+        "text": "and left knee",
+        "ner_score": 0.974,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "and left knee",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "trauma",
+        "ner_score": 0.181,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "trauma",
+        "match_type": "skipped_low_ner_score",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "inflammatory response",
+        "ner_score": 0.618,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0012649",
+        "hpo_name": "Increased inflammatory response",
+        "expanded_text": "inflammatory response",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.8582,
+        "matched": true,
+        "umls_cui": "C4022803"
+      },
+      {
+        "text": "inflammatory response in the left shoulder and right knee",
+        "ner_score": 0.991,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "inflammatory response in the left shoulder and right knee",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "some changes in the left shoulder",
+        "ner_score": 0.981,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "some changes in the left shoulder",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "changes",
+        "ner_score": 0.952,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "changes",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "more severe symptoms",
+        "ner_score": 0.996,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "more severe symptoms",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "symptoms",
+        "ner_score": 0.847,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "symptoms",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "swelling",
+        "ner_score": 0.965,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0000969",
+        "hpo_name": "Edema",
+        "expanded_text": "swelling",
+        "match_type": "clinical_synonym",
+        "confidence": 1.0,
+        "matched": true,
+        "umls_cui": "C0013604"
+      },
+      {
+        "text": "swelling and",
+        "ner_score": 0.89,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0001386",
+        "hpo_name": "Joint swelling",
+        "expanded_text": "swelling and",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.7798,
+        "matched": true,
+        "umls_cui": "C0152031"
+      },
+      {
+        "text": "stiffness",
+        "ner_score": 0.961,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0003552",
+        "hpo_name": "Muscle stiffness",
+        "expanded_text": "stiffness",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.8673,
+        "matched": true,
+        "umls_cui": "C0221170"
+      },
+      {
+        "text": "stiffness in the right lower limb",
+        "ner_score": 0.97,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "stiffness in the right lower limb",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "pain",
+        "ner_score": 0.957,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0012531",
+        "hpo_name": "Pain",
+        "expanded_text": "pain",
+        "match_type": "exact_label",
+        "confidence": 1.0,
+        "matched": true,
+        "umls_cui": "C0030193"
+      },
+      {
+        "text": "pain in the thigh and right leg",
+        "ner_score": 0.999,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "pain in the thigh and right leg",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "severe scoliosis",
+        "ner_score": 0.999,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0002650",
+        "hpo_name": "Scoliosis",
+        "expanded_text": "severe scoliosis",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.8665,
+        "matched": true,
+        "umls_cui": "C0037932"
+      },
+      {
+        "text": "scoliosis",
+        "ner_score": 0.455,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "scoliosis",
+        "match_type": "skipped_low_ner_score",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "a hyper signal lesion in the soft tissue",
+        "ner_score": 0.956,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "a hyper signal lesion in the soft tissue",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "lesion",
+        "ner_score": 0.91,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "lesion",
+        "match_type": "sapbert_rejected_low_conf",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "the lower limb muscles",
+        "ner_score": 0.774,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "the lower limb muscles",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "bone formation",
+        "ner_score": 0.917,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "bone formation",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "bone formation in the posterior thigh",
+        "ner_score": 0.995,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "bone formation in the posterior thigh",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "restrictions",
+        "ner_score": 0.947,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "restrictions",
+        "match_type": "sapbert_rejected_low_conf",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "restrictions in the glenohume",
+        "ner_score": 0.644,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "restrictions in the glenohume",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "pain behind her right thigh",
+        "ner_score": 0.998,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "pain behind her right thigh",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      }
+    ],
+    "treatment": [
+      {
+        "text": "low - dose ibuprofen",
+        "ner_score": 0.951,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "low - dose ibuprofen",
+        "match_type": "skipped_treatment",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "delivery",
+        "ner_score": 0.507,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "delivery",
+        "match_type": "skipped_low_ner_score",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "activity",
+        "ner_score": 0.314,
+        "negated": true,
+        "negation_cue": "without",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "activity",
+        "match_type": "skipped_low_ner_score",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "ibuprofen",
+        "ner_score": 0.965,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "ibuprofen",
+        "match_type": "skipped_treatment",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "etidronate",
+        "ner_score": 0.975,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "etidronate",
+        "match_type": "skipped_treatment",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "dronate",
+        "ner_score": 0.974,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "dronate",
+        "match_type": "skipped_treatment",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "medication",
+        "ner_score": 0.937,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "medication",
+        "match_type": "skipped_en_noise",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "physiotherapy",
+        "ner_score": 0.586,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "physiotherapy",
+        "match_type": "skipped_treatment",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      }
+    ],
+    "ordo_candidates": [
+      {
+        "ordo_id": "ORPHA:93284",
+        "name": "Spondyloepiphyseal dysplasia tarda",
+        "name_fr": "",
+        "score": 0.3342,
+        "coverage": 0.0612,
+        "matched_hpo": [
+          "HP:0001386",
+          "HP:0002650",
+          "HP:0006467"
+        ],
+        "matched_count": 3,
+        "total_disease_hpo": 49,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:2796",
+        "name": "Pachydermoperiostosis",
+        "name_fr": "",
+        "score": 0.3212,
+        "coverage": 0.0732,
+        "matched_hpo": [
+          "HP:0000969",
+          "HP:0001386",
+          "HP:0002650"
+        ],
+        "matched_count": 3,
+        "total_disease_hpo": 41,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:93320",
+        "name": "Isolated ulnar hemimelia",
+        "name_fr": "",
+        "score": 0.295,
+        "coverage": 0.05,
+        "matched_hpo": [
+          "HP:0002650",
+          "HP:0006467"
+        ],
+        "matched_count": 2,
+        "total_disease_hpo": 40,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:337",
+        "name": "Fibrodysplasia ossificans progressiva",
+        "name_fr": "",
+        "score": 0.2907,
+        "coverage": 0.0526,
+        "matched_hpo": [
+          "HP:0002650",
+          "HP:0012531"
+        ],
+        "matched_count": 2,
+        "total_disease_hpo": 38,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:1159",
+        "name": "Progressive pseudorheumatoid dysplasia",
+        "name_fr": "",
+        "score": 0.2892,
+        "coverage": 0.0476,
+        "matched_hpo": [
+          "HP:0001386",
+          "HP:0002650"
+        ],
+        "matched_count": 2,
+        "total_disease_hpo": 42,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:3260",
+        "name": "Idiopathic hypereosinophilic syndrome",
+        "name_fr": "",
+        "score": 0.2724,
+        "coverage": 0.0256,
+        "matched_hpo": [
+          "HP:0001386",
+          "HP:0004302"
+        ],
+        "matched_count": 2,
+        "total_disease_hpo": 78,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:56",
+        "name": "Alkaptonuria",
+        "name_fr": "",
+        "score": 0.2653,
+        "coverage": 0.04,
+        "matched_hpo": [
+          "HP:0001386",
+          "HP:0002650"
+        ],
+        "matched_count": 2,
+        "total_disease_hpo": 50,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:1525",
+        "name": "Cranio-osteoarthropathy",
+        "name_fr": "",
+        "score": 0.2645,
+        "coverage": 0.0714,
+        "matched_hpo": [
+          "HP:0001386"
+        ],
+        "matched_count": 1,
+        "total_disease_hpo": 14,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:1416",
+        "name": "Familial calcium pyrophosphate deposition",
+        "name_fr": "",
+        "score": 0.2571,
+        "coverage": 0.1176,
+        "matched_hpo": [
+          "HP:0001386",
+          "HP:0012649"
+        ],
+        "matched_count": 2,
+        "total_disease_hpo": 17,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:901",
+        "name": "Wells syndrome",
+        "name_fr": "",
+        "score": 0.2568,
+        "coverage": 0.023,
+        "matched_hpo": [
+          "HP:0000969",
+          "HP:0002650"
+        ],
+        "matched_count": 2,
+        "total_disease_hpo": 87,
+        "text_match": false
+      }
+    ],
+    "stats": {
+      "total": 60,
+      "matched": 9,
+      "unmatched": 51,
+      "match_rate": 15.0,
+      "unique_hpo": 9,
+      "ordo_matches": 10
+    }
+  },
+  "phenopacket": {
+    "id": "phenopacket-RA_EN_030",
+    "subject": {
+      "id": "RA_EN_030"
+    },
+    "input": "This case involves a 17-year-old girl from Ardebil, Iran, who has been hospitalized four times. At birth, she appeared normal except for congenital malformations of the great toes. Her parents were not related, and there is no family history of genetic disease. She was born via normal vaginal delivery with a normal birth weight. Throughout her growth, her weight remained at the minimal normal range without high levels of physical activity. At age 11, she was first hospitalized due to the onset of reduced motor function in the shoulders, back, neck, and left knee following trauma. MRI of the right shoulder was normal, but a Tc-99 bone scan showed inflammatory response in the left shoulder and right knee, along with some changes in the left shoulder. Muscle enzyme levels were approximately 1.5 times higher than normal, while other hematologic, hormonal, and biochemical tests were normal. She was treated with low-dose ibuprofen and etidronate (200 mg) every alternate day. At age 16, she was hospitalized again with more severe symptoms, including swelling and stiffness in the right lower limb, and pain in the thigh and right leg. A chest CT scan revealed severe scoliosis, MRI showed a hyper signal lesion in the soft tissue of the lower limb muscles, and an x-ray indicated bone formation in the posterior thigh. Three months later, she was hospitalized with restrictions in the glenohumeral joints on both sides, as well as in the right hip, knee, and ankle, and the left knee. Five months later, at age 17, she was hospitalized for the fourth time due to pain behind her right thigh and was treated with medication and physiotherapy.",
+    "target": "Spondyloepiphyseal dysplasia tarda",
+    "phenotypicFeatures": [
+      {
+        "type": {
+          "id": "HP:0010057",
+          "label": "Abnormal hallux phalanx morphology",
+          "umls_cui": "C4024080"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_030",
+              "description": "NER: congenital malformations of the great toes (0.997) | Match: sapbert_similarity (0.796)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0004302",
+          "label": "Functional motor deficit",
+          "umls_cui": "C4025360"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_030",
+              "description": "NER: reduced motor function (0.828) | Match: sapbert_similarity (0.875)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0006467",
+          "label": "Limited shoulder movement",
+          "umls_cui": "C1851313"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_030",
+              "description": "NER: reduced motor function in the shoulders, back, neck (0.945) | Match: sapbert_similarity (0.728)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0012649",
+          "label": "Increased inflammatory response",
+          "umls_cui": "C4022803"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_030",
+              "description": "NER: inflammatory response (0.618) | Match: sapbert_similarity (0.858)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0000969",
+          "label": "Edema",
+          "umls_cui": "C0013604"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_030",
+              "description": "NER: swelling (0.965) | Match: clinical_synonym (1.000)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0001386",
+          "label": "Joint swelling",
+          "umls_cui": "C0152031"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_030",
+              "description": "NER: swelling and (0.890) | Match: sapbert_similarity (0.780)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0003552",
+          "label": "Muscle stiffness",
+          "umls_cui": "C0221170"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_030",
+              "description": "NER: stiffness (0.961) | Match: sapbert_similarity (0.867)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0012531",
+          "label": "Pain",
+          "umls_cui": "C0030193"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_030",
+              "description": "NER: pain (0.957) | Match: exact_label (1.000)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0002650",
+          "label": "Scoliosis",
+          "umls_cui": "C0037932"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_030",
+              "description": "NER: severe scoliosis (0.999) | Match: sapbert_similarity (0.867)"
+            }
+          }
+        ]
+      }
+    ],
+    "metaData": {
+      "created": "2026-06-19T15:13:20Z",
+      "createdBy": "clinical-preanalysis-pipeline-v2",
+      "phenopacketSchemaVersion": "2.0",
+      "resources": [
+        {
+          "id": "hp",
+          "name": "Human Phenotype Ontology",
+          "url": "https://hpo.jax.org",
+          "version": "2024-04-26",
+          "namespacePrefix": "HP",
+          "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        }
+      ]
+    },
+    "interpretations": [
+      {
+        "id": "interpretation-RA_EN_030",
+        "progressStatus": "IN_PROGRESS",
+        "diagnosis": {
+          "disease": {
+            "id": "ORPHA:93284",
+            "label": "Spondyloepiphyseal dysplasia tarda"
+          },
+          "score": 0.3342,
+          "allCandidates": [
+            {
+              "id": "ORPHA:93284",
+              "label": "Spondyloepiphyseal dysplasia tarda",
+              "score": 0.3342
+            },
+            {
+              "id": "ORPHA:2796",
+              "label": "Pachydermoperiostosis",
+              "score": 0.3212
+            },
+            {
+              "id": "ORPHA:93320",
+              "label": "Isolated ulnar hemimelia",
+              "score": 0.295
+            },
+            {
+              "id": "ORPHA:337",
+              "label": "Fibrodysplasia ossificans progressiva",
+              "score": 0.2907
+            },
+            {
+              "id": "ORPHA:1159",
+              "label": "Progressive pseudorheumatoid dysplasia",
+              "score": 0.2892
+            },
+            {
+              "id": "ORPHA:3260",
+              "label": "Idiopathic hypereosinophilic syndrome",
+              "score": 0.2724
+            },
+            {
+              "id": "ORPHA:56",
+              "label": "Alkaptonuria",
+              "score": 0.2653
+            },
+            {
+              "id": "ORPHA:1525",
+              "label": "Cranio-osteoarthropathy",
+              "score": 0.2645
+            },
+            {
+              "id": "ORPHA:1416",
+              "label": "Familial calcium pyrophosphate deposition",
+              "score": 0.2571
+            },
+            {
+              "id": "ORPHA:901",
+              "label": "Wells syndrome",
+              "score": 0.2568
+            }
+          ]
+        }
+      }
+    ],
+    "_pipelineStats": {
+      "totalEntities": 60,
+      "matchedHPO": 9,
+      "unmatchedEntities": 51,
+      "phenopacketFeatures": 9,
+      "negatedFeatures": 0,
+      "numericPhenotypes": 0,
+      "ordoCandidates": 10
+    }
+  }
+}

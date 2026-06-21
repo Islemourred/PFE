@@ -1,0 +1,619 @@
+{
+  "id": "phenopacket-RA_EN_025",
+  "subject": {
+    "id": "RA_EN_025"
+  },
+  "input": "A 54-year-old woman exhibited a loss of touch, temperature, position, and vibration sense, along with a taste disorder and insensitivity to pain at the body surface since infancy. She also experienced symptoms of an autonomic disorder, including orthostatic hypotension, body temperature fluctuations, and lack of urge to defecate. Despite normal mental growth and development, she did not walk until 18 months of age. Her family history was unremarkable, with a healthy younger sister and non-consanguineous parents. During childhood, she had repeated injuries due to pain insensitivity and was diagnosed with Freiberg disease at 6 years. She experienced frequent fainting episodes and was diagnosed with an autonomic nervous system imbalance at 21 years. She perspired on her back even in cold temperatures and did not require a snowsuit. She did not have high blood pressure. At 14 years, after repeated jumping in gym class, she developed severe blisters on the sole of her left foot, which progressed to metatarsal osteomyelitis. At 18 years, a left metatarsal was replaced by an autogenous bone graft due to refractory osteomyelitis, taking approximately 10 years for full recovery. She had migraines from childhood until 20 years, managed with daily antipyrine medication. She could feel toothache and headache but lacked surface sensation on her face, except around the jaw. Sensation detection showed a “stocking and glove distribution” with a gradient from periphery to center. She could perceive visceral pain, such as menstrual or gastroenteritis pain, managed with antipyrine medication. At 42 years, she began using a cane for walking outside. Despite recognizing her different pain perception since childhood, she and her parents did not consult a doctor about it until she was 48 years old. At 48 years, she developed sudden severe pain and swelling in her right joint, and her previous physician diagnosed Charcot arthropathy. At 50 years, she was confined to a wheelchair to avoid weight-bearing on her joints. Over the subsequent years, pain gradually affected multiple joints. NSAIDs provided limited relief for her joint pain. At 54 years, her joint pain became intolerable, and NSAIDs were insufficient for daily activities. Mexiletine hydrochloride treatment was ineffective, and she experienced side effects from pregabalin and duloxetine. She was subsequently referred to a multidisciplinary center for pain management.",
+  "target": "Hereditary sensory and autonomic neuropathy type 4",
+  "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0006944",
+        "label": "Abolished vibration sense",
+        "umls_cui": "C1837520"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_025",
+            "description": "NER: a loss of touch, temperature, position, and vibration sense (0.989) | Match: sapbert_similarity (0.847)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0000223",
+        "label": "Abnormality of taste sensation",
+        "umls_cui": "C4025879"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_025",
+            "description": "NER: a taste disorder (0.998) | Match: sapbert_similarity (0.850)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0010832",
+        "label": "Abnormality of pain sensation",
+        "umls_cui": "C4023691"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_025",
+            "description": "NER: disorder and insensitivity to pain at the body surface (0.972) | Match: sapbert_similarity (0.778)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0012332",
+        "label": "Abnormal autonomic nervous system physiology",
+        "umls_cui": "C4022952"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_025",
+            "description": "NER: an autonomic disorder (0.998) | Match: sapbert_similarity (0.941)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0001278",
+        "label": "Orthostatic hypotension",
+        "umls_cui": "C0020651"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_025",
+            "description": "NER: orthostatic hypotension (0.739) | Match: exact_label (1.000)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0005968",
+        "label": "Temperature instability",
+        "umls_cui": "C1820737"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_025",
+            "description": "NER: body temperature fluctuations (0.737) | Match: sapbert_similarity (0.829)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0002607",
+        "label": "Bowel incontinence",
+        "umls_cui": "C0015732"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_025",
+            "description": "NER: lack of urge to defecate (0.606) | Match: sapbert_similarity (0.720)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0007021",
+        "label": "Pain insensitivity",
+        "umls_cui": "C0344307"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_025",
+            "description": "NER: pain insensitivity (0.998) | Match: exact_label (1.000)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0001279",
+        "label": "Syncope",
+        "umls_cui": "C0039070"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_025",
+            "description": "NER: frequent fainting episodes (0.997) | Match: sapbert_similarity (0.808)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0007185",
+        "label": "Loss of consciousness",
+        "umls_cui": "C0041657"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_025",
+            "description": "NER: fainting (0.890) | Match: exact_synonym (1.000)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0012638",
+        "label": "Abnormal nervous system physiology",
+        "umls_cui": "C4022811"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_025",
+            "description": "NER: nervous system imbalance (0.948) | Match: sapbert_similarity (0.837)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0000822",
+        "label": "Hypertension",
+        "umls_cui": "C0020538"
+      },
+      "excluded": true,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_025",
+            "description": "NER: high blood pressure (0.998) | Match: related_synonym (1.000) | Negated by: \"did not\""
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0008066",
+        "label": "Abnormal blistering of the skin",
+        "umls_cui": "C0241054"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_025",
+            "description": "NER: blisters (0.901) | Match: exact_synonym (1.000)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0001473",
+        "label": "Metatarsal osteolysis",
+        "umls_cui": "C1854614"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_025",
+            "description": "NER: metatarsal osteomyelitis (0.998) | Match: sapbert_similarity (0.789)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0002754",
+        "label": "Osteomyelitis",
+        "umls_cui": "C0029443"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_025",
+            "description": "NER: osteomyelitis (0.951) | Match: exact_label (1.000)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0002076",
+        "label": "Migraine",
+        "umls_cui": "C0149931"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_025",
+            "description": "NER: migraines (0.905) | Match: sapbert_similarity (0.946)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0012199",
+        "label": "Cluster headache",
+        "umls_cui": "C0009088"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_025",
+            "description": "NER: toothache and headache but lacked (0.964) | Match: sapbert_similarity (0.731)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0100607",
+        "label": "Dysmenorrhea",
+        "umls_cui": "C0013390"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_025",
+            "description": "NER: menstrual or gastroenteritis pain (0.915) | Match: sapbert_similarity (0.750)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0010833",
+        "label": "Spontaneous pain sensation",
+        "umls_cui": "C4023690"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_025",
+            "description": "NER: sudden severe pain (0.998) | Match: sapbert_similarity (0.707)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0000969",
+        "label": "Edema",
+        "umls_cui": "C0013604"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_025",
+            "description": "NER: swelling (0.953) | Match: clinical_synonym (1.000)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0002821",
+        "label": "Neuropathic arthropathy",
+        "umls_cui": "C0003892"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_025",
+            "description": "NER: charcot arthropathy (0.997) | Match: exact_synonym (1.000)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0002829",
+        "label": "Arthralgia",
+        "umls_cui": "C0003862"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_025",
+            "description": "NER: her joint pain (0.998) | Match: substring_match (0.950)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0002615",
+        "label": "Hypotension",
+        "umls_cui": "C0020649"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_025",
+            "description": "NER: hypotension (0.900) | Match: text_scan_exact_label (0.950)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0003040",
+        "label": "Arthropathy",
+        "umls_cui": "C0022408"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_025",
+            "description": "NER: arthropathy (0.900) | Match: text_scan_exact_label (0.950)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0002172",
+        "label": "Postural instability",
+        "umls_cui": "C1843921"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_025",
+            "description": "NER: imbalance (0.900) | Match: text_scan_related_synonym (0.950)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0002315",
+        "label": "Headache",
+        "umls_cui": "C0018681"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_025",
+            "description": "NER: headache (0.900) | Match: text_scan_exact_label (0.950)"
+          }
+        }
+      ]
+    }
+  ],
+  "metaData": {
+    "created": "2026-06-19T15:12:22Z",
+    "createdBy": "clinical-preanalysis-pipeline-v2",
+    "phenopacketSchemaVersion": "2.0",
+    "resources": [
+      {
+        "id": "hp",
+        "name": "Human Phenotype Ontology",
+        "url": "https://hpo.jax.org",
+        "version": "2024-04-26",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      }
+    ]
+  },
+  "interpretations": [
+    {
+      "id": "interpretation-RA_EN_025",
+      "progressStatus": "IN_PROGRESS",
+      "diagnosis": {
+        "disease": {
+          "id": "ORPHA:642",
+          "label": "Hereditary sensory and autonomic neuropathy type 4"
+        },
+        "score": 0.4116,
+        "allCandidates": [
+          {
+            "id": "ORPHA:642",
+            "label": "Hereditary sensory and autonomic neuropathy type 4",
+            "score": 0.4116
+          },
+          {
+            "id": "ORPHA:963",
+            "label": "Acromegaly",
+            "score": 0.3743
+          },
+          {
+            "id": "ORPHA:314769",
+            "label": "Somatomammotropinoma",
+            "score": 0.3378
+          },
+          {
+            "id": "ORPHA:707",
+            "label": "Plague",
+            "score": 0.3262
+          },
+          {
+            "id": "ORPHA:2912",
+            "label": "Poliomyelitis",
+            "score": 0.3199
+          },
+          {
+            "id": "ORPHA:91139",
+            "label": "Simple cryoglobulinemia",
+            "score": 0.3133
+          },
+          {
+            "id": "ORPHA:117",
+            "label": "Behçet disease",
+            "score": 0.3091
+          },
+          {
+            "id": "ORPHA:533",
+            "label": "Listeriosis",
+            "score": 0.307
+          },
+          {
+            "id": "ORPHA:139417",
+            "label": "Acute transverse myelitis",
+            "score": 0.306
+          },
+          {
+            "id": "ORPHA:358",
+            "label": "Gitelman syndrome",
+            "score": 0.3053
+          }
+        ]
+      }
+    }
+  ],
+  "_pipelineStats": {
+    "totalEntities": 85,
+    "matchedHPO": 26,
+    "unmatchedEntities": 59,
+    "phenopacketFeatures": 26,
+    "negatedFeatures": 1,
+    "numericPhenotypes": 0,
+    "ordoCandidates": 10
+  }
+}

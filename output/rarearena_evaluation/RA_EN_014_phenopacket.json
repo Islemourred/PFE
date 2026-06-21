@@ -1,0 +1,508 @@
+{
+  "id": "phenopacket-RA_EN_014",
+  "subject": {
+    "id": "RA_EN_014",
+    "sex": "MALE"
+  },
+  "input": "A 33-year-old male with no significant past medical history presented with a two-day history of dystonic posturing affecting his left hand and arm. The episodes involved bending of the elbow and specific finger posturing, without any oculo-bulbar or sensory symptoms. These episodes occurred randomly throughout the day and were later found to be triggered by caffeine consumption. The duration of the episodes varied from several minutes to one instance lasting nine hours. The episodes were painful, with the patient unable to voluntarily relax the affected arm and hand. Mental clarity was maintained throughout and after the episodes, which ceased during sleep. Initially, the symptoms were confined to the left arm but later spread to the right arm, occurring independently in both arms at random intervals. The patient reported no family history of movement disorders and did not smoke, consume alcohol, or take any medications. On examination, his blood pressure was 129/79 mmHg, heart rate was 77 beats per minute, weight was 195 pounds (88.5 kilograms), height was six feet (182.9 centimeters), and body-mass index was 26.4. His speech was normal, and his gait was unremarkable. Cranial nerve examination was normal, with intact ocular motion and no nystagmus. Facial strength was symmetric and full, with no oro-buccolingual dyskinesias. Cervical musculature examination showed no cervical dystonia, and oropharyngeal examination revealed a brisk gag reflex without palatal myoclonus. Muscle strength in both upper and lower extremities was graded 5/5, and deep tendon reflexes were 2+ and symmetric. There was no spasticity, and Hoffman and finger flexor reflexes were absent bilaterally. No cogwheeling was detected at the wrist. The Babinski sign was absent with bilateral plantar strokes. Finger sequencing, finger-to-nose, and heel-to-shin maneuvers were accurate and symmetric bilaterally. During the clinic visit, an episode was observed, starting with a 90-degree flexion of the left elbow and extending to the hand. The posture involved flexion of the first, third, and fourth fingers at the metacarpophalangeal joints with extension of the proximal and distal interphalangeal joints, while the second and fifth fingers remained extended, resembling a bovine longhorn.",
+  "target": "Cerebrotendinous xanthomatosis",
+  "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0002310",
+        "label": "Orofacial dyskinesia",
+        "umls_cui": "C0152115"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_014",
+            "description": "NER: oro - buccolingual dyskinesias (0.997) | Match: sapbert_similarity (0.889)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0002533",
+        "label": "Abnormal posturing",
+        "umls_cui": "C0231471"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_014",
+            "description": "NER: dystonic posturing (0.604) | Match: sapbert_similarity (0.777)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0002967",
+        "label": "Cubitus valgus",
+        "umls_cui": "C0158465"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_014",
+            "description": "NER: bending of the elbow (0.993) | Match: sapbert_similarity (0.828)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0004097",
+        "label": "Deviation of finger",
+        "umls_cui": "C0410740"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_014",
+            "description": "NER: specific finger posturing (0.981) | Match: sapbert_similarity (0.770)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0003474",
+        "label": "Somatic sensory dysfunction",
+        "umls_cui": "C0020580"
+      },
+      "excluded": true,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_014",
+            "description": "NER: sensory symptoms (0.866) | Match: sapbert_similarity (0.777) | Negated by: \"without\""
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0100022",
+        "label": "Abnormality of movement",
+        "umls_cui": "C0026650"
+      },
+      "excluded": true,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_014",
+            "description": "NER: movement disorders (0.996) | Match: sapbert_similarity (0.885) | Negated by: \"no\""
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0000639",
+        "label": "Nystagmus",
+        "umls_cui": "C0028738"
+      },
+      "excluded": true,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_014",
+            "description": "NER: nystagmus (0.922) | Match: clinical_synonym (1.000) | Negated by: \"no\""
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0002075",
+        "label": "Dysdiadochokinesis",
+        "umls_cui": "C0234979"
+      },
+      "excluded": true,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_014",
+            "description": "NER: uccolingual dyskinesias. Cervical (0.740) | Match: sapbert_similarity (0.768) | Negated by: \"no\""
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0000473",
+        "label": "Torticollis",
+        "umls_cui": "C0040485"
+      },
+      "excluded": true,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_014",
+            "description": "NER: cervical dystonia (0.998) | Match: exact_synonym (1.000) | Negated by: \"no\""
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0001332",
+        "label": "Dystonia",
+        "umls_cui": "C0013421"
+      },
+      "excluded": true,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_014",
+            "description": "NER: dystonia (0.573) | Match: exact_label (1.000) | Negated by: \"no\""
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0001348",
+        "label": "Brisk reflexes",
+        "umls_cui": "C2673700"
+      },
+      "excluded": true,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_014",
+            "description": "NER: a brisk gag reflex (0.929) | Match: sapbert_similarity (0.735) | Negated by: \"no\""
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0010875",
+        "label": "Chaddock reflex",
+        "umls_cui": "C1531651"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_014",
+            "description": "NER: gag reflex (0.755) | Match: sapbert_similarity (0.711)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0010530",
+        "label": "Palatal tremor",
+        "umls_cui": "C0030214"
+      },
+      "excluded": true,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_014",
+            "description": "NER: palatal myoclonus (0.727) | Match: exact_synonym (1.000) | Negated by: \"without\""
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0011170",
+        "label": "Generalized myoclonic-atonic seizure",
+        "umls_cui": "C0393702"
+      },
+      "excluded": true,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_014",
+            "description": "NER: atal myoclonus (0.987) | Match: sapbert_similarity (0.763) | Negated by: \"without\""
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0001257",
+        "label": "Spasticity",
+        "umls_cui": "C0026838"
+      },
+      "excluded": true,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_014",
+            "description": "NER: spasticity (0.767) | Match: exact_label (1.000) | Negated by: \"no\""
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0003487",
+        "label": "Babinski sign",
+        "umls_cui": "C0034935"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_014",
+            "description": "NER: Babinski sign (0.900) | Match: text_scan_exact_label (0.950)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0100660",
+        "label": "Dyskinesia",
+        "umls_cui": "C0013384"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_014",
+            "description": "NER: dyskinesias (0.900) | Match: text_scan_related_synonym (0.950)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0001336",
+        "label": "Myoclonus",
+        "umls_cui": "C0027066"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_014",
+            "description": "NER: myoclonus (0.900) | Match: text_scan_exact_label (0.950)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0012840",
+        "label": "Proximal",
+        "umls_cui": "C0205107"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_014",
+            "description": "NER: proximal (0.900) | Match: text_scan_exact_label (0.950)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0012839",
+        "label": "Distal",
+        "umls_cui": "C0205108"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_014",
+            "description": "NER: distal (0.900) | Match: text_scan_exact_label (0.950)"
+          }
+        }
+      ]
+    }
+  ],
+  "metaData": {
+    "created": "2026-06-19T15:10:16Z",
+    "createdBy": "clinical-preanalysis-pipeline-v2",
+    "phenopacketSchemaVersion": "2.0",
+    "resources": [
+      {
+        "id": "hp",
+        "name": "Human Phenotype Ontology",
+        "url": "https://hpo.jax.org",
+        "version": "2024-04-26",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      }
+    ]
+  },
+  "interpretations": [
+    {
+      "id": "interpretation-RA_EN_014",
+      "progressStatus": "IN_PROGRESS",
+      "diagnosis": {
+        "disease": {
+          "id": "ORPHA:909",
+          "label": "Cerebrotendinous xanthomatosis"
+        },
+        "score": 0.446,
+        "allCandidates": [
+          {
+            "id": "ORPHA:909",
+            "label": "Cerebrotendinous xanthomatosis",
+            "score": 0.446
+          },
+          {
+            "id": "ORPHA:306674",
+            "label": "Kufor-Rakeb syndrome",
+            "score": 0.4386
+          },
+          {
+            "id": "ORPHA:98766",
+            "label": "Spinocerebellar ataxia type 5",
+            "score": 0.4069
+          },
+          {
+            "id": "ORPHA:157846",
+            "label": "Neuroferritinopathy",
+            "score": 0.3933
+          },
+          {
+            "id": "ORPHA:59",
+            "label": "Allan-Herndon-Dudley syndrome",
+            "score": 0.3718
+          },
+          {
+            "id": "ORPHA:2802",
+            "label": "X-linked sideroblastic anemia and spinocerebellar ataxia",
+            "score": 0.3592
+          },
+          {
+            "id": "ORPHA:1934",
+            "label": "Early infantile developmental and epileptic encephalopathy",
+            "score": 0.3512
+          },
+          {
+            "id": "ORPHA:561854",
+            "label": "FOXG1 syndrome",
+            "score": 0.345
+          },
+          {
+            "id": "ORPHA:95",
+            "label": "Friedreich ataxia",
+            "score": 0.3307
+          },
+          {
+            "id": "ORPHA:94147",
+            "label": "Spinocerebellar ataxia type 7",
+            "score": 0.3302
+          }
+        ]
+      }
+    }
+  ],
+  "_validationWarnings": [
+    {
+      "type": "sex_anatomy_conflict",
+      "severity": "critical",
+      "message": "Female-specific term 'cervical' found in male patient record",
+      "term": "cervical"
+    }
+  ],
+  "_pipelineStats": {
+    "totalEntities": 88,
+    "matchedHPO": 20,
+    "unmatchedEntities": 68,
+    "phenopacketFeatures": 20,
+    "negatedFeatures": 10,
+    "numericPhenotypes": 0,
+    "ordoCandidates": 10
+  }
+}

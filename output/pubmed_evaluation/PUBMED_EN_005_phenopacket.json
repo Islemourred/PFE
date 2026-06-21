@@ -8,9 +8,9 @@
   "phenotypicFeatures": [
     {
       "type": {
-        "id": "HP:0001894",
-        "label": "Thrombocytosis",
-        "umls_cui": "C0836924"
+        "id": "HP:0005352",
+        "label": "Severe T-cell immunodeficiency",
+        "umls_cui": "C4025208"
       },
       "excluded": false,
       "evidence": [
@@ -21,7 +21,27 @@
           },
           "reference": {
             "id": "PUBMED_EN_005",
-            "description": "NER: macrothrombocytopenia (0.847) | Match: sapbert_similarity (0.754)"
+            "description": "NER: a rare x - linked immunodeficiency disorder (0.994) | Match: sapbert_similarity (0.784)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0001973",
+        "label": "Autoimmune thrombocytopenia",
+        "umls_cui": "C0242584"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "PUBMED_EN_005",
+            "description": "NER: tt - aldrich syndrome (0.892) | Match: sapbert_similarity (0.724)"
           }
         }
       ]
@@ -61,7 +81,67 @@
           },
           "reference": {
             "id": "PUBMED_EN_005",
-            "description": "NER: variable phenotype (0.900) | Match: text_scan_exact_synonym (0.950)"
+            "description": "NER: a variable phenotype (0.965) | Match: substring_match (0.950)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0004854",
+        "label": "Intermittent thrombocytopenia",
+        "umls_cui": "C1839167"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "PUBMED_EN_005",
+            "description": "NER: unusual and persistent thrombocytopenia (0.998) | Match: sapbert_similarity (0.854)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0011877",
+        "label": "Increased mean platelet volume",
+        "umls_cui": "C1096367"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "PUBMED_EN_005",
+            "description": "NER: increased platelet volume (0.992) | Match: sapbert_similarity (0.913)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0001905",
+        "label": "Congenital thrombocytopenia",
+        "umls_cui": "C0272278"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "PUBMED_EN_005",
+            "description": "NER: congenital or early infantile thrombocytopenia (0.991) | Match: sapbert_similarity (0.855)"
           }
         }
       ]
@@ -125,30 +205,10 @@
           }
         }
       ]
-    },
-    {
-      "type": {
-        "id": "HP:0011877",
-        "label": "Increased mean platelet volume",
-        "umls_cui": "C1096367"
-      },
-      "excluded": false,
-      "evidence": [
-        {
-          "evidenceCode": {
-            "id": "ECO:0000033",
-            "label": "author statement supported by traceable reference"
-          },
-          "reference": {
-            "id": "PUBMED_EN_005",
-            "description": "NER: increased platelet volume (0.933) | Match: sapbert_similarity (0.913)"
-          }
-        }
-      ]
     }
   ],
   "metaData": {
-    "created": "2026-06-11T03:04:43Z",
+    "created": "2026-06-19T15:01:37Z",
     "createdBy": "clinical-preanalysis-pipeline-v2",
     "phenopacketSchemaVersion": "2.0",
     "resources": [
@@ -171,44 +231,69 @@
           "id": "ORPHA:906",
           "label": "Wiskott-Aldrich syndrome"
         },
-        "score": 0.85,
+        "score": 0.515,
         "allCandidates": [
           {
             "id": "ORPHA:906",
             "label": "Wiskott-Aldrich syndrome",
-            "score": 0.85
+            "score": 0.515
           },
           {
-            "id": "ORPHA:494444",
-            "label": "DIAPH1-related sensorineural hearing loss-thrombocytopenia syndrome",
-            "score": 0.2727
+            "id": "ORPHA:760",
+            "label": "Purine nucleoside phosphorylase deficiency",
+            "score": 0.4061
           },
           {
-            "id": "ORPHA:140957",
-            "label": "Autosomal dominant macrothrombocytopenia",
-            "score": 0.1905
+            "id": "ORPHA:391487",
+            "label": "STAT1-related autoimmune enteropathy and endocrinopathy-susceptibility to chronic infections syndrome",
+            "score": 0.3877
           },
           {
-            "id": "ORPHA:183707",
-            "label": "Infantile LAD-like disease due to RAC2 deficiency",
-            "score": 0.19
+            "id": "ORPHA:1830",
+            "label": "Schimke immuno-osseous dysplasia",
+            "score": 0.3726
           },
           {
-            "id": "ORPHA:529",
-            "label": "Roch-Leri mesosomatous lipomatosis",
-            "score": 0.19
+            "id": "ORPHA:182050",
+            "label": "MYH9-related syndromic thrombocytopenia",
+            "score": 0.3697
+          },
+          {
+            "id": "ORPHA:84064",
+            "label": "Trichohepatoenteric syndrome",
+            "score": 0.3598
+          },
+          {
+            "id": "ORPHA:487796",
+            "label": "Takenouchi-Kosaki syndrome",
+            "score": 0.3558
+          },
+          {
+            "id": "ORPHA:167",
+            "label": "Chédiak-Higashi syndrome",
+            "score": 0.3447
+          },
+          {
+            "id": "ORPHA:275",
+            "label": "Severe combined immunodeficiency due to DCLRE1C deficiency",
+            "score": 0.3437
+          },
+          {
+            "id": "ORPHA:96181",
+            "label": "Maternal uniparental disomy of chromosome 6 syndrome",
+            "score": 0.328
           }
         ]
       }
     }
   ],
   "_pipelineStats": {
-    "totalEntities": 14,
-    "matchedHPO": 7,
-    "unmatchedEntities": 7,
-    "phenopacketFeatures": 7,
+    "totalEntities": 28,
+    "matchedHPO": 10,
+    "unmatchedEntities": 18,
+    "phenopacketFeatures": 10,
     "negatedFeatures": 0,
     "numericPhenotypes": 0,
-    "ordoCandidates": 5
+    "ordoCandidates": 10
   }
 }

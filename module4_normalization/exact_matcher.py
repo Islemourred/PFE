@@ -13,12 +13,31 @@ Includes:
 # HPO terms that are too generic / high-level to be useful
 # These produce false positives when SapBERT maps vague entities to them
 HPO_BLACKLIST = {
+    # Root / top-level terms
     "HP:0000118",   # Phenotypic abnormality (root term)
     "HP:0000001",   # All
     "HP:0012823",   # Clinical modifier
     "HP:0040064",   # Abnormality of limbs
     "HP:0002715",   # Abnormality of the immune system
     "HP:0025354",   # Cellular phenotype
+    # Non-specific qualifiers (valid HPO but useless for matching)
+    "HP:0011009",   # Acute
+    "HP:0011010",   # Chronic
+    "HP:0012825",   # Mild
+    "HP:0012826",   # Moderate
+    "HP:0012828",   # Severe
+    "HP:0012835",   # Left
+    "HP:0012834",   # Right
+    "HP:0012832",   # Bilateral
+    "HP:0003674",   # Onset
+    "HP:0003581",   # Adult onset
+    "HP:0003593",   # Infantile onset
+    "HP:0003621",   # Juvenile onset
+    "HP:0011463",   # Childhood onset
+    "HP:0025285",   # Aggravated by
+    "HP:0025297",   # Prolonged
+    "HP:0031375",   # Refractory
+    "HP:0012830",   # Progressive
 }
 
 # Manual clinical synonym → HPO ID mapping for phrases the NER commonly

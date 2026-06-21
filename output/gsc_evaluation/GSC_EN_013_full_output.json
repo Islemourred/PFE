@@ -13,56 +13,121 @@
   "module4": {
     "problem": [
       {
-        "text": "movement",
-        "ner_score": 0.365,
+        "text": "ataxia -",
+        "ner_score": 0.892,
         "negated": false,
         "negation_cue": "",
-        "hpo_id": "HP:0100022",
-        "hpo_name": "Abnormality of movement",
-        "expanded_text": "movement",
+        "hpo_id": "HP:0001251",
+        "hpo_name": "Ataxia",
+        "expanded_text": "ataxia -",
         "match_type": "sapbert_similarity",
-        "confidence": 0.7789,
+        "confidence": 0.9587,
         "matched": true,
-        "umls_cui": "C0026650"
+        "umls_cui": "C0007758"
       },
       {
-        "text": "disorders",
-        "ner_score": 0.809,
+        "text": "the pleiotropic movement disorders phenotype",
+        "ner_score": 0.962,
         "negated": false,
         "negation_cue": "",
         "hpo_id": null,
         "hpo_name": null,
-        "expanded_text": "disorders",
+        "expanded_text": "the pleiotropic movement disorders phenotype",
         "match_type": "no_match",
         "confidence": 0.0,
         "matched": false,
         "umls_cui": null
       },
       {
-        "text": "ataxia",
-        "ner_score": 0.641,
+        "text": "movement",
+        "ner_score": 0.365,
         "negated": false,
         "negation_cue": "",
-        "hpo_id": "HP:0001251",
-        "hpo_name": "Ataxia",
-        "expanded_text": "ataxia",
-        "match_type": "exact_label",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "movement",
+        "match_type": "skipped_low_ner_score",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "movement disorders",
+        "ner_score": 0.995,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0100022",
+        "hpo_name": "Abnormality of movement",
+        "expanded_text": "movement disorders",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.8853,
+        "matched": true,
+        "umls_cui": "C0026650"
+      },
+      {
+        "text": "disorders phenotype of adult ataxia",
+        "ner_score": 0.985,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0002073",
+        "hpo_name": "Progressive cerebellar ataxia",
+        "expanded_text": "disorders phenotype of adult ataxia",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.776,
+        "matched": true,
+        "umls_cui": "C0393525"
+      },
+      {
+        "text": "telangiectasia",
+        "ner_score": 0.97,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0001009",
+        "hpo_name": "Telangiectasia",
+        "expanded_text": "telangiectasia",
+        "match_type": "clinical_synonym",
         "confidence": 1.0,
         "matched": true,
-        "umls_cui": "C0007758"
+        "umls_cui": "C0039446"
       },
       {
         "text": "angiectasia",
         "ner_score": 0.941,
         "negated": false,
         "negation_cue": "",
-        "hpo_id": "HP:0001009",
-        "hpo_name": "Telangiectasia",
+        "hpo_id": null,
+        "hpo_name": null,
         "expanded_text": "angiectasia",
+        "match_type": "sapbert_rejected_low_conf",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "later mean age",
+        "ner_score": 0.807,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "later mean age",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "later loss of walking ability",
+        "ner_score": 0.976,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0006915",
+        "hpo_name": "Inability to walk by childhood/adolescence",
+        "expanded_text": "later loss of walking ability",
         "match_type": "sapbert_similarity",
-        "confidence": 0.7662,
+        "confidence": 0.756,
         "matched": true,
-        "umls_cui": "C0039446"
+        "umls_cui": "C1859200"
       },
       {
         "text": "loss of walking ability",
@@ -91,6 +156,19 @@
         "umls_cui": "C0013362"
       },
       {
+        "text": "ysarthria",
+        "ner_score": 0.977,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "ysarthria",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
         "text": "dystonia",
         "ner_score": 0.714,
         "negated": false,
@@ -102,6 +180,19 @@
         "confidence": 1.0,
         "matched": true,
         "umls_cui": "C0013421"
+      },
+      {
+        "text": "subcortical myoclonus",
+        "ner_score": 0.993,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0012323",
+        "hpo_name": "Sleep myoclonus",
+        "expanded_text": "subcortical myoclonus",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.8374,
+        "matched": true,
+        "umls_cui": "C0751352"
       },
       {
         "text": "tremor",
@@ -117,15 +208,15 @@
         "umls_cui": "C0040822"
       },
       {
-        "text": "dysmetric saccades",
-        "ner_score": 0.831,
+        "text": "mostly dysmetric saccades",
+        "ner_score": 0.913,
         "negated": false,
         "negation_cue": "",
         "hpo_id": "HP:0000641",
         "hpo_name": "Dysmetric saccades",
-        "expanded_text": "dysmetric saccades",
-        "match_type": "exact_label",
-        "confidence": 1.0,
+        "expanded_text": "mostly dysmetric saccades",
+        "match_type": "substring_match",
+        "confidence": 0.95,
         "matched": true,
         "umls_cui": "C1836392"
       },
@@ -137,10 +228,23 @@
         "hpo_id": null,
         "hpo_name": null,
         "expanded_text": "oculomotor",
-        "match_type": "no_match",
+        "match_type": "skipped_low_ner_score",
         "confidence": 0.0,
         "matched": false,
         "umls_cui": null
+      },
+      {
+        "text": "culomotor apraxia",
+        "ner_score": 0.946,
+        "negated": true,
+        "negation_cue": "no",
+        "hpo_id": "HP:0000657",
+        "hpo_name": "Oculomotor apraxia",
+        "expanded_text": "culomotor apraxia",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.7776,
+        "matched": true,
+        "umls_cui": "C3489733"
       },
       {
         "text": "praxia",
@@ -169,6 +273,19 @@
         "umls_cui": null
       },
       {
+        "text": "chromosomal instability",
+        "ner_score": 0.985,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0003220",
+        "hpo_name": "Abnormality of chromosome stability",
+        "expanded_text": "chromosomal instability",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.863,
+        "matched": true,
+        "umls_cui": "C0376628"
+      },
+      {
         "text": "instability",
         "ner_score": 0.856,
         "negated": false,
@@ -195,6 +312,19 @@
         "umls_cui": null
       },
       {
+        "text": "immunoglobulin deficiency",
+        "ner_score": 0.981,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0004313",
+        "hpo_name": "Decreased circulating immunoglobulin concentration",
+        "expanded_text": "immunoglobulin deficiency",
+        "match_type": "exact_synonym",
+        "confidence": 1.0,
+        "matched": true,
+        "umls_cui": "C0086438"
+      },
+      {
         "text": "deficiency",
         "ner_score": 0.937,
         "negated": false,
@@ -202,6 +332,19 @@
         "hpo_id": null,
         "hpo_name": null,
         "expanded_text": "deficiency",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "2 atm mutations",
+        "ner_score": 0.995,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "2 atm mutations",
         "match_type": "no_match",
         "confidence": 0.0,
         "matched": false,
@@ -221,38 +364,69 @@
         "umls_cui": null
       },
       {
-        "text": "immunoglobulin deficiency",
-        "ner_score": 0.9,
+        "text": "at least",
+        "ner_score": 0.572,
         "negated": false,
         "negation_cue": "",
-        "hpo_id": "HP:0004313",
-        "hpo_name": "Decreased circulating immunoglobulin concentration",
-        "expanded_text": "immunoglobulin deficiency",
-        "match_type": "text_scan_exact_synonym",
-        "confidence": 0.95,
-        "matched": true,
-        "umls_cui": "C0086438",
-        "umls_all": [
-          "C0086438",
-          "C4048270"
-        ]
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "at least",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
       },
       {
-        "text": "oculomotor apraxia",
-        "ner_score": 0.9,
+        "text": "1 missense mutation",
+        "ner_score": 0.91,
         "negated": false,
         "negation_cue": "",
-        "hpo_id": "HP:0000657",
-        "hpo_name": "Oculomotor apraxia",
-        "expanded_text": "oculomotor apraxia",
-        "match_type": "text_scan_exact_label",
-        "confidence": 0.95,
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "1 missense mutation",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "of phenotype",
+        "ner_score": 0.882,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "of phenotype",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "severity",
+        "ner_score": 0.39,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "severity",
+        "match_type": "skipped_low_ner_score",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "unexplained movement disorders",
+        "ner_score": 0.989,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0100660",
+        "hpo_name": "Dyskinesia",
+        "expanded_text": "unexplained movement disorders",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.7118,
         "matched": true,
-        "umls_cui": "C3489733",
-        "umls_all": [
-          "C3489733",
-          "C4020886"
-        ]
+        "umls_cui": "C0013384"
       },
       {
         "text": "myoclonus",
@@ -286,9 +460,64 @@
         "umls_all": [
           "C0522510"
         ]
+      },
+      {
+        "text": "apraxia",
+        "ner_score": 0.9,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0002186",
+        "hpo_name": "Apraxia",
+        "expanded_text": "apraxia",
+        "match_type": "text_scan_exact_label",
+        "confidence": 0.95,
+        "matched": true,
+        "umls_cui": "C0003635",
+        "umls_all": [
+          "C0003635"
+        ]
       }
     ],
     "test": [
+      {
+        "text": "video - oculographic recording",
+        "ner_score": 0.934,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "video - oculographic recording",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "video - oculographic recordings",
+        "ner_score": 0.994,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "video - oculographic recordings",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "- fetoprotein ( afp",
+        "ner_score": 0.742,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "- fetoprotein ( afp",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
       {
         "text": "Clinical",
         "ner_score": 0.77,
@@ -297,7 +526,20 @@
         "hpo_id": null,
         "hpo_name": null,
         "expanded_text": "Clinical",
-        "match_type": "no_match",
+        "match_type": "skipped_en_noise",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "clinical evaluation",
+        "ner_score": 0.877,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "clinical evaluation",
+        "match_type": "skipped_test",
         "confidence": 0.0,
         "matched": false,
         "umls_cui": null
@@ -310,23 +552,23 @@
         "hpo_id": null,
         "hpo_name": null,
         "expanded_text": "evaluation",
-        "match_type": "no_match",
+        "match_type": "skipped_test",
         "confidence": 0.0,
         "matched": false,
         "umls_cui": null
       },
       {
         "text": "neurophysiologic",
-        "ner_score": 0.868,
+        "ner_score": 0.892,
         "negated": false,
         "negation_cue": "",
-        "hpo_id": "HP:0001311",
-        "hpo_name": "Abnormal nervous system electrophysiology",
+        "hpo_id": null,
+        "hpo_name": null,
         "expanded_text": "neurophysiologic",
-        "match_type": "sapbert_similarity",
-        "confidence": 0.7398,
-        "matched": true,
-        "umls_cui": "C4021781"
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
       },
       {
         "text": "video",
@@ -336,7 +578,7 @@
         "hpo_id": null,
         "hpo_name": null,
         "expanded_text": "video",
-        "match_type": "no_match",
+        "match_type": "skipped_low_ner_score",
         "confidence": 0.0,
         "matched": false,
         "umls_cui": null
@@ -349,7 +591,7 @@
         "hpo_id": null,
         "hpo_name": null,
         "expanded_text": "ographic",
-        "match_type": "no_match",
+        "match_type": "skipped_test",
         "confidence": 0.0,
         "matched": false,
         "umls_cui": null
@@ -362,7 +604,7 @@
         "hpo_id": null,
         "hpo_name": null,
         "expanded_text": "imaging",
-        "match_type": "skipped_non_phenotype",
+        "match_type": "skipped_test",
         "confidence": 0.0,
         "matched": false,
         "umls_cui": null
@@ -375,7 +617,33 @@
         "hpo_id": null,
         "hpo_name": null,
         "expanded_text": "laboratory",
-        "match_type": "no_match",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "laboratory investigations",
+        "ner_score": 0.985,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "laboratory investigations",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "atm analysis",
+        "ner_score": 0.992,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "atm analysis",
+        "match_type": "skipped_test",
         "confidence": 0.0,
         "matched": false,
         "umls_cui": null
@@ -388,7 +656,7 @@
         "hpo_id": null,
         "hpo_name": null,
         "expanded_text": "analysis",
-        "match_type": "no_match",
+        "match_type": "skipped_test",
         "confidence": 0.0,
         "matched": false,
         "umls_cui": null
@@ -401,7 +669,7 @@
         "hpo_id": null,
         "hpo_name": null,
         "expanded_text": "later",
-        "match_type": "no_match",
+        "match_type": "skipped_test",
         "confidence": 0.0,
         "matched": false,
         "umls_cui": null
@@ -411,13 +679,13 @@
         "ner_score": 0.71,
         "negated": false,
         "negation_cue": "",
-        "hpo_id": "HP:0003674",
-        "hpo_name": "Onset",
+        "hpo_id": null,
+        "hpo_name": null,
         "expanded_text": "onset",
-        "match_type": "exact_label",
-        "confidence": 1.0,
-        "matched": true,
-        "umls_cui": "C0206132"
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
       },
       {
         "text": "years",
@@ -427,7 +695,7 @@
         "hpo_id": null,
         "hpo_name": null,
         "expanded_text": "years",
-        "match_type": "no_match",
+        "match_type": "skipped_low_ner_score",
         "confidence": 0.0,
         "matched": false,
         "umls_cui": null
@@ -440,7 +708,7 @@
         "hpo_id": null,
         "hpo_name": null,
         "expanded_text": "longer",
-        "match_type": "no_match",
+        "match_type": "skipped_test",
         "confidence": 0.0,
         "matched": false,
         "umls_cui": null
@@ -453,7 +721,7 @@
         "hpo_id": null,
         "hpo_name": null,
         "expanded_text": "survival",
-        "match_type": "no_match",
+        "match_type": "skipped_test",
         "confidence": 0.0,
         "matched": false,
         "umls_cui": null
@@ -466,7 +734,7 @@
         "hpo_id": null,
         "hpo_name": null,
         "expanded_text": "recordings",
-        "match_type": "no_match",
+        "match_type": "skipped_test",
         "confidence": 0.0,
         "matched": false,
         "umls_cui": null
@@ -479,7 +747,7 @@
         "hpo_id": null,
         "hpo_name": null,
         "expanded_text": "normal",
-        "match_type": "no_match",
+        "match_type": "skipped_en_noise",
         "confidence": 0.0,
         "matched": false,
         "umls_cui": null
@@ -492,7 +760,7 @@
         "hpo_id": null,
         "hpo_name": null,
         "expanded_text": "latencies",
-        "match_type": "no_match",
+        "match_type": "skipped_test",
         "confidence": 0.0,
         "matched": false,
         "umls_cui": null
@@ -505,7 +773,20 @@
         "hpo_id": null,
         "hpo_name": null,
         "expanded_text": "protein",
-        "match_type": "skipped_non_phenotype",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "repeated afp level assessments",
+        "ner_score": 0.984,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "repeated afp level assessments",
+        "match_type": "skipped_test",
         "confidence": 0.0,
         "matched": false,
         "umls_cui": null
@@ -515,82 +796,186 @@
       {
         "ordo_id": "ORPHA:100",
         "name": "Ataxia-telangiectasia",
-        "name_fr": "Ataxie-Télangiectasie (syndrome de Louis-Bar)",
-        "score": 0.85,
-        "jaccard": 0.0952,
-        "coverage": 0.2222,
-        "matched_hpo": [
-          "HP:0001009",
-          "HP:0001251"
-        ],
-        "matched_count": 2,
-        "total_disease_hpo": 9
-      },
-      {
-        "ordo_id": "ORPHA:3350",
-        "name": "Tremor-nystagmus-duodenal ulcer syndrome",
         "name_fr": "",
-        "score": 0.35,
-        "jaccard": 0.125,
-        "coverage": 0.5,
+        "score": 0.4975,
+        "coverage": 0.1622,
         "matched_hpo": [
           "HP:0001251",
+          "HP:0001260",
+          "HP:0001337",
+          "HP:0003220",
+          "HP:0004313",
           "HP:0100022"
         ],
-        "matched_count": 2,
-        "total_disease_hpo": 4
+        "matched_count": 6,
+        "total_disease_hpo": 37,
+        "text_match": true
       },
       {
-        "ordo_id": "ORPHA:1429",
-        "name": "Benign hereditary chorea",
+        "ordo_id": "ORPHA:306674",
+        "name": "Kufor-Rakeb syndrome",
         "name_fr": "",
-        "score": 0.3267,
-        "jaccard": 0.0667,
-        "coverage": 0.5,
-        "matched_hpo": [
-          "HP:0100022"
-        ],
-        "matched_count": 1,
-        "total_disease_hpo": 2
-      },
-      {
-        "ordo_id": "ORPHA:211067",
-        "name": "Episodic ataxia type 5",
-        "name_fr": "",
-        "score": 0.2444,
-        "jaccard": 0.1111,
-        "coverage": 0.3333,
+        "score": 0.4336,
+        "coverage": 0.0632,
         "matched_hpo": [
           "HP:0001251",
-          "HP:0001260"
-        ],
-        "matched_count": 2,
-        "total_disease_hpo": 6
-      },
-      {
-        "ordo_id": "ORPHA:401901",
-        "name": "Huntington disease-like syndrome due to C9ORF72 expansions",
-        "name_fr": "",
-        "score": 0.2381,
-        "jaccard": 0.1667,
-        "coverage": 0.2857,
-        "matched_hpo": [
-          "HP:0001251",
+          "HP:0001260",
           "HP:0001332",
           "HP:0001336",
+          "HP:0001337",
+          "HP:0100660"
+        ],
+        "matched_count": 6,
+        "total_disease_hpo": 95,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:251347",
+        "name": "Ataxia-telangiectasia-like disorder",
+        "name_fr": "",
+        "score": 0.4102,
+        "coverage": 0.1765,
+        "matched_hpo": [
+          "HP:0000641",
+          "HP:0000657",
+          "HP:0001251",
+          "HP:0001260",
+          "HP:0001332",
+          "HP:0001336"
+        ],
+        "matched_count": 6,
+        "total_disease_hpo": 34,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:646",
+        "name": "Niemann-Pick disease type C",
+        "name_fr": "",
+        "score": 0.3938,
+        "coverage": 0.0606,
+        "matched_hpo": [
+          "HP:0001251",
+          "HP:0001260",
+          "HP:0001332",
+          "HP:0001336",
+          "HP:0001337",
+          "HP:0100022"
+        ],
+        "matched_count": 6,
+        "total_disease_hpo": 99,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:71277",
+        "name": "Classic glucose transporter type 1 deficiency syndrome",
+        "name_fr": "",
+        "score": 0.3775,
+        "coverage": 0.1818,
+        "matched_hpo": [
+          "HP:0001251",
+          "HP:0001260",
+          "HP:0001332",
+          "HP:0001336",
+          "HP:0002186",
+          "HP:0100660"
+        ],
+        "matched_count": 6,
+        "total_disease_hpo": 33,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:98766",
+        "name": "Spinocerebellar ataxia type 5",
+        "name_fr": "",
+        "score": 0.3769,
+        "coverage": 0.0617,
+        "matched_hpo": [
+          "HP:0001251",
+          "HP:0001260",
+          "HP:0001337",
+          "HP:0002505",
+          "HP:0100660"
+        ],
+        "matched_count": 5,
+        "total_disease_hpo": 81,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:508093",
+        "name": "MEPAN syndrome",
+        "name_fr": "",
+        "score": 0.3526,
+        "coverage": 0.1613,
+        "matched_hpo": [
+          "HP:0001251",
+          "HP:0001260",
+          "HP:0001332",
+          "HP:0001336",
+          "HP:0100660"
+        ],
+        "matched_count": 5,
+        "total_disease_hpo": 31,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:3095",
+        "name": "Atypical Rett syndrome",
+        "name_fr": "",
+        "score": 0.3452,
+        "coverage": 0.0943,
+        "matched_hpo": [
+          "HP:0001332",
+          "HP:0001337",
+          "HP:0002186",
+          "HP:0002505",
+          "HP:0100022"
+        ],
+        "matched_count": 5,
+        "total_disease_hpo": 53,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:2131",
+        "name": "Alternating hemiplegia of childhood",
+        "name_fr": "",
+        "score": 0.3449,
+        "coverage": 0.0794,
+        "matched_hpo": [
+          "HP:0000657",
+          "HP:0001251",
+          "HP:0001260",
+          "HP:0001332",
           "HP:0001337"
         ],
-        "matched_count": 4,
-        "total_disease_hpo": 14
+        "matched_count": 5,
+        "total_disease_hpo": 63,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:209905",
+        "name": "Brain-lung-thyroid syndrome",
+        "name_fr": "",
+        "score": 0.3317,
+        "coverage": 0.0833,
+        "matched_hpo": [
+          "HP:0001251",
+          "HP:0001260",
+          "HP:0001332",
+          "HP:0001336",
+          "HP:0002186"
+        ],
+        "matched_count": 5,
+        "total_disease_hpo": 60,
+        "text_match": false
       }
     ],
     "stats": {
-      "total": 37,
-      "matched": 14,
-      "unmatched": 23,
-      "match_rate": 37.8,
-      "unique_hpo": 14,
-      "ordo_matches": 5
+      "total": 59,
+      "matched": 18,
+      "unmatched": 41,
+      "match_rate": 30.5,
+      "unique_hpo": 18,
+      "ordo_matches": 10
     }
   },
   "phenopacket": {
@@ -601,26 +986,6 @@
     "input": "Case Report: The pleiotropic movement disorders phenotype of adult ataxia-telangiectasia.\n\nOBJECTIVE: To assess the clinical spectrum of ataxia-telangiectasia (A-T) in adults, with a focus on movement disorders.\nMETHODS: A total of 14 consecutive adults with A-T were included at 2 tertiary adult movement disorders centers and compared to 53 typical patients with A-T. Clinical evaluation, neurophysiologic and video-oculographic recording, imaging, laboratory investigations, and ATM analysis were performed.\nRESULTS: In comparison with typical A-T cases, our patients demonstrated later mean age at onset (6.1 vs 2.5 years, p < 0.0001), later loss of walking ability (p = 0.003), and longer survival (p = 0.0039). The presenting feature was ataxia in 71% and dysarthria and dystonia in 14% each. All patients displayed movement disorders, among which dystonia and subcortical myoclonus were the most common (86%), followed by tremor (43%). Video-oculographic recordings revealed mostly dysmetric saccades and 46% of patients had normal latencies (i.e., no oculomotor apraxia) and velocities. The α-fetoprotein (AFP) level was normal in 7%, chromosomal instability was found in 29% (vs 100% of typical patients, p = 0.0006), and immunoglobulin deficiency was found in 29% (vs 69%, p = 0.057). All patients exhibited 2 ATM mutations, including at least 1 missense mutation in 79% of them (vs 36%, p = 0.0067).\nCONCLUSION: There is great variability of phenotype and severity in A-T, including a wide spectrum of movement disorders. Karyotype and repeated AFP level assessments should be performed in adults with unexplained movement disorders as valuable clues towards the diagnosis. In case of a compatible phenotype, A-T should be considered even if age at onset is late and progression is slow.",
     "target": "Ataxia-telangiectasia",
     "phenotypicFeatures": [
-      {
-        "type": {
-          "id": "HP:0100022",
-          "label": "Abnormality of movement",
-          "umls_cui": "C0026650"
-        },
-        "excluded": false,
-        "evidence": [
-          {
-            "evidenceCode": {
-              "id": "ECO:0000033",
-              "label": "author statement supported by traceable reference"
-            },
-            "reference": {
-              "id": "GSC_EN_013",
-              "description": "NER: movement (0.365) | Match: sapbert_similarity (0.779)"
-            }
-          }
-        ]
-      },
       {
         "type": {
           "id": "HP:0001251",
@@ -636,7 +1001,47 @@
             },
             "reference": {
               "id": "GSC_EN_013",
-              "description": "NER: ataxia (0.641) | Match: exact_label (1.000)"
+              "description": "NER: ataxia - (0.892) | Match: sapbert_similarity (0.959)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0100022",
+          "label": "Abnormality of movement",
+          "umls_cui": "C0026650"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "GSC_EN_013",
+              "description": "NER: movement disorders (0.995) | Match: sapbert_similarity (0.885)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0002073",
+          "label": "Progressive cerebellar ataxia",
+          "umls_cui": "C0393525"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "GSC_EN_013",
+              "description": "NER: disorders phenotype of adult ataxia (0.985) | Match: sapbert_similarity (0.776)"
             }
           }
         ]
@@ -656,7 +1061,27 @@
             },
             "reference": {
               "id": "GSC_EN_013",
-              "description": "NER: angiectasia (0.941) | Match: sapbert_similarity (0.766)"
+              "description": "NER: telangiectasia (0.970) | Match: clinical_synonym (1.000)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0006915",
+          "label": "Inability to walk by childhood/adolescence",
+          "umls_cui": "C1859200"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "GSC_EN_013",
+              "description": "NER: later loss of walking ability (0.976) | Match: sapbert_similarity (0.756)"
             }
           }
         ]
@@ -723,6 +1148,26 @@
       },
       {
         "type": {
+          "id": "HP:0012323",
+          "label": "Sleep myoclonus",
+          "umls_cui": "C0751352"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "GSC_EN_013",
+              "description": "NER: subcortical myoclonus (0.993) | Match: sapbert_similarity (0.837)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
           "id": "HP:0001337",
           "label": "Tremor",
           "umls_cui": "C0040822"
@@ -756,7 +1201,47 @@
             },
             "reference": {
               "id": "GSC_EN_013",
-              "description": "NER: dysmetric saccades (0.831) | Match: exact_label (1.000)"
+              "description": "NER: mostly dysmetric saccades (0.913) | Match: substring_match (0.950)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0000657",
+          "label": "Oculomotor apraxia",
+          "umls_cui": "C3489733"
+        },
+        "excluded": true,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "GSC_EN_013",
+              "description": "NER: culomotor apraxia (0.946) | Match: sapbert_similarity (0.778) | Negated by: \"no\""
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0003220",
+          "label": "Abnormality of chromosome stability",
+          "umls_cui": "C0376628"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "GSC_EN_013",
+              "description": "NER: chromosomal instability (0.985) | Match: sapbert_similarity (0.863)"
             }
           }
         ]
@@ -776,16 +1261,16 @@
             },
             "reference": {
               "id": "GSC_EN_013",
-              "description": "NER: immunoglobulin deficiency (0.900) | Match: text_scan_exact_synonym (0.950)"
+              "description": "NER: immunoglobulin deficiency (0.981) | Match: exact_synonym (1.000)"
             }
           }
         ]
       },
       {
         "type": {
-          "id": "HP:0000657",
-          "label": "Oculomotor apraxia",
-          "umls_cui": "C3489733"
+          "id": "HP:0100660",
+          "label": "Dyskinesia",
+          "umls_cui": "C0013384"
         },
         "excluded": false,
         "evidence": [
@@ -796,7 +1281,7 @@
             },
             "reference": {
               "id": "GSC_EN_013",
-              "description": "NER: oculomotor apraxia (0.900) | Match: text_scan_exact_label (0.950)"
+              "description": "NER: unexplained movement disorders (0.989) | Match: sapbert_similarity (0.712)"
             }
           }
         ]
@@ -843,9 +1328,9 @@
       },
       {
         "type": {
-          "id": "HP:0001311",
-          "label": "Abnormal nervous system electrophysiology",
-          "umls_cui": "C4021781"
+          "id": "HP:0002186",
+          "label": "Apraxia",
+          "umls_cui": "C0003635"
         },
         "excluded": false,
         "evidence": [
@@ -856,34 +1341,14 @@
             },
             "reference": {
               "id": "GSC_EN_013",
-              "description": "NER: neurophysiologic (0.868) | Match: sapbert_similarity (0.740)"
-            }
-          }
-        ]
-      },
-      {
-        "type": {
-          "id": "HP:0003674",
-          "label": "Onset",
-          "umls_cui": "C0206132"
-        },
-        "excluded": false,
-        "evidence": [
-          {
-            "evidenceCode": {
-              "id": "ECO:0000033",
-              "label": "author statement supported by traceable reference"
-            },
-            "reference": {
-              "id": "GSC_EN_013",
-              "description": "NER: onset (0.710) | Match: exact_label (1.000)"
+              "description": "NER: apraxia (0.900) | Match: text_scan_exact_label (0.950)"
             }
           }
         ]
       }
     ],
     "metaData": {
-      "created": "2026-06-11T03:08:30Z",
+      "created": "2026-06-19T15:06:15Z",
       "createdBy": "clinical-preanalysis-pipeline-v2",
       "phenopacketSchemaVersion": "2.0",
       "resources": [
@@ -906,45 +1371,70 @@
             "id": "ORPHA:100",
             "label": "Ataxia-telangiectasia"
           },
-          "score": 0.85,
+          "score": 0.4975,
           "allCandidates": [
             {
               "id": "ORPHA:100",
               "label": "Ataxia-telangiectasia",
-              "score": 0.85
+              "score": 0.4975
             },
             {
-              "id": "ORPHA:3350",
-              "label": "Tremor-nystagmus-duodenal ulcer syndrome",
-              "score": 0.35
+              "id": "ORPHA:306674",
+              "label": "Kufor-Rakeb syndrome",
+              "score": 0.4336
             },
             {
-              "id": "ORPHA:1429",
-              "label": "Benign hereditary chorea",
-              "score": 0.3267
+              "id": "ORPHA:251347",
+              "label": "Ataxia-telangiectasia-like disorder",
+              "score": 0.4102
             },
             {
-              "id": "ORPHA:211067",
-              "label": "Episodic ataxia type 5",
-              "score": 0.2444
+              "id": "ORPHA:646",
+              "label": "Niemann-Pick disease type C",
+              "score": 0.3938
             },
             {
-              "id": "ORPHA:401901",
-              "label": "Huntington disease-like syndrome due to C9ORF72 expansions",
-              "score": 0.2381
+              "id": "ORPHA:71277",
+              "label": "Classic glucose transporter type 1 deficiency syndrome",
+              "score": 0.3775
+            },
+            {
+              "id": "ORPHA:98766",
+              "label": "Spinocerebellar ataxia type 5",
+              "score": 0.3769
+            },
+            {
+              "id": "ORPHA:508093",
+              "label": "MEPAN syndrome",
+              "score": 0.3526
+            },
+            {
+              "id": "ORPHA:3095",
+              "label": "Atypical Rett syndrome",
+              "score": 0.3452
+            },
+            {
+              "id": "ORPHA:2131",
+              "label": "Alternating hemiplegia of childhood",
+              "score": 0.3449
+            },
+            {
+              "id": "ORPHA:209905",
+              "label": "Brain-lung-thyroid syndrome",
+              "score": 0.3317
             }
           ]
         }
       }
     ],
     "_pipelineStats": {
-      "totalEntities": 37,
-      "matchedHPO": 14,
-      "unmatchedEntities": 23,
-      "phenopacketFeatures": 14,
-      "negatedFeatures": 0,
+      "totalEntities": 59,
+      "matchedHPO": 18,
+      "unmatchedEntities": 41,
+      "phenopacketFeatures": 18,
+      "negatedFeatures": 1,
       "numericPhenotypes": 0,
-      "ordoCandidates": 5
+      "ordoCandidates": 10
     }
   }
 }

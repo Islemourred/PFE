@@ -15,6 +15,45 @@
   "module4": {
     "problem": [
       {
+        "text": "the patient ' s condition",
+        "ner_score": 0.992,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "the patient ' s condition",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "clinical disorders",
+        "ner_score": 0.996,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "clinical disorders",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "clinical",
+        "ner_score": 0.537,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "clinical",
+        "match_type": "skipped_en_noise",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
         "text": "Cystic",
         "ner_score": 0.304,
         "negated": false,
@@ -22,10 +61,23 @@
         "hpo_id": null,
         "hpo_name": null,
         "expanded_text": "Cystic",
-        "match_type": "no_match",
+        "match_type": "skipped_low_ner_score",
         "confidence": 0.0,
         "matched": false,
         "umls_cui": null
+      },
+      {
+        "text": "cystic fibrosis",
+        "ner_score": 0.977,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "cystic fibrosis",
+        "match_type": "deduplicated",
+        "confidence": 0.7105,
+        "matched": false,
+        "umls_cui": "C1397290"
       },
       {
         "text": "Fibrosis",
@@ -35,10 +87,101 @@
         "hpo_id": null,
         "hpo_name": null,
         "expanded_text": "Fibrosis",
+        "match_type": "skipped_low_ner_score",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "cystic fibrosis (",
+        "ner_score": 0.947,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0006552",
+        "hpo_name": "Fibrocystic lung disease",
+        "expanded_text": "cystic fibrosis (",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.7189,
+        "matched": true,
+        "umls_cui": "C1397290"
+      },
+      {
+        "text": "a multisystemic disease",
+        "ner_score": 0.996,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "a multisystemic disease",
         "match_type": "no_match",
         "confidence": 0.0,
         "matched": false,
         "umls_cui": null
+      },
+      {
+        "text": "a genetic defect",
+        "ner_score": 0.997,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "a genetic defect",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "a mutation in the cftr gene",
+        "ner_score": 0.939,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "a mutation in the cftr gene",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "an abnormal protein",
+        "ner_score": 0.994,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0010876",
+        "hpo_name": "Abnormal circulating protein concentration",
+        "expanded_text": "an abnormal protein",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.725,
+        "matched": true,
+        "umls_cui": "C4020763"
+      },
+      {
+        "text": "ithelial cells",
+        "ner_score": 0.808,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "ithelial cells",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "the dehydration of secreted mucus",
+        "ner_score": 0.951,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "the dehydration of secreted mucus",
+        "match_type": "deduplicated",
+        "confidence": 0.7032,
+        "matched": false,
+        "umls_cui": "C0011175"
       },
       {
         "text": "dehydration",
@@ -61,6 +204,32 @@
         "hpo_id": null,
         "hpo_name": null,
         "expanded_text": "mucus",
+        "match_type": "skipped_low_ner_score",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "changes in its biological properties",
+        "ner_score": 0.859,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "changes in its biological properties",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "chronic inflammation",
+        "ner_score": 0.998,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "chronic inflammation",
         "match_type": "no_match",
         "confidence": 0.0,
         "matched": false,
@@ -71,65 +240,91 @@
         "ner_score": 0.403,
         "negated": false,
         "negation_cue": "",
-        "hpo_id": "HP:0012649",
-        "hpo_name": "Increased inflammatory response",
+        "hpo_id": null,
+        "hpo_name": null,
         "expanded_text": "inflammation",
-        "match_type": "sapbert_similarity",
-        "confidence": 0.8309,
+        "match_type": "skipped_low_ner_score",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "urrent respiratory infections",
+        "ner_score": 0.937,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0011947",
+        "hpo_name": "Respiratory tract infection",
+        "expanded_text": "urrent respiratory infections",
+        "match_type": "substring_match",
+        "confidence": 0.95,
         "matched": true,
-        "umls_cui": "C4022803"
+        "umls_cui": "C0035243"
       },
       {
         "text": "respiratory",
         "ner_score": 0.431,
         "negated": false,
         "negation_cue": "",
-        "hpo_id": "HP:0011947",
-        "hpo_name": "Respiratory tract infection",
+        "hpo_id": null,
+        "hpo_name": null,
         "expanded_text": "respiratory",
-        "match_type": "sapbert_similarity",
-        "confidence": 0.7121,
-        "matched": true,
-        "umls_cui": "C0035243"
+        "match_type": "skipped_en_noise",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
       },
       {
         "text": "infections",
         "ner_score": 0.185,
         "negated": false,
         "negation_cue": "",
-        "hpo_id": "HP:0002719",
-        "hpo_name": "Recurrent infections",
+        "hpo_id": null,
+        "hpo_name": null,
         "expanded_text": "infections",
+        "match_type": "skipped_low_ner_score",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "tissue",
+        "ner_score": 0.657,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "tissue",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "respiratory and cardiorespiratory failure",
+        "ner_score": 0.997,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0002878",
+        "hpo_name": "Respiratory failure",
+        "expanded_text": "respiratory and cardiorespiratory failure",
         "match_type": "sapbert_similarity",
-        "confidence": 0.7773,
+        "confidence": 0.9154,
         "matched": true,
-        "umls_cui": "C0239998"
+        "umls_cui": "C1145670"
       },
       {
-        "text": "cardio",
-        "ner_score": 0.387,
+        "text": "cardiorespiratory failure",
+        "ner_score": 0.997,
         "negated": false,
         "negation_cue": "",
         "hpo_id": null,
         "hpo_name": null,
-        "expanded_text": "cardio",
-        "match_type": "no_match",
-        "confidence": 0.0,
+        "expanded_text": "cardiorespiratory failure",
+        "match_type": "deduplicated",
+        "confidence": 0.8444,
         "matched": false,
-        "umls_cui": null
-      },
-      {
-        "text": "failure",
-        "ner_score": 0.556,
-        "negated": false,
-        "negation_cue": "",
-        "hpo_id": null,
-        "hpo_name": null,
-        "expanded_text": "failure",
-        "match_type": "no_match",
-        "confidence": 0.0,
-        "matched": false,
-        "umls_cui": null
+        "umls_cui": "C1145670"
       },
       {
         "text": "Pseudomonas",
@@ -139,6 +334,19 @@
         "hpo_id": null,
         "hpo_name": null,
         "expanded_text": "Pseudomonas",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "pseudomonas aeruginosa",
+        "ner_score": 0.992,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "pseudomonas aeruginosa",
         "match_type": "no_match",
         "confidence": 0.0,
         "matched": false,
@@ -171,6 +379,19 @@
         "umls_cui": null
       },
       {
+        "text": "hylococcus aureus",
+        "ner_score": 0.912,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "hylococcus aureus",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
         "text": "aureus",
         "ner_score": 0.636,
         "negated": false,
@@ -184,8 +405,47 @@
         "umls_cui": null
       },
       {
+        "text": "the mssa phenotype",
+        "ner_score": 0.948,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "the mssa phenotype",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "severe condition",
+        "ner_score": 0.92,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "severe condition",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "infectious exacerbation",
+        "ner_score": 0.998,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0002719",
+        "hpo_name": "Recurrent infections",
+        "expanded_text": "infectious exacerbation",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.8018,
+        "matched": true,
+        "umls_cui": "C0239998"
+      },
+      {
         "text": "cardiac arrest",
-        "ner_score": 0.708,
+        "ner_score": 0.995,
         "negated": false,
         "negation_cue": "",
         "hpo_id": "HP:0001695",
@@ -195,6 +455,97 @@
         "confidence": 1.0,
         "matched": true,
         "umls_cui": "C0018790"
+      },
+      {
+        "text": "systemic complications",
+        "ner_score": 0.994,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "systemic complications",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "acerbations",
+        "ner_score": 0.852,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "acerbations",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "multiple systemic complications",
+        "ner_score": 0.99,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "multiple systemic complications",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "the underlying disease",
+        "ner_score": 0.997,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "the underlying disease",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "new phenotypes",
+        "ner_score": 0.976,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "new phenotypes",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "genetically determined diseases",
+        "ner_score": 0.996,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "genetically determined diseases",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "life",
+        "ner_score": 0.574,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "life",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
       },
       {
         "text": "recurrent respiratory infections",
@@ -230,60 +581,6 @@
         ]
       }
     ],
-    "test": [
-      {
-        "text": "respiratory",
-        "ner_score": 0.719,
-        "negated": false,
-        "negation_cue": "",
-        "hpo_id": "HP:0011947",
-        "hpo_name": "Respiratory tract infection",
-        "expanded_text": "respiratory",
-        "match_type": "sapbert_similarity",
-        "confidence": 0.7121,
-        "matched": true,
-        "umls_cui": "C0035243"
-      },
-      {
-        "text": "tissue",
-        "ner_score": 0.863,
-        "negated": false,
-        "negation_cue": "",
-        "hpo_id": null,
-        "hpo_name": null,
-        "expanded_text": "tissue",
-        "match_type": "no_match",
-        "confidence": 0.0,
-        "matched": false,
-        "umls_cui": null
-      },
-      {
-        "text": "deteriorated",
-        "ner_score": 0.364,
-        "negated": false,
-        "negation_cue": "",
-        "hpo_id": "HP:0003676",
-        "hpo_name": "Progressive",
-        "expanded_text": "deteriorated",
-        "match_type": "sapbert_similarity",
-        "confidence": 0.814,
-        "matched": true,
-        "umls_cui": "C0205329"
-      },
-      {
-        "text": "airway",
-        "ner_score": 0.234,
-        "negated": false,
-        "negation_cue": "",
-        "hpo_id": null,
-        "hpo_name": null,
-        "expanded_text": "airway",
-        "match_type": "no_match",
-        "confidence": 0.0,
-        "matched": false,
-        "umls_cui": null
-      }
-    ],
     "treatment": [
       {
         "text": "lung transplantation",
@@ -293,7 +590,7 @@
         "hpo_id": null,
         "hpo_name": null,
         "expanded_text": "lung transplantation",
-        "match_type": "skipped_non_phenotype",
+        "match_type": "skipped_treatment",
         "confidence": 0.0,
         "matched": false,
         "umls_cui": null
@@ -306,7 +603,20 @@
         "hpo_id": null,
         "hpo_name": null,
         "expanded_text": "antibiotic",
-        "match_type": "skipped_non_phenotype",
+        "match_type": "skipped_treatment",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "antibiotic treatment",
+        "ner_score": 0.993,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "antibiotic treatment",
+        "match_type": "skipped_treatment",
         "confidence": 0.0,
         "matched": false,
         "umls_cui": null
@@ -319,7 +629,7 @@
         "hpo_id": null,
         "hpo_name": null,
         "expanded_text": "treatment",
-        "match_type": "no_match",
+        "match_type": "skipped_en_noise",
         "confidence": 0.0,
         "matched": false,
         "umls_cui": null
@@ -332,7 +642,7 @@
         "hpo_id": null,
         "hpo_name": null,
         "expanded_text": "sedated",
-        "match_type": "skipped_non_phenotype",
+        "match_type": "skipped_treatment",
         "confidence": 0.0,
         "matched": false,
         "umls_cui": null
@@ -345,7 +655,20 @@
         "hpo_id": null,
         "hpo_name": null,
         "expanded_text": "intubated",
-        "match_type": "skipped_non_phenotype",
+        "match_type": "skipped_treatment",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "a ventilator",
+        "ner_score": 0.926,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "a ventilator",
+        "match_type": "skipped_treatment",
         "confidence": 0.0,
         "matched": false,
         "umls_cui": null
@@ -358,7 +681,113 @@
         "hpo_id": null,
         "hpo_name": null,
         "expanded_text": "ventilator",
-        "match_type": "skipped_non_phenotype",
+        "match_type": "skipped_treatment",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "urgent interventions",
+        "ner_score": 0.995,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "urgent interventions",
+        "match_type": "skipped_treatment",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "emergency medical interventions",
+        "ner_score": 0.993,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "emergency medical interventions",
+        "match_type": "skipped_treatment",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "care",
+        "ner_score": 0.594,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "care",
+        "match_type": "skipped_treatment",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "specific procedures",
+        "ner_score": 0.661,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "specific procedures",
+        "match_type": "skipped_treatment",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      }
+    ],
+    "test": [
+      {
+        "text": "chloride ions",
+        "ner_score": 0.545,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "chloride ions",
+        "match_type": "skipped_low_ner_score",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "evaluation",
+        "ner_score": 0.918,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "evaluation",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "deteriorated",
+        "ner_score": 0.364,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "deteriorated",
+        "match_type": "skipped_low_ner_score",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "airway",
+        "ner_score": 0.234,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "airway",
+        "match_type": "skipped_low_ner_score",
         "confidence": 0.0,
         "matched": false,
         "umls_cui": null
@@ -366,81 +795,156 @@
     ],
     "ordo_candidates": [
       {
-        "ordo_id": "ORPHA:586",
-        "name": "Cystic fibrosis",
-        "name_fr": "Mucoviscidose",
-        "score": 0.85,
-        "jaccard": 0.1111,
+        "ordo_id": "ORPHA:365",
+        "name": "Glycogen storage disease due to acid maltase deficiency",
+        "name_fr": "",
+        "score": 0.3587,
+        "coverage": 0.0556,
+        "matched_hpo": [
+          "HP:0002093",
+          "HP:0002205",
+          "HP:0002878",
+          "HP:0011947"
+        ],
+        "matched_count": 4,
+        "total_disease_hpo": 72,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:723",
+        "name": "Pneumocystosis",
+        "name_fr": "",
+        "score": 0.3507,
+        "coverage": 0.087,
+        "matched_hpo": [
+          "HP:0002093",
+          "HP:0002878"
+        ],
+        "matched_count": 2,
+        "total_disease_hpo": 23,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:685082",
+        "name": "Pediatric acute respiratory distress syndrome",
+        "name_fr": "",
+        "score": 0.3504,
+        "coverage": 0.1875,
+        "matched_hpo": [
+          "HP:0001695",
+          "HP:0002878",
+          "HP:0011947"
+        ],
+        "matched_count": 3,
+        "total_disease_hpo": 16,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:79404",
+        "name": "Severe generalized junctional epidermolysis bullosa",
+        "name_fr": "",
+        "score": 0.3464,
+        "coverage": 0.0328,
+        "matched_hpo": [
+          "HP:0001944",
+          "HP:0002878"
+        ],
+        "matched_count": 2,
+        "total_disease_hpo": 61,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:36238",
+        "name": "Staphylococcal necrotizing pneumonia",
+        "name_fr": "",
+        "score": 0.3464,
+        "coverage": 0.0263,
+        "matched_hpo": [
+          "HP:0002878"
+        ],
+        "matched_count": 1,
+        "total_disease_hpo": 38,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:457",
+        "name": "Harlequin ichthyosis",
+        "name_fr": "",
+        "score": 0.3417,
         "coverage": 0.1667,
         "matched_hpo": [
-          "HP:0002205",
-          "HP:0002719"
+          "HP:0001944",
+          "HP:0002093",
+          "HP:0002205"
         ],
-        "matched_count": 2,
-        "total_disease_hpo": 12
+        "matched_count": 3,
+        "total_disease_hpo": 18,
+        "text_match": false
       },
       {
-        "ordo_id": "ORPHA:2808",
-        "name": "Laryngeal abductor paralysis",
+        "ordo_id": "ORPHA:586",
+        "name": "Cystic fibrosis",
         "name_fr": "",
-        "score": 0.3444,
-        "jaccard": 0.1111,
-        "coverage": 0.5,
+        "score": 0.339,
+        "coverage": 0.0286,
         "matched_hpo": [
-          "HP:0002093"
+          "HP:0002205"
         ],
         "matched_count": 1,
-        "total_disease_hpo": 2
+        "total_disease_hpo": 35,
+        "text_match": true
       },
       {
-        "ordo_id": "ORPHA:2111",
-        "name": "Cystic hamartoma of lung and kidney",
+        "ordo_id": "ORPHA:258",
+        "name": "Laminin subunit alpha 2-related congenital muscular dystrophy",
         "name_fr": "",
-        "score": 0.3127,
-        "jaccard": 0.1818,
-        "coverage": 0.4,
+        "score": 0.3318,
+        "coverage": 0.0377,
+        "matched_hpo": [
+          "HP:0002093",
+          "HP:0002878"
+        ],
+        "matched_count": 2,
+        "total_disease_hpo": 53,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:221",
+        "name": "Dermatomyositis",
+        "name_fr": "",
+        "score": 0.3171,
+        "coverage": 0.026,
         "matched_hpo": [
           "HP:0002093",
           "HP:0002205"
         ],
         "matched_count": 2,
-        "total_disease_hpo": 5
+        "total_disease_hpo": 77,
+        "text_match": false
       },
       {
-        "ordo_id": "ORPHA:1202",
-        "name": "Larynx atresia",
+        "ordo_id": "ORPHA:60025",
+        "name": "Pulmonary alveolar microlithiasis",
         "name_fr": "",
-        "score": 0.2667,
-        "jaccard": 0.1667,
-        "coverage": 0.3333,
+        "score": 0.3154,
+        "coverage": 0.0732,
         "matched_hpo": [
           "HP:0002093",
-          "HP:0002205"
+          "HP:0002878",
+          "HP:0011947"
         ],
-        "matched_count": 2,
-        "total_disease_hpo": 6
-      },
-      {
-        "ordo_id": "ORPHA:2085",
-        "name": "Glaucoma-sleep apnea syndrome",
-        "name_fr": "",
-        "score": 0.24,
-        "jaccard": 0.1,
-        "coverage": 0.3333,
-        "matched_hpo": [
-          "HP:0002093"
-        ],
-        "matched_count": 1,
-        "total_disease_hpo": 3
+        "matched_count": 3,
+        "total_disease_hpo": 41,
+        "text_match": false
       }
     ],
     "stats": {
-      "total": 26,
+      "total": 59,
       "matched": 9,
-      "unmatched": 17,
-      "match_rate": 34.6,
-      "unique_hpo": 8,
-      "ordo_matches": 5
+      "unmatched": 50,
+      "match_rate": 15.3,
+      "unique_hpo": 9,
+      "ordo_matches": 10
     }
   },
   "phenopacket": {
@@ -449,8 +953,48 @@
       "id": "PUBMED_EN_001"
     },
     "input": "Case Report: Clinical Disorders in Cystic Fibrosis That Affect Emergency Procedures-A Case Report and Review.\n\nCystic fibrosis (CF) is a multisystemic disease caused by a genetic defect, namely a mutation in the CFTR gene, that results in the production of an abnormal protein that regulates the flow of chloride ions through epithelial cells, leading to the dehydration of secreted mucus and changes in its biological properties. Chronic inflammation and recurrent respiratory infections progressively damage lung tissue, leading to respiratory and cardiorespiratory failure. This study aims to present a clinical case and explore the clinical changes in CF that may influence the provision of pre-hospital first aid. The study presents a case report of a 23-year-old CF patient undergoing evaluation for lung transplantation, infected with Pseudomonas aeruginosa and Staphylococcus aureus with the MSSA phenotype, and in a severe condition due to infectious exacerbation. Despite antibiotic treatment, the patient's condition deteriorated, leading to respiratory failure and cardiac arrest. Emergency measures were taken to maintain airway patency-the patient was sedated, intubated, and connected to a ventilator. CF involves systemic complications that, during exacerbations, may require urgent interventions. Cystic fibrosis is associated with multiple systemic complications, some of which may, during exacerbations, require emergency medical interventions. Providing care to this patient group involves specific procedures addressing the consequences of the underlying disease. Due to increasing survival rates and the emergence of new phenotypes, there is a need for the continuous education of medical personnel, including emergency responders, regarding the management of genetically determined diseases. This study underscores the importance of recognizing CF's complex nature and adapting emergency care accordingly to ensure timely and effective intervention in life-threatening situations.",
-    "target": "Cystic fibrosis",
+    "target": "Glycogen storage disease due to acid maltase deficiency",
     "phenotypicFeatures": [
+      {
+        "type": {
+          "id": "HP:0006552",
+          "label": "Fibrocystic lung disease",
+          "umls_cui": "C1397290"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "PUBMED_EN_001",
+              "description": "NER: cystic fibrosis ( (0.947) | Match: sapbert_similarity (0.719)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0010876",
+          "label": "Abnormal circulating protein concentration",
+          "umls_cui": "C4020763"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "PUBMED_EN_001",
+              "description": "NER: an abnormal protein (0.994) | Match: sapbert_similarity (0.725)"
+            }
+          }
+        ]
+      },
       {
         "type": {
           "id": "HP:0001944",
@@ -473,26 +1017,6 @@
       },
       {
         "type": {
-          "id": "HP:0012649",
-          "label": "Increased inflammatory response",
-          "umls_cui": "C4022803"
-        },
-        "excluded": false,
-        "evidence": [
-          {
-            "evidenceCode": {
-              "id": "ECO:0000033",
-              "label": "author statement supported by traceable reference"
-            },
-            "reference": {
-              "id": "PUBMED_EN_001",
-              "description": "NER: inflammation (0.403) | Match: sapbert_similarity (0.831)"
-            }
-          }
-        ]
-      },
-      {
-        "type": {
           "id": "HP:0011947",
           "label": "Respiratory tract infection",
           "umls_cui": "C0035243"
@@ -506,7 +1030,27 @@
             },
             "reference": {
               "id": "PUBMED_EN_001",
-              "description": "NER: respiratory (0.431) | Match: sapbert_similarity (0.712)"
+              "description": "NER: urrent respiratory infections (0.937) | Match: substring_match (0.950)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0002878",
+          "label": "Respiratory failure",
+          "umls_cui": "C1145670"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "PUBMED_EN_001",
+              "description": "NER: respiratory and cardiorespiratory failure (0.997) | Match: sapbert_similarity (0.915)"
             }
           }
         ]
@@ -526,7 +1070,7 @@
             },
             "reference": {
               "id": "PUBMED_EN_001",
-              "description": "NER: infections (0.185) | Match: sapbert_similarity (0.777)"
+              "description": "NER: infectious exacerbation (0.998) | Match: sapbert_similarity (0.802)"
             }
           }
         ]
@@ -546,7 +1090,7 @@
             },
             "reference": {
               "id": "PUBMED_EN_001",
-              "description": "NER: cardiac arrest (0.708) | Match: exact_label (1.000)"
+              "description": "NER: cardiac arrest (0.995) | Match: exact_label (1.000)"
             }
           }
         ]
@@ -590,30 +1134,10 @@
             }
           }
         ]
-      },
-      {
-        "type": {
-          "id": "HP:0003676",
-          "label": "Progressive",
-          "umls_cui": "C0205329"
-        },
-        "excluded": false,
-        "evidence": [
-          {
-            "evidenceCode": {
-              "id": "ECO:0000033",
-              "label": "author statement supported by traceable reference"
-            },
-            "reference": {
-              "id": "PUBMED_EN_001",
-              "description": "NER: deteriorated (0.364) | Match: sapbert_similarity (0.814)"
-            }
-          }
-        ]
       }
     ],
     "metaData": {
-      "created": "2026-06-11T03:46:46Z",
+      "created": "2026-06-19T15:01:12Z",
       "createdBy": "clinical-preanalysis-pipeline-v2",
       "phenopacketSchemaVersion": "2.0",
       "resources": [
@@ -633,48 +1157,73 @@
         "progressStatus": "IN_PROGRESS",
         "diagnosis": {
           "disease": {
-            "id": "ORPHA:586",
-            "label": "Cystic fibrosis"
+            "id": "ORPHA:365",
+            "label": "Glycogen storage disease due to acid maltase deficiency"
           },
-          "score": 0.85,
+          "score": 0.3587,
           "allCandidates": [
+            {
+              "id": "ORPHA:365",
+              "label": "Glycogen storage disease due to acid maltase deficiency",
+              "score": 0.3587
+            },
+            {
+              "id": "ORPHA:723",
+              "label": "Pneumocystosis",
+              "score": 0.3507
+            },
+            {
+              "id": "ORPHA:685082",
+              "label": "Pediatric acute respiratory distress syndrome",
+              "score": 0.3504
+            },
+            {
+              "id": "ORPHA:79404",
+              "label": "Severe generalized junctional epidermolysis bullosa",
+              "score": 0.3464
+            },
+            {
+              "id": "ORPHA:36238",
+              "label": "Staphylococcal necrotizing pneumonia",
+              "score": 0.3464
+            },
+            {
+              "id": "ORPHA:457",
+              "label": "Harlequin ichthyosis",
+              "score": 0.3417
+            },
             {
               "id": "ORPHA:586",
               "label": "Cystic fibrosis",
-              "score": 0.85
+              "score": 0.339
             },
             {
-              "id": "ORPHA:2808",
-              "label": "Laryngeal abductor paralysis",
-              "score": 0.3444
+              "id": "ORPHA:258",
+              "label": "Laminin subunit alpha 2-related congenital muscular dystrophy",
+              "score": 0.3318
             },
             {
-              "id": "ORPHA:2111",
-              "label": "Cystic hamartoma of lung and kidney",
-              "score": 0.3127
+              "id": "ORPHA:221",
+              "label": "Dermatomyositis",
+              "score": 0.3171
             },
             {
-              "id": "ORPHA:1202",
-              "label": "Larynx atresia",
-              "score": 0.2667
-            },
-            {
-              "id": "ORPHA:2085",
-              "label": "Glaucoma-sleep apnea syndrome",
-              "score": 0.24
+              "id": "ORPHA:60025",
+              "label": "Pulmonary alveolar microlithiasis",
+              "score": 0.3154
             }
           ]
         }
       }
     ],
     "_pipelineStats": {
-      "totalEntities": 26,
+      "totalEntities": 59,
       "matchedHPO": 9,
-      "unmatchedEntities": 17,
-      "phenopacketFeatures": 8,
+      "unmatchedEntities": 50,
+      "phenopacketFeatures": 9,
       "negatedFeatures": 0,
       "numericPhenotypes": 0,
-      "ordoCandidates": 5
+      "ordoCandidates": 10
     }
   }
 }

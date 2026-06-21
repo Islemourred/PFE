@@ -1,5 +1,8 @@
 {
   "name": "web",
+  "pnpm": {
+    "onlyBuiltDependencies": ["core-js", "sharp", "unrs-resolver"]
+  },
   "version": "0.1.0",
   "private": true,
   "scripts": {

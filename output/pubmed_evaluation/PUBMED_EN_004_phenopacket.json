@@ -4,8 +4,48 @@
     "id": "PUBMED_EN_004"
   },
   "input": "Case Report: Haploidentical bone marrow transplantation in a pediatric patient with Wiskott-Aldrich syndrome. A case report.\n\nWiskott-Aldrich syndrome (WAS) is an X-linked genetic disorder caused by mutations in the gene that encodes the Wiskott-Aldrich syndrome protein (WASp). Here, we report the clinical case of an 18-month-old boy diagnosed with Wiskott-Aldrich syndrome, who did not have an HLA-matched related or unrelated donor and was treated successfully with a hematopoietic stem cell transplant (HSCT) from a haploidentical family donor. Graft-versus-host disease (GvHD) prophylaxis included post-transplant cyclophosphamide (PT-Cy). At day +30, the peripheral blood-nucleated cell chimerism was 100% and the WAS protein had a normal expression. Currently, at month 32 post-transplant, the patient has hematological and immune reconstitution and complete donor chimerism without evidence of GvHD. HSCT with PT-Cy was a feasible and safe option for this patient with WAS, in which an HLA matched donor was not available.\nEl síndrome de Wiskott-Aldrich es un error innato de la inmunidad de herencia ligada al cromosoma X, producido por variantes en el gen que codifica la proteína del síndrome de Wiskott-Aldrich (WASp). Reportamos el caso clínico de un paciente de 18 meses con diagnóstico de Wiskott-Aldrich que no presentaba donante antígeno leucocitario humano (HLA) idéntico y recibió un trasplante de células progenitoras hematopoyéticas (TCPH) con donante familiar haploidéntico. La profilaxis para enfermedad de injerto contra huésped incluyó ciclofosfamida (PT-Cy). El quimerismo del día +30 fue 100 % del donante y la evaluación postrasplante de la expresión de la proteína WAS fue normal. Actualmente, a 32 meses del trasplante, presenta reconstitución hematológica e inmunológica y quimerismo completo sin evidencia de enfermedad injerto contra huésped. El TCPH haploidéntico con PT-Cy se mostró factible y seguro en este caso de síndrome de WiskottAldrich en el que no se disponía de un donante HLA idéntico.",
-  "target": "Acquired purpura fulminans",
+  "target": "STAT1-related autoimmune enteropathy and endocrinopathy-susceptibility to chronic infections syndrome",
   "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0001417",
+        "label": "X-linked inheritance",
+        "umls_cui": "C0241764"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "PUBMED_EN_004",
+            "description": "NER: an x - linked genetic disorder (0.995) | Match: sapbert_similarity (0.845)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0001973",
+        "label": "Autoimmune thrombocytopenia",
+        "umls_cui": "C0242584"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "PUBMED_EN_004",
+            "description": "NER: tt - aldrich syndrome (0.834) | Match: sapbert_similarity (0.724)"
+          }
+        }
+      ]
+    },
     {
       "type": {
         "id": "HP:0002958",
@@ -25,30 +65,10 @@
           }
         }
       ]
-    },
-    {
-      "type": {
-        "id": "HP:0001417",
-        "label": "X-linked inheritance",
-        "umls_cui": "C0241764"
-      },
-      "excluded": false,
-      "evidence": [
-        {
-          "evidenceCode": {
-            "id": "ECO:0000033",
-            "label": "author statement supported by traceable reference"
-          },
-          "reference": {
-            "id": "PUBMED_EN_004",
-            "description": "NER: X-linked (0.900) | Match: text_scan_exact_synonym (0.950)"
-          }
-        }
-      ]
     }
   ],
   "metaData": {
-    "created": "2026-06-11T03:04:34Z",
+    "created": "2026-06-19T15:01:31Z",
     "createdBy": "clinical-preanalysis-pipeline-v2",
     "phenopacketSchemaVersion": "2.0",
     "resources": [
@@ -68,42 +88,72 @@
       "progressStatus": "IN_PROGRESS",
       "diagnosis": {
         "disease": {
-          "id": "ORPHA:49566",
-          "label": "Acquired purpura fulminans"
+          "id": "ORPHA:391487",
+          "label": "STAT1-related autoimmune enteropathy and endocrinopathy-susceptibility to chronic infections syndrome"
         },
-        "score": 0.0394,
+        "score": 0.5659,
         "allCandidates": [
+          {
+            "id": "ORPHA:391487",
+            "label": "STAT1-related autoimmune enteropathy and endocrinopathy-susceptibility to chronic infections syndrome",
+            "score": 0.5659
+          },
           {
             "id": "ORPHA:49566",
             "label": "Acquired purpura fulminans",
-            "score": 0.0394
-          },
-          {
-            "id": "ORPHA:158057",
-            "label": "Acquired hemophagocytic lymphohistiocytosis associated with malignant disease",
-            "score": 0.0254
+            "score": 0.4333
           },
           {
             "id": "ORPHA:540",
             "label": "Familial hemophagocytic lymphohistiocytosis",
-            "score": 0.022
+            "score": 0.4333
           },
           {
-            "id": "ORPHA:391487",
-            "label": "STAT1-related autoimmune enteropathy and endocrinopathy-susceptibility to chronic infections syndrome",
-            "score": 0.0216
+            "id": "ORPHA:158057",
+            "label": "Acquired hemophagocytic lymphohistiocytosis associated with malignant disease",
+            "score": 0.4333
+          },
+          {
+            "id": "ORPHA:906",
+            "label": "Wiskott-Aldrich syndrome",
+            "score": 0.3428
+          },
+          {
+            "id": "ORPHA:3261",
+            "label": "Autoimmune lymphoproliferative syndrome",
+            "score": 0.3365
+          },
+          {
+            "id": "ORPHA:275",
+            "label": "Severe combined immunodeficiency due to DCLRE1C deficiency",
+            "score": 0.3365
+          },
+          {
+            "id": "ORPHA:37042",
+            "label": "Immune dysregulation-polyendocrinopathy-enteropathy-X-linked syndrome",
+            "score": 0.3365
+          },
+          {
+            "id": "ORPHA:1855",
+            "label": "Spondyloenchondrodysplasia",
+            "score": 0.3365
+          },
+          {
+            "id": "ORPHA:760",
+            "label": "Purine nucleoside phosphorylase deficiency",
+            "score": 0.3365
           }
         ]
       }
     }
   ],
   "_pipelineStats": {
-    "totalEntities": 34,
-    "matchedHPO": 2,
-    "unmatchedEntities": 32,
-    "phenopacketFeatures": 2,
+    "totalEntities": 68,
+    "matchedHPO": 3,
+    "unmatchedEntities": 65,
+    "phenopacketFeatures": 3,
     "negatedFeatures": 0,
     "numericPhenotypes": 0,
-    "ordoCandidates": 4
+    "ordoCandidates": 10
   }
 }

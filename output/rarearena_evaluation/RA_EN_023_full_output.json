@@ -1,0 +1,1674 @@
+{
+  "note_id": "RA_EN_023",
+  "language": "en",
+  "module1": {
+    "clean_text": "A 5-month-old female infant exhibited horizontal and rotational nystagmus of pendular characteristics, which occasionally rebounded and disappeared when focusing on near objects. The nystagmus was more pronounced in the hyperopic left eye. Fundoscopic examination was normal in both eyes at that time. Electroencephalography showed sharp theta waves, nystagmus episodes, and slow delta waves during head movements originating from the parietal and occipital lobes. Brain imaging via computed tomography (CT) and magnetic resonance imaging (MRI) was normal. Later in life, the patient developed T2DM and obesity. Over a 5-year period (2016 to [DATE] her metabolic profile, including vitamin B12, glucose profile (HbA1c, glucose tolerance tests), liver function tests, and complete blood count, were normal except for low levels of vitamin D3 at various times. Abdominal ultrasound showed no abnormalities in the liver, common bile duct, portal vein, gallbladder, pancreas, spleen, or kidneys. Visual acuity was limited to light perception in both eyes and she received different diagnoses from various hospitals. At [AGE] years old, she presented to our department in [DATE] Best corrected visual acuity (BCVA) was light perception in both eyes, reportedly since the age of [AGE] Optical coherence tomography (OCT) scans of the macular region showed significant disruption of the photoreceptor layer in both eyes, with minimal preservation around the central fovea. Fluorescein angiography (FA) revealed vessel attenuation and hyperfluorescent areas in the posterior pole. Autofluorescence (FAF) indicated extensive disruption of the retinal pigment epithelium (RPE) metabolic activity in the posterior pole and periphery of both eyes. Electroretinogram (ERG) and visual evoked potentials (VEP) were abnormal, with recordings not surpassing electrical noise.",
+    "phi_map": {
+      "DATE": [
+        "2021),",
+        "2021."
+      ],
+      "AGE": [
+        "17",
+        "13."
+      ]
+    },
+    "patient_info": {
+      "sex": "female"
+    }
+  },
+  "module3_warnings": {
+    "temporal": [],
+    "inconsistencies": []
+  },
+  "module4": {
+    "problem": [
+      {
+        "text": "extensive disruption of the retinal pigment epithelium ( rpe ) metabolic activity",
+        "ner_score": 0.976,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0007814",
+        "hpo_name": "Retinal pigment epithelial mottling",
+        "expanded_text": "extensive disruption of the retinal pigment epithelium ( rpe ) metabolic activity",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.743,
+        "matched": true,
+        "umls_cui": "C1857644"
+      },
+      {
+        "text": "horizontal and rotational nystagmus of pendular characteristics",
+        "ner_score": 0.988,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0007811",
+        "hpo_name": "Horizontal pendular nystagmus",
+        "expanded_text": "horizontal and rotational nystagmus of pendular characteristics",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.9337,
+        "matched": true,
+        "umls_cui": "C1866180"
+      },
+      {
+        "text": "nystagmus",
+        "ner_score": 0.85,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0000639",
+        "hpo_name": "Nystagmus",
+        "expanded_text": "nystagmus",
+        "match_type": "clinical_synonym",
+        "confidence": 1.0,
+        "matched": true,
+        "umls_cui": "C0028738"
+      },
+      {
+        "text": "the nystagmus",
+        "ner_score": 0.99,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "the nystagmus",
+        "match_type": "deduplicated",
+        "confidence": 0.9162,
+        "matched": false,
+        "umls_cui": "C0028738"
+      },
+      {
+        "text": "sharp theta waves",
+        "ner_score": 0.997,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0011296",
+        "hpo_name": "EEG with temporal sharp waves",
+        "expanded_text": "sharp theta waves",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.7945,
+        "matched": true,
+        "umls_cui": "C2206519"
+      },
+      {
+        "text": "theta waves",
+        "ner_score": 0.804,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "theta waves",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "nystagmus episodes",
+        "ner_score": 0.919,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "nystagmus episodes",
+        "match_type": "deduplicated",
+        "confidence": 0.8536,
+        "matched": false,
+        "umls_cui": "C0028738"
+      },
+      {
+        "text": "slow delta waves during",
+        "ner_score": 0.903,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0010847",
+        "hpo_name": "EEG with spike-wave complexes (<2.5 Hz)",
+        "expanded_text": "slow delta waves during",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.73,
+        "matched": true,
+        "umls_cui": "C4023686"
+      },
+      {
+        "text": "delta waves",
+        "ner_score": 0.609,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0012272",
+        "hpo_name": "J wave",
+        "expanded_text": "delta waves",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.7392,
+        "matched": true,
+        "umls_cui": "C4018858"
+      },
+      {
+        "text": "movements",
+        "ner_score": 0.861,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "movements",
+        "match_type": "sapbert_rejected_low_conf",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "ccipital",
+        "ner_score": 0.996,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "ccipital",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "obesity",
+        "ner_score": 0.729,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0001513",
+        "hpo_name": "Obesity",
+        "expanded_text": "obesity",
+        "match_type": "exact_label",
+        "confidence": 1.0,
+        "matched": true,
+        "umls_cui": "C0028754"
+      },
+      {
+        "text": "low levels",
+        "ner_score": 0.747,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "low levels",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "abnormalities",
+        "ner_score": 0.937,
+        "negated": true,
+        "negation_cue": "no",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "abnormalities",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "abnormalities in the liver, common bile duct, portal vein",
+        "ner_score": 0.955,
+        "negated": true,
+        "negation_cue": "no",
+        "hpo_id": "HP:0006707",
+        "hpo_name": "Abnormality of the hepatic vasculature",
+        "expanded_text": "abnormalities in the liver, common bile duct, portal vein",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.7812,
+        "matched": true,
+        "umls_cui": "C4024994"
+      },
+      {
+        "text": "abnormal",
+        "ner_score": 0.756,
+        "negated": true,
+        "negation_cue": "no",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "abnormal",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "gallbladder, pancreas, spleen",
+        "ner_score": 0.883,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "gallbladder, pancreas, spleen",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "or kidneys",
+        "ner_score": 0.811,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "or kidneys",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "visual ac",
+        "ner_score": 0.589,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "visual ac",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "light perception",
+        "ner_score": 0.524,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "light perception",
+        "match_type": "skipped_low_ner_score",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "light perception in both",
+        "ner_score": 0.87,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "light perception in both",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "significant disruption of the photoreceptor layer in both eyes",
+        "ner_score": 0.996,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "significant disruption of the photoreceptor layer in both eyes",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "disruption of",
+        "ner_score": 0.831,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "disruption of",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "disruption",
+        "ner_score": 0.78,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "disruption",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "layer",
+        "ner_score": 0.515,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "layer",
+        "match_type": "skipped_low_ner_score",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "minimal preservation around",
+        "ner_score": 0.88,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "minimal preservation around",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "preservation",
+        "ner_score": 0.792,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "preservation",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "central f",
+        "ner_score": 0.592,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "central f",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "vessel attenuation",
+        "ner_score": 0.998,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0100545",
+        "hpo_name": "Arterial stenosis",
+        "expanded_text": "vessel attenuation",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.7312,
+        "matched": true,
+        "umls_cui": "C0038449"
+      },
+      {
+        "text": "attenuation",
+        "ner_score": 0.549,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "attenuation",
+        "match_type": "skipped_low_ner_score",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "hyperfluorescent areas",
+        "ner_score": 0.929,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0011512",
+        "hpo_name": "Fundus hyperpigmentation",
+        "expanded_text": "hyperfluorescent areas",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.7526,
+        "matched": true,
+        "umls_cui": "C4021146"
+      },
+      {
+        "text": "hyperfluorescent areas in the posterior pole",
+        "ner_score": 0.991,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "hyperfluorescent areas in the posterior pole",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "pigment",
+        "ner_score": 0.443,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "pigment",
+        "match_type": "skipped_low_ner_score",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "metabolic activity",
+        "ner_score": 0.587,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "metabolic activity",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      }
+    ],
+    "test": [
+      {
+        "text": "magnetic resonance imaging ( mri",
+        "ner_score": 0.915,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "magnetic resonance imaging ( mri",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "optical coherence tomography ( oct ) scans of the macular region",
+        "ner_score": 0.949,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "optical coherence tomography ( oct ) scans of the macular region",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "orescein angiography ( fa )",
+        "ner_score": 0.947,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "orescein angiography ( fa )",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "autofluorescence ( faf )",
+        "ner_score": 0.954,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "autofluorescence ( faf )",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "electroretinogram ( erg )",
+        "ner_score": 0.882,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "electroretinogram ( erg )",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "fundoscopic examination",
+        "ner_score": 0.945,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "fundoscopic examination",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "oscopic",
+        "ner_score": 0.992,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "oscopic",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "examination",
+        "ner_score": 0.993,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "examination",
+        "match_type": "skipped_en_noise",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "normal",
+        "ner_score": 0.973,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "normal",
+        "match_type": "skipped_en_noise",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "Electro",
+        "ner_score": 0.993,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "Electro",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "electroencephalography",
+        "ner_score": 0.995,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "electroencephalography",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "encephalo",
+        "ner_score": 0.992,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "encephalo",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "graphy",
+        "ner_score": 0.993,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "graphy",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "brain imaging",
+        "ner_score": 0.996,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "brain imaging",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "imaging",
+        "ner_score": 0.519,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "imaging",
+        "match_type": "skipped_low_ner_score",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "computed",
+        "ner_score": 0.984,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "computed",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "computed tomography",
+        "ner_score": 0.992,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "computed tomography",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "tomography",
+        "ner_score": 0.987,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "tomography",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "magnetic",
+        "ner_score": 0.983,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "magnetic",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "resonance",
+        "ner_score": 0.989,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "resonance",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "her metabolic profile",
+        "ner_score": 0.826,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "her metabolic profile",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "metabolic",
+        "ner_score": 0.989,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "metabolic",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "profile",
+        "ner_score": 0.988,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "profile",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "vitamin",
+        "ner_score": 0.981,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "vitamin",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "vitamin b12",
+        "ner_score": 0.83,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "vitamin b12",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "glucose",
+        "ner_score": 0.983,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "glucose",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "glucose profile",
+        "ner_score": 0.987,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "glucose profile",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "glucose tolerance tests",
+        "ner_score": 0.991,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "glucose tolerance tests",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "tolerance",
+        "ner_score": 0.644,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "tolerance",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "liver",
+        "ner_score": 0.989,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "liver",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "liver function tests",
+        "ner_score": 0.993,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "liver function tests",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "function",
+        "ner_score": 0.993,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "function",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "complete",
+        "ner_score": 0.964,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "complete",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "complete blood count",
+        "ner_score": 0.991,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "complete blood count",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "blood",
+        "ner_score": 0.988,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "blood",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "count",
+        "ner_score": 0.993,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "count",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "abdominal ultrasound",
+        "ner_score": 0.997,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "abdominal ultrasound",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "ultrasound",
+        "ner_score": 0.983,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "ultrasound",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "abnormal",
+        "ner_score": 0.966,
+        "negated": true,
+        "negation_cue": "no",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "abnormal",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "Visual acuity was limited",
+        "ner_score": 0.98,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "Visual acuity was limited",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "light perception",
+        "ner_score": 0.63,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "light perception",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "corrected",
+        "ner_score": 0.982,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "corrected",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "Optical",
+        "ner_score": 0.912,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "Optical",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "coherence",
+        "ner_score": 0.965,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "coherence",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "photoreceptor",
+        "ner_score": 0.314,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "photoreceptor",
+        "match_type": "skipped_low_ner_score",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "Fluor",
+        "ner_score": 0.982,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "Fluor",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "esce",
+        "ner_score": 0.986,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "esce",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "angiography",
+        "ner_score": 0.982,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "angiography",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "Auto",
+        "ner_score": 0.985,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "Auto",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "fluorescence",
+        "ner_score": 0.99,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "fluorescence",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "retin",
+        "ner_score": 0.993,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "retin",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "ogram",
+        "ner_score": 0.992,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "ogram",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "visual evoked potentials",
+        "ner_score": 0.978,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "visual evoked potentials",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "evoked",
+        "ner_score": 0.992,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "evoked",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "potential",
+        "ner_score": 0.995,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "potential",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "recordings",
+        "ner_score": 0.917,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "recordings",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "surpassing",
+        "ner_score": 0.672,
+        "negated": true,
+        "negation_cue": "not",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "surpassing",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "electrical noise",
+        "ner_score": 0.684,
+        "negated": true,
+        "negation_cue": "not",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "electrical noise",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      }
+    ],
+    "ordo_candidates": [
+      {
+        "ordo_id": "ORPHA:90324",
+        "name": "Cockayne syndrome type 3",
+        "name_fr": "",
+        "score": 0.356,
+        "coverage": 0.0208,
+        "matched_hpo": [
+          "HP:0000639",
+          "HP:0007814"
+        ],
+        "matched_count": 2,
+        "total_disease_hpo": 96,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:1435",
+        "name": "Xq21 microdeletion syndrome",
+        "name_fr": "",
+        "score": 0.3382,
+        "coverage": 0.0556,
+        "matched_hpo": [
+          "HP:0000639",
+          "HP:0001513"
+        ],
+        "matched_count": 2,
+        "total_disease_hpo": 36,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:791",
+        "name": "Retinitis pigmentosa",
+        "name_fr": "",
+        "score": 0.3349,
+        "coverage": 0.037,
+        "matched_hpo": [
+          "HP:0000639",
+          "HP:0001513",
+          "HP:0007814"
+        ],
+        "matched_count": 3,
+        "total_disease_hpo": 81,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:369837",
+        "name": "Intellectual disability-seizures-hypophosphatasia-ophthalmic-skeletal anomalies syndrome",
+        "name_fr": "",
+        "score": 0.3184,
+        "coverage": 0.0282,
+        "matched_hpo": [
+          "HP:0000639",
+          "HP:0001513"
+        ],
+        "matched_count": 2,
+        "total_disease_hpo": 71,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:86309",
+        "name": "DPAGT1-CDG",
+        "name_fr": "",
+        "score": 0.3144,
+        "coverage": 0.0145,
+        "matched_hpo": [
+          "HP:0000639"
+        ],
+        "matched_count": 1,
+        "total_disease_hpo": 69,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:1606",
+        "name": "1p36 deletion syndrome",
+        "name_fr": "",
+        "score": 0.3025,
+        "coverage": 0.0202,
+        "matched_hpo": [
+          "HP:0000639",
+          "HP:0001513"
+        ],
+        "matched_count": 2,
+        "total_disease_hpo": 99,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:163681",
+        "name": "CNTNAP2-related developmental and epileptic encephalopathy",
+        "name_fr": "",
+        "score": 0.3004,
+        "coverage": 0.0408,
+        "matched_hpo": [
+          "HP:0000639",
+          "HP:0001513"
+        ],
+        "matched_count": 2,
+        "total_disease_hpo": 49,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:909",
+        "name": "Cerebrotendinous xanthomatosis",
+        "name_fr": "",
+        "score": 0.2859,
+        "coverage": 0.011,
+        "matched_hpo": [
+          "HP:0000639"
+        ],
+        "matched_count": 1,
+        "total_disease_hpo": 91,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:542306",
+        "name": "GNB5-related intellectual disability-cardiac arrhythmia syndrome",
+        "name_fr": "",
+        "score": 0.284,
+        "coverage": 0.0455,
+        "matched_hpo": [
+          "HP:0000639"
+        ],
+        "matched_count": 1,
+        "total_disease_hpo": 22,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:65",
+        "name": "Leber congenital amaurosis",
+        "name_fr": "",
+        "score": 0.2814,
+        "coverage": 0.0377,
+        "matched_hpo": [
+          "HP:0000639",
+          "HP:0007814"
+        ],
+        "matched_count": 2,
+        "total_disease_hpo": 53,
+        "text_match": false
+      }
+    ],
+    "stats": {
+      "total": 92,
+      "matched": 10,
+      "unmatched": 82,
+      "match_rate": 10.9,
+      "unique_hpo": 10,
+      "ordo_matches": 10
+    }
+  },
+  "phenopacket": {
+    "id": "phenopacket-RA_EN_023",
+    "subject": {
+      "id": "RA_EN_023",
+      "sex": "FEMALE"
+    },
+    "input": "A 5-month-old female infant exhibited horizontal and rotational nystagmus of pendular characteristics, which occasionally rebounded and disappeared when focusing on near objects. The nystagmus was more pronounced in the hyperopic left eye. Fundoscopic examination was normal in both eyes at that time. Electroencephalography showed sharp theta waves, nystagmus episodes, and slow delta waves during head movements originating from the parietal and occipital lobes. Brain imaging via computed tomography (CT) and magnetic resonance imaging (MRI) was normal. Later in life, the patient developed T2DM and obesity. Over a 5-year period (2016 to 2021), her metabolic profile, including vitamin B12, glucose profile (HbA1c, glucose tolerance tests), liver function tests, and complete blood count, were normal except for low levels of vitamin D3 at various times. Abdominal ultrasound showed no abnormalities in the liver, common bile duct, portal vein, gallbladder, pancreas, spleen, or kidneys. Visual acuity was limited to light perception in both eyes and she received different diagnoses from various hospitals. At 17 years old, she presented to our department in 2021. Best corrected visual acuity (BCVA) was light perception in both eyes, reportedly since the age of 13. Optical coherence tomography (OCT) scans of the macular region showed significant disruption of the photoreceptor layer in both eyes, with minimal preservation around the central fovea. Fluorescein angiography (FA) revealed vessel attenuation and hyperfluorescent areas in the posterior pole. Autofluorescence (FAF) indicated extensive disruption of the retinal pigment epithelium (RPE) metabolic activity in the posterior pole and periphery of both eyes. Electroretinogram (ERG) and visual evoked potentials (VEP) were abnormal, with recordings not surpassing electrical noise.",
+    "target": "Cockayne syndrome type 3",
+    "phenotypicFeatures": [
+      {
+        "type": {
+          "id": "HP:0007814",
+          "label": "Retinal pigment epithelial mottling",
+          "umls_cui": "C1857644"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_023",
+              "description": "NER: extensive disruption of the retinal pigment epithelium ( rpe ) metabolic activity (0.976) | Match: sapbert_similarity (0.743)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0007811",
+          "label": "Horizontal pendular nystagmus",
+          "umls_cui": "C1866180"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_023",
+              "description": "NER: horizontal and rotational nystagmus of pendular characteristics (0.988) | Match: sapbert_similarity (0.934)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0000639",
+          "label": "Nystagmus",
+          "umls_cui": "C0028738"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_023",
+              "description": "NER: nystagmus (0.850) | Match: clinical_synonym (1.000)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0011296",
+          "label": "EEG with temporal sharp waves",
+          "umls_cui": "C2206519"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_023",
+              "description": "NER: sharp theta waves (0.997) | Match: sapbert_similarity (0.794)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0010847",
+          "label": "EEG with spike-wave complexes (<2.5 Hz)",
+          "umls_cui": "C4023686"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_023",
+              "description": "NER: slow delta waves during (0.903) | Match: sapbert_similarity (0.730)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0012272",
+          "label": "J wave",
+          "umls_cui": "C4018858"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_023",
+              "description": "NER: delta waves (0.609) | Match: sapbert_similarity (0.739)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0001513",
+          "label": "Obesity",
+          "umls_cui": "C0028754"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_023",
+              "description": "NER: obesity (0.729) | Match: exact_label (1.000)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0006707",
+          "label": "Abnormality of the hepatic vasculature",
+          "umls_cui": "C4024994"
+        },
+        "excluded": true,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_023",
+              "description": "NER: abnormalities in the liver, common bile duct, portal vein (0.955) | Match: sapbert_similarity (0.781) | Negated by: \"no\""
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0100545",
+          "label": "Arterial stenosis",
+          "umls_cui": "C0038449"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_023",
+              "description": "NER: vessel attenuation (0.998) | Match: sapbert_similarity (0.731)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0011512",
+          "label": "Fundus hyperpigmentation",
+          "umls_cui": "C4021146"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_023",
+              "description": "NER: hyperfluorescent areas (0.929) | Match: sapbert_similarity (0.753)"
+            }
+          }
+        ]
+      }
+    ],
+    "metaData": {
+      "created": "2026-06-19T15:11:55Z",
+      "createdBy": "clinical-preanalysis-pipeline-v2",
+      "phenopacketSchemaVersion": "2.0",
+      "resources": [
+        {
+          "id": "hp",
+          "name": "Human Phenotype Ontology",
+          "url": "https://hpo.jax.org",
+          "version": "2024-04-26",
+          "namespacePrefix": "HP",
+          "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        }
+      ]
+    },
+    "interpretations": [
+      {
+        "id": "interpretation-RA_EN_023",
+        "progressStatus": "IN_PROGRESS",
+        "diagnosis": {
+          "disease": {
+            "id": "ORPHA:90324",
+            "label": "Cockayne syndrome type 3"
+          },
+          "score": 0.356,
+          "allCandidates": [
+            {
+              "id": "ORPHA:90324",
+              "label": "Cockayne syndrome type 3",
+              "score": 0.356
+            },
+            {
+              "id": "ORPHA:1435",
+              "label": "Xq21 microdeletion syndrome",
+              "score": 0.3382
+            },
+            {
+              "id": "ORPHA:791",
+              "label": "Retinitis pigmentosa",
+              "score": 0.3349
+            },
+            {
+              "id": "ORPHA:369837",
+              "label": "Intellectual disability-seizures-hypophosphatasia-ophthalmic-skeletal anomalies syndrome",
+              "score": 0.3184
+            },
+            {
+              "id": "ORPHA:86309",
+              "label": "DPAGT1-CDG",
+              "score": 0.3144
+            },
+            {
+              "id": "ORPHA:1606",
+              "label": "1p36 deletion syndrome",
+              "score": 0.3025
+            },
+            {
+              "id": "ORPHA:163681",
+              "label": "CNTNAP2-related developmental and epileptic encephalopathy",
+              "score": 0.3004
+            },
+            {
+              "id": "ORPHA:909",
+              "label": "Cerebrotendinous xanthomatosis",
+              "score": 0.2859
+            },
+            {
+              "id": "ORPHA:542306",
+              "label": "GNB5-related intellectual disability-cardiac arrhythmia syndrome",
+              "score": 0.284
+            },
+            {
+              "id": "ORPHA:65",
+              "label": "Leber congenital amaurosis",
+              "score": 0.2814
+            }
+          ]
+        }
+      }
+    ],
+    "_pipelineStats": {
+      "totalEntities": 92,
+      "matchedHPO": 10,
+      "unmatchedEntities": 82,
+      "phenopacketFeatures": 10,
+      "negatedFeatures": 1,
+      "numericPhenotypes": 0,
+      "ordoCandidates": 10
+    }
+  }
+}
