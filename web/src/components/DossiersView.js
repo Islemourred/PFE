@@ -4,6 +4,35 @@ import { supabase } from "@/lib/supabase";
 import { extractPatientInfo, extractFromFilename } from "@/lib/extractPatientInfo";
 import mammoth from "mammoth";
 import styles from "./DossiersView.module.css";
+import {
+  CakeIcon,
+  IdentificationIcon,
+  CalendarDaysIcon,
+  MapPinIcon,
+  HomeIcon,
+  UserIcon,
+  DnaIcon,
+  UserGroupIcon,
+  HeartIcon,
+  ClipboardDocumentListIcon,
+  MicroscopeIcon,
+  ShieldCheckIcon,
+  DocumentMagnifyingGlassIcon,
+  PencilSquareIcon,
+  TrashIcon,
+  XMarkIcon,
+  PlusIcon,
+  MagnifyingGlassIcon,
+  DocumentTextIcon,
+  DocumentArrowUpIcon,
+  PencilIcon,
+  CheckCircleIcon,
+  EyeIcon,
+  ArrowDownTrayIcon,
+  PrinterIcon,
+  ChevronDownIcon,
+  FolderIcon,
+} from "@/components/Icons";
 
 const FIELD_LABELS = {
   full_name: "Nom complet",
@@ -25,11 +54,24 @@ const FIELD_LABELS = {
   notes: "Notes",
 };
 
-const INFO_ICONS = {
-  age: "🎂", gender: "⚧", date_of_birth: "📅", origin: "📍", residence: "🏠",
-  parent_father: "👨", parent_mother: "👩", consanguinity: "🧬", siblings_info: "👨‍👩‍👧‍👦",
-  principal_diagnosis: "🩺", associated_diagnoses: "📋", date_of_diagnosis: "📆",
-  age_at_diagnosis: "🔬", treating_doctor: "👨‍⚕️", current_treatment: "💊", notes: "📝",
+// Map each field key to an icon component
+const INFO_ICON_COMPONENTS = {
+  age: CakeIcon,
+  gender: IdentificationIcon,
+  date_of_birth: CalendarDaysIcon,
+  origin: MapPinIcon,
+  residence: HomeIcon,
+  parent_father: UserIcon,
+  parent_mother: UserIcon,
+  consanguinity: DnaIcon,
+  siblings_info: UserGroupIcon,
+  principal_diagnosis: HeartIcon,
+  associated_diagnoses: ClipboardDocumentListIcon,
+  date_of_diagnosis: CalendarDaysIcon,
+  age_at_diagnosis: MicroscopeIcon,
+  treating_doctor: HeartIcon,
+  current_treatment: ShieldCheckIcon,
+  notes: DocumentMagnifyingGlassIcon,
 };
 
 export default function DossiersView() {
@@ -48,7 +90,7 @@ export default function DossiersView() {
   const [editingDossier, setEditingDossier] = useState(null);
   const [toast, setToast] = useState(null);
   const [uploadedFileInfo, setUploadedFileInfo] = useState(null);
-  const [activeFilter, setActiveFilter] = useState(null);
+  const [filters, setFilters] = useState({ diagnosis: "", origin: "", gender: "", doctor: "" });
   const [stats, setStats] = useState({ total: 0, diagnoses: 0, cities: 0 });
   const [viewerReport, setViewerReport] = useState(null);
   const fileInputRef = useRef(null);
@@ -98,10 +140,13 @@ export default function DossiersView() {
     searchTimeoutRef.current = setTimeout(() => fetchDossiers(q), 300);
   };
 
-  const readDocxText = async (file) => {
+  const readDocxContent = async (file) => {
     const arrayBuffer = await file.arrayBuffer();
-    const result = await mammoth.extractRawText({ arrayBuffer });
-    return result.value;
+    const [textResult, htmlResult] = await Promise.all([
+      mammoth.extractRawText({ arrayBuffer }),
+      mammoth.convertToHtml({ arrayBuffer }),
+    ]);
+    return { text: textResult.value, html: htmlResult.value };
   };
 
   const handleFileExtract = async (e) => {
@@ -109,14 +154,14 @@ export default function DossiersView() {
     if (!file) return;
     setExtracting(true);
     try {
-      const text = await readDocxText(file);
+      const { text, html } = await readDocxContent(file);
       const extracted = extractPatientInfo(text);
       const fromFilename = extractFromFilename(file.name);
       if (!extracted.full_name && fromFilename.full_name) extracted.full_name = fromFilename.full_name;
       if (!extracted.treating_doctor && fromFilename.treating_doctor) extracted.treating_doctor = fromFilename.treating_doctor;
       if (!extracted.principal_diagnosis && fromFilename.principal_diagnosis) extracted.principal_diagnosis = fromFilename.principal_diagnosis;
       setExtractedData({ extracted, filename: file.name });
-      setUploadedFileInfo({ name: file.name, text, size: file.size });
+      setUploadedFileInfo({ name: file.name, text, html, size: file.size });
       setFormData(extracted);
       showToast(`${Object.keys(extracted).length} champ(s) extrait(s)`, "success");
     } catch (err) {
@@ -142,10 +187,10 @@ export default function DossiersView() {
           filename: uploadedFileInfo.name, patient_name: formData.full_name,
           doctor_name: formData.treating_doctor || null, pathology: formData.principal_diagnosis || null,
           file_size_bytes: uploadedFileInfo.size, char_count: uploadedFileInfo.text?.length || 0,
-          content_text: (uploadedFileInfo.text || "").substring(0, 50000), dossier_id: dossier.id,
+          content_text: (uploadedFileInfo.html || uploadedFileInfo.text || "").substring(0, 50000), dossier_id: dossier.id,
         });
       }
-      showToast("Dossier créé ✓", "success");
+      showToast("Dossier créé avec succès", "success");
       closeCreateModal();
       fetchDossiers();
     } catch (err) { showToast("Erreur: " + err.message, "error"); }
@@ -183,7 +228,7 @@ export default function DossiersView() {
       updateData.updated_at = new Date().toISOString();
       const { error } = await supabase.from("patient_dossiers").update(updateData).eq("id", editingDossier.id);
       if (error) throw error;
-      showToast("Mis à jour ✓", "success");
+      showToast("Mis à jour avec succès", "success");
       setEditingDossier(null); setFormData({});
       fetchDossiers();
       if (selectedDossier?.id === editingDossier.id) setSelectedDossier({ ...selectedDossier, ...updateData });
@@ -195,16 +240,16 @@ export default function DossiersView() {
     const file = e.target.files?.[0];
     if (!file || !selectedDossier) return;
     try {
-      const text = await readDocxText(file);
+      const { text, html } = await readDocxContent(file);
       const meta = extractFromFilename(file.name);
       await supabase.from("medical_reports").insert({
         filename: file.name, patient_name: meta.full_name || selectedDossier.full_name,
         doctor_name: meta.treating_doctor || selectedDossier.treating_doctor,
         pathology: meta.principal_diagnosis || selectedDossier.principal_diagnosis,
         file_size_bytes: file.size, char_count: text.length,
-        content_text: text.substring(0, 50000), dossier_id: selectedDossier.id,
+        content_text: (html || text).substring(0, 50000), dossier_id: selectedDossier.id,
       });
-      showToast("Rapport ajouté ✓", "success");
+      showToast("Rapport ajouté avec succès", "success");
       const { data } = await supabase.from("medical_reports").select("*").eq("dossier_id", selectedDossier.id).order("created_at", { ascending: false });
       setDossierReports(data || []);
     } catch (err) { showToast("Erreur: " + err.message, "error"); }
@@ -228,56 +273,200 @@ export default function DossiersView() {
     showToast("Téléchargé en .txt", "success");
   };
 
-  // ── Download / View as PDF ──
-  const downloadPdf = async (report) => {
-    const html2pdf = (await import("html2pdf.js")).default;
-    const content = buildPdfHtml(report);
-    const container = document.createElement("div");
-    container.innerHTML = content;
-    document.body.appendChild(container);
-
-    await html2pdf().set({
-      margin: [12, 12, 12, 12],
-      filename: (report.filename || "rapport").replace(".docx", ".pdf"),
-      image: { type: "jpeg", quality: 0.98 },
-      html2canvas: { scale: 2, useCORS: true },
-      jsPDF: { unit: "mm", format: "a4", orientation: "portrait" },
-    }).from(container).save();
-
-    document.body.removeChild(container);
-    showToast("PDF téléchargé", "success");
+  // ── Download original DOCX ──
+  const downloadDocx = (report) => {
+    if (!report.filename) return showToast("Nom de fichier manquant", "error");
+    const apiBase = typeof window !== "undefined" && window.location.hostname.includes("devtunnels.ms")
+      ? "https://wn3r3xh0-5000.uks1.devtunnels.ms"
+      : "http://localhost:5000";
+    const url = `${apiBase}/api/reports/download/${encodeURIComponent(report.filename)}`;
+    const a = document.createElement("a");
+    a.href = url;
+    a.download = report.filename;
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+    showToast("Téléchargement du .docx", "success");
   };
+
+  // ── Download / View as PDF ──
+  const downloadPdf = (report) => {
+    const content = buildPdfHtml(report);
+    const pdfFilename = (report.filename || "rapport").replace(".docx", "");
+    const win = window.open("", "_blank");
+    if (!win) return showToast("Pop-up bloquée par le navigateur", "error");
+    win.document.write(`<!DOCTYPE html><html><head>
+      <title>${pdfFilename}</title>
+      <style>
+        body { font-family: 'Segoe UI', system-ui, sans-serif; color: #1e293b; margin: 20px; }
+        @media print { @page { margin: 10mm; } body { margin: 0; } }
+        table { width:100%; border-collapse:collapse; margin:8px 0; font-size:12px; }
+        th, td { border:1px solid #d1d5db; padding:6px 10px; text-align:left; vertical-align:top; }
+        th { background:#f1f5f9; font-weight:600; color:#1e293b; }
+        tr:nth-child(even) td { background:#f8fafc; }
+        h1,h2,h3,h4 { color:#0f172a; margin:14px 0 6px; }
+        h1 { font-size:16px; border-bottom:2px solid #0ea5e9; padding-bottom:6px; }
+        h2 { font-size:14px; } h3 { font-size:13px; } h4 { font-size:12px; }
+        strong, b { color:#1e293b; }
+        ul, ol { padding-left:20px; margin:6px 0; }
+        p { margin:4px 0; line-height:1.8; }
+      </style>
+    </head><body>${content}</body></html>`);
+    win.document.close();
+    showToast("Utilisez Ctrl+P pour enregistrer en PDF", "success");
+  };
+
+
 
   const openPdfViewer = (report) => {
     setViewerReport(report);
   };
 
   const buildPdfHtml = (report) => {
-    const patientName = selectedDossier?.full_name || report.patient_name || "Patient";
+    const d = selectedDossier || {};
+    const patientName = d.full_name || report.patient_name || "Patient";
     const date = formatDate(report.report_date || report.created_at);
-    const doctor = selectedDossier?.treating_doctor || report.doctor_name || "";
-    const diag = selectedDossier?.principal_diagnosis || report.pathology || "";
-    const text = (report.content_text || "").replace(/\n/g, "<br/>");
+    const doctor = d.treating_doctor || report.doctor_name || "";
+    const diag = d.principal_diagnosis || report.pathology || "";
+    const rawContent = report.content_text || "";
+    const isHtml = rawContent.trim().startsWith("<");
+    const reportContent = isHtml
+      ? rawContent  // Already HTML from mammoth
+      : rawContent.replace(/\n/g, "<br/>");  // Legacy plain text
+    const now = new Date();
+    const generatedDate = now.toLocaleDateString("fr-FR", { day: "numeric", month: "long", year: "numeric" });
+    const generatedTime = now.toLocaleTimeString("fr-FR", { hour: "2-digit", minute: "2-digit" });
+
+    // Inline styles for mammoth tables in PDF
+    const tableStyle = `<style>
+      table { width:100%; border-collapse:collapse; margin:10px 0; font-size:12px; }
+      th, td { border:1px solid #d1d5db; padding:6px 10px; text-align:left; vertical-align:top; }
+      th { background:#f1f5f9; font-weight:600; color:#1e293b; }
+      tr:nth-child(even) td { background:#f8fafc; }
+      h1,h2,h3,h4 { color:#0f172a; margin:14px 0 6px; }
+      h1 { font-size:16px; border-bottom:2px solid #0ea5e9; padding-bottom:6px; }
+      h2 { font-size:14px; } h3 { font-size:13px; } h4 { font-size:12px; }
+      strong, b { color:#1e293b; }
+      ul, ol { padding-left:20px; margin:6px 0; }
+      p { margin:4px 0; line-height:1.8; }
+    </style>`;
+
+    const infoRow = (label, value) => value ? `
+      <tr>
+        <td style="padding:6px 12px;color:#64748b;font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:0.05em;width:140px;border-bottom:1px solid #f1f5f9;">${label}</td>
+        <td style="padding:6px 12px;font-size:12.5px;color:#1e293b;font-weight:500;border-bottom:1px solid #f1f5f9;">${value}</td>
+      </tr>` : "";
+
+    const sectionTitle = (title) => `
+      <div style="margin-top:20px;margin-bottom:8px;display:flex;align-items:center;gap:6px;">
+        <div style="width:4px;height:16px;background:linear-gradient(135deg,#0ea5e9,#8b5cf6);border-radius:2px;"></div>
+        <span style="font-size:11px;font-weight:700;color:#334155;text-transform:uppercase;letter-spacing:0.08em;">${title}</span>
+      </div>`;
 
     return `
-      <div style="font-family: 'Segoe UI', Arial, sans-serif; color: #1a1a2e; max-width: 700px; padding: 32px;">
-        <div style="border-bottom: 3px solid #0ea5e9; padding-bottom: 16px; margin-bottom: 24px;">
-          <h1 style="font-size: 20px; color: #0ea5e9; margin: 0 0 4px;">Rapport Médical</h1>
-          <p style="font-size: 12px; color: #64748b; margin: 0;">ClinicalPFE — Pré-analyse clinique</p>
+      ${isHtml ? tableStyle : ""}
+      <div style="font-family:'Segoe UI',system-ui,-apple-system,sans-serif;color:#1e293b;max-width:750px;margin:0 auto;padding:0;">
+
+        <!-- ════ Header ════ -->
+        <div style="background:linear-gradient(135deg,#0c4a6e 0%,#1e3a5f 50%,#312e81 100%);padding:28px 32px 24px;border-radius:0 0 16px 16px;margin-bottom:28px;">
+          <div style="display:flex;justify-content:space-between;align-items:flex-start;">
+            <div>
+              <div style="display:flex;align-items:center;gap:10px;margin-bottom:6px;">
+                <div style="width:36px;height:36px;background:linear-gradient(135deg,#38bdf8,#8b5cf6);border-radius:10px;display:flex;align-items:center;justify-content:center;">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2c-2 0-3.5 1.5-3.5 3.5 0 1 .5 2 1.2 2.6C8.5 9 7.5 10.5 7.5 12.5c0 1 .3 2 .8 2.8-.8.8-1.3 1.8-1.3 3.2 0 2 1.5 3.5 3.5 3.5M12 2c2 0 3.5 1.5 3.5 3.5 0 1-.5 2-1.2 2.6 1.2.9 2.2 2.4 2.2 4.4 0 1-.3 2-.8 2.8.8.8 1.3 1.8 1.3 3.2 0 2-1.5 3.5-3.5 3.5M12 2v20"/></svg>
+                </div>
+                <div>
+                  <h1 style="font-size:18px;font-weight:800;color:#f1f5f9;margin:0;letter-spacing:-0.02em;">ClinicalPFE</h1>
+                  <p style="font-size:10px;color:#94a3b8;margin:0;font-weight:400;">Module de Pré-Analyse Clinique Intelligente</p>
+                </div>
+              </div>
+            </div>
+            <div style="text-align:right;">
+              <div style="font-size:14px;font-weight:700;color:#e2e8f0;">RAPPORT MÉDICAL</div>
+              <div style="font-size:10px;color:#94a3b8;margin-top:2px;">${date}</div>
+              <div style="font-size:9px;color:#64748b;margin-top:1px;">Réf: RPT-${(report.id || "000").toString().substring(0, 8).toUpperCase()}</div>
+            </div>
+          </div>
         </div>
-        <table style="width: 100%; font-size: 13px; margin-bottom: 20px; border-collapse: collapse;">
-          <tr><td style="padding: 4px 8px; color: #64748b; width: 130px;">Patient</td><td style="padding: 4px 8px; font-weight: 600;">${patientName}</td></tr>
-          ${doctor ? `<tr><td style="padding: 4px 8px; color: #64748b;">Médecin</td><td style="padding: 4px 8px;">Dr. ${doctor}</td></tr>` : ""}
-          ${diag ? `<tr><td style="padding: 4px 8px; color: #64748b;">Diagnostic</td><td style="padding: 4px 8px;">${diag}</td></tr>` : ""}
-          <tr><td style="padding: 4px 8px; color: #64748b;">Date</td><td style="padding: 4px 8px;">${date}</td></tr>
-          <tr><td style="padding: 4px 8px; color: #64748b;">Fichier</td><td style="padding: 4px 8px;">${report.filename || "—"}</td></tr>
-        </table>
-        <div style="border-top: 1px solid #e2e8f0; padding-top: 16px; font-size: 13px; line-height: 1.8; color: #334155;">
-          ${text}
+
+        <!-- ════ Patient Identity Card ════ -->
+        <div style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:12px;padding:0;margin:0 16px 20px;overflow:hidden;">
+          <div style="background:linear-gradient(90deg,#0ea5e9,#8b5cf6);height:4px;"></div>
+          <div style="padding:16px 20px 12px;">
+            <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;">
+              <div>
+                <div style="font-size:9px;color:#94a3b8;text-transform:uppercase;letter-spacing:0.1em;font-weight:600;">Patient</div>
+                <div style="font-size:18px;font-weight:800;color:#0f172a;letter-spacing:-0.02em;">${patientName}</div>
+              </div>
+              ${d.gender ? '<div style="width:32px;height:32px;border-radius:8px;background:' + (d.gender === "M" ? "#dbeafe" : d.gender === "F" ? "#fce7f3" : "#f1f5f9") + ';display:flex;align-items:center;justify-content:center;font-size:14px;font-weight:700;color:' + (d.gender === "M" ? "#2563eb" : d.gender === "F" ? "#db2777" : "#64748b") + ';">' + d.gender + '</div>' : ""}
+            </div>
+
+            ${sectionTitle("Identité")}
+            <table style="width:100%;border-collapse:collapse;">
+              ${infoRow("Âge", d.age)}
+              ${infoRow("Sexe", d.gender === "M" ? "Masculin" : d.gender === "F" ? "Féminin" : d.gender)}
+              ${infoRow("Date de naissance", d.date_of_birth ? formatDate(d.date_of_birth) : "")}
+              ${infoRow("Origine", d.origin)}
+              ${infoRow("Résidence", d.residence)}
+            </table>
+
+            ${(d.parent_father || d.parent_mother || d.consanguinity || d.siblings_info) ?
+              sectionTitle("Antécédents Familiaux") +
+              '<table style="width:100%;border-collapse:collapse;">' +
+                infoRow("Père", d.parent_father) +
+                infoRow("Mère", d.parent_mother) +
+                infoRow("Consanguinité", d.consanguinity) +
+                infoRow("Fratrie", d.siblings_info) +
+              '</table>'
+            : ""}
+
+            ${sectionTitle("Diagnostic & Traitement")}
+            <table style="width:100%;border-collapse:collapse;">
+              ${infoRow("Diagnostic principal", diag)}
+              ${infoRow("Diagnostics associés", d.associated_diagnoses)}
+              ${infoRow("Date du diagnostic", d.date_of_diagnosis ? formatDate(d.date_of_diagnosis) : "")}
+              ${infoRow("Âge au diagnostic", d.age_at_diagnosis)}
+              ${infoRow("Médecin traitant", doctor ? "Dr. " + doctor : "")}
+              ${infoRow("Traitement en cours", d.current_treatment)}
+            </table>
+
+            ${d.notes ?
+              sectionTitle("Notes Cliniques") +
+              '<div style="background:#fff;border:1px solid #e2e8f0;border-radius:8px;padding:10px 14px;font-size:12px;color:#475569;line-height:1.7;margin-top:4px;">' +
+                d.notes.replace(/\n/g, "<br/>") +
+              '</div>'
+            : ""}
+          </div>
         </div>
-        <div style="margin-top: 32px; padding-top: 12px; border-top: 1px solid #e2e8f0; font-size: 10px; color: #94a3b8; text-align: center;">
-          Généré par ClinicalPFE · ${new Date().toLocaleDateString("fr-FR")}
+
+        <!-- ════ Report Content ════ -->
+        <div style="margin:0 16px 24px;">
+          <div style="display:flex;align-items:center;gap:6px;margin-bottom:10px;">
+            <div style="width:4px;height:16px;background:linear-gradient(135deg,#0ea5e9,#8b5cf6);border-radius:2px;"></div>
+            <span style="font-size:11px;font-weight:700;color:#334155;text-transform:uppercase;letter-spacing:0.08em;">Contenu du Rapport</span>
+            <span style="font-size:10px;color:#94a3b8;margin-left:auto;">${report.filename || "—"}</span>
+          </div>
+          <div style="background:#fff;border:1px solid #e2e8f0;border-radius:12px;padding:20px 24px;">
+            <div style="font-size:12.5px;line-height:1.9;color:#334155;">
+              ${reportContent}
+            </div>
+          </div>
         </div>
+
+        <!-- ════ Footer ════ -->
+        <div style="margin:0 16px;padding:16px 0;border-top:2px solid #e2e8f0;">
+          <div style="display:flex;justify-content:space-between;align-items:center;">
+            <div>
+              <div style="font-size:9px;color:#94a3b8;font-weight:600;text-transform:uppercase;letter-spacing:0.08em;">Document généré automatiquement</div>
+              <div style="font-size:9px;color:#cbd5e1;margin-top:2px;">ClinicalPFE · ${generatedDate} à ${generatedTime}</div>
+            </div>
+            <div style="text-align:right;">
+              <div style="font-size:9px;color:#94a3b8;font-weight:600;">CONFIDENTIEL</div>
+              <div style="font-size:8px;color:#cbd5e1;margin-top:1px;">Usage médical uniquement</div>
+            </div>
+          </div>
+        </div>
+
       </div>
     `;
   };
@@ -285,10 +474,27 @@ export default function DossiersView() {
   const printReport = (report) => {
     const content = buildPdfHtml(report);
     const win = window.open("", "_blank");
-    win.document.write(`<!DOCTYPE html><html><head><title>${report.filename || "Rapport"}</title></head><body>${content}</body></html>`);
+    if (!win) return showToast("Pop-up bloquée par le navigateur", "error");
+    win.document.write(`<!DOCTYPE html><html><head>
+      <title>${(report.filename || "Rapport").replace(".docx", "")}</title>
+      <style>
+        body { font-family: 'Segoe UI', system-ui, sans-serif; color: #1e293b; margin: 0; padding: 0; }
+        @media print { @page { margin: 12mm; } }
+        table { width:100%; border-collapse:collapse; margin:8px 0; }
+        th, td { border:1px solid #d1d5db; padding:6px 10px; text-align:left; vertical-align:top; }
+        th { background:#f1f5f9; font-weight:600; color:#1e293b; }
+        tr:nth-child(even) td { background:#f8fafc; }
+        h1,h2,h3,h4 { color:#0f172a; margin:12px 0 6px; }
+        h1 { font-size:16px; border-bottom:2px solid #0ea5e9; padding-bottom:6px; }
+        h2 { font-size:14px; } h3 { font-size:13px; }
+        strong, b { color:#1e293b; }
+        ul, ol { padding-left:20px; margin:6px 0; }
+        p { margin:4px 0; line-height:1.8; }
+      </style>
+    </head><body>${content}</body></html>`);
     win.document.close();
     win.focus();
-    win.print();
+    setTimeout(() => { win.print(); }, 500);
   };
 
   const formatDate = (d) => {
@@ -296,11 +502,34 @@ export default function DossiersView() {
     try { return new Date(d).toLocaleDateString("fr-FR", { day: "numeric", month: "short", year: "numeric" }); } catch { return d; }
   };
 
-  const genderIcon = (g) => g === "M" ? "👦" : g === "F" ? "👧" : "👤";
+  const GenderAvatar = ({ gender, large = false }) => {
+    const size = large ? 24 : 16;
+    const color = gender === "M" ? "#60a5fa" : gender === "F" ? "#f472b6" : "#94a3b8";
+    return <UserIcon size={size} style={{ color }} />;
+  };
+
   const genderColor = (g) => g === "M" ? "#60a5fa" : g === "F" ? "#f472b6" : "#94a3b8";
 
-  const diagnoses = [...new Set(dossiers.filter(d => d.principal_diagnosis).map(d => d.principal_diagnosis))];
-  const filteredDossiers = activeFilter ? dossiers.filter(d => d.principal_diagnosis === activeFilter) : dossiers;
+  // Derived unique lists for filter dropdowns
+  const diagnoses = [...new Set(dossiers.filter(d => d.principal_diagnosis).map(d => d.principal_diagnosis))].sort();
+  const origins = [...new Set(dossiers.filter(d => d.origin).map(d => d.origin))].sort();
+  const doctors = [...new Set(dossiers.filter(d => d.treating_doctor).map(d => d.treating_doctor))].sort();
+
+  const activeFilterCount = Object.values(filters).filter(Boolean).length;
+
+  const filteredDossiers = dossiers.filter(d => {
+    if (filters.diagnosis && d.principal_diagnosis !== filters.diagnosis) return false;
+    if (filters.origin && d.origin !== filters.origin) return false;
+    if (filters.gender && d.gender !== filters.gender) return false;
+    if (filters.doctor && d.treating_doctor !== filters.doctor) return false;
+    return true;
+  });
+
+  // Render the correct icon for an info field
+  const renderInfoIcon = (key) => {
+    const IconComp = INFO_ICON_COMPONENTS[key] || ClipboardDocumentListIcon;
+    return <IconComp size={16} style={{ color: "var(--accent-cyan)", opacity: 0.7 }} />;
+  };
 
   return (
     <div className={styles.container}>
@@ -320,7 +549,7 @@ export default function DossiersView() {
         </div>
         <div className={styles.statCardAction}>
           <button className={styles.btnCreate} onClick={() => { setShowCreateModal(true); setFormData({}); setExtractedData(null); setUploadedFileInfo(null); }}>
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+            <PlusIcon size={18} />
             Nouveau dossier
           </button>
         </div>
@@ -329,21 +558,77 @@ export default function DossiersView() {
       {/* ═══ Search & Filters ═══ */}
       <div className={styles.controlsRow}>
         <div className={styles.searchWrap}>
-          <svg className={styles.searchSvg} width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+          <MagnifyingGlassIcon size={16} style={{ position: "absolute", left: 14, top: "50%", transform: "translateY(-50%)", color: "var(--text-dim)", pointerEvents: "none" }} />
           <input className={styles.searchInput} placeholder="Rechercher un patient..." value={searchQuery} onChange={handleSearch} />
         </div>
-        {diagnoses.length > 0 && (
-          <div className={styles.filterChips}>
-            {activeFilter && (
-              <button className={styles.chipClear} onClick={() => setActiveFilter(null)}>✕ Tout</button>
-            )}
-            {diagnoses.slice(0, 6).map((d) => (
-              <button key={d} className={`${styles.chip} ${activeFilter === d ? styles.chipActive : ""}`}
-                onClick={() => setActiveFilter(activeFilter === d ? null : d)}>
-                {d.length > 28 ? d.substring(0, 28) + "…" : d}
-              </button>
-            ))}
+      </div>
+
+      {/* ═══ Filter Bar ═══ */}
+      <div className={styles.filterBar}>
+        <div className={styles.filterBarLeft}>
+          {/* Wilaya / Ville */}
+          <div className={styles.filterGroup}>
+            <MapPinIcon size={13} className={styles.filterIcon} />
+            <select
+              className={`${styles.filterSelect} ${filters.origin ? styles.filterSelectActive : ""}`}
+              value={filters.origin}
+              onChange={(e) => setFilters({ ...filters, origin: e.target.value })}
+            >
+              <option value="">Toutes les wilayas</option>
+              {origins.map((o) => <option key={o} value={o}>{o}</option>)}
+            </select>
           </div>
+
+          {/* Pathologie */}
+          <div className={styles.filterGroup}>
+            <HeartIcon size={13} className={styles.filterIcon} />
+            <select
+              className={`${styles.filterSelect} ${filters.diagnosis ? styles.filterSelectActive : ""}`}
+              value={filters.diagnosis}
+              onChange={(e) => setFilters({ ...filters, diagnosis: e.target.value })}
+            >
+              <option value="">Toutes les pathologies</option>
+              {diagnoses.map((d) => <option key={d} value={d}>{d}</option>)}
+            </select>
+          </div>
+
+          {/* Sexe */}
+          <div className={styles.filterGroup}>
+            <IdentificationIcon size={13} className={styles.filterIcon} />
+            <select
+              className={`${styles.filterSelect} ${filters.gender ? styles.filterSelectActive : ""}`}
+              value={filters.gender}
+              onChange={(e) => setFilters({ ...filters, gender: e.target.value })}
+            >
+              <option value="">Tous les sexes</option>
+              <option value="M">Masculin</option>
+              <option value="F">Féminin</option>
+              <option value="Inconnu">Inconnu</option>
+            </select>
+          </div>
+
+          {/* Médecin */}
+          {doctors.length > 0 && (
+            <div className={styles.filterGroup}>
+              <HeartIcon size={13} className={styles.filterIcon} />
+              <select
+                className={`${styles.filterSelect} ${filters.doctor ? styles.filterSelectActive : ""}`}
+                value={filters.doctor}
+                onChange={(e) => setFilters({ ...filters, doctor: e.target.value })}
+              >
+                <option value="">Tous les médecins</option>
+                {doctors.map((d) => <option key={d} value={d}>Dr. {d}</option>)}
+              </select>
+            </div>
+          )}
+        </div>
+
+        {/* Active filter count + clear */}
+        {activeFilterCount > 0 && (
+          <button className={styles.filterClearAll} onClick={() => setFilters({ diagnosis: "", origin: "", gender: "", doctor: "" })}>
+            <XMarkIcon size={12} />
+            Réinitialiser ({activeFilterCount})
+          </button>
         )}
       </div>
 
@@ -356,7 +641,7 @@ export default function DossiersView() {
       ) : filteredDossiers.length === 0 ? (
         <div className={styles.emptyWrap}>
           <div className={styles.emptyGraphic}>
-            <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="var(--text-dim)" strokeWidth="1"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg>
+            <FolderIcon size={64} style={{ color: "var(--text-dim)" }} />
           </div>
           <h3 className={styles.emptyTitle}>Aucun dossier</h3>
           <p className={styles.emptyText}>Commencez par créer un dossier patient depuis un rapport .docx</p>
@@ -370,7 +655,7 @@ export default function DossiersView() {
 
               <div className={styles.cardTop}>
                 <div className={styles.avatar} style={{ borderColor: genderColor(d.gender) }}>
-                  {genderIcon(d.gender)}
+                  <GenderAvatar gender={d.gender} />
                 </div>
                 <div className={styles.cardInfo}>
                   <div className={styles.cardName}>{d.full_name}</div>
@@ -383,19 +668,19 @@ export default function DossiersView() {
               )}
 
               <div className={styles.cardMeta}>
-                {d.treating_doctor && <span className={styles.metaTag}>👨‍⚕️ Dr. {d.treating_doctor}</span>}
-                {d.consanguinity && <span className={styles.metaTag}>🧬 Consanguinité</span>}
-                {d.age_at_diagnosis && <span className={styles.metaTag}>🔬 Diag. {d.age_at_diagnosis}</span>}
+                {d.treating_doctor && <span className={styles.metaTag}><HeartIcon size={11} style={{ opacity: 0.6 }} /> Dr. {d.treating_doctor}</span>}
+                {d.consanguinity && <span className={styles.metaTag}><DnaIcon size={11} style={{ opacity: 0.6 }} /> Consanguinité</span>}
+                {d.age_at_diagnosis && <span className={styles.metaTag}><MicroscopeIcon size={11} style={{ opacity: 0.6 }} /> Diag. {d.age_at_diagnosis}</span>}
               </div>
 
               <div className={styles.cardFooter}>
                 <span className={styles.cardDate}>{formatDate(d.created_at)}</span>
                 <div className={styles.cardActions}>
                   <button className={styles.iconBtn} title="Modifier" onClick={(e) => { e.stopPropagation(); setEditingDossier(d); setFormData({...d}); }}>
-                    <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"/><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"/></svg>
+                    <PencilSquareIcon size={13} />
                   </button>
                   <button className={`${styles.iconBtn} ${styles.iconBtnDanger}`} title="Supprimer" onClick={(e) => deleteDossier(d.id, e)}>
-                    <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><polyline points="3 6 5 6 21 6"/><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/></svg>
+                    <TrashIcon size={13} />
                   </button>
                 </div>
               </div>
@@ -412,12 +697,12 @@ export default function DossiersView() {
             <div className={styles.detailHeader}>
               <div className={styles.detailHeaderBg} style={{ background: `linear-gradient(135deg, ${genderColor(selectedDossier.gender)}22 0%, transparent 60%)` }}></div>
               <button className={styles.detailClose} onClick={() => { setSelectedDossier(null); setDossierReports([]); setSelectedReport(null); }}>
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+                <XMarkIcon size={20} />
               </button>
 
               <div className={styles.detailProfile}>
                 <div className={styles.avatarLg} style={{ borderColor: genderColor(selectedDossier.gender) }}>
-                  {genderIcon(selectedDossier.gender)}
+                  <GenderAvatar gender={selectedDossier.gender} large />
                 </div>
                 <div>
                   <h2 className={styles.detailName}>{selectedDossier.full_name}</h2>
@@ -442,7 +727,7 @@ export default function DossiersView() {
                     if (!value || key === "full_name") return null;
                     return (
                       <div key={key} className={styles.infoCard}>
-                        <span className={styles.infoIcon}>{INFO_ICONS[key] || "📋"}</span>
+                        <span className={styles.infoIcon}>{renderInfoIcon(key)}</span>
                         <div>
                           <div className={styles.infoCardLabel}>{label}</div>
                           <div className={styles.infoCardValue}>{key.includes("date") ? formatDate(value) : value}</div>
@@ -458,7 +743,7 @@ export default function DossiersView() {
                 <div className={styles.reportsSectionHead}>
                   <h3 className={styles.sectionLabel}>Rapports médicaux ({dossierReports.length})</h3>
                   <button className={styles.btnAddReport} onClick={() => reportInputRef.current?.click()}>
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+                    <PlusIcon size={14} />
                     Ajouter
                   </button>
                   <input type="file" ref={reportInputRef} accept=".docx" onChange={addReportToDossier} style={{ display: "none" }} />
@@ -470,7 +755,9 @@ export default function DossiersView() {
                       <div key={r.id} className={styles.reportCardWrap}>
                         <div className={`${styles.reportCard} ${selectedReport?.id === r.id ? styles.reportCardActive : ""}`}
                           onClick={() => setSelectedReport(selectedReport?.id === r.id ? null : r)}>
-                          <div className={styles.reportCardIcon}>📄</div>
+                          <div className={styles.reportCardIcon}>
+                            <DocumentTextIcon size={20} style={{ color: "var(--accent-cyan)" }} />
+                          </div>
                           <div className={styles.reportCardInfo}>
                             <div className={styles.reportCardTitle}>{r.filename?.replace(".docx", "") || "Rapport"}</div>
                             <div className={styles.reportCardMeta}>
@@ -478,24 +765,28 @@ export default function DossiersView() {
                               {r.char_count ? ` · ${(r.char_count / 1000).toFixed(1)}k car.` : ""}
                             </div>
                           </div>
-                          <svg className={styles.reportChevron} width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><polyline points="6 9 12 15 18 9"/></svg>
+                          <ChevronDownIcon size={16} className={styles.reportChevron} />
                         </div>
                         {/* Action buttons */}
                         <div className={styles.reportActions}>
                           <button className={styles.reportActionBtn} title="Lire" onClick={(e) => { e.stopPropagation(); openPdfViewer(r); }}>
-                            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+                            <EyeIcon size={13} />
                             Lire
                           </button>
                           <button className={styles.reportActionBtn} title="PDF" onClick={(e) => { e.stopPropagation(); downloadPdf(r); }}>
-                            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+                            <ArrowDownTrayIcon size={13} />
                             PDF
                           </button>
                           <button className={styles.reportActionBtn} title="TXT" onClick={(e) => { e.stopPropagation(); downloadTxt(r); }}>
-                            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                            <ArrowDownTrayIcon size={13} />
                             TXT
                           </button>
+                          <button className={styles.reportActionBtn} title="DOCX" onClick={(e) => { e.stopPropagation(); downloadDocx(r); }}>
+                            <ArrowDownTrayIcon size={13} />
+                            DOCX
+                          </button>
                           <button className={styles.reportActionBtn} title="Imprimer" onClick={(e) => { e.stopPropagation(); printReport(r); }}>
-                            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><polyline points="6 9 6 2 18 2 18 9"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect x="6" y="14" width="12" height="8"/></svg>
+                            <PrinterIcon size={13} />
                             Imprimer
                           </button>
                         </div>
@@ -503,10 +794,18 @@ export default function DossiersView() {
                         {selectedReport?.id === r.id && (
                           <div className={styles.reportContent}>
                             <div className={styles.reportContentHeader}>
-                              <span>📋 Contenu du rapport</span>
-                              <button className={styles.reportContentClose} onClick={() => setSelectedReport(null)}>✕</button>
+                              <span><ClipboardDocumentListIcon size={14} style={{ verticalAlign: "middle", marginRight: 4 }} /> Contenu du rapport</span>
+                              <button className={styles.reportContentClose} onClick={() => setSelectedReport(null)}>
+                                <XMarkIcon size={14} />
+                              </button>
                             </div>
-                            <pre className={styles.reportText}>{r.content_text || "Aucun contenu disponible"}</pre>
+                            {(() => {
+                              const content = r.content_text || "Aucun contenu disponible";
+                              const isHtml = content.trim().startsWith("<");
+                              return isHtml
+                                ? <div className={styles.reportHtml} dangerouslySetInnerHTML={{ __html: content }} />
+                                : <pre className={styles.reportText}>{content}</pre>;
+                            })()}
                           </div>
                         )}
                       </div>
@@ -533,17 +832,17 @@ export default function DossiersView() {
                 {editingDossier ? "Modifier le dossier" : "Nouveau dossier"}
               </h2>
               <button className={styles.detailClose} onClick={closeCreateModal}>
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+                <XMarkIcon size={20} />
               </button>
             </div>
 
             {!editingDossier && (
               <div className={styles.modeSwitch}>
                 <button className={`${styles.modeSwitchBtn} ${createMode === "file" ? styles.modeSwitchActive : ""}`} onClick={() => setCreateMode("file")}>
-                  📄 Depuis .docx
+                  <DocumentArrowUpIcon size={15} /> Depuis .docx
                 </button>
                 <button className={`${styles.modeSwitchBtn} ${createMode === "manual" ? styles.modeSwitchActive : ""}`} onClick={() => setCreateMode("manual")}>
-                  ✏️ Manuel
+                  <PencilIcon size={15} /> Manuel
                 </button>
               </div>
             )}
@@ -555,9 +854,7 @@ export default function DossiersView() {
                   <><div className={styles.loadingSpinner}></div><p style={{ marginTop: 12 }}>Extraction en cours...</p></>
                 ) : (
                   <>
-                    <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="var(--accent-cyan)" strokeWidth="1.5" style={{ opacity: 0.6 }}>
-                      <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="12" y1="18" x2="12" y2="12"/><line x1="9" y1="15" x2="12" y2="12"/><line x1="15" y1="15" x2="12" y2="12"/>
-                    </svg>
+                    <DocumentArrowUpIcon size={40} style={{ color: "var(--accent-cyan)", opacity: 0.6 }} />
                     <p className={styles.dropTitle}>Déposez un rapport .docx</p>
                     <p className={styles.dropSub}>Extraction automatique des données patient</p>
                   </>
@@ -567,7 +864,8 @@ export default function DossiersView() {
 
             {extractedData && (
               <div className={styles.extractSuccess}>
-                ✅ {Object.keys(extractedData.extracted).length} champs extraits de «{extractedData.filename}»
+                <CheckCircleIcon size={16} style={{ verticalAlign: "middle", marginRight: 6 }} />
+                {Object.keys(extractedData.extracted).length} champs extraits de «{extractedData.filename}»
               </div>
             )}
 
@@ -577,7 +875,7 @@ export default function DossiersView() {
                   {Object.entries(FIELD_LABELS).map(([key, label]) => (
                     <div key={key} className={["current_treatment", "notes", "siblings_info", "associated_diagnoses"].includes(key) ? styles.formColFull : styles.formCol}>
                       <label className={styles.formLabel}>
-                        <span>{INFO_ICONS[key]}</span> {label}
+                        <span className={styles.formLabelIcon}>{renderInfoIcon(key)}</span> {label}
                       </label>
                       {key === "gender" ? (
                         <select className={styles.formInput} value={formData[key] || "Inconnu"} onChange={(e) => setFormData({ ...formData, [key]: e.target.value })}>
@@ -608,24 +906,39 @@ export default function DossiersView() {
         <div className={styles.overlay} onClick={() => setViewerReport(null)}>
           <div className={styles.viewerPanel} onClick={(e) => e.stopPropagation()}>
             <div className={styles.viewerHeader}>
-              <h3 className={styles.viewerTitle}>📋 {viewerReport.filename?.replace(".docx", "") || "Rapport"}</h3>
+              <h3 className={styles.viewerTitle}>
+                <ClipboardDocumentListIcon size={18} style={{ verticalAlign: "middle", marginRight: 6, opacity: 0.7 }} />
+                {viewerReport.filename?.replace(".docx", "") || "Rapport"}
+              </h3>
               <div className={styles.viewerActions}>
-                <button className={styles.viewerBtn} onClick={() => downloadPdf(viewerReport)}>⬇️ PDF</button>
-                <button className={styles.viewerBtn} onClick={() => downloadTxt(viewerReport)}>⬇️ TXT</button>
-                <button className={styles.viewerBtn} onClick={() => printReport(viewerReport)}>🖨️ Imprimer</button>
+                <button className={styles.viewerBtn} onClick={() => downloadPdf(viewerReport)}>
+                  <ArrowDownTrayIcon size={13} style={{ verticalAlign: "middle", marginRight: 4 }} /> PDF
+                </button>
+                <button className={styles.viewerBtn} onClick={() => downloadTxt(viewerReport)}>
+                  <ArrowDownTrayIcon size={13} style={{ verticalAlign: "middle", marginRight: 4 }} /> TXT
+                </button>
+                <button className={styles.viewerBtn} onClick={() => printReport(viewerReport)}>
+                  <PrinterIcon size={13} style={{ verticalAlign: "middle", marginRight: 4 }} /> Imprimer
+                </button>
                 <button className={styles.viewerClose} onClick={() => setViewerReport(null)}>
-                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+                  <XMarkIcon size={18} />
                 </button>
               </div>
             </div>
             <div className={styles.viewerMeta}>
-              <span>👤 {selectedDossier?.full_name || viewerReport.patient_name}</span>
-              {(selectedDossier?.treating_doctor || viewerReport.doctor_name) && <span>👨‍⚕️ Dr. {selectedDossier?.treating_doctor || viewerReport.doctor_name}</span>}
-              <span>📅 {formatDate(viewerReport.report_date || viewerReport.created_at)}</span>
-              {viewerReport.char_count && <span>📝 {(viewerReport.char_count / 1000).toFixed(1)}k caractères</span>}
+              <span><UserIcon size={13} style={{ verticalAlign: "middle", marginRight: 4, opacity: 0.6 }} /> {selectedDossier?.full_name || viewerReport.patient_name}</span>
+              {(selectedDossier?.treating_doctor || viewerReport.doctor_name) && <span><HeartIcon size={13} style={{ verticalAlign: "middle", marginRight: 4, opacity: 0.6 }} /> Dr. {selectedDossier?.treating_doctor || viewerReport.doctor_name}</span>}
+              <span><CalendarDaysIcon size={13} style={{ verticalAlign: "middle", marginRight: 4, opacity: 0.6 }} /> {formatDate(viewerReport.report_date || viewerReport.created_at)}</span>
+              {viewerReport.char_count && <span><DocumentMagnifyingGlassIcon size={13} style={{ verticalAlign: "middle", marginRight: 4, opacity: 0.6 }} /> {(viewerReport.char_count / 1000).toFixed(1)}k caractères</span>}
             </div>
             <div className={styles.viewerContent} ref={pdfContentRef}>
-              <pre className={styles.viewerText}>{viewerReport.content_text || "Aucun contenu disponible"}</pre>
+              {(() => {
+                const content = viewerReport.content_text || "Aucun contenu disponible";
+                const isHtml = content.trim().startsWith("<");
+                return isHtml
+                  ? <div className={styles.viewerHtml} dangerouslySetInnerHTML={{ __html: content }} />
+                  : <pre className={styles.viewerText}>{content}</pre>;
+              })()}
             </div>
           </div>
         </div>
@@ -634,6 +947,8 @@ export default function DossiersView() {
       {/* Toast */}
       {toast && (
         <div className={`${styles.toast} ${styles[`toast${toast.type.charAt(0).toUpperCase() + toast.type.slice(1)}`]}`}>
+          {toast.type === "success" && <CheckCircleIcon size={15} style={{ color: "var(--accent-green)", flexShrink: 0 }} />}
+          {toast.type === "error" && <XMarkIcon size={15} style={{ color: "var(--accent-red)", flexShrink: 0 }} />}
           {toast.message}
         </div>
       )}

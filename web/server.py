@@ -28,7 +28,7 @@ PROJECT_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 if PROJECT_ROOT not in sys.path:
     sys.path.insert(0, PROJECT_ROOT)
 
-from flask import Flask, request, jsonify
+from flask import Flask, request, jsonify, send_file
 from flask_cors import CORS
 from docx import Document
 from supabase import create_client, Client
@@ -501,7 +501,24 @@ def analyze_report(report_id):
         return jsonify({"error": str(e)}), 500
 
 
-# ── Sync Local Reports to Supabase ───────────────────────────
+# ── Download Original .docx File ───────────────────────────────────
+@app.route("/api/reports/download/<path:filename>", methods=["GET"])
+def download_docx(filename):
+    """Download the original .docx file."""
+    import urllib.parse
+    filename = urllib.parse.unquote(filename)
+    filepath = os.path.join(REPORTS_DIR, filename)
+    if not os.path.exists(filepath):
+        return jsonify({"error": "File not found"}), 404
+    return send_file(
+        filepath,
+        as_attachment=True,
+        download_name=filename,
+        mimetype="application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+    )
+
+
+# ── Sync Local Reports to Supabase ───────────────────────────────
 @app.route("/api/reports/sync", methods=["POST"])
 def sync_reports():
     """Sync all local .docx files from clinical_notes/reports/ to Supabase."""

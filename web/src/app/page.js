@@ -5,11 +5,27 @@ import styles from "./page.module.css";
 import PipelineView from "@/components/PipelineView";
 import DossiersView from "@/components/DossiersView";
 import LoginPage from "@/components/LoginPage";
+import {
+  DnaIcon,
+  FolderIcon,
+  BoltIcon,
+  ArrowRightStartOnRectangleIcon,
+  SunIcon,
+  MoonIcon,
+} from "@/components/Icons";
 
 export default function Home() {
   const [activeView, setActiveView] = useState("dossiers");
   const [user, setUser] = useState(null);
   const [authLoading, setAuthLoading] = useState(true);
+  const [theme, setTheme] = useState("dark");
+
+  // Initialize theme from localStorage
+  useEffect(() => {
+    const saved = localStorage.getItem("clinicalpfe-theme") || "dark";
+    setTheme(saved);
+    document.documentElement.setAttribute("data-theme", saved);
+  }, []);
 
   // Check for existing session on load
   useEffect(() => {
@@ -33,11 +49,20 @@ export default function Home() {
     setUser(null);
   };
 
+  const toggleTheme = () => {
+    const next = theme === "dark" ? "light" : "dark";
+    setTheme(next);
+    document.documentElement.setAttribute("data-theme", next);
+    localStorage.setItem("clinicalpfe-theme", next);
+  };
+
   // Loading state
   if (authLoading) {
     return (
       <div className={styles.loadingScreen}>
-        <div className={styles.loadingLogo}>🧬</div>
+        <div className={styles.loadingLogo}>
+          <DnaIcon size={36} style={{ color: "var(--accent-cyan)" }} />
+        </div>
         <div className={styles.loadingSpinner}></div>
       </div>
     );
@@ -56,7 +81,7 @@ export default function Home() {
         <div className={styles.topBarInner}>
           <div className={styles.brandGroup}>
             <div className={styles.brandLogo}>
-              <span className={styles.logoIcon}>🧬</span>
+              <DnaIcon size={18} style={{ color: "#fff" }} />
             </div>
             <div>
               <h1 className={styles.brandName}>ClinicalPFE</h1>
@@ -69,19 +94,22 @@ export default function Home() {
               className={`${styles.navTab} ${activeView === "dossiers" ? styles.navTabActive : ""}`}
               onClick={() => setActiveView("dossiers")}
             >
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg>
+              <FolderIcon size={16} />
               Dossiers
             </button>
             <button
               className={`${styles.navTab} ${activeView === "pipeline" ? styles.navTabActive : ""}`}
               onClick={() => setActiveView("pipeline")}
             >
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+              <BoltIcon size={16} />
               Pipeline
             </button>
           </nav>
 
           <div className={styles.navRight}>
+            <button className={styles.themeToggle} onClick={toggleTheme} title={theme === "dark" ? "Mode clair" : "Mode sombre"}>
+              {theme === "dark" ? <SunIcon size={16} /> : <MoonIcon size={16} />}
+            </button>
             <div className={styles.userInfo}>
               <div className={styles.userAvatar}>
                 {user.user_metadata?.full_name?.[0] || user.email?.[0]?.toUpperCase() || "U"}
@@ -89,7 +117,8 @@ export default function Home() {
               <span className={styles.userEmail}>{user.email}</span>
             </div>
             <button className={styles.logoutBtn} onClick={handleLogout} title="Se déconnecter">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/><polyline points="16 17 21 12 16 7"/><line x1="21" y1="12" x2="9" y2="12"/></svg>
+              <ArrowRightStartOnRectangleIcon size={16} />
+              <span className={styles.logoutLabel}>Déconnexion</span>
             </button>
           </div>
         </div>

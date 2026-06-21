@@ -1,8 +1,18 @@
 "use client";
 import { useState, useRef } from "react";
 import styles from "./PipelineView.module.css";
+import {
+  DocumentTextIcon,
+  PencilIcon,
+  DocumentArrowUpIcon,
+  XMarkIcon,
+  MicroscopeIcon,
+  ArrowDownTrayIcon,
+} from "@/components/Icons";
 
-const API_URL = process.env.NEXT_PUBLIC_API_URL || "http://localhost:5000";
+const API_URL = typeof window !== "undefined" && window.location.hostname.includes("devtunnels.ms")
+  ? "https://wn3r3xh0-5000.uks1.devtunnels.ms"
+  : (process.env.NEXT_PUBLIC_API_URL || "http://localhost:5000");
 
 export default function PipelineView() {
   const [inputMode, setInputMode] = useState("file");
@@ -135,13 +145,13 @@ export default function PipelineView() {
             className={`${styles.modeBtn} ${inputMode === "file" ? styles.modeBtnActive : ""}`}
             onClick={() => setInputMode("file")}
           >
-            📄 Fichier (.docx / .txt)
+            <DocumentTextIcon size={15} /> Fichier (.docx / .txt)
           </button>
           <button
             className={`${styles.modeBtn} ${inputMode === "text" ? styles.modeBtnActive : ""}`}
             onClick={() => setInputMode("text")}
           >
-            ✏️ Texte libre
+            <PencilIcon size={15} /> Texte libre
           </button>
         </div>
 
@@ -161,7 +171,9 @@ export default function PipelineView() {
               onChange={handleFileDrop}
               style={{ display: "none" }}
             />
-            <div className={styles.uploadIcon}>📄</div>
+            <div className={styles.uploadIcon}>
+              <DocumentArrowUpIcon size={36} style={{ color: "var(--accent-cyan)", opacity: 0.7 }} />
+            </div>
             <div className={styles.uploadTitle}>Déposez un rapport clinique (.docx / .txt)</div>
             <div className={styles.uploadSubtitle}>ou cliquez pour parcourir vos fichiers</div>
           </div>
@@ -177,7 +189,7 @@ export default function PipelineView() {
               </div>
             </div>
             <button className={styles.btnSmSecondary} onClick={clearFile}>
-              ✕ Retirer
+              <XMarkIcon size={13} style={{ verticalAlign: "middle", marginRight: 3 }} /> Retirer
             </button>
           </div>
         )}
@@ -203,7 +215,9 @@ export default function PipelineView() {
               <span className={styles.spinner}></span> Analyse en cours...
             </>
           ) : (
-            "🔬 Lancer l'analyse"
+            <>
+              <MicroscopeIcon size={17} style={{ verticalAlign: "middle", marginRight: 4 }} /> Lancer l&apos;analyse
+            </>
           )}
         </button>
 
@@ -376,7 +390,7 @@ export default function PipelineView() {
                   dangerouslySetInnerHTML={{ __html: syntaxHighlight(result.phenopacket) }}
                 />
                 <button className={styles.btnSecondary} onClick={downloadPhenopacket} style={{ marginTop: "1rem" }}>
-                  ⬇️ Télécharger le Phenopacket
+                  <ArrowDownTrayIcon size={15} style={{ verticalAlign: "middle", marginRight: 5 }} /> Télécharger le Phenopacket
                 </button>
               </div>
             )}

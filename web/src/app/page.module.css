@@ -12,17 +12,19 @@
   position: sticky;
   top: 0;
   z-index: 100;
-  background: rgba(11, 17, 32, 0.75);
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
+  background: var(--topbar-bg);
+  backdrop-filter: blur(24px) saturate(1.4);
+  -webkit-backdrop-filter: blur(24px) saturate(1.4);
   border-bottom: 1px solid var(--border-subtle);
+  box-shadow: var(--shadow-sm);
+  transition: background 0.3s ease, box-shadow 0.3s ease;
 }
 
 .topBarInner {
-  max-width: 1400px;
+  max-width: 1440px;
   margin: 0 auto;
   padding: 0 2rem;
-  height: 64px;
+  height: 68px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -31,30 +33,47 @@
 .brandGroup {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 12px;
 }
 
 .brandLogo {
-  width: 36px;
-  height: 36px;
-  border-radius: 10px;
+  width: 38px;
+  height: 38px;
+  border-radius: 11px;
   background: var(--gradient-brand);
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 2px 12px rgba(14, 165, 233, 0.2);
+  box-shadow: 0 4px 16px rgba(14, 165, 233, 0.25), inset 0 1px 0 rgba(255, 255, 255, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-.logoIcon { font-size: 1.1rem; }
-.brandName { font-size: 0.95rem; font-weight: 700; color: var(--text-primary); letter-spacing: -0.02em; line-height: 1.2; }
-.brandSub { font-size: 0.62rem; color: var(--text-dim); font-weight: 400; letter-spacing: 0.02em; }
+.brandLogo:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 24px rgba(14, 165, 233, 0.35), inset 0 1px 0 rgba(255, 255, 255, 0.15);
+}
+
+.brandName {
+  font-size: 0.98rem;
+  font-weight: 750;
+  color: var(--text-primary);
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+}
+
+.brandSub {
+  font-size: 0.63rem;
+  color: var(--text-dim);
+  font-weight: 400;
+  letter-spacing: 0.02em;
+}
 
 /* ── Nav Tabs ──────────────────────────────────────── */
 .navTabs {
   display: flex;
   gap: 2px;
-  background: rgba(15, 23, 42, 0.6);
-  padding: 3px;
+  background: var(--nav-tabs-bg);
+  padding: 4px;
   border-radius: var(--radius-md);
   border: 1px solid var(--border-subtle);
 }
@@ -62,71 +81,122 @@
 .navTab {
   display: flex;
   align-items: center;
-  gap: 6px;
-  padding: 7px 18px;
-  font-size: 0.78rem;
-  font-weight: 500;
+  gap: 7px;
+  padding: 8px 20px;
+  font-size: 0.8rem;
+  font-weight: 550;
   font-family: inherit;
   color: var(--text-dim);
   background: transparent;
   border: none;
-  border-radius: 7px;
+  border-radius: 8px;
   cursor: pointer;
   transition: all 0.2s ease;
 }
 
-.navTab:hover { color: var(--text-secondary); }
+.navTab:hover { color: var(--text-secondary); background: rgba(148, 163, 184, 0.05); }
 
 .navTab svg { opacity: 0.6; transition: opacity 0.2s ease; }
-.navTab:hover svg { opacity: 0.8; }
+.navTab:hover svg { opacity: 0.85; }
 
 .navTabActive {
   color: var(--text-primary) !important;
-  background: rgba(56, 189, 248, 0.1) !important;
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+  background: var(--nav-tab-active-bg) !important;
+  box-shadow: 0 1px 8px rgba(56, 189, 248, 0.08);
 }
 
 .navTabActive svg { opacity: 1 !important; color: var(--accent-cyan); }
 
-/* ── User / Status ────────────────────────────────────── */
+/* ── User / Status / Logout ────────────────────────── */
 .navRight {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 12px;
 }
 
 .userInfo {
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 10px;
 }
 
 .userAvatar {
-  width: 30px; height: 30px; border-radius: 8px;
+  width: 32px;
+  height: 32px;
+  border-radius: 9px;
   background: linear-gradient(135deg, rgba(14, 165, 233, 0.2), rgba(139, 92, 246, 0.2));
-  display: flex; align-items: center; justify-content: center;
-  font-size: 0.72rem; font-weight: 700; color: var(--accent-cyan);
-  border: 1px solid rgba(56, 189, 248, 0.15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: var(--accent-cyan);
+  border: 1px solid rgba(56, 189, 248, 0.18);
+  transition: border-color 0.2s ease;
+}
+
+.userAvatar:hover {
+  border-color: rgba(56, 189, 248, 0.35);
 }
 
 .userEmail {
-  font-size: 0.7rem; color: var(--text-dim); font-weight: 500;
-  max-width: 160px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
+  font-size: 0.72rem;
+  color: var(--text-dim);
+  font-weight: 500;
+  max-width: 170px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
+/* ── Enhanced Logout Button ──────────────────────────── */
 .logoutBtn {
-  padding: 6px; border-radius: 8px;
-  background: rgba(248, 113, 113, 0.06); border: 1px solid rgba(248, 113, 113, 0.1);
-  color: var(--text-dim); cursor: pointer;
-  display: flex; align-items: center; justify-content: center;
-  transition: all 0.15s ease;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  padding: 7px 14px;
+  border-radius: 9px;
+  background: rgba(248, 113, 113, 0.06);
+  border: 1px solid rgba(248, 113, 113, 0.1);
+  color: var(--text-dim);
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 0.72rem;
+  font-weight: 550;
+  transition: all 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  white-space: nowrap;
 }
-.logoutBtn:hover { background: rgba(248, 113, 113, 0.15); color: var(--accent-red); border-color: rgba(248, 113, 113, 0.2); }
+
+.logoutBtn:hover {
+  background: rgba(248, 113, 113, 0.15);
+  color: var(--accent-red);
+  border-color: rgba(248, 113, 113, 0.25);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(248, 113, 113, 0.1);
+}
+
+.logoutBtn:active {
+  transform: translateY(0);
+  box-shadow: none;
+}
+
+.logoutBtn svg {
+  opacity: 0.7;
+  transition: opacity 0.15s ease;
+}
+
+.logoutBtn:hover svg {
+  opacity: 1;
+}
+
+.logoutLabel {
+  /* Visible on desktop, hidden on mobile */
+}
 
 /* ═══ Main Content ════════════════════════════════════ */
 .mainContent {
   flex: 1;
-  max-width: 1400px;
+  max-width: 1440px;
   width: 100%;
   margin: 0 auto;
   padding: 1.5rem 2rem 3rem;
@@ -135,19 +205,29 @@
 /* ═══ Loading Screen ═════════════════════════════════ */
 .loadingScreen {
   min-height: 100vh;
-  display: flex; flex-direction: column;
-  align-items: center; justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   gap: 1.2rem;
   background: var(--bg-root);
 }
 
 .loadingLogo {
-  font-size: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 64px;
+  height: 64px;
+  border-radius: 18px;
+  background: var(--gradient-brand);
+  box-shadow: 0 8px 32px rgba(14, 165, 233, 0.2);
   animation: pulse 1.5s ease infinite;
 }
 
 .loadingSpinner {
-  width: 24px; height: 24px;
+  width: 24px;
+  height: 24px;
   border: 2.5px solid rgba(56, 189, 248, 0.15);
   border-top-color: var(--accent-cyan);
   border-radius: 50%;
@@ -159,4 +239,29 @@
   .mainContent { padding: 1rem; }
   .brandSub { display: none; }
   .userEmail { display: none; }
+  .logoutLabel { display: none; }
+  .logoutBtn { padding: 7px; }
+}
+
+/* ═══ Theme Toggle ═══════════════════════════════════ */
+.themeToggle {
+  width: 36px;
+  height: 36px;
+  border-radius: 10px;
+  background: var(--bg-glass-light);
+  border: 1px solid var(--border-medium);
+  color: var(--text-muted);
+  cursor: pointer;
+  font-family: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.25s ease;
+}
+
+.themeToggle:hover {
+  background: var(--nav-tab-active-bg);
+  color: var(--accent-cyan);
+  border-color: var(--border-accent);
+  transform: rotate(15deg) scale(1.05);
 }

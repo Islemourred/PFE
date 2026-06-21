@@ -20,6 +20,9 @@
 }
 
 .modeBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
   padding: 6px 16px;
   border-radius: var(--radius-sm);
   font-size: 0.78rem;
@@ -54,7 +57,7 @@
   box-shadow: var(--shadow-glow);
 }
 
-.uploadIcon { font-size: 2.5rem; margin-bottom: 1rem; opacity: 0.6; }
+.uploadIcon { display: flex; align-items: center; justify-content: center; margin-bottom: 1rem; }
 .uploadTitle { color: var(--text-primary); font-size: 1rem; font-weight: 600; margin-bottom: 0.4rem; }
 .uploadSubtitle { color: var(--text-muted); font-size: 0.8rem; }
 
@@ -73,6 +76,9 @@
 .fileBannerMeta { color: var(--text-muted); font-size: 0.78rem; }
 
 .btnSmSecondary {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
   padding: 0.35rem 0.8rem;
   font-size: 0.75rem;
   border-radius: var(--radius-sm);
@@ -434,4 +440,18 @@
 @media (max-width: 1024px) {
   .twoCol { grid-template-columns: 1fr; }
   .statGrid { grid-template-columns: repeat(2, 1fr); }
+}
+
+/* ═══ Light Mode Overrides ════════════════════════════ */
+:global([data-theme="light"]) .modeToggle,
+:global([data-theme="light"]) .tabs {
+  background: rgba(235, 242, 255, 0.85);
+  border: 1px solid rgba(100, 130, 180, 0.1);
+}
+
+:global([data-theme="light"]) .resultCard {
+  box-shadow: 0 1px 4px rgba(30, 60, 120, 0.06);
+}
+:global([data-theme="light"]) .resultCard:hover {
+  box-shadow: 0 6px 24px rgba(30, 60, 120, 0.1);
 }
