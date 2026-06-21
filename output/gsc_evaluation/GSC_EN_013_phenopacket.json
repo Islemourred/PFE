@@ -8,26 +8,6 @@
   "phenotypicFeatures": [
     {
       "type": {
-        "id": "HP:0100022",
-        "label": "Abnormality of movement",
-        "umls_cui": "C0026650"
-      },
-      "excluded": false,
-      "evidence": [
-        {
-          "evidenceCode": {
-            "id": "ECO:0000033",
-            "label": "author statement supported by traceable reference"
-          },
-          "reference": {
-            "id": "GSC_EN_013",
-            "description": "NER: movement (0.365) | Match: sapbert_similarity (0.779)"
-          }
-        }
-      ]
-    },
-    {
-      "type": {
         "id": "HP:0001251",
         "label": "Ataxia",
         "umls_cui": "C0007758"
@@ -41,7 +21,47 @@
           },
           "reference": {
             "id": "GSC_EN_013",
-            "description": "NER: ataxia (0.641) | Match: exact_label (1.000)"
+            "description": "NER: ataxia - (0.892) | Match: sapbert_similarity (0.959)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0100022",
+        "label": "Abnormality of movement",
+        "umls_cui": "C0026650"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "GSC_EN_013",
+            "description": "NER: movement disorders (0.995) | Match: sapbert_similarity (0.885)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0002073",
+        "label": "Progressive cerebellar ataxia",
+        "umls_cui": "C0393525"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "GSC_EN_013",
+            "description": "NER: disorders phenotype of adult ataxia (0.985) | Match: sapbert_similarity (0.776)"
           }
         }
       ]
@@ -61,7 +81,27 @@
           },
           "reference": {
             "id": "GSC_EN_013",
-            "description": "NER: angiectasia (0.941) | Match: sapbert_similarity (0.766)"
+            "description": "NER: telangiectasia (0.970) | Match: clinical_synonym (1.000)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0006915",
+        "label": "Inability to walk by childhood/adolescence",
+        "umls_cui": "C1859200"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "GSC_EN_013",
+            "description": "NER: later loss of walking ability (0.976) | Match: sapbert_similarity (0.756)"
           }
         }
       ]
@@ -128,6 +168,26 @@
     },
     {
       "type": {
+        "id": "HP:0012323",
+        "label": "Sleep myoclonus",
+        "umls_cui": "C0751352"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "GSC_EN_013",
+            "description": "NER: subcortical myoclonus (0.993) | Match: sapbert_similarity (0.837)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
         "id": "HP:0001337",
         "label": "Tremor",
         "umls_cui": "C0040822"
@@ -161,7 +221,47 @@
           },
           "reference": {
             "id": "GSC_EN_013",
-            "description": "NER: dysmetric saccades (0.831) | Match: exact_label (1.000)"
+            "description": "NER: mostly dysmetric saccades (0.913) | Match: substring_match (0.950)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0000657",
+        "label": "Oculomotor apraxia",
+        "umls_cui": "C3489733"
+      },
+      "excluded": true,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "GSC_EN_013",
+            "description": "NER: culomotor apraxia (0.946) | Match: sapbert_similarity (0.778) | Negated by: \"no\""
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0003220",
+        "label": "Abnormality of chromosome stability",
+        "umls_cui": "C0376628"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "GSC_EN_013",
+            "description": "NER: chromosomal instability (0.985) | Match: sapbert_similarity (0.863)"
           }
         }
       ]
@@ -181,16 +281,16 @@
           },
           "reference": {
             "id": "GSC_EN_013",
-            "description": "NER: immunoglobulin deficiency (0.900) | Match: text_scan_exact_synonym (0.950)"
+            "description": "NER: immunoglobulin deficiency (0.981) | Match: exact_synonym (1.000)"
           }
         }
       ]
     },
     {
       "type": {
-        "id": "HP:0000657",
-        "label": "Oculomotor apraxia",
-        "umls_cui": "C3489733"
+        "id": "HP:0100660",
+        "label": "Dyskinesia",
+        "umls_cui": "C0013384"
       },
       "excluded": false,
       "evidence": [
@@ -201,7 +301,7 @@
           },
           "reference": {
             "id": "GSC_EN_013",
-            "description": "NER: oculomotor apraxia (0.900) | Match: text_scan_exact_label (0.950)"
+            "description": "NER: unexplained movement disorders (0.989) | Match: sapbert_similarity (0.712)"
           }
         }
       ]
@@ -248,9 +348,9 @@
     },
     {
       "type": {
-        "id": "HP:0001311",
-        "label": "Abnormal nervous system electrophysiology",
-        "umls_cui": "C4021781"
+        "id": "HP:0002186",
+        "label": "Apraxia",
+        "umls_cui": "C0003635"
       },
       "excluded": false,
       "evidence": [
@@ -261,34 +361,14 @@
           },
           "reference": {
             "id": "GSC_EN_013",
-            "description": "NER: neurophysiologic (0.868) | Match: sapbert_similarity (0.740)"
-          }
-        }
-      ]
-    },
-    {
-      "type": {
-        "id": "HP:0003674",
-        "label": "Onset",
-        "umls_cui": "C0206132"
-      },
-      "excluded": false,
-      "evidence": [
-        {
-          "evidenceCode": {
-            "id": "ECO:0000033",
-            "label": "author statement supported by traceable reference"
-          },
-          "reference": {
-            "id": "GSC_EN_013",
-            "description": "NER: onset (0.710) | Match: exact_label (1.000)"
+            "description": "NER: apraxia (0.900) | Match: text_scan_exact_label (0.950)"
           }
         }
       ]
     }
   ],
   "metaData": {
-    "created": "2026-06-11T03:08:30Z",
+    "created": "2026-06-19T15:06:15Z",
     "createdBy": "clinical-preanalysis-pipeline-v2",
     "phenopacketSchemaVersion": "2.0",
     "resources": [
@@ -311,44 +391,69 @@
           "id": "ORPHA:100",
           "label": "Ataxia-telangiectasia"
         },
-        "score": 0.85,
+        "score": 0.4975,
         "allCandidates": [
           {
             "id": "ORPHA:100",
             "label": "Ataxia-telangiectasia",
-            "score": 0.85
+            "score": 0.4975
           },
           {
-            "id": "ORPHA:3350",
-            "label": "Tremor-nystagmus-duodenal ulcer syndrome",
-            "score": 0.35
+            "id": "ORPHA:306674",
+            "label": "Kufor-Rakeb syndrome",
+            "score": 0.4336
           },
           {
-            "id": "ORPHA:1429",
-            "label": "Benign hereditary chorea",
-            "score": 0.3267
+            "id": "ORPHA:251347",
+            "label": "Ataxia-telangiectasia-like disorder",
+            "score": 0.4102
           },
           {
-            "id": "ORPHA:211067",
-            "label": "Episodic ataxia type 5",
-            "score": 0.2444
+            "id": "ORPHA:646",
+            "label": "Niemann-Pick disease type C",
+            "score": 0.3938
           },
           {
-            "id": "ORPHA:401901",
-            "label": "Huntington disease-like syndrome due to C9ORF72 expansions",
-            "score": 0.2381
+            "id": "ORPHA:71277",
+            "label": "Classic glucose transporter type 1 deficiency syndrome",
+            "score": 0.3775
+          },
+          {
+            "id": "ORPHA:98766",
+            "label": "Spinocerebellar ataxia type 5",
+            "score": 0.3769
+          },
+          {
+            "id": "ORPHA:508093",
+            "label": "MEPAN syndrome",
+            "score": 0.3526
+          },
+          {
+            "id": "ORPHA:3095",
+            "label": "Atypical Rett syndrome",
+            "score": 0.3452
+          },
+          {
+            "id": "ORPHA:2131",
+            "label": "Alternating hemiplegia of childhood",
+            "score": 0.3449
+          },
+          {
+            "id": "ORPHA:209905",
+            "label": "Brain-lung-thyroid syndrome",
+            "score": 0.3317
           }
         ]
       }
     }
   ],
   "_pipelineStats": {
-    "totalEntities": 37,
-    "matchedHPO": 14,
-    "unmatchedEntities": 23,
-    "phenopacketFeatures": 14,
-    "negatedFeatures": 0,
+    "totalEntities": 59,
+    "matchedHPO": 18,
+    "unmatchedEntities": 41,
+    "phenopacketFeatures": 18,
+    "negatedFeatures": 1,
     "numericPhenotypes": 0,
-    "ordoCandidates": 5
+    "ordoCandidates": 10
   }
 }

@@ -14,7 +14,7 @@
     "problem": [
       {
         "text": "Cystic fibrosis",
-        "ner_score": 0.912,
+        "ner_score": 0.998,
         "negated": false,
         "negation_cue": "",
         "hpo_id": "HP:0001395",
@@ -26,33 +26,69 @@
         "umls_cui": "C0239946"
       },
       {
-        "text": "intestinal at",
-        "ner_score": 0.475,
+        "text": "junoileal atresia",
+        "ner_score": 0.998,
         "negated": false,
         "negation_cue": "",
-        "hpo_id": "HP:0002595",
-        "hpo_name": "Ileus",
-        "expanded_text": "intestinal at",
-        "match_type": "sapbert_similarity",
-        "confidence": 0.7098,
-        "matched": true,
-        "umls_cui": "C1258215"
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "junoileal atresia",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
       },
       {
-        "text": "intestinal atresia",
-        "ner_score": 0.9,
+        "text": "ultrasound abnormalities",
+        "ner_score": 0.991,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0100261",
+        "hpo_name": "Abnormal tendon morphology",
+        "expanded_text": "ultrasound abnormalities",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.7066,
+        "matched": true,
+        "umls_cui": "C4021026"
+      },
+      {
+        "text": "a type 3a intestinal atresia",
+        "ner_score": 0.999,
         "negated": false,
         "negation_cue": "",
         "hpo_id": "HP:0011100",
         "hpo_name": "Intestinal atresia",
-        "expanded_text": "intestinal atresia",
-        "match_type": "text_scan_exact_label",
+        "expanded_text": "a type 3a intestinal atresia",
+        "match_type": "substring_match",
         "confidence": 0.95,
         "matched": true,
-        "umls_cui": "C0021828",
-        "umls_all": [
-          "C0021828"
-        ]
+        "umls_cui": "C0021828"
+      },
+      {
+        "text": "intestinal at",
+        "ner_score": 0.475,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "intestinal at",
+        "match_type": "skipped_low_ner_score",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "a fetal intestinal atresia",
+        "ner_score": 0.999,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "a fetal intestinal atresia",
+        "match_type": "deduplicated",
+        "confidence": 0.95,
+        "matched": false,
+        "umls_cui": "C0021828"
       }
     ],
     "test": [
@@ -64,13 +100,39 @@
         "hpo_id": null,
         "hpo_name": null,
         "expanded_text": "ultrasound",
-        "match_type": "skipped_non_phenotype",
+        "match_type": "skipped_low_ner_score",
         "confidence": 0.0,
         "matched": false,
         "umls_cui": null
       }
     ],
     "treatment": [
+      {
+        "text": "end - to - end anastomosis",
+        "ner_score": 0.981,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "end - to - end anastomosis",
+        "match_type": "skipped_treatment",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "segmental enterectomy",
+        "ner_score": 0.997,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "segmental enterectomy",
+        "match_type": "skipped_treatment",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
       {
         "text": "enterectomy",
         "ner_score": 0.728,
@@ -79,7 +141,7 @@
         "hpo_id": null,
         "hpo_name": null,
         "expanded_text": "enterectomy",
-        "match_type": "no_match",
+        "match_type": "skipped_treatment",
         "confidence": 0.0,
         "matched": false,
         "umls_cui": null
@@ -92,7 +154,7 @@
         "hpo_id": null,
         "hpo_name": null,
         "expanded_text": "anastomosis",
-        "match_type": "no_match",
+        "match_type": "skipped_low_ner_score",
         "confidence": 0.0,
         "matched": false,
         "umls_cui": null
@@ -100,78 +162,133 @@
     ],
     "ordo_candidates": [
       {
-        "ordo_id": "ORPHA:306550",
-        "name": "FADD-related immunodeficiency",
+        "ordo_id": "ORPHA:93271",
+        "name": "Short rib-polydactyly syndrome, Verma-Naumoff type",
         "name_fr": "",
-        "score": 0.115,
-        "jaccard": 0.1,
-        "coverage": 0.125,
+        "score": 0.3917,
+        "coverage": 0.0,
+        "matched_hpo": [],
+        "matched_count": 0,
+        "total_disease_hpo": 47,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:731",
+        "name": "Autosomal recessive polycystic kidney disease",
+        "name_fr": "",
+        "score": 0.3838,
+        "coverage": 0.0196,
         "matched_hpo": [
           "HP:0001395"
         ],
         "matched_count": 1,
-        "total_disease_hpo": 8
+        "total_disease_hpo": 51,
+        "text_match": false
       },
       {
-        "ordo_id": "ORPHA:1911",
-        "name": "Cocaine embryofetopathy",
+        "ordo_id": "ORPHA:96149",
+        "name": "Distal deletion 12q syndrome",
         "name_fr": "",
-        "score": 0.115,
-        "jaccard": 0.1,
-        "coverage": 0.125,
+        "score": 0.3806,
+        "coverage": 0.0,
+        "matched_hpo": [],
+        "matched_count": 0,
+        "total_disease_hpo": 76,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:436252",
+        "name": "Combined immunodeficiency-multiple intestinal atresia",
+        "name_fr": "",
+        "score": 0.3659,
+        "coverage": 0.0333,
         "matched_hpo": [
           "HP:0011100"
         ],
         "matched_count": 1,
-        "total_disease_hpo": 8
+        "total_disease_hpo": 30,
+        "text_match": false
       },
       {
-        "ordo_id": "ORPHA:33402",
-        "name": "Pediatric hepatocellular carcinoma",
+        "ordo_id": "ORPHA:139507",
+        "name": "Dietary iron overload disease",
         "name_fr": "",
-        "score": 0.103,
-        "jaccard": 0.0909,
-        "coverage": 0.1111,
+        "score": 0.3475,
+        "coverage": 0.04,
         "matched_hpo": [
           "HP:0001395"
         ],
         "matched_count": 1,
-        "total_disease_hpo": 9
+        "total_disease_hpo": 25,
+        "text_match": false
       },
       {
-        "ordo_id": "ORPHA:3405",
-        "name": "Umbilical cord ulceration-intestinal atresia syndrome",
+        "ordo_id": "ORPHA:2538",
+        "name": "Microgastria-limb reduction defect syndrome",
         "name_fr": "",
-        "score": 0.103,
-        "jaccard": 0.0909,
-        "coverage": 0.1111,
-        "matched_hpo": [
-          "HP:0011100"
-        ],
-        "matched_count": 1,
-        "total_disease_hpo": 9
+        "score": 0.3466,
+        "coverage": 0.0,
+        "matched_hpo": [],
+        "matched_count": 0,
+        "total_disease_hpo": 48,
+        "text_match": false
       },
       {
-        "ordo_id": "ORPHA:168811",
-        "name": "Malignant peritoneal mesothelioma",
+        "ordo_id": "ORPHA:355",
+        "name": "Gaucher disease",
         "name_fr": "",
-        "score": 0.0933,
-        "jaccard": 0.0833,
-        "coverage": 0.1,
+        "score": 0.3458,
+        "coverage": 0.0108,
         "matched_hpo": [
-          "HP:0002595"
+          "HP:0001395"
         ],
         "matched_count": 1,
-        "total_disease_hpo": 10
+        "total_disease_hpo": 93,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:586",
+        "name": "Cystic fibrosis",
+        "name_fr": "",
+        "score": 0.3428,
+        "coverage": 0.0,
+        "matched_hpo": [],
+        "matched_count": 0,
+        "total_disease_hpo": 35,
+        "text_match": true
+      },
+      {
+        "ordo_id": "ORPHA:901",
+        "name": "Wells syndrome",
+        "name_fr": "",
+        "score": 0.3396,
+        "coverage": 0.0,
+        "matched_hpo": [],
+        "matched_count": 0,
+        "total_disease_hpo": 87,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:171",
+        "name": "Primary sclerosing cholangitis",
+        "name_fr": "",
+        "score": 0.3353,
+        "coverage": 0.0196,
+        "matched_hpo": [
+          "HP:0001395"
+        ],
+        "matched_count": 1,
+        "total_disease_hpo": 51,
+        "text_match": false
       }
     ],
     "stats": {
-      "total": 6,
+      "total": 11,
       "matched": 3,
-      "unmatched": 3,
-      "match_rate": 50.0,
+      "unmatched": 8,
+      "match_rate": 27.3,
       "unique_hpo": 3,
-      "ordo_matches": 5
+      "ordo_matches": 10
     }
   },
   "phenopacket": {
@@ -180,7 +297,7 @@
       "id": "PUBMED_EN_003"
     },
     "input": "Case Report: Cystic fibrosis and jejunoileal atresia: A clinical case.\n\nWe present a case report of a fetal diagnosis of cystic fibrosis after ultrasound abnormalities. After delivery, a type 3A intestinal atresia was diagnosed. Segmental enterectomy with end-to-end anastomosis was performed. This case report highlights the diagnosis complexity of a fetal intestinal atresia associated with cystic fibrosis.",
-    "target": "FADD-related immunodeficiency",
+    "target": "Short rib-polydactyly syndrome, Verma-Naumoff type",
     "phenotypicFeatures": [
       {
         "type": {
@@ -197,16 +314,16 @@
             },
             "reference": {
               "id": "PUBMED_EN_003",
-              "description": "NER: Cystic fibrosis (0.912) | Match: sapbert_similarity (0.753)"
+              "description": "NER: Cystic fibrosis (0.998) | Match: sapbert_similarity (0.753)"
             }
           }
         ]
       },
       {
         "type": {
-          "id": "HP:0002595",
-          "label": "Ileus",
-          "umls_cui": "C1258215"
+          "id": "HP:0100261",
+          "label": "Abnormal tendon morphology",
+          "umls_cui": "C4021026"
         },
         "excluded": false,
         "evidence": [
@@ -217,7 +334,7 @@
             },
             "reference": {
               "id": "PUBMED_EN_003",
-              "description": "NER: intestinal at (0.475) | Match: sapbert_similarity (0.710)"
+              "description": "NER: ultrasound abnormalities (0.991) | Match: sapbert_similarity (0.707)"
             }
           }
         ]
@@ -237,14 +354,14 @@
             },
             "reference": {
               "id": "PUBMED_EN_003",
-              "description": "NER: intestinal atresia (0.900) | Match: text_scan_exact_label (0.950)"
+              "description": "NER: a type 3a intestinal atresia (0.999) | Match: substring_match (0.950)"
             }
           }
         ]
       }
     ],
     "metaData": {
-      "created": "2026-06-11T03:46:53Z",
+      "created": "2026-06-19T15:01:22Z",
       "createdBy": "clinical-preanalysis-pipeline-v2",
       "phenopacketSchemaVersion": "2.0",
       "resources": [
@@ -264,48 +381,73 @@
         "progressStatus": "IN_PROGRESS",
         "diagnosis": {
           "disease": {
-            "id": "ORPHA:306550",
-            "label": "FADD-related immunodeficiency"
+            "id": "ORPHA:93271",
+            "label": "Short rib-polydactyly syndrome, Verma-Naumoff type"
           },
-          "score": 0.115,
+          "score": 0.3917,
           "allCandidates": [
             {
-              "id": "ORPHA:306550",
-              "label": "FADD-related immunodeficiency",
-              "score": 0.115
+              "id": "ORPHA:93271",
+              "label": "Short rib-polydactyly syndrome, Verma-Naumoff type",
+              "score": 0.3917
             },
             {
-              "id": "ORPHA:1911",
-              "label": "Cocaine embryofetopathy",
-              "score": 0.115
+              "id": "ORPHA:731",
+              "label": "Autosomal recessive polycystic kidney disease",
+              "score": 0.3838
             },
             {
-              "id": "ORPHA:33402",
-              "label": "Pediatric hepatocellular carcinoma",
-              "score": 0.103
+              "id": "ORPHA:96149",
+              "label": "Distal deletion 12q syndrome",
+              "score": 0.3806
             },
             {
-              "id": "ORPHA:3405",
-              "label": "Umbilical cord ulceration-intestinal atresia syndrome",
-              "score": 0.103
+              "id": "ORPHA:436252",
+              "label": "Combined immunodeficiency-multiple intestinal atresia",
+              "score": 0.3659
             },
             {
-              "id": "ORPHA:168811",
-              "label": "Malignant peritoneal mesothelioma",
-              "score": 0.0933
+              "id": "ORPHA:139507",
+              "label": "Dietary iron overload disease",
+              "score": 0.3475
+            },
+            {
+              "id": "ORPHA:2538",
+              "label": "Microgastria-limb reduction defect syndrome",
+              "score": 0.3466
+            },
+            {
+              "id": "ORPHA:355",
+              "label": "Gaucher disease",
+              "score": 0.3458
+            },
+            {
+              "id": "ORPHA:586",
+              "label": "Cystic fibrosis",
+              "score": 0.3428
+            },
+            {
+              "id": "ORPHA:901",
+              "label": "Wells syndrome",
+              "score": 0.3396
+            },
+            {
+              "id": "ORPHA:171",
+              "label": "Primary sclerosing cholangitis",
+              "score": 0.3353
             }
           ]
         }
       }
     ],
     "_pipelineStats": {
-      "totalEntities": 6,
+      "totalEntities": 11,
       "matchedHPO": 3,
-      "unmatchedEntities": 3,
+      "unmatchedEntities": 8,
       "phenopacketFeatures": 3,
       "negatedFeatures": 0,
       "numericPhenotypes": 0,
-      "ordoCandidates": 5
+      "ordoCandidates": 10
     }
   }
 }

@@ -160,7 +160,48 @@ st.markdown("""
         font-family: 'JetBrains Mono', 'Fira Code', monospace;
         font-size: 0.75rem; color: #c9d1d9;
         overflow-x: auto; max-height: 400px; overflow-y: auto;
+        white-space: pre !important; line-height: 1.5;
     }
+    .json-block .jk { color: #7ee787; }  /* keys */
+    .json-block .js { color: #a5d6ff; }  /* strings */
+    .json-block .jn { color: #ffa657; }  /* numbers */
+    .json-block .jb { color: #ff7b72; }  /* booleans/null */
+
+    .pp-section { margin-bottom: 1.2rem; }
+    .pp-section-title {
+        color: #38bdf8; font-size: 0.7rem; font-weight: 600;
+        text-transform: uppercase; letter-spacing: 0.08em;
+        margin-bottom: 0.6rem; padding-bottom: 0.4rem;
+        border-bottom: 1px solid rgba(56, 189, 248, 0.15);
+    }
+    .pp-row {
+        display: flex; justify-content: space-between; align-items: center;
+        padding: 0.45rem 0.8rem; margin-bottom: 2px;
+        border-radius: 6px; background: rgba(15, 23, 42, 0.5);
+    }
+    .pp-row:hover { background: rgba(56, 189, 248, 0.06); }
+    .pp-key { color: #94a3b8; font-size: 0.75rem; font-weight: 500; }
+    .pp-val { color: #e2e8f0; font-size: 0.8rem; font-weight: 500; font-family: 'JetBrains Mono', monospace; }
+    .pp-val.hpo { color: #34d399; }
+    .pp-val.excluded { color: #fbbf24; }
+    .pp-val.present { color: #34d399; }
+    .pp-feat-card {
+        background: linear-gradient(145deg, #111827 0%, #0f172a 100%);
+        border: 1px solid rgba(148, 163, 184, 0.08);
+        border-radius: 8px; padding: 0.7rem 1rem; margin-bottom: 0.4rem;
+        display: flex; justify-content: space-between; align-items: center;
+    }
+    .pp-feat-card:hover { border-color: rgba(56, 189, 248, 0.2); }
+    .pp-feat-left { flex: 1; }
+    .pp-feat-name { color: #e2e8f0; font-size: 0.82rem; font-weight: 500; }
+    .pp-feat-id { color: #34d399; font-size: 0.72rem; font-family: monospace; margin-top: 2px; }
+    .pp-feat-desc { color: #64748b; font-size: 0.7rem; margin-top: 2px; }
+    .pp-status {
+        padding: 3px 10px; border-radius: 12px; font-size: 0.65rem;
+        font-weight: 600; letter-spacing: 0.04em; text-transform: uppercase;
+    }
+    .pp-status.present { background: rgba(52, 211, 153, 0.12); color: #6ee7b7; }
+    .pp-status.excluded { background: rgba(251, 191, 36, 0.12); color: #fcd34d; }
 
     .stTabs [data-baseweb="tab-list"] {
         gap: 0; background: rgba(15, 23, 42, 0.6);
@@ -386,8 +427,8 @@ if raw_text:
         with tab3:
             pp = result.get("phenopacket", {})
             if pp:
+                st.json(pp, expanded=2)
                 js = json.dumps(pp, indent=2, ensure_ascii=False)
-                st.markdown(f'<pre class="json-block">{js}</pre>', unsafe_allow_html=True)
                 fname = uploaded.name.replace('.docx', '').replace('.txt', '') if uploaded else "clinical_note"
                 st.download_button("Telecharger le Phenopacket", data=js, file_name=f"phenopacket_{fname}.json", mime="application/json")
 

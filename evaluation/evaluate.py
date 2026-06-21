@@ -52,10 +52,8 @@ def run_pipeline_on_dataset(dataset: str, limit=None) -> list[dict]:
     from pipeline import FullPipeline
 
     if dataset == "chu":
-        from clinical_notes.chu_reports import load_chu_reports
-        from evaluation.gold_standard_chu import get_gold_for_reports
-        reports = load_chu_reports()
-        gold_map = get_gold_for_reports(reports)
+        from clinical_notes.chu_gold_v2.loader import load_chu_gold_v2
+        reports, gold_map = load_chu_gold_v2()
         lang_label = "French (CHU)"
         out_subdir = "chu_evaluation"
     elif dataset == "gsc":
@@ -74,14 +72,25 @@ def run_pipeline_on_dataset(dataset: str, limit=None) -> list[dict]:
                 }
         lang_label = "English (GSC Clinical Cases)"
         out_subdir = "gsc_evaluation"
+    elif dataset == "rarearena":
+        from clinical_notes.rarearena_loader import load_rarearena_cases
+        from evaluation.gold_standard_ra import GOLD_STANDARD_RA
+        reports = load_rarearena_cases()
+        gold_map = {}
+        for case in reports:
+            nid = case.get("note_id", "")
+            if nid in GOLD_STANDARD_RA:
+                gs = GOLD_STANDARD_RA[nid]
+                gold_map[nid] = {
+                    "disease": gs["disease"],
+                    "orpha_id": gs["orpha_id"],
+                    "expected_hpo": gs["expected_hpo"],
+                }
+        lang_label = "English (RareArena - Lancet 2026)"
+        out_subdir = "rarearena_evaluation"
     elif dataset == "chu_en":
-        from clinical_notes.translate_chu import load_translated_reports
-        from evaluation.gold_standard_chu import get_gold_for_reports
-        from clinical_notes.chu_reports import load_chu_reports
-        reports = load_translated_reports()
-        # Use FRENCH gold standard (same patients, same HPO, same ORPHA)
-        fr_reports = load_chu_reports()
-        gold_map = get_gold_for_reports(fr_reports)
+        from clinical_notes.chu_gold_v2.loader_en import load_chu_gold_v2_en
+        reports, gold_map = load_chu_gold_v2_en()
         lang_label = "English (CHU Translated FR→EN)"
         out_subdir = "chu_en_evaluation"
         force_lang = "en"  # Force English pipeline on translated text
@@ -179,27 +188,28 @@ def run_pipeline_on_dataset(dataset: str, limit=None) -> list[dict]:
             expected_disease = gold.get("disease", disease_name)
             expected_hpo = set(gold.get("expected_hpo", []))
 
-            # ORDO matching (ID → fuzzy name → direct lookup)
+            # ORDO matching — strict ORPHA ID only (no fuzzy name matching)
             ordo_correct = False
+            ordo_top1 = False
+            ordo_top5 = False
+            ordo_top10 = False
             ordo_top_name = ordo_candidates[0].get("name", "") if ordo_candidates else ""
             ordo_top_score = ordo_candidates[0].get("score", 0) if ordo_candidates else 0
 
             if ordo_candidates and expected_orpha:
+                ordo_top1 = ordo_candidates[0].get("ordo_id") == expected_orpha
                 ordo_correct = any(
-                    c.get("ordo_id") == expected_orpha or c.get("orpha_id") == expected_orpha
+                    c.get("ordo_id") == expected_orpha
                     for c in ordo_candidates[:3]
                 )
-            if not ordo_correct and ordo_candidates:
-                ordo_correct = any(
-                    expected_disease.lower() in (c.get("name", "") or "").lower()
-                    or (c.get("name", "") or "").lower() in expected_disease.lower()
-                    for c in ordo_candidates[:3]
+                ordo_top5 = any(
+                    c.get("ordo_id") == expected_orpha
+                    for c in ordo_candidates[:5]
                 )
-            if not ordo_correct and expected_orpha:
-                for c in ordo_candidates[:5]:
-                    if match_ordo_by_name(c.get("name", "")) == expected_orpha:
-                        ordo_correct = True
-                        break
+                ordo_top10 = any(
+                    c.get("ordo_id") == expected_orpha
+                    for c in ordo_candidates[:10]
+                )
 
             # Semantic HPO matching
             tp, fn, fp, matched_pairs = compute_semantic_tp(extracted_hpo, expected_hpo)
@@ -210,6 +220,7 @@ def run_pipeline_on_dataset(dataset: str, limit=None) -> list[dict]:
             entry.update({
                 "has_gold": True, "expected_disease": expected_disease,
                 "expected_orpha": expected_orpha, "ordo_correct": ordo_correct,
+                "ordo_top1": ordo_top1, "ordo_top5": ordo_top5, "ordo_top10": ordo_top10,
                 "ordo_top": ordo_top_name, "ordo_score": ordo_top_score,
                 "expected_hpo_count": len(expected_hpo),
                 "hpo_tp": tp, "hpo_fn": fn, "hpo_fp": fp,
@@ -290,10 +301,23 @@ def compute_cascade(outputs: list[dict]) -> dict:
 
 
 def compute_ordo(results: list[dict]) -> dict:
-    """Metric 3: ORDO Top-3 accuracy."""
+    """Metric 3: ORDO Top-K accuracy (strict ORPHA ID matching)."""
     gold = [r for r in results if r.get("has_gold")]
-    correct = sum(1 for r in gold if r.get("ordo_correct"))
-    return {"correct": correct, "total": len(gold), "accuracy": round(correct / max(len(gold), 1), 3)}
+    top1 = sum(1 for r in gold if r.get("ordo_top1"))
+    top3 = sum(1 for r in gold if r.get("ordo_correct"))
+    top5 = sum(1 for r in gold if r.get("ordo_top5"))
+    top10 = sum(1 for r in gold if r.get("ordo_top10"))
+    n = max(len(gold), 1)
+    return {
+        "top1": top1, "top3": top3, "top5": top5, "top10": top10,
+        "total": len(gold),
+        "top1_acc": round(top1 / n, 3),
+        "top3_acc": round(top3 / n, 3),
+        "top5_acc": round(top5 / n, 3),
+        "top10_acc": round(top10 / n, 3),
+        # Backward compatibility
+        "correct": top3, "accuracy": round(top3 / n, 3),
+    }
 
 
 def compute_detection(outputs: list[dict]) -> dict:
@@ -337,14 +361,7 @@ def compute_phenopacket(outputs: list[dict]) -> dict:
             "with_interpretations": with_interp, "with_excluded": with_excl}
 
 
-def compute_score(hpo: dict, ordo: dict, cascade: dict) -> dict:
-    """Metric 8: S.C.O.R.E. framework."""
-    s = min(5, max(1, round(cascade.get("coverage", 0) * 8)))
-    c = min(5, max(1, round(ordo.get("accuracy", 0) * 6)))
-    o = min(5, max(1, round(hpo.get("macro_recall", 0) * 5.5)))
-    r = min(5, max(1, round(hpo.get("macro_precision", 0) * 6)))
-    e = 5  # Explainability — full evidence chain built-in
-    return {"S": s, "C": c, "O": o, "R": r, "E": e, "total": s + c + o + r + e}
+
 
 
 # ═══════════════════════════════════════════════════════════════════════
@@ -358,7 +375,7 @@ def print_report(lang: str, results: list[dict], outputs: list[dict]) -> dict:
     ordo = compute_ordo(results)
     detect = compute_detection(outputs)
     pp = compute_phenopacket(outputs)
-    score = compute_score(hpo, ordo, cascade)
+
     avg_time = sum(r.get("time", 0) for r in results) / max(len(results), 1)
 
     print(f"\n{'─'*70}")
@@ -375,8 +392,12 @@ def print_report(lang: str, results: list[dict], outputs: list[dict]) -> dict:
     for mt, info in cascade["cascade"].items():
         print(f"     {mt:<25} {info['count']:>5} ({info['pct']:>5.1f}%)  conf={info['avg_conf']:.3f}")
 
-    # 3. ORDO
-    print(f"\n  3. ORDO Top-3: {ordo['correct']}/{ordo['total']} = {ordo['accuracy']:.1%}")
+    # 3. ORDO Top-K Accuracy
+    print(f"\n  3. ORDO Disease Classification (n={ordo['total']})")
+    print(f"     Top-1:  {ordo['top1']:>2}/{ordo['total']} = {ordo['top1_acc']:.1%}")
+    print(f"     Top-3:  {ordo['top3']:>2}/{ordo['total']} = {ordo['top3_acc']:.1%}")
+    print(f"     Top-5:  {ordo['top5']:>2}/{ordo['total']} = {ordo['top5_acc']:.1%}")
+    print(f"     Top-10: {ordo['top10']:>2}/{ordo['total']} = {ordo['top10_acc']:.1%}")
 
     # 4. Detection
     print(f"\n  4. Detection: {detect['negated']} negated | {detect['inconsistencies']} inconsistencies")
@@ -386,16 +407,12 @@ def print_report(lang: str, results: list[dict], outputs: list[dict]) -> dict:
     # 5. Phenopacket
     print(f"\n  5. Phenopacket: {pp['rate']} | avg {pp['avg_features']} features/report")
 
-    # 7. Efficiency
-    print(f"\n  7. Efficiency: {avg_time:.2f}s/report ({len(results)} reports)")
-
-    # 8. S.C.O.R.E.
-    print(f"\n  8. S.C.O.R.E.: {score['total']}/25")
-    print(f"     S={score['S']} C={score['C']} O={score['O']} R={score['R']} E={score['E']}")
+    # 6. Efficiency
+    print(f"\n  6. Efficiency: {avg_time:.2f}s/report ({len(results)} reports)")
 
     return {
         "hpo": hpo, "cascade": cascade, "ordo": ordo, "detection": detect,
-        "phenopacket": pp, "score": score, "efficiency": {"avg_time": round(avg_time, 2), "reports": len(results)},
+        "phenopacket": pp, "efficiency": {"avg_time": round(avg_time, 2), "reports": len(results)},
         "per_report": results,
     }
 
@@ -408,18 +425,15 @@ def print_crosslingual(fr: dict, en: dict):
     rows = [
         ("HPO Micro F1", fr["hpo"].get("micro_f1", 0), en["hpo"].get("micro_f1", 0)),
         ("HPO Macro F1", fr["hpo"].get("macro_f1", 0), en["hpo"].get("macro_f1", 0)),
-        ("ORDO Top-3", fr["ordo"].get("accuracy", 0), en["ordo"].get("accuracy", 0)),
+        ("ORDO Top-3", fr["ordo"].get("top3_acc", 0), en["ordo"].get("top3_acc", 0)),
         ("Norm Coverage", fr["cascade"].get("coverage", 0), en["cascade"].get("coverage", 0)),
         ("Avg Time", fr["efficiency"]["avg_time"], en["efficiency"]["avg_time"]),
-        ("S.C.O.R.E.", fr["score"]["total"] / 25, en["score"]["total"] / 25),
     ]
     print(f"\n  {'Metric':<20} {'French':>10} {'English':>10} {'Δ':>8}")
     print(f"  {'─'*50}")
     for name, fv, ev in rows:
         if name == "Avg Time":
             print(f"  {name:<20} {fv:>9.2f}s {ev:>9.2f}s {fv-ev:>+7.2f}s")
-        elif name == "S.C.O.R.E.":
-            print(f"  {name:<20} {fr['score']['total']:>8}/25 {en['score']['total']:>8}/25")
         else:
             print(f"  {name:<20} {fv:>9.1%} {ev:>9.1%} {fv-ev:>+7.1%}")
 
@@ -485,6 +499,14 @@ def main():
         gsc_results = run_pipeline_on_dataset("gsc", limit=limit)
         gsc_outputs = load_saved_outputs("gsc_evaluation")
 
+    # ── RareArena dataset (optional) ──────────────────────────────────
+    run_ra = "--rarearena" in sys.argv
+    ra_results, ra_outputs = [], []
+
+    if run_ra:
+        ra_results = run_pipeline_on_dataset("rarearena", limit=limit)
+        ra_outputs = load_saved_outputs("rarearena_evaluation")
+
     # ── CHU Translated (optional) ─────────────────────────────────────
     run_chu_en = "--chu-en" in sys.argv
     chu_en_results, chu_en_outputs = [], []
@@ -500,6 +522,8 @@ def main():
         parts.append(f"{len(en_results)} EN results")
     if run_gsc:
         parts.append(f"{len(gsc_results)} GSC results")
+    if run_ra:
+        parts.append(f"{len(ra_results)} RareArena results")
     if run_chu_en:
         parts.append(f"{len(chu_en_results)} CHU-EN results")
     print(f"\n  Loaded: {' + '.join(parts)}")
@@ -511,18 +535,22 @@ def main():
         out_parts.append(f"{len(en_outputs)} EN JSONs")
     if run_gsc:
         out_parts.append(f"{len(gsc_outputs)} GSC JSONs")
+    if run_ra:
+        out_parts.append(f"{len(ra_outputs)} RareArena JSONs")
     if run_chu_en:
         out_parts.append(f"{len(chu_en_outputs)} CHU-EN JSONs")
     print(f"  Outputs: {' + '.join(out_parts)}")
 
     # ── Phase 2: Compute all metrics ──────────────────────────────────
-    fr, en, gsc, chu_en = None, None, None, None
+    fr, en, gsc, ra, chu_en = None, None, None, None, None
     if run_fr:
         fr = print_report("FRENCH (CHU Oran)", fr_results, fr_outputs)
     if run_en:
         en = print_report("ENGLISH (PubMed)", en_results, en_outputs)
     if run_gsc:
         gsc = print_report("ENGLISH (GSC Clinical Cases)", gsc_results, gsc_outputs)
+    if run_ra:
+        ra = print_report("ENGLISH (RareArena - Lancet 2026)", ra_results, ra_outputs)
     if run_chu_en:
         chu_en = print_report("ENGLISH (CHU Translated FR→EN)", chu_en_results, chu_en_outputs)
 
@@ -542,6 +570,9 @@ def main():
     if gsc:
         full_report["gsc"] = {k: v for k, v in gsc.items() if k != "per_report"}
         full_report["gsc_per_report"] = gsc.get("per_report", [])
+    if ra:
+        full_report["rarearena"] = {k: v for k, v in ra.items() if k != "per_report"}
+        full_report["rarearena_per_report"] = ra.get("per_report", [])
 
     # Save per-language reports
     save_list = []
@@ -551,6 +582,8 @@ def main():
         save_list.append(("pubmed_evaluation_report.json", en, "PubMed English"))
     if gsc:
         save_list.append(("gsc_evaluation_report.json", gsc, "GSC Clinical Cases"))
+    if ra:
+        save_list.append(("rarearena_evaluation_report.json", ra, "RareArena (Lancet 2026)"))
 
     for name, data, dataset_label in save_list:
         report = {
@@ -560,7 +593,10 @@ def main():
             "total_reports": data["efficiency"]["reports"],
             "gold_standard_reports": data["ordo"]["total"],
             "metrics": {
-                "ordo_top3_accuracy": data["ordo"]["accuracy"],
+                "ordo_top1_accuracy": data["ordo"]["top1_acc"],
+                "ordo_top3_accuracy": data["ordo"]["top3_acc"],
+                "ordo_top5_accuracy": data["ordo"]["top5_acc"],
+                "ordo_top10_accuracy": data["ordo"]["top10_acc"],
                 "hpo_micro_precision": data["hpo"].get("micro_precision"),
                 "hpo_micro_recall": data["hpo"].get("micro_recall"),
                 "hpo_micro_f1": data["hpo"].get("micro_f1"),
@@ -588,6 +624,8 @@ def main():
         print(f"    {OUTPUT_DIR / 'pubmed_evaluation_report.json'}")
     if gsc:
         print(f"    {OUTPUT_DIR / 'gsc_evaluation_report.json'}")
+    if ra:
+        print(f"    {OUTPUT_DIR / 'rarearena_evaluation_report.json'}")
     print(f"{'='*70}\n")
 
 

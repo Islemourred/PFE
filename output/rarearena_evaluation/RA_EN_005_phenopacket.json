@@ -1,0 +1,360 @@
+{
+  "id": "phenopacket-RA_EN_005",
+  "subject": {
+    "id": "RA_EN_005",
+    "sex": "FEMALE"
+  },
+  "input": "A 2-year-old female child, third in birth order, born to parents who are first cousins, delivered vaginally at term without complications, presented with sparse scalp hair, absent body hair, eyebrows, and eyelashes, and delayed tooth eruption. The mother reported that the child does not sweat and has had recurrent fevers since the neonatal period. Psychomotor development was normal. There was no family history of similar symptoms, except for a previous female sibling with similar complaints and a distinctive appearance, who experienced recurrent fever and chest infections during the neonatal period and died at 6 months of age. The parents' first pregnancy ended in a miscarriage at 2 months for unknown reasons. Skin examination showed smooth, normal-looking skin with normal palmoplantar skin and dermatoglyphics. The child had an aged appearance with finely wrinkled skin around the eyes, an everted lower lip, and low-set ears. Scalp hair was sparse, light-colored, and thin, with complete absence of eyelashes, eyebrows, and body hair. Oral examination revealed only two conical, widely spaced maxillary teeth and a low-arched, flat palate. Nails were normal. Systemic examination showed no abnormalities, and there was no evidence of mental retardation. Imaging of the jaw showed a lack of teeth with only two maxillary teeth and a left mandibular tooth bud. Biochemical tests were normal.",
+  "target": "GAPO syndrome",
+  "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0002209",
+        "label": "Sparse scalp hair",
+        "umls_cui": "C1857042"
+      },
+      "excluded": true,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_005",
+            "description": "NER: sparse scalp hair, absent body hair, eyebrows (0.985) | Match: sapbert_similarity (0.758) | Negated by: \"without\""
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0001128",
+        "label": "Trichiasis",
+        "umls_cui": "C0221259"
+      },
+      "excluded": true,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_005",
+            "description": "NER: eyelashes (0.728) | Match: sapbert_similarity (0.843) | Negated by: \"absent\""
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0000684",
+        "label": "Delayed eruption of teeth",
+        "umls_cui": "C0239174"
+      },
+      "excluded": true,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_005",
+            "description": "NER: delayed tooth eruption (0.998) | Match: exact_synonym (1.000) | Negated by: \"absent\""
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0006288",
+        "label": "Advanced eruption of teeth",
+        "umls_cui": "C0266054"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_005",
+            "description": "NER: tooth eruption (0.670) | Match: sapbert_similarity (0.728)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0001954",
+        "label": "Recurrent fever",
+        "umls_cui": "C0277799"
+      },
+      "excluded": true,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_005",
+            "description": "NER: recurrent fevers (0.990) | Match: sapbert_similarity (0.928) | Negated by: \"does not\""
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0001945",
+        "label": "Fever",
+        "umls_cui": "C0015967"
+      },
+      "excluded": true,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_005",
+            "description": "NER: fevers (0.793) | Match: sapbert_similarity (0.965) | Negated by: \"does not\""
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0002783",
+        "label": "Recurrent lower respiratory tract infections",
+        "umls_cui": "C0149725"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_005",
+            "description": "NER: chest infections (0.998) | Match: sapbert_similarity (0.797)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0005268",
+        "label": "Miscarriage",
+        "umls_cui": "C0000786"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_005",
+            "description": "NER: a miscarriage (0.990) | Match: sapbert_similarity (0.853)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0100678",
+        "label": "Premature skin wrinkling",
+        "umls_cui": "C0037301"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_005",
+            "description": "NER: finely wrinkled skin around the eyes (0.951) | Match: substring_match (0.950)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0001249",
+        "label": "Intellectual disability",
+        "umls_cui": "C0025362"
+      },
+      "excluded": true,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_005",
+            "description": "NER: mental retardation (0.998) | Match: clinical_synonym (1.000) | Negated by: \"no evidence of\""
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0009804",
+        "label": "Tooth agenesis",
+        "umls_cui": "C4024202"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_005",
+            "description": "NER: a lack of teeth (0.991) | Match: sapbert_similarity (0.925)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0000232",
+        "label": "Everted lower lip vermilion",
+        "umls_cui": "C1853246"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_005",
+            "description": "NER: everted lower lip (0.900) | Match: text_scan_exact_synonym (0.950)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0000369",
+        "label": "Low-set ears",
+        "umls_cui": "C0239234"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_005",
+            "description": "NER: low-set ears (0.900) | Match: text_scan_exact_label (0.950)"
+          }
+        }
+      ]
+    }
+  ],
+  "metaData": {
+    "created": "2026-06-19T15:08:47Z",
+    "createdBy": "clinical-preanalysis-pipeline-v2",
+    "phenopacketSchemaVersion": "2.0",
+    "resources": [
+      {
+        "id": "hp",
+        "name": "Human Phenotype Ontology",
+        "url": "https://hpo.jax.org",
+        "version": "2024-04-26",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      }
+    ]
+  },
+  "interpretations": [
+    {
+      "id": "interpretation-RA_EN_005",
+      "progressStatus": "IN_PROGRESS",
+      "diagnosis": {
+        "disease": {
+          "id": "ORPHA:2067",
+          "label": "GAPO syndrome"
+        },
+        "score": 0.3752,
+        "allCandidates": [
+          {
+            "id": "ORPHA:2067",
+            "label": "GAPO syndrome",
+            "score": 0.3752
+          },
+          {
+            "id": "ORPHA:2136",
+            "label": "Hennekam syndrome",
+            "score": 0.3332
+          },
+          {
+            "id": "ORPHA:404448",
+            "label": "Helsmoortel-Van der Aa syndrome",
+            "score": 0.3201
+          },
+          {
+            "id": "ORPHA:915",
+            "label": "Aarskog-Scott syndrome",
+            "score": 0.3147
+          },
+          {
+            "id": "ORPHA:192",
+            "label": "Coffin-Lowry syndrome",
+            "score": 0.3138
+          },
+          {
+            "id": "ORPHA:2834",
+            "label": "Wrinkly skin syndrome",
+            "score": 0.3106
+          },
+          {
+            "id": "ORPHA:221016",
+            "label": "Rothmund-Thomson syndrome type 2",
+            "score": 0.3094
+          },
+          {
+            "id": "ORPHA:99843",
+            "label": "Leukocyte adhesion deficiency type II",
+            "score": 0.2967
+          },
+          {
+            "id": "ORPHA:221008",
+            "label": "Rothmund-Thomson syndrome type 1",
+            "score": 0.296
+          },
+          {
+            "id": "ORPHA:769",
+            "label": "Rabson-Mendenhall syndrome",
+            "score": 0.2953
+          }
+        ]
+      }
+    }
+  ],
+  "_pipelineStats": {
+    "totalEntities": 48,
+    "matchedHPO": 13,
+    "unmatchedEntities": 35,
+    "phenopacketFeatures": 13,
+    "negatedFeatures": 6,
+    "numericPhenotypes": 0,
+    "ordoCandidates": 10
+  }
+}

@@ -13,190 +13,58 @@
     "inconsistencies": []
   },
   "module4": {
-    "test": [
-      {
-        "text": "renal",
-        "ner_score": 0.437,
-        "negated": false,
-        "negation_cue": "",
-        "hpo_id": "HP:0000112",
-        "hpo_name": "Nephropathy",
-        "expanded_text": "renal",
-        "match_type": "sapbert_similarity",
-        "confidence": 0.7089,
-        "matched": true,
-        "umls_cui": "C0022658"
-      },
-      {
-        "text": "respiratory",
-        "ner_score": 0.914,
-        "negated": false,
-        "negation_cue": "",
-        "hpo_id": "HP:0011947",
-        "hpo_name": "Respiratory tract infection",
-        "expanded_text": "respiratory",
-        "match_type": "sapbert_similarity",
-        "confidence": 0.7121,
-        "matched": true,
-        "umls_cui": "C0035243"
-      },
-      {
-        "text": "dermatological",
-        "ner_score": 0.537,
-        "negated": false,
-        "negation_cue": "",
-        "hpo_id": "HP:0000951",
-        "hpo_name": "Abnormality of the skin",
-        "expanded_text": "dermatological",
-        "match_type": "sapbert_similarity",
-        "confidence": 0.8074,
-        "matched": true,
-        "umls_cui": "C0037268"
-      },
-      {
-        "text": "gastrointestinal",
-        "ner_score": 0.676,
-        "negated": false,
-        "negation_cue": "",
-        "hpo_id": "HP:0006749",
-        "hpo_name": "Malignant gastrointestinal tract tumors",
-        "expanded_text": "gastrointestinal",
-        "match_type": "sapbert_similarity",
-        "confidence": 0.7162,
-        "matched": true,
-        "umls_cui": "C0685938"
-      },
-      {
-        "text": "systems",
-        "ner_score": 0.761,
-        "negated": false,
-        "negation_cue": "",
-        "hpo_id": null,
-        "hpo_name": null,
-        "expanded_text": "systems",
-        "match_type": "no_match",
-        "confidence": 0.0,
-        "matched": false,
-        "umls_cui": null
-      },
-      {
-        "text": "brothers",
-        "ner_score": 0.213,
-        "negated": false,
-        "negation_cue": "",
-        "hpo_id": null,
-        "hpo_name": null,
-        "expanded_text": "brothers",
-        "match_type": "no_match",
-        "confidence": 0.0,
-        "matched": false,
-        "umls_cui": null
-      },
-      {
-        "text": "brother",
-        "ner_score": 0.575,
-        "negated": false,
-        "negation_cue": "",
-        "hpo_id": null,
-        "hpo_name": null,
-        "expanded_text": "brother",
-        "match_type": "no_match",
-        "confidence": 0.0,
-        "matched": false,
-        "umls_cui": null
-      },
-      {
-        "text": "genetic",
-        "ner_score": 0.987,
-        "negated": false,
-        "negation_cue": "",
-        "hpo_id": null,
-        "hpo_name": null,
-        "expanded_text": "genetic",
-        "match_type": "skipped_non_phenotype",
-        "confidence": 0.0,
-        "matched": false,
-        "umls_cui": null
-      },
-      {
-        "text": "testing",
-        "ner_score": 0.985,
-        "negated": false,
-        "negation_cue": "",
-        "hpo_id": null,
-        "hpo_name": null,
-        "expanded_text": "testing",
-        "match_type": "no_match",
-        "confidence": 0.0,
-        "matched": false,
-        "umls_cui": null
-      },
-      {
-        "text": "younger",
-        "ner_score": 0.727,
-        "negated": false,
-        "negation_cue": "",
-        "hpo_id": "HP:0007495",
-        "hpo_name": "Prematurely aged appearance",
-        "expanded_text": "younger",
-        "match_type": "sapbert_similarity",
-        "confidence": 0.7167,
-        "matched": true,
-        "umls_cui": "C1857656"
-      },
-      {
-        "text": "older",
-        "ner_score": 0.639,
-        "negated": false,
-        "negation_cue": "",
-        "hpo_id": null,
-        "hpo_name": null,
-        "expanded_text": "older",
-        "match_type": "no_match",
-        "confidence": 0.0,
-        "matched": false,
-        "umls_cui": null
-      },
-      {
-        "text": "Immune",
-        "ner_score": 0.964,
-        "negated": false,
-        "negation_cue": "",
-        "hpo_id": null,
-        "hpo_name": null,
-        "expanded_text": "Immune",
-        "match_type": "no_match",
-        "confidence": 0.0,
-        "matched": false,
-        "umls_cui": null
-      },
-      {
-        "text": "profiling",
-        "ner_score": 0.971,
-        "negated": false,
-        "negation_cue": "",
-        "hpo_id": null,
-        "hpo_name": null,
-        "expanded_text": "profiling",
-        "match_type": "no_match",
-        "confidence": 0.0,
-        "matched": false,
-        "umls_cui": null
-      }
-    ],
     "problem": [
+      {
+        "text": "x - linked agammaglobulinemia",
+        "ner_score": 0.997,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "x - linked agammaglobulinemia",
+        "match_type": "deduplicated",
+        "confidence": 0.8891,
+        "matched": false,
+        "umls_cui": "C0001768"
+      },
+      {
+        "text": "immune - mediated renal diseases",
+        "ner_score": 0.999,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "immune - mediated renal diseases",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
       {
         "text": "renal",
         "ner_score": 0.608,
         "negated": false,
         "negation_cue": "",
-        "hpo_id": "HP:0000112",
-        "hpo_name": "Nephropathy",
+        "hpo_id": null,
+        "hpo_name": null,
         "expanded_text": "renal",
-        "match_type": "sapbert_similarity",
-        "confidence": 0.7089,
-        "matched": true,
-        "umls_cui": "C0022658"
+        "match_type": "skipped_en_noise",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "renal manifestations",
+        "ner_score": 0.924,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "renal manifestations",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
       },
       {
         "text": "linked agammaglobulinemia",
@@ -210,6 +78,19 @@
         "confidence": 0.9132,
         "matched": true,
         "umls_cui": "C0001768"
+      },
+      {
+        "text": "a humoral immunodeficiency disorder",
+        "ner_score": 0.997,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0005363",
+        "hpo_name": "Humoral immunodeficiency",
+        "expanded_text": "a humoral immunodeficiency disorder",
+        "match_type": "substring_match",
+        "confidence": 0.95,
+        "matched": true,
+        "umls_cui": "C4025206"
       },
       {
         "text": "immunodeficiency",
@@ -232,7 +113,7 @@
         "hpo_id": null,
         "hpo_name": null,
         "expanded_text": "deficiency",
-        "match_type": "no_match",
+        "match_type": "skipped_low_ner_score",
         "confidence": 0.0,
         "matched": false,
         "umls_cui": null
@@ -245,23 +126,49 @@
         "hpo_id": null,
         "hpo_name": null,
         "expanded_text": "disorder",
-        "match_type": "no_match",
+        "match_type": "skipped_en_noise",
         "confidence": 0.0,
         "matched": false,
         "umls_cui": null
+      },
+      {
+        "text": "recurrent infections",
+        "ner_score": 0.995,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0002719",
+        "hpo_name": "Recurrent infections",
+        "expanded_text": "recurrent infections",
+        "match_type": "clinical_synonym",
+        "confidence": 1.0,
+        "matched": true,
+        "umls_cui": "C0239998"
       },
       {
         "text": "infections",
         "ner_score": 0.388,
         "negated": false,
         "negation_cue": "",
-        "hpo_id": "HP:0002719",
-        "hpo_name": "Recurrent infections",
+        "hpo_id": null,
+        "hpo_name": null,
         "expanded_text": "infections",
-        "match_type": "sapbert_similarity",
-        "confidence": 0.7773,
-        "matched": true,
-        "umls_cui": "C0239998"
+        "match_type": "skipped_low_ner_score",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "severe hypogammaglobulinemia",
+        "ner_score": 0.998,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "severe hypogammaglobulinemia",
+        "match_type": "deduplicated",
+        "confidence": 0.8526,
+        "matched": false,
+        "umls_cui": "C0001768"
       },
       {
         "text": "hypogammaglobulinemia",
@@ -277,6 +184,19 @@
         "umls_cui": "C0086438"
       },
       {
+        "text": "a deficiency of circulating b cells",
+        "ner_score": 0.989,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0010976",
+        "hpo_name": "Decreased total B cell count",
+        "expanded_text": "a deficiency of circulating b cells",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.8553,
+        "matched": true,
+        "umls_cui": "C1855067"
+      },
+      {
         "text": "B cells",
         "ner_score": 0.652,
         "negated": false,
@@ -290,6 +210,32 @@
         "umls_cui": null
       },
       {
+        "text": "renal involvement",
+        "ner_score": 0.832,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0000083",
+        "hpo_name": "Renal insufficiency",
+        "expanded_text": "renal involvement",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.7128,
+        "matched": true,
+        "umls_cui": "C0035078"
+      },
+      {
+        "text": "concurrent renal disease",
+        "ner_score": 0.996,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0012622",
+        "hpo_name": "Chronic kidney disease",
+        "expanded_text": "concurrent renal disease",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.7526,
+        "matched": true,
+        "umls_cui": "C0748318"
+      },
+      {
         "text": "disease",
         "ner_score": 0.592,
         "negated": false,
@@ -297,10 +243,23 @@
         "hpo_id": null,
         "hpo_name": null,
         "expanded_text": "disease",
-        "match_type": "no_match",
+        "match_type": "skipped_en_noise",
         "confidence": 0.0,
         "matched": false,
         "umls_cui": null
+      },
+      {
+        "text": "respiratory tract infections",
+        "ner_score": 0.999,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0011947",
+        "hpo_name": "Respiratory tract infection",
+        "expanded_text": "respiratory tract infections",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.9928,
+        "matched": true,
+        "umls_cui": "C0035243"
       },
       {
         "text": "improvement",
@@ -329,22 +288,6 @@
         "umls_cui": "C0027697"
       },
       {
-        "text": "humoral immunodeficiency",
-        "ner_score": 0.9,
-        "negated": false,
-        "negation_cue": "",
-        "hpo_id": "HP:0005363",
-        "hpo_name": "Humoral immunodeficiency",
-        "expanded_text": "humoral immunodeficiency",
-        "match_type": "text_scan_exact_label",
-        "confidence": 0.95,
-        "matched": true,
-        "umls_cui": "C4025206",
-        "umls_all": [
-          "C4025206"
-        ]
-      },
-      {
         "text": "X-linked",
         "ner_score": 0.9,
         "negated": false,
@@ -361,7 +304,152 @@
         ]
       }
     ],
+    "test": [
+      {
+        "text": "subsequent genetic testing",
+        "ner_score": 0.995,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "subsequent genetic testing",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "genetic",
+        "ner_score": 0.987,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "genetic",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "genetic testing",
+        "ner_score": 0.994,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "genetic testing",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "testing",
+        "ner_score": 0.985,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "testing",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "Immune",
+        "ner_score": 0.964,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "Immune",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "immune profiling",
+        "ner_score": 0.993,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "immune profiling",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "profiling",
+        "ner_score": 0.971,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "profiling",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "regular monitoring",
+        "ner_score": 0.976,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "regular monitoring",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      }
+    ],
     "treatment": [
+      {
+        "text": "venous immunoglobulin ( ivig ) therapy",
+        "ner_score": 0.978,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "venous immunoglobulin ( ivig ) therapy",
+        "match_type": "skipped_treatment",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "anti - infection treatment",
+        "ner_score": 0.99,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "anti - infection treatment",
+        "match_type": "skipped_treatment",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "anti - infection",
+        "ner_score": 0.965,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "anti - infection",
+        "match_type": "skipped_treatment",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
       {
         "text": "intravenous immunoglobulin",
         "ner_score": 0.404,
@@ -370,7 +458,20 @@
         "hpo_id": null,
         "hpo_name": null,
         "expanded_text": "intravenous immunoglobulin",
-        "match_type": "no_match",
+        "match_type": "skipped_low_ner_score",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "intra",
+        "ner_score": 0.998,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "intra",
+        "match_type": "skipped_treatment",
         "confidence": 0.0,
         "matched": false,
         "umls_cui": null
@@ -383,7 +484,7 @@
         "hpo_id": null,
         "hpo_name": null,
         "expanded_text": "anti-infection treatment",
-        "match_type": "no_match",
+        "match_type": "skipped_treatment",
         "confidence": 0.0,
         "matched": false,
         "umls_cui": null
@@ -396,7 +497,7 @@
         "hpo_id": null,
         "hpo_name": null,
         "expanded_text": "anti-infection",
-        "match_type": "no_match",
+        "match_type": "skipped_low_ner_score",
         "confidence": 0.0,
         "matched": false,
         "umls_cui": null
@@ -409,7 +510,20 @@
         "hpo_id": null,
         "hpo_name": null,
         "expanded_text": "symptomatic treatments",
-        "match_type": "no_match",
+        "match_type": "skipped_treatment",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "ivig treatment",
+        "ner_score": 0.998,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "ivig treatment",
+        "match_type": "skipped_treatment",
         "confidence": 0.0,
         "matched": false,
         "umls_cui": null
@@ -417,81 +531,153 @@
     ],
     "ordo_candidates": [
       {
+        "ordo_id": "ORPHA:39041",
+        "name": "Omenn syndrome",
+        "name_fr": "",
+        "score": 0.4845,
+        "coverage": 0.033,
+        "matched_hpo": [
+          "HP:0002721",
+          "HP:0004432",
+          "HP:0010976"
+        ],
+        "matched_count": 3,
+        "total_disease_hpo": 91,
+        "text_match": false
+      },
+      {
         "ordo_id": "ORPHA:47",
         "name": "X-linked agammaglobulinemia",
-        "name_fr": "Agammaglobulinémie congénitale (maladie de Bruton)",
-        "score": 0.85,
-        "jaccard": 0.0952,
-        "coverage": 0.1818,
-        "matched_hpo": [
-          "HP:0002719",
-          "HP:0004313"
-        ],
-        "matched_count": 2,
-        "total_disease_hpo": 11
-      },
-      {
-        "ordo_id": "ORPHA:99811",
-        "name": "Neuronal intestinal pseudoobstruction",
         "name_fr": "",
-        "score": 0.2185,
-        "jaccard": 0.1176,
-        "coverage": 0.2857,
+        "score": 0.4537,
+        "coverage": 0.0571,
         "matched_hpo": [
-          "HP:0002719",
-          "HP:0004313"
+          "HP:0002721",
+          "HP:0004432"
         ],
         "matched_count": 2,
-        "total_disease_hpo": 7
+        "total_disease_hpo": 35,
+        "text_match": true
       },
       {
-        "ordo_id": "ORPHA:1572",
-        "name": "Common variable immunodeficiency",
-        "name_fr": "Déficit immunitaire commun variable (DICV)",
-        "score": 0.2185,
-        "jaccard": 0.1176,
-        "coverage": 0.2857,
-        "matched_hpo": [
-          "HP:0002719",
-          "HP:0004313"
-        ],
-        "matched_count": 2,
-        "total_disease_hpo": 7
-      },
-      {
-        "ordo_id": "ORPHA:183707",
-        "name": "Infantile LAD-like disease due to RAC2 deficiency",
+        "ordo_id": "ORPHA:538934",
+        "name": "X-linked lymphoproliferative disease due to XIAP deficiency",
         "name_fr": "",
-        "score": 0.1767,
-        "jaccard": 0.0667,
-        "coverage": 0.25,
+        "score": 0.4323,
+        "coverage": 0.2273,
+        "matched_hpo": [
+          "HP:0000083",
+          "HP:0000123",
+          "HP:0002719",
+          "HP:0002721",
+          "HP:0004313"
+        ],
+        "matched_count": 5,
+        "total_disease_hpo": 22,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:221139",
+        "name": "Combined immunodeficiency with facio-oculo-skeletal anomalies",
+        "name_fr": "",
+        "score": 0.4119,
+        "coverage": 0.029,
+        "matched_hpo": [
+          "HP:0004313",
+          "HP:0010976"
+        ],
+        "matched_count": 2,
+        "total_disease_hpo": 69,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:443811",
+        "name": "PGM3-CDG",
+        "name_fr": "",
+        "score": 0.3902,
+        "coverage": 0.0161,
+        "matched_hpo": [
+          "HP:0002719"
+        ],
+        "matched_count": 1,
+        "total_disease_hpo": 62,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:1830",
+        "name": "Schimke immuno-osseous dysplasia",
+        "name_fr": "",
+        "score": 0.3859,
+        "coverage": 0.0137,
+        "matched_hpo": [
+          "HP:0002719"
+        ],
+        "matched_count": 1,
+        "total_disease_hpo": 73,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:906",
+        "name": "Wiskott-Aldrich syndrome",
+        "name_fr": "",
+        "score": 0.3784,
+        "coverage": 0.0105,
         "matched_hpo": [
           "HP:0002721"
         ],
         "matched_count": 1,
-        "total_disease_hpo": 4
+        "total_disease_hpo": 95,
+        "text_match": false
       },
       {
-        "ordo_id": "ORPHA:231249",
-        "name": "Hemoglobin E-beta-thalassemia syndrome",
+        "ordo_id": "ORPHA:3261",
+        "name": "Autoimmune lymphoproliferative syndrome",
         "name_fr": "",
-        "score": 0.1767,
-        "jaccard": 0.0667,
-        "coverage": 0.25,
+        "score": 0.3779,
+        "coverage": 0.0139,
         "matched_hpo": [
-          "HP:0002721"
+          "HP:0000083"
         ],
         "matched_count": 1,
-        "total_disease_hpo": 4
+        "total_disease_hpo": 72,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:289390",
+        "name": "Primary Sjögren disease",
+        "name_fr": "",
+        "score": 0.3767,
+        "coverage": 0.0244,
+        "matched_hpo": [
+          "HP:0000083",
+          "HP:0004313"
+        ],
+        "matched_count": 2,
+        "total_disease_hpo": 82,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:470",
+        "name": "Lysinuric protein intolerance",
+        "name_fr": "",
+        "score": 0.3702,
+        "coverage": 0.026,
+        "matched_hpo": [
+          "HP:0004313",
+          "HP:0012622"
+        ],
+        "matched_count": 2,
+        "total_disease_hpo": 77,
+        "text_match": false
       }
     ],
     "stats": {
-      "total": 30,
-      "matched": 13,
-      "unmatched": 17,
-      "match_rate": 43.3,
-      "unique_hpo": 12,
-      "ordo_matches": 5
+      "total": 39,
+      "matched": 11,
+      "unmatched": 28,
+      "match_rate": 28.2,
+      "unique_hpo": 11,
+      "ordo_matches": 10
     }
   },
   "phenopacket": {
@@ -501,28 +687,8 @@
       "sex": "MALE"
     },
     "input": "Case Report: Case report of renal manifestations in X-linked agammaglobulinemia.\n\nINTRODUCTION: X-linked agammaglobulinemia (XLA) is a humoral immunodeficiency disorder characterized by recurrent infections, severe hypogammaglobulinemia, and a deficiency of circulating B cells. While the hallmark clinical manifestations of XLA typically include the respiratory, dermatological, and gastrointestinal systems, renal involvement is infrequent. In this article, we report two cases of XLA with concurrent renal disease, supplemented with a review of documented cases.\nCASE DESCRIPTION: The two cases described involve twin brothers, both presenting with respiratory tract infections and renal manifestations. Subsequent genetic testing confirmed the diagnosis of XLA. The younger brother exhibited improvement following intravenous immunoglobulin (IVIG) therapy and anti-infection treatment. Due to financial constraints, the older brother received only anti-infection and symptomatic treatments. Seven months after discharge, the older brother developed nephritis. However, he showed improvement following IVIG treatment.\nCONCLUSION: Immune profiling and genetic testing should be considered in male children with recurrent infections to facilitate the effective diagnosis of XLA. Regular monitoring is also imperative to detect and treat immune-mediated renal diseases in patients with XLA.",
-    "target": "X-linked agammaglobulinemia",
+    "target": "Omenn syndrome",
     "phenotypicFeatures": [
-      {
-        "type": {
-          "id": "HP:0000112",
-          "label": "Nephropathy",
-          "umls_cui": "C0022658"
-        },
-        "excluded": false,
-        "evidence": [
-          {
-            "evidenceCode": {
-              "id": "ECO:0000033",
-              "label": "author statement supported by traceable reference"
-            },
-            "reference": {
-              "id": "PUBMED_EN_008",
-              "description": "NER: renal (0.608) | Match: sapbert_similarity (0.709)"
-            }
-          }
-        ]
-      },
       {
         "type": {
           "id": "HP:0004432",
@@ -539,6 +705,26 @@
             "reference": {
               "id": "PUBMED_EN_008",
               "description": "NER: linked agammaglobulinemia (0.942) | Match: sapbert_similarity (0.913)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0005363",
+          "label": "Humoral immunodeficiency",
+          "umls_cui": "C4025206"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "PUBMED_EN_008",
+              "description": "NER: a humoral immunodeficiency disorder (0.997) | Match: substring_match (0.950)"
             }
           }
         ]
@@ -578,7 +764,7 @@
             },
             "reference": {
               "id": "PUBMED_EN_008",
-              "description": "NER: infections (0.388) | Match: sapbert_similarity (0.777)"
+              "description": "NER: recurrent infections (0.995) | Match: clinical_synonym (1.000)"
             }
           }
         ]
@@ -605,6 +791,86 @@
       },
       {
         "type": {
+          "id": "HP:0010976",
+          "label": "Decreased total B cell count",
+          "umls_cui": "C1855067"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "PUBMED_EN_008",
+              "description": "NER: a deficiency of circulating b cells (0.989) | Match: sapbert_similarity (0.855)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0000083",
+          "label": "Renal insufficiency",
+          "umls_cui": "C0035078"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "PUBMED_EN_008",
+              "description": "NER: renal involvement (0.832) | Match: sapbert_similarity (0.713)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0012622",
+          "label": "Chronic kidney disease",
+          "umls_cui": "C0748318"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "PUBMED_EN_008",
+              "description": "NER: concurrent renal disease (0.996) | Match: sapbert_similarity (0.753)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0011947",
+          "label": "Respiratory tract infection",
+          "umls_cui": "C0035243"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "PUBMED_EN_008",
+              "description": "NER: respiratory tract infections (0.999) | Match: sapbert_similarity (0.993)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
           "id": "HP:0000123",
           "label": "Nephritis",
           "umls_cui": "C0027697"
@@ -619,26 +885,6 @@
             "reference": {
               "id": "PUBMED_EN_008",
               "description": "NER: nephritis (0.668) | Match: exact_label (1.000)"
-            }
-          }
-        ]
-      },
-      {
-        "type": {
-          "id": "HP:0005363",
-          "label": "Humoral immunodeficiency",
-          "umls_cui": "C4025206"
-        },
-        "excluded": false,
-        "evidence": [
-          {
-            "evidenceCode": {
-              "id": "ECO:0000033",
-              "label": "author statement supported by traceable reference"
-            },
-            "reference": {
-              "id": "PUBMED_EN_008",
-              "description": "NER: humoral immunodeficiency (0.900) | Match: text_scan_exact_label (0.950)"
             }
           }
         ]
@@ -662,90 +908,10 @@
             }
           }
         ]
-      },
-      {
-        "type": {
-          "id": "HP:0011947",
-          "label": "Respiratory tract infection",
-          "umls_cui": "C0035243"
-        },
-        "excluded": false,
-        "evidence": [
-          {
-            "evidenceCode": {
-              "id": "ECO:0000033",
-              "label": "author statement supported by traceable reference"
-            },
-            "reference": {
-              "id": "PUBMED_EN_008",
-              "description": "NER: respiratory (0.914) | Match: sapbert_similarity (0.712)"
-            }
-          }
-        ]
-      },
-      {
-        "type": {
-          "id": "HP:0000951",
-          "label": "Abnormality of the skin",
-          "umls_cui": "C0037268"
-        },
-        "excluded": false,
-        "evidence": [
-          {
-            "evidenceCode": {
-              "id": "ECO:0000033",
-              "label": "author statement supported by traceable reference"
-            },
-            "reference": {
-              "id": "PUBMED_EN_008",
-              "description": "NER: dermatological (0.537) | Match: sapbert_similarity (0.807)"
-            }
-          }
-        ]
-      },
-      {
-        "type": {
-          "id": "HP:0006749",
-          "label": "Malignant gastrointestinal tract tumors",
-          "umls_cui": "C0685938"
-        },
-        "excluded": false,
-        "evidence": [
-          {
-            "evidenceCode": {
-              "id": "ECO:0000033",
-              "label": "author statement supported by traceable reference"
-            },
-            "reference": {
-              "id": "PUBMED_EN_008",
-              "description": "NER: gastrointestinal (0.676) | Match: sapbert_similarity (0.716)"
-            }
-          }
-        ]
-      },
-      {
-        "type": {
-          "id": "HP:0007495",
-          "label": "Prematurely aged appearance",
-          "umls_cui": "C1857656"
-        },
-        "excluded": false,
-        "evidence": [
-          {
-            "evidenceCode": {
-              "id": "ECO:0000033",
-              "label": "author statement supported by traceable reference"
-            },
-            "reference": {
-              "id": "PUBMED_EN_008",
-              "description": "NER: younger (0.727) | Match: sapbert_similarity (0.717)"
-            }
-          }
-        ]
       }
     ],
     "metaData": {
-      "created": "2026-06-11T03:04:59Z",
+      "created": "2026-06-19T15:02:00Z",
       "createdBy": "clinical-preanalysis-pipeline-v2",
       "phenopacketSchemaVersion": "2.0",
       "resources": [
@@ -765,48 +931,73 @@
         "progressStatus": "IN_PROGRESS",
         "diagnosis": {
           "disease": {
-            "id": "ORPHA:47",
-            "label": "X-linked agammaglobulinemia"
+            "id": "ORPHA:39041",
+            "label": "Omenn syndrome"
           },
-          "score": 0.85,
+          "score": 0.4845,
           "allCandidates": [
+            {
+              "id": "ORPHA:39041",
+              "label": "Omenn syndrome",
+              "score": 0.4845
+            },
             {
               "id": "ORPHA:47",
               "label": "X-linked agammaglobulinemia",
-              "score": 0.85
+              "score": 0.4537
             },
             {
-              "id": "ORPHA:99811",
-              "label": "Neuronal intestinal pseudoobstruction",
-              "score": 0.2185
+              "id": "ORPHA:538934",
+              "label": "X-linked lymphoproliferative disease due to XIAP deficiency",
+              "score": 0.4323
             },
             {
-              "id": "ORPHA:1572",
-              "label": "Common variable immunodeficiency",
-              "score": 0.2185
+              "id": "ORPHA:221139",
+              "label": "Combined immunodeficiency with facio-oculo-skeletal anomalies",
+              "score": 0.4119
             },
             {
-              "id": "ORPHA:183707",
-              "label": "Infantile LAD-like disease due to RAC2 deficiency",
-              "score": 0.1767
+              "id": "ORPHA:443811",
+              "label": "PGM3-CDG",
+              "score": 0.3902
             },
             {
-              "id": "ORPHA:231249",
-              "label": "Hemoglobin E-beta-thalassemia syndrome",
-              "score": 0.1767
+              "id": "ORPHA:1830",
+              "label": "Schimke immuno-osseous dysplasia",
+              "score": 0.3859
+            },
+            {
+              "id": "ORPHA:906",
+              "label": "Wiskott-Aldrich syndrome",
+              "score": 0.3784
+            },
+            {
+              "id": "ORPHA:3261",
+              "label": "Autoimmune lymphoproliferative syndrome",
+              "score": 0.3779
+            },
+            {
+              "id": "ORPHA:289390",
+              "label": "Primary Sjögren disease",
+              "score": 0.3767
+            },
+            {
+              "id": "ORPHA:470",
+              "label": "Lysinuric protein intolerance",
+              "score": 0.3702
             }
           ]
         }
       }
     ],
     "_pipelineStats": {
-      "totalEntities": 30,
-      "matchedHPO": 13,
-      "unmatchedEntities": 17,
-      "phenopacketFeatures": 12,
+      "totalEntities": 39,
+      "matchedHPO": 11,
+      "unmatchedEntities": 28,
+      "phenopacketFeatures": 11,
       "negatedFeatures": 0,
       "numericPhenotypes": 0,
-      "ordoCandidates": 5
+      "ordoCandidates": 10
     }
   }
 }

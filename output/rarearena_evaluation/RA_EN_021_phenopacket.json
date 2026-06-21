@@ -1,0 +1,440 @@
+{
+  "id": "phenopacket-RA_EN_021",
+  "subject": {
+    "id": "RA_EN_021",
+    "sex": "MALE"
+  },
+  "input": "An 18-year-old Korean male presented to the Department of Dermatology at Yeungnam University Hospital on November 2, 2005, with progressively generalized pigmented lesions. He was reported to be normal at birth. Reticular hyperpigmented lesions were first noted at the age of 2 on the popliteal and antecubital fossae. These changes gradually spread to the axillae and trunk. Linear sclerosing bands appeared on both the antecubital and popliteal fossae over the years. The lesions increased in size and number over time, but the patient remained asymptomatic. His family history revealed that his father had similar symptoms and passed away in his forties due to cardiovascular disease. His younger brother also exhibited similar poikilodermatous lesions, which appeared at the age of 3 and showed progressive hyperpigmented and sclerotic changes. Physical examination showed micrognathia, clubbing of the fingers, and slim extremities compared to the trunk. Dermatologic examination revealed generalized hyperpigmented, telangiectatic, and atrophic changes, particularly pronounced in the axillae, antecubital, and popliteal fossae. Linear hyperkeratotic and sclerotic bands were observed on both the antecubital and popliteal fossae. Sclerosis of the palms and soles was also noted. Laboratory tests, including complete blood cell count, liver function test, blood coagulation test, antinuclear antibody, and urinalysis, were within normal limits or negative.",
+  "target": "Rothmund-Thomson syndrome type 2",
+  "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0007588",
+        "label": "Reticular hyperpigmentation",
+        "umls_cui": "C1851972"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_021",
+            "description": "NER: reticular hyperpigmented lesions (0.996) | Match: sapbert_similarity (0.894)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0011355",
+        "label": "Localized skin lesion",
+        "umls_cui": "C0850826"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_021",
+            "description": "NER: the lesions (0.996) | Match: sapbert_similarity (0.743)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0001626",
+        "label": "Abnormality of the cardiovascular system",
+        "umls_cui": "C0007222"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_021",
+            "description": "NER: cardiovascular disease (0.997) | Match: related_synonym (1.000)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0001029",
+        "label": "Poikiloderma",
+        "umls_cui": "C0392777"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_021",
+            "description": "NER: similar poikilodermatous lesions (0.998) | Match: sapbert_similarity (0.776)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0007505",
+        "label": "Progressive hyperpigmentation",
+        "umls_cui": "C4024859"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_021",
+            "description": "NER: progressive hyperpigmented and sclerotic changes (0.998) | Match: sapbert_similarity (0.817)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0000647",
+        "label": "Sclerocornea",
+        "umls_cui": "C1853235"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_021",
+            "description": "NER: sclerotic changes (0.619) | Match: sapbert_similarity (0.750)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0000347",
+        "label": "Micrognathia",
+        "umls_cui": "C0025990"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_021",
+            "description": "NER: micrognathia (0.951) | Match: exact_label (1.000)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0001217",
+        "label": "Clubbing",
+        "umls_cui": "C0149651"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_021",
+            "description": "NER: clubbing of (0.922) | Match: sapbert_similarity (0.952)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0009700",
+        "label": "Finger symphalangism",
+        "umls_cui": "C4021399"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_021",
+            "description": "NER: bing of the fingers (0.996) | Match: sapbert_similarity (0.772)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0009815",
+        "label": "Aplasia/hypoplasia of the extremities",
+        "umls_cui": "C0239399"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_021",
+            "description": "NER: slim extremities (0.933) | Match: sapbert_similarity (0.772)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0007440",
+        "label": "Generalized hyperpigmentation",
+        "umls_cui": "C4024878"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_021",
+            "description": "NER: generalized hyperpigmented, (0.991) | Match: sapbert_similarity (0.883)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0007489",
+        "label": "Diffuse telangiectasia",
+        "umls_cui": "C1265776"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_021",
+            "description": "NER: telangiectatic, and atrophic changes (0.994) | Match: sapbert_similarity (0.751)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0004334",
+        "label": "Dermal atrophy",
+        "umls_cui": "C0151514"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_021",
+            "description": "NER: atrophic changes (0.787) | Match: sapbert_similarity (0.771)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0000962",
+        "label": "Hyperkeratosis",
+        "umls_cui": "C0870082"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_021",
+            "description": "NER: hyperkeratotic (0.730) | Match: sapbert_similarity (0.927)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0000972",
+        "label": "Palmoplantar hyperkeratosis",
+        "umls_cui": "C0022596"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_021",
+            "description": "NER: Sclerosis of the palms and soles (0.995) | Match: sapbert_similarity (0.738)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0003676",
+        "label": "Progressive",
+        "umls_cui": "C0205329"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_021",
+            "description": "NER: progressive (0.900) | Match: text_scan_exact_label (0.950)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0012837",
+        "label": "Generalized",
+        "umls_cui": "C0205246"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_021",
+            "description": "NER: generalized (0.900) | Match: text_scan_exact_label (0.950)"
+          }
+        }
+      ]
+    }
+  ],
+  "metaData": {
+    "created": "2026-06-19T15:11:39Z",
+    "createdBy": "clinical-preanalysis-pipeline-v2",
+    "phenopacketSchemaVersion": "2.0",
+    "resources": [
+      {
+        "id": "hp",
+        "name": "Human Phenotype Ontology",
+        "url": "https://hpo.jax.org",
+        "version": "2024-04-26",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      }
+    ]
+  },
+  "interpretations": [
+    {
+      "id": "interpretation-RA_EN_021",
+      "progressStatus": "IN_PROGRESS",
+      "diagnosis": {
+        "disease": {
+          "id": "ORPHA:221016",
+          "label": "Rothmund-Thomson syndrome type 2"
+        },
+        "score": 0.3839,
+        "allCandidates": [
+          {
+            "id": "ORPHA:221016",
+            "label": "Rothmund-Thomson syndrome type 2",
+            "score": 0.3839
+          },
+          {
+            "id": "ORPHA:221008",
+            "label": "Rothmund-Thomson syndrome type 1",
+            "score": 0.3753
+          },
+          {
+            "id": "ORPHA:910",
+            "label": "Xeroderma pigmentosum",
+            "score": 0.3622
+          },
+          {
+            "id": "ORPHA:2909",
+            "label": "Rothmund-Thomson syndrome",
+            "score": 0.359
+          },
+          {
+            "id": "ORPHA:2908",
+            "label": "Kindler epidermolysis bullosa",
+            "score": 0.3121
+          },
+          {
+            "id": "ORPHA:902",
+            "label": "Werner syndrome",
+            "score": 0.3036
+          },
+          {
+            "id": "ORPHA:221039",
+            "label": "Hereditary sclerosing poikiloderma, Weary type",
+            "score": 0.2952
+          },
+          {
+            "id": "ORPHA:2556",
+            "label": "Microphthalmia with linear skin defects syndrome",
+            "score": 0.2946
+          },
+          {
+            "id": "ORPHA:79474",
+            "label": "Atypical Werner syndrome",
+            "score": 0.2897
+          },
+          {
+            "id": "ORPHA:158673",
+            "label": "Localized dystrophic epidermolysis bullosa, acral form",
+            "score": 0.2881
+          }
+        ]
+      }
+    }
+  ],
+  "_pipelineStats": {
+    "totalEntities": 53,
+    "matchedHPO": 17,
+    "unmatchedEntities": 36,
+    "phenopacketFeatures": 17,
+    "negatedFeatures": 0,
+    "numericPhenotypes": 0,
+    "ordoCandidates": 10
+  }
+}

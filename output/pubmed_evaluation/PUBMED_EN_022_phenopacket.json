@@ -5,7 +5,7 @@
     "sex": "MALE"
   },
   "input": "Case Report: Hyper-IgE syndrome: a case report.\n\nINTRODUCTION AND IMPORTANCE: Hyper-IgE syndrome (HIES), also known as Job syndrome, is a rare primary immunodeficiency disorder characterized by elevated serum IgE levels, recurrent infections, and various clinical features. Early diagnosis, prompt management of infections, and supportive care are essential in improving outcomes for individuals with HIES. Genetic testing, including STAT3 gene sequencing, plays a crucial role in confirming the diagnosis. Further research is needed to enhance our understanding of HIES and develop targeted therapies to improve the quality of life for affected individuals.\nCASE PRESENTATION: This case report presents the clinical features and management of a 37-year-old male with HIES, diagnosed at the age of 2 due to recurrent cold abscesses caused by Staphylococcal infections.\nCLINICAL DISCUSSION: The patient exhibited typical symptoms of HIES, including recurrent eczema, frequent bacterial infections, mucocutaneous candidiasis, and various physical abnormalities. Diagnostic markers such as elevated IgE levels and eosinophilia supported the HIES diagnosis, which was further confirmed by the identification of a STAT3 gene mutation. Treatment primarily involved supportive measures and antibiotics for infections. The patient's blood test results and imaging findings revealed abnormalities such as low red blood cell count, elevated erythrocyte sedimentation rate, and pulmonary nodules.\nCONCLUSION: This case report highlights the importance of early diagnosis, prompt management of infections, and the need for ongoing research to improve our understanding and treatment of HIES.",
-  "target": "Hyper-IgE syndrome",
+  "target": "Autosomal dominant hyper-IgE syndrome due to STAT3 deficiency",
   "phenotypicFeatures": [
     {
       "type": {
@@ -29,9 +29,9 @@
     },
     {
       "type": {
-        "id": "HP:0002719",
-        "label": "Recurrent infections",
-        "umls_cui": "C0239998"
+        "id": "HP:0003212",
+        "label": "Increased circulating IgE concentration",
+        "umls_cui": "C0236175"
       },
       "excluded": false,
       "evidence": [
@@ -42,7 +42,67 @@
           },
           "reference": {
             "id": "PUBMED_EN_022",
-            "description": "NER: infections (0.443) | Match: sapbert_similarity (0.777)"
+            "description": "NER: elevated serum ige levels (0.999) | Match: substring_match (0.950)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0000010",
+        "label": "Recurrent urinary tract infections",
+        "umls_cui": "C0262655"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "PUBMED_EN_022",
+            "description": "NER: urrent infections (0.997) | Match: sapbert_similarity (0.722)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0003812",
+        "label": "Phenotypic variability",
+        "umls_cui": "C1837514"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "PUBMED_EN_022",
+            "description": "NER: various clinical features (0.973) | Match: sapbert_similarity (0.725)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0002722",
+        "label": "Recurrent abscess formation",
+        "umls_cui": "C4025684"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "PUBMED_EN_022",
+            "description": "NER: recurrent cold abscesses (0.999) | Match: sapbert_similarity (0.770)"
           }
         }
       ]
@@ -69,6 +129,26 @@
     },
     {
       "type": {
+        "id": "HP:0002718",
+        "label": "Recurrent bacterial infections",
+        "umls_cui": "C1844383"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "PUBMED_EN_022",
+            "description": "NER: frequent bacterial infections (0.998) | Match: exact_synonym (1.000)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
         "id": "HP:0002728",
         "label": "Chronic mucocutaneous candidiasis",
         "umls_cui": "C0006845"
@@ -82,7 +162,7 @@
           },
           "reference": {
             "id": "PUBMED_EN_022",
-            "description": "NER: mucocutaneous candidiasis (0.721) | Match: exact_synonym (1.000)"
+            "description": "NER: mucocutaneous candidiasis (0.949) | Match: exact_synonym (1.000)"
           }
         }
       ]
@@ -109,9 +189,9 @@
     },
     {
       "type": {
-        "id": "HP:0005994",
-        "label": "Nodular goiter",
-        "umls_cui": "C0018023"
+        "id": "HP:0012133",
+        "label": "Erythroid hypoplasia",
+        "umls_cui": "C0178416"
       },
       "excluded": false,
       "evidence": [
@@ -122,7 +202,7 @@
           },
           "reference": {
             "id": "PUBMED_EN_022",
-            "description": "NER: nodules (0.879) | Match: sapbert_similarity (0.706)"
+            "description": "NER: low red blood cell count (0.998) | Match: sapbert_similarity (0.831)"
           }
         }
       ]
@@ -142,16 +222,16 @@
           },
           "reference": {
             "id": "PUBMED_EN_022",
-            "description": "NER: elevated erythrocyte sedimentation rate (0.900) | Match: text_scan_exact_label (0.950)"
+            "description": "NER: elevated erythrocyte sedimentation rate (0.999) | Match: exact_label (1.000)"
           }
         }
       ]
     },
     {
       "type": {
-        "id": "HP:0002718",
-        "label": "Recurrent bacterial infections",
-        "umls_cui": "C1844383"
+        "id": "HP:0002719",
+        "label": "Recurrent infections",
+        "umls_cui": "C0239998"
       },
       "excluded": false,
       "evidence": [
@@ -162,7 +242,7 @@
           },
           "reference": {
             "id": "PUBMED_EN_022",
-            "description": "NER: frequent bacterial infections (0.900) | Match: text_scan_exact_synonym (0.950)"
+            "description": "NER: recurrent infections (0.900) | Match: text_scan_clinical_synonym (0.950)"
           }
         }
       ]
@@ -186,30 +266,10 @@
           }
         }
       ]
-    },
-    {
-      "type": {
-        "id": "HP:0003212",
-        "label": "Increased circulating IgE concentration",
-        "umls_cui": "C0236175"
-      },
-      "excluded": false,
-      "evidence": [
-        {
-          "evidenceCode": {
-            "id": "ECO:0000033",
-            "label": "author statement supported by traceable reference"
-          },
-          "reference": {
-            "id": "PUBMED_EN_022",
-            "description": "NER: elevated serum IgE (0.615) | Match: exact_synonym (1.000)"
-          }
-        }
-      ]
     }
   ],
   "metaData": {
-    "created": "2026-06-11T03:06:52Z",
+    "created": "2026-06-19T15:03:41Z",
     "createdBy": "clinical-preanalysis-pipeline-v2",
     "phenopacketSchemaVersion": "2.0",
     "resources": [
@@ -230,46 +290,71 @@
       "diagnosis": {
         "disease": {
           "id": "ORPHA:2314",
-          "label": "Hyper-IgE syndrome"
+          "label": "Autosomal dominant hyper-IgE syndrome due to STAT3 deficiency"
         },
-        "score": 0.85,
+        "score": 0.5501,
         "allCandidates": [
           {
             "id": "ORPHA:2314",
-            "label": "Hyper-IgE syndrome",
-            "score": 0.85
+            "label": "Autosomal dominant hyper-IgE syndrome due to STAT3 deficiency",
+            "score": 0.5501
           },
           {
-            "id": "ORPHA:482",
-            "label": "Kimura disease",
-            "score": 0.3015
+            "id": "ORPHA:39041",
+            "label": "Omenn syndrome",
+            "score": 0.515
           },
           {
-            "id": "ORPHA:86788",
-            "label": "X-linked severe congenital neutropenia",
-            "score": 0.2333
+            "id": "ORPHA:167",
+            "label": "Chédiak-Higashi syndrome",
+            "score": 0.4926
           },
           {
-            "id": "ORPHA:70592",
-            "label": "Transient predisposition to invasive pyogenic bacterial infection",
-            "score": 0.2248
+            "id": "ORPHA:443811",
+            "label": "PGM3-CDG",
+            "score": 0.4925
+          },
+          {
+            "id": "ORPHA:83471",
+            "label": "T-cell immunodeficiency with thymic aplasia",
+            "score": 0.4704
           },
           {
             "id": "ORPHA:906",
             "label": "Wiskott-Aldrich syndrome",
-            "score": 0.1857
+            "score": 0.436
+          },
+          {
+            "id": "ORPHA:98813",
+            "label": "Hypohidrotic ectodermal dysplasia with immunodeficiency",
+            "score": 0.4343
+          },
+          {
+            "id": "ORPHA:391487",
+            "label": "STAT1-related autoimmune enteropathy and endocrinopathy-susceptibility to chronic infections syndrome",
+            "score": 0.4017
+          },
+          {
+            "id": "ORPHA:221139",
+            "label": "Combined immunodeficiency with facio-oculo-skeletal anomalies",
+            "score": 0.4011
+          },
+          {
+            "id": "ORPHA:331235",
+            "label": "Selective IgM deficiency",
+            "score": 0.4002
           }
         ]
       }
     }
   ],
   "_pipelineStats": {
-    "totalEntities": 31,
-    "matchedHPO": 10,
-    "unmatchedEntities": 21,
-    "phenopacketFeatures": 10,
+    "totalEntities": 56,
+    "matchedHPO": 13,
+    "unmatchedEntities": 43,
+    "phenopacketFeatures": 13,
     "negatedFeatures": 0,
     "numericPhenotypes": 0,
-    "ordoCandidates": 5
+    "ordoCandidates": 10
   }
 }

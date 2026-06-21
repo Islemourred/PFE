@@ -22,7 +22,7 @@
           },
           "reference": {
             "id": "PUBMED_EN_007",
-            "description": "NER: Linked agammaglobulinemia and bronchiolitis (0.845) | Match: sapbert_similarity (0.747)"
+            "description": "NER: x - linked agammaglobulinemia (0.996) | Match: sapbert_similarity (0.889)"
           }
         }
       ]
@@ -42,36 +42,16 @@
           },
           "reference": {
             "id": "PUBMED_EN_007",
-            "description": "NER: pan-hypogammaglobulinemia (0.787) | Match: sapbert_similarity (0.930)"
+            "description": "NER: pan - hypogammaglobulinemia (0.998) | Match: sapbert_similarity (0.930)"
           }
         }
       ]
     },
     {
       "type": {
-        "id": "HP:0002719",
-        "label": "Recurrent infections",
-        "umls_cui": "C0239998"
-      },
-      "excluded": true,
-      "evidence": [
-        {
-          "evidenceCode": {
-            "id": "ECO:0000033",
-            "label": "author statement supported by traceable reference"
-          },
-          "reference": {
-            "id": "PUBMED_EN_007",
-            "description": "NER: infections (0.482) | Match: sapbert_similarity (0.777) | Negated by: \"are not\""
-          }
-        }
-      ]
-    },
-    {
-      "type": {
-        "id": "HP:0002206",
-        "label": "Pulmonary fibrosis",
-        "umls_cui": "C0034069"
+        "id": "HP:0002088",
+        "label": "Abnormal lung morphology",
+        "umls_cui": "C0024115"
       },
       "excluded": false,
       "evidence": [
@@ -82,7 +62,147 @@
           },
           "reference": {
             "id": "PUBMED_EN_007",
-            "description": "NER: fibrosis (0.354) | Match: sapbert_similarity (0.734)"
+            "description": "NER: tial lung disease ( ild (0.969) | Match: substring_match (0.950)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0011946",
+        "label": "Bronchiolitis obliterans",
+        "umls_cui": "C0006272"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "PUBMED_EN_007",
+            "description": "NER: Linked agammaglobulinemia and bronchiolitis obliterans (0.983) | Match: substring_match (0.950)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0005368",
+        "label": "Abnormality of humoral immunity",
+        "umls_cui": "C3150510"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "PUBMED_EN_007",
+            "description": "NER: an inborn errors of immunity (0.992) | Match: sapbert_similarity (0.842)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0010976",
+        "label": "Decreased total B cell count",
+        "umls_cui": "C1855067"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "PUBMED_EN_007",
+            "description": "NER: low numbers of b lymphocytes (0.820) | Match: sapbert_similarity (0.952)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0011947",
+        "label": "Respiratory tract infection",
+        "umls_cui": "C0035243"
+      },
+      "excluded": true,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "PUBMED_EN_007",
+            "description": "NER: respiratory tract infections (0.999) | Match: sapbert_similarity (0.993) | Negated by: \"are not\""
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0002783",
+        "label": "Recurrent lower respiratory tract infections",
+        "umls_cui": "C0149725"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "PUBMED_EN_007",
+            "description": "NER: acute or chronic bacterial infections of the respiratory tract (0.997) | Match: sapbert_similarity (0.809)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0012647",
+        "label": "Abnormal inflammatory response",
+        "umls_cui": "C4022805"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "PUBMED_EN_007",
+            "description": "NER: processes and inflammatory response (0.992) | Match: sapbert_similarity (0.777)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0002093",
+        "label": "Respiratory insufficiency",
+        "umls_cui": "C0035229"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "PUBMED_EN_007",
+            "description": "NER: pulmonary impairment (0.998) | Match: sapbert_similarity (0.882)"
           }
         }
       ]
@@ -103,26 +223,6 @@
           "reference": {
             "id": "PUBMED_EN_007",
             "description": "NER: interstitial lung disease (0.900) | Match: text_scan_exact_synonym (0.950)"
-          }
-        }
-      ]
-    },
-    {
-      "type": {
-        "id": "HP:0011946",
-        "label": "Bronchiolitis obliterans",
-        "umls_cui": "C0006272"
-      },
-      "excluded": false,
-      "evidence": [
-        {
-          "evidenceCode": {
-            "id": "ECO:0000033",
-            "label": "author statement supported by traceable reference"
-          },
-          "reference": {
-            "id": "PUBMED_EN_007",
-            "description": "NER: bronchiolitis obliterans (0.900) | Match: text_scan_exact_label (0.950)"
           }
         }
       ]
@@ -169,26 +269,6 @@
     },
     {
       "type": {
-        "id": "HP:0002088",
-        "label": "Abnormal lung morphology",
-        "umls_cui": "C0024115"
-      },
-      "excluded": false,
-      "evidence": [
-        {
-          "evidenceCode": {
-            "id": "ECO:0000033",
-            "label": "author statement supported by traceable reference"
-          },
-          "reference": {
-            "id": "PUBMED_EN_007",
-            "description": "NER: lung disease (0.900) | Match: text_scan_related_synonym (0.950)"
-          }
-        }
-      ]
-    },
-    {
-      "type": {
         "id": "HP:0001417",
         "label": "X-linked inheritance",
         "umls_cui": "C0241764"
@@ -206,30 +286,10 @@
           }
         }
       ]
-    },
-    {
-      "type": {
-        "id": "HP:0011947",
-        "label": "Respiratory tract infection",
-        "umls_cui": "C0035243"
-      },
-      "excluded": true,
-      "evidence": [
-        {
-          "evidenceCode": {
-            "id": "ECO:0000033",
-            "label": "author statement supported by traceable reference"
-          },
-          "reference": {
-            "id": "PUBMED_EN_007",
-            "description": "NER: respiratory (0.833) | Match: sapbert_similarity (0.712) | Negated by: \"are not\""
-          }
-        }
-      ]
     }
   ],
   "metaData": {
-    "created": "2026-06-11T03:04:54Z",
+    "created": "2026-06-19T15:01:53Z",
     "createdBy": "clinical-preanalysis-pipeline-v2",
     "phenopacketSchemaVersion": "2.0",
     "resources": [
@@ -252,44 +312,69 @@
           "id": "ORPHA:47",
           "label": "X-linked agammaglobulinemia"
         },
-        "score": 0.85,
+        "score": 0.4638,
         "allCandidates": [
           {
             "id": "ORPHA:47",
             "label": "X-linked agammaglobulinemia",
-            "score": 0.85
+            "score": 0.4638
           },
           {
-            "id": "ORPHA:99811",
-            "label": "Neuronal intestinal pseudoobstruction",
-            "score": 0.2214
+            "id": "ORPHA:39041",
+            "label": "Omenn syndrome",
+            "score": 0.4212
           },
           {
-            "id": "ORPHA:1572",
-            "label": "Common variable immunodeficiency",
-            "score": 0.2214
+            "id": "ORPHA:572",
+            "label": "Immunodeficiency by defective expression of MHC class II",
+            "score": 0.4006
           },
           {
-            "id": "ORPHA:2111",
-            "label": "Cystic hamartoma of lung and kidney",
-            "score": 0.1467
+            "id": "ORPHA:470",
+            "label": "Lysinuric protein intolerance",
+            "score": 0.3991
           },
           {
-            "id": "ORPHA:1195",
-            "label": "Congenital atransferrinemia",
-            "score": 0.125
+            "id": "ORPHA:1303",
+            "label": "Bronchiolitis obliterans",
+            "score": 0.3967
+          },
+          {
+            "id": "ORPHA:79124",
+            "label": "Hepatic veno-occlusive disease-immunodeficiency syndrome",
+            "score": 0.3899
+          },
+          {
+            "id": "ORPHA:289390",
+            "label": "Primary Sjögren disease",
+            "score": 0.3835
+          },
+          {
+            "id": "ORPHA:221139",
+            "label": "Combined immunodeficiency with facio-oculo-skeletal anomalies",
+            "score": 0.3833
+          },
+          {
+            "id": "ORPHA:331206",
+            "label": "Severe combined immunodeficiency due to complete RAG1/2 deficiency",
+            "score": 0.3713
+          },
+          {
+            "id": "ORPHA:35078",
+            "label": "T-B+ severe combined immunodeficiency due to JAK3 deficiency",
+            "score": 0.3693
           }
         ]
       }
     }
   ],
   "_pipelineStats": {
-    "totalEntities": 31,
-    "matchedHPO": 11,
-    "unmatchedEntities": 20,
-    "phenopacketFeatures": 11,
-    "negatedFeatures": 2,
+    "totalEntities": 51,
+    "matchedHPO": 14,
+    "unmatchedEntities": 37,
+    "phenopacketFeatures": 14,
+    "negatedFeatures": 1,
     "numericPhenotypes": 0,
-    "ordoCandidates": 5
+    "ordoCandidates": 10
   }
 }

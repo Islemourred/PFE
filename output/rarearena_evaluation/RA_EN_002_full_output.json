@@ -1,0 +1,1326 @@
+{
+  "note_id": "RA_EN_002",
+  "language": "en",
+  "module1": {
+    "clean_text": "A [AGE] Japanese man experienced blurred vision one week after receiving the second dose of the COVID-19 mRNA vaccine (BNT162b2, Pfizer, Tokyo, Japan) in [DATE] Three months later, he began to experience headache, nausea, and vertigo. An MRI scan of his head showed no abnormalities. Due to worsening blurred vision and the onset of tinnitus, he consulted an ophthalmologist and was found to have iritis and uveitis. He reported leukoderma on his head and was referred to our hospital nine months after his second vaccination. Upon examination, he had depigmentation on his bilateral forehead and forearm in multiple coalescing patches, as well as annular erythema on his bilateral upper arms. His medical history included pompholyx and atopic dermatitis. Laboratory tests revealed elevated serum levels of immunoglobulin E (IgE) at 1,561 IU/mL and thymus and activation-regulated chemokine (TARC) at 1,050 pg/mL. Serum thyroid-stimulating hormone, free T3, and free T4 levels were within normal limits. Autoantibodies, including antinuclear antibody, anti-SS-A, and anti-SS-B antibody, were negative.",
+    "phi_map": {
+      "AGE": "58-year-old",
+      "DATE": "2021."
+    },
+    "patient_info": {}
+  },
+  "module3_warnings": {
+    "temporal": [],
+    "inconsistencies": []
+  },
+  "module4": {
+    "problem": [
+      {
+        "text": "blurred vision",
+        "ner_score": 0.965,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0000622",
+        "hpo_name": "Blurred vision",
+        "expanded_text": "blurred vision",
+        "match_type": "exact_label",
+        "confidence": 1.0,
+        "matched": true,
+        "umls_cui": "C0344232"
+      },
+      {
+        "text": "headache",
+        "ner_score": 0.976,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0002315",
+        "hpo_name": "Headache",
+        "expanded_text": "headache",
+        "match_type": "exact_label",
+        "confidence": 1.0,
+        "matched": true,
+        "umls_cui": "C0018681"
+      },
+      {
+        "text": "nausea",
+        "ner_score": 0.972,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0002018",
+        "hpo_name": "Nausea",
+        "expanded_text": "nausea",
+        "match_type": "exact_label",
+        "confidence": 1.0,
+        "matched": true,
+        "umls_cui": "C0027497"
+      },
+      {
+        "text": "vertigo",
+        "ner_score": 0.966,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0002321",
+        "hpo_name": "Vertigo",
+        "expanded_text": "vertigo",
+        "match_type": "exact_label",
+        "confidence": 1.0,
+        "matched": true,
+        "umls_cui": "C0012833"
+      },
+      {
+        "text": "abnormalities",
+        "ner_score": 0.863,
+        "negated": true,
+        "negation_cue": "no",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "abnormalities",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "worse",
+        "ner_score": 0.997,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "worse",
+        "match_type": "sapbert_rejected_low_conf",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "ning blurred vision",
+        "ner_score": 0.998,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "ning blurred vision",
+        "match_type": "deduplicated",
+        "confidence": 0.95,
+        "matched": false,
+        "umls_cui": "C0344232"
+      },
+      {
+        "text": "tinnitus",
+        "ner_score": 0.909,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0000360",
+        "hpo_name": "Tinnitus",
+        "expanded_text": "tinnitus",
+        "match_type": "exact_label",
+        "confidence": 1.0,
+        "matched": true,
+        "umls_cui": "C0040264"
+      },
+      {
+        "text": "iritis",
+        "ner_score": 0.998,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0001101",
+        "hpo_name": "Iritis",
+        "expanded_text": "iritis",
+        "match_type": "exact_label",
+        "confidence": 1.0,
+        "matched": true,
+        "umls_cui": "C0022081"
+      },
+      {
+        "text": "ritis and uveitis",
+        "ner_score": 0.763,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0012124",
+        "hpo_name": "Intermediate uveitis",
+        "expanded_text": "ritis and uveitis",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.7342,
+        "matched": true,
+        "umls_cui": "C0042166"
+      },
+      {
+        "text": "leukoderma",
+        "ner_score": 0.8,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "leukoderma",
+        "match_type": "sapbert_rejected_low_conf",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "leukoder",
+        "ner_score": 0.872,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "leukoder",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "ma on his head",
+        "ner_score": 0.989,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "ma on his head",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "depigmentation",
+        "ner_score": 0.955,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0001010",
+        "hpo_name": "Hypopigmentation of the skin",
+        "expanded_text": "depigmentation",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.8882,
+        "matched": true,
+        "umls_cui": "C0162835"
+      },
+      {
+        "text": "depigm",
+        "ner_score": 0.986,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "depigm",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "entation on his bilateral forehead and forearm",
+        "ner_score": 0.996,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "entation on his bilateral forehead and forearm",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "multiple coalescing patches",
+        "ner_score": 0.918,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "multiple coalescing patches",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "ular erythema on his bilateral upper arms",
+        "ner_score": 0.998,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "ular erythema on his bilateral upper arms",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "erythema",
+        "ner_score": 0.95,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0010783",
+        "hpo_name": "Erythema",
+        "expanded_text": "erythema",
+        "match_type": "exact_label",
+        "confidence": 1.0,
+        "matched": true,
+        "umls_cui": "C0016382"
+      },
+      {
+        "text": "atopic dermatitis",
+        "ner_score": 0.997,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0001047",
+        "hpo_name": "Atopic dermatitis",
+        "expanded_text": "atopic dermatitis",
+        "match_type": "exact_label",
+        "confidence": 1.0,
+        "matched": true,
+        "umls_cui": "C0011615"
+      },
+      {
+        "text": "elevated serum levels",
+        "ner_score": 0.932,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "elevated serum levels",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "lobu",
+        "ner_score": 0.668,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "lobu",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "dermatitis",
+        "ner_score": 0.9,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0000964",
+        "hpo_name": "Eczema",
+        "expanded_text": "dermatitis",
+        "match_type": "text_scan_clinical_synonym",
+        "confidence": 0.95,
+        "matched": true,
+        "umls_cui": "C0013595",
+        "umls_all": [
+          "C0013595"
+        ]
+      },
+      {
+        "text": "uveitis",
+        "ner_score": 0.9,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0000554",
+        "hpo_name": "Uveitis",
+        "expanded_text": "uveitis",
+        "match_type": "text_scan_exact_label",
+        "confidence": 0.95,
+        "matched": true,
+        "umls_cui": "C0042164",
+        "umls_all": [
+          "C0042164"
+        ]
+      }
+    ],
+    "treatment": [
+      {
+        "text": "the covid - 19 mrna vaccine",
+        "ner_score": 0.989,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "the covid - 19 mrna vaccine",
+        "match_type": "skipped_treatment",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "vaccine",
+        "ner_score": 0.339,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "vaccine",
+        "match_type": "skipped_low_ner_score",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "his second vaccination",
+        "ner_score": 0.976,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "his second vaccination",
+        "match_type": "skipped_treatment",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      }
+    ],
+    "test": [
+      {
+        "text": "ige )",
+        "ner_score": 0.7,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "ige )",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "activation - regulated chemokine",
+        "ner_score": 0.792,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "activation - regulated chemokine",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "tarc )",
+        "ner_score": 0.848,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "tarc )",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "serum thyroid - stimulating hormone",
+        "ner_score": 0.981,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "serum thyroid - stimulating hormone",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "anti - ss - a",
+        "ner_score": 0.929,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "anti - ss - a",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "anti - ss - b antibody",
+        "ner_score": 0.911,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "anti - ss - b antibody",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "an mri scan of his head",
+        "ner_score": 0.997,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "an mri scan of his head",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "normal",
+        "ner_score": 0.954,
+        "negated": true,
+        "negation_cue": "no",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "normal",
+        "match_type": "skipped_en_noise",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "examination",
+        "ner_score": 0.881,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "examination",
+        "match_type": "skipped_en_noise",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "Laboratory",
+        "ner_score": 0.958,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "Laboratory",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "laboratory tests",
+        "ner_score": 0.982,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "laboratory tests",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "elevated",
+        "ner_score": 0.953,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "elevated",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "immunoglobulin",
+        "ner_score": 0.982,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "immunoglobulin",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "munog",
+        "ner_score": 0.725,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "munog",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "lin e (",
+        "ner_score": 0.737,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "lin e (",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "thymus",
+        "ner_score": 0.98,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "thymus",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "activation",
+        "ner_score": 0.745,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "activation",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "regulated",
+        "ner_score": 0.994,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "regulated",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "chemokine",
+        "ner_score": 0.992,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "chemokine",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "thyroid",
+        "ner_score": 0.966,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "thyroid",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "stimulating",
+        "ner_score": 0.995,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "stimulating",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "hormone",
+        "ner_score": 0.995,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "hormone",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "free",
+        "ner_score": 0.987,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "free",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "free t3",
+        "ner_score": 0.974,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "free t3",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "free t4 levels",
+        "ner_score": 0.96,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "free t4 levels",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "within",
+        "ner_score": 0.93,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "within",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "limits",
+        "ner_score": 0.884,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "limits",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "Auto",
+        "ner_score": 0.98,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "Auto",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "autoantibodies",
+        "ner_score": 0.971,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "autoantibodies",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "anti",
+        "ner_score": 0.993,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "anti",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "bodies",
+        "ner_score": 0.985,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "bodies",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "antinuclear antibody",
+        "ner_score": 0.918,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "antinuclear antibody",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "nuclear antibody",
+        "ner_score": 0.994,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "nuclear antibody",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "negative",
+        "ner_score": 0.931,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "negative",
+        "match_type": "skipped_en_noise",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      }
+    ],
+    "ordo_candidates": [
+      {
+        "ordo_id": "ORPHA:3437",
+        "name": "Vogt-Koyanagi-Harada disease",
+        "name_fr": "",
+        "score": 0.5071,
+        "coverage": 0.1622,
+        "matched_hpo": [
+          "HP:0000360",
+          "HP:0000554",
+          "HP:0000622",
+          "HP:0002018",
+          "HP:0002315",
+          "HP:0002321"
+        ],
+        "matched_count": 6,
+        "total_disease_hpo": 37,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:728",
+        "name": "Relapsing polychondritis",
+        "name_fr": "",
+        "score": 0.411,
+        "coverage": 0.0755,
+        "matched_hpo": [
+          "HP:0000360",
+          "HP:0000554",
+          "HP:0002321",
+          "HP:0010783"
+        ],
+        "matched_count": 4,
+        "total_disease_hpo": 53,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:32960",
+        "name": "Tumor necrosis factor receptor 1 associated periodic syndrome",
+        "name_fr": "",
+        "score": 0.3876,
+        "coverage": 0.075,
+        "matched_hpo": [
+          "HP:0000554",
+          "HP:0002321",
+          "HP:0010783"
+        ],
+        "matched_count": 3,
+        "total_disease_hpo": 40,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:2273",
+        "name": "Ichthyosis follicularis-alopecia-photophobia syndrome",
+        "name_fr": "",
+        "score": 0.3646,
+        "coverage": 0.0385,
+        "matched_hpo": [
+          "HP:0000554",
+          "HP:0000964",
+          "HP:0010783"
+        ],
+        "matched_count": 3,
+        "total_disease_hpo": 78,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:79098",
+        "name": "Sympathetic ophthalmia",
+        "name_fr": "",
+        "score": 0.3625,
+        "coverage": 0.1154,
+        "matched_hpo": [
+          "HP:0000360",
+          "HP:0002315",
+          "HP:0010783"
+        ],
+        "matched_count": 3,
+        "total_disease_hpo": 26,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:863",
+        "name": "Trichinellosis",
+        "name_fr": "",
+        "score": 0.3587,
+        "coverage": 0.0714,
+        "matched_hpo": [
+          "HP:0000360",
+          "HP:0002018",
+          "HP:0002321"
+        ],
+        "matched_count": 3,
+        "total_disease_hpo": 42,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:3385",
+        "name": "African trypanosomiasis",
+        "name_fr": "",
+        "score": 0.3549,
+        "coverage": 0.0349,
+        "matched_hpo": [
+          "HP:0001101",
+          "HP:0002018",
+          "HP:0002315"
+        ],
+        "matched_count": 3,
+        "total_disease_hpo": 86,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:1467",
+        "name": "Cogan syndrome",
+        "name_fr": "",
+        "score": 0.3522,
+        "coverage": 0.15,
+        "matched_hpo": [
+          "HP:0000360",
+          "HP:0000554",
+          "HP:0002321"
+        ],
+        "matched_count": 3,
+        "total_disease_hpo": 20,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:117",
+        "name": "Behçet disease",
+        "name_fr": "",
+        "score": 0.351,
+        "coverage": 0.0235,
+        "matched_hpo": [
+          "HP:0002315",
+          "HP:0002321"
+        ],
+        "matched_count": 2,
+        "total_disease_hpo": 85,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:238624",
+        "name": "Idiopathic intracranial hypertension",
+        "name_fr": "",
+        "score": 0.3489,
+        "coverage": 0.1905,
+        "matched_hpo": [
+          "HP:0000622",
+          "HP:0002018",
+          "HP:0002315",
+          "HP:0002321"
+        ],
+        "matched_count": 4,
+        "total_disease_hpo": 21,
+        "text_match": false
+      }
+    ],
+    "stats": {
+      "total": 61,
+      "matched": 12,
+      "unmatched": 49,
+      "match_rate": 19.7,
+      "unique_hpo": 12,
+      "ordo_matches": 10
+    }
+  },
+  "phenopacket": {
+    "id": "phenopacket-RA_EN_002",
+    "subject": {
+      "id": "RA_EN_002"
+    },
+    "input": "A 58-year-old Japanese man experienced blurred vision one week after receiving the second dose of the COVID-19 mRNA vaccine (BNT162b2, Pfizer, Tokyo, Japan) in 2021. Three months later, he began to experience headache, nausea, and vertigo. An MRI scan of his head showed no abnormalities. Due to worsening blurred vision and the onset of tinnitus, he consulted an ophthalmologist and was found to have iritis and uveitis. He reported leukoderma on his head and was referred to our hospital nine months after his second vaccination. Upon examination, he had depigmentation on his bilateral forehead and forearm in multiple coalescing patches, as well as annular erythema on his bilateral upper arms. His medical history included pompholyx and atopic dermatitis. Laboratory tests revealed elevated serum levels of immunoglobulin E (IgE) at 1,561 IU/mL and thymus and activation-regulated chemokine (TARC) at 1,050 pg/mL. Serum thyroid-stimulating hormone, free T3, and free T4 levels were within normal limits. Autoantibodies, including antinuclear antibody, anti-SS-A, and anti-SS-B antibody, were negative.",
+    "target": "Vogt-Koyanagi-Harada disease",
+    "phenotypicFeatures": [
+      {
+        "type": {
+          "id": "HP:0000622",
+          "label": "Blurred vision",
+          "umls_cui": "C0344232"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_002",
+              "description": "NER: blurred vision (0.965) | Match: exact_label (1.000)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0002315",
+          "label": "Headache",
+          "umls_cui": "C0018681"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_002",
+              "description": "NER: headache (0.976) | Match: exact_label (1.000)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0002018",
+          "label": "Nausea",
+          "umls_cui": "C0027497"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_002",
+              "description": "NER: nausea (0.972) | Match: exact_label (1.000)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0002321",
+          "label": "Vertigo",
+          "umls_cui": "C0012833"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_002",
+              "description": "NER: vertigo (0.966) | Match: exact_label (1.000)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0000360",
+          "label": "Tinnitus",
+          "umls_cui": "C0040264"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_002",
+              "description": "NER: tinnitus (0.909) | Match: exact_label (1.000)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0001101",
+          "label": "Iritis",
+          "umls_cui": "C0022081"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_002",
+              "description": "NER: iritis (0.998) | Match: exact_label (1.000)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0012124",
+          "label": "Intermediate uveitis",
+          "umls_cui": "C0042166"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_002",
+              "description": "NER: ritis and uveitis (0.763) | Match: sapbert_similarity (0.734)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0001010",
+          "label": "Hypopigmentation of the skin",
+          "umls_cui": "C0162835"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_002",
+              "description": "NER: depigmentation (0.955) | Match: sapbert_similarity (0.888)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0010783",
+          "label": "Erythema",
+          "umls_cui": "C0016382"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_002",
+              "description": "NER: erythema (0.950) | Match: exact_label (1.000)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0001047",
+          "label": "Atopic dermatitis",
+          "umls_cui": "C0011615"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_002",
+              "description": "NER: atopic dermatitis (0.997) | Match: exact_label (1.000)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0000964",
+          "label": "Eczema",
+          "umls_cui": "C0013595"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_002",
+              "description": "NER: dermatitis (0.900) | Match: text_scan_clinical_synonym (0.950)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0000554",
+          "label": "Uveitis",
+          "umls_cui": "C0042164"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_002",
+              "description": "NER: uveitis (0.900) | Match: text_scan_exact_label (0.950)"
+            }
+          }
+        ]
+      }
+    ],
+    "metaData": {
+      "created": "2026-06-19T15:08:17Z",
+      "createdBy": "clinical-preanalysis-pipeline-v2",
+      "phenopacketSchemaVersion": "2.0",
+      "resources": [
+        {
+          "id": "hp",
+          "name": "Human Phenotype Ontology",
+          "url": "https://hpo.jax.org",
+          "version": "2024-04-26",
+          "namespacePrefix": "HP",
+          "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        }
+      ]
+    },
+    "interpretations": [
+      {
+        "id": "interpretation-RA_EN_002",
+        "progressStatus": "IN_PROGRESS",
+        "diagnosis": {
+          "disease": {
+            "id": "ORPHA:3437",
+            "label": "Vogt-Koyanagi-Harada disease"
+          },
+          "score": 0.5071,
+          "allCandidates": [
+            {
+              "id": "ORPHA:3437",
+              "label": "Vogt-Koyanagi-Harada disease",
+              "score": 0.5071
+            },
+            {
+              "id": "ORPHA:728",
+              "label": "Relapsing polychondritis",
+              "score": 0.411
+            },
+            {
+              "id": "ORPHA:32960",
+              "label": "Tumor necrosis factor receptor 1 associated periodic syndrome",
+              "score": 0.3876
+            },
+            {
+              "id": "ORPHA:2273",
+              "label": "Ichthyosis follicularis-alopecia-photophobia syndrome",
+              "score": 0.3646
+            },
+            {
+              "id": "ORPHA:79098",
+              "label": "Sympathetic ophthalmia",
+              "score": 0.3625
+            },
+            {
+              "id": "ORPHA:863",
+              "label": "Trichinellosis",
+              "score": 0.3587
+            },
+            {
+              "id": "ORPHA:3385",
+              "label": "African trypanosomiasis",
+              "score": 0.3549
+            },
+            {
+              "id": "ORPHA:1467",
+              "label": "Cogan syndrome",
+              "score": 0.3522
+            },
+            {
+              "id": "ORPHA:117",
+              "label": "Behçet disease",
+              "score": 0.351
+            },
+            {
+              "id": "ORPHA:238624",
+              "label": "Idiopathic intracranial hypertension",
+              "score": 0.3489
+            }
+          ]
+        }
+      }
+    ],
+    "_pipelineStats": {
+      "totalEntities": 61,
+      "matchedHPO": 12,
+      "unmatchedEntities": 49,
+      "phenopacketFeatures": 12,
+      "negatedFeatures": 0,
+      "numericPhenotypes": 0,
+      "ordoCandidates": 10
+    }
+  }
+}

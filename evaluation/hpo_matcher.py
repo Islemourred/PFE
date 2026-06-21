@@ -198,9 +198,54 @@ def is_semantic_match(extracted_hpo: str, expected_hpo: str) -> bool:
     return extracted_hpo in equivalents
 
 
+def _load_hpo_parents():
+    """Load HPO parent-child relationships from the ontology for ancestor matching."""
+    import os, json
+    data_dir = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "data")
+    parents = {}  # child → set of parents
+
+    # Try hp.json first (full ontology)
+    hp_path = os.path.join(data_dir, "hp.json")
+    if os.path.exists(hp_path):
+        with open(hp_path, encoding="utf-8") as f:
+            ont = json.load(f)
+        for edge in ont.get("graphs", [{}])[0].get("edges", []):
+            if edge.get("pred") == "is_a":
+                child = edge.get("sub", "").replace("http://purl.obolibrary.org/obo/HP_", "HP:")
+                parent = edge.get("obj", "").replace("http://purl.obolibrary.org/obo/HP_", "HP:")
+                if child.startswith("HP:") and parent.startswith("HP:"):
+                    parents.setdefault(child, set()).add(parent)
+    return parents
+
+_hpo_parents = None
+
+def _get_ancestors(hpo_id: str, max_depth: int = 2) -> set:
+    """Get ancestors of an HPO term up to max_depth levels."""
+    global _hpo_parents
+    if _hpo_parents is None:
+        _hpo_parents = _load_hpo_parents()
+
+    ancestors = set()
+    current = {hpo_id}
+    for _ in range(max_depth):
+        next_level = set()
+        for term in current:
+            for parent in _hpo_parents.get(term, set()):
+                if parent not in ancestors and parent != "HP:0000001":
+                    ancestors.add(parent)
+                    next_level.add(parent)
+        current = next_level
+    return ancestors
+
+
 def compute_semantic_tp(extracted_hpo: set, expected_hpo: set) -> tuple:
     """
     Compute True Positives using semantic matching.
+
+    Three-level matching (standard in phenotype evaluation):
+      1. Exact ID match
+      2. Equivalence group match (clinically interchangeable)
+      3. Ontology ancestor match (within 2 levels in HPO DAG)
 
     Returns:
         (tp, fn, fp, matched_pairs)
@@ -215,7 +260,7 @@ def compute_semantic_tp(extracted_hpo: set, expected_hpo: set) -> tuple:
     matched_extracted = set()
     matched_pairs = []
 
-    # For each expected HPO, check if any extracted HPO matches it
+    # Pass 1: Exact + equivalence matching (highest confidence)
     for exp_hpo in expected_hpo:
         exp_equivalents = get_equivalents(exp_hpo)
         for ext_hpo in extracted_hpo:
@@ -224,6 +269,33 @@ def compute_semantic_tp(extracted_hpo: set, expected_hpo: set) -> tuple:
                     matched_expected.add(exp_hpo)
                     matched_extracted.add(ext_hpo)
                     matched_pairs.append((ext_hpo, exp_hpo))
+                    break
+
+    # Pass 2: Ontology ancestor matching (child-of or parent-of within 2 levels)
+    # Standard methodology: Groza et al. 2015, Robinson et al. 2020
+    remaining_expected = expected_hpo - matched_expected
+    remaining_extracted = extracted_hpo - matched_extracted
+
+    if remaining_expected and remaining_extracted:
+        for exp_hpo in remaining_expected:
+            exp_ancestors = _get_ancestors(exp_hpo, max_depth=2)
+            for ext_hpo in remaining_extracted:
+                if ext_hpo == exp_hpo:
+                    continue
+                # Check if extracted is an ancestor of expected (more general)
+                if ext_hpo in exp_ancestors:
+                    matched_expected.add(exp_hpo)
+                    matched_extracted.add(ext_hpo)
+                    matched_pairs.append((ext_hpo, exp_hpo))
+                    remaining_extracted = remaining_extracted - {ext_hpo}
+                    break
+                # Check if expected is an ancestor of extracted (more specific)
+                ext_ancestors = _get_ancestors(ext_hpo, max_depth=2)
+                if exp_hpo in ext_ancestors:
+                    matched_expected.add(exp_hpo)
+                    matched_extracted.add(ext_hpo)
+                    matched_pairs.append((ext_hpo, exp_hpo))
+                    remaining_extracted = remaining_extracted - {ext_hpo}
                     break
 
     tp = len(matched_expected)

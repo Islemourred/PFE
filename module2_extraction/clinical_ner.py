@@ -31,23 +31,27 @@ class ClinicalNER:
     """Bilingual clinical NER: English (DeBERTa-v3 + d4data + ClinicalBERT ensemble) + French (CamemBERT-bio GLiNER)."""
 
     # Label mapping: Helios9/BioMed_NER entities → pipeline categories
+    # FOCUSED: Only Sign_symptom and Disease_disorder map to "problem" (HPO-relevant)
+    # Other labels are kept separate so they don't pollute HPO matching
     _BIOMED_LABEL_MAP = {
         "Disease_disorder": "problem",
         "Sign_symptom": "problem",
         "Medication": "treatment",
         "Therapeutic_procedure": "treatment",
         "Diagnostic_procedure": "test",
-        "Biological_structure": "test",
+        "Biological_structure": None,     # Anatomical terms → skip (not phenotypes)
         "Lab_value": "test",
         # Ignore other labels
     }
 
     # Label mapping: d4data biomedical entities → pipeline categories
+    # FOCUSED: Only Disease maps to "problem" (HPO-relevant)
+    # Chemical/Gene/Protein are NOT phenotypes
     _BIO_LABEL_MAP = {
         "Disease": "problem",
         "Chemical": "treatment",
-        "Gene": "test",
-        "Protein": "test",
+        "Gene": None,         # Genes are not phenotypes → skip
+        "Protein": None,      # Proteins are not phenotypes → skip
         # Ignore: Species, Cell_line, Cell_type, DNA, RNA
     }
 
@@ -71,21 +75,22 @@ class ClinicalNER:
             self.seg = pysbd.Segmenter(language="fr", clean=False)
 
             # French clinical entity labels for zero-shot NER
-            # More specific labels improve GLiNER extraction accuracy
+            # FOCUSED on phenotypes: symptôme + signe clinique are HPO-relevant
+            # maladie captures disease names (useful for ORDO text-boost)
             self.fr_labels = [
-                "maladie",            # disease/pathology → "problem"
-                "symptôme",           # symptom/sign → "problem"
-                "traitement",         # treatment/medication → "treatment"
-                "médicament",         # drug → "treatment"
-                "examen médical",     # medical test → "test"
+                "symptôme clinique",      # clinical symptom → "problem" (HPO)
+                "signe clinique",         # clinical sign → "problem" (HPO)
+                "anomalie phénotypique",  # phenotypic abnormality → "problem" (HPO)
+                "maladie",               # disease name → "problem" (ORDO text-boost)
+                "traitement",            # treatment → "treatment" (skip HPO)
             ]
             # Label mapping French → English (for pipeline compatibility)
             self._label_map = {
+                "symptôme clinique": "problem",
+                "signe clinique": "problem",
+                "anomalie phénotypique": "problem",
                 "maladie": "problem",
-                "symptôme": "problem",
                 "traitement": "treatment",
-                "médicament": "treatment",
-                "examen médical": "test",
             }
         else:
             # ── Primary model: DeBERTa-v3 BioMed NER (SOTA 2024) ──

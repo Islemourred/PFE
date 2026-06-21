@@ -1,0 +1,539 @@
+{
+  "id": "phenopacket-RA_EN_024",
+  "subject": {
+    "id": "RA_EN_024"
+  },
+  "input": "An 11-year-old boy with no significant medical history was admitted due to a 4-month history of headache, general condition decline, apathy, increased urination, constipation, swelling of feet and hands, and reduced muscle strength. Laboratory tests indicated mild anemia, iron deficiency, elevated eosinophil count, increased ESR, low vitamin D levels, elevated gamma globulin levels, high calcium levels, low phosphate levels, and increased urea and creatinine concentrations. A high calcium creatinine index and reduced parathormone levels were noted. MRI of the head showed no abnormalities. Abdominal ultrasound revealed thickening of the renal parenchymal layer and kidney enlargement. Thyroid and parathyroid ultrasound showed no abnormalities. The patient was treated with furosemide and infusion fluids without improvement. A subfebrile state was also noted. Further examinations included an abdominal ultrasound that continued to show kidney enlargement with a hyperechogenic signal of the renal parenchyma and liver enlargement. Whole-body MRI revealed hepatomegaly and a hyperintense signal in the kidneys and lower limb fascia. Bone scintigraphy and nailfold capillaroscopy showed no abnormalities. Bone marrow biopsy ruled out proliferative diseases.",
+  "target": "Addison disease",
+  "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0002315",
+        "label": "Headache",
+        "umls_cui": "C0018681"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_024",
+            "description": "NER: headache (0.971) | Match: exact_label (1.000)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0001268",
+        "label": "Mental deterioration",
+        "umls_cui": "C0234985"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_024",
+            "description": "NER: general condition decline (0.793) | Match: sapbert_similarity (0.722)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0000741",
+        "label": "Apathy",
+        "umls_cui": "C0085632"
+      },
+      "excluded": true,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_024",
+            "description": "NER: apathy (0.954) | Match: exact_label (1.000) | Negated by: \"decline\""
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0000103",
+        "label": "Polyuria",
+        "umls_cui": "C0032617"
+      },
+      "excluded": true,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_024",
+            "description": "NER: increased urination (0.840) | Match: sapbert_similarity (0.864) | Negated by: \"decline\""
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0002019",
+        "label": "Constipation",
+        "umls_cui": "C0009806"
+      },
+      "excluded": true,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_024",
+            "description": "NER: constipation (0.961) | Match: exact_label (1.000) | Negated by: \"decline\""
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0012451",
+        "label": "Acute constipation",
+        "umls_cui": "C0401148"
+      },
+      "excluded": true,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_024",
+            "description": "NER: constipation, swelling (0.995) | Match: sapbert_similarity (0.780) | Negated by: \"decline\""
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0001324",
+        "label": "Muscle weakness",
+        "umls_cui": "C0151786"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_024",
+            "description": "NER: reduced muscle strength (0.556) | Match: sapbert_similarity (0.922)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0001897",
+        "label": "Normocytic anemia",
+        "umls_cui": "C0085577"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_024",
+            "description": "NER: mild anemia (0.999) | Match: sapbert_similarity (0.775)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0001903",
+        "label": "Anemia",
+        "umls_cui": "C0002871"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_024",
+            "description": "NER: anemia (0.796) | Match: exact_label (1.000)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0001924",
+        "label": "Sideroblastic anemia",
+        "umls_cui": "C0002896"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_024",
+            "description": "NER: iron deficiency, elevated eosinophil count, increased ESR, low vitamin D levels (0.999) | Match: sapbert_similarity (0.732)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0003237",
+        "label": "Increased circulating IgG concentration",
+        "umls_cui": "C1858977"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_024",
+            "description": "NER: elevated gamma globulin levels (0.997) | Match: sapbert_similarity (0.903)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0003072",
+        "label": "Hypercalcemia",
+        "umls_cui": "C0020437"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_024",
+            "description": "NER: high calcium levels (0.997) | Match: sapbert_similarity (0.911)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0002148",
+        "label": "Hypophosphatemia",
+        "umls_cui": "C0085682"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_024",
+            "description": "NER: low phosphate levels (0.995) | Match: sapbert_similarity (0.912)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0003138",
+        "label": "Increased blood urea nitrogen",
+        "umls_cui": "C0151539"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_024",
+            "description": "NER: increased urea and creatinine concentrations (0.992) | Match: sapbert_similarity (0.742)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0003513",
+        "label": "Reduced ratio of renal calcium clearance to creatinine clearance",
+        "umls_cui": "C4025605"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_024",
+            "description": "NER: a high calcium creatinine index (0.983) | Match: sapbert_similarity (0.742)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0000829",
+        "label": "Hypoparathyroidism",
+        "umls_cui": "C0020626"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_024",
+            "description": "NER: reduced parathormone levels (0.986) | Match: sapbert_similarity (0.882)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0001072",
+        "label": "Thickened skin",
+        "umls_cui": "C0334008"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_024",
+            "description": "NER: thickening (0.970) | Match: sapbert_similarity (0.801)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0000105",
+        "label": "Enlarged kidney",
+        "umls_cui": "C0542518"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_024",
+            "description": "NER: kidney enlargement (0.997) | Match: sapbert_similarity (0.970)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0001548",
+        "label": "Overgrowth",
+        "umls_cui": "C1849265"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_024",
+            "description": "NER: enlargement (0.955) | Match: sapbert_similarity (0.825)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0002240",
+        "label": "Hepatomegaly",
+        "umls_cui": "C0019209"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_024",
+            "description": "NER: hepatomegaly (0.925) | Match: exact_label (1.000)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0001891",
+        "label": "Iron deficiency anemia",
+        "umls_cui": "C0162316"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_024",
+            "description": "NER: iron deficiency (0.900) | Match: text_scan_clinical_synonym (0.950)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0000969",
+        "label": "Edema",
+        "umls_cui": "C0013604"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_024",
+            "description": "NER: swelling (0.900) | Match: text_scan_clinical_synonym (0.950)"
+          }
+        }
+      ]
+    }
+  ],
+  "metaData": {
+    "created": "2026-06-19T15:12:07Z",
+    "createdBy": "clinical-preanalysis-pipeline-v2",
+    "phenopacketSchemaVersion": "2.0",
+    "resources": [
+      {
+        "id": "hp",
+        "name": "Human Phenotype Ontology",
+        "url": "https://hpo.jax.org",
+        "version": "2024-04-26",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      }
+    ]
+  },
+  "interpretations": [
+    {
+      "id": "interpretation-RA_EN_024",
+      "progressStatus": "IN_PROGRESS",
+      "diagnosis": {
+        "disease": {
+          "id": "ORPHA:85138",
+          "label": "Addison disease"
+        },
+        "score": 0.4001,
+        "allCandidates": [
+          {
+            "id": "ORPHA:85138",
+            "label": "Addison disease",
+            "score": 0.4001
+          },
+          {
+            "id": "ORPHA:358",
+            "label": "Gitelman syndrome",
+            "score": 0.3876
+          },
+          {
+            "id": "ORPHA:199299",
+            "label": "Late-onset isolated ACTH deficiency",
+            "score": 0.3821
+          },
+          {
+            "id": "ORPHA:95409",
+            "label": "Acute adrenal insufficiency",
+            "score": 0.3569
+          },
+          {
+            "id": "ORPHA:652",
+            "label": "Multiple endocrine neoplasia type 1",
+            "score": 0.3456
+          },
+          {
+            "id": "ORPHA:143",
+            "label": "Parathyroid carcinoma",
+            "score": 0.3419
+          },
+          {
+            "id": "ORPHA:699",
+            "label": "Pearson syndrome",
+            "score": 0.3418
+          },
+          {
+            "id": "ORPHA:550",
+            "label": "MELAS",
+            "score": 0.3409
+          },
+          {
+            "id": "ORPHA:99880",
+            "label": "Hyperparathyroidism-jaw tumor syndrome",
+            "score": 0.3388
+          },
+          {
+            "id": "ORPHA:340",
+            "label": "Hemorrhagic fever-renal syndrome",
+            "score": 0.3355
+          }
+        ]
+      }
+    }
+  ],
+  "_pipelineStats": {
+    "totalEntities": 73,
+    "matchedHPO": 22,
+    "unmatchedEntities": 51,
+    "phenopacketFeatures": 22,
+    "negatedFeatures": 4,
+    "numericPhenotypes": 0,
+    "ordoCandidates": 10
+  }
+}

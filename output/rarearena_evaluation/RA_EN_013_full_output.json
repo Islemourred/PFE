@@ -1,0 +1,2220 @@
+{
+  "note_id": "RA_EN_013",
+  "language": "en",
+  "module1": {
+    "clean_text": "A [AGE] male infant from Agra, Uttar Pradesh, presented with delayed developmental milestones since birth and an increase in head size over the past 2 months following a febrile illness. The child was born vaginally at term with a birth weight of 1.25 kg, and the birth and perinatal period were uneventful. He had not achieved neck holding, social smile, or cooing. At [AGE] old, he experienced a febrile illness requiring a 25-day hospital stay, during which he had multiple seizures characterized by whole-body tightening and a vacant stare. He was treated with multiple antibiotics and antiepileptic drugs and was discharged on antiepileptic medications, with no further seizures reported since discharge. Persistent flaky scalp lesions were noted despite treatment. The mother observed a gradual increase in the child's head size since the febrile episode, along with excessive irritability. There were apparent visual and auditory impairments. The child was the fourth in birth order from a non-consanguineous marriage. The first child had died at [AGE] years of age from a similar illness, the second child is a healthy [AGE] and the third pregnancy ended in a spontaneous abortion at 3 months of amenorrhea. On examination, the child appeared small for age with a large head, weighing 4.6 kg and measuring 62 cm in length, with a weight-for-length less than –3 standard deviation (SD). Head circumference was 48 cm, greater than +3 SD. He had short, sparse, coarse, lightly pigmented hair with seborrheic dermatitis on the scalp and a depressed nasal bridge. Neurological examination revealed irritability, lack of interaction with surroundings or parents, absence of visual fixation, and no response to auditory stimuli. Muscle tone was low in all four limbs, with symmetrical movement. Deep tendon reflexes were brisk, and plantar reflexes were upgoing. Fundus examination was normal, with no nystagmus. There was no hepatosplenomegaly, and the rest of the systemic examination was unremarkable. Hematological parameters were normal except for mild anemia with a hemoglobin level of 10.5 g/dL. Serum lactate levels were elevated. MRI of the brain performed during the febrile illness showed hyperintense signals in the subcortical and deep white matter of the bilateral temporal regions, with changes suggestive of megalencephalic leukodystrophy. Reexamination of the MRI films revealed tortuous blood vessels.",
+    "phi_map": {
+      "AGE": [
+        "7-month-old",
+        "2",
+        "months",
+        "1.5",
+        "5-year-old,"
+      ]
+    },
+    "patient_info": {
+      "sex": "male",
+      "age": "2"
+    }
+  },
+  "module3_warnings": {
+    "temporal": [],
+    "inconsistencies": [
+      {
+        "type": "sex_anatomy_conflict",
+        "severity": "critical",
+        "message": "Female-specific term 'pregnancy' found in male patient record",
+        "term": "pregnancy"
+      }
+    ]
+  },
+  "module4": {
+    "test": [
+      {
+        "text": "a weight - for - length",
+        "ner_score": 0.875,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "a weight - for - length",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "delayed developmental milestone",
+        "ner_score": 0.973,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "delayed developmental milestone",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "increase in head size",
+        "ner_score": 0.838,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "increase in head size",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "weight",
+        "ner_score": 0.789,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "weight",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "period",
+        "ner_score": 0.616,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "period",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "uneventful",
+        "ner_score": 0.459,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "uneventful",
+        "match_type": "skipped_low_ner_score",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "examination",
+        "ner_score": 0.963,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "examination",
+        "match_type": "skipped_en_noise",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "large",
+        "ner_score": 0.712,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "large",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "length",
+        "ner_score": 0.282,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "length",
+        "match_type": "skipped_low_ner_score",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "standard",
+        "ner_score": 0.958,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "standard",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "deviation",
+        "ner_score": 0.956,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "deviation",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "head ci",
+        "ner_score": 0.956,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "head ci",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "circumference",
+        "ner_score": 0.945,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "circumference",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "ference",
+        "ner_score": 0.984,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "ference",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "greater",
+        "ner_score": 0.835,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "greater",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "Neurological",
+        "ner_score": 0.991,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "Neurological",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "neurological examination",
+        "ner_score": 0.997,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "neurological examination",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "ological",
+        "ner_score": 0.989,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "ological",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "auditory stimuli",
+        "ner_score": 0.651,
+        "negated": true,
+        "negation_cue": "absence of",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "auditory stimuli",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "Muscle",
+        "ner_score": 0.967,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "Muscle",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "muscle tone",
+        "ner_score": 0.676,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "muscle tone",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "symmetrical",
+        "ner_score": 0.779,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "symmetrical",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "movement",
+        "ner_score": 0.754,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "movement",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "Deep tendon reflexes",
+        "ner_score": 0.992,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "Deep tendon reflexes",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "plantar reflexes",
+        "ner_score": 0.974,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "plantar reflexes",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "going",
+        "ner_score": 0.916,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "going",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "fundus examination",
+        "ner_score": 0.993,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "fundus examination",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "normal",
+        "ner_score": 0.951,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "normal",
+        "match_type": "skipped_en_noise",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "the systemic examination",
+        "ner_score": 0.997,
+        "negated": true,
+        "negation_cue": "no",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "the systemic examination",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "systemic",
+        "ner_score": 0.935,
+        "negated": true,
+        "negation_cue": "no",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "systemic",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "unremarkable",
+        "ner_score": 0.922,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "unremarkable",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "parameters",
+        "ner_score": 0.919,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "parameters",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "a hemog",
+        "ner_score": 0.95,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "a hemog",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "hemoglobin",
+        "ner_score": 0.986,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "hemoglobin",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "bin level",
+        "ner_score": 0.976,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "bin level",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "Serum lactate",
+        "ner_score": 0.493,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "Serum lactate",
+        "match_type": "skipped_low_ner_score",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "serum",
+        "ner_score": 0.962,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "serum",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "levels",
+        "ner_score": 0.723,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "levels",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "elevated. MRI of the brain",
+        "ner_score": 0.997,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "elevated. MRI of the brain",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "reexamination of the mri films",
+        "ner_score": 0.748,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "reexamination of the mri films",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      }
+    ],
+    "problem": [
+      {
+        "text": "whole - body tightening",
+        "ner_score": 0.996,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "whole - body tightening",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "a gradual increase in the child ' s head size",
+        "ner_score": 0.864,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0004481",
+        "hpo_name": "Progressive macrocephaly",
+        "expanded_text": "a gradual increase in the child ' s head size",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.8343,
+        "matched": true,
+        "umls_cui": "C1859896"
+      },
+      {
+        "text": "delayed developmental milestones",
+        "ner_score": 0.996,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0001263",
+        "hpo_name": "Global developmental delay",
+        "expanded_text": "delayed developmental milestones",
+        "match_type": "exact_synonym",
+        "confidence": 1.0,
+        "matched": true,
+        "umls_cui": "C0557874"
+      },
+      {
+        "text": "an increase in head size",
+        "ner_score": 0.841,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0000256",
+        "hpo_name": "Macrocephaly",
+        "expanded_text": "an increase in head size",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.8903,
+        "matched": true,
+        "umls_cui": "C4083076"
+      },
+      {
+        "text": "a febrile illness",
+        "ner_score": 0.996,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0001945",
+        "hpo_name": "Fever",
+        "expanded_text": "a febrile illness",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.8292,
+        "matched": true,
+        "umls_cui": "C0015967"
+      },
+      {
+        "text": "illness",
+        "ner_score": 0.595,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "illness",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "neck holding",
+        "ner_score": 0.677,
+        "negated": true,
+        "negation_cue": "had not",
+        "hpo_id": "HP:0000467",
+        "hpo_name": "Neck muscle weakness",
+        "expanded_text": "neck holding",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.7313,
+        "matched": true,
+        "umls_cui": "C0240479"
+      },
+      {
+        "text": "social smile",
+        "ner_score": 0.499,
+        "negated": true,
+        "negation_cue": "had not",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "social smile",
+        "match_type": "skipped_low_ner_score",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "cooing",
+        "ner_score": 0.619,
+        "negated": true,
+        "negation_cue": "had not",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "cooing",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "multiple seizures",
+        "ner_score": 0.997,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "multiple seizures",
+        "match_type": "deduplicated",
+        "confidence": 0.8373,
+        "matched": false,
+        "umls_cui": "C0038220"
+      },
+      {
+        "text": "seizures",
+        "ner_score": 0.941,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0001250",
+        "hpo_name": "Seizure",
+        "expanded_text": "seizures",
+        "match_type": "clinical_synonym",
+        "confidence": 1.0,
+        "matched": true,
+        "umls_cui": "C0014544"
+      },
+      {
+        "text": "tightening",
+        "ner_score": 0.908,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "tightening",
+        "match_type": "sapbert_rejected_low_conf",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "a vacant stare",
+        "ner_score": 0.994,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "a vacant stare",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "vacant stare",
+        "ner_score": 0.9,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "vacant stare",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "further seizures",
+        "ner_score": 0.997,
+        "negated": true,
+        "negation_cue": "no",
+        "hpo_id": "HP:0002133",
+        "hpo_name": "Status epilepticus",
+        "expanded_text": "further seizures",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.8544,
+        "matched": true,
+        "umls_cui": "C0038220"
+      },
+      {
+        "text": "persistent flaky scalp lesions",
+        "ner_score": 0.999,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "persistent flaky scalp lesions",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "lesions",
+        "ner_score": 0.942,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "lesions",
+        "match_type": "sapbert_rejected_low_conf",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "the febrile episode",
+        "ner_score": 0.992,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0002373",
+        "hpo_name": "Febrile seizure (within the age range of 3 months to 6 years)",
+        "expanded_text": "the febrile episode",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.8016,
+        "matched": true,
+        "umls_cui": "C0009952"
+      },
+      {
+        "text": "excessive irritability",
+        "ner_score": 0.997,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "excessive irritability",
+        "match_type": "deduplicated",
+        "confidence": 0.8254,
+        "matched": false,
+        "umls_cui": "C2700617"
+      },
+      {
+        "text": "irritability",
+        "ner_score": 0.961,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0000737",
+        "hpo_name": "Irritability",
+        "expanded_text": "irritability",
+        "match_type": "exact_label",
+        "confidence": 1.0,
+        "matched": true,
+        "umls_cui": "C2700617"
+      },
+      {
+        "text": "irritability",
+        "ner_score": 0.991,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "irritability",
+        "match_type": "deduplicated",
+        "confidence": 1.0,
+        "matched": false,
+        "umls_cui": "C2700617"
+      },
+      {
+        "text": "apparent visual and auditory impairments",
+        "ner_score": 0.979,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0100704",
+        "hpo_name": "Cerebral visual impairment",
+        "expanded_text": "apparent visual and auditory impairments",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.7176,
+        "matched": true,
+        "umls_cui": "C0155320"
+      },
+      {
+        "text": "visual",
+        "ner_score": 0.89,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "visual",
+        "match_type": "sapbert_rejected_low_conf",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "auditory impairments",
+        "ner_score": 0.713,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0000365",
+        "hpo_name": "Hearing impairment",
+        "expanded_text": "auditory impairments",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.8418,
+        "matched": true,
+        "umls_cui": "C0011053"
+      },
+      {
+        "text": "a similar illness",
+        "ner_score": 0.998,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "a similar illness",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "a spontaneous abortion",
+        "ner_score": 0.802,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0005268",
+        "hpo_name": "Miscarriage",
+        "expanded_text": "a spontaneous abortion",
+        "match_type": "substring_match",
+        "confidence": 0.95,
+        "matched": true,
+        "umls_cui": "C0000786"
+      },
+      {
+        "text": "amenorrhea",
+        "ner_score": 0.964,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0000141",
+        "hpo_name": "Amenorrhea",
+        "expanded_text": "amenorrhea",
+        "match_type": "exact_label",
+        "confidence": 1.0,
+        "matched": true,
+        "umls_cui": "C2219717"
+      },
+      {
+        "text": "orrhea",
+        "ner_score": 0.264,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "orrhea",
+        "match_type": "skipped_low_ner_score",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "short, sparse, coarse, lightly pigmented hair",
+        "ner_score": 0.958,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0002286",
+        "hpo_name": "Fair hair",
+        "expanded_text": "short, sparse, coarse, lightly pigmented hair",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.8189,
+        "matched": true,
+        "umls_cui": "C0239801"
+      },
+      {
+        "text": "hair",
+        "ner_score": 0.483,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "hair",
+        "match_type": "skipped_low_ner_score",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "seborrheic dermatitis on the scalp",
+        "ner_score": 0.995,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0001051",
+        "hpo_name": "Seborrheic dermatitis",
+        "expanded_text": "seborrheic dermatitis on the scalp",
+        "match_type": "substring_match",
+        "confidence": 0.95,
+        "matched": true,
+        "umls_cui": "C0036508"
+      },
+      {
+        "text": "dermatitis",
+        "ner_score": 0.87,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0000964",
+        "hpo_name": "Eczema",
+        "expanded_text": "dermatitis",
+        "match_type": "clinical_synonym",
+        "confidence": 1.0,
+        "matched": true,
+        "umls_cui": "C0013595"
+      },
+      {
+        "text": "a depressed nasal bridge",
+        "ner_score": 0.997,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0005280",
+        "hpo_name": "Depressed nasal bridge",
+        "expanded_text": "a depressed nasal bridge",
+        "match_type": "substring_match",
+        "confidence": 0.95,
+        "matched": true,
+        "umls_cui": "C1836542"
+      },
+      {
+        "text": "depressed",
+        "ner_score": 0.422,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "depressed",
+        "match_type": "skipped_low_ner_score",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "lack of",
+        "ner_score": 0.345,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "lack of",
+        "match_type": "skipped_low_ner_score",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "lack of interaction with",
+        "ner_score": 0.881,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0008763",
+        "hpo_name": "No social interaction",
+        "expanded_text": "lack of interaction with",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.8093,
+        "matched": true,
+        "umls_cui": "C1849683"
+      },
+      {
+        "text": "visual fixation",
+        "ner_score": 0.825,
+        "negated": true,
+        "negation_cue": "absence of",
+        "hpo_id": "HP:0001483",
+        "hpo_name": "Eye poking",
+        "expanded_text": "visual fixation",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.7107,
+        "matched": true,
+        "umls_cui": "C0233593"
+      },
+      {
+        "text": "response to",
+        "ner_score": 0.385,
+        "negated": true,
+        "negation_cue": "absence of",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "response to",
+        "match_type": "skipped_low_ner_score",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "nystagmus",
+        "ner_score": 0.973,
+        "negated": true,
+        "negation_cue": "no",
+        "hpo_id": "HP:0000639",
+        "hpo_name": "Nystagmus",
+        "expanded_text": "nystagmus",
+        "match_type": "clinical_synonym",
+        "confidence": 1.0,
+        "matched": true,
+        "umls_cui": "C0028738"
+      },
+      {
+        "text": "hepatosplenomegaly",
+        "ner_score": 0.967,
+        "negated": true,
+        "negation_cue": "no",
+        "hpo_id": "HP:0001433",
+        "hpo_name": "Hepatosplenomegaly",
+        "expanded_text": "hepatosplenomegaly",
+        "match_type": "clinical_synonym",
+        "confidence": 1.0,
+        "matched": true,
+        "umls_cui": "C0019214"
+      },
+      {
+        "text": "mega",
+        "ner_score": 0.632,
+        "negated": true,
+        "negation_cue": "no",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "mega",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "mild anemia",
+        "ner_score": 0.999,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0001897",
+        "hpo_name": "Normocytic anemia",
+        "expanded_text": "mild anemia",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.7749,
+        "matched": true,
+        "umls_cui": "C0085577"
+      },
+      {
+        "text": "anemia",
+        "ner_score": 0.951,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0001903",
+        "hpo_name": "Anemia",
+        "expanded_text": "anemia",
+        "match_type": "exact_label",
+        "confidence": 1.0,
+        "matched": true,
+        "umls_cui": "C0002871"
+      },
+      {
+        "text": "lactate",
+        "ner_score": 0.863,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "lactate",
+        "match_type": "sapbert_rejected_low_conf",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "elevated",
+        "ner_score": 0.795,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "elevated",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "the febrile illness",
+        "ner_score": 0.978,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "the febrile illness",
+        "match_type": "deduplicated",
+        "confidence": 0.8193,
+        "matched": false,
+        "umls_cui": "C0015967"
+      },
+      {
+        "text": "hyperintense signals in the subcortical and deep white matter of the",
+        "ner_score": 0.97,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0007321",
+        "hpo_name": "Deep white matter hypodensities",
+        "expanded_text": "hyperintense signals in the subcortical and deep white matter of the",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.7203,
+        "matched": true,
+        "umls_cui": "C1856979"
+      },
+      {
+        "text": "signals",
+        "ner_score": 0.291,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "signals",
+        "match_type": "skipped_low_ner_score",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "megalencephalic leukodystrophy",
+        "ner_score": 0.998,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0006978",
+        "hpo_name": "Dysmyelinating leukodystrophy",
+        "expanded_text": "megalencephalic leukodystrophy",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.7864,
+        "matched": true,
+        "umls_cui": "C3278204"
+      },
+      {
+        "text": "cephalic leukodystrophy",
+        "ner_score": 0.948,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "cephalic leukodystrophy",
+        "match_type": "deduplicated",
+        "confidence": 0.7544,
+        "matched": false,
+        "umls_cui": "C3278204"
+      },
+      {
+        "text": "tortu",
+        "ner_score": 0.998,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "tortu",
+        "match_type": "sapbert_rejected_low_conf",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "ous blood vessels",
+        "ner_score": 0.837,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0004948",
+        "hpo_name": "Vascular tortuosity",
+        "expanded_text": "ous blood vessels",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.7309,
+        "matched": true,
+        "umls_cui": "C2673776"
+      },
+      {
+        "text": "blood",
+        "ner_score": 0.217,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "blood",
+        "match_type": "skipped_low_ner_score",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "leukodystrophy",
+        "ner_score": 0.9,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0002415",
+        "hpo_name": "Leukodystrophy",
+        "expanded_text": "leukodystrophy",
+        "match_type": "text_scan_exact_label",
+        "confidence": 0.95,
+        "matched": true,
+        "umls_cui": "C0023520",
+        "umls_all": [
+          "C0023520"
+        ]
+      }
+    ],
+    "treatment": [
+      {
+        "text": "multiple antibiotics",
+        "ner_score": 0.996,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "multiple antibiotics",
+        "match_type": "skipped_treatment",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "antibiotics",
+        "ner_score": 0.8,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "antibiotics",
+        "match_type": "skipped_treatment",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "anti",
+        "ner_score": 0.962,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "anti",
+        "match_type": "skipped_treatment",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "antiepileptic drugs",
+        "ner_score": 0.909,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "antiepileptic drugs",
+        "match_type": "skipped_treatment",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "epileptic",
+        "ner_score": 0.937,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "epileptic",
+        "match_type": "skipped_treatment",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "antiepileptic medications",
+        "ner_score": 0.92,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "antiepileptic medications",
+        "match_type": "skipped_treatment",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "medications",
+        "ner_score": 0.939,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "medications",
+        "match_type": "skipped_treatment",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "treatment",
+        "ner_score": 0.996,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "treatment",
+        "match_type": "skipped_en_noise",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "abortion",
+        "ner_score": 0.159,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "abortion",
+        "match_type": "skipped_low_ner_score",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      }
+    ],
+    "ordo_candidates": [
+      {
+        "ordo_id": "ORPHA:646",
+        "name": "Niemann-Pick disease type C",
+        "name_fr": "",
+        "score": 0.3745,
+        "coverage": 0.0707,
+        "matched_hpo": [
+          "HP:0000365",
+          "HP:0000737",
+          "HP:0001250",
+          "HP:0001263",
+          "HP:0001433",
+          "HP:0002133",
+          "HP:0002415"
+        ],
+        "matched_count": 7,
+        "total_disease_hpo": 99,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:506",
+        "name": "Leigh syndrome",
+        "name_fr": "",
+        "score": 0.3612,
+        "coverage": 0.0714,
+        "matched_hpo": [
+          "HP:0000639",
+          "HP:0000964",
+          "HP:0001250",
+          "HP:0001263",
+          "HP:0001903",
+          "HP:0002133",
+          "HP:0002415"
+        ],
+        "matched_count": 7,
+        "total_disease_hpo": 98,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:51",
+        "name": "Aicardi-Goutières syndrome",
+        "name_fr": "",
+        "score": 0.3483,
+        "coverage": 0.0833,
+        "matched_hpo": [
+          "HP:0000639",
+          "HP:0000737",
+          "HP:0001250",
+          "HP:0001263",
+          "HP:0001433",
+          "HP:0002415"
+        ],
+        "matched_count": 6,
+        "total_disease_hpo": 72,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:135",
+        "name": "CACH syndrome",
+        "name_fr": "",
+        "score": 0.3412,
+        "coverage": 0.0909,
+        "matched_hpo": [
+          "HP:0000737",
+          "HP:0001250",
+          "HP:0001433",
+          "HP:0004481",
+          "HP:0006978"
+        ],
+        "matched_count": 5,
+        "total_disease_hpo": 55,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:167",
+        "name": "Chédiak-Higashi syndrome",
+        "name_fr": "",
+        "score": 0.3298,
+        "coverage": 0.0562,
+        "matched_hpo": [
+          "HP:0000964",
+          "HP:0001250",
+          "HP:0001433",
+          "HP:0001903",
+          "HP:0001945"
+        ],
+        "matched_count": 5,
+        "total_disease_hpo": 89,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:369950",
+        "name": "Intellectual disability-seizures-macrocephaly-obesity syndrome",
+        "name_fr": "",
+        "score": 0.3291,
+        "coverage": 0.12,
+        "matched_hpo": [
+          "HP:0000256",
+          "HP:0000365",
+          "HP:0000964",
+          "HP:0001051",
+          "HP:0001250",
+          "HP:0001263"
+        ],
+        "matched_count": 6,
+        "total_disease_hpo": 50,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:1675",
+        "name": "Dihydropyrimidine dehydrogenase deficiency",
+        "name_fr": "",
+        "score": 0.3173,
+        "coverage": 0.1273,
+        "matched_hpo": [
+          "HP:0000256",
+          "HP:0000639",
+          "HP:0000737",
+          "HP:0001250",
+          "HP:0001263",
+          "HP:0002373",
+          "HP:0005280"
+        ],
+        "matched_count": 7,
+        "total_disease_hpo": 55,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:206436",
+        "name": "Infantile Krabbe disease",
+        "name_fr": "",
+        "score": 0.3134,
+        "coverage": 0.0714,
+        "matched_hpo": [
+          "HP:0000365",
+          "HP:0000467",
+          "HP:0000737",
+          "HP:0001250",
+          "HP:0001263"
+        ],
+        "matched_count": 5,
+        "total_disease_hpo": 70,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:72",
+        "name": "Angelman syndrome",
+        "name_fr": "",
+        "score": 0.3092,
+        "coverage": 0.0563,
+        "matched_hpo": [
+          "HP:0000639",
+          "HP:0001250",
+          "HP:0002133",
+          "HP:0002286"
+        ],
+        "matched_count": 4,
+        "total_disease_hpo": 71,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:565624",
+        "name": "Combined oxidative phosphorylation defect type 39",
+        "name_fr": "",
+        "score": 0.3021,
+        "coverage": 0.0444,
+        "matched_hpo": [
+          "HP:0001250",
+          "HP:0001263",
+          "HP:0007321",
+          "HP:0008763"
+        ],
+        "matched_count": 4,
+        "total_disease_hpo": 90,
+        "text_match": false
+      }
+    ],
+    "stats": {
+      "total": 103,
+      "matched": 27,
+      "unmatched": 76,
+      "match_rate": 26.2,
+      "unique_hpo": 27,
+      "ordo_matches": 10
+    }
+  },
+  "phenopacket": {
+    "id": "phenopacket-RA_EN_013",
+    "subject": {
+      "id": "RA_EN_013",
+      "sex": "MALE",
+      "timeAtLastEncounter": {
+        "age": {
+          "iso8601duration": "P2Y"
+        }
+      }
+    },
+    "input": "A 7-month-old male infant from Agra, Uttar Pradesh, presented with delayed developmental milestones since birth and an increase in head size over the past 2 months following a febrile illness. The child was born vaginally at term with a birth weight of 1.25 kg, and the birth and perinatal period were uneventful. He had not achieved neck holding, social smile, or cooing. At 2 months old, he experienced a febrile illness requiring a 25-day hospital stay, during which he had multiple seizures characterized by whole-body tightening and a vacant stare. He was treated with multiple antibiotics and antiepileptic drugs and was discharged on antiepileptic medications, with no further seizures reported since discharge. Persistent flaky scalp lesions were noted despite treatment. The mother observed a gradual increase in the child's head size since the febrile episode, along with excessive irritability. There were apparent visual and auditory impairments. The child was the fourth in birth order from a non-consanguineous marriage. The first child had died at 1.5 years of age from a similar illness, the second child is a healthy 5-year-old, and the third pregnancy ended in a spontaneous abortion at 3 months of amenorrhea. On examination, the child appeared small for age with a large head, weighing 4.6 kg and measuring 62 cm in length, with a weight-for-length less than –3 standard deviation (SD). Head circumference was 48 cm, greater than +3 SD. He had short, sparse, coarse, lightly pigmented hair with seborrheic dermatitis on the scalp and a depressed nasal bridge. Neurological examination revealed irritability, lack of interaction with surroundings or parents, absence of visual fixation, and no response to auditory stimuli. Muscle tone was low in all four limbs, with symmetrical movement. Deep tendon reflexes were brisk, and plantar reflexes were upgoing. Fundus examination was normal, with no nystagmus. There was no hepatosplenomegaly, and the rest of the systemic examination was unremarkable. Hematological parameters were normal except for mild anemia with a hemoglobin level of 10.5 g/dL. Serum lactate levels were elevated. MRI of the brain performed during the febrile illness showed hyperintense signals in the subcortical and deep white matter of the bilateral temporal regions, with changes suggestive of megalencephalic leukodystrophy. Reexamination of the MRI films revealed tortuous blood vessels.",
+    "target": "Niemann-Pick disease type C",
+    "phenotypicFeatures": [
+      {
+        "type": {
+          "id": "HP:0004481",
+          "label": "Progressive macrocephaly",
+          "umls_cui": "C1859896"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_013",
+              "description": "NER: a gradual increase in the child ' s head size (0.864) | Match: sapbert_similarity (0.834)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0001263",
+          "label": "Global developmental delay",
+          "umls_cui": "C0557874"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_013",
+              "description": "NER: delayed developmental milestones (0.996) | Match: exact_synonym (1.000)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0000256",
+          "label": "Macrocephaly",
+          "umls_cui": "C4083076"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_013",
+              "description": "NER: an increase in head size (0.841) | Match: sapbert_similarity (0.890)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0001945",
+          "label": "Fever",
+          "umls_cui": "C0015967"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_013",
+              "description": "NER: a febrile illness (0.996) | Match: sapbert_similarity (0.829)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0000467",
+          "label": "Neck muscle weakness",
+          "umls_cui": "C0240479"
+        },
+        "excluded": true,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_013",
+              "description": "NER: neck holding (0.677) | Match: sapbert_similarity (0.731) | Negated by: \"had not\""
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0001250",
+          "label": "Seizure",
+          "umls_cui": "C0014544"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_013",
+              "description": "NER: seizures (0.941) | Match: clinical_synonym (1.000)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0002133",
+          "label": "Status epilepticus",
+          "umls_cui": "C0038220"
+        },
+        "excluded": true,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_013",
+              "description": "NER: further seizures (0.997) | Match: sapbert_similarity (0.854) | Negated by: \"no\""
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0002373",
+          "label": "Febrile seizure (within the age range of 3 months to 6 years)",
+          "umls_cui": "C0009952"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_013",
+              "description": "NER: the febrile episode (0.992) | Match: sapbert_similarity (0.802)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0000737",
+          "label": "Irritability",
+          "umls_cui": "C2700617"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_013",
+              "description": "NER: irritability (0.961) | Match: exact_label (1.000)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0100704",
+          "label": "Cerebral visual impairment",
+          "umls_cui": "C0155320"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_013",
+              "description": "NER: apparent visual and auditory impairments (0.979) | Match: sapbert_similarity (0.718)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0000365",
+          "label": "Hearing impairment",
+          "umls_cui": "C0011053"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_013",
+              "description": "NER: auditory impairments (0.713) | Match: sapbert_similarity (0.842)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0005268",
+          "label": "Miscarriage",
+          "umls_cui": "C0000786"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_013",
+              "description": "NER: a spontaneous abortion (0.802) | Match: substring_match (0.950)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0000141",
+          "label": "Amenorrhea",
+          "umls_cui": "C2219717"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_013",
+              "description": "NER: amenorrhea (0.964) | Match: exact_label (1.000)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0002286",
+          "label": "Fair hair",
+          "umls_cui": "C0239801"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_013",
+              "description": "NER: short, sparse, coarse, lightly pigmented hair (0.958) | Match: sapbert_similarity (0.819)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0001051",
+          "label": "Seborrheic dermatitis",
+          "umls_cui": "C0036508"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_013",
+              "description": "NER: seborrheic dermatitis on the scalp (0.995) | Match: substring_match (0.950)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0000964",
+          "label": "Eczema",
+          "umls_cui": "C0013595"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_013",
+              "description": "NER: dermatitis (0.870) | Match: clinical_synonym (1.000)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0005280",
+          "label": "Depressed nasal bridge",
+          "umls_cui": "C1836542"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_013",
+              "description": "NER: a depressed nasal bridge (0.997) | Match: substring_match (0.950)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0008763",
+          "label": "No social interaction",
+          "umls_cui": "C1849683"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_013",
+              "description": "NER: lack of interaction with (0.881) | Match: sapbert_similarity (0.809)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0001483",
+          "label": "Eye poking",
+          "umls_cui": "C0233593"
+        },
+        "excluded": true,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_013",
+              "description": "NER: visual fixation (0.825) | Match: sapbert_similarity (0.711) | Negated by: \"absence of\""
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0000639",
+          "label": "Nystagmus",
+          "umls_cui": "C0028738"
+        },
+        "excluded": true,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_013",
+              "description": "NER: nystagmus (0.973) | Match: clinical_synonym (1.000) | Negated by: \"no\""
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0001433",
+          "label": "Hepatosplenomegaly",
+          "umls_cui": "C0019214"
+        },
+        "excluded": true,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_013",
+              "description": "NER: hepatosplenomegaly (0.967) | Match: clinical_synonym (1.000) | Negated by: \"no\""
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0001897",
+          "label": "Normocytic anemia",
+          "umls_cui": "C0085577"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_013",
+              "description": "NER: mild anemia (0.999) | Match: sapbert_similarity (0.775)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0001903",
+          "label": "Anemia",
+          "umls_cui": "C0002871"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_013",
+              "description": "NER: anemia (0.951) | Match: exact_label (1.000)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0007321",
+          "label": "Deep white matter hypodensities",
+          "umls_cui": "C1856979"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_013",
+              "description": "NER: hyperintense signals in the subcortical and deep white matter of the (0.970) | Match: sapbert_similarity (0.720)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0006978",
+          "label": "Dysmyelinating leukodystrophy",
+          "umls_cui": "C3278204"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_013",
+              "description": "NER: megalencephalic leukodystrophy (0.998) | Match: sapbert_similarity (0.786)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0004948",
+          "label": "Vascular tortuosity",
+          "umls_cui": "C2673776"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_013",
+              "description": "NER: ous blood vessels (0.837) | Match: sapbert_similarity (0.731)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0002415",
+          "label": "Leukodystrophy",
+          "umls_cui": "C0023520"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_013",
+              "description": "NER: leukodystrophy (0.900) | Match: text_scan_exact_label (0.950)"
+            }
+          }
+        ]
+      }
+    ],
+    "metaData": {
+      "created": "2026-06-19T15:10:03Z",
+      "createdBy": "clinical-preanalysis-pipeline-v2",
+      "phenopacketSchemaVersion": "2.0",
+      "resources": [
+        {
+          "id": "hp",
+          "name": "Human Phenotype Ontology",
+          "url": "https://hpo.jax.org",
+          "version": "2024-04-26",
+          "namespacePrefix": "HP",
+          "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        }
+      ]
+    },
+    "interpretations": [
+      {
+        "id": "interpretation-RA_EN_013",
+        "progressStatus": "IN_PROGRESS",
+        "diagnosis": {
+          "disease": {
+            "id": "ORPHA:646",
+            "label": "Niemann-Pick disease type C"
+          },
+          "score": 0.3745,
+          "allCandidates": [
+            {
+              "id": "ORPHA:646",
+              "label": "Niemann-Pick disease type C",
+              "score": 0.3745
+            },
+            {
+              "id": "ORPHA:506",
+              "label": "Leigh syndrome",
+              "score": 0.3612
+            },
+            {
+              "id": "ORPHA:51",
+              "label": "Aicardi-Goutières syndrome",
+              "score": 0.3483
+            },
+            {
+              "id": "ORPHA:135",
+              "label": "CACH syndrome",
+              "score": 0.3412
+            },
+            {
+              "id": "ORPHA:167",
+              "label": "Chédiak-Higashi syndrome",
+              "score": 0.3298
+            },
+            {
+              "id": "ORPHA:369950",
+              "label": "Intellectual disability-seizures-macrocephaly-obesity syndrome",
+              "score": 0.3291
+            },
+            {
+              "id": "ORPHA:1675",
+              "label": "Dihydropyrimidine dehydrogenase deficiency",
+              "score": 0.3173
+            },
+            {
+              "id": "ORPHA:206436",
+              "label": "Infantile Krabbe disease",
+              "score": 0.3134
+            },
+            {
+              "id": "ORPHA:72",
+              "label": "Angelman syndrome",
+              "score": 0.3092
+            },
+            {
+              "id": "ORPHA:565624",
+              "label": "Combined oxidative phosphorylation defect type 39",
+              "score": 0.3021
+            }
+          ]
+        }
+      }
+    ],
+    "_validationWarnings": [
+      {
+        "type": "sex_anatomy_conflict",
+        "severity": "critical",
+        "message": "Female-specific term 'pregnancy' found in male patient record",
+        "term": "pregnancy"
+      }
+    ],
+    "_pipelineStats": {
+      "totalEntities": 103,
+      "matchedHPO": 27,
+      "unmatchedEntities": 76,
+      "phenopacketFeatures": 27,
+      "negatedFeatures": 5,
+      "numericPhenotypes": 0,
+      "ordoCandidates": 10
+    }
+  }
+}

@@ -8,9 +8,9 @@
   "phenotypicFeatures": [
     {
       "type": {
-        "id": "HP:0001873",
-        "label": "Thrombocytopenia",
-        "umls_cui": "C0040034"
+        "id": "HP:0001417",
+        "label": "X-linked inheritance",
+        "umls_cui": "C0241764"
       },
       "excluded": false,
       "evidence": [
@@ -21,7 +21,7 @@
           },
           "reference": {
             "id": "GSC_EN_006",
-            "description": "NER: microthrombocytopenia (0.940) | Match: sapbert_similarity (0.726)"
+            "description": "NER: an x - linked genetic disorder (0.995) | Match: sapbert_similarity (0.845)"
           }
         }
       ]
@@ -48,9 +48,9 @@
     },
     {
       "type": {
-        "id": "HP:0002719",
-        "label": "Recurrent infections",
-        "umls_cui": "C0239998"
+        "id": "HP:0000010",
+        "label": "Recurrent urinary tract infections",
+        "umls_cui": "C0262655"
       },
       "excluded": false,
       "evidence": [
@@ -61,7 +61,7 @@
           },
           "reference": {
             "id": "GSC_EN_006",
-            "description": "NER: infections (0.472) | Match: sapbert_similarity (0.777)"
+            "description": "NER: urrent infections (0.993) | Match: sapbert_similarity (0.722)"
           }
         }
       ]
@@ -102,6 +102,26 @@
           "reference": {
             "id": "GSC_EN_006",
             "description": "NER: diarrhea (0.908) | Match: clinical_synonym (1.000)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0011947",
+        "label": "Respiratory tract infection",
+        "umls_cui": "C0035243"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "GSC_EN_006",
+            "description": "NER: respiratory tract infections (0.998) | Match: sapbert_similarity (0.993)"
           }
         }
       ]
@@ -181,7 +201,47 @@
           },
           "reference": {
             "id": "GSC_EN_006",
-            "description": "NER: elevated IgE (0.900) | Match: text_scan_clinical_synonym (0.950)"
+            "description": "NER: elevated ige levels (0.998) | Match: substring_match (0.950)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0002719",
+        "label": "Recurrent infections",
+        "umls_cui": "C0239998"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "GSC_EN_006",
+            "description": "NER: recurrent infections (0.900) | Match: text_scan_clinical_synonym (0.950)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0001873",
+        "label": "Thrombocytopenia",
+        "umls_cui": "C0040034"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "GSC_EN_006",
+            "description": "NER: thrombocytopenia (0.900) | Match: text_scan_exact_label (0.950)"
           }
         }
       ]
@@ -205,70 +265,10 @@
           }
         }
       ]
-    },
-    {
-      "type": {
-        "id": "HP:0001417",
-        "label": "X-linked inheritance",
-        "umls_cui": "C0241764"
-      },
-      "excluded": false,
-      "evidence": [
-        {
-          "evidenceCode": {
-            "id": "ECO:0000033",
-            "label": "author statement supported by traceable reference"
-          },
-          "reference": {
-            "id": "GSC_EN_006",
-            "description": "NER: X-linked (0.900) | Match: text_scan_exact_synonym (0.950)"
-          }
-        }
-      ]
-    },
-    {
-      "type": {
-        "id": "HP:0100326",
-        "label": "Immunologic hypersensitivity",
-        "umls_cui": "C0237653"
-      },
-      "excluded": false,
-      "evidence": [
-        {
-          "evidenceCode": {
-            "id": "ECO:0000033",
-            "label": "author statement supported by traceable reference"
-          },
-          "reference": {
-            "id": "GSC_EN_006",
-            "description": "NER: immunological (0.980) | Match: sapbert_similarity (0.717)"
-          }
-        }
-      ]
-    },
-    {
-      "type": {
-        "id": "HP:0011947",
-        "label": "Respiratory tract infection",
-        "umls_cui": "C0035243"
-      },
-      "excluded": false,
-      "evidence": [
-        {
-          "evidenceCode": {
-            "id": "ECO:0000033",
-            "label": "author statement supported by traceable reference"
-          },
-          "reference": {
-            "id": "GSC_EN_006",
-            "description": "NER: respiratory (0.565) | Match: sapbert_similarity (0.712)"
-          }
-        }
-      ]
     }
   ],
   "metaData": {
-    "created": "2026-06-11T03:07:49Z",
+    "created": "2026-06-19T15:05:07Z",
     "createdBy": "clinical-preanalysis-pipeline-v2",
     "phenopacketSchemaVersion": "2.0",
     "resources": [
@@ -291,44 +291,69 @@
           "id": "ORPHA:906",
           "label": "Wiskott-Aldrich syndrome"
         },
-        "score": 0.85,
+        "score": 0.6024,
         "allCandidates": [
           {
             "id": "ORPHA:906",
             "label": "Wiskott-Aldrich syndrome",
-            "score": 0.85
+            "score": 0.6024
           },
           {
-            "id": "ORPHA:231393",
-            "label": "Beta-thalassemia-X-linked thrombocytopenia syndrome",
-            "score": 0.2471
+            "id": "ORPHA:443811",
+            "label": "PGM3-CDG",
+            "score": 0.4669
+          },
+          {
+            "id": "ORPHA:39041",
+            "label": "Omenn syndrome",
+            "score": 0.4595
+          },
+          {
+            "id": "ORPHA:331235",
+            "label": "Selective IgM deficiency",
+            "score": 0.4492
+          },
+          {
+            "id": "ORPHA:391487",
+            "label": "STAT1-related autoimmune enteropathy and endocrinopathy-susceptibility to chronic infections syndrome",
+            "score": 0.4483
+          },
+          {
+            "id": "ORPHA:169154",
+            "label": "T-B+ severe combined immunodeficiency due to IL-7Ralpha deficiency",
+            "score": 0.4423
           },
           {
             "id": "ORPHA:277",
             "label": "Severe combined immunodeficiency due to adenosine deaminase deficiency",
-            "score": 0.2214
+            "score": 0.4366
           },
           {
-            "id": "ORPHA:1572",
-            "label": "Common variable immunodeficiency",
-            "score": 0.2159
+            "id": "ORPHA:83471",
+            "label": "T-cell immunodeficiency with thymic aplasia",
+            "score": 0.4326
           },
           {
-            "id": "ORPHA:169079",
-            "label": "Cernunnos-XLF deficiency",
-            "score": 0.214
+            "id": "ORPHA:275",
+            "label": "Severe combined immunodeficiency due to DCLRE1C deficiency",
+            "score": 0.4296
+          },
+          {
+            "id": "ORPHA:167",
+            "label": "Chédiak-Higashi syndrome",
+            "score": 0.4258
           }
         ]
       }
     }
   ],
   "_pipelineStats": {
-    "totalEntities": 44,
-    "matchedHPO": 14,
-    "unmatchedEntities": 30,
+    "totalEntities": 72,
+    "matchedHPO": 13,
+    "unmatchedEntities": 59,
     "phenopacketFeatures": 13,
     "negatedFeatures": 0,
     "numericPhenotypes": 0,
-    "ordoCandidates": 5
+    "ordoCandidates": 10
   }
 }

@@ -1,0 +1,279 @@
+{
+  "id": "phenopacket-RA_EN_030",
+  "subject": {
+    "id": "RA_EN_030"
+  },
+  "input": "This case involves a 17-year-old girl from Ardebil, Iran, who has been hospitalized four times. At birth, she appeared normal except for congenital malformations of the great toes. Her parents were not related, and there is no family history of genetic disease. She was born via normal vaginal delivery with a normal birth weight. Throughout her growth, her weight remained at the minimal normal range without high levels of physical activity. At age 11, she was first hospitalized due to the onset of reduced motor function in the shoulders, back, neck, and left knee following trauma. MRI of the right shoulder was normal, but a Tc-99 bone scan showed inflammatory response in the left shoulder and right knee, along with some changes in the left shoulder. Muscle enzyme levels were approximately 1.5 times higher than normal, while other hematologic, hormonal, and biochemical tests were normal. She was treated with low-dose ibuprofen and etidronate (200 mg) every alternate day. At age 16, she was hospitalized again with more severe symptoms, including swelling and stiffness in the right lower limb, and pain in the thigh and right leg. A chest CT scan revealed severe scoliosis, MRI showed a hyper signal lesion in the soft tissue of the lower limb muscles, and an x-ray indicated bone formation in the posterior thigh. Three months later, she was hospitalized with restrictions in the glenohumeral joints on both sides, as well as in the right hip, knee, and ankle, and the left knee. Five months later, at age 17, she was hospitalized for the fourth time due to pain behind her right thigh and was treated with medication and physiotherapy.",
+  "target": "Spondyloepiphyseal dysplasia tarda",
+  "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0010057",
+        "label": "Abnormal hallux phalanx morphology",
+        "umls_cui": "C4024080"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_030",
+            "description": "NER: congenital malformations of the great toes (0.997) | Match: sapbert_similarity (0.796)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0004302",
+        "label": "Functional motor deficit",
+        "umls_cui": "C4025360"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_030",
+            "description": "NER: reduced motor function (0.828) | Match: sapbert_similarity (0.875)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0006467",
+        "label": "Limited shoulder movement",
+        "umls_cui": "C1851313"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_030",
+            "description": "NER: reduced motor function in the shoulders, back, neck (0.945) | Match: sapbert_similarity (0.728)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0012649",
+        "label": "Increased inflammatory response",
+        "umls_cui": "C4022803"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_030",
+            "description": "NER: inflammatory response (0.618) | Match: sapbert_similarity (0.858)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0000969",
+        "label": "Edema",
+        "umls_cui": "C0013604"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_030",
+            "description": "NER: swelling (0.965) | Match: clinical_synonym (1.000)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0001386",
+        "label": "Joint swelling",
+        "umls_cui": "C0152031"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_030",
+            "description": "NER: swelling and (0.890) | Match: sapbert_similarity (0.780)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0003552",
+        "label": "Muscle stiffness",
+        "umls_cui": "C0221170"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_030",
+            "description": "NER: stiffness (0.961) | Match: sapbert_similarity (0.867)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0012531",
+        "label": "Pain",
+        "umls_cui": "C0030193"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_030",
+            "description": "NER: pain (0.957) | Match: exact_label (1.000)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0002650",
+        "label": "Scoliosis",
+        "umls_cui": "C0037932"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_030",
+            "description": "NER: severe scoliosis (0.999) | Match: sapbert_similarity (0.867)"
+          }
+        }
+      ]
+    }
+  ],
+  "metaData": {
+    "created": "2026-06-19T15:13:20Z",
+    "createdBy": "clinical-preanalysis-pipeline-v2",
+    "phenopacketSchemaVersion": "2.0",
+    "resources": [
+      {
+        "id": "hp",
+        "name": "Human Phenotype Ontology",
+        "url": "https://hpo.jax.org",
+        "version": "2024-04-26",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      }
+    ]
+  },
+  "interpretations": [
+    {
+      "id": "interpretation-RA_EN_030",
+      "progressStatus": "IN_PROGRESS",
+      "diagnosis": {
+        "disease": {
+          "id": "ORPHA:93284",
+          "label": "Spondyloepiphyseal dysplasia tarda"
+        },
+        "score": 0.3342,
+        "allCandidates": [
+          {
+            "id": "ORPHA:93284",
+            "label": "Spondyloepiphyseal dysplasia tarda",
+            "score": 0.3342
+          },
+          {
+            "id": "ORPHA:2796",
+            "label": "Pachydermoperiostosis",
+            "score": 0.3212
+          },
+          {
+            "id": "ORPHA:93320",
+            "label": "Isolated ulnar hemimelia",
+            "score": 0.295
+          },
+          {
+            "id": "ORPHA:337",
+            "label": "Fibrodysplasia ossificans progressiva",
+            "score": 0.2907
+          },
+          {
+            "id": "ORPHA:1159",
+            "label": "Progressive pseudorheumatoid dysplasia",
+            "score": 0.2892
+          },
+          {
+            "id": "ORPHA:3260",
+            "label": "Idiopathic hypereosinophilic syndrome",
+            "score": 0.2724
+          },
+          {
+            "id": "ORPHA:56",
+            "label": "Alkaptonuria",
+            "score": 0.2653
+          },
+          {
+            "id": "ORPHA:1525",
+            "label": "Cranio-osteoarthropathy",
+            "score": 0.2645
+          },
+          {
+            "id": "ORPHA:1416",
+            "label": "Familial calcium pyrophosphate deposition",
+            "score": 0.2571
+          },
+          {
+            "id": "ORPHA:901",
+            "label": "Wells syndrome",
+            "score": 0.2568
+          }
+        ]
+      }
+    }
+  ],
+  "_pipelineStats": {
+    "totalEntities": 60,
+    "matchedHPO": 9,
+    "unmatchedEntities": 51,
+    "phenopacketFeatures": 9,
+    "negatedFeatures": 0,
+    "numericPhenotypes": 0,
+    "ordoCandidates": 10
+  }
+}

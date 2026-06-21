@@ -18,43 +18,147 @@
   "module4": {
     "problem": [
       {
+        "text": "variants in the ataxia - telangiectasia mutated ( atm ) gene",
+        "ner_score": 0.923,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "variants in the ataxia - telangiectasia mutated ( atm ) gene",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "t - cell acute lymphoblastic leukemia",
+        "ner_score": 0.998,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0006721",
+        "hpo_name": "Acute lymphoblastic leukemia",
+        "expanded_text": "t - cell acute lymphoblastic leukemia",
+        "match_type": "substring_match",
+        "confidence": 0.95,
+        "matched": true,
+        "umls_cui": "C0023449"
+      },
+      {
+        "text": "associated yellow - brown sedimentation",
+        "ner_score": 0.95,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "associated yellow - brown sedimentation",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "delayed, potentially life - threatening hemorrhagic cystitis",
+        "ner_score": 0.998,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "delayed, potentially life - threatening hemorrhagic cystitis",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
         "text": "ataxia",
         "ner_score": 0.348,
         "negated": false,
         "negation_cue": "",
-        "hpo_id": "HP:0001251",
-        "hpo_name": "Ataxia",
+        "hpo_id": null,
+        "hpo_name": null,
         "expanded_text": "ataxia",
-        "match_type": "exact_label",
+        "match_type": "skipped_low_ner_score",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "ataxia telangiectasia",
+        "ner_score": 0.998,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "ataxia telangiectasia",
+        "match_type": "deduplicated",
+        "confidence": 0.7211,
+        "matched": false,
+        "umls_cui": "C0039446"
+      },
+      {
+        "text": "telangiectasia",
+        "ner_score": 0.997,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0001009",
+        "hpo_name": "Telangiectasia",
+        "expanded_text": "telangiectasia",
+        "match_type": "clinical_synonym",
         "confidence": 1.0,
         "matched": true,
-        "umls_cui": "C0007758"
+        "umls_cui": "C0039446"
       },
       {
         "text": "angiectasia",
         "ner_score": 0.923,
         "negated": false,
         "negation_cue": "",
-        "hpo_id": "HP:0001009",
-        "hpo_name": "Telangiectasia",
+        "hpo_id": null,
+        "hpo_name": null,
         "expanded_text": "angiectasia",
-        "match_type": "sapbert_similarity",
-        "confidence": 0.7662,
-        "matched": true,
-        "umls_cui": "C0039446"
+        "match_type": "sapbert_rejected_low_conf",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "severe hemorrhagic cystitis",
+        "ner_score": 0.999,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "severe hemorrhagic cystitis",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
       },
       {
         "text": "cystitis",
         "ner_score": 0.369,
         "negated": false,
         "negation_cue": "",
-        "hpo_id": "HP:0100577",
-        "hpo_name": "Urinary bladder inflammation",
+        "hpo_id": null,
+        "hpo_name": null,
         "expanded_text": "cystitis",
-        "match_type": "sapbert_similarity",
-        "confidence": 0.9166,
+        "match_type": "skipped_low_ner_score",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "a rare autosomal recessive genetic disorder",
+        "ner_score": 0.993,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0000007",
+        "hpo_name": "Autosomal recessive inheritance",
+        "expanded_text": "a rare autosomal recessive genetic disorder",
+        "match_type": "substring_match",
+        "confidence": 0.95,
         "matched": true,
-        "umls_cui": "C0010692"
+        "umls_cui": "C0441748"
       },
       {
         "text": "mutated",
@@ -64,23 +168,88 @@
         "hpo_id": null,
         "hpo_name": null,
         "expanded_text": "mutated",
-        "match_type": "no_match",
+        "match_type": "skipped_low_ner_score",
         "confidence": 0.0,
         "matched": false,
         "umls_cui": null
+      },
+      {
+        "text": "progressive cerebellar degeneration",
+        "ner_score": 0.999,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0002073",
+        "hpo_name": "Progressive cerebellar ataxia",
+        "expanded_text": "progressive cerebellar degeneration",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.8673,
+        "matched": true,
+        "umls_cui": "C0393525"
       },
       {
         "text": "degeneration",
         "ner_score": 0.426,
         "negated": false,
         "negation_cue": "",
-        "hpo_id": "HP:0007009",
-        "hpo_name": "Central nervous system degeneration",
+        "hpo_id": null,
+        "hpo_name": null,
         "expanded_text": "degeneration",
-        "match_type": "sapbert_similarity",
-        "confidence": 0.7583,
-        "matched": true,
-        "umls_cui": "C3277687"
+        "match_type": "skipped_low_ner_score",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "munodefi",
+        "ner_score": 0.918,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "munodefi",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "ciency",
+        "ner_score": 0.993,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "ciency",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "cancer susceptibility",
+        "ner_score": 0.998,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "cancer susceptibility",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "radiosensitivity",
+        "ner_score": 0.996,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "radiosensitivity",
+        "match_type": "sapbert_rejected_low_conf",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
       },
       {
         "text": "sensitivity",
@@ -90,10 +259,49 @@
         "hpo_id": null,
         "hpo_name": null,
         "expanded_text": "sensitivity",
+        "match_type": "skipped_low_ner_score",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "classic",
+        "ner_score": 0.887,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "classic",
         "match_type": "no_match",
         "confidence": 0.0,
         "matched": false,
         "umls_cui": null
+      },
+      {
+        "text": "novel variants in the atm gene",
+        "ner_score": 0.895,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "novel variants in the atm gene",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "urrent gross hematuria",
+        "ner_score": 0.992,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0012587",
+        "hpo_name": "Macroscopic hematuria",
+        "expanded_text": "urrent gross hematuria",
+        "match_type": "substring_match",
+        "confidence": 0.95,
+        "matched": true,
+        "umls_cui": "C0473237"
       },
       {
         "text": "hematuria",
@@ -122,17 +330,43 @@
         "umls_cui": "C0231686"
       },
       {
+        "text": "cerebellar atrophy",
+        "ner_score": 0.99,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0001272",
+        "hpo_name": "Cerebellar atrophy",
+        "expanded_text": "cerebellar atrophy",
+        "match_type": "exact_label",
+        "confidence": 1.0,
+        "matched": true,
+        "umls_cui": "C0262404"
+      },
+      {
         "text": "atrophy",
         "ner_score": 0.544,
         "negated": false,
         "negation_cue": "",
-        "hpo_id": "HP:0003202",
-        "hpo_name": "Skeletal muscle atrophy",
+        "hpo_id": null,
+        "hpo_name": null,
         "expanded_text": "atrophy",
-        "match_type": "sapbert_similarity",
-        "confidence": 0.7555,
-        "matched": true,
-        "umls_cui": "C0234958"
+        "match_type": "skipped_low_ner_score",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "compound heterozygous atm variants",
+        "ner_score": 0.988,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "compound heterozygous atm variants",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
       },
       {
         "text": "c.8357G>T",
@@ -161,30 +395,43 @@
         "umls_cui": null
       },
       {
+        "text": "multiple telangiectatic lesions of the bladder mucosa",
+        "ner_score": 0.999,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "multiple telangiectatic lesions of the bladder mucosa",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
         "text": "telangiectatic",
         "ner_score": 0.452,
         "negated": false,
         "negation_cue": "",
-        "hpo_id": "HP:0001009",
-        "hpo_name": "Telangiectasia",
+        "hpo_id": null,
+        "hpo_name": null,
         "expanded_text": "telangiectatic",
-        "match_type": "sapbert_similarity",
-        "confidence": 0.9739,
-        "matched": true,
-        "umls_cui": "C0039446"
+        "match_type": "skipped_low_ner_score",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
       },
       {
         "text": "lesions",
         "ner_score": 0.875,
         "negated": false,
         "negation_cue": "",
-        "hpo_id": "HP:0011355",
-        "hpo_name": "Localized skin lesion",
+        "hpo_id": null,
+        "hpo_name": null,
         "expanded_text": "lesions",
-        "match_type": "sapbert_similarity",
-        "confidence": 0.7361,
-        "matched": true,
-        "umls_cui": "C0850826"
+        "match_type": "sapbert_rejected_low_conf",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
       },
       {
         "text": "sedimentation",
@@ -200,6 +447,19 @@
         "umls_cui": null
       },
       {
+        "text": "the bleeding",
+        "ner_score": 0.939,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "the bleeding",
+        "match_type": "deduplicated",
+        "confidence": 0.8282,
+        "matched": false,
+        "umls_cui": "C1458140"
+      },
+      {
         "text": "bleeding",
         "ner_score": 0.932,
         "negated": false,
@@ -213,55 +473,43 @@
         "umls_cui": "C1458140"
       },
       {
-        "text": "acute lymphoblastic leukemia",
-        "ner_score": 0.9,
+        "text": "novel atm variants",
+        "ner_score": 0.81,
         "negated": false,
         "negation_cue": "",
-        "hpo_id": "HP:0006721",
-        "hpo_name": "Acute lymphoblastic leukemia",
-        "expanded_text": "acute lymphoblastic leukemia",
-        "match_type": "text_scan_exact_label",
-        "confidence": 0.95,
-        "matched": true,
-        "umls_cui": "C0023449",
-        "umls_all": [
-          "C0023449"
-        ]
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "novel atm variants",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
       },
       {
-        "text": "autosomal recessive",
-        "ner_score": 0.9,
+        "text": "bladder wall telangiectasia",
+        "ner_score": 0.998,
         "negated": false,
         "negation_cue": "",
-        "hpo_id": "HP:0000007",
-        "hpo_name": "Autosomal recessive inheritance",
-        "expanded_text": "autosomal recessive",
-        "match_type": "text_scan_exact_synonym",
-        "confidence": 0.95,
-        "matched": true,
-        "umls_cui": "C0441748",
-        "umls_all": [
-          "C0441748",
-          "C4020899"
-        ]
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "bladder wall telangiectasia",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
       },
       {
-        "text": "cerebellar atrophy",
-        "ner_score": 0.9,
+        "text": "cyclophosphamide exposure",
+        "ner_score": 0.869,
         "negated": false,
         "negation_cue": "",
-        "hpo_id": "HP:0001272",
-        "hpo_name": "Cerebellar atrophy",
-        "expanded_text": "cerebellar atrophy",
-        "match_type": "text_scan_exact_label",
-        "confidence": 0.95,
-        "matched": true,
-        "umls_cui": "C0262404",
-        "umls_all": [
-          "C0262404",
-          "C0740279",
-          "C4020873"
-        ]
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "cyclophosphamide exposure",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
       },
       {
         "text": "immunodeficiency",
@@ -277,22 +525,6 @@
         "umls_cui": "C0021051",
         "umls_all": [
           "C0021051"
-        ]
-      },
-      {
-        "text": "gross hematuria",
-        "ner_score": 0.9,
-        "negated": false,
-        "negation_cue": "",
-        "hpo_id": "HP:0012587",
-        "hpo_name": "Macroscopic hematuria",
-        "expanded_text": "gross hematuria",
-        "match_type": "text_scan_exact_synonym",
-        "confidence": 0.95,
-        "matched": true,
-        "umls_cui": "C0473237",
-        "umls_all": [
-          "C0473237"
         ]
       },
       {
@@ -313,6 +545,23 @@
         ]
       },
       {
+        "text": "leukemia",
+        "ner_score": 0.9,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0001909",
+        "hpo_name": "Leukemia",
+        "expanded_text": "leukemia",
+        "match_type": "text_scan_exact_label",
+        "confidence": 0.95,
+        "matched": true,
+        "umls_cui": "C0023418",
+        "umls_all": [
+          "C0023418",
+          "C0376545"
+        ]
+      },
+      {
         "text": "severity",
         "ner_score": 0.9,
         "negated": false,
@@ -326,6 +575,22 @@
         "umls_cui": "C0522510",
         "umls_all": [
           "C0522510"
+        ]
+      },
+      {
+        "text": "Ataxia",
+        "ner_score": 0.9,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0001251",
+        "hpo_name": "Ataxia",
+        "expanded_text": "Ataxia",
+        "match_type": "text_scan_exact_label",
+        "confidence": 0.95,
+        "matched": true,
+        "umls_cui": "C0007758",
+        "umls_all": [
+          "C0007758"
         ]
       },
       {
@@ -355,7 +620,7 @@
         "hpo_id": null,
         "hpo_name": null,
         "expanded_text": "Genetic",
-        "match_type": "skipped_non_phenotype",
+        "match_type": "skipped_test",
         "confidence": 0.0,
         "matched": false,
         "umls_cui": null
@@ -368,20 +633,20 @@
         "hpo_id": null,
         "hpo_name": null,
         "expanded_text": "gene",
-        "match_type": "skipped_non_phenotype",
+        "match_type": "skipped_test",
         "confidence": 0.0,
         "matched": false,
         "umls_cui": null
       },
       {
-        "text": "cerebellar",
-        "ner_score": 0.312,
+        "text": "genetic analysis",
+        "ner_score": 0.931,
         "negated": false,
         "negation_cue": "",
         "hpo_id": null,
         "hpo_name": null,
-        "expanded_text": "cerebellar",
-        "match_type": "no_match",
+        "expanded_text": "genetic analysis",
+        "match_type": "skipped_test",
         "confidence": 0.0,
         "matched": false,
         "umls_cui": null
@@ -394,20 +659,33 @@
         "hpo_id": null,
         "hpo_name": null,
         "expanded_text": "analysis",
-        "match_type": "no_match",
+        "match_type": "skipped_test",
         "confidence": 0.0,
         "matched": false,
         "umls_cui": null
       },
       {
-        "text": "brain",
-        "ner_score": 0.962,
+        "text": "brain mri",
+        "ner_score": 0.997,
         "negated": false,
         "negation_cue": "",
         "hpo_id": null,
         "hpo_name": null,
-        "expanded_text": "brain",
-        "match_type": "no_match",
+        "expanded_text": "brain mri",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "genetic testing",
+        "ner_score": 0.994,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "genetic testing",
+        "match_type": "skipped_test",
         "confidence": 0.0,
         "matched": false,
         "umls_cui": null
@@ -420,7 +698,20 @@
         "hpo_id": null,
         "hpo_name": null,
         "expanded_text": "testing",
-        "match_type": "no_match",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "cystoscopy",
+        "ner_score": 0.99,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "cystoscopy",
+        "match_type": "skipped_test",
         "confidence": 0.0,
         "matched": false,
         "umls_cui": null
@@ -433,33 +724,7 @@
         "hpo_id": null,
         "hpo_name": null,
         "expanded_text": "oscopy",
-        "match_type": "no_match",
-        "confidence": 0.0,
-        "matched": false,
-        "umls_cui": null
-      },
-      {
-        "text": "bladder",
-        "ner_score": 0.957,
-        "negated": false,
-        "negation_cue": "",
-        "hpo_id": "HP:0009725",
-        "hpo_name": "Bladder neoplasm",
-        "expanded_text": "bladder",
-        "match_type": "sapbert_similarity",
-        "confidence": 0.7706,
-        "matched": true,
-        "umls_cui": "C0005695"
-      },
-      {
-        "text": "mucosa",
-        "ner_score": 0.978,
-        "negated": false,
-        "negation_cue": "",
-        "hpo_id": null,
-        "hpo_name": null,
-        "expanded_text": "mucosa",
-        "match_type": "no_match",
+        "match_type": "skipped_test",
         "confidence": 0.0,
         "matched": false,
         "umls_cui": null
@@ -474,7 +739,20 @@
         "hpo_id": null,
         "hpo_name": null,
         "expanded_text": "chemotherapy",
-        "match_type": "skipped_non_phenotype",
+        "match_type": "skipped_low_ner_score",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "emergency cystoscopic electrocoagulation",
+        "ner_score": 0.973,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "emergency cystoscopic electrocoagulation",
+        "match_type": "skipped_treatment",
         "confidence": 0.0,
         "matched": false,
         "umls_cui": null
@@ -487,7 +765,20 @@
         "hpo_id": null,
         "hpo_name": null,
         "expanded_text": "electrocoagulation",
-        "match_type": "no_match",
+        "match_type": "skipped_treatment",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "timely endoscopic management",
+        "ner_score": 0.926,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "timely endoscopic management",
+        "match_type": "skipped_treatment",
         "confidence": 0.0,
         "matched": false,
         "umls_cui": null
@@ -497,80 +788,160 @@
       {
         "ordo_id": "ORPHA:100",
         "name": "Ataxia-telangiectasia",
-        "name_fr": "Ataxie-Télangiectasie (syndrome de Louis-Bar)",
-        "score": 0.85,
-        "jaccard": 0.08,
-        "coverage": 0.2222,
-        "matched_hpo": [
-          "HP:0001009",
-          "HP:0001251"
-        ],
-        "matched_count": 2,
-        "total_disease_hpo": 9
-      },
-      {
-        "ordo_id": "ORPHA:284400",
-        "name": "Small cell carcinoma of the bladder",
         "name_fr": "",
-        "score": 0.2364,
-        "jaccard": 0.0909,
-        "coverage": 0.3333,
-        "matched_hpo": [
-          "HP:0000790",
-          "HP:0009725"
-        ],
-        "matched_count": 2,
-        "total_disease_hpo": 6
-      },
-      {
-        "ordo_id": "ORPHA:1180",
-        "name": "Ataxia-hypogonadism-choroidal dystrophy syndrome",
-        "name_fr": "",
-        "score": 0.22,
-        "jaccard": 0.05,
-        "coverage": 0.3333,
-        "matched_hpo": [
-          "HP:0001251"
-        ],
-        "matched_count": 1,
-        "total_disease_hpo": 3
-      },
-      {
-        "ordo_id": "ORPHA:868",
-        "name": "Triose phosphate-isomerase deficiency",
-        "name_fr": "",
-        "score": 0.2062,
-        "jaccard": 0.087,
-        "coverage": 0.2857,
-        "matched_hpo": [
-          "HP:0003202",
-          "HP:0007009"
-        ],
-        "matched_count": 2,
-        "total_disease_hpo": 7
-      },
-      {
-        "ordo_id": "ORPHA:98769",
-        "name": "Spinocerebellar ataxia type 15/16",
-        "name_fr": "",
-        "score": 0.1833,
-        "jaccard": 0.0833,
-        "coverage": 0.25,
+        "score": 0.3877,
+        "coverage": 0.0811,
         "matched_hpo": [
           "HP:0001251",
-          "HP:0001272"
+          "HP:0002664",
+          "HP:0002721"
+        ],
+        "matched_count": 3,
+        "total_disease_hpo": 37,
+        "text_match": true
+      },
+      {
+        "ordo_id": "ORPHA:355",
+        "name": "Gaucher disease",
+        "name_fr": "",
+        "score": 0.3278,
+        "coverage": 0.0323,
+        "matched_hpo": [
+          "HP:0000790",
+          "HP:0001251",
+          "HP:0001892"
+        ],
+        "matched_count": 3,
+        "total_disease_hpo": 93,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:2585",
+        "name": "Ataxia-pancytopenia syndrome",
+        "name_fr": "",
+        "score": 0.3188,
+        "coverage": 0.075,
+        "matched_hpo": [
+          "HP:0001251",
+          "HP:0001272",
+          "HP:0002317"
+        ],
+        "matched_count": 3,
+        "total_disease_hpo": 40,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:167",
+        "name": "Chédiak-Higashi syndrome",
+        "name_fr": "",
+        "score": 0.3051,
+        "coverage": 0.0449,
+        "matched_hpo": [
+          "HP:0001251",
+          "HP:0001272",
+          "HP:0001892",
+          "HP:0002721"
+        ],
+        "matched_count": 4,
+        "total_disease_hpo": 89,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:533",
+        "name": "Listeriosis",
+        "name_fr": "",
+        "score": 0.2893,
+        "coverage": 0.0294,
+        "matched_hpo": [
+          "HP:0001251",
+          "HP:0002721"
         ],
         "matched_count": 2,
-        "total_disease_hpo": 8
+        "total_disease_hpo": 68,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:906",
+        "name": "Wiskott-Aldrich syndrome",
+        "name_fr": "",
+        "score": 0.2878,
+        "coverage": 0.0211,
+        "matched_hpo": [
+          "HP:0002664",
+          "HP:0002721"
+        ],
+        "matched_count": 2,
+        "total_disease_hpo": 95,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:247245",
+        "name": "Superficial siderosis",
+        "name_fr": "",
+        "score": 0.287,
+        "coverage": 0.0816,
+        "matched_hpo": [
+          "HP:0001251",
+          "HP:0001272",
+          "HP:0001892",
+          "HP:0002317"
+        ],
+        "matched_count": 4,
+        "total_disease_hpo": 49,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:125",
+        "name": "Bloom syndrome",
+        "name_fr": "",
+        "score": 0.2841,
+        "coverage": 0.0448,
+        "matched_hpo": [
+          "HP:0001009",
+          "HP:0002664",
+          "HP:0006721"
+        ],
+        "matched_count": 3,
+        "total_disease_hpo": 67,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:33226",
+        "name": "Waldenström macroglobulinemia",
+        "name_fr": "",
+        "score": 0.274,
+        "coverage": 0.0444,
+        "matched_hpo": [
+          "HP:0001251",
+          "HP:0001909"
+        ],
+        "matched_count": 2,
+        "total_disease_hpo": 45,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:524",
+        "name": "Li-Fraumeni syndrome",
+        "name_fr": "",
+        "score": 0.272,
+        "coverage": 0.0857,
+        "matched_hpo": [
+          "HP:0001909",
+          "HP:0002664",
+          "HP:0006721"
+        ],
+        "matched_count": 3,
+        "total_disease_hpo": 35,
+        "text_match": false
       }
     ],
     "stats": {
-      "total": 34,
-      "matched": 19,
-      "unmatched": 15,
-      "match_rate": 55.9,
-      "unique_hpo": 18,
-      "ordo_matches": 5
+      "total": 57,
+      "matched": 15,
+      "unmatched": 42,
+      "match_rate": 26.3,
+      "unique_hpo": 15,
+      "ordo_matches": 10
     }
   },
   "phenopacket": {
@@ -583,9 +954,9 @@
     "phenotypicFeatures": [
       {
         "type": {
-          "id": "HP:0001251",
-          "label": "Ataxia",
-          "umls_cui": "C0007758"
+          "id": "HP:0006721",
+          "label": "Acute lymphoblastic leukemia",
+          "umls_cui": "C0023449"
         },
         "excluded": false,
         "evidence": [
@@ -596,7 +967,7 @@
             },
             "reference": {
               "id": "PUBMED_EN_015",
-              "description": "NER: ataxia (0.348) | Match: exact_label (1.000)"
+              "description": "NER: t - cell acute lymphoblastic leukemia (0.998) | Match: substring_match (0.950)"
             }
           }
         ]
@@ -616,16 +987,16 @@
             },
             "reference": {
               "id": "PUBMED_EN_015",
-              "description": "NER: angiectasia (0.923) | Match: sapbert_similarity (0.766)"
+              "description": "NER: telangiectasia (0.997) | Match: clinical_synonym (1.000)"
             }
           }
         ]
       },
       {
         "type": {
-          "id": "HP:0100577",
-          "label": "Urinary bladder inflammation",
-          "umls_cui": "C0010692"
+          "id": "HP:0000007",
+          "label": "Autosomal recessive inheritance",
+          "umls_cui": "C0441748"
         },
         "excluded": false,
         "evidence": [
@@ -636,16 +1007,16 @@
             },
             "reference": {
               "id": "PUBMED_EN_015",
-              "description": "NER: cystitis (0.369) | Match: sapbert_similarity (0.917)"
+              "description": "NER: a rare autosomal recessive genetic disorder (0.993) | Match: substring_match (0.950)"
             }
           }
         ]
       },
       {
         "type": {
-          "id": "HP:0007009",
-          "label": "Central nervous system degeneration",
-          "umls_cui": "C3277687"
+          "id": "HP:0002073",
+          "label": "Progressive cerebellar ataxia",
+          "umls_cui": "C0393525"
         },
         "excluded": false,
         "evidence": [
@@ -656,7 +1027,27 @@
             },
             "reference": {
               "id": "PUBMED_EN_015",
-              "description": "NER: degeneration (0.426) | Match: sapbert_similarity (0.758)"
+              "description": "NER: progressive cerebellar degeneration (0.999) | Match: sapbert_similarity (0.867)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0012587",
+          "label": "Macroscopic hematuria",
+          "umls_cui": "C0473237"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "PUBMED_EN_015",
+              "description": "NER: urrent gross hematuria (0.992) | Match: substring_match (0.950)"
             }
           }
         ]
@@ -703,9 +1094,9 @@
       },
       {
         "type": {
-          "id": "HP:0003202",
-          "label": "Skeletal muscle atrophy",
-          "umls_cui": "C0234958"
+          "id": "HP:0001272",
+          "label": "Cerebellar atrophy",
+          "umls_cui": "C0262404"
         },
         "excluded": false,
         "evidence": [
@@ -716,27 +1107,7 @@
             },
             "reference": {
               "id": "PUBMED_EN_015",
-              "description": "NER: atrophy (0.544) | Match: sapbert_similarity (0.755)"
-            }
-          }
-        ]
-      },
-      {
-        "type": {
-          "id": "HP:0011355",
-          "label": "Localized skin lesion",
-          "umls_cui": "C0850826"
-        },
-        "excluded": false,
-        "evidence": [
-          {
-            "evidenceCode": {
-              "id": "ECO:0000033",
-              "label": "author statement supported by traceable reference"
-            },
-            "reference": {
-              "id": "PUBMED_EN_015",
-              "description": "NER: lesions (0.875) | Match: sapbert_similarity (0.736)"
+              "description": "NER: cerebellar atrophy (0.990) | Match: exact_label (1.000)"
             }
           }
         ]
@@ -763,66 +1134,6 @@
       },
       {
         "type": {
-          "id": "HP:0006721",
-          "label": "Acute lymphoblastic leukemia",
-          "umls_cui": "C0023449"
-        },
-        "excluded": false,
-        "evidence": [
-          {
-            "evidenceCode": {
-              "id": "ECO:0000033",
-              "label": "author statement supported by traceable reference"
-            },
-            "reference": {
-              "id": "PUBMED_EN_015",
-              "description": "NER: acute lymphoblastic leukemia (0.900) | Match: text_scan_exact_label (0.950)"
-            }
-          }
-        ]
-      },
-      {
-        "type": {
-          "id": "HP:0000007",
-          "label": "Autosomal recessive inheritance",
-          "umls_cui": "C0441748"
-        },
-        "excluded": false,
-        "evidence": [
-          {
-            "evidenceCode": {
-              "id": "ECO:0000033",
-              "label": "author statement supported by traceable reference"
-            },
-            "reference": {
-              "id": "PUBMED_EN_015",
-              "description": "NER: autosomal recessive (0.900) | Match: text_scan_exact_synonym (0.950)"
-            }
-          }
-        ]
-      },
-      {
-        "type": {
-          "id": "HP:0001272",
-          "label": "Cerebellar atrophy",
-          "umls_cui": "C0262404"
-        },
-        "excluded": false,
-        "evidence": [
-          {
-            "evidenceCode": {
-              "id": "ECO:0000033",
-              "label": "author statement supported by traceable reference"
-            },
-            "reference": {
-              "id": "PUBMED_EN_015",
-              "description": "NER: cerebellar atrophy (0.900) | Match: text_scan_exact_label (0.950)"
-            }
-          }
-        ]
-      },
-      {
-        "type": {
           "id": "HP:0002721",
           "label": "Immunodeficiency",
           "umls_cui": "C0021051"
@@ -837,26 +1148,6 @@
             "reference": {
               "id": "PUBMED_EN_015",
               "description": "NER: immunodeficiency (0.900) | Match: text_scan_clinical_synonym (0.950)"
-            }
-          }
-        ]
-      },
-      {
-        "type": {
-          "id": "HP:0012587",
-          "label": "Macroscopic hematuria",
-          "umls_cui": "C0473237"
-        },
-        "excluded": false,
-        "evidence": [
-          {
-            "evidenceCode": {
-              "id": "ECO:0000033",
-              "label": "author statement supported by traceable reference"
-            },
-            "reference": {
-              "id": "PUBMED_EN_015",
-              "description": "NER: gross hematuria (0.900) | Match: text_scan_exact_synonym (0.950)"
             }
           }
         ]
@@ -883,6 +1174,26 @@
       },
       {
         "type": {
+          "id": "HP:0001909",
+          "label": "Leukemia",
+          "umls_cui": "C0023418"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "PUBMED_EN_015",
+              "description": "NER: leukemia (0.900) | Match: text_scan_exact_label (0.950)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
           "id": "HP:0012824",
           "label": "Severity",
           "umls_cui": "C0522510"
@@ -897,6 +1208,26 @@
             "reference": {
               "id": "PUBMED_EN_015",
               "description": "NER: severity (0.900) | Match: text_scan_exact_label (0.950)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0001251",
+          "label": "Ataxia",
+          "umls_cui": "C0007758"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "PUBMED_EN_015",
+              "description": "NER: Ataxia (0.900) | Match: text_scan_exact_label (0.950)"
             }
           }
         ]
@@ -920,30 +1251,10 @@
             }
           }
         ]
-      },
-      {
-        "type": {
-          "id": "HP:0009725",
-          "label": "Bladder neoplasm",
-          "umls_cui": "C0005695"
-        },
-        "excluded": false,
-        "evidence": [
-          {
-            "evidenceCode": {
-              "id": "ECO:0000033",
-              "label": "author statement supported by traceable reference"
-            },
-            "reference": {
-              "id": "PUBMED_EN_015",
-              "description": "NER: bladder (0.957) | Match: sapbert_similarity (0.771)"
-            }
-          }
-        ]
       }
     ],
     "metaData": {
-      "created": "2026-06-11T03:05:56Z",
+      "created": "2026-06-19T15:02:56Z",
       "createdBy": "clinical-preanalysis-pipeline-v2",
       "phenopacketSchemaVersion": "2.0",
       "resources": [
@@ -966,45 +1277,70 @@
             "id": "ORPHA:100",
             "label": "Ataxia-telangiectasia"
           },
-          "score": 0.85,
+          "score": 0.3877,
           "allCandidates": [
             {
               "id": "ORPHA:100",
               "label": "Ataxia-telangiectasia",
-              "score": 0.85
+              "score": 0.3877
             },
             {
-              "id": "ORPHA:284400",
-              "label": "Small cell carcinoma of the bladder",
-              "score": 0.2364
+              "id": "ORPHA:355",
+              "label": "Gaucher disease",
+              "score": 0.3278
             },
             {
-              "id": "ORPHA:1180",
-              "label": "Ataxia-hypogonadism-choroidal dystrophy syndrome",
-              "score": 0.22
+              "id": "ORPHA:2585",
+              "label": "Ataxia-pancytopenia syndrome",
+              "score": 0.3188
             },
             {
-              "id": "ORPHA:868",
-              "label": "Triose phosphate-isomerase deficiency",
-              "score": 0.2062
+              "id": "ORPHA:167",
+              "label": "Chédiak-Higashi syndrome",
+              "score": 0.3051
             },
             {
-              "id": "ORPHA:98769",
-              "label": "Spinocerebellar ataxia type 15/16",
-              "score": 0.1833
+              "id": "ORPHA:533",
+              "label": "Listeriosis",
+              "score": 0.2893
+            },
+            {
+              "id": "ORPHA:906",
+              "label": "Wiskott-Aldrich syndrome",
+              "score": 0.2878
+            },
+            {
+              "id": "ORPHA:247245",
+              "label": "Superficial siderosis",
+              "score": 0.287
+            },
+            {
+              "id": "ORPHA:125",
+              "label": "Bloom syndrome",
+              "score": 0.2841
+            },
+            {
+              "id": "ORPHA:33226",
+              "label": "Waldenström macroglobulinemia",
+              "score": 0.274
+            },
+            {
+              "id": "ORPHA:524",
+              "label": "Li-Fraumeni syndrome",
+              "score": 0.272
             }
           ]
         }
       }
     ],
     "_pipelineStats": {
-      "totalEntities": 34,
-      "matchedHPO": 19,
-      "unmatchedEntities": 15,
-      "phenopacketFeatures": 18,
+      "totalEntities": 57,
+      "matchedHPO": 15,
+      "unmatchedEntities": 42,
+      "phenopacketFeatures": 15,
       "negatedFeatures": 0,
       "numericPhenotypes": 0,
-      "ordoCandidates": 5
+      "ordoCandidates": 10
     }
   }
 }

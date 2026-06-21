@@ -1,0 +1,200 @@
+{
+  "id": "phenopacket-RA_EN_001",
+  "subject": {
+    "id": "RA_EN_001",
+    "sex": "FEMALE"
+  },
+  "input": "An 18-year-old female presented with progressive pulse-synchronous tinnitus in her right ear, which intensified during physical exertion and when lying down. She also reported aural fullness, autophony, and heightened sensitivity to her own body sounds on the same side. There was no history of head trauma or chronic conditions. Otoscopy results were normal. Pure-tone audiometry indicated a pseudo-conductive hearing loss in the right ear at low frequencies with negative bone conduction thresholds at 250 Hz, while the left ear had normal hearing. Impedance audiometry showed normal tympanometry and acoustic reflexes bilaterally. Despite the absence of vestibular symptoms, a full vestibular assessment was conducted. The Video-Frenzel examination, including head-shaking test and Valsalva maneuvers, was normal. However, the video head impulse test (vHIT) revealed a slight vestibulo-ocular reflex (VOR) gain impairment (0.67) for the right posterior semicircular canal. Cervical and ocular vestibular evoked myogenic potentials (VEMPs) to air-conducted sounds showed increased amplitudes and reduced thresholds on the right side.",
+  "target": "Semicircular canal dehiscence syndrome",
+  "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0000405",
+        "label": "Conductive hearing impairment",
+        "umls_cui": "C0018777"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_001",
+            "description": "NER: a pseudo - conductive hearing loss in the right ear (0.994) | Match: substring_match (0.950)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0000360",
+        "label": "Tinnitus",
+        "umls_cui": "C0040264"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_001",
+            "description": "NER: tinnitus (0.904) | Match: exact_label (1.000)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0000365",
+        "label": "Hearing impairment",
+        "umls_cui": "C0011053"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_001",
+            "description": "NER: hearing loss (0.711) | Match: clinical_synonym (1.000)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0001751",
+        "label": "Abnormal vestibular function",
+        "umls_cui": "C1843865"
+      },
+      "excluded": true,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_001",
+            "description": "NER: vestibular symptoms (0.841) | Match: sapbert_similarity (0.768) | Negated by: \"absence of\""
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0003676",
+        "label": "Progressive",
+        "umls_cui": "C0205329"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_001",
+            "description": "NER: progressive (0.900) | Match: text_scan_exact_label (0.950)"
+          }
+        }
+      ]
+    }
+  ],
+  "metaData": {
+    "created": "2026-06-19T15:08:09Z",
+    "createdBy": "clinical-preanalysis-pipeline-v2",
+    "phenopacketSchemaVersion": "2.0",
+    "resources": [
+      {
+        "id": "hp",
+        "name": "Human Phenotype Ontology",
+        "url": "https://hpo.jax.org",
+        "version": "2024-04-26",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      }
+    ]
+  },
+  "interpretations": [
+    {
+      "id": "interpretation-RA_EN_001",
+      "progressStatus": "IN_PROGRESS",
+      "diagnosis": {
+        "disease": {
+          "id": "ORPHA:420402",
+          "label": "Semicircular canal dehiscence syndrome"
+        },
+        "score": 0.3856,
+        "allCandidates": [
+          {
+            "id": "ORPHA:420402",
+            "label": "Semicircular canal dehiscence syndrome",
+            "score": 0.3856
+          },
+          {
+            "id": "ORPHA:1467",
+            "label": "Cogan syndrome",
+            "score": 0.331
+          },
+          {
+            "id": "ORPHA:886",
+            "label": "Usher syndrome",
+            "score": 0.331
+          },
+          {
+            "id": "ORPHA:276621",
+            "label": "Sporadic pheochromocytoma/secreting paraganglioma",
+            "score": 0.3234
+          },
+          {
+            "id": "ORPHA:29072",
+            "label": "Hereditary pheochromocytoma-paraganglioma",
+            "score": 0.3234
+          },
+          {
+            "id": "ORPHA:94080",
+            "label": "Non-functioning paraganglioma",
+            "score": 0.3234
+          },
+          {
+            "id": "ORPHA:100084",
+            "label": "Middle ear neuroendocrine tumor",
+            "score": 0.3207
+          },
+          {
+            "id": "ORPHA:324",
+            "label": "Fabry disease",
+            "score": 0.3175
+          },
+          {
+            "id": "ORPHA:297",
+            "label": "Tick-borne encephalitis",
+            "score": 0.3126
+          },
+          {
+            "id": "ORPHA:2052",
+            "label": "Fraser syndrome",
+            "score": 0.3118
+          }
+        ]
+      }
+    }
+  ],
+  "_pipelineStats": {
+    "totalEntities": 65,
+    "matchedHPO": 5,
+    "unmatchedEntities": 60,
+    "phenopacketFeatures": 5,
+    "negatedFeatures": 1,
+    "numericPhenotypes": 0,
+    "ordoCandidates": 10
+  }
+}

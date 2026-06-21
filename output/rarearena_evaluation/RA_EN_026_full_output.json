@@ -1,0 +1,1593 @@
+{
+  "note_id": "RA_EN_026",
+  "language": "en",
+  "module1": {
+    "clean_text": "A [AGE] male visited Tianjin Medical University General Hospital due to a painless neck lump, first noticed 6 years ago, which had recently grown rapidly. The patient experienced agitation, irritability, excessive sweating, and discomfort while swallowing. Previously, he had been diagnosed with nodular goiter by other hospitals and had intermittently taken Euthyrox® for several years. He also reported childhood hearing impairment and language learning difficulties, though clinical examination indicated normal mental and physical development. Physical examination revealed a visible grade III goiter, with an enlarged, tough thyroid without palpable nodules and a clear boundary. Laboratory tests showed a free thyroxine level of 9.99 pmol/l (normal range: 11.5–23.5 pmol/l), a free triiodothyronine level of 6.07 pmol/l (normal range: 3.5–6.5 pmol/l), and a thyroid stimulating hormone level of 2.401 μlU/ml (normal range: 0.3–5.0 μlU/ml). Thyrotrophin receptor, thyroglobulin, thyroperoxidase antibodies, carcinoembryonic antigen, thyroglobulin, and calcitonin levels were within normal ranges. A chest X-ray showed tracheal narrowing at the superior thoracic aperture, and a thyroid ultrasound revealed multiple hypoechoic signals in each lobe and isthmus of the thyroid. Cervical lymph node enlargement was also noted. Cervical computed tomography scan showed diffuse enlargement of each lobe and thickening of the thyroid isthmus, with numerous oval, low- and slightly high-density nodules in the thyroid. Electrical capacitance tomography results were consistent with signs of a nodular goiter.",
+    "phi_map": {
+      "AGE": "26-year-old"
+    },
+    "patient_info": {
+      "sex": "male"
+    }
+  },
+  "module3_warnings": {
+    "temporal": [],
+    "inconsistencies": [
+      {
+        "type": "sex_anatomy_conflict",
+        "severity": "critical",
+        "message": "Female-specific term 'cervical' found in male patient record",
+        "term": "cervical"
+      }
+    ]
+  },
+  "module4": {
+    "problem": [
+      {
+        "text": "numerous oval, low - and slightly high - density nodules in the thyroid",
+        "ner_score": 0.988,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "numerous oval, low - and slightly high - density nodules in the thyroid",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "a painless neck lump",
+        "ner_score": 0.999,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "a painless neck lump",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "agitation",
+        "ner_score": 0.974,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0000713",
+        "hpo_name": "Agitation",
+        "expanded_text": "agitation",
+        "match_type": "exact_label",
+        "confidence": 1.0,
+        "matched": true,
+        "umls_cui": "C0085631"
+      },
+      {
+        "text": "irritability",
+        "ner_score": 0.938,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0000737",
+        "hpo_name": "Irritability",
+        "expanded_text": "irritability",
+        "match_type": "exact_label",
+        "confidence": 1.0,
+        "matched": true,
+        "umls_cui": "C2700617"
+      },
+      {
+        "text": "irritability, excessive sweating",
+        "ner_score": 0.997,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0000975",
+        "hpo_name": "Hyperhidrosis",
+        "expanded_text": "irritability, excessive sweating",
+        "match_type": "substring_match",
+        "confidence": 0.95,
+        "matched": true,
+        "umls_cui": "C0020458"
+      },
+      {
+        "text": "discomfort",
+        "ner_score": 0.962,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "discomfort",
+        "match_type": "sapbert_rejected_low_conf",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "swallowing",
+        "ner_score": 0.413,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "swallowing",
+        "match_type": "skipped_low_ner_score",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "nodular",
+        "ner_score": 0.609,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "nodular",
+        "match_type": "sapbert_rejected_low_conf",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "nodular goiter",
+        "ner_score": 0.999,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0005994",
+        "hpo_name": "Nodular goiter",
+        "expanded_text": "nodular goiter",
+        "match_type": "exact_label",
+        "confidence": 1.0,
+        "matched": true,
+        "umls_cui": "C0018023"
+      },
+      {
+        "text": "iter",
+        "ner_score": 0.942,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "iter",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "childhood hearing impairment",
+        "ner_score": 0.996,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0000365",
+        "hpo_name": "Hearing impairment",
+        "expanded_text": "childhood hearing impairment",
+        "match_type": "substring_match",
+        "confidence": 0.95,
+        "matched": true,
+        "umls_cui": "C0011053"
+      },
+      {
+        "text": "hearing",
+        "ner_score": 0.44,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "hearing",
+        "match_type": "skipped_low_ner_score",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "impairment",
+        "ner_score": 0.723,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "impairment",
+        "match_type": "sapbert_rejected_low_conf",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "language",
+        "ner_score": 0.253,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "language",
+        "match_type": "skipped_low_ner_score",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "language learning difficulties",
+        "ner_score": 0.998,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "language learning difficulties",
+        "match_type": "deduplicated",
+        "confidence": 0.95,
+        "matched": false,
+        "umls_cui": "C0025362"
+      },
+      {
+        "text": "learning difficulties",
+        "ner_score": 0.602,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0001249",
+        "hpo_name": "Intellectual disability",
+        "expanded_text": "learning difficulties",
+        "match_type": "clinical_synonym",
+        "confidence": 1.0,
+        "matched": true,
+        "umls_cui": "C0025362"
+      },
+      {
+        "text": "a visible grade iii goiter",
+        "ner_score": 0.99,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0005987",
+        "hpo_name": "Multinodular goiter",
+        "expanded_text": "a visible grade iii goiter",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.7467,
+        "matched": true,
+        "umls_cui": "C0342208"
+      },
+      {
+        "text": "an enlarged, tough thyroid",
+        "ner_score": 0.883,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0008249",
+        "hpo_name": "Thyroid hyperplasia",
+        "expanded_text": "an enlarged, tough thyroid",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.8322,
+        "matched": true,
+        "umls_cui": "C1112776"
+      },
+      {
+        "text": "enlarged",
+        "ner_score": 0.777,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0003271",
+        "hpo_name": "Visceromegaly",
+        "expanded_text": "enlarged",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.8026,
+        "matched": true,
+        "umls_cui": "C0042782"
+      },
+      {
+        "text": "palpable nodules",
+        "ner_score": 0.991,
+        "negated": true,
+        "negation_cue": "without",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "palpable nodules",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "nodules",
+        "ner_score": 0.772,
+        "negated": true,
+        "negation_cue": "without",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "nodules",
+        "match_type": "sapbert_rejected_low_conf",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "tracheal narrowing at the superior thoracic aperture",
+        "ner_score": 0.979,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0002777",
+        "hpo_name": "Tracheal stenosis",
+        "expanded_text": "tracheal narrowing at the superior thoracic aperture",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.7726,
+        "matched": true,
+        "umls_cui": "C0040583"
+      },
+      {
+        "text": "narrowing",
+        "ner_score": 0.533,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "narrowing",
+        "match_type": "skipped_low_ner_score",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "multiple hypoechoic signals in each lobe and isthmus",
+        "ner_score": 0.913,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "multiple hypoechoic signals in each lobe and isthmus",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "hypoechoic signals",
+        "ner_score": 0.964,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "hypoechoic signals",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "cervical lymph node enlargement",
+        "ner_score": 0.999,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0002840",
+        "hpo_name": "Lymphadenopathy",
+        "expanded_text": "cervical lymph node enlargement",
+        "match_type": "substring_match",
+        "confidence": 0.95,
+        "matched": true,
+        "umls_cui": "C0024205"
+      },
+      {
+        "text": "enlargement",
+        "ner_score": 0.939,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0001548",
+        "hpo_name": "Overgrowth",
+        "expanded_text": "enlargement",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.8249,
+        "matched": true,
+        "umls_cui": "C1849265"
+      },
+      {
+        "text": "diffuse enlargement of each lobe",
+        "ner_score": 0.999,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "diffuse enlargement of each lobe",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "thickening",
+        "ner_score": 0.962,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0001072",
+        "hpo_name": "Thickened skin",
+        "expanded_text": "thickening",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.8007,
+        "matched": true,
+        "umls_cui": "C0334008"
+      },
+      {
+        "text": "ening of the thyroid isthmus",
+        "ner_score": 0.997,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "ening of the thyroid isthmus",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "acitan",
+        "ner_score": 0.996,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "acitan",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "a nodular goiter",
+        "ner_score": 0.999,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "a nodular goiter",
+        "match_type": "deduplicated",
+        "confidence": 0.95,
+        "matched": false,
+        "umls_cui": "C0018023"
+      },
+      {
+        "text": "goiter",
+        "ner_score": 0.9,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0000853",
+        "hpo_name": "Goiter",
+        "expanded_text": "goiter",
+        "match_type": "text_scan_exact_label",
+        "confidence": 0.95,
+        "matched": true,
+        "umls_cui": "C0018021",
+        "umls_all": [
+          "C0018021"
+        ]
+      }
+    ],
+    "test": [
+      {
+        "text": "a chest x - ray",
+        "ner_score": 0.998,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "a chest x - ray",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "clinical",
+        "ner_score": 0.989,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "clinical",
+        "match_type": "skipped_en_noise",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "clinical examination",
+        "ner_score": 0.992,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "clinical examination",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "examination",
+        "ner_score": 0.993,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "examination",
+        "match_type": "skipped_en_noise",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "normal",
+        "ner_score": 0.951,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "normal",
+        "match_type": "skipped_en_noise",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "mental",
+        "ner_score": 0.973,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "mental",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "physical",
+        "ner_score": 0.663,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "physical",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "development",
+        "ner_score": 0.981,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "development",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "physical examination",
+        "ner_score": 0.991,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "physical examination",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "thyroid",
+        "ner_score": 0.991,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "thyroid",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "Laboratory",
+        "ner_score": 0.986,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "Laboratory",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "laboratory tests",
+        "ner_score": 0.895,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "laboratory tests",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "a free thyroxine level",
+        "ner_score": 0.938,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "a free thyroxine level",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "free",
+        "ner_score": 0.972,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "free",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "a free triiodothyronine level",
+        "ner_score": 0.959,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "a free triiodothyronine level",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "a thyroid stimulating hormone level",
+        "ner_score": 0.945,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "a thyroid stimulating hormone level",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "stimulating",
+        "ner_score": 0.994,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "stimulating",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "hormone",
+        "ner_score": 0.995,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "hormone",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "thyrotrophin receptor",
+        "ner_score": 0.981,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "thyrotrophin receptor",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "trophin",
+        "ner_score": 0.996,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "trophin",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "receptor",
+        "ner_score": 0.996,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "receptor",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "thyrogl",
+        "ner_score": 0.891,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "thyrogl",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "thyroglobulin",
+        "ner_score": 0.968,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "thyroglobulin",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "globulin",
+        "ner_score": 0.996,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "globulin",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "ulin",
+        "ner_score": 0.979,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "ulin",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "thyroperoxidase antibodies",
+        "ner_score": 0.892,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "thyroperoxidase antibodies",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "rope",
+        "ner_score": 0.995,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "rope",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "idase",
+        "ner_score": 0.996,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "idase",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "antibodies",
+        "ner_score": 0.989,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "antibodies",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "cino",
+        "ner_score": 0.995,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "cino",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "bryonic antigen",
+        "ner_score": 0.829,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "bryonic antigen",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "onic",
+        "ner_score": 0.995,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "onic",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "antigen",
+        "ner_score": 0.994,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "antigen",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "calci",
+        "ner_score": 0.989,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "calci",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "calcitonin levels",
+        "ner_score": 0.961,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "calcitonin levels",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "a thyroid ultrasound",
+        "ner_score": 0.998,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "a thyroid ultrasound",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "ultrasound",
+        "ner_score": 0.981,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "ultrasound",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "cervical computed tomography scan",
+        "ner_score": 0.998,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "cervical computed tomography scan",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "computed",
+        "ner_score": 0.989,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "computed",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "tomography",
+        "ner_score": 0.988,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "tomography",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "Electrical",
+        "ner_score": 0.971,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "Electrical",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "electrical cap",
+        "ner_score": 0.992,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "electrical cap",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "capacitance",
+        "ner_score": 0.985,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "capacitance",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "ce tomography",
+        "ner_score": 0.991,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "ce tomography",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      }
+    ],
+    "treatment": [
+      {
+        "text": "euthyrox®",
+        "ner_score": 0.99,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "euthyrox®",
+        "match_type": "skipped_treatment",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      }
+    ],
+    "ordo_candidates": [
+      {
+        "ordo_id": "ORPHA:963",
+        "name": "Acromegaly",
+        "name_fr": "",
+        "score": 0.3722,
+        "coverage": 0.0326,
+        "matched_hpo": [
+          "HP:0000975",
+          "HP:0001072",
+          "HP:0005987"
+        ],
+        "matched_count": 3,
+        "total_disease_hpo": 92,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:525731",
+        "name": "Pediatric-onset Graves disease",
+        "name_fr": "",
+        "score": 0.3671,
+        "coverage": 0.0625,
+        "matched_hpo": [
+          "HP:0000737",
+          "HP:0000853",
+          "HP:0000975"
+        ],
+        "matched_count": 3,
+        "total_disease_hpo": 48,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:64744",
+        "name": "IgG4-related thyroid disease",
+        "name_fr": "",
+        "score": 0.3416,
+        "coverage": 0.1304,
+        "matched_hpo": [
+          "HP:0000853",
+          "HP:0002777",
+          "HP:0005994"
+        ],
+        "matched_count": 3,
+        "total_disease_hpo": 23,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:424",
+        "name": "Familial hyperthyroidism due to mutations in TSH receptor",
+        "name_fr": "",
+        "score": 0.3244,
+        "coverage": 0.2,
+        "matched_hpo": [
+          "HP:0000713",
+          "HP:0000853",
+          "HP:0008249"
+        ],
+        "matched_count": 3,
+        "total_disease_hpo": 15,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:99819",
+        "name": "Familial gestational hyperthyroidism",
+        "name_fr": "",
+        "score": 0.3201,
+        "coverage": 0.2143,
+        "matched_hpo": [
+          "HP:0000713",
+          "HP:0000853",
+          "HP:0008249"
+        ],
+        "matched_count": 3,
+        "total_disease_hpo": 14,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:201",
+        "name": "Cowden syndrome",
+        "name_fr": "",
+        "score": 0.3197,
+        "coverage": 0.0508,
+        "matched_hpo": [
+          "HP:0000365",
+          "HP:0000853",
+          "HP:0001249"
+        ],
+        "matched_count": 3,
+        "total_disease_hpo": 59,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:142",
+        "name": "Anaplastic thyroid carcinoma",
+        "name_fr": "",
+        "score": 0.3188,
+        "coverage": 0.087,
+        "matched_hpo": [
+          "HP:0000853",
+          "HP:0005994"
+        ],
+        "matched_count": 2,
+        "total_disease_hpo": 23,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:653",
+        "name": "Multiple endocrine neoplasia type 2",
+        "name_fr": "",
+        "score": 0.3156,
+        "coverage": 0.0208,
+        "matched_hpo": [
+          "HP:0000975"
+        ],
+        "matched_count": 1,
+        "total_disease_hpo": 48,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:1332",
+        "name": "Medullary thyroid carcinoma",
+        "name_fr": "",
+        "score": 0.2965,
+        "coverage": 0.1429,
+        "matched_hpo": [
+          "HP:0000975",
+          "HP:0005994"
+        ],
+        "matched_count": 2,
+        "total_disease_hpo": 14,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:705",
+        "name": "Pendred syndrome",
+        "name_fr": "",
+        "score": 0.2916,
+        "coverage": 0.2,
+        "matched_hpo": [
+          "HP:0000853",
+          "HP:0001249",
+          "HP:0002777"
+        ],
+        "matched_count": 3,
+        "total_disease_hpo": 15,
+        "text_match": false
+      }
+    ],
+    "stats": {
+      "total": 78,
+      "matched": 14,
+      "unmatched": 64,
+      "match_rate": 17.9,
+      "unique_hpo": 14,
+      "ordo_matches": 10
+    }
+  },
+  "phenopacket": {
+    "id": "phenopacket-RA_EN_026",
+    "subject": {
+      "id": "RA_EN_026",
+      "sex": "MALE"
+    },
+    "input": "A 26-year-old male visited Tianjin Medical University General Hospital due to a painless neck lump, first noticed 6 years ago, which had recently grown rapidly. The patient experienced agitation, irritability, excessive sweating, and discomfort while swallowing. Previously, he had been diagnosed with nodular goiter by other hospitals and had intermittently taken Euthyrox® for several years. He also reported childhood hearing impairment and language learning difficulties, though clinical examination indicated normal mental and physical development. Physical examination revealed a visible grade III goiter, with an enlarged, tough thyroid without palpable nodules and a clear boundary. Laboratory tests showed a free thyroxine level of 9.99 pmol/l (normal range: 11.5–23.5 pmol/l), a free triiodothyronine level of 6.07 pmol/l (normal range: 3.5–6.5 pmol/l), and a thyroid stimulating hormone level of 2.401 μlU/ml (normal range: 0.3–5.0 μlU/ml). Thyrotrophin receptor, thyroglobulin, thyroperoxidase antibodies, carcinoembryonic antigen, thyroglobulin, and calcitonin levels were within normal ranges. A chest X-ray showed tracheal narrowing at the superior thoracic aperture, and a thyroid ultrasound revealed multiple hypoechoic signals in each lobe and isthmus of the thyroid. Cervical lymph node enlargement was also noted. Cervical computed tomography scan showed diffuse enlargement of each lobe and thickening of the thyroid isthmus, with numerous oval, low- and slightly high-density nodules in the thyroid. Electrical capacitance tomography results were consistent with signs of a nodular goiter.",
+    "target": "Acromegaly",
+    "phenotypicFeatures": [
+      {
+        "type": {
+          "id": "HP:0000713",
+          "label": "Agitation",
+          "umls_cui": "C0085631"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_026",
+              "description": "NER: agitation (0.974) | Match: exact_label (1.000)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0000737",
+          "label": "Irritability",
+          "umls_cui": "C2700617"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_026",
+              "description": "NER: irritability (0.938) | Match: exact_label (1.000)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0000975",
+          "label": "Hyperhidrosis",
+          "umls_cui": "C0020458"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_026",
+              "description": "NER: irritability, excessive sweating (0.997) | Match: substring_match (0.950)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0005994",
+          "label": "Nodular goiter",
+          "umls_cui": "C0018023"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_026",
+              "description": "NER: nodular goiter (0.999) | Match: exact_label (1.000)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0000365",
+          "label": "Hearing impairment",
+          "umls_cui": "C0011053"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_026",
+              "description": "NER: childhood hearing impairment (0.996) | Match: substring_match (0.950)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0001249",
+          "label": "Intellectual disability",
+          "umls_cui": "C0025362"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_026",
+              "description": "NER: learning difficulties (0.602) | Match: clinical_synonym (1.000)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0005987",
+          "label": "Multinodular goiter",
+          "umls_cui": "C0342208"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_026",
+              "description": "NER: a visible grade iii goiter (0.990) | Match: sapbert_similarity (0.747)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0008249",
+          "label": "Thyroid hyperplasia",
+          "umls_cui": "C1112776"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_026",
+              "description": "NER: an enlarged, tough thyroid (0.883) | Match: sapbert_similarity (0.832)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0003271",
+          "label": "Visceromegaly",
+          "umls_cui": "C0042782"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_026",
+              "description": "NER: enlarged (0.777) | Match: sapbert_similarity (0.803)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0002777",
+          "label": "Tracheal stenosis",
+          "umls_cui": "C0040583"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_026",
+              "description": "NER: tracheal narrowing at the superior thoracic aperture (0.979) | Match: sapbert_similarity (0.773)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0002840",
+          "label": "Lymphadenopathy",
+          "umls_cui": "C0024205"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_026",
+              "description": "NER: cervical lymph node enlargement (0.999) | Match: substring_match (0.950)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0001548",
+          "label": "Overgrowth",
+          "umls_cui": "C1849265"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_026",
+              "description": "NER: enlargement (0.939) | Match: sapbert_similarity (0.825)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0001072",
+          "label": "Thickened skin",
+          "umls_cui": "C0334008"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_026",
+              "description": "NER: thickening (0.962) | Match: sapbert_similarity (0.801)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0000853",
+          "label": "Goiter",
+          "umls_cui": "C0018021"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_026",
+              "description": "NER: goiter (0.900) | Match: text_scan_exact_label (0.950)"
+            }
+          }
+        ]
+      }
+    ],
+    "metaData": {
+      "created": "2026-06-19T15:12:33Z",
+      "createdBy": "clinical-preanalysis-pipeline-v2",
+      "phenopacketSchemaVersion": "2.0",
+      "resources": [
+        {
+          "id": "hp",
+          "name": "Human Phenotype Ontology",
+          "url": "https://hpo.jax.org",
+          "version": "2024-04-26",
+          "namespacePrefix": "HP",
+          "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        }
+      ]
+    },
+    "interpretations": [
+      {
+        "id": "interpretation-RA_EN_026",
+        "progressStatus": "IN_PROGRESS",
+        "diagnosis": {
+          "disease": {
+            "id": "ORPHA:963",
+            "label": "Acromegaly"
+          },
+          "score": 0.3722,
+          "allCandidates": [
+            {
+              "id": "ORPHA:963",
+              "label": "Acromegaly",
+              "score": 0.3722
+            },
+            {
+              "id": "ORPHA:525731",
+              "label": "Pediatric-onset Graves disease",
+              "score": 0.3671
+            },
+            {
+              "id": "ORPHA:64744",
+              "label": "IgG4-related thyroid disease",
+              "score": 0.3416
+            },
+            {
+              "id": "ORPHA:424",
+              "label": "Familial hyperthyroidism due to mutations in TSH receptor",
+              "score": 0.3244
+            },
+            {
+              "id": "ORPHA:99819",
+              "label": "Familial gestational hyperthyroidism",
+              "score": 0.3201
+            },
+            {
+              "id": "ORPHA:201",
+              "label": "Cowden syndrome",
+              "score": 0.3197
+            },
+            {
+              "id": "ORPHA:142",
+              "label": "Anaplastic thyroid carcinoma",
+              "score": 0.3188
+            },
+            {
+              "id": "ORPHA:653",
+              "label": "Multiple endocrine neoplasia type 2",
+              "score": 0.3156
+            },
+            {
+              "id": "ORPHA:1332",
+              "label": "Medullary thyroid carcinoma",
+              "score": 0.2965
+            },
+            {
+              "id": "ORPHA:705",
+              "label": "Pendred syndrome",
+              "score": 0.2916
+            }
+          ]
+        }
+      }
+    ],
+    "_validationWarnings": [
+      {
+        "type": "sex_anatomy_conflict",
+        "severity": "critical",
+        "message": "Female-specific term 'cervical' found in male patient record",
+        "term": "cervical"
+      }
+    ],
+    "_pipelineStats": {
+      "totalEntities": 78,
+      "matchedHPO": 14,
+      "unmatchedEntities": 64,
+      "phenopacketFeatures": 14,
+      "negatedFeatures": 0,
+      "numericPhenotypes": 0,
+      "ordoCandidates": 10
+    }
+  }
+}

@@ -5,8 +5,48 @@
     "sex": "FEMALE"
   },
   "input": "Case Report: Class II Transactivator Gene (\n\nINTRODUCTION: Inborn errors of immunity (IEI) are disorders that present a health issue, especially in developing countries where there is a high rate of consanguineous marriages and an increasing rate of diagnosis. One of these disorders is Bare Lymphocyte Syndrome II (BLS II) which is a rare and genetically complex disease that has high morbidity and mortality. The exact genotypic and phenotypic characteristics are still poorly characterized especially in developing countries.\nCASE PRESENTATION: Here, we report the first case of BLS II in a seven-month-old Sudanese female with recurrent chest infections, dermatitis, persistent diarrhea, and failure to thrive. The patient's all four sisters and three paternal uncles died in early infancy. Laboratory investigations revealed low CD3+, CD4+, and CD8+ lymphocytes, along with normal CD19+ and CD16+ lymphocytes, and low serum IgM and IgA levels. Genetic analysis revealed two CIITA variants; c.2296C >G p. (Pro766Ala) and c.439+1G >A.\nCONCLUSION: Further bioinformatics, immunological and clinical workups supported a pathogenic effect of both mutations affecting the function of CIITA protein, and suggesting a compound heterozygote mutation. The patient was started on prophylactic antibiotics and regular intravenous immunoglobulin replacement therapy. The prognosis of this disease is poor in most of the cases, with only a few reported cases surviving until adulthood.",
-  "target": "MHC class II deficiency",
+  "target": "Immunodeficiency by defective expression of MHC class II",
   "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0005419",
+        "label": "Decreased T cell activation",
+        "umls_cui": "C1846550"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "GSC_EN_017",
+            "description": "NER: low cd3 +, cd4 + (0.923) | Match: sapbert_similarity (0.701)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0005368",
+        "label": "Abnormality of humoral immunity",
+        "umls_cui": "C3150510"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "GSC_EN_017",
+            "description": "NER: born errors of immunity ( (0.944) | Match: sapbert_similarity (0.715)"
+          }
+        }
+      ]
+    },
     {
       "type": {
         "id": "HP:0002958",
@@ -29,9 +69,9 @@
     },
     {
       "type": {
-        "id": "HP:0002719",
-        "label": "Recurrent infections",
-        "umls_cui": "C0239998"
+        "id": "HP:0010982",
+        "label": "Polygenic inheritance",
+        "umls_cui": "C1148552"
       },
       "excluded": false,
       "evidence": [
@@ -42,7 +82,27 @@
           },
           "reference": {
             "id": "GSC_EN_017",
-            "description": "NER: infections (0.735) | Match: sapbert_similarity (0.777)"
+            "description": "NER: rare and genetically complex disease (0.941) | Match: substring_match (0.950)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0002783",
+        "label": "Recurrent lower respiratory tract infections",
+        "umls_cui": "C0149725"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "GSC_EN_017",
+            "description": "NER: urrent chest infections (0.997) | Match: sapbert_similarity (0.729)"
           }
         }
       ]
@@ -69,9 +129,9 @@
     },
     {
       "type": {
-        "id": "HP:0002014",
-        "label": "Diarrhea",
-        "umls_cui": "C0011991"
+        "id": "HP:0002254",
+        "label": "Intermittent diarrhea",
+        "umls_cui": "C0239181"
       },
       "excluded": false,
       "evidence": [
@@ -82,7 +142,7 @@
           },
           "reference": {
             "id": "GSC_EN_017",
-            "description": "NER: diarrhea (0.887) | Match: clinical_synonym (1.000)"
+            "description": "NER: itis, persistent diarrhea (0.998) | Match: sapbert_similarity (0.762)"
           }
         }
       ]
@@ -109,6 +169,26 @@
     },
     {
       "type": {
+        "id": "HP:0002850",
+        "label": "Decreased circulating total IgM",
+        "umls_cui": "C0239989"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "GSC_EN_017",
+            "description": "NER: low serum igm and iga levels (0.898) | Match: sapbert_similarity (0.832)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
         "id": "HP:0003812",
         "label": "Phenotypic variability",
         "umls_cui": "C1837514"
@@ -129,9 +209,9 @@
     },
     {
       "type": {
-        "id": "HP:0002783",
-        "label": "Recurrent lower respiratory tract infections",
-        "umls_cui": "C0149725"
+        "id": "HP:0002014",
+        "label": "Diarrhea",
+        "umls_cui": "C0011991"
       },
       "excluded": false,
       "evidence": [
@@ -142,54 +222,14 @@
           },
           "reference": {
             "id": "GSC_EN_017",
-            "description": "NER: recurrent chest infections (0.900) | Match: text_scan_exact_synonym (0.950)"
-          }
-        }
-      ]
-    },
-    {
-      "type": {
-        "id": "HP:0010982",
-        "label": "Polygenic inheritance",
-        "umls_cui": "C1148552"
-      },
-      "excluded": false,
-      "evidence": [
-        {
-          "evidenceCode": {
-            "id": "ECO:0000033",
-            "label": "author statement supported by traceable reference"
-          },
-          "reference": {
-            "id": "GSC_EN_017",
-            "description": "NER: complex disease (0.900) | Match: text_scan_related_synonym (0.950)"
-          }
-        }
-      ]
-    },
-    {
-      "type": {
-        "id": "HP:0100326",
-        "label": "Immunologic hypersensitivity",
-        "umls_cui": "C0237653"
-      },
-      "excluded": false,
-      "evidence": [
-        {
-          "evidenceCode": {
-            "id": "ECO:0000033",
-            "label": "author statement supported by traceable reference"
-          },
-          "reference": {
-            "id": "GSC_EN_017",
-            "description": "NER: immunological (0.902) | Match: sapbert_similarity (0.717)"
+            "description": "NER: diarrhea (0.900) | Match: text_scan_clinical_synonym (0.950)"
           }
         }
       ]
     }
   ],
   "metaData": {
-    "created": "2026-06-11T03:08:50Z",
+    "created": "2026-06-19T15:06:48Z",
     "createdBy": "clinical-preanalysis-pipeline-v2",
     "phenopacketSchemaVersion": "2.0",
     "resources": [
@@ -210,46 +250,71 @@
       "diagnosis": {
         "disease": {
           "id": "ORPHA:572",
-          "label": "MHC class II deficiency"
+          "label": "Immunodeficiency by defective expression of MHC class II"
         },
-        "score": 0.85,
+        "score": 0.4954,
         "allCandidates": [
           {
             "id": "ORPHA:572",
-            "label": "MHC class II deficiency",
-            "score": 0.85
+            "label": "Immunodeficiency by defective expression of MHC class II",
+            "score": 0.4954
           },
           {
-            "id": "ORPHA:314",
-            "label": "Erythroderma desquamativum",
-            "score": 0.3727
+            "id": "ORPHA:39041",
+            "label": "Omenn syndrome",
+            "score": 0.4248
           },
           {
-            "id": "ORPHA:183660",
-            "label": "Severe combined immunodeficiency",
-            "score": 0.167
+            "id": "ORPHA:436159",
+            "label": "Autoimmune lymphoproliferative syndrome due to CTLA4 haploinsuffiency",
+            "score": 0.409
           },
           {
-            "id": "ORPHA:586",
-            "label": "Cystic fibrosis",
-            "score": 0.1421
+            "id": "ORPHA:906",
+            "label": "Wiskott-Aldrich syndrome",
+            "score": 0.3951
           },
           {
-            "id": "ORPHA:63275",
-            "label": "Pemphigoid gestationis",
-            "score": 0.1286
+            "id": "ORPHA:98813",
+            "label": "Hypohidrotic ectodermal dysplasia with immunodeficiency",
+            "score": 0.3928
+          },
+          {
+            "id": "ORPHA:331206",
+            "label": "Severe combined immunodeficiency due to complete RAG1/2 deficiency",
+            "score": 0.3917
+          },
+          {
+            "id": "ORPHA:277",
+            "label": "Severe combined immunodeficiency due to adenosine deaminase deficiency",
+            "score": 0.3719
+          },
+          {
+            "id": "ORPHA:35078",
+            "label": "T-B+ severe combined immunodeficiency due to JAK3 deficiency",
+            "score": 0.3698
+          },
+          {
+            "id": "ORPHA:275",
+            "label": "Severe combined immunodeficiency due to DCLRE1C deficiency",
+            "score": 0.3627
+          },
+          {
+            "id": "ORPHA:83471",
+            "label": "T-cell immunodeficiency with thymic aplasia",
+            "score": 0.3551
           }
         ]
       }
     }
   ],
   "_pipelineStats": {
-    "totalEntities": 25,
-    "matchedHPO": 9,
-    "unmatchedEntities": 16,
-    "phenopacketFeatures": 9,
+    "totalEntities": 49,
+    "matchedHPO": 11,
+    "unmatchedEntities": 38,
+    "phenopacketFeatures": 11,
     "negatedFeatures": 0,
     "numericPhenotypes": 0,
-    "ordoCandidates": 5
+    "ordoCandidates": 10
   }
 }

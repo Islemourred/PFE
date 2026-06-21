@@ -26,16 +26,16 @@ class SapBERTLinker:
     """
 
     # Adaptive threshold parameters
-    MARGIN_HIGH = 0.20       # If margin > this, model is very confident
+    MARGIN_HIGH = 0.18       # If margin > this, model is very confident
     MARGIN_LOW = 0.05        # If margin < this, model is unsure
-    ADAPTIVE_MIN = 0.65      # Absolute floor — never accept below this
+    ADAPTIVE_MIN = 0.62      # Absolute floor — never accept below this
     CONTEXT_BOOST = False    # Disabled: SapBERT is trained on isolated terms
 
     def __init__(
         self,
         hpo_terms: list[dict],
         model_name: str = "cambridgeltl/SapBERT-from-PubMedBERT-fulltext",
-        similarity_threshold: float = 0.70,
+        similarity_threshold: float = 0.68,
         batch_size: int = 128,
         cache_path: str = None,
     ):

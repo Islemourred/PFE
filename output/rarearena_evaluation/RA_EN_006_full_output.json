@@ -1,0 +1,1355 @@
+{
+  "note_id": "RA_EN_006",
+  "language": "en",
+  "module1": {
+    "clean_text": "A 5-month-old girl presented with inadequate weight gain, poor feeding, vomiting, and diarrhea. She was born to first-degree cousins and had a history of sibling death. Laboratory tests revealed pancytopenia, necessitating transfusions, along with lymphopenia and hypogammaglobulinemia. Lymphocyte subset percentages were within normal limits. Serum vitamin B12 level was low (136 pg/mL), and serum homocysteine level was not measurable. CMV PCR test was positive. The patient received intravenous immunoglobulin, ganciclovir, and prophylactic antibacterial and antifungal treatments. Bone marrow aspiration indicated significant vacuolization in the myeloid lineage and notable megaloblastic changes. Molecular analysis did not confirm Pearson syndrome. The patient was administered intramuscular vitamin B12 and oral folic acid, resulting in clinical and hematological improvement. Following the discontinuation of vitamin B12 therapy by her family, she experienced a relapse with severe pancytopenia, leading to the resumption of vitamin B12 treatment.",
+    "phi_map": {},
+    "patient_info": {}
+  },
+  "module3_warnings": {
+    "temporal": [],
+    "inconsistencies": []
+  },
+  "module4": {
+    "test": [
+      {
+        "text": "inadequate",
+        "ner_score": 0.671,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "inadequate",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "poor",
+        "ner_score": 0.28,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "poor",
+        "match_type": "skipped_low_ner_score",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "Laboratory",
+        "ner_score": 0.989,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "Laboratory",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "laboratory tests",
+        "ner_score": 0.972,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "laboratory tests",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "lymphocyte subset percentage",
+        "ner_score": 0.989,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "lymphocyte subset percentage",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "ocyte",
+        "ner_score": 0.974,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "ocyte",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "subset",
+        "ner_score": 0.974,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "subset",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "percentages",
+        "ner_score": 0.97,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "percentages",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "within",
+        "ner_score": 0.924,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "within",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "normal",
+        "ner_score": 0.94,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "normal",
+        "match_type": "skipped_en_noise",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "limits",
+        "ner_score": 0.859,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "limits",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "serum vitamin b12 level",
+        "ner_score": 0.993,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "serum vitamin b12 level",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "vitamin",
+        "ner_score": 0.982,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "vitamin",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "serum homocysteine level",
+        "ner_score": 0.992,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "serum homocysteine level",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "homocysteine",
+        "ner_score": 0.979,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "homocysteine",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "measurable",
+        "ner_score": 0.555,
+        "negated": true,
+        "negation_cue": "was not",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "measurable",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "cmv pcr test",
+        "ner_score": 0.996,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "cmv pcr test",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "positive",
+        "ner_score": 0.965,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "positive",
+        "match_type": "skipped_en_noise",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "bone marrow aspiration",
+        "ner_score": 0.996,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "bone marrow aspiration",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "aspiration",
+        "ner_score": 0.612,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "aspiration",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "Molecular",
+        "ner_score": 0.992,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "Molecular",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "molecular analysis",
+        "ner_score": 0.995,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "molecular analysis",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "analysis",
+        "ner_score": 0.993,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "analysis",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "improvement",
+        "ner_score": 0.282,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "improvement",
+        "match_type": "skipped_low_ner_score",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      }
+    ],
+    "problem": [
+      {
+        "text": "inadequate weight gain",
+        "ner_score": 0.995,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "inadequate weight gain",
+        "match_type": "deduplicated",
+        "confidence": 0.95,
+        "matched": false,
+        "umls_cui": "C0043094"
+      },
+      {
+        "text": "weight gain",
+        "ner_score": 0.62,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0004324",
+        "hpo_name": "Increased body weight",
+        "expanded_text": "weight gain",
+        "match_type": "related_synonym",
+        "confidence": 1.0,
+        "matched": true,
+        "umls_cui": "C0043094"
+      },
+      {
+        "text": "poor feeding",
+        "ner_score": 0.994,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0011968",
+        "hpo_name": "Feeding difficulties",
+        "expanded_text": "poor feeding",
+        "match_type": "exact_synonym",
+        "confidence": 1.0,
+        "matched": true,
+        "umls_cui": "C0232466"
+      },
+      {
+        "text": "feeding, vomiting",
+        "ner_score": 0.959,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0002013",
+        "hpo_name": "Vomiting",
+        "expanded_text": "feeding, vomiting",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.8233,
+        "matched": true,
+        "umls_cui": "C0042963"
+      },
+      {
+        "text": "diarrhea",
+        "ner_score": 0.964,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0002014",
+        "hpo_name": "Diarrhea",
+        "expanded_text": "diarrhea",
+        "match_type": "clinical_synonym",
+        "confidence": 1.0,
+        "matched": true,
+        "umls_cui": "C0011991"
+      },
+      {
+        "text": "diarr",
+        "ner_score": 0.852,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "diarr",
+        "match_type": "sapbert_rejected_low_conf",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "sibling death",
+        "ner_score": 0.839,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "sibling death",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "pancytopenia",
+        "ner_score": 0.947,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0001876",
+        "hpo_name": "Pancytopenia",
+        "expanded_text": "pancytopenia",
+        "match_type": "exact_label",
+        "confidence": 1.0,
+        "matched": true,
+        "umls_cui": "C0030312"
+      },
+      {
+        "text": "lymphopenia",
+        "ner_score": 0.957,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0001888",
+        "hpo_name": "Decreased total lymphocyte count",
+        "expanded_text": "lymphopenia",
+        "match_type": "exact_synonym",
+        "confidence": 1.0,
+        "matched": true,
+        "umls_cui": "C0024312"
+      },
+      {
+        "text": "hypogammaglobulinemia",
+        "ner_score": 0.935,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0004313",
+        "hpo_name": "Decreased circulating antibody level",
+        "expanded_text": "hypogammaglobulinemia",
+        "match_type": "clinical_synonym",
+        "confidence": 1.0,
+        "matched": true,
+        "umls_cui": "C0086438"
+      },
+      {
+        "text": "ypogammaglobulinemia",
+        "ner_score": 0.991,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0003139",
+        "hpo_name": "Panhypogammaglobulinemia",
+        "expanded_text": "ypogammaglobulinemia",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.8069,
+        "matched": true,
+        "umls_cui": "C1328587"
+      },
+      {
+        "text": "significant vacuolization in the myeloid lineage",
+        "ner_score": 0.994,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "significant vacuolization in the myeloid lineage",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "vacuolization",
+        "ner_score": 0.92,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "vacuolization",
+        "match_type": "sapbert_rejected_low_conf",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "notable megaloblastic changes",
+        "ner_score": 0.997,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "notable megaloblastic changes",
+        "match_type": "deduplicated",
+        "confidence": 0.8538,
+        "matched": false,
+        "umls_cui": "C0238801"
+      },
+      {
+        "text": "megaloblastic changes",
+        "ner_score": 0.932,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0001980",
+        "hpo_name": "Megaloblastic bone marrow",
+        "expanded_text": "megaloblastic changes",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.8878,
+        "matched": true,
+        "umls_cui": "C0238801"
+      },
+      {
+        "text": "Pearson",
+        "ner_score": 0.375,
+        "negated": true,
+        "negation_cue": "did not",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "Pearson",
+        "match_type": "skipped_low_ner_score",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "pearson syndrome",
+        "ner_score": 0.992,
+        "negated": true,
+        "negation_cue": "did not",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "pearson syndrome",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "syndrome",
+        "ner_score": 0.587,
+        "negated": true,
+        "negation_cue": "did not",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "syndrome",
+        "match_type": "skipped_en_noise",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "clinical",
+        "ner_score": 0.329,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "clinical",
+        "match_type": "skipped_en_noise",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "hematological",
+        "ner_score": 0.448,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "hematological",
+        "match_type": "skipped_low_ner_score",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "a relapse",
+        "ner_score": 0.977,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "a relapse",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "relapse",
+        "ner_score": 0.423,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "relapse",
+        "match_type": "skipped_low_ner_score",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "severe pancytopenia",
+        "ner_score": 0.999,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "severe pancytopenia",
+        "match_type": "deduplicated",
+        "confidence": 0.8017,
+        "matched": false,
+        "umls_cui": "C0030312"
+      },
+      {
+        "text": "aspiration",
+        "ner_score": 0.9,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0002835",
+        "hpo_name": "Aspiration",
+        "expanded_text": "aspiration",
+        "match_type": "text_scan_exact_label",
+        "confidence": 0.95,
+        "matched": true,
+        "umls_cui": "C0700198",
+        "umls_all": [
+          "C0700198",
+          "C2712334"
+        ]
+      }
+    ],
+    "treatment": [
+      {
+        "text": "transfusions",
+        "ner_score": 0.586,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "transfusions",
+        "match_type": "skipped_treatment",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "transfusion",
+        "ner_score": 0.955,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "transfusion",
+        "match_type": "skipped_treatment",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "vitamin",
+        "ner_score": 0.973,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "vitamin",
+        "match_type": "skipped_treatment",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "intraven",
+        "ner_score": 0.882,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "intraven",
+        "match_type": "skipped_treatment",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "ous immunoglobulin",
+        "ner_score": 0.981,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "ous immunoglobulin",
+        "match_type": "skipped_treatment",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "immunoglobulin",
+        "ner_score": 0.969,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "immunoglobulin",
+        "match_type": "skipped_treatment",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "gancic",
+        "ner_score": 0.77,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "gancic",
+        "match_type": "skipped_treatment",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "ciclovir",
+        "ner_score": 0.972,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "ciclovir",
+        "match_type": "skipped_treatment",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "lovir",
+        "ner_score": 0.793,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "lovir",
+        "match_type": "skipped_treatment",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "actic antibacterial and antifungal treatments",
+        "ner_score": 0.984,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "actic antibacterial and antifungal treatments",
+        "match_type": "skipped_treatment",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "antibacterial",
+        "ner_score": 0.826,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "antibacterial",
+        "match_type": "skipped_treatment",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "antifungal",
+        "ner_score": 0.881,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "antifungal",
+        "match_type": "skipped_treatment",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "intramuscular vitamin b12",
+        "ner_score": 0.991,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "intramuscular vitamin b12",
+        "match_type": "skipped_treatment",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "oral folic acid",
+        "ner_score": 0.997,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "oral folic acid",
+        "match_type": "skipped_treatment",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "folic",
+        "ner_score": 0.975,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "folic",
+        "match_type": "skipped_treatment",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "acid",
+        "ner_score": 0.97,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "acid",
+        "match_type": "skipped_treatment",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "vitamin b12 therapy",
+        "ner_score": 0.998,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "vitamin b12 therapy",
+        "match_type": "skipped_treatment",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "therapy",
+        "ner_score": 0.889,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "therapy",
+        "match_type": "skipped_en_noise",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "vitamin b12 treatment",
+        "ner_score": 0.998,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "vitamin b12 treatment",
+        "match_type": "skipped_treatment",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      }
+    ],
+    "ordo_candidates": [
+      {
+        "ordo_id": "ORPHA:572",
+        "name": "Immunodeficiency by defective expression of MHC class II",
+        "name_fr": "",
+        "score": 0.4773,
+        "coverage": 0.1053,
+        "matched_hpo": [
+          "HP:0001876",
+          "HP:0002014",
+          "HP:0003139",
+          "HP:0004313"
+        ],
+        "matched_count": 4,
+        "total_disease_hpo": 38,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:906",
+        "name": "Wiskott-Aldrich syndrome",
+        "name_fr": "",
+        "score": 0.4514,
+        "coverage": 0.0211,
+        "matched_hpo": [
+          "HP:0001888",
+          "HP:0002835"
+        ],
+        "matched_count": 2,
+        "total_disease_hpo": 95,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:79124",
+        "name": "Hepatic veno-occlusive disease-immunodeficiency syndrome",
+        "name_fr": "",
+        "score": 0.4384,
+        "coverage": 0.0769,
+        "matched_hpo": [
+          "HP:0001876",
+          "HP:0002014",
+          "HP:0003139"
+        ],
+        "matched_count": 3,
+        "total_disease_hpo": 39,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:470",
+        "name": "Lysinuric protein intolerance",
+        "name_fr": "",
+        "score": 0.4315,
+        "coverage": 0.0519,
+        "matched_hpo": [
+          "HP:0002013",
+          "HP:0002014",
+          "HP:0004313",
+          "HP:0011968"
+        ],
+        "matched_count": 4,
+        "total_disease_hpo": 77,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:699",
+        "name": "Pearson syndrome",
+        "name_fr": "",
+        "score": 0.408,
+        "coverage": 0.0143,
+        "matched_hpo": [
+          "HP:0001876"
+        ],
+        "matched_count": 1,
+        "total_disease_hpo": 70,
+        "text_match": true
+      },
+      {
+        "ordo_id": "ORPHA:859",
+        "name": "Transcobalamin deficiency",
+        "name_fr": "",
+        "score": 0.4075,
+        "coverage": 0.3333,
+        "matched_hpo": [
+          "HP:0001876",
+          "HP:0001888",
+          "HP:0001980",
+          "HP:0004313"
+        ],
+        "matched_count": 4,
+        "total_disease_hpo": 12,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:99826",
+        "name": "Marburg hemorrhagic fever",
+        "name_fr": "",
+        "score": 0.3846,
+        "coverage": 0.0405,
+        "matched_hpo": [
+          "HP:0001888",
+          "HP:0002013",
+          "HP:0002014"
+        ],
+        "matched_count": 3,
+        "total_disease_hpo": 74,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:2169",
+        "name": "Methylcobalamin deficiency type cblE",
+        "name_fr": "",
+        "score": 0.3764,
+        "coverage": 0.08,
+        "matched_hpo": [
+          "HP:0001876",
+          "HP:0001980",
+          "HP:0002013",
+          "HP:0011968"
+        ],
+        "matched_count": 4,
+        "total_disease_hpo": 50,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:84064",
+        "name": "Trichohepatoenteric syndrome",
+        "name_fr": "",
+        "score": 0.3745,
+        "coverage": 0.0299,
+        "matched_hpo": [
+          "HP:0001888",
+          "HP:0003139"
+        ],
+        "matched_count": 2,
+        "total_disease_hpo": 67,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:90045",
+        "name": "Hereditary folate malabsorption",
+        "name_fr": "",
+        "score": 0.3718,
+        "coverage": 0.12,
+        "matched_hpo": [
+          "HP:0001876",
+          "HP:0002014",
+          "HP:0004313"
+        ],
+        "matched_count": 3,
+        "total_disease_hpo": 25,
+        "text_match": false
+      }
+    ],
+    "stats": {
+      "total": 67,
+      "matched": 10,
+      "unmatched": 57,
+      "match_rate": 14.9,
+      "unique_hpo": 10,
+      "ordo_matches": 10
+    }
+  },
+  "phenopacket": {
+    "id": "phenopacket-RA_EN_006",
+    "subject": {
+      "id": "RA_EN_006"
+    },
+    "input": "A 5-month-old girl presented with inadequate weight gain, poor feeding, vomiting, and diarrhea. She was born to first-degree cousins and had a history of sibling death. Laboratory tests revealed pancytopenia, necessitating transfusions, along with lymphopenia and hypogammaglobulinemia. Lymphocyte subset percentages were within normal limits. Serum vitamin B12 level was low (136 pg/mL), and serum homocysteine level was not measurable. CMV PCR test was positive. The patient received intravenous immunoglobulin, ganciclovir, and prophylactic antibacterial and antifungal treatments. Bone marrow aspiration indicated significant vacuolization in the myeloid lineage and notable megaloblastic changes. Molecular analysis did not confirm Pearson syndrome. The patient was administered intramuscular vitamin B12 and oral folic acid, resulting in clinical and hematological improvement. Following the discontinuation of vitamin B12 therapy by her family, she experienced a relapse with severe pancytopenia, leading to the resumption of vitamin B12 treatment.",
+    "target": "Immunodeficiency by defective expression of MHC class II",
+    "phenotypicFeatures": [
+      {
+        "type": {
+          "id": "HP:0004324",
+          "label": "Increased body weight",
+          "umls_cui": "C0043094"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_006",
+              "description": "NER: weight gain (0.620) | Match: related_synonym (1.000)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0011968",
+          "label": "Feeding difficulties",
+          "umls_cui": "C0232466"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_006",
+              "description": "NER: poor feeding (0.994) | Match: exact_synonym (1.000)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0002013",
+          "label": "Vomiting",
+          "umls_cui": "C0042963"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_006",
+              "description": "NER: feeding, vomiting (0.959) | Match: sapbert_similarity (0.823)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0002014",
+          "label": "Diarrhea",
+          "umls_cui": "C0011991"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_006",
+              "description": "NER: diarrhea (0.964) | Match: clinical_synonym (1.000)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0001876",
+          "label": "Pancytopenia",
+          "umls_cui": "C0030312"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_006",
+              "description": "NER: pancytopenia (0.947) | Match: exact_label (1.000)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0001888",
+          "label": "Decreased total lymphocyte count",
+          "umls_cui": "C0024312"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_006",
+              "description": "NER: lymphopenia (0.957) | Match: exact_synonym (1.000)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0004313",
+          "label": "Decreased circulating antibody level",
+          "umls_cui": "C0086438"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_006",
+              "description": "NER: hypogammaglobulinemia (0.935) | Match: clinical_synonym (1.000)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0003139",
+          "label": "Panhypogammaglobulinemia",
+          "umls_cui": "C1328587"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_006",
+              "description": "NER: ypogammaglobulinemia (0.991) | Match: sapbert_similarity (0.807)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0001980",
+          "label": "Megaloblastic bone marrow",
+          "umls_cui": "C0238801"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_006",
+              "description": "NER: megaloblastic changes (0.932) | Match: sapbert_similarity (0.888)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0002835",
+          "label": "Aspiration",
+          "umls_cui": "C0700198"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_006",
+              "description": "NER: aspiration (0.900) | Match: text_scan_exact_label (0.950)"
+            }
+          }
+        ]
+      }
+    ],
+    "metaData": {
+      "created": "2026-06-19T15:08:54Z",
+      "createdBy": "clinical-preanalysis-pipeline-v2",
+      "phenopacketSchemaVersion": "2.0",
+      "resources": [
+        {
+          "id": "hp",
+          "name": "Human Phenotype Ontology",
+          "url": "https://hpo.jax.org",
+          "version": "2024-04-26",
+          "namespacePrefix": "HP",
+          "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        }
+      ]
+    },
+    "interpretations": [
+      {
+        "id": "interpretation-RA_EN_006",
+        "progressStatus": "IN_PROGRESS",
+        "diagnosis": {
+          "disease": {
+            "id": "ORPHA:572",
+            "label": "Immunodeficiency by defective expression of MHC class II"
+          },
+          "score": 0.4773,
+          "allCandidates": [
+            {
+              "id": "ORPHA:572",
+              "label": "Immunodeficiency by defective expression of MHC class II",
+              "score": 0.4773
+            },
+            {
+              "id": "ORPHA:906",
+              "label": "Wiskott-Aldrich syndrome",
+              "score": 0.4514
+            },
+            {
+              "id": "ORPHA:79124",
+              "label": "Hepatic veno-occlusive disease-immunodeficiency syndrome",
+              "score": 0.4384
+            },
+            {
+              "id": "ORPHA:470",
+              "label": "Lysinuric protein intolerance",
+              "score": 0.4315
+            },
+            {
+              "id": "ORPHA:699",
+              "label": "Pearson syndrome",
+              "score": 0.408
+            },
+            {
+              "id": "ORPHA:859",
+              "label": "Transcobalamin deficiency",
+              "score": 0.4075
+            },
+            {
+              "id": "ORPHA:99826",
+              "label": "Marburg hemorrhagic fever",
+              "score": 0.3846
+            },
+            {
+              "id": "ORPHA:2169",
+              "label": "Methylcobalamin deficiency type cblE",
+              "score": 0.3764
+            },
+            {
+              "id": "ORPHA:84064",
+              "label": "Trichohepatoenteric syndrome",
+              "score": 0.3745
+            },
+            {
+              "id": "ORPHA:90045",
+              "label": "Hereditary folate malabsorption",
+              "score": 0.3718
+            }
+          ]
+        }
+      }
+    ],
+    "_pipelineStats": {
+      "totalEntities": 67,
+      "matchedHPO": 10,
+      "unmatchedEntities": 57,
+      "phenopacketFeatures": 10,
+      "negatedFeatures": 0,
+      "numericPhenotypes": 0,
+      "ordoCandidates": 10
+    }
+  }
+}

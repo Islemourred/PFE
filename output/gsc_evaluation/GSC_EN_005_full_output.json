@@ -14,7 +14,7 @@
     "problem": [
       {
         "text": "primary atopic disorders",
-        "ner_score": 0.954,
+        "ner_score": 0.996,
         "negated": false,
         "negation_cue": "",
         "hpo_id": "HP:0001047",
@@ -27,16 +27,29 @@
       },
       {
         "text": "monogenic",
-        "ner_score": 0.584,
+        "ner_score": 0.988,
         "negated": false,
         "negation_cue": "",
-        "hpo_id": "HP:0001426",
-        "hpo_name": "Non-Mendelian inheritance",
+        "hpo_id": null,
+        "hpo_name": null,
         "expanded_text": "monogenic",
-        "match_type": "sapbert_similarity",
-        "confidence": 0.7279,
-        "matched": true,
-        "umls_cui": "C0600599"
+        "match_type": "sapbert_rejected_low_conf",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "pathogenic gene variants encoding",
+        "ner_score": 0.919,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "pathogenic gene variants encoding",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
       },
       {
         "text": "barrier",
@@ -46,6 +59,71 @@
         "hpo_id": null,
         "hpo_name": null,
         "expanded_text": "barrier",
+        "match_type": "skipped_low_ner_score",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "extremely",
+        "ner_score": 0.701,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "extremely",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "common allergic diseases",
+        "ner_score": 0.993,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0012395",
+        "hpo_name": "Seasonal allergy",
+        "expanded_text": "common allergic diseases",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.7571,
+        "matched": true,
+        "umls_cui": "C0018621"
+      },
+      {
+        "text": "ological susceptibility",
+        "ner_score": 0.981,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "ological susceptibility",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "infections",
+        "ner_score": 0.967,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "infections",
+        "match_type": "sapbert_rejected_low_conf",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "munodysregulation",
+        "ner_score": 0.915,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "munodysregulation",
         "match_type": "no_match",
         "confidence": 0.0,
         "matched": false,
@@ -59,7 +137,310 @@
         "hpo_id": null,
         "hpo_name": null,
         "expanded_text": "regulation",
+        "match_type": "skipped_low_ner_score",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "syndro",
+        "ner_score": 0.992,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "syndro",
         "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "mic disease",
+        "ner_score": 0.973,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "mic disease",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "multistep narrowing of differential dia",
+        "ner_score": 0.856,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "multistep narrowing of differential dia",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "morbidity",
+        "ner_score": 0.95,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "morbidity",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "mortality",
+        "ner_score": 0.847,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "mortality",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "variants in pad phenotypes",
+        "ner_score": 0.993,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "variants in pad phenotypes",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "negative wgs",
+        "ner_score": 0.711,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "negative wgs",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "rare genetic diseases",
+        "ner_score": 0.853,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "rare genetic diseases",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      }
+    ],
+    "test": [
+      {
+        "text": "whole - genomic analyses",
+        "ner_score": 0.978,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "whole - genomic analyses",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "upfront genome - wide analysis by whole genome sequencing",
+        "ner_score": 0.9,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "upfront genome - wide analysis by whole genome sequencing",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "re - analyses of the data",
+        "ner_score": 0.914,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "re - analyses of the data",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "genomic sequencing",
+        "ner_score": 0.926,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "genomic sequencing",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "conventional laboratory",
+        "ner_score": 0.718,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "conventional laboratory",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "most immunological lab studies",
+        "ner_score": 0.927,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "most immunological lab studies",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "various immunological and other laboratory tests",
+        "ner_score": 0.956,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "various immunological and other laboratory tests",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "single genes",
+        "ner_score": 0.699,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "single genes",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "gene panel analyses",
+        "ner_score": 0.97,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "gene panel analyses",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "diagnostic",
+        "ner_score": 0.503,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "diagnostic",
+        "match_type": "skipped_low_ner_score",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "unnecessary investigations",
+        "ner_score": 0.572,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "unnecessary investigations",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "wgs result",
+        "ner_score": 0.668,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "wgs result",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "adequate functional tests",
+        "ner_score": 0.786,
+        "negated": true,
+        "negation_cue": "absence of",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "adequate functional tests",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "the latest data base annotation",
+        "ner_score": 0.923,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "the latest data base annotation",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      }
+    ],
+    "treatment": [
+      {
+        "text": "routine",
+        "ner_score": 0.523,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "routine",
+        "match_type": "skipped_low_ner_score",
         "confidence": 0.0,
         "matched": false,
         "umls_cui": null
@@ -67,78 +448,141 @@
     ],
     "ordo_candidates": [
       {
+        "ordo_id": "ORPHA:183675",
+        "name": "Recurrent infections associated with rare immunoglobulin isotypes deficiency",
+        "name_fr": "",
+        "score": 0.6269,
+        "coverage": 0.0213,
+        "matched_hpo": [
+          "HP:0001047"
+        ],
+        "matched_count": 1,
+        "total_disease_hpo": 47,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:443811",
+        "name": "PGM3-CDG",
+        "name_fr": "",
+        "score": 0.6269,
+        "coverage": 0.0161,
+        "matched_hpo": [
+          "HP:0001047"
+        ],
+        "matched_count": 1,
+        "total_disease_hpo": 62,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:412035",
+        "name": "13q12.3 microdeletion syndrome",
+        "name_fr": "",
+        "score": 0.6269,
+        "coverage": 0.0333,
+        "matched_hpo": [
+          "HP:0001047"
+        ],
+        "matched_count": 1,
+        "total_disease_hpo": 30,
+        "text_match": false
+      },
+      {
         "ordo_id": "ORPHA:90368",
         "name": "Hypotrichosis simplex of the scalp",
         "name_fr": "",
-        "score": 0.0808,
-        "jaccard": 0.0769,
+        "score": 0.6269,
         "coverage": 0.0833,
         "matched_hpo": [
           "HP:0001047"
         ],
         "matched_count": 1,
-        "total_disease_hpo": 12
+        "total_disease_hpo": 12,
+        "text_match": false
       },
       {
-        "ordo_id": "ORPHA:498359",
-        "name": "Aquagenic palmoplantar keratoderma",
+        "ordo_id": "ORPHA:2070",
+        "name": "Eosinophilic gastroenteritis",
         "name_fr": "",
-        "score": 0.0808,
-        "jaccard": 0.0769,
-        "coverage": 0.0833,
+        "score": 0.6269,
+        "coverage": 0.0476,
         "matched_hpo": [
           "HP:0001047"
         ],
         "matched_count": 1,
-        "total_disease_hpo": 12
+        "total_disease_hpo": 21,
+        "text_match": false
       },
       {
-        "ordo_id": "ORPHA:701",
-        "name": "Alopecia universalis",
+        "ordo_id": "ORPHA:331235",
+        "name": "Selective IgM deficiency",
         "name_fr": "",
-        "score": 0.0747,
-        "jaccard": 0.0714,
-        "coverage": 0.0769,
+        "score": 0.6269,
+        "coverage": 0.0161,
         "matched_hpo": [
           "HP:0001047"
         ],
         "matched_count": 1,
-        "total_disease_hpo": 13
+        "total_disease_hpo": 62,
+        "text_match": false
       },
       {
-        "ordo_id": "ORPHA:530838",
-        "name": "KRT1-related diffuse nonepidermolytic keratoderma",
+        "ordo_id": "ORPHA:330064",
+        "name": "Chronic actinic dermatitis",
         "name_fr": "",
-        "score": 0.065,
-        "jaccard": 0.0625,
-        "coverage": 0.0667,
+        "score": 0.6069,
+        "coverage": 0.0,
+        "matched_hpo": [],
+        "matched_count": 0,
+        "total_disease_hpo": 12,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:217390",
+        "name": "Combined immunodeficiency due to DOCK8 deficiency",
+        "name_fr": "",
+        "score": 0.5446,
+        "coverage": 0.0556,
         "matched_hpo": [
           "HP:0001047"
         ],
         "matched_count": 1,
-        "total_disease_hpo": 15
+        "total_disease_hpo": 18,
+        "text_match": false
       },
       {
         "ordo_id": "ORPHA:70593",
         "name": "Immunodeficiency due to selective anti-polysaccharide antibody deficiency",
         "name_fr": "",
-        "score": 0.065,
-        "jaccard": 0.0625,
+        "score": 0.5446,
         "coverage": 0.0667,
         "matched_hpo": [
           "HP:0001047"
         ],
         "matched_count": 1,
-        "total_disease_hpo": 15
+        "total_disease_hpo": 15,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:2902",
+        "name": "Idiopathic chronic eosinophilic pneumonia",
+        "name_fr": "",
+        "score": 0.5446,
+        "coverage": 0.037,
+        "matched_hpo": [
+          "HP:0001047"
+        ],
+        "matched_count": 1,
+        "total_disease_hpo": 27,
+        "text_match": false
       }
     ],
     "stats": {
-      "total": 4,
+      "total": 33,
       "matched": 2,
-      "unmatched": 2,
-      "match_rate": 50.0,
+      "unmatched": 31,
+      "match_rate": 6.1,
       "unique_hpo": 2,
-      "ordo_matches": 5
+      "ordo_matches": 10
     }
   },
   "phenopacket": {
@@ -147,7 +591,7 @@
       "id": "GSC_EN_005"
     },
     "input": "Case Report: Rapid identification of primary atopic disorders (PAD) by a clinical landmark-guided, upfront use of genomic sequencing.\n\nPrimary atopic disorders (PAD) are monogenic disorders caused by pathogenic gene variants encoding proteins that are key for the maintenance of a healthy skin barrier and a well-functioning immune system. Physicians face the challenge to find single, extremely rare PAD patients/families among the millions of individuals with common allergic diseases. We describe case scenarios with signature PAD. We review the literature and deduct specific clinical red flags for PAD detection. They include a positive family history and/or signs of pathological susceptibility to infections, immunodysregulation, or syndromic disease. Results of conventional laboratory and most immunological lab studies are not sufficient to make a definitive diagnosis of PAD. In the past, multistep narrowing of differential diagnoses by various immunological and other laboratory tests led to testing of single genes or gene panel analyses, which was a time-consuming and often unsuccessful approach. The implementation of whole-genomic analyses in the routine diagnostics has led to a paradigm shift. Upfront genome-wide analysis by whole genome sequencing (WGS) will shorten the time to diagnosis, save patients from unnecessary investigations, and reduce morbidity and mortality. We propose a rational, clinical landmark-based approach for deciding which cases pass the filter for carrying out early WGS. WGS result interpretation requires a great deal of caution regarding the causal relationship of variants in PAD phenotypes and absence of proof by adequate functional tests. In case of negative WGS results, a re-iteration attitude with re-analyses of the data (using the latest data base annotation)) may eventually lead to PAD diagnosis. PAD, like many other rare genetic diseases, will only be successfully managed, if physicians from different clinical specialties and geneticists interact regularly in multidisciplinary conferences.",
-    "target": "Hypotrichosis simplex of the scalp",
+    "target": "Recurrent infections associated with rare immunoglobulin isotypes deficiency",
     "phenotypicFeatures": [
       {
         "type": {
@@ -164,16 +608,16 @@
             },
             "reference": {
               "id": "GSC_EN_005",
-              "description": "NER: primary atopic disorders (0.954) | Match: sapbert_similarity (0.788)"
+              "description": "NER: primary atopic disorders (0.996) | Match: sapbert_similarity (0.788)"
             }
           }
         ]
       },
       {
         "type": {
-          "id": "HP:0001426",
-          "label": "Non-Mendelian inheritance",
-          "umls_cui": "C0600599"
+          "id": "HP:0012395",
+          "label": "Seasonal allergy",
+          "umls_cui": "C0018621"
         },
         "excluded": false,
         "evidence": [
@@ -184,14 +628,14 @@
             },
             "reference": {
               "id": "GSC_EN_005",
-              "description": "NER: monogenic (0.584) | Match: sapbert_similarity (0.728)"
+              "description": "NER: common allergic diseases (0.993) | Match: sapbert_similarity (0.757)"
             }
           }
         ]
       }
     ],
     "metaData": {
-      "created": "2026-06-11T03:07:43Z",
+      "created": "2026-06-19T15:04:58Z",
       "createdBy": "clinical-preanalysis-pipeline-v2",
       "phenopacketSchemaVersion": "2.0",
       "resources": [
@@ -211,48 +655,73 @@
         "progressStatus": "IN_PROGRESS",
         "diagnosis": {
           "disease": {
-            "id": "ORPHA:90368",
-            "label": "Hypotrichosis simplex of the scalp"
+            "id": "ORPHA:183675",
+            "label": "Recurrent infections associated with rare immunoglobulin isotypes deficiency"
           },
-          "score": 0.0808,
+          "score": 0.6269,
           "allCandidates": [
+            {
+              "id": "ORPHA:183675",
+              "label": "Recurrent infections associated with rare immunoglobulin isotypes deficiency",
+              "score": 0.6269
+            },
+            {
+              "id": "ORPHA:443811",
+              "label": "PGM3-CDG",
+              "score": 0.6269
+            },
+            {
+              "id": "ORPHA:412035",
+              "label": "13q12.3 microdeletion syndrome",
+              "score": 0.6269
+            },
             {
               "id": "ORPHA:90368",
               "label": "Hypotrichosis simplex of the scalp",
-              "score": 0.0808
+              "score": 0.6269
             },
             {
-              "id": "ORPHA:498359",
-              "label": "Aquagenic palmoplantar keratoderma",
-              "score": 0.0808
+              "id": "ORPHA:2070",
+              "label": "Eosinophilic gastroenteritis",
+              "score": 0.6269
             },
             {
-              "id": "ORPHA:701",
-              "label": "Alopecia universalis",
-              "score": 0.0747
+              "id": "ORPHA:331235",
+              "label": "Selective IgM deficiency",
+              "score": 0.6269
             },
             {
-              "id": "ORPHA:530838",
-              "label": "KRT1-related diffuse nonepidermolytic keratoderma",
-              "score": 0.065
+              "id": "ORPHA:330064",
+              "label": "Chronic actinic dermatitis",
+              "score": 0.6069
+            },
+            {
+              "id": "ORPHA:217390",
+              "label": "Combined immunodeficiency due to DOCK8 deficiency",
+              "score": 0.5446
             },
             {
               "id": "ORPHA:70593",
               "label": "Immunodeficiency due to selective anti-polysaccharide antibody deficiency",
-              "score": 0.065
+              "score": 0.5446
+            },
+            {
+              "id": "ORPHA:2902",
+              "label": "Idiopathic chronic eosinophilic pneumonia",
+              "score": 0.5446
             }
           ]
         }
       }
     ],
     "_pipelineStats": {
-      "totalEntities": 4,
+      "totalEntities": 33,
       "matchedHPO": 2,
-      "unmatchedEntities": 2,
+      "unmatchedEntities": 31,
       "phenopacketFeatures": 2,
       "negatedFeatures": 0,
       "numericPhenotypes": 0,
-      "ordoCandidates": 5
+      "ordoCandidates": 10
     }
   }
 }

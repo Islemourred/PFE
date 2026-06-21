@@ -1,0 +1,388 @@
+{
+  "id": "phenopacket-RA_EN_026",
+  "subject": {
+    "id": "RA_EN_026",
+    "sex": "MALE"
+  },
+  "input": "A 26-year-old male visited Tianjin Medical University General Hospital due to a painless neck lump, first noticed 6 years ago, which had recently grown rapidly. The patient experienced agitation, irritability, excessive sweating, and discomfort while swallowing. Previously, he had been diagnosed with nodular goiter by other hospitals and had intermittently taken Euthyrox® for several years. He also reported childhood hearing impairment and language learning difficulties, though clinical examination indicated normal mental and physical development. Physical examination revealed a visible grade III goiter, with an enlarged, tough thyroid without palpable nodules and a clear boundary. Laboratory tests showed a free thyroxine level of 9.99 pmol/l (normal range: 11.5–23.5 pmol/l), a free triiodothyronine level of 6.07 pmol/l (normal range: 3.5–6.5 pmol/l), and a thyroid stimulating hormone level of 2.401 μlU/ml (normal range: 0.3–5.0 μlU/ml). Thyrotrophin receptor, thyroglobulin, thyroperoxidase antibodies, carcinoembryonic antigen, thyroglobulin, and calcitonin levels were within normal ranges. A chest X-ray showed tracheal narrowing at the superior thoracic aperture, and a thyroid ultrasound revealed multiple hypoechoic signals in each lobe and isthmus of the thyroid. Cervical lymph node enlargement was also noted. Cervical computed tomography scan showed diffuse enlargement of each lobe and thickening of the thyroid isthmus, with numerous oval, low- and slightly high-density nodules in the thyroid. Electrical capacitance tomography results were consistent with signs of a nodular goiter.",
+  "target": "Acromegaly",
+  "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0000713",
+        "label": "Agitation",
+        "umls_cui": "C0085631"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_026",
+            "description": "NER: agitation (0.974) | Match: exact_label (1.000)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0000737",
+        "label": "Irritability",
+        "umls_cui": "C2700617"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_026",
+            "description": "NER: irritability (0.938) | Match: exact_label (1.000)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0000975",
+        "label": "Hyperhidrosis",
+        "umls_cui": "C0020458"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_026",
+            "description": "NER: irritability, excessive sweating (0.997) | Match: substring_match (0.950)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0005994",
+        "label": "Nodular goiter",
+        "umls_cui": "C0018023"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_026",
+            "description": "NER: nodular goiter (0.999) | Match: exact_label (1.000)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0000365",
+        "label": "Hearing impairment",
+        "umls_cui": "C0011053"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_026",
+            "description": "NER: childhood hearing impairment (0.996) | Match: substring_match (0.950)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0001249",
+        "label": "Intellectual disability",
+        "umls_cui": "C0025362"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_026",
+            "description": "NER: learning difficulties (0.602) | Match: clinical_synonym (1.000)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0005987",
+        "label": "Multinodular goiter",
+        "umls_cui": "C0342208"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_026",
+            "description": "NER: a visible grade iii goiter (0.990) | Match: sapbert_similarity (0.747)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0008249",
+        "label": "Thyroid hyperplasia",
+        "umls_cui": "C1112776"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_026",
+            "description": "NER: an enlarged, tough thyroid (0.883) | Match: sapbert_similarity (0.832)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0003271",
+        "label": "Visceromegaly",
+        "umls_cui": "C0042782"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_026",
+            "description": "NER: enlarged (0.777) | Match: sapbert_similarity (0.803)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0002777",
+        "label": "Tracheal stenosis",
+        "umls_cui": "C0040583"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_026",
+            "description": "NER: tracheal narrowing at the superior thoracic aperture (0.979) | Match: sapbert_similarity (0.773)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0002840",
+        "label": "Lymphadenopathy",
+        "umls_cui": "C0024205"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_026",
+            "description": "NER: cervical lymph node enlargement (0.999) | Match: substring_match (0.950)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0001548",
+        "label": "Overgrowth",
+        "umls_cui": "C1849265"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_026",
+            "description": "NER: enlargement (0.939) | Match: sapbert_similarity (0.825)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0001072",
+        "label": "Thickened skin",
+        "umls_cui": "C0334008"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_026",
+            "description": "NER: thickening (0.962) | Match: sapbert_similarity (0.801)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0000853",
+        "label": "Goiter",
+        "umls_cui": "C0018021"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_026",
+            "description": "NER: goiter (0.900) | Match: text_scan_exact_label (0.950)"
+          }
+        }
+      ]
+    }
+  ],
+  "metaData": {
+    "created": "2026-06-19T15:12:33Z",
+    "createdBy": "clinical-preanalysis-pipeline-v2",
+    "phenopacketSchemaVersion": "2.0",
+    "resources": [
+      {
+        "id": "hp",
+        "name": "Human Phenotype Ontology",
+        "url": "https://hpo.jax.org",
+        "version": "2024-04-26",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      }
+    ]
+  },
+  "interpretations": [
+    {
+      "id": "interpretation-RA_EN_026",
+      "progressStatus": "IN_PROGRESS",
+      "diagnosis": {
+        "disease": {
+          "id": "ORPHA:963",
+          "label": "Acromegaly"
+        },
+        "score": 0.3722,
+        "allCandidates": [
+          {
+            "id": "ORPHA:963",
+            "label": "Acromegaly",
+            "score": 0.3722
+          },
+          {
+            "id": "ORPHA:525731",
+            "label": "Pediatric-onset Graves disease",
+            "score": 0.3671
+          },
+          {
+            "id": "ORPHA:64744",
+            "label": "IgG4-related thyroid disease",
+            "score": 0.3416
+          },
+          {
+            "id": "ORPHA:424",
+            "label": "Familial hyperthyroidism due to mutations in TSH receptor",
+            "score": 0.3244
+          },
+          {
+            "id": "ORPHA:99819",
+            "label": "Familial gestational hyperthyroidism",
+            "score": 0.3201
+          },
+          {
+            "id": "ORPHA:201",
+            "label": "Cowden syndrome",
+            "score": 0.3197
+          },
+          {
+            "id": "ORPHA:142",
+            "label": "Anaplastic thyroid carcinoma",
+            "score": 0.3188
+          },
+          {
+            "id": "ORPHA:653",
+            "label": "Multiple endocrine neoplasia type 2",
+            "score": 0.3156
+          },
+          {
+            "id": "ORPHA:1332",
+            "label": "Medullary thyroid carcinoma",
+            "score": 0.2965
+          },
+          {
+            "id": "ORPHA:705",
+            "label": "Pendred syndrome",
+            "score": 0.2916
+          }
+        ]
+      }
+    }
+  ],
+  "_validationWarnings": [
+    {
+      "type": "sex_anatomy_conflict",
+      "severity": "critical",
+      "message": "Female-specific term 'cervical' found in male patient record",
+      "term": "cervical"
+    }
+  ],
+  "_pipelineStats": {
+    "totalEntities": 78,
+    "matchedHPO": 14,
+    "unmatchedEntities": 64,
+    "phenopacketFeatures": 14,
+    "negatedFeatures": 0,
+    "numericPhenotypes": 0,
+    "ordoCandidates": 10
+  }
+}

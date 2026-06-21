@@ -15,6 +15,71 @@
   "module4": {
     "problem": [
       {
+        "text": "adenosine deaminase 2 ( ada2 ) deficiency",
+        "ner_score": 0.958,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "adenosine deaminase 2 ( ada2 ) deficiency",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "early - onset stroke",
+        "ner_score": 0.997,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "early - onset stroke",
+        "match_type": "deduplicated",
+        "confidence": 0.7797,
+        "matched": false,
+        "umls_cui": "C0948008"
+      },
+      {
+        "text": "acute / subacute ischaemic changes in the posterior limb of the left - sided internal capsule",
+        "ner_score": 0.988,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "acute / subacute ischaemic changes in the posterior limb of the left - sided internal capsule",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "a novel frameshift variant in the ada2 gene",
+        "ner_score": 0.89,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "a novel frameshift variant in the ada2 gene",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "novel frameshift variant",
+        "ner_score": 0.713,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "novel frameshift variant",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
         "text": "frameshift",
         "ner_score": 0.338,
         "negated": false,
@@ -22,6 +87,32 @@
         "hpo_id": null,
         "hpo_name": null,
         "expanded_text": "frameshift",
+        "match_type": "skipped_low_ner_score",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "variant",
+        "ner_score": 0.594,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "variant",
+        "match_type": "sapbert_rejected_low_conf",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "a neurological ph",
+        "ner_score": 0.846,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "a neurological ph",
         "match_type": "no_match",
         "confidence": 0.0,
         "matched": false,
@@ -32,13 +123,13 @@
         "ner_score": 0.449,
         "negated": false,
         "negation_cue": "",
-        "hpo_id": "HP:0000707",
-        "hpo_name": "Abnormality of the nervous system",
+        "hpo_id": null,
+        "hpo_name": null,
         "expanded_text": "neurological",
-        "match_type": "sapbert_similarity",
-        "confidence": 0.7442,
-        "matched": true,
-        "umls_cui": "C0497552"
+        "match_type": "skipped_low_ner_score",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
       },
       {
         "text": "Aden",
@@ -106,6 +197,32 @@
         "umls_cui": null
       },
       {
+        "text": "ciency",
+        "ner_score": 0.984,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "ciency",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "an inherited autoinflammatory syndrome",
+        "ner_score": 0.995,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "an inherited autoinflammatory syndrome",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
         "text": "auto",
         "ner_score": 0.665,
         "negated": false,
@@ -139,6 +256,19 @@
         "hpo_id": null,
         "hpo_name": null,
         "expanded_text": "syndrome",
+        "match_type": "skipped_en_noise",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "a defect in the ada2 gene",
+        "ner_score": 0.982,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "a defect in the ada2 gene",
         "match_type": "no_match",
         "confidence": 0.0,
         "matched": false,
@@ -152,6 +282,19 @@
         "hpo_id": null,
         "hpo_name": null,
         "expanded_text": "defect",
+        "match_type": "skipped_low_ner_score",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "peripheral vasculopathy",
+        "ner_score": 0.999,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "peripheral vasculopathy",
         "match_type": "no_match",
         "confidence": 0.0,
         "matched": false,
@@ -175,13 +318,13 @@
         "ner_score": 0.508,
         "negated": false,
         "negation_cue": "",
-        "hpo_id": "HP:0001297",
-        "hpo_name": "Stroke",
+        "hpo_id": null,
+        "hpo_name": null,
         "expanded_text": "stroke",
-        "match_type": "exact_label",
-        "confidence": 1.0,
-        "matched": true,
-        "umls_cui": "C0038454"
+        "match_type": "skipped_low_ner_score",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
       },
       {
         "text": "immunodeficiency",
@@ -197,17 +340,69 @@
         "umls_cui": "C0021051"
       },
       {
+        "text": "immunodefi",
+        "ner_score": 0.984,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "immunodefi",
+        "match_type": "deduplicated",
+        "confidence": 0.9274,
+        "matched": false,
+        "umls_cui": "C0021051"
+      },
+      {
+        "text": "munodeficiency",
+        "ner_score": 0.987,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "munodeficiency",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "munodefi",
+        "ner_score": 0.978,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "munodefi",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
         "text": "haematological",
         "ner_score": 0.618,
         "negated": false,
         "negation_cue": "",
-        "hpo_id": "HP:0004377",
-        "hpo_name": "Hematological neoplasm",
+        "hpo_id": null,
+        "hpo_name": null,
         "expanded_text": "haematological",
-        "match_type": "sapbert_similarity",
-        "confidence": 0.7015,
-        "matched": true,
-        "umls_cui": "C0376545"
+        "match_type": "sapbert_rejected_low_conf",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "ematological manifestations",
+        "ner_score": 0.952,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "ematological manifestations",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
       },
       {
         "text": "pathogenic variants",
@@ -217,7 +412,20 @@
         "hpo_id": null,
         "hpo_name": null,
         "expanded_text": "pathogenic variants",
-        "match_type": "no_match",
+        "match_type": "skipped_low_ner_score",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "variants",
+        "ner_score": 0.601,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "variants",
+        "match_type": "sapbert_rejected_low_conf",
         "confidence": 0.0,
         "matched": false,
         "umls_cui": null
@@ -230,6 +438,32 @@
         "hpo_id": null,
         "hpo_name": null,
         "expanded_text": "hematological",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "hematological phenotype",
+        "ner_score": 0.979,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "hematological phenotype",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "clinical ph",
+        "ner_score": 0.563,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "clinical ph",
         "match_type": "no_match",
         "confidence": 0.0,
         "matched": false,
@@ -249,6 +483,32 @@
         "umls_cui": "C0151786"
       },
       {
+        "text": "weakness in her right arm",
+        "ner_score": 0.998,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "weakness in her right arm",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "unilateral facial weakness",
+        "ner_score": 0.915,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0012799",
+        "hpo_name": "Unilateral facial palsy",
+        "expanded_text": "unilateral facial weakness",
+        "match_type": "exact_synonym",
+        "confidence": 1.0,
+        "matched": true,
+        "umls_cui": "C0239516"
+      },
+      {
         "text": "speech problems",
         "ner_score": 0.897,
         "negated": false,
@@ -266,39 +526,52 @@
         "ner_score": 0.507,
         "negated": false,
         "negation_cue": "",
-        "hpo_id": "HP:0002637",
-        "hpo_name": "Cerebral ischemia",
+        "hpo_id": null,
+        "hpo_name": null,
         "expanded_text": "ischaemic changes",
-        "match_type": "sapbert_similarity",
-        "confidence": 0.7441,
+        "match_type": "skipped_low_ner_score",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "urrent skin infections",
+        "ner_score": 0.997,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0100658",
+        "hpo_name": "Cellulitis",
+        "expanded_text": "urrent skin infections",
+        "match_type": "substring_match",
+        "confidence": 0.95,
         "matched": true,
-        "umls_cui": "C0007786"
+        "umls_cui": "C0007642"
       },
       {
         "text": "infections",
         "ner_score": 0.537,
         "negated": false,
         "negation_cue": "",
-        "hpo_id": "HP:0002719",
-        "hpo_name": "Recurrent infections",
+        "hpo_id": null,
+        "hpo_name": null,
         "expanded_text": "infections",
-        "match_type": "sapbert_similarity",
-        "confidence": 0.7773,
-        "matched": true,
-        "umls_cui": "C0239998"
+        "match_type": "skipped_low_ner_score",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
       },
       {
         "text": "infection",
         "ner_score": 0.815,
         "negated": false,
         "negation_cue": "",
-        "hpo_id": "HP:0002719",
-        "hpo_name": "Recurrent infections",
+        "hpo_id": null,
+        "hpo_name": null,
         "expanded_text": "infection",
-        "match_type": "sapbert_similarity",
-        "confidence": 0.7406,
-        "matched": true,
-        "umls_cui": "C0239998"
+        "match_type": "sapbert_rejected_low_conf",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
       },
       {
         "text": "otitis",
@@ -314,6 +587,19 @@
         "umls_cui": "C0029882"
       },
       {
+        "text": "chronic molluscum contagiosum infection",
+        "ner_score": 0.999,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "chronic molluscum contagiosum infection",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
         "text": "conta",
         "ner_score": 0.838,
         "negated": false,
@@ -327,6 +613,58 @@
         "umls_cui": null
       },
       {
+        "text": "anamnesis and B cell deficiency",
+        "ner_score": 0.998,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0004432",
+        "hpo_name": "Agammaglobulinemia",
+        "expanded_text": "anamnesis and B cell deficiency",
+        "match_type": "substring_match",
+        "confidence": 0.95,
+        "matched": true,
+        "umls_cui": "C0001768"
+      },
+      {
+        "text": "low level of",
+        "ner_score": 0.579,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "low level of",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "serum iga",
+        "ner_score": 0.874,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0003261",
+        "hpo_name": "Increased circulating IgA concentration",
+        "expanded_text": "serum iga",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.7955,
+        "matched": true,
+        "umls_cui": "C0239984"
+      },
+      {
+        "text": "two pathogenic variants",
+        "ner_score": 0.93,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "two pathogenic variants",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
         "text": ".506G",
         "ner_score": 0.526,
         "negated": false,
@@ -334,7 +672,7 @@
         "hpo_id": null,
         "hpo_name": null,
         "expanded_text": ".506G",
-        "match_type": "no_match",
+        "match_type": "skipped_low_ner_score",
         "confidence": 0.0,
         "matched": false,
         "umls_cui": null
@@ -347,6 +685,19 @@
         "hpo_id": null,
         "hpo_name": null,
         "expanded_text": "c.464del",
+        "match_type": "skipped_low_ner_score",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "necrosis factor",
+        "ner_score": 0.781,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "necrosis factor",
         "match_type": "no_match",
         "confidence": 0.0,
         "matched": false,
@@ -357,13 +708,26 @@
         "ner_score": 0.785,
         "negated": false,
         "negation_cue": "",
-        "hpo_id": "HP:0003680",
-        "hpo_name": "Nonprogressive",
+        "hpo_id": null,
+        "hpo_name": null,
         "expanded_text": "stable",
-        "match_type": "sapbert_similarity",
-        "confidence": 0.7356,
-        "matched": true,
-        "umls_cui": "C3839460"
+        "match_type": "sapbert_rejected_low_conf",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "further ischaemic events",
+        "ner_score": 0.998,
+        "negated": true,
+        "negation_cue": "no",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "further ischaemic events",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
       },
       {
         "text": "ischaemic events",
@@ -379,21 +743,30 @@
         "umls_cui": "C0948008"
       },
       {
-        "text": "unilateral facial weakness",
-        "ner_score": 0.9,
+        "text": "ada2 deficiency",
+        "ner_score": 0.996,
         "negated": false,
         "negation_cue": "",
-        "hpo_id": "HP:0012799",
-        "hpo_name": "Unilateral facial palsy",
-        "expanded_text": "unilateral facial weakness",
-        "match_type": "text_scan_exact_synonym",
-        "confidence": 0.95,
-        "matched": true,
-        "umls_cui": "C0239516",
-        "umls_all": [
-          "C0239516",
-          "C4022719"
-        ]
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "ada2 deficiency",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "inflammatory features",
+        "ner_score": 0.997,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "inflammatory features",
+        "match_type": "deduplicated",
+        "confidence": 0.7668,
+        "matched": false,
+        "umls_cui": "C4022803"
       },
       {
         "text": "recurrent skin infections",
@@ -412,19 +785,19 @@
         ]
       },
       {
-        "text": "B cell deficiency",
+        "text": "unilateral",
         "ner_score": 0.9,
         "negated": false,
         "negation_cue": "",
-        "hpo_id": "HP:0004432",
-        "hpo_name": "Agammaglobulinemia",
-        "expanded_text": "B cell deficiency",
-        "match_type": "text_scan_clinical_synonym",
+        "hpo_id": "HP:0012833",
+        "hpo_name": "Unilateral",
+        "expanded_text": "unilateral",
+        "match_type": "text_scan_exact_label",
         "confidence": 0.95,
         "matched": true,
-        "umls_cui": "C0001768",
+        "umls_cui": "C0205092",
         "umls_all": [
-          "C0001768"
+          "C0205092"
         ]
       },
       {
@@ -444,45 +817,75 @@
         ]
       },
       {
-        "text": "onset",
+        "text": "stroke",
         "ner_score": 0.9,
         "negated": false,
         "negation_cue": "",
-        "hpo_id": "HP:0003674",
-        "hpo_name": "Onset",
-        "expanded_text": "onset",
+        "hpo_id": "HP:0001297",
+        "hpo_name": "Stroke",
+        "expanded_text": "stroke",
         "match_type": "text_scan_exact_label",
         "confidence": 0.95,
         "matched": true,
-        "umls_cui": "C0206132",
+        "umls_cui": "C0038454",
         "umls_all": [
-          "C0206132"
+          "C0038454"
+        ]
+      },
+      {
+        "text": "Tumour",
+        "ner_score": 0.9,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0002664",
+        "hpo_name": "Neoplasm",
+        "expanded_text": "Tumour",
+        "match_type": "text_scan_exact_synonym",
+        "confidence": 0.95,
+        "matched": true,
+        "umls_cui": "C0006826",
+        "umls_all": [
+          "C0006826",
+          "C0027651"
         ]
       }
     ],
     "test": [
       {
-        "text": "gene",
-        "ner_score": 0.626,
+        "text": "the patient ' s dna",
+        "ner_score": 0.978,
         "negated": false,
         "negation_cue": "",
         "hpo_id": null,
         "hpo_name": null,
-        "expanded_text": "gene",
-        "match_type": "skipped_non_phenotype",
+        "expanded_text": "the patient ' s dna",
+        "match_type": "skipped_test",
         "confidence": 0.0,
         "matched": false,
         "umls_cui": null
       },
       {
-        "text": "facial",
-        "ner_score": 0.95,
+        "text": "frames",
+        "ner_score": 0.844,
         "negated": false,
         "negation_cue": "",
         "hpo_id": null,
         "hpo_name": null,
-        "expanded_text": "facial",
-        "match_type": "no_match",
+        "expanded_text": "frames",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "her initial laboratory workup",
+        "ner_score": 0.923,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "her initial laboratory workup",
+        "match_type": "skipped_test",
         "confidence": 0.0,
         "matched": false,
         "umls_cui": null
@@ -495,7 +898,7 @@
         "hpo_id": null,
         "hpo_name": null,
         "expanded_text": "laboratory",
-        "match_type": "no_match",
+        "match_type": "skipped_test",
         "confidence": 0.0,
         "matched": false,
         "umls_cui": null
@@ -508,7 +911,7 @@
         "hpo_id": null,
         "hpo_name": null,
         "expanded_text": "normal",
-        "match_type": "no_match",
+        "match_type": "skipped_en_noise",
         "confidence": 0.0,
         "matched": false,
         "umls_cui": null
@@ -521,7 +924,20 @@
         "hpo_id": null,
         "hpo_name": null,
         "expanded_text": "magnetic",
-        "match_type": "no_match",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "magnetic resonance imaging of her brain",
+        "ner_score": 0.997,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "magnetic resonance imaging of her brain",
+        "match_type": "skipped_test",
         "confidence": 0.0,
         "matched": false,
         "umls_cui": null
@@ -534,7 +950,7 @@
         "hpo_id": null,
         "hpo_name": null,
         "expanded_text": "resonance",
-        "match_type": "no_match",
+        "match_type": "skipped_test",
         "confidence": 0.0,
         "matched": false,
         "umls_cui": null
@@ -547,111 +963,7 @@
         "hpo_id": null,
         "hpo_name": null,
         "expanded_text": "imaging",
-        "match_type": "skipped_non_phenotype",
-        "confidence": 0.0,
-        "matched": false,
-        "umls_cui": null
-      },
-      {
-        "text": "brain",
-        "ner_score": 0.968,
-        "negated": false,
-        "negation_cue": "",
-        "hpo_id": null,
-        "hpo_name": null,
-        "expanded_text": "brain",
-        "match_type": "no_match",
-        "confidence": 0.0,
-        "matched": false,
-        "umls_cui": null
-      },
-      {
-        "text": "posterior",
-        "ner_score": 0.962,
-        "negated": false,
-        "negation_cue": "",
-        "hpo_id": "HP:0012839",
-        "hpo_name": "Distal",
-        "expanded_text": "posterior",
-        "match_type": "sapbert_similarity",
-        "confidence": 0.7448,
-        "matched": true,
-        "umls_cui": "C0205108"
-      },
-      {
-        "text": "the left",
-        "ner_score": 0.839,
-        "negated": false,
-        "negation_cue": "",
-        "hpo_id": "HP:0012835",
-        "hpo_name": "Left",
-        "expanded_text": "the left",
-        "match_type": "sapbert_similarity",
-        "confidence": 0.9526,
-        "matched": true,
-        "umls_cui": "C0443246"
-      },
-      {
-        "text": "sided",
-        "ner_score": 0.983,
-        "negated": false,
-        "negation_cue": "",
-        "hpo_id": "HP:0012831",
-        "hpo_name": "Laterality",
-        "expanded_text": "sided",
-        "match_type": "sapbert_similarity",
-        "confidence": 0.7779,
-        "matched": true,
-        "umls_cui": "C0332304"
-      },
-      {
-        "text": "internal",
-        "ner_score": 0.966,
-        "negated": false,
-        "negation_cue": "",
-        "hpo_id": null,
-        "hpo_name": null,
-        "expanded_text": "internal",
-        "match_type": "no_match",
-        "confidence": 0.0,
-        "matched": false,
-        "umls_cui": null
-      },
-      {
-        "text": "capsule",
-        "ner_score": 0.987,
-        "negated": false,
-        "negation_cue": "",
-        "hpo_id": null,
-        "hpo_name": null,
-        "expanded_text": "capsule",
-        "match_type": "no_match",
-        "confidence": 0.0,
-        "matched": false,
-        "umls_cui": null
-      },
-      {
-        "text": "apical",
-        "ner_score": 0.932,
-        "negated": false,
-        "negation_cue": "",
-        "hpo_id": null,
-        "hpo_name": null,
-        "expanded_text": "apical",
-        "match_type": "no_match",
-        "confidence": 0.0,
-        "matched": false,
-        "umls_cui": null
-      },
-      {
-        "text": "thalamus",
-        "ner_score": 0.885,
-        "negated": false,
-        "negation_cue": "",
-        "hpo_id": null,
-        "hpo_name": null,
-        "expanded_text": "thalamus",
-        "match_type": "no_match",
+        "match_type": "skipped_test",
         "confidence": 0.0,
         "matched": false,
         "umls_cui": null
@@ -664,7 +976,7 @@
         "hpo_id": null,
         "hpo_name": null,
         "expanded_text": "serum IgA",
-        "match_type": "no_match",
+        "match_type": "skipped_test",
         "confidence": 0.0,
         "matched": false,
         "umls_cui": null
@@ -677,7 +989,7 @@
         "hpo_id": null,
         "hpo_name": null,
         "expanded_text": "analysed",
-        "match_type": "no_match",
+        "match_type": "skipped_low_ner_score",
         "confidence": 0.0,
         "matched": false,
         "umls_cui": null
@@ -690,7 +1002,7 @@
         "hpo_id": null,
         "hpo_name": null,
         "expanded_text": "improved",
-        "match_type": "no_match",
+        "match_type": "skipped_test",
         "confidence": 0.0,
         "matched": false,
         "umls_cui": null
@@ -703,7 +1015,7 @@
         "hpo_id": null,
         "hpo_name": null,
         "expanded_text": "functional",
-        "match_type": "no_match",
+        "match_type": "skipped_test",
         "confidence": 0.0,
         "matched": false,
         "umls_cui": null
@@ -716,7 +1028,7 @@
         "hpo_id": null,
         "hpo_name": null,
         "expanded_text": "state",
-        "match_type": "no_match",
+        "match_type": "skipped_test",
         "confidence": 0.0,
         "matched": false,
         "umls_cui": null
@@ -731,7 +1043,7 @@
         "hpo_id": null,
         "hpo_name": null,
         "expanded_text": "stroke rehabilitation",
-        "match_type": "no_match",
+        "match_type": "skipped_low_ner_score",
         "confidence": 0.0,
         "matched": false,
         "umls_cui": null
@@ -741,26 +1053,26 @@
         "ner_score": 0.93,
         "negated": false,
         "negation_cue": "",
-        "hpo_id": "HP:0002664",
-        "hpo_name": "Neoplasm",
+        "hpo_id": null,
+        "hpo_name": null,
         "expanded_text": "Tumour",
-        "match_type": "exact_synonym",
-        "confidence": 1.0,
-        "matched": true,
-        "umls_cui": "C0006826"
+        "match_type": "skipped_treatment",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
       },
       {
-        "text": "necrosis",
+        "text": "mour necrosis",
         "ner_score": 0.956,
         "negated": false,
         "negation_cue": "",
-        "hpo_id": "HP:0100758",
-        "hpo_name": "Gangrene",
-        "expanded_text": "necrosis",
-        "match_type": "sapbert_similarity",
-        "confidence": 0.7497,
-        "matched": true,
-        "umls_cui": "C0017086"
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "mour necrosis",
+        "match_type": "skipped_treatment",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
       },
       {
         "text": "factor",
@@ -770,7 +1082,7 @@
         "hpo_id": null,
         "hpo_name": null,
         "expanded_text": "factor",
-        "match_type": "no_match",
+        "match_type": "skipped_treatment",
         "confidence": 0.0,
         "matched": false,
         "umls_cui": null
@@ -783,7 +1095,7 @@
         "hpo_id": null,
         "hpo_name": null,
         "expanded_text": "inhibitor",
-        "match_type": "skipped_non_phenotype",
+        "match_type": "skipped_treatment",
         "confidence": 0.0,
         "matched": false,
         "umls_cui": null
@@ -796,7 +1108,33 @@
         "hpo_id": null,
         "hpo_name": null,
         "expanded_text": "methotrexate",
-        "match_type": "no_match",
+        "match_type": "skipped_treatment",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "hotre",
+        "ner_score": 0.84,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "hotre",
+        "match_type": "skipped_treatment",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "xate treatment",
+        "ner_score": 0.928,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "xate treatment",
+        "match_type": "skipped_treatment",
         "confidence": 0.0,
         "matched": false,
         "umls_cui": null
@@ -804,79 +1142,163 @@
     ],
     "ordo_candidates": [
       {
-        "ordo_id": "ORPHA:183707",
-        "name": "Infantile LAD-like disease due to RAC2 deficiency",
+        "ordo_id": "ORPHA:47",
+        "name": "X-linked agammaglobulinemia",
         "name_fr": "",
-        "score": 0.166,
-        "jaccard": 0.04,
-        "coverage": 0.25,
+        "score": 0.3555,
+        "coverage": 0.1143,
         "matched_hpo": [
-          "HP:0002721"
+          "HP:0002664",
+          "HP:0002721",
+          "HP:0004432",
+          "HP:0100658"
         ],
-        "matched_count": 1,
-        "total_disease_hpo": 4
+        "matched_count": 4,
+        "total_disease_hpo": 35,
+        "text_match": false
       },
       {
-        "ordo_id": "ORPHA:1062",
-        "name": "Hereditary neurocutaneous malformation",
+        "ordo_id": "ORPHA:33110",
+        "name": "Autosomal non-syndromic agammaglobulinemia",
         "name_fr": "",
-        "score": 0.166,
-        "jaccard": 0.04,
-        "coverage": 0.25,
+        "score": 0.3541,
+        "coverage": 0.1379,
         "matched_hpo": [
-          "HP:0000707"
+          "HP:0001581",
+          "HP:0002721",
+          "HP:0004432",
+          "HP:0100658"
         ],
-        "matched_count": 1,
-        "total_disease_hpo": 4
+        "matched_count": 4,
+        "total_disease_hpo": 29,
+        "text_match": false
       },
       {
-        "ordo_id": "ORPHA:431344",
-        "name": "Urachal sinus",
+        "ordo_id": "ORPHA:39041",
+        "name": "Omenn syndrome",
         "name_fr": "",
-        "score": 0.166,
-        "jaccard": 0.04,
-        "coverage": 0.25,
+        "score": 0.3538,
+        "coverage": 0.033,
         "matched_hpo": [
-          "HP:0002664"
+          "HP:0001581",
+          "HP:0002721",
+          "HP:0004432"
         ],
-        "matched_count": 1,
-        "total_disease_hpo": 4
+        "matched_count": 3,
+        "total_disease_hpo": 91,
+        "text_match": false
       },
       {
-        "ordo_id": "ORPHA:231249",
-        "name": "Hemoglobin E-beta-thalassemia syndrome",
+        "ordo_id": "ORPHA:1830",
+        "name": "Schimke immuno-osseous dysplasia",
         "name_fr": "",
-        "score": 0.166,
-        "jaccard": 0.04,
-        "coverage": 0.25,
+        "score": 0.3384,
+        "coverage": 0.0411,
         "matched_hpo": [
-          "HP:0002721"
-        ],
-        "matched_count": 1,
-        "total_disease_hpo": 4
-      },
-      {
-        "ordo_id": "ORPHA:526",
-        "name": "Liddle syndrome",
-        "name_fr": "",
-        "score": 0.1609,
-        "jaccard": 0.069,
-        "coverage": 0.2222,
-        "matched_hpo": [
+          "HP:0001297",
           "HP:0001324",
-          "HP:0002637"
+          "HP:0002140"
+        ],
+        "matched_count": 3,
+        "total_disease_hpo": 73,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:906",
+        "name": "Wiskott-Aldrich syndrome",
+        "name_fr": "",
+        "score": 0.3301,
+        "coverage": 0.0316,
+        "matched_hpo": [
+          "HP:0000388",
+          "HP:0002664",
+          "HP:0002721"
+        ],
+        "matched_count": 3,
+        "total_disease_hpo": 95,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:331235",
+        "name": "Selective IgM deficiency",
+        "name_fr": "",
+        "score": 0.3238,
+        "coverage": 0.0323,
+        "matched_hpo": [
+          "HP:0000388",
+          "HP:0100658"
         ],
         "matched_count": 2,
-        "total_disease_hpo": 9
+        "total_disease_hpo": 62,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:443811",
+        "name": "PGM3-CDG",
+        "name_fr": "",
+        "score": 0.3119,
+        "coverage": 0.0323,
+        "matched_hpo": [
+          "HP:0001581",
+          "HP:0003261"
+        ],
+        "matched_count": 2,
+        "total_disease_hpo": 62,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:99889",
+        "name": "Cushing syndrome due to ectopic ACTH secretion",
+        "name_fr": "",
+        "score": 0.3068,
+        "coverage": 0.037,
+        "matched_hpo": [
+          "HP:0001297",
+          "HP:0001324",
+          "HP:0002721"
+        ],
+        "matched_count": 3,
+        "total_disease_hpo": 81,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:48435",
+        "name": "Postinfectious vasculitis",
+        "name_fr": "",
+        "score": 0.3068,
+        "coverage": 0.0526,
+        "matched_hpo": [
+          "HP:0002140",
+          "HP:0003261",
+          "HP:0012649"
+        ],
+        "matched_count": 3,
+        "total_disease_hpo": 57,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:96253",
+        "name": "Cushing disease",
+        "name_fr": "",
+        "score": 0.3004,
+        "coverage": 0.0469,
+        "matched_hpo": [
+          "HP:0001297",
+          "HP:0001324",
+          "HP:0002721"
+        ],
+        "matched_count": 3,
+        "total_disease_hpo": 64,
+        "text_match": false
       }
     ],
     "stats": {
-      "total": 59,
-      "matched": 23,
-      "unmatched": 36,
-      "match_rate": 39.0,
-      "unique_hpo": 22,
-      "ordo_matches": 5
+      "total": 85,
+      "matched": 15,
+      "unmatched": 70,
+      "match_rate": 17.6,
+      "unique_hpo": 15,
+      "ordo_matches": 10
     }
   },
   "phenopacket": {
@@ -885,28 +1307,8 @@
       "id": "GSC_EN_007"
     },
     "input": "Case Report: A novel frameshift variant in the ADA2 gene of a patient with a neurological phenotype: a case report.\n\nBACKGROUND: Adenosine deaminase 2 (ADA2) deficiency is an inherited autoinflammatory syndrome caused by a defect in the ADA2 gene. Most common manifestations include peripheral vasculopathy, early-onset stroke, immunodeficiency, and haematological manifestations. Patients with pathogenic variants that are more detrimental to ADA2's enzymatic function (e.g. frameshift) have been reported to be prone to developing hematological phenotype. We report here the case of a 13-year-old Caucasian girl with a novel frameshift variant in the ADA2 gene and a clinical phenotype of early-onset stroke.\nCASE PRESENTATION: The patient was admitted to hospital with complaints of weakness in her right arm, unilateral facial weakness and speech problems. Her initial laboratory workup was normal; however, magnetic resonance imaging of her brain confirmed acute/subacute ischaemic changes in the posterior limb of the left-sided internal capsule and in the apical part of the thalamus. She also had manifestations of immunodeficiency - recurrent skin infections and otitis, chronic Molluscum contagiosum infection in anamnesis and B cell deficiency with a low level of serum IgA. The patient's DNA was analysed and two pathogenic variants were identified in the ADA2 gene, confirming a diagnosis of adenosine deaminase 2 (ADA2) deficiency. While one of the variants (c.506G > A (p.Arg169Gln)) has been reported previously, the other one is a novel frameshift variant, namely, c.464del (p.Pro155Hisfs*29). The patient received stroke rehabilitation, which significantly improved her functional state. Tumour necrosis factor inhibitor and methotrexate treatment was commenced, and the patient has remained stable with no further ischaemic events.\nCONCLUSIONS: Although rare, ADA2 deficiency should be considered in patients with early-onset stroke, especially with concomitant manifestations of inflammatory features or immunodeficiency. This case report extends the genotypic spectrum of ADA2 deficiency.",
-    "target": "Infantile LAD-like disease due to RAC2 deficiency",
+    "target": "X-linked agammaglobulinemia",
     "phenotypicFeatures": [
-      {
-        "type": {
-          "id": "HP:0000707",
-          "label": "Abnormality of the nervous system",
-          "umls_cui": "C0497552"
-        },
-        "excluded": false,
-        "evidence": [
-          {
-            "evidenceCode": {
-              "id": "ECO:0000033",
-              "label": "author statement supported by traceable reference"
-            },
-            "reference": {
-              "id": "GSC_EN_007",
-              "description": "NER: neurological (0.449) | Match: sapbert_similarity (0.744)"
-            }
-          }
-        ]
-      },
       {
         "type": {
           "id": "HP:0012649",
@@ -923,26 +1325,6 @@
             "reference": {
               "id": "GSC_EN_007",
               "description": "NER: inflammatory (0.894) | Match: sapbert_similarity (0.862)"
-            }
-          }
-        ]
-      },
-      {
-        "type": {
-          "id": "HP:0001297",
-          "label": "Stroke",
-          "umls_cui": "C0038454"
-        },
-        "excluded": false,
-        "evidence": [
-          {
-            "evidenceCode": {
-              "id": "ECO:0000033",
-              "label": "author statement supported by traceable reference"
-            },
-            "reference": {
-              "id": "GSC_EN_007",
-              "description": "NER: stroke (0.508) | Match: exact_label (1.000)"
             }
           }
         ]
@@ -969,26 +1351,6 @@
       },
       {
         "type": {
-          "id": "HP:0004377",
-          "label": "Hematological neoplasm",
-          "umls_cui": "C0376545"
-        },
-        "excluded": false,
-        "evidence": [
-          {
-            "evidenceCode": {
-              "id": "ECO:0000033",
-              "label": "author statement supported by traceable reference"
-            },
-            "reference": {
-              "id": "GSC_EN_007",
-              "description": "NER: haematological (0.618) | Match: sapbert_similarity (0.702)"
-            }
-          }
-        ]
-      },
-      {
-        "type": {
           "id": "HP:0001324",
           "label": "Muscle weakness",
           "umls_cui": "C0151786"
@@ -1003,6 +1365,26 @@
             "reference": {
               "id": "GSC_EN_007",
               "description": "NER: weakness (0.965) | Match: sapbert_similarity (0.891)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0012799",
+          "label": "Unilateral facial palsy",
+          "umls_cui": "C0239516"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "GSC_EN_007",
+              "description": "NER: unilateral facial weakness (0.915) | Match: exact_synonym (1.000)"
             }
           }
         ]
@@ -1029,9 +1411,9 @@
       },
       {
         "type": {
-          "id": "HP:0002637",
-          "label": "Cerebral ischemia",
-          "umls_cui": "C0007786"
+          "id": "HP:0100658",
+          "label": "Cellulitis",
+          "umls_cui": "C0007642"
         },
         "excluded": false,
         "evidence": [
@@ -1042,27 +1424,7 @@
             },
             "reference": {
               "id": "GSC_EN_007",
-              "description": "NER: ischaemic changes (0.507) | Match: sapbert_similarity (0.744)"
-            }
-          }
-        ]
-      },
-      {
-        "type": {
-          "id": "HP:0002719",
-          "label": "Recurrent infections",
-          "umls_cui": "C0239998"
-        },
-        "excluded": false,
-        "evidence": [
-          {
-            "evidenceCode": {
-              "id": "ECO:0000033",
-              "label": "author statement supported by traceable reference"
-            },
-            "reference": {
-              "id": "GSC_EN_007",
-              "description": "NER: infections (0.537) | Match: sapbert_similarity (0.777)"
+              "description": "NER: urrent skin infections (0.997) | Match: substring_match (0.950)"
             }
           }
         ]
@@ -1089,9 +1451,9 @@
       },
       {
         "type": {
-          "id": "HP:0003680",
-          "label": "Nonprogressive",
-          "umls_cui": "C3839460"
+          "id": "HP:0004432",
+          "label": "Agammaglobulinemia",
+          "umls_cui": "C0001768"
         },
         "excluded": false,
         "evidence": [
@@ -1102,7 +1464,27 @@
             },
             "reference": {
               "id": "GSC_EN_007",
-              "description": "NER: stable (0.785) | Match: sapbert_similarity (0.736)"
+              "description": "NER: anamnesis and B cell deficiency (0.998) | Match: substring_match (0.950)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0003261",
+          "label": "Increased circulating IgA concentration",
+          "umls_cui": "C0239984"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "GSC_EN_007",
+              "description": "NER: serum iga (0.874) | Match: sapbert_similarity (0.795)"
             }
           }
         ]
@@ -1129,26 +1511,6 @@
       },
       {
         "type": {
-          "id": "HP:0012799",
-          "label": "Unilateral facial palsy",
-          "umls_cui": "C0239516"
-        },
-        "excluded": false,
-        "evidence": [
-          {
-            "evidenceCode": {
-              "id": "ECO:0000033",
-              "label": "author statement supported by traceable reference"
-            },
-            "reference": {
-              "id": "GSC_EN_007",
-              "description": "NER: unilateral facial weakness (0.900) | Match: text_scan_exact_synonym (0.950)"
-            }
-          }
-        ]
-      },
-      {
-        "type": {
           "id": "HP:0001581",
           "label": "Recurrent skin infections",
           "umls_cui": "C1853193"
@@ -1169,9 +1531,9 @@
       },
       {
         "type": {
-          "id": "HP:0004432",
-          "label": "Agammaglobulinemia",
-          "umls_cui": "C0001768"
+          "id": "HP:0012833",
+          "label": "Unilateral",
+          "umls_cui": "C0205092"
         },
         "excluded": false,
         "evidence": [
@@ -1182,7 +1544,7 @@
             },
             "reference": {
               "id": "GSC_EN_007",
-              "description": "NER: B cell deficiency (0.900) | Match: text_scan_clinical_synonym (0.950)"
+              "description": "NER: unilateral (0.900) | Match: text_scan_exact_label (0.950)"
             }
           }
         ]
@@ -1209,9 +1571,9 @@
       },
       {
         "type": {
-          "id": "HP:0003674",
-          "label": "Onset",
-          "umls_cui": "C0206132"
+          "id": "HP:0001297",
+          "label": "Stroke",
+          "umls_cui": "C0038454"
         },
         "excluded": false,
         "evidence": [
@@ -1222,7 +1584,7 @@
             },
             "reference": {
               "id": "GSC_EN_007",
-              "description": "NER: onset (0.900) | Match: text_scan_exact_label (0.950)"
+              "description": "NER: stroke (0.900) | Match: text_scan_exact_label (0.950)"
             }
           }
         ]
@@ -1242,94 +1604,14 @@
             },
             "reference": {
               "id": "GSC_EN_007",
-              "description": "NER: Tumour (0.930) | Match: exact_synonym (1.000)"
-            }
-          }
-        ]
-      },
-      {
-        "type": {
-          "id": "HP:0100758",
-          "label": "Gangrene",
-          "umls_cui": "C0017086"
-        },
-        "excluded": false,
-        "evidence": [
-          {
-            "evidenceCode": {
-              "id": "ECO:0000033",
-              "label": "author statement supported by traceable reference"
-            },
-            "reference": {
-              "id": "GSC_EN_007",
-              "description": "NER: necrosis (0.956) | Match: sapbert_similarity (0.750)"
-            }
-          }
-        ]
-      },
-      {
-        "type": {
-          "id": "HP:0012839",
-          "label": "Distal",
-          "umls_cui": "C0205108"
-        },
-        "excluded": false,
-        "evidence": [
-          {
-            "evidenceCode": {
-              "id": "ECO:0000033",
-              "label": "author statement supported by traceable reference"
-            },
-            "reference": {
-              "id": "GSC_EN_007",
-              "description": "NER: posterior (0.962) | Match: sapbert_similarity (0.745)"
-            }
-          }
-        ]
-      },
-      {
-        "type": {
-          "id": "HP:0012835",
-          "label": "Left",
-          "umls_cui": "C0443246"
-        },
-        "excluded": false,
-        "evidence": [
-          {
-            "evidenceCode": {
-              "id": "ECO:0000033",
-              "label": "author statement supported by traceable reference"
-            },
-            "reference": {
-              "id": "GSC_EN_007",
-              "description": "NER: the left (0.839) | Match: sapbert_similarity (0.953)"
-            }
-          }
-        ]
-      },
-      {
-        "type": {
-          "id": "HP:0012831",
-          "label": "Laterality",
-          "umls_cui": "C0332304"
-        },
-        "excluded": false,
-        "evidence": [
-          {
-            "evidenceCode": {
-              "id": "ECO:0000033",
-              "label": "author statement supported by traceable reference"
-            },
-            "reference": {
-              "id": "GSC_EN_007",
-              "description": "NER: sided (0.983) | Match: sapbert_similarity (0.778)"
+              "description": "NER: Tumour (0.900) | Match: text_scan_exact_synonym (0.950)"
             }
           }
         ]
       }
     ],
     "metaData": {
-      "created": "2026-06-11T03:07:57Z",
+      "created": "2026-06-19T15:05:19Z",
       "createdBy": "clinical-preanalysis-pipeline-v2",
       "phenopacketSchemaVersion": "2.0",
       "resources": [
@@ -1349,48 +1631,73 @@
         "progressStatus": "IN_PROGRESS",
         "diagnosis": {
           "disease": {
-            "id": "ORPHA:183707",
-            "label": "Infantile LAD-like disease due to RAC2 deficiency"
+            "id": "ORPHA:47",
+            "label": "X-linked agammaglobulinemia"
           },
-          "score": 0.166,
+          "score": 0.3555,
           "allCandidates": [
             {
-              "id": "ORPHA:183707",
-              "label": "Infantile LAD-like disease due to RAC2 deficiency",
-              "score": 0.166
+              "id": "ORPHA:47",
+              "label": "X-linked agammaglobulinemia",
+              "score": 0.3555
             },
             {
-              "id": "ORPHA:1062",
-              "label": "Hereditary neurocutaneous malformation",
-              "score": 0.166
+              "id": "ORPHA:33110",
+              "label": "Autosomal non-syndromic agammaglobulinemia",
+              "score": 0.3541
             },
             {
-              "id": "ORPHA:431344",
-              "label": "Urachal sinus",
-              "score": 0.166
+              "id": "ORPHA:39041",
+              "label": "Omenn syndrome",
+              "score": 0.3538
             },
             {
-              "id": "ORPHA:231249",
-              "label": "Hemoglobin E-beta-thalassemia syndrome",
-              "score": 0.166
+              "id": "ORPHA:1830",
+              "label": "Schimke immuno-osseous dysplasia",
+              "score": 0.3384
             },
             {
-              "id": "ORPHA:526",
-              "label": "Liddle syndrome",
-              "score": 0.1609
+              "id": "ORPHA:906",
+              "label": "Wiskott-Aldrich syndrome",
+              "score": 0.3301
+            },
+            {
+              "id": "ORPHA:331235",
+              "label": "Selective IgM deficiency",
+              "score": 0.3238
+            },
+            {
+              "id": "ORPHA:443811",
+              "label": "PGM3-CDG",
+              "score": 0.3119
+            },
+            {
+              "id": "ORPHA:99889",
+              "label": "Cushing syndrome due to ectopic ACTH secretion",
+              "score": 0.3068
+            },
+            {
+              "id": "ORPHA:48435",
+              "label": "Postinfectious vasculitis",
+              "score": 0.3068
+            },
+            {
+              "id": "ORPHA:96253",
+              "label": "Cushing disease",
+              "score": 0.3004
             }
           ]
         }
       }
     ],
     "_pipelineStats": {
-      "totalEntities": 59,
-      "matchedHPO": 23,
-      "unmatchedEntities": 36,
-      "phenopacketFeatures": 22,
+      "totalEntities": 85,
+      "matchedHPO": 15,
+      "unmatchedEntities": 70,
+      "phenopacketFeatures": 15,
       "negatedFeatures": 0,
       "numericPhenotypes": 0,
-      "ordoCandidates": 5
+      "ordoCandidates": 10
     }
   }
 }

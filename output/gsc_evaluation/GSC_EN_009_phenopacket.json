@@ -4,8 +4,28 @@
     "id": "GSC_EN_009"
   },
   "input": "Case Report: An unusual case of RIPK1-related immunodeficiency: The importance of a timely diagnosis for a novel clinical and therapeutic pattern.\n\nINTRODUCTION: RIPK1-associated autoinflammatory diseases are monogenic autoinflammatory diseases with two distinct phenotypes: a severe immune deficiency form due to homozygous loss-of-function mutations, and a milder form, known as CRIA (Cleavage-Resistant RIPK1-Induced Autoinflammatory syndrome), due to heterozygous gain-of-function mutations within the caspase-8 cleavage site. Diagnosis can be challenging, particularly in cases with atypical presentations, leading to significant delays in providing appropriate care.\nMETHODS: We describe a patient with a novel heterozygous mutation within the RIPK1 kinase domain. She presented, since infancy, recurrent infections of the sinuses, bronchi, and lungs, along with hypogammaglobulinaemia and lymphopenia with relative effectiveness of subcutaneous immunoglobulin supplementation. As an adult, she developed severe autoimmune cytopenia and lymphoid hyperplasia.\nRESULTS: Next-generation sequencing by panel and whole-exome analysis revealed a novel heterozygous D24V RIPK1 pathogenic variant. Functional assays demonstrated low expression of Interleukin (IL)-2 and overexpression of IL-8 in patient peripheral blood mononuclear cells with LPS stimulation. A higher level of IL-6 in B-lymphoblastoid cell lines (B-LCL) suggested a role for B cells in the pathogenesis of this RIPK1-associated disease. Functionally, Rituximab induced a shift in pro-inflammatory cytokine secretion, specifically promoting a TH1 to TH2 switch. Unlike the immune deficiency forms and CRIA syndromes, the patient showed no impairment in the NF-ĸB pathway and a failure in cell death.\nCONCLUSION: This case highlights a new pattern of RIPKI-related disease characterized by combined immunodeficiency, autoimmunity, and inflammation. It underscores the critical importance of early genetic diagnosis in pediatric patients with atypical presentations to avoid decades of morbidity and enable access to targeted, life-changing therapies.",
-  "target": "Monoamine oxidase A deficiency",
+  "target": "Autoimmune lymphoproliferative syndrome",
   "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0011114",
+        "label": "Defective production of NFKB1-dependent cytokines",
+        "umls_cui": "C4023533"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "GSC_EN_009",
+            "description": "NER: impairment in the nf - ĸB pathway (0.986) | Match: sapbert_similarity (0.712)"
+          }
+        }
+      ]
+    },
     {
       "type": {
         "id": "HP:0002721",
@@ -48,9 +68,9 @@
     },
     {
       "type": {
-        "id": "HP:0100326",
-        "label": "Immunologic hypersensitivity",
-        "umls_cui": "C0237653"
+        "id": "HP:0001263",
+        "label": "Global developmental delay",
+        "umls_cui": "C0557874"
       },
       "excluded": false,
       "evidence": [
@@ -61,16 +81,16 @@
           },
           "reference": {
             "id": "GSC_EN_009",
-            "description": "NER: immune (0.608) | Match: sapbert_similarity (0.742)"
+            "description": "NER: significant delays (0.957) | Match: sapbert_similarity (0.702)"
           }
         }
       ]
     },
     {
       "type": {
-        "id": "HP:0002719",
-        "label": "Recurrent infections",
-        "umls_cui": "C0239998"
+        "id": "HP:0005425",
+        "label": "Recurrent sinopulmonary infections",
+        "umls_cui": "C1846546"
       },
       "excluded": false,
       "evidence": [
@@ -81,7 +101,7 @@
           },
           "reference": {
             "id": "GSC_EN_009",
-            "description": "NER: infections (0.715) | Match: sapbert_similarity (0.777)"
+            "description": "NER: urrent infections of the sinuses, bronchi, and lungs (0.965) | Match: sapbert_similarity (0.753)"
           }
         }
       ]
@@ -122,6 +142,26 @@
           "reference": {
             "id": "GSC_EN_009",
             "description": "NER: lymphopenia (0.924) | Match: exact_synonym (1.000)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0001904",
+        "label": "Autoimmune neutropenia",
+        "umls_cui": "C0340971"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "GSC_EN_009",
+            "description": "NER: severe autoimmune cytopenia (0.999) | Match: sapbert_similarity (0.757)"
           }
         }
       ]
@@ -188,11 +228,11 @@
     },
     {
       "type": {
-        "id": "HP:0100543",
-        "label": "Cognitive impairment",
-        "umls_cui": "C0338656"
+        "id": "HP:0005404",
+        "label": "Increased total B cell count",
+        "umls_cui": "C1858972"
       },
-      "excluded": true,
+      "excluded": false,
       "evidence": [
         {
           "evidenceCode": {
@@ -201,7 +241,7 @@
           },
           "reference": {
             "id": "GSC_EN_009",
-            "description": "NER: impairment (0.671) | Match: sapbert_similarity (0.712) | Negated by: \"no\""
+            "description": "NER: b cells (0.973) | Match: sapbert_similarity (0.719)"
           }
         }
       ]
@@ -221,16 +261,16 @@
           },
           "reference": {
             "id": "GSC_EN_009",
-            "description": "NER: combined immunodeficiency (0.900) | Match: text_scan_exact_label (0.950)"
+            "description": "NER: combined immunodeficiency (0.997) | Match: exact_label (1.000)"
           }
         }
       ]
     },
     {
       "type": {
-        "id": "HP:0000246",
-        "label": "Sinusitis",
-        "umls_cui": "C0030469"
+        "id": "HP:0002719",
+        "label": "Recurrent infections",
+        "umls_cui": "C0239998"
       },
       "excluded": false,
       "evidence": [
@@ -241,34 +281,14 @@
           },
           "reference": {
             "id": "GSC_EN_009",
-            "description": "NER: sinuses (0.941) | Match: sapbert_similarity (0.727)"
-          }
-        }
-      ]
-    },
-    {
-      "type": {
-        "id": "HP:0001548",
-        "label": "Overgrowth",
-        "umls_cui": "C1849265"
-      },
-      "excluded": false,
-      "evidence": [
-        {
-          "evidenceCode": {
-            "id": "ECO:0000033",
-            "label": "author statement supported by traceable reference"
-          },
-          "reference": {
-            "id": "GSC_EN_009",
-            "description": "NER: overexpression (0.910) | Match: sapbert_similarity (0.721)"
+            "description": "NER: recurrent infections (0.900) | Match: text_scan_clinical_synonym (0.950)"
           }
         }
       ]
     }
   ],
   "metaData": {
-    "created": "2026-06-11T03:08:09Z",
+    "created": "2026-06-19T15:05:39Z",
     "createdBy": "clinical-preanalysis-pipeline-v2",
     "phenopacketSchemaVersion": "2.0",
     "resources": [
@@ -288,47 +308,72 @@
       "progressStatus": "IN_PROGRESS",
       "diagnosis": {
         "disease": {
-          "id": "ORPHA:3057",
-          "label": "Monoamine oxidase A deficiency"
+          "id": "ORPHA:3261",
+          "label": "Autoimmune lymphoproliferative syndrome"
         },
-        "score": 0.3286,
+        "score": 0.5275,
         "allCandidates": [
           {
-            "id": "ORPHA:3057",
-            "label": "Monoamine oxidase A deficiency",
-            "score": 0.3286
+            "id": "ORPHA:3261",
+            "label": "Autoimmune lymphoproliferative syndrome",
+            "score": 0.5275
           },
           {
-            "id": "ORPHA:319600",
-            "label": "Mendelian susceptibility to mycobacterial diseases due to partial IRF8 deficiency",
-            "score": 0.2267
+            "id": "ORPHA:39041",
+            "label": "Omenn syndrome",
+            "score": 0.5105
           },
           {
-            "id": "ORPHA:1572",
-            "label": "Common variable immunodeficiency",
-            "score": 0.2159
+            "id": "ORPHA:443811",
+            "label": "PGM3-CDG",
+            "score": 0.4812
           },
           {
-            "id": "ORPHA:444463",
-            "label": "Autoimmune hemolytic anemia-autoimmune thrombocytopenia-primary immunodeficiency syndrome due to TPP2 deficiency",
-            "score": 0.1786
+            "id": "ORPHA:391487",
+            "label": "STAT1-related autoimmune enteropathy and endocrinopathy-susceptibility to chronic infections syndrome",
+            "score": 0.4481
           },
           {
-            "id": "ORPHA:183707",
-            "label": "Infantile LAD-like disease due to RAC2 deficiency",
-            "score": 0.175
+            "id": "ORPHA:906",
+            "label": "Wiskott-Aldrich syndrome",
+            "score": 0.4385
+          },
+          {
+            "id": "ORPHA:167",
+            "label": "Chédiak-Higashi syndrome",
+            "score": 0.4382
+          },
+          {
+            "id": "ORPHA:693681",
+            "label": "Activated PI3K-delta syndrome 2",
+            "score": 0.4352
+          },
+          {
+            "id": "ORPHA:331235",
+            "label": "Selective IgM deficiency",
+            "score": 0.4351
+          },
+          {
+            "id": "ORPHA:83471",
+            "label": "T-cell immunodeficiency with thymic aplasia",
+            "score": 0.4263
+          },
+          {
+            "id": "ORPHA:1830",
+            "label": "Schimke immuno-osseous dysplasia",
+            "score": 0.4171
           }
         ]
       }
     }
   ],
   "_pipelineStats": {
-    "totalEntities": 42,
+    "totalEntities": 75,
     "matchedHPO": 14,
-    "unmatchedEntities": 28,
-    "phenopacketFeatures": 13,
-    "negatedFeatures": 1,
+    "unmatchedEntities": 61,
+    "phenopacketFeatures": 14,
+    "negatedFeatures": 0,
     "numericPhenotypes": 0,
-    "ordoCandidates": 5
+    "ordoCandidates": 10
   }
 }

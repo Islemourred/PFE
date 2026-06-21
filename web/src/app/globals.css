@@ -1,0 +1,161 @@
+/* ═══════════════════════════════════════════════════════
+   Clinical PFE — Premium Design System
+   Inspired by modern medical dashboards (Dribbble/Behance)
+   ═══════════════════════════════════════════════════════ */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+/* ── Design Tokens ─────────────────────────────────────── */
+:root {
+  /* Background layers — deep navy, not pure black */
+  --bg-root:        #080c14;
+  --bg-primary:     #0b1120;
+  --bg-secondary:   #111827;
+  --bg-card:        #151e2e;
+  --bg-card-hover:  #1a2435;
+  --bg-elevated:    #1e293b;
+  --bg-input:       #0f172a;
+  --bg-glass:       rgba(17, 24, 39, 0.65);
+  --bg-glass-light: rgba(30, 41, 59, 0.45);
+
+  /* Text */
+  --text-primary:   #f1f5f9;
+  --text-secondary: #cbd5e1;
+  --text-muted:     #94a3b8;
+  --text-dim:       #64748b;
+  --text-accent:    #e2e8f0;
+
+  /* Accents — muted medical palette */
+  --accent-cyan:     #38bdf8;
+  --accent-teal:     #2dd4bf;
+  --accent-blue:     #60a5fa;
+  --accent-purple:   #a78bfa;
+  --accent-pink:     #f472b6;
+  --accent-green:    #34d399;
+  --accent-orange:   #fb923c;
+  --accent-red:      #f87171;
+  --accent-yellow:   #fbbf24;
+
+  /* Gradients */
+  --gradient-brand:  linear-gradient(135deg, #0ea5e9 0%, #8b5cf6 50%, #ec4899 100%);
+  --gradient-card:   linear-gradient(145deg, rgba(17, 24, 39, 0.8) 0%, rgba(15, 23, 42, 0.9) 100%);
+  --gradient-glow:   linear-gradient(135deg, rgba(56, 189, 248, 0.08) 0%, rgba(167, 139, 250, 0.05) 100%);
+  --gradient-warm:   linear-gradient(135deg, rgba(251, 146, 60, 0.1) 0%, rgba(244, 114, 182, 0.06) 100%);
+
+  /* Borders */
+  --border-subtle:  rgba(148, 163, 184, 0.06);
+  --border-medium:  rgba(148, 163, 184, 0.1);
+  --border-accent:  rgba(56, 189, 248, 0.15);
+  --border-glow:    rgba(167, 139, 250, 0.2);
+
+  /* Radii */
+  --radius-sm:  6px;
+  --radius-md:  10px;
+  --radius-lg:  14px;
+  --radius-xl:  20px;
+  --radius-2xl: 24px;
+  --radius-full: 9999px;
+
+  /* Shadows */
+  --shadow-sm:   0 1px 3px rgba(0, 0, 0, 0.2);
+  --shadow-md:   0 4px 16px rgba(0, 0, 0, 0.3);
+  --shadow-lg:   0 8px 32px rgba(0, 0, 0, 0.4);
+  --shadow-glow: 0 0 40px rgba(56, 189, 248, 0.06);
+}
+
+/* ── Global Reset ────────────────────────────────────── */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+html {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  background: var(--bg-root);
+  color: var(--text-primary);
+  min-height: 100vh;
+  line-height: 1.5;
+  overflow-x: hidden;
+}
+
+/* Ambient background glow */
+body::before {
+  content: '';
+  position: fixed;
+  top: -30%;
+  left: -10%;
+  width: 50%;
+  height: 60%;
+  background: radial-gradient(ellipse, rgba(56, 189, 248, 0.04) 0%, transparent 70%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+body::after {
+  content: '';
+  position: fixed;
+  bottom: -20%;
+  right: -10%;
+  width: 45%;
+  height: 50%;
+  background: radial-gradient(ellipse, rgba(167, 139, 250, 0.03) 0%, transparent 70%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: rgba(148, 163, 184, 0.15); border-radius: 10px; }
+::-webkit-scrollbar-thumb:hover { background: rgba(148, 163, 184, 0.25); }
+
+/* ── Keyframes ───────────────────────────────────────── */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideUp {
+  from { opacity: 0; transform: translateY(16px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideDown {
+  from { opacity: 0; transform: translateY(-8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes scaleIn {
+  from { opacity: 0; transform: scale(0.95); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.5; }
+}
+
+@keyframes shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+@keyframes glowPulse {
+  0%, 100% { box-shadow: 0 0 20px rgba(56, 189, 248, 0.05); }
+  50% { box-shadow: 0 0 30px rgba(56, 189, 248, 0.1); }
+}
+
+/* ── Utility Classes ─────────────────────────────────── */
+.glass {
+  background: var(--bg-glass);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid var(--border-medium);
+}

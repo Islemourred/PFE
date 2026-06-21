@@ -22,6 +22,32 @@
   "module4": {
     "problem": [
       {
+        "text": "a ' cystic fibrosis - causing genotype",
+        "ner_score": 0.992,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "a ' cystic fibrosis - causing genotype",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "early acute pancreatitis",
+        "ner_score": 0.997,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0001735",
+        "hpo_name": "Acute pancreatitis",
+        "expanded_text": "early acute pancreatitis",
+        "match_type": "substring_match",
+        "confidence": 0.95,
+        "matched": true,
+        "umls_cui": "C0001339"
+      },
+      {
         "text": "pancreatitis",
         "ner_score": 0.578,
         "negated": false,
@@ -35,43 +61,173 @@
         "umls_cui": "C0030305"
       },
       {
+        "text": "pancre",
+        "ner_score": 0.834,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "pancre",
+        "match_type": "sapbert_rejected_low_conf",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "compound heterozygosis",
+        "ner_score": 0.998,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "compound heterozygosis",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "compound heterozygosis ∆",
+        "ner_score": 0.939,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "compound heterozygosis ∆",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "c cystic fibrosis",
+        "ner_score": 0.888,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "c cystic fibrosis",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "cystic fibrosis",
+        "ner_score": 0.992,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0006552",
+        "hpo_name": "Fibrocystic lung disease",
+        "expanded_text": "cystic fibrosis",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.7105,
+        "matched": true,
+        "umls_cui": "C1397290"
+      },
+      {
         "text": "fibrosis",
         "ner_score": 0.579,
         "negated": false,
         "negation_cue": "",
-        "hpo_id": "HP:0002206",
-        "hpo_name": "Pulmonary fibrosis",
+        "hpo_id": null,
+        "hpo_name": null,
         "expanded_text": "fibrosis",
-        "match_type": "sapbert_similarity",
-        "confidence": 0.7336,
-        "matched": true,
-        "umls_cui": "C0034069"
+        "match_type": "sapbert_rejected_low_conf",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "the cystic fibrosis transmembrane conductance regulator gene",
+        "ner_score": 0.763,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "the cystic fibrosis transmembrane conductance regulator gene",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
       },
       {
         "text": "pancreatic",
         "ner_score": 0.408,
         "negated": false,
         "negation_cue": "",
-        "hpo_id": "HP:0001733",
-        "hpo_name": "Pancreatitis",
+        "hpo_id": null,
+        "hpo_name": null,
         "expanded_text": "pancreatic",
-        "match_type": "sapbert_similarity",
-        "confidence": 0.7111,
-        "matched": true,
-        "umls_cui": "C0030305"
+        "match_type": "skipped_low_ner_score",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "screening",
+        "ner_score": 0.785,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "screening",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "nonclassical pictures",
+        "ner_score": 0.864,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "nonclassical pictures",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "the disease",
+        "ner_score": 0.989,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "the disease",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
       },
       {
         "text": "pancreatic sufficiency",
         "ner_score": 0.506,
         "negated": false,
         "negation_cue": "",
-        "hpo_id": "HP:0001738",
-        "hpo_name": "Exocrine pancreatic insufficiency",
+        "hpo_id": null,
+        "hpo_name": null,
         "expanded_text": "pancreatic sufficiency",
-        "match_type": "sapbert_similarity",
-        "confidence": 0.8322,
-        "matched": true,
-        "umls_cui": "C0030293"
+        "match_type": "skipped_low_ner_score",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "atic sufficiency",
+        "ner_score": 0.97,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "atic sufficiency",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
       },
       {
         "text": "sufficiency",
@@ -87,6 +243,97 @@
         "umls_cui": null
       },
       {
+        "text": "developing pancreatitis",
+        "ner_score": 0.988,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "developing pancreatitis",
+        "match_type": "deduplicated",
+        "confidence": 0.7934,
+        "matched": false,
+        "umls_cui": "C0030305"
+      },
+      {
+        "text": "mutations",
+        "ner_score": 0.952,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "mutations",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "rare mutations",
+        "ner_score": 0.955,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "rare mutations",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "a mild phenotype",
+        "ner_score": 0.983,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "a mild phenotype",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "phenotype",
+        "ner_score": 0.79,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "phenotype",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "otype",
+        "ner_score": 0.745,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "otype",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "detectable respiratory involvement",
+        "ner_score": 0.901,
+        "negated": true,
+        "negation_cue": "no",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "detectable respiratory involvement",
+        "match_type": "deduplicated",
+        "confidence": 0.7151,
+        "matched": false,
+        "umls_cui": "C0035229"
+      },
+      {
         "text": "respiratory involvement",
         "ner_score": 0.571,
         "negated": true,
@@ -98,6 +345,45 @@
         "confidence": 0.7632,
         "matched": true,
         "umls_cui": "C0035229"
+      },
+      {
+        "text": "three different mutations ∆f",
+        "ner_score": 0.847,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "three different mutations ∆f",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "a positive immunore",
+        "ner_score": 0.803,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "a positive immunore",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "acute abdominal pain",
+        "ner_score": 0.999,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0002027",
+        "hpo_name": "Abdominal pain",
+        "expanded_text": "acute abdominal pain",
+        "match_type": "substring_match",
+        "confidence": 0.95,
+        "matched": true,
+        "umls_cui": "C0000737"
       },
       {
         "text": "pain",
@@ -139,17 +425,43 @@
         "umls_cui": "C0015967"
       },
       {
+        "text": "venous rehydration",
+        "ner_score": 0.988,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "venous rehydration",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
         "text": "remission",
         "ner_score": 0.829,
         "negated": false,
         "negation_cue": "",
-        "hpo_id": "HP:0003680",
-        "hpo_name": "Nonprogressive",
+        "hpo_id": null,
+        "hpo_name": null,
         "expanded_text": "remission",
-        "match_type": "sapbert_similarity",
-        "confidence": 0.7081,
-        "matched": true,
-        "umls_cui": "C3839460"
+        "match_type": "sapbert_rejected_low_conf",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "her symptoms",
+        "ner_score": 0.891,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "her symptoms",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
       },
       {
         "text": "symptoms",
@@ -159,6 +471,19 @@
         "hpo_id": null,
         "hpo_name": null,
         "expanded_text": "symptoms",
+        "match_type": "skipped_low_ner_score",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "cystic fibrosis transmembrane conductance regulator dysfunction",
+        "ner_score": 0.997,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "cystic fibrosis transmembrane conductance regulator dysfunction",
         "match_type": "no_match",
         "confidence": 0.0,
         "matched": false,
@@ -172,41 +497,38 @@
         "hpo_id": null,
         "hpo_name": null,
         "expanded_text": "dysfunction",
+        "match_type": "skipped_low_ner_score",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "other organ manifestation",
+        "ner_score": 0.946,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "other organ manifestation",
         "match_type": "no_match",
         "confidence": 0.0,
         "matched": false,
         "umls_cui": null
       },
       {
-        "text": "acute pancreatitis",
+        "text": "borderline",
         "ner_score": 0.9,
         "negated": false,
         "negation_cue": "",
-        "hpo_id": "HP:0001735",
-        "hpo_name": "Acute pancreatitis",
-        "expanded_text": "acute pancreatitis",
+        "hpo_id": "HP:0012827",
+        "hpo_name": "Borderline",
+        "expanded_text": "borderline",
         "match_type": "text_scan_exact_label",
         "confidence": 0.95,
         "matched": true,
-        "umls_cui": "C0001339",
+        "umls_cui": "C0205189",
         "umls_all": [
-          "C0001339"
-        ]
-      },
-      {
-        "text": "abdominal pain",
-        "ner_score": 0.9,
-        "negated": false,
-        "negation_cue": "",
-        "hpo_id": "HP:0002027",
-        "hpo_name": "Abdominal pain",
-        "expanded_text": "abdominal pain",
-        "match_type": "text_scan_exact_label",
-        "confidence": 0.95,
-        "matched": true,
-        "umls_cui": "C0000737",
-        "umls_all": [
-          "C0000737"
+          "C0205189"
         ]
       }
     ],
@@ -216,13 +538,13 @@
         "ner_score": 0.676,
         "negated": false,
         "negation_cue": "",
-        "hpo_id": "HP:0001733",
-        "hpo_name": "Pancreatitis",
+        "hpo_id": null,
+        "hpo_name": null,
         "expanded_text": "pancreatic",
-        "match_type": "sapbert_similarity",
-        "confidence": 0.7111,
-        "matched": true,
-        "umls_cui": "C0030305"
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
       },
       {
         "text": "Newborn",
@@ -232,7 +554,20 @@
         "hpo_id": null,
         "hpo_name": null,
         "expanded_text": "Newborn",
-        "match_type": "no_match",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "newborn screening",
+        "ner_score": 0.985,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "newborn screening",
+        "match_type": "skipped_test",
         "confidence": 0.0,
         "matched": false,
         "umls_cui": null
@@ -245,7 +580,7 @@
         "hpo_id": null,
         "hpo_name": null,
         "expanded_text": "screening",
-        "match_type": "no_match",
+        "match_type": "skipped_test",
         "confidence": 0.0,
         "matched": false,
         "umls_cui": null
@@ -258,7 +593,7 @@
         "hpo_id": null,
         "hpo_name": null,
         "expanded_text": "deoxy",
-        "match_type": "no_match",
+        "match_type": "skipped_test",
         "confidence": 0.0,
         "matched": false,
         "umls_cui": null
@@ -271,7 +606,20 @@
         "hpo_id": null,
         "hpo_name": null,
         "expanded_text": "ribo",
-        "match_type": "no_match",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "ibon",
+        "ner_score": 0.607,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "ibon",
+        "match_type": "skipped_test",
         "confidence": 0.0,
         "matched": false,
         "umls_cui": null
@@ -281,13 +629,26 @@
         "ner_score": 0.983,
         "negated": false,
         "negation_cue": "",
-        "hpo_id": "HP:0003687",
-        "hpo_name": "Centrally nucleated skeletal muscle fibers",
+        "hpo_id": null,
+        "hpo_name": null,
         "expanded_text": "nuclei",
-        "match_type": "sapbert_similarity",
-        "confidence": 0.7198,
-        "matched": true,
-        "umls_cui": "C1842170"
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "leic acid mutation analysis techniques",
+        "ner_score": 0.75,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "leic acid mutation analysis techniques",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
       },
       {
         "text": "acid",
@@ -296,8 +657,8 @@
         "negation_cue": "",
         "hpo_id": null,
         "hpo_name": null,
-        "expanded_text": "activation induced cell death",
-        "match_type": "no_match",
+        "expanded_text": "acid",
+        "match_type": "skipped_test",
         "confidence": 0.0,
         "matched": false,
         "umls_cui": null
@@ -310,7 +671,7 @@
         "hpo_id": null,
         "hpo_name": null,
         "expanded_text": "mutation",
-        "match_type": "skipped_non_phenotype",
+        "match_type": "skipped_test",
         "confidence": 0.0,
         "matched": false,
         "umls_cui": null
@@ -323,7 +684,7 @@
         "hpo_id": null,
         "hpo_name": null,
         "expanded_text": "analysis",
-        "match_type": "no_match",
+        "match_type": "skipped_test",
         "confidence": 0.0,
         "matched": false,
         "umls_cui": null
@@ -336,7 +697,7 @@
         "hpo_id": null,
         "hpo_name": null,
         "expanded_text": "techniques",
-        "match_type": "no_match",
+        "match_type": "skipped_test",
         "confidence": 0.0,
         "matched": false,
         "umls_cui": null
@@ -349,7 +710,7 @@
         "hpo_id": null,
         "hpo_name": null,
         "expanded_text": "positive",
-        "match_type": "no_match",
+        "match_type": "skipped_en_noise",
         "confidence": 0.0,
         "matched": false,
         "umls_cui": null
@@ -362,7 +723,7 @@
         "hpo_id": null,
         "hpo_name": null,
         "expanded_text": "immuno",
-        "match_type": "no_match",
+        "match_type": "skipped_test",
         "confidence": 0.0,
         "matched": false,
         "umls_cui": null
@@ -375,7 +736,20 @@
         "hpo_id": null,
         "hpo_name": null,
         "expanded_text": "reactive",
-        "match_type": "no_match",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "active trypsinogen",
+        "ner_score": 0.913,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "active trypsinogen",
+        "match_type": "skipped_test",
         "confidence": 0.0,
         "matched": false,
         "umls_cui": null
@@ -388,7 +762,7 @@
         "hpo_id": null,
         "hpo_name": null,
         "expanded_text": "trypsin",
-        "match_type": "no_match",
+        "match_type": "skipped_test",
         "confidence": 0.0,
         "matched": false,
         "umls_cui": null
@@ -401,7 +775,20 @@
         "hpo_id": null,
         "hpo_name": null,
         "expanded_text": "ogen",
-        "match_type": "no_match",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "a borderline sweat test",
+        "ner_score": 0.818,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "a borderline sweat test",
+        "match_type": "skipped_test",
         "confidence": 0.0,
         "matched": false,
         "umls_cui": null
@@ -411,26 +798,26 @@
         "ner_score": 0.975,
         "negated": false,
         "negation_cue": "",
-        "hpo_id": "HP:0012827",
-        "hpo_name": "Borderline",
+        "hpo_id": null,
+        "hpo_name": null,
         "expanded_text": "borderline",
-        "match_type": "exact_label",
-        "confidence": 1.0,
-        "matched": true,
-        "umls_cui": "C0205189"
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
       },
       {
         "text": "sweat",
         "ner_score": 0.989,
         "negated": false,
         "negation_cue": "",
-        "hpo_id": "HP:0000975",
-        "hpo_name": "Hyperhidrosis",
+        "hpo_id": null,
+        "hpo_name": null,
         "expanded_text": "sweat",
-        "match_type": "sapbert_similarity",
-        "confidence": 0.8572,
-        "matched": true,
-        "umls_cui": "C0020458"
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
       },
       {
         "text": "favorable",
@@ -440,7 +827,7 @@
         "hpo_id": null,
         "hpo_name": null,
         "expanded_text": "favorable",
-        "match_type": "no_match",
+        "match_type": "skipped_test",
         "confidence": 0.0,
         "matched": false,
         "umls_cui": null
@@ -453,7 +840,7 @@
         "hpo_id": null,
         "hpo_name": null,
         "expanded_text": "pulmonary",
-        "match_type": "no_match",
+        "match_type": "skipped_en_noise",
         "confidence": 0.0,
         "matched": false,
         "umls_cui": null
@@ -466,23 +853,10 @@
         "hpo_id": null,
         "hpo_name": null,
         "expanded_text": "course",
-        "match_type": "no_match",
+        "match_type": "skipped_test",
         "confidence": 0.0,
         "matched": false,
         "umls_cui": null
-      },
-      {
-        "text": "abdominal",
-        "ner_score": 0.858,
-        "negated": false,
-        "negation_cue": "",
-        "hpo_id": "HP:0011458",
-        "hpo_name": "Abdominal symptom",
-        "expanded_text": "abdominal",
-        "match_type": "sapbert_similarity",
-        "confidence": 0.7049,
-        "matched": true,
-        "umls_cui": "C0740651"
       },
       {
         "text": "clinical",
@@ -492,7 +866,20 @@
         "hpo_id": null,
         "hpo_name": null,
         "expanded_text": "clinical",
-        "match_type": "no_match",
+        "match_type": "skipped_en_noise",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "clinical and laboratory examinations",
+        "ner_score": 0.988,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "clinical and laboratory examinations",
+        "match_type": "skipped_test",
         "confidence": 0.0,
         "matched": false,
         "umls_cui": null
@@ -505,7 +892,7 @@
         "hpo_id": null,
         "hpo_name": null,
         "expanded_text": "laboratory",
-        "match_type": "no_match",
+        "match_type": "skipped_test",
         "confidence": 0.0,
         "matched": false,
         "umls_cui": null
@@ -518,7 +905,7 @@
         "hpo_id": null,
         "hpo_name": null,
         "expanded_text": "examinations",
-        "match_type": "no_match",
+        "match_type": "skipped_test",
         "confidence": 0.0,
         "matched": false,
         "umls_cui": null
@@ -531,7 +918,7 @@
         "hpo_id": null,
         "hpo_name": null,
         "expanded_text": "normalization",
-        "match_type": "no_match",
+        "match_type": "skipped_test",
         "confidence": 0.0,
         "matched": false,
         "umls_cui": null
@@ -544,7 +931,20 @@
         "hpo_id": null,
         "hpo_name": null,
         "expanded_text": "parameters",
-        "match_type": "no_match",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "our study",
+        "ner_score": 0.921,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "our study",
+        "match_type": "skipped_test",
         "confidence": 0.0,
         "matched": false,
         "umls_cui": null
@@ -557,7 +957,7 @@
         "hpo_id": null,
         "hpo_name": null,
         "expanded_text": "abnormal",
-        "match_type": "no_match",
+        "match_type": "skipped_test",
         "confidence": 0.0,
         "matched": false,
         "umls_cui": null
@@ -570,7 +970,7 @@
         "hpo_id": null,
         "hpo_name": null,
         "expanded_text": "chloride",
-        "match_type": "no_match",
+        "match_type": "skipped_test",
         "confidence": 0.0,
         "matched": false,
         "umls_cui": null
@@ -585,7 +985,7 @@
         "hpo_id": null,
         "hpo_name": null,
         "expanded_text": "deoxy",
-        "match_type": "no_match",
+        "match_type": "skipped_treatment",
         "confidence": 0.0,
         "matched": false,
         "umls_cui": null
@@ -597,8 +997,8 @@
         "negation_cue": "",
         "hpo_id": null,
         "hpo_name": null,
-        "expanded_text": "activation induced cell death",
-        "match_type": "no_match",
+        "expanded_text": "acid",
+        "match_type": "skipped_treatment",
         "confidence": 0.0,
         "matched": false,
         "umls_cui": null
@@ -608,26 +1008,52 @@
         "ner_score": 0.413,
         "negated": false,
         "negation_cue": "",
-        "hpo_id": "HP:0001944",
-        "hpo_name": "Dehydration",
+        "hpo_id": null,
+        "hpo_name": null,
         "expanded_text": "Venous rehydration",
-        "match_type": "sapbert_similarity",
-        "confidence": 0.7393,
-        "matched": true,
-        "umls_cui": "C0011175"
+        "match_type": "skipped_low_ner_score",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
       },
       {
         "text": "bowel rest",
         "ner_score": 0.778,
         "negated": false,
         "negation_cue": "",
-        "hpo_id": "HP:0000711",
-        "hpo_name": "Restlessness",
+        "hpo_id": null,
+        "hpo_name": null,
         "expanded_text": "bowel rest",
-        "match_type": "sapbert_similarity",
-        "confidence": 0.7076,
-        "matched": true,
-        "umls_cui": "C3887611"
+        "match_type": "skipped_treatment",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "therapy with",
+        "ner_score": 0.773,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "therapy with",
+        "match_type": "skipped_treatment",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "ursodeoxycholic acid",
+        "ner_score": 0.961,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "ursodeoxycholic acid",
+        "match_type": "skipped_treatment",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
       },
       {
         "text": "holic",
@@ -637,7 +1063,20 @@
         "hpo_id": null,
         "hpo_name": null,
         "expanded_text": "holic",
-        "match_type": "no_match",
+        "match_type": "skipped_treatment",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "the treatment",
+        "ner_score": 0.986,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "the treatment",
+        "match_type": "skipped_treatment",
         "confidence": 0.0,
         "matched": false,
         "umls_cui": null
@@ -645,81 +1084,173 @@
     ],
     "ordo_candidates": [
       {
-        "ordo_id": "ORPHA:586",
-        "name": "Cystic fibrosis",
-        "name_fr": "Mucoviscidose",
-        "score": 0.85,
-        "jaccard": 0.0769,
-        "coverage": 0.1667,
-        "matched_hpo": [
-          "HP:0001738",
-          "HP:0001945"
-        ],
-        "matched_count": 2,
-        "total_disease_hpo": 12
-      },
-      {
-        "ordo_id": "ORPHA:313906",
-        "name": "Congenital pancreatic cyst",
+        "ordo_id": "ORPHA:549",
+        "name": "Legionnaires disease",
         "name_fr": "",
-        "score": 0.3632,
-        "jaccard": 0.1579,
-        "coverage": 0.5,
+        "score": 0.4016,
+        "coverage": 0.119,
         "matched_hpo": [
           "HP:0001733",
+          "HP:0001945",
+          "HP:0002027",
+          "HP:0002039",
+          "HP:0002093"
+        ],
+        "matched_count": 5,
+        "total_disease_hpo": 42,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:99827",
+        "name": "Crimean-Congo hemorrhagic fever",
+        "name_fr": "",
+        "score": 0.3913,
+        "coverage": 0.0513,
+        "matched_hpo": [
+          "HP:0001735",
+          "HP:0001945",
           "HP:0002027",
           "HP:0002039"
         ],
-        "matched_count": 3,
-        "total_disease_hpo": 6
+        "matched_count": 4,
+        "total_disease_hpo": 78,
+        "text_match": false
       },
       {
-        "ordo_id": "ORPHA:2808",
-        "name": "Laryngeal abductor paralysis",
+        "ordo_id": "ORPHA:117",
+        "name": "Behçet disease",
         "name_fr": "",
-        "score": 0.3235,
-        "jaccard": 0.0588,
-        "coverage": 0.5,
+        "score": 0.3692,
+        "coverage": 0.0471,
         "matched_hpo": [
-          "HP:0002093"
+          "HP:0001733",
+          "HP:0001945",
+          "HP:0002027",
+          "HP:0002039"
         ],
-        "matched_count": 1,
-        "total_disease_hpo": 2
+        "matched_count": 4,
+        "total_disease_hpo": 85,
+        "text_match": false
       },
       {
-        "ordo_id": "ORPHA:140966",
-        "name": "Palmoplantar keratoderma, Nagashima type",
+        "ordo_id": "ORPHA:829",
+        "name": "Adult-onset Still disease",
         "name_fr": "",
-        "score": 0.3235,
-        "jaccard": 0.0588,
-        "coverage": 0.5,
+        "score": 0.366,
+        "coverage": 0.0714,
         "matched_hpo": [
-          "HP:0000975"
+          "HP:0001733",
+          "HP:0001945",
+          "HP:0002027",
+          "HP:0002039"
         ],
-        "matched_count": 1,
-        "total_disease_hpo": 2
+        "matched_count": 4,
+        "total_disease_hpo": 56,
+        "text_match": false
       },
       {
-        "ordo_id": "ORPHA:79141",
-        "name": "Hereditary painful callosities",
+        "ordo_id": "ORPHA:2552",
+        "name": "Microsporidiosis",
         "name_fr": "",
-        "score": 0.3235,
-        "jaccard": 0.0588,
-        "coverage": 0.5,
+        "score": 0.3655,
+        "coverage": 0.0784,
         "matched_hpo": [
+          "HP:0001733",
+          "HP:0001945",
+          "HP:0002027",
+          "HP:0002039"
+        ],
+        "matched_count": 4,
+        "total_disease_hpo": 51,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:35062",
+        "name": "Severe disseminated cytomegalovirus infection in immunocompetent patients",
+        "name_fr": "",
+        "score": 0.3654,
+        "coverage": 0.1379,
+        "matched_hpo": [
+          "HP:0001733",
+          "HP:0001945",
+          "HP:0002027",
+          "HP:0002039"
+        ],
+        "matched_count": 4,
+        "total_disease_hpo": 29,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:99826",
+        "name": "Marburg hemorrhagic fever",
+        "name_fr": "",
+        "score": 0.3637,
+        "coverage": 0.0541,
+        "matched_hpo": [
+          "HP:0001733",
+          "HP:0001945",
+          "HP:0002027",
+          "HP:0002039"
+        ],
+        "matched_count": 4,
+        "total_disease_hpo": 74,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:466677",
+        "name": "Scorpion envenomation",
+        "name_fr": "",
+        "score": 0.3549,
+        "coverage": 0.069,
+        "matched_hpo": [
+          "HP:0001735",
+          "HP:0001945",
+          "HP:0002027",
           "HP:0012531"
         ],
-        "matched_count": 1,
-        "total_disease_hpo": 2
+        "matched_count": 4,
+        "total_disease_hpo": 58,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:900",
+        "name": "Granulomatosis with polyangiitis",
+        "name_fr": "",
+        "score": 0.3511,
+        "coverage": 0.05,
+        "matched_hpo": [
+          "HP:0001733",
+          "HP:0001945",
+          "HP:0002027",
+          "HP:0002093"
+        ],
+        "matched_count": 4,
+        "total_disease_hpo": 80,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:20",
+        "name": "3-hydroxy-3-methylglutaric aciduria",
+        "name_fr": "",
+        "score": 0.3457,
+        "coverage": 0.0556,
+        "matched_hpo": [
+          "HP:0001735",
+          "HP:0001945",
+          "HP:0002039"
+        ],
+        "matched_count": 3,
+        "total_disease_hpo": 54,
+        "text_match": false
       }
     ],
     "stats": {
-      "total": 47,
-      "matched": 18,
-      "unmatched": 29,
-      "match_rate": 38.3,
-      "unique_hpo": 16,
-      "ordo_matches": 5
+      "total": 81,
+      "matched": 9,
+      "unmatched": 72,
+      "match_rate": 11.1,
+      "unique_hpo": 9,
+      "ordo_matches": 10
     }
   },
   "phenopacket": {
@@ -728,8 +1259,28 @@
       "id": "GSC_EN_002"
     },
     "input": "Case Report: Early acute pancreatitis in a child with compound heterozygosis ∆F508/R1438W/Y1032C cystic fibrosis: a case report.\n\nINTRODUCTION: Recent studies suggest an important role of the cystic fibrosis transmembrane conductance regulator gene in the development of pancreatitis. It occurs approximately in 20% of patients with cystic fibrosis and almost exclusively in pancreatic sufficient people. Newborn screening and improved panels of deoxyribonucleic acid mutation analysis techniques are revealing more rare and nonclassical pictures of the disease, generally associated with pancreatic sufficiency and with an increased risk of developing pancreatitis. Mutations R1438 and Y1032 are considered rare mutations, and, when singularly associated with ∆F508, lead to a mild phenotype with pancreatic sufficiency and no detectable respiratory involvement.\nCASE PRESENTATION: We present the case of a Caucasian girl, aged six years, whose genotype was characterized by three different mutations ∆F508, R1438W and Y1032C, never reported, together, in the same patient. She presented with a positive immunoreactive trypsinogen screening, a borderline sweat test, and, in the first years, a favorable pulmonary course, and pancreatic sufficiency. At the age of six years, she presented with a sudden episode of acute abdominal pain, anorexia and fever. A diagnosis of pancreatitis was made after clinical and laboratory examinations. Venous rehydration, bowel rest and therapy with ursodeoxycholic acid resulted in complete remission.The treatment was successful, with normalization of her symptoms and laboratory parameters within four weeks.\nCONCLUSION: There has been a vast expansion in the understanding of the wide range of phenotypes associated with cystic fibrosis transmembrane conductance regulator dysfunction since the discovery of the cystic fibrosis transmembrane conductance regulator gene. The genotype-phenotype correlation in pancreatitis is rare compared to other organ manifestations, since this is seen almost exclusively among pancreatic sufficient patients with cystic fibrosis. Our study supports that compound heterozygosis ∆F508-R1438W/Y1032C is a 'cystic fibrosis-causing genotype' characterized by an immunoreactive trypsinogen positive screening, abnormal sweat chloride testing, and pancreatic sufficiency, with an increased risk of acute pancreatitis at an early age.",
-    "target": "Cystic fibrosis",
+    "target": "Legionnaires disease",
     "phenotypicFeatures": [
+      {
+        "type": {
+          "id": "HP:0001735",
+          "label": "Acute pancreatitis",
+          "umls_cui": "C0001339"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "GSC_EN_002",
+              "description": "NER: early acute pancreatitis (0.997) | Match: substring_match (0.950)"
+            }
+          }
+        ]
+      },
       {
         "type": {
           "id": "HP:0001733",
@@ -752,9 +1303,9 @@
       },
       {
         "type": {
-          "id": "HP:0002206",
-          "label": "Pulmonary fibrosis",
-          "umls_cui": "C0034069"
+          "id": "HP:0006552",
+          "label": "Fibrocystic lung disease",
+          "umls_cui": "C1397290"
         },
         "excluded": false,
         "evidence": [
@@ -765,27 +1316,7 @@
             },
             "reference": {
               "id": "GSC_EN_002",
-              "description": "NER: fibrosis (0.579) | Match: sapbert_similarity (0.734)"
-            }
-          }
-        ]
-      },
-      {
-        "type": {
-          "id": "HP:0001738",
-          "label": "Exocrine pancreatic insufficiency",
-          "umls_cui": "C0030293"
-        },
-        "excluded": false,
-        "evidence": [
-          {
-            "evidenceCode": {
-              "id": "ECO:0000033",
-              "label": "author statement supported by traceable reference"
-            },
-            "reference": {
-              "id": "GSC_EN_002",
-              "description": "NER: pancreatic sufficiency (0.506) | Match: sapbert_similarity (0.832)"
+              "description": "NER: cystic fibrosis (0.992) | Match: sapbert_similarity (0.711)"
             }
           }
         ]
@@ -806,6 +1337,26 @@
             "reference": {
               "id": "GSC_EN_002",
               "description": "NER: respiratory involvement (0.571) | Match: sapbert_similarity (0.763) | Negated by: \"no\""
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0002027",
+          "label": "Abdominal pain",
+          "umls_cui": "C0000737"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "GSC_EN_002",
+              "description": "NER: acute abdominal pain (0.999) | Match: substring_match (0.950)"
             }
           }
         ]
@@ -872,126 +1423,6 @@
       },
       {
         "type": {
-          "id": "HP:0003680",
-          "label": "Nonprogressive",
-          "umls_cui": "C3839460"
-        },
-        "excluded": false,
-        "evidence": [
-          {
-            "evidenceCode": {
-              "id": "ECO:0000033",
-              "label": "author statement supported by traceable reference"
-            },
-            "reference": {
-              "id": "GSC_EN_002",
-              "description": "NER: remission (0.829) | Match: sapbert_similarity (0.708)"
-            }
-          }
-        ]
-      },
-      {
-        "type": {
-          "id": "HP:0001735",
-          "label": "Acute pancreatitis",
-          "umls_cui": "C0001339"
-        },
-        "excluded": false,
-        "evidence": [
-          {
-            "evidenceCode": {
-              "id": "ECO:0000033",
-              "label": "author statement supported by traceable reference"
-            },
-            "reference": {
-              "id": "GSC_EN_002",
-              "description": "NER: acute pancreatitis (0.900) | Match: text_scan_exact_label (0.950)"
-            }
-          }
-        ]
-      },
-      {
-        "type": {
-          "id": "HP:0002027",
-          "label": "Abdominal pain",
-          "umls_cui": "C0000737"
-        },
-        "excluded": false,
-        "evidence": [
-          {
-            "evidenceCode": {
-              "id": "ECO:0000033",
-              "label": "author statement supported by traceable reference"
-            },
-            "reference": {
-              "id": "GSC_EN_002",
-              "description": "NER: abdominal pain (0.900) | Match: text_scan_exact_label (0.950)"
-            }
-          }
-        ]
-      },
-      {
-        "type": {
-          "id": "HP:0001944",
-          "label": "Dehydration",
-          "umls_cui": "C0011175"
-        },
-        "excluded": false,
-        "evidence": [
-          {
-            "evidenceCode": {
-              "id": "ECO:0000033",
-              "label": "author statement supported by traceable reference"
-            },
-            "reference": {
-              "id": "GSC_EN_002",
-              "description": "NER: Venous rehydration (0.413) | Match: sapbert_similarity (0.739)"
-            }
-          }
-        ]
-      },
-      {
-        "type": {
-          "id": "HP:0000711",
-          "label": "Restlessness",
-          "umls_cui": "C3887611"
-        },
-        "excluded": false,
-        "evidence": [
-          {
-            "evidenceCode": {
-              "id": "ECO:0000033",
-              "label": "author statement supported by traceable reference"
-            },
-            "reference": {
-              "id": "GSC_EN_002",
-              "description": "NER: bowel rest (0.778) | Match: sapbert_similarity (0.708)"
-            }
-          }
-        ]
-      },
-      {
-        "type": {
-          "id": "HP:0003687",
-          "label": "Centrally nucleated skeletal muscle fibers",
-          "umls_cui": "C1842170"
-        },
-        "excluded": false,
-        "evidence": [
-          {
-            "evidenceCode": {
-              "id": "ECO:0000033",
-              "label": "author statement supported by traceable reference"
-            },
-            "reference": {
-              "id": "GSC_EN_002",
-              "description": "NER: nuclei (0.983) | Match: sapbert_similarity (0.720)"
-            }
-          }
-        ]
-      },
-      {
-        "type": {
           "id": "HP:0012827",
           "label": "Borderline",
           "umls_cui": "C0205189"
@@ -1005,54 +1436,14 @@
             },
             "reference": {
               "id": "GSC_EN_002",
-              "description": "NER: borderline (0.975) | Match: exact_label (1.000)"
-            }
-          }
-        ]
-      },
-      {
-        "type": {
-          "id": "HP:0000975",
-          "label": "Hyperhidrosis",
-          "umls_cui": "C0020458"
-        },
-        "excluded": false,
-        "evidence": [
-          {
-            "evidenceCode": {
-              "id": "ECO:0000033",
-              "label": "author statement supported by traceable reference"
-            },
-            "reference": {
-              "id": "GSC_EN_002",
-              "description": "NER: sweat (0.989) | Match: sapbert_similarity (0.857)"
-            }
-          }
-        ]
-      },
-      {
-        "type": {
-          "id": "HP:0011458",
-          "label": "Abdominal symptom",
-          "umls_cui": "C0740651"
-        },
-        "excluded": false,
-        "evidence": [
-          {
-            "evidenceCode": {
-              "id": "ECO:0000033",
-              "label": "author statement supported by traceable reference"
-            },
-            "reference": {
-              "id": "GSC_EN_002",
-              "description": "NER: abdominal (0.858) | Match: sapbert_similarity (0.705)"
+              "description": "NER: borderline (0.900) | Match: text_scan_exact_label (0.950)"
             }
           }
         ]
       }
     ],
     "metaData": {
-      "created": "2026-06-11T03:07:27Z",
+      "created": "2026-06-19T15:04:34Z",
       "createdBy": "clinical-preanalysis-pipeline-v2",
       "phenopacketSchemaVersion": "2.0",
       "resources": [
@@ -1072,48 +1463,73 @@
         "progressStatus": "IN_PROGRESS",
         "diagnosis": {
           "disease": {
-            "id": "ORPHA:586",
-            "label": "Cystic fibrosis"
+            "id": "ORPHA:549",
+            "label": "Legionnaires disease"
           },
-          "score": 0.85,
+          "score": 0.4016,
           "allCandidates": [
             {
-              "id": "ORPHA:586",
-              "label": "Cystic fibrosis",
-              "score": 0.85
+              "id": "ORPHA:549",
+              "label": "Legionnaires disease",
+              "score": 0.4016
             },
             {
-              "id": "ORPHA:313906",
-              "label": "Congenital pancreatic cyst",
-              "score": 0.3632
+              "id": "ORPHA:99827",
+              "label": "Crimean-Congo hemorrhagic fever",
+              "score": 0.3913
             },
             {
-              "id": "ORPHA:2808",
-              "label": "Laryngeal abductor paralysis",
-              "score": 0.3235
+              "id": "ORPHA:117",
+              "label": "Behçet disease",
+              "score": 0.3692
             },
             {
-              "id": "ORPHA:140966",
-              "label": "Palmoplantar keratoderma, Nagashima type",
-              "score": 0.3235
+              "id": "ORPHA:829",
+              "label": "Adult-onset Still disease",
+              "score": 0.366
             },
             {
-              "id": "ORPHA:79141",
-              "label": "Hereditary painful callosities",
-              "score": 0.3235
+              "id": "ORPHA:2552",
+              "label": "Microsporidiosis",
+              "score": 0.3655
+            },
+            {
+              "id": "ORPHA:35062",
+              "label": "Severe disseminated cytomegalovirus infection in immunocompetent patients",
+              "score": 0.3654
+            },
+            {
+              "id": "ORPHA:99826",
+              "label": "Marburg hemorrhagic fever",
+              "score": 0.3637
+            },
+            {
+              "id": "ORPHA:466677",
+              "label": "Scorpion envenomation",
+              "score": 0.3549
+            },
+            {
+              "id": "ORPHA:900",
+              "label": "Granulomatosis with polyangiitis",
+              "score": 0.3511
+            },
+            {
+              "id": "ORPHA:20",
+              "label": "3-hydroxy-3-methylglutaric aciduria",
+              "score": 0.3457
             }
           ]
         }
       }
     ],
     "_pipelineStats": {
-      "totalEntities": 47,
-      "matchedHPO": 18,
-      "unmatchedEntities": 29,
-      "phenopacketFeatures": 16,
+      "totalEntities": 81,
+      "matchedHPO": 9,
+      "unmatchedEntities": 72,
+      "phenopacketFeatures": 9,
       "negatedFeatures": 1,
       "numericPhenotypes": 0,
-      "ordoCandidates": 5
+      "ordoCandidates": 10
     }
   }
 }

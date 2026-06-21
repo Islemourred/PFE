@@ -17,8 +17,47 @@
   "module4": {
     "problem": [
       {
+        "text": "an excessive forward spinal curve in the",
+        "ner_score": 0.895,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "an excessive forward spinal curve in the",
+        "match_type": "deduplicated",
+        "confidence": 0.7935,
+        "matched": false,
+        "umls_cui": "C0024003"
+      },
+      {
+        "text": "characteristic c - shape curvature in the lumbar region",
+        "ner_score": 0.85,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0002938",
+        "hpo_name": "Lumbar hyperlordosis",
+        "expanded_text": "characteristic c - shape curvature in the lumbar region",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.7435,
+        "matched": true,
+        "umls_cui": "C1184923"
+      },
+      {
+        "text": "survivor motor neuron ( smn ) gene - related sma",
+        "ner_score": 0.995,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "survivor motor neuron ( smn ) gene - related sma",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
         "text": "Spinal Muscular Atrophy",
-        "ner_score": 0.952,
+        "ner_score": 0.998,
         "negated": false,
         "negation_cue": "",
         "hpo_id": "HP:0007269",
@@ -30,8 +69,21 @@
         "umls_cui": "C0026847"
       },
       {
+        "text": "severe hyperlordosis",
+        "ner_score": 0.991,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "severe hyperlordosis",
+        "match_type": "deduplicated",
+        "confidence": 0.7837,
+        "matched": false,
+        "umls_cui": "C0024003"
+      },
+      {
         "text": "Hyperlordosis",
-        "ner_score": 0.957,
+        "ner_score": 0.998,
         "negated": false,
         "negation_cue": "",
         "hpo_id": "HP:0003307",
@@ -43,16 +95,29 @@
         "umls_cui": "C0024003"
       },
       {
-        "text": "recessive",
-        "ner_score": 0.581,
+        "text": "inherited autosomal recessive genetic disorders",
+        "ner_score": 0.994,
         "negated": false,
         "negation_cue": "",
         "hpo_id": "HP:0000007",
         "hpo_name": "Autosomal recessive inheritance",
-        "expanded_text": "recessive",
-        "match_type": "sapbert_similarity",
-        "confidence": 0.8801,
+        "expanded_text": "inherited autosomal recessive genetic disorders",
+        "match_type": "substring_match",
+        "confidence": 0.95,
         "matched": true,
+        "umls_cui": "C0441748"
+      },
+      {
+        "text": "recessive",
+        "ner_score": 0.581,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "recessive",
+        "match_type": "deduplicated",
+        "confidence": 0.8801,
+        "matched": false,
         "umls_cui": "C0441748"
       },
       {
@@ -63,7 +128,7 @@
         "hpo_id": null,
         "hpo_name": null,
         "expanded_text": "genetic",
-        "match_type": "no_match",
+        "match_type": "skipped_low_ner_score",
         "confidence": 0.0,
         "matched": false,
         "umls_cui": null
@@ -82,6 +147,19 @@
         "umls_cui": null
       },
       {
+        "text": "horn cell",
+        "ner_score": 0.69,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "horn cell",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
         "text": "neuro",
         "ner_score": 0.485,
         "negated": false,
@@ -89,7 +167,7 @@
         "hpo_id": null,
         "hpo_name": null,
         "expanded_text": "neuro",
-        "match_type": "no_match",
+        "match_type": "skipped_low_ner_score",
         "confidence": 0.0,
         "matched": false,
         "umls_cui": null
@@ -125,13 +203,26 @@
         "ner_score": 0.847,
         "negated": false,
         "negation_cue": "",
-        "hpo_id": "HP:0001324",
-        "hpo_name": "Muscle weakness",
+        "hpo_id": null,
+        "hpo_name": null,
         "expanded_text": "weakness",
-        "match_type": "sapbert_similarity",
+        "match_type": "deduplicated",
         "confidence": 0.891,
-        "matched": true,
+        "matched": false,
         "umls_cui": "C0151786"
+      },
+      {
+        "text": "slowly progressive muscular weakness",
+        "ner_score": 0.998,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0003323",
+        "hpo_name": "Progressive muscle weakness",
+        "expanded_text": "slowly progressive muscular weakness",
+        "match_type": "substring_match",
+        "confidence": 0.95,
+        "matched": true,
+        "umls_cui": "C0240421"
       },
       {
         "text": "muscular weakness",
@@ -147,6 +238,32 @@
         "umls_cui": "C0151786"
       },
       {
+        "text": "hy of lower limbs",
+        "ner_score": 0.995,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "hy of lower limbs",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "a deformity in spinal curvature",
+        "ner_score": 0.995,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0010674",
+        "hpo_name": "Abnormal curvature of the vertebral column",
+        "expanded_text": "a deformity in spinal curvature",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.9084,
+        "matched": true,
+        "umls_cui": "C4023747"
+      },
+      {
         "text": "deformity",
         "ner_score": 0.389,
         "negated": false,
@@ -154,7 +271,7 @@
         "hpo_id": null,
         "hpo_name": null,
         "expanded_text": "deformity",
-        "match_type": "no_match",
+        "match_type": "skipped_low_ner_score",
         "confidence": 0.0,
         "matched": false,
         "umls_cui": null
@@ -164,25 +281,25 @@
         "ner_score": 0.689,
         "negated": false,
         "negation_cue": "",
-        "hpo_id": "HP:0010674",
-        "hpo_name": "Abnormal curvature of the vertebral column",
+        "hpo_id": null,
+        "hpo_name": null,
         "expanded_text": "curvature",
-        "match_type": "sapbert_similarity",
-        "confidence": 0.7516,
-        "matched": true,
-        "umls_cui": "C4023747"
+        "match_type": "sapbert_rejected_low_conf",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
       },
       {
         "text": "forward spinal curve",
         "ner_score": 0.66,
         "negated": false,
         "negation_cue": "",
-        "hpo_id": "HP:0003307",
-        "hpo_name": "Hyperlordosis",
+        "hpo_id": null,
+        "hpo_name": null,
         "expanded_text": "forward spinal curve",
-        "match_type": "sapbert_similarity",
+        "match_type": "deduplicated",
         "confidence": 0.8029,
-        "matched": true,
+        "matched": false,
         "umls_cui": "C0024003"
       },
       {
@@ -199,6 +316,32 @@
         "umls_cui": "C0026884"
       },
       {
+        "text": "inability to get up from",
+        "ner_score": 0.913,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0002540",
+        "hpo_name": "Inability to walk",
+        "expanded_text": "inability to get up from",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.736,
+        "matched": true,
+        "umls_cui": "C0560046"
+      },
+      {
+        "text": "position",
+        "ner_score": 0.78,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "position",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
         "text": "difficulty in",
         "ner_score": 0.797,
         "negated": false,
@@ -212,17 +355,56 @@
         "umls_cui": null
       },
       {
+        "text": "difficulty in walking",
+        "ner_score": 0.989,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0001288",
+        "hpo_name": "Gait disturbance",
+        "expanded_text": "difficulty in walking",
+        "match_type": "exact_synonym",
+        "confidence": 1.0,
+        "matched": true,
+        "umls_cui": "C0575081"
+      },
+      {
         "text": "walking",
         "ner_score": 0.255,
         "negated": false,
         "negation_cue": "",
-        "hpo_id": "HP:0002540",
-        "hpo_name": "Inability to walk",
+        "hpo_id": null,
+        "hpo_name": null,
         "expanded_text": "walking",
-        "match_type": "sapbert_similarity",
-        "confidence": 0.7119,
-        "matched": true,
-        "umls_cui": "C0560046"
+        "match_type": "skipped_low_ner_score",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "proximal limb weakness",
+        "ner_score": 0.989,
+        "negated": true,
+        "negation_cue": "absent",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "proximal limb weakness",
+        "match_type": "deduplicated",
+        "confidence": 1.0,
+        "matched": false,
+        "umls_cui": "C0221629"
+      },
+      {
+        "text": "notable hypotonia",
+        "ner_score": 0.998,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "notable hypotonia",
+        "match_type": "deduplicated",
+        "confidence": 0.8788,
+        "matched": false,
+        "umls_cui": "C0026827"
       },
       {
         "text": "electrophysiology",
@@ -232,6 +414,32 @@
         "hpo_id": null,
         "hpo_name": null,
         "expanded_text": "electrophysiology",
+        "match_type": "skipped_low_ner_score",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "electrophy",
+        "ner_score": 0.803,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "electrophy",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "ology",
+        "ner_score": 0.894,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "ology",
         "match_type": "no_match",
         "confidence": 0.0,
         "matched": false,
@@ -245,41 +453,25 @@
         "hpo_id": null,
         "hpo_name": null,
         "expanded_text": "pathology",
-        "match_type": "no_match",
+        "match_type": "skipped_en_noise",
         "confidence": 0.0,
         "matched": false,
         "umls_cui": null
       },
       {
-        "text": "progressive muscular weakness",
+        "text": "slowly progressive",
         "ner_score": 0.9,
         "negated": false,
         "negation_cue": "",
-        "hpo_id": "HP:0003323",
-        "hpo_name": "Progressive muscle weakness",
-        "expanded_text": "progressive muscular weakness",
-        "match_type": "text_scan_exact_synonym",
+        "hpo_id": "HP:0003677",
+        "hpo_name": "Slowly progressive",
+        "expanded_text": "slowly progressive",
+        "match_type": "text_scan_exact_label",
         "confidence": 0.95,
         "matched": true,
-        "umls_cui": "C0240421",
+        "umls_cui": "C1854494",
         "umls_all": [
-          "C0240421"
-        ]
-      },
-      {
-        "text": "difficulty in walking",
-        "ner_score": 0.9,
-        "negated": false,
-        "negation_cue": "",
-        "hpo_id": "HP:0001288",
-        "hpo_name": "Gait disturbance",
-        "expanded_text": "difficulty in walking",
-        "match_type": "text_scan_exact_synonym",
-        "confidence": 0.95,
-        "matched": true,
-        "umls_cui": "C0575081",
-        "umls_all": [
-          "C0575081"
+          "C1854494"
         ]
       },
       {
@@ -318,165 +510,74 @@
         ]
       },
       {
-        "text": "position",
+        "text": "proximal",
         "ner_score": 0.9,
         "negated": false,
         "negation_cue": "",
-        "hpo_id": "HP:0012830",
-        "hpo_name": "Position",
-        "expanded_text": "position",
+        "hpo_id": "HP:0012840",
+        "hpo_name": "Proximal",
+        "expanded_text": "proximal",
         "match_type": "text_scan_exact_label",
         "confidence": 0.95,
         "matched": true,
-        "umls_cui": "C4019252",
+        "umls_cui": "C0205107",
         "umls_all": [
-          "C4019252"
+          "C0205107"
         ]
       }
     ],
     "test": [
       {
-        "text": "spinal",
-        "ner_score": 0.545,
-        "negated": false,
-        "negation_cue": "",
-        "hpo_id": null,
-        "hpo_name": null,
-        "expanded_text": "spinal",
-        "match_type": "no_match",
-        "confidence": 0.0,
-        "matched": false,
-        "umls_cui": null
-      },
-      {
-        "text": "anterior",
-        "ner_score": 0.886,
-        "negated": false,
-        "negation_cue": "",
-        "hpo_id": null,
-        "hpo_name": null,
-        "expanded_text": "anterior",
-        "match_type": "no_match",
-        "confidence": 0.0,
-        "matched": false,
-        "umls_cui": null
-      },
-      {
-        "text": "motor",
-        "ner_score": 0.513,
-        "negated": false,
-        "negation_cue": "",
-        "hpo_id": "HP:0100034",
-        "hpo_name": "Motor tics",
-        "expanded_text": "motor",
-        "match_type": "sapbert_similarity",
-        "confidence": 0.7125,
-        "matched": true,
-        "umls_cui": "C0751900"
-      },
-      {
-        "text": "neurons",
-        "ner_score": 0.846,
-        "negated": false,
-        "negation_cue": "",
-        "hpo_id": null,
-        "hpo_name": null,
-        "expanded_text": "neurons",
-        "match_type": "no_match",
-        "confidence": 0.0,
-        "matched": false,
-        "umls_cui": null
-      },
-      {
-        "text": "brain",
-        "ner_score": 0.846,
-        "negated": false,
-        "negation_cue": "",
-        "hpo_id": null,
-        "hpo_name": null,
-        "expanded_text": "brain",
-        "match_type": "no_match",
-        "confidence": 0.0,
-        "matched": false,
-        "umls_cui": null
-      },
-      {
-        "text": "lower",
-        "ner_score": 0.968,
-        "negated": false,
-        "negation_cue": "",
-        "hpo_id": null,
-        "hpo_name": null,
-        "expanded_text": "lower",
-        "match_type": "no_match",
-        "confidence": 0.0,
-        "matched": false,
-        "umls_cui": null
-      },
-      {
-        "text": "region",
-        "ner_score": 0.904,
-        "negated": false,
-        "negation_cue": "",
-        "hpo_id": null,
-        "hpo_name": null,
-        "expanded_text": "region",
-        "match_type": "no_match",
-        "confidence": 0.0,
-        "matched": false,
-        "umls_cui": null
-      },
-      {
-        "text": "above",
-        "ner_score": 0.615,
-        "negated": false,
-        "negation_cue": "",
-        "hpo_id": null,
-        "hpo_name": null,
-        "expanded_text": "above",
-        "match_type": "no_match",
-        "confidence": 0.0,
-        "matched": false,
-        "umls_cui": null
-      },
-      {
-        "text": "buttocks",
-        "ner_score": 0.94,
-        "negated": false,
-        "negation_cue": "",
-        "hpo_id": null,
-        "hpo_name": null,
-        "expanded_text": "buttocks",
-        "match_type": "no_match",
-        "confidence": 0.0,
-        "matched": false,
-        "umls_cui": null
-      },
-      {
-        "text": "male",
-        "ner_score": 0.126,
-        "negated": false,
-        "negation_cue": "",
-        "hpo_id": null,
-        "hpo_name": null,
-        "expanded_text": "male",
-        "match_type": "no_match",
-        "confidence": 0.0,
-        "matched": false,
-        "umls_cui": null
-      },
-      {
-        "text": "physical examination, deep tendon reflexes",
+        "text": "physical",
         "ner_score": 0.984,
         "negated": false,
         "negation_cue": "",
-        "hpo_id": "HP:0001348",
-        "hpo_name": "Brisk reflexes",
-        "expanded_text": "physical examination, deep tendon reflexes",
-        "match_type": "sapbert_similarity",
-        "confidence": 0.7714,
-        "matched": true,
-        "umls_cui": "C2673700"
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "physical",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "physical examination",
+        "ner_score": 0.976,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "physical examination",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "examination",
+        "ner_score": 0.984,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "examination",
+        "match_type": "skipped_en_noise",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "deep tendon reflexes",
+        "ner_score": 0.981,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "deep tendon reflexes",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
       },
       {
         "text": "absent",
@@ -486,23 +587,10 @@
         "hpo_id": null,
         "hpo_name": null,
         "expanded_text": "absent",
-        "match_type": "no_match",
+        "match_type": "skipped_test",
         "confidence": 0.0,
         "matched": false,
         "umls_cui": null
-      },
-      {
-        "text": "proximal",
-        "ner_score": 0.882,
-        "negated": true,
-        "negation_cue": "absent",
-        "hpo_id": "HP:0012840",
-        "hpo_name": "Proximal",
-        "expanded_text": "proximal",
-        "match_type": "exact_label",
-        "confidence": 1.0,
-        "matched": true,
-        "umls_cui": "C0205107"
       }
     ],
     "treatment": [
@@ -514,7 +602,7 @@
         "hpo_id": null,
         "hpo_name": null,
         "expanded_text": "normal lifestyle",
-        "match_type": "no_match",
+        "match_type": "skipped_low_ner_score",
         "confidence": 0.0,
         "matched": false,
         "umls_cui": null
@@ -522,83 +610,171 @@
     ],
     "ordo_candidates": [
       {
-        "ordo_id": "ORPHA:70",
-        "name": "Spinal muscular atrophy",
-        "name_fr": "Amyotrophie spinale (SMA)",
-        "score": 0.85,
-        "jaccard": 0.1429,
-        "coverage": 0.4286,
-        "matched_hpo": [
-          "HP:0001252",
-          "HP:0003202",
-          "HP:0003323"
-        ],
-        "matched_count": 3,
-        "total_disease_hpo": 7
-      },
-      {
-        "ordo_id": "ORPHA:1429",
-        "name": "Benign hereditary chorea",
+        "ordo_id": "ORPHA:466768",
+        "name": "Autosomal dominant Charcot-Marie-Tooth disease type 2Z",
         "name_fr": "",
-        "score": 0.3222,
-        "jaccard": 0.0556,
-        "coverage": 0.5,
-        "matched_hpo": [
-          "HP:0001288"
-        ],
-        "matched_count": 1,
-        "total_disease_hpo": 2
-      },
-      {
-        "ordo_id": "ORPHA:371",
-        "name": "Glycogen storage disease due to muscle phosphofructokinase deficiency",
-        "name_fr": "",
-        "score": 0.2381,
-        "jaccard": 0.0952,
-        "coverage": 0.3333,
-        "matched_hpo": [
-          "HP:0001324",
-          "HP:0003202"
-        ],
-        "matched_count": 2,
-        "total_disease_hpo": 6
-      },
-      {
-        "ordo_id": "ORPHA:99944",
-        "name": "Autosomal dominant Charcot-Marie-Tooth disease type 2K",
-        "name_fr": "",
-        "score": 0.23,
-        "jaccard": 0.125,
-        "coverage": 0.3,
+        "score": 0.3474,
+        "coverage": 0.0556,
         "matched_hpo": [
           "HP:0001288",
+          "HP:0002540",
+          "HP:0003701",
+          "HP:0007269"
+        ],
+        "matched_count": 4,
+        "total_disease_hpo": 72,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:365",
+        "name": "Glycogen storage disease due to acid maltase deficiency",
+        "name_fr": "",
+        "score": 0.3356,
+        "coverage": 0.0556,
+        "matched_hpo": [
+          "HP:0001288",
+          "HP:0001324",
+          "HP:0002540",
+          "HP:0003307"
+        ],
+        "matched_count": 4,
+        "total_disease_hpo": 72,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:70",
+        "name": "Proximal spinal muscular atrophy",
+        "name_fr": "",
+        "score": 0.3288,
+        "coverage": 0.1,
+        "matched_hpo": [
+          "HP:0001252",
+          "HP:0001288",
+          "HP:0002540",
           "HP:0003202",
           "HP:0003701"
         ],
-        "matched_count": 3,
-        "total_disease_hpo": 10
+        "matched_count": 5,
+        "total_disease_hpo": 50,
+        "text_match": false
       },
       {
-        "ordo_id": "ORPHA:71519",
-        "name": "Psychogenic movement disorders",
+        "ordo_id": "ORPHA:254854",
+        "name": "Pure mitochondrial myopathy",
         "name_fr": "",
-        "score": 0.2211,
-        "jaccard": 0.0526,
-        "coverage": 0.3333,
+        "score": 0.3274,
+        "coverage": 0.0909,
         "matched_hpo": [
-          "HP:0001288"
+          "HP:0001252",
+          "HP:0002938",
+          "HP:0003701"
         ],
-        "matched_count": 1,
-        "total_disease_hpo": 3
+        "matched_count": 3,
+        "total_disease_hpo": 33,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:610",
+        "name": "Bethlem muscular dystrophy",
+        "name_fr": "",
+        "score": 0.3254,
+        "coverage": 0.0789,
+        "matched_hpo": [
+          "HP:0001288",
+          "HP:0001324",
+          "HP:0002938"
+        ],
+        "matched_count": 3,
+        "total_disease_hpo": 38,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:26791",
+        "name": "Multiple acyl-CoA dehydrogenase deficiency",
+        "name_fr": "",
+        "score": 0.3234,
+        "coverage": 0.0862,
+        "matched_hpo": [
+          "HP:0001252",
+          "HP:0002540",
+          "HP:0003202",
+          "HP:0003307",
+          "HP:0003701"
+        ],
+        "matched_count": 5,
+        "total_disease_hpo": 58,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:269",
+        "name": "Facioscapulohumeral dystrophy",
+        "name_fr": "",
+        "score": 0.3212,
+        "coverage": 0.1081,
+        "matched_hpo": [
+          "HP:0001288",
+          "HP:0003202",
+          "HP:0003307",
+          "HP:0003323"
+        ],
+        "matched_count": 4,
+        "total_disease_hpo": 37,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:435387",
+        "name": "Autosomal dominant Charcot-Marie-Tooth disease type 2Y",
+        "name_fr": "",
+        "score": 0.319,
+        "coverage": 0.0698,
+        "matched_hpo": [
+          "HP:0001288",
+          "HP:0002938",
+          "HP:0003701"
+        ],
+        "matched_count": 3,
+        "total_disease_hpo": 43,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:52430",
+        "name": "Inclusion body myopathy with Paget disease of bone and frontotemporal dementia",
+        "name_fr": "",
+        "score": 0.3159,
+        "coverage": 0.0566,
+        "matched_hpo": [
+          "HP:0002300",
+          "HP:0003307",
+          "HP:0003701"
+        ],
+        "matched_count": 3,
+        "total_disease_hpo": 53,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:157973",
+        "name": "Congenital muscular dystrophy due to LMNA mutation",
+        "name_fr": "",
+        "score": 0.3143,
+        "coverage": 0.1818,
+        "matched_hpo": [
+          "HP:0001252",
+          "HP:0001288",
+          "HP:0003202",
+          "HP:0003307"
+        ],
+        "matched_count": 4,
+        "total_disease_hpo": 22,
+        "text_match": false
       }
     ],
     "stats": {
-      "total": 37,
-      "matched": 19,
-      "unmatched": 18,
-      "match_rate": 51.4,
-      "unique_hpo": 17,
-      "ordo_matches": 5
+      "total": 44,
+      "matched": 16,
+      "unmatched": 28,
+      "match_rate": 36.4,
+      "unique_hpo": 16,
+      "ordo_matches": 10
     }
   },
   "phenopacket": {
@@ -608,8 +784,28 @@
       "sex": "MALE"
     },
     "input": "Case Report: Spinal Muscular Atrophy With Severe Hyperlordosis: A Case Report.\n\nSpinal muscular atrophy (SMA) indicates a set of inherited autosomal recessive genetic disorders, where, specifically, the anterior horn cell motor neurons in the brain and spinal cord are affected, leading to a severe form of hypotonia and muscle weakness. The incidence is exceptionally rare, commonly manifesting as slowly progressive muscular weakness and atrophy of lower limbs. As per our existing knowledge, this is the first case of SMA associated with hyperlordosis in a patient. Hyperlordosis is a deformity in spinal curvature characterized by an excessive forward spinal curve in the region of the lower back, forming the characteristic C-shape curvature in the lumbar region, just above the buttocks. Parents brought an 11-year-old male child with complaints of inability to get up from a sitting position along with difficulty in walking for the past six months. Upon physical examination, deep tendon reflexes were absent; there was severe hyperlordosis, proximal limb weakness, and notable hypotonia. In our study, we aim to understand the clinical presentation, impact, and association of hyperlordosis in a child diagnosed with SMA. This case report describes the complaints and successful diagnosis of a patient of survivor motor neuron (SMN) gene-related SMA along with severe hyperlordosis backed by evidences of electrophysiology and neuropathology. However, a complete cure and normal lifestyle are not possible due to the lack of affordable and easily accessible therapies.",
-    "target": "Spinal muscular atrophy",
+    "target": "Autosomal dominant Charcot-Marie-Tooth disease type 2Z",
     "phenotypicFeatures": [
+      {
+        "type": {
+          "id": "HP:0002938",
+          "label": "Lumbar hyperlordosis",
+          "umls_cui": "C1184923"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "PUBMED_EN_021",
+              "description": "NER: characteristic c - shape curvature in the lumbar region (0.850) | Match: sapbert_similarity (0.744)"
+            }
+          }
+        ]
+      },
       {
         "type": {
           "id": "HP:0007269",
@@ -625,7 +821,7 @@
             },
             "reference": {
               "id": "PUBMED_EN_021",
-              "description": "NER: Spinal Muscular Atrophy (0.952) | Match: exact_label (1.000)"
+              "description": "NER: Spinal Muscular Atrophy (0.998) | Match: exact_label (1.000)"
             }
           }
         ]
@@ -645,7 +841,7 @@
             },
             "reference": {
               "id": "PUBMED_EN_021",
-              "description": "NER: Hyperlordosis (0.957) | Match: exact_label (1.000)"
+              "description": "NER: Hyperlordosis (0.998) | Match: exact_label (1.000)"
             }
           }
         ]
@@ -665,7 +861,7 @@
             },
             "reference": {
               "id": "PUBMED_EN_021",
-              "description": "NER: recessive (0.581) | Match: sapbert_similarity (0.880)"
+              "description": "NER: inherited autosomal recessive genetic disorders (0.994) | Match: substring_match (0.950)"
             }
           }
         ]
@@ -712,6 +908,26 @@
       },
       {
         "type": {
+          "id": "HP:0003323",
+          "label": "Progressive muscle weakness",
+          "umls_cui": "C0240421"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "PUBMED_EN_021",
+              "description": "NER: slowly progressive muscular weakness (0.998) | Match: substring_match (0.950)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
           "id": "HP:0001324",
           "label": "Muscle weakness",
           "umls_cui": "C0151786"
@@ -725,7 +941,7 @@
             },
             "reference": {
               "id": "PUBMED_EN_021",
-              "description": "NER: weakness (0.847) | Match: sapbert_similarity (0.891)"
+              "description": "NER: muscular weakness (0.562) | Match: exact_synonym (1.000)"
             }
           }
         ]
@@ -745,7 +961,7 @@
             },
             "reference": {
               "id": "PUBMED_EN_021",
-              "description": "NER: curvature (0.689) | Match: sapbert_similarity (0.752)"
+              "description": "NER: a deformity in spinal curvature (0.995) | Match: sapbert_similarity (0.908)"
             }
           }
         ]
@@ -785,27 +1001,7 @@
             },
             "reference": {
               "id": "PUBMED_EN_021",
-              "description": "NER: walking (0.255) | Match: sapbert_similarity (0.712)"
-            }
-          }
-        ]
-      },
-      {
-        "type": {
-          "id": "HP:0003323",
-          "label": "Progressive muscle weakness",
-          "umls_cui": "C0240421"
-        },
-        "excluded": false,
-        "evidence": [
-          {
-            "evidenceCode": {
-              "id": "ECO:0000033",
-              "label": "author statement supported by traceable reference"
-            },
-            "reference": {
-              "id": "PUBMED_EN_021",
-              "description": "NER: progressive muscular weakness (0.900) | Match: text_scan_exact_synonym (0.950)"
+              "description": "NER: inability to get up from (0.913) | Match: sapbert_similarity (0.736)"
             }
           }
         ]
@@ -825,7 +1021,27 @@
             },
             "reference": {
               "id": "PUBMED_EN_021",
-              "description": "NER: difficulty in walking (0.900) | Match: text_scan_exact_synonym (0.950)"
+              "description": "NER: difficulty in walking (0.989) | Match: exact_synonym (1.000)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0003677",
+          "label": "Slowly progressive",
+          "umls_cui": "C1854494"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "PUBMED_EN_021",
+              "description": "NER: slowly progressive (0.900) | Match: text_scan_exact_label (0.950)"
             }
           }
         ]
@@ -872,71 +1088,11 @@
       },
       {
         "type": {
-          "id": "HP:0012830",
-          "label": "Position",
-          "umls_cui": "C4019252"
-        },
-        "excluded": false,
-        "evidence": [
-          {
-            "evidenceCode": {
-              "id": "ECO:0000033",
-              "label": "author statement supported by traceable reference"
-            },
-            "reference": {
-              "id": "PUBMED_EN_021",
-              "description": "NER: position (0.900) | Match: text_scan_exact_label (0.950)"
-            }
-          }
-        ]
-      },
-      {
-        "type": {
-          "id": "HP:0100034",
-          "label": "Motor tics",
-          "umls_cui": "C0751900"
-        },
-        "excluded": false,
-        "evidence": [
-          {
-            "evidenceCode": {
-              "id": "ECO:0000033",
-              "label": "author statement supported by traceable reference"
-            },
-            "reference": {
-              "id": "PUBMED_EN_021",
-              "description": "NER: motor (0.513) | Match: sapbert_similarity (0.713)"
-            }
-          }
-        ]
-      },
-      {
-        "type": {
-          "id": "HP:0001348",
-          "label": "Brisk reflexes",
-          "umls_cui": "C2673700"
-        },
-        "excluded": false,
-        "evidence": [
-          {
-            "evidenceCode": {
-              "id": "ECO:0000033",
-              "label": "author statement supported by traceable reference"
-            },
-            "reference": {
-              "id": "PUBMED_EN_021",
-              "description": "NER: physical examination, deep tendon reflexes (0.984) | Match: sapbert_similarity (0.771)"
-            }
-          }
-        ]
-      },
-      {
-        "type": {
           "id": "HP:0012840",
           "label": "Proximal",
           "umls_cui": "C0205107"
         },
-        "excluded": true,
+        "excluded": false,
         "evidence": [
           {
             "evidenceCode": {
@@ -945,14 +1101,14 @@
             },
             "reference": {
               "id": "PUBMED_EN_021",
-              "description": "NER: proximal (0.882) | Match: exact_label (1.000) | Negated by: \"absent\""
+              "description": "NER: proximal (0.900) | Match: text_scan_exact_label (0.950)"
             }
           }
         ]
       }
     ],
     "metaData": {
-      "created": "2026-06-11T03:06:47Z",
+      "created": "2026-06-19T15:03:33Z",
       "createdBy": "clinical-preanalysis-pipeline-v2",
       "phenopacketSchemaVersion": "2.0",
       "resources": [
@@ -972,48 +1128,73 @@
         "progressStatus": "IN_PROGRESS",
         "diagnosis": {
           "disease": {
-            "id": "ORPHA:70",
-            "label": "Spinal muscular atrophy"
+            "id": "ORPHA:466768",
+            "label": "Autosomal dominant Charcot-Marie-Tooth disease type 2Z"
           },
-          "score": 0.85,
+          "score": 0.3474,
           "allCandidates": [
             {
+              "id": "ORPHA:466768",
+              "label": "Autosomal dominant Charcot-Marie-Tooth disease type 2Z",
+              "score": 0.3474
+            },
+            {
+              "id": "ORPHA:365",
+              "label": "Glycogen storage disease due to acid maltase deficiency",
+              "score": 0.3356
+            },
+            {
               "id": "ORPHA:70",
-              "label": "Spinal muscular atrophy",
-              "score": 0.85
+              "label": "Proximal spinal muscular atrophy",
+              "score": 0.3288
             },
             {
-              "id": "ORPHA:1429",
-              "label": "Benign hereditary chorea",
-              "score": 0.3222
+              "id": "ORPHA:254854",
+              "label": "Pure mitochondrial myopathy",
+              "score": 0.3274
             },
             {
-              "id": "ORPHA:371",
-              "label": "Glycogen storage disease due to muscle phosphofructokinase deficiency",
-              "score": 0.2381
+              "id": "ORPHA:610",
+              "label": "Bethlem muscular dystrophy",
+              "score": 0.3254
             },
             {
-              "id": "ORPHA:99944",
-              "label": "Autosomal dominant Charcot-Marie-Tooth disease type 2K",
-              "score": 0.23
+              "id": "ORPHA:26791",
+              "label": "Multiple acyl-CoA dehydrogenase deficiency",
+              "score": 0.3234
             },
             {
-              "id": "ORPHA:71519",
-              "label": "Psychogenic movement disorders",
-              "score": 0.2211
+              "id": "ORPHA:269",
+              "label": "Facioscapulohumeral dystrophy",
+              "score": 0.3212
+            },
+            {
+              "id": "ORPHA:435387",
+              "label": "Autosomal dominant Charcot-Marie-Tooth disease type 2Y",
+              "score": 0.319
+            },
+            {
+              "id": "ORPHA:52430",
+              "label": "Inclusion body myopathy with Paget disease of bone and frontotemporal dementia",
+              "score": 0.3159
+            },
+            {
+              "id": "ORPHA:157973",
+              "label": "Congenital muscular dystrophy due to LMNA mutation",
+              "score": 0.3143
             }
           ]
         }
       }
     ],
     "_pipelineStats": {
-      "totalEntities": 37,
-      "matchedHPO": 19,
-      "unmatchedEntities": 18,
-      "phenopacketFeatures": 17,
-      "negatedFeatures": 1,
+      "totalEntities": 44,
+      "matchedHPO": 16,
+      "unmatchedEntities": 28,
+      "phenopacketFeatures": 16,
+      "negatedFeatures": 0,
       "numericPhenotypes": 0,
-      "ordoCandidates": 5
+      "ordoCandidates": 10
     }
   }
 }

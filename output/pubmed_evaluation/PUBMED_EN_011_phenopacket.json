@@ -4,13 +4,13 @@
     "id": "PUBMED_EN_011"
   },
   "input": "Case Report: A variant of RAG1 gene identified in severe combined immunodeficiency: a case report.\n\nBACKGROUND: The recombination-activating gene 1 (RAG1) protein is essential for the V (variable)-D (diversity)-J (joining) recombination process. Mutations in RAG1 have been reported to be associated with several types of immune disorders. Typical clinical features driven by RAG1 variants include persistent infections, severe lymphopenia, and decreased immunoglobulin levels .\nCASE PRESENTATION: In this study, a 2-month-24-days-old infant with recurrent fever was admitted to our hospital with multiple infections and absence of T and B lymphocytes. The infant was diagnosed with severe combined immunodeficiency (SCID). A homozygous variation c.2147G>A (NM_000448.2: exonme2: c.2147G>A (p.Arg716Gln)) was identified in the RAG1 gene using whole-exome sequencing and Sanger sequencing. The predicted 3D structure of variant RAG1 indicated altered protein stability. Additionally, decreased expression of variant RAG1 gene was detected at both the mRNA and protein levels.\nCONCLUSIONS: Our study identified a novel homozygous variant in RAG1 gene that causes SCID. This finding expands the variant spectrum of RAG1 in SCID and provides further evidence for the clinical diagnosis of SCID.",
-  "target": "Severe combined immunodeficiency",
+  "target": "Omenn syndrome",
   "phenotypicFeatures": [
     {
       "type": {
-        "id": "HP:0012828",
-        "label": "Severe",
-        "umls_cui": "C0205082"
+        "id": "HP:0004430",
+        "label": "Severe combined immunodeficiency",
+        "umls_cui": "C0085110"
       },
       "excluded": false,
       "evidence": [
@@ -21,7 +21,7 @@
           },
           "reference": {
             "id": "PUBMED_EN_011",
-            "description": "NER: severe (0.588) | Match: exact_label (1.000)"
+            "description": "NER: severe combined immunodeficiency (0.997) | Match: exact_label (1.000)"
           }
         }
       ]
@@ -48,26 +48,6 @@
     },
     {
       "type": {
-        "id": "HP:0002719",
-        "label": "Recurrent infections",
-        "umls_cui": "C0239998"
-      },
-      "excluded": false,
-      "evidence": [
-        {
-          "evidenceCode": {
-            "id": "ECO:0000033",
-            "label": "author statement supported by traceable reference"
-          },
-          "reference": {
-            "id": "PUBMED_EN_011",
-            "description": "NER: infections (0.459) | Match: sapbert_similarity (0.777)"
-          }
-        }
-      ]
-    },
-    {
-      "type": {
         "id": "HP:0001888",
         "label": "Decreased total lymphocyte count",
         "umls_cui": "C0024312"
@@ -81,7 +61,47 @@
           },
           "reference": {
             "id": "PUBMED_EN_011",
-            "description": "NER: lymphopenia (0.495) | Match: exact_synonym (1.000)"
+            "description": "NER: severe lymphopenia (0.999) | Match: sapbert_similarity (0.829)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0004313",
+        "label": "Decreased circulating immunoglobulin concentration",
+        "umls_cui": "C0086438"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "PUBMED_EN_011",
+            "description": "NER: decreased immunoglobulin levels (0.989) | Match: sapbert_similarity (0.971)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0001954",
+        "label": "Recurrent fever",
+        "umls_cui": "C0277799"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "PUBMED_EN_011",
+            "description": "NER: recurrent fever (0.988) | Match: exact_label (1.000)"
           }
         }
       ]
@@ -108,9 +128,9 @@
     },
     {
       "type": {
-        "id": "HP:0004430",
-        "label": "Severe combined immunodeficiency",
-        "umls_cui": "C0085110"
+        "id": "HP:0002719",
+        "label": "Recurrent infections",
+        "umls_cui": "C0239998"
       },
       "excluded": false,
       "evidence": [
@@ -121,7 +141,7 @@
           },
           "reference": {
             "id": "PUBMED_EN_011",
-            "description": "NER: severe combined immunodeficiency (0.900) | Match: text_scan_exact_label (0.950)"
+            "description": "NER: multiple infections (0.995) | Match: sapbert_similarity (0.836)"
           }
         }
       ]
@@ -145,70 +165,10 @@
           }
         }
       ]
-    },
-    {
-      "type": {
-        "id": "HP:0001954",
-        "label": "Recurrent fever",
-        "umls_cui": "C0277799"
-      },
-      "excluded": false,
-      "evidence": [
-        {
-          "evidenceCode": {
-            "id": "ECO:0000033",
-            "label": "author statement supported by traceable reference"
-          },
-          "reference": {
-            "id": "PUBMED_EN_011",
-            "description": "NER: recurrent fever (0.900) | Match: text_scan_exact_label (0.950)"
-          }
-        }
-      ]
-    },
-    {
-      "type": {
-        "id": "HP:0003828",
-        "label": "Variable expressivity",
-        "umls_cui": "C1861403"
-      },
-      "excluded": false,
-      "evidence": [
-        {
-          "evidenceCode": {
-            "id": "ECO:0000033",
-            "label": "author statement supported by traceable reference"
-          },
-          "reference": {
-            "id": "PUBMED_EN_011",
-            "description": "NER: variable (0.271) | Match: sapbert_similarity (0.868)"
-          }
-        }
-      ]
-    },
-    {
-      "type": {
-        "id": "HP:0004313",
-        "label": "Decreased circulating immunoglobulin concentration",
-        "umls_cui": "C0086438"
-      },
-      "excluded": false,
-      "evidence": [
-        {
-          "evidenceCode": {
-            "id": "ECO:0000033",
-            "label": "author statement supported by traceable reference"
-          },
-          "reference": {
-            "id": "PUBMED_EN_011",
-            "description": "NER: decreased immunoglobulin (0.432) | Match: sapbert_similarity (0.963)"
-          }
-        }
-      ]
     }
   ],
   "metaData": {
-    "created": "2026-06-11T03:05:20Z",
+    "created": "2026-06-19T15:02:24Z",
     "createdBy": "clinical-preanalysis-pipeline-v2",
     "phenopacketSchemaVersion": "2.0",
     "resources": [
@@ -228,47 +188,72 @@
       "progressStatus": "IN_PROGRESS",
       "diagnosis": {
         "disease": {
-          "id": "ORPHA:183660",
-          "label": "Severe combined immunodeficiency"
+          "id": "ORPHA:39041",
+          "label": "Omenn syndrome"
         },
-        "score": 0.85,
+        "score": 0.5762,
         "allCandidates": [
           {
+            "id": "ORPHA:39041",
+            "label": "Omenn syndrome",
+            "score": 0.5762
+          },
+          {
+            "id": "ORPHA:275",
+            "label": "Severe combined immunodeficiency due to DCLRE1C deficiency",
+            "score": 0.556
+          },
+          {
             "id": "ORPHA:183660",
-            "label": "Severe combined immunodeficiency",
-            "score": 0.85
+            "label": "T-B+ severe combined immunodeficiency due to gamma chain deficiency",
+            "score": 0.5239
+          },
+          {
+            "id": "ORPHA:90362",
+            "label": "Primary intestinal lymphangiectasia",
+            "score": 0.4919
+          },
+          {
+            "id": "ORPHA:508533",
+            "label": "Skeletal dysplasia-T-cell immunodeficiency-developmental delay syndrome",
+            "score": 0.4916
+          },
+          {
+            "id": "ORPHA:538934",
+            "label": "X-linked lymphoproliferative disease due to XIAP deficiency",
+            "score": 0.4845
           },
           {
             "id": "ORPHA:1572",
             "label": "Common variable immunodeficiency",
-            "score": 0.3429
+            "score": 0.4801
           },
           {
-            "id": "ORPHA:47",
-            "label": "X-linked agammaglobulinemia",
-            "score": 0.3123
+            "id": "ORPHA:443811",
+            "label": "PGM3-CDG",
+            "score": 0.4796
           },
           {
-            "id": "ORPHA:100",
-            "label": "Ataxia-telangiectasia",
-            "score": 0.275
+            "id": "ORPHA:33355",
+            "label": "Reticular dysgenesis",
+            "score": 0.4771
           },
           {
-            "id": "ORPHA:319600",
-            "label": "Mendelian susceptibility to mycobacterial diseases due to partial IRF8 deficiency",
-            "score": 0.2333
+            "id": "ORPHA:221139",
+            "label": "Combined immunodeficiency with facio-oculo-skeletal anomalies",
+            "score": 0.4726
           }
         ]
       }
     }
   ],
   "_pipelineStats": {
-    "totalEntities": 24,
-    "matchedHPO": 10,
-    "unmatchedEntities": 14,
-    "phenopacketFeatures": 10,
+    "totalEntities": 40,
+    "matchedHPO": 8,
+    "unmatchedEntities": 32,
+    "phenopacketFeatures": 8,
     "negatedFeatures": 0,
     "numericPhenotypes": 0,
-    "ordoCandidates": 5
+    "ordoCandidates": 10
   }
 }

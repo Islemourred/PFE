@@ -1,0 +1,860 @@
+{
+  "id": "phenopacket-RA_EN_027",
+  "subject": {
+    "id": "RA_EN_027",
+    "sex": "FEMALE"
+  },
+  "input": "A 23-year-old right-handed female presented on December 8, 2021, with chronic bilateral foot arch pain, and paroxysmal diffuse spine and neck pain for nine months. The pain began in March 2021 following a streptococcal throat infection confirmed by a positive strep test. Post-recovery, she experienced sharp pain in her right leg extending to her right shin, later involving her left leg. The pain gradually spread to her entire spine and hips, increasing with movement and ambulation. The pain was described as dull (3/10) and shooting (8/10). She also reported intermittent numbness in both feet and tailbone, worsening fatigue, intermittent dizziness triggered by standing and walking, blurry vision in both eyes, numbness and tingling in her legs, and memory difficulties related to pain. She had no muscle weakness, vertigo, headache, seizure, or other constitutional symptoms. Her medical history included anemia, anxiety, and depression, with no significant surgical history. She had allergies to cat hair, dust mites, and penicillin, and was an active smoker with a 1.25-pack year history over five years. There was no family history of epilepsy. She had a head trauma at age 17 from a fall off a horse, resulting in loss of consciousness. No brain infections or generalized tonic-clonic seizures were reported. On examination, she was alert, oriented, and in mild distress, appearing anxious. Deep tendon reflexes were symmetrical but brisk in both arms and legs. Her natural and tandem gait were unsteady, and heel-walking and toe-walking were difficult. There was tenderness over the paravertebral points of the cervical, thoracic, and lumbar spine, with limited range of motion in the spine. Routine blood tests were normal. X-rays of the cervical spine showed vertebral body heights, disc spaces, and facet joints with a mild reversal of the usual cervical lordosis without spondylolisthesis. X-rays of the thoracic and lumbar spine showed minimal levocurvature of the lumbar spine. On January 23, 2022, she experienced a syncope episode after standing for about 20 minutes while smoking. She developed nausea, ringing in her ears, and dimming vision before losing consciousness for less than a minute. Her face reportedly turned gray before collapsing, but she did not hit her head. Post-episode, she had reduced sensation in her left arm for a few days and paresthesia in all extremities that night. She denied convulsions, tongue biting, and incontinence but reported headaches, nausea, drowsiness, and persistent weakness and numbness. She had difficulty understanding speech immediately after the episode and felt fully recovered after one to two hours. This was an isolated event with no recurrence and no cardiac symptoms. She was referred to a cardiologist and neurologist. An electrocardiogram (EKG), ultrasound (US) duplex carotid artery bilateral, and a routine electroencephalogram (EEG) awake and drowsy were performed. Cardiovascular examination was unremarkable. The EKG suggested possible left atrial enlargement, likely a false positive. The US duplex carotid arteries showed a mean carotid intima-media thickness (CIMT) below the 25th percentile for her age and gender. An echocardiogram (echo) was normal, ruling out structural heart diseases as a cause of syncope.",
+  "target": "Arachnoid cyst",
+  "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0002069",
+        "label": "Bilateral tonic-clonic seizure",
+        "umls_cui": "C0494475"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_027",
+            "description": "NER: generalized tonic - clonic seizures (0.999) | Match: sapbert_similarity (0.943)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0012531",
+        "label": "Pain",
+        "umls_cui": "C0030193"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_027",
+            "description": "NER: pain (0.947) | Match: exact_label (1.000)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0012432",
+        "label": "Chronic fatigue",
+        "umls_cui": "C0518656"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_027",
+            "description": "NER: ning fatigue (0.996) | Match: sapbert_similarity (0.739)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0012378",
+        "label": "Fatigue",
+        "umls_cui": "C0015672"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_027",
+            "description": "NER: fatigue (0.971) | Match: exact_label (1.000)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0002321",
+        "label": "Vertigo",
+        "umls_cui": "C0012833"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_027",
+            "description": "NER: dizziness (0.965) | Match: related_synonym (1.000)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0000622",
+        "label": "Blurred vision",
+        "umls_cui": "C0344232"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_027",
+            "description": "NER: blurry vision (0.928) | Match: sapbert_similarity (0.953)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0003401",
+        "label": "Paresthesia",
+        "umls_cui": "C0030554"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_027",
+            "description": "NER: tingling (0.927) | Match: exact_synonym (1.000)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0002354",
+        "label": "Memory impairment",
+        "umls_cui": "C0233794"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_027",
+            "description": "NER: memory difficulties (0.833) | Match: sapbert_similarity (0.959)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0003701",
+        "label": "Proximal muscle weakness",
+        "umls_cui": "C0221629"
+      },
+      "excluded": true,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_027",
+            "description": "NER: muscle weakness (0.997) | Match: clinical_synonym (1.000) | Negated by: \"no\""
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0001324",
+        "label": "Muscle weakness",
+        "umls_cui": "C0151786"
+      },
+      "excluded": true,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_027",
+            "description": "NER: weakness (0.603) | Match: sapbert_similarity (0.891) | Negated by: \"no\""
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0002315",
+        "label": "Headache",
+        "umls_cui": "C0018681"
+      },
+      "excluded": true,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_027",
+            "description": "NER: headache (0.920) | Match: exact_label (1.000) | Negated by: \"no\""
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0001250",
+        "label": "Seizure",
+        "umls_cui": "C0014544"
+      },
+      "excluded": true,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_027",
+            "description": "NER: seizure (0.859) | Match: exact_label (1.000) | Negated by: \"no\""
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0000740",
+        "label": "Episodic paroxysmal anxiety",
+        "umls_cui": "C1854339"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_027",
+            "description": "NER: emia, anxiety (0.996) | Match: sapbert_similarity (0.765)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0000716",
+        "label": "Depression",
+        "umls_cui": "C0011581"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_027",
+            "description": "NER: depression (0.996) | Match: exact_label (1.000)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0012393",
+        "label": "Allergy",
+        "umls_cui": "C1527304"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_027",
+            "description": "NER: allergies (0.991) | Match: sapbert_similarity (0.960)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0002286",
+        "label": "Fair hair",
+        "umls_cui": "C0239801"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_027",
+            "description": "NER: cat hair (0.820) | Match: sapbert_similarity (0.718)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0002527",
+        "label": "Falls",
+        "umls_cui": "C0085639"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_027",
+            "description": "NER: a fall (0.946) | Match: sapbert_similarity (0.919)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0011450",
+        "label": "Unusual CNS infection",
+        "umls_cui": "C0007684"
+      },
+      "excluded": true,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_027",
+            "description": "NER: brain infections (0.999) | Match: sapbert_similarity (0.858) | Negated by: \"no\""
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0000739",
+        "label": "Anxiety",
+        "umls_cui": "C0003467"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_027",
+            "description": "NER: anxious (0.881) | Match: sapbert_similarity (0.926)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0002317",
+        "label": "Unsteady gait",
+        "umls_cui": "C0231686"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_027",
+            "description": "NER: unsteady (0.969) | Match: sapbert_similarity (0.811)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0003307",
+        "label": "Hyperlordosis",
+        "umls_cui": "C0024003"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_027",
+            "description": "NER: cervical lordosis (0.697) | Match: sapbert_similarity (0.814)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0001279",
+        "label": "Syncope",
+        "umls_cui": "C0039070"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_027",
+            "description": "NER: syncope (0.914) | Match: exact_label (1.000)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0002018",
+        "label": "Nausea",
+        "umls_cui": "C0027497"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_027",
+            "description": "NER: nausea (0.976) | Match: exact_label (1.000)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0000360",
+        "label": "Tinnitus",
+        "umls_cui": "C0040264"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_027",
+            "description": "NER: ringing in her ears (0.992) | Match: sapbert_similarity (0.904)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0012047",
+        "label": "Hemeralopia",
+        "umls_cui": "C0018975"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_027",
+            "description": "NER: dimming vision (0.753) | Match: sapbert_similarity (0.785)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0007328",
+        "label": "Impaired pain sensation",
+        "umls_cui": "C1837522"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_027",
+            "description": "NER: reduced sensation (0.818) | Match: sapbert_similarity (0.863)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0100703",
+        "label": "Tongue thrusting",
+        "umls_cui": "C1829460"
+      },
+      "excluded": true,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_027",
+            "description": "NER: tongue biting (0.667) | Match: sapbert_similarity (0.802) | Negated by: \"denied\""
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0000020",
+        "label": "Urinary incontinence",
+        "umls_cui": "C0042024"
+      },
+      "excluded": true,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_027",
+            "description": "NER: incontinence (0.933) | Match: sapbert_similarity (0.882) | Negated by: \"denied\""
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0002329",
+        "label": "Drowsiness",
+        "umls_cui": "C0013144"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_027",
+            "description": "NER: drowsiness (0.957) | Match: exact_label (1.000)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0002465",
+        "label": "Poor speech",
+        "umls_cui": "C1848207"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_027",
+            "description": "NER: difficulty understanding speech (0.614) | Match: sapbert_similarity (0.829)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0011995",
+        "label": "Atrial septal dilatation",
+        "umls_cui": "C0521533"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_027",
+            "description": "NER: left atrial enlargement (0.998) | Match: sapbert_similarity (0.753)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0012273",
+        "label": "Increased carotid artery intimal medial thickness",
+        "umls_cui": "C4022977"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_027",
+            "description": "NER: a mean carotid intima (0.977) | Match: sapbert_similarity (0.738)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0001627",
+        "label": "Abnormal heart morphology",
+        "umls_cui": "C0018798"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_027",
+            "description": "NER: structural heart diseases (0.999) | Match: sapbert_similarity (0.775)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0001638",
+        "label": "Cardiomyopathy",
+        "umls_cui": "C0878544"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_027",
+            "description": "NER: heart diseases (0.895) | Match: sapbert_similarity (0.766)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0007185",
+        "label": "Loss of consciousness",
+        "umls_cui": "C0041657"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_027",
+            "description": "NER: loss of consciousness (0.900) | Match: text_scan_exact_label (0.950)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0003302",
+        "label": "Spondylolisthesis",
+        "umls_cui": "C0038016"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_027",
+            "description": "NER: spondylolisthesis (0.900) | Match: text_scan_exact_label (0.950)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0012837",
+        "label": "Generalized",
+        "umls_cui": "C0205246"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_027",
+            "description": "NER: generalized (0.900) | Match: text_scan_exact_label (0.950)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0001903",
+        "label": "Anemia",
+        "umls_cui": "C0002871"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_027",
+            "description": "NER: anemia (0.900) | Match: text_scan_exact_label (0.950)"
+          }
+        }
+      ]
+    }
+  ],
+  "metaData": {
+    "created": "2026-06-19T15:12:55Z",
+    "createdBy": "clinical-preanalysis-pipeline-v2",
+    "phenopacketSchemaVersion": "2.0",
+    "resources": [
+      {
+        "id": "hp",
+        "name": "Human Phenotype Ontology",
+        "url": "https://hpo.jax.org",
+        "version": "2024-04-26",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      }
+    ]
+  },
+  "interpretations": [
+    {
+      "id": "interpretation-RA_EN_027",
+      "progressStatus": "IN_PROGRESS",
+      "diagnosis": {
+        "disease": {
+          "id": "ORPHA:2356",
+          "label": "Arachnoid cyst"
+        },
+        "score": 0.4057,
+        "allCandidates": [
+          {
+            "id": "ORPHA:2356",
+            "label": "Arachnoid cyst",
+            "score": 0.4057
+          },
+          {
+            "id": "ORPHA:3385",
+            "label": "African trypanosomiasis",
+            "score": 0.4033
+          },
+          {
+            "id": "ORPHA:297",
+            "label": "Tick-borne encephalitis",
+            "score": 0.3889
+          },
+          {
+            "id": "ORPHA:358",
+            "label": "Gitelman syndrome",
+            "score": 0.3875
+          },
+          {
+            "id": "ORPHA:550",
+            "label": "MELAS",
+            "score": 0.3859
+          },
+          {
+            "id": "ORPHA:74",
+            "label": "Angiostrongyliasis",
+            "score": 0.3637
+          },
+          {
+            "id": "ORPHA:247245",
+            "label": "Superficial siderosis",
+            "score": 0.3597
+          },
+          {
+            "id": "ORPHA:397",
+            "label": "Giant cell arteritis",
+            "score": 0.3526
+          },
+          {
+            "id": "ORPHA:927",
+            "label": "Hyperammonemia due to N-acetylglutamate synthase deficiency",
+            "score": 0.3506
+          },
+          {
+            "id": "ORPHA:533",
+            "label": "Listeriosis",
+            "score": 0.3495
+          }
+        ]
+      }
+    }
+  ],
+  "_pipelineStats": {
+    "totalEntities": 146,
+    "matchedHPO": 38,
+    "unmatchedEntities": 108,
+    "phenopacketFeatures": 38,
+    "negatedFeatures": 7,
+    "numericPhenotypes": 0,
+    "ordoCandidates": 10
+  }
+}

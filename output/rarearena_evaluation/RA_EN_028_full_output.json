@@ -1,0 +1,1586 @@
+{
+  "note_id": "RA_EN_028",
+  "language": "en",
+  "module1": {
+    "clean_text": "A [AGE] African female with no past medical history presented with Raynaud’s phenomenon, fingertip pain and ulcerations, nail fold capillary changes, facial and back rash, skin tightness and depigmentation, joint pain, morning stiffness, and fatigue. Physical examination showed hypopigmented scarring skin lesions on the face and neck and tenderness and swelling of small joints in the hands and wrists. The laboratory results were as follows: antinuclear antibody (ANA) + (1:80, speckled), anti-topoisomerase I (anti-Scl-70) antibody + (4.8 U/mL), cardiolipin IgM + (16 MPL U/mL), and smooth muscle antibody (SMA) + (1:20), and anti-Sjögren’s syndrome-related antigen A (anti-Ro/SSA) antibody −, anti-Sjögren’s syndrome type B (anti-La/SSB) antibody −, antinuclear ribonucleoprotein (anti-RNP) antibody −, anti-double-stranded DNA (anti-ds DNA) antibody −, and anti-Smith antibody −. Flow cytometry and bone marrow biopsy were negative. Steroids, mycophenolate mofetil, and hydroxychloroquine were started. After four days of steroids and immunosuppressants, the patient’s fatigue, joint pain, and fingertip pain improved during the treatment, but she developed a severe thunderclap headache with left lower extremity weakness.",
+    "phi_map": {
+      "AGE": "44-year-old"
+    },
+    "patient_info": {
+      "sex": "female"
+    }
+  },
+  "module3_warnings": {
+    "temporal": [],
+    "inconsistencies": []
+  },
+  "module4": {
+    "problem": [
+      {
+        "text": "raynaud ’ s phenomenon",
+        "ner_score": 0.979,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "raynaud ’ s phenomenon",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "anti -",
+        "ner_score": 0.933,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "anti -",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "sjogren ’ s syndrome",
+        "ner_score": 0.931,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0000872",
+        "hpo_name": "Hashimoto thyroiditis",
+        "expanded_text": "sjogren ’ s syndrome",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.7114,
+        "matched": true,
+        "umls_cui": "C0677607"
+      },
+      {
+        "text": "anti - sjogren ’ s syndrome",
+        "ner_score": 0.949,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "anti - sjogren ’ s syndrome",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "Raynaud’s phenomenon, fingertip pain and ulcera",
+        "ner_score": 0.998,
+        "negated": true,
+        "negation_cue": "no",
+        "hpo_id": "HP:0012276",
+        "hpo_name": "Digital flexor tenosynovitis",
+        "expanded_text": "Raynaud’s phenomenon, fingertip pain and ulcera",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.7221,
+        "matched": true,
+        "umls_cui": "C4022974"
+      },
+      {
+        "text": "tions, nail fold capillary changes",
+        "ner_score": 0.996,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0001232",
+        "hpo_name": "Nail bed telangiectasia",
+        "expanded_text": "tions, nail fold capillary changes",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.7661,
+        "matched": true,
+        "umls_cui": "C1838167"
+      },
+      {
+        "text": "facial and back rash",
+        "ner_score": 0.995,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "facial and back rash",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "rash",
+        "ner_score": 0.969,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0000988",
+        "hpo_name": "Skin rash",
+        "expanded_text": "rash",
+        "match_type": "clinical_synonym",
+        "confidence": 1.0,
+        "matched": true,
+        "umls_cui": "C0015230"
+      },
+      {
+        "text": "skin tightness",
+        "ner_score": 0.998,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0000974",
+        "hpo_name": "Hyperextensible skin",
+        "expanded_text": "skin tightness",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.8098,
+        "matched": true,
+        "umls_cui": "C0241074"
+      },
+      {
+        "text": "tightness",
+        "ner_score": 0.663,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "tightness",
+        "match_type": "sapbert_rejected_low_conf",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "depigmentation",
+        "ner_score": 0.967,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0001010",
+        "hpo_name": "Hypopigmentation of the skin",
+        "expanded_text": "depigmentation",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.8882,
+        "matched": true,
+        "umls_cui": "C0162835"
+      },
+      {
+        "text": "joint pain",
+        "ner_score": 0.998,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0002829",
+        "hpo_name": "Arthralgia",
+        "expanded_text": "joint pain",
+        "match_type": "exact_synonym",
+        "confidence": 1.0,
+        "matched": true,
+        "umls_cui": "C0003862"
+      },
+      {
+        "text": "morning stiffness",
+        "ner_score": 0.997,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0005197",
+        "hpo_name": "Generalized morning stiffness",
+        "expanded_text": "morning stiffness",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.9173,
+        "matched": true,
+        "umls_cui": "C4025238"
+      },
+      {
+        "text": "stiffness",
+        "ner_score": 0.751,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0003552",
+        "hpo_name": "Muscle stiffness",
+        "expanded_text": "stiffness",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.8673,
+        "matched": true,
+        "umls_cui": "C0221170"
+      },
+      {
+        "text": "fatigue",
+        "ner_score": 0.977,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0012378",
+        "hpo_name": "Fatigue",
+        "expanded_text": "fatigue",
+        "match_type": "exact_label",
+        "confidence": 1.0,
+        "matched": true,
+        "umls_cui": "C0015672"
+      },
+      {
+        "text": "hypopigmented scarring skin lesions on the face and neck",
+        "ner_score": 0.981,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "hypopigmented scarring skin lesions on the face and neck",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "lesions",
+        "ner_score": 0.965,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "lesions",
+        "match_type": "sapbert_rejected_low_conf",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "tenderness",
+        "ner_score": 0.979,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "tenderness",
+        "match_type": "sapbert_rejected_low_conf",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "swelling",
+        "ner_score": 0.969,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0000969",
+        "hpo_name": "Edema",
+        "expanded_text": "swelling",
+        "match_type": "clinical_synonym",
+        "confidence": 1.0,
+        "matched": true,
+        "umls_cui": "C0013604"
+      },
+      {
+        "text": "swelling of small joints in the hands and wrists",
+        "ner_score": 0.998,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0006162",
+        "hpo_name": "Soft tissue swelling of interphalangeal joints",
+        "expanded_text": "swelling of small joints in the hands and wrists",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.7085,
+        "matched": true,
+        "umls_cui": "C1854913"
+      },
+      {
+        "text": "the patient",
+        "ner_score": 0.86,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "the patient",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "s fatigue",
+        "ner_score": 0.939,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0012432",
+        "hpo_name": "Chronic fatigue",
+        "expanded_text": "s fatigue",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.8356,
+        "matched": true,
+        "umls_cui": "C0518656"
+      },
+      {
+        "text": "a severe thunderclap headache",
+        "ner_score": 0.998,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0012459",
+        "hpo_name": "Hypnic headache",
+        "expanded_text": "a severe thunderclap headache",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.7099,
+        "matched": true,
+        "umls_cui": "C0752150"
+      },
+      {
+        "text": "headache",
+        "ner_score": 0.966,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0002315",
+        "hpo_name": "Headache",
+        "expanded_text": "headache",
+        "match_type": "exact_label",
+        "confidence": 1.0,
+        "matched": true,
+        "umls_cui": "C0018681"
+      },
+      {
+        "text": "left lower extremity weakness",
+        "ner_score": 0.999,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0007340",
+        "hpo_name": "Lower limb muscle weakness",
+        "expanded_text": "left lower extremity weakness",
+        "match_type": "substring_match",
+        "confidence": 0.95,
+        "matched": true,
+        "umls_cui": "C0427068"
+      },
+      {
+        "text": "weakness",
+        "ner_score": 0.972,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0001324",
+        "hpo_name": "Muscle weakness",
+        "expanded_text": "weakness",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.891,
+        "matched": true,
+        "umls_cui": "C0151786"
+      },
+      {
+        "text": "scarring",
+        "ner_score": 0.9,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0001075",
+        "hpo_name": "Atrophic scars",
+        "expanded_text": "scarring",
+        "match_type": "text_scan_clinical_synonym",
+        "confidence": 0.95,
+        "matched": true,
+        "umls_cui": "C0162154",
+        "umls_all": [
+          "C0162154"
+        ]
+      }
+    ],
+    "test": [
+      {
+        "text": "ana )",
+        "ner_score": 0.826,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "ana )",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "anti -",
+        "ner_score": 0.704,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "anti -",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "anti - ro",
+        "ner_score": 0.421,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "anti - ro",
+        "match_type": "skipped_low_ner_score",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "ssa ) antibody",
+        "ner_score": 0.643,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "ssa ) antibody",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "b ) antibody",
+        "ner_score": 0.619,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "b ) antibody",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "antinuclear ribonucleoprotein ( anti - rnp ) antibody",
+        "ner_score": 0.91,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "antinuclear ribonucleoprotein ( anti - rnp ) antibody",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "anti - double - stranded dna ( anti - ds dna ) antibody",
+        "ner_score": 0.742,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "anti - double - stranded dna ( anti - ds dna ) antibody",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "anti - smith antibody",
+        "ner_score": 0.794,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "anti - smith antibody",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "Physical",
+        "ner_score": 0.993,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "Physical",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "physical examination",
+        "ner_score": 0.994,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "physical examination",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "examination",
+        "ner_score": 0.993,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "examination",
+        "match_type": "skipped_en_noise",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "laboratory",
+        "ner_score": 0.927,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "laboratory",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "results",
+        "ner_score": 0.677,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "results",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "antinuclear antibody",
+        "ner_score": 0.995,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "antinuclear antibody",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "topoisomerase",
+        "ner_score": 0.597,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "topoisomerase",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "isomer",
+        "ner_score": 0.993,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "isomer",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "cardio",
+        "ner_score": 0.985,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "cardio",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "iolipin igm",
+        "ner_score": 0.831,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "iolipin igm",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "smooth muscle antibody",
+        "ner_score": 0.979,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "smooth muscle antibody",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "muscle",
+        "ner_score": 0.993,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "muscle",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "syndrome",
+        "ner_score": 0.462,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "syndrome",
+        "match_type": "skipped_en_noise",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "related",
+        "ner_score": 0.559,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "related",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "antigen",
+        "ner_score": 0.821,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "antigen",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "antibody −",
+        "ner_score": 0.49,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "antibody −",
+        "match_type": "skipped_low_ner_score",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "nucleo",
+        "ner_score": 0.991,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "nucleo",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "protein",
+        "ner_score": 0.991,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "protein",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "double",
+        "ner_score": 0.975,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "double",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "stranded",
+        "ner_score": 0.984,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "stranded",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "flow cytometry",
+        "ner_score": 0.991,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "flow cytometry",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "cytometry",
+        "ner_score": 0.984,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "cytometry",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "bone marrow biopsy",
+        "ner_score": 0.997,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "bone marrow biopsy",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "biopsy",
+        "ner_score": 0.931,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "biopsy",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "negative",
+        "ner_score": 0.945,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "negative",
+        "match_type": "skipped_en_noise",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      }
+    ],
+    "treatment": [
+      {
+        "text": "Steroids",
+        "ner_score": 0.971,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "Steroids",
+        "match_type": "skipped_treatment",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "roids",
+        "ner_score": 0.997,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "roids",
+        "match_type": "skipped_treatment",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "mycophenolate mofetil",
+        "ner_score": 0.981,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "mycophenolate mofetil",
+        "match_type": "skipped_treatment",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "phenol",
+        "ner_score": 0.981,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "phenol",
+        "match_type": "skipped_treatment",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "hydroxy",
+        "ner_score": 0.976,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "hydroxy",
+        "match_type": "skipped_treatment",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "hydroxychloroquine",
+        "ner_score": 0.994,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "hydroxychloroquine",
+        "match_type": "skipped_treatment",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "chloro",
+        "ner_score": 0.979,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "chloro",
+        "match_type": "skipped_treatment",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "quine",
+        "ner_score": 0.981,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "quine",
+        "match_type": "skipped_treatment",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "immunosuppressant",
+        "ner_score": 0.965,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "immunosuppressant",
+        "match_type": "skipped_treatment",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "munosuppressants",
+        "ner_score": 0.981,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "munosuppressants",
+        "match_type": "skipped_treatment",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "the treatment",
+        "ner_score": 0.986,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "the treatment",
+        "match_type": "skipped_treatment",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      }
+    ],
+    "ordo_candidates": [
+      {
+        "ordo_id": "ORPHA:287",
+        "name": "Classical Ehlers-Danlos syndrome",
+        "name_fr": "",
+        "score": 0.397,
+        "coverage": 0.0909,
+        "matched_hpo": [
+          "HP:0000974",
+          "HP:0001075",
+          "HP:0001324",
+          "HP:0002315",
+          "HP:0002829",
+          "HP:0012378"
+        ],
+        "matched_count": 6,
+        "total_disease_hpo": 66,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:90291",
+        "name": "Systemic sclerosis",
+        "name_fr": "",
+        "score": 0.3681,
+        "coverage": 0.0349,
+        "matched_hpo": [
+          "HP:0001232",
+          "HP:0001324",
+          "HP:0002829"
+        ],
+        "matched_count": 3,
+        "total_disease_hpo": 86,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:536",
+        "name": "Systemic lupus erythematosus",
+        "name_fr": "",
+        "score": 0.3523,
+        "coverage": 0.0471,
+        "matched_hpo": [
+          "HP:0000988",
+          "HP:0002829",
+          "HP:0005197",
+          "HP:0012378"
+        ],
+        "matched_count": 4,
+        "total_disease_hpo": 85,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:809",
+        "name": "Mixed connective tissue disease",
+        "name_fr": "",
+        "score": 0.3494,
+        "coverage": 0.0588,
+        "matched_hpo": [
+          "HP:0000988",
+          "HP:0002315",
+          "HP:0002829",
+          "HP:0012378"
+        ],
+        "matched_count": 4,
+        "total_disease_hpo": 68,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:781",
+        "name": "Q fever",
+        "name_fr": "",
+        "score": 0.3461,
+        "coverage": 0.0806,
+        "matched_hpo": [
+          "HP:0000988",
+          "HP:0001324",
+          "HP:0002315",
+          "HP:0002829",
+          "HP:0012378"
+        ],
+        "matched_count": 5,
+        "total_disease_hpo": 62,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:221",
+        "name": "Dermatomyositis",
+        "name_fr": "",
+        "score": 0.3451,
+        "coverage": 0.0519,
+        "matched_hpo": [
+          "HP:0000969",
+          "HP:0000988",
+          "HP:0002829",
+          "HP:0012378"
+        ],
+        "matched_count": 4,
+        "total_disease_hpo": 77,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:707",
+        "name": "Plague",
+        "name_fr": "",
+        "score": 0.3423,
+        "coverage": 0.1091,
+        "matched_hpo": [
+          "HP:0000969",
+          "HP:0000988",
+          "HP:0001324",
+          "HP:0002315",
+          "HP:0002829",
+          "HP:0012378"
+        ],
+        "matched_count": 6,
+        "total_disease_hpo": 55,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:91355",
+        "name": "Sheehan syndrome",
+        "name_fr": "",
+        "score": 0.3403,
+        "coverage": 0.102,
+        "matched_hpo": [
+          "HP:0000872",
+          "HP:0001324",
+          "HP:0002315",
+          "HP:0002829",
+          "HP:0012432"
+        ],
+        "matched_count": 5,
+        "total_disease_hpo": 49,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:81",
+        "name": "Antisynthetase syndrome",
+        "name_fr": "",
+        "score": 0.3291,
+        "coverage": 0.0909,
+        "matched_hpo": [
+          "HP:0000969",
+          "HP:0000988",
+          "HP:0001324",
+          "HP:0002829"
+        ],
+        "matched_count": 4,
+        "total_disease_hpo": 44,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:324625",
+        "name": "Chikungunya",
+        "name_fr": "",
+        "score": 0.3286,
+        "coverage": 0.0784,
+        "matched_hpo": [
+          "HP:0000988",
+          "HP:0002315",
+          "HP:0002829",
+          "HP:0012378"
+        ],
+        "matched_count": 4,
+        "total_disease_hpo": 51,
+        "text_match": false
+      }
+    ],
+    "stats": {
+      "total": 71,
+      "matched": 18,
+      "unmatched": 53,
+      "match_rate": 25.4,
+      "unique_hpo": 18,
+      "ordo_matches": 10
+    }
+  },
+  "phenopacket": {
+    "id": "phenopacket-RA_EN_028",
+    "subject": {
+      "id": "RA_EN_028",
+      "sex": "FEMALE"
+    },
+    "input": "A 44-year-old African female with no past medical history presented with Raynaud’s phenomenon, fingertip pain and ulcerations, nail fold capillary changes, facial and back rash, skin tightness and depigmentation, joint pain, morning stiffness, and fatigue. Physical examination showed hypopigmented scarring skin lesions on the face and neck and tenderness and swelling of small joints in the hands and wrists. The laboratory results were as follows: antinuclear antibody (ANA) + (1:80, speckled), anti-topoisomerase I (anti-Scl-70) antibody + (4.8 U/mL), cardiolipin IgM + (16 MPL U/mL), and smooth muscle antibody (SMA) + (1:20), and anti-Sjögren’s syndrome-related antigen A (anti-Ro/SSA) antibody −, anti-Sjögren’s syndrome type B (anti-La/SSB) antibody −, antinuclear ribonucleoprotein (anti-RNP) antibody −, anti-double-stranded DNA (anti-ds DNA) antibody −, and anti-Smith antibody −. Flow cytometry and bone marrow biopsy were negative. Steroids, mycophenolate mofetil, and hydroxychloroquine were started. After four days of steroids and immunosuppressants, the patient’s fatigue, joint pain, and fingertip pain improved during the treatment, but she developed a severe thunderclap headache with left lower extremity weakness.",
+    "target": "Classical Ehlers-Danlos syndrome",
+    "phenotypicFeatures": [
+      {
+        "type": {
+          "id": "HP:0000872",
+          "label": "Hashimoto thyroiditis",
+          "umls_cui": "C0677607"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_028",
+              "description": "NER: sjogren ’ s syndrome (0.931) | Match: sapbert_similarity (0.711)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0012276",
+          "label": "Digital flexor tenosynovitis",
+          "umls_cui": "C4022974"
+        },
+        "excluded": true,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_028",
+              "description": "NER: Raynaud’s phenomenon, fingertip pain and ulcera (0.998) | Match: sapbert_similarity (0.722) | Negated by: \"no\""
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0001232",
+          "label": "Nail bed telangiectasia",
+          "umls_cui": "C1838167"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_028",
+              "description": "NER: tions, nail fold capillary changes (0.996) | Match: sapbert_similarity (0.766)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0000988",
+          "label": "Skin rash",
+          "umls_cui": "C0015230"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_028",
+              "description": "NER: rash (0.969) | Match: clinical_synonym (1.000)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0000974",
+          "label": "Hyperextensible skin",
+          "umls_cui": "C0241074"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_028",
+              "description": "NER: skin tightness (0.998) | Match: sapbert_similarity (0.810)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0001010",
+          "label": "Hypopigmentation of the skin",
+          "umls_cui": "C0162835"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_028",
+              "description": "NER: depigmentation (0.967) | Match: sapbert_similarity (0.888)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0002829",
+          "label": "Arthralgia",
+          "umls_cui": "C0003862"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_028",
+              "description": "NER: joint pain (0.998) | Match: exact_synonym (1.000)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0005197",
+          "label": "Generalized morning stiffness",
+          "umls_cui": "C4025238"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_028",
+              "description": "NER: morning stiffness (0.997) | Match: sapbert_similarity (0.917)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0003552",
+          "label": "Muscle stiffness",
+          "umls_cui": "C0221170"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_028",
+              "description": "NER: stiffness (0.751) | Match: sapbert_similarity (0.867)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0012378",
+          "label": "Fatigue",
+          "umls_cui": "C0015672"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_028",
+              "description": "NER: fatigue (0.977) | Match: exact_label (1.000)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0000969",
+          "label": "Edema",
+          "umls_cui": "C0013604"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_028",
+              "description": "NER: swelling (0.969) | Match: clinical_synonym (1.000)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0006162",
+          "label": "Soft tissue swelling of interphalangeal joints",
+          "umls_cui": "C1854913"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_028",
+              "description": "NER: swelling of small joints in the hands and wrists (0.998) | Match: sapbert_similarity (0.709)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0012432",
+          "label": "Chronic fatigue",
+          "umls_cui": "C0518656"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_028",
+              "description": "NER: s fatigue (0.939) | Match: sapbert_similarity (0.836)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0012459",
+          "label": "Hypnic headache",
+          "umls_cui": "C0752150"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_028",
+              "description": "NER: a severe thunderclap headache (0.998) | Match: sapbert_similarity (0.710)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0002315",
+          "label": "Headache",
+          "umls_cui": "C0018681"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_028",
+              "description": "NER: headache (0.966) | Match: exact_label (1.000)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0007340",
+          "label": "Lower limb muscle weakness",
+          "umls_cui": "C0427068"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_028",
+              "description": "NER: left lower extremity weakness (0.999) | Match: substring_match (0.950)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0001324",
+          "label": "Muscle weakness",
+          "umls_cui": "C0151786"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_028",
+              "description": "NER: weakness (0.972) | Match: sapbert_similarity (0.891)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0001075",
+          "label": "Atrophic scars",
+          "umls_cui": "C0162154"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_028",
+              "description": "NER: scarring (0.900) | Match: text_scan_clinical_synonym (0.950)"
+            }
+          }
+        ]
+      }
+    ],
+    "metaData": {
+      "created": "2026-06-19T15:13:06Z",
+      "createdBy": "clinical-preanalysis-pipeline-v2",
+      "phenopacketSchemaVersion": "2.0",
+      "resources": [
+        {
+          "id": "hp",
+          "name": "Human Phenotype Ontology",
+          "url": "https://hpo.jax.org",
+          "version": "2024-04-26",
+          "namespacePrefix": "HP",
+          "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        }
+      ]
+    },
+    "interpretations": [
+      {
+        "id": "interpretation-RA_EN_028",
+        "progressStatus": "IN_PROGRESS",
+        "diagnosis": {
+          "disease": {
+            "id": "ORPHA:287",
+            "label": "Classical Ehlers-Danlos syndrome"
+          },
+          "score": 0.397,
+          "allCandidates": [
+            {
+              "id": "ORPHA:287",
+              "label": "Classical Ehlers-Danlos syndrome",
+              "score": 0.397
+            },
+            {
+              "id": "ORPHA:90291",
+              "label": "Systemic sclerosis",
+              "score": 0.3681
+            },
+            {
+              "id": "ORPHA:536",
+              "label": "Systemic lupus erythematosus",
+              "score": 0.3523
+            },
+            {
+              "id": "ORPHA:809",
+              "label": "Mixed connective tissue disease",
+              "score": 0.3494
+            },
+            {
+              "id": "ORPHA:781",
+              "label": "Q fever",
+              "score": 0.3461
+            },
+            {
+              "id": "ORPHA:221",
+              "label": "Dermatomyositis",
+              "score": 0.3451
+            },
+            {
+              "id": "ORPHA:707",
+              "label": "Plague",
+              "score": 0.3423
+            },
+            {
+              "id": "ORPHA:91355",
+              "label": "Sheehan syndrome",
+              "score": 0.3403
+            },
+            {
+              "id": "ORPHA:81",
+              "label": "Antisynthetase syndrome",
+              "score": 0.3291
+            },
+            {
+              "id": "ORPHA:324625",
+              "label": "Chikungunya",
+              "score": 0.3286
+            }
+          ]
+        }
+      }
+    ],
+    "_pipelineStats": {
+      "totalEntities": 71,
+      "matchedHPO": 18,
+      "unmatchedEntities": 53,
+      "phenopacketFeatures": 18,
+      "negatedFeatures": 1,
+      "numericPhenotypes": 0,
+      "ordoCandidates": 10
+    }
+  }
+}

@@ -20,6 +20,58 @@
   "module4": {
     "problem": [
       {
+        "text": "x - linked agammaglobulinemia",
+        "ner_score": 0.996,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "x - linked agammaglobulinemia",
+        "match_type": "deduplicated",
+        "confidence": 0.8891,
+        "matched": false,
+        "umls_cui": "C0001768"
+      },
+      {
+        "text": "' s tyros",
+        "ner_score": 0.556,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "' s tyros",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "kinase ( btk",
+        "ner_score": 0.581,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "kinase ( btk",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "streptococcal pneumonia meningitis",
+        "ner_score": 0.991,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "streptococcal pneumonia meningitis",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
         "text": "ococcal",
         "ner_score": 0.908,
         "negated": false,
@@ -72,6 +124,19 @@
         "umls_cui": "C0001768"
       },
       {
+        "text": "a primary immunodeficiency",
+        "ner_score": 0.986,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0005363",
+        "hpo_name": "Humoral immunodeficiency",
+        "expanded_text": "a primary immunodeficiency",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.8218,
+        "matched": true,
+        "umls_cui": "C4025206"
+      },
+      {
         "text": "immunodeficiency",
         "ner_score": 0.653,
         "negated": false,
@@ -92,6 +157,19 @@
         "hpo_id": null,
         "hpo_name": null,
         "expanded_text": "mutations",
+        "match_type": "skipped_low_ner_score",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "mutations in the gene",
+        "ner_score": 0.917,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "mutations in the gene",
         "match_type": "no_match",
         "confidence": 0.0,
         "matched": false,
@@ -105,7 +183,7 @@
         "hpo_id": null,
         "hpo_name": null,
         "expanded_text": "Bruton",
-        "match_type": "no_match",
+        "match_type": "skipped_low_ner_score",
         "confidence": 0.0,
         "matched": false,
         "umls_cui": null
@@ -118,10 +196,23 @@
         "hpo_id": null,
         "hpo_name": null,
         "expanded_text": "s tyrosine kinase",
-        "match_type": "no_match",
+        "match_type": "skipped_low_ner_score",
         "confidence": 0.0,
         "matched": false,
         "umls_cui": null
+      },
+      {
+        "text": "urrent bacterial infections",
+        "ner_score": 0.948,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0012461",
+        "hpo_name": "Bacteriuria",
+        "expanded_text": "urrent bacterial infections",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.7955,
+        "matched": true,
+        "umls_cui": "C0004659"
       },
       {
         "text": "bacterial infections",
@@ -135,6 +226,32 @@
         "confidence": 0.7433,
         "matched": true,
         "umls_cui": "C0036690"
+      },
+      {
+        "text": "worse",
+        "ner_score": 0.997,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "worse",
+        "match_type": "sapbert_rejected_low_conf",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "ning rash",
+        "ner_score": 0.944,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "ning rash",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
       },
       {
         "text": "rash",
@@ -163,6 +280,45 @@
         "umls_cui": "C0015967"
       },
       {
+        "text": "an underlying immunodeficiency",
+        "ner_score": 0.998,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "an underlying immunodeficiency",
+        "match_type": "deduplicated",
+        "confidence": 0.8732,
+        "matched": false,
+        "umls_cui": "C0021051"
+      },
+      {
+        "text": "bacterial meningitis",
+        "ner_score": 0.998,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "bacterial meningitis",
+        "match_type": "deduplicated",
+        "confidence": 0.9155,
+        "matched": false,
+        "umls_cui": "C0025289"
+      },
+      {
+        "text": "any underlying immunodeficiency",
+        "ner_score": 0.963,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "any underlying immunodeficiency",
+        "match_type": "deduplicated",
+        "confidence": 0.8549,
+        "matched": false,
+        "umls_cui": "C0021051"
+      },
+      {
         "text": "pneumococcal",
         "ner_score": 0.269,
         "negated": false,
@@ -170,6 +326,45 @@
         "hpo_id": null,
         "hpo_name": null,
         "expanded_text": "pneumococcal",
+        "match_type": "skipped_low_ner_score",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "pneumococcal meningitis",
+        "ner_score": 0.996,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "pneumococcal meningitis",
+        "match_type": "deduplicated",
+        "confidence": 0.7292,
+        "matched": false,
+        "umls_cui": "C0025289"
+      },
+      {
+        "text": "clinical manifestation",
+        "ner_score": 0.573,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "clinical manifestation",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "this disease",
+        "ner_score": 0.996,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "this disease",
         "match_type": "no_match",
         "confidence": 0.0,
         "matched": false,
@@ -210,59 +405,162 @@
         ]
       }
     ],
+    "test": [
+      {
+        "text": "prompt workup",
+        "ner_score": 0.844,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "prompt workup",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "thorough chart review",
+        "ner_score": 0.971,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "thorough chart review",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      }
+    ],
+    "treatment": [
+      {
+        "text": "treatment",
+        "ner_score": 0.959,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "treatment",
+        "match_type": "skipped_en_noise",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      }
+    ],
     "ordo_candidates": [
       {
-        "ordo_id": "ORPHA:70592",
-        "name": "Transient predisposition to invasive pyogenic bacterial infection",
+        "ordo_id": "ORPHA:47",
+        "name": "X-linked agammaglobulinemia",
         "name_fr": "",
-        "score": 0.3495,
-        "jaccard": 0.2308,
-        "coverage": 0.4286,
-        "matched_hpo": [
-          "HP:0001945",
-          "HP:0002718",
-          "HP:0002721"
-        ],
-        "matched_count": 3,
-        "total_disease_hpo": 7
-      },
-      {
-        "ordo_id": "ORPHA:2314",
-        "name": "Hyper-IgE syndrome",
-        "name_fr": "Syndrome d'Hyper-IgE (syndrome de Job)",
-        "score": 0.3107,
-        "jaccard": 0.2143,
-        "coverage": 0.375,
+        "score": 0.6364,
+        "coverage": 0.1714,
         "matched_hpo": [
           "HP:0000988",
+          "HP:0001287",
           "HP:0001945",
+          "HP:0002721",
+          "HP:0004432",
           "HP:0100806"
         ],
-        "matched_count": 3,
-        "total_disease_hpo": 8
+        "matched_count": 6,
+        "total_disease_hpo": 35,
+        "text_match": true
       },
       {
-        "ordo_id": "ORPHA:464370",
-        "name": "Neonatal alloimmune neutropenia",
+        "ordo_id": "ORPHA:39041",
+        "name": "Omenn syndrome",
         "name_fr": "",
-        "score": 0.2941,
-        "jaccard": 0.2353,
-        "coverage": 0.3333,
+        "score": 0.5932,
+        "coverage": 0.0879,
         "matched_hpo": [
+          "HP:0000988",
           "HP:0001287",
           "HP:0001945",
           "HP:0002090",
+          "HP:0002718",
+          "HP:0002721",
+          "HP:0004432",
+          "HP:0100806"
+        ],
+        "matched_count": 8,
+        "total_disease_hpo": 91,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:33110",
+        "name": "Autosomal non-syndromic agammaglobulinemia",
+        "name_fr": "",
+        "score": 0.4868,
+        "coverage": 0.2069,
+        "matched_hpo": [
+          "HP:0000988",
+          "HP:0001287",
+          "HP:0001945",
+          "HP:0002721",
+          "HP:0004432",
+          "HP:0100806"
+        ],
+        "matched_count": 6,
+        "total_disease_hpo": 29,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:906",
+        "name": "Wiskott-Aldrich syndrome",
+        "name_fr": "",
+        "score": 0.4733,
+        "coverage": 0.0526,
+        "matched_hpo": [
+          "HP:0000988",
+          "HP:0001287",
+          "HP:0001945",
+          "HP:0002721",
+          "HP:0100806"
+        ],
+        "matched_count": 5,
+        "total_disease_hpo": 95,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:229717",
+        "name": "Non-syndromic agammaglobulinemia",
+        "name_fr": "",
+        "score": 0.4608,
+        "coverage": 0.2143,
+        "matched_hpo": [
+          "HP:0000988",
+          "HP:0001287",
+          "HP:0001945",
+          "HP:0002090",
+          "HP:0002721",
+          "HP:0100806"
+        ],
+        "matched_count": 6,
+        "total_disease_hpo": 28,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:83471",
+        "name": "T-cell immunodeficiency with thymic aplasia",
+        "name_fr": "",
+        "score": 0.4499,
+        "coverage": 0.1111,
+        "matched_hpo": [
+          "HP:0001287",
+          "HP:0002090",
+          "HP:0002718",
           "HP:0100806"
         ],
         "matched_count": 4,
-        "total_disease_hpo": 12
+        "total_disease_hpo": 36,
+        "text_match": false
       },
       {
         "ordo_id": "ORPHA:169090",
         "name": "Combined immunodeficiency due to CRAC channel dysfunction",
         "name_fr": "",
-        "score": 0.2488,
-        "jaccard": 0.2308,
+        "score": 0.4496,
         "coverage": 0.2609,
         "matched_hpo": [
           "HP:0001287",
@@ -273,29 +571,68 @@
           "HP:0100806"
         ],
         "matched_count": 6,
-        "total_disease_hpo": 23
+        "total_disease_hpo": 23,
+        "text_match": false
       },
       {
-        "ordo_id": "ORPHA:86788",
-        "name": "X-linked severe congenital neutropenia",
+        "ordo_id": "ORPHA:533",
+        "name": "Listeriosis",
         "name_fr": "",
-        "score": 0.2364,
-        "jaccard": 0.0909,
-        "coverage": 0.3333,
+        "score": 0.4374,
+        "coverage": 0.0735,
         "matched_hpo": [
-          "HP:0002718"
+          "HP:0001287",
+          "HP:0001945",
+          "HP:0002090",
+          "HP:0002721",
+          "HP:0100806"
         ],
-        "matched_count": 1,
-        "total_disease_hpo": 3
+        "matched_count": 5,
+        "total_disease_hpo": 68,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:167",
+        "name": "Chédiak-Higashi syndrome",
+        "name_fr": "",
+        "score": 0.4355,
+        "coverage": 0.0562,
+        "matched_hpo": [
+          "HP:0000988",
+          "HP:0001945",
+          "HP:0002090",
+          "HP:0002718",
+          "HP:0002721"
+        ],
+        "matched_count": 5,
+        "total_disease_hpo": 89,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:31204",
+        "name": "Nocardiosis",
+        "name_fr": "",
+        "score": 0.4219,
+        "coverage": 0.0962,
+        "matched_hpo": [
+          "HP:0001287",
+          "HP:0001945",
+          "HP:0002090",
+          "HP:0002721",
+          "HP:0100806"
+        ],
+        "matched_count": 5,
+        "total_disease_hpo": 52,
+        "text_match": false
       }
     ],
     "stats": {
-      "total": 14,
-      "matched": 9,
-      "unmatched": 5,
-      "match_rate": 64.3,
-      "unique_hpo": 9,
-      "ordo_matches": 5
+      "total": 32,
+      "matched": 11,
+      "unmatched": 21,
+      "match_rate": 34.4,
+      "unique_hpo": 11,
+      "ordo_matches": 10
     }
   },
   "phenopacket": {
@@ -305,7 +642,7 @@
       "sex": "MALE"
     },
     "input": "Case Report: Streptococcal pneumonia meningitis as an initial presentation of X-linked agammaglobulinemia: A case report and discussion.\n\nX-linked agammaglobulinemia (XLA) is a primary immunodeficiency caused by mutations in the gene for Bruton's tyrosine kinase (Btk), with affected males most commonly presenting with recurrent bacterial infections during the first few years of life. Here we present a 17-month-old male with a chief complaint of worsening rash and fever, whose history of streptococcal pneumonia meningitis at 5 months of age prompted suspicion for an underlying immunodeficiency and subsequent diagnosis of XLA. Bacterial meningitis is a rare initial presentation of XLA, and therefore physicians may easily overlook any underlying immunodeficiency. Prompt workup for immunodeficiency should be initiated in any vaccinated patient with a history of pneumococcal meningitis outside of the newborn period. Further discussion surrounding the various presentations of XLA, their related clinical manifestations and laboratory findings, and the importance of thorough chart review may encourage earlier diagnosis and initiation of treatment of this disease.",
-    "target": "Transient predisposition to invasive pyogenic bacterial infection",
+    "target": "X-linked agammaglobulinemia",
     "phenotypicFeatures": [
       {
         "type": {
@@ -369,6 +706,26 @@
       },
       {
         "type": {
+          "id": "HP:0005363",
+          "label": "Humoral immunodeficiency",
+          "umls_cui": "C4025206"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "PUBMED_EN_009",
+              "description": "NER: a primary immunodeficiency (0.986) | Match: sapbert_similarity (0.822)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
           "id": "HP:0002721",
           "label": "Immunodeficiency",
           "umls_cui": "C0021051"
@@ -383,6 +740,26 @@
             "reference": {
               "id": "PUBMED_EN_009",
               "description": "NER: immunodeficiency (0.653) | Match: clinical_synonym (1.000)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0012461",
+          "label": "Bacteriuria",
+          "umls_cui": "C0004659"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "PUBMED_EN_009",
+              "description": "NER: urrent bacterial infections (0.948) | Match: sapbert_similarity (0.795)"
             }
           }
         ]
@@ -489,7 +866,7 @@
       }
     ],
     "metaData": {
-      "created": "2026-06-11T03:05:06Z",
+      "created": "2026-06-19T15:02:07Z",
       "createdBy": "clinical-preanalysis-pipeline-v2",
       "phenopacketSchemaVersion": "2.0",
       "resources": [
@@ -509,48 +886,73 @@
         "progressStatus": "IN_PROGRESS",
         "diagnosis": {
           "disease": {
-            "id": "ORPHA:70592",
-            "label": "Transient predisposition to invasive pyogenic bacterial infection"
+            "id": "ORPHA:47",
+            "label": "X-linked agammaglobulinemia"
           },
-          "score": 0.3495,
+          "score": 0.6364,
           "allCandidates": [
             {
-              "id": "ORPHA:70592",
-              "label": "Transient predisposition to invasive pyogenic bacterial infection",
-              "score": 0.3495
+              "id": "ORPHA:47",
+              "label": "X-linked agammaglobulinemia",
+              "score": 0.6364
             },
             {
-              "id": "ORPHA:2314",
-              "label": "Hyper-IgE syndrome",
-              "score": 0.3107
+              "id": "ORPHA:39041",
+              "label": "Omenn syndrome",
+              "score": 0.5932
             },
             {
-              "id": "ORPHA:464370",
-              "label": "Neonatal alloimmune neutropenia",
-              "score": 0.2941
+              "id": "ORPHA:33110",
+              "label": "Autosomal non-syndromic agammaglobulinemia",
+              "score": 0.4868
+            },
+            {
+              "id": "ORPHA:906",
+              "label": "Wiskott-Aldrich syndrome",
+              "score": 0.4733
+            },
+            {
+              "id": "ORPHA:229717",
+              "label": "Non-syndromic agammaglobulinemia",
+              "score": 0.4608
+            },
+            {
+              "id": "ORPHA:83471",
+              "label": "T-cell immunodeficiency with thymic aplasia",
+              "score": 0.4499
             },
             {
               "id": "ORPHA:169090",
               "label": "Combined immunodeficiency due to CRAC channel dysfunction",
-              "score": 0.2488
+              "score": 0.4496
             },
             {
-              "id": "ORPHA:86788",
-              "label": "X-linked severe congenital neutropenia",
-              "score": 0.2364
+              "id": "ORPHA:533",
+              "label": "Listeriosis",
+              "score": 0.4374
+            },
+            {
+              "id": "ORPHA:167",
+              "label": "Chédiak-Higashi syndrome",
+              "score": 0.4355
+            },
+            {
+              "id": "ORPHA:31204",
+              "label": "Nocardiosis",
+              "score": 0.4219
             }
           ]
         }
       }
     ],
     "_pipelineStats": {
-      "totalEntities": 14,
-      "matchedHPO": 9,
-      "unmatchedEntities": 5,
-      "phenopacketFeatures": 9,
+      "totalEntities": 32,
+      "matchedHPO": 11,
+      "unmatchedEntities": 21,
+      "phenopacketFeatures": 11,
       "negatedFeatures": 0,
       "numericPhenotypes": 0,
-      "ordoCandidates": 5
+      "ordoCandidates": 10
     }
   }
 }

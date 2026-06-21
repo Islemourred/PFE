@@ -23,6 +23,19 @@
   "module4": {
     "problem": [
       {
+        "text": "minated tuberculosis",
+        "ner_score": 0.971,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "minated tuberculosis",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
         "text": "tuberculosis",
         "ner_score": 0.654,
         "negated": false,
@@ -62,17 +75,43 @@
         "umls_cui": null
       },
       {
+        "text": "tuberc",
+        "ner_score": 0.701,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "tuberc",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
         "text": "severe",
         "ner_score": 0.428,
         "negated": false,
         "negation_cue": "",
-        "hpo_id": "HP:0012828",
-        "hpo_name": "Severe",
+        "hpo_id": null,
+        "hpo_name": null,
         "expanded_text": "severe",
+        "match_type": "skipped_en_noise",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "severe combined immunodeficiency",
+        "ner_score": 0.998,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0004430",
+        "hpo_name": "Severe combined immunodeficiency",
+        "expanded_text": "severe combined immunodeficiency",
         "match_type": "exact_label",
         "confidence": 1.0,
         "matched": true,
-        "umls_cui": "C0205082"
+        "umls_cui": "C0085110"
       },
       {
         "text": "combined immunodeficiency",
@@ -88,6 +127,19 @@
         "umls_cui": "C0494261"
       },
       {
+        "text": "severe combined immunodeficiency disease",
+        "ner_score": 0.998,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "severe combined immunodeficiency disease",
+        "match_type": "deduplicated",
+        "confidence": 0.95,
+        "matched": false,
+        "umls_cui": "C0085110"
+      },
+      {
         "text": "disease",
         "ner_score": 0.953,
         "negated": false,
@@ -95,10 +147,23 @@
         "hpo_id": null,
         "hpo_name": null,
         "expanded_text": "disease",
-        "match_type": "no_match",
+        "match_type": "skipped_en_noise",
         "confidence": 0.0,
         "matched": false,
         "umls_cui": null
+      },
+      {
+        "text": "rare primary immunodeficiency disease",
+        "ner_score": 0.994,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0005363",
+        "hpo_name": "Humoral immunodeficiency",
+        "expanded_text": "rare primary immunodeficiency disease",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.7606,
+        "matched": true,
+        "umls_cui": "C4025206"
       },
       {
         "text": "primary",
@@ -108,7 +173,7 @@
         "hpo_id": null,
         "hpo_name": null,
         "expanded_text": "primary",
-        "match_type": "no_match",
+        "match_type": "skipped_low_ner_score",
         "confidence": 0.0,
         "matched": false,
         "umls_cui": null
@@ -127,30 +192,43 @@
         "umls_cui": "C0231246"
       },
       {
-        "text": "thrush",
-        "ner_score": 0.721,
+        "text": "oral thrush",
+        "ner_score": 0.999,
         "negated": false,
         "negation_cue": "",
-        "hpo_id": null,
-        "hpo_name": null,
-        "expanded_text": "thrush",
-        "match_type": "no_match",
-        "confidence": 0.0,
-        "matched": false,
-        "umls_cui": null
+        "hpo_id": "HP:0009098",
+        "hpo_name": "Chronic oral candidiasis",
+        "expanded_text": "oral thrush",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.796,
+        "matched": true,
+        "umls_cui": "C4024599"
       },
       {
-        "text": "infection",
-        "ner_score": 0.612,
+        "text": "thrush, recurrent respiratory infection",
+        "ner_score": 0.99,
         "negated": false,
         "negation_cue": "",
-        "hpo_id": "HP:0002719",
-        "hpo_name": "Recurrent infections",
-        "expanded_text": "infection",
-        "match_type": "sapbert_similarity",
-        "confidence": 0.7406,
+        "hpo_id": "HP:0011947",
+        "hpo_name": "Respiratory tract infection",
+        "expanded_text": "thrush, recurrent respiratory infection",
+        "match_type": "substring_match",
+        "confidence": 0.95,
         "matched": true,
-        "umls_cui": "C0239998"
+        "umls_cui": "C0035243"
+      },
+      {
+        "text": "chronic diarrhea",
+        "ner_score": 0.999,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0002035",
+        "hpo_name": "Chronic diarrhea",
+        "expanded_text": "chronic diarrhea",
+        "match_type": "clinical_synonym",
+        "confidence": 1.0,
+        "matched": true,
+        "umls_cui": "C0034888"
       },
       {
         "text": "diarrhea",
@@ -164,6 +242,19 @@
         "confidence": 1.0,
         "matched": true,
         "umls_cui": "C0011991"
+      },
+      {
+        "text": "regional lymphadenopathy",
+        "ner_score": 0.999,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0002716",
+        "hpo_name": "Lymphadenopathy",
+        "expanded_text": "regional lymphadenopathy",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.8612,
+        "matched": true,
+        "umls_cui": "C0497156"
       },
       {
         "text": "lymphadenopathy",
@@ -186,6 +277,32 @@
         "hpo_id": null,
         "hpo_name": null,
         "expanded_text": "aden",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "generalized lymphadenopathy",
+        "ner_score": 0.997,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0008940",
+        "hpo_name": "Generalized lymphadenopathy",
+        "expanded_text": "generalized lymphadenopathy",
+        "match_type": "exact_label",
+        "confidence": 1.0,
+        "matched": true,
+        "umls_cui": "C0476486"
+      },
+      {
+        "text": "multiple suppurative tuberculous lymphadenitis",
+        "ner_score": 0.998,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "multiple suppurative tuberculous lymphadenitis",
         "match_type": "no_match",
         "confidence": 0.0,
         "matched": false,
@@ -244,30 +361,69 @@
         "umls_cui": "C0002871"
       },
       {
-        "text": "weight loss",
-        "ner_score": 0.946,
+        "text": "emia, weight loss",
+        "ner_score": 0.998,
         "negated": false,
         "negation_cue": "",
         "hpo_id": "HP:0001824",
         "hpo_name": "Weight loss",
-        "expanded_text": "weight loss",
-        "match_type": "clinical_synonym",
-        "confidence": 1.0,
+        "expanded_text": "emia, weight loss",
+        "match_type": "substring_match",
+        "confidence": 0.95,
         "matched": true,
         "umls_cui": "C1262477"
+      },
+      {
+        "text": "ulous peritonitis",
+        "ner_score": 0.996,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "ulous peritonitis",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
       },
       {
         "text": "peritonitis",
         "ner_score": 0.474,
         "negated": false,
         "negation_cue": "",
-        "hpo_id": "HP:0002586",
-        "hpo_name": "Peritonitis",
+        "hpo_id": null,
+        "hpo_name": null,
         "expanded_text": "peritonitis",
-        "match_type": "exact_label",
-        "confidence": 1.0,
-        "matched": true,
-        "umls_cui": "C0031154"
+        "match_type": "skipped_low_ner_score",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "lymphopenic scid",
+        "ner_score": 0.87,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "lymphopenic scid",
+        "match_type": "deduplicated",
+        "confidence": 0.8128,
+        "matched": false,
+        "umls_cui": "C0085110"
+      },
+      {
+        "text": "lymphopenic sci",
+        "ner_score": 0.629,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "lymphopenic sci",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
       },
       {
         "text": "hypogammaglobulinemia",
@@ -283,6 +439,32 @@
         "umls_cui": "C0086438"
       },
       {
+        "text": "ypogammaglobulinemia",
+        "ner_score": 0.997,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0003139",
+        "hpo_name": "Panhypogammaglobulinemia",
+        "expanded_text": "ypogammaglobulinemia",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.8069,
+        "matched": true,
+        "umls_cui": "C1328587"
+      },
+      {
+        "text": "other bacterial, viral, or fungal infections",
+        "ner_score": 0.989,
+        "negated": true,
+        "negation_cue": "no",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "other bacterial, viral, or fungal infections",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
         "text": "bacterial",
         "ner_score": 0.419,
         "negated": true,
@@ -290,7 +472,7 @@
         "hpo_id": null,
         "hpo_name": null,
         "expanded_text": "bacterial",
-        "match_type": "no_match",
+        "match_type": "skipped_low_ner_score",
         "confidence": 0.0,
         "matched": false,
         "umls_cui": null
@@ -303,58 +485,23 @@
         "hpo_id": null,
         "hpo_name": null,
         "expanded_text": "fungal",
-        "match_type": "no_match",
+        "match_type": "skipped_low_ner_score",
         "confidence": 0.0,
         "matched": false,
         "umls_cui": null
       },
       {
-        "text": "severe combined immunodeficiency",
-        "ner_score": 0.9,
-        "negated": false,
-        "negation_cue": "",
-        "hpo_id": "HP:0004430",
-        "hpo_name": "Severe combined immunodeficiency",
-        "expanded_text": "severe combined immunodeficiency",
-        "match_type": "text_scan_exact_label",
-        "confidence": 0.95,
+        "text": "recurrent infections",
+        "ner_score": 0.992,
+        "negated": true,
+        "negation_cue": "not",
+        "hpo_id": "HP:0002719",
+        "hpo_name": "Recurrent infections",
+        "expanded_text": "recurrent infections",
+        "match_type": "clinical_synonym",
+        "confidence": 1.0,
         "matched": true,
-        "umls_cui": "C0085110",
-        "umls_all": [
-          "C0085110"
-        ]
-      },
-      {
-        "text": "generalized lymphadenopathy",
-        "ner_score": 0.9,
-        "negated": false,
-        "negation_cue": "",
-        "hpo_id": "HP:0008940",
-        "hpo_name": "Generalized lymphadenopathy",
-        "expanded_text": "generalized lymphadenopathy",
-        "match_type": "text_scan_exact_label",
-        "confidence": 0.95,
-        "matched": true,
-        "umls_cui": "C0476486",
-        "umls_all": [
-          "C0476486"
-        ]
-      },
-      {
-        "text": "chronic diarrhea",
-        "ner_score": 0.9,
-        "negated": false,
-        "negation_cue": "",
-        "hpo_id": "HP:0002035",
-        "hpo_name": "Chronic diarrhea",
-        "expanded_text": "chronic diarrhea",
-        "match_type": "text_scan_clinical_synonym",
-        "confidence": 0.95,
-        "matched": true,
-        "umls_cui": "C0034888",
-        "umls_all": [
-          "C0034888"
-        ]
+        "umls_cui": "C0239998"
       },
       {
         "text": "immunodeficiency",
@@ -371,9 +518,80 @@
         "umls_all": [
           "C0021051"
         ]
+      },
+      {
+        "text": "peritonitis",
+        "ner_score": 0.9,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0002586",
+        "hpo_name": "Peritonitis",
+        "expanded_text": "peritonitis",
+        "match_type": "text_scan_exact_label",
+        "confidence": 0.95,
+        "matched": true,
+        "umls_cui": "C0031154",
+        "umls_all": [
+          "C0031154"
+        ]
+      },
+      {
+        "text": "generalized",
+        "ner_score": 0.9,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0012837",
+        "hpo_name": "Generalized",
+        "expanded_text": "generalized",
+        "match_type": "text_scan_exact_label",
+        "confidence": 0.95,
+        "matched": true,
+        "umls_cui": "C0205246",
+        "umls_all": [
+          "C0205246"
+        ]
       }
     ],
     "treatment": [
+      {
+        "text": "llus calmette - guerin ( bcg ) vaccine",
+        "ner_score": 0.968,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "llus calmette - guerin ( bcg ) vaccine",
+        "match_type": "skipped_treatment",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "anti -",
+        "ner_score": 0.81,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "anti -",
+        "match_type": "skipped_treatment",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "anti - tuberculous medications",
+        "ner_score": 0.995,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "anti - tuberculous medications",
+        "match_type": "skipped_treatment",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
       {
         "text": "tube",
         "ner_score": 0.945,
@@ -382,7 +600,7 @@
         "hpo_id": null,
         "hpo_name": null,
         "expanded_text": "tube",
-        "match_type": "no_match",
+        "match_type": "skipped_treatment",
         "confidence": 0.0,
         "matched": false,
         "umls_cui": null
@@ -395,7 +613,20 @@
         "hpo_id": null,
         "hpo_name": null,
         "expanded_text": "Bacillus",
-        "match_type": "no_match",
+        "match_type": "skipped_low_ner_score",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "baci",
+        "ner_score": 0.831,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "baci",
+        "match_type": "skipped_treatment",
         "confidence": 0.0,
         "matched": false,
         "umls_cui": null
@@ -408,7 +639,7 @@
         "hpo_id": null,
         "hpo_name": null,
         "expanded_text": "Calmette",
-        "match_type": "no_match",
+        "match_type": "skipped_low_ner_score",
         "confidence": 0.0,
         "matched": false,
         "umls_cui": null
@@ -421,7 +652,7 @@
         "hpo_id": null,
         "hpo_name": null,
         "expanded_text": "vaccine",
-        "match_type": "no_match",
+        "match_type": "skipped_low_ner_score",
         "confidence": 0.0,
         "matched": false,
         "umls_cui": null
@@ -434,7 +665,20 @@
         "hpo_id": null,
         "hpo_name": null,
         "expanded_text": "Immuno",
-        "match_type": "no_match",
+        "match_type": "skipped_treatment",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "the bcg vaccine",
+        "ner_score": 0.985,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "the bcg vaccine",
+        "match_type": "skipped_treatment",
         "confidence": 0.0,
         "matched": false,
         "umls_cui": null
@@ -447,7 +691,7 @@
         "hpo_id": null,
         "hpo_name": null,
         "expanded_text": "anti",
-        "match_type": "no_match",
+        "match_type": "skipped_treatment",
         "confidence": 0.0,
         "matched": false,
         "umls_cui": null
@@ -457,13 +701,13 @@
         "ner_score": 0.924,
         "negated": false,
         "negation_cue": "",
-        "hpo_id": "HP:0003992",
-        "hpo_name": "Slender ulna",
+        "hpo_id": null,
+        "hpo_name": null,
         "expanded_text": "ulous",
-        "match_type": "sapbert_similarity",
-        "confidence": 0.7116,
-        "matched": true,
-        "umls_cui": "C1968814"
+        "match_type": "skipped_treatment",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
       },
       {
         "text": "globulin",
@@ -473,7 +717,20 @@
         "hpo_id": null,
         "hpo_name": null,
         "expanded_text": "globulin",
-        "match_type": "no_match",
+        "match_type": "skipped_treatment",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "cd4, cd8 lymphopenic scid",
+        "ner_score": 0.895,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "cd4, cd8 lymphopenic scid",
+        "match_type": "skipped_treatment",
         "confidence": 0.0,
         "matched": false,
         "umls_cui": null
@@ -486,7 +743,33 @@
         "hpo_id": null,
         "hpo_name": null,
         "expanded_text": "medications",
-        "match_type": "skipped_non_phenotype",
+        "match_type": "skipped_treatment",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "actic trimethoprim",
+        "ner_score": 0.996,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "actic trimethoprim",
+        "match_type": "skipped_treatment",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "sulfamethoxazole",
+        "ner_score": 0.968,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "sulfamethoxazole",
+        "match_type": "skipped_treatment",
         "confidence": 0.0,
         "matched": false,
         "umls_cui": null
@@ -499,7 +782,7 @@
         "hpo_id": null,
         "hpo_name": null,
         "expanded_text": "fame",
-        "match_type": "no_match",
+        "match_type": "skipped_treatment",
         "confidence": 0.0,
         "matched": false,
         "umls_cui": null
@@ -512,7 +795,20 @@
         "hpo_id": null,
         "hpo_name": null,
         "expanded_text": "oxazol",
-        "match_type": "no_match",
+        "match_type": "skipped_treatment",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "munoglobulin infusion",
+        "ner_score": 0.978,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "munoglobulin infusion",
+        "match_type": "skipped_treatment",
         "confidence": 0.0,
         "matched": false,
         "umls_cui": null
@@ -525,39 +821,13 @@
         "hpo_id": null,
         "hpo_name": null,
         "expanded_text": "infusion",
-        "match_type": "skipped_non_phenotype",
+        "match_type": "skipped_treatment",
         "confidence": 0.0,
         "matched": false,
         "umls_cui": null
       }
     ],
     "test": [
-      {
-        "text": "oral",
-        "ner_score": 0.829,
-        "negated": false,
-        "negation_cue": "",
-        "hpo_id": null,
-        "hpo_name": null,
-        "expanded_text": "oral",
-        "match_type": "no_match",
-        "confidence": 0.0,
-        "matched": false,
-        "umls_cui": null
-      },
-      {
-        "text": "respiratory",
-        "ner_score": 0.844,
-        "negated": false,
-        "negation_cue": "",
-        "hpo_id": "HP:0011947",
-        "hpo_name": "Respiratory tract infection",
-        "expanded_text": "respiratory",
-        "match_type": "sapbert_similarity",
-        "confidence": 0.7121,
-        "matched": true,
-        "umls_cui": "C0035243"
-      },
       {
         "text": "biopsy",
         "ner_score": 0.892,
@@ -566,7 +836,20 @@
         "hpo_id": null,
         "hpo_name": null,
         "expanded_text": "biopsy",
-        "match_type": "skipped_non_phenotype",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "investigations",
+        "ner_score": 0.969,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "investigations",
+        "match_type": "skipped_test",
         "confidence": 0.0,
         "matched": false,
         "umls_cui": null
@@ -574,94 +857,189 @@
     ],
     "ordo_candidates": [
       {
-        "ordo_id": "ORPHA:183660",
-        "name": "Severe combined immunodeficiency",
-        "name_fr": "Déficit immunitaire combiné sévère (DICS)",
-        "score": 0.85,
-        "jaccard": 0.2692,
+        "ordo_id": "ORPHA:39041",
+        "name": "Omenn syndrome",
+        "name_fr": "",
+        "score": 0.5649,
+        "coverage": 0.0879,
+        "matched_hpo": [
+          "HP:0001508",
+          "HP:0001903",
+          "HP:0001945",
+          "HP:0002716",
+          "HP:0002721",
+          "HP:0004430",
+          "HP:0008940",
+          "HP:0009098"
+        ],
+        "matched_count": 8,
+        "total_disease_hpo": 91,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:83471",
+        "name": "T-cell immunodeficiency with thymic aplasia",
+        "name_fr": "",
+        "score": 0.4723,
+        "coverage": 0.1667,
+        "matched_hpo": [
+          "HP:0001508",
+          "HP:0002014",
+          "HP:0002716",
+          "HP:0002719",
+          "HP:0005387",
+          "HP:0009098"
+        ],
+        "matched_count": 6,
+        "total_disease_hpo": 36,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:1572",
+        "name": "Common variable immunodeficiency",
+        "name_fr": "",
+        "score": 0.4491,
         "coverage": 0.4375,
+        "matched_hpo": [
+          "HP:0001903",
+          "HP:0001945",
+          "HP:0002014",
+          "HP:0002716",
+          "HP:0002719",
+          "HP:0004313",
+          "HP:0004430"
+        ],
+        "matched_count": 7,
+        "total_disease_hpo": 16,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:33355",
+        "name": "Reticular dysgenesis",
+        "name_fr": "",
+        "score": 0.4477,
+        "coverage": 0.35,
+        "matched_hpo": [
+          "HP:0001508",
+          "HP:0001824",
+          "HP:0001903",
+          "HP:0001945",
+          "HP:0002014",
+          "HP:0004313",
+          "HP:0004430"
+        ],
+        "matched_count": 7,
+        "total_disease_hpo": 20,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:183660",
+        "name": "T-B+ severe combined immunodeficiency due to gamma chain deficiency",
+        "name_fr": "",
+        "score": 0.4227,
+        "coverage": 0.3889,
         "matched_hpo": [
           "HP:0001508",
           "HP:0001903",
           "HP:0001945",
           "HP:0002014",
-          "HP:0002035",
           "HP:0002719",
+          "HP:0004313",
           "HP:0004430"
         ],
         "matched_count": 7,
-        "total_disease_hpo": 16
+        "total_disease_hpo": 18,
+        "text_match": false
       },
       {
-        "ordo_id": "ORPHA:572",
-        "name": "MHC class II deficiency",
-        "name_fr": "Déficit en molécules HLA de classe II",
-        "score": 0.3597,
-        "jaccard": 0.2174,
-        "coverage": 0.4545,
+        "ordo_id": "ORPHA:693681",
+        "name": "Activated PI3K-delta syndrome 2",
+        "name_fr": "",
+        "score": 0.4115,
+        "coverage": 0.1905,
         "matched_hpo": [
           "HP:0001508",
-          "HP:0001903",
-          "HP:0002035",
-          "HP:0002719",
-          "HP:0004430"
+          "HP:0002014",
+          "HP:0002716",
+          "HP:0005387"
+        ],
+        "matched_count": 4,
+        "total_disease_hpo": 21,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:2552",
+        "name": "Microsporidiosis",
+        "name_fr": "",
+        "score": 0.4107,
+        "coverage": 0.098,
+        "matched_hpo": [
+          "HP:0001824",
+          "HP:0001945",
+          "HP:0002586",
+          "HP:0002721",
+          "HP:0002840"
         ],
         "matched_count": 5,
-        "total_disease_hpo": 11
+        "total_disease_hpo": 51,
+        "text_match": false
       },
       {
-        "ordo_id": "ORPHA:314",
-        "name": "Erythroderma desquamativum",
+        "ordo_id": "ORPHA:275",
+        "name": "Severe combined immunodeficiency due to DCLRE1C deficiency",
         "name_fr": "",
-        "score": 0.3421,
-        "jaccard": 0.1053,
-        "coverage": 0.5,
+        "score": 0.4075,
+        "coverage": 0.0811,
         "matched_hpo": [
           "HP:0001508",
-          "HP:0002014"
+          "HP:0004430",
+          "HP:0009098"
         ],
-        "matched_count": 2,
-        "total_disease_hpo": 4
+        "matched_count": 3,
+        "total_disease_hpo": 37,
+        "text_match": false
       },
       {
-        "ordo_id": "ORPHA:231249",
-        "name": "Hemoglobin E-beta-thalassemia syndrome",
+        "ordo_id": "ORPHA:420741",
+        "name": "RIDDLE syndrome",
         "name_fr": "",
-        "score": 0.3421,
-        "jaccard": 0.1053,
-        "coverage": 0.5,
+        "score": 0.4048,
+        "coverage": 0.093,
         "matched_hpo": [
-          "HP:0001903",
-          "HP:0002721"
+          "HP:0001824",
+          "HP:0002014",
+          "HP:0002721",
+          "HP:0008940"
         ],
-        "matched_count": 2,
-        "total_disease_hpo": 4
+        "matched_count": 4,
+        "total_disease_hpo": 43,
+        "text_match": false
       },
       {
-        "ordo_id": "ORPHA:586",
-        "name": "Cystic fibrosis",
-        "name_fr": "Mucoviscidose",
-        "score": 0.3333,
-        "jaccard": 0.2083,
-        "coverage": 0.4167,
+        "ordo_id": "ORPHA:47",
+        "name": "X-linked agammaglobulinemia",
+        "name_fr": "",
+        "score": 0.4006,
+        "coverage": 0.1429,
         "matched_hpo": [
           "HP:0001508",
+          "HP:0001824",
           "HP:0001903",
           "HP:0001945",
-          "HP:0002035",
-          "HP:0002719"
+          "HP:0002721"
         ],
         "matched_count": 5,
-        "total_disease_hpo": 12
+        "total_disease_hpo": 35,
+        "text_match": false
       }
     ],
     "stats": {
-      "total": 41,
-      "matched": 17,
-      "unmatched": 24,
-      "match_rate": 41.5,
-      "unique_hpo": 17,
-      "ordo_matches": 5
+      "total": 63,
+      "matched": 20,
+      "unmatched": 43,
+      "match_rate": 31.7,
+      "unique_hpo": 20,
+      "ordo_matches": 10
     }
   },
   "phenopacket": {
@@ -676,13 +1054,13 @@
       }
     },
     "input": "Case Report: Disseminated tuberculosis complicating Bacillus Calmette-Guérin (BCG) vaccine as only presentation of severe combined immunodeficiency (SCID): A report of 3 cases.\n\nINTRODUCTION: Severe combined immunodeficiency disease (SCID) is a rare primary immunodeficiency disease, usually manifest in the first six months of life with failure to thrive, oral thrush, recurrent respiratory infection, and chronic diarrhea.\nCASE PRESENTATION: In three male patients, we describe an unusual presentation of SCID. They are an outcome of consanguineous marriage; all received the BCG vaccine at birth. All three cases presented with regional lymphadenopathy at three months, progressing to generalized lymphadenopathy treated with anti-tuberculous. The first and second cases were twins. The first had an uneventful history until 33 months when he developed multiple Suppurative Tuberculous lymphadenitis confirmed by biopsy. The second and the third cases were diagnosed with Disseminated Tuberculosis at 24 months as they developed fever, anemia, weight loss, tuberculous peritonitis, and lymphadenopathy confirmed by biopsy. After investigations, the first case was diagnosed as CD4, CD16 lymphopenic SCID, the second one as CD4, CD8, CD19, CD16 lymphopenic SCID with hypogammaglobulinemia and the third case as CD3, CD4, CD8 lymphopenic SCID with hypogammaglobulinemia. They received anti-Tuberculous medications, prophylactic Trimethoprim/Sulfamethoxazole, and Immunoglobulin infusion. When writing this abstract, the patients were alive and had no other bacterial, viral, or fungal infections. The twins are three years old, and the third case is 30 months old.\nCONCLUSION: SCID may not exhibit the classical manifestation of recurrent infections. It may present only as a complication of the BCG vaccine, alarming to maintain high susceptibility in such patients, especially in a developing country, specifically in Sudan, where the BCG vaccine is usually given at birth.",
-    "target": "Severe combined immunodeficiency",
+    "target": "Omenn syndrome",
     "phenotypicFeatures": [
       {
         "type": {
-          "id": "HP:0012828",
-          "label": "Severe",
-          "umls_cui": "C0205082"
+          "id": "HP:0004430",
+          "label": "Severe combined immunodeficiency",
+          "umls_cui": "C0085110"
         },
         "excluded": false,
         "evidence": [
@@ -693,7 +1071,7 @@
             },
             "reference": {
               "id": "GSC_EN_011",
-              "description": "NER: severe (0.428) | Match: exact_label (1.000)"
+              "description": "NER: severe combined immunodeficiency (0.998) | Match: exact_label (1.000)"
             }
           }
         ]
@@ -720,6 +1098,26 @@
       },
       {
         "type": {
+          "id": "HP:0005363",
+          "label": "Humoral immunodeficiency",
+          "umls_cui": "C4025206"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "GSC_EN_011",
+              "description": "NER: rare primary immunodeficiency disease (0.994) | Match: sapbert_similarity (0.761)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
           "id": "HP:0001508",
           "label": "Failure to thrive",
           "umls_cui": "C0231246"
@@ -740,9 +1138,9 @@
       },
       {
         "type": {
-          "id": "HP:0002719",
-          "label": "Recurrent infections",
-          "umls_cui": "C0239998"
+          "id": "HP:0009098",
+          "label": "Chronic oral candidiasis",
+          "umls_cui": "C4024599"
         },
         "excluded": false,
         "evidence": [
@@ -753,7 +1151,47 @@
             },
             "reference": {
               "id": "GSC_EN_011",
-              "description": "NER: infection (0.612) | Match: sapbert_similarity (0.741)"
+              "description": "NER: oral thrush (0.999) | Match: sapbert_similarity (0.796)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0011947",
+          "label": "Respiratory tract infection",
+          "umls_cui": "C0035243"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "GSC_EN_011",
+              "description": "NER: thrush, recurrent respiratory infection (0.990) | Match: substring_match (0.950)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0002035",
+          "label": "Chronic diarrhea",
+          "umls_cui": "C0034888"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "GSC_EN_011",
+              "description": "NER: chronic diarrhea (0.999) | Match: clinical_synonym (1.000)"
             }
           }
         ]
@@ -780,6 +1218,26 @@
       },
       {
         "type": {
+          "id": "HP:0002716",
+          "label": "Lymphadenopathy",
+          "umls_cui": "C0497156"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "GSC_EN_011",
+              "description": "NER: regional lymphadenopathy (0.999) | Match: sapbert_similarity (0.861)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
           "id": "HP:0002840",
           "label": "Lymphadenopathy",
           "umls_cui": "C0024205"
@@ -794,6 +1252,26 @@
             "reference": {
               "id": "GSC_EN_011",
               "description": "NER: lymphadenopathy (0.800) | Match: clinical_synonym (1.000)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0008940",
+          "label": "Generalized lymphadenopathy",
+          "umls_cui": "C0476486"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "GSC_EN_011",
+              "description": "NER: generalized lymphadenopathy (0.997) | Match: exact_label (1.000)"
             }
           }
         ]
@@ -853,27 +1331,7 @@
             },
             "reference": {
               "id": "GSC_EN_011",
-              "description": "NER: weight loss (0.946) | Match: clinical_synonym (1.000)"
-            }
-          }
-        ]
-      },
-      {
-        "type": {
-          "id": "HP:0002586",
-          "label": "Peritonitis",
-          "umls_cui": "C0031154"
-        },
-        "excluded": false,
-        "evidence": [
-          {
-            "evidenceCode": {
-              "id": "ECO:0000033",
-              "label": "author statement supported by traceable reference"
-            },
-            "reference": {
-              "id": "GSC_EN_011",
-              "description": "NER: peritonitis (0.474) | Match: exact_label (1.000)"
+              "description": "NER: emia, weight loss (0.998) | Match: substring_match (0.950)"
             }
           }
         ]
@@ -900,9 +1358,9 @@
       },
       {
         "type": {
-          "id": "HP:0004430",
-          "label": "Severe combined immunodeficiency",
-          "umls_cui": "C0085110"
+          "id": "HP:0003139",
+          "label": "Panhypogammaglobulinemia",
+          "umls_cui": "C1328587"
         },
         "excluded": false,
         "evidence": [
@@ -913,18 +1371,18 @@
             },
             "reference": {
               "id": "GSC_EN_011",
-              "description": "NER: severe combined immunodeficiency (0.900) | Match: text_scan_exact_label (0.950)"
+              "description": "NER: ypogammaglobulinemia (0.997) | Match: sapbert_similarity (0.807)"
             }
           }
         ]
       },
       {
         "type": {
-          "id": "HP:0008940",
-          "label": "Generalized lymphadenopathy",
-          "umls_cui": "C0476486"
+          "id": "HP:0002719",
+          "label": "Recurrent infections",
+          "umls_cui": "C0239998"
         },
-        "excluded": false,
+        "excluded": true,
         "evidence": [
           {
             "evidenceCode": {
@@ -933,27 +1391,7 @@
             },
             "reference": {
               "id": "GSC_EN_011",
-              "description": "NER: generalized lymphadenopathy (0.900) | Match: text_scan_exact_label (0.950)"
-            }
-          }
-        ]
-      },
-      {
-        "type": {
-          "id": "HP:0002035",
-          "label": "Chronic diarrhea",
-          "umls_cui": "C0034888"
-        },
-        "excluded": false,
-        "evidence": [
-          {
-            "evidenceCode": {
-              "id": "ECO:0000033",
-              "label": "author statement supported by traceable reference"
-            },
-            "reference": {
-              "id": "GSC_EN_011",
-              "description": "NER: chronic diarrhea (0.900) | Match: text_scan_clinical_synonym (0.950)"
+              "description": "NER: recurrent infections (0.992) | Match: clinical_synonym (1.000) | Negated by: \"not\""
             }
           }
         ]
@@ -980,9 +1418,9 @@
       },
       {
         "type": {
-          "id": "HP:0003992",
-          "label": "Slender ulna",
-          "umls_cui": "C1968814"
+          "id": "HP:0002586",
+          "label": "Peritonitis",
+          "umls_cui": "C0031154"
         },
         "excluded": false,
         "evidence": [
@@ -993,16 +1431,16 @@
             },
             "reference": {
               "id": "GSC_EN_011",
-              "description": "NER: ulous (0.924) | Match: sapbert_similarity (0.712)"
+              "description": "NER: peritonitis (0.900) | Match: text_scan_exact_label (0.950)"
             }
           }
         ]
       },
       {
         "type": {
-          "id": "HP:0011947",
-          "label": "Respiratory tract infection",
-          "umls_cui": "C0035243"
+          "id": "HP:0012837",
+          "label": "Generalized",
+          "umls_cui": "C0205246"
         },
         "excluded": false,
         "evidence": [
@@ -1013,14 +1451,14 @@
             },
             "reference": {
               "id": "GSC_EN_011",
-              "description": "NER: respiratory (0.844) | Match: sapbert_similarity (0.712)"
+              "description": "NER: generalized (0.900) | Match: text_scan_exact_label (0.950)"
             }
           }
         ]
       }
     ],
     "metaData": {
-      "created": "2026-06-11T03:08:20Z",
+      "created": "2026-06-19T15:05:57Z",
       "createdBy": "clinical-preanalysis-pipeline-v2",
       "phenopacketSchemaVersion": "2.0",
       "resources": [
@@ -1040,48 +1478,73 @@
         "progressStatus": "IN_PROGRESS",
         "diagnosis": {
           "disease": {
-            "id": "ORPHA:183660",
-            "label": "Severe combined immunodeficiency"
+            "id": "ORPHA:39041",
+            "label": "Omenn syndrome"
           },
-          "score": 0.85,
+          "score": 0.5649,
           "allCandidates": [
             {
+              "id": "ORPHA:39041",
+              "label": "Omenn syndrome",
+              "score": 0.5649
+            },
+            {
+              "id": "ORPHA:83471",
+              "label": "T-cell immunodeficiency with thymic aplasia",
+              "score": 0.4723
+            },
+            {
+              "id": "ORPHA:1572",
+              "label": "Common variable immunodeficiency",
+              "score": 0.4491
+            },
+            {
+              "id": "ORPHA:33355",
+              "label": "Reticular dysgenesis",
+              "score": 0.4477
+            },
+            {
               "id": "ORPHA:183660",
-              "label": "Severe combined immunodeficiency",
-              "score": 0.85
+              "label": "T-B+ severe combined immunodeficiency due to gamma chain deficiency",
+              "score": 0.4227
             },
             {
-              "id": "ORPHA:572",
-              "label": "MHC class II deficiency",
-              "score": 0.3597
+              "id": "ORPHA:693681",
+              "label": "Activated PI3K-delta syndrome 2",
+              "score": 0.4115
             },
             {
-              "id": "ORPHA:314",
-              "label": "Erythroderma desquamativum",
-              "score": 0.3421
+              "id": "ORPHA:2552",
+              "label": "Microsporidiosis",
+              "score": 0.4107
             },
             {
-              "id": "ORPHA:231249",
-              "label": "Hemoglobin E-beta-thalassemia syndrome",
-              "score": 0.3421
+              "id": "ORPHA:275",
+              "label": "Severe combined immunodeficiency due to DCLRE1C deficiency",
+              "score": 0.4075
             },
             {
-              "id": "ORPHA:586",
-              "label": "Cystic fibrosis",
-              "score": 0.3333
+              "id": "ORPHA:420741",
+              "label": "RIDDLE syndrome",
+              "score": 0.4048
+            },
+            {
+              "id": "ORPHA:47",
+              "label": "X-linked agammaglobulinemia",
+              "score": 0.4006
             }
           ]
         }
       }
     ],
     "_pipelineStats": {
-      "totalEntities": 41,
-      "matchedHPO": 17,
-      "unmatchedEntities": 24,
-      "phenopacketFeatures": 17,
-      "negatedFeatures": 0,
+      "totalEntities": 63,
+      "matchedHPO": 20,
+      "unmatchedEntities": 43,
+      "phenopacketFeatures": 20,
+      "negatedFeatures": 1,
       "numericPhenotypes": 0,
-      "ordoCandidates": 5
+      "ordoCandidates": 10
     }
   }
 }

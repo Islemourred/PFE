@@ -13,6 +13,45 @@
   "module4": {
     "problem": [
       {
+        "text": "sturge - weber syndrome",
+        "ner_score": 0.993,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "sturge - weber syndrome",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "pel - trena",
+        "ner_score": 0.899,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "pel - trena",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "ataxia - telangiectasia",
+        "ner_score": 0.983,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "ataxia - telangiectasia",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
         "text": "Neuro",
         "ner_score": 0.646,
         "negated": false,
@@ -20,6 +59,45 @@
         "hpo_id": null,
         "hpo_name": null,
         "expanded_text": "Neuro",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "neurocutaneous syndromes",
+        "ner_score": 0.932,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "neurocutaneous syndromes",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "urocutaneous syndromes",
+        "ner_score": 0.885,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "urocutaneous syndromes",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "urocutaneous syndrome",
+        "ner_score": 0.867,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "urocutaneous syndrome",
         "match_type": "no_match",
         "confidence": 0.0,
         "matched": false,
@@ -39,6 +117,19 @@
         "umls_cui": "C0037268"
       },
       {
+        "text": "phakomatoses",
+        "ner_score": 0.83,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "phakomatoses",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
         "text": "atos",
         "ner_score": 0.626,
         "negated": false,
@@ -56,13 +147,39 @@
         "ner_score": 0.367,
         "negated": false,
         "negation_cue": "",
-        "hpo_id": "HP:0003577",
-        "hpo_name": "Congenital onset",
+        "hpo_id": null,
+        "hpo_name": null,
         "expanded_text": "congenital",
+        "match_type": "skipped_low_ner_score",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "congenital disorders",
+        "ner_score": 0.849,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0001197",
+        "hpo_name": "Abnormality of prenatal development or birth",
+        "expanded_text": "congenital disorders",
         "match_type": "sapbert_similarity",
-        "confidence": 0.7349,
+        "confidence": 0.7722,
         "matched": true,
-        "umls_cui": "C1836142"
+        "umls_cui": "C4025797"
+      },
+      {
+        "text": "abnormalities of neuroectodermal and",
+        "ner_score": 0.991,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "abnormalities of neuroectodermal and",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
       },
       {
         "text": "neuroectodermal",
@@ -72,6 +189,45 @@
         "hpo_id": null,
         "hpo_name": null,
         "expanded_text": "neuroectodermal",
+        "match_type": "skipped_low_ner_score",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "mesodermal development",
+        "ner_score": 0.989,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "mesodermal development",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "the abnormalities",
+        "ner_score": 0.986,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "the abnormalities",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "clinical symptoms",
+        "ner_score": 0.989,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "clinical symptoms",
         "match_type": "no_match",
         "confidence": 0.0,
         "matched": false,
@@ -85,6 +241,45 @@
         "hpo_id": null,
         "hpo_name": null,
         "expanded_text": "symptom",
+        "match_type": "skipped_low_ner_score",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "neoplastic formation",
+        "ner_score": 0.999,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0002664",
+        "hpo_name": "Neoplasm",
+        "expanded_text": "neoplastic formation",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.8403,
+        "matched": true,
+        "umls_cui": "C0006826"
+      },
+      {
+        "text": "the syndromes",
+        "ner_score": 0.9,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "the syndromes",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "distinctive cutaneous stigmata",
+        "ner_score": 0.994,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "distinctive cutaneous stigmata",
         "match_type": "no_match",
         "confidence": 0.0,
         "matched": false,
@@ -104,30 +299,160 @@
         "umls_cui": null
       },
       {
-        "text": "tuberous",
-        "ner_score": 0.796,
+        "text": "neurologic",
+        "ner_score": 0.507,
         "negated": false,
         "negation_cue": "",
-        "hpo_id": "HP:0009717",
-        "hpo_name": "Cortical tubers",
-        "expanded_text": "tuberous",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "neurologic",
+        "match_type": "skipped_low_ner_score",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "urologic symptomology",
+        "ner_score": 0.877,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "urologic symptomology",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "debilitating features",
+        "ner_score": 0.835,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "debilitating features",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "these diseases",
+        "ner_score": 0.977,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "these diseases",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "these syndromes",
+        "ner_score": 0.951,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "these syndromes",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "markedly heterogeneous in",
+        "ner_score": 0.952,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0003812",
+        "hpo_name": "Phenotypic variability",
+        "expanded_text": "markedly heterogeneous in",
         "match_type": "sapbert_similarity",
-        "confidence": 0.7791,
+        "confidence": 0.7305,
         "matched": true,
-        "umls_cui": "C1968959"
+        "umls_cui": "C1837514"
+      },
+      {
+        "text": "gene",
+        "ner_score": 0.42,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "gene",
+        "match_type": "skipped_low_ner_score",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "incurable",
+        "ner_score": 0.718,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "incurable",
+        "match_type": "sapbert_rejected_low_conf",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "these conditions",
+        "ner_score": 0.971,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "these conditions",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "selective neurocutaneous syndromes",
+        "ner_score": 0.967,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "selective neurocutaneous syndromes",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "tuberous",
+        "ner_score": 0.972,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "tuberous",
+        "match_type": "sapbert_rejected_low_conf",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
       },
       {
         "text": "sclerosis",
         "ner_score": 0.796,
         "negated": false,
         "negation_cue": "",
-        "hpo_id": "HP:0100324",
-        "hpo_name": "Scleroderma",
+        "hpo_id": null,
+        "hpo_name": null,
         "expanded_text": "sclerosis",
-        "match_type": "sapbert_similarity",
-        "confidence": 0.7353,
-        "matched": true,
-        "umls_cui": "C0011644"
+        "match_type": "sapbert_rejected_low_conf",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
       },
       {
         "text": "urge",
@@ -169,30 +494,43 @@
         "umls_cui": null
       },
       {
+        "text": "y syndrome",
+        "ner_score": 0.92,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0001450",
+        "hpo_name": "Y-linked inheritance",
+        "expanded_text": "y syndrome",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.8197,
+        "matched": true,
+        "umls_cui": "C0814045"
+      },
+      {
         "text": "ataxia",
         "ner_score": 0.451,
         "negated": false,
         "negation_cue": "",
-        "hpo_id": "HP:0001251",
-        "hpo_name": "Ataxia",
+        "hpo_id": null,
+        "hpo_name": null,
         "expanded_text": "ataxia",
-        "match_type": "exact_label",
-        "confidence": 1.0,
-        "matched": true,
-        "umls_cui": "C0007758"
+        "match_type": "skipped_low_ner_score",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
       },
       {
         "text": "angiectasia",
         "ner_score": 0.742,
         "negated": false,
         "negation_cue": "",
-        "hpo_id": "HP:0001009",
-        "hpo_name": "Telangiectasia",
+        "hpo_id": null,
+        "hpo_name": null,
         "expanded_text": "angiectasia",
-        "match_type": "sapbert_similarity",
-        "confidence": 0.7662,
-        "matched": true,
-        "umls_cui": "C0039446"
+        "match_type": "sapbert_rejected_low_conf",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
       },
       {
         "text": "continent",
@@ -208,17 +546,47 @@
         "umls_cui": null
       },
       {
+        "text": "ontinentia pigmenti",
+        "ner_score": 0.98,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "ontinentia pigmenti",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
         "text": "pigment",
         "ner_score": 0.807,
         "negated": false,
         "negation_cue": "",
-        "hpo_id": "HP:0001000",
-        "hpo_name": "Abnormality of skin pigmentation",
+        "hpo_id": null,
+        "hpo_name": null,
         "expanded_text": "pigment",
-        "match_type": "sapbert_similarity",
-        "confidence": 0.7686,
+        "match_type": "sapbert_rejected_low_conf",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "telangiectasia",
+        "ner_score": 0.9,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0001009",
+        "hpo_name": "Telangiectasia",
+        "expanded_text": "telangiectasia",
+        "match_type": "text_scan_clinical_synonym",
+        "confidence": 0.95,
         "matched": true,
-        "umls_cui": "C1260926"
+        "umls_cui": "C0039446",
+        "umls_all": [
+          "C0039446",
+          "C1138421"
+        ]
       },
       {
         "text": "progressive",
@@ -236,74 +604,25 @@
           "C0205329",
           "C1864985"
         ]
+      },
+      {
+        "text": "ataxia",
+        "ner_score": 0.9,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0001251",
+        "hpo_name": "Ataxia",
+        "expanded_text": "ataxia",
+        "match_type": "text_scan_exact_label",
+        "confidence": 0.95,
+        "matched": true,
+        "umls_cui": "C0007758",
+        "umls_all": [
+          "C0007758"
+        ]
       }
     ],
     "test": [
-      {
-        "text": "neuro",
-        "ner_score": 0.281,
-        "negated": false,
-        "negation_cue": "",
-        "hpo_id": null,
-        "hpo_name": null,
-        "expanded_text": "neuro",
-        "match_type": "no_match",
-        "confidence": 0.0,
-        "matched": false,
-        "umls_cui": null
-      },
-      {
-        "text": "cutaneous",
-        "ner_score": 0.601,
-        "negated": false,
-        "negation_cue": "",
-        "hpo_id": null,
-        "hpo_name": null,
-        "expanded_text": "cutaneous",
-        "match_type": "no_match",
-        "confidence": 0.0,
-        "matched": false,
-        "umls_cui": null
-      },
-      {
-        "text": "central",
-        "ner_score": 0.621,
-        "negated": false,
-        "negation_cue": "",
-        "hpo_id": "HP:0003687",
-        "hpo_name": "Centrally nucleated skeletal muscle fibers",
-        "expanded_text": "central",
-        "match_type": "sapbert_similarity",
-        "confidence": 0.712,
-        "matched": true,
-        "umls_cui": "C1842170"
-      },
-      {
-        "text": "nervous system",
-        "ner_score": 0.85,
-        "negated": false,
-        "negation_cue": "",
-        "hpo_id": "HP:0004375",
-        "hpo_name": "Neoplasm of the nervous system",
-        "expanded_text": "nervous system",
-        "match_type": "sapbert_similarity",
-        "confidence": 0.7304,
-        "matched": true,
-        "umls_cui": "C0027766"
-      },
-      {
-        "text": "neurologic",
-        "ner_score": 0.462,
-        "negated": false,
-        "negation_cue": "",
-        "hpo_id": "HP:0000707",
-        "hpo_name": "Abnormality of the nervous system",
-        "expanded_text": "neurologic",
-        "match_type": "sapbert_similarity",
-        "confidence": 0.7358,
-        "matched": true,
-        "umls_cui": "C0497552"
-      },
       {
         "text": "genetics",
         "ner_score": 0.37,
@@ -312,7 +631,33 @@
         "hpo_id": null,
         "hpo_name": null,
         "expanded_text": "genetics",
-        "match_type": "skipped_non_phenotype",
+        "match_type": "skipped_low_ner_score",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "products",
+        "ner_score": 0.425,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "products",
+        "match_type": "skipped_low_ner_score",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "lative ph",
+        "ner_score": 0.53,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "lative ph",
+        "match_type": "skipped_low_ner_score",
         "confidence": 0.0,
         "matched": false,
         "umls_cui": null
@@ -322,78 +667,140 @@
       {
         "ordo_id": "ORPHA:100",
         "name": "Ataxia-telangiectasia",
-        "name_fr": "Ataxie-Télangiectasie (syndrome de Louis-Bar)",
-        "score": 0.85,
-        "jaccard": 0.1111,
-        "coverage": 0.2222,
+        "name_fr": "",
+        "score": 0.3266,
+        "coverage": 0.0541,
+        "matched_hpo": [
+          "HP:0001251",
+          "HP:0002664"
+        ],
+        "matched_count": 2,
+        "total_disease_hpo": 37,
+        "text_match": true
+      },
+      {
+        "ordo_id": "ORPHA:464",
+        "name": "Incontinentia pigmenti",
+        "name_fr": "",
+        "score": 0.2622,
+        "coverage": 0.0,
+        "matched_hpo": [],
+        "matched_count": 0,
+        "total_disease_hpo": 67,
+        "text_match": true
+      },
+      {
+        "ordo_id": "ORPHA:3205",
+        "name": "Sturge-Weber syndrome",
+        "name_fr": "",
+        "score": 0.2592,
+        "coverage": 0.0,
+        "matched_hpo": [],
+        "matched_count": 0,
+        "total_disease_hpo": 51,
+        "text_match": true
+      },
+      {
+        "ordo_id": "ORPHA:902",
+        "name": "Werner syndrome",
+        "name_fr": "",
+        "score": 0.2541,
+        "coverage": 0.0137,
+        "matched_hpo": [
+          "HP:0002664"
+        ],
+        "matched_count": 1,
+        "total_disease_hpo": 73,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:355",
+        "name": "Gaucher disease",
+        "name_fr": "",
+        "score": 0.2484,
+        "coverage": 0.0108,
+        "matched_hpo": [
+          "HP:0001251"
+        ],
+        "matched_count": 1,
+        "total_disease_hpo": 93,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:910",
+        "name": "Xeroderma pigmentosum",
+        "name_fr": "",
+        "score": 0.2444,
+        "coverage": 0.0508,
         "matched_hpo": [
           "HP:0001009",
-          "HP:0001251"
+          "HP:0001251",
+          "HP:0002664"
         ],
-        "matched_count": 2,
-        "total_disease_hpo": 9
+        "matched_count": 3,
+        "total_disease_hpo": 59,
+        "text_match": false
       },
       {
-        "ordo_id": "ORPHA:1168",
-        "name": "Ataxia-oculomotor apraxia type 1",
+        "ordo_id": "ORPHA:533",
+        "name": "Listeriosis",
         "name_fr": "",
-        "score": 0.2971,
-        "jaccard": 0.1429,
-        "coverage": 0.4,
-        "matched_hpo": [
-          "HP:0000707",
-          "HP:0001251"
-        ],
-        "matched_count": 2,
-        "total_disease_hpo": 5
-      },
-      {
-        "ordo_id": "ORPHA:1180",
-        "name": "Ataxia-hypogonadism-choroidal dystrophy syndrome",
-        "name_fr": "",
-        "score": 0.2308,
-        "jaccard": 0.0769,
-        "coverage": 0.3333,
+        "score": 0.2355,
+        "coverage": 0.0147,
         "matched_hpo": [
           "HP:0001251"
         ],
         "matched_count": 1,
-        "total_disease_hpo": 3
+        "total_disease_hpo": 68,
+        "text_match": false
       },
       {
-        "ordo_id": "ORPHA:3350",
-        "name": "Tremor-nystagmus-duodenal ulcer syndrome",
+        "ordo_id": "ORPHA:373",
+        "name": "Simpson-Golabi-Behmel syndrome",
         "name_fr": "",
-        "score": 0.1786,
-        "jaccard": 0.0714,
-        "coverage": 0.25,
+        "score": 0.2329,
+        "coverage": 0.0116,
         "matched_hpo": [
-          "HP:0001251"
+          "HP:0002664"
         ],
         "matched_count": 1,
-        "total_disease_hpo": 4
+        "total_disease_hpo": 86,
+        "text_match": false
       },
       {
-        "ordo_id": "ORPHA:2579",
-        "name": "Muscular atrophy-ataxia-retinitis pigmentosa-diabetes mellitus syndrome",
+        "ordo_id": "ORPHA:1304",
+        "name": "Brucellosis",
         "name_fr": "",
-        "score": 0.1786,
-        "jaccard": 0.0714,
-        "coverage": 0.25,
+        "score": 0.2324,
+        "coverage": 0.013,
         "matched_hpo": [
-          "HP:0001251"
+          "HP:0000951"
         ],
         "matched_count": 1,
-        "total_disease_hpo": 4
+        "total_disease_hpo": 77,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:774",
+        "name": "Hereditary hemorrhagic telangiectasia",
+        "name_fr": "",
+        "score": 0.2289,
+        "coverage": 0.0278,
+        "matched_hpo": [
+          "HP:0001009"
+        ],
+        "matched_count": 1,
+        "total_disease_hpo": 36,
+        "text_match": false
       }
     ],
     "stats": {
-      "total": 23,
-      "matched": 11,
-      "unmatched": 12,
-      "match_rate": 47.8,
-      "unique_hpo": 11,
-      "ordo_matches": 5
+      "total": 49,
+      "matched": 8,
+      "unmatched": 41,
+      "match_rate": 16.3,
+      "unique_hpo": 8,
+      "ordo_matches": 10
     }
   },
   "phenopacket": {
@@ -426,9 +833,9 @@
       },
       {
         "type": {
-          "id": "HP:0003577",
-          "label": "Congenital onset",
-          "umls_cui": "C1836142"
+          "id": "HP:0001197",
+          "label": "Abnormality of prenatal development or birth",
+          "umls_cui": "C4025797"
         },
         "excluded": false,
         "evidence": [
@@ -439,16 +846,16 @@
             },
             "reference": {
               "id": "GSC_EN_014",
-              "description": "NER: congenital (0.367) | Match: sapbert_similarity (0.735)"
+              "description": "NER: congenital disorders (0.849) | Match: sapbert_similarity (0.772)"
             }
           }
         ]
       },
       {
         "type": {
-          "id": "HP:0009717",
-          "label": "Cortical tubers",
-          "umls_cui": "C1968959"
+          "id": "HP:0002664",
+          "label": "Neoplasm",
+          "umls_cui": "C0006826"
         },
         "excluded": false,
         "evidence": [
@@ -459,16 +866,16 @@
             },
             "reference": {
               "id": "GSC_EN_014",
-              "description": "NER: tuberous (0.796) | Match: sapbert_similarity (0.779)"
+              "description": "NER: neoplastic formation (0.999) | Match: sapbert_similarity (0.840)"
             }
           }
         ]
       },
       {
         "type": {
-          "id": "HP:0100324",
-          "label": "Scleroderma",
-          "umls_cui": "C0011644"
+          "id": "HP:0003812",
+          "label": "Phenotypic variability",
+          "umls_cui": "C1837514"
         },
         "excluded": false,
         "evidence": [
@@ -479,16 +886,16 @@
             },
             "reference": {
               "id": "GSC_EN_014",
-              "description": "NER: sclerosis (0.796) | Match: sapbert_similarity (0.735)"
+              "description": "NER: markedly heterogeneous in (0.952) | Match: sapbert_similarity (0.731)"
             }
           }
         ]
       },
       {
         "type": {
-          "id": "HP:0001251",
-          "label": "Ataxia",
-          "umls_cui": "C0007758"
+          "id": "HP:0001450",
+          "label": "Y-linked inheritance",
+          "umls_cui": "C0814045"
         },
         "excluded": false,
         "evidence": [
@@ -499,7 +906,7 @@
             },
             "reference": {
               "id": "GSC_EN_014",
-              "description": "NER: ataxia (0.451) | Match: exact_label (1.000)"
+              "description": "NER: y syndrome (0.920) | Match: sapbert_similarity (0.820)"
             }
           }
         ]
@@ -519,27 +926,7 @@
             },
             "reference": {
               "id": "GSC_EN_014",
-              "description": "NER: angiectasia (0.742) | Match: sapbert_similarity (0.766)"
-            }
-          }
-        ]
-      },
-      {
-        "type": {
-          "id": "HP:0001000",
-          "label": "Abnormality of skin pigmentation",
-          "umls_cui": "C1260926"
-        },
-        "excluded": false,
-        "evidence": [
-          {
-            "evidenceCode": {
-              "id": "ECO:0000033",
-              "label": "author statement supported by traceable reference"
-            },
-            "reference": {
-              "id": "GSC_EN_014",
-              "description": "NER: pigment (0.807) | Match: sapbert_similarity (0.769)"
+              "description": "NER: telangiectasia (0.900) | Match: text_scan_clinical_synonym (0.950)"
             }
           }
         ]
@@ -566,9 +953,9 @@
       },
       {
         "type": {
-          "id": "HP:0003687",
-          "label": "Centrally nucleated skeletal muscle fibers",
-          "umls_cui": "C1842170"
+          "id": "HP:0001251",
+          "label": "Ataxia",
+          "umls_cui": "C0007758"
         },
         "excluded": false,
         "evidence": [
@@ -579,54 +966,14 @@
             },
             "reference": {
               "id": "GSC_EN_014",
-              "description": "NER: central (0.621) | Match: sapbert_similarity (0.712)"
-            }
-          }
-        ]
-      },
-      {
-        "type": {
-          "id": "HP:0004375",
-          "label": "Neoplasm of the nervous system",
-          "umls_cui": "C0027766"
-        },
-        "excluded": false,
-        "evidence": [
-          {
-            "evidenceCode": {
-              "id": "ECO:0000033",
-              "label": "author statement supported by traceable reference"
-            },
-            "reference": {
-              "id": "GSC_EN_014",
-              "description": "NER: nervous system (0.850) | Match: sapbert_similarity (0.730)"
-            }
-          }
-        ]
-      },
-      {
-        "type": {
-          "id": "HP:0000707",
-          "label": "Abnormality of the nervous system",
-          "umls_cui": "C0497552"
-        },
-        "excluded": false,
-        "evidence": [
-          {
-            "evidenceCode": {
-              "id": "ECO:0000033",
-              "label": "author statement supported by traceable reference"
-            },
-            "reference": {
-              "id": "GSC_EN_014",
-              "description": "NER: neurologic (0.462) | Match: sapbert_similarity (0.736)"
+              "description": "NER: ataxia (0.900) | Match: text_scan_exact_label (0.950)"
             }
           }
         ]
       }
     ],
     "metaData": {
-      "created": "2026-06-11T03:08:36Z",
+      "created": "2026-06-19T15:06:23Z",
       "createdBy": "clinical-preanalysis-pipeline-v2",
       "phenopacketSchemaVersion": "2.0",
       "resources": [
@@ -649,45 +996,70 @@
             "id": "ORPHA:100",
             "label": "Ataxia-telangiectasia"
           },
-          "score": 0.85,
+          "score": 0.3266,
           "allCandidates": [
             {
               "id": "ORPHA:100",
               "label": "Ataxia-telangiectasia",
-              "score": 0.85
+              "score": 0.3266
             },
             {
-              "id": "ORPHA:1168",
-              "label": "Ataxia-oculomotor apraxia type 1",
-              "score": 0.2971
+              "id": "ORPHA:464",
+              "label": "Incontinentia pigmenti",
+              "score": 0.2622
             },
             {
-              "id": "ORPHA:1180",
-              "label": "Ataxia-hypogonadism-choroidal dystrophy syndrome",
-              "score": 0.2308
+              "id": "ORPHA:3205",
+              "label": "Sturge-Weber syndrome",
+              "score": 0.2592
             },
             {
-              "id": "ORPHA:3350",
-              "label": "Tremor-nystagmus-duodenal ulcer syndrome",
-              "score": 0.1786
+              "id": "ORPHA:902",
+              "label": "Werner syndrome",
+              "score": 0.2541
             },
             {
-              "id": "ORPHA:2579",
-              "label": "Muscular atrophy-ataxia-retinitis pigmentosa-diabetes mellitus syndrome",
-              "score": 0.1786
+              "id": "ORPHA:355",
+              "label": "Gaucher disease",
+              "score": 0.2484
+            },
+            {
+              "id": "ORPHA:910",
+              "label": "Xeroderma pigmentosum",
+              "score": 0.2444
+            },
+            {
+              "id": "ORPHA:533",
+              "label": "Listeriosis",
+              "score": 0.2355
+            },
+            {
+              "id": "ORPHA:373",
+              "label": "Simpson-Golabi-Behmel syndrome",
+              "score": 0.2329
+            },
+            {
+              "id": "ORPHA:1304",
+              "label": "Brucellosis",
+              "score": 0.2324
+            },
+            {
+              "id": "ORPHA:774",
+              "label": "Hereditary hemorrhagic telangiectasia",
+              "score": 0.2289
             }
           ]
         }
       }
     ],
     "_pipelineStats": {
-      "totalEntities": 23,
-      "matchedHPO": 11,
-      "unmatchedEntities": 12,
-      "phenopacketFeatures": 11,
+      "totalEntities": 49,
+      "matchedHPO": 8,
+      "unmatchedEntities": 41,
+      "phenopacketFeatures": 8,
       "negatedFeatures": 0,
       "numericPhenotypes": 0,
-      "ordoCandidates": 5
+      "ordoCandidates": 10
     }
   }
 }

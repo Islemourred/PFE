@@ -1,0 +1,160 @@
+{
+  "id": "phenopacket-RA_EN_019",
+  "subject": {
+    "id": "RA_EN_019",
+    "sex": "MALE"
+  },
+  "input": "A 12-year-old male was referred to our center in Damascus. His parents are not related by blood. The patient has a history of pallor and anemia. Laboratory results showed hemoglobin levels with Hb A1 at 36.2%, Hb F at 62.2%, and Hb A2 at 1.6%. His father exhibited characteristics consistent with a specific hemoglobin trait, while his mother had normal indices but with Hb A2 levels at 1.9%. The patient occasionally requires blood transfusions, whereas his parents have never needed transfusions. Hematological parameters for the patient and his parents were obtained using an automated differential cell counter. Hemoglobin analysis was conducted using a capillary electrophoresis system.",
+  "target": "Hemoglobin D disease",
+  "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0000980",
+        "label": "Pallor",
+        "umls_cui": "C0030232"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_019",
+            "description": "NER: pallor (0.635) | Match: exact_label (1.000)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0011902",
+        "label": "Abnormal hemoglobin",
+        "umls_cui": "C0349705"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_019",
+            "description": "NER: a specific hemoglobin trait (0.964) | Match: sapbert_similarity (0.736)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0001903",
+        "label": "Anemia",
+        "umls_cui": "C0002871"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_019",
+            "description": "NER: anemia (0.900) | Match: text_scan_exact_label (0.950)"
+          }
+        }
+      ]
+    }
+  ],
+  "metaData": {
+    "created": "2026-06-19T15:11:17Z",
+    "createdBy": "clinical-preanalysis-pipeline-v2",
+    "phenopacketSchemaVersion": "2.0",
+    "resources": [
+      {
+        "id": "hp",
+        "name": "Human Phenotype Ontology",
+        "url": "https://hpo.jax.org",
+        "version": "2024-04-26",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      }
+    ]
+  },
+  "interpretations": [
+    {
+      "id": "interpretation-RA_EN_019",
+      "progressStatus": "IN_PROGRESS",
+      "diagnosis": {
+        "disease": {
+          "id": "ORPHA:90039",
+          "label": "Hemoglobin D disease"
+        },
+        "score": 0.5572,
+        "allCandidates": [
+          {
+            "id": "ORPHA:90039",
+            "label": "Hemoglobin D disease",
+            "score": 0.5572
+          },
+          {
+            "id": "ORPHA:848",
+            "label": "Beta-thalassemia",
+            "score": 0.514
+          },
+          {
+            "id": "ORPHA:163596",
+            "label": "Hemoglobin Bart's fetalis syndrome",
+            "score": 0.514
+          },
+          {
+            "id": "ORPHA:231214",
+            "label": "Beta-thalassemia major",
+            "score": 0.5046
+          },
+          {
+            "id": "ORPHA:231222",
+            "label": "Beta-thalassemia intermedia",
+            "score": 0.5046
+          },
+          {
+            "id": "ORPHA:231226",
+            "label": "Unstable beta globin chain variant disease",
+            "score": 0.5046
+          },
+          {
+            "id": "ORPHA:46532",
+            "label": "Hereditary persistence of fetal hemoglobin-beta-thalassemia syndrome",
+            "score": 0.494
+          },
+          {
+            "id": "ORPHA:124",
+            "label": "Diamond-Blackfan anemia",
+            "score": 0.494
+          },
+          {
+            "id": "ORPHA:846",
+            "label": "Alpha-thalassemia",
+            "score": 0.4224
+          },
+          {
+            "id": "ORPHA:2802",
+            "label": "X-linked sideroblastic anemia and spinocerebellar ataxia",
+            "score": 0.389
+          }
+        ]
+      }
+    }
+  ],
+  "_pipelineStats": {
+    "totalEntities": 24,
+    "matchedHPO": 3,
+    "unmatchedEntities": 21,
+    "phenopacketFeatures": 3,
+    "negatedFeatures": 0,
+    "numericPhenotypes": 0,
+    "ordoCandidates": 10
+  }
+}

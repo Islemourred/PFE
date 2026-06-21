@@ -4,7 +4,7 @@
     "id": "GSC_EN_018"
   },
   "input": "Case Report: MHC class II deficiency cured by unrelated mismatched umbilical cord blood transplantation: case report and review of 68 cases in the literature.\n\nMHC class II deficiency is a rare and fatal form of primary combined immunodeficiency caused by a lack of T-cell-dependent humoral and cellular immune response to foreign antigens, which can only be cured by allogenic stem cell transplantation. In the literature search, we identified 68 cases of HSCT in MHC class II deficiency in the last 14 yr. Pre- and post-transplant MHC class II deficiency is complicated by overwhelming viral infections, a high incidence of GvHD, and graft failure with a poor overall survival rate below 50%. We report an eight-month-old boy presenting with severe respiratory infections and chronic diarrhea, whose sister died at the age of four yr from septicemia. MHC II deficiency was caused by an RFXANK-mutation and treated successfully by 4/6 mismatched unrelated CBT after a myeloablative conditioning regimen based on anti-thymocyte globulin, busulfane, fludarabine, and cyclophosphamide. At present, our patient is well with full immune reconstitution 3(4/12) yr after CBT. CB may represent an alternative source of stem cells for children with MHC class II deficiency without a suitable donor.",
-  "target": "MHC class II deficiency",
+  "target": "Omenn syndrome",
   "phenotypicFeatures": [
     {
       "type": {
@@ -22,6 +22,26 @@
           "reference": {
             "id": "GSC_EN_018",
             "description": "NER: combined immunodeficiency (0.852) | Match: exact_label (1.000)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0002300",
+        "label": "Mutism",
+        "umls_cui": "C0026884"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "GSC_EN_018",
+            "description": "NER: lack of (0.840) | Match: sapbert_similarity (0.757)"
           }
         }
       ]
@@ -61,7 +81,27 @@
           },
           "reference": {
             "id": "GSC_EN_018",
-            "description": "NER: respiratory (0.324) | Match: sapbert_similarity (0.712)"
+            "description": "NER: severe respiratory infections (0.999) | Match: substring_match (0.950)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0002035",
+        "label": "Chronic diarrhea",
+        "umls_cui": "C0034888"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "GSC_EN_018",
+            "description": "NER: chronic diarrhea (0.998) | Match: clinical_synonym (1.000)"
           }
         }
       ]
@@ -88,9 +128,9 @@
     },
     {
       "type": {
-        "id": "HP:0002035",
-        "label": "Chronic diarrhea",
-        "umls_cui": "C0034888"
+        "id": "HP:0100806",
+        "label": "Sepsis",
+        "umls_cui": "C0036690"
       },
       "excluded": false,
       "evidence": [
@@ -101,7 +141,7 @@
           },
           "reference": {
             "id": "GSC_EN_018",
-            "description": "NER: chronic diarrhea (0.900) | Match: text_scan_clinical_synonym (0.950)"
+            "description": "NER: septicemia (0.997) | Match: clinical_synonym (1.000)"
           }
         }
       ]
@@ -125,50 +165,10 @@
           }
         }
       ]
-    },
-    {
-      "type": {
-        "id": "HP:0100806",
-        "label": "Sepsis",
-        "umls_cui": "C0036690"
-      },
-      "excluded": false,
-      "evidence": [
-        {
-          "evidenceCode": {
-            "id": "ECO:0000033",
-            "label": "author statement supported by traceable reference"
-          },
-          "reference": {
-            "id": "GSC_EN_018",
-            "description": "NER: septicemia (0.900) | Match: text_scan_clinical_synonym (0.950)"
-          }
-        }
-      ]
-    },
-    {
-      "type": {
-        "id": "HP:0100326",
-        "label": "Immunologic hypersensitivity",
-        "umls_cui": "C0237653"
-      },
-      "excluded": false,
-      "evidence": [
-        {
-          "evidenceCode": {
-            "id": "ECO:0000033",
-            "label": "author statement supported by traceable reference"
-          },
-          "reference": {
-            "id": "GSC_EN_018",
-            "description": "NER: immune (0.519) | Match: sapbert_similarity (0.742)"
-          }
-        }
-      ]
     }
   ],
   "metaData": {
-    "created": "2026-06-11T03:08:55Z",
+    "created": "2026-06-19T15:06:54Z",
     "createdBy": "clinical-preanalysis-pipeline-v2",
     "phenopacketSchemaVersion": "2.0",
     "resources": [
@@ -188,47 +188,72 @@
       "progressStatus": "IN_PROGRESS",
       "diagnosis": {
         "disease": {
-          "id": "ORPHA:572",
-          "label": "MHC class II deficiency"
+          "id": "ORPHA:39041",
+          "label": "Omenn syndrome"
         },
-        "score": 0.85,
+        "score": 0.4427,
         "allCandidates": [
           {
-            "id": "ORPHA:572",
-            "label": "MHC class II deficiency",
-            "score": 0.85
+            "id": "ORPHA:39041",
+            "label": "Omenn syndrome",
+            "score": 0.4427
           },
           {
-            "id": "ORPHA:314",
-            "label": "Erythroderma desquamativum",
-            "score": 0.1864
+            "id": "ORPHA:443811",
+            "label": "PGM3-CDG",
+            "score": 0.4192
           },
           {
-            "id": "ORPHA:183707",
-            "label": "Infantile LAD-like disease due to RAC2 deficiency",
-            "score": 0.1864
+            "id": "ORPHA:83471",
+            "label": "T-cell immunodeficiency with thymic aplasia",
+            "score": 0.4063
           },
           {
-            "id": "ORPHA:231249",
-            "label": "Hemoglobin E-beta-thalassemia syndrome",
-            "score": 0.1864
+            "id": "ORPHA:221139",
+            "label": "Combined immunodeficiency with facio-oculo-skeletal anomalies",
+            "score": 0.4059
           },
           {
-            "id": "ORPHA:231154",
-            "label": "Combined immunodeficiency due to partial RAG1 deficiency",
-            "score": 0.17
+            "id": "ORPHA:811",
+            "label": "Shwachman-Diamond syndrome",
+            "score": 0.3859
+          },
+          {
+            "id": "ORPHA:169090",
+            "label": "Combined immunodeficiency due to CRAC channel dysfunction",
+            "score": 0.3781
+          },
+          {
+            "id": "ORPHA:906",
+            "label": "Wiskott-Aldrich syndrome",
+            "score": 0.3737
+          },
+          {
+            "id": "ORPHA:420741",
+            "label": "RIDDLE syndrome",
+            "score": 0.371
+          },
+          {
+            "id": "ORPHA:810",
+            "label": "Shigellosis",
+            "score": 0.3679
+          },
+          {
+            "id": "ORPHA:275",
+            "label": "Severe combined immunodeficiency due to DCLRE1C deficiency",
+            "score": 0.3649
           }
         ]
       }
     }
   ],
   "_pipelineStats": {
-    "totalEntities": 26,
+    "totalEntities": 46,
     "matchedHPO": 8,
-    "unmatchedEntities": 18,
+    "unmatchedEntities": 38,
     "phenopacketFeatures": 8,
     "negatedFeatures": 0,
     "numericPhenotypes": 0,
-    "ordoCandidates": 5
+    "ordoCandidates": 10
   }
 }

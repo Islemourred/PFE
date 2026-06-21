@@ -17,6 +17,84 @@
   "module4": {
     "problem": [
       {
+        "text": "tt - aldrich syndrome",
+        "ner_score": 0.755,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0001973",
+        "hpo_name": "Autoimmune thrombocytopenia",
+        "expanded_text": "tt - aldrich syndrome",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.7243,
+        "matched": true,
+        "umls_cui": "C0242584"
+      },
+      {
+        "text": "tt - al",
+        "ner_score": 0.678,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "tt - al",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "a rare immunodeficiency x - linked genetic disorder",
+        "ner_score": 0.989,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0005387",
+        "hpo_name": "Combined immunodeficiency",
+        "expanded_text": "a rare immunodeficiency x - linked genetic disorder",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.7678,
+        "matched": true,
+        "umls_cui": "C0494261"
+      },
+      {
+        "text": "skott - aldrich syndrome",
+        "ner_score": 0.897,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "skott - aldrich syndrome",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "- al",
+        "ner_score": 0.575,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "- al",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "whole - body skin rashes",
+        "ner_score": 0.997,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "whole - body skin rashes",
+        "match_type": "deduplicated",
+        "confidence": 0.95,
+        "matched": false,
+        "umls_cui": "C0015230"
+      },
+      {
         "text": "Aldrich",
         "ner_score": 0.941,
         "negated": false,
@@ -37,7 +115,7 @@
         "hpo_id": null,
         "hpo_name": null,
         "expanded_text": "syndrome",
-        "match_type": "no_match",
+        "match_type": "skipped_en_noise",
         "confidence": 0.0,
         "matched": false,
         "umls_cui": null
@@ -50,7 +128,7 @@
         "hpo_id": null,
         "hpo_name": null,
         "expanded_text": "platelet volume",
-        "match_type": "no_match",
+        "match_type": "skipped_low_ner_score",
         "confidence": 0.0,
         "matched": false,
         "umls_cui": null
@@ -60,13 +138,13 @@
         "ner_score": 0.321,
         "negated": false,
         "negation_cue": "",
-        "hpo_id": "HP:0002721",
-        "hpo_name": "Immunodeficiency",
+        "hpo_id": null,
+        "hpo_name": null,
         "expanded_text": "immunodeficiency",
-        "match_type": "clinical_synonym",
-        "confidence": 1.0,
-        "matched": true,
-        "umls_cui": "C0021051"
+        "match_type": "skipped_low_ner_score",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
       },
       {
         "text": "thrombocytopenia",
@@ -82,30 +160,108 @@
         "umls_cui": "C0040034"
       },
       {
+        "text": "low mean platelet volume",
+        "ner_score": 0.997,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0005537",
+        "hpo_name": "Decreased mean platelet volume",
+        "expanded_text": "low mean platelet volume",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.8358,
+        "matched": true,
+        "umls_cui": "C1096368"
+      },
+      {
+        "text": "eczematoid dermatitis",
+        "ner_score": 0.994,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0000964",
+        "hpo_name": "Eczematoid dermatitis",
+        "expanded_text": "eczematoid dermatitis",
+        "match_type": "exact_label",
+        "confidence": 1.0,
+        "matched": true,
+        "umls_cui": "C0013595"
+      },
+      {
         "text": "dermatitis",
         "ner_score": 0.263,
         "negated": false,
         "negation_cue": "",
-        "hpo_id": "HP:0000964",
-        "hpo_name": "Eczema",
+        "hpo_id": null,
+        "hpo_name": null,
         "expanded_text": "dermatitis",
-        "match_type": "clinical_synonym",
-        "confidence": 1.0,
+        "match_type": "skipped_low_ner_score",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "urrent infections",
+        "ner_score": 0.997,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0000010",
+        "hpo_name": "Recurrent urinary tract infections",
+        "expanded_text": "urrent infections",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.7215,
         "matched": true,
-        "umls_cui": "C0013595"
+        "umls_cui": "C0262655"
       },
       {
         "text": "infections",
         "ner_score": 0.517,
         "negated": false,
         "negation_cue": "",
-        "hpo_id": "HP:0002719",
-        "hpo_name": "Recurrent infections",
+        "hpo_id": null,
+        "hpo_name": null,
         "expanded_text": "infections",
+        "match_type": "skipped_low_ner_score",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "wide heterogeneity",
+        "ner_score": 0.946,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0003812",
+        "hpo_name": "Phenotypic variability",
+        "expanded_text": "wide heterogeneity",
         "match_type": "sapbert_similarity",
-        "confidence": 0.7773,
+        "confidence": 0.8187,
         "matched": true,
-        "umls_cui": "C0239998"
+        "umls_cui": "C1837514"
+      },
+      {
+        "text": "recurrent fever",
+        "ner_score": 0.897,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0001954",
+        "hpo_name": "Recurrent fever",
+        "expanded_text": "recurrent fever",
+        "match_type": "exact_label",
+        "confidence": 1.0,
+        "matched": true,
+        "umls_cui": "C0277799"
+      },
+      {
+        "text": "urrent fever",
+        "ner_score": 0.964,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "urrent fever",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
       },
       {
         "text": "fever",
@@ -121,21 +277,34 @@
         "umls_cui": "C0015967"
       },
       {
-        "text": "lesions",
-        "ner_score": 0.646,
+        "text": "skin lesions",
+        "ner_score": 0.998,
         "negated": false,
         "negation_cue": "",
         "hpo_id": "HP:0011355",
         "hpo_name": "Localized skin lesion",
-        "expanded_text": "lesions",
+        "expanded_text": "skin lesions",
         "match_type": "sapbert_similarity",
-        "confidence": 0.7361,
+        "confidence": 0.7985,
         "matched": true,
         "umls_cui": "C0850826"
       },
       {
+        "text": "lesions",
+        "ner_score": 0.646,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "lesions",
+        "match_type": "sapbert_rejected_low_conf",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
         "text": "bloody diarrhoea",
-        "ner_score": 0.549,
+        "ner_score": 0.996,
         "negated": false,
         "negation_cue": "",
         "hpo_id": "HP:0002014",
@@ -145,6 +314,19 @@
         "confidence": 0.8514,
         "matched": true,
         "umls_cui": "C0011991"
+      },
+      {
+        "text": "severe anaemia",
+        "ner_score": 0.998,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "severe anaemia",
+        "match_type": "deduplicated",
+        "confidence": 0.7612,
+        "matched": false,
+        "umls_cui": "C0002871"
       },
       {
         "text": "anaemia",
@@ -160,30 +342,121 @@
         "umls_cui": "C0002871"
       },
       {
+        "text": "hemizygo",
+        "ner_score": 0.937,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "hemizygo",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "a pathogenic was gene splice variant",
+        "ner_score": 0.834,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "a pathogenic was gene splice variant",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
         "text": "died",
         "ner_score": 0.314,
         "negated": false,
         "negation_cue": "",
-        "hpo_id": "HP:0007185",
-        "hpo_name": "Loss of consciousness",
+        "hpo_id": null,
+        "hpo_name": null,
         "expanded_text": "died",
-        "match_type": "sapbert_similarity",
-        "confidence": 0.7094,
-        "matched": true,
-        "umls_cui": "C0041657"
+        "match_type": "skipped_low_ner_score",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "a rare genetic disease",
+        "ner_score": 0.92,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "a rare genetic disease",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
       },
       {
         "text": "bleeding",
         "ner_score": 0.796,
         "negated": false,
         "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "bleeding",
+        "match_type": "deduplicated",
+        "confidence": 0.8357,
+        "matched": false,
+        "umls_cui": "C1458140"
+      },
+      {
+        "text": "bleeding tendencies",
+        "ner_score": 0.998,
+        "negated": false,
+        "negation_cue": "",
         "hpo_id": "HP:0001892",
         "hpo_name": "Abnormal bleeding",
-        "expanded_text": "bleeding",
+        "expanded_text": "bleeding tendencies",
         "match_type": "sapbert_similarity",
-        "confidence": 0.8357,
+        "confidence": 0.941,
         "matched": true,
         "umls_cui": "C1458140"
+      },
+      {
+        "text": "a rare genetic disorder",
+        "ner_score": 0.997,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "a rare genetic disorder",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "a rare inherited disease",
+        "ner_score": 0.978,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "a rare inherited disease",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "a single line of little particles of cells",
+        "ner_score": 0.974,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "a single line of little particles of cells",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
       },
       {
         "text": "single line of little particles of cells",
@@ -193,7 +466,7 @@
         "hpo_id": null,
         "hpo_name": null,
         "expanded_text": "single line of little particles of cells",
-        "match_type": "no_match",
+        "match_type": "skipped_low_ner_score",
         "confidence": 0.0,
         "matched": false,
         "umls_cui": null
@@ -206,7 +479,7 @@
         "hpo_id": null,
         "hpo_name": null,
         "expanded_text": "clot",
-        "match_type": "no_match",
+        "match_type": "skipped_low_ner_score",
         "confidence": 0.0,
         "matched": false,
         "umls_cui": null
@@ -216,25 +489,38 @@
         "ner_score": 0.402,
         "negated": false,
         "negation_cue": "",
-        "hpo_id": "HP:0001902",
-        "hpo_name": "Giant platelets",
+        "hpo_id": null,
+        "hpo_name": null,
         "expanded_text": "platelets",
-        "match_type": "sapbert_similarity",
-        "confidence": 0.7969,
+        "match_type": "skipped_low_ner_score",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "skin rash",
+        "ner_score": 0.998,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0000988",
+        "hpo_name": "Skin rash",
+        "expanded_text": "skin rash",
+        "match_type": "clinical_synonym",
+        "confidence": 1.0,
         "matched": true,
-        "umls_cui": "C0333864"
+        "umls_cui": "C0015230"
       },
       {
         "text": "rashes",
         "ner_score": 0.894,
         "negated": false,
         "negation_cue": "",
-        "hpo_id": "HP:0000988",
-        "hpo_name": "Skin rash",
+        "hpo_id": null,
+        "hpo_name": null,
         "expanded_text": "rashes",
-        "match_type": "sapbert_similarity",
+        "match_type": "deduplicated",
         "confidence": 0.9219,
-        "matched": true,
+        "matched": false,
         "umls_cui": "C0015230"
       },
       {
@@ -242,28 +528,70 @@
         "ner_score": 0.512,
         "negated": false,
         "negation_cue": "",
-        "hpo_id": "HP:0000988",
-        "hpo_name": "Skin rash",
+        "hpo_id": null,
+        "hpo_name": null,
         "expanded_text": "rash",
-        "match_type": "clinical_synonym",
-        "confidence": 1.0,
-        "matched": true,
-        "umls_cui": "C0015230"
+        "match_type": "skipped_low_ner_score",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
       },
       {
-        "text": "recurrent fever",
+        "text": "very low levels of red blood cells",
+        "ner_score": 0.892,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0012133",
+        "hpo_name": "Erythroid hypoplasia",
+        "expanded_text": "very low levels of red blood cells",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.7799,
+        "matched": true,
+        "umls_cui": "C0178416"
+      },
+      {
+        "text": "bleeding problems",
+        "ner_score": 0.999,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "bleeding problems",
+        "match_type": "deduplicated",
+        "confidence": 0.8359,
+        "matched": false,
+        "umls_cui": "C1458140"
+      },
+      {
+        "text": "recurrent infections",
         "ner_score": 0.9,
         "negated": false,
         "negation_cue": "",
-        "hpo_id": "HP:0001954",
-        "hpo_name": "Recurrent fever",
-        "expanded_text": "recurrent fever",
-        "match_type": "text_scan_exact_label",
+        "hpo_id": "HP:0002719",
+        "hpo_name": "Recurrent infections",
+        "expanded_text": "recurrent infections",
+        "match_type": "text_scan_clinical_synonym",
         "confidence": 0.95,
         "matched": true,
-        "umls_cui": "C0277799",
+        "umls_cui": "C0239998",
         "umls_all": [
-          "C0277799"
+          "C0239998"
+        ]
+      },
+      {
+        "text": "immunodeficiency",
+        "ner_score": 0.9,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0002721",
+        "hpo_name": "Immunodeficiency",
+        "expanded_text": "immunodeficiency",
+        "match_type": "text_scan_clinical_synonym",
+        "confidence": 0.95,
+        "matched": true,
+        "umls_cui": "C0021051",
+        "umls_all": [
+          "C0021051"
         ]
       },
       {
@@ -289,13 +617,13 @@
         "ner_score": 0.879,
         "negated": false,
         "negation_cue": "",
-        "hpo_id": "HP:0005537",
-        "hpo_name": "Decreased mean platelet volume",
+        "hpo_id": null,
+        "hpo_name": null,
         "expanded_text": "normal platelet volume",
-        "match_type": "sapbert_similarity",
-        "confidence": 0.7665,
-        "matched": true,
-        "umls_cui": "C1096368"
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
       },
       {
         "text": "Genetic",
@@ -305,7 +633,7 @@
         "hpo_id": null,
         "hpo_name": null,
         "expanded_text": "Genetic",
-        "match_type": "skipped_non_phenotype",
+        "match_type": "skipped_test",
         "confidence": 0.0,
         "matched": false,
         "umls_cui": null
@@ -318,7 +646,7 @@
         "hpo_id": null,
         "hpo_name": null,
         "expanded_text": "mean",
-        "match_type": "no_match",
+        "match_type": "skipped_low_ner_score",
         "confidence": 0.0,
         "matched": false,
         "umls_cui": null
@@ -331,7 +659,20 @@
         "hpo_id": null,
         "hpo_name": null,
         "expanded_text": "blood",
-        "match_type": "no_match",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "genetic analysis",
+        "ner_score": 0.962,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "genetic analysis",
+        "match_type": "skipped_test",
         "confidence": 0.0,
         "matched": false,
         "umls_cui": null
@@ -344,7 +685,20 @@
         "hpo_id": null,
         "hpo_name": null,
         "expanded_text": "analysis",
-        "match_type": "no_match",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "genetic testing",
+        "ner_score": 0.992,
+        "negated": true,
+        "negation_cue": "do not",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "genetic testing",
+        "match_type": "skipped_test",
         "confidence": 0.0,
         "matched": false,
         "umls_cui": null
@@ -354,29 +708,29 @@
         "ner_score": 0.887,
         "negated": false,
         "negation_cue": "",
-        "hpo_id": "HP:0001902",
-        "hpo_name": "Giant platelets",
+        "hpo_id": null,
+        "hpo_name": null,
         "expanded_text": "platelets",
-        "match_type": "sapbert_similarity",
-        "confidence": 0.7969,
-        "matched": true,
-        "umls_cui": "C0333864"
-      },
-      {
-        "text": "body skin",
-        "ner_score": 0.577,
-        "negated": false,
-        "negation_cue": "",
-        "hpo_id": "HP:0011354",
-        "hpo_name": "Generalized abnormality of skin",
-        "expanded_text": "body skin",
-        "match_type": "sapbert_similarity",
-        "confidence": 0.7049,
-        "matched": true,
-        "umls_cui": "C4021157"
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
       }
     ],
     "treatment": [
+      {
+        "text": "supportive treatment",
+        "ner_score": 0.973,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "supportive treatment",
+        "match_type": "skipped_treatment",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
       {
         "text": "treatment",
         "ner_score": 0.696,
@@ -385,7 +739,7 @@
         "hpo_id": null,
         "hpo_name": null,
         "expanded_text": "treatment",
-        "match_type": "no_match",
+        "match_type": "skipped_en_noise",
         "confidence": 0.0,
         "matched": false,
         "umls_cui": null
@@ -395,87 +749,189 @@
       {
         "ordo_id": "ORPHA:906",
         "name": "Wiskott-Aldrich syndrome",
-        "name_fr": "Syndrome de Wiskott-Aldrich",
-        "score": 0.85,
-        "jaccard": 0.2,
-        "coverage": 0.3571,
+        "name_fr": "",
+        "score": 0.6061,
+        "coverage": 0.0737,
         "matched_hpo": [
           "HP:0000964",
           "HP:0000988",
           "HP:0001873",
           "HP:0001903",
-          "HP:0002719"
+          "HP:0001945",
+          "HP:0002721",
+          "HP:0005537"
         ],
-        "matched_count": 5,
-        "total_disease_hpo": 14
+        "matched_count": 7,
+        "total_disease_hpo": 95,
+        "text_match": true
       },
       {
-        "ordo_id": "ORPHA:231393",
-        "name": "Beta-thalassemia-X-linked thrombocytopenia syndrome",
+        "ordo_id": "ORPHA:167",
+        "name": "Chédiak-Higashi syndrome",
         "name_fr": "",
-        "score": 0.3632,
-        "jaccard": 0.1579,
-        "coverage": 0.5,
+        "score": 0.4538,
+        "coverage": 0.0899,
         "matched_hpo": [
+          "HP:0000964",
+          "HP:0000988",
           "HP:0001873",
           "HP:0001892",
-          "HP:0001903"
-        ],
-        "matched_count": 3,
-        "total_disease_hpo": 6
-      },
-      {
-        "ordo_id": "ORPHA:231249",
-        "name": "Hemoglobin E-beta-thalassemia syndrome",
-        "name_fr": "",
-        "score": 0.3444,
-        "jaccard": 0.1111,
-        "coverage": 0.5,
-        "matched_hpo": [
           "HP:0001903",
+          "HP:0001945",
+          "HP:0002719",
           "HP:0002721"
         ],
-        "matched_count": 2,
-        "total_disease_hpo": 4
+        "matched_count": 8,
+        "total_disease_hpo": 89,
+        "text_match": false
       },
       {
-        "ordo_id": "ORPHA:2314",
-        "name": "Hyper-IgE syndrome",
-        "name_fr": "Syndrome d'Hyper-IgE (syndrome de Job)",
-        "score": 0.2821,
-        "jaccard": 0.1429,
+        "ordo_id": "ORPHA:39041",
+        "name": "Omenn syndrome",
+        "name_fr": "",
+        "score": 0.4353,
+        "coverage": 0.0659,
+        "matched_hpo": [
+          "HP:0000964",
+          "HP:0000988",
+          "HP:0001903",
+          "HP:0001945",
+          "HP:0001954",
+          "HP:0002721"
+        ],
+        "matched_count": 6,
+        "total_disease_hpo": 91,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:391487",
+        "name": "STAT1-related autoimmune enteropathy and endocrinopathy-susceptibility to chronic infections syndrome",
+        "name_fr": "",
+        "score": 0.4074,
+        "coverage": 0.1304,
+        "matched_hpo": [
+          "HP:0000964",
+          "HP:0001873",
+          "HP:0001973",
+          "HP:0002014",
+          "HP:0002719",
+          "HP:0002721"
+        ],
+        "matched_count": 6,
+        "total_disease_hpo": 46,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:229717",
+        "name": "Non-syndromic agammaglobulinemia",
+        "name_fr": "",
+        "score": 0.3934,
+        "coverage": 0.2143,
+        "matched_hpo": [
+          "HP:0000988",
+          "HP:0001873",
+          "HP:0001903",
+          "HP:0001945",
+          "HP:0002014",
+          "HP:0002721"
+        ],
+        "matched_count": 6,
+        "total_disease_hpo": 28,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:1572",
+        "name": "Common variable immunodeficiency",
+        "name_fr": "",
+        "score": 0.3894,
         "coverage": 0.375,
         "matched_hpo": [
           "HP:0000988",
+          "HP:0001873",
+          "HP:0001903",
           "HP:0001945",
+          "HP:0002014",
           "HP:0002719"
         ],
-        "matched_count": 3,
-        "total_disease_hpo": 8
+        "matched_count": 6,
+        "total_disease_hpo": 16,
+        "text_match": false
       },
       {
-        "ordo_id": "ORPHA:517",
-        "name": "Acute myelomonocytic leukemia",
+        "ordo_id": "ORPHA:319251",
+        "name": "Rift valley fever",
         "name_fr": "",
-        "score": 0.2545,
-        "jaccard": 0.1364,
-        "coverage": 0.3333,
+        "score": 0.3881,
+        "coverage": 0.1136,
         "matched_hpo": [
+          "HP:0000988",
           "HP:0001873",
           "HP:0001892",
-          "HP:0001903"
+          "HP:0001903",
+          "HP:0001945"
+        ],
+        "matched_count": 5,
+        "total_disease_hpo": 44,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:275",
+        "name": "Severe combined immunodeficiency due to DCLRE1C deficiency",
+        "name_fr": "",
+        "score": 0.388,
+        "coverage": 0.0811,
+        "matched_hpo": [
+          "HP:0000988",
+          "HP:0001954",
+          "HP:0001973"
         ],
         "matched_count": 3,
-        "total_disease_hpo": 9
+        "total_disease_hpo": 37,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:83471",
+        "name": "T-cell immunodeficiency with thymic aplasia",
+        "name_fr": "",
+        "score": 0.3805,
+        "coverage": 0.1389,
+        "matched_hpo": [
+          "HP:0000010",
+          "HP:0000964",
+          "HP:0002014",
+          "HP:0002719",
+          "HP:0005387"
+        ],
+        "matched_count": 5,
+        "total_disease_hpo": 36,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:183660",
+        "name": "T-B+ severe combined immunodeficiency due to gamma chain deficiency",
+        "name_fr": "",
+        "score": 0.3794,
+        "coverage": 0.3333,
+        "matched_hpo": [
+          "HP:0000964",
+          "HP:0001873",
+          "HP:0001903",
+          "HP:0001945",
+          "HP:0002014",
+          "HP:0002719"
+        ],
+        "matched_count": 6,
+        "total_disease_hpo": 18,
+        "text_match": false
       }
     ],
     "stats": {
-      "total": 28,
+      "total": 55,
       "matched": 18,
-      "unmatched": 10,
-      "match_rate": 64.3,
-      "unique_hpo": 16,
-      "ordo_matches": 5
+      "unmatched": 37,
+      "match_rate": 32.7,
+      "unique_hpo": 18,
+      "ordo_matches": 10
     }
   },
   "phenopacket": {
@@ -489,9 +945,9 @@
     "phenotypicFeatures": [
       {
         "type": {
-          "id": "HP:0002721",
-          "label": "Immunodeficiency",
-          "umls_cui": "C0021051"
+          "id": "HP:0001973",
+          "label": "Autoimmune thrombocytopenia",
+          "umls_cui": "C0242584"
         },
         "excluded": false,
         "evidence": [
@@ -502,7 +958,27 @@
             },
             "reference": {
               "id": "GSC_EN_004",
-              "description": "NER: immunodeficiency (0.321) | Match: clinical_synonym (1.000)"
+              "description": "NER: tt - aldrich syndrome (0.755) | Match: sapbert_similarity (0.724)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0005387",
+          "label": "Combined immunodeficiency",
+          "umls_cui": "C0494261"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "GSC_EN_004",
+              "description": "NER: a rare immunodeficiency x - linked genetic disorder (0.989) | Match: sapbert_similarity (0.768)"
             }
           }
         ]
@@ -529,8 +1005,28 @@
       },
       {
         "type": {
+          "id": "HP:0005537",
+          "label": "Decreased mean platelet volume",
+          "umls_cui": "C1096368"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "GSC_EN_004",
+              "description": "NER: low mean platelet volume (0.997) | Match: sapbert_similarity (0.836)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
           "id": "HP:0000964",
-          "label": "Eczema",
+          "label": "Eczematoid dermatitis",
           "umls_cui": "C0013595"
         },
         "excluded": false,
@@ -542,16 +1038,16 @@
             },
             "reference": {
               "id": "GSC_EN_004",
-              "description": "NER: dermatitis (0.263) | Match: clinical_synonym (1.000)"
+              "description": "NER: eczematoid dermatitis (0.994) | Match: exact_label (1.000)"
             }
           }
         ]
       },
       {
         "type": {
-          "id": "HP:0002719",
-          "label": "Recurrent infections",
-          "umls_cui": "C0239998"
+          "id": "HP:0000010",
+          "label": "Recurrent urinary tract infections",
+          "umls_cui": "C0262655"
         },
         "excluded": false,
         "evidence": [
@@ -562,7 +1058,47 @@
             },
             "reference": {
               "id": "GSC_EN_004",
-              "description": "NER: infections (0.517) | Match: sapbert_similarity (0.777)"
+              "description": "NER: urrent infections (0.997) | Match: sapbert_similarity (0.722)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0003812",
+          "label": "Phenotypic variability",
+          "umls_cui": "C1837514"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "GSC_EN_004",
+              "description": "NER: wide heterogeneity (0.946) | Match: sapbert_similarity (0.819)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0001954",
+          "label": "Recurrent fever",
+          "umls_cui": "C0277799"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "GSC_EN_004",
+              "description": "NER: recurrent fever (0.897) | Match: exact_label (1.000)"
             }
           }
         ]
@@ -602,7 +1138,7 @@
             },
             "reference": {
               "id": "GSC_EN_004",
-              "description": "NER: lesions (0.646) | Match: sapbert_similarity (0.736)"
+              "description": "NER: skin lesions (0.998) | Match: sapbert_similarity (0.798)"
             }
           }
         ]
@@ -622,7 +1158,7 @@
             },
             "reference": {
               "id": "GSC_EN_004",
-              "description": "NER: bloody diarrhoea (0.549) | Match: sapbert_similarity (0.851)"
+              "description": "NER: bloody diarrhoea (0.996) | Match: sapbert_similarity (0.851)"
             }
           }
         ]
@@ -649,26 +1185,6 @@
       },
       {
         "type": {
-          "id": "HP:0007185",
-          "label": "Loss of consciousness",
-          "umls_cui": "C0041657"
-        },
-        "excluded": false,
-        "evidence": [
-          {
-            "evidenceCode": {
-              "id": "ECO:0000033",
-              "label": "author statement supported by traceable reference"
-            },
-            "reference": {
-              "id": "GSC_EN_004",
-              "description": "NER: died (0.314) | Match: sapbert_similarity (0.709)"
-            }
-          }
-        ]
-      },
-      {
-        "type": {
           "id": "HP:0001892",
           "label": "Abnormal bleeding",
           "umls_cui": "C1458140"
@@ -682,27 +1198,7 @@
             },
             "reference": {
               "id": "GSC_EN_004",
-              "description": "NER: bleeding (0.796) | Match: sapbert_similarity (0.836)"
-            }
-          }
-        ]
-      },
-      {
-        "type": {
-          "id": "HP:0001902",
-          "label": "Giant platelets",
-          "umls_cui": "C0333864"
-        },
-        "excluded": false,
-        "evidence": [
-          {
-            "evidenceCode": {
-              "id": "ECO:0000033",
-              "label": "author statement supported by traceable reference"
-            },
-            "reference": {
-              "id": "GSC_EN_004",
-              "description": "NER: platelets (0.402) | Match: sapbert_similarity (0.797)"
+              "description": "NER: bleeding tendencies (0.998) | Match: sapbert_similarity (0.941)"
             }
           }
         ]
@@ -722,16 +1218,16 @@
             },
             "reference": {
               "id": "GSC_EN_004",
-              "description": "NER: rashes (0.894) | Match: sapbert_similarity (0.922)"
+              "description": "NER: skin rash (0.998) | Match: clinical_synonym (1.000)"
             }
           }
         ]
       },
       {
         "type": {
-          "id": "HP:0001954",
-          "label": "Recurrent fever",
-          "umls_cui": "C0277799"
+          "id": "HP:0012133",
+          "label": "Erythroid hypoplasia",
+          "umls_cui": "C0178416"
         },
         "excluded": false,
         "evidence": [
@@ -742,7 +1238,47 @@
             },
             "reference": {
               "id": "GSC_EN_004",
-              "description": "NER: recurrent fever (0.900) | Match: text_scan_exact_label (0.950)"
+              "description": "NER: very low levels of red blood cells (0.892) | Match: sapbert_similarity (0.780)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0002719",
+          "label": "Recurrent infections",
+          "umls_cui": "C0239998"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "GSC_EN_004",
+              "description": "NER: recurrent infections (0.900) | Match: text_scan_clinical_synonym (0.950)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0002721",
+          "label": "Immunodeficiency",
+          "umls_cui": "C0021051"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "GSC_EN_004",
+              "description": "NER: immunodeficiency (0.900) | Match: text_scan_clinical_synonym (0.950)"
             }
           }
         ]
@@ -766,50 +1302,10 @@
             }
           }
         ]
-      },
-      {
-        "type": {
-          "id": "HP:0005537",
-          "label": "Decreased mean platelet volume",
-          "umls_cui": "C1096368"
-        },
-        "excluded": false,
-        "evidence": [
-          {
-            "evidenceCode": {
-              "id": "ECO:0000033",
-              "label": "author statement supported by traceable reference"
-            },
-            "reference": {
-              "id": "GSC_EN_004",
-              "description": "NER: normal platelet volume (0.879) | Match: sapbert_similarity (0.766)"
-            }
-          }
-        ]
-      },
-      {
-        "type": {
-          "id": "HP:0011354",
-          "label": "Generalized abnormality of skin",
-          "umls_cui": "C4021157"
-        },
-        "excluded": false,
-        "evidence": [
-          {
-            "evidenceCode": {
-              "id": "ECO:0000033",
-              "label": "author statement supported by traceable reference"
-            },
-            "reference": {
-              "id": "GSC_EN_004",
-              "description": "NER: body skin (0.577) | Match: sapbert_similarity (0.705)"
-            }
-          }
-        ]
       }
     ],
     "metaData": {
-      "created": "2026-06-11T03:07:38Z",
+      "created": "2026-06-19T15:04:51Z",
       "createdBy": "clinical-preanalysis-pipeline-v2",
       "phenopacketSchemaVersion": "2.0",
       "resources": [
@@ -832,45 +1328,70 @@
             "id": "ORPHA:906",
             "label": "Wiskott-Aldrich syndrome"
           },
-          "score": 0.85,
+          "score": 0.6061,
           "allCandidates": [
             {
               "id": "ORPHA:906",
               "label": "Wiskott-Aldrich syndrome",
-              "score": 0.85
+              "score": 0.6061
             },
             {
-              "id": "ORPHA:231393",
-              "label": "Beta-thalassemia-X-linked thrombocytopenia syndrome",
-              "score": 0.3632
+              "id": "ORPHA:167",
+              "label": "Chédiak-Higashi syndrome",
+              "score": 0.4538
             },
             {
-              "id": "ORPHA:231249",
-              "label": "Hemoglobin E-beta-thalassemia syndrome",
-              "score": 0.3444
+              "id": "ORPHA:39041",
+              "label": "Omenn syndrome",
+              "score": 0.4353
             },
             {
-              "id": "ORPHA:2314",
-              "label": "Hyper-IgE syndrome",
-              "score": 0.2821
+              "id": "ORPHA:391487",
+              "label": "STAT1-related autoimmune enteropathy and endocrinopathy-susceptibility to chronic infections syndrome",
+              "score": 0.4074
             },
             {
-              "id": "ORPHA:517",
-              "label": "Acute myelomonocytic leukemia",
-              "score": 0.2545
+              "id": "ORPHA:229717",
+              "label": "Non-syndromic agammaglobulinemia",
+              "score": 0.3934
+            },
+            {
+              "id": "ORPHA:1572",
+              "label": "Common variable immunodeficiency",
+              "score": 0.3894
+            },
+            {
+              "id": "ORPHA:319251",
+              "label": "Rift valley fever",
+              "score": 0.3881
+            },
+            {
+              "id": "ORPHA:275",
+              "label": "Severe combined immunodeficiency due to DCLRE1C deficiency",
+              "score": 0.388
+            },
+            {
+              "id": "ORPHA:83471",
+              "label": "T-cell immunodeficiency with thymic aplasia",
+              "score": 0.3805
+            },
+            {
+              "id": "ORPHA:183660",
+              "label": "T-B+ severe combined immunodeficiency due to gamma chain deficiency",
+              "score": 0.3794
             }
           ]
         }
       }
     ],
     "_pipelineStats": {
-      "totalEntities": 28,
+      "totalEntities": 55,
       "matchedHPO": 18,
-      "unmatchedEntities": 10,
-      "phenopacketFeatures": 16,
+      "unmatchedEntities": 37,
+      "phenopacketFeatures": 18,
       "negatedFeatures": 0,
       "numericPhenotypes": 0,
-      "ordoCandidates": 5
+      "ordoCandidates": 10
     }
   }
 }

@@ -1,0 +1,1747 @@
+{
+  "note_id": "RA_EN_010",
+  "language": "en",
+  "module1": {
+    "clean_text": "A [AGE] male patient presented with arthritis, eye pain, itching, and redness. He had a history of allergic rhinitis and was not on any medication prior to evaluation. Laboratory results showed serum urea at 102.1 mg/dL (12.84–42.8 mg/dL), creatinine at 4.66 mg/dL (0.70–1.20 mg/dL), eGFR at 13 mL/min/1.73 m2 (60–120 mL/min/1.73 m2), serum albumin at 30.4 gr/L (35–52 gr/L), blood eosinophil count at 1.23 103/μL (0.03–0.59 103/μL), and C-reactive protein at 69.8 mg/L (0–5 mg/L). Urine analysis showed 1+ proteinuria, with no hematuria or leukocyturia, and normal urine microscopy. A 24-hour urine collection revealed 1527.5 mg/day proteinuria. Additional laboratory findings included C3c at 0.38 g/L (0.9–1.8 g/L), C4 at < 0.02 g/L (0.1–0.4 g/L), serum amyloid A at 50.70 mg/dL (5.7–8.2 mg/dL), IgG at 37.83 g/L (7–16 g/L), α1 globulin at 6% (2.9–4.9), β1 globulin at 3.2% (4.7–7.2), β2 globulin at 7.8% (3.2–6.5), and γ globulin at 39.4% (11.1–18.8). Liver and thyroid function tests, as well as pancreatic enzymes, were normal. Blood and urine cultures showed no growth. Rheumatoid factor and autoantibody tests were negative. Contrast-enhanced abdominal computed tomography revealed an inflamed appearance in the adipose tissue in the left pararectal region, loss of corticomedullary separation, and hypodense patchy areas in both kidneys. The respiratory system examination was normal, there were no rashes, and antibodies (ANA, pANCA, cANCA, antiGBM, etc.) were negative. There was no clinical picture of rapidly progressive glomerulonephritis.",
+    "phi_map": {
+      "AGE": "52-year-old"
+    },
+    "patient_info": {
+      "sex": "male"
+    }
+  },
+  "module3_warnings": {
+    "temporal": [],
+    "inconsistencies": []
+  },
+  "module4": {
+    "problem": [
+      {
+        "text": "1 + proteinuria",
+        "ner_score": 0.991,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0012595",
+        "hpo_name": "Mild proteinuria",
+        "expanded_text": "1 + proteinuria",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.7921,
+        "matched": true,
+        "umls_cui": "C4022832"
+      },
+      {
+        "text": "arthritis",
+        "ner_score": 0.508,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "arthritis",
+        "match_type": "skipped_low_ner_score",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "itis, eye pain",
+        "ner_score": 0.996,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0200026",
+        "hpo_name": "Ocular pain",
+        "expanded_text": "itis, eye pain",
+        "match_type": "substring_match",
+        "confidence": 0.95,
+        "matched": true,
+        "umls_cui": "C0151827"
+      },
+      {
+        "text": "itching",
+        "ner_score": 0.967,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0000989",
+        "hpo_name": "Pruritus",
+        "expanded_text": "itching",
+        "match_type": "exact_synonym",
+        "confidence": 1.0,
+        "matched": true,
+        "umls_cui": "C0033774"
+      },
+      {
+        "text": "redness",
+        "ner_score": 0.963,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0010783",
+        "hpo_name": "Erythema",
+        "expanded_text": "redness",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.8871,
+        "matched": true,
+        "umls_cui": "C0016382"
+      },
+      {
+        "text": "allergic rhinitis",
+        "ner_score": 0.998,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0003193",
+        "hpo_name": "Allergic rhinitis",
+        "expanded_text": "allergic rhinitis",
+        "match_type": "exact_label",
+        "confidence": 1.0,
+        "matched": true,
+        "umls_cui": "C0847614"
+      },
+      {
+        "text": "proteinuria",
+        "ner_score": 0.918,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0000093",
+        "hpo_name": "Proteinuria",
+        "expanded_text": "proteinuria",
+        "match_type": "exact_label",
+        "confidence": 1.0,
+        "matched": true,
+        "umls_cui": "C0033687"
+      },
+      {
+        "text": "uria",
+        "ner_score": 0.764,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "uria",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "hematuria",
+        "ner_score": 0.977,
+        "negated": true,
+        "negation_cue": "no",
+        "hpo_id": "HP:0000790",
+        "hpo_name": "Hematuria",
+        "expanded_text": "hematuria",
+        "match_type": "exact_label",
+        "confidence": 1.0,
+        "matched": true,
+        "umls_cui": "C0018965"
+      },
+      {
+        "text": "leukocyturia",
+        "ner_score": 0.971,
+        "negated": true,
+        "negation_cue": "no",
+        "hpo_id": "HP:0012085",
+        "hpo_name": "Pyuria",
+        "expanded_text": "leukocyturia",
+        "match_type": "related_synonym",
+        "confidence": 1.0,
+        "matched": true,
+        "umls_cui": "C0034359"
+      },
+      {
+        "text": "ukocyt",
+        "ner_score": 0.691,
+        "negated": true,
+        "negation_cue": "no",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "ukocyt",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "growth",
+        "ner_score": 0.771,
+        "negated": true,
+        "negation_cue": "no",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "growth",
+        "match_type": "sapbert_rejected_low_conf",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "an inflamed appearance in the adipose tissue",
+        "ner_score": 0.948,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0012490",
+        "hpo_name": "Panniculitis",
+        "expanded_text": "an inflamed appearance in the adipose tissue",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.8442,
+        "matched": true,
+        "umls_cui": "C0030326"
+      },
+      {
+        "text": "inflamed appearance",
+        "ner_score": 0.903,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "inflamed appearance",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "loss of corticomedullary separation",
+        "ner_score": 0.794,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0005565",
+        "hpo_name": "Reduced renal corticomedullary differentiation",
+        "expanded_text": "loss of corticomedullary separation",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.8673,
+        "matched": true,
+        "umls_cui": "C3807131"
+      },
+      {
+        "text": "hypodense patchy areas",
+        "ner_score": 0.974,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0010658",
+        "hpo_name": "Patchy changes of bone mineral density",
+        "expanded_text": "hypodense patchy areas",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.7684,
+        "matched": true,
+        "umls_cui": "C4023754"
+      },
+      {
+        "text": "rashes",
+        "ner_score": 0.574,
+        "negated": true,
+        "negation_cue": "no",
+        "hpo_id": "HP:0000988",
+        "hpo_name": "Skin rash",
+        "expanded_text": "rashes",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.9219,
+        "matched": true,
+        "umls_cui": "C0015230"
+      },
+      {
+        "text": "rapidly progressive glomerulonephritis",
+        "ner_score": 0.999,
+        "negated": true,
+        "negation_cue": "no",
+        "hpo_id": "HP:0003678",
+        "hpo_name": "Rapidly progressive",
+        "expanded_text": "rapidly progressive glomerulonephritis",
+        "match_type": "substring_match",
+        "confidence": 0.95,
+        "matched": true,
+        "umls_cui": "C1838681"
+      },
+      {
+        "text": "glomer",
+        "ner_score": 0.924,
+        "negated": true,
+        "negation_cue": "no",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "glomer",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "glomerulonephritis",
+        "ner_score": 0.9,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0000099",
+        "hpo_name": "Glomerulonephritis",
+        "expanded_text": "glomerulonephritis",
+        "match_type": "text_scan_exact_label",
+        "confidence": 0.95,
+        "matched": true,
+        "umls_cui": "C0017658",
+        "umls_all": [
+          "C0017658"
+        ]
+      },
+      {
+        "text": "progressive",
+        "ner_score": 0.9,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0003676",
+        "hpo_name": "Progressive",
+        "expanded_text": "progressive",
+        "match_type": "text_scan_exact_label",
+        "confidence": 0.95,
+        "matched": true,
+        "umls_cui": "C0205329",
+        "umls_all": [
+          "C0205329",
+          "C1864985"
+        ]
+      },
+      {
+        "text": "arthritis",
+        "ner_score": 0.9,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0001369",
+        "hpo_name": "Arthritis",
+        "expanded_text": "arthritis",
+        "match_type": "text_scan_exact_label",
+        "confidence": 0.95,
+        "matched": true,
+        "umls_cui": "C0003864",
+        "umls_all": [
+          "C0003864"
+        ]
+      },
+      {
+        "text": "rhinitis",
+        "ner_score": 0.9,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0012384",
+        "hpo_name": "Rhinitis",
+        "expanded_text": "rhinitis",
+        "match_type": "text_scan_exact_label",
+        "confidence": 0.95,
+        "matched": true,
+        "umls_cui": "C0035455",
+        "umls_all": [
+          "C0035455",
+          "C2718128"
+        ]
+      }
+    ],
+    "test": [
+      {
+        "text": "c - reactive protein",
+        "ner_score": 0.989,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "c - reactive protein",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "a 24 - hour urine collection",
+        "ner_score": 0.859,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "a 24 - hour urine collection",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "contrast - enhanced abdominal computed tomography",
+        "ner_score": 0.989,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "contrast - enhanced abdominal computed tomography",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "evaluation",
+        "ner_score": 0.982,
+        "negated": true,
+        "negation_cue": "was not",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "evaluation",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "Laboratory",
+        "ner_score": 0.971,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "Laboratory",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "serum",
+        "ner_score": 0.664,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "serum",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "serum urea",
+        "ner_score": 0.803,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "serum urea",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "urea",
+        "ner_score": 0.485,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "urea",
+        "match_type": "skipped_low_ner_score",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "creatinine",
+        "ner_score": 0.984,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "creatinine",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "tinine",
+        "ner_score": 0.881,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "tinine",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "serum albumin",
+        "ner_score": 0.994,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "serum albumin",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "albumin",
+        "ner_score": 0.933,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "albumin",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "blood eosinophil",
+        "ner_score": 0.639,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "blood eosinophil",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "blood e",
+        "ner_score": 0.996,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "blood e",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "osinophil count",
+        "ner_score": 0.987,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "osinophil count",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "count",
+        "ner_score": 0.988,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "count",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "reactive",
+        "ner_score": 0.994,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "reactive",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "protein",
+        "ner_score": 0.994,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "protein",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "Urine",
+        "ner_score": 0.879,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "Urine",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "urine analysis",
+        "ner_score": 0.996,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "urine analysis",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "analysis",
+        "ner_score": 0.953,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "analysis",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "normal",
+        "ner_score": 0.971,
+        "negated": true,
+        "negation_cue": "no",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "normal",
+        "match_type": "skipped_en_noise",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "microscopy",
+        "ner_score": 0.848,
+        "negated": true,
+        "negation_cue": "no",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "microscopy",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "collection",
+        "ner_score": 0.937,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "collection",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "findings",
+        "ner_score": 0.688,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "findings",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "serum amyloid a",
+        "ner_score": 0.987,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "serum amyloid a",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "amyloid",
+        "ner_score": 0.989,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "amyloid",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "α1 globulin",
+        "ner_score": 0.984,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "α1 globulin",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "globulin",
+        "ner_score": 0.99,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "globulin",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "β1 globulin",
+        "ner_score": 0.984,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "β1 globulin",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "β2 globulin",
+        "ner_score": 0.985,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "β2 globulin",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "γ globulin",
+        "ner_score": 0.985,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "γ globulin",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "Liver",
+        "ner_score": 0.975,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "Liver",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "liver and",
+        "ner_score": 0.992,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "liver and",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "thyroid",
+        "ner_score": 0.955,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "thyroid",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "thyroid function tests",
+        "ner_score": 0.988,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "thyroid function tests",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "function",
+        "ner_score": 0.995,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "function",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "pancreatic",
+        "ner_score": 0.989,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "pancreatic",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "pancreatic enzymes",
+        "ner_score": 0.978,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "pancreatic enzymes",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "enzymes",
+        "ner_score": 0.995,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "enzymes",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "blood and urine cultures",
+        "ner_score": 0.987,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "blood and urine cultures",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "cultures",
+        "ner_score": 0.606,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "cultures",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "growth",
+        "ner_score": 0.539,
+        "negated": true,
+        "negation_cue": "no",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "growth",
+        "match_type": "skipped_low_ner_score",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "Rheumatoid",
+        "ner_score": 0.988,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "Rheumatoid",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "umatoid factor",
+        "ner_score": 0.981,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "umatoid factor",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "factor",
+        "ner_score": 0.994,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "factor",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "auto",
+        "ner_score": 0.973,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "auto",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "autoantibody tests",
+        "ner_score": 0.963,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "autoantibody tests",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "anti",
+        "ner_score": 0.995,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "anti",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "negative",
+        "ner_score": 0.968,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "negative",
+        "match_type": "skipped_en_noise",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "computed",
+        "ner_score": 0.986,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "computed",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "tomography",
+        "ner_score": 0.988,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "tomography",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "the respiratory system examination",
+        "ner_score": 0.997,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "the respiratory system examination",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "respiratory",
+        "ner_score": 0.848,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "respiratory",
+        "match_type": "skipped_en_noise",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "system",
+        "ner_score": 0.98,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "system",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "examination",
+        "ner_score": 0.986,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "examination",
+        "match_type": "skipped_en_noise",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "antibodies",
+        "ner_score": 0.963,
+        "negated": true,
+        "negation_cue": "no",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "antibodies",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "panca",
+        "ner_score": 0.969,
+        "negated": true,
+        "negation_cue": "no",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "panca",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "canca",
+        "ner_score": 0.94,
+        "negated": true,
+        "negation_cue": "no",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "canca",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "antigbm",
+        "ner_score": 0.952,
+        "negated": true,
+        "negation_cue": "no",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "antigbm",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      }
+    ],
+    "treatment": [
+      {
+        "text": "any medication",
+        "ner_score": 0.985,
+        "negated": true,
+        "negation_cue": "was not",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "any medication",
+        "match_type": "skipped_treatment",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      }
+    ],
+    "ordo_candidates": [
+      {
+        "ordo_id": "ORPHA:536",
+        "name": "Systemic lupus erythematosus",
+        "name_fr": "",
+        "score": 0.4796,
+        "coverage": 0.0706,
+        "matched_hpo": [
+          "HP:0000093",
+          "HP:0000790",
+          "HP:0000988",
+          "HP:0000989",
+          "HP:0001369",
+          "HP:0012085"
+        ],
+        "matched_count": 6,
+        "total_disease_hpo": 85,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:36412",
+        "name": "Hypocomplementemic urticarial vasculitis",
+        "name_fr": "",
+        "score": 0.3981,
+        "coverage": 0.1064,
+        "matched_hpo": [
+          "HP:0000093",
+          "HP:0000790",
+          "HP:0000988",
+          "HP:0000989",
+          "HP:0001369"
+        ],
+        "matched_count": 5,
+        "total_disease_hpo": 47,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:727",
+        "name": "Microscopic polyangiitis",
+        "name_fr": "",
+        "score": 0.3981,
+        "coverage": 0.0909,
+        "matched_hpo": [
+          "HP:0000099",
+          "HP:0000790",
+          "HP:0000988",
+          "HP:0001369",
+          "HP:0010783"
+        ],
+        "matched_count": 5,
+        "total_disease_hpo": 55,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:183",
+        "name": "Eosinophilic granulomatosis with polyangiitis",
+        "name_fr": "",
+        "score": 0.3908,
+        "coverage": 0.0606,
+        "matched_hpo": [
+          "HP:0000093",
+          "HP:0000790",
+          "HP:0000988",
+          "HP:0001369"
+        ],
+        "matched_count": 4,
+        "total_disease_hpo": 66,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:91500",
+        "name": "Tubulointerstitial nephritis and uveitis syndrome",
+        "name_fr": "",
+        "score": 0.3898,
+        "coverage": 0.0566,
+        "matched_hpo": [
+          "HP:0000988",
+          "HP:0012595",
+          "HP:0200026"
+        ],
+        "matched_count": 3,
+        "total_disease_hpo": 53,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:761",
+        "name": "Immunoglobulin A vasculitis",
+        "name_fr": "",
+        "score": 0.3894,
+        "coverage": 0.1471,
+        "matched_hpo": [
+          "HP:0000093",
+          "HP:0000790",
+          "HP:0000988",
+          "HP:0001369",
+          "HP:0010783"
+        ],
+        "matched_count": 5,
+        "total_disease_hpo": 34,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:900",
+        "name": "Granulomatosis with polyangiitis",
+        "name_fr": "",
+        "score": 0.3879,
+        "coverage": 0.0625,
+        "matched_hpo": [
+          "HP:0000093",
+          "HP:0000099",
+          "HP:0000790",
+          "HP:0000988",
+          "HP:0001369"
+        ],
+        "matched_count": 5,
+        "total_disease_hpo": 80,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:90291",
+        "name": "Systemic sclerosis",
+        "name_fr": "",
+        "score": 0.3624,
+        "coverage": 0.0465,
+        "matched_hpo": [
+          "HP:0000093",
+          "HP:0000099",
+          "HP:0000989",
+          "HP:0001369"
+        ],
+        "matched_count": 4,
+        "total_disease_hpo": 86,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:48435",
+        "name": "Postinfectious vasculitis",
+        "name_fr": "",
+        "score": 0.3565,
+        "coverage": 0.0702,
+        "matched_hpo": [
+          "HP:0000093",
+          "HP:0000099",
+          "HP:0000790",
+          "HP:0001369"
+        ],
+        "matched_count": 4,
+        "total_disease_hpo": 57,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:829",
+        "name": "Adult-onset Still disease",
+        "name_fr": "",
+        "score": 0.352,
+        "coverage": 0.0893,
+        "matched_hpo": [
+          "HP:0000093",
+          "HP:0000988",
+          "HP:0000989",
+          "HP:0001369",
+          "HP:0010783"
+        ],
+        "matched_count": 5,
+        "total_disease_hpo": 56,
+        "text_match": false
+      }
+    ],
+    "stats": {
+      "total": 84,
+      "matched": 17,
+      "unmatched": 67,
+      "match_rate": 20.2,
+      "unique_hpo": 17,
+      "ordo_matches": 10
+    }
+  },
+  "phenopacket": {
+    "id": "phenopacket-RA_EN_010",
+    "subject": {
+      "id": "RA_EN_010",
+      "sex": "MALE"
+    },
+    "input": "A 52-year-old male patient presented with arthritis, eye pain, itching, and redness. He had a history of allergic rhinitis and was not on any medication prior to evaluation. Laboratory results showed serum urea at 102.1 mg/dL (12.84–42.8 mg/dL), creatinine at 4.66 mg/dL (0.70–1.20 mg/dL), eGFR at 13 mL/min/1.73 m2 (60–120 mL/min/1.73 m2), serum albumin at 30.4 gr/L (35–52 gr/L), blood eosinophil count at 1.23 103/μL (0.03–0.59 103/μL), and C-reactive protein at 69.8 mg/L (0–5 mg/L). Urine analysis showed 1+ proteinuria, with no hematuria or leukocyturia, and normal urine microscopy. A 24-hour urine collection revealed 1527.5 mg/day proteinuria. Additional laboratory findings included C3c at 0.38 g/L (0.9–1.8 g/L), C4 at < 0.02 g/L (0.1–0.4 g/L), serum amyloid A at 50.70 mg/dL (5.7–8.2 mg/dL), IgG at 37.83 g/L (7–16 g/L), α1 globulin at 6% (2.9–4.9), β1 globulin at 3.2% (4.7–7.2), β2 globulin at 7.8% (3.2–6.5), and γ globulin at 39.4% (11.1–18.8). Liver and thyroid function tests, as well as pancreatic enzymes, were normal. Blood and urine cultures showed no growth. Rheumatoid factor and autoantibody tests were negative. Contrast-enhanced abdominal computed tomography revealed an inflamed appearance in the adipose tissue in the left pararectal region, loss of corticomedullary separation, and hypodense patchy areas in both kidneys. The respiratory system examination was normal, there were no rashes, and antibodies (ANA, pANCA, cANCA, antiGBM, etc.) were negative. There was no clinical picture of rapidly progressive glomerulonephritis.",
+    "target": "Systemic lupus erythematosus",
+    "phenotypicFeatures": [
+      {
+        "type": {
+          "id": "HP:0012595",
+          "label": "Mild proteinuria",
+          "umls_cui": "C4022832"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_010",
+              "description": "NER: 1 + proteinuria (0.991) | Match: sapbert_similarity (0.792)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0200026",
+          "label": "Ocular pain",
+          "umls_cui": "C0151827"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_010",
+              "description": "NER: itis, eye pain (0.996) | Match: substring_match (0.950)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0000989",
+          "label": "Pruritus",
+          "umls_cui": "C0033774"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_010",
+              "description": "NER: itching (0.967) | Match: exact_synonym (1.000)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0010783",
+          "label": "Erythema",
+          "umls_cui": "C0016382"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_010",
+              "description": "NER: redness (0.963) | Match: sapbert_similarity (0.887)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0003193",
+          "label": "Allergic rhinitis",
+          "umls_cui": "C0847614"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_010",
+              "description": "NER: allergic rhinitis (0.998) | Match: exact_label (1.000)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0000093",
+          "label": "Proteinuria",
+          "umls_cui": "C0033687"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_010",
+              "description": "NER: proteinuria (0.918) | Match: exact_label (1.000)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0000790",
+          "label": "Hematuria",
+          "umls_cui": "C0018965"
+        },
+        "excluded": true,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_010",
+              "description": "NER: hematuria (0.977) | Match: exact_label (1.000) | Negated by: \"no\""
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0012085",
+          "label": "Pyuria",
+          "umls_cui": "C0034359"
+        },
+        "excluded": true,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_010",
+              "description": "NER: leukocyturia (0.971) | Match: related_synonym (1.000) | Negated by: \"no\""
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0012490",
+          "label": "Panniculitis",
+          "umls_cui": "C0030326"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_010",
+              "description": "NER: an inflamed appearance in the adipose tissue (0.948) | Match: sapbert_similarity (0.844)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0005565",
+          "label": "Reduced renal corticomedullary differentiation",
+          "umls_cui": "C3807131"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_010",
+              "description": "NER: loss of corticomedullary separation (0.794) | Match: sapbert_similarity (0.867)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0010658",
+          "label": "Patchy changes of bone mineral density",
+          "umls_cui": "C4023754"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_010",
+              "description": "NER: hypodense patchy areas (0.974) | Match: sapbert_similarity (0.768)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0000988",
+          "label": "Skin rash",
+          "umls_cui": "C0015230"
+        },
+        "excluded": true,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_010",
+              "description": "NER: rashes (0.574) | Match: sapbert_similarity (0.922) | Negated by: \"no\""
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0003678",
+          "label": "Rapidly progressive",
+          "umls_cui": "C1838681"
+        },
+        "excluded": true,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_010",
+              "description": "NER: rapidly progressive glomerulonephritis (0.999) | Match: substring_match (0.950) | Negated by: \"no\""
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0000099",
+          "label": "Glomerulonephritis",
+          "umls_cui": "C0017658"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_010",
+              "description": "NER: glomerulonephritis (0.900) | Match: text_scan_exact_label (0.950)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0003676",
+          "label": "Progressive",
+          "umls_cui": "C0205329"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_010",
+              "description": "NER: progressive (0.900) | Match: text_scan_exact_label (0.950)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0001369",
+          "label": "Arthritis",
+          "umls_cui": "C0003864"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_010",
+              "description": "NER: arthritis (0.900) | Match: text_scan_exact_label (0.950)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0012384",
+          "label": "Rhinitis",
+          "umls_cui": "C0035455"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_010",
+              "description": "NER: rhinitis (0.900) | Match: text_scan_exact_label (0.950)"
+            }
+          }
+        ]
+      }
+    ],
+    "metaData": {
+      "created": "2026-06-19T15:09:26Z",
+      "createdBy": "clinical-preanalysis-pipeline-v2",
+      "phenopacketSchemaVersion": "2.0",
+      "resources": [
+        {
+          "id": "hp",
+          "name": "Human Phenotype Ontology",
+          "url": "https://hpo.jax.org",
+          "version": "2024-04-26",
+          "namespacePrefix": "HP",
+          "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        }
+      ]
+    },
+    "interpretations": [
+      {
+        "id": "interpretation-RA_EN_010",
+        "progressStatus": "IN_PROGRESS",
+        "diagnosis": {
+          "disease": {
+            "id": "ORPHA:536",
+            "label": "Systemic lupus erythematosus"
+          },
+          "score": 0.4796,
+          "allCandidates": [
+            {
+              "id": "ORPHA:536",
+              "label": "Systemic lupus erythematosus",
+              "score": 0.4796
+            },
+            {
+              "id": "ORPHA:36412",
+              "label": "Hypocomplementemic urticarial vasculitis",
+              "score": 0.3981
+            },
+            {
+              "id": "ORPHA:727",
+              "label": "Microscopic polyangiitis",
+              "score": 0.3981
+            },
+            {
+              "id": "ORPHA:183",
+              "label": "Eosinophilic granulomatosis with polyangiitis",
+              "score": 0.3908
+            },
+            {
+              "id": "ORPHA:91500",
+              "label": "Tubulointerstitial nephritis and uveitis syndrome",
+              "score": 0.3898
+            },
+            {
+              "id": "ORPHA:761",
+              "label": "Immunoglobulin A vasculitis",
+              "score": 0.3894
+            },
+            {
+              "id": "ORPHA:900",
+              "label": "Granulomatosis with polyangiitis",
+              "score": 0.3879
+            },
+            {
+              "id": "ORPHA:90291",
+              "label": "Systemic sclerosis",
+              "score": 0.3624
+            },
+            {
+              "id": "ORPHA:48435",
+              "label": "Postinfectious vasculitis",
+              "score": 0.3565
+            },
+            {
+              "id": "ORPHA:829",
+              "label": "Adult-onset Still disease",
+              "score": 0.352
+            }
+          ]
+        }
+      }
+    ],
+    "_pipelineStats": {
+      "totalEntities": 84,
+      "matchedHPO": 17,
+      "unmatchedEntities": 67,
+      "phenopacketFeatures": 17,
+      "negatedFeatures": 4,
+      "numericPhenotypes": 0,
+      "ordoCandidates": 10
+    }
+  }
+}

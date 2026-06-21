@@ -14,7 +14,7 @@
     "problem": [
       {
         "text": "Spinal Muscular Atrophy",
-        "ner_score": 0.918,
+        "ner_score": 0.998,
         "negated": false,
         "negation_cue": "",
         "hpo_id": "HP:0007269",
@@ -26,17 +26,56 @@
         "umls_cui": "C0026847"
       },
       {
+        "text": "intricate genetics",
+        "ner_score": 0.817,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "intricate genetics",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
         "text": "motor function",
         "ner_score": 0.451,
         "negated": false,
         "negation_cue": "",
-        "hpo_id": "HP:0004302",
-        "hpo_name": "Functional motor deficit",
+        "hpo_id": null,
+        "hpo_name": null,
         "expanded_text": "motor function",
+        "match_type": "skipped_low_ner_score",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "function",
+        "ner_score": 0.5,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "function",
+        "match_type": "skipped_low_ner_score",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "significant weakness",
+        "ner_score": 0.998,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0003690",
+        "hpo_name": "Limb muscle weakness",
+        "expanded_text": "significant weakness",
         "match_type": "sapbert_similarity",
-        "confidence": 0.7404,
+        "confidence": 0.8301,
         "matched": true,
-        "umls_cui": "C4025360"
+        "umls_cui": "C0587246"
       },
       {
         "text": "weakness",
@@ -56,13 +95,26 @@
         "ner_score": 0.603,
         "negated": false,
         "negation_cue": "",
-        "hpo_id": "HP:0011947",
-        "hpo_name": "Respiratory tract infection",
+        "hpo_id": null,
+        "hpo_name": null,
         "expanded_text": "respiratory",
-        "match_type": "sapbert_similarity",
-        "confidence": 0.7121,
-        "matched": true,
-        "umls_cui": "C0035243"
+        "match_type": "skipped_en_noise",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "respiratory and orthopedic symptoms",
+        "ner_score": 0.983,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "respiratory and orthopedic symptoms",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
       },
       {
         "text": "orthopedic symptoms",
@@ -72,7 +124,7 @@
         "hpo_id": null,
         "hpo_name": null,
         "expanded_text": "orthopedic symptoms",
-        "match_type": "no_match",
+        "match_type": "skipped_low_ner_score",
         "confidence": 0.0,
         "matched": false,
         "umls_cui": null
@@ -99,6 +151,110 @@
     ],
     "treatment": [
       {
+        "text": "gene - targeted therapies",
+        "ner_score": 0.958,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "gene - targeted therapies",
+        "match_type": "skipped_treatment",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "asemnogene abeparvovec - xioi",
+        "ner_score": 0.92,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "asemnogene abeparvovec - xioi",
+        "match_type": "skipped_treatment",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "therapeutic",
+        "ner_score": 0.673,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "therapeutic",
+        "match_type": "skipped_treatment",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "pies",
+        "ner_score": 0.871,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "pies",
+        "match_type": "skipped_treatment",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "supportive sma care",
+        "ner_score": 0.984,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "supportive sma care",
+        "match_type": "skipped_treatment",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "smn protein",
+        "ner_score": 0.974,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "smn protein",
+        "match_type": "skipped_treatment",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "unit",
+        "ner_score": 0.505,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "unit",
+        "match_type": "skipped_low_ner_score",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "smn1 gene replacement",
+        "ner_score": 0.986,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "smn1 gene replacement",
+        "match_type": "skipped_treatment",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
         "text": "ersen",
         "ner_score": 0.82,
         "negated": false,
@@ -106,7 +262,33 @@
         "hpo_id": null,
         "hpo_name": null,
         "expanded_text": "ersen",
-        "match_type": "no_match",
+        "match_type": "skipped_treatment",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "sdiplam",
+        "ner_score": 0.772,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "sdiplam",
+        "match_type": "skipped_treatment",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "continued",
+        "ner_score": 0.435,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "continued",
+        "match_type": "skipped_low_ner_score",
         "confidence": 0.0,
         "matched": false,
         "umls_cui": null
@@ -119,7 +301,48 @@
         "hpo_id": null,
         "hpo_name": null,
         "expanded_text": "monitoring",
-        "match_type": "no_match",
+        "match_type": "skipped_en_noise",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "supportive care",
+        "ner_score": 0.962,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "supportive care",
+        "match_type": "skipped_treatment",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      }
+    ],
+    "test": [
+      {
+        "text": "n protein",
+        "ner_score": 0.433,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "n protein",
+        "match_type": "skipped_low_ner_score",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "close monitoring",
+        "ner_score": 0.927,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "close monitoring",
+        "match_type": "skipped_test",
         "confidence": 0.0,
         "matched": false,
         "umls_cui": null
@@ -127,80 +350,149 @@
     ],
     "ordo_candidates": [
       {
-        "ordo_id": "ORPHA:70",
-        "name": "Spinal muscular atrophy",
-        "name_fr": "Amyotrophie spinale (SMA)",
-        "score": 0.85,
-        "jaccard": 0.0909,
-        "coverage": 0.1429,
+        "ordo_id": "ORPHA:466768",
+        "name": "Autosomal dominant Charcot-Marie-Tooth disease type 2Z",
+        "name_fr": "",
+        "score": 0.4564,
+        "coverage": 0.0139,
         "matched_hpo": [
-          "HP:0003202"
+          "HP:0007269"
         ],
         "matched_count": 1,
-        "total_disease_hpo": 7
+        "total_disease_hpo": 72,
+        "text_match": false
       },
       {
-        "ordo_id": "ORPHA:371",
-        "name": "Glycogen storage disease due to muscle phosphofructokinase deficiency",
+        "ordo_id": "ORPHA:496756",
+        "name": "Early-onset progressive encephalopathy-spastic ataxia-distal spinal muscular atrophy syndrome",
         "name_fr": "",
-        "score": 0.2889,
-        "jaccard": 0.2222,
-        "coverage": 0.3333,
+        "score": 0.4327,
+        "coverage": 0.0455,
+        "matched_hpo": [
+          "HP:0007269"
+        ],
+        "matched_count": 1,
+        "total_disease_hpo": 22,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:1145",
+        "name": "Infantile-onset X-linked spinal muscular atrophy",
+        "name_fr": "",
+        "score": 0.4271,
+        "coverage": 0.0541,
+        "matched_hpo": [
+          "HP:0003202",
+          "HP:0007269"
+        ],
+        "matched_count": 2,
+        "total_disease_hpo": 37,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:166108",
+        "name": "Birk-Barel syndrome",
+        "name_fr": "",
+        "score": 0.3949,
+        "coverage": 0.0303,
+        "matched_hpo": [
+          "HP:0007269"
+        ],
+        "matched_count": 1,
+        "total_disease_hpo": 33,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:1320",
+        "name": "Idiopathic camptocormia",
+        "name_fr": "",
+        "score": 0.3688,
+        "coverage": 0.0,
+        "matched_hpo": [],
+        "matched_count": 0,
+        "total_disease_hpo": 33,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:97229",
+        "name": "Riboflavin transporter deficiency",
+        "name_fr": "",
+        "score": 0.3561,
+        "coverage": 0.0857,
+        "matched_hpo": [
+          "HP:0001324",
+          "HP:0003202",
+          "HP:0003690"
+        ],
+        "matched_count": 3,
+        "total_disease_hpo": 35,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:589",
+        "name": "Myasthenia gravis",
+        "name_fr": "",
+        "score": 0.3561,
+        "coverage": 0.0667,
+        "matched_hpo": [
+          "HP:0001324",
+          "HP:0003202",
+          "HP:0003690"
+        ],
+        "matched_count": 3,
+        "total_disease_hpo": 45,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:98913",
+        "name": "Postsynaptic congenital myasthenic syndrome",
+        "name_fr": "",
+        "score": 0.3518,
+        "coverage": 0.0541,
         "matched_hpo": [
           "HP:0001324",
           "HP:0003202"
         ],
         "matched_count": 2,
-        "total_disease_hpo": 6
+        "total_disease_hpo": 37,
+        "text_match": false
       },
       {
-        "ordo_id": "ORPHA:85162",
-        "name": "Facial onset sensory and motor neuronopathy",
+        "ordo_id": "ORPHA:845",
+        "name": "Tay-Sachs disease",
         "name_fr": "",
-        "score": 0.2514,
-        "jaccard": 0.2,
-        "coverage": 0.2857,
+        "score": 0.3475,
+        "coverage": 0.0294,
         "matched_hpo": [
           "HP:0001324",
           "HP:0003202"
         ],
         "matched_count": 2,
-        "total_disease_hpo": 7
+        "total_disease_hpo": 68,
+        "text_match": false
       },
       {
-        "ordo_id": "ORPHA:166",
-        "name": "Charcot-Marie-Tooth disease",
+        "ordo_id": "ORPHA:271861",
+        "name": "Hereditary ATTR amyloidosis",
         "name_fr": "",
-        "score": 0.2,
-        "jaccard": 0.125,
-        "coverage": 0.25,
+        "score": 0.3465,
+        "coverage": 0.0556,
         "matched_hpo": [
+          "HP:0001324",
           "HP:0003202"
         ],
-        "matched_count": 1,
-        "total_disease_hpo": 4
-      },
-      {
-        "ordo_id": "ORPHA:3239",
-        "name": "Deafness-vitiligo-achalasia syndrome",
-        "name_fr": "",
-        "score": 0.14,
-        "jaccard": 0.1,
-        "coverage": 0.1667,
-        "matched_hpo": [
-          "HP:0003202"
-        ],
-        "matched_count": 1,
-        "total_disease_hpo": 6
+        "matched_count": 2,
+        "total_disease_hpo": 36,
+        "text_match": false
       }
     ],
     "stats": {
-      "total": 8,
-      "matched": 5,
-      "unmatched": 3,
-      "match_rate": 62.5,
-      "unique_hpo": 5,
-      "ordo_matches": 5
+      "total": 25,
+      "matched": 4,
+      "unmatched": 21,
+      "match_rate": 16.0,
+      "unique_hpo": 4,
+      "ordo_matches": 10
     }
   },
   "phenopacket": {
@@ -209,7 +501,7 @@
       "id": "PUBMED_EN_019"
     },
     "input": "Case Report: Spinal Muscular Atrophy.\n\nPURPOSE OF REVIEW: This article provides an overview of the pathophysiology and clinical presentations of spinal muscular atrophy (SMA) and reviews therapeutic developments, including US Food and Drug Administration (FDA)-approved gene-targeted therapies and mainstays of supportive SMA care.\nRECENT FINDINGS: Over the past decades, an understanding of the role of SMN protein in the development and maintenance of the motor unit and the intricate genetics underlying SMA has led to striking developments in therapeutics with three FDA-approved treatments for SMA, one targeting SMN1 gene replacement (onasemnogene abeparvovec-xioi) and two others enhancing SMN protein production from the SMN2 gene (nusinersen and risdiplam). These therapies are most effective in infants treated at younger ages, and improvement is most striking in babies treated as neonates. Despite improvements in motor function, patients (especially those treated at older ages) continue to experience significant weakness and require continued close monitoring of respiratory and orthopedic symptoms.\nSUMMARY: Striking therapeutic advancements have changed the clinical course of SMA dramatically, although supportive care continues to play an important role in patient care.",
-    "target": "Spinal muscular atrophy",
+    "target": "Autosomal dominant Charcot-Marie-Tooth disease type 2Z",
     "phenotypicFeatures": [
       {
         "type": {
@@ -226,16 +518,16 @@
             },
             "reference": {
               "id": "PUBMED_EN_019",
-              "description": "NER: Spinal Muscular Atrophy (0.918) | Match: exact_label (1.000)"
+              "description": "NER: Spinal Muscular Atrophy (0.998) | Match: exact_label (1.000)"
             }
           }
         ]
       },
       {
         "type": {
-          "id": "HP:0004302",
-          "label": "Functional motor deficit",
-          "umls_cui": "C4025360"
+          "id": "HP:0003690",
+          "label": "Limb muscle weakness",
+          "umls_cui": "C0587246"
         },
         "excluded": false,
         "evidence": [
@@ -246,7 +538,7 @@
             },
             "reference": {
               "id": "PUBMED_EN_019",
-              "description": "NER: motor function (0.451) | Match: sapbert_similarity (0.740)"
+              "description": "NER: significant weakness (0.998) | Match: sapbert_similarity (0.830)"
             }
           }
         ]
@@ -273,26 +565,6 @@
       },
       {
         "type": {
-          "id": "HP:0011947",
-          "label": "Respiratory tract infection",
-          "umls_cui": "C0035243"
-        },
-        "excluded": false,
-        "evidence": [
-          {
-            "evidenceCode": {
-              "id": "ECO:0000033",
-              "label": "author statement supported by traceable reference"
-            },
-            "reference": {
-              "id": "PUBMED_EN_019",
-              "description": "NER: respiratory (0.603) | Match: sapbert_similarity (0.712)"
-            }
-          }
-        ]
-      },
-      {
-        "type": {
           "id": "HP:0003202",
           "label": "Skeletal muscle atrophy",
           "umls_cui": "C0234958"
@@ -313,7 +585,7 @@
       }
     ],
     "metaData": {
-      "created": "2026-06-11T03:06:38Z",
+      "created": "2026-06-19T15:03:19Z",
       "createdBy": "clinical-preanalysis-pipeline-v2",
       "phenopacketSchemaVersion": "2.0",
       "resources": [
@@ -333,48 +605,73 @@
         "progressStatus": "IN_PROGRESS",
         "diagnosis": {
           "disease": {
-            "id": "ORPHA:70",
-            "label": "Spinal muscular atrophy"
+            "id": "ORPHA:466768",
+            "label": "Autosomal dominant Charcot-Marie-Tooth disease type 2Z"
           },
-          "score": 0.85,
+          "score": 0.4564,
           "allCandidates": [
             {
-              "id": "ORPHA:70",
-              "label": "Spinal muscular atrophy",
-              "score": 0.85
+              "id": "ORPHA:466768",
+              "label": "Autosomal dominant Charcot-Marie-Tooth disease type 2Z",
+              "score": 0.4564
             },
             {
-              "id": "ORPHA:371",
-              "label": "Glycogen storage disease due to muscle phosphofructokinase deficiency",
-              "score": 0.2889
+              "id": "ORPHA:496756",
+              "label": "Early-onset progressive encephalopathy-spastic ataxia-distal spinal muscular atrophy syndrome",
+              "score": 0.4327
             },
             {
-              "id": "ORPHA:85162",
-              "label": "Facial onset sensory and motor neuronopathy",
-              "score": 0.2514
+              "id": "ORPHA:1145",
+              "label": "Infantile-onset X-linked spinal muscular atrophy",
+              "score": 0.4271
             },
             {
-              "id": "ORPHA:166",
-              "label": "Charcot-Marie-Tooth disease",
-              "score": 0.2
+              "id": "ORPHA:166108",
+              "label": "Birk-Barel syndrome",
+              "score": 0.3949
             },
             {
-              "id": "ORPHA:3239",
-              "label": "Deafness-vitiligo-achalasia syndrome",
-              "score": 0.14
+              "id": "ORPHA:1320",
+              "label": "Idiopathic camptocormia",
+              "score": 0.3688
+            },
+            {
+              "id": "ORPHA:97229",
+              "label": "Riboflavin transporter deficiency",
+              "score": 0.3561
+            },
+            {
+              "id": "ORPHA:589",
+              "label": "Myasthenia gravis",
+              "score": 0.3561
+            },
+            {
+              "id": "ORPHA:98913",
+              "label": "Postsynaptic congenital myasthenic syndrome",
+              "score": 0.3518
+            },
+            {
+              "id": "ORPHA:845",
+              "label": "Tay-Sachs disease",
+              "score": 0.3475
+            },
+            {
+              "id": "ORPHA:271861",
+              "label": "Hereditary ATTR amyloidosis",
+              "score": 0.3465
             }
           ]
         }
       }
     ],
     "_pipelineStats": {
-      "totalEntities": 8,
-      "matchedHPO": 5,
-      "unmatchedEntities": 3,
-      "phenopacketFeatures": 5,
+      "totalEntities": 25,
+      "matchedHPO": 4,
+      "unmatchedEntities": 21,
+      "phenopacketFeatures": 4,
       "negatedFeatures": 0,
       "numericPhenotypes": 0,
-      "ordoCandidates": 5
+      "ordoCandidates": 10
     }
   }
 }

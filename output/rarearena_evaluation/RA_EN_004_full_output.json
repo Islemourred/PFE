@@ -1,0 +1,956 @@
+{
+  "note_id": "RA_EN_004",
+  "language": "en",
+  "module1": {
+    "clean_text": "A [AGE] woman reported experiencing dull aching pain, swelling, and restricted movement in her left knee for the past 10 years. The pain, which began 10 years ago, has progressively worsened. There was no history of trauma. Two years after the onset of pain, she noticed a swelling on the lateral side of her left knee joint, which gradually increased in size and was associated with a reduction in knee joint movement. Activities that involved bending the knee triggered the pain. The patient has no significant past medical or family history. Physical examination revealed swelling on the lateral aspect of the left knee, without any localized redness or increased temperature. The swelling, measuring 15×5 cm, extended from the lateral aspect of the left distal femur to the fibular head. It was bony, hard, not attached to the underlying bone, and non-tender. The range of motion in the left knee joint was limited to 0–40°, with further movement restricted. There was no evidence of neurovascular impairment in the distal part of the limb. No similar lesions were found elsewhere on the body.",
+    "phi_map": {
+      "AGE": "56-year-old"
+    },
+    "patient_info": {}
+  },
+  "module3_warnings": {
+    "temporal": [],
+    "inconsistencies": []
+  },
+  "module4": {
+    "problem": [
+      {
+        "text": "dull aching pain",
+        "ner_score": 0.998,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0003326",
+        "hpo_name": "Myalgia",
+        "expanded_text": "dull aching pain",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.7472,
+        "matched": true,
+        "umls_cui": "C0231528"
+      },
+      {
+        "text": "pain",
+        "ner_score": 0.948,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0012531",
+        "hpo_name": "Pain",
+        "expanded_text": "pain",
+        "match_type": "exact_label",
+        "confidence": 1.0,
+        "matched": true,
+        "umls_cui": "C0030193"
+      },
+      {
+        "text": "swelling",
+        "ner_score": 0.95,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0000969",
+        "hpo_name": "Edema",
+        "expanded_text": "swelling",
+        "match_type": "clinical_synonym",
+        "confidence": 1.0,
+        "matched": true,
+        "umls_cui": "C0013604"
+      },
+      {
+        "text": "restricted movement",
+        "ner_score": 0.643,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0002374",
+        "hpo_name": "Diminished movement",
+        "expanded_text": "restricted movement",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.8836,
+        "matched": true,
+        "umls_cui": "C4025710"
+      },
+      {
+        "text": "restricted movement in her left knee",
+        "ner_score": 0.989,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "restricted movement in her left knee",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "the pain",
+        "ner_score": 0.996,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "the pain",
+        "match_type": "deduplicated",
+        "confidence": 0.982,
+        "matched": false,
+        "umls_cui": "C0030193"
+      },
+      {
+        "text": "trauma",
+        "ner_score": 0.985,
+        "negated": true,
+        "negation_cue": "no history of",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "trauma",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "a swelling on",
+        "ner_score": 0.868,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "a swelling on",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "a reduction in knee joint movement",
+        "ner_score": 0.995,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0010501",
+        "hpo_name": "Limitation of knee mobility",
+        "expanded_text": "a reduction in knee joint movement",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.8915,
+        "matched": true,
+        "umls_cui": "C4021259"
+      },
+      {
+        "text": "swelling on the lateral aspect",
+        "ner_score": 0.778,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "swelling on the lateral aspect",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "the left knee",
+        "ner_score": 0.936,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "the left knee",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "any localized redness",
+        "ner_score": 0.862,
+        "negated": true,
+        "negation_cue": "without",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "any localized redness",
+        "match_type": "deduplicated",
+        "confidence": 0.7764,
+        "matched": false,
+        "umls_cui": "C0016382"
+      },
+      {
+        "text": "redness",
+        "ner_score": 0.925,
+        "negated": true,
+        "negation_cue": "without",
+        "hpo_id": "HP:0010783",
+        "hpo_name": "Erythema",
+        "expanded_text": "redness",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.8871,
+        "matched": true,
+        "umls_cui": "C0016382"
+      },
+      {
+        "text": "increased temperature",
+        "ner_score": 0.995,
+        "negated": true,
+        "negation_cue": "without",
+        "hpo_id": "HP:0001945",
+        "hpo_name": "Fever",
+        "expanded_text": "increased temperature",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.863,
+        "matched": true,
+        "umls_cui": "C0015967"
+      },
+      {
+        "text": "temperature",
+        "ner_score": 0.343,
+        "negated": true,
+        "negation_cue": "without",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "temperature",
+        "match_type": "skipped_low_ner_score",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "the swelling",
+        "ner_score": 0.995,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0001386",
+        "hpo_name": "Joint swelling",
+        "expanded_text": "the swelling",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.7619,
+        "matched": true,
+        "umls_cui": "C0152031"
+      },
+      {
+        "text": "neuro",
+        "ner_score": 0.786,
+        "negated": true,
+        "negation_cue": "no evidence of",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "neuro",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "neurovascular impairment in the distal part of the limb",
+        "ner_score": 0.989,
+        "negated": true,
+        "negation_cue": "no evidence of",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "neurovascular impairment in the distal part of the limb",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "vascular",
+        "ner_score": 0.916,
+        "negated": true,
+        "negation_cue": "no evidence of",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "vascular",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "impairment",
+        "ner_score": 0.924,
+        "negated": true,
+        "negation_cue": "no evidence of",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "impairment",
+        "match_type": "sapbert_rejected_low_conf",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "similar lesions",
+        "ner_score": 0.995,
+        "negated": true,
+        "negation_cue": "no",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "similar lesions",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "lesions",
+        "ner_score": 0.889,
+        "negated": true,
+        "negation_cue": "no",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "lesions",
+        "match_type": "sapbert_rejected_low_conf",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "localized",
+        "ner_score": 0.9,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0012838",
+        "hpo_name": "Localized",
+        "expanded_text": "localized",
+        "match_type": "text_scan_exact_label",
+        "confidence": 0.95,
+        "matched": true,
+        "umls_cui": "C0392752",
+        "umls_all": [
+          "C0392752"
+        ]
+      },
+      {
+        "text": "distal",
+        "ner_score": 0.9,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0012839",
+        "hpo_name": "Distal",
+        "expanded_text": "distal",
+        "match_type": "text_scan_exact_label",
+        "confidence": 0.95,
+        "matched": true,
+        "umls_cui": "C0205108",
+        "umls_all": [
+          "C0205108"
+        ]
+      }
+    ],
+    "test": [
+      {
+        "text": "movement",
+        "ner_score": 0.443,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "movement",
+        "match_type": "skipped_low_ner_score",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "knee",
+        "ner_score": 0.348,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "knee",
+        "match_type": "skipped_low_ner_score",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "joint",
+        "ner_score": 0.32,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "joint",
+        "match_type": "skipped_low_ner_score",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "increased",
+        "ner_score": 0.379,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "increased",
+        "match_type": "skipped_low_ner_score",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "reduction",
+        "ner_score": 0.455,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "reduction",
+        "match_type": "skipped_low_ner_score",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "Physical",
+        "ner_score": 0.979,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "Physical",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "physical examination",
+        "ner_score": 0.991,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "physical examination",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "examination",
+        "ner_score": 0.991,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "examination",
+        "match_type": "skipped_en_noise",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "range",
+        "ner_score": 0.852,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "range",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "motion",
+        "ner_score": 0.98,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "motion",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "limited",
+        "ner_score": 0.636,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "limited",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "movement restricted",
+        "ner_score": 0.365,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "movement restricted",
+        "match_type": "skipped_low_ner_score",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      }
+    ],
+    "ordo_candidates": [
+      {
+        "ordo_id": "ORPHA:324625",
+        "name": "Chikungunya",
+        "name_fr": "",
+        "score": 0.3533,
+        "coverage": 0.0784,
+        "matched_hpo": [
+          "HP:0001386",
+          "HP:0001945",
+          "HP:0003326",
+          "HP:0010783"
+        ],
+        "matched_count": 4,
+        "total_disease_hpo": 51,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:448237",
+        "name": "Zika virus disease",
+        "name_fr": "",
+        "score": 0.3428,
+        "coverage": 0.0882,
+        "matched_hpo": [
+          "HP:0000969",
+          "HP:0001945",
+          "HP:0003326"
+        ],
+        "matched_count": 3,
+        "total_disease_hpo": 34,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:829",
+        "name": "Adult-onset Still disease",
+        "name_fr": "",
+        "score": 0.3325,
+        "coverage": 0.0714,
+        "matched_hpo": [
+          "HP:0001386",
+          "HP:0001945",
+          "HP:0003326",
+          "HP:0010783"
+        ],
+        "matched_count": 4,
+        "total_disease_hpo": 56,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:221",
+        "name": "Dermatomyositis",
+        "name_fr": "",
+        "score": 0.3278,
+        "coverage": 0.0519,
+        "matched_hpo": [
+          "HP:0000969",
+          "HP:0001945",
+          "HP:0003326",
+          "HP:0010783"
+        ],
+        "matched_count": 4,
+        "total_disease_hpo": 77,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:3260",
+        "name": "Idiopathic hypereosinophilic syndrome",
+        "name_fr": "",
+        "score": 0.3214,
+        "coverage": 0.0385,
+        "matched_hpo": [
+          "HP:0001386",
+          "HP:0001945",
+          "HP:0003326"
+        ],
+        "matched_count": 3,
+        "total_disease_hpo": 78,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:761",
+        "name": "Immunoglobulin A vasculitis",
+        "name_fr": "",
+        "score": 0.3151,
+        "coverage": 0.1176,
+        "matched_hpo": [
+          "HP:0000969",
+          "HP:0001945",
+          "HP:0003326",
+          "HP:0010783"
+        ],
+        "matched_count": 4,
+        "total_disease_hpo": 34,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:809",
+        "name": "Mixed connective tissue disease",
+        "name_fr": "",
+        "score": 0.314,
+        "coverage": 0.0441,
+        "matched_hpo": [
+          "HP:0001386",
+          "HP:0001945",
+          "HP:0003326"
+        ],
+        "matched_count": 3,
+        "total_disease_hpo": 68,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:2912",
+        "name": "Poliomyelitis",
+        "name_fr": "",
+        "score": 0.3115,
+        "coverage": 0.0755,
+        "matched_hpo": [
+          "HP:0001945",
+          "HP:0002374",
+          "HP:0003326",
+          "HP:0012531"
+        ],
+        "matched_count": 4,
+        "total_disease_hpo": 53,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:533",
+        "name": "Listeriosis",
+        "name_fr": "",
+        "score": 0.3106,
+        "coverage": 0.0294,
+        "matched_hpo": [
+          "HP:0001945",
+          "HP:0003326"
+        ],
+        "matched_count": 2,
+        "total_disease_hpo": 68,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:1304",
+        "name": "Brucellosis",
+        "name_fr": "",
+        "score": 0.3002,
+        "coverage": 0.013,
+        "matched_hpo": [
+          "HP:0001945"
+        ],
+        "matched_count": 1,
+        "total_disease_hpo": 77,
+        "text_match": false
+      }
+    ],
+    "stats": {
+      "total": 36,
+      "matched": 10,
+      "unmatched": 26,
+      "match_rate": 27.8,
+      "unique_hpo": 10,
+      "ordo_matches": 10
+    }
+  },
+  "phenopacket": {
+    "id": "phenopacket-RA_EN_004",
+    "subject": {
+      "id": "RA_EN_004"
+    },
+    "input": "A 56-year-old woman reported experiencing dull aching pain, swelling, and restricted movement in her left knee for the past 10 years. The pain, which began 10 years ago, has progressively worsened. There was no history of trauma. Two years after the onset of pain, she noticed a swelling on the lateral side of her left knee joint, which gradually increased in size and was associated with a reduction in knee joint movement. Activities that involved bending the knee triggered the pain. The patient has no significant past medical or family history. Physical examination revealed swelling on the lateral aspect of the left knee, without any localized redness or increased temperature. The swelling, measuring 15×5 cm, extended from the lateral aspect of the left distal femur to the fibular head. It was bony, hard, not attached to the underlying bone, and non-tender. The range of motion in the left knee joint was limited to 0–40°, with further movement restricted. There was no evidence of neurovascular impairment in the distal part of the limb. No similar lesions were found elsewhere on the body.",
+    "target": "Chikungunya",
+    "phenotypicFeatures": [
+      {
+        "type": {
+          "id": "HP:0003326",
+          "label": "Myalgia",
+          "umls_cui": "C0231528"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_004",
+              "description": "NER: dull aching pain (0.998) | Match: sapbert_similarity (0.747)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0012531",
+          "label": "Pain",
+          "umls_cui": "C0030193"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_004",
+              "description": "NER: pain (0.948) | Match: exact_label (1.000)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0000969",
+          "label": "Edema",
+          "umls_cui": "C0013604"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_004",
+              "description": "NER: swelling (0.950) | Match: clinical_synonym (1.000)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0002374",
+          "label": "Diminished movement",
+          "umls_cui": "C4025710"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_004",
+              "description": "NER: restricted movement (0.643) | Match: sapbert_similarity (0.884)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0010501",
+          "label": "Limitation of knee mobility",
+          "umls_cui": "C4021259"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_004",
+              "description": "NER: a reduction in knee joint movement (0.995) | Match: sapbert_similarity (0.891)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0010783",
+          "label": "Erythema",
+          "umls_cui": "C0016382"
+        },
+        "excluded": true,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_004",
+              "description": "NER: redness (0.925) | Match: sapbert_similarity (0.887) | Negated by: \"without\""
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0001945",
+          "label": "Fever",
+          "umls_cui": "C0015967"
+        },
+        "excluded": true,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_004",
+              "description": "NER: increased temperature (0.995) | Match: sapbert_similarity (0.863) | Negated by: \"without\""
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0001386",
+          "label": "Joint swelling",
+          "umls_cui": "C0152031"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_004",
+              "description": "NER: the swelling (0.995) | Match: sapbert_similarity (0.762)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0012838",
+          "label": "Localized",
+          "umls_cui": "C0392752"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_004",
+              "description": "NER: localized (0.900) | Match: text_scan_exact_label (0.950)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0012839",
+          "label": "Distal",
+          "umls_cui": "C0205108"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_004",
+              "description": "NER: distal (0.900) | Match: text_scan_exact_label (0.950)"
+            }
+          }
+        ]
+      }
+    ],
+    "metaData": {
+      "created": "2026-06-19T15:08:39Z",
+      "createdBy": "clinical-preanalysis-pipeline-v2",
+      "phenopacketSchemaVersion": "2.0",
+      "resources": [
+        {
+          "id": "hp",
+          "name": "Human Phenotype Ontology",
+          "url": "https://hpo.jax.org",
+          "version": "2024-04-26",
+          "namespacePrefix": "HP",
+          "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        }
+      ]
+    },
+    "interpretations": [
+      {
+        "id": "interpretation-RA_EN_004",
+        "progressStatus": "IN_PROGRESS",
+        "diagnosis": {
+          "disease": {
+            "id": "ORPHA:324625",
+            "label": "Chikungunya"
+          },
+          "score": 0.3533,
+          "allCandidates": [
+            {
+              "id": "ORPHA:324625",
+              "label": "Chikungunya",
+              "score": 0.3533
+            },
+            {
+              "id": "ORPHA:448237",
+              "label": "Zika virus disease",
+              "score": 0.3428
+            },
+            {
+              "id": "ORPHA:829",
+              "label": "Adult-onset Still disease",
+              "score": 0.3325
+            },
+            {
+              "id": "ORPHA:221",
+              "label": "Dermatomyositis",
+              "score": 0.3278
+            },
+            {
+              "id": "ORPHA:3260",
+              "label": "Idiopathic hypereosinophilic syndrome",
+              "score": 0.3214
+            },
+            {
+              "id": "ORPHA:761",
+              "label": "Immunoglobulin A vasculitis",
+              "score": 0.3151
+            },
+            {
+              "id": "ORPHA:809",
+              "label": "Mixed connective tissue disease",
+              "score": 0.314
+            },
+            {
+              "id": "ORPHA:2912",
+              "label": "Poliomyelitis",
+              "score": 0.3115
+            },
+            {
+              "id": "ORPHA:533",
+              "label": "Listeriosis",
+              "score": 0.3106
+            },
+            {
+              "id": "ORPHA:1304",
+              "label": "Brucellosis",
+              "score": 0.3002
+            }
+          ]
+        }
+      }
+    ],
+    "_pipelineStats": {
+      "totalEntities": 36,
+      "matchedHPO": 10,
+      "unmatchedEntities": 26,
+      "phenopacketFeatures": 10,
+      "negatedFeatures": 2,
+      "numericPhenotypes": 0,
+      "ordoCandidates": 10
+    }
+  }
+}

@@ -1,0 +1,300 @@
+{
+  "id": "phenopacket-RA_EN_023",
+  "subject": {
+    "id": "RA_EN_023",
+    "sex": "FEMALE"
+  },
+  "input": "A 5-month-old female infant exhibited horizontal and rotational nystagmus of pendular characteristics, which occasionally rebounded and disappeared when focusing on near objects. The nystagmus was more pronounced in the hyperopic left eye. Fundoscopic examination was normal in both eyes at that time. Electroencephalography showed sharp theta waves, nystagmus episodes, and slow delta waves during head movements originating from the parietal and occipital lobes. Brain imaging via computed tomography (CT) and magnetic resonance imaging (MRI) was normal. Later in life, the patient developed T2DM and obesity. Over a 5-year period (2016 to 2021), her metabolic profile, including vitamin B12, glucose profile (HbA1c, glucose tolerance tests), liver function tests, and complete blood count, were normal except for low levels of vitamin D3 at various times. Abdominal ultrasound showed no abnormalities in the liver, common bile duct, portal vein, gallbladder, pancreas, spleen, or kidneys. Visual acuity was limited to light perception in both eyes and she received different diagnoses from various hospitals. At 17 years old, she presented to our department in 2021. Best corrected visual acuity (BCVA) was light perception in both eyes, reportedly since the age of 13. Optical coherence tomography (OCT) scans of the macular region showed significant disruption of the photoreceptor layer in both eyes, with minimal preservation around the central fovea. Fluorescein angiography (FA) revealed vessel attenuation and hyperfluorescent areas in the posterior pole. Autofluorescence (FAF) indicated extensive disruption of the retinal pigment epithelium (RPE) metabolic activity in the posterior pole and periphery of both eyes. Electroretinogram (ERG) and visual evoked potentials (VEP) were abnormal, with recordings not surpassing electrical noise.",
+  "target": "Cockayne syndrome type 3",
+  "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0007814",
+        "label": "Retinal pigment epithelial mottling",
+        "umls_cui": "C1857644"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_023",
+            "description": "NER: extensive disruption of the retinal pigment epithelium ( rpe ) metabolic activity (0.976) | Match: sapbert_similarity (0.743)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0007811",
+        "label": "Horizontal pendular nystagmus",
+        "umls_cui": "C1866180"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_023",
+            "description": "NER: horizontal and rotational nystagmus of pendular characteristics (0.988) | Match: sapbert_similarity (0.934)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0000639",
+        "label": "Nystagmus",
+        "umls_cui": "C0028738"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_023",
+            "description": "NER: nystagmus (0.850) | Match: clinical_synonym (1.000)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0011296",
+        "label": "EEG with temporal sharp waves",
+        "umls_cui": "C2206519"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_023",
+            "description": "NER: sharp theta waves (0.997) | Match: sapbert_similarity (0.794)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0010847",
+        "label": "EEG with spike-wave complexes (<2.5 Hz)",
+        "umls_cui": "C4023686"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_023",
+            "description": "NER: slow delta waves during (0.903) | Match: sapbert_similarity (0.730)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0012272",
+        "label": "J wave",
+        "umls_cui": "C4018858"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_023",
+            "description": "NER: delta waves (0.609) | Match: sapbert_similarity (0.739)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0001513",
+        "label": "Obesity",
+        "umls_cui": "C0028754"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_023",
+            "description": "NER: obesity (0.729) | Match: exact_label (1.000)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0006707",
+        "label": "Abnormality of the hepatic vasculature",
+        "umls_cui": "C4024994"
+      },
+      "excluded": true,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_023",
+            "description": "NER: abnormalities in the liver, common bile duct, portal vein (0.955) | Match: sapbert_similarity (0.781) | Negated by: \"no\""
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0100545",
+        "label": "Arterial stenosis",
+        "umls_cui": "C0038449"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_023",
+            "description": "NER: vessel attenuation (0.998) | Match: sapbert_similarity (0.731)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0011512",
+        "label": "Fundus hyperpigmentation",
+        "umls_cui": "C4021146"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_023",
+            "description": "NER: hyperfluorescent areas (0.929) | Match: sapbert_similarity (0.753)"
+          }
+        }
+      ]
+    }
+  ],
+  "metaData": {
+    "created": "2026-06-19T15:11:55Z",
+    "createdBy": "clinical-preanalysis-pipeline-v2",
+    "phenopacketSchemaVersion": "2.0",
+    "resources": [
+      {
+        "id": "hp",
+        "name": "Human Phenotype Ontology",
+        "url": "https://hpo.jax.org",
+        "version": "2024-04-26",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      }
+    ]
+  },
+  "interpretations": [
+    {
+      "id": "interpretation-RA_EN_023",
+      "progressStatus": "IN_PROGRESS",
+      "diagnosis": {
+        "disease": {
+          "id": "ORPHA:90324",
+          "label": "Cockayne syndrome type 3"
+        },
+        "score": 0.356,
+        "allCandidates": [
+          {
+            "id": "ORPHA:90324",
+            "label": "Cockayne syndrome type 3",
+            "score": 0.356
+          },
+          {
+            "id": "ORPHA:1435",
+            "label": "Xq21 microdeletion syndrome",
+            "score": 0.3382
+          },
+          {
+            "id": "ORPHA:791",
+            "label": "Retinitis pigmentosa",
+            "score": 0.3349
+          },
+          {
+            "id": "ORPHA:369837",
+            "label": "Intellectual disability-seizures-hypophosphatasia-ophthalmic-skeletal anomalies syndrome",
+            "score": 0.3184
+          },
+          {
+            "id": "ORPHA:86309",
+            "label": "DPAGT1-CDG",
+            "score": 0.3144
+          },
+          {
+            "id": "ORPHA:1606",
+            "label": "1p36 deletion syndrome",
+            "score": 0.3025
+          },
+          {
+            "id": "ORPHA:163681",
+            "label": "CNTNAP2-related developmental and epileptic encephalopathy",
+            "score": 0.3004
+          },
+          {
+            "id": "ORPHA:909",
+            "label": "Cerebrotendinous xanthomatosis",
+            "score": 0.2859
+          },
+          {
+            "id": "ORPHA:542306",
+            "label": "GNB5-related intellectual disability-cardiac arrhythmia syndrome",
+            "score": 0.284
+          },
+          {
+            "id": "ORPHA:65",
+            "label": "Leber congenital amaurosis",
+            "score": 0.2814
+          }
+        ]
+      }
+    }
+  ],
+  "_pipelineStats": {
+    "totalEntities": 92,
+    "matchedHPO": 10,
+    "unmatchedEntities": 82,
+    "phenopacketFeatures": 10,
+    "negatedFeatures": 1,
+    "numericPhenotypes": 0,
+    "ordoCandidates": 10
+  }
+}

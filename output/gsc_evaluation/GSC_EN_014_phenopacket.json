@@ -28,9 +28,9 @@
     },
     {
       "type": {
-        "id": "HP:0003577",
-        "label": "Congenital onset",
-        "umls_cui": "C1836142"
+        "id": "HP:0001197",
+        "label": "Abnormality of prenatal development or birth",
+        "umls_cui": "C4025797"
       },
       "excluded": false,
       "evidence": [
@@ -41,16 +41,16 @@
           },
           "reference": {
             "id": "GSC_EN_014",
-            "description": "NER: congenital (0.367) | Match: sapbert_similarity (0.735)"
+            "description": "NER: congenital disorders (0.849) | Match: sapbert_similarity (0.772)"
           }
         }
       ]
     },
     {
       "type": {
-        "id": "HP:0009717",
-        "label": "Cortical tubers",
-        "umls_cui": "C1968959"
+        "id": "HP:0002664",
+        "label": "Neoplasm",
+        "umls_cui": "C0006826"
       },
       "excluded": false,
       "evidence": [
@@ -61,16 +61,16 @@
           },
           "reference": {
             "id": "GSC_EN_014",
-            "description": "NER: tuberous (0.796) | Match: sapbert_similarity (0.779)"
+            "description": "NER: neoplastic formation (0.999) | Match: sapbert_similarity (0.840)"
           }
         }
       ]
     },
     {
       "type": {
-        "id": "HP:0100324",
-        "label": "Scleroderma",
-        "umls_cui": "C0011644"
+        "id": "HP:0003812",
+        "label": "Phenotypic variability",
+        "umls_cui": "C1837514"
       },
       "excluded": false,
       "evidence": [
@@ -81,16 +81,16 @@
           },
           "reference": {
             "id": "GSC_EN_014",
-            "description": "NER: sclerosis (0.796) | Match: sapbert_similarity (0.735)"
+            "description": "NER: markedly heterogeneous in (0.952) | Match: sapbert_similarity (0.731)"
           }
         }
       ]
     },
     {
       "type": {
-        "id": "HP:0001251",
-        "label": "Ataxia",
-        "umls_cui": "C0007758"
+        "id": "HP:0001450",
+        "label": "Y-linked inheritance",
+        "umls_cui": "C0814045"
       },
       "excluded": false,
       "evidence": [
@@ -101,7 +101,7 @@
           },
           "reference": {
             "id": "GSC_EN_014",
-            "description": "NER: ataxia (0.451) | Match: exact_label (1.000)"
+            "description": "NER: y syndrome (0.920) | Match: sapbert_similarity (0.820)"
           }
         }
       ]
@@ -121,27 +121,7 @@
           },
           "reference": {
             "id": "GSC_EN_014",
-            "description": "NER: angiectasia (0.742) | Match: sapbert_similarity (0.766)"
-          }
-        }
-      ]
-    },
-    {
-      "type": {
-        "id": "HP:0001000",
-        "label": "Abnormality of skin pigmentation",
-        "umls_cui": "C1260926"
-      },
-      "excluded": false,
-      "evidence": [
-        {
-          "evidenceCode": {
-            "id": "ECO:0000033",
-            "label": "author statement supported by traceable reference"
-          },
-          "reference": {
-            "id": "GSC_EN_014",
-            "description": "NER: pigment (0.807) | Match: sapbert_similarity (0.769)"
+            "description": "NER: telangiectasia (0.900) | Match: text_scan_clinical_synonym (0.950)"
           }
         }
       ]
@@ -168,9 +148,9 @@
     },
     {
       "type": {
-        "id": "HP:0003687",
-        "label": "Centrally nucleated skeletal muscle fibers",
-        "umls_cui": "C1842170"
+        "id": "HP:0001251",
+        "label": "Ataxia",
+        "umls_cui": "C0007758"
       },
       "excluded": false,
       "evidence": [
@@ -181,54 +161,14 @@
           },
           "reference": {
             "id": "GSC_EN_014",
-            "description": "NER: central (0.621) | Match: sapbert_similarity (0.712)"
-          }
-        }
-      ]
-    },
-    {
-      "type": {
-        "id": "HP:0004375",
-        "label": "Neoplasm of the nervous system",
-        "umls_cui": "C0027766"
-      },
-      "excluded": false,
-      "evidence": [
-        {
-          "evidenceCode": {
-            "id": "ECO:0000033",
-            "label": "author statement supported by traceable reference"
-          },
-          "reference": {
-            "id": "GSC_EN_014",
-            "description": "NER: nervous system (0.850) | Match: sapbert_similarity (0.730)"
-          }
-        }
-      ]
-    },
-    {
-      "type": {
-        "id": "HP:0000707",
-        "label": "Abnormality of the nervous system",
-        "umls_cui": "C0497552"
-      },
-      "excluded": false,
-      "evidence": [
-        {
-          "evidenceCode": {
-            "id": "ECO:0000033",
-            "label": "author statement supported by traceable reference"
-          },
-          "reference": {
-            "id": "GSC_EN_014",
-            "description": "NER: neurologic (0.462) | Match: sapbert_similarity (0.736)"
+            "description": "NER: ataxia (0.900) | Match: text_scan_exact_label (0.950)"
           }
         }
       ]
     }
   ],
   "metaData": {
-    "created": "2026-06-11T03:08:36Z",
+    "created": "2026-06-19T15:06:23Z",
     "createdBy": "clinical-preanalysis-pipeline-v2",
     "phenopacketSchemaVersion": "2.0",
     "resources": [
@@ -251,44 +191,69 @@
           "id": "ORPHA:100",
           "label": "Ataxia-telangiectasia"
         },
-        "score": 0.85,
+        "score": 0.3266,
         "allCandidates": [
           {
             "id": "ORPHA:100",
             "label": "Ataxia-telangiectasia",
-            "score": 0.85
+            "score": 0.3266
           },
           {
-            "id": "ORPHA:1168",
-            "label": "Ataxia-oculomotor apraxia type 1",
-            "score": 0.2971
+            "id": "ORPHA:464",
+            "label": "Incontinentia pigmenti",
+            "score": 0.2622
           },
           {
-            "id": "ORPHA:1180",
-            "label": "Ataxia-hypogonadism-choroidal dystrophy syndrome",
-            "score": 0.2308
+            "id": "ORPHA:3205",
+            "label": "Sturge-Weber syndrome",
+            "score": 0.2592
           },
           {
-            "id": "ORPHA:3350",
-            "label": "Tremor-nystagmus-duodenal ulcer syndrome",
-            "score": 0.1786
+            "id": "ORPHA:902",
+            "label": "Werner syndrome",
+            "score": 0.2541
           },
           {
-            "id": "ORPHA:2579",
-            "label": "Muscular atrophy-ataxia-retinitis pigmentosa-diabetes mellitus syndrome",
-            "score": 0.1786
+            "id": "ORPHA:355",
+            "label": "Gaucher disease",
+            "score": 0.2484
+          },
+          {
+            "id": "ORPHA:910",
+            "label": "Xeroderma pigmentosum",
+            "score": 0.2444
+          },
+          {
+            "id": "ORPHA:533",
+            "label": "Listeriosis",
+            "score": 0.2355
+          },
+          {
+            "id": "ORPHA:373",
+            "label": "Simpson-Golabi-Behmel syndrome",
+            "score": 0.2329
+          },
+          {
+            "id": "ORPHA:1304",
+            "label": "Brucellosis",
+            "score": 0.2324
+          },
+          {
+            "id": "ORPHA:774",
+            "label": "Hereditary hemorrhagic telangiectasia",
+            "score": 0.2289
           }
         ]
       }
     }
   ],
   "_pipelineStats": {
-    "totalEntities": 23,
-    "matchedHPO": 11,
-    "unmatchedEntities": 12,
-    "phenopacketFeatures": 11,
+    "totalEntities": 49,
+    "matchedHPO": 8,
+    "unmatchedEntities": 41,
+    "phenopacketFeatures": 8,
     "negatedFeatures": 0,
     "numericPhenotypes": 0,
-    "ordoCandidates": 5
+    "ordoCandidates": 10
   }
 }

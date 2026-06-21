@@ -1,0 +1,1887 @@
+{
+  "note_id": "RA_EN_014",
+  "language": "en",
+  "module1": {
+    "clean_text": "A [AGE] male with no significant past medical history presented with a two-day history of dystonic posturing affecting his left hand and arm. The episodes involved bending of the elbow and specific finger posturing, without any oculo-bulbar or sensory symptoms. These episodes occurred randomly throughout the day and were later found to be triggered by caffeine consumption. The duration of the episodes varied from several minutes to one instance lasting nine hours. The episodes were painful, with the patient unable to voluntarily relax the affected arm and hand. Mental clarity was maintained throughout and after the episodes, which ceased during sleep. Initially, the symptoms were confined to the left arm but later spread to the right arm, occurring independently in both arms at random intervals. The patient reported no family history of movement disorders and did not smoke, consume alcohol, or take any medications. On examination, his blood pressure was 129/79 mmHg, heart rate was 77 beats per minute, weight was 195 pounds (88.5 kilograms), height was six feet (182.9 centimeters), and body-mass index was 26.4. His speech was normal, and his gait was unremarkable. Cranial nerve examination was normal, with intact ocular motion and no nystagmus. Facial strength was symmetric and full, with no oro-buccolingual dyskinesias. Cervical musculature examination showed no cervical dystonia, and oropharyngeal examination revealed a brisk gag reflex without palatal myoclonus. Muscle strength in both upper and lower extremities was graded 5/5, and deep tendon reflexes were 2+ and symmetric. There was no spasticity, and Hoffman and finger flexor reflexes were absent bilaterally. No cogwheeling was detected at the wrist. The Babinski sign was absent with bilateral plantar strokes. Finger sequencing, finger-to-nose, and heel-to-shin maneuvers were accurate and symmetric bilaterally. During the clinic visit, an episode was observed, starting with a 90-degree flexion of the left elbow and extending to the hand. The posture involved flexion of the first, third, and fourth fingers at the metacarpophalangeal joints with extension of the proximal and distal interphalangeal joints, while the second and fifth fingers remained extended, resembling a bovine longhorn.",
+    "phi_map": {
+      "AGE": "33-year-old"
+    },
+    "patient_info": {
+      "sex": "male"
+    }
+  },
+  "module3_warnings": {
+    "temporal": [],
+    "inconsistencies": [
+      {
+        "type": "sex_anatomy_conflict",
+        "severity": "critical",
+        "message": "Female-specific term 'cervical' found in male patient record",
+        "term": "cervical"
+      }
+    ]
+  },
+  "module4": {
+    "problem": [
+      {
+        "text": "any oculo - bulbar or sensory symptoms",
+        "ner_score": 0.964,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "any oculo - bulbar or sensory symptoms",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "oro - buccolingual dyskinesias",
+        "ner_score": 0.997,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0002310",
+        "hpo_name": "Orofacial dyskinesia",
+        "expanded_text": "oro - buccolingual dyskinesias",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.8886,
+        "matched": true,
+        "umls_cui": "C0152115"
+      },
+      {
+        "text": "dystonic posturing",
+        "ner_score": 0.604,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0002533",
+        "hpo_name": "Abnormal posturing",
+        "expanded_text": "dystonic posturing",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.777,
+        "matched": true,
+        "umls_cui": "C0231471"
+      },
+      {
+        "text": "the episodes",
+        "ner_score": 0.784,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "the episodes",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "bending of the elbow",
+        "ner_score": 0.993,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0002967",
+        "hpo_name": "Cubitus valgus",
+        "expanded_text": "bending of the elbow",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.8281,
+        "matched": true,
+        "umls_cui": "C0158465"
+      },
+      {
+        "text": "specific finger posturing",
+        "ner_score": 0.981,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0004097",
+        "hpo_name": "Deviation of finger",
+        "expanded_text": "specific finger posturing",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.7698,
+        "matched": true,
+        "umls_cui": "C0410740"
+      },
+      {
+        "text": "finger posturing",
+        "ner_score": 0.615,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "finger posturing",
+        "match_type": "deduplicated",
+        "confidence": 0.753,
+        "matched": false,
+        "umls_cui": "C0410740"
+      },
+      {
+        "text": "sensory symptoms",
+        "ner_score": 0.866,
+        "negated": true,
+        "negation_cue": "without",
+        "hpo_id": "HP:0003474",
+        "hpo_name": "Somatic sensory dysfunction",
+        "expanded_text": "sensory symptoms",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.7773,
+        "matched": true,
+        "umls_cui": "C0020580"
+      },
+      {
+        "text": "symptoms",
+        "ner_score": 0.451,
+        "negated": true,
+        "negation_cue": "without",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "symptoms",
+        "match_type": "skipped_low_ner_score",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "these episodes",
+        "ner_score": 0.875,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "these episodes",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "caffeine consumption",
+        "ner_score": 0.871,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "caffeine consumption",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "the symptoms",
+        "ner_score": 0.981,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "the symptoms",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "movement disorders",
+        "ner_score": 0.996,
+        "negated": true,
+        "negation_cue": "no",
+        "hpo_id": "HP:0100022",
+        "hpo_name": "Abnormality of movement",
+        "expanded_text": "movement disorders",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.8853,
+        "matched": true,
+        "umls_cui": "C0026650"
+      },
+      {
+        "text": "motion",
+        "ner_score": 0.725,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "motion",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "nystagmus",
+        "ner_score": 0.922,
+        "negated": true,
+        "negation_cue": "no",
+        "hpo_id": "HP:0000639",
+        "hpo_name": "Nystagmus",
+        "expanded_text": "nystagmus",
+        "match_type": "clinical_synonym",
+        "confidence": 1.0,
+        "matched": true,
+        "umls_cui": "C0028738"
+      },
+      {
+        "text": "uccolingual dyskinesias. Cervical",
+        "ner_score": 0.74,
+        "negated": true,
+        "negation_cue": "no",
+        "hpo_id": "HP:0002075",
+        "hpo_name": "Dysdiadochokinesis",
+        "expanded_text": "uccolingual dyskinesias. Cervical",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.7677,
+        "matched": true,
+        "umls_cui": "C0234979"
+      },
+      {
+        "text": "cervical dystonia",
+        "ner_score": 0.998,
+        "negated": true,
+        "negation_cue": "no",
+        "hpo_id": "HP:0000473",
+        "hpo_name": "Torticollis",
+        "expanded_text": "cervical dystonia",
+        "match_type": "exact_synonym",
+        "confidence": 1.0,
+        "matched": true,
+        "umls_cui": "C0040485"
+      },
+      {
+        "text": "dystonia",
+        "ner_score": 0.573,
+        "negated": true,
+        "negation_cue": "no",
+        "hpo_id": "HP:0001332",
+        "hpo_name": "Dystonia",
+        "expanded_text": "dystonia",
+        "match_type": "exact_label",
+        "confidence": 1.0,
+        "matched": true,
+        "umls_cui": "C0013421"
+      },
+      {
+        "text": "a brisk gag reflex",
+        "ner_score": 0.929,
+        "negated": true,
+        "negation_cue": "no",
+        "hpo_id": "HP:0001348",
+        "hpo_name": "Brisk reflexes",
+        "expanded_text": "a brisk gag reflex",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.7345,
+        "matched": true,
+        "umls_cui": "C2673700"
+      },
+      {
+        "text": "gag reflex",
+        "ner_score": 0.755,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0010875",
+        "hpo_name": "Chaddock reflex",
+        "expanded_text": "gag reflex",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.7108,
+        "matched": true,
+        "umls_cui": "C1531651"
+      },
+      {
+        "text": "palatal myoclonus",
+        "ner_score": 0.727,
+        "negated": true,
+        "negation_cue": "without",
+        "hpo_id": "HP:0010530",
+        "hpo_name": "Palatal tremor",
+        "expanded_text": "palatal myoclonus",
+        "match_type": "exact_synonym",
+        "confidence": 1.0,
+        "matched": true,
+        "umls_cui": "C0030214"
+      },
+      {
+        "text": "atal myoclonus",
+        "ner_score": 0.987,
+        "negated": true,
+        "negation_cue": "without",
+        "hpo_id": "HP:0011170",
+        "hpo_name": "Generalized myoclonic-atonic seizure",
+        "expanded_text": "atal myoclonus",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.7632,
+        "matched": true,
+        "umls_cui": "C0393702"
+      },
+      {
+        "text": "spasticity",
+        "ner_score": 0.767,
+        "negated": true,
+        "negation_cue": "no",
+        "hpo_id": "HP:0001257",
+        "hpo_name": "Spasticity",
+        "expanded_text": "spasticity",
+        "match_type": "exact_label",
+        "confidence": 1.0,
+        "matched": true,
+        "umls_cui": "C0026838"
+      },
+      {
+        "text": "sticity",
+        "ner_score": 0.851,
+        "negated": true,
+        "negation_cue": "no",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "sticity",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "cogwheeling",
+        "ner_score": 0.915,
+        "negated": true,
+        "negation_cue": "no",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "cogwheeling",
+        "match_type": "sapbert_rejected_low_conf",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "cogwheel",
+        "ner_score": 0.932,
+        "negated": true,
+        "negation_cue": "no",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "cogwheel",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "bilateral plantar strokes",
+        "ner_score": 0.961,
+        "negated": true,
+        "negation_cue": "absent",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "bilateral plantar strokes",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "strokes",
+        "ner_score": 0.541,
+        "negated": true,
+        "negation_cue": "absent",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "strokes",
+        "match_type": "skipped_low_ner_score",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "an episode",
+        "ner_score": 0.956,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "an episode",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "flexion",
+        "ner_score": 0.744,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "flexion",
+        "match_type": "sapbert_rejected_low_conf",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "extending",
+        "ner_score": 0.401,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "extending",
+        "match_type": "skipped_low_ner_score",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "extension",
+        "ner_score": 0.365,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "extension",
+        "match_type": "skipped_low_ner_score",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "Babinski sign",
+        "ner_score": 0.9,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0003487",
+        "hpo_name": "Babinski sign",
+        "expanded_text": "Babinski sign",
+        "match_type": "text_scan_exact_label",
+        "confidence": 0.95,
+        "matched": true,
+        "umls_cui": "C0034935",
+        "umls_all": [
+          "C0034935"
+        ]
+      },
+      {
+        "text": "dyskinesias",
+        "ner_score": 0.9,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0100660",
+        "hpo_name": "Dyskinesia",
+        "expanded_text": "dyskinesias",
+        "match_type": "text_scan_related_synonym",
+        "confidence": 0.95,
+        "matched": true,
+        "umls_cui": "C0013384",
+        "umls_all": [
+          "C0013384"
+        ]
+      },
+      {
+        "text": "myoclonus",
+        "ner_score": 0.9,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0001336",
+        "hpo_name": "Myoclonus",
+        "expanded_text": "myoclonus",
+        "match_type": "text_scan_exact_label",
+        "confidence": 0.95,
+        "matched": true,
+        "umls_cui": "C0027066",
+        "umls_all": [
+          "C0027066",
+          "C1854302"
+        ]
+      },
+      {
+        "text": "proximal",
+        "ner_score": 0.9,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0012840",
+        "hpo_name": "Proximal",
+        "expanded_text": "proximal",
+        "match_type": "text_scan_exact_label",
+        "confidence": 0.95,
+        "matched": true,
+        "umls_cui": "C0205107",
+        "umls_all": [
+          "C0205107"
+        ]
+      },
+      {
+        "text": "distal",
+        "ner_score": 0.9,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0012839",
+        "hpo_name": "Distal",
+        "expanded_text": "distal",
+        "match_type": "text_scan_exact_label",
+        "confidence": 0.95,
+        "matched": true,
+        "umls_cui": "C0205108",
+        "umls_all": [
+          "C0205108"
+        ]
+      }
+    ],
+    "treatment": [
+      {
+        "text": "caffeine",
+        "ner_score": 0.169,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "caffeine",
+        "match_type": "skipped_low_ner_score",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "any medications",
+        "ner_score": 0.758,
+        "negated": true,
+        "negation_cue": "did not",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "any medications",
+        "match_type": "skipped_treatment",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      }
+    ],
+    "test": [
+      {
+        "text": "body - mass index",
+        "ner_score": 0.993,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "body - mass index",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "finger - to - nose",
+        "ner_score": 0.987,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "finger - to - nose",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "heel - to - shin maneuvers",
+        "ner_score": 0.825,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "heel - to - shin maneuvers",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "finger",
+        "ner_score": 0.702,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "finger",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "minute",
+        "ner_score": 0.987,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "minute",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "Mental",
+        "ner_score": 0.926,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "Mental",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "clarity",
+        "ner_score": 0.707,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "clarity",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "examination",
+        "ner_score": 0.847,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "examination",
+        "match_type": "skipped_en_noise",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "his blood pressure",
+        "ner_score": 0.996,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "his blood pressure",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "blood",
+        "ner_score": 0.986,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "blood",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "pressure",
+        "ner_score": 0.99,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "pressure",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "heart rate",
+        "ner_score": 0.992,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "heart rate",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "beats",
+        "ner_score": 0.989,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "beats",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "weight",
+        "ner_score": 0.846,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "weight",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "pounds",
+        "ner_score": 0.932,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "pounds",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "kilograms",
+        "ner_score": 0.824,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "kilograms",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "height",
+        "ner_score": 0.401,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "height",
+        "match_type": "skipped_low_ner_score",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "feet",
+        "ner_score": 0.568,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "feet",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "centimeters",
+        "ner_score": 0.604,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "centimeters",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "mass",
+        "ner_score": 0.987,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "mass",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "index",
+        "ner_score": 0.99,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "index",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "speech",
+        "ner_score": 0.977,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "speech",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "normal",
+        "ner_score": 0.969,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "normal",
+        "match_type": "skipped_en_noise",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "his ga",
+        "ner_score": 0.553,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "his ga",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "gait",
+        "ner_score": 0.979,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "gait",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "unremarkable",
+        "ner_score": 0.939,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "unremarkable",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "anial nerve examination",
+        "ner_score": 0.996,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "anial nerve examination",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "nerve",
+        "ner_score": 0.689,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "nerve",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "intact",
+        "ner_score": 0.666,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "intact",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "ocular",
+        "ner_score": 0.56,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "ocular",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "facial strength",
+        "ner_score": 0.829,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "facial strength",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "strength",
+        "ner_score": 0.503,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "strength",
+        "match_type": "skipped_low_ner_score",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "symmetric",
+        "ner_score": 0.936,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "symmetric",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "cervical musculature examination",
+        "ner_score": 0.997,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "cervical musculature examination",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "musculature",
+        "ner_score": 0.565,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "musculature",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "oropharyngeal examination",
+        "ner_score": 0.997,
+        "negated": true,
+        "negation_cue": "no",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "oropharyngeal examination",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "pharyngeal",
+        "ner_score": 0.986,
+        "negated": true,
+        "negation_cue": "no",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "pharyngeal",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "Muscle",
+        "ner_score": 0.977,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "Muscle",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "muscle strength",
+        "ner_score": 0.915,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "muscle strength",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "deep tendon reflexes",
+        "ner_score": 0.994,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "deep tendon reflexes",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "Hoffman",
+        "ner_score": 0.976,
+        "negated": true,
+        "negation_cue": "no",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "Hoffman",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "hoffman and finger flexor reflexes",
+        "ner_score": 0.891,
+        "negated": true,
+        "negation_cue": "no",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "hoffman and finger flexor reflexes",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "flexor",
+        "ner_score": 0.987,
+        "negated": true,
+        "negation_cue": "no",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "flexor",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "absent",
+        "ner_score": 0.928,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "absent",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "inski",
+        "ner_score": 0.991,
+        "negated": true,
+        "negation_cue": "was absent",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "inski",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "finger sequencing",
+        "ner_score": 0.996,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "finger sequencing",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "maneuvers",
+        "ner_score": 0.529,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "maneuvers",
+        "match_type": "skipped_low_ner_score",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "accurate",
+        "ner_score": 0.798,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "accurate",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "degree",
+        "ner_score": 0.361,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "degree",
+        "match_type": "skipped_low_ner_score",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      }
+    ],
+    "ordo_candidates": [
+      {
+        "ordo_id": "ORPHA:909",
+        "name": "Cerebrotendinous xanthomatosis",
+        "name_fr": "",
+        "score": 0.446,
+        "coverage": 0.0769,
+        "matched_hpo": [
+          "HP:0000639",
+          "HP:0001257",
+          "HP:0001332",
+          "HP:0002310",
+          "HP:0003474",
+          "HP:0003487",
+          "HP:0010530"
+        ],
+        "matched_count": 7,
+        "total_disease_hpo": 91,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:306674",
+        "name": "Kufor-Rakeb syndrome",
+        "name_fr": "",
+        "score": 0.4386,
+        "coverage": 0.0737,
+        "matched_hpo": [
+          "HP:0000473",
+          "HP:0000639",
+          "HP:0001257",
+          "HP:0001332",
+          "HP:0001336",
+          "HP:0003487",
+          "HP:0100660"
+        ],
+        "matched_count": 7,
+        "total_disease_hpo": 95,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:98766",
+        "name": "Spinocerebellar ataxia type 5",
+        "name_fr": "",
+        "score": 0.4069,
+        "coverage": 0.0741,
+        "matched_hpo": [
+          "HP:0000639",
+          "HP:0001257",
+          "HP:0001348",
+          "HP:0002310",
+          "HP:0003487",
+          "HP:0100660"
+        ],
+        "matched_count": 6,
+        "total_disease_hpo": 81,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:157846",
+        "name": "Neuroferritinopathy",
+        "name_fr": "",
+        "score": 0.3933,
+        "coverage": 0.1163,
+        "matched_hpo": [
+          "HP:0001332",
+          "HP:0001348",
+          "HP:0002310",
+          "HP:0003487",
+          "HP:0010530"
+        ],
+        "matched_count": 5,
+        "total_disease_hpo": 43,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:59",
+        "name": "Allan-Herndon-Dudley syndrome",
+        "name_fr": "",
+        "score": 0.3718,
+        "coverage": 0.1111,
+        "matched_hpo": [
+          "HP:0000639",
+          "HP:0001257",
+          "HP:0001332",
+          "HP:0001348",
+          "HP:0003487",
+          "HP:0100660"
+        ],
+        "matched_count": 6,
+        "total_disease_hpo": 54,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:2802",
+        "name": "X-linked sideroblastic anemia and spinocerebellar ataxia",
+        "name_fr": "",
+        "score": 0.3592,
+        "coverage": 0.1,
+        "matched_hpo": [
+          "HP:0000639",
+          "HP:0001336",
+          "HP:0001348",
+          "HP:0002075",
+          "HP:0003487",
+          "HP:0100022"
+        ],
+        "matched_count": 6,
+        "total_disease_hpo": 60,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:1934",
+        "name": "Early infantile developmental and epileptic encephalopathy",
+        "name_fr": "",
+        "score": 0.3512,
+        "coverage": 0.0635,
+        "matched_hpo": [
+          "HP:0001257",
+          "HP:0001332",
+          "HP:0001336",
+          "HP:0100660"
+        ],
+        "matched_count": 4,
+        "total_disease_hpo": 63,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:561854",
+        "name": "FOXG1 syndrome",
+        "name_fr": "",
+        "score": 0.345,
+        "coverage": 0.1224,
+        "matched_hpo": [
+          "HP:0001257",
+          "HP:0001332",
+          "HP:0001336",
+          "HP:0002310",
+          "HP:0100022",
+          "HP:0100660"
+        ],
+        "matched_count": 6,
+        "total_disease_hpo": 49,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:95",
+        "name": "Friedreich ataxia",
+        "name_fr": "",
+        "score": 0.3307,
+        "coverage": 0.0943,
+        "matched_hpo": [
+          "HP:0000639",
+          "HP:0001257",
+          "HP:0001332",
+          "HP:0002075",
+          "HP:0003487"
+        ],
+        "matched_count": 5,
+        "total_disease_hpo": 53,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:94147",
+        "name": "Spinocerebellar ataxia type 7",
+        "name_fr": "",
+        "score": 0.3302,
+        "coverage": 0.1562,
+        "matched_hpo": [
+          "HP:0000639",
+          "HP:0002075",
+          "HP:0002310",
+          "HP:0003474",
+          "HP:0003487"
+        ],
+        "matched_count": 5,
+        "total_disease_hpo": 32,
+        "text_match": false
+      }
+    ],
+    "stats": {
+      "total": 88,
+      "matched": 20,
+      "unmatched": 68,
+      "match_rate": 22.7,
+      "unique_hpo": 20,
+      "ordo_matches": 10
+    }
+  },
+  "phenopacket": {
+    "id": "phenopacket-RA_EN_014",
+    "subject": {
+      "id": "RA_EN_014",
+      "sex": "MALE"
+    },
+    "input": "A 33-year-old male with no significant past medical history presented with a two-day history of dystonic posturing affecting his left hand and arm. The episodes involved bending of the elbow and specific finger posturing, without any oculo-bulbar or sensory symptoms. These episodes occurred randomly throughout the day and were later found to be triggered by caffeine consumption. The duration of the episodes varied from several minutes to one instance lasting nine hours. The episodes were painful, with the patient unable to voluntarily relax the affected arm and hand. Mental clarity was maintained throughout and after the episodes, which ceased during sleep. Initially, the symptoms were confined to the left arm but later spread to the right arm, occurring independently in both arms at random intervals. The patient reported no family history of movement disorders and did not smoke, consume alcohol, or take any medications. On examination, his blood pressure was 129/79 mmHg, heart rate was 77 beats per minute, weight was 195 pounds (88.5 kilograms), height was six feet (182.9 centimeters), and body-mass index was 26.4. His speech was normal, and his gait was unremarkable. Cranial nerve examination was normal, with intact ocular motion and no nystagmus. Facial strength was symmetric and full, with no oro-buccolingual dyskinesias. Cervical musculature examination showed no cervical dystonia, and oropharyngeal examination revealed a brisk gag reflex without palatal myoclonus. Muscle strength in both upper and lower extremities was graded 5/5, and deep tendon reflexes were 2+ and symmetric. There was no spasticity, and Hoffman and finger flexor reflexes were absent bilaterally. No cogwheeling was detected at the wrist. The Babinski sign was absent with bilateral plantar strokes. Finger sequencing, finger-to-nose, and heel-to-shin maneuvers were accurate and symmetric bilaterally. During the clinic visit, an episode was observed, starting with a 90-degree flexion of the left elbow and extending to the hand. The posture involved flexion of the first, third, and fourth fingers at the metacarpophalangeal joints with extension of the proximal and distal interphalangeal joints, while the second and fifth fingers remained extended, resembling a bovine longhorn.",
+    "target": "Cerebrotendinous xanthomatosis",
+    "phenotypicFeatures": [
+      {
+        "type": {
+          "id": "HP:0002310",
+          "label": "Orofacial dyskinesia",
+          "umls_cui": "C0152115"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_014",
+              "description": "NER: oro - buccolingual dyskinesias (0.997) | Match: sapbert_similarity (0.889)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0002533",
+          "label": "Abnormal posturing",
+          "umls_cui": "C0231471"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_014",
+              "description": "NER: dystonic posturing (0.604) | Match: sapbert_similarity (0.777)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0002967",
+          "label": "Cubitus valgus",
+          "umls_cui": "C0158465"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_014",
+              "description": "NER: bending of the elbow (0.993) | Match: sapbert_similarity (0.828)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0004097",
+          "label": "Deviation of finger",
+          "umls_cui": "C0410740"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_014",
+              "description": "NER: specific finger posturing (0.981) | Match: sapbert_similarity (0.770)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0003474",
+          "label": "Somatic sensory dysfunction",
+          "umls_cui": "C0020580"
+        },
+        "excluded": true,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_014",
+              "description": "NER: sensory symptoms (0.866) | Match: sapbert_similarity (0.777) | Negated by: \"without\""
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0100022",
+          "label": "Abnormality of movement",
+          "umls_cui": "C0026650"
+        },
+        "excluded": true,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_014",
+              "description": "NER: movement disorders (0.996) | Match: sapbert_similarity (0.885) | Negated by: \"no\""
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0000639",
+          "label": "Nystagmus",
+          "umls_cui": "C0028738"
+        },
+        "excluded": true,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_014",
+              "description": "NER: nystagmus (0.922) | Match: clinical_synonym (1.000) | Negated by: \"no\""
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0002075",
+          "label": "Dysdiadochokinesis",
+          "umls_cui": "C0234979"
+        },
+        "excluded": true,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_014",
+              "description": "NER: uccolingual dyskinesias. Cervical (0.740) | Match: sapbert_similarity (0.768) | Negated by: \"no\""
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0000473",
+          "label": "Torticollis",
+          "umls_cui": "C0040485"
+        },
+        "excluded": true,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_014",
+              "description": "NER: cervical dystonia (0.998) | Match: exact_synonym (1.000) | Negated by: \"no\""
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0001332",
+          "label": "Dystonia",
+          "umls_cui": "C0013421"
+        },
+        "excluded": true,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_014",
+              "description": "NER: dystonia (0.573) | Match: exact_label (1.000) | Negated by: \"no\""
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0001348",
+          "label": "Brisk reflexes",
+          "umls_cui": "C2673700"
+        },
+        "excluded": true,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_014",
+              "description": "NER: a brisk gag reflex (0.929) | Match: sapbert_similarity (0.735) | Negated by: \"no\""
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0010875",
+          "label": "Chaddock reflex",
+          "umls_cui": "C1531651"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_014",
+              "description": "NER: gag reflex (0.755) | Match: sapbert_similarity (0.711)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0010530",
+          "label": "Palatal tremor",
+          "umls_cui": "C0030214"
+        },
+        "excluded": true,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_014",
+              "description": "NER: palatal myoclonus (0.727) | Match: exact_synonym (1.000) | Negated by: \"without\""
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0011170",
+          "label": "Generalized myoclonic-atonic seizure",
+          "umls_cui": "C0393702"
+        },
+        "excluded": true,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_014",
+              "description": "NER: atal myoclonus (0.987) | Match: sapbert_similarity (0.763) | Negated by: \"without\""
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0001257",
+          "label": "Spasticity",
+          "umls_cui": "C0026838"
+        },
+        "excluded": true,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_014",
+              "description": "NER: spasticity (0.767) | Match: exact_label (1.000) | Negated by: \"no\""
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0003487",
+          "label": "Babinski sign",
+          "umls_cui": "C0034935"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_014",
+              "description": "NER: Babinski sign (0.900) | Match: text_scan_exact_label (0.950)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0100660",
+          "label": "Dyskinesia",
+          "umls_cui": "C0013384"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_014",
+              "description": "NER: dyskinesias (0.900) | Match: text_scan_related_synonym (0.950)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0001336",
+          "label": "Myoclonus",
+          "umls_cui": "C0027066"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_014",
+              "description": "NER: myoclonus (0.900) | Match: text_scan_exact_label (0.950)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0012840",
+          "label": "Proximal",
+          "umls_cui": "C0205107"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_014",
+              "description": "NER: proximal (0.900) | Match: text_scan_exact_label (0.950)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0012839",
+          "label": "Distal",
+          "umls_cui": "C0205108"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_014",
+              "description": "NER: distal (0.900) | Match: text_scan_exact_label (0.950)"
+            }
+          }
+        ]
+      }
+    ],
+    "metaData": {
+      "created": "2026-06-19T15:10:16Z",
+      "createdBy": "clinical-preanalysis-pipeline-v2",
+      "phenopacketSchemaVersion": "2.0",
+      "resources": [
+        {
+          "id": "hp",
+          "name": "Human Phenotype Ontology",
+          "url": "https://hpo.jax.org",
+          "version": "2024-04-26",
+          "namespacePrefix": "HP",
+          "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        }
+      ]
+    },
+    "interpretations": [
+      {
+        "id": "interpretation-RA_EN_014",
+        "progressStatus": "IN_PROGRESS",
+        "diagnosis": {
+          "disease": {
+            "id": "ORPHA:909",
+            "label": "Cerebrotendinous xanthomatosis"
+          },
+          "score": 0.446,
+          "allCandidates": [
+            {
+              "id": "ORPHA:909",
+              "label": "Cerebrotendinous xanthomatosis",
+              "score": 0.446
+            },
+            {
+              "id": "ORPHA:306674",
+              "label": "Kufor-Rakeb syndrome",
+              "score": 0.4386
+            },
+            {
+              "id": "ORPHA:98766",
+              "label": "Spinocerebellar ataxia type 5",
+              "score": 0.4069
+            },
+            {
+              "id": "ORPHA:157846",
+              "label": "Neuroferritinopathy",
+              "score": 0.3933
+            },
+            {
+              "id": "ORPHA:59",
+              "label": "Allan-Herndon-Dudley syndrome",
+              "score": 0.3718
+            },
+            {
+              "id": "ORPHA:2802",
+              "label": "X-linked sideroblastic anemia and spinocerebellar ataxia",
+              "score": 0.3592
+            },
+            {
+              "id": "ORPHA:1934",
+              "label": "Early infantile developmental and epileptic encephalopathy",
+              "score": 0.3512
+            },
+            {
+              "id": "ORPHA:561854",
+              "label": "FOXG1 syndrome",
+              "score": 0.345
+            },
+            {
+              "id": "ORPHA:95",
+              "label": "Friedreich ataxia",
+              "score": 0.3307
+            },
+            {
+              "id": "ORPHA:94147",
+              "label": "Spinocerebellar ataxia type 7",
+              "score": 0.3302
+            }
+          ]
+        }
+      }
+    ],
+    "_validationWarnings": [
+      {
+        "type": "sex_anatomy_conflict",
+        "severity": "critical",
+        "message": "Female-specific term 'cervical' found in male patient record",
+        "term": "cervical"
+      }
+    ],
+    "_pipelineStats": {
+      "totalEntities": 88,
+      "matchedHPO": 20,
+      "unmatchedEntities": 68,
+      "phenopacketFeatures": 20,
+      "negatedFeatures": 10,
+      "numericPhenotypes": 0,
+      "ordoCandidates": 10
+    }
+  }
+}

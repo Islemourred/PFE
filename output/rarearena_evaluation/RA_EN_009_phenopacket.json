@@ -1,0 +1,199 @@
+{
+  "id": "phenopacket-RA_EN_009",
+  "subject": {
+    "id": "RA_EN_009"
+  },
+  "input": "A 40-year-old man was referred from the Department of Thoracic Surgery with visual loss noticed in the recovery room after undergoing video-assisted thoracoscopic surgery (VATS). The procedure involved a posterior segmentectomy of the right upper lobe and left lower lobe for lung masses under general anesthesia. The surgery was uneventful, lasting approximately 2 hours, with no significant fluctuations in blood pressure or notable blood loss. Histologic examination revealed malignant lymphoma and reactive hyperplasia in the surrounding lymph nodes. Post-surgery, his blood pressure, hemoglobin, glucose, and cholesterol levels were all within normal ranges. Ophthalmologic evaluation immediately after surgery showed visual acuities of hand motion in both eyes (OU). Pupils were reactive without any relative afferent pupillary defect, and eye motility was full OU. Slit lamp examination of the eyelid, anterior chamber, and fundus examination were normal.",
+  "target": "IgG4-related ophthalmic disease",
+  "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0000572",
+        "label": "Visual loss",
+        "umls_cui": "C3665386"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_009",
+            "description": "NER: visual loss (0.949) | Match: exact_label (1.000)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0100762",
+        "label": "Hemobilia",
+        "umls_cui": "C0018994"
+      },
+      "excluded": true,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_009",
+            "description": "NER: blood loss (0.925) | Match: sapbert_similarity (0.731) | Negated by: \"no significant\""
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0012539",
+        "label": "Non-Hodgkin lymphoma",
+        "umls_cui": "C0024305"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_009",
+            "description": "NER: malignant lymphoma and reactive hyperplasia (0.998) | Match: sapbert_similarity (0.727)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0200057",
+        "label": "Marcus Gunn pupil",
+        "umls_cui": "C0549122"
+      },
+      "excluded": true,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_009",
+            "description": "NER: relative afferent pupillary defect (0.823) | Match: exact_synonym (1.000) | Negated by: \"without\""
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0002665",
+        "label": "Lymphoma",
+        "umls_cui": "C0024299"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_009",
+            "description": "NER: lymphoma (0.900) | Match: text_scan_clinical_synonym (0.950)"
+          }
+        }
+      ]
+    }
+  ],
+  "metaData": {
+    "created": "2026-06-19T15:09:14Z",
+    "createdBy": "clinical-preanalysis-pipeline-v2",
+    "phenopacketSchemaVersion": "2.0",
+    "resources": [
+      {
+        "id": "hp",
+        "name": "Human Phenotype Ontology",
+        "url": "https://hpo.jax.org",
+        "version": "2024-04-26",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      }
+    ]
+  },
+  "interpretations": [
+    {
+      "id": "interpretation-RA_EN_009",
+      "progressStatus": "IN_PROGRESS",
+      "diagnosis": {
+        "disease": {
+          "id": "ORPHA:449563",
+          "label": "IgG4-related ophthalmic disease"
+        },
+        "score": 0.4474,
+        "allCandidates": [
+          {
+            "id": "ORPHA:449563",
+            "label": "IgG4-related ophthalmic disease",
+            "score": 0.4474
+          },
+          {
+            "id": "ORPHA:3261",
+            "label": "Autoimmune lymphoproliferative syndrome",
+            "score": 0.4232
+          },
+          {
+            "id": "ORPHA:512",
+            "label": "Metachromatic leukodystrophy",
+            "score": 0.3971
+          },
+          {
+            "id": "ORPHA:71505",
+            "label": "Cancer-associated retinopathy",
+            "score": 0.3952
+          },
+          {
+            "id": "ORPHA:289390",
+            "label": "Primary Sjögren disease",
+            "score": 0.3941
+          },
+          {
+            "id": "ORPHA:2526",
+            "label": "Microcephaly-lymphedema-chorioretinopathy syndrome",
+            "score": 0.388
+          },
+          {
+            "id": "ORPHA:524",
+            "label": "Li-Fraumeni syndrome",
+            "score": 0.3732
+          },
+          {
+            "id": "ORPHA:477814",
+            "label": "Progressive microcephaly-seizures-cortical blindness-developmental delay syndrome",
+            "score": 0.3668
+          },
+          {
+            "id": "ORPHA:228423",
+            "label": "GATA2 deficiency spectrum",
+            "score": 0.3617
+          },
+          {
+            "id": "ORPHA:906",
+            "label": "Wiskott-Aldrich syndrome",
+            "score": 0.3595
+          }
+        ]
+      }
+    }
+  ],
+  "_pipelineStats": {
+    "totalEntities": 45,
+    "matchedHPO": 5,
+    "unmatchedEntities": 40,
+    "phenopacketFeatures": 5,
+    "negatedFeatures": 2,
+    "numericPhenotypes": 0,
+    "ordoCandidates": 10
+  }
+}

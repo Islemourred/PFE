@@ -1,0 +1,880 @@
+{
+  "id": "phenopacket-RA_EN_011",
+  "subject": {
+    "id": "RA_EN_011",
+    "sex": "MALE"
+  },
+  "input": "A 19-year-old male presented to Chigateri General Hospital in April 2020 with joint pain for one year and generalized weakness for 20 days. He reported progressive, painless blurring of vision over the past two months, more pronounced in the right eye. There was no history of photophobia, lachrymation, or trauma. He has been managing diabetes mellitus for six years with insulin, metformin, and pioglitazone. His parents had a third-degree consanguineous marriage, and his sibling is unaffected. A maternal cousin has similar skin lesions. His mother did not receive antenatal care and had a domicile delivery. Immunization history is inconsistent. There was no history of palpitation, lower limb swelling, syncope, reduced urine output, hypertension, congenital heart disease, kidney disease, hypothyroidism, or other illnesses. The patient appeared poorly built and undernourished. Vital signs were normal, with no pallor, icterus, cyanosis, clubbing, lymphadenopathy, or edema. His body mass index was 15.4 kg/m2, middle upper arm circumference was 16.5 cm, and head circumference was 51.5 cm. He had large prominent eyes, coarse facies, malocclusion of the teeth with hyperdontia, dermatitis neglecta with acanthosis nigricans on all sides of the neck, a fissured tongue, and enlarged tonsils. Subungual hyperkeratosis was noted in his fingernails, and acanthosis nigricans was present on the dorsum of the hand extending to the forearm. His toenails showed onychodystrophy and pincer nail. Clinically, his liver was enlarged, and the examination of all other systems was unremarkable.",
+  "target": "Acromegaly",
+  "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0002829",
+        "label": "Arthralgia",
+        "umls_cui": "C0003862"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_011",
+            "description": "NER: joint pain (0.998) | Match: exact_synonym (1.000)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0012531",
+        "label": "Pain",
+        "umls_cui": "C0030193"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_011",
+            "description": "NER: pain (0.966) | Match: exact_label (1.000)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0003324",
+        "label": "Generalized muscle weakness",
+        "umls_cui": "C0746674"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_011",
+            "description": "NER: generalized weakness (0.998) | Match: exact_synonym (1.000)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0001324",
+        "label": "Muscle weakness",
+        "umls_cui": "C0151786"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_011",
+            "description": "NER: weakness (0.975) | Match: sapbert_similarity (0.891)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0000529",
+        "label": "Progressive visual loss",
+        "umls_cui": "C1839364"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_011",
+            "description": "NER: progressive, painless blurring of vision (0.995) | Match: sapbert_similarity (0.822)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0000622",
+        "label": "Blurred vision",
+        "umls_cui": "C0344232"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_011",
+            "description": "NER: blurring of vision (0.974) | Match: sapbert_similarity (0.973)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0000613",
+        "label": "Photophobia",
+        "umls_cui": "C0085636"
+      },
+      "excluded": true,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_011",
+            "description": "NER: photophobia (0.995) | Match: exact_label (1.000) | Negated by: \"no history of\""
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0000819",
+        "label": "Diabetes mellitus",
+        "umls_cui": "C0011849"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_011",
+            "description": "NER: diabetes mellitus (0.998) | Match: exact_label (1.000)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0010741",
+        "label": "Pedal edema",
+        "umls_cui": "C0235886"
+      },
+      "excluded": true,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_011",
+            "description": "NER: lower limb swelling (0.998) | Match: sapbert_similarity (0.877) | Negated by: \"no history of\""
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0011037",
+        "label": "Decreased urine output",
+        "umls_cui": "C3887784"
+      },
+      "excluded": true,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_011",
+            "description": "NER: reduced urine output (0.998) | Match: sapbert_similarity (0.988) | Negated by: \"no history of\""
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0001627",
+        "label": "Abnormal heart morphology",
+        "umls_cui": "C0018798"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_011",
+            "description": "NER: congenital heart disease (0.998) | Match: sapbert_similarity (0.795)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0000112",
+        "label": "Nephropathy",
+        "umls_cui": "C0022658"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_011",
+            "description": "NER: kidney disease (0.998) | Match: sapbert_similarity (0.797)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0004395",
+        "label": "Malnutrition",
+        "umls_cui": "C0162429"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_011",
+            "description": "NER: undernourished (0.575) | Match: sapbert_similarity (0.906)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0000980",
+        "label": "Pallor",
+        "umls_cui": "C0030232"
+      },
+      "excluded": true,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_011",
+            "description": "NER: pallor (0.959) | Match: exact_label (1.000) | Negated by: \"no\""
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0000952",
+        "label": "Jaundice",
+        "umls_cui": "C0022346"
+      },
+      "excluded": true,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_011",
+            "description": "NER: icterus (0.883) | Match: exact_synonym (1.000) | Negated by: \"no\""
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0200048",
+        "label": "Cyanotic episode",
+        "umls_cui": "C0578475"
+      },
+      "excluded": true,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_011",
+            "description": "NER: erus, cyanosis (0.997) | Match: sapbert_similarity (0.785) | Negated by: \"no\""
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0001217",
+        "label": "Clubbing",
+        "umls_cui": "C0149651"
+      },
+      "excluded": true,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_011",
+            "description": "NER: clubbing (0.865) | Match: exact_label (1.000) | Negated by: \"no\""
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0002840",
+        "label": "Lymphadenopathy",
+        "umls_cui": "C0024205"
+      },
+      "excluded": true,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_011",
+            "description": "NER: lymphadenopathy (0.859) | Match: clinical_synonym (1.000) | Negated by: \"no\""
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0000969",
+        "label": "Edema",
+        "umls_cui": "C0013604"
+      },
+      "excluded": true,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_011",
+            "description": "NER: edema (0.943) | Match: clinical_synonym (1.000) | Negated by: \"no\""
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0000520",
+        "label": "Proptosis",
+        "umls_cui": "C0015300"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_011",
+            "description": "NER: large prominent eyes (0.996) | Match: substring_match (0.950)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0000689",
+        "label": "Dental malocclusion",
+        "umls_cui": "C0024636"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_011",
+            "description": "NER: malocclusion (0.911) | Match: exact_synonym (1.000)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0000692",
+        "label": "Tooth malposition",
+        "umls_cui": "C1852504"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_011",
+            "description": "NER: malocclusion of the teeth (0.998) | Match: sapbert_similarity (0.880)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0011069",
+        "label": "Supernumerary tooth",
+        "umls_cui": "C0040457"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_011",
+            "description": "NER: hyperdontia (0.742) | Match: exact_synonym (1.000)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0000956",
+        "label": "Acanthosis nigricans",
+        "umls_cui": "C0000889"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_011",
+            "description": "NER: acanthosis nigricans (0.995) | Match: exact_label (1.000)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0000221",
+        "label": "Furrowed tongue",
+        "umls_cui": "C0040412"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_011",
+            "description": "NER: a fissured tongue (0.999) | Match: substring_match (0.950)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0003271",
+        "label": "Visceromegaly",
+        "umls_cui": "C0042782"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_011",
+            "description": "NER: enlarged (0.929) | Match: sapbert_similarity (0.803)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0002716",
+        "label": "Lymphadenopathy",
+        "umls_cui": "C0497156"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_011",
+            "description": "NER: enlarged tonsils (0.998) | Match: sapbert_similarity (0.701)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0008392",
+        "label": "Subungual hyperkeratosis",
+        "umls_cui": "C0038605"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_011",
+            "description": "NER: subungual hyperkeratosis (0.960) | Match: exact_label (1.000)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0000962",
+        "label": "Hyperkeratosis",
+        "umls_cui": "C0870082"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_011",
+            "description": "NER: hyperkeratosis (0.626) | Match: exact_label (1.000)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0008404",
+        "label": "Nail dystrophy",
+        "umls_cui": "C0221260"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_011",
+            "description": "NER: onychodystrophy (0.964) | Match: exact_synonym (1.000)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0001795",
+        "label": "Hyperconvex nail",
+        "umls_cui": "C0423807"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_011",
+            "description": "NER: cer nail (0.877) | Match: sapbert_similarity (0.722)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0000821",
+        "label": "Hypothyroidism",
+        "umls_cui": "C0020676"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_011",
+            "description": "NER: hypothyroidism (0.900) | Match: text_scan_exact_label (0.950)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0000280",
+        "label": "Coarse facial features",
+        "umls_cui": "C1845847"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_011",
+            "description": "NER: coarse facies (0.900) | Match: text_scan_exact_synonym (0.950)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0000822",
+        "label": "Hypertension",
+        "umls_cui": "C0020538"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_011",
+            "description": "NER: hypertension (0.900) | Match: text_scan_exact_label (0.950)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0003676",
+        "label": "Progressive",
+        "umls_cui": "C0205329"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_011",
+            "description": "NER: progressive (0.900) | Match: text_scan_exact_label (0.950)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0012837",
+        "label": "Generalized",
+        "umls_cui": "C0205246"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_011",
+            "description": "NER: generalized (0.900) | Match: text_scan_exact_label (0.950)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0000964",
+        "label": "Eczema",
+        "umls_cui": "C0013595"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_011",
+            "description": "NER: dermatitis (0.900) | Match: text_scan_clinical_synonym (0.950)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0000961",
+        "label": "Cyanosis",
+        "umls_cui": "C0010520"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_011",
+            "description": "NER: cyanosis (0.900) | Match: text_scan_exact_label (0.950)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0001279",
+        "label": "Syncope",
+        "umls_cui": "C0039070"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "RA_EN_011",
+            "description": "NER: syncope (0.900) | Match: text_scan_exact_label (0.950)"
+          }
+        }
+      ]
+    }
+  ],
+  "metaData": {
+    "created": "2026-06-19T15:09:43Z",
+    "createdBy": "clinical-preanalysis-pipeline-v2",
+    "phenopacketSchemaVersion": "2.0",
+    "resources": [
+      {
+        "id": "hp",
+        "name": "Human Phenotype Ontology",
+        "url": "https://hpo.jax.org",
+        "version": "2024-04-26",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      }
+    ]
+  },
+  "interpretations": [
+    {
+      "id": "interpretation-RA_EN_011",
+      "progressStatus": "IN_PROGRESS",
+      "diagnosis": {
+        "disease": {
+          "id": "ORPHA:963",
+          "label": "Acromegaly"
+        },
+        "score": 0.3581,
+        "allCandidates": [
+          {
+            "id": "ORPHA:963",
+            "label": "Acromegaly",
+            "score": 0.3581
+          },
+          {
+            "id": "ORPHA:2905",
+            "label": "POEMS syndrome",
+            "score": 0.3519
+          },
+          {
+            "id": "ORPHA:167",
+            "label": "Chédiak-Higashi syndrome",
+            "score": 0.3339
+          },
+          {
+            "id": "ORPHA:3260",
+            "label": "Idiopathic hypereosinophilic syndrome",
+            "score": 0.3259
+          },
+          {
+            "id": "ORPHA:90340",
+            "label": "Blau syndrome",
+            "score": 0.3136
+          },
+          {
+            "id": "ORPHA:97214",
+            "label": "Eisenmenger syndrome",
+            "score": 0.3046
+          },
+          {
+            "id": "ORPHA:99827",
+            "label": "Crimean-Congo hemorrhagic fever",
+            "score": 0.2992
+          },
+          {
+            "id": "ORPHA:314769",
+            "label": "Somatomammotropinoma",
+            "score": 0.2936
+          },
+          {
+            "id": "ORPHA:39041",
+            "label": "Omenn syndrome",
+            "score": 0.2927
+          },
+          {
+            "id": "ORPHA:324",
+            "label": "Fabry disease",
+            "score": 0.2922
+          }
+        ]
+      }
+    }
+  ],
+  "_pipelineStats": {
+    "totalEntities": 79,
+    "matchedHPO": 39,
+    "unmatchedEntities": 40,
+    "phenopacketFeatures": 39,
+    "negatedFeatures": 9,
+    "numericPhenotypes": 0,
+    "ordoCandidates": 10
+  }
+}

@@ -5,8 +5,28 @@
     "sex": "MALE"
   },
   "input": "Case Report: Cystic fibrosis and alpha-1 antitrypsin deficiency: case report and review of literature.\n\nBACKGROUND: This case report describes a child born with both cystic fibrosis (CF) and alpha-1 antitrypsin deficiency (A1ATD). Both are autosomal recessive inherited diseases, mainly affecting the lungs and the liver. The combination of both diseases together is rare and may lead to a fulminant disease with limited life span. To the best of our knowledge, no case has been reported of a patient born with both diseases.\nCASE PRESENTATION: After an uneventful pregnancy, a male baby was born with meconium ileus. The suspected diagnosis of CF was confirmed based on the sweat test and genetic analysis. The child developed persisting cholestasis, too severe to be likely caused by CF alone and indicating an associated problem. The diagnosis of A1ATD was established based on clinical suspicion (persisting cholestasis), decreased serum alpha-1 antitrypsin and genetic analysis. Supportive therapy was started, however the boy evolved to rapidly progressive liver disease leading to liver failure which necessitated an infant liver transplantation.\nCONCLUSIONS: This case illustrates the complexity of care in case of two severe inherited diseases as well as post solid organ transplant care.",
-  "target": "Congenital respiratory-biliary fistula",
+  "target": "Cystic fibrosis",
   "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0006552",
+        "label": "Fibrocystic lung disease",
+        "umls_cui": "C1397290"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "PUBMED_EN_002",
+            "description": "NER: cystic fibrosis ( cf ) (0.897) | Match: sapbert_similarity (0.702)"
+          }
+        }
+      ]
+    },
     {
       "type": {
         "id": "HP:0001395",
@@ -22,7 +42,7 @@
           },
           "reference": {
             "id": "PUBMED_EN_002",
-            "description": "NER: Cystic fibrosis (0.929) | Match: sapbert_similarity (0.753)"
+            "description": "NER: Cystic fibrosis (0.998) | Match: sapbert_similarity (0.753)"
           }
         }
       ]
@@ -42,16 +62,16 @@
           },
           "reference": {
             "id": "PUBMED_EN_002",
-            "description": "NER: recessive (0.298) | Match: sapbert_similarity (0.880)"
+            "description": "NER: autosomal recessive inherited diseases (0.998) | Match: substring_match (0.950)"
           }
         }
       ]
     },
     {
       "type": {
-        "id": "HP:0002896",
-        "label": "Neoplasm of the liver",
-        "umls_cui": "C0023903"
+        "id": "HP:0004448",
+        "label": "Fulminant hepatic failure",
+        "umls_cui": "C0162557"
       },
       "excluded": false,
       "evidence": [
@@ -62,16 +82,16 @@
           },
           "reference": {
             "id": "PUBMED_EN_002",
-            "description": "NER: liver (0.846) | Match: sapbert_similarity (0.729)"
+            "description": "NER: a fulminant disease (0.998) | Match: sapbert_similarity (0.806)"
           }
         }
       ]
     },
     {
       "type": {
-        "id": "HP:0001396",
-        "label": "Cholestasis",
-        "umls_cui": "C0008370"
+        "id": "HP:0001406",
+        "label": "Intrahepatic cholestasis",
+        "umls_cui": "C0008372"
       },
       "excluded": false,
       "evidence": [
@@ -82,7 +102,7 @@
           },
           "reference": {
             "id": "PUBMED_EN_002",
-            "description": "NER: cholestasis (0.770) | Match: exact_label (1.000)"
+            "description": "NER: persisting cholestasis (0.998) | Match: sapbert_similarity (0.805)"
           }
         }
       ]
@@ -102,7 +122,27 @@
           },
           "reference": {
             "id": "PUBMED_EN_002",
-            "description": "NER: rapidly progressive (0.900) | Match: text_scan_exact_label (0.950)"
+            "description": "NER: rapidly progressive liver disease (0.998) | Match: substring_match (0.950)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0001399",
+        "label": "Hepatic failure",
+        "umls_cui": "C0085605"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "PUBMED_EN_002",
+            "description": "NER: liver failure (0.964) | Match: exact_synonym (1.000)"
           }
         }
       ]
@@ -149,9 +189,9 @@
     },
     {
       "type": {
-        "id": "HP:0001399",
-        "label": "Hepatic failure",
-        "umls_cui": "C0085605"
+        "id": "HP:0001396",
+        "label": "Cholestasis",
+        "umls_cui": "C0008370"
       },
       "excluded": false,
       "evidence": [
@@ -162,16 +202,16 @@
           },
           "reference": {
             "id": "PUBMED_EN_002",
-            "description": "NER: liver failure (0.900) | Match: text_scan_exact_synonym (0.950)"
+            "description": "NER: cholestasis (0.900) | Match: text_scan_exact_label (0.950)"
           }
         }
       ]
     },
     {
       "type": {
-        "id": "HP:0000975",
-        "label": "Hyperhidrosis",
-        "umls_cui": "C0020458"
+        "id": "HP:0003676",
+        "label": "Progressive",
+        "umls_cui": "C0205329"
       },
       "excluded": false,
       "evidence": [
@@ -182,34 +222,14 @@
           },
           "reference": {
             "id": "PUBMED_EN_002",
-            "description": "NER: sweat (0.988) | Match: sapbert_similarity (0.857)"
-          }
-        }
-      ]
-    },
-    {
-      "type": {
-        "id": "HP:0003075",
-        "label": "Hypoproteinemia",
-        "umls_cui": "C0020639"
-      },
-      "excluded": false,
-      "evidence": [
-        {
-          "evidenceCode": {
-            "id": "ECO:0000033",
-            "label": "author statement supported by traceable reference"
-          },
-          "reference": {
-            "id": "PUBMED_EN_002",
-            "description": "NER: decreased serum (0.800) | Match: sapbert_similarity (0.776)"
+            "description": "NER: progressive (0.900) | Match: text_scan_exact_label (0.950)"
           }
         }
       ]
     }
   ],
   "metaData": {
-    "created": "2026-06-11T03:46:51Z",
+    "created": "2026-06-19T15:01:20Z",
     "createdBy": "clinical-preanalysis-pipeline-v2",
     "phenopacketSchemaVersion": "2.0",
     "resources": [
@@ -229,35 +249,60 @@
       "progressStatus": "IN_PROGRESS",
       "diagnosis": {
         "disease": {
-          "id": "ORPHA:2040",
-          "label": "Congenital respiratory-biliary fistula"
+          "id": "ORPHA:586",
+          "label": "Cystic fibrosis"
         },
-        "score": 0.3364,
+        "score": 0.3956,
         "allCandidates": [
           {
-            "id": "ORPHA:2040",
-            "label": "Congenital respiratory-biliary fistula",
-            "score": 0.3364
+            "id": "ORPHA:586",
+            "label": "Cystic fibrosis",
+            "score": 0.3956
           },
           {
-            "id": "ORPHA:140966",
-            "label": "Palmoplantar keratoderma, Nagashima type",
-            "score": 0.3364
+            "id": "ORPHA:355",
+            "label": "Gaucher disease",
+            "score": 0.3656
           },
           {
-            "id": "ORPHA:50943",
-            "label": "Keratolytic winter erythema",
-            "score": 0.2333
+            "id": "ORPHA:171",
+            "label": "Primary sclerosing cholangitis",
+            "score": 0.3547
           },
           {
-            "id": "ORPHA:86919",
-            "label": "Keratosis palmaris et plantaris-clinodactyly syndrome",
-            "score": 0.2333
+            "id": "ORPHA:480520",
+            "label": "Caroli syndrome",
+            "score": 0.344
           },
           {
-            "id": "ORPHA:3196",
-            "label": "Steroid dehydrogenase deficiency-dental anomalies syndrome",
-            "score": 0.1808
+            "id": "ORPHA:333",
+            "label": "Farber disease",
+            "score": 0.3245
+          },
+          {
+            "id": "ORPHA:810",
+            "label": "Shigellosis",
+            "score": 0.3193
+          },
+          {
+            "id": "ORPHA:53035",
+            "label": "Caroli disease",
+            "score": 0.3176
+          },
+          {
+            "id": "ORPHA:275761",
+            "label": "Lysosomal acid lipase deficiency",
+            "score": 0.3139
+          },
+          {
+            "id": "ORPHA:186",
+            "label": "Primary biliary cholangitis",
+            "score": 0.3107
+          },
+          {
+            "id": "ORPHA:567983",
+            "label": "Parenteral nutrition-associated cholestasis",
+            "score": 0.3091
           }
         ]
       }
@@ -272,12 +317,12 @@
     }
   ],
   "_pipelineStats": {
-    "totalEntities": 25,
+    "totalEntities": 40,
     "matchedHPO": 11,
-    "unmatchedEntities": 14,
-    "phenopacketFeatures": 10,
+    "unmatchedEntities": 29,
+    "phenopacketFeatures": 11,
     "negatedFeatures": 0,
     "numericPhenotypes": 0,
-    "ordoCandidates": 5
+    "ordoCandidates": 10
   }
 }

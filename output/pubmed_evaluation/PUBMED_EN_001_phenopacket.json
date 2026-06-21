@@ -4,8 +4,48 @@
     "id": "PUBMED_EN_001"
   },
   "input": "Case Report: Clinical Disorders in Cystic Fibrosis That Affect Emergency Procedures-A Case Report and Review.\n\nCystic fibrosis (CF) is a multisystemic disease caused by a genetic defect, namely a mutation in the CFTR gene, that results in the production of an abnormal protein that regulates the flow of chloride ions through epithelial cells, leading to the dehydration of secreted mucus and changes in its biological properties. Chronic inflammation and recurrent respiratory infections progressively damage lung tissue, leading to respiratory and cardiorespiratory failure. This study aims to present a clinical case and explore the clinical changes in CF that may influence the provision of pre-hospital first aid. The study presents a case report of a 23-year-old CF patient undergoing evaluation for lung transplantation, infected with Pseudomonas aeruginosa and Staphylococcus aureus with the MSSA phenotype, and in a severe condition due to infectious exacerbation. Despite antibiotic treatment, the patient's condition deteriorated, leading to respiratory failure and cardiac arrest. Emergency measures were taken to maintain airway patency-the patient was sedated, intubated, and connected to a ventilator. CF involves systemic complications that, during exacerbations, may require urgent interventions. Cystic fibrosis is associated with multiple systemic complications, some of which may, during exacerbations, require emergency medical interventions. Providing care to this patient group involves specific procedures addressing the consequences of the underlying disease. Due to increasing survival rates and the emergence of new phenotypes, there is a need for the continuous education of medical personnel, including emergency responders, regarding the management of genetically determined diseases. This study underscores the importance of recognizing CF's complex nature and adapting emergency care accordingly to ensure timely and effective intervention in life-threatening situations.",
-  "target": "Cystic fibrosis",
+  "target": "Glycogen storage disease due to acid maltase deficiency",
   "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0006552",
+        "label": "Fibrocystic lung disease",
+        "umls_cui": "C1397290"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "PUBMED_EN_001",
+            "description": "NER: cystic fibrosis ( (0.947) | Match: sapbert_similarity (0.719)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0010876",
+        "label": "Abnormal circulating protein concentration",
+        "umls_cui": "C4020763"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "PUBMED_EN_001",
+            "description": "NER: an abnormal protein (0.994) | Match: sapbert_similarity (0.725)"
+          }
+        }
+      ]
+    },
     {
       "type": {
         "id": "HP:0001944",
@@ -28,26 +68,6 @@
     },
     {
       "type": {
-        "id": "HP:0012649",
-        "label": "Increased inflammatory response",
-        "umls_cui": "C4022803"
-      },
-      "excluded": false,
-      "evidence": [
-        {
-          "evidenceCode": {
-            "id": "ECO:0000033",
-            "label": "author statement supported by traceable reference"
-          },
-          "reference": {
-            "id": "PUBMED_EN_001",
-            "description": "NER: inflammation (0.403) | Match: sapbert_similarity (0.831)"
-          }
-        }
-      ]
-    },
-    {
-      "type": {
         "id": "HP:0011947",
         "label": "Respiratory tract infection",
         "umls_cui": "C0035243"
@@ -61,7 +81,27 @@
           },
           "reference": {
             "id": "PUBMED_EN_001",
-            "description": "NER: respiratory (0.431) | Match: sapbert_similarity (0.712)"
+            "description": "NER: urrent respiratory infections (0.937) | Match: substring_match (0.950)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0002878",
+        "label": "Respiratory failure",
+        "umls_cui": "C1145670"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "PUBMED_EN_001",
+            "description": "NER: respiratory and cardiorespiratory failure (0.997) | Match: sapbert_similarity (0.915)"
           }
         }
       ]
@@ -81,7 +121,7 @@
           },
           "reference": {
             "id": "PUBMED_EN_001",
-            "description": "NER: infections (0.185) | Match: sapbert_similarity (0.777)"
+            "description": "NER: infectious exacerbation (0.998) | Match: sapbert_similarity (0.802)"
           }
         }
       ]
@@ -101,7 +141,7 @@
           },
           "reference": {
             "id": "PUBMED_EN_001",
-            "description": "NER: cardiac arrest (0.708) | Match: exact_label (1.000)"
+            "description": "NER: cardiac arrest (0.995) | Match: exact_label (1.000)"
           }
         }
       ]
@@ -145,30 +185,10 @@
           }
         }
       ]
-    },
-    {
-      "type": {
-        "id": "HP:0003676",
-        "label": "Progressive",
-        "umls_cui": "C0205329"
-      },
-      "excluded": false,
-      "evidence": [
-        {
-          "evidenceCode": {
-            "id": "ECO:0000033",
-            "label": "author statement supported by traceable reference"
-          },
-          "reference": {
-            "id": "PUBMED_EN_001",
-            "description": "NER: deteriorated (0.364) | Match: sapbert_similarity (0.814)"
-          }
-        }
-      ]
     }
   ],
   "metaData": {
-    "created": "2026-06-11T03:46:46Z",
+    "created": "2026-06-19T15:01:12Z",
     "createdBy": "clinical-preanalysis-pipeline-v2",
     "phenopacketSchemaVersion": "2.0",
     "resources": [
@@ -188,47 +208,72 @@
       "progressStatus": "IN_PROGRESS",
       "diagnosis": {
         "disease": {
-          "id": "ORPHA:586",
-          "label": "Cystic fibrosis"
+          "id": "ORPHA:365",
+          "label": "Glycogen storage disease due to acid maltase deficiency"
         },
-        "score": 0.85,
+        "score": 0.3587,
         "allCandidates": [
+          {
+            "id": "ORPHA:365",
+            "label": "Glycogen storage disease due to acid maltase deficiency",
+            "score": 0.3587
+          },
+          {
+            "id": "ORPHA:723",
+            "label": "Pneumocystosis",
+            "score": 0.3507
+          },
+          {
+            "id": "ORPHA:685082",
+            "label": "Pediatric acute respiratory distress syndrome",
+            "score": 0.3504
+          },
+          {
+            "id": "ORPHA:79404",
+            "label": "Severe generalized junctional epidermolysis bullosa",
+            "score": 0.3464
+          },
+          {
+            "id": "ORPHA:36238",
+            "label": "Staphylococcal necrotizing pneumonia",
+            "score": 0.3464
+          },
+          {
+            "id": "ORPHA:457",
+            "label": "Harlequin ichthyosis",
+            "score": 0.3417
+          },
           {
             "id": "ORPHA:586",
             "label": "Cystic fibrosis",
-            "score": 0.85
+            "score": 0.339
           },
           {
-            "id": "ORPHA:2808",
-            "label": "Laryngeal abductor paralysis",
-            "score": 0.3444
+            "id": "ORPHA:258",
+            "label": "Laminin subunit alpha 2-related congenital muscular dystrophy",
+            "score": 0.3318
           },
           {
-            "id": "ORPHA:2111",
-            "label": "Cystic hamartoma of lung and kidney",
-            "score": 0.3127
+            "id": "ORPHA:221",
+            "label": "Dermatomyositis",
+            "score": 0.3171
           },
           {
-            "id": "ORPHA:1202",
-            "label": "Larynx atresia",
-            "score": 0.2667
-          },
-          {
-            "id": "ORPHA:2085",
-            "label": "Glaucoma-sleep apnea syndrome",
-            "score": 0.24
+            "id": "ORPHA:60025",
+            "label": "Pulmonary alveolar microlithiasis",
+            "score": 0.3154
           }
         ]
       }
     }
   ],
   "_pipelineStats": {
-    "totalEntities": 26,
+    "totalEntities": 59,
     "matchedHPO": 9,
-    "unmatchedEntities": 17,
-    "phenopacketFeatures": 8,
+    "unmatchedEntities": 50,
+    "phenopacketFeatures": 9,
     "negatedFeatures": 0,
     "numericPhenotypes": 0,
-    "ordoCandidates": 5
+    "ordoCandidates": 10
   }
 }

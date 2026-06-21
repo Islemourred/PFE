@@ -1,0 +1,1218 @@
+{
+  "note_id": "RA_EN_001",
+  "language": "en",
+  "module1": {
+    "clean_text": "An [AGE] female presented with progressive pulse-synchronous tinnitus in her right ear, which intensified during physical exertion and when lying down. She also reported aural fullness, autophony, and heightened sensitivity to her own body sounds on the same side. There was no history of head trauma or chronic conditions. Otoscopy results were normal. Pure-tone audiometry indicated a pseudo-conductive hearing loss in the right ear at low frequencies with negative bone conduction thresholds at 250 Hz, while the left ear had normal hearing. Impedance audiometry showed normal tympanometry and acoustic reflexes bilaterally. Despite the absence of vestibular symptoms, a full vestibular assessment was conducted. The Video-Frenzel examination, including head-shaking test and Valsalva maneuvers, was normal. However, the video head impulse test (vHIT) revealed a slight vestibulo-ocular reflex (VOR) gain impairment (0.67) for the right posterior semicircular canal. Cervical and ocular vestibular evoked myogenic potentials (VEMPs) to air-conducted sounds showed increased amplitudes and reduced thresholds on the right side.",
+    "phi_map": {
+      "AGE": "18-year-old"
+    },
+    "patient_info": {
+      "sex": "female"
+    }
+  },
+  "module3_warnings": {
+    "temporal": [],
+    "inconsistencies": []
+  },
+  "module4": {
+    "problem": [
+      {
+        "text": "progressive pulse - synchronous tinnitus in her right ear",
+        "ner_score": 0.972,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "progressive pulse - synchronous tinnitus in her right ear",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "a pseudo - conductive hearing loss in the right ear",
+        "ner_score": 0.994,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0000405",
+        "hpo_name": "Conductive hearing impairment",
+        "expanded_text": "a pseudo - conductive hearing loss in the right ear",
+        "match_type": "substring_match",
+        "confidence": 0.95,
+        "matched": true,
+        "umls_cui": "C0018777"
+      },
+      {
+        "text": "a slight vestibulo - ocular reflex ( vor ) gain impairment",
+        "ner_score": 0.997,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "a slight vestibulo - ocular reflex ( vor ) gain impairment",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "tinnitus",
+        "ner_score": 0.904,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0000360",
+        "hpo_name": "Tinnitus",
+        "expanded_text": "tinnitus",
+        "match_type": "exact_label",
+        "confidence": 1.0,
+        "matched": true,
+        "umls_cui": "C0040264"
+      },
+      {
+        "text": "aural fullness",
+        "ner_score": 0.953,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "aural fullness",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "fullness",
+        "ner_score": 0.564,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "fullness",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "autophony",
+        "ner_score": 0.954,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "autophony",
+        "match_type": "sapbert_rejected_low_conf",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "heightened sensitivity",
+        "ner_score": 0.831,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "heightened sensitivity",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "sensitivity",
+        "ner_score": 0.652,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "sensitivity",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "head trauma",
+        "ner_score": 0.998,
+        "negated": true,
+        "negation_cue": "no history of",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "head trauma",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "chronic conditions",
+        "ner_score": 0.992,
+        "negated": true,
+        "negation_cue": "no history of",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "chronic conditions",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "hearing loss",
+        "ner_score": 0.711,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0000365",
+        "hpo_name": "Hearing impairment",
+        "expanded_text": "hearing loss",
+        "match_type": "clinical_synonym",
+        "confidence": 1.0,
+        "matched": true,
+        "umls_cui": "C0011053"
+      },
+      {
+        "text": "frequencies",
+        "ner_score": 0.732,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "frequencies",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "vestibular symptoms",
+        "ner_score": 0.841,
+        "negated": true,
+        "negation_cue": "absence of",
+        "hpo_id": "HP:0001751",
+        "hpo_name": "Abnormal vestibular function",
+        "expanded_text": "vestibular symptoms",
+        "match_type": "sapbert_similarity",
+        "confidence": 0.7676,
+        "matched": true,
+        "umls_cui": "C1843865"
+      },
+      {
+        "text": "vestibulo",
+        "ner_score": 0.48,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "vestibulo",
+        "match_type": "skipped_low_ner_score",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "gain impairment",
+        "ner_score": 0.594,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "gain impairment",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "increased amplitudes",
+        "ner_score": 0.971,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "increased amplitudes",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "reduced thresholds on the",
+        "ner_score": 0.802,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "reduced thresholds on the",
+        "match_type": "no_match",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "progressive",
+        "ner_score": 0.9,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": "HP:0003676",
+        "hpo_name": "Progressive",
+        "expanded_text": "progressive",
+        "match_type": "text_scan_exact_label",
+        "confidence": 0.95,
+        "matched": true,
+        "umls_cui": "C0205329",
+        "umls_all": [
+          "C0205329",
+          "C1864985"
+        ]
+      }
+    ],
+    "test": [
+      {
+        "text": "pure - tone audiometry",
+        "ner_score": 0.865,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "pure - tone audiometry",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "the video - frenzel examination",
+        "ner_score": 0.995,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "the video - frenzel examination",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "head - shaking test",
+        "ner_score": 0.995,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "head - shaking test",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "vhit )",
+        "ner_score": 0.812,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "vhit )",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "vemps )",
+        "ner_score": 0.79,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "vemps )",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "air - conducted sounds",
+        "ner_score": 0.868,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "air - conducted sounds",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "head",
+        "ner_score": 0.961,
+        "negated": true,
+        "negation_cue": "no history of",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "head",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "otos",
+        "ner_score": 0.986,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "otos",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "oscopy",
+        "ner_score": 0.994,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "oscopy",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "normal",
+        "ner_score": 0.961,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "normal",
+        "match_type": "skipped_en_noise",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "tone audio",
+        "ner_score": 0.741,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "tone audio",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "audio",
+        "ner_score": 0.71,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "audio",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "ometry",
+        "ner_score": 0.983,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "ometry",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "hearing",
+        "ner_score": 0.684,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "hearing",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "negative bone",
+        "ner_score": 0.948,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "negative bone",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "bone conduction threshold",
+        "ner_score": 0.798,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "bone conduction threshold",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "conduction",
+        "ner_score": 0.977,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "conduction",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "thresholds",
+        "ner_score": 0.983,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "thresholds",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "Impedance",
+        "ner_score": 0.923,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "Impedance",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "edance audiometry",
+        "ner_score": 0.986,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "edance audiometry",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "tympan",
+        "ner_score": 0.984,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "tympan",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "acoustic",
+        "ner_score": 0.989,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "acoustic",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "acoustic reflex",
+        "ner_score": 0.821,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "acoustic reflex",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "reflexes",
+        "ner_score": 0.989,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "reflexes",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "reflex",
+        "ner_score": 0.767,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "reflex",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "vestibular",
+        "ner_score": 0.946,
+        "negated": true,
+        "negation_cue": "absence of",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "vestibular",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "a full vestibular assessment",
+        "ner_score": 0.995,
+        "negated": true,
+        "negation_cue": "absence of",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "a full vestibular assessment",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "assessment",
+        "ner_score": 0.984,
+        "negated": true,
+        "negation_cue": "absence of",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "assessment",
+        "match_type": "skipped_en_noise",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "Video",
+        "ner_score": 0.984,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "Video",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "examination",
+        "ner_score": 0.991,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "examination",
+        "match_type": "skipped_en_noise",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "shaking",
+        "ner_score": 0.988,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "shaking",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "valsalva maneuvers",
+        "ner_score": 0.948,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "valsalva maneuvers",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "alva",
+        "ner_score": 0.991,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "alva",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "maneuvers",
+        "ner_score": 0.985,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "maneuvers",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "the video head impulse test (",
+        "ner_score": 0.974,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "the video head impulse test (",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "impulse",
+        "ner_score": 0.993,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "impulse",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "ocular",
+        "ner_score": 0.656,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "ocular",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "Cervical",
+        "ner_score": 0.59,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "Cervical",
+        "match_type": "skipped_en_noise",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "cervical and ocular vestibular evoked",
+        "ner_score": 0.947,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "cervical and ocular vestibular evoked",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "evoked",
+        "ner_score": 0.986,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "evoked",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "ogenic",
+        "ner_score": 0.994,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "ogenic",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "ogenic potentials",
+        "ner_score": 0.777,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "ogenic potentials",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "potential",
+        "ner_score": 0.994,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "potential",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "increased",
+        "ner_score": 0.939,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "increased",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "amplitude",
+        "ner_score": 0.621,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "amplitude",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      },
+      {
+        "text": "reduced",
+        "ner_score": 0.87,
+        "negated": false,
+        "negation_cue": "",
+        "hpo_id": null,
+        "hpo_name": null,
+        "expanded_text": "reduced",
+        "match_type": "skipped_test",
+        "confidence": 0.0,
+        "matched": false,
+        "umls_cui": null
+      }
+    ],
+    "ordo_candidates": [
+      {
+        "ordo_id": "ORPHA:420402",
+        "name": "Semicircular canal dehiscence syndrome",
+        "name_fr": "",
+        "score": 0.3856,
+        "coverage": 0.3333,
+        "matched_hpo": [
+          "HP:0000360",
+          "HP:0000365",
+          "HP:0000405"
+        ],
+        "matched_count": 3,
+        "total_disease_hpo": 9,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:1467",
+        "name": "Cogan syndrome",
+        "name_fr": "",
+        "score": 0.331,
+        "coverage": 0.1,
+        "matched_hpo": [
+          "HP:0000360",
+          "HP:0001751"
+        ],
+        "matched_count": 2,
+        "total_disease_hpo": 20,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:886",
+        "name": "Usher syndrome",
+        "name_fr": "",
+        "score": 0.331,
+        "coverage": 0.0541,
+        "matched_hpo": [
+          "HP:0000360",
+          "HP:0001751"
+        ],
+        "matched_count": 2,
+        "total_disease_hpo": 37,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:276621",
+        "name": "Sporadic pheochromocytoma/secreting paraganglioma",
+        "name_fr": "",
+        "score": 0.3234,
+        "coverage": 0.0278,
+        "matched_hpo": [
+          "HP:0000405"
+        ],
+        "matched_count": 1,
+        "total_disease_hpo": 36,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:29072",
+        "name": "Hereditary pheochromocytoma-paraganglioma",
+        "name_fr": "",
+        "score": 0.3234,
+        "coverage": 0.0244,
+        "matched_hpo": [
+          "HP:0000405"
+        ],
+        "matched_count": 1,
+        "total_disease_hpo": 41,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:94080",
+        "name": "Non-functioning paraganglioma",
+        "name_fr": "",
+        "score": 0.3234,
+        "coverage": 0.0323,
+        "matched_hpo": [
+          "HP:0000405"
+        ],
+        "matched_count": 1,
+        "total_disease_hpo": 31,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:100084",
+        "name": "Middle ear neuroendocrine tumor",
+        "name_fr": "",
+        "score": 0.3207,
+        "coverage": 0.0909,
+        "matched_hpo": [
+          "HP:0000360"
+        ],
+        "matched_count": 1,
+        "total_disease_hpo": 11,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:324",
+        "name": "Fabry disease",
+        "name_fr": "",
+        "score": 0.3175,
+        "coverage": 0.0263,
+        "matched_hpo": [
+          "HP:0000360",
+          "HP:0000365"
+        ],
+        "matched_count": 2,
+        "total_disease_hpo": 76,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:297",
+        "name": "Tick-borne encephalitis",
+        "name_fr": "",
+        "score": 0.3126,
+        "coverage": 0.0317,
+        "matched_hpo": [
+          "HP:0000360",
+          "HP:0000365"
+        ],
+        "matched_count": 2,
+        "total_disease_hpo": 63,
+        "text_match": false
+      },
+      {
+        "ordo_id": "ORPHA:2052",
+        "name": "Fraser syndrome",
+        "name_fr": "",
+        "score": 0.3118,
+        "coverage": 0.0152,
+        "matched_hpo": [
+          "HP:0000405"
+        ],
+        "matched_count": 1,
+        "total_disease_hpo": 66,
+        "text_match": false
+      }
+    ],
+    "stats": {
+      "total": 65,
+      "matched": 5,
+      "unmatched": 60,
+      "match_rate": 7.7,
+      "unique_hpo": 5,
+      "ordo_matches": 10
+    }
+  },
+  "phenopacket": {
+    "id": "phenopacket-RA_EN_001",
+    "subject": {
+      "id": "RA_EN_001",
+      "sex": "FEMALE"
+    },
+    "input": "An 18-year-old female presented with progressive pulse-synchronous tinnitus in her right ear, which intensified during physical exertion and when lying down. She also reported aural fullness, autophony, and heightened sensitivity to her own body sounds on the same side. There was no history of head trauma or chronic conditions. Otoscopy results were normal. Pure-tone audiometry indicated a pseudo-conductive hearing loss in the right ear at low frequencies with negative bone conduction thresholds at 250 Hz, while the left ear had normal hearing. Impedance audiometry showed normal tympanometry and acoustic reflexes bilaterally. Despite the absence of vestibular symptoms, a full vestibular assessment was conducted. The Video-Frenzel examination, including head-shaking test and Valsalva maneuvers, was normal. However, the video head impulse test (vHIT) revealed a slight vestibulo-ocular reflex (VOR) gain impairment (0.67) for the right posterior semicircular canal. Cervical and ocular vestibular evoked myogenic potentials (VEMPs) to air-conducted sounds showed increased amplitudes and reduced thresholds on the right side.",
+    "target": "Semicircular canal dehiscence syndrome",
+    "phenotypicFeatures": [
+      {
+        "type": {
+          "id": "HP:0000405",
+          "label": "Conductive hearing impairment",
+          "umls_cui": "C0018777"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_001",
+              "description": "NER: a pseudo - conductive hearing loss in the right ear (0.994) | Match: substring_match (0.950)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0000360",
+          "label": "Tinnitus",
+          "umls_cui": "C0040264"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_001",
+              "description": "NER: tinnitus (0.904) | Match: exact_label (1.000)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0000365",
+          "label": "Hearing impairment",
+          "umls_cui": "C0011053"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_001",
+              "description": "NER: hearing loss (0.711) | Match: clinical_synonym (1.000)"
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0001751",
+          "label": "Abnormal vestibular function",
+          "umls_cui": "C1843865"
+        },
+        "excluded": true,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_001",
+              "description": "NER: vestibular symptoms (0.841) | Match: sapbert_similarity (0.768) | Negated by: \"absence of\""
+            }
+          }
+        ]
+      },
+      {
+        "type": {
+          "id": "HP:0003676",
+          "label": "Progressive",
+          "umls_cui": "C0205329"
+        },
+        "excluded": false,
+        "evidence": [
+          {
+            "evidenceCode": {
+              "id": "ECO:0000033",
+              "label": "author statement supported by traceable reference"
+            },
+            "reference": {
+              "id": "RA_EN_001",
+              "description": "NER: progressive (0.900) | Match: text_scan_exact_label (0.950)"
+            }
+          }
+        ]
+      }
+    ],
+    "metaData": {
+      "created": "2026-06-19T15:08:09Z",
+      "createdBy": "clinical-preanalysis-pipeline-v2",
+      "phenopacketSchemaVersion": "2.0",
+      "resources": [
+        {
+          "id": "hp",
+          "name": "Human Phenotype Ontology",
+          "url": "https://hpo.jax.org",
+          "version": "2024-04-26",
+          "namespacePrefix": "HP",
+          "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        }
+      ]
+    },
+    "interpretations": [
+      {
+        "id": "interpretation-RA_EN_001",
+        "progressStatus": "IN_PROGRESS",
+        "diagnosis": {
+          "disease": {
+            "id": "ORPHA:420402",
+            "label": "Semicircular canal dehiscence syndrome"
+          },
+          "score": 0.3856,
+          "allCandidates": [
+            {
+              "id": "ORPHA:420402",
+              "label": "Semicircular canal dehiscence syndrome",
+              "score": 0.3856
+            },
+            {
+              "id": "ORPHA:1467",
+              "label": "Cogan syndrome",
+              "score": 0.331
+            },
+            {
+              "id": "ORPHA:886",
+              "label": "Usher syndrome",
+              "score": 0.331
+            },
+            {
+              "id": "ORPHA:276621",
+              "label": "Sporadic pheochromocytoma/secreting paraganglioma",
+              "score": 0.3234
+            },
+            {
+              "id": "ORPHA:29072",
+              "label": "Hereditary pheochromocytoma-paraganglioma",
+              "score": 0.3234
+            },
+            {
+              "id": "ORPHA:94080",
+              "label": "Non-functioning paraganglioma",
+              "score": 0.3234
+            },
+            {
+              "id": "ORPHA:100084",
+              "label": "Middle ear neuroendocrine tumor",
+              "score": 0.3207
+            },
+            {
+              "id": "ORPHA:324",
+              "label": "Fabry disease",
+              "score": 0.3175
+            },
+            {
+              "id": "ORPHA:297",
+              "label": "Tick-borne encephalitis",
+              "score": 0.3126
+            },
+            {
+              "id": "ORPHA:2052",
+              "label": "Fraser syndrome",
+              "score": 0.3118
+            }
+          ]
+        }
+      }
+    ],
+    "_pipelineStats": {
+      "totalEntities": 65,
+      "matchedHPO": 5,
+      "unmatchedEntities": 60,
+      "phenopacketFeatures": 5,
+      "negatedFeatures": 1,
+      "numericPhenotypes": 0,
+      "ordoCandidates": 10
+    }
+  }
+}
