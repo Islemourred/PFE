@@ -32,10 +32,14 @@ from flask import Flask, request, jsonify, send_file
 from flask_cors import CORS
 from docx import Document
 from supabase import create_client, Client
+from dotenv import load_dotenv
+
+# Load environment variables from .env.local
+load_dotenv(os.path.join(os.path.dirname(os.path.abspath(__file__)), ".env.local"))
 
 # ── Supabase Config ──────────────────────────────────────────
-SUPABASE_URL = "https://erwwmxppovtuzikyfakf.supabase.co"
-SUPABASE_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImVyd3dteHBwb3Z0dXppa3lmYWtmIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODE2MjY2MjUsImV4cCI6MjA5NzIwMjYyNX0.D4cW01s4uAPUUi7c5sWCgFmykQD4JMWEwhQy9uSLeJM"
+SUPABASE_URL = os.environ.get("NEXT_PUBLIC_SUPABASE_URL")
+SUPABASE_KEY = os.environ.get("NEXT_PUBLIC_SUPABASE_ANON_KEY")
 
 supabase: Client = create_client(SUPABASE_URL, SUPABASE_KEY)
 
