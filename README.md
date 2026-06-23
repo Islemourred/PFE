@@ -2,7 +2,8 @@
 
 > **Final Year Project** — ESI Sidi Bel Abbes 2025/2026  
 > Ouddane Youcef Fahed & Ourred Islam Charaf Eddine  
-> Supervised by: Dr. Mezrar Samiha & Pr. Keskes Nabil
+> Supervised by: Dr. Mezrar Samiha & Pr. Keskes Nabil (ESI SBA)  
+> Co-supervised by: Mme Elena Kornyshova & M. Olivier Pons (CEDRIC Laboratory, CNAM Paris)
 
 ## Overview
 
