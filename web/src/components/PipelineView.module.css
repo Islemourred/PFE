@@ -445,13 +445,97 @@
 /* ═══ Light Mode Overrides ════════════════════════════ */
 :global([data-theme="light"]) .modeToggle,
 :global([data-theme="light"]) .tabs {
-  background: rgba(235, 242, 255, 0.85);
-  border: 1px solid rgba(100, 130, 180, 0.1);
+  background: rgba(225, 235, 250, 0.9);
+  border: 1px solid rgba(80, 110, 160, 0.14);
 }
 
-:global([data-theme="light"]) .resultCard {
-  box-shadow: 0 1px 4px rgba(30, 60, 120, 0.06);
+/* Cards — white with subtle shadow */
+:global([data-theme="light"]) .card {
+  background: #ffffff;
+  border: 1px solid rgba(80, 110, 160, 0.14);
+  box-shadow: 0 1px 4px rgba(20, 50, 100, 0.06);
 }
-:global([data-theme="light"]) .resultCard:hover {
-  box-shadow: 0 6px 24px rgba(30, 60, 120, 0.1);
+
+/* Stat boxes */
+:global([data-theme="light"]) .statBox {
+  background: linear-gradient(145deg, #ffffff 0%, #f0f4fa 100%);
+  border: 1px solid rgba(80, 110, 160, 0.15);
+  box-shadow: 0 2px 8px rgba(20, 50, 100, 0.06);
+}
+
+/* File banner */
+:global([data-theme="light"]) .fileBanner {
+  background: linear-gradient(145deg, #f0f4fa 0%, #e8edf4 100%);
+  border: 1px solid rgba(80, 110, 160, 0.18);
+}
+
+/* ORDO card — teal gradient, lighter for light mode */
+:global([data-theme="light"]) .ordoCard {
+  background: linear-gradient(135deg, #e0f7fa 0%, #e0f2fe 50%, #ecfdf5 100%);
+  border: 1px solid rgba(2, 132, 168, 0.25);
+}
+:global([data-theme="light"]) .ordoName { color: #0a1628; }
+:global([data-theme="light"]) .ordoScore { color: #0284a8; }
+
+/* Data table header */
+:global([data-theme="light"]) .dataTable th {
+  background: #eef2f7;
+  color: #4a5d74;
+  border-bottom: 1px solid rgba(80, 110, 160, 0.18);
+}
+
+:global([data-theme="light"]) .dataTable td {
+  border-bottom: 1px solid rgba(80, 110, 160, 0.08);
+}
+
+:global([data-theme="light"]) .dataTable tr:hover td {
+  background: rgba(2, 132, 168, 0.04);
+}
+
+/* Tags — stronger colors for light backgrounds */
+:global([data-theme="light"]) .tagProblem { background: rgba(220, 38, 38, 0.1); color: #b91c1c; }
+:global([data-theme="light"]) .tagTreatment { background: rgba(37, 99, 235, 0.1); color: #1d4ed8; }
+:global([data-theme="light"]) .tagTest { background: rgba(124, 58, 237, 0.1); color: #6d28d9; }
+:global([data-theme="light"]) .tagNegated { background: rgba(217, 119, 6, 0.12); color: #b45309; }
+:global([data-theme="light"]) .tagMatched { background: rgba(5, 150, 105, 0.1); color: #047857; }
+:global([data-theme="light"]) .tagUnmatched { background: rgba(100, 116, 139, 0.1); color: #64748b; }
+
+/* JSON block */
+:global([data-theme="light"]) .jsonBlock {
+  background: #f4f7fb;
+  border: 1px solid rgba(80, 110, 160, 0.14);
+  color: #253346;
+}
+:global([data-theme="light"]) .jsonKey { color: #047857; }
+:global([data-theme="light"]) .jsonString { color: #1d4ed8; }
+:global([data-theme="light"]) .jsonNumber { color: #c2410c; }
+:global([data-theme="light"]) .jsonBoolean { color: #b91c1c; }
+:global([data-theme="light"]) .jsonNull { color: #64748b; }
+
+/* Tab active state */
+:global([data-theme="light"]) .tabBtnActive {
+  color: #0284a8 !important;
+  background: rgba(2, 132, 168, 0.12) !important;
+}
+
+/* Mode button active */
+:global([data-theme="light"]) .modeBtnActive {
+  color: #0284a8 !important;
+  background: rgba(2, 132, 168, 0.12) !important;
+}
+
+/* Error card */
+:global([data-theme="light"]) .errorCard {
+  background: rgba(220, 38, 38, 0.06);
+  border: 1px solid rgba(220, 38, 38, 0.2);
+}
+
+/* Progress bar track */
+:global([data-theme="light"]) .progressBar {
+  background: rgba(80, 110, 160, 0.12);
+}
+
+/* Divider */
+:global([data-theme="light"]) .divider {
+  border-top: 1px solid rgba(80, 110, 160, 0.12);
 }

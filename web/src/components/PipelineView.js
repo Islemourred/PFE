@@ -366,10 +366,10 @@ export default function PipelineView() {
                     <tbody>
                       {result.numerics.map((n, i) => (
                         <tr key={i}>
-                          <td>{n.phenotype || ""}</td>
+                          <td>{n.hpo_name || n.phenotype || ""}</td>
                           <td style={{ fontFamily: "monospace" }}>{n.hpo_id || ""}</td>
-                          <td>{n.raw_value || ""}</td>
-                          <td>{n.interpretation || ""}</td>
+                          <td>{n.source || n.raw_value || (n.value != null ? `${n.value} ${n.unit || ""}` : "")}</td>
+                          <td>{n.description || n.interpretation || ""}</td>
                         </tr>
                       ))}
                     </tbody>

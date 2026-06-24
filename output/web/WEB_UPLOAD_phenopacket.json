@@ -27,7 +27,7 @@
           },
           "reference": {
             "id": "WEB_UPLOAD",
-            "description": "NER: mucoviscidose (0.819) | Match: french_curated (0.950)"
+            "description": "NER: mucoviscidose (0.825) | Match: french_curated (0.950)"
           }
         }
       ]
@@ -47,7 +47,7 @@
           },
           "reference": {
             "id": "WEB_UPLOAD",
-            "description": "NER: Convulsions (0.621) | Match: clinical_synonym (1.000)"
+            "description": "NER: Convulsions (0.463) | Match: french_curated (0.950)"
           }
         }
       ]
@@ -67,7 +67,47 @@
           },
           "reference": {
             "id": "WEB_UPLOAD",
-            "description": "NER: Toux chronique (0.841) | Match: french_partial (0.850)"
+            "description": "NER: Toux chronique (0.754) | Match: french_partial (0.850)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0002104",
+        "label": "Apnea",
+        "umls_cui": "C0003578"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "WEB_UPLOAD",
+            "description": "NER: Encombrement bronchique (0.809) | Match: french_curated (0.950)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0001738",
+        "label": "Exocrine pancreatic insufficiency",
+        "umls_cui": "C0030293"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "WEB_UPLOAD",
+            "description": "NER: insuffisance pancreatique exocrine severe (0.433) | Match: sapbert_similarity (0.718)"
           }
         }
       ]
@@ -87,15 +127,16 @@
           },
           "reference": {
             "id": "WEB_UPLOAD",
-            "description": "NER: toux (0.680) | Match: french_orphanet (0.920)"
+            "description": "NER: toux (0.597) | Match: french_curated (0.950)"
           }
         }
       ]
     },
     {
       "type": {
-        "id": "HP:0025406",
-        "label": "Asthenia"
+        "id": "HP:0012378",
+        "label": "Fatigue",
+        "umls_cui": "C0015672"
       },
       "excluded": false,
       "evidence": [
@@ -106,7 +147,27 @@
           },
           "reference": {
             "id": "WEB_UPLOAD",
-            "description": "NER: asthénie (0.893) | Match: french_orphanet (0.920)"
+            "description": "NER: asthénie (0.830) | Match: french_curated (0.950)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0002039",
+        "label": "Anorexia",
+        "umls_cui": "C0003123"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "WEB_UPLOAD",
+            "description": "NER: diminution de l'appétit (0.515) | Match: sapbert_similarity (0.705)"
           }
         }
       ]
@@ -126,7 +187,7 @@
           },
           "reference": {
             "id": "WEB_UPLOAD",
-            "description": "NER: malnutrition légère (0.614) | Match: french_partial (0.850)"
+            "description": "NER: malnutrition légère (0.565) | Match: french_partial (0.850)"
           }
         }
       ]
@@ -146,16 +207,16 @@
           },
           "reference": {
             "id": "WEB_UPLOAD",
-            "description": "NER: ictère (0.801) | Match: french_curated (0.950) | Negated by: \"pas d'\""
+            "description": "NER: ictère (0.755) | Match: french_curated (0.950) | Negated by: \"pas d'\""
           }
         }
       ]
     },
     {
       "type": {
-        "id": "HP:0000840",
-        "label": "Adrenogenital syndrome",
-        "umls_cui": "C0302280"
+        "id": "HP:0001892",
+        "label": "Abnormal bleeding",
+        "umls_cui": "C1458140"
       },
       "excluded": true,
       "evidence": [
@@ -166,47 +227,7 @@
           },
           "reference": {
             "id": "WEB_UPLOAD",
-            "description": "NER: syndrome hémorragique (0.650) | Match: sapbert_similarity (0.977) | Negated by: \"pas d'\""
-          }
-        }
-      ]
-    },
-    {
-      "type": {
-        "id": "HP:0001962",
-        "label": "Palpitations",
-        "umls_cui": "C0030252"
-      },
-      "excluded": false,
-      "evidence": [
-        {
-          "evidenceCode": {
-            "id": "ECO:0000033",
-            "label": "author statement supported by traceable reference"
-          },
-          "reference": {
-            "id": "WEB_UPLOAD",
-            "description": "NER: murmures vésiculaires (0.797) | Match: sapbert_similarity (0.702)"
-          }
-        }
-      ]
-    },
-    {
-      "type": {
-        "id": "HP:0011215",
-        "label": "Hemihypsarrhythmia",
-        "umls_cui": "C4023460"
-      },
-      "excluded": false,
-      "evidence": [
-        {
-          "evidenceCode": {
-            "id": "ECO:0000033",
-            "label": "author statement supported by traceable reference"
-          },
-          "reference": {
-            "id": "WEB_UPLOAD",
-            "description": "NER: TSC (0.564) | Match: sapbert_similarity (1.000)"
+            "description": "NER: syndrome hémorragique (0.580) | Match: french_curated (0.950) | Negated by: \"pas d'\""
           }
         }
       ]
@@ -226,16 +247,16 @@
           },
           "reference": {
             "id": "WEB_UPLOAD",
-            "description": "NER: insuffisance respiratoire chronique (0.827) | Match: french_partial (0.850)"
+            "description": "NER: insuffisance respiratoire chronique (0.738) | Match: french_curated (0.950)"
           }
         }
       ]
     },
     {
       "type": {
-        "id": "HP:0100625",
-        "label": "Enlarged thorax",
-        "umls_cui": "C4020962"
+        "id": "HP:0000767",
+        "label": "Pectus excavatum",
+        "umls_cui": "C2051831"
       },
       "excluded": false,
       "evidence": [
@@ -246,7 +267,7 @@
           },
           "reference": {
             "id": "WEB_UPLOAD",
-            "description": "NER: déformation thoracique (0.766) | Match: sapbert_similarity (0.827)"
+            "description": "NER: déformation thoracique (0.713) | Match: french_curated (0.950)"
           }
         }
       ]
@@ -266,7 +287,7 @@
           },
           "reference": {
             "id": "WEB_UPLOAD",
-            "description": "NER: hippocratisme digital (0.782) | Match: french_orphanet (0.920)"
+            "description": "NER: hippocratisme digital (0.705) | Match: french_curated (0.950)"
           }
         }
       ]
@@ -274,7 +295,7 @@
     {
       "type": {
         "id": "HP:0002035",
-        "label": "Rectal prolapse",
+        "label": "Chronic diarrhea",
         "umls_cui": "C0034888"
       },
       "excluded": true,
@@ -286,16 +307,16 @@
           },
           "reference": {
             "id": "WEB_UPLOAD",
-            "description": "NER: prolapsus rectal (0.737) | Match: french_orphanet (0.920) | Negated by: \"pas de\""
+            "description": "NER: prolapsus rectal (0.644) | Match: french_curated (0.950) | Negated by: \"pas de\""
           }
         }
       ]
     },
     {
       "type": {
-        "id": "HP:0005507",
-        "label": "Hemoglobin Barts",
-        "umls_cui": "C3539063"
+        "id": "HP:0002329",
+        "label": "Drowsiness",
+        "umls_cui": "C0013144"
       },
       "excluded": false,
       "evidence": [
@@ -306,27 +327,7 @@
           },
           "reference": {
             "id": "WEB_UPLOAD",
-            "description": "NER: Appétit  diminué (0.504) | Match: sapbert_similarity (1.000)"
-          }
-        }
-      ]
-    },
-    {
-      "type": {
-        "id": "HP:0002494",
-        "label": "Abnormal rapid eye movement sleep",
-        "umls_cui": "C0392188"
-      },
-      "excluded": false,
-      "evidence": [
-        {
-          "evidenceCode": {
-            "id": "ECO:0000033",
-            "label": "author statement supported by traceable reference"
-          },
-          "reference": {
-            "id": "WEB_UPLOAD",
-            "description": "NER: sommeil perturbé (0.566) | Match: sapbert_similarity (0.756)"
+            "description": "NER: sommeil perturbé (0.413) | Match: sapbert_similarity (0.706)"
           }
         }
       ]
@@ -346,46 +347,7 @@
           },
           "reference": {
             "id": "WEB_UPLOAD",
-            "description": "NER: cyanose (0.937) | Match: french_orphanet (0.920) | Negated by: \"pas de\""
-          }
-        }
-      ]
-    },
-    {
-      "type": {
-        "id": "HP:0030831",
-        "label": "Rhonchi"
-      },
-      "excluded": false,
-      "evidence": [
-        {
-          "evidenceCode": {
-            "id": "ECO:0000033",
-            "label": "author statement supported by traceable reference"
-          },
-          "reference": {
-            "id": "WEB_UPLOAD",
-            "description": "NER: syndrome bronchique (0.668) | Match: french_partial (0.850)"
-          }
-        }
-      ]
-    },
-    {
-      "type": {
-        "id": "HP:0012840",
-        "label": "Proximal",
-        "umls_cui": "C0205107"
-      },
-      "excluded": false,
-      "evidence": [
-        {
-          "evidenceCode": {
-            "id": "ECO:0000033",
-            "label": "author statement supported by traceable reference"
-          },
-          "reference": {
-            "id": "WEB_UPLOAD",
-            "description": "NER: épaississement des parois bronchique proximales (0.514) | Match: french_partial (0.850)"
+            "description": "NER: cyanose (0.824) | Match: french_orphanet (0.920) | Negated by: \"pas de\""
           }
         }
       ]
@@ -405,7 +367,27 @@
           },
           "reference": {
             "id": "WEB_UPLOAD",
-            "description": "NER: bronchectasie (0.721) | Match: sapbert_similarity (0.706) | Negated by: \"sans\""
+            "description": "NER: Cœur pulmonaire chronique (0.632) | Match: french_partial (0.850) | Negated by: \"pas de signe de\""
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0002110",
+        "label": "Bronchiectasis",
+        "umls_cui": "C0006267"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "WEB_UPLOAD",
+            "description": "NER: syndrome bronchique (0.542) | Match: french_curated (0.950)"
           }
         }
       ]
@@ -425,7 +407,27 @@
           },
           "reference": {
             "id": "WEB_UPLOAD",
-            "description": "NER: rectorragie (0.933) | Match: french_orphanet (0.920) | Negated by: \"ni\""
+            "description": "NER: rectorragie (0.789) | Match: french_orphanet (0.920) | Negated by: \"ni\""
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0003270",
+        "label": "Abdominal distention",
+        "umls_cui": "C0000731"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "WEB_UPLOAD",
+            "description": "NER: abdomen distendue souple (0.416) | Match: sapbert_similarity (0.771)"
           }
         }
       ]
@@ -445,7 +447,7 @@
           },
           "reference": {
             "id": "WEB_UPLOAD",
-            "description": "NER: constipation (0.931) | Match: french_orphanet (0.920) | Negated by: \"absence de\""
+            "description": "NER: constipation (0.754) | Match: french_curated (0.950) | Negated by: \"absence de\""
           }
         }
       ]
@@ -465,7 +467,7 @@
           },
           "reference": {
             "id": "WEB_UPLOAD",
-            "description": "NER: RGO (0.810) | Match: sapbert_similarity (0.759)"
+            "description": "NER: RGO (0.823) | Match: french_curated (0.950)"
           }
         }
       ]
@@ -485,187 +487,7 @@
           },
           "reference": {
             "id": "WEB_UPLOAD",
-            "description": "NER: ectasie pyélique gauche (0.554) | Match: french_partial (0.850)"
-          }
-        }
-      ]
-    },
-    {
-      "type": {
-        "id": "HP:0007256",
-        "label": "Abnormal pyramidal sign",
-        "umls_cui": "C0234132"
-      },
-      "excluded": false,
-      "evidence": [
-        {
-          "evidenceCode": {
-            "id": "ECO:0000033",
-            "label": "author statement supported by traceable reference"
-          },
-          "reference": {
-            "id": "WEB_UPLOAD",
-            "description": "NER: signes de lutte (0.493) | Match: sapbert_similarity (0.719)"
-          }
-        }
-      ]
-    },
-    {
-      "type": {
-        "id": "HP:0100512",
-        "label": "Decreased circulating vitamin D concentration",
-        "umls_cui": "C0042870"
-      },
-      "excluded": false,
-      "evidence": [
-        {
-          "evidenceCode": {
-            "id": "ECO:0000033",
-            "label": "author statement supported by traceable reference"
-          },
-          "reference": {
-            "id": "WEB_UPLOAD",
-            "description": "NER: vitamine D (0.899) | Match: sapbert_similarity (0.727)"
-          }
-        }
-      ]
-    },
-    {
-      "type": {
-        "id": "HP:0001626",
-        "label": "Abnormality of the cardiovascular system",
-        "umls_cui": "C0007222"
-      },
-      "excluded": false,
-      "evidence": [
-        {
-          "evidenceCode": {
-            "id": "ECO:0000033",
-            "label": "author statement supported by traceable reference"
-          },
-          "reference": {
-            "id": "WEB_UPLOAD",
-            "description": "NER: Examen cardiovasculaire (0.407) | Match: sapbert_similarity (0.769)"
-          }
-        }
-      ]
-    },
-    {
-      "type": {
-        "id": "HP:0011893",
-        "label": "Abnormal leukocyte count",
-        "umls_cui": "C0580531"
-      },
-      "excluded": false,
-      "evidence": [
-        {
-          "evidenceCode": {
-            "id": "ECO:0000033",
-            "label": "author statement supported by traceable reference"
-          },
-          "reference": {
-            "id": "WEB_UPLOAD",
-            "description": "NER: NFS (0.410) | Match: sapbert_similarity (0.734)"
-          }
-        }
-      ]
-    },
-    {
-      "type": {
-        "id": "HP:0001789",
-        "label": "Hydrops fetalis",
-        "umls_cui": "C0020305"
-      },
-      "excluded": false,
-      "evidence": [
-        {
-          "evidenceCode": {
-            "id": "ECO:0000033",
-            "label": "author statement supported by traceable reference"
-          },
-          "reference": {
-            "id": "WEB_UPLOAD",
-            "description": "NER: Echo cœur (0.785) | Match: sapbert_similarity (0.718)"
-          }
-        }
-      ]
-    },
-    {
-      "type": {
-        "id": "HP:0001438",
-        "label": "Abnormal abdomen morphology",
-        "umls_cui": "C4020869"
-      },
-      "excluded": false,
-      "evidence": [
-        {
-          "evidenceCode": {
-            "id": "ECO:0000033",
-            "label": "author statement supported by traceable reference"
-          },
-          "reference": {
-            "id": "WEB_UPLOAD",
-            "description": "NER: Echographie abdomino-pelvienne HPMG (0.740) | Match: sapbert_similarity (0.818)"
-          }
-        }
-      ]
-    },
-    {
-      "type": {
-        "id": "HP:0003573",
-        "label": "Increased total bilirubin",
-        "umls_cui": "C0741494"
-      },
-      "excluded": false,
-      "evidence": [
-        {
-          "evidenceCode": {
-            "id": "ECO:0000033",
-            "label": "author statement supported by traceable reference"
-          },
-          "reference": {
-            "id": "WEB_UPLOAD",
-            "description": "NER: bilan nutritionnel (0.423) | Match: sapbert_similarity (0.708)"
-          }
-        }
-      ]
-    },
-    {
-      "type": {
-        "id": "HP:0004430",
-        "label": "Immunodeficiency",
-        "umls_cui": "C0085110"
-      },
-      "excluded": false,
-      "evidence": [
-        {
-          "evidenceCode": {
-            "id": "ECO:0000033",
-            "label": "author statement supported by traceable reference"
-          },
-          "reference": {
-            "id": "WEB_UPLOAD",
-            "description": "NER: Bilan du déficit immunitaire (0.711) | Match: french_partial (0.850)"
-          }
-        }
-      ]
-    },
-    {
-      "type": {
-        "id": "HP:0100272",
-        "label": "Branchial sinus",
-        "umls_cui": "C0266624"
-      },
-      "excluded": false,
-      "evidence": [
-        {
-          "evidenceCode": {
-            "id": "ECO:0000033",
-            "label": "author statement supported by traceable reference"
-          },
-          "reference": {
-            "id": "WEB_UPLOAD",
-            "description": "NER: TDM des sinus ( (0.552) | Match: sapbert_similarity (0.798)"
+            "description": "NER: ectasie pyélique gauche (0.684) | Match: french_partial (0.850)"
           }
         }
       ]
@@ -710,7 +532,7 @@
     }
   ],
   "metaData": {
-    "created": "2026-06-16T21:05:21Z",
+    "created": "2026-06-24T01:58:05Z",
     "createdBy": "clinical-preanalysis-pipeline-v2",
     "phenopacketSchemaVersion": "2.0",
     "resources": [
@@ -733,44 +555,69 @@
           "id": "ORPHA:586",
           "label": "Cystic fibrosis"
         },
-        "score": 0.85,
+        "score": 0.2937,
         "allCandidates": [
           {
             "id": "ORPHA:586",
             "label": "Cystic fibrosis",
-            "score": 0.85
+            "score": 0.2937
           },
           {
-            "id": "ORPHA:46348",
-            "label": "Paroxysmal extreme pain disorder",
-            "score": 0.6229
+            "id": "ORPHA:264710",
+            "label": "Childhood interstitial lung disease",
+            "score": 0.2395
           },
           {
-            "id": "ORPHA:35701",
-            "label": "3-hydroxy-3-methylglutaryl-CoA synthase deficiency",
-            "score": 0.4222
+            "id": "ORPHA:95430",
+            "label": "Congenital tracheomalacia",
+            "score": 0.2338
           },
           {
-            "id": "ORPHA:2808",
-            "label": "Laryngeal abductor paralysis",
-            "score": 0.3111
+            "id": "ORPHA:183660",
+            "label": "T-B+ severe combined immunodeficiency due to gamma chain deficiency",
+            "score": 0.2176
           },
           {
-            "id": "ORPHA:851",
-            "label": "Paris-Trousseau thrombocytopenia",
-            "score": 0.3111
+            "id": "ORPHA:732",
+            "label": "Polymyositis",
+            "score": 0.2152
+          },
+          {
+            "id": "ORPHA:2032",
+            "label": "Idiopathic pulmonary fibrosis",
+            "score": 0.202
+          },
+          {
+            "id": "ORPHA:60025",
+            "label": "Pulmonary alveolar microlithiasis",
+            "score": 0.1997
+          },
+          {
+            "id": "ORPHA:285",
+            "label": "Hypermobile Ehlers-Danlos syndrome",
+            "score": 0.1933
+          },
+          {
+            "id": "ORPHA:99826",
+            "label": "Marburg hemorrhagic fever",
+            "score": 0.1867
+          },
+          {
+            "id": "ORPHA:90051",
+            "label": "Sepsis in premature infants",
+            "score": 0.184
           }
         ]
       }
     }
   ],
   "_pipelineStats": {
-    "totalEntities": 82,
-    "matchedHPO": 56,
-    "unmatchedEntities": 26,
-    "phenopacketFeatures": 35,
+    "totalEntities": 46,
+    "matchedHPO": 24,
+    "unmatchedEntities": 22,
+    "phenopacketFeatures": 26,
     "negatedFeatures": 7,
     "numericPhenotypes": 2,
-    "ordoCandidates": 5
+    "ordoCandidates": 10
   }
 }
