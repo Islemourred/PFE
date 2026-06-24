@@ -51,6 +51,14 @@ app = Flask(__name__)
 CORS(app)
 app.config['MAX_CONTENT_LENGTH'] = 50 * 1024 * 1024  # 50MB max upload
 
+# Flask 3.x: prevent 415 when receiving non-JSON POST requests
+from werkzeug.exceptions import UnsupportedMediaType
+
+@app.errorhandler(UnsupportedMediaType)
+def handle_415(e):
+    """Let non-JSON POST requests through (e.g. multipart/form-data text input)."""
+    return jsonify({"error": "Format de requête non supporté. Utilisez multipart/form-data ou application/json."}), 415
+
 # ── Pipeline (lazy-loaded) ───────────────────────────────────
 pipeline_obj = None
 pipeline_loading = False
@@ -201,10 +209,15 @@ def run_pipeline():
                     raw_text = extract_docx_text(tmp_path)
             finally:
                 os.unlink(tmp_path)
-    elif request.json and request.json.get("text"):
-        raw_text = request.json["text"]
     elif request.form.get("text"):
         raw_text = request.form["text"]
+    else:
+        try:
+            json_data = request.get_json(silent=True)
+            if json_data and json_data.get("text"):
+                raw_text = json_data["text"]
+        except Exception:
+            pass
 
     if not raw_text or len(raw_text.strip()) < 50:
         return jsonify({"error": "Le texte ne contient pas assez de contenu exploitable (minimum 50 caractères)."}), 400
