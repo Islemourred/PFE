@@ -4,6 +4,8 @@ import { supabase } from "@/lib/supabase";
 import styles from "./page.module.css";
 import PipelineView from "@/components/PipelineView";
 import DossiersView from "@/components/DossiersView";
+import DashboardView from "@/components/DashboardView";
+import AdminPanel from "@/components/AdminPanel";
 import LoginPage from "@/components/LoginPage";
 import {
   DnaIcon,
@@ -12,11 +14,14 @@ import {
   ArrowRightStartOnRectangleIcon,
   SunIcon,
   MoonIcon,
+  UserGroupIcon,
+  ShieldCheckIcon,
 } from "@/components/Icons";
 
 export default function Home() {
-  const [activeView, setActiveView] = useState("dossiers");
+  const [activeView, setActiveView] = useState("dashboard");
   const [user, setUser] = useState(null);
+  const [userRole, setUserRole] = useState(null);
   const [authLoading, setAuthLoading] = useState(true);
   const [theme, setTheme] = useState("dark");
 
@@ -27,18 +32,50 @@ export default function Home() {
     document.documentElement.setAttribute("data-theme", saved);
   }, []);
 
+  // Fetch user role from user_profiles
+  const fetchUserRole = async (userId) => {
+    try {
+      const { data, error } = await supabase
+        .from("user_profiles")
+        .select("role")
+        .eq("id", userId)
+        .maybeSingle();
+      if (error) {
+        console.error("[Auth] Role fetch error:", error.message);
+        setUserRole("intern");
+      } else if (data?.role) {
+        console.log("[Auth] Role:", data.role);
+        setUserRole(data.role);
+      } else {
+        console.warn("[Auth] No profile found, defaulting to intern");
+        setUserRole("intern");
+      }
+    } catch (err) {
+      console.error("[Auth] Unexpected error:", err);
+      setUserRole("intern");
+    }
+  };
+
   // Check for existing session on load
   useEffect(() => {
     const checkSession = async () => {
       const { data: { session } } = await supabase.auth.getSession();
-      setUser(session?.user || null);
+      const u = session?.user || null;
+      setUser(u);
+      if (u) await fetchUserRole(u.id);
       setAuthLoading(false);
     };
     checkSession();
 
     // Listen for auth state changes
-    const { data: { subscription } } = supabase.auth.onAuthStateChange((_event, session) => {
-      setUser(session?.user || null);
+    const { data: { subscription } } = supabase.auth.onAuthStateChange(async (_event, session) => {
+      const u = session?.user || null;
+      setUser(u);
+      if (u) {
+        await fetchUserRole(u.id);
+      } else {
+        setUserRole(null);
+      }
     });
 
     return () => subscription.unsubscribe();
@@ -47,6 +84,7 @@ export default function Home() {
   const handleLogout = async () => {
     await supabase.auth.signOut();
     setUser(null);
+    setUserRole(null);
   };
 
   const toggleTheme = () => {
@@ -73,6 +111,8 @@ export default function Home() {
     return <LoginPage onLogin={(u) => setUser(u)} />;
   }
 
+  const isAdmin = userRole === "admin";
+
   // Authenticated → show app
   return (
     <div className={styles.appShell}>
@@ -91,6 +131,13 @@ export default function Home() {
 
           <nav className={styles.navTabs}>
             <button
+              className={`${styles.navTab} ${activeView === "dashboard" ? styles.navTabActive : ""}`}
+              onClick={() => setActiveView("dashboard")}
+            >
+              <DnaIcon size={16} />
+              Dashboard
+            </button>
+            <button
               className={`${styles.navTab} ${activeView === "dossiers" ? styles.navTabActive : ""}`}
               onClick={() => setActiveView("dossiers")}
             >
@@ -104,6 +151,15 @@ export default function Home() {
               <BoltIcon size={16} />
               Pipeline
             </button>
+            {isAdmin && (
+              <button
+                className={`${styles.navTab} ${activeView === "admin" ? styles.navTabActive : ""}`}
+                onClick={() => setActiveView("admin")}
+              >
+                <UserGroupIcon size={16} />
+                Gestion
+              </button>
+            )}
           </nav>
 
           <div className={styles.navRight}>
@@ -114,7 +170,14 @@ export default function Home() {
               <div className={styles.userAvatar}>
                 {user.user_metadata?.full_name?.[0] || user.email?.[0]?.toUpperCase() || "U"}
               </div>
-              <span className={styles.userEmail}>{user.email}</span>
+              <div className={styles.userMeta}>
+                <span className={styles.userEmail}>{user.email}</span>
+                <span className={`${styles.userRoleBadge} ${isAdmin ? styles.roleAdmin : styles.roleIntern}`}>
+                  {isAdmin ? (
+                    <><ShieldCheckIcon size={10} style={{ verticalAlign: "middle", marginRight: 2 }} /> Admin</>
+                  ) : "Interne"}
+                </span>
+              </div>
             </div>
             <button className={styles.logoutBtn} onClick={handleLogout} title="Se déconnecter">
               <ArrowRightStartOnRectangleIcon size={16} />
@@ -126,8 +189,10 @@ export default function Home() {
 
       {/* ═══ Main Content ═══ */}
       <main className={styles.mainContent}>
-        {activeView === "dossiers" && <DossiersView />}
+        {activeView === "dashboard" && <DashboardView />}
+        {activeView === "dossiers" && <DossiersView userRole={userRole} />}
         {activeView === "pipeline" && <PipelineView />}
+        {activeView === "admin" && isAdmin && <AdminPanel />}
       </main>
     </div>
   );

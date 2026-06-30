@@ -3,6 +3,7 @@ import { useState, useEffect, useRef, useCallback } from "react";
 import { supabase } from "@/lib/supabase";
 import { extractPatientInfo, extractFromFilename } from "@/lib/extractPatientInfo";
 import mammoth from "mammoth";
+import dynamic from "next/dynamic";
 import styles from "./DossiersView.module.css";
 import {
   CakeIcon,
@@ -34,7 +35,10 @@ import {
   FolderIcon,
 } from "@/components/Icons";
 
+const RichEditor = dynamic(() => import("@/components/RichEditor"), { ssr: false });
+
 const FIELD_LABELS = {
+  dossier_number: "N° Dossier",
   full_name: "Nom complet",
   age: "Âge",
   gender: "Sexe",
@@ -56,6 +60,7 @@ const FIELD_LABELS = {
 
 // Map each field key to an icon component
 const INFO_ICON_COMPONENTS = {
+  dossier_number: IdentificationIcon,
   age: CakeIcon,
   gender: IdentificationIcon,
   date_of_birth: CalendarDaysIcon,
@@ -74,7 +79,8 @@ const INFO_ICON_COMPONENTS = {
   notes: DocumentMagnifyingGlassIcon,
 };
 
-export default function DossiersView() {
+export default function DossiersView({ userRole = "intern" }) {
+  const isAdmin = userRole === "admin";
   const [dossiers, setDossiers] = useState([]);
   const [loading, setLoading] = useState(true);
   const [searchQuery, setSearchQuery] = useState("");
@@ -90,9 +96,16 @@ export default function DossiersView() {
   const [editingDossier, setEditingDossier] = useState(null);
   const [toast, setToast] = useState(null);
   const [uploadedFileInfo, setUploadedFileInfo] = useState(null);
-  const [filters, setFilters] = useState({ diagnosis: "", origin: "", gender: "", doctor: "" });
+  const [filters, setFilters] = useState({ diagnosis: "", origin: "", gender: "", doctor: "", dateFrom: "", dateTo: "" });
   const [stats, setStats] = useState({ total: 0, diagnoses: 0, cities: 0 });
   const [viewerReport, setViewerReport] = useState(null);
+  const [editingReport, setEditingReport] = useState(false);
+  const [editedContent, setEditedContent] = useState("");
+  const [savingReport, setSavingReport] = useState(false);
+  const [dossierNotes, setDossierNotes] = useState([]);
+  const [newNote, setNewNote] = useState("");
+  const [newTag, setNewTag] = useState("");
+  const [filterTag, setFilterTag] = useState("");
   const fileInputRef = useRef(null);
   const reportInputRef = useRef(null);
   const searchTimeoutRef = useRef(null);
@@ -109,7 +122,7 @@ export default function DossiersView() {
       let result;
       if (query.trim()) {
         result = await supabase.from("patient_dossiers").select("*")
-          .or(`full_name.ilike.%${query}%,principal_diagnosis.ilike.%${query}%,treating_doctor.ilike.%${query}%,origin.ilike.%${query}%`)
+          .or(`full_name.ilike.%${query}%,principal_diagnosis.ilike.%${query}%,treating_doctor.ilike.%${query}%,origin.ilike.%${query}%,dossier_number.ilike.%${query}%`)
           .order("created_at", { ascending: false });
       } else {
         result = await supabase.from("patient_dossiers").select("*")
@@ -175,13 +188,27 @@ export default function DossiersView() {
     if (!formData.full_name) return showToast("Nom requis", "error");
     setSaving(true);
     try {
+      // Check for duplicate dossier_number
+      if (formData.dossier_number) {
+        const { data: existing } = await supabase.from("patient_dossiers")
+          .select("id, full_name").eq("dossier_number", formData.dossier_number).maybeSingle();
+        if (existing) {
+          setSaving(false);
+          return showToast(`Ce dossier N°${formData.dossier_number} existe déjà (${existing.full_name})`, "error");
+        }
+      }
       const dossierData = {};
       for (const key of Object.keys(FIELD_LABELS)) {
         if (formData[key]) dossierData[key] = formData[key];
       }
       if (!dossierData.gender) dossierData.gender = "Inconnu";
       const { data: dossier, error } = await supabase.from("patient_dossiers").insert(dossierData).select().single();
-      if (error) throw error;
+      if (error) {
+        if (error.code === "23505" && error.message?.includes("dossier_number")) {
+          return showToast(`Ce dossier N°${formData.dossier_number} existe déjà`, "error");
+        }
+        throw error;
+      }
       if (uploadedFileInfo) {
         await supabase.from("medical_reports").insert({
           filename: uploadedFileInfo.name, patient_name: formData.full_name,
@@ -200,9 +227,59 @@ export default function DossiersView() {
   const openDossier = async (dossier) => {
     setSelectedDossier(dossier);
     setSelectedReport(null);
-    const { data } = await supabase.from("medical_reports")
-      .select("*").eq("dossier_id", dossier.id).order("created_at", { ascending: false });
-    setDossierReports(data || []);
+    setNewNote("");
+    const [reportsRes, notesRes] = await Promise.all([
+      supabase.from("medical_reports").select("*").eq("dossier_id", dossier.id).order("created_at", { ascending: false }),
+      supabase.from("dossier_notes").select("*").eq("dossier_id", dossier.id).order("created_at", { ascending: false }),
+    ]);
+    setDossierReports(reportsRes.data || []);
+    setDossierNotes(notesRes.data || []);
+  };
+
+  // ── Tags ──
+  const PRESET_TAGS = ["urgent", "suivi", "hospitalisé", "en rémission", "nouveau", "contrôle"];
+
+  const addTag = async (tag) => {
+    if (!selectedDossier || !tag.trim()) return;
+    const currentTags = selectedDossier.tags || [];
+    const cleaned = tag.trim().toLowerCase();
+    if (currentTags.includes(cleaned)) return showToast("Tag déjà ajouté", "error");
+    const newTags = [...currentTags, cleaned];
+    const { error } = await supabase.from("patient_dossiers").update({ tags: newTags }).eq("id", selectedDossier.id);
+    if (error) return showToast("Erreur: " + error.message, "error");
+    setSelectedDossier({ ...selectedDossier, tags: newTags });
+    setDossiers(prev => prev.map(d => d.id === selectedDossier.id ? { ...d, tags: newTags } : d));
+    setNewTag("");
+  };
+
+  const removeTag = async (tag) => {
+    if (!selectedDossier) return;
+    const newTags = (selectedDossier.tags || []).filter(t => t !== tag);
+    const { error } = await supabase.from("patient_dossiers").update({ tags: newTags }).eq("id", selectedDossier.id);
+    if (error) return showToast("Erreur: " + error.message, "error");
+    setSelectedDossier({ ...selectedDossier, tags: newTags });
+    setDossiers(prev => prev.map(d => d.id === selectedDossier.id ? { ...d, tags: newTags } : d));
+  };
+
+  // ── Quick Notes ──
+  const addNote = async () => {
+    if (!selectedDossier || !newNote.trim()) return;
+    const { data: { user } } = await supabase.auth.getUser();
+    const { data, error } = await supabase.from("dossier_notes").insert({
+      dossier_id: selectedDossier.id,
+      content: newNote.trim(),
+      author_email: user?.email || "unknown",
+    }).select().single();
+    if (error) return showToast("Erreur: " + error.message, "error");
+    setDossierNotes(prev => [data, ...prev]);
+    setNewNote("");
+    showToast("Note ajoutée", "success");
+  };
+
+  const deleteNote = async (noteId) => {
+    const { error } = await supabase.from("dossier_notes").delete().eq("id", noteId);
+    if (error) return showToast("Erreur: " + error.message, "error");
+    setDossierNotes(prev => prev.filter(n => n.id !== noteId));
   };
 
   const deleteDossier = async (id, e) => {
@@ -259,6 +336,37 @@ export default function DossiersView() {
   const closeCreateModal = () => {
     setShowCreateModal(false); setEditingDossier(null);
     setFormData({}); setExtractedData(null); setUploadedFileInfo(null);
+  };
+
+  // ── Report editing ──
+  const startEditReport = () => {
+    setEditedContent(viewerReport.content_text || "");
+    setEditingReport(true);
+  };
+
+  const cancelEditReport = () => {
+    setEditingReport(false);
+    setEditedContent("");
+  };
+
+  const saveReportEdit = async () => {
+    if (!viewerReport) return;
+    setSavingReport(true);
+    try {
+      const { error } = await supabase.from("medical_reports")
+        .update({ content_text: editedContent, char_count: editedContent.length })
+        .eq("id", viewerReport.id);
+      if (error) throw error;
+      // Update local state
+      setViewerReport({ ...viewerReport, content_text: editedContent, char_count: editedContent.length });
+      setDossierReports(prev => prev.map(r => r.id === viewerReport.id ? { ...r, content_text: editedContent, char_count: editedContent.length } : r));
+      setEditingReport(false);
+      showToast("Rapport modifié avec succès", "success");
+    } catch (err) {
+      showToast("Erreur: " + err.message, "error");
+    } finally {
+      setSavingReport(false);
+    }
   };
 
   // ── Download as TXT ──
@@ -522,6 +630,8 @@ export default function DossiersView() {
     if (filters.origin && d.origin !== filters.origin) return false;
     if (filters.gender && d.gender !== filters.gender) return false;
     if (filters.doctor && d.treating_doctor !== filters.doctor) return false;
+    if (filters.dateFrom && d.created_at < filters.dateFrom) return false;
+    if (filters.dateTo && d.created_at > filters.dateTo + "T23:59:59") return false;
     return true;
   });
 
@@ -621,11 +731,31 @@ export default function DossiersView() {
               </select>
             </div>
           )}
+
+          {/* Date range */}
+          <div className={styles.filterGroup}>
+            <CalendarDaysIcon size={13} className={styles.filterIcon} />
+            <input
+              type="date"
+              className={`${styles.filterSelect} ${styles.filterDate} ${filters.dateFrom ? styles.filterSelectActive : ""}`}
+              value={filters.dateFrom}
+              onChange={(e) => setFilters({ ...filters, dateFrom: e.target.value })}
+              title="Date de début"
+            />
+            <span className={styles.filterDateSep}>→</span>
+            <input
+              type="date"
+              className={`${styles.filterSelect} ${styles.filterDate} ${filters.dateTo ? styles.filterSelectActive : ""}`}
+              value={filters.dateTo}
+              onChange={(e) => setFilters({ ...filters, dateTo: e.target.value })}
+              title="Date de fin"
+            />
+          </div>
         </div>
 
         {/* Active filter count + clear */}
         {activeFilterCount > 0 && (
-          <button className={styles.filterClearAll} onClick={() => setFilters({ diagnosis: "", origin: "", gender: "", doctor: "" })}>
+          <button className={styles.filterClearAll} onClick={() => setFilters({ diagnosis: "", origin: "", gender: "", doctor: "", dateFrom: "", dateTo: "" })}>
             <XMarkIcon size={12} />
             Réinitialiser ({activeFilterCount})
           </button>
@@ -673,15 +803,26 @@ export default function DossiersView() {
                 {d.age_at_diagnosis && <span className={styles.metaTag}><MicroscopeIcon size={11} style={{ opacity: 0.6 }} /> Diag. {d.age_at_diagnosis}</span>}
               </div>
 
+              {/* Tags on card */}
+              {d.tags && d.tags.length > 0 && (
+                <div className={styles.cardTags}>
+                  {d.tags.map(tag => (
+                    <span key={tag} className={`${styles.tag} ${styles[`tag_${tag}`] || ""}`}>{tag}</span>
+                  ))}
+                </div>
+              )}
+
               <div className={styles.cardFooter}>
                 <span className={styles.cardDate}>{formatDate(d.created_at)}</span>
                 <div className={styles.cardActions}>
                   <button className={styles.iconBtn} title="Modifier" onClick={(e) => { e.stopPropagation(); setEditingDossier(d); setFormData({...d}); }}>
                     <PencilSquareIcon size={13} />
                   </button>
-                  <button className={`${styles.iconBtn} ${styles.iconBtnDanger}`} title="Supprimer" onClick={(e) => deleteDossier(d.id, e)}>
-                    <TrashIcon size={13} />
-                  </button>
+                  {isAdmin && (
+                    <button className={`${styles.iconBtn} ${styles.iconBtnDanger}`} title="Supprimer" onClick={(e) => deleteDossier(d.id, e)}>
+                      <TrashIcon size={13} />
+                    </button>
+                  )}
                 </div>
               </div>
             </div>
@@ -716,6 +857,28 @@ export default function DossiersView() {
               </div>
             </div>
 
+            {/* Tags */}
+            <div className={styles.detailTags}>
+              {(selectedDossier.tags || []).map((tag) => (
+                <span key={tag} className={`${styles.tag} ${styles[`tag_${tag}`] || ""}`}>
+                  {tag}
+                  <button className={styles.tagRemove} onClick={() => removeTag(tag)}>×</button>
+                </span>
+              ))}
+              {PRESET_TAGS.filter(t => !(selectedDossier.tags || []).includes(t)).length > 0 && (
+                <div className={styles.tagAddWrap}>
+                  <button className={styles.tagAddBtn} onClick={() => setNewTag(prev => prev ? "" : "open")}>+ tag</button>
+                  {newTag && (
+                    <div className={styles.tagSuggestions}>
+                      {PRESET_TAGS.filter(t => !(selectedDossier.tags || []).includes(t)).map(t => (
+                        <button key={t} className={`${styles.tagSuggestion} ${styles[`tag_${t}`] || ""}`} onClick={() => { addTag(t); setNewTag(""); }}>{t}</button>
+                      ))}
+                    </div>
+                  )}
+                </div>
+              )}
+            </div>
+
             {/* Detail Body — Two Columns */}
             <div className={styles.detailBody}>
               {/* Left: Patient Info */}
@@ -738,8 +901,43 @@ export default function DossiersView() {
                 </div>
               </div>
 
-              {/* Right: Reports */}
+              {/* Right: Reports + Notes */}
               <div className={styles.detailRight}>
+                {/* Quick Notes */}
+                <h3 className={styles.sectionLabel}>
+                  <ClipboardDocumentListIcon size={14} style={{ verticalAlign: "middle", marginRight: 4, opacity: 0.6 }} />
+                  Notes rapides ({dossierNotes.length})
+                </h3>
+                <div className={styles.notesSection}>
+                  <div className={styles.noteInputRow}>
+                    <input
+                      className={styles.noteInput}
+                      placeholder="Ajouter une note rapide..."
+                      value={newNote}
+                      onChange={(e) => setNewNote(e.target.value)}
+                      onKeyDown={(e) => e.key === "Enter" && addNote()}
+                    />
+                    <button className={styles.noteSubmitBtn} onClick={addNote} disabled={!newNote.trim()}>+</button>
+                  </div>
+                  {dossierNotes.length > 0 && (
+                    <div className={styles.notesList}>
+                      {dossierNotes.map((n) => (
+                        <div key={n.id} className={styles.noteItem}>
+                          <div className={styles.noteContent}>{n.content}</div>
+                          <div className={styles.noteMeta}>
+                            <span>{n.author_email?.split("@")[0]}</span>
+                            <span>{new Date(n.created_at).toLocaleDateString("fr-FR", { day: "2-digit", month: "short", hour: "2-digit", minute: "2-digit" })}</span>
+                            {isAdmin && (
+                              <button className={styles.noteDelete} onClick={() => deleteNote(n.id)} title="Supprimer">×</button>
+                            )}
+                          </div>
+                        </div>
+                      ))}
+                    </div>
+                  )}
+                </div>
+
+                {/* Reports */}
                 <div className={styles.reportsSectionHead}>
                   <h3 className={styles.sectionLabel}>Rapports médicaux ({dossierReports.length})</h3>
                   <button className={styles.btnAddReport} onClick={() => reportInputRef.current?.click()}>
@@ -903,7 +1101,7 @@ export default function DossiersView() {
 
       {/* ═══ PDF Viewer Modal ═══ */}
       {viewerReport && (
-        <div className={styles.overlay} onClick={() => setViewerReport(null)}>
+        <div className={styles.overlay} onClick={() => { setViewerReport(null); setEditingReport(false); }}>
           <div className={styles.viewerPanel} onClick={(e) => e.stopPropagation()}>
             <div className={styles.viewerHeader}>
               <h3 className={styles.viewerTitle}>
@@ -911,16 +1109,34 @@ export default function DossiersView() {
                 {viewerReport.filename?.replace(".docx", "") || "Rapport"}
               </h3>
               <div className={styles.viewerActions}>
-                <button className={styles.viewerBtn} onClick={() => downloadPdf(viewerReport)}>
-                  <ArrowDownTrayIcon size={13} style={{ verticalAlign: "middle", marginRight: 4 }} /> PDF
-                </button>
-                <button className={styles.viewerBtn} onClick={() => downloadTxt(viewerReport)}>
-                  <ArrowDownTrayIcon size={13} style={{ verticalAlign: "middle", marginRight: 4 }} /> TXT
-                </button>
-                <button className={styles.viewerBtn} onClick={() => printReport(viewerReport)}>
-                  <PrinterIcon size={13} style={{ verticalAlign: "middle", marginRight: 4 }} /> Imprimer
-                </button>
-                <button className={styles.viewerClose} onClick={() => setViewerReport(null)}>
+                {!editingReport && (
+                  <>
+                    <button className={`${styles.viewerBtn} ${styles.viewerBtnEdit}`} onClick={startEditReport}>
+                      <PencilSquareIcon size={13} style={{ verticalAlign: "middle", marginRight: 4 }} /> Modifier
+                    </button>
+                    <button className={styles.viewerBtn} onClick={() => downloadPdf(viewerReport)}>
+                      <ArrowDownTrayIcon size={13} style={{ verticalAlign: "middle", marginRight: 4 }} /> PDF
+                    </button>
+                    <button className={styles.viewerBtn} onClick={() => downloadTxt(viewerReport)}>
+                      <ArrowDownTrayIcon size={13} style={{ verticalAlign: "middle", marginRight: 4 }} /> TXT
+                    </button>
+                    <button className={styles.viewerBtn} onClick={() => printReport(viewerReport)}>
+                      <PrinterIcon size={13} style={{ verticalAlign: "middle", marginRight: 4 }} /> Imprimer
+                    </button>
+                  </>
+                )}
+                {editingReport && (
+                  <>
+                    <button className={`${styles.viewerBtn} ${styles.viewerBtnSave}`} onClick={saveReportEdit} disabled={savingReport}>
+                      <CheckCircleIcon size={13} style={{ verticalAlign: "middle", marginRight: 4 }} />
+                      {savingReport ? "Enregistrement..." : "Sauvegarder"}
+                    </button>
+                    <button className={styles.viewerBtn} onClick={cancelEditReport}>
+                      <XMarkIcon size={13} style={{ verticalAlign: "middle", marginRight: 4 }} /> Annuler
+                    </button>
+                  </>
+                )}
+                <button className={styles.viewerClose} onClick={() => { setViewerReport(null); setEditingReport(false); }}>
                   <XMarkIcon size={18} />
                 </button>
               </div>
@@ -930,15 +1146,14 @@ export default function DossiersView() {
               {(selectedDossier?.treating_doctor || viewerReport.doctor_name) && <span><HeartIcon size={13} style={{ verticalAlign: "middle", marginRight: 4, opacity: 0.6 }} /> Dr. {selectedDossier?.treating_doctor || viewerReport.doctor_name}</span>}
               <span><CalendarDaysIcon size={13} style={{ verticalAlign: "middle", marginRight: 4, opacity: 0.6 }} /> {formatDate(viewerReport.report_date || viewerReport.created_at)}</span>
               {viewerReport.char_count && <span><DocumentMagnifyingGlassIcon size={13} style={{ verticalAlign: "middle", marginRight: 4, opacity: 0.6 }} /> {(viewerReport.char_count / 1000).toFixed(1)}k caractères</span>}
+              {editingReport && <span className={styles.editBadge}><PencilIcon size={11} style={{ verticalAlign: "middle", marginRight: 3 }} /> Mode édition</span>}
             </div>
             <div className={styles.viewerContent} ref={pdfContentRef}>
-              {(() => {
-                const content = viewerReport.content_text || "Aucun contenu disponible";
-                const isHtml = content.trim().startsWith("<");
-                return isHtml
-                  ? <div className={styles.viewerHtml} dangerouslySetInnerHTML={{ __html: content }} />
-                  : <pre className={styles.viewerText}>{content}</pre>;
-              })()}
+              <RichEditor
+                content={editingReport ? editedContent : (viewerReport.content_text || "Aucun contenu disponible")}
+                onChange={editingReport ? setEditedContent : undefined}
+                readOnly={!editingReport}
+              />
             </div>
           </div>
         </div>

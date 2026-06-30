@@ -22,6 +22,13 @@ SUPABASE_URL = "https://erwwmxppovtuzikyfakf.supabase.co"
 SUPABASE_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImVyd3dteHBwb3Z0dXppa3lmYWtmIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODE2MjY2MjUsImV4cCI6MjA5NzIwMjYyNX0.D4cW01s4uAPUUi7c5sWCgFmykQD4JMWEwhQy9uSLeJM"
 supabase = create_client(SUPABASE_URL, SUPABASE_KEY)
 
+# Authenticate as admin for RLS
+auth_result = supabase.auth.sign_in_with_password({
+    "email": "admin@clinicalpfe.dz",
+    "password": "ClinicalPFE2026!"
+})
+print(f"✅ Authenticated as {auth_result.user.email}\n")
+
 REPORTS_DIR = os.path.join(PROJECT_ROOT, "clinical_notes", "reports")
 
 
@@ -35,6 +42,11 @@ def extract_docx_text(filepath):
 
 def extract_patient_info(text):
     info = {}
+
+    # Dossier number
+    dossier_num = re.search(r'(?:Dossier\s+)?N[°0o]\s*(?:Dossier)?\s*[:：]\s*(\d{3,6})', text, re.IGNORECASE)
+    if dossier_num:
+        info["dossier_number"] = dossier_num.group(1).strip()
     
     name_age = re.search(
         r"(?:L['\u2019]enfant|Le\s+nourrisson|Le\s+patient|La\s+patiente|L['\u2019]adolescent)\s+"
@@ -162,11 +174,21 @@ def main():
         patient_name = info.get("full_name", "Inconnu")
         print(f"  👤 {patient_name} | {info.get('age', '?')} | {info.get('principal_diagnosis', '?')}")
 
-        # Check if dossier already exists for this patient
-        existing = supabase.table("patient_dossiers") \
-            .select("id") \
-            .ilike("full_name", f"%{patient_name}%") \
-            .execute()
+        # Check if dossier already exists (by dossier_number or name)
+        dossier_number = info.get("dossier_number")
+        existing = None
+        if dossier_number:
+            existing = supabase.table("patient_dossiers") \
+                .select("id") \
+                .eq("dossier_number", dossier_number) \
+                .execute()
+            print(f"  🔢 Dossier N°{dossier_number}")
+        
+        if not existing or not existing.data:
+            existing = supabase.table("patient_dossiers") \
+                .select("id") \
+                .ilike("full_name", f"%{patient_name}%") \
+                .execute()
 
         if existing.data and len(existing.data) > 0:
             dossier_id = existing.data[0]["id"]
@@ -177,7 +199,7 @@ def main():
                 "full_name", "age", "gender", "origin", "residence",
                 "parent_father", "parent_mother", "consanguinity", "siblings_info",
                 "principal_diagnosis", "associated_diagnoses", "date_of_diagnosis",
-                "age_at_diagnosis", "treating_doctor", "current_treatment"
+                "age_at_diagnosis", "treating_doctor", "current_treatment", "dossier_number"
             )}
             try:
                 result = supabase.table("patient_dossiers").insert(dossier_data).execute()
