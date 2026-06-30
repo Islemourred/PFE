@@ -49,30 +49,40 @@ export default function PipelineView() {
     setProgress({ percent: 10, text: "Module 1 : Dé-identification (PHI)..." });
 
     try {
-      const formData = new FormData();
+      setStepStatuses([2, 1, 0, 0]);
+      setProgress({ percent: 30, text: "Module 2 : Extraction NER (DeBERTa-v3 / GLiNER)..." });
+
+      let res;
       if (inputMode === "file" && selectedFile) {
+        const formData = new FormData();
         formData.append("file", selectedFile);
+        res = await fetch(`${API_URL}/api/pipeline/run`, {
+          method: "POST",
+          body: formData,
+        });
       } else if (inputMode === "text" && pastedText.trim()) {
-        formData.append("text", pastedText.trim());
+        res = await fetch(`${API_URL}/api/pipeline/run`, {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ text: pastedText.trim() }),
+        });
       } else {
         setError("Veuillez fournir un fichier ou du texte.");
         setIsAnalyzing(false);
         return;
       }
 
-      // Simulate progress steps
-      setStepStatuses([2, 1, 0, 0]);
-      setProgress({ percent: 30, text: "Module 2 : Extraction NER (DeBERTa-v3 / GLiNER)..." });
-
-      const res = await fetch(`${API_URL}/api/pipeline/run`, {
-        method: "POST",
-        body: formData,
-      });
-
       setStepStatuses([2, 2, 1, 0]);
       setProgress({ percent: 70, text: "Module 3 : Validation (NegEx / Temporel)..." });
 
-      const data = await res.json();
+      const contentType = res.headers.get("content-type") || "";
+      let data;
+      if (contentType.includes("application/json")) {
+        data = await res.json();
+      } else {
+        const text = await res.text();
+        throw new Error("Le serveur a renvoyé une erreur interne. Vérifiez la console Flask.");
+      }
 
       if (!res.ok) {
         throw new Error(data.error || "Erreur serveur");
@@ -366,10 +376,10 @@ export default function PipelineView() {
                     <tbody>
                       {result.numerics.map((n, i) => (
                         <tr key={i}>
-                          <td>{n.phenotype || ""}</td>
+                          <td>{n.hpo_name || n.phenotype || ""}</td>
                           <td style={{ fontFamily: "monospace" }}>{n.hpo_id || ""}</td>
-                          <td>{n.raw_value || ""}</td>
-                          <td>{n.interpretation || ""}</td>
+                          <td>{n.source || n.raw_value || (n.value != null ? `${n.value} ${n.unit || ""}` : "")}</td>
+                          <td>{n.description || n.interpretation || ""}</td>
                         </tr>
                       ))}
                     </tbody>

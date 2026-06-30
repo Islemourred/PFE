@@ -24,6 +24,14 @@ export default function Home() {
   const [userRole, setUserRole] = useState(null);
   const [authLoading, setAuthLoading] = useState(true);
   const [theme, setTheme] = useState("dark");
+  const [scrolled, setScrolled] = useState(false);
+
+  // Track scroll for navbar effect
+  useEffect(() => {
+    const handleScroll = () => setScrolled(window.scrollY > 10);
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   // Initialize theme from localStorage
   useEffect(() => {
@@ -117,7 +125,7 @@ export default function Home() {
   return (
     <div className={styles.appShell}>
       {/* ═══ Top Nav Bar ═══ */}
-      <header className={styles.topBar}>
+      <header className={`${styles.topBar} ${scrolled ? styles.topBarScrolled : ""}`}>
         <div className={styles.topBarInner}>
           <div className={styles.brandGroup}>
             <div className={styles.brandLogo}>

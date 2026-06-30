@@ -32,10 +32,14 @@ from flask import Flask, request, jsonify, send_file
 from flask_cors import CORS
 from docx import Document
 from supabase import create_client, Client
+from dotenv import load_dotenv
+
+# Load environment variables from .env.local
+load_dotenv(os.path.join(os.path.dirname(os.path.abspath(__file__)), ".env.local"))
 
 # ── Supabase Config ──────────────────────────────────────────
-SUPABASE_URL = "https://erwwmxppovtuzikyfakf.supabase.co"
-SUPABASE_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImVyd3dteHBwb3Z0dXppa3lmYWtmIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODE2MjY2MjUsImV4cCI6MjA5NzIwMjYyNX0.D4cW01s4uAPUUi7c5sWCgFmykQD4JMWEwhQy9uSLeJM"
+SUPABASE_URL = os.environ.get("NEXT_PUBLIC_SUPABASE_URL")
+SUPABASE_KEY = os.environ.get("NEXT_PUBLIC_SUPABASE_ANON_KEY")
 
 supabase: Client = create_client(SUPABASE_URL, SUPABASE_KEY)
 
@@ -46,6 +50,14 @@ REPORTS_DIR = os.path.join(PROJECT_ROOT, "clinical_notes", "reports")
 app = Flask(__name__)
 CORS(app)
 app.config['MAX_CONTENT_LENGTH'] = 50 * 1024 * 1024  # 50MB max upload
+
+# Flask 3.x: prevent 415 when receiving non-JSON POST requests
+from werkzeug.exceptions import UnsupportedMediaType
+
+@app.errorhandler(UnsupportedMediaType)
+def handle_415(e):
+    """Let non-JSON POST requests through (e.g. multipart/form-data text input)."""
+    return jsonify({"error": "Format de requête non supporté. Utilisez multipart/form-data ou application/json."}), 415
 
 # ── Pipeline (lazy-loaded) ───────────────────────────────────
 pipeline_obj = None
@@ -197,10 +209,15 @@ def run_pipeline():
                     raw_text = extract_docx_text(tmp_path)
             finally:
                 os.unlink(tmp_path)
-    elif request.json and request.json.get("text"):
-        raw_text = request.json["text"]
     elif request.form.get("text"):
         raw_text = request.form["text"]
+    else:
+        try:
+            json_data = request.get_json(silent=True)
+            if json_data and json_data.get("text"):
+                raw_text = json_data["text"]
+        except Exception:
+            pass
 
     if not raw_text or len(raw_text.strip()) < 50:
         return jsonify({"error": "Le texte ne contient pas assez de contenu exploitable (minimum 50 caractères)."}), 400

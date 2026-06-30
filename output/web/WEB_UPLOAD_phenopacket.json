@@ -2,6 +2,7 @@
   "id": "phenopacket-WEB_UPLOAD",
   "subject": {
     "id": "WEB_UPLOAD",
+<<<<<<< HEAD
     "timeAtLastEncounter": {
       "age": {
         "iso8601duration": "P07Y"
@@ -16,6 +17,18 @@
         "id": "HP:0006510",
         "label": "Chronic obstructive pulmonary disease",
         "umls_cui": "C0024117"
+=======
+    "sex": "MALE"
+  },
+  "input": "L'enfant BENALI Yassine, age de 6 ans, de sexe masculin, originaire et demeurant a Oran, est suivi au service d'immunologie pediatrique du CHU d'Oran depuis l'age de 18 mois pour un deficit immunitaire primitif type agammaglobulinemie liee a l'X (maladie de Bruton). Consanguinite du 2eme degre.\n\nExamen clinique du 15 mars 2026: Temperature 39.2 degres Celsius, frequence cardiaque 118 battements par minute, pression arterielle 95/60 mmHg, saturation en oxygene SpO2 88%, poids 17.5 kg (inferieur au 3eme percentile), taille 108 cm.\n\nBilan biologique: Hemoglobine 8.2 g/dL (normale 11.5 a 15.5), leucocytes 15800/mm3 (normale 5000 a 15000), plaquettes 89000/mm3 (normale 150000 a 400000), CRP 145 mg/L (normale inferieure a 5), VS 85 mm a la premiere heure. Immunoglobulines: IgG 0.12 g/L (normale 7.0 a 16.0), IgA 0.01 g/L (normale 0.7 a 4.0), IgM 0.02 g/L (normale 0.4 a 2.3). Lymphocytes T CD4 820/mm3, CD8 450/mm3, rapport CD4/CD8 1.82. Lymphocytes B CD19 inferieurs a 1% (normale 10 a 30%). Complement C3 1.85 g/L, C4 0.42 g/L.\n\nScanner thoracique: pneumopathie bilaterale avec condensation du lobe inferieur droit et bronchectasies diffuses. Pas d'adenopathies mediastinales. Hepatosplenomegalie moderee a l'echographie abdominale.\n\nLe patient ne presente pas de retard psychomoteur. Pas de syndrome hemorragique. Pas de cardiopathie congenitale. L'examen neurologique est normal. Pas de signes de meningite.\n\nTraitement en cours: substitution par immunoglobulines intraveineuses Tegeline 400 mg/kg toutes les 3 semaines, antibiotherapie par amoxicilline acide clavulanique 80 mg/kg/jour, kinesitherapie respiratoire quotidienne, supplementation en vitamine D 1000 UI/jour et en fer Fumafer 30 mg/jour.\n\nDiagnostic principal: Agammaglobulinemie liee a l'X (Bruton)\nDiagnostics associes: Pneumopathie bilaterale, bronchectasies, anemie ferriprive, thrombopenie",
+  "target": "Recurrent infections associated with rare immunoglobulin isotypes deficiency",
+  "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0005368",
+        "label": "Abnormality of humoral immunity",
+        "umls_cui": "C3150510"
+>>>>>>> 334dce1601d934305f0a629c869018350add6ff6
       },
       "excluded": false,
       "evidence": [
@@ -26,16 +39,26 @@
           },
           "reference": {
             "id": "WEB_UPLOAD",
+<<<<<<< HEAD
             "description": "NER: BPCO (0.745) | Match: french_curated (0.950)"
+=======
+            "description": "NER: deficit immunitaire primitif (0.689) | Match: sapbert_similarity (0.717)"
+>>>>>>> 334dce1601d934305f0a629c869018350add6ff6
           }
         }
       ]
     },
     {
       "type": {
+<<<<<<< HEAD
         "id": "HP:0002027",
         "label": "Abdominal pain",
         "umls_cui": "C0000737"
+=======
+        "id": "HP:0004432",
+        "label": "Agammaglobulinemia",
+        "umls_cui": "C0001768"
+>>>>>>> 334dce1601d934305f0a629c869018350add6ff6
       },
       "excluded": false,
       "evidence": [
@@ -46,6 +69,7 @@
           },
           "reference": {
             "id": "WEB_UPLOAD",
+<<<<<<< HEAD
             "description": "NER: douleur abdominale chronique (0.840) | Match: french_partial (0.850)"
           }
         }
@@ -187,15 +211,18 @@
           "reference": {
             "id": "WEB_UPLOAD",
             "description": "NER: infections cutanées (0.534) | Match: sapbert_similarity (0.966) | Negated by: \"pas de\""
+=======
+            "description": "NER: agammaglobulinemie liee a l'X (0.437) | Match: sapbert_similarity (0.810)"
+>>>>>>> 334dce1601d934305f0a629c869018350add6ff6
           }
         }
       ]
     },
     {
       "type": {
-        "id": "HP:0011010",
-        "label": "Chronic",
-        "umls_cui": "C0205191"
+        "id": "HP:0000031",
+        "label": "Consanguinity",
+        "umls_cui": "C0014534"
       },
       "excluded": false,
       "evidence": [
@@ -206,16 +233,26 @@
           },
           "reference": {
             "id": "WEB_UPLOAD",
+<<<<<<< HEAD
             "description": "NER: Douleurs abdominales chroniques (0.819) | Match: french_partial (0.850)"
+=======
+            "description": "NER: Consanguinite du 2eme degre (0.516) | Match: french_partial (0.850)"
+>>>>>>> 334dce1601d934305f0a629c869018350add6ff6
           }
         }
       ]
     },
     {
       "type": {
+<<<<<<< HEAD
         "id": "HP:0002013",
         "label": "Vomiting",
         "umls_cui": "C0042963"
+=======
+        "id": "HP:0002090",
+        "label": "Pneumonia",
+        "umls_cui": "C0032285"
+>>>>>>> 334dce1601d934305f0a629c869018350add6ff6
       },
       "excluded": false,
       "evidence": [
@@ -226,16 +263,26 @@
           },
           "reference": {
             "id": "WEB_UPLOAD",
+<<<<<<< HEAD
             "description": "NER: vomissements (0.858) | Match: french_curated (0.950)"
+=======
+            "description": "NER: pneumopathie bilaterale (0.413) | Match: french_partial (0.850)"
+>>>>>>> 334dce1601d934305f0a629c869018350add6ff6
           }
         }
       ]
     },
     {
       "type": {
+<<<<<<< HEAD
         "id": "HP:0002583",
         "label": "Colitis",
         "umls_cui": "C0009319"
+=======
+        "id": "HP:0002110",
+        "label": "Bronchiectasis",
+        "umls_cui": "C0006267"
+>>>>>>> 334dce1601d934305f0a629c869018350add6ff6
       },
       "excluded": false,
       "evidence": [
@@ -246,16 +293,26 @@
           },
           "reference": {
             "id": "WEB_UPLOAD",
+<<<<<<< HEAD
             "description": "NER: Iléo colite caecale (0.625) | Match: french_partial (0.850)"
+=======
+            "description": "NER: bronchectasies diffuses (0.542) | Match: french_partial (0.850)"
+>>>>>>> 334dce1601d934305f0a629c869018350add6ff6
           }
         }
       ]
     },
     {
       "type": {
+<<<<<<< HEAD
         "id": "HP:0001538",
         "label": "Protuberant abdomen",
         "umls_cui": "C1854928"
+=======
+        "id": "HP:0100721",
+        "label": "Mediastinal lymphadenopathy",
+        "umls_cui": "C0520743"
+>>>>>>> 334dce1601d934305f0a629c869018350add6ff6
       },
       "excluded": true,
       "evidence": [
@@ -266,13 +323,18 @@
           },
           "reference": {
             "id": "WEB_UPLOAD",
+<<<<<<< HEAD
             "description": "NER: souffle surajoutés (0.459) | Match: sapbert_similarity (0.717) | Negated by: \"pas de\""
+=======
+            "description": "NER: adenopathies mediastinales (0.530) | Match: sapbert_similarity (0.808) | Negated by: \"pas d'\""
+>>>>>>> 334dce1601d934305f0a629c869018350add6ff6
           }
         }
       ]
     },
     {
       "type": {
+<<<<<<< HEAD
         "id": "HP:0012531",
         "label": "Pain",
         "umls_cui": "C0030193"
@@ -393,6 +455,8 @@
     },
     {
       "type": {
+=======
+>>>>>>> 334dce1601d934305f0a629c869018350add6ff6
         "id": "HP:0001903",
         "label": "Anemia"
       },
@@ -405,15 +469,24 @@
           },
           "reference": {
             "id": "WEB_UPLOAD",
+<<<<<<< HEAD
             "description": "Numeric: Hb : 11,5g/dl → Hemoglobin < 12.0 g/dL"
+=======
+            "description": "Numeric: Hemoglobine 8.2 g/dL → Hemoglobin < 12.0 g/dL"
+>>>>>>> 334dce1601d934305f0a629c869018350add6ff6
           }
         }
       ]
     },
     {
       "type": {
+<<<<<<< HEAD
         "id": "HP:0001888",
         "label": "Lymphopenia"
+=======
+        "id": "HP:0001873",
+        "label": "Thrombocytopenia"
+>>>>>>> 334dce1601d934305f0a629c869018350add6ff6
       },
       "excluded": false,
       "evidence": [
@@ -424,14 +497,60 @@
           },
           "reference": {
             "id": "WEB_UPLOAD",
+<<<<<<< HEAD
             "description": "Numeric: Lymph760 → ALC/Lymphocytes < 1500/uL"
+=======
+            "description": "Numeric: plaquettes 89000 → Platelets < 150K"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0012418",
+        "label": "Hypoxemia"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "WEB_UPLOAD",
+            "description": "Numeric: SpO2 88% → SpO2 < 92%"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0011227",
+        "label": "Elevated C-reactive protein"
+      },
+      "excluded": false,
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "WEB_UPLOAD",
+            "description": "Numeric: CRP 145 mg/L → CRP > 10 mg/L (inflammation)"
+>>>>>>> 334dce1601d934305f0a629c869018350add6ff6
           }
         }
       ]
     }
   ],
   "metaData": {
+<<<<<<< HEAD
     "created": "2026-06-22T11:57:42Z",
+=======
+    "created": "2026-06-24T02:23:24Z",
+>>>>>>> 334dce1601d934305f0a629c869018350add6ff6
     "createdBy": "clinical-preanalysis-pipeline-v2",
     "phenopacketSchemaVersion": "2.0",
     "resources": [
@@ -451,6 +570,7 @@
       "progressStatus": "IN_PROGRESS",
       "diagnosis": {
         "disease": {
+<<<<<<< HEAD
           "id": "ORPHA:37042",
           "label": "Immune dysregulation-polyendocrinopathy-enteropathy-X-linked syndrome"
         },
@@ -505,18 +625,83 @@
             "id": "ORPHA:3260",
             "label": "Idiopathic hypereosinophilic syndrome",
             "score": 0.1724
+=======
+          "id": "ORPHA:183675",
+          "label": "Recurrent infections associated with rare immunoglobulin isotypes deficiency"
+        },
+        "score": 0.3645,
+        "allCandidates": [
+          {
+            "id": "ORPHA:183675",
+            "label": "Recurrent infections associated with rare immunoglobulin isotypes deficiency",
+            "score": 0.3645
+          },
+          {
+            "id": "ORPHA:47",
+            "label": "X-linked agammaglobulinemia",
+            "score": 0.2746
+          },
+          {
+            "id": "ORPHA:33110",
+            "label": "Autosomal non-syndromic agammaglobulinemia",
+            "score": 0.2665
+          },
+          {
+            "id": "ORPHA:1304",
+            "label": "Brucellosis",
+            "score": 0.2527
+          },
+          {
+            "id": "ORPHA:39041",
+            "label": "Omenn syndrome",
+            "score": 0.2527
+          },
+          {
+            "id": "ORPHA:48435",
+            "label": "Postinfectious vasculitis",
+            "score": 0.2491
+          },
+          {
+            "id": "ORPHA:169105",
+            "label": "Thymoma-hypogammaglobulinemia syndrome",
+            "score": 0.2353
+          },
+          {
+            "id": "ORPHA:79128",
+            "label": "Lymphoid interstitial pneumonia",
+            "score": 0.2353
+          },
+          {
+            "id": "ORPHA:1546",
+            "label": "Cryptococcosis",
+            "score": 0.2215
+          },
+          {
+            "id": "ORPHA:228123",
+            "label": "Coccidioidomycosis",
+            "score": 0.2215
+>>>>>>> 334dce1601d934305f0a629c869018350add6ff6
           }
         ]
       }
     }
   ],
   "_pipelineStats": {
+<<<<<<< HEAD
     "totalEntities": 34,
     "matchedHPO": 19,
     "unmatchedEntities": 15,
     "phenopacketFeatures": 21,
     "negatedFeatures": 5,
     "numericPhenotypes": 2,
+=======
+    "totalEntities": 8,
+    "matchedHPO": 6,
+    "unmatchedEntities": 2,
+    "phenopacketFeatures": 10,
+    "negatedFeatures": 1,
+    "numericPhenotypes": 4,
+>>>>>>> 334dce1601d934305f0a629c869018350add6ff6
     "ordoCandidates": 10
   }
 }
