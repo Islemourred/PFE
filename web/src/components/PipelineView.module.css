@@ -449,6 +449,70 @@
   border: 1px solid rgba(100, 130, 180, 0.1);
 }
 
+:global([data-theme="light"]) .card {
+  background: #ffffff;
+  border-color: rgba(100, 130, 180, 0.12);
+  box-shadow: 0 1px 4px rgba(30, 60, 120, 0.06);
+}
+
+:global([data-theme="light"]) .fileBanner {
+  background: linear-gradient(145deg, #ffffff 0%, #f0f6ff 100%);
+  border-color: rgba(100, 130, 180, 0.15);
+  box-shadow: 0 1px 4px rgba(30, 60, 120, 0.06);
+}
+
+:global([data-theme="light"]) .statBox {
+  background: linear-gradient(145deg, #ffffff 0%, #f7f9fc 100%);
+  border-color: rgba(100, 130, 180, 0.12);
+  box-shadow: 0 1px 4px rgba(30, 60, 120, 0.05);
+}
+:global([data-theme="light"]) .statBox:hover {
+  border-color: rgba(100, 130, 180, 0.2);
+  box-shadow: 0 4px 16px rgba(30, 60, 120, 0.08);
+}
+
+:global([data-theme="light"]) .ordoCard {
+  background: linear-gradient(135deg, #e0f7fa 0%, #e8f5e9 50%, #f0f4c3 100%);
+  border-color: rgba(8, 145, 178, 0.2);
+}
+:global([data-theme="light"]) .ordoCard::before {
+  background: radial-gradient(circle, rgba(8, 145, 178, 0.06) 0%, transparent 70%);
+}
+
+:global([data-theme="light"]) .uploadZone {
+  background: rgba(240, 245, 255, 0.5);
+  border-color: rgba(8, 145, 178, 0.25);
+}
+:global([data-theme="light"]) .uploadZone:hover,
+:global([data-theme="light"]) .dragover {
+  background: rgba(8, 145, 178, 0.04);
+  border-color: var(--accent-cyan);
+}
+
+:global([data-theme="light"]) .textInput {
+  background: #ffffff;
+  border-color: rgba(100, 130, 180, 0.15);
+}
+:global([data-theme="light"]) .textInput:focus {
+  background: #ffffff;
+}
+
+:global([data-theme="light"]) .progressBar {
+  background: rgba(100, 130, 180, 0.1);
+}
+
+:global([data-theme="light"]) .btnSmSecondary {
+  background: rgba(100, 130, 180, 0.08);
+  border-color: rgba(100, 130, 180, 0.15);
+}
+:global([data-theme="light"]) .btnSmSecondary:hover {
+  background: rgba(100, 130, 180, 0.15);
+}
+
+:global([data-theme="light"]) .modeBtnActive {
+  background: rgba(8, 145, 178, 0.1) !important;
+}
+
 :global([data-theme="light"]) .resultCard {
   box-shadow: 0 1px 4px rgba(30, 60, 120, 0.06);
 }

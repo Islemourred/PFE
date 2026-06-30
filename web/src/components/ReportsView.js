@@ -4,7 +4,7 @@ import { supabase } from "@/lib/supabase";
 import styles from "./ReportsView.module.css";
 
 const API_URL = typeof window !== "undefined" && window.location.hostname.includes("devtunnels.ms")
-  ? "https://wn3r3xh0-5000.uks1.devtunnels.ms"
+  ? "https://gj2k374z-5000.uks1.devtunnels.ms"
   : (process.env.NEXT_PUBLIC_API_URL || "http://localhost:5000");
 
 export default function ReportsView() {

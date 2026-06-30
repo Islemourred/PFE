@@ -277,7 +277,7 @@ export default function DossiersView() {
   const downloadDocx = (report) => {
     if (!report.filename) return showToast("Nom de fichier manquant", "error");
     const apiBase = typeof window !== "undefined" && window.location.hostname.includes("devtunnels.ms")
-      ? "https://wn3r3xh0-5000.uks1.devtunnels.ms"
+      ? "https://gj2k374z-5000.uks1.devtunnels.ms"
       : "http://localhost:5000";
     const url = `${apiBase}/api/reports/download/${encodeURIComponent(report.filename)}`;
     const a = document.createElement("a");

@@ -797,3 +797,79 @@
   background-color: rgba(255, 255, 255, 0.9);
   box-shadow: 0 1px 3px rgba(30, 60, 120, 0.04);
 }
+
+:global([data-theme="light"]) .viewerContent {
+  background: #ffffff;
+}
+
+:global([data-theme="light"]) .viewerHtml,
+:global([data-theme="light"]) .viewerText {
+  color: #1e293b;
+}
+:global([data-theme="light"]) .viewerHtml h1,
+:global([data-theme="light"]) .viewerHtml h2,
+:global([data-theme="light"]) .viewerHtml h3,
+:global([data-theme="light"]) .viewerHtml h4 {
+  color: #0c1929;
+}
+:global([data-theme="light"]) .viewerHtml th {
+  background: rgba(8, 145, 178, 0.06);
+}
+:global([data-theme="light"]) .viewerHtml tr:nth-child(even) td {
+  background: rgba(240, 245, 255, 0.6);
+}
+:global([data-theme="light"]) .viewerHtml tr:hover td {
+  background: rgba(8, 145, 178, 0.05);
+}
+
+:global([data-theme="light"]) .reportHtml th {
+  background: rgba(8, 145, 178, 0.06);
+}
+
+:global([data-theme="light"]) .detailHeaderBg {
+  opacity: 0.3;
+}
+
+:global([data-theme="light"]) .detailPanel {
+  background: #ffffff;
+}
+
+:global([data-theme="light"]) .detailClose {
+  background: rgba(100, 130, 180, 0.08);
+}
+:global([data-theme="light"]) .detailClose:hover {
+  background: rgba(239, 68, 68, 0.1);
+}
+
+:global([data-theme="light"]) .dropZone {
+  background: rgba(240, 245, 255, 0.6);
+  border-color: rgba(100, 130, 180, 0.2);
+}
+:global([data-theme="light"]) .dropZone:hover {
+  background: rgba(8, 145, 178, 0.04);
+  border-color: var(--accent-cyan);
+}
+
+:global([data-theme="light"]) .formInput {
+  background: rgba(240, 245, 255, 0.7);
+}
+:global([data-theme="light"]) .formInput:focus {
+  background: #ffffff;
+}
+
+:global([data-theme="light"]) .viewerBtn {
+  background: rgba(8, 145, 178, 0.08);
+  border-color: rgba(8, 145, 178, 0.15);
+}
+:global([data-theme="light"]) .viewerBtn:hover {
+  background: rgba(8, 145, 178, 0.15);
+}
+
+:global([data-theme="light"]) .btnAddReport {
+  background: rgba(8, 145, 178, 0.08);
+  border-color: rgba(8, 145, 178, 0.15);
+}
+
+:global([data-theme="light"]) .detailLeft {
+  border-right-color: rgba(100, 130, 180, 0.12);
+}
